@@ -2,9 +2,9 @@
 
 以 [AIHOT](https://aihot.virxact.com) 为模板的开源三频道热点统计工具：**P 物理** / **A 天文** / **T 光电**。
 
-> **在线报告（GitHub Pages）**：https://sun-zihang.github.io/opto-hot/
+> **在线报告（GitHub Pages）**：https://sun-zihang.github.io/pat-hot/
 >
-> **在线报告（Cloudflare Pages）**：https://opto-hot.pages.dev
+> **在线报告（Cloudflare Pages）**：https://pat-hot.pages.dev
 
 自动采集公开网络上的物理、天文、光电产业资讯，去重分类、聚类打分，输出热点榜 / 精选 / 分类统计 / 每日趋势，并生成可离线打开的中文 HTML 报告。
 
@@ -31,19 +31,6 @@
 - **趋势追踪**：周维度聚合（本周 vs 上周分类热度、新上榜/持续发酵事件），独立趋势视图
 - **LLM 深挖**（可选）：两次独立打分定精选资格 + 结构化抽取（主体/事件/标签），prompt 全部外置
 
-
-## CloudBase 部署
-
-| 项 | 值 |
-|---|---|
-| 环境 | `a455-d3g2s3dt865d86640`（ap-shanghai） |
-| 应用服务名 | opto-hot（最新版本 opto-hot-005） |
-| 访问域名 | https://opto-hot-a455-d3g2s3dt865d86640.webapps.tcloudbase.com/ |
-| 控制台 | https://tcb.cloud.tencent.com/dev?envId=a455-d3g2s3dt865d86640 |
-
-- 该域名与 GitHub Pages（sun-zihang.github.io/opto-hot/）相互独立、可同时访问，数据同源于 data/ 下的采集产物。
-- 更新方式：本地重新构建 dist/ 后，用 CloudBase 部署工具以同一服务名 opto-hot 重新部署即可生成新版本，**域名保持不变**。
-- 数据刷新仍由 GitHub Actions 每 6 小时自动完成；CloudBase 侧如需同步，可在本地运行 python collector/collect.py 后重新部署。
 
 ## UI 与机制（对标 AIHOT）
 
@@ -218,11 +205,6 @@ opto-hot/
 **本地计划任务（可选）**
 
 - `scripts/install-schedule.ps1`：注册 Windows 计划任务，每天 12:00 运行一次 `scripts/auto-update.ps1`（采集 → git 提交 → push，触发 GitHub Pages 重新部署）
-
-**CloudBase 说明（已停止自动同步，2026-08-05）**
-
-- 按用户要求，站点数据**仅在 GitHub Pages 更新**；CloudBase（`a455` 环境）不再自动部署，保持为静态快照。
-- 如需手动部署 CloudBase，可运行 `scripts/cloudbase-deploy.ps1`（需 mcporter 已登录，或设置环境变量 `TCB_API_KEY`）。
 
 ## 路线图
 
