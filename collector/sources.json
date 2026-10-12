@@ -6,7 +6,8 @@
       "weight": 0.8,
       "limit": 20,
       "filter_keywords": [],
-      "tier": "official"
+      "tier": "official",
+      "channel": "tech"
     },
     {
       "name": "Nature Photonics",
@@ -14,7 +15,8 @@
       "weight": 0.9,
       "limit": 15,
       "filter_keywords": [],
-      "tier": "official"
+      "tier": "official",
+      "channel": "tech"
     },
     {
       "name": "Phys.org 物理新闻",
@@ -50,7 +52,8 @@
         "光纤",
         "红外"
       ],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "LEDinside 英文",
@@ -58,7 +61,8 @@
       "weight": 0.8,
       "limit": 15,
       "filter_keywords": [],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "EDN 电子工程专辑",
@@ -85,7 +89,8 @@
         "miniled",
         "photonics"
       ],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "C114中国通信网_要闻精选",
@@ -93,7 +98,8 @@
       "weight": 0.9,
       "limit": 15,
       "filter_keywords": [],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "C114中国通信网_通信财经",
@@ -101,7 +107,8 @@
       "weight": 0.9,
       "limit": 15,
       "filter_keywords": [],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "C114中国通信网_IT资讯",
@@ -109,7 +116,8 @@
       "weight": 0.8,
       "limit": 15,
       "filter_keywords": [],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "C114中国通信网_设备商",
@@ -117,7 +125,8 @@
       "weight": 0.9,
       "limit": 15,
       "filter_keywords": [],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "C114中国通信网_监管",
@@ -125,7 +134,8 @@
       "weight": 0.7,
       "limit": 15,
       "filter_keywords": [],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "Laser Focus World",
@@ -133,7 +143,8 @@
       "weight": 0.8,
       "limit": 15,
       "filter_keywords": [],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "Physics World（关键词过滤）",
@@ -167,7 +178,8 @@
         "silicon photonics",
         "euv"
       ],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "IEEE Spectrum（关键词过滤）",
@@ -201,7 +213,8 @@
         "silicon photonics",
         "euv"
       ],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "YouTube·Photonics Media",
@@ -235,7 +248,8 @@
         "silicon photonics",
         "euv"
       ],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "YouTube·SPIETV",
@@ -269,7 +283,8 @@
         "silicon photonics",
         "euv"
       ],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "YouTube·Edmund Optics",
@@ -303,7 +318,8 @@
         "silicon photonics",
         "euv"
       ],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "YouTube·Thorlabs",
@@ -337,7 +353,160 @@
         "silicon photonics",
         "euv"
       ],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
+    },
+    {
+      "name": "Phys.org 物理新闻",
+      "url": "https://phys.org/rss-feed/physics-news/",
+      "tier": "media",
+      "channel": "physics",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "Nature Physics 学科聚合",
+      "url": "https://www.nature.com/subjects/physics.rss",
+      "tier": "official",
+      "channel": "physics",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "Nature 量子物理",
+      "url": "https://www.nature.com/subjects/quantum-physics.rss",
+      "tier": "official",
+      "channel": "physics",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/feed/",
+      "tier": "media",
+      "channel": "physics",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "MIT News 物理",
+      "url": "https://news.mit.edu/rss/topic/physics",
+      "tier": "official",
+      "channel": "physics",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "New Scientist 物理",
+      "url": "https://www.newscientist.com/subject/physics/feed/",
+      "tier": "media",
+      "channel": "physics",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "CERN 新闻",
+      "url": "https://home.cern/news/rss",
+      "tier": "official",
+      "channel": "physics",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "知识分子",
+      "url": "http://www.zhishifenzi.com/rss",
+      "tier": "media",
+      "channel": "physics",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "arXiv quant-ph 论文速递",
+      "url": "https://arxiv.org/rss/quant-ph",
+      "tier": "official",
+      "weight": 0.4,
+      "channel": "physics",
+      "limit": 20
+    },
+    {
+      "name": "Phys.org 太空新闻",
+      "url": "https://phys.org/rss-feed/space-news/",
+      "tier": "media",
+      "channel": "astro",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "Universe Today",
+      "url": "https://www.universetoday.com/feed/",
+      "tier": "media",
+      "channel": "astro",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "Nature 天文和天体物理",
+      "url": "https://www.nature.com/subjects/astronomy-and-astrophysics.rss",
+      "tier": "official",
+      "channel": "astro",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "NASA 快讯",
+      "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+      "tier": "official",
+      "channel": "astro",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "ESA 空间科学",
+      "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
+      "tier": "official",
+      "channel": "astro",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "Astronomy Magazine",
+      "url": "https://www.astronomy.com/feed",
+      "tier": "media",
+      "channel": "astro",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "MIT News 太空探索",
+      "url": "https://news.mit.edu/rss/topic/space-exploration",
+      "tier": "official",
+      "channel": "astro",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "LIGO",
+      "url": "https://www.ligo.org/feed/",
+      "tier": "official",
+      "channel": "astro",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "New Scientist 太空",
+      "url": "https://www.newscientist.com/subject/space/feed/",
+      "tier": "media",
+      "channel": "astro",
+      "weight": 0.7,
+      "limit": 20
+    },
+    {
+      "name": "arXiv astro-ph.CO 论文速递",
+      "url": "https://arxiv.org/rss/astro-ph.CO",
+      "tier": "official",
+      "weight": 0.4,
+      "channel": "astro",
+      "limit": 20
     }
   ],
   "html": [
@@ -349,7 +518,8 @@
       "limit": 20,
       "anchor_pattern": "ART-",
       "url_date": "y-m",
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "OFweek 激光频道",
@@ -359,7 +529,8 @@
       "limit": 20,
       "anchor_pattern": "ART-",
       "url_date": "y-m",
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "LEDinside 中文",
@@ -369,7 +540,8 @@
       "limit": 20,
       "anchor_pattern": "20\\d{6}-",
       "url_date": "y-m-d",
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "CIOE 中国光博会",
@@ -379,7 +551,8 @@
       "limit": 20,
       "anchor_pattern": "news/\\d+_info",
       "title_date": "prefix",
-      "tier": "official"
+      "tier": "official",
+      "channel": "tech"
     },
     {
       "name": "COEMA 中国光电子行业协会",
@@ -389,7 +562,8 @@
       "limit": 20,
       "anchor_pattern": "industry/",
       "url_date": "y-m",
-      "tier": "official"
+      "tier": "official",
+      "channel": "tech"
     },
     {
       "name": "搜狗微信·光电行业",
@@ -428,7 +602,8 @@
         "光模块",
         "激光雷达"
       ],
-      "tier": "media"
+      "tier": "media",
+      "channel": "tech"
     },
     {
       "name": "中国政府采购网",
@@ -438,7 +613,8 @@
       "limit": 15,
       "anchor_pattern": "news/\\d{6}/t\\d{8}",
       "url_date": "y-m-d-t",
-      "tier": "official"
+      "tier": "official",
+      "channel": "tech"
     },
     {
       "name": "中国招标投标公共服务平台",
@@ -448,7 +624,8 @@
       "limit": 12,
       "anchor_pattern": "monitorplat/\\d{4}/\\d{2}/",
       "url_date": "y-m",
-      "tier": "official"
+      "tier": "official",
+      "channel": "tech"
     },
     {
       "name": "工信部要闻",
@@ -483,7 +660,8 @@
         "光子",
         "光模块"
       ],
-      "tier": "official"
+      "tier": "official",
+      "channel": "tech"
     }
   ],
   "_x_twitter_optional": {
