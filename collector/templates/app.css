@@ -78,7 +78,7 @@ a{color:inherit;text-decoration:none}
 .day-h .c{margin-left:auto;font-size:12px;color:var(--ink4)}
 .day-h .arr{font-size:11px;color:var(--ink4)}
 .day.closed .day-b{display:none}
-.icard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;margin-bottom:12px}
+.icard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;margin-bottom:12px;content-visibility:auto;contain-intrinsic-size:auto 220px}
 .icard.read{opacity:.6}
 .irow{display:flex;align-items:center;gap:8px}
 .ava{width:30px;height:30px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:700}

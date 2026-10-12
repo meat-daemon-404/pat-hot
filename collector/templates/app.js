@@ -34,7 +34,7 @@ const I18N = {
     catDelta:"分类热度变化", newTopics:"新上榜事件", sustained:"持续发酵", noTrend:"本周暂无趋势数据（需要至少两周的日报归档）",
     menuAllSub:"全部资讯 · 搜索 / 分类 / 排序", menuTopicsSub:"分类统计，点击进入筛选", menuDataSub:"统计与导出", menuAgentSub:"开放 JSON 接口，免鉴权",
     expand:"展开阅读", collapse:"收起", aiSum:"AI 内容概要", srcSum:"来源摘要",
-    extNote:"原文·需外网", readOrig:"阅读原文 ↗（需外网）",
+    extNote:"原文·需外网", readOrig:"阅读原文 ↗（需外网）", loadMore:"加载更多",
     footer:"PAT-HOT · 物理·天文·光电热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
   en: { feed:"Selected", all:"All", hot:"Hot", daily:"Daily", trends:"Trends", more:"More",
     allPage:"All Items", topics:"Topics", data:"Data", agent:"Agent API",
@@ -55,7 +55,7 @@ const I18N = {
     catDelta:"Category heat change", newTopics:"New events", sustained:"Sustained events", noTrend:"No trend data yet (needs 2+ weeks of daily archive)",
     menuAllSub:"All items · search / filter / sort", menuTopicsSub:"Category stats — click to filter", menuDataSub:"Stats & export", menuAgentSub:"Open JSON APIs, no auth",
     expand:"Read more", collapse:"Collapse", aiSum:"AI Summary", srcSum:"Source abstract",
-    extNote:"orig.·needs internet", readOrig:"Read original ↗ (needs internet)",
+    extNote:"orig.·needs internet", readOrig:"Read original ↗ (needs internet)", loadMore:"Load more",
     footer:"PAT-HOT · physics / astronomy / photonics hot-topic stats (AIHOT methodology) · public data, for reference only · open source on GitHub" }
 };
 let LANG = "zh";
@@ -116,7 +116,7 @@ function renderChSeg(){ const el=$("#chseg"); if(!el) return;
   el.querySelectorAll("a").forEach(a=>{ a.onclick=()=>setChannel(a.dataset.ch); }); }
 function setChannel(id){ if(id===CHID||!S.channels[id]) return;
   CHID=id; C=S.channels[id]; CAT_CLS=C.catCls||{}; CAT_EN=C.catEn||{}; TREND_TITLES=null; EXPANDED.clear();
-  state.dailyDate=""; state.cat="全部"; state.q=""; const q=$("#q"); if(q) q.value="";
+  state.dailyDate=""; state.cat="全部"; state.q=""; state.allShown=ALL_PAGE; const q=$("#q"); if(q) q.value="";
   try{ localStorage.setItem("pat-channel",id); }catch(e){}
   renderChSeg(); tr(); router(); window.scrollTo(0,0); }
 function itemCard(it){
@@ -155,17 +155,28 @@ function renderFeed(){
   root.innerHTML='<div class="card ph"><h1>'+T.feed+'</h1><span class="sub">'+esc(feedSub())+'</span><div class="note">'+esc(threshNote())+'</div></div>'+hot+tl;
   const ub=$("#unreadBtn"); if(ub) ub.onclick=()=>{ state.unreadOnly=!state.unreadOnly; renderFeed(); };
 }
+const ALL_PAGE=30;
+let allObserver=null;
 function renderAll(){
   const root=$("#view-all"); let its=C.items.slice();
-  if(state.q){ const q=state.q.toLowerCase(); its=its.filter(i=>(i.title+" "+(i.llm_summary||i.summary||"")+" "+i.source).toLowerCase().includes(q)); }
+  if(state.q){ const q=state.q.toLowerCase(); its=its.filter(i=>(i.title+" "+(i.zh_full||i.llm_summary||i.summary||"")+" "+i.source).toLowerCase().includes(q)); }
   if(state.cat!=="全部") its=its.filter(i=>i.category===state.cat);
   if(state.sort==="score") its.sort((a,b)=>b.score-a.score); else its.sort((a,b)=>b.discovered_at.localeCompare(a.discovered_at));
-  root.innerHTML='<div class="card ph"><h1>'+T.allPage+'</h1><span class="sub">'+its.length+'</span><span class="hsort" style="margin-left:auto"><select id="all-cat" aria-label="cat"><option value="全部">'+T.catAll+'</option></select><select id="all-sort" aria-label="sort"><option value="score">'+T.sortScore+'</option><option value="time">'+T.sortTime+'</option></select></span><div class="note">'+esc(threshNote())+'</div></div><div id="all-list">'+(its.length?its.map(itemCard).join(""):'<div class="empty">'+T.noMatch+'</div>')+'</div>';
+  const shown=Math.min(state.allShown||ALL_PAGE, its.length);
+  const hasMore=shown<its.length;
+  root.innerHTML='<div class="card ph"><h1>'+T.allPage+'</h1><span class="sub">'+its.length+'</span><span class="hsort" style="margin-left:auto"><select id="all-cat" aria-label="cat"><option value="全部">'+T.catAll+'</option></select><select id="all-sort" aria-label="sort"><option value="score">'+T.sortScore+'</option><option value="time">'+T.sortTime+'</option></select></span><div class="note">'+esc(threshNote())+'</div></div><div id="all-list">'+(its.length?its.slice(0,shown).map(itemCard).join(""):'<div class="empty">'+T.noMatch+'</div>')+'</div>'+(hasMore?'<div id="all-more" class="card" style="text-align:center;padding:14px;cursor:pointer;color:var(--acd);font-weight:600">'+T.loadMore+' ('+shown+'/'+its.length+')</div>':"");
   const cats=[...new Set(C.items.map(i=>i.category))];
   const sel=$("#all-cat"); for(const c of cats){ const o=document.createElement("option"); o.value=c; o.textContent=catName(c); if(c===state.cat) o.selected=true; sel.appendChild(o); }
   $("#all-sort").value=state.sort;
-  sel.onchange=e=>{ state.cat=e.target.value; renderAll(); };
-  $("#all-sort").onchange=e=>{ state.sort=e.target.value; renderAll(); };
+  sel.onchange=e=>{ state.cat=e.target.value; state.allShown=ALL_PAGE; renderAll(); };
+  $("#all-sort").onchange=e=>{ state.sort=e.target.value; state.allShown=ALL_PAGE; renderAll(); };
+  if(allObserver) allObserver.disconnect();
+  const more=$("#all-more");
+  if(more){
+    more.onclick=()=>{ state.allShown=(state.allShown||ALL_PAGE)+ALL_PAGE; renderAll(); window.scrollBy({top:-60}); };
+    allObserver=new IntersectionObserver(es=>{ if(es[0].isIntersecting){ state.allShown=(state.allShown||ALL_PAGE)+ALL_PAGE; renderAll(); } },{rootMargin:"600px"});
+    allObserver.observe(more);
+  }
 }
 function hotExpand(t){ const rep=t.representative||{}; const it={id:"t-"+t.id, zh_full:rep.zh_full, llm_summary:rep.llm_summary, summary:rep.summary, url:rep.url||((t.links||[])[0]||{}).url};
   if(!expandable(it)) return ""; return expandBtn(it)+expandBody(it); }
@@ -285,7 +296,7 @@ function BRAND(){ return "PAT-HOT"; }
 renderers.feed=renderFeed; renderers.all=renderAll; renderers.hot=renderHot; renderers.daily=renderDaily; renderers.topics=renderTopics; renderers.data=renderData; renderers.trends=renderTrends; renderers.agent=renderAgent; renderers.more=renderMore;
 function bind(){
   const q=$("#q");
-  q.addEventListener("input",e=>{ state.q=e.target.value; if(/#\/all/.test(location.hash)) renderAll(); });
+  let qTimer=null; q.addEventListener("input",e=>{ state.q=e.target.value; clearTimeout(qTimer); qTimer=setTimeout(()=>{ if(/#\/all/.test(location.hash)){ state.allShown=ALL_PAGE; renderAll(); } },250); });
   $("#sbtn").onclick=()=>{ const w=$("#swrap"); w.classList.toggle("open"); if(w.classList.contains("open")) q.focus(); };
   $("#lang").onclick=()=>{ LANG=LANG==="zh"?"en":"zh"; try{localStorage.setItem("pat-lang",LANG);}catch(e){} location.reload(); };
   document.addEventListener("click",e=>{
