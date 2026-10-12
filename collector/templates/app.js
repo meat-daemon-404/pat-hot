@@ -156,7 +156,14 @@ function renderDaily(){
   const d=state.dailyDate&&S.dailies[state.dailyDate]?state.dailyDate:(dates[0]||todayCN()); state.dailyDate=d;
   const rep=S.dailies[d];
   let side='<aside class="dside"><div class="card"><h3>'+T.archive+'（'+dates.length+'）</h3>';
-  let cm=""; for(const x of dates){ const m=x.slice(0,7); if(m!==cm){ cm=m; side+='<div class="anote" style="margin:6px 2px 2px">'+m+'</div>'; } side+='<div class="dday'+(x===d?" on":"")+'" data-d="'+x+'"><span>'+x.slice(5)+'</span><span>'+wdCN(x)+'</span></div>'; }
+  const latestM=(dates[0]||"").slice(0,7), col=state.arcCollapsed||(state.arcCollapsed={});
+  const mcount={}; dates.forEach(x=>{const k=x.slice(0,7); mcount[k]=(mcount[k]||0)+1;});
+  const mOpen=m=>(m in col)?!col[m]:(m===latestM);
+  let cm=""; for(const x of dates){ const m=x.slice(0,7);
+    if(m!==cm){ if(cm) side+='</div>'; cm=m; const op=mOpen(m);
+      side+='<div class="amonth'+(op?' open':'')+'" data-m="'+m+'"><span>'+m+' <span class="mcount">'+mcount[m]+'</span></span><span class="chev">'+(op?'▾':'▸')+'</span></div><div class="adays'+(op?'':' hide')+'">'; }
+    side+='<div class="dday'+(x===d?" on":"")+'" data-d="'+x+'"><span>'+x.slice(5)+'</span><span>'+wdCN(x)+'</span></div>'; }
+  if(cm) side+='</div>';
   side+='</div></aside>';
   let body='<div class="dbody">';
   if(rep){
@@ -173,6 +180,7 @@ function renderDaily(){
   body+='</div>';
   root.innerHTML='<div class="card ph"><h1>'+T.dailyPage+'</h1><span class="sub">'+T.dailySub+'</span></div><div class="dshell">'+side+body+'</div>';
   $$(".dday", root).forEach(el=>el.onclick=()=>{ state.dailyDate=el.dataset.d; renderDaily(); });
+  $$(".amonth", root).forEach(el=>el.onclick=()=>{ const m=el.dataset.m; col[m]=mOpen(m); renderDaily(); });
 }
 function renderTopics(){
   const root=$("#view-topics"); const rows=(S.daily&&S.daily.byCategory)||[];
