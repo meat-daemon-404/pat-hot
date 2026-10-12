@@ -108,7 +108,7 @@ DEFAULT_CONFIG = {
         "provider": "sensenova",
         "model": "sensenova-6.8-flash-lite",
         "api_url": "https://token.sensenova.cn/v1/chat/completions",
-        "max_items": 30, "batch_size": 8, "timeout": 40,
+        "max_items": 30, "batch_size": 3, "timeout": 120,
         "density_penalty": 0.9,
         "max_score_items": 30, "max_extract_items": 20,
     },
@@ -1732,7 +1732,7 @@ def llm_enhance(items, topics, cfg):
         batch = cands[s:s + bs]
         def _listing(b, i):
             desc = (b.get("summary") or "").strip()
-            desc = re.sub(r"\s+", " ", desc)[:1000]
+            desc = re.sub(r"\s+", " ", desc)[:600]
             return "[%d] %s\n来源：%s\n摘要：%s" % (i, b.get("title", ""), b.get("source", ""), desc or "（无摘要，仅标题）")
         listing = "\n\n".join(_listing(b, i) for i, b in enumerate(batch))
         prompt = ("你是%s资讯编辑，读者是无法访问外网的中国大学生，只能在站内阅读你的中文输出。对下列每条资讯返回一个 JSON 对象，"
