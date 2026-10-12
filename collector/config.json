@@ -3,13 +3,22 @@
   "clustering": {
     "tfidf_threshold": 0.14
   },
+  "fetch": {
+    "_comment": "抓取层参数：单源超时（秒）、抖动重试次数、单响应体积上限（字节）、详情页超时、失败源占比闸门。超过 max_source_failure_ratio 就拒绝写出产物，宁可 CI 红一次也不要发布内容变薄的站点。",
+    "timeout": 25,
+    "retries": 1,
+    "max_bytes": 12582912,
+    "text_timeout": 15,
+    "max_source_failure_ratio": 0.6
+  },
   "daily": {
     "dedup_window_days": 7,
     "flash_count": 10,
     "headline_count": 1,
     "max_per_source": 2,
     "per_category_limit": 8,
-    "picks_count": 4
+    "picks_count": 4,
+    "archive_days": 365
   },
   "heat": {
     "recent_hours": 48,

@@ -72,19 +72,25 @@ python collector/collect.py          # 需要联网；Python 3.8+
 
 | 文件 | 说明 |
 |---|---|
-| `dist/index.html` | AIHOT 风格单页应用（精选/全部/热点榜/日报/主题/数据，内嵌数据可离线打开） |
-| `data/items.json` | 全部采集条目（含分类、关键词、得分） |
-| `data/hot-topics.json` | 热点榜（rank / 来源数 / 信号数 / 链接） |
-| `data/daily.json` | 统计：分类、每日趋势、来源分布 |
-| `data/dailies.json` | 光电日报归档（按日期） |
-| `data/report.csv` | 条目 CSV 导出（Excel 可直接打开） |
+| `dist/index.html` | AIHOT 风格单页应用（九视图，三频道数据全部内嵌，可离线打开） |
+| `data/<频道>/items.json` | 全部采集条目（含分类、关键词、得分、tier、selected） |
+| `data/<频道>/hot-topics.json` | 热点榜（rank / 状态 / 来源数 / 信号数 / 链接） |
+| `data/<频道>/daily.json` | 统计：分类、每日趋势、来源分布 |
+| `data/<频道>/dailies.json` | 日报归档（按日期，历史不可变） |
+| `data/<频道>/trends.json` | 周维度趋势（本周 vs 上周、新上榜、持续发酵） |
+| `data/<频道>/report.csv` | 条目 CSV 导出（Excel 可直接打开） |
+| `dist/api/v1/<频道>/*.json` | 按频道的静态 JSON API（含 `stories.json`） |
+| `dist/api/v1/*.json` | 重构前的扁平兼容地址，内容 = T 光电频道 |
+| `data/dailies.json` 等 | 扁平兼容副本，同上，勿删 |
 
 常用参数：
 
 ```bash
 python collector/collect.py --limit 30   # 每个源最多取 30 条
 python collector/collect.py --topics 15  # 热点榜输出 15 条
+python collector/collect.py --channel tech     # 只跑光电频道（其余频道沿用上次的产物）
 python collector/collect.py --skip-html  # 跳过行业网站（只跑 RSS）
+python collector/collect.py --check      # 只自检对外契约，不采集不写文件
 python collector/collect.py --llm        # 可选：SenseNova LLM 增强（需 SENSENOVA_API_KEY）
 python collector/collect.py --images     # 可选：SenseNova 生图配图（需 SENSENOVA_API_KEY）
 ```
@@ -92,8 +98,27 @@ python collector/collect.py --images     # 可选：SenseNova 生图配图（需
 ## 集中配置
 
 `collector/config.json` 集中了评分权重（`scoring`）、信源分级与精选门槛（`tiers`）、热度参数（`heat`）、
-聚类阈值（`clustering`）、日报编排（`daily`）、LLM 增强（`llm`）与生图（`images`）的全部参数。
+聚类阈值（`clustering`）、日报编排与归档保留（`daily`）、抓取超时与失败率闸门（`fetch`）、趋势（`trends`）、
+LLM 增强（`llm`）与生图（`images`）的全部参数。
 调标准只改这个文件，不用改代码；删除该文件或留空字段会自动回退内置默认值。
+
+| 段落 | 关键参数 | 作用 |
+|---|---|---|
+| `scoring` | `w_source / w_convergence / w_signal / w_recency`、`missing_pubdate_penalty` | 条目打分权重与无可信发布时间时的时效惩罚 |
+| `tiers` | `official / media` 的 `select_threshold` | 分级精选门槛（55 / 65） |
+| `heat` | `recent_hours / source_cap / signal_cap / status_*` | 热点榜热度与「爆 / 发酵中 / 关注中」判定 |
+| `clustering` | `tfidf_threshold` | 语义聚类合并阈值 |
+| `daily` | `headline_count / picks_count / flash_count / max_per_source / dedup_window_days / per_category_limit` | 日报编排 |
+| `daily` | `archive_days`（默认 365） | 日报归档保留天数，超期自动剪枝 |
+| `daily` | `refresh_days`（默认 1） | 归档刷新窗口：近 N 天按重算刷新，更早的历史原样保留 |
+| `fetch` | `timeout / retries / text_timeout / max_bytes` | 单源超时、抖动重试次数、详情页超时、响应体积上限 |
+| `fetch` | `max_source_failure_ratio`（默认 0.6） | 失败源占比超过即拒绝写出产物，避免发布内容变薄的站点 |
+| `trends` | `lookback_days / sustained_min_days / top_new / top_sustained` | 周维度趋势聚合 |
+| `images` | `retention_days` | 生成配图的保留天数（仅图片，与日报归档无关） |
+
+**日报归档语义**：已发布的历史某天不会被后续运行改写。当天与 `refresh_days` 内的近期天按本次重算刷新，
+但**已对外发布的条目一条都不会少**——源站 feed 会滚动，某条目本次可能已不在列表里，
+覆盖式重算会把已公开条目挤出 Top-N，所以合并时会把它们找回。
 
 信源分级在 `collector/sources.json` 中每个源的 `tier` 字段声明：`official`（官方/协会/政府/一手）
 或 `media`（媒体），精选门槛分别为 55 / 65 分。
@@ -120,42 +145,65 @@ python collector/collect.py --images     # 可选：SenseNova 生图配图（需
   `SENSENOVA_API_KEY`，并在工作流的采集命令后加上 `--llm` / `--images`，例如：
   `python collector/collect.py --limit 25 --llm`。
 
-## 数据源（26 个：17 RSS + 9 HTML）
+## 数据源（45 个：36 RSS + 9 HTML）
 
-| 类型 | 名称 | 地址 | 权重 |
-|---|---|---|---|
-| RSS | arXiv 光学与光子学 (physics.optics) | `http://export.arxiv.org/rss/physics.optics` | 0.8 |
-| RSS | Nature Photonics | `https://www.nature.com/nphoton.rss` | 0.9 |
-| RSS | Phys.org 物理新闻（关键词过滤） | `https://phys.org/rss-feed/physics-news/` | 0.6 |
-| RSS | C114中国通信网_要闻精选 | `http://www.c114.com.cn/rss/rss_news_489.xml` | 0.9 |
-| RSS | C114中国通信网_通信财经 | `http://www.c114.com.cn/rss/rss_news_24.xml` | 0.9 |
-| RSS | C114中国通信网_IT资讯 | `http://www.c114.com.cn/rss/rss_news_27.xml` | 0.8 |
-| RSS | C114中国通信网_设备商 | `http://www.c114.com.cn/rss/rss_news_18.xml` | 0.9 |
-| RSS | C114中国通信网_监管 | `http://www.c114.com.cn/rss/rss_news_550.xml` | 0.7 |
-| HTML | OFweek 光电频道 | `https://optics.ofweek.com/` | 1.0 |
-| HTML | OFweek 激光频道 | `https://laser.ofweek.com/` | 1.0 |
-| HTML | LEDinside 中文 | `https://www.ledinside.cn/` | 0.9 |
-| HTML | CIOE 中国光博会 | `https://cioe.cn/` | 0.9 |
-| HTML | COEMA 中国光电子行业协会 | `https://www.coema.org.cn/` | 0.8 |
-| RSS | LEDinside 英文 | `https://www.ledinside.com/rss` | 0.8 |
-| RSS | EDN 电子工程专辑（关键词过滤） | `https://www.edn.com/feed/` | 0.6 |
-| RSS | Laser Focus World | `https://www.laserfocusworld.com/__rss/website-scheduled-content.xml` | 0.8 |
-| RSS | Physics World（关键词过滤） | `https://physicsworld.com/feed/` | 0.7 |
-| RSS | IEEE Spectrum（关键词过滤） | `https://spectrum.ieee.org/rss/fulltext` | 0.7 |
-| RSS | YouTube·Photonics Media（关键词过滤） | `https://www.youtube.com/feeds/videos.xml?channel_id=UCEBZptdTAgdFRvowKPKuWtQ` | 0.6 |
-| RSS | YouTube·SPIETV（关键词过滤） | `https://www.youtube.com/feeds/videos.xml?channel_id=UC0GnZ40gZON2-sIuGR0Pxhw` | 0.6 |
-| RSS | YouTube·Edmund Optics（关键词过滤） | `https://www.youtube.com/feeds/videos.xml?channel_id=UCA3_rChA1L_NGk6gNMqi25Q` | 0.6 |
-| RSS | YouTube·Thorlabs（关键词过滤） | `https://www.youtube.com/feeds/videos.xml?channel_id=UCS0b3D7Gzg_ub-s3T0PRXug` | 0.6 |
-| HTML | 搜狗微信·光电行业 | `https://weixin.sogou.com/weixin?type=2&query=光电行业` | 0.7 |
-| HTML | 中国政府采购网 | `https://www.ccgp.gov.cn/` | 0.8 |
-| HTML | 中国招标投标公共服务平台 | `http://www.cebpubservice.com/` | 0.8 |
-| HTML | 工信部要闻（关键词过滤） | `https://www.miit.gov.cn/` | 0.8 |
+按频道划分：**T 光电 26 · P 物理 9 · A 天文 10**（`collector/sources.json` 的 `channel` 字段决定归属）。
+
+| 频道 | 类型 | 名称 | 地址 | 权重 | 分级 |
+|---|---|---|---|---|---|
+| T 光电 | HTML | CIOE 中国光博会 | `https://cioe.cn/` | 0.9 | official |
+| T 光电 | HTML | COEMA 中国光电子行业协会 | `https://www.coema.org.cn/` | 0.8 | official |
+| T 光电 | HTML | LEDinside 中文 | `https://www.ledinside.cn/` | 0.9 | media |
+| T 光电 | HTML | OFweek 光电频道 | `https://optics.ofweek.com/` | 1.0 | media |
+| T 光电 | HTML | OFweek 激光频道 | `https://laser.ofweek.com/` | 1.0 | media |
+| T 光电 | HTML | 中国招标投标公共服务平台 | `http://www.cebpubservice.com/` | 0.8 | official |
+| T 光电 | HTML | 中国政府采购网 | `https://www.ccgp.gov.cn/` | 0.8 | official |
+| T 光电 | HTML | 工信部要闻（标题词过滤） | `https://www.miit.gov.cn/` | 0.8 | official |
+| T 光电 | HTML | 搜狗微信·光电行业（标题词过滤） | `https://weixin.sogou.com/weixin?type=2&query=%E5%85%89%E7%9…` | 0.7 | media |
+| T 光电 | RSS | C114中国通信网_IT资讯 | `http://www.c114.com.cn/rss/rss_news_27.xml` | 0.8 | media |
+| T 光电 | RSS | C114中国通信网_监管 | `http://www.c114.com.cn/rss/rss_news_550.xml` | 0.7 | media |
+| T 光电 | RSS | C114中国通信网_要闻精选 | `http://www.c114.com.cn/rss/rss_news_489.xml` | 0.9 | media |
+| T 光电 | RSS | C114中国通信网_设备商 | `http://www.c114.com.cn/rss/rss_news_18.xml` | 0.9 | media |
+| T 光电 | RSS | C114中国通信网_通信财经 | `http://www.c114.com.cn/rss/rss_news_24.xml` | 0.9 | media |
+| T 光电 | RSS | EDN 电子工程专辑（关键词过滤） | `https://www.edn.com/feed/` | 0.6 | media |
+| T 光电 | RSS | IEEE Spectrum（关键词过滤） | `https://spectrum.ieee.org/rss/fulltext` | 0.7 | media |
+| T 光电 | RSS | LEDinside 英文 | `https://www.ledinside.com/rss` | 0.8 | media |
+| T 光电 | RSS | Laser Focus World | `https://www.laserfocusworld.com/__rss/website-scheduled-con…` | 0.8 | media |
+| T 光电 | RSS | Nature Photonics | `https://www.nature.com/nphoton.rss` | 0.9 | official |
+| T 光电 | RSS | Phys.org 物理新闻（关键词过滤） | `https://phys.org/rss-feed/physics-news/` | 0.6 | media |
+| T 光电 | RSS | Physics World（关键词过滤） | `https://physicsworld.com/feed/` | 0.7 | media |
+| T 光电 | RSS | YouTube·Edmund Optics（关键词过滤） | `https://www.youtube.com/feeds/videos.xml?channel_id=UCA3_rC…` | 0.6 | media |
+| T 光电 | RSS | YouTube·Photonics Media（关键词过滤） | `https://www.youtube.com/feeds/videos.xml?channel_id=UCEBZpt…` | 0.6 | media |
+| T 光电 | RSS | YouTube·SPIETV（关键词过滤） | `https://www.youtube.com/feeds/videos.xml?channel_id=UC0GnZ4…` | 0.6 | media |
+| T 光电 | RSS | YouTube·Thorlabs（关键词过滤） | `https://www.youtube.com/feeds/videos.xml?channel_id=UCS0b3D…` | 0.6 | media |
+| T 光电 | RSS | arXiv 光学与光子学 (physics.optics) | `http://export.arxiv.org/rss/physics.optics` | 0.8 | official |
+| P 物理 | RSS | CERN 新闻 | `https://home.cern/news/rss` | 0.7 | official |
+| P 物理 | RSS | MIT News 物理 | `https://news.mit.edu/rss/topic/physics` | 0.7 | official |
+| P 物理 | RSS | Nature Physics 学科聚合 | `https://www.nature.com/subjects/physics.rss` | 0.7 | official |
+| P 物理 | RSS | Nature 量子物理 | `https://www.nature.com/subjects/quantum-physics.rss` | 0.7 | official |
+| P 物理 | RSS | New Scientist 物理 | `https://www.newscientist.com/subject/physics/feed/` | 0.7 | media |
+| P 物理 | RSS | Phys.org 物理新闻 | `https://phys.org/rss-feed/physics-news/` | 0.7 | media |
+| P 物理 | RSS | Quanta Magazine | `https://www.quantamagazine.org/feed/` | 0.7 | media |
+| P 物理 | RSS | arXiv quant-ph 论文速递 | `https://arxiv.org/rss/quant-ph` | 0.4 | official |
+| P 物理 | RSS | 知识分子 | `http://www.zhishifenzi.com/rss` | 0.7 | media |
+| A 天文 | RSS | Astronomy Magazine | `https://www.astronomy.com/feed` | 0.7 | media |
+| A 天文 | RSS | ESA 空间科学 | `https://www.esa.int/rssfeed/Our_Activities/Space_Science` | 0.7 | official |
+| A 天文 | RSS | LIGO | `https://www.ligo.org/feed/` | 0.7 | official |
+| A 天文 | RSS | MIT News 太空探索 | `https://news.mit.edu/rss/topic/space-exploration` | 0.7 | official |
+| A 天文 | RSS | NASA 快讯 | `https://www.nasa.gov/rss/dyn/breaking_news.rss` | 0.7 | official |
+| A 天文 | RSS | Nature 天文和天体物理 | `https://www.nature.com/subjects/astronomy-and-astrophysics.rss` | 0.7 | official |
+| A 天文 | RSS | New Scientist 太空 | `https://www.newscientist.com/subject/space/feed/` | 0.7 | media |
+| A 天文 | RSS | Phys.org 太空新闻 | `https://phys.org/rss-feed/space-news/` | 0.7 | media |
+| A 天文 | RSS | Universe Today | `https://www.universetoday.com/feed/` | 0.7 | media |
+| A 天文 | RSS | arXiv astro-ph.CO 论文速递 | `https://arxiv.org/rss/astro-ph.CO` | 0.4 | official |
 
 > X/Twitter 为**可选源**（默认不启用）：`collector/sources.json` 顶部 `_x_twitter_optional`
 > 有配置示例。RSSHub 的 `/twitter/user/:id` 路由需要自建 RSSHub 实例（或可用的公共实例），
 > 且 X 反爬严格、可能需要登录态；启用时把示例对象加入 `rss` 数组即可。
 >
 > 抓取说明：COEMA 页面实际为 GBK 编码（meta 声明为 utf-8）；OFweek 为 GB2312；C114 RSS 为 GBK 编码的 RSS 2.0；Nature Photonics 为 RSS 1.0 (RDF)。采集器已做对应处理。源配置在 `collector/sources.json`，可自由增删。
+>
+> 分级说明：`tier=official`（官方/协会/政府/一手）18 个、`tier=media`（媒体）27 个，精选门槛分别为 55 / 65 分。
 
 ## 打分模型（透明可复现）
 
@@ -182,17 +230,31 @@ python collector/collect.py --images     # 可选：SenseNova 生图配图（需
 ## 目录结构
 
 ```
-opto-hot/
+pat-hot/
 ├── collector/
-│   ├── collect.py        # 主脚本：采集→清洗→分类→打分→聚类→输出
-│   ├── sources.json      # 数据源配置（RSS / HTML 解析规则 + tier 分级）
-│   └── config.json       # 集中配置：评分权重/精选门槛/聚类阈值/日报编排/LLM与生图
-├── data/                 # 生成的数据（JSON / CSV）
-├── dist/index.html       # 生成的 HTML 报告
-├── .github/workflows/update.yml  # 每 6 小时自动更新
-├── README.md
-└── LICENSE               # MIT
+│   ├── collect.py        # 主脚本：采集→清洗去重→分类→打分→聚类→日报/趋势→输出
+│   ├── channels.json     # 三频道定义（P 物理 / A 天文 / T 光电）
+│   ├── sources.json      # 数据源配置（RSS / HTML 解析规则 + tier 分级 + channel 归属）
+│   ├── config.json       # 集中配置：评分权重/精选门槛/聚类阈值/日报编排/抓取/LLM与生图
+│   └── templates/        # 单页站点模板（app.html / app.css / app.js，构建时内联）
+├── data/<频道>/          # 采集产物：items / hot-topics / daily / dailies / trends / report.csv
+├── dist/                 # 部署产物（GitHub Pages 根目录）
+│   ├── index.html        # 三频道单页，数据全部内嵌，可离线打开
+│   ├── api/v1/<频道>/    # 按频道的静态 JSON API
+│   ├── api/v1/*.json     # 重构前的扁平地址，内容 = T 光电频道（向后兼容，勿删）
+│   ├── feed.xml          # 主 RSS（T 光电）
+│   ├── feed/<频道>/category/*.xml 与 feed/category/*.xml  # 分类 RSS（新/旧两种地址）
+│   └── llms.txt          # LLM / Agent 友好入口
+├── agent/skills/opto-hot # 可安装的 Agent Skill（光电频道）
+├── tests/                # 纯标准库单元测试（python -m unittest discover -s tests）
+├── functions/api/summarize.js  # Cloudflare Pages Function（按需中文摘要，仅 CF 侧生效）
+├── scripts/              # 本地计划任务与手动部署脚本
+└── .github/workflows/    # update.yml（定时采集+自检+部署）/ pages.yml（推送即部署）
 ```
+
+`dist/api/v1/*.json`、`dist/data/*.json`、`dist/feed/category/*.xml` 这些**扁平地址是重构前就发布
+给外部消费者（RSS 订阅、Agent Skill、llms.txt、README）的兼容层**，由 `collect.py` 每次运行时把
+T 光电频道镜像过去。`python collector/collect.py --check` 会在提交前确认它们都在。
 
 ## 每天 6:00 / 18:00（北京时间）自动更新
 
@@ -206,6 +268,10 @@ opto-hot/
 3. `python collector/collect.py --check` 自检对外契约，不通过就不提交
 4. 有变化则提交并推送数据（`chore: 刷新 PAT-HOT 数据 …`）
 5. **直接部署 GitHub Pages**（`actions/deploy-pages`），线上站点立即更新
+6. `python collector/collect.py --check-live` 回读线上页面做同源断言（样式完整 +
+   三频道齐全 + GitHub Pages 不落后于本次提交）。部署"成功"不等于内容正确——
+   2026-10-12 的坏产物正是部署成功上线的。此步只告警不红（Pages 传播有延迟，且
+   坏产物已在线上，跑红也不回滚）；pages.dev 是手动发布，数据落后只提示。
 
 也可在 Actions 页面手动 `workflow_dispatch` 触发。注意：GitHub 服务器位于海外，个别国内站点可能超时，采集器对每个源单独容错，单源失败不影响整体输出。
 
@@ -237,7 +303,7 @@ wrangler pages deploy <静态资源目录> --project-name pat-hot --branch maste
 `--branch master` 即 production；换成别的分支名就是预览部署，验证后再用
 `wrangler pages deployment list --project-name pat-hot` 确认。
 
-两个已知坑（2026-10-12 实测）：
+三个已知坑（2026-10-12 实测）：
 
 1. **Pages Function 发布偶发 `Unknown internal error occurred`**：Cloudflare 侧的间歇性
    失败，同一次产物重试 2-3 次即可成功；production 发布失败时旧线上产物不受影响，可放心重试。
@@ -245,6 +311,12 @@ wrangler pages deploy <静态资源目录> --project-name pat-hot --branch maste
    （报 `Failed to write to output file ... Access is denied`，连写到 `C:\` 也失败）。
    绕法：把该 exe 复制一份到 `C:\` 下并用 `ESBUILD_BINARY_PATH` 指向它：
    `env:ESBUILD_BINARY_PATH = "C:\...\esbuild.exe"; wrangler pages deploy ...`。
+3. **不要手工把 index.html 转义后再上传**：曾有一次线上 `pat-hot.pages.dev` 整段内联 CSS
+   的换行变成字面量 `\n`（反斜杠+n），浏览器把每行当畸形声明全部丢弃，站点退化成无样式裸
+   HTML。根因是上传的产物被二次转义，不是 `collect.py` 的构建问题（本地 `dist/` 一直干净）。
+   发布务必直接 `wrangler pages deploy dist`（部署仓库里 `--check` 通过的 `dist/`），
+   不要经任何"读进来再写出去"的中间脚本。`--check` 现已加内联 CSS 完整性断言，坏产物当场拦下；
+   发完再跑一次 `python collector/collect.py --check-live` 回读线上确认（见上节第 6 步）。
 
 > 为什么是 Pages Function 而不是独立 Worker：`*.workers.dev` 在中国大陆被 DNS 污染
 > 且 TCP 不通（实测解析到 Facebook 段），而本站受众正是无法访问外网的用户。同站

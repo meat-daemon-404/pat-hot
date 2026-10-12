@@ -24,6 +24,7 @@ import io
 import json
 import os
 import re
+import shutil
 import sys
 import time
 import urllib.error
@@ -60,6 +61,8 @@ CHANNEL_DEFAULT = _CHANNELS_DOC.get("default", "tech")
 # 当前频道上下文（run_channel 开始时设置；classify/build_daily 等通过它取规则）
 _CH = CHANNEL_DEFAULT
 _CHANNEL_TIERS = {}  # ch_id -> {source_name: tier}
+# 本进程各频道抓取概况 {ch_id: {n_src, failed, raw}}，供 main() 判断本次抓取健康度；不落盘
+_RUN_STATS = {}
 CATEGORY_RULES = []
 CATEGORY_ORDER = []
 CAT_CLS = {}
@@ -108,6 +111,13 @@ DEFAULT_CONFIG = {
         "status_trending_min_sources": 3,
     },
     "clustering": {"tfidf_threshold": 0.14},
+    "fetch": {
+        "timeout": 25, "retries": 1, "max_bytes": 12582912,
+        "text_timeout": 15,
+        # 失败源占比超过它就拒绝写出：宁可 CI 红一次、线上继续端著上一份好数据，
+        # 也不要发布一个"页面 200 但内容很薄"的静默降级站点。
+        "max_source_failure_ratio": 0.6,
+    },
     "daily": {
         "headline_count": 1, "picks_count": 4, "flash_count": 10,
         "max_per_source": 2, "dedup_window_days": 7, "per_category_limit": 8,
@@ -250,13 +260,64 @@ def now_utc():
     return datetime.now(timezone.utc)
 
 
-def http_get(url, timeout=25):
-    req = urllib.request.Request(url, headers={
-        "User-Agent": UA,
-        "Accept": "application/rss+xml, application/xml;q=0.9, text/html;q=0.8, */*;q=0.7",
-    })
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read(), r.headers.get("Content-Type", "")
+MAX_BYTES = 12 * 1024 * 1024  # 兜底上限；实际值取 CONFIG["fetch"]["max_bytes"]
+
+
+def _decode_body(raw, encoding, ctype):
+    enc = (encoding or "").lower()
+    if "gzip" in enc or (ctype or "").lower().find("gzip") >= 0 or raw[:2] == b"\x1f\x8b":
+        try:
+            import gzip
+            return gzip.decompress(raw)
+        except Exception:
+            return raw
+    if "deflate" in enc:
+        try:
+            import zlib
+            return zlib.decompress(raw)
+        except Exception:
+            try:
+                import zlib
+                return zlib.decompressobj(-zlib.MAX_WBITS).decompress(raw)
+            except Exception:
+                return raw
+    return raw
+
+
+def http_get(url, timeout=None, retries=1):
+    """抓取一个 URL，带重试与响应体上限。
+
+    此前任何一次抖动（超时 / 连接重置）都会让整个源在本次运行里消失，而进程仍以
+    0 退出：线上数据悄悄变薄却看不出来。现在做一次退避重试，并把失败计数交给
+    调用方与 main() 的"源失败比例"闸门。
+    """
+    timeout = timeout or (CONFIG.get("fetch", {}) or {}).get("timeout", 25)
+    last = None
+    for attempt in range(retries + 1):
+        try:
+            req = urllib.request.Request(url, headers={
+                "User-Agent": UA,
+                # 不主动请求压缩：urllib 不会自动解压，一旦站点把内容错标成 identity
+                # 就会让整源解析失败而静默掉数据。下面仍会处理"服务器硬塞 gzip"的情况。
+                "Accept": "application/rss+xml, application/xml;q=0.9, text/html;q=0.8, */*;q=0.7",
+            })
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                cap = int((CONFIG.get("fetch", {}) or {}).get("max_bytes", MAX_BYTES))
+                raw = r.read(cap + 1)
+                if len(raw) > cap:
+                    raise ValueError("响应超过上限 %d 字节" % cap)
+                body = _decode_body(raw, r.headers.get("Content-Encoding", ""),
+                                    r.headers.get("Content-Type", ""))
+                return body, r.headers.get("Content-Type", "")
+        except Exception as e:
+            last = e
+            # 4xx（除 429）是稳定失败：权限/不存在，重试没意义；超时与 5xx 才重试
+            code = getattr(e, "code", None)
+            if isinstance(code, int) and 400 <= code < 500 and code != 429:
+                break
+            if attempt < retries:
+                time.sleep(1.5 * (attempt + 1))
+    raise last if last else RuntimeError("http_get 未知失败: %s" % url)
 
 
 def abs_url(url, base):
@@ -631,7 +692,13 @@ def fetch_html(cfg, limit):
 
 
 def collect(sources, limit, skip_rss=False, skip_html=False):
+    """抓取一个频道的全部源。返回 (条目列表, 失败的源名列表)。
+
+    失败源必须回报给调用方：单个源抖动只让数据变薄，但如果整频道全挂，
+    write_outputs 会写出一个空站点，而进程仍以 0 退出、CI 仍显示绿色。
+    """
     raw = []
+    failed = []
     for stype in ("rss", "html"):
         if stype == "rss" and skip_rss:
             continue
@@ -649,7 +716,8 @@ def collect(sources, limit, skip_rss=False, skip_html=False):
                 raw.extend(got)
             except Exception as e:
                 log("[FAIL] %-4s %s: %s" % (stype, cfg["name"], e))
-    return raw
+                failed.append(cfg["name"])
+    return raw, failed
 
 
 # ---------------- 热点聚类 ----------------
@@ -1018,10 +1086,10 @@ def build_daily(items, topics, generated):
     }
 
 
-def fetch_text(url, timeout=15):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        data = r.read()
+def fetch_text(url, timeout=None, retries=1):
+    """详情页正文抓取（政策/招投标字段解析用）。走与 http_get 相同的重试与体积上限。"""
+    timeout = timeout or (CONFIG.get("fetch", {}) or {}).get("text_timeout", 15)
+    data, _ = http_get(url, timeout=timeout, retries=retries)
     cs = detect_charset(data)
     txt = data.decode(cs, "replace")
     txt = re.sub(r"<script[\s\S]*?</script>|<style[\s\S]*?</style>", " ", txt, flags=re.I)
@@ -1094,6 +1162,86 @@ def role_tag(source):
     if any(k in source for k in ("OFweek", "LEDinside", "CIOE", "COEMA", "C114")):
         return "行业媒体"
     return "媒体"
+
+
+def _daily_titles(e):
+    """一条日报里已对外发布的全部标题（头条/看点/快讯/分类正文）。"""
+    s = set()
+    if not e:
+        return s
+    if e.get("headline"):
+        s.add(e["headline"].get("title"))
+    for k in ("picks", "flash"):
+        for a in e.get(k, []) or []:
+            s.add(a.get("title"))
+    for sec in e.get("sections", []) or []:
+        for a in sec.get("articles", []) or []:
+            s.add(a.get("title"))
+    return {t for t in s if t}
+
+
+def _merge_daily_entry(old, new):
+    """当天与昨天的日报合并：以本次重算为准，但已对外发布的条目一条都不能少。
+
+    为什么不能整条覆盖（原实现 result.update(out) 的问题）：分数每次运行都会漂移，
+    重算会把已公开的条目挤出 Top-N——实测一次重跑改写 34/106 天、丢掉 133 条。
+    为什么不能只追加：源站 feed 会滚动，本次看不到的旧条目若不保留就会凭空消失。
+    所以这里用「最新重算为基底 + 找回缺失的已发布条目」，两头都不丢。
+    """
+    if not old:
+        return new
+    base = dict(new or {})
+    have = _daily_titles(base)
+    rescued = 0
+
+    def take(a, cat=None):
+        nonlocal rescued
+        t = a.get("title")
+        if not t or t in have:
+            return None
+        have.add(t)
+        rescued += 1
+        return dict(a)
+
+    # 头条/看点/快讯里的已发布条目：无分类信息，统一补进快讯，不动正文 Top-N
+    extra_flash = []
+    hl = old.get("headline")
+    if isinstance(hl, dict):
+        r = take(hl)
+        if r:
+            extra_flash.append(r)
+    for k in ("picks", "flash"):
+        for a in old.get(k, []) or []:
+            r = take(a)
+            if r:
+                extra_flash.append(r)
+    if extra_flash:
+        base["flash"] = list(base.get("flash", []) or []) + extra_flash
+
+    # 分类正文里已发布的条目：补回同分类
+    by_cat = {}
+    for sec in old.get("sections", []) or []:
+        cat = sec.get("category")
+        for a in sec.get("articles", []) or []:
+            r = take(a, cat)
+            if r:
+                by_cat.setdefault(cat, []).append(r)
+    if by_cat:
+        sections = [dict(s) for s in (base.get("sections", []) or [])]
+        idx = {s.get("category"): i for i, s in enumerate(sections)}
+        for cat, arts in by_cat.items():
+            if cat in idx:
+                sections[idx[cat]]["articles"] = list(sections[idx[cat]].get("articles", []) or []) + arts
+            else:
+                sections.append({"category": cat, "articles": arts})
+        base["sections"] = sections
+
+    base["topic_ids"] = sorted(set(old.get("topic_ids", []) or [])
+                               | set(base.get("topic_ids", []) or []))
+    body_n = (1 if base.get("headline") else 0) + len(base.get("picks", []) or [])
+    base["tocCount"] = body_n + len(base.get("flash", []) or [])
+    base["amended"] = int((old or {}).get("amended", 0) or 0) + rescued
+    return base
 
 
 def build_dailies(items, existing=None):
@@ -1201,7 +1349,30 @@ def build_dailies(items, existing=None):
             "readMinutes": max(1, round(body_chars / 300)),
         }
     result = dict(existing or {})
-    result.update(out)
+    # 归档语义：已发布的历史某天不再被后续运行改写。
+    # 此前 result.update(out) 会用"当天分数 Top-N"覆盖旧条目，而分数随每次运行漂移，
+    # 实测一次重跑就改写了 34/106 天、丢掉 133 个已公开条目 —— 日报归档必须不可变。
+    # 但"昨天"仍要允许补写：每天 06:00 的那次运行会发现前一天晚间发布、
+    # 当时还没被抓到的条目，若严格锁死昨天就会把它们永久漏出日报归档。
+    _today = datetime.now(TZ_CN).date()
+    refresh_days = max(0, int(dc.get("refresh_days", 1) or 0))
+    refresh_floor = (_today - timedelta(days=refresh_days)).isoformat()
+    kept, merged_days, written, rescued = 0, 0, 0, 0
+    for d, entry in out.items():
+        prev = result.get(d)
+        if prev is None:
+            result[d] = entry
+            written += 1
+        elif d >= refresh_floor:
+            merged = _merge_daily_entry(prev, entry)
+            rescued += int(merged.get("amended", 0) or 0) - int((prev or {}).get("amended", 0) or 0)
+            merged_days += 1
+            result[d] = merged
+        else:
+            kept += 1
+    if kept or merged_days:
+        log("[*] 归档保护：%d 天原样保留，%d 天按重算刷新（近 %d 天，找回已发布条目 %d 条），%d 天新建"
+            % (kept, merged_days, refresh_days, rescued, written))
     # 保留期改为配置驱动（此前写死 365 天，README 声称"参数全部集中在 config.json"）
     keep_days = int(dc.get("archive_days", 365) or 365)
     cutoff = (datetime.now(TZ_CN).date() - timedelta(days=keep_days)).isoformat()
@@ -1325,11 +1496,15 @@ def render_app_html(channel_results, generated):
     channels = {}
     for ch_id, (items, topics, daily, dailies, trends) in channel_results.items():
         ch = CHANNELS[ch_id]
+        # 本频道数据自己的收录时间；沿用上次产物时不能冒用本次运行时刻，
+        # 否则页面上"生成于 …"会让旧频道看起来像刚刷新过。
+        stamps = [i.get("discovered_at") for i in (items or []) if i.get("discovered_at")]
+        ch_gen = max(stamps) if stamps else generated.isoformat()
         channels[ch_id] = {
             "id": ch_id,
             "letter": ch["letter"],
             "name": ch["name"],
-            "generatedAt": generated.isoformat(),
+            "generatedAt": ch_gen,
             "catCls": dict(ch["category_slug"]),
             "catEn": dict(ch["category_en"]),
             "items": items,
@@ -1363,7 +1538,7 @@ def build_rss(items, title, link, description, limit=50):
     its = sorted(items, key=lambda it: it["discovered_at"], reverse=True)[:limit]
     pub_raw = max(it["discovered_at"] for it in its) if its else now_utc().isoformat()
     # RSS 2.0 要求 RFC 822 日期；同时保留绝对站点地址供阅读器展示
-    pub = rfc822(pub_raw) or now_utc().strftime("%a, %d %b %Y %H:%M:%S +0000")
+    pub = rfc822(pub_raw) or format_datetime(now_utc(), usegmt=True)
     out = []
     for it in its:
         idate = rfc822(it["discovered_at"]) or pub
@@ -1385,6 +1560,8 @@ def build_openapi(generated):
     paths = {
         "/api/v1/index.json": ep("接口索引"),
         "/feed.xml": ep("RSS（最新 50 条，T 光电频道）"),
+        "/feed/category/{slug}.xml": ep("兼容分类 RSS（重构前地址，内容 = %s 频道）"
+                                        % CHANNELS[FLAT_ALIAS_CHANNEL]["name"]["zh"]),
     }
     for ch_id in CHANNEL_ORDER:
         ch = CHANNELS[ch_id]
@@ -1394,6 +1571,13 @@ def build_openapi(generated):
         paths["/api/v1/%s/daily.json" % ch_id] = ep("%s：统计聚合" % ch["name"]["zh"])
         paths["/api/v1/%s/stories.json" % ch_id] = ep("%s：事件故事" % ch["name"]["zh"])
         paths["/api/v1/%s/trends.json" % ch_id] = ep("%s：趋势" % ch["name"]["zh"])
+    # 重构前就发布的扁平地址（内容 = FLAT_ALIAS_CHANNEL 频道），仍在线且持续更新，
+    # 必须一并声明；否则 Agent 读 OpenAPI 会以为这些地址不存在。
+    for k, zh in (("items", "全部条目"), ("hot-topics", "热点榜"),
+                  ("dailies", "日报归档（裸日期字典）"), ("daily", "统计聚合"),
+                  ("stories", "事件故事"), ("trends", "趋势")):
+        paths["/api/v1/%s.json" % k] = ep(
+            "兼容地址（%s 频道）：%s" % (CHANNELS[FLAT_ALIAS_CHANNEL]["name"]["zh"], zh))
     return {
         "openapi": "3.1.0",
         "info": {"title": "PAT-HOT API v1", "version": "2.0.0",
@@ -1628,6 +1812,17 @@ def write_outputs(channel_results, generated):
             with open(os.path.join(feed_flat, slug + ".xml"), "w", encoding="utf-8") as f:
                 f.write(build_rss(its, "PAT-HOT · %s" % cat,
                                   SITE_BASE + "#/all", cat, 30))
+        # 政策/招投标库只有 T 光电频道产出，但线上一直有扁平地址
+        # （data/biz.json、dist/data/biz.json、dist/api/v1/biz.json、biz.csv）。
+        # 不镜像就会静默变旧：文件在、返回 200，内容却是上一次的。
+        for name, dest in (("biz.json", os.path.join(api_v1_dir, "biz.json")),
+                           ("biz.json", os.path.join(flat_dist, "biz.json")),
+                           ("biz.json", os.path.join(DATA_DIR, "biz.json")),
+                           ("biz.csv", os.path.join(flat_dist, "biz.csv")),
+                           ("biz.csv", os.path.join(DATA_DIR, "biz.csv"))):
+            src_p = os.path.join(DATA_DIR, FLAT_ALIAS_CHANNEL, name)
+            if os.path.exists(src_p):
+                shutil.copyfile(src_p, dest)
         log("[*] 向后兼容扁平产物已镜像（频道 %s -> data/、dist/data/、dist/api/v1/、dist/feed/category/）"
             % FLAT_ALIAS_CHANNEL)
 
@@ -1635,10 +1830,11 @@ def write_outputs(channel_results, generated):
     with open(os.path.join(DIST_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(render_app_html(channel_results, generated))
 
-    # ---- 主 feed（T 光电频道，保持老订阅者兼容） ----
-    tech_items = channel_results.get("tech", ([], None, None, None, None))[0] if "tech" in channel_results else []
+    # ---- 主 feed（默认频道，保持老订阅者兼容） ----
+    _alias_items = channel_results.get(FLAT_ALIAS_CHANNEL, ([], None, None, None, None))[0] \
+        if FLAT_ALIAS_CHANNEL in channel_results else []
     with open(os.path.join(DIST_DIR, "feed.xml"), "w", encoding="utf-8") as f:
-        f.write(build_rss(tech_items, "PAT-HOT 热点", SITE_BASE,
+        f.write(build_rss(_alias_items, "PAT-HOT 热点", SITE_BASE,
                           "物理·天文·光电热点统计（AIHOT 模式）", 50))
 
     # ---- API 索引 + OpenAPI ----
@@ -1648,8 +1844,16 @@ def write_outputs(channel_results, generated):
     for ch_id in channel_results:
         for k in ("items", "hot-topics", "dailies", "daily", "stories", "trends"):
             eps["%s/%s" % (ch_id, k)] = "api/v1/%s/%s.json" % (ch_id, k)
+    # 重构前就已发布的扁平地址（内容 = T 光电频道）也登记进索引，
+    # 否则 Agent 读 index.json 会以为只有频道地址，找不到仍在线上的老地址。
+    if FLAT_ALIAS_CHANNEL in channel_results:
+        for k in ("items", "hot-topics", "dailies", "daily", "stories", "trends"):
+            eps["legacy:%s" % k] = "api/v1/%s.json" % k
     dump({"name": "PAT-HOT API v1",
-          "description": "物理·天文·光电热点统计静态 JSON 接口（免鉴权，每天 6:00/18:00 北京时间更新）",
+          "description": "物理·天文·光电热点统计静态 JSON 接口（免鉴权，每天 6:00/18:00 北京时间更新）。"
+                         "api/v1/<频道>/* 为当前布局；legacy:* 是重构前的扁平地址，内容等同 T 光电频道，仍持续更新。",
+          "channels": list(channel_results),
+          "defaultChannel": CHANNEL_DEFAULT,
           "endpoints": eps},
          os.path.join(api_v1, "index.json"))
     with open(os.path.join(api_v1, "openapi.json"), "w", encoding="utf-8") as f:
@@ -1848,11 +2052,20 @@ def _sensenova_chat(messages, cfg, max_retries=3):
             return json.loads(content)
         except Exception as e:
             last_err = e
-            es = str(e)
-            if "401" in es or "403" in es or "Unauthorized" in es:
+            # 用真实 HTTP 状态码判断，不用字符串匹配：原实现写 "401" in str(e)，
+            # 任何文本里恰好含 401/403（字节数、端口、标题）都会误判成认证失败而放弃重试。
+            code = getattr(e, "code", None)
+            if isinstance(code, int) and code in (401, 403):
+                log("[x] LLM 认证失败（%d），不重试：%s" % (code, str(e)[:120]))
                 raise
             if attempt < max_retries - 1:
                 wait = 2 ** (attempt + 1)
+                # 429 时尊重服务端 Retry-After，退避过短只会继续撞配额
+                if isinstance(code, int) and code == 429:
+                    try:
+                        wait = max(wait, int(float(e.headers.get("Retry-After", wait))))
+                    except Exception:
+                        pass
                 log("[!] LLM 请求失败（第%d/%d次），%ds后重试: %s" % (attempt + 1, max_retries, wait, e))
                 time.sleep(wait)
     raise last_err
@@ -2047,6 +2260,39 @@ def llm_extract(items, cfg):
     return done
 
 
+def load_carried_channels(missing, generated):
+    """把本次没有采集的频道，从上一次落盘的产物读回来。
+
+    否则单频道运行（--channel tech）会写出一个只含 tech 的 dist/index.html：
+    前端标签页仍按 CHANNEL_ORDER 渲染出 P/A/T 三个页签，点了却没反应；
+    api/v1/index.json 也不再列出 physics/astro，而磁盘上那两个频道的 JSON
+    还在（旧内容）。站点自相矛盾，且 --check 看不见——因为它只查文件在不在。
+    """
+    out = {}
+    for ch_id in missing:
+        ch_data = os.path.join(DATA_DIR, ch_id)
+        try:
+            with open(os.path.join(ch_data, "items.json"), encoding="utf-8") as f:
+                items = (json.load(f) or {}).get("items", [])
+            with open(os.path.join(ch_data, "hot-topics.json"), encoding="utf-8") as f:
+                topics = (json.load(f) or {}).get("items", [])
+            with open(os.path.join(ch_data, "daily.json"), encoding="utf-8") as f:
+                daily = json.load(f)
+            with open(os.path.join(ch_data, "dailies.json"), encoding="utf-8") as f:
+                doc = json.load(f) or {}
+                dailies = doc.get("dailies", doc) or {}
+            with open(os.path.join(ch_data, "trends.json"), encoding="utf-8") as f:
+                trends = json.load(f)
+        except Exception as e:
+            log("[!] [%s] 无法回读上次产物（%s），本次站点将不含该频道" % (ch_id, e))
+            continue
+        vintage = (items[0].get("discovered_at") if items else None) or "未知"
+        log("[*] [%s] 本次未采集，沿用上次产物：%d 条（收录于 %s）"
+            % (ch_id, len(items), str(vintage)[:19]))
+        out[ch_id] = (items, topics, daily, dailies, trends)
+    return out
+
+
 def run_channel(ch_id, sources, args, generated):
     """运行单个频道的完整管线：采集→去重→分类→聚类→打分→日报→趋势。
     返回 (items, topics, daily, dailies, trends)。"""
@@ -2056,8 +2302,13 @@ def run_channel(ch_id, sources, args, generated):
     n_src = len(ch_sources["rss"]) + len(ch_sources["html"])
     log("[*] 频道 %s（%s）：%d 个源，开始采集（每源上限 %d 条）..." % (
         ch_id, ch_name(ch_id), n_src, args.limit))
-    raw = collect(ch_sources, args.limit, args.skip_rss, args.skip_html)
-    log("[*] [%s] 原始条目合计 %d 条" % (ch_id, len(raw)))
+    raw, failed = collect(ch_sources, args.limit, args.skip_rss, args.skip_html)
+    log("[*] [%s] 原始条目合计 %d 条（%d/%d 个源失败）" % (ch_id, len(raw), len(failed), n_src))
+    _RUN_STATS[ch_id] = {"n_src": n_src, "failed": list(failed), "raw": len(raw)}
+    # 有配置源却一条都没拿到 = 整频道抓取失败。此时继续写出会用空数据覆盖线上，
+    # 页面 200 但内容为空，比 404 更难被发现；直接中止，让 CI 变红而不是提交空站点。
+    if n_src and not raw:
+        raise RuntimeError("[%s] %d 个源全部失败，拒绝写出空数据" % (ch_id, n_src))
 
     source_weight = {}
     global _SOURCE_TIER
@@ -2161,8 +2412,17 @@ def run_channel(ch_id, sources, args, generated):
         try:
             with open(_dp, encoding="utf-8") as _f:
                 existing_dailies = (json.load(_f) or {}).get("dailies", {}) or {}
-        except Exception:
-            existing_dailies = {}
+        except Exception as e:
+            # 归档损坏时绝不当成"没有历史"：那会让下一次写出把上百天日报永久抹掉。
+            # 备份坏文件、中止本频道写出，人工可恢复。
+            log("[x] [%s] 日报归档无法解析，拒绝以空历史覆盖：%s" % (ch_id, e))
+            try:
+                bad = _dp + ".corrupt-%s" % now_utc().strftime("%Y%m%dT%H%M%SZ")
+                shutil.copyfile(_dp, bad)
+                log("[!] [%s] 坏归档已备份为 %s" % (ch_id, os.path.basename(bad)))
+            except Exception as e2:
+                log("[!] [%s] 坏归档备份失败：%s" % (ch_id, e2))
+            raise RuntimeError("日报归档损坏，已中止以免覆盖历史：%s" % _dp)
     dailies = build_dailies(items, existing_dailies)
     trends = build_trends(dailies, generated, CONFIG)
     log("[*] [%s] 趋势聚合完成：本周新事件 %d 个，持续发酵 %d 个" %
@@ -2199,6 +2459,45 @@ def expected_channel_endpoints(ch_id):
     return ["api/v1/%s/items.json" % ch_id, "api/v1/%s/hot-topics.json" % ch_id,
             "api/v1/%s/dailies.json" % ch_id, "api/v1/%s/daily.json" % ch_id,
             "api/v1/%s/stories.json" % ch_id, "api/v1/%s/trends.json" % ch_id]
+
+
+def inline_style_block(html):
+    """取 <style>…</style> 之间的内联 CSS；没有则返回 None。"""
+    i = html.find("<style")
+    if i < 0:
+        return None
+    i = html.find(">", i)
+    if i < 0:
+        return None
+    j = html.find("</style>", i)
+    if j < 0:
+        return None
+    return html[i + 1:j]
+
+
+def check_inline_css(css):
+    """内联 CSS 必须是真换行的原始样式，不能是被二次转义的字符串。
+
+    2026-10-12 线上事故：某次手工 wrangler 部署上传的 index.html 里，整段 CSS 的
+    换行变成了字面量 \\n（反斜杠+n），浏览器把每一行当成一个畸形声明全部丢弃，
+    站点退化成无样式裸 HTML。而 --check 当时只查"文件在不在 + 快照 JSON 能不能解析"，
+    完全看不见这类"文件存在但内容坏了"的产物，所以坏部署顺利上线。
+    """
+    problems = []
+    if css is None:
+        return ["dist/index.html 找不到内联 <style> 块（页面会完全没有样式）"]
+    # 字面量 \n：真换行被转义的直接证据（app.css 里没有、也不该有这种写法）
+    lit = css.count("\\n")
+    if lit:
+        problems.append("dist/index.html 内联 CSS 里有 %d 处字面量 \\n（换行被二次转义），"
+                        "浏览器会丢弃全部样式——线上会变成裸 HTML" % lit)
+    if "\n" not in css:
+        problems.append("dist/index.html 内联 CSS 没有任何真换行，疑似整段被压成字符串")
+    # 花括号不配对 = CSS 被截断或转义到结构破坏
+    if css.count("{") != css.count("}"):
+        problems.append("dist/index.html 内联 CSS 花括号不配对（{ %d / } %d），样式表已损坏"
+                        % (css.count("{"), css.count("}")))
+    return problems
 
 
 def check_contract(verbose=True):
@@ -2241,7 +2540,8 @@ def check_contract(verbose=True):
     # RSS：日期必须 RFC 822，<link> 必须是阅读器可解析的绝对地址
     p = os.path.join(DIST_DIR, "feed.xml")
     if os.path.exists(p):
-        txt = open(p, encoding="utf-8").read()
+        with open(p, encoding="utf-8") as f:
+            txt = f.read()
         if re.search(r"<pubDate>\d{4}-\d{2}-\d{2}T", txt):
             problems.append("feed.xml 的 pubDate 仍是 ISO 格式（阅读器会当成无日期）")
         lk = re.search(r"<link>([^<]*)</link>", txt)
@@ -2251,7 +2551,8 @@ def check_contract(verbose=True):
     # 对外文档不能残留改名前的死链或相对地址
     p = os.path.join(DIST_DIR, "llms.txt")
     if os.path.exists(p):
-        txt = open(p, encoding="utf-8").read()
+        with open(p, encoding="utf-8") as f:
+            txt = f.read()
         if "opto-hot" in txt:
             problems.append("llms.txt 仍指向已改名的旧仓库地址")
         if "./api/v1" in txt:
@@ -2262,6 +2563,27 @@ def check_contract(verbose=True):
     if not SITE_BASE.startswith("https://"):
         problems.append("SITE_BASE 必须是 https 绝对地址")
 
+    # 单页快照必须含全部频道：此前 --channel tech 重跑会写出"导航有三个页签、
+    # S.channels 只有 tech"的残缺站点，而上面只查文件在不在的检查看不见它。
+    p = os.path.join(DIST_DIR, "index.html")
+    if os.path.exists(p):
+        with open(p, encoding="utf-8") as f:
+            html = f.read()
+        # 内联 CSS 完整性：文件存在但样式被转义坏掉，同样等于线上事故。
+        problems.extend(check_inline_css(inline_style_block(html)))
+        snap = snapshot_of_html(html)
+        if snap is None:
+            problems.append("dist/index.html 里找不到可解析的内嵌快照 const S = …")
+        else:
+            have = set((snap.get("channels") or {}).keys())
+            want = set(CHANNEL_ORDER)
+            if have != want:
+                problems.append("dist/index.html 缺频道数据 %s（导航仍会显示它们）"
+                                % "、".join(sorted(want - have)))
+            for cid, chd in (snap.get("channels") or {}).items():
+                if not (chd.get("items") or []):
+                    problems.append("dist/index.html 频道 %s 的 items 为空" % cid)
+
     if verbose:
         if problems:
             log("[!] 契约自检发现 %d 个问题:" % len(problems))
@@ -2270,6 +2592,109 @@ def check_contract(verbose=True):
         else:
             log("[*] 契约自检通过：扁平兼容地址 + 三频道地址全部就位")
     return problems
+
+
+# ---------------- 线上回读自检（部署完成 ≠ 内容正确） ----------------
+# 背景：2026-10-12 事故——pages.dev 上跑的 index.html 内联 CSS 换行被转义成字面量
+# \n，且是重构前的旧产物；本地产物一直是好的，--check 只查本地，两者都看不见
+# "线上部署错了"这一整类故障。这里把同源断言用到从线上读回的页面上。
+# (地址, 是否容忍数据落后)：GitHub Pages 由 CI 每次部署，落后=传播坏了，硬失败；
+# pages.dev 按设计只在手动 wrangler 发布时更新，数据落后只是提示，但样式坏掉仍是硬失败。
+LIVE_CHECK_TARGETS = [
+    ("https://pat-hot.pages.dev/", True),
+    (SITE_BASE + "index.html", False),
+]
+
+
+def _iso_or_none(s):
+    try:
+        return datetime.fromisoformat(str(s))
+    except (TypeError, ValueError):
+        return None
+
+
+def snapshot_of_html(html):
+    """取内嵌快照 const S = {...} 的 dict；取不到返回 None。
+
+    ;\\r?\\n 两种换行都要认：本地产物在 Windows 上是 CRLF，文本模式读会翻译成 \\n，
+    但从线上二进制 decode 回来的保留 \\r\\n——只写 ;\\n 会把好页面误判成"无快照"。
+    """
+    m = re.search(r"const S = (.*?);\r?\n", html, re.S)
+    if not m:
+        return None
+    try:
+        return json.loads(m.group(1).replace("<\\/", "</"))
+    except Exception:
+        return None
+
+
+def check_live_html(html, label, local_generated=None, allow_stale=False):
+    """对一份"从线上读回来的 index.html"跑与 --check 同源的断言。
+    返回 (problems, warnings)：allow_stale 时"数据落后"降级为警告。"""
+    problems = []
+    warnings = []
+    for x in check_inline_css(inline_style_block(html)):
+        problems.append("[%s] %s" % (label, x))
+    snap = snapshot_of_html(html)
+    if snap is None:
+        problems.append("[%s] 找不到可解析的内嵌快照 const S（多半是旧版产物）" % label)
+        return problems, warnings
+    have = set((snap.get("channels") or {}).keys())
+    want = set(CHANNEL_ORDER)
+    if have != want:
+        problems.append("[%s] 线上频道 %s，缺 %s（部署的是旧产物或残缺产物）"
+                        % (label, sorted(have), "、".join(sorted(want - have)) or "无"))
+    live_gen = _iso_or_none(snap.get("generatedAt"))
+    if live_gen is None:
+        problems.append("[%s] 快照没有可解析的 generatedAt" % label)
+    elif local_generated and live_gen < local_generated:
+        msg = ("[%s] 线上 generatedAt=%s 落后于本地 dist=%s（本地产物没部署上去）"
+               % (label, live_gen.isoformat(), local_generated.isoformat()))
+        (warnings if allow_stale else problems).append(msg)
+    return problems, warnings
+
+
+def local_dist_generated():
+    """本地 dist/index.html 的 generatedAt；读不到返回 None。"""
+    p = os.path.join(DIST_DIR, "index.html")
+    if not os.path.exists(p):
+        return None
+    try:
+        with open(p, encoding="utf-8") as f:
+            snap = snapshot_of_html(f.read())
+    except Exception:
+        return None
+    return _iso_or_none((snap or {}).get("generatedAt"))
+
+
+def check_live(targets=None, timeout=30, verbose=True):
+    """拉取线上页面回读自检；返回 (problems, warnings)。
+    problems 为空表示线上内容健康（GitHub Pages 侧不落后于本地产物）。"""
+    targets = targets or LIVE_CHECK_TARGETS
+    local_gen = local_dist_generated()
+    problems = []
+    warnings = []
+    for u, allow_stale in targets:
+        try:
+            req = urllib.request.Request(
+                u, headers={"User-Agent": "pat-hot-check-live/1.0 (+github.com/sun-zihang/pat-hot)"})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                body = r.read()
+            html = body.decode("utf-8", "replace")
+        except Exception as e:
+            problems.append("[%s] 拉取失败: %s" % (u, e))
+            continue
+        found, warns = check_live_html(html, u, local_gen, allow_stale=allow_stale)
+        problems.extend(found)
+        warnings.extend(warns)
+        if verbose:
+            log("[*] 回读 %s（%d 字节）：%s"
+                % (u, len(body), "OK" if not (found or warns)
+                   else ("发现 %d 个问题" % len(found) if found else "%d 个警告" % len(warns))))
+    if verbose:
+        if not problems and not warnings:
+            log("[*] 线上回读自检通过：样式完整、频道齐全、不落后于本地产物")
+    return problems, warnings
 
 
 def main():
@@ -2289,11 +2714,29 @@ def main():
     ap.add_argument("--check", action="store_true",
                     help="只运行对外契约自检（不采集、不写文件）：确认扁平兼容地址与"
                          "三频道地址都存在且形状正确；有问题时以非零退出码结束。CI 用它在部署前把关。")
+    ap.add_argument("--check-live", action="store_true",
+                    help="回读线上页面做同源断言（内联 CSS 完整性 + 频道齐全 + 不落后于本地 dist）。"
+                         "部署完成不等于内容正确：CI 的 deploy-pages 步骤成功不代表 wrangler 那边"
+                         "的 pages.dev 也发了同一份产物。有问题时以非零退出码结束。")
+    ap.add_argument("--live-url", action="append", default=None, metavar="URL",
+                    help="配合 --check-live：只回读指定地址，可重复；默认回读 pages.dev 与 GitHub Pages。")
     args = ap.parse_args()
 
     if args.check:
         # 只做契约自检（CI 发布前 gate）：不采集、不写文件
         return 1 if check_contract() else 0
+
+    if args.check_live:
+        targets = [(u, False) for u in args.live_url] if args.live_url else None
+        found, warns = check_live(targets=targets)
+        for w in warns:
+            log("[~] " + w)
+        if found:
+            log("[!] 线上回读自检发现 %d 个问题:" % len(found))
+            for x in found:
+                log("      - " + x)
+            return 1
+        return 0
 
     with open(SOURCES_PATH, encoding="utf-8") as f:
         sources = json.load(f)
@@ -2303,6 +2746,28 @@ def main():
     results = {}
     for ch_id in ch_list:
         results[ch_id] = run_channel(ch_id, sources, args, generated)
+
+    # 未采集的频道沿用上次产物，避免单频道运行写出"标签页有三个、数据只有一个"的残缺站点
+    missing = [c for c in CHANNEL_ORDER if c not in results]
+    if missing:
+        results.update(load_carried_channels(missing, generated))
+        for c in CHANNEL_ORDER:
+            if c not in results:
+                log("[x] 频道 %s 既未采集也无历史产物，无法产出完整站点" % c)
+                return 1
+
+    # 抓取健康度闸门：失败源占比过高时拒绝写出。
+    # 半瘫的数据照样能让页面 200，比空页面更难察觉；宁可是 CI 红一次。
+    n_all = sum(_RUN_STATS.get(c, {}).get("n_src", 0) for c in ch_list)
+    n_bad = sum(len(_RUN_STATS.get(c, {}).get("failed", [])) for c in ch_list)
+    if n_all:
+        ratio = n_bad / float(n_all)
+        max_ratio = (CONFIG.get("fetch", {}) or {}).get("max_source_failure_ratio", 0.6)
+        log("[*] 抓取健康度：%d/%d 个源失败（%.0f%%），阈值 %.0f%%"
+            % (n_bad, n_all, ratio * 100, max_ratio * 100))
+        if ratio > max_ratio:
+            log("[x] 失败源比例超过阈值，拒绝写出产物（exit 1）")
+            return 1
 
     write_outputs(results, generated)
     log("[*] 全部完成。各频道条数：%s" % ", ".join(

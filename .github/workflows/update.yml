@@ -32,8 +32,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          # 本项目没有 requirements 文件，依赖清单就写在本工作流的 pip install 里，
+          # 所以缓存键跟随本文件；collect.py 改动频率（78/85 次数据提交碰不到它）
+          # 不能代表依赖是否变化。
           cache: pip
-          cache-dependency-path: collector/collect.py
+          cache-dependency-path: .github/workflows/update.yml
       - name: 安装轻量嵌入模型（真嵌入聚类；失败自动回退 TF-IDF）
         # sentence-transformers 会拉进整套 torch（约 1–3 GB）。这个依赖只服务
         # collect.py 里的可选近重复合并，装不上时采集器本身会降级为 TF-IDF，
@@ -86,3 +89,12 @@ jobs:
           path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: 线上回读自检（部署后 gate）
+        # deploy-pages 成功只代表"部署动作完成"，不代表线上内容正确——
+        # 2026-10-12 的坏产物（内联 CSS 被转义 + 旧版单频道）就是部署"成功"上线的。
+        # 这里把发布前 --check 的同源断言用到线上读回的页面上：样式完整、三频道齐全、
+        # GitHub Pages 不落后于本次提交。pages.dev 是手动发布，数据落后只提示不失败。
+        # 失败只告警不红：Pages 传播有秒级延迟，且此时坏产物已经在线上，跑红也不会
+        # 回滚，反而会把当晚 6 点的数据刷新误报成失败。人工按提示处理。
+        continue-on-error: true
+        run: python collector/collect.py --check-live
