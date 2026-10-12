@@ -34,7 +34,7 @@ const I18N = {
     catDelta:"分类热度变化", newTopics:"新上榜事件", sustained:"持续发酵", noTrend:"本周暂无趋势数据（需要至少两周的日报归档）",
     menuAllSub:"全部资讯 · 搜索 / 分类 / 排序", menuTopicsSub:"分类统计，点击进入筛选", menuDataSub:"统计与导出", menuAgentSub:"开放 JSON 接口，免鉴权",
     expand:"展开阅读", collapse:"收起", aiSum:"AI 内容概要", srcSum:"来源摘要",
-    extNote:"原文·需外网", readOrig:"阅读原文 ↗（需外网）", loadMore:"加载更多",
+    extNote:"原文·需外网", readOrig:"阅读原文 ↗（需外网）", loadMore:"加载更多", aiGen:"生成中文摘要", aiLoading:"生成中…", aiFail:"生成失败，点击重试",
     footer:"PAT-HOT · 物理·天文·光电热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
   en: { feed:"Selected", all:"All", hot:"Hot", daily:"Daily", trends:"Trends", more:"More",
     allPage:"All Items", topics:"Topics", data:"Data", agent:"Agent API",
@@ -55,7 +55,7 @@ const I18N = {
     catDelta:"Category heat change", newTopics:"New events", sustained:"Sustained events", noTrend:"No trend data yet (needs 2+ weeks of daily archive)",
     menuAllSub:"All items · search / filter / sort", menuTopicsSub:"Category stats — click to filter", menuDataSub:"Stats & export", menuAgentSub:"Open JSON APIs, no auth",
     expand:"Read more", collapse:"Collapse", aiSum:"AI Summary", srcSum:"Source abstract",
-    extNote:"orig.·needs internet", readOrig:"Read original ↗ (needs internet)", loadMore:"Load more",
+    extNote:"orig.·needs internet", readOrig:"Read original ↗ (needs internet)", loadMore:"Load more", aiGen:"Generate Chinese summary", aiLoading:"Generating…", aiFail:"Failed, tap to retry",
     footer:"PAT-HOT · physics / astronomy / photonics hot-topic stats (AIHOT methodology) · public data, for reference only · open source on GitHub" }
 };
 let LANG = "zh";
@@ -105,11 +105,59 @@ function expandBody(it){ if(!expandable(it)) return ""; const open=EXPANDED.has(
   const ai=!it.zh_full&&it.llm_summary?'<div class="xsec">'+T.aiSum+'</div><div class="xt">'+esc(it.llm_summary)+'</div>':"";
   const rs=it.summary?'<div class="xsec">'+T.srcSum+'</div><div class="xt">'+esc(it.summary)+'</div>':"";
   const src=it.url?'<div class="xsrc"><a href="'+esc(it.url)+'" target="_blank" rel="noopener">'+T.readOrig+'</a></div>':"";
-  return '<div class="xbody'+(open?" open":"")+'" id="xb-'+it.id+'"><div class="xbody-in">'+zf+ai+rs+src+'</div></div>'; }
+  // 按需 AI 中文摘要：没有 zh_full 时显示按钮
+  const od=!it.zh_full?'<div class="xod" id="xod-'+it.id+'"><button class="obtn" data-od="'+esc(it.url)+'">✨ '+T.aiGen+'</button><div class="otxt" style="display:none"></div></div>':"";
+  return '<div class="xbody'+(open?" open":"")+'" id="xb-'+it.id+'"><div class="xbody-in">'+zf+ai+rs+od+src+'</div></div>'; }
 function toggleExpand(btn){ const id=btn.dataset.x; const body=document.getElementById("xb-"+CSS.escape(id));
   const open=EXPANDED.has(id); if(open) EXPANDED.delete(id); else EXPANDED.add(id);
   btn.classList.toggle("open",!open); btn.querySelector("span").textContent=!open?T.collapse:T.expand;
   if(body) body.classList.toggle("open",!open); }
+// ---- 按需 AI 中文摘要 ----
+const OD_CACHE_KEY="pat-od-cache";
+function odGet(url){ try{ const c=JSON.parse(localStorage.getItem(OD_CACHE_KEY)||"{}"); return c[url]||null; }catch(e){ return null; } }
+function odSet(url, data){ try{ const c=JSON.parse(localStorage.getItem(OD_CACHE_KEY)||"{}"); c[url]=data; const ks=Object.keys(c); if(ks.length>200) ks.slice(0,ks.length-200).forEach(k=>delete c[k]); localStorage.setItem(OD_CACHE_KEY, JSON.stringify(c)); }catch(e){} }
+async function odGenerate(btn){
+  const url=btn.dataset.od;
+  if(!url || btn.disabled) return;
+  // 先查缓存
+  const cached=odGet(url);
+  const box=btn.parentElement;
+  const txt=box.querySelector(".otxt");
+  if(cached){
+    txt.innerHTML='<div class="xsec">'+T.aiSum+'</div><div class="xt">'+esc(cached.zh_full||cached.summary||"")+'</div>';
+    txt.style.display="block"; btn.style.display="none";
+    return;
+  }
+  // 找到文章数据
+  let item=null;
+  for(const ch of Object.values(S.channels)){
+    const f=(ch.items||[]).find(i=>i.url===url);
+    if(f){ item=f; break; }
+  }
+  if(!item) return;
+  btn.disabled=true; btn.textContent="✨ "+T.aiLoading;
+  try{
+    const domain=(C&&C.domain&&C.domain.zh)||chn()||"科学";
+    const resp=await fetch("/api/summarize",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({title:item.title, source:item.source, summary:item.summary||"", domain})
+    });
+    const data=await resp.json();
+    if(data.error) throw new Error(data.error);
+    odSet(url, data);
+    // 写回当前频道数据，下次展开直接显示
+    item.zh_full=data.zh_full; item.llm_summary=data.summary;
+    txt.innerHTML='<div class="xsec">'+T.aiSum+'</div><div class="xt">'+esc(data.zh_full||data.summary||"")+'</div>';
+    txt.style.display="block"; btn.style.display="none";
+  }catch(e){
+    btn.disabled=false; btn.textContent="✨ "+T.aiFail;
+  }
+}
+document.addEventListener("click", e=>{
+  const b=e.target.closest("[data-od]");
+  if(b) odGenerate(b);
+});
 // ---- 频道切换 ----
 function renderChSeg(){ const el=$("#chseg"); if(!el) return;
   el.innerHTML=META.channels.map(c=>'<a data-ch="'+c.id+'" class="'+(c.id===CHID?"on":"")+'"><span class="cl">'+c.letter+'</span><span class="cn">'+esc(LANG==="en"?c.name.en:c.name.zh)+'</span></a>').join("");
