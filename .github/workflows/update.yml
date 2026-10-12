@@ -1,8 +1,8 @@
-name: 定时更新光电热点数据
+name: 定时更新 PAT-HOT 数据
 
 on:
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "0 22,10 * * *"
   workflow_dispatch:
 
 permissions:
@@ -31,17 +31,22 @@ jobs:
         with:
           path: ~/.cache/huggingface
           key: hf-bge-small-zh-${{ runner.os }}-${{ hashFiles('collector/collect.py') }}
-      - name: 运行采集器（真嵌入聚类）
+      - name: 运行采集器（真嵌入聚类 + LLM 中文摘要）
         env:
           OPTOHOT_EMBED: "1"
-        run: python collector/collect.py --limit 25
+          SENSENOVA_API_KEY: ${{ secrets.SENSENOVA_API_KEY }}
+        run: |
+          if [ -z "$SENSENOVA_API_KEY" ]; then
+            echo "⚠️ 未配置 SENSENOVA_API_KEY Secret，将跳过 LLM 中文摘要（降级运行，不影响主流程）"
+          fi
+          python collector/collect.py --limit 25 --llm
       - name: 提交数据更新
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data dist
           if ! git diff --cached --quiet; then
-            git commit -m "chore: 刷新光电热点数据 $(date -u +%Y-%m-%dT%H:%MZ)"
+            git commit -m "chore: 刷新 PAT-HOT 数据 $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
           fi
       - name: 准备站点文件
