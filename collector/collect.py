@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-opto-hot — 光电行业热点统计（以 AIHOT 为模板）
+PAT-HOT — 物理·天文·光电热点统计（以 AIHOT 为模板）
+
+三频道：P 物理 / A 天文 / T 光电（原 opto-hot 内容）。
 
 流程: 多源采集(RSS + 行业站) -> 清洗去重 -> 领域分类 -> 打分 -> 热点聚类
-输出: data/items.json, data/hot-topics.json, data/daily.json, data/report.csv, dist/index.html
+输出: data/<channel>/*.json, dist/index.html（三频道）, dist/api/v1/<channel>/*
 
 用法:
-    python collector/collect.py                 # 全流程
-    python collector/collect.py --limit 30      # 每个源最多取 30 条
-    python collector/collect.py --skip-html     # 跳过 HTML 站
+    python collector/collect.py                          # 全频道全流程
+    python collector/collect.py --channel tech             # 只跑光电频道
+    python collector/collect.py --channel physics --limit 5
+    python collector/collect.py --skip-html               # 跳过 HTML 站
 """
 
 import argparse
@@ -35,7 +38,49 @@ DATA_DIR = os.path.join(ROOT, "data")
 DIST_DIR = os.path.join(ROOT, "dist")
 SOURCES_PATH = os.path.join(HERE, "sources.json")
 CONFIG_PATH = os.path.join(HERE, "config.json")
+CHANNELS_PATH = os.path.join(HERE, "channels.json")
 REPO_URL = "https://github.com/sun-zihang/opto-hot"
+BRAND = "PAT-HOT"
+
+# ---------------- 频道定义（collector/channels.json） ----------------
+with open(CHANNELS_PATH, encoding="utf-8") as _cf:
+    _CHANNELS_DOC = json.load(_cf)
+CHANNELS = _CHANNELS_DOC["channels"]
+CHANNEL_ORDER = _CHANNELS_DOC.get("order", ["physics", "astro", "tech"])
+CHANNEL_DEFAULT = _CHANNELS_DOC.get("default", "tech")
+
+# 当前频道上下文（run_channel 开始时设置；classify/build_daily 等通过它取规则）
+_CH = CHANNEL_DEFAULT
+_CHANNEL_TIERS = {}  # ch_id -> {source_name: tier}
+CATEGORY_RULES = []
+CATEGORY_ORDER = []
+CAT_CLS = {}
+RESEARCH_SOURCES = set()
+
+
+def set_channel_context(ch_id):
+    """设置当前频道的分类规则/顺序/slug/research 源（供 classify 等函数使用）。"""
+    global _CH, CATEGORY_RULES, CATEGORY_ORDER, CAT_CLS, RESEARCH_SOURCES
+    ch = CHANNELS[ch_id]
+    CATEGORY_RULES = [(c, kws) for c, kws in ch["category_rules"]]
+    CATEGORY_ORDER = list(ch["categories"])
+    CAT_CLS = dict(ch["category_slug"])
+    RESEARCH_SOURCES = set(ch.get("research_sources", []))
+    _CH = ch_id
+
+
+def ch_name(ch_id=None, lang="zh"):
+    """频道显示名。"""
+    return CHANNELS[ch_id or _CH]["name"].get(lang, lang)
+
+
+def clean_latex(t):
+    """清理 arXiv 标题中的 LaTeX 标记（去 $ 符号等），只做展示层清理。"""
+    t = t.replace("$", "")
+    t = t.replace("\\,", " ").replace("\\;", " ").replace("\\:", " ").replace("\\!", "")
+    t = re.sub(r"\\([a-zA-Z]+)", r"\1", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
 
 # ---------------- 集中配置（collector/config.json，可缺省回退） ----------------
 DEFAULT_CONFIG = {
@@ -115,10 +160,11 @@ def load_config():
 
 CONFIG = load_config()
 # 信源名 -> tier（official/media），main() 中从 sources.json 构建
-_SOURCE_TIER = {}
+
+
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-      "(KHTML, like Gecko) Chrome/126.0 Safari/537.36 opto-hot/0.1")
+      "(KHTML, like Gecko) Chrome/126.0 Safari/537.36 PAT-HOT/2.0")
 
 TZ_CN = timezone(timedelta(hours=8))
 NS = {
@@ -127,7 +173,7 @@ NS = {
     "content": "http://purl.org/rss/1.0/modules/content/",
 }
 
-# ---------------- 领域词表 ----------------
+# ---------------- 领域词表（关键词抽取用，非分类） ----------------
 DOMAIN_TERMS = [
     "激光", "光模块", "光通信", "光芯片", "光电", "光学", "镜头", "光纤", "光子", "光刻",
     "光刻机", "激光雷达", "光伏", "红外", "探测器", "成像", "显示", "面板", "OLED",
@@ -143,8 +189,13 @@ DOMAIN_TERMS = [
     "oled", "display", "infrared", "imaging", "sensor", "semiconductor", "euv",
     "photonic", "quantum", "camera", "microled", "miniled", "vcsel", "holographic",
     "optoelectronic", "lidars", "silicon photonics",
+    # 物理
+    "量子计算", "量子比特", "qubit", "超导", "拓扑", "凝聚态", "希格斯", "higgs",
+    "暗物质", "中微子", "neutrino", "等离子体", "plasma", "聚变", "fusion",
+    # 天文
+    "系外行星", "exoplanet", "黑洞", "black hole", "引力波", "gravitational wave",
+    "超新星", "supernova", "星系", "galaxy", "宇宙", "cosmology", "火星", "mars",
 ]
-
 STOPWORDS = {
     "the", "a", "an", "of", "to", "in", "for", "on", "with", "and", "or", "from",
     "by", "at", "is", "are", "was", "were", "be", "been", "has", "have", "had",
@@ -180,36 +231,6 @@ STOPWORDS = {
     "and", "the", "for", "into", "along", "silencing", "pain", "light",
     "artificial", "leaf", "hot", "electron", "based", "using", "through",
 }
-
-CATEGORY_RULES = [
-    ("激光", ["激光", "laser", "lasers"]),
-    ("光通信", ["光通信", "光模块", "光纤", "光缆", "海缆", "光网络", "光芯片", "硅光",
-               "CPO", "WDM", "PON", "相干", "800G", "1.6T", "光互联", "光交换", "OCS",
-               "光引擎", "fiber", "fibre", "photonics", "optical network",
-               "optical communication", "submarine cable", "数据中心", "智算"]),
-    ("显示与面板", ["OLED", "Mini LED", "Micro LED", "LED", "显示", "面板", "AMOLED",
-                 "背光", "量子点", "屏幕", "display", "microled", "miniled", "AR",
-                 "VR", "XR", "眼镜", "头显"]),
-    ("光电芯片与半导体", ["半导体", "晶圆", "EUV", "光刻", "光刻机", "掩模", "封装",
-                       "VCSEL", "DFB", "EML", "semiconductor", "euv", "wafer",
-                       "lithograph", "chip", "芯片"]),
-    ("光学元件与成像", ["光学", "镜头", "镜片", "棱镜", "相机", "成像", "TOF", "3D传感",
-                     "红外", "探测器", "摄像头", "optics", "lens", "imaging", "camera",
-                     "infrared", "全息", "光波导", "光场", "显微"]),
-    ("光传感与激光雷达", ["激光雷达", "光纤传感", "传感器", "lidar", "sensor", "雷达"]),
-    ("光伏与新能源", ["光伏", "太阳能", "光电转换", "photovoltaic", "solar"]),
-    ("科研进展", ["arxiv", "nature photonics", "量子", "太赫兹", "quantum", "论文", "研究"]),
-    ("产业与资本", ["IPO", "上市", "并购", "收购", "融资", "投资", "营收", "净利润", "财报",
-                  "半年报", "产能", "扩产", "中标", "订单", "产业", "政策", "标准", "展会",
-                  "博览会", "峰会", "论坛", "投产", "下线", "揭牌", "亮相", "发布", "推出",
-                  "合作", "签约", "预增", "定增", "获批", "大单", "调研", "基地", "战略",
-                  "人工智能大会", "WAIC"]),
-    ("通信与算力", ["通信", "运营商", "5G", "6G", "算力", "人工智能", "大模型", "昇腾",
-                  "云网", "数字化", "智能化", "AI", "电信", "移动", "联通", "网络",
-                  "宽带", "数据"]),
-]
-RESEARCH_SOURCES = {"arXiv 光学与光子学 (physics.optics)", "Nature Photonics", "Phys.org 物理新闻"}
-CATEGORY_ORDER = [c for c, _ in CATEGORY_RULES] + ["其他"]
 
 
 def log(msg):
@@ -451,7 +472,8 @@ def fetch_rss(cfg, limit):
             continue
         pub = parse_date(e["pub"])
         desc_plain = re.sub(r"<[^>]+>", " ", e["desc"] or "")
-        summary = re.sub(r"\s+", " ", htmlmod.unescape(desc_plain)).strip()[:500]
+        # 摘要保留较长（供站内展开阅读），卡片展示时前端截断
+        summary = re.sub(r"\s+", " ", htmlmod.unescape(desc_plain)).strip()[:2500]
         items.append({
             "title": htmlmod.unescape(title).strip(),
             "url": (e["link"] or "").strip(),
@@ -1017,8 +1039,10 @@ def cn_date(dstr):
 
 
 def role_tag(source):
-    if any(k in source for k in ("arXiv", "Nature Photonics", "Phys.org")):
+    if any(k in source for k in ("arXiv", "Nature", "CERN", "LIGO", "Phys.org", "Quanta")):
         return "科研"
+    if any(k in source for k in ("NASA", "ESA", "MIT News")):
+        return "官方"
     if any(k in source for k in ("OFweek", "LEDinside", "CIOE", "COEMA", "C114")):
         return "行业媒体"
     return "媒体"
@@ -1208,12 +1232,6 @@ def build_trends(dailies, generated, cfg):
 
 
 # ---------------- HTML 报告（AIHOT 风格） ----------------
-CAT_CLS = {
-    "激光": "laser", "光通信": "fiber", "显示与面板": "display", "光电芯片与半导体": "chip",
-    "光学元件与成像": "optics", "光传感与激光雷达": "sensing", "光伏与新能源": "pv",
-    "科研进展": "research", "产业与资本": "capital", "通信与算力": "telecom", "其他": "other",
-}
-
 def _load_template(_name):
     _p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "templates", _name)
     with open(_p, encoding="utf-8") as _f:
@@ -1250,18 +1268,36 @@ def pub_label(it):
     return "收录 " + fmt_dt(it["discovered_at"])
 
 
-def render_app_html(items, topics, daily, dailies, trends, generated):
+def render_app_html(channel_results, generated):
+    """渲染三频道单页：__SNAPSHOT__ = {channels: {id: {...}}, meta: {...}}。"""
     import json as _json
+    channels = {}
+    for ch_id, (items, topics, daily, dailies, trends) in channel_results.items():
+        ch = CHANNELS[ch_id]
+        channels[ch_id] = {
+            "id": ch_id,
+            "letter": ch["letter"],
+            "name": ch["name"],
+            "generatedAt": generated.isoformat(),
+            "catCls": dict(ch["category_slug"]),
+            "catEn": dict(ch["category_en"]),
+            "items": items,
+            "topics": topics,
+            "daily": daily,
+            "dailies": dailies,
+            "trends": trends or {},
+            "thresholds": {k: v["select_threshold"] for k, v in CONFIG["tiers"].items()
+                           if isinstance(v, dict) and "select_threshold" in v},
+        }
     snapshot = {
         "generatedAt": generated.isoformat(),
-        "catCls": CAT_CLS,
-        "items": items,
-        "topics": topics,
-        "daily": daily,
-        "dailies": dailies,
-        "trends": trends or {},
-        "thresholds": {k: v["select_threshold"] for k, v in CONFIG["tiers"].items()
-                       if isinstance(v, dict) and "select_threshold" in v},
+        "brand": BRAND,
+        "meta": {
+            "channels": [{"id": c, "letter": CHANNELS[c]["letter"],
+                          "name": CHANNELS[c]["name"]} for c in CHANNEL_ORDER],
+            "default": CHANNEL_DEFAULT,
+        },
+        "channels": channels,
     }
     snap_json = _json.dumps(snapshot, ensure_ascii=False)
     snap_json = snap_json.replace("</", "<\\/")
@@ -1292,213 +1328,239 @@ def build_rss(items, title, link, description, limit=50):
 def build_openapi(generated):
     def ep(summary):
         return {"get": {"summary": summary, "responses": {"200": {"description": "OK"}}}}
+    paths = {
+        "/api/v1/index.json": ep("接口索引"),
+        "/feed.xml": ep("RSS（最新 50 条，T 光电频道）"),
+    }
+    for ch_id in CHANNEL_ORDER:
+        ch = CHANNELS[ch_id]
+        paths["/api/v1/%s/items.json" % ch_id] = ep("%s：全部条目" % ch["name"]["zh"])
+        paths["/api/v1/%s/hot-topics.json" % ch_id] = ep("%s：热点榜" % ch["name"]["zh"])
+        paths["/api/v1/%s/dailies.json" % ch_id] = ep("%s：日报（按日期归档）" % ch["name"]["zh"])
+        paths["/api/v1/%s/daily.json" % ch_id] = ep("%s：统计聚合" % ch["name"]["zh"])
+        paths["/api/v1/%s/stories.json" % ch_id] = ep("%s：事件故事" % ch["name"]["zh"])
+        paths["/api/v1/%s/trends.json" % ch_id] = ep("%s：趋势" % ch["name"]["zh"])
     return {
         "openapi": "3.1.0",
-        "info": {"title": "Opto-Hot API v1", "version": "1.0.0",
-                 "description": "光电行业热点统计静态 JSON 接口（免鉴权，每 6 小时更新，AI/Agent 可直接消费）。"},
+        "info": {"title": "PAT-HOT API v1", "version": "2.0.0",
+                 "description": "物理·天文·光电热点统计静态 JSON 接口（免鉴权，每天 6:00/18:00 北京时间更新，AI/Agent 可直接消费）。"},
         "servers": [{"url": ""}],
-        "paths": {
-            "/api/v1/index.json": ep("接口索引"),
-            "/api/v1/items.json": ep("全部条目"),
-            "/api/v1/hot-topics.json": ep("热点榜"),
-            "/api/v1/dailies.json": ep("光电日报（按日期归档）"),
-            "/api/v1/daily.json": ep("统计聚合"),
-            "/api/v1/stories.json": ep("事件故事（多源聚合）"),
-            "/feed.xml": ep("RSS（最新 50 条）"),
-            "/feed/category/{slug}.xml": ep("分类 RSS（slug: laser/fiber/display/chip/optics/sensing/pv/research/capital/telecom/other）"),
-        },
+        "paths": paths,
     }
 
 
-def write_outputs(items, topics, daily, dailies, trends, generated):
+
+def write_outputs(channel_results, generated):
+    """多频道输出：
+    - data/<ch>/{items,hot-topics,daily,dailies,trends,report}.json+csv，data/channels.json
+    - dist/index.html（三频道单页），dist/feed.xml（主 feed：T 光电），dist/llms.txt
+    - dist/data/<ch>/*（静态托管副本），dist/api/v1/<ch>/*，dist/feed/<ch>/category/*.xml
+    """
+    import shutil
     os.makedirs(DATA_DIR, exist_ok=True)
     os.makedirs(DIST_DIR, exist_ok=True)
 
     def dump(obj, path):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w", encoding="utf-8") as f:
             json.dump(obj, f, ensure_ascii=False, indent=2)
 
     tiers = CONFIG["tiers"]
     hc = CONFIG["heat"]
 
-    def _tier_of(it):
-        return _SOURCE_TIER.get(it.get("source_base") or it["source"]) or tiers.get("default", "media")
+    # 频道清单
+    dump({"brand": BRAND, "generatedAt": generated.isoformat(),
+          "channels": [{"id": c, "letter": CHANNELS[c]["letter"], "name": CHANNELS[c]["name"]}
+                       for c in CHANNEL_ORDER]},
+         os.path.join(DATA_DIR, "channels.json"))
 
-    def _threshold(it):
-        return tiers.get(_tier_of(it), tiers["media"])["select_threshold"]
+    for ch_id, (items, topics, daily, dailies, trends) in channel_results.items():
+        set_channel_context(ch_id)
+        ch = CHANNELS[ch_id]
+        tier_map = _CHANNEL_TIERS.get(ch_id, {})
 
-    for it in items:
-        it.setdefault("links", {})
-        it["links"]["original"] = it["url"]
-        it["tier"] = _tier_of(it)
-        # 有 LLM 双打分时以其均值为准，否则用公式分
-        eff = it["llm_score"] if it.get("llm_score") is not None else it["score"]
-        it["selected"] = eff >= _threshold(it)
-        it["role"] = role_tag(it["source"])
-    for t in topics:
-        t["heat"] = t["score"]
-        if t["source_count"] >= hc["status_hot_min_sources"] and t["score"] >= hc["status_hot_min_heat"]:
-            t["status"] = "爆"
-        elif t["source_count"] >= hc["status_trending_min_sources"]:
-            t["status"] = "发酵中"
-        else:
-            t["status"] = "关注中"
+        def _tier_of(it, _tm=tier_map):
+            return _tm.get(it.get("source_base") or it["source"]) or tiers.get("default", "media")
 
-    dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
-          "count": len(items), "items": items}, os.path.join(DATA_DIR, "items.json"))
-    dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
-          "count": len(topics), "items": topics}, os.path.join(DATA_DIR, "hot-topics.json"))
-    dump(daily, os.path.join(DATA_DIR, "daily.json"))
-    dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
-          "count": len(dailies), "dailies": dailies}, os.path.join(DATA_DIR, "dailies.json"))
-    dump(trends, os.path.join(DATA_DIR, "trends.json"))
+        def _threshold(it):
+            return tiers.get(_tier_of(it), tiers["media"])["select_threshold"]
 
-    buf = io.StringIO()
-    w = csv.writer(buf)
-    w.writerow(["id", "title", "category", "source", "published_at", "discovered_at",
-                "score", "url", "role", "selected"])
-    for it in items:
-        w.writerow([it["id"], it["title"], it["category"], it["source"],
-                    it.get("published_at") or "", it["discovered_at"], it["score"], it["url"],
-                    it["role"], it["selected"]])
-    with open(os.path.join(DATA_DIR, "report.csv"), "w", encoding="utf-8-sig", newline="") as f:
-        f.write(buf.getvalue())
+        for it in items:
+            it.setdefault("links", {})
+            it["links"]["original"] = it["url"]
+            it["tier"] = _tier_of(it)
+            eff = it["llm_score"] if it.get("llm_score") is not None else it["score"]
+            it["selected"] = eff >= _threshold(it)
+            it["role"] = role_tag(it["source"])
+        for t in topics:
+            t["heat"] = t["score"]
+            if t["source_count"] >= hc["status_hot_min_sources"] and t["score"] >= hc["status_hot_min_heat"]:
+                t["status"] = "爆"
+            elif t["source_count"] >= hc["status_trending_min_sources"]:
+                t["status"] = "发酵中"
+            else:
+                t["status"] = "关注中"
 
+        ch_data = os.path.join(DATA_DIR, ch_id)
+        dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
+              "count": len(items), "items": items}, os.path.join(ch_data, "items.json"))
+        dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
+              "count": len(topics), "items": topics}, os.path.join(ch_data, "hot-topics.json"))
+        dump(daily, os.path.join(ch_data, "daily.json"))
+        dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
+              "count": len(dailies), "dailies": dailies}, os.path.join(ch_data, "dailies.json"))
+        dump(trends, os.path.join(ch_data, "trends.json"))
+
+        buf = io.StringIO()
+        w = csv.writer(buf)
+        w.writerow(["id", "title", "category", "source", "published_at", "discovered_at",
+                    "score", "url", "role", "selected"])
+        for it in items:
+            w.writerow([it["id"], it["title"], it["category"], it["source"],
+                        it.get("published_at") or "", it["discovered_at"], it["score"], it["url"],
+                        it["role"], it["selected"]])
+        with open(os.path.join(ch_data, "report.csv"), "w", encoding="utf-8-sig", newline="") as f:
+            f.write(buf.getvalue())
+
+        # 静态托管副本
+        dist_data = os.path.join(DIST_DIR, "data", ch_id)
+        os.makedirs(dist_data, exist_ok=True)
+        for fn in ("items.json", "hot-topics.json", "daily.json", "dailies.json", "trends.json",
+                   "report.csv"):
+            shutil.copyfile(os.path.join(ch_data, fn), os.path.join(dist_data, fn))
+
+        # API
+        api_dir = os.path.join(DIST_DIR, "api", "v1", ch_id)
+        os.makedirs(api_dir, exist_ok=True)
+        stories = []
+        for t in topics:
+            stories.append({
+                "id": t["id"], "title": t["title"], "status": t.get("status"),
+                "heat": t.get("heat", t.get("score")),
+                "sourceCount": t["source_count"], "signalCount": t["signal_count"],
+                "latestAt": t["latest_at"], "sources": t.get("sources", []),
+                "links": t.get("links", []),
+            })
+            _rep = t.get("representative") or {}
+            if _rep.get("llm_score") is not None:
+                stories[-1]["llmScore"] = _rep["llm_score"]
+        dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
+              "count": len(items), "items": items}, os.path.join(api_dir, "items.json"))
+        dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
+              "count": len(topics), "items": topics}, os.path.join(api_dir, "hot-topics.json"))
+        dump(dailies, os.path.join(api_dir, "dailies.json"))
+        dump(daily, os.path.join(api_dir, "daily.json"))
+        dump(trends, os.path.join(api_dir, "trends.json"))
+        dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
+              "count": len(stories), "items": stories}, os.path.join(api_dir, "stories.json"))
+
+        # 分类 RSS（按频道）
+        feed_dir = os.path.join(DIST_DIR, "feed", ch_id, "category")
+        os.makedirs(feed_dir, exist_ok=True)
+        by_cat = {}
+        for it in items:
+            by_cat.setdefault(it["category"], []).append(it)
+        for cat, its in by_cat.items():
+            slug = CAT_CLS.get(cat, "other")
+            with open(os.path.join(feed_dir, slug + ".xml"), "w", encoding="utf-8") as f:
+                f.write(build_rss(its, "PAT-HOT · %s%s" % (ch["letter"], cat),
+                                  "./#/all", cat, 30))
+
+        # 政策/招投标结构化库（仅 T 光电频道）
+        if ch_id == "tech":
+            biz_items = [it for it in items if it["source"] in BIZ_SOURCES]
+            biz_rows = [{
+                "source": it["source"], "title": it["title"], "url": it["url"],
+                "category": it["category"], "published_at": it.get("published_at"),
+                "discovered_at": it["discovered_at"],
+                "project_no": (it.get("biz") or {}).get("project_no"),
+                "budget": (it.get("biz") or {}).get("budget"),
+                "deadline": (it.get("biz") or {}).get("deadline"),
+            } for it in biz_items]
+            biz_doc = {"schemaVersion": 1, "generatedAt": generated.isoformat(),
+                       "count": len(biz_rows),
+                       "fields": ["project_no", "budget", "deadline"], "items": biz_rows}
+            dump(biz_doc, os.path.join(ch_data, "biz.json"))
+            shutil.copyfile(os.path.join(ch_data, "biz.json"),
+                            os.path.join(dist_data, "biz.json"))
+            dump(biz_doc, os.path.join(DIST_DIR, "api", "v1", ch_id, "biz.json"))
+            bbuf = io.StringIO()
+            bw = csv.writer(bbuf)
+            bw.writerow(["source", "title", "category", "url", "published_at", "discovered_at",
+                         "project_no", "budget", "deadline"])
+            for r in biz_rows:
+                bw.writerow([r["source"], r["title"], r["category"], r["url"],
+                             r.get("published_at") or "", r["discovered_at"],
+                             r.get("project_no") or "", r.get("budget") or "",
+                             r.get("deadline") or ""])
+            with open(os.path.join(ch_data, "biz.csv"), "w", encoding="utf-8-sig", newline="") as f:
+                f.write(bbuf.getvalue())
+            shutil.copyfile(os.path.join(ch_data, "biz.csv"),
+                            os.path.join(dist_data, "biz.csv"))
+
+    # ---- 三频道单页 ----
     with open(os.path.join(DIST_DIR, "index.html"), "w", encoding="utf-8") as f:
-        f.write(render_app_html(items, topics, daily, dailies, trends, generated))
+        f.write(render_app_html(channel_results, generated))
 
-    # ---- 静态托管副本（GitHub Pages / CloudBase 均从 dist 发布） ----
-    import shutil
-    dist_data = os.path.join(DIST_DIR, "data")
-    os.makedirs(dist_data, exist_ok=True)
-    for fn in ("items.json", "hot-topics.json", "daily.json", "dailies.json", "trends.json",
-               "report.csv"):
-        shutil.copyfile(os.path.join(DATA_DIR, fn), os.path.join(dist_data, fn))
-
-    # ---- Agent / API 接口（静态 JSON，v1） ----
-    api_dir = os.path.join(DIST_DIR, "api", "v1")
-    os.makedirs(api_dir, exist_ok=True)
-    stories = []
-    for t in topics:
-        stories.append({
-            "id": t["id"],
-            "title": t["title"],
-            "status": t.get("status"),
-            "heat": t.get("heat", t.get("score")),
-            "sourceCount": t["source_count"],
-            "signalCount": t["signal_count"],
-            "latestAt": t["latest_at"],
-            "sources": t.get("sources", []),
-            "links": t.get("links", []),
-        })
-        _rep = t.get("representative") or {}
-        if _rep.get("llm_score") is not None:
-            stories[-1]["llmScore"] = _rep["llm_score"]
-    dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
-          "count": len(items), "items": items}, os.path.join(api_dir, "items.json"))
-    dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
-          "count": len(topics), "items": topics}, os.path.join(api_dir, "hot-topics.json"))
-    dump(dailies, os.path.join(api_dir, "dailies.json"))
-    dump(daily, os.path.join(api_dir, "daily.json"))
-    dump(trends, os.path.join(api_dir, "trends.json"))
-    dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
-          "count": len(stories), "items": stories}, os.path.join(api_dir, "stories.json"))
-    dump({
-        "name": "Opto-Hot API v1",
-        "description": "光电行业热点统计静态 JSON 接口（免鉴权，每 6 小时更新）",
-        "endpoints": {
-            "items": "api/v1/items.json",
-            "hot-topics": "api/v1/hot-topics.json",
-            "dailies": "api/v1/dailies.json",
-            "daily": "api/v1/daily.json",
-            "stories": "api/v1/stories.json",
-        },
-    }, os.path.join(api_dir, "index.json"))
-
-    # ---- RSS 分类 feed + OpenAPI ----
-    feed_dir = os.path.join(DIST_DIR, "feed", "category")
-    os.makedirs(feed_dir, exist_ok=True)
-    site_link = "https://opto-hot-a455-d3g2s3dt865d86640.webapps.tcloudbase.com"
+    # ---- 主 feed（T 光电频道，保持老订阅者兼容） ----
+    tech_items = channel_results.get("tech", ([], None, None, None, None))[0] if "tech" in channel_results else []
     with open(os.path.join(DIST_DIR, "feed.xml"), "w", encoding="utf-8") as f:
-        f.write(build_rss(items, "Opto-Hot 光电热点", site_link + "/", "光电行业热点统计（AIHOT 模式）", 50))
-    by_cat = {}
-    for it in items:
-        by_cat.setdefault(it["category"], []).append(it)
-    for cat, its in by_cat.items():
-        slug = CAT_CLS.get(cat, "other")
-        with open(os.path.join(feed_dir, slug + ".xml"), "w", encoding="utf-8") as f:
-            f.write(build_rss(its, "Opto-Hot · %s" % cat, site_link + "/#/all", cat, 30))
-    with open(os.path.join(api_dir, "openapi.json"), "w", encoding="utf-8") as f:
+        f.write(build_rss(tech_items, "PAT-HOT 热点", "./",
+                          "物理·天文·光电热点统计（AIHOT 模式）", 50))
+
+    # ---- API 索引 + OpenAPI ----
+    api_v1 = os.path.join(DIST_DIR, "api", "v1")
+    os.makedirs(api_v1, exist_ok=True)
+    eps = {}
+    for ch_id in channel_results:
+        for k in ("items", "hot-topics", "dailies", "daily", "stories", "trends"):
+            eps["%s/%s" % (ch_id, k)] = "api/v1/%s/%s.json" % (ch_id, k)
+    dump({"name": "PAT-HOT API v1",
+          "description": "物理·天文·光电热点统计静态 JSON 接口（免鉴权，每天 6:00/18:00 北京时间更新）",
+          "endpoints": eps},
+         os.path.join(api_v1, "index.json"))
+    with open(os.path.join(api_v1, "openapi.json"), "w", encoding="utf-8") as f:
         json.dump(build_openapi(generated), f, ensure_ascii=False, indent=2)
 
-    # ---- 政策/招投标结构化库 ----
-    biz_items = [it for it in items if it["source"] in BIZ_SOURCES]
-    biz_rows = [{
-        "source": it["source"], "title": it["title"], "url": it["url"],
-        "category": it["category"], "published_at": it.get("published_at"),
-        "discovered_at": it["discovered_at"],
-        "project_no": (it.get("biz") or {}).get("project_no"),
-        "budget": (it.get("biz") or {}).get("budget"),
-        "deadline": (it.get("biz") or {}).get("deadline"),
-    } for it in biz_items]
-    biz_doc = {"schemaVersion": 1, "generatedAt": generated.isoformat(),
-               "count": len(biz_rows),
-               "fields": ["project_no", "budget", "deadline"], "items": biz_rows}
-    dump(biz_doc, os.path.join(DATA_DIR, "biz.json"))
-    shutil.copyfile(os.path.join(DATA_DIR, "biz.json"), os.path.join(dist_data, "biz.json"))
-    dump(biz_doc, os.path.join(api_dir, "biz.json"))
-    bbuf = io.StringIO()
-    bw = csv.writer(bbuf)
-    bw.writerow(["source", "title", "category", "url", "published_at", "discovered_at",
-                 "project_no", "budget", "deadline"])
-    for r in biz_rows:
-        bw.writerow([r["source"], r["title"], r["category"], r["url"],
-                     r.get("published_at") or "", r["discovered_at"],
-                     r.get("project_no") or "", r.get("budget") or "", r.get("deadline") or ""])
-    with open(os.path.join(DATA_DIR, "biz.csv"), "w", encoding="utf-8-sig", newline="") as f:
-        f.write(bbuf.getvalue())
-    shutil.copyfile(os.path.join(DATA_DIR, "biz.csv"), os.path.join(dist_data, "biz.csv"))
+    # ---- llms.txt ----
+    ch_lines = "\n".join(
+        "- %s（%s）: ./api/v1/%s/items.json , ./api/v1/%s/hot-topics.json , ./api/v1/%s/dailies.json"
+        % (CHANNELS[c]["name"]["zh"], CHANNELS[c]["letter"], c, c, c)
+        for c in channel_results)
+    llms = """# PAT-HOT · 物理·天文·光电热点统计
 
-    # ---- llms.txt（LLM / Agent 友好入口） ----
-    llms = """# Opto-Hot · 光电行业热点统计
-
-> 光电行业资讯聚合与热点统计（AIHOT 模式），数据每天 12:00（北京时间）自动更新，本站数据为公开内容，适合作为 AI / Agent 的信息来源。
+> 物理 / 天文 / 光电三频道资讯聚合与热点统计（AIHOT 模式），数据每天 6:00、18:00（北京时间）自动更新，本站数据为公开内容，适合作为 AI / Agent 的信息来源。
 
 ## 在线入口
 - 报告页面: ./index.html
 - GitHub 仓库: https://github.com/sun-zihang/opto-hot
 
-## 数据 API（静态 JSON，免鉴权）
+## 数据 API（静态 JSON，免鉴权，按频道）
 - 接口索引 / OpenAPI: ./api/v1/index.json , ./api/v1/openapi.json
-- 全部条目: ./api/v1/items.json
-- 热点榜: ./api/v1/hot-topics.json
-- 光电日报（按日期归档）: ./api/v1/dailies.json
-- 统计聚合: ./api/v1/daily.json
-- 事件故事（多源聚合）: ./api/v1/stories.json
-- 政策/招投标结构化库（项目号/预算/截止时间）: ./api/v1/biz.json
+%s
 
 ## RSS 订阅（阅读器 / Agent）
-- 全部: ./feed.xml
-- 分类: ./feed/category/{{slug}}.xml  （slug: laser/fiber/display/chip/optics/sensing/pv/research/capital/telecom/other）
+- 主 feed（T 光电）: ./feed.xml
+- 分类: ./feed/<频道>/category/<slug>.xml
 
 ## 用法示例（匿名 GET）
-curl {base}/api/v1/hot-topics.json
-curl {base}/api/v1/items.json
-curl {base}/api/v1/dailies.json
+curl {base}/api/v1/tech/hot-topics.json
+curl {base}/api/v1/physics/items.json
+curl {base}/api/v1/astro/dailies.json
 curl {base}/feed.xml
 
 ## 约定
-- 数据每天 12:00（北京时间）更新；可对完整 URL 使用 ETag / If-None-Match 减少拉取。
+- 数据每天 6:00、18:00（北京时间）更新；可对完整 URL 使用 ETag / If-None-Match 减少拉取。
 - items.json 为全量快照，可本地按 publishedAt / discoveredAt / keywords 筛选。
-- 公开使用请注明一次数据来源：Opto-Hot（AIHOT 模式，数据源自各公开站点）。
+- 公开使用请注明一次数据来源：PAT-HOT（AIHOT 模式，数据源自各公开站点）。
 
 ## 说明
 数据来自公开网络（RSS / 网站首页），自动采集统计，仅供参考，不构成投资建议。
-"""
+""" % ch_lines
     with open(os.path.join(DIST_DIR, "llms.txt"), "w", encoding="utf-8") as f:
         f.write(llms.format(base=""))
 
-    log("[*] 已写出: data/*.json+csv, dist/index.html, dist/llms.txt, dist/api/v1/*, dist/data/*")
+    log("[*] 已写出: data/<ch>/*.json+csv, dist/index.html, dist/llms.txt, dist/api/v1/<ch>/*, dist/feed.xml")
 
 
 # ---------------- 可选生图（商汤 SenseNova U1.5 Lite 文生图，默认关闭） ----------------
@@ -1506,8 +1568,8 @@ def build_image_prompt(title, summary):
     """由事件标题+摘要构造生图提示词：简短场景描述，避免敏感内容/文字/水印/人物特写。"""
     txt = re.sub(r"https?://\S+", "", (title or "") + "。" + (summary or ""))
     txt = re.sub(r"\s+", " ", txt).strip()[:160]
-    return ("中国光电行业新闻配图，现代科技插画风格，画面主体：%s。"
-            "要求：场景化表达、无文字、无 logo、无水印、无人物面部特写，色调干净专业。" % txt)
+    return ("中国%s新闻配图，现代科技插画风格，画面主体：%s。"
+            "要求：场景化表达、无文字、无 logo、无水印、无人物面部特写，色调干净专业。" % (CHANNELS[_CH]["name"]["zh"], txt))
 
 
 def _sensenova_image_request(prompt, cfg):
@@ -1553,8 +1615,8 @@ def _download_image(url, dest_path, timeout=60):
     os.replace(tmp, dest_path)
 
 
-def generate_images(topics, dailies, generated, cfg):
-    """为日报头条 + 热点榜 TopN 生成配图（存 dist/assets/img/，按日期+事件 id 命名）。
+def generate_images(topics, dailies, generated, cfg, ch_id="tech"):
+    """为日报头条 + 热点榜 TopN 生成配图（存 dist/assets/img/，按频道+日期+事件 id 命名）。
     任何失败都静默降级为无图，不阻断主流程。返回 {topic_id: 相对路径}。"""
     ic = cfg["images"]
     if not os.environ.get("SENSENOVA_API_KEY"):
@@ -1593,7 +1655,7 @@ def generate_images(topics, dailies, generated, cfg):
     for t in targets:
         rep = t.get("representative") or {}
         prompt = build_image_prompt(t.get("title", ""), rep.get("summary") or "")
-        fname = "%s_%s.png" % (date_s, t["id"][:8])
+        fname = "%s_%s_%s.png" % (ch_id, date_s, t["id"][:8])
         dest = os.path.join(img_dir, fname)
         rel = "assets/img/" + fname
         try:
@@ -1642,8 +1704,18 @@ def _sensenova_chat(messages, cfg):
     return json.loads(data["choices"][0]["message"]["content"])
 
 
+def _ch_prompt(key, cfg):
+    """取外置 prompt，并把其中的"光电"替换为当前频道的领域词。"""
+    p = cfg["prompts"][key]
+    dom = CHANNELS[_CH]["domain"]["zh"]
+    if dom != "光电行业":
+        p = p.replace("光电行业", dom).replace("光电产业", dom).replace("光电", CHANNELS[_CH]["name"]["zh"])
+    return p
+
+
 def llm_enhance(items, topics, cfg):
-    """可选 LLM 增强：中文摘要 / 推荐理由 / 信息密度标签（低密度降权营销稿）。
+    """可选 LLM 增强：中文内容概要 / 推荐理由 / 信息密度标签（低密度降权营销稿）。
+    概要目标 150-250 字，讲清楚讲了什么、关键结论，写给想快速了解但不点原文的人。
     任何失败（无 key、网络错、格式错）都降级跳过，不阻断主流程。返回增强条数。"""
     lc = cfg["llm"]
     cands = sorted(items, key=lambda i: i["score"], reverse=True)[:lc["max_items"]]
@@ -1656,11 +1728,11 @@ def llm_enhance(items, topics, cfg):
         batch = cands[s:s + bs]
         listing = "\n".join("[%d] %s | %s" % (i, b.get("title", ""), b.get("source", ""))
                             for i, b in enumerate(batch))
-        prompt = ("你是光电行业资讯编辑。对下列每条资讯返回一个 JSON 对象，"
-                  "键为条目序号字符串，值为 {\"summary\": \"一句话中文摘要（40字内）\", "
+        prompt = ("你是%s资讯编辑，读者是无法访问外网的大学生。对下列每条资讯返回一个 JSON 对象，"
+                  "键为条目序号字符串，值为 {\"summary\": \"中文内容概要（150-250字）：假设读者打不开原文，仅凭你的概要就要完全理解这件事讲了什么、为什么重要、关键结论或数据是什么；不要只复述标题，要讲清楚背景和意义\", "
                   "\"reason\": \"推荐理由（25字内）\", \"density\": \"高/中/低\"}。\n"
                   "信息密度定义：高=有实质技术、数据或产业信息；中=一般行业资讯；"
-                  "低=营销稿、标题党、重复通告、无实质内容。\n" + listing)
+                  "低=营销稿、标题党、重复通告、无实质内容。\n" % CHANNELS[_CH]["domain"]["zh"] + listing)
         try:
             res = _sensenova_chat([{"role": "user", "content": prompt}], cfg)
         except Exception as e:
@@ -1671,7 +1743,7 @@ def llm_enhance(items, topics, cfg):
             if not isinstance(r, dict):
                 continue
             if r.get("summary"):
-                b["llm_summary"] = str(r["summary"])[:120]
+                b["llm_summary"] = str(r["summary"])[:300]
             if r.get("reason"):
                 b["llm_reason"] = str(r["reason"])[:80]
             d = str(r.get("density", "")).strip()
@@ -1698,7 +1770,7 @@ def _llm_score_once(batch, prompt_key, cfg):
     """用 prompts 段中的指定 prompt 独立打一次分，返回 {序号: 分数}。"""
     listing = "\n".join("[%d] %s | %s" % (i, b.get("title", ""), b.get("source", ""))
                         for i, b in enumerate(batch))
-    prompt = cfg["prompts"][prompt_key].replace("{listing}", listing)
+    prompt = _ch_prompt(prompt_key, cfg).replace("{listing}", listing)
     res = _sensenova_chat([{"role": "user", "content": prompt}], cfg)
     out = {}
     for i in range(len(batch)):
@@ -1766,7 +1838,7 @@ def llm_extract(items, cfg):
         batch = cands[s:s + bs]
         listing = "\n".join("[%d] %s | %s" % (i, b.get("title", ""), b.get("source", ""))
                             for i, b in enumerate(batch))
-        prompt = cfg["prompts"]["extract"].replace("{listing}", listing)
+        prompt = _ch_prompt("extract", cfg).replace("{listing}", listing)
         try:
             res = _sensenova_chat([{"role": "user", "content": prompt}], cfg)
         except Exception as e:
@@ -1791,79 +1863,76 @@ def llm_extract(items, cfg):
     return done
 
 
-def main():
-    ap = argparse.ArgumentParser(description="光电行业热点统计采集器")
-    ap.add_argument("--limit", type=int, default=25, help="每个源最多取多少条 (默认 25)")
-    ap.add_argument("--topics", type=int, default=10, help="热点榜输出条数 (默认 10)")
-    ap.add_argument("--skip-rss", action="store_true", help="跳过 RSS 源")
-    ap.add_argument("--skip-html", action="store_true", help="跳过 HTML 站")
-    ap.add_argument("--llm", action="store_true",
-                    help="启用可选 LLM 增强（商汤日日新 SenseNova）：中文摘要/推荐理由/信息密度。"
-                         "需设置环境变量 SENSENOVA_API_KEY；不传此时零依赖运行")
-    ap.add_argument("--images", action="store_true",
-                    help="启用可选生图（SenseNova U1.5 Lite 文生图，去水印）：为日报头条+热点 Top5 生成配图。"
-                         "需设置环境变量 SENSENOVA_API_KEY；失败自动降级为无图")
-    args = ap.parse_args()
+def run_channel(ch_id, sources, args, generated):
+    """运行单个频道的完整管线：采集→去重→分类→聚类→打分→日报→趋势。
+    返回 (items, topics, daily, dailies, trends)。"""
+    set_channel_context(ch_id)
+    ch_sources = {"rss": [c for c in sources.get("rss", []) if c.get("channel", "tech") == ch_id],
+                  "html": [c for c in sources.get("html", []) if c.get("channel", "tech") == ch_id]}
+    n_src = len(ch_sources["rss"]) + len(ch_sources["html"])
+    log("[*] 频道 %s（%s）：%d 个源，开始采集（每源上限 %d 条）..." % (
+        ch_id, ch_name(ch_id), n_src, args.limit))
+    raw = collect(ch_sources, args.limit, args.skip_rss, args.skip_html)
+    log("[*] [%s] 原始条目合计 %d 条" % (ch_id, len(raw)))
 
-    with open(SOURCES_PATH, encoding="utf-8") as f:
-        sources = json.load(f)
-
-    log("[*] 开始采集（每源上限 %d 条）..." % args.limit)
-    raw = collect(sources, args.limit, args.skip_rss, args.skip_html)
-    log("[*] 原始条目合计 %d 条" % len(raw))
-
-    generated = now_utc()
     source_weight = {}
     global _SOURCE_TIER
     _SOURCE_TIER = {}
     for stype in ("rss", "html"):
-        for cfg in sources.get(stype, []):
+        for cfg in ch_sources.get(stype, []):
             source_weight[cfg["name"]] = cfg.get("weight", 0.8)
             _SOURCE_TIER[cfg["name"]] = cfg.get("tier") or CONFIG["tiers"].get("default", "media")
+    _CHANNEL_TIERS[ch_id] = dict(_SOURCE_TIER)
 
     items = []
     seen = set()
     for r in raw:
-        k = norm_title(r["title"])
+        title = r["title"]
+        # arXiv 标题含 LaTeX，做展示层清理
+        if "arxiv" in (r.get("source") or "").lower():
+            title = clean_latex(title)
+        k = norm_title(title)
         if k in seen:
             continue
         seen.add(k)
         items.append({
-            "id": make_id(r["title"], r["url"]),
-            "title": r["title"],
+            "id": make_id(title, r["url"]),
+            "title": title,
             "url": r["url"],
+            "channel": ch_id,
             "source": r["source"],
             "source_base": r.get("source_base") or r["source"],
             "source_type": r["source_type"],
-            "category": classify(r["title"], r["source"]),
+            "category": classify(title, r["source"]),
             "published_at": r.get("published_at"),
             "discovered_at": generated.isoformat(),
             "summary": r.get("summary"),
-            "keywords": extract_keywords(r["title"]),
-            "biz": extract_biz(r["title"]) if r["source"] in BIZ_SOURCES else None,
+            "keywords": extract_keywords(title),
+            "biz": extract_biz(title) if r["source"] in BIZ_SOURCES else None,
             "score": 0.0,
         })
-    log("[*] 去重后 %d 条" % len(items))
+    log("[*] [%s] 去重后 %d 条" % (ch_id, len(items)))
 
-    # 政策/招投标：有界抓取详情页，提取 项目号/预算/截止时间（失败不影响整体）
-    fetched = {src: 0 for src in BIZ_SOURCES}
-    for it in items:
-        if it["source"] not in BIZ_SOURCES:
-            continue
-        if fetched[it["source"]] >= 8:
-            continue
-        if not re.search(r"招标|采购|公告|通知|办法|条例|规定|意见|细则|询价|磋商|谈判|中标|更正|征集|遴选", it["title"]):
-            continue
-        try:
-            text = fetch_text(it["url"])
-        except Exception:
-            continue
-        b = extract_biz_text(text, it["title"])
-        if b:
-            it["biz"] = b
-        fetched[it["source"]] += 1
-        time.sleep(0.8)
-    log("[*] 政策/招投标详情解析完成（命中 %d 条）" % sum(1 for it in items if it.get("biz")))
+    # 政策/招投标：仅 T（光电）频道；有界抓取详情页（失败不影响整体）
+    if ch_id == "tech":
+        fetched = {src: 0 for src in BIZ_SOURCES}
+        for it in items:
+            if it["source"] not in BIZ_SOURCES:
+                continue
+            if fetched[it["source"]] >= 8:
+                continue
+            if not re.search(r"招标|采购|公告|通知|办法|条例|规定|意见|细则|询价|磋商|谈判|中标|更正|征集|遴选", it["title"]):
+                continue
+            try:
+                text = fetch_text(it["url"])
+            except Exception:
+                continue
+            b = extract_biz_text(text, it["title"])
+            if b:
+                it["biz"] = b
+            fetched[it["source"]] += 1
+            time.sleep(0.8)
+        log("[*] [%s] 政策/招投标详情解析完成（命中 %d 条）" % (ch_id, sum(1 for it in items if it.get("biz"))))
 
     topics = cluster_topics(items)
     topics = merge_duplicate_topics(topics, items)
@@ -1886,16 +1955,24 @@ def main():
         try:
             if llm_enhance(items, topics, CONFIG):
                 items.sort(key=lambda i: i["score"], reverse=True)
-            # 两次独立打分（打分结果决定精选资格）
             llm_double_score(items, topics, CONFIG)
-            # 结构化抽取（主体/事件/标签）
             llm_extract(items, CONFIG)
         except Exception as e:
-            log("[!] LLM 增强异常，已跳过: %s" % e)
+            log("[!] [%s] LLM 增强异常，已跳过: %s" % (ch_id, e))
 
     daily = build_daily(items, topics, generated)
     existing_dailies = {}
-    _dp = os.path.join(DATA_DIR, "dailies.json")
+    _dp = os.path.join(DATA_DIR, ch_id, "dailies.json")
+    # 兼容旧版扁平位置：首次运行时自动迁移 tech 频道的历史归档
+    _old_dp = os.path.join(DATA_DIR, "dailies.json")
+    if not os.path.exists(_dp) and ch_id == "tech" and os.path.exists(_old_dp):
+        try:
+            os.makedirs(os.path.dirname(_dp), exist_ok=True)
+            import shutil as _sh
+            _sh.copyfile(_old_dp, _dp)
+            log("[*] [%s] 已从旧位置迁移历史日报归档" % ch_id)
+        except Exception as e:
+            log("[!] [%s] 归档迁移失败: %s" % (ch_id, e))
     if os.path.exists(_dp):
         try:
             with open(_dp, encoding="utf-8") as _f:
@@ -1904,22 +1981,51 @@ def main():
             existing_dailies = {}
     dailies = build_dailies(items, existing_dailies)
     trends = build_trends(dailies, generated, CONFIG)
-    log("[*] 趋势聚合完成：本周新事件 %d 个，持续发酵 %d 个" %
-        (len(trends["newTopics"]), len(trends["sustainedTopics"])))
+    log("[*] [%s] 趋势聚合完成：本周新事件 %d 个，持续发酵 %d 个" %
+        (ch_id, len(trends["newTopics"]), len(trends["sustainedTopics"])))
 
     # 可选生图（默认关闭；失败自动降级，不阻断）
     if args.images:
         try:
-            generate_images(topics, dailies, generated, CONFIG)
+            generate_images(topics, dailies, generated, CONFIG, ch_id)
         except Exception as e:
-            log("[!] 生图模块异常，已跳过: %s" % e)
+            log("[!] [%s] 生图模块异常，已跳过: %s" % (ch_id, e))
 
-    write_outputs(items, topics, daily, dailies, trends, generated)
-
-    log("[*] 完成。热点榜 TOP5：")
+    log("[*] [%s] 完成。热点榜 TOP5：" % ch_id)
     for t in topics[:5]:
         log("    #%d %s (来源 %d · 信号 %d · 热度 %.0f)" % (
             t["rank"], t["title"][:50], t["source_count"], t["signal_count"], t["score"]))
+    return items, topics, daily, dailies, trends
+
+
+def main():
+    ap = argparse.ArgumentParser(description="PAT-HOT 三频道热点统计采集器（物理/天文/光电）")
+    ap.add_argument("--channel", choices=["tech", "physics", "astro", "all"], default="all",
+                    help="运行哪个频道（默认 all：三个频道依次跑）")
+    ap.add_argument("--limit", type=int, default=25, help="每个源最多取多少条 (默认 25)")
+    ap.add_argument("--topics", type=int, default=10, help="热点榜输出条数 (默认 10)")
+    ap.add_argument("--skip-rss", action="store_true", help="跳过 RSS 源")
+    ap.add_argument("--skip-html", action="store_true", help="跳过 HTML 站")
+    ap.add_argument("--llm", action="store_true",
+                    help="启用可选 LLM 增强（商汤日日新 SenseNova）：中文内容概要/推荐理由/信息密度。"
+                         "需设置环境变量 SENSENOVA_API_KEY；不传此时零依赖运行")
+    ap.add_argument("--images", action="store_true",
+                    help="启用可选生图（SenseNova U1.5 Lite 文生图，去水印）：为日报头条+热点 Top5 生成配图。"
+                         "需设置环境变量 SENSENOVA_API_KEY；失败自动降级为无图")
+    args = ap.parse_args()
+
+    with open(SOURCES_PATH, encoding="utf-8") as f:
+        sources = json.load(f)
+
+    generated = now_utc()
+    ch_list = CHANNEL_ORDER if args.channel == "all" else [args.channel]
+    results = {}
+    for ch_id in ch_list:
+        results[ch_id] = run_channel(ch_id, sources, args, generated)
+
+    write_outputs(results, generated)
+    log("[*] 全部完成。各频道条数：%s" % ", ".join(
+        "%s=%d" % (c, len(results[c][0])) for c in ch_list))
 
 
 if __name__ == "__main__":
