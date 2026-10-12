@@ -735,6 +735,33 @@ class TestLlmJsonFence(unittest.TestCase):
             os.environ.pop("SENSENOVA_API_KEY", None)
 
 
+class TestChannelSwitchResetsFeedState(unittest.TestCase):
+    """切频道必须清空精选页的日期折叠状态。
+
+    回归（2026-10-13）：state.collapsed 以日期为键、跨频道共享，在光电页收起的
+    12/11/10 三天切到物理页后依然收起（浏览器实证复现）——用户看到的就是截图里
+    "今天的精选莫名收起、最旧一天反而展开"。EXPANDED 早就在 setChannel 里 clear，
+    collapsed 是漏网之鱼。"""
+
+    def _set_channel_body(self):
+        with open(os.path.join(ROOT, "collector", "templates", "app.js"),
+                  encoding="utf-8") as f:
+            js = f.read()
+        start = js.index("function setChannel")
+        end = js.index("function itemCard", start)
+        return js[start:end]
+
+    def test_set_channel_clears_collapsed(self):
+        body = self._set_channel_body()
+        self.assertIn("state.collapsed={}", body,
+                      "切频道未重置日期折叠状态：折叠会跨频道串台")
+
+    def test_set_channel_still_clears_expanded(self):
+        # 同一行的既有约定，防止"修一个丢一个"
+        body = self._set_channel_body()
+        self.assertIn("EXPANDED.clear()", body)
+
+
 class TestInlineCssIntegrity(unittest.TestCase):
     """锁住 2026-10-12 线上回归：坏部署把内联 CSS 的真换行写成字面量 \\n，
     浏览器丢弃全部样式，站点退化成裸 HTML；而 --check 当时只查文件在不在，看不见它。

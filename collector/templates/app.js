@@ -170,7 +170,7 @@ function renderChSeg(){ const el=$("#chseg"); if(!el) return;
   el.querySelectorAll("a").forEach(a=>{ a.onclick=()=>setChannel(a.dataset.ch); }); }
 function setChannel(id){ if(id===CHID||!S.channels[id]) return;
   CHID=id; C=S.channels[id]; CAT_CLS=C.catCls||{}; CAT_EN=C.catEn||{}; TREND_TITLES=null; EXPANDED.clear();
-  state.dailyDate=""; state.cat="全部"; state.q=""; state.allShown=ALL_PAGE; const q=$("#q"); if(q) q.value="";
+  state.dailyDate=""; state.cat="全部"; state.q=""; state.allShown=ALL_PAGE; state.collapsed={}; const q=$("#q"); if(q) q.value="";
   try{ localStorage.setItem("pat-channel",id); }catch(e){}
   renderChSeg(); tr(); router(); window.scrollTo(0,0); }
 function itemCard(it){
