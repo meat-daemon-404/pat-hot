@@ -33,7 +33,76 @@ ROOT = os.path.dirname(HERE)
 DATA_DIR = os.path.join(ROOT, "data")
 DIST_DIR = os.path.join(ROOT, "dist")
 SOURCES_PATH = os.path.join(HERE, "sources.json")
+CONFIG_PATH = os.path.join(HERE, "config.json")
 REPO_URL = "https://github.com/sun-zihang/opto-hot"
+
+# ---------------- 集中配置（collector/config.json，可缺省回退） ----------------
+DEFAULT_CONFIG = {
+    "scoring": {
+        "w_source": 45.0, "w_convergence": 20.0, "w_signal": 15.0, "w_recency": 20.0,
+        "convergence_cap": 6, "signal_cap": 10, "recency_days": 30,
+        "missing_pubdate_penalty": 0.5,
+    },
+    "tiers": {
+        "official": {"select_threshold": 55.0, "label": "官方"},
+        "media": {"select_threshold": 65.0, "label": "媒体"},
+        "default": "media",
+    },
+    "heat": {
+        "recent_hours": 48, "source_cap": 6, "signal_cap": 10,
+        "status_hot_min_sources": 5, "status_hot_min_heat": 80.0,
+        "status_trending_min_sources": 3,
+    },
+    "clustering": {"tfidf_threshold": 0.14},
+    "daily": {
+        "headline_count": 1, "picks_count": 4, "flash_count": 10,
+        "max_per_source": 2, "dedup_window_days": 7, "per_category_limit": 8,
+    },
+    "llm": {
+        "provider": "sensenova",
+        "model": "sensenova-6.8-flash-lite",
+        "api_url": "https://token.sensenova.cn/v1/chat/completions",
+        "max_items": 30, "batch_size": 8, "timeout": 40,
+        "density_penalty": 0.9,
+    },
+    "images": {
+        "provider": "sensenova",
+        "model": "sensenova-u1.5-lite",
+        "api_url": "https://token.sensenova.cn/v1/images/generations",
+        "max_images": 6,
+        "size": "2752x1536",
+        "aspect_ratio": "16:9",
+        "timeout": 120,
+        "watermark": False,
+        "retention_days": 30,
+    },
+}
+
+
+def _deep_merge(base, over):
+    out = dict(base)
+    for k, v in (over or {}).items():
+        if isinstance(v, dict) and isinstance(out.get(k), dict):
+            out[k] = _deep_merge(out[k], v)
+        else:
+            out[k] = v
+    return out
+
+
+def load_config():
+    try:
+        with open(CONFIG_PATH, encoding="utf-8") as f:
+            user = json.load(f)
+        return _deep_merge(DEFAULT_CONFIG, user)
+    except Exception as e:
+        if os.path.exists(CONFIG_PATH):
+            print("[!] 配置文件读取失败，使用默认配置: %s" % e, flush=True)
+        return _deep_merge(DEFAULT_CONFIG, {})
+
+
+CONFIG = load_config()
+# 信源名 -> tier（official/media），main() 中从 sources.json 构建
+_SOURCE_TIER = {}
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36 opto-hot/0.1")
@@ -495,6 +564,7 @@ def collect(sources, limit, skip_rss=False, skip_html=False):
                 log("[OK] %-4s %s: %d 条" % (stype, cfg["name"], len(got)))
                 for g in got:
                     g["source"] = g.get("source") or cfg["name"]
+                    g["source_base"] = cfg["name"]
                     g["source_type"] = stype
                     g["source_weight"] = cfg.get("weight", 0.8)
                 raw.extend(got)
@@ -651,19 +721,44 @@ def cluster_topics(items):
     return cluster_semantic(items)
 
 
-def compute_scores(items, topics, source_weight):
+def compute_scores(items, topics, source_weight, source_tier=None, cfg=None):
+    """条目打分（AIHOT 方法论移植版）：
+    score = w_source*来源权重 + w_convergence*跨源收敛度 + w_signal*主题信号 + w_recency*时效
+    - 跨源收敛度：同一事件被越多独立来源报道，得分越高（防单源刷榜）
+    - 旧文不刷屏：无可信发布时间的条目，时效分打折
+    """
+    cfg = cfg or CONFIG
+    sc = cfg["scoring"]
+    w_src, w_conv = sc["w_source"], sc["w_convergence"]
+    w_sig, w_rec = sc["w_signal"], sc["w_recency"]
+    conv_cap = max(1, sc["convergence_cap"])
+    sig_cap = max(1, sc["signal_cap"])
+    rec_days = max(1, sc["recency_days"])
+    pub_pen = sc["missing_pubdate_penalty"]
+    # 事件 -> 独立来源集合（跨源收敛度）
+    topic_sources = {}
+    for t in topics:
+        srcs = {i["source"] for i in items if i["id"] in t["ids"]}
+        for iid in t["ids"]:
+            topic_sources.setdefault(iid, set()).update(srcs)
     item_topic = {}
     for t in topics:
         for iid in t["ids"]:
             item_topic[iid] = max(item_topic.get(iid, 0), len(t["ids"]))
     for it in items:
         sig = item_topic.get(it["id"], 0)
+        nsrc = len(topic_sources.get(it["id"], set()))
+        conv = min(1.0, nsrc / conv_cap)
         dt = eff_dt(it)
-        rec = max(0.0, 1 - age_days(dt) / 30.0)
+        rec = max(0.0, 1 - age_days(dt) / rec_days)
+        if not it.get("published_at"):
+            rec *= pub_pen  # 无可信发布时间：时效分打折，不再全额回退收录时间
         sw = source_weight.get(it["source"], 0.8)
-        it["score"] = round(50 * sw + 25 * min(1.0, sig / 10.0) + 25 * rec, 1)
+        it["score"] = round(w_src * sw + w_conv * conv
+                            + w_sig * min(1.0, sig / sig_cap) + w_rec * rec, 1)
+        it["convergence"] = round(conv, 3)
     for t in topics:
-        finalize_topic(t, items)
+        finalize_topic(t, items, source_tier, cfg)
     topic_map = {}
     for t in topics:
         for iid in t["ids"]:
@@ -716,18 +811,39 @@ def merge_duplicate_topics(topics, items):
             out.append(base)
     return out
 
-def finalize_topic(t, items):
+def pick_representative(its, source_tier):
+    """选出一篇代表报道：官方一手源优先 -> 有正文摘要 -> 分数高 -> 发布时间早"""
+    def _key(i):
+        tier_rank = 0 if source_tier.get(i.get("source_base") or i["source"]) == "official" else 1
+        has_text = 0 if i.get("summary") else 1
+        return (tier_rank, has_text, -i.get("score", 0), i.get("discovered_at", ""))
+    return min(its, key=_key)
+
+
+def finalize_topic(t, items, source_tier=None, cfg=None):
+    cfg = cfg or CONFIG
+    hc = cfg["heat"]
+    recent_h = hc["recent_hours"]
+    source_tier = source_tier or {}
     its = [it for it in items if it["id"] in t["ids"]]
     srcs = {i["source"] for i in its}
-    recent = sum(1 for i in its if age_days(eff_dt(i)) <= 2)
+    # 48 小时窗口内，每个独立来源只算一次（单源刷榜无效）
+    recent_srcs = {i["source"] for i in its if age_days(eff_dt(i)) <= recent_h / 24.0}
     t["source_count"] = len(srcs)
     t["signal_count"] = len(its)
     t["sources"] = sorted(srcs)
     t["score"] = round(
-        100 * (0.45 * min(1.0, len(srcs) / 6.0)
-               + 0.35 * min(1.0, len(its) / 10.0)
-               + 0.20 * min(1.0, recent / max(1, len(its)))), 1)
+        100 * (0.45 * min(1.0, len(srcs) / hc["source_cap"])
+               + 0.35 * min(1.0, len(its) / hc["signal_cap"])
+               + 0.20 * min(1.0, len(recent_srcs) / max(1, len(srcs)))), 1)
     t["latest_at"] = max(i["discovered_at"] for i in its)
+    rep = pick_representative(its, source_tier)
+    t["representative"] = {
+        "title": rep["title"], "url": rep["url"], "source": rep["source"],
+        "published_at": rep.get("published_at"), "score": rep["score"],
+        "summary": (rep.get("summary") or "")[:240],
+    }
+    t["folded_count"] = max(0, len(srcs) - 1)  # "另有 N 家信源报道"
     best = max(its, key=lambda i: i["score"])
     t["title"] = best["title"]
     t["terms"] = sorted(t["terms"])
@@ -748,7 +864,7 @@ def finalize_topic(t, items):
         t["top_terms"] = []
 
 
-def dedupe_topic_titles(topics, items):
+def dedupe_topic_titles(topics, items, source_tier=None):
     """合并标题相同的主题（例如同一事件的多个角度）"""
     by_title = {}
     order = []
@@ -772,7 +888,7 @@ def dedupe_topic_titles(topics, items):
             terms |= set(g["terms"])
         base["ids"] = ids
         base["terms"] = terms
-        finalize_topic(base, items)
+        finalize_topic(base, items, source_tier)
         out.append(base)
     return out
 
@@ -896,44 +1012,107 @@ def role_tag(source):
 
 
 def build_dailies(items, existing=None):
-    """按天生成光电日报（AIHOT 日报机制）"""
+    """按天生成光电日报（AIHOT 日报机制 + 编排规则）：
+    每期 = 头条 1 条 + 今日看点 N 条 + 快讯若干；同一信源在正文最多出现 K 条；
+    近 7 天日报已出现过的事件不再入正文（进快讯或略过）。
+    """
+    dc = CONFIG["daily"]
     by_date = {}
     for it in items:
         d = (eff_dt(it) + timedelta(hours=8)).date().isoformat()
         by_date.setdefault(d, []).append(it)
+
+    def covered_topic_ids(before_date):
+        """before_date 之前 dedup_window_days 天内各日报覆盖过的事件 id"""
+        out = set()
+        try:
+            base = datetime.strptime(before_date, "%Y-%m-%d").date()
+        except Exception:
+            return out
+        for dd, entry in (existing or {}).items():
+            try:
+                delta = (base - datetime.strptime(dd, "%Y-%m-%d").date()).days
+            except Exception:
+                continue
+            if 0 < delta <= dc["dedup_window_days"]:
+                out.update((entry or {}).get("topic_ids", []) or [])
+        return out
+
+    def art(a):
+        return {
+            "title": a["title"],
+            "url": a["url"],
+            "source": a["source"],
+            "summary": (a.get("llm_summary") or a.get("summary") or "")[:240],
+            "reason": a.get("llm_reason"),
+            "density": a.get("density"),
+            "score": a["score"],
+            "role": role_tag(a["source"]),
+            "published_at": a.get("published_at"),
+            "topic_id": a.get("topic_id"),
+            "topic_title": a.get("topic_title"),
+        }
+
     out = {}
     for d, its in sorted(by_date.items()):
-        its.sort(key=lambda i: i["score"], reverse=True)
+        ranked = sorted(its, key=lambda i: i["score"], reverse=True)
+        covered = covered_topic_ids(d)
+
+        def fresh(a):
+            tid = a.get("topic_id")
+            return not tid or tid not in covered
+
+        # 正文：头条 + 看点，同一信源最多 max_per_source 条
+        body, seen_src = [], {}
+        for a in ranked:
+            if not fresh(a):
+                continue
+            c = seen_src.get(a["source"], 0)
+            if c >= dc["max_per_source"]:
+                continue
+            body.append(a)
+            seen_src[a["source"]] = c + 1
+            if len(body) >= dc["headline_count"] + dc["picks_count"]:
+                break
+        if not body:
+            # 兜底：全是旧事件时仍出正文，避免空日报
+            for a in ranked:
+                c = seen_src.get(a["source"], 0)
+                if c >= dc["max_per_source"]:
+                    continue
+                body.append(a)
+                seen_src[a["source"]] = c + 1
+                if len(body) >= dc["headline_count"] + dc["picks_count"]:
+                    break
+        headline = art(body[0]) if body else None
+        picks = [art(a) for a in body[1:]]
+        used_ids = {a["id"] for a in body}
+        flash = [art(a) for a in ranked
+                 if a["id"] not in used_ids and fresh(a)][:dc["flash_count"]]
+        # 保留原有分类结构（兼容旧前端/归档浏览）
         sections = []
         for cat in CATEGORY_ORDER:
-            arts = [i for i in its if i["category"] == cat][:8]
+            arts = [i for i in its if i["category"] == cat][:dc["per_category_limit"]]
             if arts:
-                sections.append({
-                    "category": cat,
-                    "articles": [{
-                        "title": a["title"],
-                        "url": a["url"],
-                        "source": a["source"],
-                        "summary": (a.get("summary") or "")[:240],
-                        "score": a["score"],
-                        "role": role_tag(a["source"]),
-                        "published_at": a.get("published_at"),
-                    } for a in arts],
-                })
-        if not sections:
+                sections.append({"category": cat, "articles": [art(a) for a in arts]})
+        if not sections and not body:
             continue
         try:
             wd = WEEKDAYS_CN[datetime.strptime(d, "%Y-%m-%d").weekday()]
         except Exception:
             wd = ""
-        total_chars = sum(len(s["articles"][0]["summary"]) for s in sections if s["articles"])
+        body_chars = sum(len((x.get("summary") or "")) for x in ([headline] if headline else []) + picks)
         out[d] = {
             "date": d,
             "weekday": wd,
             "label": cn_date(d),
+            "headline": headline,
+            "picks": picks,
+            "flash": flash,
             "sections": sections,
-            "tocCount": sum(len(s["articles"]) for s in sections),
-            "readMinutes": max(1, round(total_chars / 300)),
+            "topic_ids": sorted({a.get("topic_id") for a in body if a.get("topic_id")}),
+            "tocCount": len(body) + len(flash),
+            "readMinutes": max(1, round(body_chars / 300)),
         }
     result = dict(existing or {})
     result.update(out)
@@ -949,222 +1128,216 @@ CAT_CLS = {
 }
 
 APP_CSS = r"""
-:root { --bg:#f4f5f6; --card:#fff; --border:#e2e4e7; --text:#1c2733; --muted:#5c6672;
-        --accent:#135e6b; --accent-soft:rgba(19,94,107,.08); --radius:12px;
-        --gold:#96702e; --gold-bg:rgba(184,135,58,.12); --score-hi:#135e6b; --score-mid:#b7791f; --score-low:#9aa3af; }
-* { margin:0; padding:0; box-sizing:border-box; }
-html { -webkit-text-size-adjust:100%; }
-body { background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","HarmonyOS Sans SC","Microsoft YaHei",sans-serif; line-height:1.6; }
-a { color:inherit; text-decoration:none; }
-a:hover { opacity:.85; }
-.mono { font-variant-numeric:tabular-nums; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
-/* top bar */
-.m-topbar { position:sticky; top:0; z-index:50; background:rgba(255,255,255,.9); backdrop-filter:blur(8px); border-bottom:1px solid var(--border); }
-.topbar-inner { max-width:1180px; margin:0 auto; padding:10px 18px; display:flex; align-items:center; gap:16px; }
-.brand { font-weight:700; font-size:16px; color:var(--accent); display:flex; align-items:center; gap:8px; white-space:nowrap; }
-.brand .logo { width:24px; height:24px; border-radius:7px; background:linear-gradient(135deg,#135e6b,#1d8a9c); color:#fff; display:flex; align-items:center; justify-content:center; font-size:13px; }
-.searchbox { flex:1; max-width:420px; display:flex; align-items:center; gap:8px; background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:6px 12px; }
-.searchbox input { flex:1; border:none; background:none; outline:none; font-size:14px; color:var(--text); }
-.searchbox .kbd { font-size:11px; color:var(--muted); border:1px solid var(--border); border-radius:5px; padding:0 5px; }
-.topbar-meta { margin-left:auto; font-size:12px; color:var(--muted); white-space:nowrap; }
-/* layout */
-.app-layout { max-width:1180px; margin:0 auto; display:grid; grid-template-columns:176px 1fr; gap:22px; padding:18px; }
-.side-nav { position:sticky; top:66px; align-self:start; display:flex; flex-direction:column; gap:2px; }
-.side-group { font-size:11px; color:var(--muted); padding:8px 10px 4px; letter-spacing:.5px; }
-.side-link { display:flex; align-items:center; gap:9px; padding:8px 10px; border-radius:9px; color:var(--muted); font-size:14px; }
-.side-link:hover { background:var(--accent-soft); color:var(--accent); }
-.side-link-active { background:var(--accent-soft); color:var(--accent); font-weight:600; }
-.side-link .si { width:16px; height:16px; display:inline-flex; align-items:center; justify-content:center; opacity:.9; }
-.app-main { min-width:0; }
-.view { display:none; }
-.view-active { display:block; }
-/* cards */
-.card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); }
-.pad { padding:16px 18px; }
-.page-head { display:flex; align-items:baseline; gap:12px; padding:14px 18px; margin-bottom:14px; }
-.page-head h1 { font-size:20px; font-weight:700; }
-.page-head .sub { font-size:13px; color:var(--muted); }
-/* hot card on feed */
-.hotcard { margin-bottom:16px; }
-.hotcard-head { display:flex; align-items:center; justify-content:space-between; padding:12px 16px 4px; }
-.hotcard-head .t { font-weight:600; font-size:15px; display:flex; align-items:center; gap:8px; }
-.hotcard-head .more { font-size:12px; color:var(--muted); }
-.hot-topics-list { list-style:none; }
-.hot-topics-row { display:flex; align-items:center; gap:12px; padding:9px 16px; border-top:1px solid var(--border); }
-.hot-topics-row:first-of-type { border-top:none; }
-.hot-topics-rank { min-width:22px; height:22px; border-radius:7px; background:var(--bg); color:var(--muted); font-weight:700; font-size:13px; display:flex; align-items:center; justify-content:center; }
-.hot-topics-rank-1, .hot-topics-rank-2, .hot-topics-rank-3 { background:var(--accent); color:#fff; }
-.hot-topics-link { flex:1; min-width:0; font-size:14.5px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
-.hot-topics-meta { font-size:12px; color:var(--muted); white-space:nowrap; }
-.hot-topics-meta b { color:var(--accent); font-weight:600; }
-/* feed timeline */
-.timeline { display:flex; flex-direction:column; gap:16px; }
-.timeline-day-head { display:flex; align-items:baseline; gap:10px; padding:2px 2px 8px; }
-.timeline-day-head h2 { font-size:16px; font-weight:700; }
-.timeline-day-head .week { font-size:13px; color:var(--muted); }
-.timeline-day-head .cnt { margin-left:auto; font-size:12px; color:var(--muted); }
-.timeline-card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:13px 16px; }
-.timeline-card-head { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
-.timeline-head-left { display:flex; align-items:center; gap:7px; min-width:0; flex:1; }
-.timeline-source { font-size:12.5px; font-weight:600; color:var(--text); }
-.timeline-time { font-size:12px; color:var(--muted); }
-.timeline-head-right { display:flex; align-items:center; gap:8px; }
-.badge { font-size:11px; border-radius:6px; padding:1px 7px; white-space:nowrap; }
-.b-cat { color:#3c5a9e; background:#eef2fb; }
-.b-selected { color:var(--gold); background:var(--gold-bg); }
-.timeline-score { font-size:13px; font-weight:600; }
-.score-hi { color:var(--score-hi); } .score-mid { color:var(--score-mid); } .score-low { color:var(--score-low); }
-.timeline-body { font-size:14px; color:var(--text); }
-.timeline-body a { display:block; }
-.timeline-summary { margin-top:4px; font-size:13px; color:var(--muted); }
-.timeline-orig { margin-top:8px; display:inline-flex; align-items:center; gap:5px; font-size:12px; color:var(--muted); }
-/* hot page */
-.hot-rank-list { list-style:none; }
-.hot-rank-row { display:flex; align-items:center; gap:14px; padding:13px 16px; border-top:1px solid var(--border); }
-.hot-rank-row:first-child { border-top:none; }
-.hot-rank-no { font-family:ui-monospace,Menlo,monospace; font-size:17px; font-weight:700; color:var(--muted); width:30px; text-align:center; }
-.hot-rank-row:nth-child(1) .hot-rank-no, .hot-rank-row:nth-child(2) .hot-rank-no, .hot-rank-row:nth-child(3) .hot-rank-no { color:var(--accent); }
-.hot-rank-main { flex:1; min-width:0; }
-.hot-rank-title { font-size:15px; font-weight:600; }
-.hot-rank-meta { font-size:12px; color:var(--muted); margin-top:3px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
-.hot-rank-heat { font-size:14px; font-weight:700; color:var(--accent); white-space:nowrap; }
-.flag { font-size:11px; border-radius:6px; padding:1px 7px; font-weight:600; }
-.flag-hot { color:#b3261e; background:rgba(179,38,30,.1); }
-.flag-warm { color:#b7791f; background:rgba(183,121,31,.12); }
-.flag-watch { color:var(--muted); background:var(--bg); }
-.src-chips { display:flex; flex-wrap:wrap; gap:5px; margin-top:7px; }
-.chip { font-size:11px; background:var(--bg); color:var(--muted); border-radius:20px; padding:1px 9px; }
-/* daily */
-.daily-shell { display:grid; grid-template-columns:190px 1fr; gap:16px; align-items:start; }
-.daily-side { position:sticky; top:66px; }
-.daily-side-card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:12px; }
-.daily-side-card h3 { font-size:12px; color:var(--muted); margin-bottom:8px; }
-.daily-day { display:flex; align-items:center; justify-content:space-between; font-size:12.5px; padding:5px 8px; border-radius:8px; cursor:pointer; }
-.daily-day:hover { background:var(--accent-soft); }
-.daily-day-active { background:var(--accent-soft); color:var(--accent); font-weight:600; }
-.m-daily-body { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:20px 22px; }
-.m-daily-eyebrow { font-size:11px; letter-spacing:3px; color:var(--muted); }
-.m-daily-issue-date { font-size:20px; font-weight:700; margin:2px 0 14px; }
-.reader-toc { border:1px solid var(--border); border-radius:var(--radius); padding:12px 14px; margin-bottom:16px; background:var(--bg); }
-.reader-toc-head { display:flex; align-items:baseline; gap:10px; margin-bottom:8px; }
-.reader-toc-heading { font-weight:600; font-size:14px; }
-.reader-toc-meta { font-size:12px; color:var(--muted); }
-.reader-toc-list { list-style:none; display:flex; flex-direction:column; gap:4px; }
-.reader-toc-row { display:flex; gap:10px; font-size:13px; padding:3px 2px; }
-.reader-toc-no { font-family:ui-monospace,Menlo,monospace; color:var(--accent); }
-.reader-toc-label { color:var(--muted); }
-.daily-sec { margin-bottom:18px; }
-.daily-sec h3 { font-size:14px; color:var(--accent); border-left:3px solid var(--accent); padding-left:9px; margin-bottom:9px; }
-.daily-article { padding:10px 0; border-top:1px solid var(--border); }
-.daily-article:first-child { border-top:none; }
-.daily-article-title { font-size:15px; font-weight:600; }
-.daily-article-source { font-size:12px; color:var(--muted); margin:3px 0 5px; display:flex; gap:8px; align-items:center; }
-.role-tag { font-size:11px; border-radius:6px; padding:0 6px; color:#3c5a9e; background:#eef2fb; }
-.daily-article-summary { font-size:13px; color:var(--muted); }
-/* topics */
-.topic-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:12px; }
-.topic-card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:14px 16px; cursor:pointer; }
-.topic-card:hover { border-color:var(--accent); }
-.topic-card .t-name { font-weight:600; font-size:14.5px; display:flex; align-items:center; justify-content:space-between; }
-.topic-card .t-nums { font-size:12px; color:var(--muted); margin-top:6px; display:flex; gap:12px; }
-.topic-card .t-nums b { color:var(--accent); }
-/* data */
-.stats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:16px; }
-.stat { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:14px 16px; }
-.stat .num { font-size:26px; font-weight:700; color:var(--accent); }
-.stat .lbl { font-size:12px; color:var(--muted); }
-table { width:100%; border-collapse:collapse; font-size:13px; }
-th, td { text-align:left; padding:8px 12px; border-bottom:1px solid var(--border); }
-th { color:var(--muted); font-weight:600; font-size:12px; }
-.day-chart { display:flex; align-items:flex-end; gap:6px; height:110px; padding:8px 4px 0; }
-.day-col { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; gap:4px; height:100%; }
-.day-col .dbar { width:68%; background:linear-gradient(180deg,#2f9db1,var(--accent)); border-radius:5px 5px 0 0; min-height:2px; }
-.day-col .dl { font-size:10px; color:var(--muted); }
-.dl-row { display:flex; gap:10px; margin-top:10px; flex-wrap:wrap; }
-.dl-btn { display:inline-block; border:1px solid var(--border); border-radius:9px; padding:6px 12px; font-size:13px; background:var(--card); color:var(--accent); }
-.empty { color:var(--muted); padding:26px; text-align:center; font-size:13px; }
-footer { max-width:1180px; margin:0 auto; padding:10px 18px 30px; font-size:12px; color:var(--muted); text-align:center; }
-@media (max-width: 900px) {
-  .app-layout { grid-template-columns:1fr; }
-  .side-nav { position:static; flex-direction:row; overflow-x:auto; padding-bottom:6px; }
-  .side-group { display:none; }
-  .daily-shell { grid-template-columns:1fr; }
-  .stats { grid-template-columns:1fr 1fr; }
+
+:root{
+  --bg:#eef0f6; --card:#ffffff; --line:#e2e7f1; --ink:#17233d; --muted:#64748b;
+  --accent:#4f46e5; --accent-deep:#3730a3; --accent-soft:rgba(79,70,229,.09);
+  --side:#0f172a; --side-ink:#c3cede; --side-dim:#7c8aa5;
+  --gold:#b45309; --gold-bg:rgba(180,83,9,.1);
+  --ok:#047857; --ok-bg:rgba(4,120,87,.1);
+  --warn:#b45309; --warn-bg:rgba(180,83,9,.1);
+  --bad:#9ca3af; --bad-bg:#f1f2f4;
+  --radius:14px; --shadow:0 1px 2px rgba(23,35,61,.05),0 4px 14px rgba(23,35,61,.05);
 }
-
-.dm { font-size:11px; color:var(--muted); margin:8px 0 2px 2px; letter-spacing:.5px; }
-.lang-btn { border:1px solid var(--border); background:var(--card); color:var(--accent); border-radius:8px; padding:4px 10px; font-size:12px; cursor:pointer; }
-pre { background:#0f172a; color:#dbeafe; border-radius:10px; padding:12px 14px; overflow-x:auto; font-size:12px; line-height:1.5; }
-.agent-note { font-size:12.5px; color:var(--muted); margin-top:8px; }
-.hot-sort { display:inline-flex; gap:6px; margin-left:auto; }
-.hot-sort button { border:1px solid var(--border); background:var(--card); color:var(--muted); border-radius:8px; padding:2px 9px; font-size:12px; cursor:pointer; }
-.hot-sort button.on { color:var(--accent); border-color:var(--accent); }
-.chip-term { background:var(--accent-soft); color:var(--accent); }
-.gh-link { display:inline-flex; align-items:center; gap:5px; border:1px solid var(--accent); color:var(--accent); background:var(--accent-soft); border-radius:9px; padding:5px 12px; font-size:12.5px; font-weight:600; white-space:nowrap; }
-.gh-link:hover { background:var(--accent); color:#fff; opacity:1; }
-.gh-foot { color:var(--accent); font-weight:600; }
-
-@media (max-width: 640px) {
-  .topbar-inner { flex-wrap: wrap; gap: 8px; padding: 8px 12px; }
-  .brand { font-size: 15px; }
-  .searchbox { order: 3; flex-basis: 100%; max-width: none; }
-  .topbar-meta { display: none; }
-  .app-layout { padding: 10px; gap: 10px; }
-  .side-nav { position: sticky; top: 0; z-index: 40; background: #fff; border-bottom: 1px solid var(--border); padding: 6px 8px; flex-wrap: nowrap; }
-  .side-link { padding: 6px 10px; font-size: 13px; white-space: nowrap; }
-  .page-head { flex-wrap: wrap; padding: 10px 12px; }
-  .page-head .sub { flex-basis: 100%; }
-  .hot-rank-row { flex-wrap: wrap; gap: 6px; }
-  .hot-rank-heat { margin-left: 44px; }
-  .timeline-card-head { flex-wrap: wrap; }
-  .timeline-head-left { flex-wrap: wrap; }
-  .topic-grid { grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); }
-  .daily-side { position: static; }
-  .daily-side-card { max-height: 220px; overflow-y: auto; }
-  .m-daily-body { padding: 14px; }
-  .hot-sort { margin-left: 0; }
-  .hotcard-head { flex-wrap: wrap; }
-  .cards { grid-template-columns: 1fr 1fr; }
-  .dl-row { gap: 6px; }
-  .dl-btn { padding: 5px 9px; font-size: 12px; }
-  .cat-row { grid-template-columns: 76px 1fr; }
-  .cat-row .n { display: none; }
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","HarmonyOS Sans SC","Microsoft YaHei",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+.mono{font-variant-numeric:tabular-nums;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.shell{display:grid;grid-template-columns:232px 1fr;min-height:100vh}
+/* ---- dark sidebar ---- */
+.sidebar{background:var(--side);color:var(--side-ink);padding:20px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:6px}
+.brand{display:flex;align-items:center;gap:10px;padding:4px 8px 16px;color:#fff}
+.brand .mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#6366f1,#8b5cf6);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;color:#fff}
+.brand .name{font-weight:700;font-size:16px;line-height:1.2}
+.brand .name small{display:block;font-weight:400;font-size:11px;color:var(--side-dim)}
+.nav-sec{font-size:11px;color:var(--side-dim);letter-spacing:1px;padding:10px 10px 4px}
+.nav-link{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:10px;color:var(--side-ink);font-size:14px}
+.nav-link .ic{width:18px;text-align:center}
+.nav-link:hover{background:rgba(255,255,255,.06);color:#fff}
+.nav-link.on{background:rgba(99,102,241,.22);color:#fff;font-weight:600}
+.side-foot{margin-top:auto;font-size:11px;color:var(--side-dim);padding:8px 10px;line-height:1.7}
+/* ---- main / topbar ---- */
+.main{min-width:0;display:flex;flex-direction:column}
+.topbar{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar-in{max-width:1060px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:12px}
+.search{flex:1;display:flex;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:7px 13px}
+.search input{flex:1;border:0;background:none;outline:0;font-size:14px;color:var(--ink)}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--accent);border-radius:10px;padding:6px 12px;font-size:13px;cursor:pointer;font-weight:600;white-space:nowrap}
+.btn:hover{border-color:var(--accent)}
+.gen{font-size:12px;color:var(--muted);white-space:nowrap}
+.content{max-width:1060px;width:100%;margin:0 auto;padding:20px}
+.view{display:none}.view.on{display:block;animation:fade .18s ease}
+@keyframes fade{from{opacity:.4}to{opacity:1}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.ph{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 20px;margin-bottom:16px}
+.ph h1{font-size:19px;font-weight:750}
+.ph .sub{font-size:12.5px;color:var(--muted)}
+.ph .note{flex-basis:100%;font-size:12px;color:var(--muted);background:var(--accent-soft);border-radius:8px;padding:6px 10px}
+/* ---- feed ---- */
+.day{margin-bottom:22px}
+.day-h{display:flex;align-items:baseline;gap:10px;padding:0 4px 10px}
+.day-h h2{font-size:16px;font-weight:700}
+.day-h .w{font-size:12.5px;color:var(--muted)}
+.day-h .c{margin-left:auto;font-size:12px;color:var(--muted)}
+.icard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px;margin-bottom:12px}
+.icard:hover{border-color:#c7cdfb}
+.irow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:7px}
+.isrc{font-size:12.5px;font-weight:650}
+.itime{font-size:12px;color:var(--muted)}
+.iscore{margin-left:auto;font-size:14px;font-weight:750}
+.s-hi{color:var(--accent-deep)}.s-mid{color:var(--gold)}.s-lo{color:#9aa3b2}
+.bdg{font-size:11px;border-radius:7px;padding:1px 8px;white-space:nowrap;font-weight:600}
+.b-cat{color:var(--accent-deep);background:var(--accent-soft)}
+.b-pick{color:var(--gold);background:var(--gold-bg)}
+.b-tier{color:var(--ok);background:var(--ok-bg)}
+.b-dh{color:var(--ok);background:var(--ok-bg)}
+.b-dm{color:var(--warn);background:var(--warn-bg)}
+.b-dl{color:#6b7280;background:var(--bad-bg)}
+.ititle{font-size:15px;font-weight:650;line-height:1.55}
+.ireason{margin-top:6px;font-size:13px;color:var(--accent-deep);background:var(--accent-soft);border-radius:8px;padding:6px 10px}
+.ireason b{font-weight:700}
+.isum{margin-top:6px;font-size:13px;color:var(--muted)}
+.iorig{margin-top:8px;display:inline-block;font-size:12px;color:var(--muted)}
+/* ---- hot ---- */
+.hrow{display:flex;gap:14px;align-items:flex-start;padding:15px 20px;border-top:1px solid var(--line)}
+.hrow:first-child{border-top:0}
+.hrank{font-family:ui-monospace,Menlo,monospace;font-size:19px;font-weight:800;color:#a3adbf;width:34px;text-align:center;padding-top:2px}
+.hrow:nth-child(1) .hrank,.hrow:nth-child(2) .hrank,.hrow:nth-child(3) .hrank{color:var(--accent)}
+.hmain{flex:1;min-width:0}
+.htitle{font-size:15px;font-weight:700;line-height:1.5}
+.hmeta{font-size:12px;color:var(--muted);margin-top:5px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.hbar{height:6px;background:var(--bg);border-radius:4px;margin-top:8px;overflow:hidden}
+.hbar i{display:block;height:100%;background:linear-gradient(90deg,#818cf8,var(--accent));border-radius:4px}
+.himg{width:100%;max-height:230px;object-fit:cover;border-radius:10px;margin-top:10px;border:1px solid var(--line)}
+.hero .himg{max-height:260px}
+.flag{font-size:11px;border-radius:7px;padding:1px 8px;font-weight:700}
+.f-hot{color:#b91c1c;background:rgba(185,28,28,.1)}
+.f-warm{color:var(--warn);background:var(--warn-bg)}
+.f-watch{color:var(--muted);background:var(--bg)}
+.fold{margin-top:9px;font-size:12.5px}
+.fold summary{cursor:pointer;color:var(--accent);font-weight:600;list-style:none}
+.fold summary::-webkit-details-marker{display:none}
+.fold summary:before{content:"▸ ";font-size:11px}
+.fold[open] summary:before{content:"▾ "}
+.fold .fl{margin:7px 0 2px 14px;display:flex;flex-direction:column;gap:5px}
+.fold .fl a{color:var(--muted)}
+.fold .fl a:hover{color:var(--accent)}
+.fold .fl .fs{color:#a3adbf;font-size:11.5px;margin-left:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{font-size:11px;background:var(--bg);color:var(--muted);border-radius:20px;padding:2px 10px}
+.chip.term{background:var(--accent-soft);color:var(--accent-deep)}
+.hsort{margin-left:auto;display:inline-flex;gap:6px}
+.hsort button{border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:9px;padding:3px 11px;font-size:12px;cursor:pointer}
+.hsort button.on{color:#fff;background:var(--accent);border-color:var(--accent)}
+/* ---- daily ---- */
+.dshell{display:grid;grid-template-columns:200px 1fr;gap:16px;align-items:start}
+.dside{position:sticky;top:76px}
+.dside .card{padding:12px}
+.dside h3{font-size:12px;color:var(--muted);margin-bottom:8px;font-weight:600}
+.dday{display:flex;justify-content:space-between;font-size:12.5px;padding:6px 9px;border-radius:8px;cursor:pointer}
+.dday:hover{background:var(--accent-soft)}
+.dday.on{background:var(--accent-soft);color:var(--accent-deep);font-weight:700}
+.dbody{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px 24px}
+.deye{font-size:11px;letter-spacing:3px;color:var(--muted)}
+.dtitle{font-size:21px;font-weight:800;margin:3px 0 16px}
+.hero{border:1.5px solid #c7cdfb;border-radius:12px;padding:16px 18px;margin-bottom:18px;background:linear-gradient(180deg,rgba(79,70,229,.06),rgba(79,70,229,.015))}
+.hero .k{font-size:11px;font-weight:800;color:var(--accent);letter-spacing:2px}
+.hero .t{font-size:17px;font-weight:750;margin:6px 0}
+.hero .m{font-size:12px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap}
+.dpicks{margin-bottom:18px}
+.dpick{padding:12px 2px;border-top:1px solid var(--line)}
+.dpick:first-child{border-top:0}
+.dpick .t{font-size:14.5px;font-weight:650}
+.dpick .m{font-size:12px;color:var(--muted);margin:4px 0;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.dsec-t{font-size:13px;font-weight:750;color:var(--accent-deep);margin:18px 0 6px;letter-spacing:1px}
+.flash{list-style:none}
+.flash li{font-size:13px;padding:7px 2px;border-top:1px dashed var(--line);display:flex;gap:8px}
+.flash li:first-child{border-top:0}
+.flash .dot{color:var(--accent);font-weight:800}
+/* ---- topics / data ---- */
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:12px}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:15px 17px;cursor:pointer}
+.tcard:hover{border-color:var(--accent);transform:translateY(-1px)}
+.tcard .n{font-weight:700;font-size:14.5px;display:flex;justify-content:space-between;align-items:center}
+.tcard .nums{font-size:12px;color:var(--muted);margin-top:8px;display:flex;gap:14px}
+.tcard .nums b{color:var(--accent-deep)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:15px 18px}
+.stat .num{font-size:27px;font-weight:800;color:var(--accent-deep)}
+.stat .lbl{font-size:12px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600;font-size:12px}
+.chart{display:flex;align-items:flex-end;gap:6px;height:110px;padding:10px 4px 0}
+.bcol{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px;height:100%}
+.bcol .bar{width:66%;background:linear-gradient(180deg,#818cf8,var(--accent));border-radius:5px 5px 0 0;min-height:2px}
+.bcol .dl{font-size:10px;color:var(--muted)}
+.dlrow{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.empty{color:var(--muted);padding:28px;text-align:center;font-size:13px}
+pre{background:#0f172a;color:#dbe4ff;border-radius:10px;padding:13px 15px;overflow-x:auto;font-size:12px;line-height:1.55}
+.anote{font-size:12.5px;color:var(--muted);margin-top:8px}
+footer{max-width:1060px;margin:0 auto;padding:12px 20px 32px;font-size:12px;color:var(--muted);text-align:center}
+footer a{color:var(--accent);font-weight:600}
+@media (max-width:920px){
+  .shell{grid-template-columns:1fr}
+  .sidebar{position:static;height:auto;flex-direction:row;align-items:center;overflow-x:auto;padding:10px 12px;gap:4px}
+  .brand{padding:0 8px 0 0}.brand .name small{display:none}
+  .nav-sec,.side-foot{display:none}
+  .nav-link{white-space:nowrap;padding:7px 11px;font-size:13px}
+  .dshell{grid-template-columns:1fr}
+  .dside{position:static}
+  .stats{grid-template-columns:1fr 1fr}
+  .content{padding:14px}
+  .topbar-in{flex-wrap:wrap}
+  .gen{display:none}
+  .search{order:3;flex-basis:100%}
 }
-
 """
 
-APP_JS = r"""const S = __SNAPSHOT__;
+APP_JS = r"""
+const S = __SNAPSHOT__;
 const $ = (sel, root=document) => root.querySelector(sel);
 const $$ = (sel, root=document) => [...root.querySelectorAll(sel)];
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
 const CAT_CLS = S.catCls || {};
 const CAT_EN = {"激光":"Laser","光通信":"Optical Comm","显示与面板":"Display & Panel","光电芯片与半导体":"Opto Chip & Semi","光学元件与成像":"Optics & Imaging","光传感与激光雷达":"Sensing & LiDAR","光伏与新能源":"PV & Energy","科研进展":"Research","产业与资本":"Industry & Capital","通信与算力":"Telecom & Compute","其他":"Other"};
 const STATUS_EN = {"爆":"Hot","发酵中":"Trending","关注中":"Watch"};
+const DENS_EN = {"高":"High","中":"Medium","低":"Low"};
 const I18N = {
   zh: { feed:"精选", all:"全部动态", hot:"热点榜", daily:"光电日报", topics:"主题", data:"数据", agent:"Agent 接入",
-    search:"搜索光电资讯 / 公司 / 关键词…", allCount:"共", items:"条", catAll:"全部", sortScore:"按推荐分", sortTime:"按时间",
-    hotCard:"🔥 光电热点", hotMore:"热点榜 →", src:"来源", heat:"热度", daySel:"条精选", noMatch:"没有匹配的条目",
-    hotPage:"光电热点榜", hotSub:"按信源密度 / 信号数 / 时效加权（48 小时报道密度）", heatVal:"热度值", sources:"个信源", signals:"条信号",
-    dailyPage:"光电日报", dailySub:"自动生成 · 每日一篇（含历史归档）", toc:"今日看点", reports:"篇报道", minutes:"约", minutes2:"分钟", archive:"日报归档",
+    search:"搜索光电资讯 / 公司 / 关键词…", catAll:"全部", sortScore:"按推荐分", sortTime:"按时间",
+    feedSub:"按推荐分排序的光电行业时间线", thresholdNote:"精选门槛：官方信源 ≥ {o} 分 · 媒体信源 ≥ {m} 分（可在 collector/config.json 调整）",
+    hotCard:"光电热点", hotMore:"完整榜单 →", daySel:"条精选", noMatch:"没有匹配的条目",
+    hotPage:"光电热点榜", hotSub:"事件级热度：48 小时内每独立来源只计一次", heatVal:"热度", sources:"信源", signals:"信号",
+    repMore:"另有 {n} 家信源报道", repOne:"1 家信源报道",
+    dailyPage:"光电日报", dailySub:"自动生成 · 每日一篇（含历史归档）", toc:"今日看点", archive:"日报归档",
+    headlineK:"头 条", picksK:"今日看点", flashK:"快 讯", moreK:"分栏目浏览",
     topicsPage:"主题", topicsSub:"光电行业分类统计，点击进入筛选",
     dataPage:"数据", dataSub:"统计与导出", total:"收录总数", h24:"24 小时新增", h7:"7 天新增", hotTopic:"热点话题", trend:"每日收录趋势（近 14 天）",
-    srcTable:"数据来源", latest:"最新收录", dlCSV:"⬇ 下载 CSV", dlItems:"查看 items.json", dlHot:"查看 hot-topics.json", dlDaily:"查看 dailies.json",
+    srcTable:"数据来源", latest:"最新收录", dlCSV:"下载 CSV", dlItems:"查看 items.json", dlHot:"查看 hot-topics.json", dlDaily:"查看 dailies.json",
     agentPage:"Agent 接入", agentSub:"面向 AI / LLM / 智能体的数据接口（免鉴权，静态 JSON）", apiTitle:"数据 API（v1）",
     apiDesc:"数据每 6 小时自动更新，接口免鉴权，AI 智能体 / 脚本可直接消费。", endpoint:"接口", desc:"说明", open:"打开",
     curl:"用法示例（curl）", llmsNote:"站点根目录提供 llms.txt（LLM 友好入口），Agent 可先读取它再按需拉取接口。", base:"接口基地址（本页 URL 去掉 index.html）",
-    footer:"Opto-Hot · 光电行业热点统计（AIHOT 模式）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
+    reason:"推荐理由", density:"信息密度", official:"官方", pick:"精选",
+    footer:"Opto-Hot · 光电行业热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
   en: { feed:"Selected", all:"All Items", hot:"Hot Topics", daily:"Daily Brief", topics:"Topics", data:"Data", agent:"Agent API",
-    search:"Search optics/photonics news…", allCount:"Total", items:"items", catAll:"All", sortScore:"By score", sortTime:"By time",
-    hotCard:"🔥 Hot Topics", hotMore:"Full ranking →", src:"src", heat:"heat", daySel:"selected", noMatch:"No matching items",
-    hotPage:"Opto Hot Ranking", hotSub:"Weighted by source density / signals / recency (48h)", heatVal:"heat", sources:"sources", signals:"signals",
-    dailyPage:"Daily Brief", dailySub:"Auto-generated daily (with archive)", toc:"Today's picks", reports:"stories", minutes:"~", minutes2:"min read", archive:"Archive",
+    search:"Search optics / photonics news…", catAll:"All", sortScore:"By score", sortTime:"By time",
+    feedSub:"Optoelectronics timeline ranked by score", thresholdNote:"Selection bar: official sources ≥ {o} · media sources ≥ {m} (tune in collector/config.json)",
+    hotCard:"Hot Topics", hotMore:"Full ranking →", daySel:"selected", noMatch:"No matching items",
+    hotPage:"Hot Ranking", hotSub:"Event-level heat: each independent source counts once per 48h", heatVal:"heat", sources:"sources", signals:"signals",
+    repMore:"{n} more sources", repOne:"1 source",
+    dailyPage:"Daily Brief", dailySub:"Auto-generated daily (with archive)", toc:"Today's picks", archive:"Archive",
+    headlineK:"HEADLINE", picksK:"Today's picks", flashK:"Flash", moreK:"Browse by category",
     topicsPage:"Topics", topicsSub:"Category stats — click to filter",
     dataPage:"Data", dataSub:"Stats & export", total:"Total items", h24:"24h new", h7:"7d new", hotTopic:"Hot topics", trend:"Daily trend (14 days)",
-    srcTable:"Sources", latest:"Latest", dlCSV:"⬇ Download CSV", dlItems:"items.json", dlHot:"hot-topics.json", dlDaily:"dailies.json",
+    srcTable:"Sources", latest:"Latest", dlCSV:"Download CSV", dlItems:"items.json", dlHot:"hot-topics.json", dlDaily:"dailies.json",
     agentPage:"Agent API", agentSub:"Open JSON APIs for AI / LLM agents (no auth)", apiTitle:"Data API (v1)",
     apiDesc:"Data refreshes every 6h. Endpoints need no auth and are agent/script friendly.", endpoint:"Endpoint", desc:"Description", open:"Open",
     curl:"Examples (curl)", llmsNote:"llms.txt at site root is an LLM-friendly entry point.", base:"Base URL (this page URL minus index.html)",
-    footer:"Opto-Hot · optoelectronics hot-topic stats (AIHOT-style) · public data, for reference only · open source on GitHub" }
+    reason:"Why it matters", density:"Info density", official:"Official", pick:"Pick",
+    footer:"Opto-Hot · optoelectronics hot-topic stats (AIHOT methodology) · public data, for reference only · open source on GitHub" }
 };
 let LANG = localStorage.getItem("opto-lang") || "zh";
 const T = I18N[LANG];
@@ -1172,45 +1345,140 @@ const state = { q:"", cat:"全部", sort:"score", dailyDate:"", hotSort:"heat" }
 function tr(){ $$("[data-i18n]").forEach(el=>{ const k=el.dataset.i18n; if(T[k]) el.textContent = T[k]; }); $("#lang").textContent = LANG==="zh"?"EN":"中"; $("#q").placeholder = T.search; }
 function fmtRel(iso){ if(!iso) return ""; const t=new Date(iso); const d=(Date.now()-t.getTime())/1000; if(d<60) return "刚刚"; if(d<3600) return Math.floor(d/60)+" 分钟前"; if(d<86400) return Math.floor(d/3600)+" 小时前"; return Math.floor(d/86400)+" 天前"; }
 function effDate(it){ const p=it.published_at; if(p&&p.length>=10) return p.slice(0,10); const d=new Date(it.discovered_at); return new Date(d.getTime()+8*3600*1000).toISOString().slice(0,10); }
-function fmtDay(dstr){ const [y,m,d]=dstr.split("-").map(Number); return y+"年"+m+"月"+d+"日"; }
-function wdCN(dstr){ return ["周日","周一","周二","周三","周四","周五","周六"][new Date(dstr+"T00:00:00+08:00").getDay()]; }
+function fmtDay(dstr){ const parts=dstr.split("-"); if(LANG==="en") return dstr; return parts[0]+"年"+Number(parts[1])+"月"+Number(parts[2])+"日"; }
+function wdCN(dstr){ const w=["周日","周一","周二","周三","周四","周五","周六"][new Date(dstr+"T00:00:00+08:00").getDay()]; return LANG==="en"?["Sun","Mon","Tue","Wed","Thu","Fri","Sat"][new Date(dstr+"T00:00:00+08:00").getDay()]:w; }
 function todayCN(){ return new Date(Date.now()+8*3600*1000).toISOString().slice(0,10); }
 function isToday(d){ return d===todayCN(); }
-function scoreCls(s){ return s>=75?"score-hi":(s>=50?"score-mid":"score-low"); }
+function scoreCls(s){ return s>=75?"s-hi":(s>=50?"s-mid":"s-lo"); }
 function pubLabel(it){ if(it.published_at){ const p=it.published_at; if(p.length===7) return p+"（月级）发布"; if(p.length===10) return p+" 发布"; return p.replace("T"," ").slice(5,16)+" 发布"; } return "收录 "+fmtRel(it.discovered_at); }
 function catName(c){ return LANG==="en" ? (CAT_EN[c]||c) : c; }
 function statusName(s){ return LANG==="en" ? (STATUS_EN[s]||s) : s; }
-function catBadge(c){ return '<span class="badge b-cat">'+esc(catName(c))+'</span>'; }
-function selBadge(){ return '<span class="badge b-selected">'+(LANG==="en"?"Pick":"精选")+'</span>'; }
-function scoreEl(it){ return '<span class="timeline-score mono '+scoreCls(it.score)+'" title="score/100">'+Math.round(it.score)+'</span>'; }
-function itemCard(it){ return '<article class="timeline-card"><div class="timeline-card-head"><div class="timeline-head-left">'+catBadge(it.category)+'<span class="timeline-source">'+esc(it.source)+'</span><span class="timeline-time">'+esc(pubLabel(it))+'</span>'+(it.selected?selBadge():"")+'</div><div class="timeline-head-right">'+scoreEl(it)+'</div></div><div class="timeline-body"><a href="'+esc(it.url)+'" target="_blank" rel="noopener">'+esc(it.title)+'</a>'+(it.summary?'<div class="timeline-summary">'+esc(it.summary)+'</div>':"")+'<a class="timeline-orig" href="'+esc(it.url)+'" target="_blank" rel="noopener">↗ source</a></div></article>'; }
+function densName(d){ return LANG==="en" ? (DENS_EN[d]||d) : d; }
+function catBadge(c){ return '<span class="bdg b-cat">'+esc(catName(c))+'</span>'; }
+function pickBadge(){ return '<span class="bdg b-pick">'+T.pick+'</span>'; }
+function tierBadge(t){ return t==="official"?'<span class="bdg b-tier">'+T.official+'</span>':""; }
+function densBadge(d){ if(!d) return ""; const cls=d==="高"?"b-dh":(d==="中"?"b-dm":"b-dl"); return '<span class="bdg '+cls+'" title="'+T.density+'">'+esc(densName(d))+'</span>'; }
+function scoreEl(it){ return '<span class="iscore mono '+scoreCls(it.score)+'" title="score / 100">'+Math.round(it.score)+'</span>'; }
+function summaryOf(it){ return it.llm_summary || it.summary || ""; }
+function itemCard(it){
+  const reason = it.llm_reason ? '<div class="ireason"><b>'+T.reason+'：</b>'+esc(it.llm_reason)+'</div>' : "";
+  const sum = summaryOf(it);
+  return '<article class="icard"><div class="irow">'+catBadge(it.category)+tierBadge(it.tier)+'<span class="isrc">'+esc(it.source)+'</span><span class="itime">'+esc(pubLabel(it))+'</span>'+(it.selected?pickBadge():"")+densBadge(it.density)+scoreEl(it)+'</div>'
+    +'<div class="ititle"><a href="'+esc(it.url)+'" target="_blank" rel="noopener">'+esc(it.title)+'</a></div>'
+    +reason+(sum?'<div class="isum">'+esc(sum)+'</div>':"")
+    +'<a class="iorig" href="'+esc(it.url)+'" target="_blank" rel="noopener">↗ source</a></article>';
+}
+function threshNote(){ const th=S.thresholds||{official:55,media:65}; return T.thresholdNote.replace("{o}",th.official).replace("{m}",th.media); }
 const renderers = {};
-function router(){ const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/"; const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/data":"data","/agent":"agent"}; const v=map[name]||"feed"; $$(".side-link").forEach(a=>a.classList.toggle("side-link-active", a.getAttribute("href")===("#"+name))); $$(".view").forEach(x=>x.classList.remove("view-active")); $("#view-"+v).classList.add("view-active"); (renderers[v]||renderers.feed)(); }
-function renderFeed(){ const root=$("#view-feed"); root.innerHTML=""; const top=S.topics.slice(0,6); let hot='<div class="card hotcard"><div class="hotcard-head"><span class="t">'+T.hotCard+'</span><a class="more" href="#/hot">'+T.hotMore+'</a></div><ol class="hot-topics-list">'+top.map((t,i)=>'<li class="hot-topics-row"><span class="hot-topics-rank hot-topics-rank-'+(i+1)+'">'+(i+1)+'</span><a class="hot-topics-link" href="'+(t.links&&t.links[0]?esc(t.links[0].url):"#/hot")+'" target="_blank" rel="noopener">'+esc(t.title)+'</a><span class="hot-topics-meta">'+t.source_count+' '+T.src+' · <b>'+Math.round(t.heat||t.score)+'</b> '+T.heat+'</span></li>').join("")+'</ol></div>'; const groups={}; for(const it of S.items){ const d=effDate(it); (groups[d]=groups[d]||[]).push(it); } const days=Object.keys(groups).sort().reverse().slice(0,7); let tl=""; for(const d of days){ const its=groups[d].slice().sort((a,b)=>b.score-a.score).slice(0,20); tl+='<div class="timeline-day"><div class="timeline-day-head"><h2>'+(isToday(d)?"今天 "+fmtDay(d):fmtDay(d))+'</h2><span class="week">'+wdCN(d)+'</span><span class="cnt">'+its.length+' '+T.daySel+'</span></div><div class="timeline">'+its.map(itemCard).join("")+'</div></div>'; } root.innerHTML=hot+tl; }
-function renderAll(){ const root=$("#view-all"); let its=S.items.slice(); if(state.q){ const q=state.q.toLowerCase(); its=its.filter(i=>(i.title+" "+(i.summary||"")+" "+i.source).toLowerCase().includes(q)); } if(state.cat!=="全部") its=its.filter(i=>i.category===state.cat); if(state.sort==="score") its.sort((a,b)=>b.score-a.score); else if(state.sort==="time") its.sort((a,b)=>b.discovered_at.localeCompare(a.discovered_at)); root.querySelector(".count").textContent=its.length; $("#all-list").innerHTML=its.length?its.map(itemCard).join(""):'<div class="empty">'+T.noMatch+'</div>'; }
-function renderHot(){ const root=$("#view-hot"); let ts=S.topics.slice(); if(state.hotSort==="sources") ts.sort((a,b)=>b.source_count-a.source_count); const head='<div class="card page-head"><h1>'+T.hotPage+'</h1><span class="sub">'+T.hotSub+'</span><span class="hot-sort"><button data-hs="heat" class="'+(state.hotSort==="heat"?"on":"")+'">'+T.heat+'</button><button data-hs="sources" class="'+(state.hotSort==="sources"?"on":"")+'">'+T.src+'</button></span></div>'; root.innerHTML=head+'<div class="card"><ol class="hot-rank-list">'+ts.map((t,i)=>{ const s=t.status; const flag=s==="爆"?'<span class="flag flag-hot">'+statusName(s)+'</span>':(s==="发酵中"?'<span class="flag flag-warm">'+statusName(s)+'</span>':'<span class="flag flag-watch">'+statusName(s)+'</span>'); const chips=(t.sources||[]).map(x=>'<span class="chip">'+esc(x)+'</span>').join(""); const terms=(t.top_terms||[]).map(x=>'<span class="chip chip-term">'+esc(x)+'</span>').join(""); const l0=t.links&&t.links[0]?t.links[0].url:""; return '<li class="hot-rank-row"><span class="hot-rank-no">'+String(i+1).padStart(2,"0")+'</span><div class="hot-rank-main"><div class="hot-rank-title"><a href="'+esc(l0)+'" target="_blank" rel="noopener">'+esc(t.title)+'</a> '+flag+'</div><div class="hot-rank-meta"><span>'+(t.sources[0]||"")+'</span><span>'+fmtRel(t.latest_at)+'</span><span>'+t.source_count+' '+T.sources+' · '+t.signal_count+' '+T.signals+'</span></div><div class="src-chips">'+terms+chips+'</div></div><div class="hot-rank-heat">'+Math.round(t.heat||t.score)+'<div style="font-size:11px;color:var(--muted);font-weight:400">'+T.heatVal+'</div></div></li>'; }).join("")+'</ol></div>'; }
-function renderDaily(){ const root=$("#view-daily"); const dates=Object.keys(S.dailies||{}).sort().reverse(); const d=state.dailyDate&&S.dailies[state.dailyDate]?state.dailyDate:(dates[0]||todayCN()); state.dailyDate=d; const rep=S.dailies[d]; let side='<aside class="daily-side"><div class="daily-side-card"><h3>'+T.archive+'（'+dates.length+'）</h3>'; let cm=""; for(const x of dates){ const m=x.slice(0,7); if(m!==cm){ cm=m; side+='<div class="dm">'+m+'</div>'; } side+='<div class="daily-day'+(x===d?" daily-day-active":"")+'" data-d="'+x+'">'+fmtDay(x).slice(5)+'<span class="week">'+wdCN(x)+'</span></div>'; } side+='</div></aside>'; let body='<div class="m-daily-body">'; if(rep){ const toc=rep.sections.map((s,i)=>'<li><a class="reader-toc-row" href="#sec-'+i+'"><span class="reader-toc-no">'+String(i+1).padStart(2,"0")+'</span><span class="reader-toc-label">'+esc(catName(s.category))+'</span><span>'+esc(s.articles[0].title)+'</span></a></li>').join(""); body+='<div class="m-daily-eyebrow">OPTOHOT DAILY</div><div class="m-daily-issue-date">'+esc(rep.label)+' · '+esc(rep.weekday)+'</div><nav class="reader-toc"><div class="reader-toc-head"><span class="reader-toc-heading">'+T.toc+'</span><span class="reader-toc-meta">'+rep.tocCount+' '+T.reports+' · '+T.minutes+' '+rep.readMinutes+' '+T.minutes2+'</span></div><ol class="reader-toc-list">'+toc+'</ol></nav>'; rep.sections.forEach((s,i)=>{ body+='<section class="daily-sec" id="sec-'+i+'"><h3>'+esc(catName(s.category))+'</h3>'+s.articles.map(a=>'<article class="daily-article"><div class="daily-article-title"><a href="'+esc(a.url)+'" target="_blank" rel="noopener">'+esc(a.title)+'</a></div><div class="daily-article-source"><span class="role-tag">'+esc(a.role)+'</span><span>'+esc(a.source)+'</span><span>'+esc(pubLabel(a))+'</span></div>'+(a.summary?'<p class="daily-article-summary">'+esc(a.summary)+'</p>':"")+'</article>').join(""); body+='</section>'; }); } else { body+='<div class="empty">-</div>'; } body+='</div>'; root.innerHTML='<div class="daily-shell">'+side+body+'</div>'; $$(".daily-day", root).forEach(el=>el.onclick=()=>{ state.dailyDate=el.dataset.d; renderDaily(); }); }
-function renderTopics(){ const root=$("#view-topics"); const rows=S.daily.byCategory||[]; root.innerHTML='<div class="topic-grid">'+rows.map(r=>'<div class="topic-card" data-cat="'+esc(r.category)+'"><div class="t-name">'+esc(catName(r.category))+'<span class="badge b-cat">'+r.total+'</span></div><div class="t-nums"><span>24h <b>'+r.last24h+'</b></span><span>7d <b>'+r.last7d+'</b></span><span>'+T.total+' <b>'+r.total+'</b></span></div></div>').join("")+'</div>'; $$(".topic-card", root).forEach(el=>el.onclick=()=>{ state.cat=el.dataset.cat; $("#all-cat").value=state.cat; location.hash="#/all"; }); }
-function renderData(){ const root=$("#view-data"); const dl=S.daily; const maxDay=Math.max(...dl.byDay.map(x=>x.count),1); const chart='<div class="day-chart">'+dl.byDay.map(x=>'<div class="day-col"><div class="dbar" title="'+x.date+': '+x.count+'" style="height:'+Math.max(2,x.count/maxDay*100).toFixed(1)+'%"></div><span class="dl">'+x.date.slice(5)+'</span></div>').join("")+'</div>'; const rows=dl.bySource.map(s=>'<tr><td>'+esc(s.source)+'</td><td>'+s.count+'</td><td>'+fmtRel(s.latestAt)+'</td></tr>').join(""); root.innerHTML='<div class="stats"><div class="stat"><div class="num">'+dl.total+'</div><div class="lbl">'+T.total+'</div></div><div class="stat"><div class="num">'+dl.last24h+'</div><div class="lbl">'+T.h24+'</div></div><div class="stat"><div class="num">'+dl.last7d+'</div><div class="lbl">'+T.h7+'</div></div><div class="stat"><div class="num">'+dl.topicCount+'</div><div class="lbl">'+T.hotTopic+'</div></div></div><div class="card pad"><h3 style="font-size:14px;margin-bottom:6px">'+T.trend+'</h3>'+chart+'</div><div class="card pad" style="margin-top:14px"><h3 style="font-size:14px;margin-bottom:6px">'+T.srcTable+'</h3><table><thead><tr><th>'+T.srcTable+'</th><th>'+T.total+'</th><th>'+T.latest+'</th></tr></thead><tbody>'+rows+'</tbody></table></div><div class="dl-row"><a class="dl-btn" href="data/report.csv" download>'+T.dlCSV+'</a><a class="dl-btn" href="data/items.json" target="_blank">'+T.dlItems+'</a><a class="dl-btn" href="data/hot-topics.json" target="_blank">'+T.dlHot+'</a><a class="dl-btn" href="data/dailies.json" target="_blank">'+T.dlDaily+'</a></div>'; }
+function router(){ const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/"; const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/data":"data","/agent":"agent"}; const v=map[name]||"feed"; $$(".nav-link").forEach(a=>a.classList.toggle("on", a.getAttribute("href")===("#"+name))); $$(".view").forEach(x=>x.classList.remove("on")); $("#view-"+v).classList.add("on"); (renderers[v]||renderers.feed)(); window.scrollTo(0,0); }
+function renderFeed(){
+  const root=$("#view-feed");
+  const top=(S.topics||[]).slice(0,5);
+  let hot='<div class="card ph" style="margin-bottom:16px"><h1>'+T.hotCard+'</h1><span class="sub"></span><a class="btn" style="margin-left:auto" href="#/hot">'+T.hotMore+'</a></div>';
+  hot+='<div style="margin-bottom:20px">'+top.map((t,i)=>'<div class="icard" style="margin-bottom:8px"><div class="irow"><span class="mono" style="font-weight:800;color:var(--accent)">'+(i+1)+'</span><span class="isrc">'+esc((t.sources||[])[0]||"")+'</span><span class="itime">'+t.source_count+' '+T.sources+' · '+Math.round(t.heat||t.score)+' '+T.heatVal+'</span></div><div class="ititle"><a href="'+esc((t.representative||{}).url||"#/hot")+'" target="_blank" rel="noopener">'+esc(t.title)+'</a></div></div>').join("")+'</div>';
+  const groups={}; for(const it of S.items){ const d=effDate(it); (groups[d]=groups[d]||[]).push(it); }
+  const days=Object.keys(groups).sort().reverse().slice(0,7);
+  let tl="";
+  for(const d of days){ const its=groups[d].slice().sort((a,b)=>b.score-a.score).slice(0,20);
+    tl+='<div class="day"><div class="day-h"><h2>'+(isToday(d)?"今天 "+fmtDay(d):fmtDay(d))+'</h2><span class="w">'+wdCN(d)+'</span><span class="c">'+its.length+' '+T.daySel+'</span></div>'+its.map(itemCard).join("")+'</div>'; }
+  root.innerHTML='<div class="card ph"><h1>'+T.feed+'</h1><span class="sub">'+T.feedSub+'</span><div class="note">'+esc(threshNote())+'</div></div>'+hot+tl;
+}
+function renderAll(){
+  const root=$("#view-all"); let its=S.items.slice();
+  if(state.q){ const q=state.q.toLowerCase(); its=its.filter(i=>(i.title+" "+(i.llm_summary||i.summary||"")+" "+i.source).toLowerCase().includes(q)); }
+  if(state.cat!=="全部") its=its.filter(i=>i.category===state.cat);
+  if(state.sort==="score") its.sort((a,b)=>b.score-a.score); else its.sort((a,b)=>b.discovered_at.localeCompare(a.discovered_at));
+  root.innerHTML='<div class="card ph"><h1>'+T.all+'</h1><span class="sub">'+its.length+'</span><span class="hsort" style="margin-left:auto"><select id="all-cat" class="btn"><option value="全部">'+T.catAll+'</option></select><select id="all-sort" class="btn"><option value="score">'+T.sortScore+'</option><option value="time">'+T.sortTime+'</option></select></span><div class="note">'+esc(threshNote())+'</div></div><div id="all-list">'+(its.length?its.map(itemCard).join(""):'<div class="empty">'+T.noMatch+'</div>')+'</div>';
+  const cats=[...new Set(S.items.map(i=>i.category))];
+  const sel=$("#all-cat"); for(const c of cats){ const o=document.createElement("option"); o.value=c; o.textContent=catName(c); if(c===state.cat) o.selected=true; sel.appendChild(o); }
+  $("#all-sort").value=state.sort;
+  sel.onchange=e=>{ state.cat=e.target.value; renderAll(); };
+  $("#all-sort").onchange=e=>{ state.sort=e.target.value; renderAll(); };
+}
+function renderHot(){
+  const root=$("#view-hot"); let ts=(S.topics||[]).slice();
+  if(state.hotSort==="sources") ts.sort((a,b)=>b.source_count-a.source_count);
+  const maxHeat=Math.max(...ts.map(t=>t.heat||t.score||0),1);
+  const head='<div class="card ph"><h1>'+T.hotPage+'</h1><span class="sub">'+T.hotSub+'</span><span class="hsort"><button data-hs="heat" class="'+(state.hotSort==="heat"?"on":"")+'">'+T.heatVal+'</button><button data-hs="sources" class="'+(state.hotSort==="sources"?"on":"")+'">'+T.sources+'</button></span></div>';
+  root.innerHTML=head+'<div class="card">'+ts.map((t,i)=>{
+    const s=t.status; const flag=s==="爆"?'<span class="flag f-hot">'+statusName(s)+'</span>':(s==="发酵中"?'<span class="flag f-warm">'+statusName(s)+'</span>':'<span class="flag f-watch">'+statusName(s)+'</span>');
+    const rep=t.representative||{}; const rurl=rep.url||((t.links||[])[0]||{}).url||"";
+    const reason=rep.llm_reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(rep.llm_reason)+'</div>':"";
+    const rsum=rep.llm_summary||rep.summary;
+    const chips=((t.top_terms||[]).map(x=>'<span class="chip term">'+esc(x)+'</span>').join(""))+((t.sources||[]).map(x=>'<span class="chip">'+esc(x)+'</span>').join(""));
+    const flinks=(t.links||[]).map(l=>'<a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.title)+'<span class="fs">'+esc(l.source)+'</span></a>').join("");
+    const fold=(t.folded_count>0&&flinks)?'<details class="fold"><summary>'+T.repMore.replace("{n}",t.folded_count)+'</summary><div class="fl">'+flinks+'</div></details>':"";
+    const bar='<div class="hbar"><i style="width:'+Math.max(4,Math.round((t.heat||t.score)/maxHeat*100))+'%"></i></div>';
+    return '<div class="hrow"><div class="hrank">'+(i+1)+'</div><div class="hmain"><div class="htitle"><a href="'+esc(rurl)+'" target="_blank" rel="noopener">'+esc(t.title)+'</a> '+flag+'</div>'
+      +'<div class="hmeta"><span>'+esc(rep.source||((t.sources||[])[0]||""))+'</span><span>'+fmtRel(t.latest_at)+'</span><span>'+t.source_count+' '+T.sources+' · '+t.signal_count+' '+T.signals+'</span><span class="mono" style="font-weight:700;color:var(--accent-deep)">'+Math.round(t.heat||t.score)+'</span></div>'
+      +reason+(t.image?'<img class="himg" src="'+esc(t.image)+'" alt="" loading="lazy">':"")+(rsum?'<div class="isum">'+esc(rsum)+'</div>':"")+bar+'<div class="chips">'+chips+'</div>'+fold+'</div></div>';
+  }).join("")+'</div>';
+}
+function dailyArticle(a, big){
+  const reason=a.reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(a.reason)+'</div>':"";
+  return '<div class="'+(big?"dpick":"dpick")+'"><div class="t"><a href="'+esc(a.url)+'" target="_blank" rel="noopener">'+esc(a.title)+'</a></div>'
+    +'<div class="m"><span>'+esc(a.source)+'</span><span>'+esc(pubLabel(a))+'</span>'+densBadge(a.density)+'</div>'+reason+(a.summary?'<div class="isum">'+esc(a.summary)+'</div>':"")+'</div>';
+}
+function renderDaily(){
+  const root=$("#view-daily"); const dates=Object.keys(S.dailies||{}).sort().reverse();
+  const d=state.dailyDate&&S.dailies[state.dailyDate]?state.dailyDate:(dates[0]||todayCN()); state.dailyDate=d;
+  const rep=S.dailies[d];
+  let side='<aside class="dside"><div class="card"><h3>'+T.archive+'（'+dates.length+'）</h3>';
+  let cm=""; for(const x of dates){ const m=x.slice(0,7); if(m!==cm){ cm=m; side+='<div class="anote" style="margin:6px 2px 2px">'+m+'</div>'; } side+='<div class="dday'+(x===d?" on":"")+'" data-d="'+x+'"><span>'+x.slice(5)+'</span><span>'+wdCN(x)+'</span></div>'; }
+  side+='</div></aside>';
+  let body='<div class="dbody">';
+  if(rep){
+    body+='<div class="deye">OPTOHOT DAILY</div><div class="dtitle">'+esc(rep.label)+' · '+esc(rep.weekday)+'</div>';
+    const hl=rep.headline||(((rep.sections||[])[0]||{}).articles||[])[0];
+    if(hl){ body+='<div class="hero"><div class="k">'+T.headlineK+'</div><div class="t"><a href="'+esc(hl.url)+'" target="_blank" rel="noopener">'+esc(hl.title)+'</a></div><div class="m"><span>'+esc(hl.source)+'</span><span>'+esc(pubLabel(hl))+'</span>'+densBadge(hl.density)+'</div>'+(hl.image?'<img class="himg" src="'+esc(hl.image)+'" alt="" loading="lazy">':"")+(hl.reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(hl.reason)+'</div>':"")+(hl.summary?'<div class="isum">'+esc(hl.summary)+'</div>':"")+'</div>'; }
+    const picks=rep.picks||[];
+    if(picks.length){ body+='<div class="dsec-t">'+T.picksK+'</div><div class="dpicks">'+picks.map(a=>dailyArticle(a)).join("")+'</div>'; }
+    const flash=rep.flash||[];
+    if(flash.length){ body+='<div class="dsec-t">'+T.flashK+'</div><ul class="flash">'+flash.map(a=>'<li><span class="dot">•</span><span><a href="'+esc(a.url)+'" target="_blank" rel="noopener">'+esc(a.title)+'</a> <span style="color:var(--muted);font-size:12px">'+esc(a.source)+'</span></span></li>').join("")+'</ul>'; }
+    const secs=(rep.sections||[]).filter(s=>s.articles&&s.articles.length);
+    if(secs.length){ body+='<div class="dsec-t">'+T.moreK+'</div>'+secs.map(s=>'<div class="dpick"><div class="t" style="font-size:13.5px;color:var(--accent-deep)">'+esc(catName(s.category))+' · '+s.articles.length+'</div>'+s.articles.slice(0,5).map(a=>'<div style="font-size:13px;padding:3px 0"><a href="'+esc(a.url)+'" target="_blank" rel="noopener">'+esc(a.title)+'</a></div>').join("")+'</div>').join(""); }
+  } else { body+='<div class="empty">-</div>'; }
+  body+='</div>';
+  root.innerHTML='<div class="card ph"><h1>'+T.dailyPage+'</h1><span class="sub">'+T.dailySub+'</span></div><div class="dshell">'+side+body+'</div>';
+  $$(".dday", root).forEach(el=>el.onclick=()=>{ state.dailyDate=el.dataset.d; renderDaily(); });
+}
+function renderTopics(){
+  const root=$("#view-topics"); const rows=(S.daily&&S.daily.byCategory)||[];
+  root.innerHTML='<div class="card ph"><h1>'+T.topicsPage+'</h1><span class="sub">'+T.topicsSub+'</span></div><div class="tgrid">'+rows.map(r=>'<div class="tcard" data-cat="'+esc(r.category)+'"><div class="n">'+esc(catName(r.category))+'<span class="bdg b-cat">'+r.total+'</span></div><div class="nums"><span>24h <b>'+r.last24h+'</b></span><span>7d <b>'+r.last7d+'</b></span></div></div>').join("")+'</div>';
+  $$(".tcard", root).forEach(el=>el.onclick=()=>{ state.cat=el.dataset.cat; location.hash="#/all"; });
+}
+function renderData(){
+  const root=$("#view-data"); const dl=S.daily||{byDay:[],bySource:[]};
+  const maxDay=Math.max(...dl.byDay.map(x=>x.count),1);
+  const chart='<div class="chart">'+dl.byDay.map(x=>'<div class="bcol"><div class="bar" title="'+x.date+': '+x.count+'" style="height:'+Math.max(2,x.count/maxDay*100).toFixed(1)+'%"></div><span class="dl">'+x.date.slice(5)+'</span></div>').join("")+'</div>';
+  const rows=(dl.bySource||[]).map(s=>'<tr><td>'+esc(s.source)+'</td><td>'+s.count+'</td><td>'+fmtRel(s.latestAt)+'</td></tr>').join("");
+  root.innerHTML='<div class="card ph"><h1>'+T.dataPage+'</h1><span class="sub">'+T.dataSub+'</span></div>'
+    +'<div class="stats"><div class="stat"><div class="num">'+dl.total+'</div><div class="lbl">'+T.total+'</div></div><div class="stat"><div class="num">'+dl.last24h+'</div><div class="lbl">'+T.h24+'</div></div><div class="stat"><div class="num">'+dl.last7d+'</div><div class="lbl">'+T.h7+'</div></div><div class="stat"><div class="num">'+dl.topicCount+'</div><div class="lbl">'+T.hotTopic+'</div></div></div>'
+    +'<div class="card" style="padding:16px 18px"><h3 style="font-size:14px;margin-bottom:6px">'+T.trend+'</h3>'+chart+'</div>'
+    +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:14px;margin-bottom:6px">'+T.srcTable+'</h3><table><thead><tr><th>'+T.srcTable+'</th><th>'+T.total+'</th><th>'+T.latest+'</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
+    +'<div class="dlrow"><a class="btn" href="data/report.csv" download>'+T.dlCSV+'</a><a class="btn" href="data/items.json" target="_blank">'+T.dlItems+'</a><a class="btn" href="data/hot-topics.json" target="_blank">'+T.dlHot+'</a><a class="btn" href="data/dailies.json" target="_blank">'+T.dlDaily+'</a></div>';
+}
 function renderAgent(){
   const root=$("#view-agent");
   const base=location.href.split("?")[0].split("#")[0].replace(/index\.html$/,"");
   const eps=[["items",T.dlItems],["hot-topics",T.dlHot],["dailies",T.dlDaily],["daily","daily.json"],["stories","stories.json"],["biz","政策/招投标库"]];
-  const rows=eps.map(([k,d])=>'<tr class="ep-table"><td class="mono">api/v1/'+k+'.json</td><td>'+d+'</td><td><a href="'+base+'api/v1/'+k+'.json" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>').join("");
+  const rows=eps.map(([k,d])=>'<tr><td class="mono">api/v1/'+k+'.json</td><td>'+d+'</td><td><a href="'+base+'api/v1/'+k+'.json" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>').join("");
   const curl=eps.map(([k])=>'curl '+base+'api/v1/'+k+'.json').join("\n");
   const feeds=["feed.xml","category/laser.xml","category/fiber.xml","category/display.xml","category/chip.xml","category/optics.xml","category/sensing.xml","category/pv.xml","category/research.xml","category/capital.xml","category/telecom.xml","category/other.xml"];
-  const feedRows=feeds.map((f,idx)=>'<tr class="ep-table"><td class="mono">feed/'+f+'</td><td>'+(idx===0?'RSS 全部':'分类 RSS')+'</td><td><a href="'+base+'feed/'+f+'" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>').join("");
-  const moreRows='<tr class="ep-table"><td class="mono">api/v1/openapi.json</td><td>OpenAPI 3.1</td><td><a href="'+base+'api/v1/openapi.json" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr><tr class="ep-table"><td class="mono">llms.txt</td><td>LLM 友好入口</td><td><a href="'+base+'llms.txt" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>';
-  let h='<div class="card pad"><h3 style="font-size:15px;margin-bottom:4px">🤖 '+T.apiTitle+'</h3><p class="agent-note">'+T.apiDesc+'</p><p class="agent-note">'+T.base+'：<span class="mono">'+esc(base)+'</span></p><table style="margin-top:10px"><thead><tr><th>'+T.endpoint+'</th><th>'+T.desc+'</th><th></th></tr></thead><tbody>'+rows+moreRows+'</tbody></table></div>';
-  h+='<div class="card pad" style="margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">RSS</h3><table style="margin-top:8px"><tbody>'+feedRows+'</tbody></table></div>';
-  h+='<div class="card pad" style="margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">'+T.curl+'</h3><pre>'+esc(curl)+'</pre><p class="agent-note">'+T.llmsNote+'</p><p class="agent-note">Agent Skill：仓库 <span class="mono">agent/skills/opto-hot</span>（可安装到 ~/.agents/skills 或 ~/.codex/skills）</p></div>';
-  root.innerHTML=h;
+  const feedRows=feeds.map((f,idx)=>'<tr><td class="mono">feed/'+f+'</td><td>'+(idx===0?'RSS 全部':'分类 RSS')+'</td><td><a href="'+base+'feed/'+f+'" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>').join("");
+  const moreRows='<tr><td class="mono">api/v1/openapi.json</td><td>OpenAPI 3.1</td><td><a href="'+base+'api/v1/openapi.json" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr><tr><td class="mono">llms.txt</td><td>LLM 友好入口</td><td><a href="'+base+'llms.txt" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>';
+  root.innerHTML='<div class="card ph"><h1>'+T.agentPage+'</h1><span class="sub">'+T.agentSub+'</span></div>'
+    +'<div class="card" style="padding:16px 18px"><h3 style="font-size:15px;margin-bottom:4px">🤖 '+T.apiTitle+'</h3><p class="anote">'+T.apiDesc+'</p><p class="anote">'+T.base+'：<span class="mono">'+esc(base)+'</span></p><table style="margin-top:10px"><thead><tr><th>'+T.endpoint+'</th><th>'+T.desc+'</th><th></th></tr></thead><tbody>'+rows+moreRows+'</tbody></table></div>'
+    +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">RSS</h3><table style="margin-top:8px"><tbody>'+feedRows+'</tbody></table></div>'
+    +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">'+T.curl+'</h3><pre>'+esc(curl)+'</pre><p class="anote">'+T.llmsNote+'</p><p class="anote">Agent Skill：仓库 <span class="mono">agent/skills/opto-hot</span></p></div>';
 }
 renderers.feed=renderFeed; renderers.all=renderAll; renderers.hot=renderHot; renderers.daily=renderDaily; renderers.topics=renderTopics; renderers.data=renderData; renderers.agent=renderAgent;
-function bind(){ const cats=new Set(S.items.map(i=>i.category)); const sel=$("#all-cat"); for(const c of cats){ const o=document.createElement("option"); o.value=c; o.textContent=catName(c); sel.appendChild(o); } $("#q").addEventListener("input",e=>{ state.q=e.target.value; if(location.hash==="#/all") renderAll(); }); $("#all-cat").addEventListener("change",e=>{ state.cat=e.target.value; renderAll(); }); $("#all-sort").addEventListener("change",e=>{ state.sort=e.target.value; renderAll(); }); document.addEventListener("click", e=>{ const b=e.target.closest&&e.target.closest("[data-hs]"); if(b){ state.hotSort=b.dataset.hs; renderHot(); } }); $("#lang").onclick=()=>{ LANG = LANG==="zh"?"en":"zh"; localStorage.setItem("opto-lang", LANG); location.reload(); }; window.addEventListener("hashchange",router); tr(); router(); }
-document.addEventListener("DOMContentLoaded", bind);"""
+function bind(){ $("#q").addEventListener("input",e=>{ state.q=e.target.value; if(location.hash==="#/all") renderAll(); }); $("#lang").onclick=()=>{ LANG = LANG==="zh"?"en":"zh"; localStorage.setItem("opto-lang", LANG); location.reload(); }; window.addEventListener("hashchange",router); document.addEventListener("keydown",e=>{ if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){ e.preventDefault(); $("#q").focus(); } }); tr(); router(); }
+document.addEventListener("DOMContentLoaded", bind);
+"""
 
-APP_HTML = """<!DOCTYPE html>
+APP_HTML = r"""
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
@@ -1219,46 +1487,44 @@ APP_HTML = """<!DOCTYPE html>
 <style>/*__CSS__*/</style>
 </head>
 <body>
-<header class="m-topbar"><div class="topbar-inner">
-  <a class="brand" href="#/"><span class="logo">OH</span>Opto-Hot</a>
-  <label class="searchbox"><input id="q" type="search" placeholder="搜索光电资讯 / 公司 / 关键词…" autocomplete="off"><span class="kbd">⌘K</span></label>
-  <a class="gh-link" href="https://github.com/sun-zihang/opto-hot" target="_blank" rel="noopener" title="GitHub 开源仓库">⭐ GitHub 开源</a>
-  <button id="lang" class="lang-btn" title="切换语言 / Language">EN</button>
-  <span class="topbar-meta">生成于 __GEN__ · 北京时间</span>
-</div></header>
-<div class="app-layout">
-  <nav class="side-nav">
-    <div class="side-group">内容</div>
-    <a class="side-link" href="#/"><span class="si">✦</span><span class="side-label" data-i18n="feed">精选</span></a>
-    <a class="side-link" href="#/all"><span class="si">☰</span><span class="side-label" data-i18n="all">全部动态</span></a>
-    <a class="side-link" href="#/hot"><span class="si">🔥</span><span class="side-label" data-i18n="hot">热点榜</span></a>
-    <a class="side-link" href="#/daily"><span class="si">📰</span><span class="side-label" data-i18n="daily">光电日报</span></a>
-    <a class="side-link" href="#/topics"><span class="si">◈</span><span class="side-label" data-i18n="topics">主题</span></a>
-    <a class="side-link" href="#/data"><span class="si">◉</span><span class="side-label" data-i18n="data">数据</span></a>
-    <a class="side-link" href="#/agent"><span class="si">🤖</span><span class="side-label" data-i18n="agent">Agent 接入</span></a>
-  </nav>
-  <main class="app-main">
-    <section id="view-feed" class="view"><div class="card page-head"><h1 data-i18n="feed">精选</h1><span class="sub">AIHOT 模式 · 光电行业时间线</span></div></section>
-    <section id="view-all" class="view"><div class="card page-head"><h1 data-i18n="all">全部动态</h1><span class="sub"><span data-i18n="allCount">共</span> <span class="count">0</span> <span data-i18n="items">条</span></span>
-      <select id="all-cat" class="dl-btn" style="margin-left:auto"><option data-i18n="catAll">全部</option></select>
-      <select id="all-sort" class="dl-btn"><option value="score" data-i18n="sortScore">按推荐分</option><option value="time" data-i18n="sortTime">按时间</option></select></div>
-      <div id="all-list"></div></section>
-    <section id="view-hot" class="view"><div class="card page-head"><h1 data-i18n="hotPage">光电热点榜</h1><span class="sub"><span data-i18n="hotSub">按信源密度 / 信号数 / 时效加权（48 小时报道密度）</span></span><span class="hot-sort"><button data-hs="heat" class="on">热度</button><button data-hs="sources">信源</button></span></div></section>
-    <section id="view-daily" class="view"><div class="card page-head"><h1 data-i18n="dailyPage">光电日报</h1><span class="sub"><span data-i18n="dailySub">自动生成 · 每日一篇（含历史归档）</span></span></div></section>
-    <section id="view-topics" class="view"><div class="card page-head"><h1 data-i18n="topicsPage">主题</h1><span class="sub"><span data-i18n="topicsSub">光电行业分类统计，点击进入筛选</span></span></div></section>
-    <section id="view-data" class="view"><div class="card page-head"><h1 data-i18n="dataPage">数据</h1><span class="sub"><span data-i18n="dataSub">统计与导出</span></span></div></section>
-    <section id="view-agent" class="view"><div class="card page-head"><h1 data-i18n="agentPage">Agent 接入</h1><span class="sub"><span data-i18n="agentSub">面向 AI / LLM / 智能体的数据接口（免鉴权，静态 JSON）</span></span></div></section>
-  </main>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="#/"><span class="mark">OH</span><span class="name">Opto-Hot<small>光电行业热点统计</small></span></a>
+    <div class="nav-sec">内容</div>
+    <a class="nav-link" href="#/"><span class="ic">✦</span><span data-i18n="feed">精选</span></a>
+    <a class="nav-link" href="#/all"><span class="ic">☰</span><span data-i18n="all">全部动态</span></a>
+    <a class="nav-link" href="#/hot"><span class="ic">🔥</span><span data-i18n="hot">热点榜</span></a>
+    <a class="nav-link" href="#/daily"><span class="ic">📰</span><span data-i18n="daily">光电日报</span></a>
+    <a class="nav-link" href="#/topics"><span class="ic">◈</span><span data-i18n="topics">主题</span></a>
+    <a class="nav-link" href="#/data"><span class="ic">◉</span><span data-i18n="data">数据</span></a>
+    <div class="nav-sec">工具</div>
+    <a class="nav-link" href="#/agent"><span class="ic">🤖</span><span data-i18n="agent">Agent 接入</span></a>
+    <div class="side-foot">AIHOT 方法论 · 零依赖采集<br>数据来自公开网络，仅供参考</div>
+  </aside>
+  <div class="main">
+    <header class="topbar"><div class="topbar-in">
+      <label class="search"><input id="q" type="search" placeholder="搜索光电资讯 / 公司 / 关键词…" autocomplete="off"></label>
+      <button id="lang" class="btn" title="切换语言 / Language">EN</button>
+      <span class="gen">生成于 __GEN__ · 北京时间</span>
+    </div></header>
+    <div class="content">
+      <section id="view-feed" class="view"></section>
+      <section id="view-all" class="view"></section>
+      <section id="view-hot" class="view"></section>
+      <section id="view-daily" class="view"></section>
+      <section id="view-topics" class="view"></section>
+      <section id="view-data" class="view"></section>
+      <section id="view-agent" class="view"></section>
+    </div>
+    <footer><span data-i18n="footer">Opto-Hot · 光电行业热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议</span> · <a href="https://github.com/sun-zihang/opto-hot" target="_blank" rel="noopener">github.com/sun-zihang/opto-hot</a></footer>
+  </div>
 </div>
-<footer>
-  <span data-i18n="footer">Opto-Hot · 光电行业热点统计（AIHOT 模式）· 数据来自公开网络，仅供参考，不构成投资建议</span> ·
-  <a class="gh-foot" href="https://github.com/sun-zihang/opto-hot" target="_blank" rel="noopener">github.com/sun-zihang/opto-hot</a>
-</footer>
 <script>
 /*__JS__*/
 </script>
 </body>
-</html>"""
+</html>
+"""
 
 
 def fmt_dt(iso):
@@ -1291,6 +1557,8 @@ def render_app_html(items, topics, daily, dailies, generated):
         "topics": topics,
         "daily": daily,
         "dailies": dailies,
+        "thresholds": {k: v["select_threshold"] for k, v in CONFIG["tiers"].items()
+                       if isinstance(v, dict) and "select_threshold" in v},
     }
     snap_json = _json.dumps(snapshot, ensure_ascii=False)
     snap_json = snap_json.replace("</", "<\\/")
@@ -1347,16 +1615,26 @@ def write_outputs(items, topics, daily, dailies, generated):
         with open(path, "w", encoding="utf-8") as f:
             json.dump(obj, f, ensure_ascii=False, indent=2)
 
+    tiers = CONFIG["tiers"]
+    hc = CONFIG["heat"]
+
+    def _tier_of(it):
+        return _SOURCE_TIER.get(it.get("source_base") or it["source"]) or tiers.get("default", "media")
+
+    def _threshold(it):
+        return tiers.get(_tier_of(it), tiers["media"])["select_threshold"]
+
     for it in items:
         it.setdefault("links", {})
         it["links"]["original"] = it["url"]
-        it["selected"] = it["score"] >= 60
+        it["tier"] = _tier_of(it)
+        it["selected"] = it["score"] >= _threshold(it)
         it["role"] = role_tag(it["source"])
     for t in topics:
         t["heat"] = t["score"]
-        if t["source_count"] >= 5 and t["score"] >= 80:
+        if t["source_count"] >= hc["status_hot_min_sources"] and t["score"] >= hc["status_hot_min_heat"]:
             t["status"] = "爆"
-        elif t["source_count"] >= 3:
+        elif t["source_count"] >= hc["status_trending_min_sources"]:
             t["status"] = "发酵中"
         else:
             t["status"] = "关注中"
@@ -1512,12 +1790,211 @@ curl {base}/feed.xml
     log("[*] 已写出: data/*.json+csv, dist/index.html, dist/llms.txt, dist/api/v1/*, dist/data/*")
 
 
+# ---------------- 可选生图（商汤 SenseNova U1.5 Lite 文生图，默认关闭） ----------------
+def build_image_prompt(title, summary):
+    """由事件标题+摘要构造生图提示词：简短场景描述，避免敏感内容/文字/水印/人物特写。"""
+    txt = re.sub(r"https?://\S+", "", (title or "") + "。" + (summary or ""))
+    txt = re.sub(r"\s+", " ", txt).strip()[:160]
+    return ("中国光电行业新闻配图，现代科技插画风格，画面主体：%s。"
+            "要求：场景化表达、无文字、无 logo、无水印、无人物面部特写，色调干净专业。" % txt)
+
+
+def _sensenova_image_request(prompt, cfg):
+    """调用 SenseNova 文生图接口，返回图片 URL。Key 只从 SENSENOVA_API_KEY 读取。"""
+    import urllib.request as _ureq
+    ic = cfg["images"]
+    api_key = os.environ.get("SENSENOVA_API_KEY")
+    if not api_key:
+        raise RuntimeError("未设置 SENSENOVA_API_KEY")
+    model = os.environ.get("SENSENOVA_IMAGE_MODEL") or ic["model"]
+    payload = json.dumps({
+        "model": model,
+        "prompt": prompt,
+        "size": ic["size"],
+        "response_format": "url",
+        "output_format": "png",
+        "watermark": False,  # 去水印（官方默认即 false，此处显式要求）
+    }).encode("utf-8")
+    req = _ureq.Request(ic["api_url"], data=payload, headers={
+        "Content-Type": "application/json",
+        "Authorization": "Bearer " + api_key,
+        "User-Agent": UA,
+    })
+    with _ureq.urlopen(req, timeout=ic["timeout"]) as r:
+        data = json.loads(r.read().decode("utf-8", "replace"))
+    for item in data.get("data") or []:
+        u = item.get("url")
+        if u:
+            return u
+    raise RuntimeError("文生图接口未返回图片 URL")
+
+
+def _download_image(url, dest_path, timeout=60):
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        data = r.read()
+    if len(data) < 1024:
+        raise RuntimeError("下载的图片过小，可能已失败")
+    os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+    tmp = dest_path + ".tmp"
+    with open(tmp, "wb") as f:
+        f.write(data)
+    os.replace(tmp, dest_path)
+
+
+def generate_images(topics, dailies, generated, cfg):
+    """为日报头条 + 热点榜 TopN 生成配图（存 dist/assets/img/，按日期+事件 id 命名）。
+    任何失败都静默降级为无图，不阻断主流程。返回 {topic_id: 相对路径}。"""
+    ic = cfg["images"]
+    if not os.environ.get("SENSENOVA_API_KEY"):
+        log("[*] 未设置 SENSENOVA_API_KEY，跳过生图")
+        return {}
+    date_s = generated.astimezone(TZ_CN).strftime("%Y-%m-%d")
+    img_dir = os.path.join(DIST_DIR, "assets", "img")
+    # 配图保留期：删除超期图片，防止仓库无限膨胀
+    try:
+        cutoff = generated.timestamp() - ic.get("retention_days", 30) * 86400
+        if os.path.isdir(img_dir):
+            for fn in os.listdir(img_dir):
+                fp = os.path.join(img_dir, fn)
+                try:
+                    if os.path.isfile(fp) and os.path.getmtime(fp) < cutoff:
+                        os.remove(fp)
+                except OSError:
+                    pass
+    except Exception:
+        pass
+    # 目标：头条事件 + 热点 TopN，去重后截断到 max_images
+    targets, seen = [], set()
+    today = (dailies or {}).get(date_s) or {}
+    hl = today.get("headline") or {}
+    if hl.get("topic_id"):
+        t = next((x for x in (topics or []) if x["id"] == hl["topic_id"]), None)
+        if t:
+            targets.append(t)
+            seen.add(t["id"])
+    for t in (topics or [])[:ic["max_images"]]:
+        if t["id"] not in seen:
+            seen.add(t["id"])
+            targets.append(t)
+    targets = targets[:ic["max_images"]]
+    out = {}
+    for t in targets:
+        rep = t.get("representative") or {}
+        prompt = build_image_prompt(t.get("title", ""), rep.get("summary") or "")
+        fname = "%s_%s.png" % (date_s, t["id"][:8])
+        dest = os.path.join(img_dir, fname)
+        rel = "assets/img/" + fname
+        try:
+            if not os.path.exists(dest):
+                url = _sensenova_image_request(prompt, cfg)
+                _download_image(url, dest)
+                time.sleep(2)
+            t["image"] = rel
+            out[t["id"]] = rel
+            log("[*] 生图 OK: %s" % fname)
+        except Exception as e:
+            log("[!] 生图失败，已跳过 [%s]: %s" % (t.get("title", "")[:30], e))
+    # 同步到日报头条/看点的 article 副本
+    for entry in (dailies or {}).values():
+        hl2 = entry.get("headline")
+        if isinstance(hl2, dict) and hl2.get("topic_id") in out:
+            hl2["image"] = out[hl2["topic_id"]]
+        for a in entry.get("picks", []) or []:
+            if isinstance(a, dict) and a.get("topic_id") in out:
+                a["image"] = out[a["topic_id"]]
+    return out
+
+
+# ---------------- 可选 LLM 增强（商汤日日新 SenseNova，默认关闭） ----------------
+def _sensenova_chat(messages, cfg):
+    """调用 SenseNova OpenAI 兼容接口。Key 只从环境变量 SENSENOVA_API_KEY 读取，绝不写死。"""
+    import urllib.request as _ureq
+    lc = cfg["llm"]
+    api_key = os.environ.get("SENSENOVA_API_KEY")
+    if not api_key:
+        raise RuntimeError("未设置 SENSENOVA_API_KEY")
+    model = os.environ.get("SENSENOVA_MODEL") or lc["model"]
+    payload = json.dumps({
+        "model": model,
+        "messages": messages,
+        "temperature": 0.2,
+        "response_format": {"type": "json_object"},
+    }).encode("utf-8")
+    req = _ureq.Request(lc["api_url"], data=payload, headers={
+        "Content-Type": "application/json",
+        "Authorization": "Bearer " + api_key,
+        "User-Agent": UA,
+    })
+    with _ureq.urlopen(req, timeout=lc["timeout"]) as r:
+        data = json.loads(r.read().decode("utf-8", "replace"))
+    return json.loads(data["choices"][0]["message"]["content"])
+
+
+def llm_enhance(items, topics, cfg):
+    """可选 LLM 增强：中文摘要 / 推荐理由 / 信息密度标签（低密度降权营销稿）。
+    任何失败（无 key、网络错、格式错）都降级跳过，不阻断主流程。返回增强条数。"""
+    lc = cfg["llm"]
+    cands = sorted(items, key=lambda i: i["score"], reverse=True)[:lc["max_items"]]
+    cands = [c for c in cands if c["score"] >= 50]
+    if not cands:
+        return 0
+    done = 0
+    bs = max(1, lc["batch_size"])
+    for s in range(0, len(cands), bs):
+        batch = cands[s:s + bs]
+        listing = "\n".join("[%d] %s | %s" % (i, b.get("title", ""), b.get("source", ""))
+                            for i, b in enumerate(batch))
+        prompt = ("你是光电行业资讯编辑。对下列每条资讯返回一个 JSON 对象，"
+                  "键为条目序号字符串，值为 {\"summary\": \"一句话中文摘要（40字内）\", "
+                  "\"reason\": \"推荐理由（25字内）\", \"density\": \"高/中/低\"}。\n"
+                  "信息密度定义：高=有实质技术、数据或产业信息；中=一般行业资讯；"
+                  "低=营销稿、标题党、重复通告、无实质内容。\n" + listing)
+        try:
+            res = _sensenova_chat([{"role": "user", "content": prompt}], cfg)
+        except Exception as e:
+            log("[!] LLM 增强本批失败，已跳过: %s" % e)
+            continue
+        for i, b in enumerate(batch):
+            r = res.get(str(i), res.get(i))
+            if not isinstance(r, dict):
+                continue
+            if r.get("summary"):
+                b["llm_summary"] = str(r["summary"])[:120]
+            if r.get("reason"):
+                b["llm_reason"] = str(r["reason"])[:80]
+            d = str(r.get("density", "")).strip()
+            if d in ("高", "中", "低"):
+                b["density"] = d
+                if d == "低":
+                    b["score"] = round(b["score"] * lc["density_penalty"], 1)
+            done += 1
+        time.sleep(1)
+    # 同步到热点事件的代表报道
+    by_url = {b["url"]: b for b in cands}
+    for t in topics or []:
+        rep = t.get("representative") or {}
+        src = by_url.get(rep.get("url"))
+        if src:
+            for k in ("llm_summary", "llm_reason", "density"):
+                if src.get(k):
+                    rep[k] = src[k]
+    log("[*] LLM 增强完成：%d 条" % done)
+    return done
+
+
 def main():
     ap = argparse.ArgumentParser(description="光电行业热点统计采集器")
     ap.add_argument("--limit", type=int, default=25, help="每个源最多取多少条 (默认 25)")
     ap.add_argument("--topics", type=int, default=10, help="热点榜输出条数 (默认 10)")
     ap.add_argument("--skip-rss", action="store_true", help="跳过 RSS 源")
     ap.add_argument("--skip-html", action="store_true", help="跳过 HTML 站")
+    ap.add_argument("--llm", action="store_true",
+                    help="启用可选 LLM 增强（商汤日日新 SenseNova）：中文摘要/推荐理由/信息密度。"
+                         "需设置环境变量 SENSENOVA_API_KEY；不传此时零依赖运行")
+    ap.add_argument("--images", action="store_true",
+                    help="启用可选生图（SenseNova U1.5 Lite 文生图，去水印）：为日报头条+热点 Top5 生成配图。"
+                         "需设置环境变量 SENSENOVA_API_KEY；失败自动降级为无图")
     args = ap.parse_args()
 
     with open(SOURCES_PATH, encoding="utf-8") as f:
@@ -1529,9 +2006,12 @@ def main():
 
     generated = now_utc()
     source_weight = {}
+    global _SOURCE_TIER
+    _SOURCE_TIER = {}
     for stype in ("rss", "html"):
         for cfg in sources.get(stype, []):
             source_weight[cfg["name"]] = cfg.get("weight", 0.8)
+            _SOURCE_TIER[cfg["name"]] = cfg.get("tier") or CONFIG["tiers"].get("default", "media")
 
     items = []
     seen = set()
@@ -1545,6 +2025,7 @@ def main():
             "title": r["title"],
             "url": r["url"],
             "source": r["source"],
+            "source_base": r.get("source_base") or r["source"],
             "source_type": r["source_type"],
             "category": classify(r["title"], r["source"]),
             "published_at": r.get("published_at"),
@@ -1578,10 +2059,10 @@ def main():
 
     topics = cluster_topics(items)
     topics = merge_duplicate_topics(topics, items)
-    compute_scores(items, topics, source_weight)
+    compute_scores(items, topics, source_weight, _SOURCE_TIER, CONFIG)
     items.sort(key=lambda i: i["score"], reverse=True)
     topics.sort(key=lambda t: t["score"], reverse=True)
-    topics = dedupe_topic_titles(topics, items)
+    topics = dedupe_topic_titles(topics, items, _SOURCE_TIER)
     topics.sort(key=lambda t: t["score"], reverse=True)
     # 热点榜只保留有佐证的事件（多来源 或 ≥3 信号），剔除单源碎片
     topics = [t for t in topics if t["source_count"] >= 2 or t["signal_count"] >= 3]
@@ -1591,6 +2072,14 @@ def main():
     for t in topics:
         t.pop("ids", None)
         t.pop("items", None)
+
+    # 可选 LLM 增强（默认关闭；失败自动降级，不阻断）
+    if args.llm:
+        try:
+            if llm_enhance(items, topics, CONFIG):
+                items.sort(key=lambda i: i["score"], reverse=True)
+        except Exception as e:
+            log("[!] LLM 增强异常，已跳过: %s" % e)
 
     daily = build_daily(items, topics, generated)
     existing_dailies = {}
@@ -1602,6 +2091,14 @@ def main():
         except Exception:
             existing_dailies = {}
     dailies = build_dailies(items, existing_dailies)
+
+    # 可选生图（默认关闭；失败自动降级，不阻断）
+    if args.images:
+        try:
+            generate_images(topics, dailies, generated, CONFIG)
+        except Exception as e:
+            log("[!] 生图模块异常，已跳过: %s" % e)
+
     write_outputs(items, topics, daily, dailies, generated)
 
     log("[*] 完成。热点榜 TOP5：")
