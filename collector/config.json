@@ -1,1 +1,80 @@
-{"_comment": "opto-hot 集中配置：评分权重 / 精选门槛 / 聚类阈值 / 日报编排 / LLM 增强。调标准只改这里，不用改代码。缺失字段会自动回退为内置默认值。", "clustering": {"tfidf_threshold": 0.14}, "daily": {"dedup_window_days": 7, "flash_count": 10, "headline_count": 1, "max_per_source": 2, "per_category_limit": 8, "picks_count": 4}, "heat": {"recent_hours": 48, "signal_cap": 10, "source_cap": 6, "status_hot_min_heat": 80.0, "status_hot_min_sources": 5, "status_trending_min_sources": 3}, "llm": {"_comment": "可选 LLM 增强（商汤日日新 SenseNova，OpenAI 兼容接口）。默认关闭：不传 --llm 时零依赖运行，不产生费用。启用：设置环境变量 SENSENOVA_API_KEY（绝不在代码/仓库中写 key），运行采集时加 --llm。模型 ID 与接口地址以商汤官方文档/控制台为准，可用 SENSENOVA_MODEL 环境变量覆盖模型。", "api_url": "https://token.sensenova.cn/v1/chat/completions", "batch_size": 8, "density_penalty": 0.9, "max_items": 30, "model": "sensenova-6.8-flash-lite", "provider": "sensenova", "timeout": 40}, "scoring": {"convergence_cap": 6, "missing_pubdate_penalty": 0.5, "recency_days": 30, "signal_cap": 10, "w_convergence": 20.0, "w_recency": 20.0, "w_signal": 15.0, "w_source": 45.0}, "tiers": {"default": "media", "media": {"label": "媒体", "select_threshold": 65.0}, "official": {"label": "官方", "select_threshold": 55.0}}, "images": {"_comment": "可选生图（SenseNova U1.5 Lite 文生图，调用传 watermark=false 去水印）。默认关闭：不传 --images 时不调用，不产生费用。启用：设置 SENSENOVA_API_KEY，运行采集时加 --images。为日报头条 + 热点榜 TopN 生成配图，存 dist/assets/img/。模型 ID 以商汤控制台为准，可用 SENSENOVA_IMAGE_MODEL 环境变量覆盖。超过 retention_days 天的旧配图会自动清理，避免仓库膨胀。", "provider": "sensenova", "model": "sensenova-u1.5-lite", "api_url": "https://token.sensenova.cn/v1/images/generations", "max_images": 6, "size": "2752x1536", "aspect_ratio": "16:9", "timeout": 120, "watermark": false, "retention_days": 30}}
+{
+  "_comment": "opto-hot 集中配置：评分权重 / 精选门槛 / 聚类阈值 / 日报编排 / LLM 增强。调标准只改这里，不用改代码。缺失字段会自动回退为内置默认值。",
+  "clustering": {
+    "tfidf_threshold": 0.14
+  },
+  "daily": {
+    "dedup_window_days": 7,
+    "flash_count": 10,
+    "headline_count": 1,
+    "max_per_source": 2,
+    "per_category_limit": 8,
+    "picks_count": 4
+  },
+  "heat": {
+    "recent_hours": 48,
+    "signal_cap": 10,
+    "source_cap": 6,
+    "status_hot_min_heat": 80.0,
+    "status_hot_min_sources": 5,
+    "status_trending_min_sources": 3
+  },
+  "llm": {
+    "_comment": "可选 LLM 增强（商汤日日新 SenseNova，OpenAI 兼容接口）。默认关闭：不传 --llm 时零依赖运行，不产生费用。启用：设置环境变量 SENSENOVA_API_KEY（绝不在代码/仓库中写 key），运行采集时加 --llm。模型 ID 与接口地址以商汤官方文档/控制台为准，可用 SENSENOVA_MODEL 环境变量覆盖模型。 双打分与结构化抽取的 prompt 见 prompts 段。",
+    "api_url": "https://token.sensenova.cn/v1/chat/completions",
+    "batch_size": 8,
+    "density_penalty": 0.9,
+    "max_items": 30,
+    "model": "sensenova-6.8-flash-lite",
+    "provider": "sensenova",
+    "timeout": 40,
+    "max_score_items": 30,
+    "max_extract_items": 20
+  },
+  "scoring": {
+    "convergence_cap": 6,
+    "missing_pubdate_penalty": 0.5,
+    "recency_days": 30,
+    "signal_cap": 10,
+    "w_convergence": 20.0,
+    "w_recency": 20.0,
+    "w_signal": 15.0,
+    "w_source": 45.0
+  },
+  "tiers": {
+    "default": "media",
+    "media": {
+      "label": "媒体",
+      "select_threshold": 65.0
+    },
+    "official": {
+      "label": "官方",
+      "select_threshold": 55.0
+    }
+  },
+  "images": {
+    "_comment": "可选生图（SenseNova U1.5 Lite 文生图，调用传 watermark=false 去水印）。默认关闭：不传 --images 时不调用，不产生费用。启用：设置 SENSENOVA_API_KEY，运行采集时加 --images。为日报头条 + 热点榜 TopN 生成配图，存 dist/assets/img/。模型 ID 以商汤控制台为准，可用 SENSENOVA_IMAGE_MODEL 环境变量覆盖。超过 retention_days 天的旧配图会自动清理，避免仓库膨胀。",
+    "provider": "sensenova",
+    "model": "sensenova-u1.5-lite",
+    "api_url": "https://token.sensenova.cn/v1/images/generations",
+    "max_images": 6,
+    "size": "2752x1536",
+    "aspect_ratio": "16:9",
+    "timeout": 120,
+    "watermark": false,
+    "retention_days": 30
+  },
+  "prompts": {
+    "_comment": "LLM prompt 外置：调评分/抽取标准只改这里，不用改代码。{listing} 会被替换为\"[序号] 标题 | 来源\"列表。",
+    "score_a": "你是光电行业资讯的资深编辑。请按以下标准为每条资讯打分（0-100 的整数）：\n- 行业重要性（40分）：对光电产业（激光/光通信/显示/半导体/光学/传感/光伏）的实质影响\n- 信息价值（30分）：是否有具体数据、技术细节或公司动态，而非泛泛而谈\n- 时效性（20分）：是否为近期新事件\n- 稀缺性（10分）：是否独家或少见报道\n只返回一个 JSON 对象，键为条目序号字符串，值为分數数字。不要解释、不要多余文字。\n{listing}",
+    "score_b": "你是光电行业投资分析师。请独立判断每条资讯的“值得关注度”（0-100 的整数），\n注意这是你独立于其他标准的第二次判断：\n- 90-100：行业重大事件（并购/突破性技术/重大政策）\n- 70-89：重要公司动态或实质性技术进展\n- 50-69：一般行业资讯\n- 30-49：边缘相关或营销味较重\n- 0-29：无关或无价值\n只返回一个 JSON 对象，键为条目序号字符串，值为分數数字。不要解释、不要多余文字。\n{listing}",
+    "extract": "你是光电行业资讯编辑。对每条资讯返回一个 JSON 对象，键为条目序号字符串，值为 {\"entities\": [\"提到的公司/机构名，最多3个\"], \"event\": \"谁做了什么，一句话（30字内）\", \"tags\": [\"1-3个标签，如：激光雷达/并购/财报\"]}。\n{listing}"
+  },
+  "trends": {
+    "_comment": "趋势模块：基于 dailies.json 的周维度聚合，本周 vs 上周。",
+    "sustained_min_days": 3,
+    "lookback_days": 14,
+    "top_new": 10,
+    "top_sustained": 10
+  }
+}

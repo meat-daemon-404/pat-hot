@@ -28,6 +28,8 @@
 - **Agent 接入**：免鉴权静态 JSON API（`api/v1/*`）+ OpenAPI 3.1 + 分类 RSS feed + `llms.txt` + 可安装 Skill（`agent/skills/opto-hot`）
 - **手机适配**：响应式布局（窄屏单列、顶部搜索、横向导航），移动端可正常浏览
 - **自动化**：内置 GitHub Actions，每 6 小时自动刷新数据并提交
+- **趋势追踪**：周维度聚合（本周 vs 上周分类热度、新上榜/持续发酵事件），独立趋势视图
+- **LLM 深挖**（可选）：两次独立打分定精选资格 + 结构化抽取（主体/事件/标签），prompt 全部外置
 
 
 ## CloudBase 部署
@@ -115,13 +117,19 @@ python collector/collect.py --images     # 可选：SenseNova 生图配图（需
   `https://token.sensenova.cn/v1/images/generations`（模型 `sensenova-u1.5-lite`，
   以商汤控制台为准，可用 `SENSENOVA_IMAGE_MODEL` 环境变量覆盖；调用传 `watermark=false` 去水印），
   为日报头条 + 热点榜 Top5 生成配图，存 `dist/assets/img/`（按日期+事件 id 命名，超 `retention_days` 天自动清理）。
+- **两次独立打分**（AIHOT 方法论）：对高分候选条目用两种视角（行业编辑 / 投资分析师）各打一次 0–100，
+  取平均为 `llm_score`；平均分低于所属 tier 精选门槛的不进精选。页面分数徽标优先展示 AI 均值（带 AI 角标）。
+- **结构化抽取**：对入选条目抽取 `entities`（公司/机构）、`event`（谁做了什么，一句话）、`tags`（标签），
+  存入条目 JSON（只增字段），页面条目卡片直接展示。
+- Prompt 全部外置在 `collector/config.json` 的 `prompts` 段（`score_a` / `score_b` / `extract`），
+  `{listing}` 为条目列表占位符；调评分/抽取标准只改配置，不用改代码。
 - Key **绝不写进代码/仓库**，只从环境变量 `SENSENOVA_API_KEY` 读取；
   无 key、超时、配额不足等任何失败都会静默降级（跳过增强/无图），不阻断主流程。
 - GitHub Actions 默认**不启用**（不产生费用）。如需启用：仓库 Settings → Secrets 添加
   `SENSENOVA_API_KEY`，并在工作流的采集命令后加上 `--llm` / `--images`，例如：
   `python collector/collect.py --limit 25 --llm`。
 
-## 数据源（13 个）
+## 数据源（26 个：17 RSS + 9 HTML）
 
 | 类型 | 名称 | 地址 | 权重 |
 |---|---|---|---|
@@ -140,11 +148,22 @@ python collector/collect.py --images     # 可选：SenseNova 生图配图（需
 | HTML | COEMA 中国光电子行业协会 | `https://www.coema.org.cn/` | 0.8 |
 | RSS | LEDinside 英文 | `https://www.ledinside.com/rss` | 0.8 |
 | RSS | EDN 电子工程专辑（关键词过滤） | `https://www.edn.com/feed/` | 0.6 |
+| RSS | Laser Focus World | `https://www.laserfocusworld.com/__rss/website-scheduled-content.xml` | 0.8 |
+| RSS | Physics World（关键词过滤） | `https://physicsworld.com/feed/` | 0.7 |
+| RSS | IEEE Spectrum（关键词过滤） | `https://spectrum.ieee.org/rss/fulltext` | 0.7 |
+| RSS | YouTube·Photonics Media（关键词过滤） | `https://www.youtube.com/feeds/videos.xml?channel_id=UCEBZptdTAgdFRvowKPKuWtQ` | 0.6 |
+| RSS | YouTube·SPIETV（关键词过滤） | `https://www.youtube.com/feeds/videos.xml?channel_id=UC0GnZ40gZON2-sIuGR0Pxhw` | 0.6 |
+| RSS | YouTube·Edmund Optics（关键词过滤） | `https://www.youtube.com/feeds/videos.xml?channel_id=UCA3_rChA1L_NGk6gNMqi25Q` | 0.6 |
+| RSS | YouTube·Thorlabs（关键词过滤） | `https://www.youtube.com/feeds/videos.xml?channel_id=UCS0b3D7Gzg_ub-s3T0PRXug` | 0.6 |
 | HTML | 搜狗微信·光电行业 | `https://weixin.sogou.com/weixin?type=2&query=光电行业` | 0.7 |
 | HTML | 中国政府采购网 | `https://www.ccgp.gov.cn/` | 0.8 |
 | HTML | 中国招标投标公共服务平台 | `http://www.cebpubservice.com/` | 0.8 |
 | HTML | 工信部要闻（关键词过滤） | `https://www.miit.gov.cn/` | 0.8 |
 
+> X/Twitter 为**可选源**（默认不启用）：`collector/sources.json` 顶部 `_x_twitter_optional`
+> 有配置示例。RSSHub 的 `/twitter/user/:id` 路由需要自建 RSSHub 实例（或可用的公共实例），
+> 且 X 反爬严格、可能需要登录态；启用时把示例对象加入 `rss` 数组即可。
+>
 > 抓取说明：COEMA 页面实际为 GBK 编码（meta 声明为 utf-8）；OFweek 为 GB2312；C114 RSS 为 GBK 编码的 RSS 2.0；Nature Photonics 为 RSS 1.0 (RDF)。采集器已做对应处理。源配置在 `collector/sources.json`，可自由增删。
 
 ## 打分模型（透明可复现）
@@ -155,6 +174,18 @@ python collector/collect.py --images     # 可选：SenseNova 生图配图（需
 - 精选门槛（分级）：官方信源（协会/政府/一手）≥ 55 分，媒体信源 ≥ 65 分
 - 聚类：以领域词表 + 英文词（去停用词）做关键词索引，≥2 条命中的词构成候选主题；重叠 ≥50% 或代表条目相同的主题自动合并
 - 以上权重、门槛、窗口均可在 `collector/config.json` 调整，缺失字段自动回退内置默认值
+
+## 趋势模块
+
+基于 `data/dailies.json` 的周维度聚合，不新增采集，每次运行自动生成 `data/trends.json`
+（同步到 `dist/data/trends.json` 与 `api/v1/trends.json`）：
+
+- **本周 vs 上周**：各分类热度（文章 score 求和）变化，涨跌百分比
+- **新上榜事件**：本周首次出现的事件（同一事件跨天只算一件）
+- **持续发酵事件**：近 14 天内出现 ≥3 天的事件
+
+页面新增 **趋势** 视图（📈）：分类热度涨跌条、新上榜事件、持续发酵事件。
+参数在 `collector/config.json` 的 `trends` 段（回看天数、持续天数阈值、展示条数）。
 
 ## 目录结构
 
