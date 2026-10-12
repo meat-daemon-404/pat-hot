@@ -1682,8 +1682,9 @@ def generate_images(topics, dailies, generated, cfg, ch_id="tech"):
 
 
 # ---------------- 可选 LLM 增强（商汤日日新 SenseNova，默认关闭） ----------------
-def _sensenova_chat(messages, cfg):
-    """调用 SenseNova OpenAI 兼容接口。Key 只从环境变量 SENSENOVA_API_KEY 读取，绝不写死。"""
+def _sensenova_chat(messages, cfg, max_retries=3):
+    """调用 SenseNova OpenAI 兼容接口。Key 只从环境变量 SENSENOVA_API_KEY 读取，绝不写死。
+    带指数退避重试（2s/4s），应对超时和瞬时网络抖动；401/403 认证失败不重试。"""
     import urllib.request as _ureq
     lc = cfg["llm"]
     api_key = os.environ.get("SENSENOVA_API_KEY")
@@ -1696,14 +1697,29 @@ def _sensenova_chat(messages, cfg):
         "temperature": 0.2,
         "response_format": {"type": "json_object"},
     }).encode("utf-8")
-    req = _ureq.Request(lc["api_url"], data=payload, headers={
-        "Content-Type": "application/json",
-        "Authorization": "Bearer " + api_key,
-        "User-Agent": UA,
-    })
-    with _ureq.urlopen(req, timeout=lc["timeout"]) as r:
-        data = json.loads(r.read().decode("utf-8", "replace"))
-    return json.loads(data["choices"][0]["message"]["content"])
+    with_retry = lc["timeout"]
+    last_err = None
+    for attempt in range(max_retries):
+        try:
+            req = _ureq.Request(lc["api_url"], data=payload, headers={
+                "Content-Type": "application/json",
+                "Authorization": "Bearer " + api_key,
+                "User-Agent": UA,
+            })
+            with _ureq.urlopen(req, timeout=with_retry) as r:
+                data = json.loads(r.read().decode("utf-8", "replace"))
+            content = data["choices"][0]["message"]["content"]
+            return json.loads(content)
+        except Exception as e:
+            last_err = e
+            es = str(e)
+            if "401" in es or "403" in es or "Unauthorized" in es:
+                raise
+            if attempt < max_retries - 1:
+                wait = 2 ** (attempt + 1)
+                log("[!] LLM 请求失败（第%d/%d次），%ds后重试: %s" % (attempt + 1, max_retries, wait, e))
+                time.sleep(wait)
+    raise last_err
 
 
 def _ch_prompt(key, cfg):
@@ -1713,6 +1729,27 @@ def _ch_prompt(key, cfg):
     if dom != "光电行业":
         p = p.replace("光电行业", dom).replace("光电产业", dom).replace("光电", CHANNELS[_CH]["name"]["zh"])
     return p
+
+
+def _apply_enhance(b, r, lc):
+    """把单条 LLM 增强结果写回条目，成功返回 1，失败返回 0。"""
+    if not isinstance(r, dict):
+        return 0
+    ok = False
+    if r.get("zh_full"):
+        b["zh_full"] = str(r["zh_full"])[:1200]
+        ok = True
+    if r.get("summary"):
+        b["llm_summary"] = str(r["summary"])[:300]
+        ok = True
+    if r.get("reason"):
+        b["llm_reason"] = str(r["reason"])[:80]
+    d = str(r.get("density", "")).strip()
+    if d in ("高", "中", "低"):
+        b["density"] = d
+        if d == "低":
+            b["score"] = round(b["score"] * lc["density_penalty"], 1)
+    return 1 if ok else 0
 
 
 def llm_enhance(items, topics, cfg):
@@ -1744,24 +1781,25 @@ def llm_enhance(items, topics, cfg):
         try:
             res = _sensenova_chat([{"role": "user", "content": prompt}], cfg)
         except Exception as e:
-            log("[!] LLM 增强本批失败，已跳过: %s" % e)
+            log("[!] LLM 增强整批失败，降级逐条重试: %s" % e)
+            # 逐条降级：单条请求更小、更快，坏条目不连累好条目
+            for b in batch:
+                try:
+                    single_listing = _listing(b, 0)
+                    single_prompt = prompt.rsplit(listing, 1)[0] + single_listing
+                    sres = _sensenova_chat([{"role": "user", "content": single_prompt}], cfg, max_retries=2)
+                    r = sres.get("0", sres.get(0))
+                    if isinstance(r, dict):
+                        done += _apply_enhance(b, r, lc)
+                except Exception as e2:
+                    log("[!] 单条增强失败，跳过: %s | %s" % (b.get("title", "")[:30], e2))
+                time.sleep(0.5)
             continue
         for i, b in enumerate(batch):
             r = res.get(str(i), res.get(i))
             if not isinstance(r, dict):
                 continue
-            if r.get("zh_full"):
-                b["zh_full"] = str(r["zh_full"])[:1200]
-            if r.get("summary"):
-                b["llm_summary"] = str(r["summary"])[:300]
-            if r.get("reason"):
-                b["llm_reason"] = str(r["reason"])[:80]
-            d = str(r.get("density", "")).strip()
-            if d in ("高", "中", "低"):
-                b["density"] = d
-                if d == "低":
-                    b["score"] = round(b["score"] * lc["density_penalty"], 1)
-            done += 1
+            done += _apply_enhance(b, r, lc)
         time.sleep(1)
     # 同步到热点事件的代表报道
     by_url = {b["url"]: b for b in cands}
