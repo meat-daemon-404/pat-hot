@@ -683,6 +683,58 @@ class TestLlmBackoff(unittest.TestCase):
             collect._sensenova_chat([{"role": "user", "content": "x"}], collect.CONFIG)
 
 
+class TestLlmJsonFence(unittest.TestCase):
+    """锁住 2026-10-12 的按需/批量摘要回归：推理模型偶尔无视 response_format，
+    把 JSON 包进 ```json 围栏或前后带解释文字，json.loads 直接抛
+    "Expecting value: line 3 column 1"，HTTP 重试救不了确定性格式错误，
+    当天定时任务 33 条中文摘要因此被整条弃用（zh_full 全空）。"""
+
+    def test_plain_json_passthrough(self):
+        self.assertEqual(collect._parse_llm_json('{"0": {"zh_full": "甲"}}'),
+                         {"0": {"zh_full": "甲"}})
+
+    def test_fenced_json_is_parsed(self):
+        raw = '\n\n```json\n{"0": {"zh_full": "乙", "density": "高"}}\n```'
+        out = collect._parse_llm_json(raw)
+        self.assertEqual(out["0"]["zh_full"], "乙")
+
+    def test_prose_around_json_is_parsed(self):
+        raw = 'Sure, here you go:\n```json\n{"zh_full": "丙"}\n```\nHope that helps.'
+        self.assertEqual(collect._parse_llm_json(raw), {"zh_full": "丙"})
+
+    def test_leading_text_without_fence(self):
+        raw = 'output: {"zh_full": "丁"} tail'
+        self.assertEqual(collect._parse_llm_json(raw), {"zh_full": "丁"})
+
+    def test_garbage_still_raises(self):
+        with self.assertRaises(Exception):
+            collect._parse_llm_json("not json at all")
+
+    def test_sensenova_chat_survives_fenced_content(self):
+        """端到端：上游返回围栏包裹时 _sensenova_chat 必须给出解析结果而非抛错。"""
+        class R:
+            def read(self):
+                return json.dumps({"choices": [{"message": {
+                    "content": '```json\n{"0": {"zh_full": "戊"}}\n```'}}]}).encode("utf-8")
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+        os.environ["SENSENOVA_API_KEY"] = "k"
+        real_urlopen = collect.urllib.request.urlopen
+        try:
+            collect.urllib.request.urlopen = lambda req, timeout=None: R()
+            out = collect._sensenova_chat([{"role": "user", "content": "x"}],
+                                          collect.CONFIG, max_retries=1)
+            self.assertEqual(out, {"0": {"zh_full": "戊"}})
+        finally:
+            collect.urllib.request.urlopen = real_urlopen
+            os.environ.pop("SENSENOVA_API_KEY", None)
+
+
 class TestInlineCssIntegrity(unittest.TestCase):
     """锁住 2026-10-12 线上回归：坏部署把内联 CSS 的真换行写成字面量 \\n，
     浏览器丢弃全部样式，站点退化成裸 HTML；而 --check 当时只查文件在不在，看不见它。

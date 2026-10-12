@@ -2022,6 +2022,36 @@ def generate_images(topics, dailies, generated, cfg, ch_id="tech"):
 
 
 # ---------------- 可选 LLM 增强（商汤日日新 SenseNova，默认关闭） ----------------
+def _parse_llm_json(text):
+    """解析模型返回的 JSON。
+
+    推理模型（sensenova-6.8-flash-lite 实测）偶尔无视 response_format，把 JSON 包进
+    ```json 代码围栏、或在前后带一句解释文字。直接 json.loads 会抛
+    "Expecting value: line 3 column 1"，HTTP 层重试对这种确定性格式错误毫无帮助——
+    2026-10-12 定时任务里 33 条摘要因此被整条弃用。依次尝试：原文 → 剥围栏 →
+    首个 { 到末个 } 的子串。全部失败才抛原始异常语义（交给调用方计数降级）。
+    """
+    raw = str(text or "")
+    candidates = [raw]
+    import re as _re
+    m = _re.search(r"```(?:json)?\s*([\s\S]*?)```", raw)
+    if m:
+        candidates.append(m.group(1))
+    s, e = raw.find("{"), raw.rfind("}")
+    if 0 <= s < e:
+        candidates.append(raw[s:e + 1])
+    last_err = None
+    for cand in candidates:
+        cand = cand.strip()
+        if not cand:
+            continue
+        try:
+            return json.loads(cand)
+        except Exception as exc:
+            last_err = exc
+    raise last_err if last_err else ValueError("LLM 返回非 JSON")
+
+
 def _sensenova_chat(messages, cfg, max_retries=3):
     """调用 SenseNova OpenAI 兼容接口。Key 只从环境变量 SENSENOVA_API_KEY 读取，绝不写死。
     带指数退避重试（2s/4s），应对超时和瞬时网络抖动；401/403 认证失败不重试。"""
@@ -2049,7 +2079,7 @@ def _sensenova_chat(messages, cfg, max_retries=3):
             with _ureq.urlopen(req, timeout=with_retry) as r:
                 data = json.loads(r.read().decode("utf-8", "replace"))
             content = data["choices"][0]["message"]["content"]
-            return json.loads(content)
+            return _parse_llm_json(content)
         except Exception as e:
             last_err = e
             # 用真实 HTTP 状态码判断，不用字符串匹配：原实现写 "401" in str(e)，
