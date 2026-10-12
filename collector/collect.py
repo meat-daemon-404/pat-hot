@@ -13,6 +13,7 @@ opto-hot — 光电行业热点统计（以 AIHOT 为模板）
 """
 
 import argparse
+import collections
 import csv
 import hashlib
 import html as htmlmod
@@ -64,6 +65,18 @@ DEFAULT_CONFIG = {
         "api_url": "https://token.sensenova.cn/v1/chat/completions",
         "max_items": 30, "batch_size": 8, "timeout": 40,
         "density_penalty": 0.9,
+        "max_score_items": 30, "max_extract_items": 20,
+    },
+    "prompts": {
+        "score_a": "你是光电行业资讯的资深编辑。请按以下标准为每条资讯打分（0-100 的整数）：\n- 行业重要性（40分）：对光电产业（激光/光通信/显示/半导体/光学/传感/光伏）的实质影响\n- 信息价值（30分）：是否有具体数据、技术细节或公司动态，而非泛泛而谈\n- 时效性（20分）：是否为近期新事件\n- 稀缺性（10分）：是否独家或少见报道\n只返回一个 JSON 对象，键为条目序号字符串，值为分數数字。不要解释、不要多余文字。\n{listing}",
+        "score_b": "你是光电行业投资分析师。请独立判断每条资讯的“值得关注度”（0-100 的整数），注意这是你独立于其他标准的第二次判断：\n- 90-100：行业重大事件（并购/突破性技术/重大政策）\n- 70-89：重要公司动态或实质性技术进展\n- 50-69：一般行业资讯\n- 30-49：边缘相关或营销味较重\n- 0-29：无关或无价值\n只返回一个 JSON 对象，键为条目序号字符串，值为分數数字。不要解释、不要多余文字。\n{listing}",
+        "extract": "你是光电行业资讯编辑。对每条资讯返回一个 JSON 对象，键为条目序号字符串，值为 {\"entities\": [\"提到的公司/机构名，最多3个\"], \"event\": \"谁做了什么，一句话（30字内）\", \"tags\": [\"1-3个标签，如：激光雷达/并购/财报\"]}。\n{listing}",
+    },
+    "trends": {
+        "sustained_min_days": 3,
+        "lookback_days": 14,
+        "top_new": 10,
+        "top_sustained": 10,
     },
     "images": {
         "provider": "sensenova",
@@ -1120,6 +1133,80 @@ def build_dailies(items, existing=None):
     return {k: v for k, v in result.items() if k >= cutoff}
 
 
+def build_trends(dailies, generated, cfg):
+    """周维度趋势聚合（AIHOT 周报思想），只消费 dailies.json，不新增采集：
+    - 本周 vs 上周：各分类热度（文章 score 求和）变化
+    - 新上榜事件：本周出现、过去 lookback_days 天未出现过的事件
+    - 持续发酵事件：lookback_days 内出现天数 >= sustained_min_days 的事件
+    同一事件跨天只算一件。
+    """
+    tc = cfg.get("trends", {})
+    lookback = max(7, tc.get("lookback_days", 14))
+    min_days = max(2, tc.get("sustained_min_days", 3))
+    now_cn = generated.astimezone(TZ_CN).date()
+    monday = now_cn - timedelta(days=now_cn.weekday())
+    this_week = {(monday + timedelta(days=i)).isoformat() for i in range(7)}
+    last_monday = monday - timedelta(days=7)
+    last_week = {(last_monday + timedelta(days=i)).isoformat() for i in range(7)}
+    hist_start = (monday - timedelta(days=lookback)).isoformat()
+
+    cat_heat = {"this": collections.Counter(), "last": collections.Counter()}
+    topic_days = collections.defaultdict(set)   # topic_id -> set(date)
+    topic_title = {}
+    topic_score = collections.Counter()
+
+    for d, entry in (dailies or {}).items():
+        if d < hist_start or d > now_cn.isoformat():
+            continue
+        bucket = "this" if d in this_week else ("last" if d in last_week else None)
+        for sec in (entry or {}).get("sections", []) or []:
+            cat = sec.get("category") or "其他"
+            for a in sec.get("articles", []) or []:
+                s = float(a.get("score") or 0)
+                if bucket:
+                    cat_heat[bucket][cat] += s
+                tid = a.get("topic_id")
+                if tid:
+                    topic_days[tid].add(d)
+                    topic_title[tid] = a.get("topic_title") or a.get("title") or tid
+                    topic_score[tid] += s
+
+    cats = sorted(set(cat_heat["this"]) | set(cat_heat["last"]),
+                  key=lambda c: cat_heat["this"][c], reverse=True)
+    category_delta = []
+    for c in cats:
+        tw, lw = round(cat_heat["this"][c], 1), round(cat_heat["last"][c], 1)
+        pct = round((tw - lw) / lw * 100, 1) if lw > 0 else (100.0 if tw > 0 else 0.0)
+        category_delta.append({"category": c, "thisWeek": tw, "lastWeek": lw, "deltaPct": pct})
+
+    week_start = monday.isoformat()
+    new_topics, sustained = [], []
+    for tid, days in topic_days.items():
+        days_sorted = sorted(days)
+        in_this_week = any(d in this_week for d in days_sorted)
+        first_seen = days_sorted[0]
+        if in_this_week and first_seen >= week_start:
+            # 本周首次出现：再确认 lookback 窗口内更早无记录（topic_id 本身即按事件归一）
+            new_topics.append({"topic_id": tid, "title": topic_title.get(tid, tid),
+                               "score": round(topic_score[tid], 1), "days": len(days_sorted)})
+        if len(days_sorted) >= min_days:
+            sustained.append({"topic_id": tid, "title": topic_title.get(tid, tid),
+                              "days": len(days_sorted),
+                              "score": round(topic_score[tid], 1)})
+    new_topics.sort(key=lambda x: x["score"], reverse=True)
+    sustained.sort(key=lambda x: (x["days"], x["score"]), reverse=True)
+    top_n, top_s = tc.get("top_new", 10), tc.get("top_sustained", 10)
+
+    return {
+        "schemaVersion": 1,
+        "generatedAt": generated.isoformat(),
+        "weekStart": week_start,
+        "categoryDelta": category_delta,
+        "newTopics": new_topics[:top_n],
+        "sustainedTopics": sustained[:top_s],
+    }
+
+
 # ---------------- HTML 报告（AIHOT 风格） ----------------
 CAT_CLS = {
     "激光": "laser", "光通信": "fiber", "显示与面板": "display", "光电芯片与半导体": "chip",
@@ -1187,6 +1274,18 @@ a:hover{color:var(--accent)}
 .isrc{font-size:12.5px;font-weight:650}
 .itime{font-size:12px;color:var(--muted)}
 .iscore{margin-left:auto;font-size:14px;font-weight:750}
+.iai{font-size:10px;color:#fff;background:linear-gradient(135deg,#8b5cf6,#6366f1);border-radius:5px;padding:1px 6px;margin-left:5px;vertical-align:2px;font-weight:700}
+.itag{display:inline-block;font-size:11px;background:var(--accent-soft);color:var(--accent-deep);border-radius:6px;padding:1px 8px;margin:2px 4px 2px 0;font-weight:600}
+.iev{font-size:13px;color:var(--ink-soft);margin-top:4px}
+.ient{margin-top:4px}
+.tbar-row{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:13px}
+.tbar-name{width:110px;flex:none;color:var(--ink)}
+.tbar-track{flex:1;height:10px;background:var(--line);border-radius:6px;overflow:hidden;position:relative}
+.tbar-fill{height:100%;border-radius:6px;background:linear-gradient(90deg,#6366f1,#8b5cf6)}
+.tbar-val{width:110px;flex:none;text-align:right;font-size:12px;color:var(--ink-soft)}
+.tup{color:#16a34a;font-weight:700}.tdown{color:#dc2626;font-weight:700}.tflat{color:#9aa3b2}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:8px 0}
+.tsec-title{font-size:15px;font-weight:750;margin:18px 0 8px}
 .s-hi{color:var(--accent-deep)}.s-mid{color:var(--gold)}.s-lo{color:#9aa3b2}
 .bdg{font-size:11px;border-radius:7px;padding:1px 8px;white-space:nowrap;font-weight:600}
 .b-cat{color:var(--accent-deep);background:var(--accent-soft)}
@@ -1306,7 +1405,7 @@ const CAT_EN = {"激光":"Laser","光通信":"Optical Comm","显示与面板":"D
 const STATUS_EN = {"爆":"Hot","发酵中":"Trending","关注中":"Watch"};
 const DENS_EN = {"高":"High","中":"Medium","低":"Low"};
 const I18N = {
-  zh: { feed:"精选", all:"全部动态", hot:"热点榜", daily:"光电日报", topics:"主题", data:"数据", agent:"Agent 接入",
+  zh: { feed:"精选", all:"全部动态", hot:"热点榜", daily:"光电日报", topics:"主题", data:"数据", trends:"趋势", agent:"Agent 接入",
     search:"搜索光电资讯 / 公司 / 关键词…", catAll:"全部", sortScore:"按推荐分", sortTime:"按时间",
     feedSub:"按推荐分排序的光电行业时间线", thresholdNote:"精选门槛：官方信源 ≥ {o} 分 · 媒体信源 ≥ {m} 分（可在 collector/config.json 调整）",
     hotCard:"光电热点", hotMore:"完整榜单 →", daySel:"条精选", noMatch:"没有匹配的条目",
@@ -1321,8 +1420,10 @@ const I18N = {
     apiDesc:"数据每 6 小时自动更新，接口免鉴权，AI 智能体 / 脚本可直接消费。", endpoint:"接口", desc:"说明", open:"打开",
     curl:"用法示例（curl）", llmsNote:"站点根目录提供 llms.txt（LLM 友好入口），Agent 可先读取它再按需拉取接口。", base:"接口基地址（本页 URL 去掉 index.html）",
     reason:"推荐理由", density:"信息密度", official:"官方", pick:"精选",
+    trendPage:"本周趋势", trendSub:"本周 vs 上周 · 分类热度与事件追踪",
+    catDelta:"分类热度变化", newTopics:"新上榜事件", sustained:"持续发酵", noTrend:"本周暂无趋势数据（需要至少两周的日报归档）",
     footer:"Opto-Hot · 光电行业热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
-  en: { feed:"Selected", all:"All Items", hot:"Hot Topics", daily:"Daily Brief", topics:"Topics", data:"Data", agent:"Agent API",
+  en: { feed:"Selected", all:"All Items", hot:"Hot Topics", daily:"Daily Brief", topics:"Topics", data:"Data", trends:"Trends", agent:"Agent API",
     search:"Search optics / photonics news…", catAll:"All", sortScore:"By score", sortTime:"By time",
     feedSub:"Optoelectronics timeline ranked by score", thresholdNote:"Selection bar: official sources ≥ {o} · media sources ≥ {m} (tune in collector/config.json)",
     hotCard:"Hot Topics", hotMore:"Full ranking →", daySel:"selected", noMatch:"No matching items",
@@ -1337,6 +1438,8 @@ const I18N = {
     apiDesc:"Data refreshes every 6h. Endpoints need no auth and are agent/script friendly.", endpoint:"Endpoint", desc:"Description", open:"Open",
     curl:"Examples (curl)", llmsNote:"llms.txt at site root is an LLM-friendly entry point.", base:"Base URL (this page URL minus index.html)",
     reason:"Why it matters", density:"Info density", official:"Official", pick:"Pick",
+    trendPage:"Weekly Trends", trendSub:"This week vs last week · category heat & event tracking",
+    catDelta:"Category heat change", newTopics:"New events", sustained:"Sustained events", noTrend:"No trend data yet (needs 2+ weeks of daily archive)",
     footer:"Opto-Hot · optoelectronics hot-topic stats (AIHOT methodology) · public data, for reference only · open source on GitHub" }
 };
 let LANG = localStorage.getItem("opto-lang") || "zh";
@@ -1358,19 +1461,21 @@ function catBadge(c){ return '<span class="bdg b-cat">'+esc(catName(c))+'</span>
 function pickBadge(){ return '<span class="bdg b-pick">'+T.pick+'</span>'; }
 function tierBadge(t){ return t==="official"?'<span class="bdg b-tier">'+T.official+'</span>':""; }
 function densBadge(d){ if(!d) return ""; const cls=d==="高"?"b-dh":(d==="中"?"b-dm":"b-dl"); return '<span class="bdg '+cls+'" title="'+T.density+'">'+esc(densName(d))+'</span>'; }
-function scoreEl(it){ return '<span class="iscore mono '+scoreCls(it.score)+'" title="score / 100">'+Math.round(it.score)+'</span>'; }
+function scoreEl(it){ const s=(it.llm_score!=null?it.llm_score:it.score); const ai=(it.llm_score!=null?'<span class="iai">AI</span>':""); return '<span class="iscore mono '+scoreCls(s)+'" title="'+(it.llm_score!=null?"AI 双打分均值":"score")+' / 100">'+Math.round(s)+'</span>'+ai; }
 function summaryOf(it){ return it.llm_summary || it.summary || ""; }
 function itemCard(it){
   const reason = it.llm_reason ? '<div class="ireason"><b>'+T.reason+'：</b>'+esc(it.llm_reason)+'</div>' : "";
+  const ev = it.event ? '<div class="iev">\u26a1 '+esc(it.event)+'</div>' : "";
+  const ents = (it.entities&&it.entities.length) ? '<div class="ient">'+it.entities.map(e=>'<span class="itag">'+esc(e)+'</span>').join("")+((it.tags||[]).map(t=>'<span class="itag">🏷 '+esc(t)+'</span>').join(""))+'</div>' : "";
   const sum = summaryOf(it);
   return '<article class="icard"><div class="irow">'+catBadge(it.category)+tierBadge(it.tier)+'<span class="isrc">'+esc(it.source)+'</span><span class="itime">'+esc(pubLabel(it))+'</span>'+(it.selected?pickBadge():"")+densBadge(it.density)+scoreEl(it)+'</div>'
     +'<div class="ititle"><a href="'+esc(it.url)+'" target="_blank" rel="noopener">'+esc(it.title)+'</a></div>'
-    +reason+(sum?'<div class="isum">'+esc(sum)+'</div>':"")
+    +reason+ev+ents+(sum?'<div class="isum">'+esc(sum)+'</div>':"")
     +'<a class="iorig" href="'+esc(it.url)+'" target="_blank" rel="noopener">↗ source</a></article>';
 }
 function threshNote(){ const th=S.thresholds||{official:55,media:65}; return T.thresholdNote.replace("{o}",th.official).replace("{m}",th.media); }
 const renderers = {};
-function router(){ const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/"; const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/data":"data","/agent":"agent"}; const v=map[name]||"feed"; $$(".nav-link").forEach(a=>a.classList.toggle("on", a.getAttribute("href")===("#"+name))); $$(".view").forEach(x=>x.classList.remove("on")); $("#view-"+v).classList.add("on"); (renderers[v]||renderers.feed)(); window.scrollTo(0,0); }
+function router(){ const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/"; const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/trends":"trends","/data":"data","/agent":"agent"}; const v=map[name]||"feed"; $$(".nav-link").forEach(a=>a.classList.toggle("on", a.getAttribute("href")===("#"+name))); $$(".view").forEach(x=>x.classList.remove("on")); $("#view-"+v).classList.add("on"); (renderers[v]||renderers.feed)(); window.scrollTo(0,0); }
 function renderFeed(){
   const root=$("#view-feed");
   const top=(S.topics||[]).slice(0,5);
@@ -1447,6 +1552,25 @@ function renderTopics(){
   root.innerHTML='<div class="card ph"><h1>'+T.topicsPage+'</h1><span class="sub">'+T.topicsSub+'</span></div><div class="tgrid">'+rows.map(r=>'<div class="tcard" data-cat="'+esc(r.category)+'"><div class="n">'+esc(catName(r.category))+'<span class="bdg b-cat">'+r.total+'</span></div><div class="nums"><span>24h <b>'+r.last24h+'</b></span><span>7d <b>'+r.last7d+'</b></span></div></div>').join("")+'</div>';
   $$(".tcard", root).forEach(el=>el.onclick=()=>{ state.cat=el.dataset.cat; location.hash="#/all"; });
 }
+function renderTrends(){
+  const root=$("#view-trends"); const tr=S.trends||{};
+  const weekStart=tr.weekStart||"";
+  let html='<div class="card ph"><h1>'+T.trendPage+'</h1><span class="sub">'+T.trendSub+(weekStart?' · '+fmtDay(weekStart):"")+'</span></div>';
+  const deltas=tr.categoryDelta||[];
+  if(!deltas.length){ root.innerHTML=html+'<div class="card"><p class="anote">'+T.noTrend+'</p></div>'; return; }
+  const maxV=Math.max(...deltas.map(x=>x.thisWeek),1);
+  const bars=deltas.map(x=>{
+    const pct=x.deltaPct; const cls=pct>5?"tup":(pct<-5?"tdown":"tflat");
+    const arrow=pct>5?"▲":(pct<-5?"▼":"—");
+    const w=Math.max(2,x.thisWeek/maxV*100).toFixed(1);
+    return '<div class="tbar-row"><span class="tbar-name">'+esc(x.category)+'</span><div class="tbar-track"><div class="tbar-fill" style="width:'+w+'%"></div></div><span class="tbar-val mono">'+x.thisWeek.toFixed(0)+' <span class="'+cls+'">'+arrow+' '+Math.abs(pct)+'%</span></span></div>';
+  }).join("");
+  html+='<div class="tsec-title">'+T.catDelta+'</div><div class="tcard">'+bars+'</div>';
+  const mkList=(arr)=>arr.map(t=>'<div class="tcard"><div style="font-weight:650;font-size:14px">'+esc(t.title)+'</div><div style="font-size:12px;color:var(--ink-soft);margin-top:4px">🔥 '+Math.round(t.score)+' · '+(t.days!=null?t.days+(LANG==="en"?" days":" 天"):"")+'</div></div>').join("");
+  if((tr.newTopics||[]).length) html+='<div class="tsec-title">🆕 '+T.newTopics+'</div>'+mkList(tr.newTopics);
+  if((tr.sustainedTopics||[]).length) html+='<div class="tsec-title">♨️ '+T.sustained+'</div>'+mkList(tr.sustainedTopics);
+  root.innerHTML=html;
+}
 function renderData(){
   const root=$("#view-data"); const dl=S.daily||{byDay:[],bySource:[]};
   const maxDay=Math.max(...dl.byDay.map(x=>x.count),1);
@@ -1461,7 +1585,7 @@ function renderData(){
 function renderAgent(){
   const root=$("#view-agent");
   const base=location.href.split("?")[0].split("#")[0].replace(/index\.html$/,"");
-  const eps=[["items",T.dlItems],["hot-topics",T.dlHot],["dailies",T.dlDaily],["daily","daily.json"],["stories","stories.json"],["biz","政策/招投标库"]];
+  const eps=[["items",T.dlItems],["hot-topics",T.dlHot],["dailies",T.dlDaily],["daily","daily.json"],["stories","stories.json"],["trends","trends.json"],["biz","政策/招投标库"]];
   const rows=eps.map(([k,d])=>'<tr><td class="mono">api/v1/'+k+'.json</td><td>'+d+'</td><td><a href="'+base+'api/v1/'+k+'.json" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>').join("");
   const curl=eps.map(([k])=>'curl '+base+'api/v1/'+k+'.json').join("\n");
   const feeds=["feed.xml","category/laser.xml","category/fiber.xml","category/display.xml","category/chip.xml","category/optics.xml","category/sensing.xml","category/pv.xml","category/research.xml","category/capital.xml","category/telecom.xml","category/other.xml"];
@@ -1472,7 +1596,7 @@ function renderAgent(){
     +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">RSS</h3><table style="margin-top:8px"><tbody>'+feedRows+'</tbody></table></div>'
     +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">'+T.curl+'</h3><pre>'+esc(curl)+'</pre><p class="anote">'+T.llmsNote+'</p><p class="anote">Agent Skill：仓库 <span class="mono">agent/skills/opto-hot</span></p></div>';
 }
-renderers.feed=renderFeed; renderers.all=renderAll; renderers.hot=renderHot; renderers.daily=renderDaily; renderers.topics=renderTopics; renderers.data=renderData; renderers.agent=renderAgent;
+renderers.feed=renderFeed; renderers.all=renderAll; renderers.hot=renderHot; renderers.daily=renderDaily; renderers.topics=renderTopics; renderers.data=renderData; renderers.trends=renderTrends; renderers.agent=renderAgent;
 function bind(){ $("#q").addEventListener("input",e=>{ state.q=e.target.value; if(location.hash==="#/all") renderAll(); }); $("#lang").onclick=()=>{ LANG = LANG==="zh"?"en":"zh"; localStorage.setItem("opto-lang", LANG); location.reload(); }; window.addEventListener("hashchange",router); document.addEventListener("keydown",e=>{ if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){ e.preventDefault(); $("#q").focus(); } }); tr(); router(); }
 document.addEventListener("DOMContentLoaded", bind);
 """
@@ -1497,6 +1621,7 @@ APP_HTML = r"""
     <a class="nav-link" href="#/daily"><span class="ic">📰</span><span data-i18n="daily">光电日报</span></a>
     <a class="nav-link" href="#/topics"><span class="ic">◈</span><span data-i18n="topics">主题</span></a>
     <a class="nav-link" href="#/data"><span class="ic">◉</span><span data-i18n="data">数据</span></a>
+    <a class="nav-link" href="#/trends"><span class="ic">📈</span><span data-i18n="trends">趋势</span></a>
     <div class="nav-sec">工具</div>
     <a class="nav-link" href="#/agent"><span class="ic">🤖</span><span data-i18n="agent">Agent 接入</span></a>
     <div class="side-foot">AIHOT 方法论 · 零依赖采集<br>数据来自公开网络，仅供参考</div>
@@ -1514,6 +1639,7 @@ APP_HTML = r"""
       <section id="view-daily" class="view"></section>
       <section id="view-topics" class="view"></section>
       <section id="view-data" class="view"></section>
+      <section id="view-trends" class="view"></section>
       <section id="view-agent" class="view"></section>
     </div>
     <footer><span data-i18n="footer">Opto-Hot · 光电行业热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议</span> · <a href="https://github.com/sun-zihang/opto-hot" target="_blank" rel="noopener">github.com/sun-zihang/opto-hot</a></footer>
@@ -1548,7 +1674,7 @@ def pub_label(it):
     return "收录 " + fmt_dt(it["discovered_at"])
 
 
-def render_app_html(items, topics, daily, dailies, generated):
+def render_app_html(items, topics, daily, dailies, trends, generated):
     import json as _json
     snapshot = {
         "generatedAt": generated.isoformat(),
@@ -1557,6 +1683,7 @@ def render_app_html(items, topics, daily, dailies, generated):
         "topics": topics,
         "daily": daily,
         "dailies": dailies,
+        "trends": trends or {},
         "thresholds": {k: v["select_threshold"] for k, v in CONFIG["tiers"].items()
                        if isinstance(v, dict) and "select_threshold" in v},
     }
@@ -1607,7 +1734,7 @@ def build_openapi(generated):
     }
 
 
-def write_outputs(items, topics, daily, dailies, generated):
+def write_outputs(items, topics, daily, dailies, trends, generated):
     os.makedirs(DATA_DIR, exist_ok=True)
     os.makedirs(DIST_DIR, exist_ok=True)
 
@@ -1628,7 +1755,9 @@ def write_outputs(items, topics, daily, dailies, generated):
         it.setdefault("links", {})
         it["links"]["original"] = it["url"]
         it["tier"] = _tier_of(it)
-        it["selected"] = it["score"] >= _threshold(it)
+        # 有 LLM 双打分时以其均值为准，否则用公式分
+        eff = it["llm_score"] if it.get("llm_score") is not None else it["score"]
+        it["selected"] = eff >= _threshold(it)
         it["role"] = role_tag(it["source"])
     for t in topics:
         t["heat"] = t["score"]
@@ -1646,6 +1775,7 @@ def write_outputs(items, topics, daily, dailies, generated):
     dump(daily, os.path.join(DATA_DIR, "daily.json"))
     dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
           "count": len(dailies), "dailies": dailies}, os.path.join(DATA_DIR, "dailies.json"))
+    dump(trends, os.path.join(DATA_DIR, "trends.json"))
 
     buf = io.StringIO()
     w = csv.writer(buf)
@@ -1659,13 +1789,14 @@ def write_outputs(items, topics, daily, dailies, generated):
         f.write(buf.getvalue())
 
     with open(os.path.join(DIST_DIR, "index.html"), "w", encoding="utf-8") as f:
-        f.write(render_app_html(items, topics, daily, dailies, generated))
+        f.write(render_app_html(items, topics, daily, dailies, trends, generated))
 
     # ---- 静态托管副本（GitHub Pages / CloudBase 均从 dist 发布） ----
     import shutil
     dist_data = os.path.join(DIST_DIR, "data")
     os.makedirs(dist_data, exist_ok=True)
-    for fn in ("items.json", "hot-topics.json", "daily.json", "dailies.json", "report.csv"):
+    for fn in ("items.json", "hot-topics.json", "daily.json", "dailies.json", "trends.json",
+               "report.csv"):
         shutil.copyfile(os.path.join(DATA_DIR, fn), os.path.join(dist_data, fn))
 
     # ---- Agent / API 接口（静态 JSON，v1） ----
@@ -1684,12 +1815,16 @@ def write_outputs(items, topics, daily, dailies, generated):
             "sources": t.get("sources", []),
             "links": t.get("links", []),
         })
+        _rep = t.get("representative") or {}
+        if _rep.get("llm_score") is not None:
+            stories[-1]["llmScore"] = _rep["llm_score"]
     dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
           "count": len(items), "items": items}, os.path.join(api_dir, "items.json"))
     dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
           "count": len(topics), "items": topics}, os.path.join(api_dir, "hot-topics.json"))
     dump(dailies, os.path.join(api_dir, "dailies.json"))
     dump(daily, os.path.join(api_dir, "daily.json"))
+    dump(trends, os.path.join(api_dir, "trends.json"))
     dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
           "count": len(stories), "items": stories}, os.path.join(api_dir, "stories.json"))
     dump({
@@ -1983,6 +2118,103 @@ def llm_enhance(items, topics, cfg):
     return done
 
 
+def _llm_score_once(batch, prompt_key, cfg):
+    """用 prompts 段中的指定 prompt 独立打一次分，返回 {序号: 分数}。"""
+    listing = "\n".join("[%d] %s | %s" % (i, b.get("title", ""), b.get("source", ""))
+                        for i, b in enumerate(batch))
+    prompt = cfg["prompts"][prompt_key].replace("{listing}", listing)
+    res = _sensenova_chat([{"role": "user", "content": prompt}], cfg)
+    out = {}
+    for i in range(len(batch)):
+        v = res.get(str(i), res.get(i))
+        try:
+            s = float(v)
+        except (TypeError, ValueError):
+            continue
+        out[i] = max(0.0, min(100.0, s))
+    return out
+
+
+def llm_double_score(items, topics, cfg):
+    """LLM 两次独立打分（AIHOT 方法论）：同一评分对象用两种视角各打一次，
+    取平均为 llm_score；平均分低于 tier 门槛的不进精选。失败降级，不阻断。"""
+    lc = cfg["llm"]
+    tiers = cfg["tiers"]
+    cands = sorted(items, key=lambda i: i["score"], reverse=True)[:lc.get("max_score_items", 30)]
+    cands = [c for c in cands if c["score"] >= 50]
+    if not cands:
+        return 0
+    done = 0
+    bs = max(1, lc["batch_size"])
+    for s in range(0, len(cands), bs):
+        batch = cands[s:s + bs]
+        try:
+            sa = _llm_score_once(batch, "score_a", cfg)
+            time.sleep(1)
+            sb = _llm_score_once(batch, "score_b", cfg)
+        except Exception as e:
+            log("[!] LLM 双打分本批失败，已跳过: %s" % e)
+            continue
+        for i, b in enumerate(batch):
+            if i not in sa or i not in sb:
+                continue
+            a, c = sa[i], sb[i]
+            avg = round((a + c) / 2, 1)
+            b["llm_score_a"] = round(a, 1)
+            b["llm_score_b"] = round(c, 1)
+            b["llm_score"] = avg
+            done += 1
+        time.sleep(1)
+    # 同步到热点事件的代表报道
+    by_url = {b["url"]: b for b in cands if b.get("llm_score") is not None}
+    for t in topics or []:
+        rep = t.get("representative") or {}
+        src = by_url.get(rep.get("url"))
+        if src:
+            rep["llm_score"] = src["llm_score"]
+    log("[*] LLM 双打分完成：%d 条" % done)
+    return done
+
+
+def llm_extract(items, cfg):
+    """LLM 结构化抽取：对入选条目抽取主体（公司/机构）、事件一句话、标签。
+    存入 entities / event / tags 字段（只增字段）。失败降级，不阻断。"""
+    lc = cfg["llm"]
+    cands = [c for c in items if c.get("selected")]
+    cands = sorted(cands, key=lambda i: i["score"], reverse=True)[:lc.get("max_extract_items", 20)]
+    if not cands:
+        return 0
+    done = 0
+    bs = max(1, lc["batch_size"])
+    for s in range(0, len(cands), bs):
+        batch = cands[s:s + bs]
+        listing = "\n".join("[%d] %s | %s" % (i, b.get("title", ""), b.get("source", ""))
+                            for i, b in enumerate(batch))
+        prompt = cfg["prompts"]["extract"].replace("{listing}", listing)
+        try:
+            res = _sensenova_chat([{"role": "user", "content": prompt}], cfg)
+        except Exception as e:
+            log("[!] LLM 结构化抽取本批失败，已跳过: %s" % e)
+            continue
+        for i, b in enumerate(batch):
+            r = res.get(str(i), res.get(i))
+            if not isinstance(r, dict):
+                continue
+            ents = r.get("entities")
+            if isinstance(ents, list):
+                b["entities"] = [str(x)[:30] for x in ents[:3] if str(x).strip()]
+            ev = r.get("event")
+            if ev:
+                b["event"] = str(ev)[:60]
+            tags = r.get("tags")
+            if isinstance(tags, list):
+                b["tags"] = [str(x)[:16] for x in tags[:3] if str(x).strip()]
+            done += 1
+        time.sleep(1)
+    log("[*] LLM 结构化抽取完成：%d 条" % done)
+    return done
+
+
 def main():
     ap = argparse.ArgumentParser(description="光电行业热点统计采集器")
     ap.add_argument("--limit", type=int, default=25, help="每个源最多取多少条 (默认 25)")
@@ -2078,6 +2310,10 @@ def main():
         try:
             if llm_enhance(items, topics, CONFIG):
                 items.sort(key=lambda i: i["score"], reverse=True)
+            # 两次独立打分（打分结果决定精选资格）
+            llm_double_score(items, topics, CONFIG)
+            # 结构化抽取（主体/事件/标签）
+            llm_extract(items, CONFIG)
         except Exception as e:
             log("[!] LLM 增强异常，已跳过: %s" % e)
 
@@ -2091,6 +2327,9 @@ def main():
         except Exception:
             existing_dailies = {}
     dailies = build_dailies(items, existing_dailies)
+    trends = build_trends(dailies, generated, CONFIG)
+    log("[*] 趋势聚合完成：本周新事件 %d 个，持续发酵 %d 个" %
+        (len(trends["newTopics"]), len(trends["sustainedTopics"])))
 
     # 可选生图（默认关闭；失败自动降级，不阻断）
     if args.images:
@@ -2099,7 +2338,7 @@ def main():
         except Exception as e:
             log("[!] 生图模块异常，已跳过: %s" % e)
 
-    write_outputs(items, topics, daily, dailies, generated)
+    write_outputs(items, topics, daily, dailies, trends, generated)
 
     log("[*] 完成。热点榜 TOP5：")
     for t in topics[:5]:
