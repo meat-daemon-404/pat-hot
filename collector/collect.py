@@ -877,6 +877,7 @@ def finalize_topic(t, items, source_tier=None, cfg=None):
         "title": rep["title"], "url": rep["url"], "source": rep["source"],
         "published_at": rep.get("published_at"), "score": rep["score"],
         "summary": (rep.get("summary") or "")[:240],
+        "zh_full": rep.get("zh_full"),
     }
     t["folded_count"] = max(0, len(srcs) - 1)  # "另有 N 家信源报道"
     best = max(its, key=lambda i: i["score"])
@@ -1081,6 +1082,7 @@ def build_dailies(items, existing=None):
             "url": a["url"],
             "source": a["source"],
             "summary": (a.get("llm_summary") or a.get("summary") or "")[:240],
+            "zh_full": a.get("zh_full"),
             "reason": a.get("llm_reason"),
             "density": a.get("density"),
             "score": a["score"],
@@ -1714,22 +1716,28 @@ def _ch_prompt(key, cfg):
 
 
 def llm_enhance(items, topics, cfg):
-    """可选 LLM 增强：中文内容概要 / 推荐理由 / 信息密度标签（低密度降权营销稿）。
-    概要目标 150-250 字，讲清楚讲了什么、关键结论，写给想快速了解但不点原文的人。
-    任何失败（无 key、网络错、格式错）都降级跳过，不阻断主流程。返回增强条数。"""
+    """可选 LLM 增强：中文完整摘要 / 内容概要 / 推荐理由 / 信息密度标签。
+    zh_full：基于 RSS 摘要全文翻译整理成中文（300-500字），是站内阅读的主体，
+    目标读者无法访问外网，仅凭中文摘要就要能完整理解文章内容。
+    summary：150-250 字中文内容概要，用于卡片预览。
+    覆盖所有有摘要的条目（不再只限 Top30），任何失败都降级跳过，不阻断主流程。返回增强条数。"""
     lc = cfg["llm"]
-    cands = sorted(items, key=lambda i: i["score"], reverse=True)[:lc["max_items"]]
-    cands = [c for c in cands if c["score"] >= 50]
+    # 所有条目都处理：有 RSS 摘要的做全文翻译，无摘要的只看标题给概要
+    cands = sorted(items, key=lambda i: i["score"], reverse=True)
     if not cands:
         return 0
     done = 0
     bs = max(1, lc["batch_size"])
     for s in range(0, len(cands), bs):
         batch = cands[s:s + bs]
-        listing = "\n".join("[%d] %s | %s" % (i, b.get("title", ""), b.get("source", ""))
-                            for i, b in enumerate(batch))
-        prompt = ("你是%s资讯编辑，读者是无法访问外网的大学生。对下列每条资讯返回一个 JSON 对象，"
-                  "键为条目序号字符串，值为 {\"summary\": \"中文内容概要（150-250字）：假设读者打不开原文，仅凭你的概要就要完全理解这件事讲了什么、为什么重要、关键结论或数据是什么；不要只复述标题，要讲清楚背景和意义\", "
+        def _listing(b, i):
+            desc = (b.get("summary") or "").strip()
+            desc = re.sub(r"\s+", " ", desc)[:1000]
+            return "[%d] %s\n来源：%s\n摘要：%s" % (i, b.get("title", ""), b.get("source", ""), desc or "（无摘要，仅标题）")
+        listing = "\n\n".join(_listing(b, i) for i, b in enumerate(batch))
+        prompt = ("你是%s资讯编辑，读者是无法访问外网的中国大学生，只能在站内阅读你的中文输出。对下列每条资讯返回一个 JSON 对象，"
+                  "键为条目序号字符串，值为 {\"zh_full\": \"中文完整摘要（300-500字）：把上面的摘要翻译整理成通顺中文，保留关键数据、结论、背景和意义；英文摘要要全文翻译，不要省略；无摘要时根据标题合理展开\", "
+                  "\"summary\": \"中文内容概要（150-250字）：假设读者打不开原文，仅凭概要就要完全理解这件事讲了什么、为什么重要\", "
                   "\"reason\": \"推荐理由（25字内）\", \"density\": \"高/中/低\"}。\n"
                   "信息密度定义：高=有实质技术、数据或产业信息；中=一般行业资讯；"
                   "低=营销稿、标题党、重复通告、无实质内容。\n" % CHANNELS[_CH]["domain"]["zh"] + listing)
@@ -1742,6 +1750,8 @@ def llm_enhance(items, topics, cfg):
             r = res.get(str(i), res.get(i))
             if not isinstance(r, dict):
                 continue
+            if r.get("zh_full"):
+                b["zh_full"] = str(r["zh_full"])[:1200]
             if r.get("summary"):
                 b["llm_summary"] = str(r["summary"])[:300]
             if r.get("reason"):
@@ -1759,7 +1769,7 @@ def llm_enhance(items, topics, cfg):
         rep = t.get("representative") or {}
         src = by_url.get(rep.get("url"))
         if src:
-            for k in ("llm_summary", "llm_reason", "density"):
+            for k in ("zh_full", "llm_summary", "llm_reason", "density"):
                 if src.get(k):
                     rep[k] = src[k]
     log("[*] LLM 增强完成：%d 条" % done)
