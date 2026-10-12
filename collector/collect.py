@@ -1631,7 +1631,12 @@ def write_outputs(channel_results, generated):
         tier_map = _CHANNEL_TIERS.get(ch_id, {})
 
         def _tier_of(it, _tm=tier_map):
-            return _tm.get(it.get("source_base") or it["source"]) or tiers.get("default", "media")
+            # 查不到不等于 media：条目自带的 tier 是上一次按同一份配置算出来的，
+            # 只有 sources.json 明确改了该源的 tier 才应覆盖它。表里没这个源
+            # （源被删名/改名）时退回默认值，会把官方条目静默降级到 65 分门槛。
+            return (_tm.get(it.get("source_base") or it["source"])
+                    or it.get("tier")
+                    or tiers.get("default", "media"))
 
         def _threshold(it):
             return tiers.get(_tier_of(it), tiers["media"])["select_threshold"]
@@ -2290,6 +2295,44 @@ def llm_extract(items, cfg):
     return done
 
 
+_SOURCE_TIER_CACHE = {}
+
+
+def source_tier_map(ch_id):
+    """从 sources.json 建 {信源名: tier}（含 source_base 别名）。
+
+    单频道运行 / --rebuild 时，未采集频道的 tier 必须也能查到：
+    write_outputs 会用这张表重算 it["tier"] 与 selected，表空着就等于
+    把全部条目按 default=media 处理，官方信源 55 分门槛被抬到 65，
+    精选条目会静默消失（实测 physics 89 个 official 全部掉成 media）。
+    """
+    if ch_id in _SOURCE_TIER_CACHE:
+        return _SOURCE_TIER_CACHE[ch_id]
+    out = {}
+    try:
+        with open(SOURCES_PATH, encoding="utf-8") as f:
+            srcs = json.load(f)
+    except Exception as e:
+        log("[!] 无法读取 sources.json 的 tier（%s），沿用条目自带 tier" % e)
+        _SOURCE_TIER_CACHE[ch_id] = out
+        return out
+    default_tier = CONFIG["tiers"].get("default", "media")
+    for stype in ("rss", "html"):
+        for cfg in srcs.get(stype, []):
+            if cfg.get("channel", "tech") != ch_id:
+                continue
+            tier = cfg.get("tier") or default_tier
+            name = cfg.get("name")
+            if name:
+                out[name] = tier
+            # 条目记的是 source_base（站点根名）时也要能查到
+            base = cfg.get("source_base") or cfg.get("base_name")
+            if base:
+                out.setdefault(base, tier)
+    _SOURCE_TIER_CACHE[ch_id] = out
+    return out
+
+
 def load_carried_channels(missing, generated):
     """把本次没有采集的频道，从上一次落盘的产物读回来。
 
@@ -2316,9 +2359,14 @@ def load_carried_channels(missing, generated):
         except Exception as e:
             log("[!] [%s] 无法回读上次产物（%s），本次站点将不含该频道" % (ch_id, e))
             continue
+        # tier 表必须一并恢复：否则 write_outputs 会把沿用频道的官方条目
+        # 当成 media 重算 selected，精选静默变少。
+        tm = source_tier_map(ch_id)
+        if tm:
+            _CHANNEL_TIERS[ch_id] = tm
         vintage = (items[0].get("discovered_at") if items else None) or "未知"
-        log("[*] [%s] 本次未采集，沿用上次产物：%d 条（收录于 %s）"
-            % (ch_id, len(items), str(vintage)[:19]))
+        log("[*] [%s] 本次未采集，沿用上次产物：%d 条（收录于 %s，tier 表 %d 项）"
+            % (ch_id, len(items), str(vintage)[:19], len(tm)))
         out[ch_id] = (items, topics, daily, dailies, trends)
     return out
 
@@ -2727,6 +2775,34 @@ def check_live(targets=None, timeout=30, verbose=True):
     return problems, warnings
 
 
+def rebuild_from_disk(generated=None):
+    """不联网：把 data/<频道>/ 里上一次落盘的产物读回来，重出 dist/。
+
+    为什么需要：改了 collector/templates/ 想立刻看到线上同款页面，之前只能
+    等一次真采集（联网、几分钟、还会顺带改数据），或者手工拼快照。
+    模板与数据是两条独立的变更线，构建应该能只重渲染模板。
+
+    返回 (results, generated)；缺频道时返回 (None, None)。
+    generated 取产物里最新的 discovered_at —— 采集时 discovered_at 就等于那次
+    运行的 generated，所以重建会还原出同一个时刻，而不是谎称"刚刚生成"。
+    """
+    missing = list(CHANNEL_ORDER)
+    results = load_carried_channels(missing, generated or now_utc())
+    absent = [c for c in CHANNEL_ORDER if c not in results]
+    if absent:
+        log("[x] 这些频道没有可沿用的产物：%s（先跑一次采集）" % "、".join(absent))
+        return None, None
+    stamps = [it.get("discovered_at") for (items, *_r) in results.values()
+              for it in (items or []) if it.get("discovered_at")]
+    if stamps:
+        newest = max(stamps)
+        try:
+            generated = datetime.fromisoformat(newest)
+        except Exception:
+            generated = generated or now_utc()
+    return results, generated or now_utc()
+
+
 def main():
     ap = argparse.ArgumentParser(description="PAT-HOT 三频道热点统计采集器（物理/天文/光电）")
     ap.add_argument("--channel", choices=["tech", "physics", "astro", "all"], default="all",
@@ -2741,6 +2817,10 @@ def main():
     ap.add_argument("--images", action="store_true",
                     help="启用可选生图（SenseNova U1.5 Lite 文生图，去水印）：为日报头条+热点 Top5 生成配图。"
                          "需设置环境变量 SENSENOVA_API_KEY；失败自动降级为无图")
+    ap.add_argument("--rebuild", action="store_true",
+                    help="不采集、不联网：用 data/<频道>/ 里上一次落盘的产物重新生成 dist/"
+                         "（改了 collector/templates/ 模板时不必等一次真采集）。"
+                         "写完后同样跑契约自检，不通过则 exit 1。")
     ap.add_argument("--check", action="store_true",
                     help="只运行对外契约自检（不采集、不写文件）：确认扁平兼容地址与"
                          "三频道地址都存在且形状正确；有问题时以非零退出码结束。CI 用它在部署前把关。")
@@ -2765,6 +2845,18 @@ def main():
             log("[!] 线上回读自检发现 %d 个问题:" % len(found))
             for x in found:
                 log("      - " + x)
+            return 1
+        return 0
+
+    if args.rebuild:
+        results, generated = rebuild_from_disk()
+        if results is None:
+            return 1
+        write_outputs(results, generated)
+        log("[*] 重建完成（未联网，数据与生成时刻均沿用 data/<频道>/ 上一次产物）")
+        problems = check_contract()
+        if problems:
+            log("[x] 产物契约自检未通过，请修复后再提交（exit 1）")
             return 1
         return 0
 
