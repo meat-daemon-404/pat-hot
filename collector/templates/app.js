@@ -98,7 +98,10 @@ function trendSet(){ const tt=C.trends||{}; return new Set([...(tt.newTopics||[]
 function trendOf(t){ if(!TREND_TITLES) TREND_TITLES = trendSet(); return TREND_TITLES.has(t.title) ? "up" : "flat"; }
 // ---- 站内展开阅读 ----
 const EXPANDED = new Set();
-function expandable(it){ const s=it.summary||""; return !!(it.zh_full || it.llm_summary || s.length>160); }
+// 每条都可展开。展开区里要么已有中文（zh_full / llm_summary），要么有「✨生成中文摘要」按钮
+// （!zh_full 时渲染），要么至少是「阅读原文」——旧门槛 it.zh_full||llm_summary||summary>160
+// 恰好把摘要为空的条目挡在门外，而那正是最需要按需生成中文的一类（按需通道的存在意义）。
+function expandable(){ return true; }
 function expandBtn(it){ if(!expandable(it)) return ""; const open=EXPANDED.has(it.id); return '<button class="xbtn'+(open?" open":"")+'" data-x="'+it.id+'"><span>'+(open?T.collapse:T.expand)+'</span><span class="xa">▼</span></button>'; }
 function expandBody(it){ if(!expandable(it)) return ""; const open=EXPANDED.has(it.id);
   const zf=it.zh_full?'<div class="xsec">'+T.aiSum+'</div><div class="xt">'+esc(it.zh_full)+'</div>':"";
