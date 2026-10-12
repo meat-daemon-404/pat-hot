@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T10:50:55.414143+00:00",
-  "count": 106,
+  "generatedAt": "2026-10-12T14:08:22.657157+00:00",
+  "count": 119,
   "dailies": {
     "2026-03-26": {
       "date": "2026-03-26",
@@ -4552,7 +4552,241 @@
       "date": "2026-10-11",
       "weekday": "周日",
       "label": "2026年10月11日",
+      "headline": {
+        "title": "媒体看光博 | C114通信网：发现MicroLED从芯片到系统的进化",
+        "url": "https://cioe.cn/news/3045_info.html",
+        "source": "CIOE 中国光博会",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 59.4,
+        "role": "行业媒体",
+        "published_at": "2026-10-11",
+        "topic_id": null,
+        "topic_title": null
+      },
+      "picks": [
+        {
+          "title": "[News] Optical Force Sensing Is Transforming Human-Machine Interaction",
+          "url": "https://www.ledinside.com/news/2026/10/2026_10_12_02",
+          "source": "LEDinside 英文",
+          "summary": "A robotic hand that can sense touch. A sleek oven front panel with no visible controls. A smartwatch whose housing itself becomes an input surface. In all of these applications, the surface takes on a new role. It no longer serves merely as",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 55.2,
+          "role": "行业媒体",
+          "published_at": "2026-10-11T08:04:34+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "[Exclusive Interview] Seaborough Advances Crystalight® Nanophosphor Technology to Tackle Optical Crosstalk in High-Resolution Automotive Headlights",
+          "url": "https://www.ledinside.com/interview/2026/10/2026_10_12_01",
+          "source": "LEDinside 英文",
+          "summary": "Seaborough is a nanoscience and nanotechnology business focused on unlocking the untapped potential of luminescent nanomaterials. The company is dedicated to turning bold scientific ideas into breakthrough applications through R&D, commerci",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 55.1,
+          "role": "行业媒体",
+          "published_at": "2026-10-11T05:26:41+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "flash": [
+        {
+          "title": "[News] Pimax Unveils Crystal Pro with Native Foveated Streaming, Sending the GPU's Native Image Wirelessly to the Headset",
+          "url": "https://www.ledinside.com/news/2026/10/2026_10_12_04",
+          "source": "LEDinside 英文",
+          "summary": "Pimax, a leading manufacturer of high-end PC virtual reality headsets, today unveiled Crystal Pro, a wireless PC VR headset built around a streaming technology it calls Native Foveated Streaming, at its \"Frontier: Change To Stay The Same\" l",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 54.9,
+          "role": "行业媒体",
+          "published_at": "2026-10-11T00:13:42+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
       "sections": [
+        {
+          "category": "显示与面板",
+          "articles": [
+            {
+              "title": "媒体看光博 | C114通信网：发现MicroLED从芯片到系统的进化",
+              "url": "https://cioe.cn/news/3045_info.html",
+              "source": "CIOE 中国光博会",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 59.4,
+              "role": "行业媒体",
+              "published_at": "2026-10-11",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "多国集中限制智能眼镜：禁令变了，警惕三种出海风险",
+              "url": "https://optics.ofweek.com/2026-10/ART-250003-8420-30706404.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "score": 75.0,
+              "role": "行业媒体",
+              "published_at": "2026-10"
+            },
+            {
+              "title": "千问N1 Pro、Wigain Flow加码眼部感知，AI眼镜补齐个人上下文入口",
+              "url": "https://optics.ofweek.com/2026-10/ART-250003-8110-30706063.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "score": 75.0,
+              "role": "行业媒体",
+              "published_at": "2026-10"
+            },
+            {
+              "title": "降维打击！Meta和依视路陆逊梯卡为什么同时做助听眼镜？",
+              "url": "https://optics.ofweek.com/2026-10/ART-250003-12003-30706043.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "score": 75.0,
+              "role": "行业媒体",
+              "published_at": "2026-10"
+            },
+            {
+              "title": "关键节点！维信诺合肥8.6代AMOLED产线转入设备调试阶段",
+              "url": "https://www.c114.com.cn/news/211/a1307762.html",
+              "source": "C114中国通信网_IT资讯",
+              "summary": "3月26日，合肥国显科技有限公司（以下简称合肥国显）第8.6代AMOLED生产线项目在主厂房举行洁净室清扫仪式，标志着全球首条搭载无FMM技术（ViP）的高世代AMOLED生产线已顺利完成厂房建设交付，全面转入工艺设备搬入及调试阶段，为产线后续顺利量产与运营奠定坚实基础。",
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": null
+            }
+          ]
+        },
+        {
+          "category": "其他",
+          "articles": [
+            {
+              "title": "[News] Optical Force Sensing Is Transforming Human-Machine Interaction",
+              "url": "https://www.ledinside.com/news/2026/10/2026_10_12_02",
+              "source": "LEDinside 英文",
+              "summary": "A robotic hand that can sense touch. A sleek oven front panel with no visible controls. A smartwatch whose housing itself becomes an input surface. In all of these applications, the surface takes on a new role. It no longer serves merely as",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.2,
+              "role": "行业媒体",
+              "published_at": "2026-10-11T08:04:34+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "[Exclusive Interview] Seaborough Advances Crystalight® Nanophosphor Technology to Tackle Optical Crosstalk in High-Resolution Automotive Headlights",
+              "url": "https://www.ledinside.com/interview/2026/10/2026_10_12_01",
+              "source": "LEDinside 英文",
+              "summary": "Seaborough is a nanoscience and nanotechnology business focused on unlocking the untapped potential of luminescent nanomaterials. The company is dedicated to turning bold scientific ideas into breakthrough applications through R&D, commerci",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.1,
+              "role": "行业媒体",
+              "published_at": "2026-10-11T05:26:41+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "[News] Pimax Unveils Crystal Pro with Native Foveated Streaming, Sending the GPU's Native Image Wirelessly to the Headset",
+              "url": "https://www.ledinside.com/news/2026/10/2026_10_12_04",
+              "source": "LEDinside 英文",
+              "summary": "Pimax, a leading manufacturer of high-end PC virtual reality headsets, today unveiled Crystal Pro, a wireless PC VR headset built around a streaming technology it calls Native Foveated Streaming, at its \"Frontier: Change To Stay The Same\" l",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 54.9,
+              "role": "行业媒体",
+              "published_at": "2026-10-11T00:13:42+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "中科曙光上半年净利9.71亿元 同比增长33.31%",
+              "url": "https://www.c114.com.cn/news/123/a1316375.html",
+              "source": "C114中国通信网_通信财经",
+              "summary": "昨日，中科曙光发布2026年半年度报告。报告期内，公司实现营业收入74.66亿元，同比增长27.62%；归属于上市公司股东的净利润9.71亿元，同比增长33.31%；扣非后净利润8.44亿元，同比大幅增长48.45%。",
+              "score": 95.0,
+              "role": "行业媒体",
+              "published_at": null
+            },
+            {
+              "title": "工业和信息化部召开党组会议和干部大会 学习贯彻习近平总书记重要指示和全国先进制造业大会精神",
+              "url": "http://www.miit.gov.cn/xwfb/bldhd/art/2026/art_c6aff1cc2d094936aaca2f131389d3f8.html",
+              "source": "工信部要闻",
+              "summary": "",
+              "score": 90.0,
+              "role": "媒体",
+              "published_at": null
+            },
+            {
+              "title": "工业和信息化部等十部门关于印发《医药工业发展“十五五”规划》的通知",
+              "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_9463adac4db040159f6cbf482675eeea.html",
+              "source": "工信部要闻",
+              "summary": "",
+              "score": 90.0,
+              "role": "媒体",
+              "published_at": null
+            },
+            {
+              "title": "两部门关于印发《电子信息制造业发展“十五五”规划》的通知",
+              "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_f4864217588b44c489d58da20de766c8.html",
+              "source": "工信部要闻",
+              "summary": "",
+              "score": 90.0,
+              "role": "媒体",
+              "published_at": null
+            },
+            {
+              "title": "工业和信息化部介绍全力抓好“十五五”规划实施、加快推进新型工业化有关情况",
+              "url": "http://www.miit.gov.cn/xwfb/bldhd/art/2026/art_934ddb14d33e4cd5b787d88a15c5c0eb.html",
+              "source": "工信部要闻",
+              "summary": "",
+              "score": 90.0,
+              "role": "媒体",
+              "published_at": null
+            },
+            {
+              "title": "华为全联接大会2026 | 鲲鹏 为更先进的数智世界而计算",
+              "url": "https://www.c114.com.cn/news/126/a1317961.html",
+              "source": "C114中国通信网_设备商",
+              "summary": "在华为全联接大会 2026 期间，鲲鹏计算产业峰会正式举办。华为鲲鹏计算产品线总裁李义发表“鲲鹏 为更先进的数智世界而计算”主题演讲，面向Agentic AI时代的算力变革，分享鲲鹏技术布局与产业生态成果，打造领先、开放、安全的智能体底座，为更先进的数智世界而计算。",
+              "score": 85.0,
+              "role": "行业媒体",
+              "published_at": null
+            },
+            {
+              "title": "工信部等四部门：到2035年，全面建成新型互联网基础设施",
+              "url": "https://www.c114.com.cn/news/550/a1313800.html",
+              "source": "C114中国通信网_监管",
+              "summary": "贯彻落实党中央、国务院决策部署，为推动我国互联网基础资源高质量发展，塑造互联网发展新动能新优势，工业和信息化部、中央网信办、国家发展改革委、国家数据局等四部门近日联合印发《关于推动互联网基础资源高质量发展的指导意见》。",
+              "score": 85.0,
+              "role": "行业媒体",
+              "published_at": null
+            },
+            {
+              "title": "工信部、国资委启动2026年度人形机器人与具身智能实景实训专项行动",
+              "url": "https://www.c114.com.cn/news/550/a1311872.html",
+              "source": "C114中国通信网_监管",
+              "summary": "近日，工业和信息化部、国务院国资委联合印发通知，正式启动2026年度人形机器人与具身智能实景实训专项行动，聚焦工业、服务、特种等领域重点场景，部署打造实景实训空间、组建创新应用联合体、攻关实用化作业技能、加强实景应用验证与常态部署、强化关键要素保障、凝练成熟经验等六项重点任务，加速构建“实景实训—数据沉淀—产品迭代—规模部署”闭环，支撑人形机器人与具身智能产业高质量发展。",
+              "score": 85.0,
+              "role": "行业媒体",
+              "published_at": null
+            }
+          ]
+        },
         {
           "category": "激光",
           "articles": [
@@ -4693,47 +4927,6 @@
               "source": "C114中国通信网_监管",
               "summary": "2026年7月10日，国际电信联盟国际海缆韧性咨询机构首届任期收官会议在瑞士日内瓦召开。该机构是国际电信联盟推动全球海缆治理体系建设的重要机制，下设海缆快速部署与维修风险监测与缓解地理路由多样性三个工作组，旨在凝聚各界力量，研究海缆建设与保护中的重大问题，推动形成国际共识和政策建议。",
               "score": 60.0,
-              "role": "行业媒体",
-              "published_at": null
-            }
-          ]
-        },
-        {
-          "category": "显示与面板",
-          "articles": [
-            {
-              "title": "多国集中限制智能眼镜：禁令变了，警惕三种出海风险",
-              "url": "https://optics.ofweek.com/2026-10/ART-250003-8420-30706404.html",
-              "source": "OFweek 光电频道",
-              "summary": "",
-              "score": 75.0,
-              "role": "行业媒体",
-              "published_at": "2026-10"
-            },
-            {
-              "title": "千问N1 Pro、Wigain Flow加码眼部感知，AI眼镜补齐个人上下文入口",
-              "url": "https://optics.ofweek.com/2026-10/ART-250003-8110-30706063.html",
-              "source": "OFweek 光电频道",
-              "summary": "",
-              "score": 75.0,
-              "role": "行业媒体",
-              "published_at": "2026-10"
-            },
-            {
-              "title": "降维打击！Meta和依视路陆逊梯卡为什么同时做助听眼镜？",
-              "url": "https://optics.ofweek.com/2026-10/ART-250003-12003-30706043.html",
-              "source": "OFweek 光电频道",
-              "summary": "",
-              "score": 75.0,
-              "role": "行业媒体",
-              "published_at": "2026-10"
-            },
-            {
-              "title": "关键节点！维信诺合肥8.6代AMOLED产线转入设备调试阶段",
-              "url": "https://www.c114.com.cn/news/211/a1307762.html",
-              "source": "C114中国通信网_IT资讯",
-              "summary": "3月26日，合肥国显科技有限公司（以下简称合肥国显）第8.6代AMOLED生产线项目在主厂房举行洁净室清扫仪式，标志着全球首条搭载无FMM技术（ViP）的高世代AMOLED生产线已顺利完成厂房建设交付，全面转入工艺设备搬入及调试阶段，为产线后续顺利量产与运营奠定坚实基础。",
-              "score": 65.0,
               "role": "行业媒体",
               "published_at": null
             }
@@ -5119,87 +5312,2063 @@
               "published_at": null
             }
           ]
+        }
+      ],
+      "topic_ids": [],
+      "tocCount": 4,
+      "readMinutes": 2,
+      "amended": 132
+    },
+    "2026-03-05": {
+      "date": "2026-03-05",
+      "weekday": "周四",
+      "label": "2026年3月5日",
+      "headline": {
+        "title": "Quantum Is Not New | Quantum Explained",
+        "url": "https://www.youtube.com/shorts/Sp3dzMbUN-g",
+        "source": "YouTube·Thorlabs",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 54.2,
+        "role": "媒体",
+        "published_at": "2026-03-05T14:00:43+00:00",
+        "topic_id": "1421c9e20fde",
+        "topic_title": "UV Fluorescence Sensing of Medical-Chemical-and- Biological Analytes by an AlGaN/Si-on-Sapphire Optoelectronic Chip"
+      },
+      "picks": [],
+      "flash": [],
+      "sections": [
+        {
+          "category": "科研进展",
+          "articles": [
+            {
+              "title": "Quantum Is Not New | Quantum Explained",
+              "url": "https://www.youtube.com/shorts/Sp3dzMbUN-g",
+              "source": "YouTube·Thorlabs",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 54.2,
+              "role": "媒体",
+              "published_at": "2026-03-05T14:00:43+00:00",
+              "topic_id": "1421c9e20fde",
+              "topic_title": "UV Fluorescence Sensing of Medical-Chemical-and- Biological Analytes by an AlGaN/Si-on-Sapphire Optoelectronic Chip"
+            }
+          ]
+        }
+      ],
+      "topic_ids": [
+        "1421c9e20fde"
+      ],
+      "tocCount": 1,
+      "readMinutes": 1
+    },
+    "2026-03-31": {
+      "date": "2026-03-31",
+      "weekday": "周二",
+      "label": "2026年3月31日",
+      "headline": {
+        "title": "A Faster Way to Source Optics | Edmund Optics",
+        "url": "https://www.youtube.com/watch?v=DddaFNSZkK4",
+        "source": "YouTube·Edmund Optics",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 39.7,
+        "role": "媒体",
+        "published_at": "2026-03-31T13:28:24+00:00",
+        "topic_id": "abcd72280c48",
+        "topic_title": "Faster cryogenics speeds up quantum testing"
+      },
+      "picks": [
+        {
+          "title": "A Faster Way to Source Optics",
+          "url": "https://www.youtube.com/shorts/UjMKhNlkr6o",
+          "source": "YouTube·Edmund Optics",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 39.7,
+          "role": "媒体",
+          "published_at": "2026-03-31T13:11:21+00:00",
+          "topic_id": "abcd72280c48",
+          "topic_title": "Faster cryogenics speeds up quantum testing"
+        }
+      ],
+      "flash": [
+        {
+          "title": "Byte Size Volume 2 - Part 1: Soliloquy of the Sensor (Size and Nomenclature)",
+          "url": "https://www.youtube.com/watch?v=lPHE2R-p9jE",
+          "source": "YouTube·Edmund Optics",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 27.0,
+          "role": "媒体",
+          "published_at": "2026-03-31T15:12:29+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "sections": [
+        {
+          "category": "光学元件与成像",
+          "articles": [
+            {
+              "title": "A Faster Way to Source Optics | Edmund Optics",
+              "url": "https://www.youtube.com/watch?v=DddaFNSZkK4",
+              "source": "YouTube·Edmund Optics",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 39.7,
+              "role": "媒体",
+              "published_at": "2026-03-31T13:28:24+00:00",
+              "topic_id": "abcd72280c48",
+              "topic_title": "Faster cryogenics speeds up quantum testing"
+            },
+            {
+              "title": "A Faster Way to Source Optics",
+              "url": "https://www.youtube.com/shorts/UjMKhNlkr6o",
+              "source": "YouTube·Edmund Optics",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 39.7,
+              "role": "媒体",
+              "published_at": "2026-03-31T13:11:21+00:00",
+              "topic_id": "abcd72280c48",
+              "topic_title": "Faster cryogenics speeds up quantum testing"
+            }
+          ]
+        },
+        {
+          "category": "光传感与激光雷达",
+          "articles": [
+            {
+              "title": "Byte Size Volume 2 - Part 1: Soliloquy of the Sensor (Size and Nomenclature)",
+              "url": "https://www.youtube.com/watch?v=lPHE2R-p9jE",
+              "source": "YouTube·Edmund Optics",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 27.0,
+              "role": "媒体",
+              "published_at": "2026-03-31T15:12:29+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        }
+      ],
+      "topic_ids": [
+        "abcd72280c48"
+      ],
+      "tocCount": 3,
+      "readMinutes": 1
+    },
+    "2026-04-04": {
+      "date": "2026-04-04",
+      "weekday": "周六",
+      "label": "2026年4月4日",
+      "headline": {
+        "title": "Southwest College Tour: The Thorlabs Mobile Photonics Lab Experience",
+        "url": "https://www.youtube.com/shorts/eJVLwfNDkOA",
+        "source": "YouTube·Thorlabs",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 27.0,
+        "role": "媒体",
+        "published_at": "2026-04-03T18:36:21+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      "picks": [],
+      "flash": [],
+      "sections": [
+        {
+          "category": "光通信",
+          "articles": [
+            {
+              "title": "Southwest College Tour: The Thorlabs Mobile Photonics Lab Experience",
+              "url": "https://www.youtube.com/shorts/eJVLwfNDkOA",
+              "source": "YouTube·Thorlabs",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 27.0,
+              "role": "媒体",
+              "published_at": "2026-04-03T18:36:21+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        }
+      ],
+      "topic_ids": [],
+      "tocCount": 1,
+      "readMinutes": 1
+    },
+    "2026-05-05": {
+      "date": "2026-05-05",
+      "weekday": "周二",
+      "label": "2026年5月5日",
+      "headline": {
+        "title": "Optical Systems Design and Manufacturing | Inside Thorlabs",
+        "url": "https://www.youtube.com/watch?v=vDJZqw9Oy2o",
+        "source": "YouTube·Thorlabs",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 27.0,
+        "role": "媒体",
+        "published_at": "2026-05-05T13:01:47+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      "picks": [],
+      "flash": [],
+      "sections": [
+        {
+          "category": "其他",
+          "articles": [
+            {
+              "title": "Optical Systems Design and Manufacturing | Inside Thorlabs",
+              "url": "https://www.youtube.com/watch?v=vDJZqw9Oy2o",
+              "source": "YouTube·Thorlabs",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 27.0,
+              "role": "媒体",
+              "published_at": "2026-05-05T13:01:47+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        }
+      ],
+      "topic_ids": [],
+      "tocCount": 1,
+      "readMinutes": 1
+    },
+    "2026-06-02": {
+      "date": "2026-06-02",
+      "weekday": "周二",
+      "label": "2026年6月2日",
+      "headline": {
+        "title": "How Small Can Lasers Focus? | Optics Explained",
+        "url": "https://www.youtube.com/shorts/5epQnCINA6Q",
+        "source": "YouTube·Thorlabs",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 54.2,
+        "role": "媒体",
+        "published_at": "2026-06-02T14:00:03+00:00",
+        "topic_id": "1421c9e20fde",
+        "topic_title": "UV Fluorescence Sensing of Medical-Chemical-and- Biological Analytes by an AlGaN/Si-on-Sapphire Optoelectronic Chip"
+      },
+      "picks": [],
+      "flash": [],
+      "sections": [
+        {
+          "category": "激光",
+          "articles": [
+            {
+              "title": "How Small Can Lasers Focus? | Optics Explained",
+              "url": "https://www.youtube.com/shorts/5epQnCINA6Q",
+              "source": "YouTube·Thorlabs",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 54.2,
+              "role": "媒体",
+              "published_at": "2026-06-02T14:00:03+00:00",
+              "topic_id": "1421c9e20fde",
+              "topic_title": "UV Fluorescence Sensing of Medical-Chemical-and- Biological Analytes by an AlGaN/Si-on-Sapphire Optoelectronic Chip"
+            }
+          ]
+        }
+      ],
+      "topic_ids": [
+        "1421c9e20fde"
+      ],
+      "tocCount": 1,
+      "readMinutes": 1
+    },
+    "2026-06-05": {
+      "date": "2026-06-05",
+      "weekday": "周五",
+      "label": "2026年6月5日",
+      "headline": {
+        "title": "GRA Experiment | Thorlabs Quantum Optics Educational Kit Alignment Guide",
+        "url": "https://www.youtube.com/watch?v=Rd7vwXMygrg",
+        "source": "YouTube·Thorlabs",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 37.8,
+        "role": "媒体",
+        "published_at": "2026-06-05T12:13:18+00:00",
+        "topic_id": "f1ca1854d2c2",
+        "topic_title": "Michelson Interferometer | Thorlabs Quantum Optics Educational Kit Alignment Guide"
+      },
+      "picks": [],
+      "flash": [],
+      "sections": [
+        {
+          "category": "光学元件与成像",
+          "articles": [
+            {
+              "title": "GRA Experiment | Thorlabs Quantum Optics Educational Kit Alignment Guide",
+              "url": "https://www.youtube.com/watch?v=Rd7vwXMygrg",
+              "source": "YouTube·Thorlabs",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.8,
+              "role": "媒体",
+              "published_at": "2026-06-05T12:13:18+00:00",
+              "topic_id": "f1ca1854d2c2",
+              "topic_title": "Michelson Interferometer | Thorlabs Quantum Optics Educational Kit Alignment Guide"
+            }
+          ]
+        }
+      ],
+      "topic_ids": [
+        "f1ca1854d2c2"
+      ],
+      "tocCount": 1,
+      "readMinutes": 1
+    },
+    "2026-06-11": {
+      "date": "2026-06-11",
+      "weekday": "周四",
+      "label": "2026年6月11日",
+      "headline": {
+        "title": "Course Preview: CMOS Image Sensors: Technology, Applications and Camera Design Methodology",
+        "url": "https://www.youtube.com/watch?v=4ZYSd9hClVY",
+        "source": "YouTube·SPIETV",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 27.0,
+        "role": "媒体",
+        "published_at": "2026-06-10T18:44:30+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      "picks": [],
+      "flash": [],
+      "sections": [
+        {
+          "category": "光学元件与成像",
+          "articles": [
+            {
+              "title": "Course Preview: CMOS Image Sensors: Technology, Applications and Camera Design Methodology",
+              "url": "https://www.youtube.com/watch?v=4ZYSd9hClVY",
+              "source": "YouTube·SPIETV",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 27.0,
+              "role": "媒体",
+              "published_at": "2026-06-10T18:44:30+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        }
+      ],
+      "topic_ids": [],
+      "tocCount": 1,
+      "readMinutes": 1
+    },
+    "2026-06-19": {
+      "date": "2026-06-19",
+      "weekday": "周五",
+      "label": "2026年6月19日",
+      "headline": {
+        "title": "Second Alignment Laser Path | Thorlabs Quantum Optics Educational Kit Alignment Guide",
+        "url": "https://www.youtube.com/watch?v=RCq0QaZW3rI",
+        "source": "YouTube·Thorlabs",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 37.8,
+        "role": "媒体",
+        "published_at": "2026-06-19T11:46:15+00:00",
+        "topic_id": "f1ca1854d2c2",
+        "topic_title": "Michelson Interferometer | Thorlabs Quantum Optics Educational Kit Alignment Guide"
+      },
+      "picks": [],
+      "flash": [],
+      "sections": [
+        {
+          "category": "激光",
+          "articles": [
+            {
+              "title": "Second Alignment Laser Path | Thorlabs Quantum Optics Educational Kit Alignment Guide",
+              "url": "https://www.youtube.com/watch?v=RCq0QaZW3rI",
+              "source": "YouTube·Thorlabs",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.8,
+              "role": "媒体",
+              "published_at": "2026-06-19T11:46:15+00:00",
+              "topic_id": "f1ca1854d2c2",
+              "topic_title": "Michelson Interferometer | Thorlabs Quantum Optics Educational Kit Alignment Guide"
+            }
+          ]
+        }
+      ],
+      "topic_ids": [
+        "f1ca1854d2c2"
+      ],
+      "tocCount": 1,
+      "readMinutes": 1
+    },
+    "2026-06-27": {
+      "date": "2026-06-27",
+      "weekday": "周六",
+      "label": "2026年6月27日",
+      "headline": {
+        "title": "Thorlabs & Girls in Quantum",
+        "url": "https://www.youtube.com/shorts/OoMUzKHWxQ0",
+        "source": "YouTube·Thorlabs",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 27.0,
+        "role": "媒体",
+        "published_at": "2026-06-26T20:30:35+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      "picks": [],
+      "flash": [],
+      "sections": [
+        {
+          "category": "科研进展",
+          "articles": [
+            {
+              "title": "Thorlabs & Girls in Quantum",
+              "url": "https://www.youtube.com/shorts/OoMUzKHWxQ0",
+              "source": "YouTube·Thorlabs",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 27.0,
+              "role": "媒体",
+              "published_at": "2026-06-26T20:30:35+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        }
+      ],
+      "topic_ids": [],
+      "tocCount": 1,
+      "readMinutes": 1
+    },
+    "2026-07-08": {
+      "date": "2026-07-08",
+      "weekday": "周三",
+      "label": "2026年7月8日",
+      "headline": {
+        "title": "Expanding our Partnership with Teledyne Photometrics Scientific Cameras | Edmund Optics",
+        "url": "https://www.youtube.com/watch?v=3qH7xDED-_M",
+        "source": "YouTube·Edmund Optics",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 34.8,
+        "role": "媒体",
+        "published_at": "2026-07-08T12:16:13+00:00",
+        "topic_id": "294128a78321",
+        "topic_title": "Expanding our Partnership with Teledyne Photometrics Scientific Cameras | Edmund Optics"
+      },
+      "picks": [],
+      "flash": [],
+      "sections": [
+        {
+          "category": "光学元件与成像",
+          "articles": [
+            {
+              "title": "Expanding our Partnership with Teledyne Photometrics Scientific Cameras | Edmund Optics",
+              "url": "https://www.youtube.com/watch?v=3qH7xDED-_M",
+              "source": "YouTube·Edmund Optics",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 34.8,
+              "role": "媒体",
+              "published_at": "2026-07-08T12:16:13+00:00",
+              "topic_id": "294128a78321",
+              "topic_title": "Expanding our Partnership with Teledyne Photometrics Scientific Cameras | Edmund Optics"
+            }
+          ]
+        }
+      ],
+      "topic_ids": [
+        "294128a78321"
+      ],
+      "tocCount": 1,
+      "readMinutes": 1
+    },
+    "2026-07-10": {
+      "date": "2026-07-10",
+      "weekday": "周五",
+      "label": "2026年7月10日",
+      "headline": {
+        "title": "Michelson Interferometer | Thorlabs Quantum Optics Educational Kit Alignment Guide",
+        "url": "https://www.youtube.com/watch?v=qA5TZ65vSDE",
+        "source": "YouTube·Thorlabs",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 37.8,
+        "role": "媒体",
+        "published_at": "2026-07-10T14:00:19+00:00",
+        "topic_id": "f1ca1854d2c2",
+        "topic_title": "Michelson Interferometer | Thorlabs Quantum Optics Educational Kit Alignment Guide"
+      },
+      "picks": [],
+      "flash": [],
+      "sections": [
+        {
+          "category": "光学元件与成像",
+          "articles": [
+            {
+              "title": "Michelson Interferometer | Thorlabs Quantum Optics Educational Kit Alignment Guide",
+              "url": "https://www.youtube.com/watch?v=qA5TZ65vSDE",
+              "source": "YouTube·Thorlabs",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.8,
+              "role": "媒体",
+              "published_at": "2026-07-10T14:00:19+00:00",
+              "topic_id": "f1ca1854d2c2",
+              "topic_title": "Michelson Interferometer | Thorlabs Quantum Optics Educational Kit Alignment Guide"
+            }
+          ]
+        }
+      ],
+      "topic_ids": [
+        "f1ca1854d2c2"
+      ],
+      "tocCount": 1,
+      "readMinutes": 1
+    },
+    "2026-07-24": {
+      "date": "2026-07-24",
+      "weekday": "周五",
+      "label": "2026年7月24日",
+      "headline": {
+        "title": "Call For Papers: SPIE Medical Imaging 2027",
+        "url": "https://www.youtube.com/shorts/-LjN6oXUoHU",
+        "source": "YouTube·SPIETV",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 27.0,
+        "role": "媒体",
+        "published_at": "2026-07-23T17:34:18+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      "picks": [],
+      "flash": [],
+      "sections": [
+        {
+          "category": "光学元件与成像",
+          "articles": [
+            {
+              "title": "Call For Papers: SPIE Medical Imaging 2027",
+              "url": "https://www.youtube.com/shorts/-LjN6oXUoHU",
+              "source": "YouTube·SPIETV",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 27.0,
+              "role": "媒体",
+              "published_at": "2026-07-23T17:34:18+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        }
+      ],
+      "topic_ids": [],
+      "tocCount": 1,
+      "readMinutes": 1
+    },
+    "2026-10-12": {
+      "date": "2026-10-12",
+      "weekday": "周一",
+      "label": "2026年10月12日",
+      "headline": {
+        "title": "液冷板激光焊接，智启AI算力“散热革命”新引擎",
+        "url": "https://laser.ofweek.com/2026-09/ART-8200-2400-30703863.html",
+        "source": "OFweek 激光频道",
+        "summary": "",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 71.3,
+        "role": "行业媒体",
+        "published_at": "2026-09",
+        "topic_id": "e21082303e63",
+        "topic_title": "液冷板激光焊接，智启AI算力“散热革命”新引擎"
+      },
+      "picks": [
+        {
+          "title": "打造“冷静”的 AI 算力中心：激光焊接检测助力液冷散热高质量制造",
+          "url": "https://laser.ofweek.com/2026-06/ART-240015-8230-30689718.html",
+          "source": "OFweek 激光频道",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 71.3,
+          "role": "行业媒体",
+          "published_at": "2026-06",
+          "topic_id": "e21082303e63",
+          "topic_title": "液冷板激光焊接，智启AI算力“散热革命”新引擎"
+        },
+        {
+          "title": "红旗天工07带激光雷达,16.79万起行吗?",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS-iFYeeWufDDLD4l1k1l4_VWGatqa9XhhVqXa8Fplpd9Hw8wc0ZGLz3n5BfMnIA5JyijiFBmvX1LAf1l-jZxSobaxMlMAUXgyLoBCmi0NUtmfTVBf_CzIIO418Y2ctFi1ucL9j1N4w3kxJW2bPJnKxgqGC90KbJGUCS7HpmYg8gSoKOckE1RZkvQim644iyJ4KAzOsRKaO9_sqspc1Ega-T1AfaFW2DefQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=055D56938B172B2858510AF21E16A7FF582C38296ACCEAD0",
+          "source": "搜狗微信·光电行业 · 车动态",
+          "summary": "16.79万起的价格配上激光雷达、800V平台和3米轴距,天工07的性价比确实比之前的天工车型有了质的提升.但要在这个价位站稳脚...",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 70.4,
+          "role": "媒体",
+          "published_at": "2026-10-12T09:28:27+00:00",
+          "topic_id": "11c73434e03b",
+          "topic_title": "红旗天工07带激光雷达,16.79万起行吗?"
+        },
+        {
+          "title": "红旗天工 07|全系激光雷达纯电轿车",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS-iFYeeWufDDLD4l1k1l4_VWGatqa9XhhVqXa8Fplpd9yH9P03dwNrJGVddZrbXiReXV5p9e7XWVZiMcVtgWDmtTfHVnDPVGoaFZe5HvrNUZb_PiMT17suBD7-eAlBGNKAJqOFVnJvJHp7dBFFN_A3weHFqcEfHA4mX0WZacKQ3Hpf4g4dw5fEDYPsS8yKKYkqzNebfNPQxvvb65zAtjq0UGX_iHL9MadA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=055D56938B172B2858510AF21E16A7FF582C38296ACCEAD0",
+          "source": "搜狗微信·光电行业 · 时代瞭望站",
+          "summary": "红旗天工 07 是一台大空间中大型纯电轿车,全系 800V 高压平台,标配可变焦激光雷达与全套司南智驾.新车 10 月 10 日正式上市,...",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 70.4,
+          "role": "媒体",
+          "published_at": "2026-10-12T11:16:02+00:00",
+          "topic_id": "11c73434e03b",
+          "topic_title": "红旗天工07带激光雷达,16.79万起行吗?"
+        },
+        {
+          "title": "零跑B01纯电轿车 |590km激光雷达版",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS-iFYeeWufDDLD4l1k1l4_VWGatqa9XhhVqXa8Fplpd90watW4A8bL86JsoJMDmORyErRcZwAQvXAV2ZpUXm27te0GQQqUwpc_hWTMa2OvQzY83cODChl4mkSmvvdejGsrrEegF41GuH3fA5LMhNPXItRbTrKPJvbE4z92UBcvcO3Zhis9v9oh4n12ca-uzok4BDKT8Eq5D-wmkBdPcYb1irCDCayYmfpA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=055D56938B172B2858510AF21E16A7FF582C38296ACCEAD0",
+          "source": "搜狗微信·光电行业 · 有你有我的印记",
+          "summary": "零跑B01纯电轿车 |590km激光雷达版星河银外观|森野棕内饰选装1万双零重力座椅,主副驾都安排2735mm超长轴距,越级大空间后排...",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 70.1,
+          "role": "媒体",
+          "published_at": "2026-10-12T01:29:05+00:00",
+          "topic_id": "11c73434e03b",
+          "topic_title": "红旗天工07带激光雷达,16.79万起行吗?"
+        }
+      ],
+      "flash": [
+        {
+          "title": "精密光纤激光器企业频准激光登陆科创板",
+          "url": "https://www.coema.org.cn/industry/202608/5795.html",
+          "source": "COEMA 中国光电子行业协会",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 65.7,
+          "role": "行业媒体",
+          "published_at": "2026-08",
+          "topic_id": "e5f48246a18c",
+          "topic_title": "精密光纤激光器企业频准激光登陆科创板"
+        },
+        {
+          "title": "UV Fluorescence Sensing of Medical-Chemical-and- Biological Analytes by an AlGaN/Si-on-Sapphire Optoelectronic Chip",
+          "url": "https://arxiv.org/abs/2610.13525",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "summary": "arXiv:2610.13525v1 Announce Type: new Abstract: This paper proposes and analyzes a compact fluorescence-photometer lab-on-a-chip that is simpler than a fluorescence spectrometer, and that does not require spectrum reconstruction by a comput",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 65.4,
+          "role": "科研",
+          "published_at": "2026-10-12T04:00:00+00:00",
+          "topic_id": "6918b089a364",
+          "topic_title": "UV Fluorescence Sensing of Medical-Chemical-and- Biological Analytes by an AlGaN/Si-on-Sapphire Optoelectronic Chip"
+        },
+        {
+          "title": "Aubry-Andr\\'e transition in photonic time quasicrystals",
+          "url": "https://arxiv.org/abs/2610.13538",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "summary": "arXiv:2610.13538v1 Announce Type: new Abstract: In one dimension, Anderson localization by a disordered potential sets in at any strength, whereas localization by a quasiperiodic potential in the Aubry-Andr\\'e model occurs through a transit",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 65.4,
+          "role": "科研",
+          "published_at": "2026-10-12T04:00:00+00:00",
+          "topic_id": "975bab018aaf",
+          "topic_title": "Aubry-Andr\\'e transition in photonic time quasicrystals"
+        },
+        {
+          "title": "融资数千万！元曦光子能否跨过超表面量产生死线？",
+          "url": "https://optics.ofweek.com/2026-10/ART-8100-2500-30705901.html",
+          "source": "OFweek 光电频道",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 65.0,
+          "role": "行业媒体",
+          "published_at": "2026-10",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "超10亿C+轮！鲲游光电12寸光学产线预计2027通线",
+          "url": "https://optics.ofweek.com/2026-10/ART-8100-2500-30706702.html",
+          "source": "OFweek 光电频道",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 65.0,
+          "role": "行业媒体",
+          "published_at": "2026-10",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "印度AI眼镜杀出新玩法：对着二维码说话就能完成支付",
+          "url": "https://optics.ofweek.com/2026-10/ART-250003-8110-30706665.html",
+          "source": "OFweek 光电频道",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 65.0,
+          "role": "行业媒体",
+          "published_at": "2026-10",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "卖眼镜的扎克伯格，却凭它成为全球第四富豪",
+          "url": "https://optics.ofweek.com/2026-10/ART-250003-12003-30706661.html",
+          "source": "OFweek 光电频道",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 65.0,
+          "role": "行业媒体",
+          "published_at": "2026-10",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "球差: 为什么轴上点也不完美？",
+          "url": "https://optics.ofweek.com/2026-10/ART-250002-11000-30706662.html",
+          "source": "OFweek 光电频道",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 65.0,
+          "role": "行业媒体",
+          "published_at": "2026-10",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "金鼎光学股权变动频多，客户集中，与宇瞳光学采销不一",
+          "url": "https://optics.ofweek.com/2026-10/ART-250002-12003-30706477.html",
+          "source": "OFweek 光电频道",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 65.0,
+          "role": "行业媒体",
+          "published_at": "2026-10",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "手机市场大混战: 谁在重新定义影像战争？",
+          "url": "https://optics.ofweek.com/2026-10/ART-250003-8420-30706440.html",
+          "source": "OFweek 光电频道",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 65.0,
+          "role": "行业媒体",
+          "published_at": "2026-10",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "‘Cooked’ fiber doubles range of ultralow-noise supercontinuum lasers",
+          "url": "https://www.laserfocusworld.com/lasers-sources/article/55408688/cooked-fiber-doubles-range-of-ultralow-noise-supercontinuum-lasers",
+          "source": "Laser Focus World",
+          "summary": "After heating an optical fiber for nearly an hour, researchers completely changed its dispersion within a small section and ended up with a supercontinuum that covers a wide range of wavelengths—0.86 to 2.90 µm—and it’s also remarkably stab",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 73.2,
+          "role": "媒体",
+          "published_at": null,
+          "topic_id": "1421c9e20fde",
+          "topic_title": "UV Fluorescence Sensing of Medical-Chemical-and- Biological Analytes by an AlGaN/Si-on-Sapphire Optoelectronic Chip"
+        }
+      ],
+      "sections": [
+        {
+          "category": "激光",
+          "articles": [
+            {
+              "title": "液冷板激光焊接，智启AI算力“散热革命”新引擎",
+              "url": "https://laser.ofweek.com/2026-09/ART-8200-2400-30703863.html",
+              "source": "OFweek 激光频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 71.3,
+              "role": "行业媒体",
+              "published_at": "2026-09",
+              "topic_id": "e21082303e63",
+              "topic_title": "液冷板激光焊接，智启AI算力“散热革命”新引擎"
+            },
+            {
+              "title": "打造“冷静”的 AI 算力中心：激光焊接检测助力液冷散热高质量制造",
+              "url": "https://laser.ofweek.com/2026-06/ART-240015-8230-30689718.html",
+              "source": "OFweek 激光频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 71.3,
+              "role": "行业媒体",
+              "published_at": "2026-06",
+              "topic_id": "e21082303e63",
+              "topic_title": "液冷板激光焊接，智启AI算力“散热革命”新引擎"
+            },
+            {
+              "title": "红旗天工07带激光雷达,16.79万起行吗?",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS-iFYeeWufDDLD4l1k1l4_VWGatqa9XhhVqXa8Fplpd9Hw8wc0ZGLz3n5BfMnIA5JyijiFBmvX1LAf1l-jZxSobaxMlMAUXgyLoBCmi0NUtmfTVBf_CzIIO418Y2ctFi1ucL9j1N4w3kxJW2bPJnKxgqGC90KbJGUCS7HpmYg8gSoKOckE1RZkvQim644iyJ4KAzOsRKaO9_sqspc1Ega-T1AfaFW2DefQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=055D56938B172B2858510AF21E16A7FF582C38296ACCEAD0",
+              "source": "搜狗微信·光电行业 · 车动态",
+              "summary": "16.79万起的价格配上激光雷达、800V平台和3米轴距,天工07的性价比确实比之前的天工车型有了质的提升.但要在这个价位站稳脚...",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 70.4,
+              "role": "媒体",
+              "published_at": "2026-10-12T09:28:27+00:00",
+              "topic_id": "11c73434e03b",
+              "topic_title": "红旗天工07带激光雷达,16.79万起行吗?"
+            },
+            {
+              "title": "红旗天工 07|全系激光雷达纯电轿车",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS-iFYeeWufDDLD4l1k1l4_VWGatqa9XhhVqXa8Fplpd9yH9P03dwNrJGVddZrbXiReXV5p9e7XWVZiMcVtgWDmtTfHVnDPVGoaFZe5HvrNUZb_PiMT17suBD7-eAlBGNKAJqOFVnJvJHp7dBFFN_A3weHFqcEfHA4mX0WZacKQ3Hpf4g4dw5fEDYPsS8yKKYkqzNebfNPQxvvb65zAtjq0UGX_iHL9MadA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=055D56938B172B2858510AF21E16A7FF582C38296ACCEAD0",
+              "source": "搜狗微信·光电行业 · 时代瞭望站",
+              "summary": "红旗天工 07 是一台大空间中大型纯电轿车,全系 800V 高压平台,标配可变焦激光雷达与全套司南智驾.新车 10 月 10 日正式上市,...",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 70.4,
+              "role": "媒体",
+              "published_at": "2026-10-12T11:16:02+00:00",
+              "topic_id": "11c73434e03b",
+              "topic_title": "红旗天工07带激光雷达,16.79万起行吗?"
+            },
+            {
+              "title": "零跑B01纯电轿车 |590km激光雷达版",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS-iFYeeWufDDLD4l1k1l4_VWGatqa9XhhVqXa8Fplpd90watW4A8bL86JsoJMDmORyErRcZwAQvXAV2ZpUXm27te0GQQqUwpc_hWTMa2OvQzY83cODChl4mkSmvvdejGsrrEegF41GuH3fA5LMhNPXItRbTrKPJvbE4z92UBcvcO3Zhis9v9oh4n12ca-uzok4BDKT8Eq5D-wmkBdPcYb1irCDCayYmfpA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=055D56938B172B2858510AF21E16A7FF582C38296ACCEAD0",
+              "source": "搜狗微信·光电行业 · 有你有我的印记",
+              "summary": "零跑B01纯电轿车 |590km激光雷达版星河银外观|森野棕内饰选装1万双零重力座椅,主副驾都安排2735mm超长轴距,越级大空间后排...",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 70.1,
+              "role": "媒体",
+              "published_at": "2026-10-12T01:29:05+00:00",
+              "topic_id": "11c73434e03b",
+              "topic_title": "红旗天工07带激光雷达,16.79万起行吗?"
+            },
+            {
+              "title": "精密光纤激光器企业频准激光登陆科创板",
+              "url": "https://www.coema.org.cn/industry/202608/5795.html",
+              "source": "COEMA 中国光电子行业协会",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.7,
+              "role": "行业媒体",
+              "published_at": "2026-08",
+              "topic_id": "e5f48246a18c",
+              "topic_title": "精密光纤激光器企业频准激光登陆科创板"
+            },
+            {
+              "title": "大幅面厚板，全自动切割！FLY系列自动上下料板材激光切割自动化方案",
+              "url": "https://laser.ofweek.com/2026-09/ART-8200-2400-30703245.html",
+              "source": "OFweek 激光频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-09",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "8月激光雷达 | 禾赛华为只差65颗，52.5万颗车载激光雷达后第二曲线浮出水面",
+              "url": "https://laser.ofweek.com/2026-09/ART-240001-12003-30705420.html",
+              "source": "OFweek 激光频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-09",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "森峰激光IPO获北交所注册批文",
+              "url": "https://laser.ofweek.com/2026-09/ART-240001-12003-30705132.html",
+              "source": "OFweek 激光频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-09",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "深度丨国内激光雷达三强重排业务重心，增长逻辑开始分化",
+              "url": "https://laser.ofweek.com/2026-09/ART-240001-12003-30704890.html",
+              "source": "OFweek 激光频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-09",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "光通信",
+          "articles": [
+            {
+              "title": "3.16亿收购，老牌百货企业跨界光芯片领域",
+              "url": "https://www.ledinside.cn/news/20261012-62759.html",
+              "source": "LEDinside 中文",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 60.1,
+              "role": "行业媒体",
+              "published_at": "2026-10-12",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "面向光芯片、LED制造，中特微接近式光刻机即将交付",
+              "url": "https://www.ledinside.cn/news/20261012-62758.html",
+              "source": "LEDinside 中文",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 60.1,
+              "role": "行业媒体",
+              "published_at": "2026-10-12",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Quantum Information-Theoretic Analysis of Optical Fiber Sensing via Stimulated Brillouin Scattering",
+              "url": "https://arxiv.org/abs/2610.12980",
+              "source": "arXiv 光学与光子学 (physics.optics)",
+              "summary": "arXiv:2610.12980v1 Announce Type: cross Abstract: Stimulated Brillouin scattering (SBS) is a powerful mechanism for distributed sensing in optical fibers, as the Brillouin response is highly sensitive to local material parameters. Assuming ",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.7,
+              "role": "科研",
+              "published_at": "2026-10-12T04:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "推进光纤入户 工信部联合住建部解决”最后一公里”问题",
+              "url": "http://www.c114.net/news/549/a997513.html",
+              "source": "C114中国通信网_要闻精选",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.5,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "华工科技：2026年上半年，光互联业务营收38.03亿元",
+              "url": "https://www.c114.com.cn/news/123/a1316431.html",
+              "source": "C114中国通信网_通信财经",
+              "summary": "华工科技2026年上半年营收78.22亿元，光互联业务达38.03亿元，AI高速光模块快速放量，实现1.6T至3.2T技术跨越及硅光芯片规模化应用。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.5,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "光互联测试产品需求激增，联讯仪器上半年净利润同比增长903%",
+              "url": "https://www.c114.com.cn/news/123/a1316416.html",
+              "source": "C114中国通信网_通信财经",
+              "summary": "联讯仪器2026年上半年净利润达5.67亿元，同比增903%；受益AI算力与光模块扩产，高速通信及CPO测试设备放量，毛利率升至70.79%，研发投入同比增长83.34%。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.5,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "铭普光磁上半年光通信业务同比增长5%",
+              "url": "https://www.c114.com.cn/news/123/a1316190.html",
+              "source": "C114中国通信网_通信财经",
+              "summary": "铭普光磁日前发布了2026年半年度报告。报告显示，上半年营收10.63亿元，同比增长31.88%；净利润-1539万元，去年同期-7304万元。扣非后净利润-2353万元，去年同期-7779万元。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.5,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "东山精密上半年光模块业务收入53.51亿元，占营收比19.25%",
+              "url": "https://www.c114.com.cn/news/123/a1316159.html",
+              "source": "C114中国通信网_通信财经",
+              "summary": "东山精密2026年上半年光模块业务收入53.51亿元，依托索尔思实现EML光芯片IDM量产，并推进1.6T/3.2T光模块及硅光技术布局。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.5,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Photonics Hot List: October 2, 2026",
+              "url": "https://www.laserfocusworld.com/resources/video/55409170/photonics-hot-list-october-2-2026",
+              "source": "Laser Focus World",
+              "summary": "In this episode: A compact probe assesses tumors in real time, a look at the World Quantum Cannes Festival coming up in November, and user-friendly optical data storage.",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 53.8,
+              "role": "媒体",
+              "published_at": null,
+              "topic_id": "affa4875e848",
+              "topic_title": "Photonics Hot List: October 2, 2026"
+            },
+            {
+              "title": "Photonics Hot List: September 25, 2026",
+              "url": "https://www.laserfocusworld.com/resources/video/55407650/photonics-hot-list-september-25-2026",
+              "source": "Laser Focus World",
+              "summary": "In this episode: A color-changing material thwarts anticounterfeiting, several optics and photonics companies make leadership changes, and a diamond quantum emitter decoupled from vibrations may be a gamechanger.",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 53.8,
+              "role": "媒体",
+              "published_at": null,
+              "topic_id": "affa4875e848",
+              "topic_title": "Photonics Hot List: October 2, 2026"
+            },
+            {
+              "title": "Photonics Hot List: September 18, 2026",
+              "url": "https://www.laserfocusworld.com/resources/video/55406013/photonics-hot-list-september-18-2026",
+              "source": "Laser Focus World",
+              "summary": "In this episode: A tiny imaging device probes deep into the brain, a look at the upcoming World Quantum Cannes Festival in France, and a tiny ‘upconverter’ turns invisible near-infrared patterns into visible green light.",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 53.8,
+              "role": "媒体",
+              "published_at": null,
+              "topic_id": "affa4875e848",
+              "topic_title": "Photonics Hot List: October 2, 2026"
+            }
+          ]
+        },
+        {
+          "category": "显示与面板",
+          "articles": [
+            {
+              "title": "印度AI眼镜杀出新玩法：对着二维码说话就能完成支付",
+              "url": "https://optics.ofweek.com/2026-10/ART-250003-8110-30706665.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "卖眼镜的扎克伯格，却凭它成为全球第四富豪",
+              "url": "https://optics.ofweek.com/2026-10/ART-250003-12003-30706661.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "多国集中限制智能眼镜：禁令变了，警惕三种出海风险",
+              "url": "https://optics.ofweek.com/2026-10/ART-250003-8420-30706404.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "千问N1 Pro、Wigain Flow加码眼部感知，AI眼镜补齐个人上下文入口",
+              "url": "https://optics.ofweek.com/2026-10/ART-250003-8110-30706063.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "降维打击！Meta和依视路陆逊梯卡为什么同时做助听眼镜？",
+              "url": "https://optics.ofweek.com/2026-10/ART-250003-12003-30706043.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "欣奕华G4.5Q OLED蒸镀设备出货国内显示某头部企业",
+              "url": "https://www.ledinside.cn/news/20261012-62762.html",
+              "source": "LEDinside 中文",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 60.1,
+              "role": "行业媒体",
+              "published_at": "2026-10-12",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "首次采用OLED屏幕，新款iPad mini将大幅涨价？",
+              "url": "https://www.ledinside.cn/news/20261012-62761.html",
+              "source": "LEDinside 中文",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 60.1,
+              "role": "行业媒体",
+              "published_at": "2026-10-12",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "关键节点！维信诺合肥8.6代AMOLED产线转入设备调试阶段",
+              "url": "https://www.c114.com.cn/news/211/a1307762.html",
+              "source": "C114中国通信网_IT资讯",
+              "summary": "3月26日，合肥国显科技有限公司（以下简称合肥国显）第8.6代AMOLED生产线项目在主厂房举行洁净室清扫仪式，标志着全球首条搭载无FMM技术（ViP）的高世代AMOLED生产线已顺利完成厂房建设交付，全面转入工艺设备搬入及调试阶段，为产线后续顺利量产与运营奠定坚实基础。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 46.0,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "光电芯片与半导体",
+          "articles": [
+            {
+              "title": "UV Fluorescence Sensing of Medical-Chemical-and- Biological Analytes by an AlGaN/Si-on-Sapphire Optoelectronic Chip",
+              "url": "https://arxiv.org/abs/2610.13525",
+              "source": "arXiv 光学与光子学 (physics.optics)",
+              "summary": "arXiv:2610.13525v1 Announce Type: new Abstract: This paper proposes and analyzes a compact fluorescence-photometer lab-on-a-chip that is simpler than a fluorescence spectrometer, and that does not require spectrum reconstruction by a comput",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.4,
+              "role": "科研",
+              "published_at": "2026-10-12T04:00:00+00:00",
+              "topic_id": "6918b089a364",
+              "topic_title": "UV Fluorescence Sensing of Medical-Chemical-and- Biological Analytes by an AlGaN/Si-on-Sapphire Optoelectronic Chip"
+            },
+            {
+              "title": "DUV光刻机也能造3nm芯片！中科院GAA晶体管重大突破：绕开EUV光刻",
+              "url": "https://www.coema.org.cn/industry/202609/5846.html",
+              "source": "COEMA 中国光电子行业协会",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 56.0,
+              "role": "行业媒体",
+              "published_at": "2026-09",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "玻璃基板突围！彩虹股份1.4亿跨界半导体",
+              "url": "https://www.coema.org.cn/industry/202609/5843.html",
+              "source": "COEMA 中国光电子行业协会",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 56.0,
+              "role": "行业媒体",
+              "published_at": "2026-09",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "英特尔代工获微软下一代AI芯片订单，将采用18A工艺",
+              "url": "https://www.c114.com.cn/news/211/a1298974.html",
+              "source": "C114中国通信网_IT资讯",
+              "summary": "据报道，英特尔已获得微软的一笔重要订单。微软或将采用英特尔代工的18A或18A-P工艺为其制造下一代AI处理器。这是英特尔代工在18A节点上首次确认的重大外部客户订单。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 46.0,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Quantum chip holds multiple photons at once, opening path to scalable memory",
+              "url": "https://phys.org/news/2026-10-quantum-chip-multiple-photons-path.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "For highly fragile quantum information systems, the ability to store quantum information is vital—but also challenging. Quantum information is transported in particles of light called photons, which often must be temporarily paused (or \"sto",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.0,
+              "role": "科研",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Layered semiconductor unlocks magnetic control of light emitted by quantum condensates",
+              "url": "https://phys.org/news/2026-10-layered-semiconductor-magnetic-emitted-quantum.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Quantum technologies are considered key technologies of the future. However, research in this field requires not only scientific expertise but sometimes also highly specialized laboratory conditions. Bose–Einstein condensates are a remarkab",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.0,
+              "role": "科研",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "光学元件与成像",
+          "articles": [
+            {
+              "title": "超10亿C+轮！鲲游光电12寸光学产线预计2027通线",
+              "url": "https://optics.ofweek.com/2026-10/ART-8100-2500-30706702.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "金鼎光学股权变动频多，客户集中，与宇瞳光学采销不一",
+              "url": "https://optics.ofweek.com/2026-10/ART-250002-12003-30706477.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "圆孔、方孔、双缝: 衍射与干涉的三种“光学指纹”",
+              "url": "https://optics.ofweek.com/2026-10/ART-250002-11000-30706382.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "涉案金额达2010.85万！这一光学企业涉嫌走私国家禁止进出口货物罪",
+              "url": "https://optics.ofweek.com/2026-10/ART-8100-2500-30706214.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "光学巨头换帅：业绩承压期的交接与挑战",
+              "url": "https://optics.ofweek.com/2026-10/ART-8100-2500-30706215.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "光波导路线选择与性能优化: 集成商必须答对的四道题",
+              "url": "https://optics.ofweek.com/2026-10/ART-250002-11000-30706149.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "年产100万片产能！中腾华盛超精密高性能光学薄膜项目试投产",
+              "url": "https://optics.ofweek.com/2026-10/ART-8100-2500-30705900.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "新思科技获准向是德科技出售光学解决方案部门",
+              "url": "https://www.c114.com.cn/news/212/a1298390.html",
+              "source": "C114中国通信网_IT资讯",
+              "summary": "新思科技（Synopsys）宣布已获得所有相关监管机构的最终批准，将正式推进此前已公布的业务剥离计划：将旗下光学解决方案部门（Optical Solutions Group）及 PowerArtist 业务出售给是德科技（Keysight）。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 46.0,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "光传感与激光雷达",
+          "articles": [
+            {
+              "title": "英飞凌卫星雷达ART架构，能去掉MCU核吗？",
+              "url": "https://laser.ofweek.com/2026-06/ART-240001-8330-30692048.html",
+              "source": "OFweek 激光频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-06",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Phantom Zernike Wavefront Sensor: Phase Contrast with Engineered Focal Plane Reference Speckles",
+              "url": "https://arxiv.org/abs/2610.12807",
+              "source": "arXiv 光学与光子学 (physics.optics)",
+              "summary": "arXiv:2610.12807v1 Announce Type: new Abstract: We introduce the Phantom Zernike Wavefront Sensor (phantom ZWFS), an engineered reference extension of phase-contrast wavefront sensing in which controlled pupil plane modulation generates off",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.7,
+              "role": "科研",
+              "published_at": "2026-10-12T04:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Allegro MicroSystems 携新型 XtremeSense TMR 电流传感器亮相慕尼黑上海电子展",
+              "url": "https://www.c114.com.cn/news/212/a1287354.html",
+              "source": "C114中国通信网_IT资讯",
+              "summary": "全球领先的运动控制、节能系统电源及传感解决方案供应商 Allegro MicroSystems, Inc.（Allegro）于 4 月 15 日亮相 2025 年慕尼黑上海电子展，以创新赋能，使命驱动，携手Allegro共创未来为主题，展示了最新推出的XtremeSenseTMR 电流传感器芯片 CT4022 和 CT4032，这两款产品能够为高压、功率密集型清洁能源应用提供卓越的噪声免疫性能和高精度电流测量能力。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 46.0,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "光伏与新能源",
+          "articles": [
+            {
+              "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
+              "url": "https://www.nature.com/articles/s41566-026-02009-8",
+              "source": "Nature Photonics",
+              "summary": "Nature Photonics, Published online: 12 October 2026; doi:10.1038/s41566-026-02009-8 Solid-state emissive guest acceptors enhance organic solar cells by establishing thermally accessible radiative pathways, significantly reducing non-radiati",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 60.1,
+              "role": "科研",
+              "published_at": "2026-10-12T00:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "科研进展",
+          "articles": [
+            {
+              "title": "Aubry-Andr\\'e transition in photonic time quasicrystals",
+              "url": "https://arxiv.org/abs/2610.13538",
+              "source": "arXiv 光学与光子学 (physics.optics)",
+              "summary": "arXiv:2610.13538v1 Announce Type: new Abstract: In one dimension, Anderson localization by a disordered potential sets in at any strength, whereas localization by a quasiperiodic potential in the Aubry-Andr\\'e model occurs through a transit",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.4,
+              "role": "科研",
+              "published_at": "2026-10-12T04:00:00+00:00",
+              "topic_id": "975bab018aaf",
+              "topic_title": "Aubry-Andr\\'e transition in photonic time quasicrystals"
+            },
+            {
+              "title": "Topologically steerable ultra-flat electro-optic combs via non-Hermitian frequency lattices",
+              "url": "https://arxiv.org/abs/2610.12867",
+              "source": "arXiv 光学与光子学 (physics.optics)",
+              "summary": "arXiv:2610.12867v1 Announce Type: new Abstract: Electro-optic (EO) frequency combs convert microwave signals to the optical domain with deterministic repetition rates, enabling applications in optical telecommunications, microwave photonics",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 62.0,
+              "role": "科研",
+              "published_at": "2026-10-12T04:00:00+00:00",
+              "topic_id": "824974608ed1",
+              "topic_title": "Topologically steerable ultra-flat electro-optic combs via non-Hermitian frequency lattices"
+            },
+            {
+              "title": "Localization Landscapes based on the Green's Matrix of Non-Hermitian Optical Scattering Systems",
+              "url": "https://arxiv.org/abs/2610.13413",
+              "source": "arXiv 光学与光子学 (physics.optics)",
+              "summary": "arXiv:2610.13413v1 Announce Type: new Abstract: The Filoche--Mayboroda (FM) localization landscape predicts where the spatially localized modes of a self-adjoint elliptic operator reside without diagonalizing it, but the construction fails ",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 62.0,
+              "role": "科研",
+              "published_at": "2026-10-12T04:00:00+00:00",
+              "topic_id": "824974608ed1",
+              "topic_title": "Topologically steerable ultra-flat electro-optic combs via non-Hermitian frequency lattices"
+            },
+            {
+              "title": "Stable deep-blue organic light-emitting diodes with reduced efficiency roll-off via accelerated exciton utilization",
+              "url": "https://www.nature.com/articles/s41566-026-02029-4",
+              "source": "Nature Photonics",
+              "summary": "Nature Photonics, Published online: 12 October 2026; doi:10.1038/s41566-026-02029-4 Deep-blue organic light-emitting diodes leveraging phosphor-assisted TADF-sensitized fluorescence enable accelerated exciton dynamics, resulting in devices ",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 60.1,
+              "role": "科研",
+              "published_at": "2026-10-12T00:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Broadband soliton microcombs in the biological window enabled by a resonant coupler",
+              "url": "https://arxiv.org/abs/2610.12603",
+              "source": "arXiv 光学与光子学 (physics.optics)",
+              "summary": "arXiv:2610.12603v1 Announce Type: new Abstract: Broadband soliton microcombs near 1 $\\mu$m offer coherent, evenly spaced optical lines for measurements in the biological window. However, combining broad spectral coverage with closely spaced",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.7,
+              "role": "科研",
+              "published_at": "2026-10-12T04:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Coherent ultraviolet frequency combs generated by resonant dispersive waves",
+              "url": "https://arxiv.org/abs/2610.12620",
+              "source": "arXiv 光学与光子学 (physics.optics)",
+              "summary": "arXiv:2610.12620v1 Announce Type: new Abstract: Resonant dispersive wave (RDW) emission in gas-filled anti-resonant hollow-core fibers (AR-HCF) offers a wavelength-tunable route to ultraviolet (UV) and vacuum ultraviolet (VUV) frequency com",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.7,
+              "role": "科研",
+              "published_at": "2026-10-12T04:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Theory of Disorder-Induced Multimode Coupling in a Fabry-P\\'erot Cavity",
+              "url": "https://arxiv.org/abs/2610.12687",
+              "source": "arXiv 光学与光子学 (physics.optics)",
+              "summary": "arXiv:2610.12687v1 Announce Type: new Abstract: Strong light--matter interactions have attracted significant interest in physical chemistry due to the potential for modifying molecular processes by hybridizing with cavity photons and formin",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.7,
+              "role": "科研",
+              "published_at": "2026-10-12T04:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Silent breakdown of the perturbative polarization expansion in the terahertz regime",
+              "url": "https://arxiv.org/abs/2610.12982",
+              "source": "arXiv 光学与光子学 (physics.optics)",
+              "summary": "arXiv:2610.12982v1 Announce Type: new Abstract: Nonlinear optics expands the polarization in powers of the drive and retains only the lowest-order terms. This truncation is safe at optical frequencies, where the convergence field lies far a",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.7,
+              "role": "科研",
+              "published_at": "2026-10-12T04:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Gravity and light reveal how liquids turn into thin fibers",
+              "url": "https://phys.org/news/2026-10-gravity-reveal-liquids-thin-fibers.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "From spiders spinning their webs to the manufacturing of textiles, the formation of fibers from liquids plays an important role in both nature and industry. Yet accurately predicting the properties of such fibers remains a challenge. The fi",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 64.2,
+              "role": "科研",
+              "published_at": null,
+              "topic_id": "1421c9e20fde",
+              "topic_title": "UV Fluorescence Sensing of Medical-Chemical-and- Biological Analytes by an AlGaN/Si-on-Sapphire Optoelectronic Chip"
+            }
+          ]
+        },
+        {
+          "category": "产业与资本",
+          "articles": [
+            {
+              "title": "融资数千万！元曦光子能否跨过超表面量产生死线？",
+              "url": "https://optics.ofweek.com/2026-10/ART-8100-2500-30705901.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "禾赛、速腾聚创、图达通半年报横评：规模、利润与第二曲线",
+              "url": "https://laser.ofweek.com/2026-08/ART-240001-12003-30700563.html",
+              "source": "OFweek 激光频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-08",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "聚灿光电发布前三季度报告，砷化镓基红黄光业务收入增长770.42%",
+              "url": "https://www.ledinside.cn/fsa/20261012-62764.html",
+              "source": "LEDinside 中文",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 60.1,
+              "role": "行业媒体",
+              "published_at": "2026-10-12",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "东山精密通过港交所上市聆讯",
+              "url": "https://www.ledinside.cn/news/20261012-62757.html",
+              "source": "LEDinside 中文",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 60.1,
+              "role": "行业媒体",
+              "published_at": "2026-10-12",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
+              "url": "https://www.c114.com.cn/news/123/a1315966.html",
+              "source": "C114中国通信网_通信财经",
+              "summary": "光迅科技2026年上半年营收66.10亿元、净利5.82亿元，同比大增；全球光器件市占率稳居前列，AI驱动下数通光模块需求旺盛。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 58.3,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": "da7b21634030",
+              "topic_title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%"
+            },
+            {
+              "title": "天孚通信2026年上半年净利润12.04亿元，同比增长33.92%",
+              "url": "https://www.c114.com.cn/news/123/a1315895.html",
+              "source": "C114中国通信网_通信财经",
+              "summary": "天孚通信2026年上半年营收28.28亿元、净利12.04亿元，分别增长15.15%和33.92%，受益于AI驱动的光器件需求增长及垂直整合与技术平台优势。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 58.3,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": "da7b21634030",
+              "topic_title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%"
+            },
+            {
+              "title": "光库科技2026年上半年净利润1.48亿元，同比增长186.09%",
+              "url": "https://www.c114.com.cn/news/123/a1315809.html",
+              "source": "C114中国通信网_通信财经",
+              "summary": "光库科技2026年上半年营收10.32亿元、净利润1.48亿元，同比大增；受益AI基建需求，光通讯与光纤激光器件业务双轮驱动。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 58.3,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": "da7b21634030",
+              "topic_title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%"
+            },
+            {
+              "title": "三部门关于印发《轻工纺织产业发展“十五五”规划》的通知",
+              "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_9fb9b35709f941d4805d064092032bd0.html",
+              "source": "工信部要闻",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 56.8,
+              "role": "媒体",
+              "published_at": null,
+              "topic_id": "421efee4c714",
+              "topic_title": "三部门关于印发《轻工纺织产业发展“十五五”规划》的通知"
+            }
+          ]
+        },
+        {
+          "category": "通信与算力",
+          "articles": [
+            {
+              "title": "【10月 成都 武汉】关于举办“十五五”规划基建领域高质量发展：人工智能+工程建设项目全流程精益管控与风险防范高级研修班",
+              "url": "http://www.cebpubservice.com/monitorindustry/monitorplat/2026/01/12897.shtml",
+              "source": "中国招标投标公共服务平台",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 52.3,
+              "role": "媒体",
+              "published_at": null,
+              "topic_id": "7a52ea497cea",
+              "topic_title": "【10月 成都 武汉】关于举办“十五五”规划基建领域高质量发展：人工智能+工程建设项目全流程精益管控与风险防范高级研修班"
+            },
+            {
+              "title": "两会关注：提速降费步伐加快，三大运营商打出全新组合拳",
+              "url": "http://www.c114.net/news/16/a997421.html",
+              "source": "C114中国通信网_要闻精选",
+              "summary": "年两会总理提出了2017年“网络提速降费要迈出更大步伐”，并明确了三个方向：年内全部取消手机国内长途和漫游费；大幅降低中小企业互联网专线接入资费；降低国际长途电话费。为了响应政府号召，三大运营商都公布了2017年提速降费的新政，通过一些列组合拳持续推进提速降费。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.5,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "大招齐发，英特尔直击网络转型",
+              "url": "http://www.c114.com.cn/topic/5096/a996852.html?utm_medium=C114&dclid=CLmNp8bEwdICFRwhKgodT4YHqQ",
+              "source": "C114中国通信网_要闻精选",
+              "summary": "运营商是实现5G连接及应用和业务创新的重要基石，也是网络转型的主角。作为中国三大运营商之一的中国电信，正在努力推进网络转型，为5G的到来做好准备。中国电信选择与英特尔合作，采用英特尔RSD实施方案，联手击破运营商在网络转型中的各个难题，真正做到在网络转型之路所向披靡。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.5,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Juniper今年发力电信市场：重振国内运营商业务",
+              "url": "http://www.c114.net/news/16/a997327.html",
+              "source": "C114中国通信网_要闻精选",
+              "summary": "日前，Juniper Networks (瞻博网络) 举办了主题为飞跃的合作伙伴大会。在会上，瞻博网络大中国区总裁林小平表示，今年Juniper将重点发力运营商、OTT、企业市场及BTI、Contrail业务。其中，运营商市场是Juniper第一要发展的市场。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.5,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "中国电信六大新举措持续推进提速降费",
+              "url": "http://www.c114.net/news/117/a997412.html",
+              "source": "C114中国通信网_要闻精选",
+              "summary": "今天上午，国务院新闻办公室举办国务院政策吹风会。根据会议的内容显示，2017年10月1日起，三大运营商将全部取消手机国内长途和漫游费。此外，运营商还需要进一步提速降费。作为三大运营商之一的中国电信响应国家号召，2017年中国电信推出六大新举措，持续推进提速降费。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.5,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "超260个云项目背后：华为助力运营商建好云、用好云、管好云",
+              "url": "http://www.c114.net/news/126/a997279.html",
+              "source": "C114中国通信网_要闻精选",
+              "summary": "作为产业界云化领域的创新中坚力量之一，以及对IT和通信皆有深刻洞察的解决方案提供者，华为IT产品线过去一年中持续在全球运营商数字化转型中发挥重要战略伙伴的作用，在市场上的表现亦是“超乎想象”，据披露已经与运营商合作展开了超过260个有关云的项目。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.5,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "中国移动智能家庭网关设备集采：上海贝尔获得50%份额",
+              "url": "http://www.c114.net/news/118/a997270.html",
+              "source": "C114中国通信网_要闻精选",
+              "summary": "备受关注的中国移动2017年智能家庭网关设备集中采购（公开部分模型二）已于日前结束。此次集采共有三家企业中标，上海贝尔获得50%份额，烽火获得30%，华为获得20%。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.5,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "工信部对我国网络强国建设提出四点建议",
+              "url": "http://www.c114.net/news/16/a997101.html",
+              "source": "C114中国通信网_要闻精选",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.5,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "徐直军详解视频驱动力与挑战：华为助力运营商淘金万亿级新市场",
+              "url": "http://www.c114.net/news/126/a996989.html",
+              "source": "C114中国通信网_要闻精选",
+              "summary": "徐直军在2017世界移动大会期间的Keynote上发表了“让视频成为运营商增长的新动力”的主题演讲。他指出，内容、视频正在重新定义电信产业，对运营商来说视频业务已成必须，华为将自己定位为运营商视频业务成功的使能者，帮助运营商发展视频业务并获得增长。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.5,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
         },
         {
           "category": "其他",
           "articles": [
             {
-              "title": "中科曙光上半年净利9.71亿元 同比增长33.31%",
-              "url": "https://www.c114.com.cn/news/123/a1316375.html",
-              "source": "C114中国通信网_通信财经",
-              "summary": "昨日，中科曙光发布2026年半年度报告。报告期内，公司实现营业收入74.66亿元，同比增长27.62%；归属于上市公司股东的净利润9.71亿元，同比增长33.31%；扣非后净利润8.44亿元，同比大幅增长48.45%。",
-              "score": 95.0,
-              "role": "行业媒体",
-              "published_at": null
-            },
-            {
-              "title": "工业和信息化部召开党组会议和干部大会 学习贯彻习近平总书记重要指示和全国先进制造业大会精神",
-              "url": "http://www.miit.gov.cn/xwfb/bldhd/art/2026/art_c6aff1cc2d094936aaca2f131389d3f8.html",
-              "source": "工信部要闻",
+              "title": "球差: 为什么轴上点也不完美？",
+              "url": "https://optics.ofweek.com/2026-10/ART-250002-11000-30706662.html",
+              "source": "OFweek 光电频道",
               "summary": "",
-              "score": 90.0,
-              "role": "媒体",
-              "published_at": null
-            },
-            {
-              "title": "工业和信息化部等十部门关于印发《医药工业发展“十五五”规划》的通知",
-              "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_9463adac4db040159f6cbf482675eeea.html",
-              "source": "工信部要闻",
-              "summary": "",
-              "score": 90.0,
-              "role": "媒体",
-              "published_at": null
-            },
-            {
-              "title": "两部门关于印发《电子信息制造业发展“十五五”规划》的通知",
-              "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_f4864217588b44c489d58da20de766c8.html",
-              "source": "工信部要闻",
-              "summary": "",
-              "score": 90.0,
-              "role": "媒体",
-              "published_at": null
-            },
-            {
-              "title": "工业和信息化部介绍全力抓好“十五五”规划实施、加快推进新型工业化有关情况",
-              "url": "http://www.miit.gov.cn/xwfb/bldhd/art/2026/art_934ddb14d33e4cd5b787d88a15c5c0eb.html",
-              "source": "工信部要闻",
-              "summary": "",
-              "score": 90.0,
-              "role": "媒体",
-              "published_at": null
-            },
-            {
-              "title": "华为全联接大会2026 | 鲲鹏 为更先进的数智世界而计算",
-              "url": "https://www.c114.com.cn/news/126/a1317961.html",
-              "source": "C114中国通信网_设备商",
-              "summary": "在华为全联接大会 2026 期间，鲲鹏计算产业峰会正式举办。华为鲲鹏计算产品线总裁李义发表“鲲鹏 为更先进的数智世界而计算”主题演讲，面向Agentic AI时代的算力变革，分享鲲鹏技术布局与产业生态成果，打造领先、开放、安全的智能体底座，为更先进的数智世界而计算。",
-              "score": 85.0,
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
               "role": "行业媒体",
-              "published_at": null
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
             },
             {
-              "title": "工信部等四部门：到2035年，全面建成新型互联网基础设施",
-              "url": "https://www.c114.com.cn/news/550/a1313800.html",
-              "source": "C114中国通信网_监管",
-              "summary": "贯彻落实党中央、国务院决策部署，为推动我国互联网基础资源高质量发展，塑造互联网发展新动能新优势，工业和信息化部、中央网信办、国家发展改革委、国家数据局等四部门近日联合印发《关于推动互联网基础资源高质量发展的指导意见》。",
-              "score": 85.0,
+              "title": "手机市场大混战: 谁在重新定义影像战争？",
+              "url": "https://optics.ofweek.com/2026-10/ART-250003-8420-30706440.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
               "role": "行业媒体",
-              "published_at": null
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
             },
             {
-              "title": "工信部、国资委启动2026年度人形机器人与具身智能实景实训专项行动",
-              "url": "https://www.c114.com.cn/news/550/a1311872.html",
-              "source": "C114中国通信网_监管",
-              "summary": "近日，工业和信息化部、国务院国资委联合印发通知，正式启动2026年度人形机器人与具身智能实景实训专项行动，聚焦工业、服务、特种等领域重点场景，部署打造实景实训空间、组建创新应用联合体、攻关实用化作业技能、加强实景应用验证与常态部署、强化关键要素保障、凝练成熟经验等六项重点任务，加速构建“实景实训—数据沉淀—产品迭代—规模部署”闭环，支撑人形机器人与具身智能产业高质量发展。",
-              "score": 85.0,
+              "title": "华为Mate 90 Pro Max体验：影像超能打，鸿蒙生态是一大亮点",
+              "url": "https://optics.ofweek.com/2026-10/ART-250003-8330-30706393.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
               "role": "行业媒体",
-              "published_at": null
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "4G 智能照明模块选型、部署及常见问题",
+              "url": "https://optics.ofweek.com/2026-10/ART-250002-8210-30706185.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "一量产就“死”？供应链角度看微型光机的价格困局",
+              "url": "https://optics.ofweek.com/2026-10/ART-250003-8420-30706048.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "带着iPhone 18 Pro Max拍维港烟花秀后，我发现苹果影像思路彻底变了",
+              "url": "https://optics.ofweek.com/2026-10/ART-250003-8330-30705981.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "欧菲光独家供应华为Pura 90 Pro系列主摄与2亿潜望长焦",
+              "url": "https://optics.ofweek.com/2026-10/ART-250003-8460-30705856.html",
+              "source": "OFweek 光电频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-10",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "【每日科创】柏楚电子：毛利率接近80%的隐形冠军",
+              "url": "https://laser.ofweek.com/2026-09/ART-240002-12002-30703952.html",
+              "source": "OFweek 激光频道",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.0,
+              "role": "行业媒体",
+              "published_at": "2026-09",
+              "topic_id": null,
+              "topic_title": null
             }
           ]
         }
       ],
-      "tocCount": 66,
-      "readMinutes": 2
+      "topic_ids": [
+        "11c73434e03b",
+        "1421c9e20fde",
+        "231f7546b72c",
+        "74c712a4df37",
+        "e21082303e63"
+      ],
+      "tocCount": 16,
+      "readMinutes": 1,
+      "amended": 14
     }
   }
 }

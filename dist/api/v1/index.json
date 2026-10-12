@@ -1,11 +1,36 @@
 {
-  "name": "Opto-Hot API v1",
-  "description": "光电行业热点统计静态 JSON 接口（免鉴权，每 6 小时更新）",
+  "name": "PAT-HOT API v1",
+  "description": "物理·天文·光电热点统计静态 JSON 接口（免鉴权，每天 6:00/18:00 北京时间更新）。api/v1/<频道>/* 为当前布局；legacy:* 是重构前的扁平地址，内容等同 T 光电频道，仍持续更新。",
+  "channels": [
+    "physics",
+    "astro",
+    "tech"
+  ],
+  "defaultChannel": "tech",
   "endpoints": {
-    "items": "api/v1/items.json",
-    "hot-topics": "api/v1/hot-topics.json",
-    "dailies": "api/v1/dailies.json",
-    "daily": "api/v1/daily.json",
-    "stories": "api/v1/stories.json"
+    "physics/items": "api/v1/physics/items.json",
+    "physics/hot-topics": "api/v1/physics/hot-topics.json",
+    "physics/dailies": "api/v1/physics/dailies.json",
+    "physics/daily": "api/v1/physics/daily.json",
+    "physics/stories": "api/v1/physics/stories.json",
+    "physics/trends": "api/v1/physics/trends.json",
+    "astro/items": "api/v1/astro/items.json",
+    "astro/hot-topics": "api/v1/astro/hot-topics.json",
+    "astro/dailies": "api/v1/astro/dailies.json",
+    "astro/daily": "api/v1/astro/daily.json",
+    "astro/stories": "api/v1/astro/stories.json",
+    "astro/trends": "api/v1/astro/trends.json",
+    "tech/items": "api/v1/tech/items.json",
+    "tech/hot-topics": "api/v1/tech/hot-topics.json",
+    "tech/dailies": "api/v1/tech/dailies.json",
+    "tech/daily": "api/v1/tech/daily.json",
+    "tech/stories": "api/v1/tech/stories.json",
+    "tech/trends": "api/v1/tech/trends.json",
+    "legacy:items": "api/v1/items.json",
+    "legacy:hot-topics": "api/v1/hot-topics.json",
+    "legacy:dailies": "api/v1/dailies.json",
+    "legacy:daily": "api/v1/daily.json",
+    "legacy:stories": "api/v1/stories.json",
+    "legacy:trends": "api/v1/trends.json"
   }
 }

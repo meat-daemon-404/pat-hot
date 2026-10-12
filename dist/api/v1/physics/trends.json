@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-12T14:08:22.657157+00:00",
+  "weekStart": "2026-10-12",
+  "categoryDelta": [
+    {
+      "category": "科研进展",
+      "thisWeek": 427.9,
+      "lastWeek": 805.6,
+      "deltaPct": -46.9
+    },
+    {
+      "category": "其他",
+      "thisWeek": 392.2,
+      "lastWeek": 192.9,
+      "deltaPct": 103.3
+    },
+    {
+      "category": "量子信息与计算",
+      "thisWeek": 243.4,
+      "lastWeek": 0,
+      "deltaPct": 100.0
+    },
+    {
+      "category": "凝聚态物理",
+      "thisWeek": 162.2,
+      "lastWeek": 49.8,
+      "deltaPct": 225.7
+    },
+    {
+      "category": "高能与粒子物理",
+      "thisWeek": 83.0,
+      "lastWeek": 158.9,
+      "deltaPct": -47.8
+    },
+    {
+      "category": "原子分子与光物理",
+      "thisWeek": 41.5,
+      "lastWeek": 0,
+      "deltaPct": 100.0
+    }
+  ],
+  "newTopics": [
+    {
+      "topic_id": "4eb0397c6c75",
+      "title": "2026诺贝尔化学奖给了法国95岁学者和日本75岁学者，日本科学诺奖得主已有28位",
+      "score": 147.9,
+      "days": 1
+    },
+    {
+      "topic_id": "2f5eb981ef07",
+      "title": "Quantum chip holds multiple photons at once, opening path to scalable memory",
+      "score": 95.6,
+      "days": 1
+    },
+    {
+      "topic_id": "29fc48178033",
+      "title": "Ultraviolet laser pulses engineer diamond defects selectively, leaving quantum qubits intact",
+      "score": 51.2,
+      "days": 1
+    }
+  ],
+  "sustainedTopics": [
+    {
+      "topic_id": "4434baea1bdc",
+      "title": "Chip-mediated manipulation of photonic quantum skyrmions",
+      "days": 3,
+      "score": 174.7
+    }
+  ]
+}

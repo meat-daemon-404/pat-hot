@@ -1,13 +1,13 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Opto-Hot API v1",
-    "version": "1.0.0",
-    "description": "光电行业热点统计静态 JSON 接口（免鉴权，每 6 小时更新，AI/Agent 可直接消费）。"
+    "title": "PAT-HOT API v1",
+    "version": "2.0.0",
+    "description": "物理·天文·光电热点统计静态 JSON 接口（免鉴权，每天 6:00/18:00 北京时间更新，AI/Agent 可直接消费）。"
   },
   "servers": [
     {
-      "url": ""
+      "url": "https://sun-zihang.github.io/pat-hot"
     }
   ],
   "paths": {
@@ -21,59 +21,9 @@
         }
       }
     },
-    "/api/v1/items.json": {
-      "get": {
-        "summary": "全部条目",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/v1/hot-topics.json": {
-      "get": {
-        "summary": "热点榜",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/v1/dailies.json": {
-      "get": {
-        "summary": "光电日报（按日期归档）",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/v1/daily.json": {
-      "get": {
-        "summary": "统计聚合",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/v1/stories.json": {
-      "get": {
-        "summary": "事件故事（多源聚合）",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/feed.xml": {
       "get": {
-        "summary": "RSS（最新 50 条）",
+        "summary": "RSS（最新 50 条，T 光电频道）",
         "responses": {
           "200": {
             "description": "OK"
@@ -81,9 +31,179 @@
         }
       }
     },
-    "/feed/category/{slug}.xml": {
+    "/api/v1/physics/items.json": {
       "get": {
-        "summary": "分类 RSS（slug: laser/fiber/display/chip/optics/sensing/pv/research/capital/telecom/other）",
+        "summary": "物理：全部条目",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/physics/hot-topics.json": {
+      "get": {
+        "summary": "物理：热点榜",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/physics/dailies.json": {
+      "get": {
+        "summary": "物理：日报（按日期归档）",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/physics/daily.json": {
+      "get": {
+        "summary": "物理：统计聚合",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/physics/stories.json": {
+      "get": {
+        "summary": "物理：事件故事",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/physics/trends.json": {
+      "get": {
+        "summary": "物理：趋势",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/astro/items.json": {
+      "get": {
+        "summary": "天文：全部条目",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/astro/hot-topics.json": {
+      "get": {
+        "summary": "天文：热点榜",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/astro/dailies.json": {
+      "get": {
+        "summary": "天文：日报（按日期归档）",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/astro/daily.json": {
+      "get": {
+        "summary": "天文：统计聚合",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/astro/stories.json": {
+      "get": {
+        "summary": "天文：事件故事",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/astro/trends.json": {
+      "get": {
+        "summary": "天文：趋势",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/tech/items.json": {
+      "get": {
+        "summary": "光电：全部条目",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/tech/hot-topics.json": {
+      "get": {
+        "summary": "光电：热点榜",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/tech/dailies.json": {
+      "get": {
+        "summary": "光电：日报（按日期归档）",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/tech/daily.json": {
+      "get": {
+        "summary": "光电：统计聚合",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/tech/stories.json": {
+      "get": {
+        "summary": "光电：事件故事",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/tech/trends.json": {
+      "get": {
+        "summary": "光电：趋势",
         "responses": {
           "200": {
             "description": "OK"

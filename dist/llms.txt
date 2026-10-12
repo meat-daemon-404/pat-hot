@@ -1,34 +1,36 @@
-# Opto-Hot · 光电行业热点统计
+# PAT-HOT · 物理·天文·光电热点统计
 
-> 光电行业资讯聚合与热点统计（AIHOT 模式），数据每天 12:00（北京时间）自动更新，本站数据为公开内容，适合作为 AI / Agent 的信息来源。
+> 物理 / 天文 / 光电三频道资讯聚合与热点统计（AIHOT 模式），数据每天 6:00、18:00（北京时间）自动更新，本站数据为公开内容，适合作为 AI / Agent 的信息来源。
 
 ## 在线入口
-- 报告页面: ./index.html
-- GitHub 仓库: https://github.com/sun-zihang/opto-hot
+- 报告页面: https://sun-zihang.github.io/pat-hot/index.html
+- GitHub 仓库: https://github.com/sun-zihang/pat-hot
 
-## 数据 API（静态 JSON，免鉴权）
-- 接口索引 / OpenAPI: ./api/v1/index.json , ./api/v1/openapi.json
-- 全部条目: ./api/v1/items.json
-- 热点榜: ./api/v1/hot-topics.json
-- 光电日报（按日期归档）: ./api/v1/dailies.json
-- 统计聚合: ./api/v1/daily.json
-- 事件故事（多源聚合）: ./api/v1/stories.json
-- 政策/招投标结构化库（项目号/预算/截止时间）: ./api/v1/biz.json
+## 数据 API（静态 JSON，免鉴权，按频道）
+- 接口索引 / OpenAPI: https://sun-zihang.github.io/pat-hot/api/v1/index.json , https://sun-zihang.github.io/pat-hot/api/v1/openapi.json
+- 物理（P）: https://sun-zihang.github.io/pat-hot/api/v1/physics/items.json , https://sun-zihang.github.io/pat-hot/api/v1/physics/hot-topics.json , https://sun-zihang.github.io/pat-hot/api/v1/physics/dailies.json
+- 天文（A）: https://sun-zihang.github.io/pat-hot/api/v1/astro/items.json , https://sun-zihang.github.io/pat-hot/api/v1/astro/hot-topics.json , https://sun-zihang.github.io/pat-hot/api/v1/astro/dailies.json
+- 光电（T）: https://sun-zihang.github.io/pat-hot/api/v1/tech/items.json , https://sun-zihang.github.io/pat-hot/api/v1/tech/hot-topics.json , https://sun-zihang.github.io/pat-hot/api/v1/tech/dailies.json
+
+## 兼容地址（重构前的扁平路径，仍可用，内容为 T 光电频道）
+- https://sun-zihang.github.io/pat-hot/api/v1/items.json , https://sun-zihang.github.io/pat-hot/api/v1/hot-topics.json , https://sun-zihang.github.io/pat-hot/api/v1/dailies.json
+- https://sun-zihang.github.io/pat-hot/api/v1/daily.json , https://sun-zihang.github.io/pat-hot/api/v1/stories.json , https://sun-zihang.github.io/pat-hot/api/v1/trends.json
 
 ## RSS 订阅（阅读器 / Agent）
-- 全部: ./feed.xml
-- 分类: ./feed/category/{slug}.xml  （slug: laser/fiber/display/chip/optics/sensing/pv/research/capital/telecom/other）
+- 主 feed（T 光电）: https://sun-zihang.github.io/pat-hot/feed.xml
+- 分类: https://sun-zihang.github.io/pat-hot/feed/<频道>/category/<slug>.xml
 
 ## 用法示例（匿名 GET）
-curl /api/v1/hot-topics.json
-curl /api/v1/items.json
-curl /api/v1/dailies.json
-curl /feed.xml
+curl https://sun-zihang.github.io/pat-hot/api/v1/tech/hot-topics.json
+curl https://sun-zihang.github.io/pat-hot/api/v1/physics/items.json
+curl https://sun-zihang.github.io/pat-hot/api/v1/astro/dailies.json
+curl https://sun-zihang.github.io/pat-hot/feed.xml
 
 ## 约定
-- 数据每天 12:00（北京时间）更新；可对完整 URL 使用 ETag / If-None-Match 减少拉取。
+- 数据每天 6:00、18:00（北京时间）更新；可对完整 URL 使用 ETag / If-None-Match 减少拉取。
 - items.json 为全量快照，可本地按 publishedAt / discoveredAt / keywords 筛选。
-- 公开使用请注明一次数据来源：Opto-Hot（AIHOT 模式，数据源自各公开站点）。
+- api/v1/dailies.json 为裸日期字典（键是 YYYY-MM-DD）；data/dailies.json 才带 schemaVersion 包装。
+- 公开使用请注明一次数据来源：PAT-HOT（AIHOT 模式，数据源自各公开站点）。
 
 ## 说明
 数据来自公开网络（RSS / 网站首页），自动采集统计，仅供参考，不构成投资建议。
