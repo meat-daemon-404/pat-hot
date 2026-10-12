@@ -18,6 +18,25 @@ a{color:inherit;text-decoration:none}
 .seg{display:flex;background:var(--sunk);border-radius:999px;padding:3px;margin-left:auto}
 .seg a{padding:5px 15px;border-radius:999px;font-size:13px;color:var(--ink3);font-weight:600;white-space:nowrap}
 .seg a.on{background:#fff;color:var(--ink);box-shadow:var(--sh)}
+.chseg{display:flex;background:var(--sunk);border-radius:999px;padding:3px;gap:2px}
+.chseg a{display:flex;align-items:center;gap:5px;padding:5px 11px;border-radius:999px;font-size:12.5px;color:var(--ink3);font-weight:700;cursor:pointer;white-space:nowrap}
+.chseg a .cl{width:20px;height:20px;border-radius:50%;background:#fff;color:var(--ink3);display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;box-shadow:var(--sh)}
+.chseg a.on{background:#fff;color:var(--ink);box-shadow:var(--sh)}
+.chseg a.on .cl{background:var(--ac);color:#fff}
+@media(max-width:759px){.chseg a .cn{display:none}.chseg a{padding:5px 8px}}
+.xbtn{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--ac);background:var(--acsoft);color:var(--acd);border-radius:999px;padding:7px 18px;font-size:13px;font-weight:700;cursor:pointer;margin-top:10px}
+.xbtn:hover{background:var(--ac);color:#fff}
+.xbtn .xa{font-size:10px;transition:transform .25s}
+.xbtn.open .xa{transform:rotate(180deg)}
+.xbody{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
+.xbody.open{grid-template-rows:1fr}
+.xbody-in{overflow:hidden;min-height:0}
+.xbody .xsec{font-size:11.5px;font-weight:700;color:var(--ink4);letter-spacing:1px;margin:10px 0 4px}
+.xbody .xsec:first-child{margin-top:10px}
+.xbody .xt{font-size:13.5px;color:var(--ink2);line-height:1.75;white-space:pre-wrap}
+.xsrc{margin-top:10px;font-size:12px;color:var(--ink4)}
+.xsrc a{color:var(--ink4);text-decoration:underline}
+.ext-tag{font-size:11px;color:var(--ink4);font-weight:400;white-space:nowrap}
 .icobtn{width:34px;height:34px;border:0;background:none;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--ink2);cursor:pointer;font-size:13px;font-weight:700;flex:none}
 .icobtn:hover{background:var(--sunk)}
 .icobtn svg{width:20px;height:20px}

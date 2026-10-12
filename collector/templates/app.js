@@ -1,63 +1,81 @@
 const S = __SNAPSHOT__;
+const META = S.meta || {channels:[], default:"tech"};
 const $ = (sel, root=document) => root.querySelector(sel);
 const $$ = (sel, root=document) => [...root.querySelectorAll(sel)];
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const CAT_CLS = S.catCls || {};
-const CAT_EN = {"激光":"Laser","光通信":"Optical Comm","显示与面板":"Display & Panel","光电芯片与半导体":"Opto Chip & Semi","光学元件与成像":"Optics & Imaging","光传感与激光雷达":"Sensing & LiDAR","光伏与新能源":"PV & Energy","科研进展":"Research","产业与资本":"Industry & Capital","通信与算力":"Telecom & Compute","其他":"Other"};
+// ---- 频道 ----
+let CHID = "";
+try { CHID = localStorage.getItem("pat-channel") || ""; } catch(e){}
+if (!S.channels[CHID]) CHID = META.default || "tech";
+if (!S.channels[CHID]) CHID = Object.keys(S.channels)[0];
+let C = S.channels[CHID];
+let CAT_CLS = C.catCls || {};
+let CAT_EN = C.catEn || {};
+let TREND_TITLES = null;
 const STATUS_EN = {"爆":"Hot","发酵中":"Trending","关注中":"Watch"};
 const DENS_EN = {"高":"High","中":"Medium","低":"Low"};
 const I18N = {
   zh: { feed:"精选", all:"全部", hot:"热点", daily:"日报", trends:"趋势", more:"更多",
     allPage:"全部动态", topics:"主题", data:"数据", agent:"Agent 接入",
-    search:"搜索光电资讯 / 公司 / 关键词…", catAll:"全部", sortScore:"按推荐分", sortTime:"按时间",
-    feedSub:"按推荐分排序的光电行业时间线", thresholdNote:"精选门槛：官方信源 ≥ {o} 分 · 媒体信源 ≥ {m} 分（可在 collector/config.json 调整）",
+    search:"搜索", catAll:"全部", sortScore:"按推荐分", sortTime:"按时间",
+    thresholdNote:"精选门槛：官方信源 ≥ {o} 分 · 媒体信源 ≥ {m} 分（可在 collector/config.json 调整）",
     hotNow:"当前热点", fullRank:"完整榜单 →", unreadOnly:"只看未读", today:"今天", daySel:"条精选", noMatch:"没有匹配的条目",
-    hotPage:"光电热点榜", hotSub:"事件级热度：48 小时内每独立来源只计一次", heatVal:"热度", sources:"信源", signals:"信号",
+    heatVal:"热度", sources:"信源", signals:"信号",
     repMore:"另有 {n} 家信源报道", repOne:"1 家信源报道",
-    dailyPage:"光电日报", dailySub:"自动生成 · 每日一篇（含历史归档）", toc:"今日看点", archive:"日报归档",
+    toc:"今日看点", archive:"日报归档",
     headlineK:"头 条", picksK:"今日看点", flashK:"快 讯", moreK:"分栏目浏览",
-    topicsPage:"主题", topicsSub:"光电行业分类统计，点击进入筛选",
+    topicsSub:"分类统计，点击进入筛选",
     dataPage:"数据", dataSub:"统计与导出", total:"收录总数", h24:"24 小时新增", h7:"7 天新增", hotTopic:"热点话题", trend:"每日收录趋势（近 14 天）",
     srcTable:"数据来源", latest:"最新收录", dlCSV:"下载 CSV", dlItems:"查看 items.json", dlHot:"查看 hot-topics.json", dlDaily:"查看 dailies.json",
     agentPage:"Agent 接入", agentSub:"面向 AI / LLM / 智能体的数据接口（免鉴权，静态 JSON）", apiTitle:"数据 API（v1）",
-    apiDesc:"数据每日自动更新，接口免鉴权，AI 智能体 / 脚本可直接消费。", endpoint:"接口", desc:"说明", open:"打开",
+    apiDesc:"数据每天 6:00 / 18:00 自动更新，接口免鉴权，AI 智能体 / 脚本可直接消费。", endpoint:"接口", desc:"说明", open:"打开",
     curl:"用法示例（curl）", llmsNote:"站点根目录提供 llms.txt（LLM 友好入口），Agent 可先读取它再按需拉取接口。", base:"接口基地址（本页 URL 去掉 index.html）",
     reason:"推荐理由", density:"信息密度", official:"官方", pick:"精选",
-    trendPage:"本周趋势", trendSub:"本周 vs 上周 · 分类热度与事件追踪",
     catDelta:"分类热度变化", newTopics:"新上榜事件", sustained:"持续发酵", noTrend:"本周暂无趋势数据（需要至少两周的日报归档）",
     menuAllSub:"全部资讯 · 搜索 / 分类 / 排序", menuTopicsSub:"分类统计，点击进入筛选", menuDataSub:"统计与导出", menuAgentSub:"开放 JSON 接口，免鉴权",
-    footer:"Opto-Hot · 光电行业热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
+    expand:"展开阅读", collapse:"收起", aiSum:"AI 内容概要", srcSum:"来源摘要",
+    extNote:"原文·需外网", readOrig:"阅读原文 ↗（需外网）",
+    footer:"PAT-HOT · 物理·天文·光电热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
   en: { feed:"Selected", all:"All", hot:"Hot", daily:"Daily", trends:"Trends", more:"More",
     allPage:"All Items", topics:"Topics", data:"Data", agent:"Agent API",
-    search:"Search optics / photonics news…", catAll:"All", sortScore:"By score", sortTime:"By time",
-    feedSub:"Optoelectronics timeline ranked by score", thresholdNote:"Selection bar: official sources ≥ {o} · media sources ≥ {m} (tune in collector/config.json)",
+    search:"Search", catAll:"All", sortScore:"By score", sortTime:"By time",
+    thresholdNote:"Selection bar: official sources ≥ {o} · media sources ≥ {m} (tune in collector/config.json)",
     hotNow:"Trending Now", fullRank:"Full ranking →", unreadOnly:"Unread only", today:"Today", daySel:"selected", noMatch:"No matching items",
-    hotPage:"Hot Ranking", hotSub:"Event-level heat: each independent source counts once per 48h", heatVal:"heat", sources:"sources", signals:"signals",
+    heatVal:"heat", sources:"sources", signals:"signals",
     repMore:"{n} more sources", repOne:"1 source",
-    dailyPage:"Daily Brief", dailySub:"Auto-generated daily (with archive)", toc:"Today's picks", archive:"Archive",
+    toc:"Today's picks", archive:"Archive",
     headlineK:"HEADLINE", picksK:"Today's picks", flashK:"Flash", moreK:"Browse by category",
-    topicsPage:"Topics", topicsSub:"Category stats — click to filter",
+    topicsSub:"Category stats — click to filter",
     dataPage:"Data", dataSub:"Stats & export", total:"Total items", h24:"24h new", h7:"7d new", hotTopic:"Hot topics", trend:"Daily trend (14 days)",
     srcTable:"Sources", latest:"Latest", dlCSV:"Download CSV", dlItems:"items.json", dlHot:"hot-topics.json", dlDaily:"dailies.json",
     agentPage:"Agent API", agentSub:"Open JSON APIs for AI / LLM agents (no auth)", apiTitle:"Data API (v1)",
-    apiDesc:"Data refreshes daily. Endpoints need no auth and are agent/script friendly.", endpoint:"Endpoint", desc:"Description", open:"Open",
+    apiDesc:"Data refreshes at 6:00 / 18:00 daily. Endpoints need no auth and are agent/script friendly.", endpoint:"Endpoint", desc:"Description", open:"Open",
     curl:"Examples (curl)", llmsNote:"llms.txt at site root is an LLM-friendly entry point.", base:"Base URL (this page URL minus index.html)",
     reason:"Why it matters", density:"Info density", official:"Official", pick:"Pick",
-    trendPage:"Weekly Trends", trendSub:"This week vs last week · category heat & event tracking",
     catDelta:"Category heat change", newTopics:"New events", sustained:"Sustained events", noTrend:"No trend data yet (needs 2+ weeks of daily archive)",
     menuAllSub:"All items · search / filter / sort", menuTopicsSub:"Category stats — click to filter", menuDataSub:"Stats & export", menuAgentSub:"Open JSON APIs, no auth",
-    footer:"Opto-Hot · optoelectronics hot-topic stats (AIHOT methodology) · public data, for reference only · open source on GitHub" }
+    expand:"Read more", collapse:"Collapse", aiSum:"AI Summary", srcSum:"Source abstract",
+    extNote:"orig.·needs internet", readOrig:"Read original ↗ (needs internet)",
+    footer:"PAT-HOT · physics / astronomy / photonics hot-topic stats (AIHOT methodology) · public data, for reference only · open source on GitHub" }
 };
-let LANG = localStorage.getItem("opto-lang") || "zh";
-const T = I18N[LANG];
+let LANG = "zh";
+try { LANG = localStorage.getItem("pat-lang") || "zh"; } catch(e){}
+const T = I18N[LANG] || I18N.zh;
+function chn(){ return LANG==="en" ? C.name.en : C.name.zh; }
+function feedSub(){ return LANG==="en" ? chn()+" timeline ranked by score" : "按推荐分排序的"+chn()+"时间线"; }
+function hotPage(){ return chn()+(LANG==="en"?" Hot Ranking":"热点榜"); }
+function hotSub(){ return LANG==="en" ? "Event-level heat: each independent source counts once per 48h" : "事件级热度：48 小时内每独立来源只计一次"; }
+function dailyPage(){ return chn()+(LANG==="en"?" Daily":"日报"); }
+function dailySub(){ return LANG==="en" ? "Auto-generated daily (with archive)" : "自动生成 · 每日一篇（含历史归档）"; }
+function searchPh(){ return T.search+chn()+(LANG==="en"?" news…":"资讯 / 关键词…"); }
 const state = { q:"", cat:"全部", sort:"score", dailyDate:"", hotSort:"heat", unreadOnly:false, collapsed:{} };
 function lsGet(k){ try{ return JSON.parse(localStorage.getItem(k)||"{}"); }catch(e){ return {}; } }
 function lsSet(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
-let READ = lsGet("opto-read"), FAV = lsGet("opto-fav");
-function markRead(u){ if(!u||READ[u]) return; READ[u]=1; const ks=Object.keys(READ); if(ks.length>800) ks.slice(0,300).forEach(k=>delete READ[k]); lsSet("opto-read",READ); }
-function toggleFav(u){ if(FAV[u]) delete FAV[u]; else FAV[u]=1; lsSet("opto-fav",FAV); }
+let READ = lsGet("pat-read"), FAV = lsGet("pat-fav");
+function markRead(u){ if(!u||READ[u]) return; READ[u]=1; const ks=Object.keys(READ); if(ks.length>800) ks.slice(0,300).forEach(k=>delete READ[k]); lsSet("pat-read",READ); }
+function toggleFav(u){ if(FAV[u]) delete FAV[u]; else FAV[u]=1; lsSet("pat-fav",FAV); }
 function avaColor(s){ let h=0; for(const c of String(s)) h=(h*31+c.charCodeAt(0))>>>0; return "hsl("+(h%360)+",40%,46%)"; }
-function tr(){ $$("[data-i18n]").forEach(el=>{ const k=el.dataset.i18n; if(T[k]) el.textContent = T[k]; }); $("#lang").textContent = LANG==="zh"?"EN":"中"; $("#q").placeholder = T.search; }
+function tr(){ $$("[data-i18n]").forEach(el=>{ const k=el.dataset.i18n; if(T[k]) el.textContent = T[k]; }); $("#lang").textContent = LANG==="zh"?"EN":"中"; $("#q").placeholder = searchPh(); }
 function fmtRel(iso){ if(!iso) return ""; const t=new Date(iso); const d=(Date.now()-t.getTime())/1000; if(d<60) return "刚刚"; if(d<3600) return Math.floor(d/60)+" 分钟前"; if(d<86400) return Math.floor(d/3600)+" 小时前"; return Math.floor(d/86400)+" 天前"; }
 function effDate(it){ const p=it.published_at; if(p&&p.length>=10) return p.slice(0,10); const d=new Date(it.discovered_at); return new Date(d.getTime()+8*3600*1000).toISOString().slice(0,10); }
 function fmtDay(dstr){ const parts=dstr.split("-"); if(LANG==="en") return dstr; return parts[0]+"年"+Number(parts[1])+"月"+Number(parts[2])+"日"; }
@@ -75,34 +93,56 @@ function tierBadge(t){ return t==="official"?'<span class="bdg b-tier">'+T.offic
 function densBadge(d){ if(!d) return ""; const cls=d==="高"?"b-dh":(d==="中"?"b-dm":"b-dl"); return '<span class="bdg '+cls+'" title="'+T.density+'">'+esc(densName(d))+'</span>'; }
 function scoreEl(s,llm){ const ai=llm?'<span class="iai">AI</span>':""; return '<span class="iscore mono '+scoreCls(s)+'" title="'+(llm?"AI 双打分均值":"score")+' / 100">'+Math.round(s)+'</span>'+ai; }
 function summaryOf(it){ return it.llm_summary || it.summary || ""; }
-function trendSet(){ const tt=S.trends||{}; return new Set([...(tt.newTopics||[]),...(tt.sustainedTopics||[])].map(x=>x.title)); }
-let TREND_TITLES = null;
+function cardSummary(it){ const s=summaryOf(it); if(it.llm_summary) return s; return s.length>160 ? s.slice(0,160)+"…" : s; }
+function trendSet(){ const tt=C.trends||{}; return new Set([...(tt.newTopics||[]),...(tt.sustainedTopics||[])].map(x=>x.title)); }
 function trendOf(t){ if(!TREND_TITLES) TREND_TITLES = trendSet(); return TREND_TITLES.has(t.title) ? "up" : "flat"; }
+// ---- 站内展开阅读 ----
+const EXPANDED = new Set();
+function expandable(it){ const s=it.summary||""; return (it.llm_summary && s && s!==it.llm_summary) || (!it.llm_summary && s.length>160); }
+function expandBtn(it){ if(!expandable(it)) return ""; const open=EXPANDED.has(it.id); return '<button class="xbtn'+(open?" open":"")+'" data-x="'+it.id+'"><span>'+(open?T.collapse:T.expand)+'</span><span class="xa">▼</span></button>'; }
+function expandBody(it){ if(!expandable(it)) return ""; const open=EXPANDED.has(it.id);
+  const ai=it.llm_summary?'<div class="xsec">'+T.aiSum+'</div><div class="xt">'+esc(it.llm_summary)+'</div>':"";
+  const rs=it.summary?'<div class="xsec">'+T.srcSum+'</div><div class="xt">'+esc(it.summary)+'</div>':"";
+  const src=it.url?'<div class="xsrc"><a href="'+esc(it.url)+'" target="_blank" rel="noopener">'+T.readOrig+'</a></div>':"";
+  return '<div class="xbody'+(open?" open":"")+'" id="xb-'+it.id+'"><div class="xbody-in">'+ai+rs+src+'</div></div>'; }
+function toggleExpand(btn){ const id=btn.dataset.x; const body=document.getElementById("xb-"+CSS.escape(id));
+  const open=EXPANDED.has(id); if(open) EXPANDED.delete(id); else EXPANDED.add(id);
+  btn.classList.toggle("open",!open); btn.querySelector("span").textContent=!open?T.collapse:T.expand;
+  if(body) body.classList.toggle("open",!open); }
+// ---- 频道切换 ----
+function renderChSeg(){ const el=$("#chseg"); if(!el) return;
+  el.innerHTML=META.channels.map(c=>'<a data-ch="'+c.id+'" class="'+(c.id===CHID?"on":"")+'"><span class="cl">'+c.letter+'</span><span class="cn">'+esc(LANG==="en"?c.name.en:c.name.zh)+'</span></a>').join("");
+  el.querySelectorAll("a").forEach(a=>{ a.onclick=()=>setChannel(a.dataset.ch); }); }
+function setChannel(id){ if(id===CHID||!S.channels[id]) return;
+  CHID=id; C=S.channels[id]; CAT_CLS=C.catCls||{}; CAT_EN=C.catEn||{}; TREND_TITLES=null; EXPANDED.clear();
+  state.dailyDate=""; state.cat="全部"; state.q=""; const q=$("#q"); if(q) q.value="";
+  try{ localStorage.setItem("pat-channel",id); }catch(e){}
+  renderChSeg(); tr(); router(); window.scrollTo(0,0); }
 function itemCard(it){
   const rd=READ[it.url]?" read":"", fv=FAV[it.url]?" on":"";
-  const src=it.source||"", av=esc((src.trim().charAt(0)||"光"));
+  const src=it.source||"", av=esc((src.trim().charAt(0)||chn()).charAt(0));
   const s=(it.llm_score!=null?it.llm_score:it.score);
   const reason=it.llm_reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(it.llm_reason)+'</div>':"";
   const ev=it.event?'<div class="iev">⚡ '+esc(it.event)+'</div>':"";
   const ents=(it.entities&&it.entities.length)?'<div class="ient">'+it.entities.map(e=>'<span class="itag">'+esc(e)+'</span>').join("")+((it.tags||[]).map(t=>'<span class="itag">'+esc(t)+'</span>').join(""))+'</div>':"";
-  const sum=summaryOf(it);
+  const sum=cardSummary(it);
   return '<article class="icard'+rd+'"><div class="irow"><span class="ava" style="background:'+avaColor(src)+'">'+av+'</span><span class="isrc">'+esc(src)+'</span><span class="itime">'+esc(pubLabel(it))+'</span><span class="isp">'+scoreEl(s,it.llm_score!=null)+'<button class="fav'+fv+'" data-fav="'+esc(it.url)+'" aria-label="fav">★</button></span></div>'
   +'<div class="ibadges">'+catBadge(it.category)+tierBadge(it.tier)+(it.selected?pickBadge():"")+densBadge(it.density)+'</div>'
-  +'<div class="ititle"><a href="'+esc(it.url)+'" target="_blank" rel="noopener" data-read="'+esc(it.url)+'">'+esc(it.title)+'</a></div>'
-  +reason+ev+ents+(sum?'<div class="isum">'+esc(sum)+'</div>':"")+'</article>';
+  +'<div class="ititle"><a href="'+esc(it.url)+'" target="_blank" rel="noopener" data-read="'+esc(it.url)+'" title="'+T.readOrig+'">'+esc(it.title)+'</a> <span class="ext-tag">'+T.extNote+'</span></div>'
+  +reason+ev+ents+(sum?'<div class="isum">'+esc(sum)+'</div>':"")+expandBtn(it)+expandBody(it)+'</article>';
 }
-function threshNote(){ const th=S.thresholds||{official:55,media:65}; return T.thresholdNote.replace("{o}",th.official).replace("{m}",th.media); }
+function threshNote(){ const th=C.thresholds||{official:55,media:65}; return T.thresholdNote.replace("{o}",th.official).replace("{m}",th.media); }
 const renderers = {};
 function setNav(v){ $$("#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$("#dnav a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$(".seg a").forEach(a=>a.classList.toggle("on",a.dataset.seg===v)); }
 function router(){ const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/"; const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/trends":"trends","/data":"data","/agent":"agent","/more":"more"}; const v=map[name]||"feed"; setNav(v); $$(".view").forEach(x=>x.classList.remove("on")); $("#view-"+v).classList.add("on"); (renderers[v]||renderers.feed)(); window.scrollTo(0,0); }
 function renderFeed(){
   const root=$("#view-feed");
-  const top=(S.topics||[]).slice(0,3);
+  const top=(C.topics||[]).slice(0,3);
   let hot='<div class="card hottop"><div class="hottop-h"><span class="pulse"></span>'+T.hotNow+'<a href="#/hot">'+T.fullRank+'</a></div>'
   +top.map((t,i)=>{ const up=trendOf(t)==="up"; const arrow=up?'<span class="up">▲</span>':"—";
     const rurl=esc((t.representative||{}).url||"#/hot");
     return '<div class="hr3"><span class="rk r'+(i+1)+'">'+(i+1)+'</span><span class="ht"><a href="'+rurl+'" target="_blank" rel="noopener">'+esc(t.title)+'</a></span><span class="hn mono">'+Math.round(t.heat||t.score)+' <small>'+T.heatVal+'</small> '+arrow+'</span></div>'; }).join("")+'</div>';
-  let items=S.items.slice();
+  let items=C.items.slice();
   if(state.unreadOnly) items=items.filter(i=>!READ[i.url]);
   const groups={}; for(const it of items){ const d=effDate(it); (groups[d]=groups[d]||[]).push(it); }
   const days=Object.keys(groups).sort().reverse().slice(0,7);
@@ -111,26 +151,28 @@ function renderFeed(){
   for(const d of days){ const its=groups[d].slice().sort((a,b)=>b.score-a.score).slice(0,20);
     const closed=state.collapsed[d]?" closed":"";
     tl+='<div class="day'+closed+'"><div class="day-h" data-dayh="'+d+'"><h2>'+(isToday(d)?T.today+" ":"")+fmtDay(d)+'</h2><span class="w">'+wdCN(d)+'</span><span class="c">'+its.length+' '+T.daySel+'</span><span class="arr">'+(state.collapsed[d]?"▶":"▼")+'</span></div><div class="day-b">'+its.map(itemCard).join("")+'</div></div>'; }
-  root.innerHTML='<div class="card ph"><h1>'+T.feed+'</h1><span class="sub">'+T.feedSub+'</span><div class="note">'+esc(threshNote())+'</div></div>'+hot+tl;
+  root.innerHTML='<div class="card ph"><h1>'+T.feed+'</h1><span class="sub">'+esc(feedSub())+'</span><div class="note">'+esc(threshNote())+'</div></div>'+hot+tl;
   const ub=$("#unreadBtn"); if(ub) ub.onclick=()=>{ state.unreadOnly=!state.unreadOnly; renderFeed(); };
 }
 function renderAll(){
-  const root=$("#view-all"); let its=S.items.slice();
+  const root=$("#view-all"); let its=C.items.slice();
   if(state.q){ const q=state.q.toLowerCase(); its=its.filter(i=>(i.title+" "+(i.llm_summary||i.summary||"")+" "+i.source).toLowerCase().includes(q)); }
   if(state.cat!=="全部") its=its.filter(i=>i.category===state.cat);
   if(state.sort==="score") its.sort((a,b)=>b.score-a.score); else its.sort((a,b)=>b.discovered_at.localeCompare(a.discovered_at));
   root.innerHTML='<div class="card ph"><h1>'+T.allPage+'</h1><span class="sub">'+its.length+'</span><span class="hsort" style="margin-left:auto"><select id="all-cat" aria-label="cat"><option value="全部">'+T.catAll+'</option></select><select id="all-sort" aria-label="sort"><option value="score">'+T.sortScore+'</option><option value="time">'+T.sortTime+'</option></select></span><div class="note">'+esc(threshNote())+'</div></div><div id="all-list">'+(its.length?its.map(itemCard).join(""):'<div class="empty">'+T.noMatch+'</div>')+'</div>';
-  const cats=[...new Set(S.items.map(i=>i.category))];
+  const cats=[...new Set(C.items.map(i=>i.category))];
   const sel=$("#all-cat"); for(const c of cats){ const o=document.createElement("option"); o.value=c; o.textContent=catName(c); if(c===state.cat) o.selected=true; sel.appendChild(o); }
   $("#all-sort").value=state.sort;
   sel.onchange=e=>{ state.cat=e.target.value; renderAll(); };
   $("#all-sort").onchange=e=>{ state.sort=e.target.value; renderAll(); };
 }
+function hotExpand(t){ const rep=t.representative||{}; const it={id:"t-"+t.id, llm_summary:rep.llm_summary, summary:rep.summary, url:rep.url||((t.links||[])[0]||{}).url};
+  if(!expandable(it)) return ""; return expandBtn(it)+expandBody(it); }
 function renderHot(){
-  const root=$("#view-hot"); let ts=(S.topics||[]).slice();
+  const root=$("#view-hot"); let ts=(C.topics||[]).slice();
   if(state.hotSort==="sources") ts.sort((a,b)=>b.source_count-a.source_count);
   const maxHeat=Math.max(...ts.map(t=>t.heat||t.score||0),1);
-  const head='<div class="card ph"><h1>'+T.hotPage+'</h1><span class="sub">'+T.hotSub+'</span><span class="hsort"><button data-hs="heat" class="'+(state.hotSort==="heat"?"on":"")+'">'+T.heatVal+'</button><button data-hs="sources" class="'+(state.hotSort==="sources"?"on":"")+'">'+T.sources+'</button></span></div>';
+  const head='<div class="card ph"><h1>'+esc(hotPage())+'</h1><span class="sub">'+esc(hotSub())+'</span><span class="hsort"><button data-hs="heat" class="'+(state.hotSort==="heat"?"on":"")+'">'+T.heatVal+'</button><button data-hs="sources" class="'+(state.hotSort==="sources"?"on":"")+'">'+T.sources+'</button></span></div>';
   root.innerHTML=head+'<div class="card">'+ts.map((t,i)=>{
     const s=t.status; const flag=s==="爆"?'<span class="flag f-hot">'+statusName(s)+'</span>':(s==="发酵中"?'<span class="flag f-warm">'+statusName(s)+'</span>':'<span class="flag f-watch">'+statusName(s)+'</span>');
     const rep=t.representative||{}; const rurl=rep.url||((t.links||[])[0]||{}).url||"";
@@ -142,19 +184,20 @@ function renderHot(){
     const bar='<div class="hbar"><i style="width:'+Math.max(4,Math.round((t.heat||t.score)/maxHeat*100))+'%"></i></div>';
     return '<div class="hrow r'+(i+1)+'"><div class="hrank">'+(i+1)+'</div><div class="hmain"><div class="htitle"><a href="'+esc(rurl)+'" target="_blank" rel="noopener" data-read="'+esc(rurl)+'">'+esc(t.title)+'</a> '+flag+'</div>'
       +'<div class="hmeta"><span>'+esc(rep.source||((t.sources||[])[0]||""))+'</span><span>'+fmtRel(t.latest_at)+'</span><span>'+t.source_count+' '+T.sources+' · '+t.signal_count+' '+T.signals+'</span><span class="mono" style="font-weight:700;color:var(--acd)">'+Math.round(t.heat||t.score)+'</span></div>'
-      +reason+(t.image?'<img class="himg" src="'+esc(t.image)+'" alt="" loading="lazy">':"")+(rsum?'<div class="isum">'+esc(rsum)+'</div>':"")+bar+'<div class="chips">'+chips+'</div>'+fold+'</div></div>';
+      +reason+(t.image?'<img class="himg" src="'+esc(t.image)+'" alt="" loading="lazy">':"")+(rsum?'<div class="isum">'+esc(rsum.length>200?rsum.slice(0,200)+"…":rsum)+'</div>':"")+hotExpand(t)+bar+'<div class="chips">'+chips+'</div>'+fold+'</div></div>';
   }).join("")+'</div>';
   $$("[data-hs]",root).forEach(b=>b.onclick=()=>{ state.hotSort=b.dataset.hs; renderHot(); });
 }
 function dailyArticle(a){
   const reason=a.reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(a.reason)+'</div>':"";
+  const it={id:"d-"+(a.topic_id||a.url||a.title).replace(/[^a-zA-Z0-9]/g,"").slice(0,16), llm_summary:a.llm_summary, summary:a.summary, url:a.url};
   return '<div class="dpick"><div class="t"><a href="'+esc(a.url)+'" target="_blank" rel="noopener" data-read="'+esc(a.url)+'">'+esc(a.title)+'</a></div>'
-    +'<div class="m"><span>'+esc(a.source)+'</span><span>'+esc(pubLabel(a))+'</span>'+densBadge(a.density)+'</div>'+reason+(a.summary?'<div class="isum">'+esc(a.summary)+'</div>':"")+'</div>';
+    +'<div class="m"><span>'+esc(a.source)+'</span><span>'+esc(pubLabel(a))+'</span>'+densBadge(a.density)+'</div>'+reason+(a.summary?'<div class="isum">'+esc(a.summary.length>160?a.summary.slice(0,160)+"…":a.summary)+'</div>':"")+expandBtn(it)+expandBody(it)+'</div>';
 }
 function renderDaily(){
-  const root=$("#view-daily"); const dates=Object.keys(S.dailies||{}).sort().reverse();
-  const d=state.dailyDate&&S.dailies[state.dailyDate]?state.dailyDate:(dates[0]||todayCN()); state.dailyDate=d;
-  const rep=S.dailies[d];
+  const root=$("#view-daily"); const dates=Object.keys(C.dailies||{}).sort().reverse();
+  const d=state.dailyDate&&C.dailies[state.dailyDate]?state.dailyDate:(dates[0]||todayCN()); state.dailyDate=d;
+  const rep=C.dailies[d];
   let side='<aside class="dside"><div class="card"><h3>'+T.archive+'（'+dates.length+'）</h3>';
   const latestM=(dates[0]||"").slice(0,7), col=state.arcCollapsed||(state.arcCollapsed={});
   const mcount={}; dates.forEach(x=>{const k=x.slice(0,7); mcount[k]=(mcount[k]||0)+1;});
@@ -167,7 +210,7 @@ function renderDaily(){
   side+='</div></aside>';
   let body='<div class="dbody">';
   if(rep){
-    body+='<div class="deye">OPTOHOT DAILY</div><div class="dtitle">'+esc(rep.label)+' · '+esc(rep.weekday)+'</div>';
+    body+='<div class="deye">'+BRAND()+' DAILY · '+esc(chn().toUpperCase())+'</div><div class="dtitle">'+esc(rep.label)+' · '+esc(rep.weekday)+'</div>';
     const hl=rep.headline||(((rep.sections||[])[0]||{}).articles||[])[0];
     if(hl){ body+='<div class="hero"><div class="k">'+T.headlineK+'</div><div class="t"><a href="'+esc(hl.url)+'" target="_blank" rel="noopener" data-read="'+esc(hl.url)+'">'+esc(hl.title)+'</a></div><div class="m"><span>'+esc(hl.source)+'</span><span>'+esc(pubLabel(hl))+'</span>'+densBadge(hl.density)+'</div>'+(hl.image?'<img class="himg" src="'+esc(hl.image)+'" alt="" loading="lazy">':"")+(hl.reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(hl.reason)+'</div>':"")+(hl.summary?'<div class="isum">'+esc(hl.summary)+'</div>':"")+'</div>'; }
     const picks=rep.picks||[];
@@ -178,19 +221,19 @@ function renderDaily(){
     if(secs.length){ body+='<div class="dsec-t">'+T.moreK+'</div>'+secs.map(s=>'<div class="dpick"><div class="t" style="font-size:13.5px;color:var(--acd)">'+esc(catName(s.category))+' · '+s.articles.length+'</div>'+s.articles.slice(0,5).map(a=>'<div style="font-size:13px;padding:3px 0"><a href="'+esc(a.url)+'" target="_blank" rel="noopener" data-read="'+esc(a.url)+'">'+esc(a.title)+'</a></div>').join("")+'</div>').join(""); }
   } else { body+='<div class="empty">-</div>'; }
   body+='</div>';
-  root.innerHTML='<div class="card ph"><h1>'+T.dailyPage+'</h1><span class="sub">'+T.dailySub+'</span></div><div class="dshell">'+side+body+'</div>';
+  root.innerHTML='<div class="card ph"><h1>'+esc(dailyPage())+'</h1><span class="sub">'+esc(dailySub())+'</span></div><div class="dshell">'+side+body+'</div>';
   $$(".dday", root).forEach(el=>el.onclick=()=>{ state.dailyDate=el.dataset.d; renderDaily(); });
   $$(".amonth", root).forEach(el=>el.onclick=()=>{ const m=el.dataset.m; col[m]=mOpen(m); renderDaily(); });
 }
 function renderTopics(){
-  const root=$("#view-topics"); const rows=(S.daily&&S.daily.byCategory)||[];
-  root.innerHTML='<div class="card ph"><h1>'+T.topicsPage+'</h1><span class="sub">'+T.topicsSub+'</span></div><div class="tgrid">'+rows.map(r=>'<div class="tcard" data-cat="'+esc(r.category)+'"><div class="n">'+esc(catName(r.category))+'<span class="bdg b-cat">'+r.total+'</span></div><div class="nums"><span>24h <b>'+r.last24h+'</b></span><span>7d <b>'+r.last7d+'</b></span></div></div>').join("")+'</div>';
+  const root=$("#view-topics"); const rows=(C.daily&&C.daily.byCategory)||[];
+  root.innerHTML='<div class="card ph"><h1>'+T.topics+'</h1><span class="sub">'+esc(chn()+T.topicsSub)+'</span></div><div class="tgrid">'+rows.map(r=>'<div class="tcard" data-cat="'+esc(r.category)+'"><div class="n">'+esc(catName(r.category))+'<span class="bdg b-cat">'+r.total+'</span></div><div class="nums"><span>24h <b>'+r.last24h+'</b></span><span>7d <b>'+r.last7d+'</b></span></div></div>').join("")+'</div>';
   $$(".tcard", root).forEach(el=>el.onclick=()=>{ state.cat=el.dataset.cat; location.hash="#/all"; });
 }
 function renderTrends(){
-  const root=$("#view-trends"); const tr=S.trends||{};
+  const root=$("#view-trends"); const tr=C.trends||{};
   const weekStart=tr.weekStart||"";
-  let html='<div class="card ph"><h1>'+T.trendPage+'</h1><span class="sub">'+T.trendSub+(weekStart?' · '+fmtDay(weekStart):"")+'</span></div>';
+  let html='<div class="card ph"><h1>'+esc(chn()+(LANG==="en"?" Trends":"趋势"))+'</h1><span class="sub">'+esc((LANG==="en"?"This week vs last week":"本周 vs 上周")+(weekStart?' · '+fmtDay(weekStart):""))+'</span></div>';
   const deltas=tr.categoryDelta||[];
   if(!deltas.length){ root.innerHTML=html+'<div class="card"><p class="anote" style="padding:16px 18px">'+T.noTrend+'</p></div>'; return; }
   const maxV=Math.max(...deltas.map(x=>x.thisWeek),1);
@@ -198,7 +241,7 @@ function renderTrends(){
     const pct=x.deltaPct; const cls=pct>5?"tup":(pct<-5?"tdown":"tflat");
     const arrow=pct>5?"▲":(pct<-5?"▼":"—");
     const w=Math.max(2,x.thisWeek/maxV*100).toFixed(1);
-    return '<div class="tbar-row"><span class="tbar-name">'+esc(x.category)+'</span><div class="tbar-track"><div class="tbar-fill" style="width:'+w+'%"></div></div><span class="tbar-val mono">'+x.thisWeek.toFixed(0)+' <span class="'+cls+'">'+arrow+' '+Math.abs(pct)+'%</span></span></div>';
+    return '<div class="tbar-row"><span class="tbar-name">'+esc(catName(x.category))+'</span><div class="tbar-track"><div class="tbar-fill" style="width:'+w+'%"></div></div><span class="tbar-val mono">'+x.thisWeek.toFixed(0)+' <span class="'+cls+'">'+arrow+' '+Math.abs(pct)+'%</span></span></div>';
   }).join("");
   html+='<div class="tsec-title">'+T.catDelta+'</div><div class="tcard" style="cursor:default">'+bars+'</div>';
   const mkList=(arr)=>arr.map(t=>'<div class="tcard" style="cursor:default"><div style="font-weight:650;font-size:14px">'+esc(t.title)+'</div><div style="font-size:12px;color:var(--ink3);margin-top:4px">🔥 '+Math.round(t.score)+' · '+(t.days!=null?t.days+(LANG==="en"?" days":" 天"):"")+'</div></div>').join("");
@@ -207,7 +250,7 @@ function renderTrends(){
   root.innerHTML=html;
 }
 function renderData(){
-  const root=$("#view-data"); const dl=S.daily||{byDay:[],bySource:[]};
+  const root=$("#view-data"); const dl=C.daily||{byDay:[],bySource:[]};
   const maxDay=Math.max(...dl.byDay.map(x=>x.count),1);
   const chart='<div class="chart">'+dl.byDay.map(x=>'<div class="bcol"><div class="bar" title="'+x.date+': '+x.count+'" style="height:'+Math.max(2,x.count/maxDay*100).toFixed(1)+'%"></div><span class="dl">'+x.date.slice(5)+'</span></div>').join("")+'</div>';
   const rows=(dl.bySource||[]).map(s=>'<tr><td>'+esc(s.source)+'</td><td>'+s.count+'</td><td>'+fmtRel(s.latestAt)+'</td></tr>').join("");
@@ -215,36 +258,40 @@ function renderData(){
     +'<div class="stats"><div class="stat"><div class="num">'+dl.total+'</div><div class="lbl">'+T.total+'</div></div><div class="stat"><div class="num">'+dl.last24h+'</div><div class="lbl">'+T.h24+'</div></div><div class="stat"><div class="num">'+dl.last7d+'</div><div class="lbl">'+T.h7+'</div></div><div class="stat"><div class="num">'+dl.topicCount+'</div><div class="lbl">'+T.hotTopic+'</div></div></div>'
     +'<div class="card" style="padding:16px 18px"><h3 style="font-size:14px;margin-bottom:6px">'+T.trend+'</h3>'+chart+'</div>'
     +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:14px;margin-bottom:6px">'+T.srcTable+'</h3><table><thead><tr><th>'+T.srcTable+'</th><th>'+T.total+'</th><th>'+T.latest+'</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
-    +'<div class="dlrow"><a class="btn" href="data/report.csv" download>'+T.dlCSV+'</a><a class="btn" href="data/items.json" target="_blank">'+T.dlItems+'</a><a class="btn" href="data/hot-topics.json" target="_blank">'+T.dlHot+'</a><a class="btn" href="data/dailies.json" target="_blank">'+T.dlDaily+'</a></div>';
+    +'<div class="dlrow"><a class="btn" href="data/'+CHID+'/report.csv" download>'+T.dlCSV+'</a><a class="btn" href="data/'+CHID+'/items.json" target="_blank">'+T.dlItems+'</a><a class="btn" href="data/'+CHID+'/hot-topics.json" target="_blank">'+T.dlHot+'</a><a class="btn" href="data/'+CHID+'/dailies.json" target="_blank">'+T.dlDaily+'</a></div>';
 }
 function renderAgent(){
   const root=$("#view-agent");
   const base=location.href.split("?")[0].split("#")[0].replace(/index\.html$/,"");
-  const eps=[["items",T.dlItems],["hot-topics",T.dlHot],["dailies",T.dlDaily],["daily","daily.json"],["stories","stories.json"],["trends","trends.json"],["biz","政策/招投标库"]];
-  const rows=eps.map(([k,d])=>'<tr><td class="mono">api/v1/'+k+'.json</td><td>'+d+'</td><td><a href="'+base+'api/v1/'+k+'.json" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>').join("");
-  const curl=eps.map(([k])=>'curl '+base+'api/v1/'+k+'.json').join("\n");
-  const feeds=["feed.xml","category/laser.xml","category/fiber.xml","category/display.xml","category/chip.xml","category/optics.xml","category/sensing.xml","category/pv.xml","category/research.xml","category/capital.xml","category/telecom.xml","category/other.xml"];
-  const feedRows=feeds.map((f,idx)=>'<tr><td class="mono">feed/'+f+'</td><td>'+(idx===0?'RSS 全部':'分类 RSS')+'</td><td><a href="'+base+'feed/'+f+'" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>').join("");
+  const eps=[["items",T.dlItems],["hot-topics",T.dlHot],["dailies",T.dlDaily],["daily","daily.json"],["stories","stories.json"],["trends","trends.json"]];
+  const rows=eps.map(([k,d])=>'<tr><td class="mono">api/v1/'+CHID+'/'+k+'.json</td><td>'+d+'</td><td><a href="'+base+'api/v1/'+CHID+'/'+k+'.json" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>').join("");
+  const curl=eps.map(([k])=>'curl '+base+'api/v1/'+CHID+'/'+k+'.json').join("\n");
+  const catFeeds=Object.entries(CAT_CLS).map(([cat,slug])=>["feed/"+CHID+"/category/"+slug+".xml",cat]);
+  const feedRows=['<tr><td class="mono">feed.xml</td><td>RSS（T 光电主 feed）</td><td><a href="'+base+'feed.xml" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>']
+    .concat(catFeeds.map(([f,cat])=>'<tr><td class="mono">'+f+'</td><td>'+esc(catName(cat))+'</td><td><a href="'+base+f+'" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>')).join("");
   const moreRows='<tr><td class="mono">api/v1/openapi.json</td><td>OpenAPI 3.1</td><td><a href="'+base+'api/v1/openapi.json" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr><tr><td class="mono">llms.txt</td><td>LLM 友好入口</td><td><a href="'+base+'llms.txt" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>';
   root.innerHTML='<div class="card ph"><h1>'+T.agentPage+'</h1><span class="sub">'+T.agentSub+'</span></div>'
     +'<div class="card" style="padding:16px 18px"><h3 style="font-size:15px;margin-bottom:4px">🤖 '+T.apiTitle+'</h3><p class="anote">'+T.apiDesc+'</p><p class="anote">'+T.base+'：<span class="mono">'+esc(base)+'</span></p><table style="margin-top:10px"><thead><tr><th>'+T.endpoint+'</th><th>'+T.desc+'</th><th></th></tr></thead><tbody>'+rows+moreRows+'</tbody></table></div>'
     +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">RSS</h3><table style="margin-top:8px"><tbody>'+feedRows+'</tbody></table></div>'
-    +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">'+T.curl+'</h3><pre>'+esc(curl)+'</pre><p class="anote">'+T.llmsNote+'</p><p class="anote">Agent Skill：仓库 <span class="mono">agent/skills/opto-hot</span></p></div>';
+    +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">'+T.curl+'</h3><pre>'+esc(curl)+'</pre><p class="anote">'+T.llmsNote+'</p></div>';
 }
 function renderMore(){
   const root=$("#view-more");
   const rows=[["#/all","allPage","menuAllSub","☰"],["#/topics","topics","menuTopicsSub","◈"],["#/data","data","menuDataSub","◉"],["#/agent","agent","menuAgentSub","🤖"]];
   root.innerHTML='<div class="card ph"><h1>'+T.more+'</h1></div><div class="card">'+rows.map(r=>'<a class="mrow" href="'+r[0]+'"><span style="font-size:18px">'+r[3]+'</span><span>'+T[r[1]]+'<small>'+T[r[2]]+'</small></span><span class="go">›</span></a>').join("")+'</div>';
 }
+function BRAND(){ return "PAT-HOT"; }
 renderers.feed=renderFeed; renderers.all=renderAll; renderers.hot=renderHot; renderers.daily=renderDaily; renderers.topics=renderTopics; renderers.data=renderData; renderers.trends=renderTrends; renderers.agent=renderAgent; renderers.more=renderMore;
 function bind(){
   const q=$("#q");
   q.addEventListener("input",e=>{ state.q=e.target.value; if(/#\/all/.test(location.hash)) renderAll(); });
   $("#sbtn").onclick=()=>{ const w=$("#swrap"); w.classList.toggle("open"); if(w.classList.contains("open")) q.focus(); };
-  $("#lang").onclick=()=>{ LANG=LANG==="zh"?"en":"zh"; localStorage.setItem("opto-lang",LANG); location.reload(); };
+  $("#lang").onclick=()=>{ LANG=LANG==="zh"?"en":"zh"; try{localStorage.setItem("pat-lang",LANG);}catch(e){} location.reload(); };
   document.addEventListener("click",e=>{
     const f=e.target.closest("[data-fav]");
     if(f){ e.preventDefault(); toggleFav(f.dataset.fav); f.classList.toggle("on"); return; }
+    const xf=e.target.closest("[data-x]");
+    if(xf){ e.preventDefault(); toggleExpand(xf); return; }
     const dh=e.target.closest("[data-dayh]");
     if(dh){ const d=dh.dataset.dayh; state.collapsed[d]=!state.collapsed[d]; dh.closest(".day").classList.toggle("closed"); dh.querySelector(".arr").textContent=state.collapsed[d]?"▶":"▼"; return; }
     const r=e.target.closest("[data-read]");
@@ -252,6 +299,6 @@ function bind(){
   });
   window.addEventListener("hashchange",router);
   document.addEventListener("keydown",e=>{ if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){ e.preventDefault(); $("#swrap").classList.add("open"); q.focus(); } });
-  tr(); router();
+  renderChSeg(); tr(); router();
 }
 document.addEventListener("DOMContentLoaded", bind);
