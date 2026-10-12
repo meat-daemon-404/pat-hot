@@ -5,14 +5,16 @@
       "url": "http://export.arxiv.org/rss/physics.optics",
       "weight": 0.8,
       "limit": 20,
-      "filter_keywords": []
+      "filter_keywords": [],
+      "tier": "official"
     },
     {
       "name": "Nature Photonics",
       "url": "https://www.nature.com/nphoton.rss",
       "weight": 0.9,
       "limit": 15,
-      "filter_keywords": []
+      "filter_keywords": [],
+      "tier": "official"
     },
     {
       "name": "Phys.org 物理新闻",
@@ -47,14 +49,16 @@
         "显示",
         "光纤",
         "红外"
-      ]
+      ],
+      "tier": "media"
     },
     {
       "name": "LEDinside 英文",
       "url": "https://www.ledinside.com/rss",
       "weight": 0.8,
       "limit": 15,
-      "filter_keywords": []
+      "filter_keywords": [],
+      "tier": "media"
     },
     {
       "name": "EDN 电子工程专辑",
@@ -80,42 +84,48 @@
         "microled",
         "miniled",
         "photonics"
-      ]
+      ],
+      "tier": "media"
     },
     {
       "name": "C114中国通信网_要闻精选",
       "url": "http://www.c114.com.cn/rss/rss_news_489.xml",
       "weight": 0.9,
       "limit": 15,
-      "filter_keywords": []
+      "filter_keywords": [],
+      "tier": "media"
     },
     {
       "name": "C114中国通信网_通信财经",
       "url": "http://www.c114.com.cn/rss/rss_news_24.xml",
       "weight": 0.9,
       "limit": 15,
-      "filter_keywords": []
+      "filter_keywords": [],
+      "tier": "media"
     },
     {
       "name": "C114中国通信网_IT资讯",
       "url": "http://www.c114.com.cn/rss/rss_news_27.xml",
       "weight": 0.8,
       "limit": 15,
-      "filter_keywords": []
+      "filter_keywords": [],
+      "tier": "media"
     },
     {
       "name": "C114中国通信网_设备商",
       "url": "http://www.c114.com.cn/rss/rss_news_18.xml",
       "weight": 0.9,
       "limit": 15,
-      "filter_keywords": []
+      "filter_keywords": [],
+      "tier": "media"
     },
     {
       "name": "C114中国通信网_监管",
       "url": "http://www.c114.com.cn/rss/rss_news_550.xml",
       "weight": 0.7,
       "limit": 15,
-      "filter_keywords": []
+      "filter_keywords": [],
+      "tier": "media"
     }
   ],
   "html": [
@@ -126,7 +136,8 @@
       "weight": 1.0,
       "limit": 20,
       "anchor_pattern": "ART-",
-      "url_date": "y-m"
+      "url_date": "y-m",
+      "tier": "media"
     },
     {
       "name": "OFweek 激光频道",
@@ -135,7 +146,8 @@
       "weight": 1.0,
       "limit": 20,
       "anchor_pattern": "ART-",
-      "url_date": "y-m"
+      "url_date": "y-m",
+      "tier": "media"
     },
     {
       "name": "LEDinside 中文",
@@ -144,7 +156,8 @@
       "weight": 0.9,
       "limit": 20,
       "anchor_pattern": "20\\d{6}-",
-      "url_date": "y-m-d"
+      "url_date": "y-m-d",
+      "tier": "media"
     },
     {
       "name": "CIOE 中国光博会",
@@ -153,7 +166,8 @@
       "weight": 0.9,
       "limit": 20,
       "anchor_pattern": "news/\\d+_info",
-      "title_date": "prefix"
+      "title_date": "prefix",
+      "tier": "official"
     },
     {
       "name": "COEMA 中国光电子行业协会",
@@ -162,7 +176,8 @@
       "weight": 0.8,
       "limit": 20,
       "anchor_pattern": "industry/",
-      "url_date": "y-m"
+      "url_date": "y-m",
+      "tier": "official"
     },
     {
       "name": "搜狗微信·光电行业",
@@ -200,7 +215,8 @@
         "光学镜头",
         "光模块",
         "激光雷达"
-      ]
+      ],
+      "tier": "media"
     },
     {
       "name": "中国政府采购网",
@@ -209,7 +225,8 @@
       "weight": 0.8,
       "limit": 15,
       "anchor_pattern": "news/\\d{6}/t\\d{8}",
-      "url_date": "y-m-d-t"
+      "url_date": "y-m-d-t",
+      "tier": "official"
     },
     {
       "name": "中国招标投标公共服务平台",
@@ -218,7 +235,8 @@
       "weight": 0.8,
       "limit": 12,
       "anchor_pattern": "monitorplat/\\d{4}/\\d{2}/",
-      "url_date": "y-m"
+      "url_date": "y-m",
+      "tier": "official"
     },
     {
       "name": "工信部要闻",
@@ -252,7 +270,8 @@
         "人工智能",
         "光子",
         "光模块"
-      ]
+      ],
+      "tier": "official"
     }
   ]
 }

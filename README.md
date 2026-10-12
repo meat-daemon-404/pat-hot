@@ -13,8 +13,15 @@
 - **多源采集**：19 个公开数据源（RSS + 行业网站 + 微信公众号精选 + 政策/招投标），中文为主、兼顾国际
 - **时间窗口**：24 小时 / 7 天精选，优先采用原文发布时间，缺失时回退为收录时间（AIHOT 时间轴语义）
 - **领域分类**：激光、光通信、显示与面板、光电芯片与半导体、光学元件与成像、光传感与激光雷达、光伏与新能源、科研进展、产业与资本、通信与算力
-- **热点榜**：按「来源数 / 信号数 / 时效」加权打分；**语义向量聚类**（TF-IDF 字符/词/领域特征 + 余弦，可选真嵌入）合并同一事件，减少噪声主题
+- **热点榜**：按「跨源收敛度 / 独立来源数 / 48 小时报道密度」加权打分；事件内同一来源 48 小时只计一次，防单源刷榜；**语义向量聚类**（TF-IDF 字符/词/领域特征 + 余弦，可选真嵌入）合并同一事件，减少噪声主题
+- **代表报道**：同一事件多篇报道折叠为一篇代表（官方一手源优先 → 有全文 → 分数高 → 发布早），其余在"另有 N 家信源报道"下展开
+- **分级精选**：信源分 official（官方/协会/政府）/ media（媒体）两级，精选门槛不同（官方 ≥55，媒体 ≥65，可在 `collector/config.json` 调整）
+- **旧文不刷屏**：无可信发布时间的条目时效分打折，不再全额回退收录时间
+- **日报编排**：头条 1 条 + 今日看点 2–4 条 + 快讯；同一信源在正文最多 2 条；近 7 天已出现过的事件不再入正文
 - **零依赖**：仅用 Python 标准库；HTML 报告为自包含单文件（无 CDN / 无外部资源）
+- **可选 LLM 增强**（`--llm`，默认关闭）：接商汤日日新 SenseNova（`sensenova-6.8-flash-lite`），为精选条目生成一句话中文摘要、推荐理由、信息密度标签（低密度营销稿自动降权）；Key 只从环境变量 `SENSENOVA_API_KEY` 读取，失败自动降级
+- **可选生图**（`--images`，默认关闭）：接 SenseNova U1.5 Lite 文生图（`watermark=false` 去水印），为日报头条 + 热点榜 Top5 生成配图，存 `dist/assets/img/`；失败自动降级为无图
+- **配置外置**：评分权重、精选门槛、聚类阈值、日报编排参数全部集中在 `collector/config.json`，调标准不改代码
 - **AIHOT 风格 UI**：六个视图（精选时间线 / 全部动态 / 热点榜 / 光电日报 / 主题 / 数据），浅色卡片风、侧边导航、评分与热度徽章，移动端自适应
 - **日报归档机制**：自动按天生成光电日报（今日看点 TOC + 分类文章 + 日历归档），历史归档按日期/月份回看
 - **多语言与交互**：中 / English 一键切换；图表 tooltip；热点榜按热度/信源排序；搜索 + 分类 + 排序
@@ -85,7 +92,34 @@ python collector/collect.py          # 需要联网；Python 3.8+
 python collector/collect.py --limit 30   # 每个源最多取 30 条
 python collector/collect.py --topics 15  # 热点榜输出 15 条
 python collector/collect.py --skip-html  # 跳过行业网站（只跑 RSS）
+python collector/collect.py --llm        # 可选：SenseNova LLM 增强（需 SENSENOVA_API_KEY）
+python collector/collect.py --images     # 可选：SenseNova 生图配图（需 SENSENOVA_API_KEY）
 ```
+
+## 集中配置
+
+`collector/config.json` 集中了评分权重（`scoring`）、信源分级与精选门槛（`tiers`）、热度参数（`heat`）、
+聚类阈值（`clustering`）、日报编排（`daily`）、LLM 增强（`llm`）与生图（`images`）的全部参数。
+调标准只改这个文件，不用改代码；删除该文件或留空字段会自动回退内置默认值。
+
+信源分级在 `collector/sources.json` 中每个源的 `tier` 字段声明：`official`（官方/协会/政府/一手）
+或 `media`（媒体），精选门槛分别为 55 / 65 分。
+
+## 可选：LLM 增强与生图（默认关闭，零费用）
+
+- LLM 增强（`--llm`）：调用商汤日日新 SenseNova OpenAI 兼容接口
+  `https://token.sensenova.cn/v1/chat/completions`（模型 `sensenova-6.8-flash-lite`，
+  模型 ID 以商汤控制台为准，可用 `SENSENOVA_MODEL` 环境变量覆盖），
+  为高分条目生成一句话中文摘要、推荐理由、信息密度标签（高/中/低，低密度营销稿自动降权 0.9）。
+- 生图（`--images`）：调用 SenseNova U1.5 Lite 文生图接口
+  `https://token.sensenova.cn/v1/images/generations`（模型 `sensenova-u1.5-lite`，
+  以商汤控制台为准，可用 `SENSENOVA_IMAGE_MODEL` 环境变量覆盖；调用传 `watermark=false` 去水印），
+  为日报头条 + 热点榜 Top5 生成配图，存 `dist/assets/img/`（按日期+事件 id 命名，超 `retention_days` 天自动清理）。
+- Key **绝不写进代码/仓库**，只从环境变量 `SENSENOVA_API_KEY` 读取；
+  无 key、超时、配额不足等任何失败都会静默降级（跳过增强/无图），不阻断主流程。
+- GitHub Actions 默认**不启用**（不产生费用）。如需启用：仓库 Settings → Secrets 添加
+  `SENSENOVA_API_KEY`，并在工作流的采集命令后加上 `--llm` / `--images`，例如：
+  `python collector/collect.py --limit 25 --llm`。
 
 ## 数据源（13 个）
 
@@ -115,9 +149,12 @@ python collector/collect.py --skip-html  # 跳过行业网站（只跑 RSS）
 
 ## 打分模型（透明可复现）
 
-- 条目得分 = `50 × 来源权重 + 25 × min(1, 主题信号数/10) + 25 × 时效`，其中时效 = `max(0, 1 − 距今天数/30)`
-- 主题热度 = `100 × (0.45 × min(1, 来源数/6) + 0.35 × min(1, 信号数/10) + 0.20 × 48 小时内信号占比)`
+- 条目得分 = `w_source × 来源权重 + w_convergence × 跨源收敛度 + w_signal × min(1, 主题信号数/10) + w_recency × 时效`，默认权重 45 / 20 / 15 / 20；其中时效 = `max(0, 1 − 距今天数/30)`，**无可信发布时间的条目时效分 ×0.5**
+- 跨源收敛度 = `min(1, 事件独立来源数/6)`：同一事件被越多独立来源报道，得分越高，防单源刷榜
+- 主题热度 = `100 × (0.45 × min(1, 独立来源数/6) + 0.35 × min(1, 信号数/10) + 0.20 × min(1, 48小时内独立来源数/独立来源数))` —— 48 小时窗口内同一来源只计一次
+- 精选门槛（分级）：官方信源（协会/政府/一手）≥ 55 分，媒体信源 ≥ 65 分
 - 聚类：以领域词表 + 英文词（去停用词）做关键词索引，≥2 条命中的词构成候选主题；重叠 ≥50% 或代表条目相同的主题自动合并
+- 以上权重、门槛、窗口均可在 `collector/config.json` 调整，缺失字段自动回退内置默认值
 
 ## 目录结构
 
@@ -125,7 +162,8 @@ python collector/collect.py --skip-html  # 跳过行业网站（只跑 RSS）
 opto-hot/
 ├── collector/
 │   ├── collect.py        # 主脚本：采集→清洗→分类→打分→聚类→输出
-│   └── sources.json      # 数据源配置（RSS / HTML 解析规则）
+│   ├── sources.json      # 数据源配置（RSS / HTML 解析规则 + tier 分级）
+│   └── config.json       # 集中配置：评分权重/精选门槛/聚类阈值/日报编排/LLM与生图
 ├── data/                 # 生成的数据（JSON / CSV）
 ├── dist/index.html       # 生成的 HTML 报告
 ├── .github/workflows/update.yml  # 每 6 小时自动更新
