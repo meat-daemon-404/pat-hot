@@ -10,9 +10,13 @@ permissions:
   pages: write
   id-token: write
 
+# 与 pages.yml 分开：此前两个工作流共用 group: pages + cancel-in-progress:true，
+# 一次人工推送就能在「已 git push、尚未部署 Pages」之间把定时刷新打断，
+# 站点继续端著旧产物且没有任何告警（2026-10-12 的两次 cancelled 就是这么来的）。
+# 这里改为独立分组 + 不取消（排队执行），保证采集要么完整跑完要么明确失败。
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: pat-hot-data-refresh
+  cancel-in-progress: false
 
 jobs:
   refresh:
@@ -22,15 +26,26 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # 提交数据时需要写权限；fetch-depth 保持默认 1 即可
+          fetch-depth: 1
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: collector/collect.py
       - name: 安装轻量嵌入模型（真嵌入聚类；失败自动回退 TF-IDF）
+        # sentence-transformers 会拉进整套 torch（约 1–3 GB）。这个依赖只服务
+        # collect.py 里的可选近重复合并，装不上时采集器本身会降级为 TF-IDF，
+        # 所以绝不能让它拖垮整次数据刷新 —— 标记为可失败继续。
+        continue-on-error: true
         run: pip install -q sentence-transformers
       - uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
           key: hf-bge-small-zh-${{ runner.os }}-${{ hashFiles('collector/collect.py') }}
+      - name: 运行单元测试（纯标准库，无网络）
+        run: python -m unittest discover -s tests -v
       - name: 运行采集器（真嵌入聚类 + LLM 中文摘要）
         env:
           OPTOHOT_EMBED: "1"
@@ -40,13 +55,25 @@ jobs:
             echo "⚠️ 未配置 SENSENOVA_API_KEY Secret，将跳过 LLM 中文摘要（降级运行，不影响主流程）"
           fi
           python collector/collect.py --limit 25 --llm
+      - name: 对外契约自检（发布前 gate）
+        # 三频道重构曾把已发布地址改成 api/v1/<ch>/ 而无人察觉，线上消费者直接 404。
+        # 这里在提交前确认「扁平兼容地址 + 频道地址」都在，坏产物不许进仓库。
+        run: python collector/collect.py --check
       - name: 提交数据更新
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data dist
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: 刷新 PAT-HOT 数据 $(date -u +%Y-%m-%dT%H:%MZ)"
+          if git diff --cached --quiet; then
+            echo "数据无变化，跳过提交"
+            exit 0
+          fi
+          git commit -m "chore: 刷新 PAT-HOT 数据 $(date -u +%Y-%m-%dT%H:%MZ)"
+          # 定时任务两次相撞时直接 push 会被拒（non-fast-forward），
+          # 此前这种拒绝让整个 run 失败且当天数据丢失；改为 rebase 后重试一次。
+          if ! git push; then
+            echo "push 被拒，拉取远端更新后重试"
+            git pull --rebase origin "$GITHUB_REF_NAME"
             git push
           fi
       - name: 准备站点文件

@@ -4,3 +4,6 @@ __pycache__/
 venv/
 .DS_Store
 Thumbs.db
+# wrangler 本地缓存含账号凭据（wrangler-account.json），绝不能进仓库
+.wrangler/
+*.log

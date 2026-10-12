@@ -31,6 +31,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from email.utils import format_datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -39,8 +40,15 @@ DIST_DIR = os.path.join(ROOT, "dist")
 SOURCES_PATH = os.path.join(HERE, "sources.json")
 CONFIG_PATH = os.path.join(HERE, "config.json")
 CHANNELS_PATH = os.path.join(HERE, "channels.json")
-REPO_URL = "https://github.com/sun-zihang/opto-hot"
+REPO_URL = "https://github.com/sun-zihang/pat-hot"
 BRAND = "PAT-HOT"
+# 站点对外基址：RSS <link>/<channel> 与文档里的 curl 示例必须是绝对地址，
+# 阅读器/AI 客户端拿到相对路径无法解析（旧值指向已下线的 CloudBase，全站 404）。
+SITE_BASE = "https://sun-zihang.github.io/pat-hot/"
+# 向后兼容：三频道重构后主输出改为 data/<ch>/ 与 api/v1/<ch>/，但已发布的外部
+# 消费者（RSS 订阅、Agent Skill、llms.txt、README）读的是扁平老地址。
+# 默认频道继续镜像一份扁平产物，避免下一次定时运行直接打断线上契约。
+FLAT_ALIAS_CHANNEL = "tech"
 
 # ---------------- 频道定义（collector/channels.json） ----------------
 with open(CHANNELS_PATH, encoding="utf-8") as _cf:
@@ -103,6 +111,7 @@ DEFAULT_CONFIG = {
     "daily": {
         "headline_count": 1, "picks_count": 4, "flash_count": 10,
         "max_per_source": 2, "dedup_window_days": 7, "per_category_limit": 8,
+        "archive_days": 365,
     },
     "llm": {
         "provider": "sensenova",
@@ -248,6 +257,37 @@ def http_get(url, timeout=25):
     })
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read(), r.headers.get("Content-Type", "")
+
+
+def abs_url(url, base):
+    """把源给出的链接规范化为绝对 URL。
+    RSS/HTML 里常见 //host/path（协议相对）与 /path（站点相对），
+    直接写进 items.json / RSS <link> / 前端 href 会变成打不开的链接。
+    """
+    u = (url or "").strip()
+    if not u or not base:
+        return u
+    if u.startswith("//"):
+        scheme = "http" if base.startswith("http://") else "https"
+        return scheme + ":" + u
+    if u.startswith(("/", "#", "?")):
+        return urllib.parse.urljoin(base, u)
+    if not re.match(r"^[a-zA-Z][a-zA-Z0-9+.\-]*:", u):
+        return urllib.parse.urljoin(base, u)
+    return u
+
+
+def rfc822(iso):
+    """ISO8601 -> RFC 822 日期。RSS 2.0 的 pubDate/lastBuildDate 必须是 RFC 822，
+    之前直接写 ISO，严格阅读器（Feedly/部分邮箱客户端）会当成无日期或丢弃条目。
+    """
+    try:
+        dt = datetime.fromisoformat((iso or "").replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return format_datetime(dt.astimezone(timezone.utc), usegmt=True)
+    except Exception:
+        return None
 
 
 def detect_charset(data, declared=None):
@@ -459,6 +499,7 @@ def eff_dt(it):
 def fetch_rss(cfg, limit):
     data, ctype = http_get(cfg["url"])
     _, entries = parse_rss(data)
+    feed_base = cfg.get("url") or ""
     kws = [k.lower() for k in cfg.get("filter_keywords", [])]
     tk = [k.lower() for k in cfg.get("title_keywords", [])]
     items = []
@@ -474,9 +515,12 @@ def fetch_rss(cfg, limit):
         desc_plain = re.sub(r"<[^>]+>", " ", e["desc"] or "")
         # 摘要保留较长（供站内展开阅读），卡片展示时前端截断
         summary = re.sub(r"\s+", " ", htmlmod.unescape(desc_plain)).strip()[:2500]
+        url = abs_url(e["link"] or "", feed_base)
+        if not url:
+            continue
         items.append({
             "title": htmlmod.unescape(title).strip(),
-            "url": (e["link"] or "").strip(),
+            "url": url,
             "published_at": pub.isoformat() if pub else None,
             "summary": summary or None,
         })
@@ -753,7 +797,10 @@ def cluster_semantic(items, threshold=0.14):
 
 
 def cluster_topics(items):
-    return cluster_semantic(items)
+    # 聚类阈值此前被写死在 cluster_semantic 的默认参数里，config.json 的
+    # clustering.tfidf_threshold 从未生效；这里真正读配置，保持默认值不变。
+    thr = (CONFIG.get("clustering") or {}).get("tfidf_threshold", 0.14)
+    return cluster_semantic(items, thr)
 
 
 def compute_scores(items, topics, source_weight, source_tier=None, cfg=None):
@@ -1155,7 +1202,9 @@ def build_dailies(items, existing=None):
         }
     result = dict(existing or {})
     result.update(out)
-    cutoff = (datetime.now(TZ_CN).date() - timedelta(days=365)).isoformat()
+    # 保留期改为配置驱动（此前写死 365 天，README 声称"参数全部集中在 config.json"）
+    keep_days = int(dc.get("archive_days", 365) or 365)
+    cutoff = (datetime.now(TZ_CN).date() - timedelta(days=keep_days)).isoformat()
     return {k: v for k, v in result.items() if k >= cutoff}
 
 
@@ -1312,15 +1361,18 @@ def render_app_html(channel_results, generated):
 def build_rss(items, title, link, description, limit=50):
     import xml.sax.saxutils as su
     its = sorted(items, key=lambda it: it["discovered_at"], reverse=True)[:limit]
-    pub = max(it["discovered_at"] for it in its) if its else now_utc().isoformat()
+    pub_raw = max(it["discovered_at"] for it in its) if its else now_utc().isoformat()
+    # RSS 2.0 要求 RFC 822 日期；同时保留绝对站点地址供阅读器展示
+    pub = rfc822(pub_raw) or now_utc().strftime("%a, %d %b %Y %H:%M:%S +0000")
     out = []
     for it in its:
+        idate = rfc822(it["discovered_at"]) or pub
         out.append(
             "<item><title>%s</title><link>%s</link><description>%s</description>"
             "<guid isPermaLink=\"false\">%s</guid><pubDate>%s</pubDate>"
             "<source>%s</source><category>%s</category></item>"
             % (su.escape(it["title"]), su.escape(it["url"]), su.escape((it.get("summary") or "")[:500]),
-               it["id"], it["discovered_at"], su.escape(it["source"]), su.escape(it["category"])))
+               it["id"], idate, su.escape(it["source"]), su.escape(it["category"])))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
             "<title>%s</title><link>%s</link><description>%s</description>"
             "<lastBuildDate>%s</lastBuildDate>%s</channel></rss>"
@@ -1346,10 +1398,23 @@ def build_openapi(generated):
         "openapi": "3.1.0",
         "info": {"title": "PAT-HOT API v1", "version": "2.0.0",
                  "description": "物理·天文·光电热点统计静态 JSON 接口（免鉴权，每天 6:00/18:00 北京时间更新，AI/Agent 可直接消费）。"},
-        "servers": [{"url": ""}],
+        "servers": [{"url": SITE_BASE.rstrip("/")}],
         "paths": paths,
     }
 
+
+
+def _csv_rows(items):
+    """条目 -> report.csv 文本（表头 + 行），供频道目录与扁平兼容层复用。"""
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    w.writerow(["id", "title", "category", "source", "published_at", "discovered_at",
+                "score", "url", "role", "selected"])
+    for it in items:
+        w.writerow([it["id"], it["title"], it["category"], it["source"],
+                    it.get("published_at") or "", it["discovered_at"], it["score"], it["url"],
+                    it["role"], it["selected"]])
+    return buf.getvalue()
 
 
 def write_outputs(channel_results, generated):
@@ -1466,7 +1531,7 @@ def write_outputs(channel_results, generated):
             slug = CAT_CLS.get(cat, "other")
             with open(os.path.join(feed_dir, slug + ".xml"), "w", encoding="utf-8") as f:
                 f.write(build_rss(its, "PAT-HOT · %s%s" % (ch["letter"], cat),
-                                  "./#/all", cat, 30))
+                                  SITE_BASE + "#/all", cat, 30))
 
         # 政策/招投标结构化库（仅 T 光电频道）
         if ch_id == "tech":
@@ -1500,6 +1565,72 @@ def write_outputs(channel_results, generated):
             shutil.copyfile(os.path.join(ch_data, "biz.csv"),
                             os.path.join(dist_data, "biz.csv"))
 
+    # ---- 向后兼容：把默认频道镜像回扁平老地址 ----
+    # 三频道重构后主输出是 data/<ch>/ 与 api/v1/<ch>/，但线上已有消费者读的是
+    # 重构前的扁平地址（README、llms.txt、RSS 订阅、已发布的 Agent Skill 都写
+    # api/v1/items.json）。没有这一层，下一次定时运行会把全部老地址打成 404。
+    # 用 channel_results 显式取频道，不依赖循环变量的残留值。
+    alias = channel_results.get(FLAT_ALIAS_CHANNEL)
+    if alias:
+        a_items, a_topics, a_daily, a_dailies, a_trends = alias
+        a_stories = []
+        for t in a_topics:
+            _s = {"id": t["id"], "title": t["title"], "status": t.get("status"),
+                  "heat": t.get("heat", t.get("score")),
+                  "sourceCount": t["source_count"], "signalCount": t["signal_count"],
+                  "latestAt": t["latest_at"], "sources": t.get("sources", []),
+                  "links": t.get("links", [])}
+            _rep = t.get("representative") or {}
+            if _rep.get("llm_score") is not None:
+                _s["llmScore"] = _rep["llm_score"]
+            a_stories.append(_s)
+        gen = generated.isoformat()
+        # 线上 api/v1/dailies.json 一直是「裸日期字典」（消费者直接 dailies["2026-10-11"] 取值），
+        # 而 data/ 与 dist/data/ 是带 schemaVersion 的包装文档。两种形状都是已发布契约，
+        # 这里严格照搬线上现状，不做"统一"，否则会打断现有 Agent/RSS 消费者。
+        dailies_doc = {"schemaVersion": 1, "generatedAt": gen,
+                       "count": len(a_dailies), "dailies": a_dailies}
+        api_v1_dir = os.path.join(DIST_DIR, "api", "v1")
+        flat_dist = os.path.join(DIST_DIR, "data")
+        for name, doc in (("items.json", {"schemaVersion": 1, "generatedAt": gen,
+                                          "count": len(a_items), "items": a_items}),
+                          ("hot-topics.json", {"schemaVersion": 1, "generatedAt": gen,
+                                               "count": len(a_topics), "items": a_topics}),
+                          ("dailies.json", dailies_doc),
+                          ("daily.json", a_daily),
+                          ("trends.json", a_trends),
+                          ("stories.json", {"schemaVersion": 1, "generatedAt": gen,
+                                            "count": len(a_stories), "items": a_stories})):
+            dump(doc, os.path.join(api_v1_dir, name))
+            shutil.copyfile(os.path.join(api_v1_dir, name), os.path.join(flat_dist, name))
+        # api 层的 dailies 用裸字典覆盖上面写出的包装文档（保持线上形状）
+        dump(a_dailies, os.path.join(api_v1_dir, "dailies.json"))
+        for src, dst in (("dailies.json", os.path.join(DATA_DIR, "dailies.json")),
+                         ("items.json", os.path.join(DATA_DIR, "items.json")),
+                         ("hot-topics.json", os.path.join(DATA_DIR, "hot-topics.json")),
+                         ("daily.json", os.path.join(DATA_DIR, "daily.json")),
+                         ("trends.json", os.path.join(DATA_DIR, "trends.json"))):
+            shutil.copyfile(os.path.join(DATA_DIR, FLAT_ALIAS_CHANNEL, src), dst)
+        with open(os.path.join(DATA_DIR, "report.csv"), "w",
+                  encoding="utf-8-sig", newline="") as f:
+            f.write(_csv_rows(a_items))
+        shutil.copyfile(os.path.join(DATA_DIR, "report.csv"),
+                        os.path.join(flat_dist, "report.csv"))
+        # 扁平分类 feed：dist/feed/category/<slug>.xml（老订阅地址）
+        set_channel_context(FLAT_ALIAS_CHANNEL)
+        feed_flat = os.path.join(DIST_DIR, "feed", "category")
+        os.makedirs(feed_flat, exist_ok=True)
+        by_cat = {}
+        for it in a_items:
+            by_cat.setdefault(it["category"], []).append(it)
+        for cat, its in by_cat.items():
+            slug = CAT_CLS.get(cat, "other")
+            with open(os.path.join(feed_flat, slug + ".xml"), "w", encoding="utf-8") as f:
+                f.write(build_rss(its, "PAT-HOT · %s" % cat,
+                                  SITE_BASE + "#/all", cat, 30))
+        log("[*] 向后兼容扁平产物已镜像（频道 %s -> data/、dist/data/、dist/api/v1/、dist/feed/category/）"
+            % FLAT_ALIAS_CHANNEL)
+
     # ---- 三频道单页 ----
     with open(os.path.join(DIST_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(render_app_html(channel_results, generated))
@@ -1507,7 +1638,7 @@ def write_outputs(channel_results, generated):
     # ---- 主 feed（T 光电频道，保持老订阅者兼容） ----
     tech_items = channel_results.get("tech", ([], None, None, None, None))[0] if "tech" in channel_results else []
     with open(os.path.join(DIST_DIR, "feed.xml"), "w", encoding="utf-8") as f:
-        f.write(build_rss(tech_items, "PAT-HOT 热点", "./",
+        f.write(build_rss(tech_items, "PAT-HOT 热点", SITE_BASE,
                           "物理·天文·光电热点统计（AIHOT 模式）", 50))
 
     # ---- API 索引 + OpenAPI ----
@@ -1526,7 +1657,7 @@ def write_outputs(channel_results, generated):
 
     # ---- llms.txt ----
     ch_lines = "\n".join(
-        "- %s（%s）: ./api/v1/%s/items.json , ./api/v1/%s/hot-topics.json , ./api/v1/%s/dailies.json"
+        "- %s（%s）: {base}/api/v1/%s/items.json , {base}/api/v1/%s/hot-topics.json , {base}/api/v1/%s/dailies.json"
         % (CHANNELS[c]["name"]["zh"], CHANNELS[c]["letter"], c, c, c)
         for c in channel_results)
     llms = """# PAT-HOT · 物理·天文·光电热点统计
@@ -1534,16 +1665,20 @@ def write_outputs(channel_results, generated):
 > 物理 / 天文 / 光电三频道资讯聚合与热点统计（AIHOT 模式），数据每天 6:00、18:00（北京时间）自动更新，本站数据为公开内容，适合作为 AI / Agent 的信息来源。
 
 ## 在线入口
-- 报告页面: ./index.html
-- GitHub 仓库: https://github.com/sun-zihang/opto-hot
+- 报告页面: {base}/index.html
+- GitHub 仓库: {repo}
 
 ## 数据 API（静态 JSON，免鉴权，按频道）
-- 接口索引 / OpenAPI: ./api/v1/index.json , ./api/v1/openapi.json
+- 接口索引 / OpenAPI: {base}/api/v1/index.json , {base}/api/v1/openapi.json
 %s
 
+## 兼容地址（重构前的扁平路径，仍可用，内容为 T 光电频道）
+- {base}/api/v1/items.json , {base}/api/v1/hot-topics.json , {base}/api/v1/dailies.json
+- {base}/api/v1/daily.json , {base}/api/v1/stories.json , {base}/api/v1/trends.json
+
 ## RSS 订阅（阅读器 / Agent）
-- 主 feed（T 光电）: ./feed.xml
-- 分类: ./feed/<频道>/category/<slug>.xml
+- 主 feed（T 光电）: {base}/feed.xml
+- 分类: {base}/feed/<频道>/category/<slug>.xml
 
 ## 用法示例（匿名 GET）
 curl {base}/api/v1/tech/hot-topics.json
@@ -1554,13 +1689,14 @@ curl {base}/feed.xml
 ## 约定
 - 数据每天 6:00、18:00（北京时间）更新；可对完整 URL 使用 ETag / If-None-Match 减少拉取。
 - items.json 为全量快照，可本地按 publishedAt / discoveredAt / keywords 筛选。
+- api/v1/dailies.json 为裸日期字典（键是 YYYY-MM-DD）；data/dailies.json 才带 schemaVersion 包装。
 - 公开使用请注明一次数据来源：PAT-HOT（AIHOT 模式，数据源自各公开站点）。
 
 ## 说明
 数据来自公开网络（RSS / 网站首页），自动采集统计，仅供参考，不构成投资建议。
 """ % ch_lines
     with open(os.path.join(DIST_DIR, "llms.txt"), "w", encoding="utf-8") as f:
-        f.write(llms.format(base=""))
+        f.write(llms.format(base=SITE_BASE.rstrip("/"), repo=REPO_URL))
 
     log("[*] 已写出: data/<ch>/*.json+csv, dist/index.html, dist/llms.txt, dist/api/v1/<ch>/*, dist/feed.xml")
 
@@ -2046,6 +2182,96 @@ def run_channel(ch_id, sources, args, generated):
     return items, topics, daily, dailies, trends
 
 
+# ---------------- 契约自检（CI 与本地发布前把关） ----------------
+# 背景：三频道重构把产物路径从 api/v1/*.json 改成 api/v1/<ch>/*.json，但没有任何
+# 检查发现"已发布消费者的地址全部 404"，README/Skill 也继续写老地址。
+# 这里把"对外承诺的端点必须真实存在且形状正确"固化成可执行断言。
+def expected_flat_endpoints():
+    """重构前就发布、至今仍被外部消费者使用的扁平地址。"""
+    return ["api/v1/index.json", "api/v1/openapi.json", "api/v1/items.json",
+            "api/v1/hot-topics.json", "api/v1/dailies.json", "api/v1/daily.json",
+            "api/v1/stories.json", "api/v1/trends.json",
+            "data/items.json", "data/hot-topics.json", "data/dailies.json",
+            "data/report.csv", "feed.xml", "llms.txt", "index.html"]
+
+
+def expected_channel_endpoints(ch_id):
+    return ["api/v1/%s/items.json" % ch_id, "api/v1/%s/hot-topics.json" % ch_id,
+            "api/v1/%s/dailies.json" % ch_id, "api/v1/%s/daily.json" % ch_id,
+            "api/v1/%s/stories.json" % ch_id, "api/v1/%s/trends.json" % ch_id]
+
+
+def check_contract(verbose=True):
+    """返回问题列表；空列表表示对外契约完整。"""
+    problems = []
+
+    def need(rel, why):
+        p = os.path.join(DIST_DIR, rel.replace("/", os.sep))
+        if not os.path.exists(p):
+            problems.append("缺失 %s（%s）" % (rel, why))
+
+    for rel in expected_flat_endpoints():
+        need(rel, "重构前已发布的对外地址，缺了就是线上 404")
+    for ch_id in CHANNEL_ORDER:
+        for rel in expected_channel_endpoints(ch_id):
+            need(rel, "频道 API")
+
+    # 形状契约：api/v1/dailies.json 是裸日期字典（线上现状，消费者依赖它）
+    p = os.path.join(DIST_DIR, "api", "v1", "dailies.json")
+    if os.path.exists(p):
+        try:
+            with open(p, encoding="utf-8") as f:
+                doc = json.load(f)
+            if "dailies" in doc or "schemaVersion" in doc:
+                problems.append("api/v1/dailies.json 形状变了（消费者按裸日期字典读取）")
+        except Exception as e:
+            problems.append("api/v1/dailies.json 解析失败: %s" % e)
+
+    p = os.path.join(DIST_DIR, "api", "v1", "items.json")
+    if os.path.exists(p):
+        try:
+            with open(p, encoding="utf-8") as f:
+                doc = json.load(f)
+            for k in ("schemaVersion", "generatedAt", "count", "items"):
+                if k not in doc:
+                    problems.append("api/v1/items.json 缺少字段 %s" % k)
+        except Exception as e:
+            problems.append("api/v1/items.json 解析失败: %s" % e)
+
+    # RSS：日期必须 RFC 822，<link> 必须是阅读器可解析的绝对地址
+    p = os.path.join(DIST_DIR, "feed.xml")
+    if os.path.exists(p):
+        txt = open(p, encoding="utf-8").read()
+        if re.search(r"<pubDate>\d{4}-\d{2}-\d{2}T", txt):
+            problems.append("feed.xml 的 pubDate 仍是 ISO 格式（阅读器会当成无日期）")
+        lk = re.search(r"<link>([^<]*)</link>", txt)
+        if lk and not lk.group(1).startswith("http"):
+            problems.append("feed.xml 的 <link> 不是绝对地址: %r" % lk.group(1))
+
+    # 对外文档不能残留改名前的死链或相对地址
+    p = os.path.join(DIST_DIR, "llms.txt")
+    if os.path.exists(p):
+        txt = open(p, encoding="utf-8").read()
+        if "opto-hot" in txt:
+            problems.append("llms.txt 仍指向已改名的旧仓库地址")
+        if "./api/v1" in txt:
+            problems.append("llms.txt 仍使用相对地址，Agent 无法直接请求")
+
+    if REPO_URL and "opto-hot" in REPO_URL:
+        problems.append("REPO_URL 指向旧仓库名")
+    if not SITE_BASE.startswith("https://"):
+        problems.append("SITE_BASE 必须是 https 绝对地址")
+
+    if verbose:
+        if problems:
+            log("[!] 契约自检发现 %d 个问题:" % len(problems))
+            for x in problems:
+                log("      - " + x)
+        else:
+            log("[*] 契约自检通过：扁平兼容地址 + 三频道地址全部就位")
+    return problems
+
+
 def main():
     ap = argparse.ArgumentParser(description="PAT-HOT 三频道热点统计采集器（物理/天文/光电）")
     ap.add_argument("--channel", choices=["tech", "physics", "astro", "all"], default="all",
@@ -2060,7 +2286,14 @@ def main():
     ap.add_argument("--images", action="store_true",
                     help="启用可选生图（SenseNova U1.5 Lite 文生图，去水印）：为日报头条+热点 Top5 生成配图。"
                          "需设置环境变量 SENSENOVA_API_KEY；失败自动降级为无图")
+    ap.add_argument("--check", action="store_true",
+                    help="只运行对外契约自检（不采集、不写文件）：确认扁平兼容地址与"
+                         "三频道地址都存在且形状正确；有问题时以非零退出码结束。CI 用它在部署前把关。")
     args = ap.parse_args()
+
+    if args.check:
+        # 只做契约自检（CI 发布前 gate）：不采集、不写文件
+        return 1 if check_contract() else 0
 
     with open(SOURCES_PATH, encoding="utf-8") as f:
         sources = json.load(f)
@@ -2075,9 +2308,16 @@ def main():
     log("[*] 全部完成。各频道条数：%s" % ", ".join(
         "%s=%d" % (c, len(results[c][0])) for c in ch_list))
 
+    # 写完立即自检：契约不完整就不要让 CI 把坏产物提交/部署出去
+    problems = check_contract()
+    if problems:
+        log("[x] 产物契约自检未通过，请修复后再提交（exit 1）")
+        return 1
+    return 0
+
 
 if __name__ == "__main__":
     try:
-        main()
+        sys.exit(main() or 0)
     except KeyboardInterrupt:
         sys.exit(130)

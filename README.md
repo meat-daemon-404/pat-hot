@@ -22,10 +22,10 @@
 - **可选 LLM 增强**（`--llm`，默认关闭）：接商汤日日新 SenseNova（`sensenova-6.8-flash-lite`），为精选条目生成一句话中文摘要、推荐理由、信息密度标签（低密度营销稿自动降权）；Key 只从环境变量 `SENSENOVA_API_KEY` 读取，失败自动降级
 - **可选生图**（`--images`，默认关闭）：接 SenseNova U1.5 Lite 文生图（`watermark=false` 去水印），为日报头条 + 热点榜 Top5 生成配图，存 `dist/assets/img/`；失败自动降级为无图
 - **配置外置**：评分权重、精选门槛、聚类阈值、日报编排参数全部集中在 `collector/config.json`，调标准不改代码
-- **AIHOT 风格 UI**：六个视图（精选时间线 / 全部动态 / 热点榜 / 光电日报 / 主题 / 数据），浅色卡片风、侧边导航、评分与热度徽章，移动端自适应
+- **AIHOT 风格 UI**：九个视图（精选时间线 / 全部动态 / 热点榜 / 光电日报 / 主题 / 趋势 / 数据 / Agent 接入 / 更多），浅色卡片风、侧边导航、评分与热度徽章，移动端自适应
 - **日报归档机制**：自动按天生成光电日报（今日看点 TOC + 分类文章 + 日历归档），历史归档按日期/月份回看
 - **多语言与交互**：中 / English 一键切换；图表 tooltip；热点榜按热度/信源排序；搜索 + 分类 + 排序
-- **Agent 接入**：免鉴权静态 JSON API（`api/v1/<频道>/*`，频道：physics/astro/tech）+ OpenAPI 3.1 + 分类 RSS feed + `llms.txt` + 可安装 Skill（`agent/skills/opto-hot`）
+- **Agent 接入**：免鉴权静态 JSON API（`api/v1/<频道>/*`，频道：physics/astro/tech；重构前的扁平 `api/v1/*` 仍保留兼容）+ OpenAPI 3.1 + 分类 RSS feed + `llms.txt` + 可安装 Skill（`agent/skills/opto-hot`）
 - **手机适配**：响应式布局（窄屏单列、顶部搜索、横向导航），移动端可正常浏览
 - **自动化**：内置 GitHub Actions，每天 6:00 / 18:00（北京时间）自动刷新数据并提交
 - **趋势追踪**：周维度聚合（本周 vs 上周分类热度、新上榜/持续发酵事件），独立趋势视图
@@ -37,12 +37,14 @@
 | 视图 | 对应 AIHOT 页面 | 说明 |
 |---|---|---|
 | 精选 #/ | /（精选） | 按日分组的资讯时间线：来源、时间、分类徽章、推荐分、精选标记 |
-| 全部动态 #/all | /all | 全部条目，支持关键词搜索 + 分类筛选 + 按推荐分/时间排序 |
+| 全部动态 #/all | /all | 全部条目，支持关键词搜索 + 分类筛选 + 按推荐分/时间排序，无限滚动分页 |
 | 热点榜 #/hot | /hot | 排名 + 状态（爆/发酵中/关注中）+ 信源数/信号数/热度值 + 信源展开 |
 | 光电日报 #/daily | /daily | 报头 + 今日看点 TOC + 分类文章 + 日历归档 |
 | 主题 #/topics | /topics | 分类卡片（24h/7d/总数），点击进入筛选 |
+| 趋势 #/trends | /trends | 分类热度涨跌条、新上榜事件、持续发酵事件 |
 | 数据 #/data | - | 统计卡片、14 天趋势、来源表、CSV/JSON 下载 |
 | Agent 接入 #/agent | /agent | API 端点 + RSS + OpenAPI + curl 示例 + Skill 说明 |
+| 更多 #/more | - | 语言/频道等次要入口收纳（窄屏） |
 
 **数据机制**（静态 JSON API，兼容 AIHOT 字段风格）：
 - data/items.json：{id, title, url, links.original, source, category, publishedAt, discoveredAt, score, selected, summary, role, keywords}
@@ -59,10 +61,12 @@
 ## 快速开始
 
 ```bash
-git clone https://github.com/sun-zihang/opto-hot.git
-cd opto-hot
+git clone https://github.com/sun-zihang/pat-hot.git
+cd pat-hot
 python collector/collect.py          # 需要联网；Python 3.8+
 ```
+
+跑完可用 `python collector/collect.py --check` 自检对外契约（所有已发布端点是否就位、形状是否正确），CI 在提交前会强制这一关。
 
 生成产物：
 
@@ -164,8 +168,9 @@ python collector/collect.py --images     # 可选：SenseNova 生图配图（需
 
 ## 趋势模块
 
-基于 `data/dailies.json` 的周维度聚合，不新增采集，每次运行自动生成 `data/trends.json`
-（同步到 `dist/data/trends.json` 与 `api/v1/trends.json`）：
+基于 `data/<频道>/dailies.json` 的周维度聚合，不新增采集，每次运行自动生成 `data/<频道>/trends.json`
+（同步到 `dist/data/<频道>/trends.json` 与 `api/v1/<频道>/trends.json`，另在兼容地址
+`dist/api/v1/trends.json` 提供 T 光电频道内容）：
 
 - **本周 vs 上周**：各分类热度（文章 score 求和）变化，涨跌百分比
 - **新上榜事件**：本周首次出现的事件（同一事件跨天只算一件）
@@ -189,22 +194,24 @@ opto-hot/
 └── LICENSE               # MIT
 ```
 
-## 每天 12:00 自动更新（北京时间）
+## 每天 6:00 / 18:00（北京时间）自动更新
 
 **GitHub Actions（默认启用，推荐）**
 
-![workflow](https://github.com/sun-zihang/opto-hot/actions/workflows/update.yml/badge.svg)
+![workflow](https://github.com/sun-zihang/pat-hot/actions/workflows/update.yml/badge.svg)
 
-`.github/workflows/update.yml` 每天 12:00（北京时间，即 UTC 04:00）运行一次：
-1. 运行 `python collector/collect.py --limit 25` 重新采集（真嵌入聚类）
-2. 有变化则提交并推送数据（`chore: 刷新光电热点数据 …`）
-3. **直接部署 GitHub Pages**（`actions/deploy-pages`），线上站点立即更新
+`.github/workflows/update.yml` 每天 6:00 与 18:00（北京时间，即 cron `0 22,10 * * *` UTC）各运行一次：
+1. 跑 `tests/` 下的单元测试（纯标准库、无网络）
+2. 运行 `python collector/collect.py --limit 25 --llm` 重新采集（真嵌入聚类）
+3. `python collector/collect.py --check` 自检对外契约，不通过就不提交
+4. 有变化则提交并推送数据（`chore: 刷新 PAT-HOT 数据 …`）
+5. **直接部署 GitHub Pages**（`actions/deploy-pages`），线上站点立即更新
 
 也可在 Actions 页面手动 `workflow_dispatch` 触发。注意：GitHub 服务器位于海外，个别国内站点可能超时，采集器对每个源单独容错，单源失败不影响整体输出。
 
 **本地计划任务（可选）**
 
-- `scripts/install-schedule.ps1`：注册 Windows 计划任务，每天 12:00 运行一次 `scripts/auto-update.ps1`（采集 → git 提交 → push，触发 GitHub Pages 重新部署）
+- `scripts/install-schedule.ps1`：注册 Windows 计划任务，每天 12:00 运行一次 `scripts/auto-update.ps1`（采集 → 契约自检 → git 提交 → push，触发 GitHub Pages 重新部署）
 
 ## 路线图
 
