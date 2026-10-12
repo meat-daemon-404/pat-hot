@@ -138,8 +138,9 @@ async function odGenerate(btn){
   btn.disabled=true; btn.textContent="✨ "+T.aiLoading;
   try{
     const domain=(C&&C.domain&&C.domain.zh)||chn()||"科学";
-    const WORKER_URL=window.PAT_LLM_WORKER||"";
-    if(!WORKER_URL) throw new Error("未配置 Worker");
+    // 同站 Pages Function 为默认；非 pages.dev 镜像（如 GitHub Pages）自动回指 CF 端点。
+    // window.PAT_LLM_WORKER 仅作显式覆盖（如改用独立 Worker）。
+    const WORKER_URL=window.PAT_LLM_WORKER||(/^([a-z0-9-]+\.)?pages\.dev$/i.test(location.hostname)?"/api/summarize":"https://pat-hot.pages.dev/api/summarize");
     const resp=await fetch(WORKER_URL,{
       method:"POST",
       headers:{"Content-Type":"application/json"},
