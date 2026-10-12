@@ -138,7 +138,9 @@ async function odGenerate(btn){
   btn.disabled=true; btn.textContent="✨ "+T.aiLoading;
   try{
     const domain=(C&&C.domain&&C.domain.zh)||chn()||"科学";
-    const resp=await fetch("/api/summarize",{
+    const WORKER_URL=window.PAT_LLM_WORKER||"";
+    if(!WORKER_URL) throw new Error("未配置 Worker");
+    const resp=await fetch(WORKER_URL,{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify({title:item.title, source:item.source, summary:item.summary||"", domain})
