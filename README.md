@@ -213,6 +213,44 @@ opto-hot/
 
 - `scripts/install-schedule.ps1`：注册 Windows 计划任务，每天 12:00 运行一次 `scripts/auto-update.ps1`（采集 → 契约自检 → git 提交 → push，触发 GitHub Pages 重新部署）
 
+## 部署到 Cloudflare Pages（按需中文摘要接口）
+
+Cloudflare Pages 项目 `pat-hot`（`pat-hot.pages.dev`）**未接 Git 自动发布**，与上面的
+GitHub Pages 是两套独立部署。`functions/api/summarize.js` 这个 Pages Function 只有在
+手动 `wrangler pages deploy` 时才会上线；CI 的定时刷新只重跑 GitHub Pages，不会动它。
+所以改了 `functions/` 或想让摘要接口上线，需要在本地按下面步骤发一次。
+
+密钥（一次性）：`SENSENOVA_API_KEY` 已作为 Pages Secret 写入 production 与 preview 两个环境，
+不进代码也不进仓库。换 key 时重跑：
+
+```
+wrangler pages secret put SENSENOVA_API_KEY --project-name pat-hot            # production
+wrangler pages secret put SENSENOVA_API_KEY --project-name pat-hot -e preview  # preview
+```
+
+发布（functions 目录需与静态资源目录同级，且命令的当前工作目录能解析到两者）：
+
+```
+wrangler pages deploy <静态资源目录> --project-name pat-hot --branch master
+```
+
+`--branch master` 即 production；换成别的分支名就是预览部署，验证后再用
+`wrangler pages deployment list --project-name pat-hot` 确认。
+
+两个已知坑（2026-10-12 实测）：
+
+1. **Pages Function 发布偶发 `Unknown internal error occurred`**：Cloudflare 侧的间歇性
+   失败，同一次产物重试 2-3 次即可成功；production 发布失败时旧线上产物不受影响，可放心重试。
+2. **构建 Functions 用的 `esbuild.exe` 若位于 `D:\` 下会被 Windows 权限拒绝写任何输出目录**
+   （报 `Failed to write to output file ... Access is denied`，连写到 `C:\` 也失败）。
+   绕法：把该 exe 复制一份到 `C:\` 下并用 `ESBUILD_BINARY_PATH` 指向它：
+   `env:ESBUILD_BINARY_PATH = "C:\...\esbuild.exe"; wrangler pages deploy ...`。
+
+> 为什么是 Pages Function 而不是独立 Worker：`*.workers.dev` 在中国大陆被 DNS 污染
+> 且 TCP 不通（实测解析到 Facebook 段），而本站受众正是无法访问外网的用户。同站
+> Function 免 CORS、免被墙。`window.PAT_LLM_WORKER` 仍保留为显式覆盖入口，
+> 默认为同站 `/api/summarize`，非 pages.dev 镜像（GitHub Pages）自动回指 `pat-hot.pages.dev`。
+
 ## 路线图
 
 - [x] 接入更多源（英文行业媒体、微信公众号精选、政策/招投标信息）
