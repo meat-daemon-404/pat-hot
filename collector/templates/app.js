@@ -92,19 +92,20 @@ function pickBadge(){ return '<span class="bdg b-pick">'+T.pick+'</span>'; }
 function tierBadge(t){ return t==="official"?'<span class="bdg b-tier">'+T.official+'</span>':""; }
 function densBadge(d){ if(!d) return ""; const cls=d==="高"?"b-dh":(d==="中"?"b-dm":"b-dl"); return '<span class="bdg '+cls+'" title="'+T.density+'">'+esc(densName(d))+'</span>'; }
 function scoreEl(s,llm){ const ai=llm?'<span class="iai">AI</span>':""; return '<span class="iscore mono '+scoreCls(s)+'" title="'+(llm?"AI 双打分均值":"score")+' / 100">'+Math.round(s)+'</span>'+ai; }
-function summaryOf(it){ return it.llm_summary || it.summary || ""; }
-function cardSummary(it){ const s=summaryOf(it); if(it.llm_summary) return s; return s.length>160 ? s.slice(0,160)+"…" : s; }
+function summaryOf(it){ return it.zh_full || it.llm_summary || it.summary || ""; }
+function cardSummary(it){ const s=summaryOf(it); if(it.zh_full || it.llm_summary) return s.length>160 ? s.slice(0,160)+"…" : s; return s.length>160 ? s.slice(0,160)+"…" : s; }
 function trendSet(){ const tt=C.trends||{}; return new Set([...(tt.newTopics||[]),...(tt.sustainedTopics||[])].map(x=>x.title)); }
 function trendOf(t){ if(!TREND_TITLES) TREND_TITLES = trendSet(); return TREND_TITLES.has(t.title) ? "up" : "flat"; }
 // ---- 站内展开阅读 ----
 const EXPANDED = new Set();
-function expandable(it){ const s=it.summary||""; return (it.llm_summary && s && s!==it.llm_summary) || (!it.llm_summary && s.length>160); }
+function expandable(it){ const s=it.summary||""; return !!(it.zh_full || it.llm_summary || s.length>160); }
 function expandBtn(it){ if(!expandable(it)) return ""; const open=EXPANDED.has(it.id); return '<button class="xbtn'+(open?" open":"")+'" data-x="'+it.id+'"><span>'+(open?T.collapse:T.expand)+'</span><span class="xa">▼</span></button>'; }
 function expandBody(it){ if(!expandable(it)) return ""; const open=EXPANDED.has(it.id);
-  const ai=it.llm_summary?'<div class="xsec">'+T.aiSum+'</div><div class="xt">'+esc(it.llm_summary)+'</div>':"";
+  const zf=it.zh_full?'<div class="xsec">'+T.aiSum+'</div><div class="xt">'+esc(it.zh_full)+'</div>':"";
+  const ai=!it.zh_full&&it.llm_summary?'<div class="xsec">'+T.aiSum+'</div><div class="xt">'+esc(it.llm_summary)+'</div>':"";
   const rs=it.summary?'<div class="xsec">'+T.srcSum+'</div><div class="xt">'+esc(it.summary)+'</div>':"";
   const src=it.url?'<div class="xsrc"><a href="'+esc(it.url)+'" target="_blank" rel="noopener">'+T.readOrig+'</a></div>':"";
-  return '<div class="xbody'+(open?" open":"")+'" id="xb-'+it.id+'"><div class="xbody-in">'+ai+rs+src+'</div></div>'; }
+  return '<div class="xbody'+(open?" open":"")+'" id="xb-'+it.id+'"><div class="xbody-in">'+zf+ai+rs+src+'</div></div>'; }
 function toggleExpand(btn){ const id=btn.dataset.x; const body=document.getElementById("xb-"+CSS.escape(id));
   const open=EXPANDED.has(id); if(open) EXPANDED.delete(id); else EXPANDED.add(id);
   btn.classList.toggle("open",!open); btn.querySelector("span").textContent=!open?T.collapse:T.expand;
@@ -166,7 +167,7 @@ function renderAll(){
   sel.onchange=e=>{ state.cat=e.target.value; renderAll(); };
   $("#all-sort").onchange=e=>{ state.sort=e.target.value; renderAll(); };
 }
-function hotExpand(t){ const rep=t.representative||{}; const it={id:"t-"+t.id, llm_summary:rep.llm_summary, summary:rep.summary, url:rep.url||((t.links||[])[0]||{}).url};
+function hotExpand(t){ const rep=t.representative||{}; const it={id:"t-"+t.id, zh_full:rep.zh_full, llm_summary:rep.llm_summary, summary:rep.summary, url:rep.url||((t.links||[])[0]||{}).url};
   if(!expandable(it)) return ""; return expandBtn(it)+expandBody(it); }
 function renderHot(){
   const root=$("#view-hot"); let ts=(C.topics||[]).slice();
@@ -190,7 +191,7 @@ function renderHot(){
 }
 function dailyArticle(a){
   const reason=a.reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(a.reason)+'</div>':"";
-  const it={id:"d-"+(a.topic_id||a.url||a.title).replace(/[^a-zA-Z0-9]/g,"").slice(0,16), llm_summary:a.llm_summary, summary:a.summary, url:a.url};
+  const it={id:"d-"+(a.topic_id||a.url||a.title).replace(/[^a-zA-Z0-9]/g,"").slice(0,16), zh_full:a.zh_full, llm_summary:a.llm_summary, summary:a.summary, url:a.url};
   return '<div class="dpick"><div class="t"><a href="'+esc(a.url)+'" target="_blank" rel="noopener" data-read="'+esc(a.url)+'">'+esc(a.title)+'</a></div>'
     +'<div class="m"><span>'+esc(a.source)+'</span><span>'+esc(pubLabel(a))+'</span>'+densBadge(a.density)+'</div>'+reason+(a.summary?'<div class="isum">'+esc(a.summary.length>160?a.summary.slice(0,160)+"…":a.summary)+'</div>':"")+expandBtn(it)+expandBody(it)+'</div>';
 }
