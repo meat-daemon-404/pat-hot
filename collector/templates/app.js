@@ -3,6 +3,12 @@ const META = S.meta || {channels:[], default:"tech"};
 const $ = (sel, root=document) => root.querySelector(sel);
 const $$ = (sel, root=document) => [...root.querySelectorAll(sel)];
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+// ---- 主题 ----
+// 首屏前的内联脚本已把 data-theme 落到 <html> 上，这里只接管切换。
+function themeNow(){ return document.documentElement.getAttribute("data-theme")==="dark"?"dark":"light"; }
+function setTheme(t){ try{ localStorage.setItem("pat-theme",t); }catch(e){}
+  document.documentElement.setAttribute("data-theme",t);
+  const b=$("#theme"); if(b) b.textContent = t==="dark"?"☀":"◐"; }
 // ---- 频道 ----
 let CHID = "";
 try { CHID = localStorage.getItem("pat-channel") || ""; } catch(e){}
@@ -16,7 +22,7 @@ const STATUS_EN = {"爆":"Hot","发酵中":"Trending","关注中":"Watch"};
 const DENS_EN = {"高":"High","中":"Medium","低":"Low"};
 const I18N = {
   zh: { feed:"精选", all:"全部", hot:"热点", daily:"日报", trends:"趋势", more:"更多",
-    allPage:"全部动态", topics:"主题", data:"数据", agent:"Agent 接入",
+    allPage:"全部动态", hotPage:"热点榜", topics:"主题", data:"数据", agent:"Agent 接入",
     search:"搜索", catAll:"全部", sortScore:"按推荐分", sortTime:"按时间",
     thresholdNote:"精选门槛：官方信源 ≥ {o} 分 · 媒体信源 ≥ {m} 分（可在 collector/config.json 调整）",
     hotNow:"当前热点", fullRank:"完整榜单 →", unreadOnly:"只看未读", today:"今天", daySel:"条精选", noMatch:"没有匹配的条目",
@@ -34,10 +40,11 @@ const I18N = {
     catDelta:"分类热度变化", newTopics:"新上榜事件", sustained:"持续发酵", noTrend:"本周暂无趋势数据（需要至少两周的日报归档）",
     menuAllSub:"全部资讯 · 搜索 / 分类 / 排序", menuTopicsSub:"分类统计，点击进入筛选", menuDataSub:"统计与导出", menuAgentSub:"开放 JSON 接口，免鉴权",
     expand:"展开阅读", collapse:"收起", aiSum:"AI 内容概要", srcSum:"来源摘要",
+    favPage:"收藏", favSub:"点过的星标都在这里（只存在本浏览器）", noFav:"还没有收藏：点卡片右上角的 ★ 收藏一条", favCount:"{n} 条收藏",
     extNote:"原文·需外网", readOrig:"阅读原文 ↗（需外网）", loadMore:"加载更多", aiGen:"生成中文摘要", aiLoading:"生成中…", aiFail:"生成失败，点击重试",
     footer:"PAT-HOT · 物理·天文·光电热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
   en: { feed:"Selected", all:"All", hot:"Hot", daily:"Daily", trends:"Trends", more:"More",
-    allPage:"All Items", topics:"Topics", data:"Data", agent:"Agent API",
+    allPage:"All Items", hotPage:"Hot Ranking", topics:"Topics", data:"Data", agent:"Agent API",
     search:"Search", catAll:"All", sortScore:"By score", sortTime:"By time",
     thresholdNote:"Selection bar: official sources ≥ {o} · media sources ≥ {m} (tune in collector/config.json)",
     hotNow:"Trending Now", fullRank:"Full ranking →", unreadOnly:"Unread only", today:"Today", daySel:"selected", noMatch:"No matching items",
@@ -55,6 +62,7 @@ const I18N = {
     catDelta:"Category heat change", newTopics:"New events", sustained:"Sustained events", noTrend:"No trend data yet (needs 2+ weeks of daily archive)",
     menuAllSub:"All items · search / filter / sort", menuTopicsSub:"Category stats — click to filter", menuDataSub:"Stats & export", menuAgentSub:"Open JSON APIs, no auth",
     expand:"Read more", collapse:"Collapse", aiSum:"AI Summary", srcSum:"Source abstract",
+    favPage:"Saved", favSub:"Your stars live in this browser only", noFav:"Nothing saved yet — tap ★ on a card to save it", favCount:"{n} saved",
     extNote:"orig.·needs internet", readOrig:"Read original ↗ (needs internet)", loadMore:"Load more", aiGen:"Generate Chinese summary", aiLoading:"Generating…", aiFail:"Failed, tap to retry",
     footer:"PAT-HOT · physics / astronomy / photonics hot-topic stats (AIHOT methodology) · public data, for reference only · open source on GitHub" }
 };
@@ -188,8 +196,9 @@ function itemCard(it){
 }
 function threshNote(){ const th=C.thresholds||{official:55,media:65}; return T.thresholdNote.replace("{o}",th.official).replace("{m}",th.media); }
 const renderers = {};
+let LAST_VIEW = "";
 function setNav(v){ $$("#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$("#dnav a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$(".seg a").forEach(a=>a.classList.toggle("on",a.dataset.seg===v)); }
-function router(){ const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/"; const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/trends":"trends","/data":"data","/agent":"agent","/more":"more"}; const v=map[name]||"feed"; setNav(v); $$(".view").forEach(x=>x.classList.remove("on")); $("#view-"+v).classList.add("on"); (renderers[v]||renderers.feed)(); window.scrollTo(0,0); }
+function router(){ const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/"; const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/trends":"trends","/data":"data","/fav":"fav","/agent":"agent","/more":"more"}; const v=map[name]||"feed"; if(v==="all"&&LAST_VIEW!=="all") state.allShown=ALL_PAGE; LAST_VIEW=v; setNav(v); $$(".view").forEach(x=>x.classList.remove("on")); $("#view-"+v).classList.add("on"); (renderers[v]||renderers.feed)(); window.scrollTo(0,0); }
 function renderFeed(){
   const root=$("#view-feed");
   const top=(C.topics||[]).slice(0,3);
@@ -326,6 +335,12 @@ function renderData(){
     +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:14px;margin-bottom:6px">'+T.srcTable+'</h3><table><thead><tr><th>'+T.srcTable+'</th><th>'+T.total+'</th><th>'+T.latest+'</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
     +'<div class="dlrow"><a class="btn" href="data/'+CHID+'/report.csv" download>'+T.dlCSV+'</a><a class="btn" href="data/'+CHID+'/items.json" target="_blank">'+T.dlItems+'</a><a class="btn" href="data/'+CHID+'/hot-topics.json" target="_blank">'+T.dlHot+'</a><a class="btn" href="data/'+CHID+'/dailies.json" target="_blank">'+T.dlDaily+'</a></div>';
 }
+function renderFav(){
+  const root=$("#view-fav");
+  const its=C.items.filter(i=>FAV[i.url]).sort((a,b)=>b.score-a.score);
+  root.innerHTML='<div class="card ph"><h1>'+T.favPage+'</h1><span class="sub">'+esc(T.favSub)+'</span></div>'
+    +(its.length?its.map(itemCard).join(""):'<div class="card empty">'+T.noFav+'</div>');
+}
 function renderAgent(){
   const root=$("#view-agent");
   const base=location.href.split("?")[0].split("#")[0].replace(/index\.html$/,"");
@@ -343,15 +358,23 @@ function renderAgent(){
 }
 function renderMore(){
   const root=$("#view-more");
-  const rows=[["#/all","allPage","menuAllSub","☰"],["#/topics","topics","menuTopicsSub","◈"],["#/data","data","menuDataSub","◉"],["#/agent","agent","menuAgentSub","🤖"]];
-  root.innerHTML='<div class="card ph"><h1>'+T.more+'</h1></div><div class="card">'+rows.map(r=>'<a class="mrow" href="'+r[0]+'"><span style="font-size:18px">'+r[3]+'</span><span>'+T[r[1]]+'<small>'+T[r[2]]+'</small></span><span class="go">›</span></a>').join("")+'</div>';
+  const nFav=Object.keys(FAV).filter(u=>C.items.some(i=>i.url===u)).length;
+  const favSub=T.favCount.replace("{n}",nFav);
+  const rows=[["#/all","allPage","menuAllSub","☰"],["#/fav","favPage",favSub,"★"],["#/topics","topics","menuTopicsSub","◈"],["#/data","data","menuDataSub","◉"],["#/agent","agent","menuAgentSub","🤖"]];
+  root.innerHTML='<div class="card ph"><h1>'+T.more+'</h1></div><div class="card">'+rows.map(r=>'<a class="mrow" href="'+r[0]+'"><span style="font-size:18px">'+r[3]+'</span><span>'+T[r[1]]+'<small>'+(T[r[2]]||r[2])+'</small></span><span class="go">›</span></a>').join("")+'</div>';
 }
 function BRAND(){ return "PAT-HOT"; }
-renderers.feed=renderFeed; renderers.all=renderAll; renderers.hot=renderHot; renderers.daily=renderDaily; renderers.topics=renderTopics; renderers.data=renderData; renderers.trends=renderTrends; renderers.agent=renderAgent; renderers.more=renderMore;
+renderers.feed=renderFeed; renderers.all=renderAll; renderers.hot=renderHot; renderers.daily=renderDaily; renderers.topics=renderTopics; renderers.data=renderData; renderers.trends=renderTrends; renderers.fav=renderFav; renderers.agent=renderAgent; renderers.more=renderMore;
 function bind(){
   const q=$("#q");
-  let qTimer=null; q.addEventListener("input",e=>{ state.q=e.target.value; clearTimeout(qTimer); qTimer=setTimeout(()=>{ if(/#\/all/.test(location.hash)){ state.allShown=ALL_PAGE; renderAll(); } },250); });
+  let qTimer=null;
+  // 搜索框此前只在 #/all 路由下有反应：在精选/热点/日报页打字看起来"没反应"。
+  // 现在输入即时跳转全部页，回车也跳（窄屏键盘用户）。
+  const gotoAll=()=>{ state.allShown=ALL_PAGE; if(/#\/all/.test(location.hash)) renderAll(); else location.hash="#/all"; };
+  q.addEventListener("input",e=>{ state.q=e.target.value; clearTimeout(qTimer); qTimer=setTimeout(gotoAll,250); });
+  q.addEventListener("keydown",e=>{ if(e.key==="Enter"){ clearTimeout(qTimer); gotoAll(); } });
   $("#sbtn").onclick=()=>{ const w=$("#swrap"); w.classList.toggle("open"); if(w.classList.contains("open")) q.focus(); };
+  $("#theme").onclick=()=>{ setTheme(themeNow()==="dark"?"light":"dark"); };
   $("#lang").onclick=()=>{ LANG=LANG==="zh"?"en":"zh"; try{localStorage.setItem("pat-lang",LANG);}catch(e){} location.reload(); };
   document.addEventListener("click",e=>{
     const f=e.target.closest("[data-fav]");
@@ -365,6 +388,6 @@ function bind(){
   });
   window.addEventListener("hashchange",router);
   document.addEventListener("keydown",e=>{ if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){ e.preventDefault(); $("#swrap").classList.add("open"); q.focus(); } });
-  renderChSeg(); tr(); router();
+  renderChSeg(); setTheme(themeNow()); tr(); router();
 }
 document.addEventListener("DOMContentLoaded", bind);

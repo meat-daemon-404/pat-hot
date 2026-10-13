@@ -4,7 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PAT-HOT · 物理·天文·光电热点</title>
+<meta name="description" content="PAT-HOT：物理 / 天文 / 光电三频道资讯热点统计。自动采集公开信源，去重聚类打分，每天 6:00 与 18:00（北京时间）更新，单文件可离线打开，并提供免鉴权 JSON API。">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf9f6">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#151b1f">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PAT-HOT">
+<meta property="og:title" content="PAT-HOT · 物理·天文·光电热点统计">
+<meta property="og:description" content="三频道资讯热点榜、日报与趋势，AIHOT 方法论，开源可离线。">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23176b75'/%3E%3Ctext x='32' y='45' font-family='system-ui,sans-serif' font-size='38' font-weight='800' fill='%23fff' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
 <style>/*__CSS__*/</style>
+<script>
+/* 主题在首屏绘制前落到 <html> 上：app.js 内联在 </body> 之前，等它执行再切深色
+   会先闪一屏浅色。这里只读 localStorage + 系统偏好，不碰任何数据。 */
+(function(){try{var t=localStorage.getItem("pat-theme");if(t!=="light"&&t!=="dark"){t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+</script>
 </head>
 <body>
 <header class="top">
@@ -16,6 +31,7 @@
       <a href="#/all" data-seg="all" data-i18n="all">全部</a>
     </nav>
     <button class="icobtn" id="sbtn" aria-label="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+    <button class="icobtn" id="theme" title="主题 / Theme" aria-label="theme">◐</button>
     <button class="icobtn" id="lang" title="语言 / Language">EN</button>
   </div>
   <div class="swrap" id="swrap"><input id="q" type="search" autocomplete="off"></div>
@@ -27,6 +43,7 @@
     <a href="#/topics" data-v="topics" data-i18n="topics">主题</a>
     <a href="#/trends" data-v="trends" data-i18n="trends">趋势</a>
     <a href="#/data" data-v="data" data-i18n="data">数据</a>
+    <a href="#/fav" data-v="fav" data-i18n="favPage">收藏</a>
     <a href="#/agent" data-v="agent" data-i18n="agent">Agent 接入</a>
   </nav>
 </header>
@@ -38,6 +55,7 @@
   <section id="view-topics" class="view"></section>
   <section id="view-trends" class="view"></section>
   <section id="view-data" class="view"></section>
+  <section id="view-fav" class="view"></section>
   <section id="view-agent" class="view"></section>
   <section id="view-more" class="view"></section>
 </main>
