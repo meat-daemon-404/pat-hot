@@ -71,6 +71,19 @@ try { LANG = localStorage.getItem("pat-lang") || "zh"; } catch(e){}
 const T = I18N[LANG] || I18N.zh;
 function chn(){ return LANG==="en" ? C.name.en : C.name.zh; }
 function feedSub(){ return LANG==="en" ? chn()+" timeline ranked by score" : "按推荐分排序的"+chn()+"时间线"; }
+// 新鲜度说明：数据更新时间 vs 最新文章发布时间，直接回应「数据是昨天的」误会
+function freshNote(){
+  const gen=C.generatedAt||""; let genTxt="";
+  if(gen){ const d=new Date(gen); const b=new Date(d.getTime()+8*3600*1000);
+    const today=todayCN(); const gd=b.toISOString().slice(0,10);
+    const hm=String(b.getUTCHours()).padStart(2,"0")+":"+String(b.getUTCMinutes()).padStart(2,"0");
+    genTxt=(gd===today?(LANG==="en"?"today ":"今天 "):fmtDay(gd)+" ")+hm; }
+  let latest=""; for(const it of (C.items||[])){ const p=it.published_at||""; if(p>latest) latest=p; }
+  let latTxt=""; if(latest){ const lp=latest.slice(0,10);
+    latTxt=(lp===todayCN()?(LANG==="en"?"today ":"今天 "):fmtDay(lp)+" ")+latest.slice(11,16); }
+  if(LANG==="en") return "📡 Data updated "+genTxt+" · Newest article "+latTxt;
+  return "📡 数据 "+genTxt+" 更新 · 最新文章 "+latTxt+" 发布";
+}
 function hotPage(){ return chn()+(LANG==="en"?" Hot Ranking":"热点榜"); }
 function hotSub(){ return LANG==="en" ? "Event-level heat: each independent source counts once per 48h" : "事件级热度：48 小时内每独立来源只计一次"; }
 function dailyPage(){ return chn()+(LANG==="en"?" Daily":"日报"); }
@@ -222,7 +235,7 @@ function renderFeed(){
   for(const d of days){ const its=groups[d].slice().sort((a,b)=>b.score-a.score).slice(0,20);
     const closed=state.collapsed[d]?" closed":"";
     tl+='<div class="day'+closed+'"><div class="day-h" data-dayh="'+d+'"><h2>'+(isToday(d)?T.today+" ":"")+fmtDay(d)+'</h2><span class="w">'+wdCN(d)+'</span><span class="c">'+its.length+' '+T.daySel+'</span><span class="arr">'+(state.collapsed[d]?"▶":"▼")+'</span></div><div class="day-b">'+its.map(itemCard).join("")+'</div></div>'; }
-  root.innerHTML='<div class="card ph"><h1>'+T.feed+'</h1><span class="sub">'+esc(feedSub())+'</span><div class="note">'+esc(threshNote())+'</div></div>'+hot+tl;
+  root.innerHTML='<div class="card ph"><h1>'+T.feed+'</h1><span class="sub">'+esc(feedSub())+'</span><div class="note">'+esc(freshNote())+'</div><div class="note">'+esc(threshNote())+'</div></div>'+hot+tl;
   const ub=$("#unreadBtn"); if(ub) ub.onclick=()=>{ state.unreadOnly=!state.unreadOnly; renderFeed(); };
   const sb=$("#sciBtn"); if(sb) sb.onclick=()=>{ setSciOnly(!sciOnly()); renderFeed(); };
 }
