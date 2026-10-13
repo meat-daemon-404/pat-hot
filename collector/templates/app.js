@@ -28,6 +28,7 @@ const I18N = {
     hotNow:"当前热点", fullRank:"完整榜单 →", unreadOnly:"只看未读", sciOnly:"只看科研", today:"今天", daySel:"条精选", noMatch:"没有匹配的条目",
     heatVal:"热度", sources:"信源", signals:"信号",
     mvNew:"新", mvRise:"升温", mvSurge:"多家跟进", mvDown:"回落",
+    digestLabel:"事件概览 | ",
     repMore:"另有 {n} 家信源报道", repOne:"1 家信源报道",
     toc:"今日看点", archive:"日报归档",
     headlineK:"头 条", picksK:"今日看点", flashK:"快 讯", moreK:"分栏目浏览",
@@ -53,6 +54,7 @@ const I18N = {
     hotNow:"Trending Now", fullRank:"Full ranking →", unreadOnly:"Unread only", sciOnly:"Research only", today:"Today", daySel:"selected", noMatch:"No matching items",
     heatVal:"heat", sources:"sources", signals:"signals",
     mvNew:"new", mvRise:"rising", mvSurge:"surge", mvDown:"cooling",
+    digestLabel:"In brief | ",
     repMore:"{n} more sources", repOne:"1 source",
     toc:"Today's picks", archive:"Archive",
     headlineK:"HEADLINE", picksK:"Today's picks", flashK:"Flash", moreK:"Browse by category",
@@ -295,13 +297,17 @@ function renderHot(){
     const rep=t.representative||{}; const rurl=rep.url||((t.links||[])[0]||{}).url||"";
     const reason=rep.llm_reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(rep.llm_reason)+'</div>':"";
     const rsum=rep.llm_summary||rep.summary;
+    // 事件综述优先（AIHOT story-digest）：多源事件只贴代表稿一句摘要是以偏概全，
+    // 有综述就不再显示单篇摘要。综述标题概括整个事件，替代单篇标题展示。
+    const shownTitle=t.digestTitle||t.title;
+    const dg=t.digest?'<div class="hdigest"><b>'+esc(T.digestLabel)+'</b>'+esc(t.digest)+'</div>':"";
     const chips=((t.top_terms||[]).map(x=>'<span class="chip term">'+esc(x)+'</span>').join(""))+((t.sources||[]).map(x=>'<span class="chip">'+esc(x)+'</span>').join(""));
     const flinks=(t.links||[]).map(l=>'<a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.title)+'<span class="fs">'+esc(l.source)+'</span></a>').join("");
     const fold=(t.folded_count>0&&flinks)?'<details class="fold"><summary><span>'+T.repMore.replace("{n}",t.folded_count)+'</span><span>›</span></summary><div class="fl">'+flinks+'</div></details>':"";
     const bar='<div class="hbar"><i style="width:'+Math.max(4,Math.round((t.heat||t.score)/maxHeat*100))+'%"></i></div>';
-    return '<div class="hrow r'+(i+1)+'"><div class="hrank">'+(i+1)+'</div><div class="hmain"><div class="htitle"><a href="'+esc(rurl)+'" target="_blank" rel="noopener" data-read="'+esc(rurl)+'">'+esc(t.title)+'</a> '+flag+mflag+'</div>'
+    return '<div class="hrow r'+(i+1)+'"><div class="hrank">'+(i+1)+'</div><div class="hmain"><div class="htitle"><a href="'+esc(rurl)+'" target="_blank" rel="noopener" data-read="'+esc(rurl)+'">'+esc(shownTitle)+'</a> '+flag+mflag+'</div>'
       +'<div class="hmeta"><span>'+esc(rep.source||((t.sources||[])[0]||""))+'</span><span>'+fmtRel(t.latest_at)+'</span><span>'+t.source_count+' '+T.sources+' · '+t.signal_count+' '+T.signals+'</span><span class="mono" style="font-weight:700;color:var(--acd)">'+Math.round(t.heat||t.score)+'</span></div>'
-      +reason+(t.image?'<img class="himg" src="'+esc(t.image)+'" alt="" loading="lazy">':"")+(rsum?'<div class="isum">'+esc(rsum.length>200?rsum.slice(0,200)+"…":rsum)+'</div>':"")+hotExpand(t)+bar+'<div class="chips">'+chips+'</div>'+fold+'</div></div>';
+      +reason+(t.image?'<img class="himg" src="'+esc(t.image)+'" alt="" loading="lazy">':"")+(dg||(rsum?'<div class="isum">'+esc(rsum.length>200?rsum.slice(0,200)+"…":rsum)+'</div>':""))+hotExpand(t)+bar+'<div class="chips">'+chips+'</div>'+fold+'</div></div>';
   }).join("")+'</div>';
   $$("[data-hs]",root).forEach(b=>b.onclick=()=>{ state.hotSort=b.dataset.hs; renderHot(); });
 }
