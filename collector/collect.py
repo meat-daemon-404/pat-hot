@@ -2578,6 +2578,57 @@ def check_inline_css(css):
     return problems
 
 
+def inline_app_script(html):
+    """取包含内嵌快照的那段 <script>…</script> 正文（即 app.js 注入处）。
+
+    不能取"第一个 <script>"：head 里还有主题引导脚本（2026-10-13 起），
+    产物里 <script> 不止一处。快照 const S 只可能出现在 app.js 段。
+    """
+    for m in re.finditer(r"<script>(.*?)</script>", html, re.S):
+        if "const S = " in m.group(1):
+            return m.group(1)
+    return None
+
+
+def check_template_drift(html):
+    """dist/index.html 必须等于当前模板的重渲染（快照数据除外）。
+
+    2026-10-13 的实际教训：折叠串台的模板修复提交后，仓库里的 dist/index.html
+    没重渲染——Pages 部署的正是仓库产物，修复根本没上线，只能事后手工补一笔
+    build 提交。模板与数据是两条独立变更线，"改了 collector/templates/ 却忘了
+    --rebuild"必须当场被拦下，而不是等部署完才发现线上还是旧页面。
+
+    比对方式：CSS 整块精确比对；JS 用 __SNAPSHOT__ 前后骨架比对（快照是数据，
+    每次采集都变，不属于模板）。文本模式读入已把 CRLF 归一成 LF。
+    """
+    problems = []
+    css = inline_style_block(html)
+    if css is None:
+        return ["dist/index.html 找不到内联 <style> 块，无法与模板比对"]
+    if css != APP_CSS:
+        problems.append("dist/index.html 的内联 CSS 与 collector/templates/app.css 不一致"
+                        "（改了模板没重渲染产物）：跑 python collector/collect.py --rebuild 再提交")
+    js = inline_app_script(html)
+    if js is None:
+        return problems + ["dist/index.html 找不到内嵌快照 <script>，无法与模板比对"]
+    head, sep, tail = APP_JS.partition("__SNAPSHOT__")
+    if not sep:
+        return problems + ["app.js 模板里没有 __SNAPSHOT__ 占位符（构建方式变了，同步更新本检查）"]
+    if not (js.startswith("\n" + head) and js.endswith(tail + "\n")):
+        problems.append("dist/index.html 的内联 JS 与 collector/templates/app.js 不一致"
+                        "（改了模板没重渲染产物）：跑 python collector/collect.py --rebuild 再提交")
+    # 页面骨架（app.html 的 head/body/footer）：占位符之间的每段都必须原样出现。
+    # 只比 CSS/JS 会漏掉 app.html 的改动——主题工作往 head 塞过引导脚本。
+    pos = -1
+    for part in re.split(r"/\*__CSS__\*/|/\*__JS__\*/|__GEN__", APP_HTML):
+        pos = html.find(part, pos + 1)
+        if pos < 0:
+            problems.append("dist/index.html 的页面骨架与 collector/templates/app.html 不一致"
+                            "（改了模板没重渲染产物）：跑 python collector/collect.py --rebuild 再提交")
+            break
+    return problems
+
+
 def check_contract(verbose=True):
     """返回问题列表；空列表表示对外契约完整。"""
     problems = []
@@ -2649,6 +2700,8 @@ def check_contract(verbose=True):
             html = f.read()
         # 内联 CSS 完整性：文件存在但样式被转义坏掉，同样等于线上事故。
         problems.extend(check_inline_css(inline_style_block(html)))
+        # 模板→产物同步：改了 collector/templates/ 没 --rebuild，修复根本不会上线。
+        problems.extend(check_template_drift(html))
         snap = snapshot_of_html(html)
         if snap is None:
             problems.append("dist/index.html 里找不到可解析的内嵌快照 const S = …")
