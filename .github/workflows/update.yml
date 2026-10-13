@@ -21,6 +21,12 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    # 兜底超时：任何一步挂住都在 50 分钟内明确失败，而不是占满 GitHub 的 6 小时默认上限。
+    # 2026-10-13 实测：定时任务在「运行采集器」一步挂了近 5 小时仍未退出，而上面的
+    # concurrency 是排队不取消（那是故意的，防人工推送打断采集），于是后面每次定时刷新
+    # 都堵在这个卡死的运行后面 —— 数据自 10-11 起再没成功发布过。正常跑只要 3–8 分钟
+    # （run#72–75 实测），50 分钟是 6–16 倍余量，只会砍掉挂死，不会误杀正常刷新。
+    timeout-minutes: 50
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -50,6 +56,10 @@ jobs:
       - name: 运行单元测试（纯标准库，无网络）
         run: python -m unittest discover -s tests -v
       - name: 运行采集器（真嵌入聚类 + LLM 中文摘要）
+        # 挂死就发生在这一步（run#76 拖满 6h、run#79 近 5h）：所有网络调用虽各自带
+        # timeout，但 LLM 增强是按批循环、没有全局时钟预算，上游半死不活时批间退避
+        # 可以无限累加。步骤级超时让失败信息直接指向采集器，而非笼统的 job 超时。
+        timeout-minutes: 40
         env:
           OPTOHOT_EMBED: "1"
           SENSENOVA_API_KEY: ${{ secrets.SENSENOVA_API_KEY }}
