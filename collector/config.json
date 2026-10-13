@@ -29,16 +29,21 @@
     "status_trending_min_sources": 3
   },
   "llm": {
-    "_comment": "可选 LLM 增强（商汤日日新 SenseNova，OpenAI 兼容接口）。默认关闭：不传 --llm 时零依赖运行，不产生费用。启用：设置环境变量 SENSENOVA_API_KEY（绝不在代码/仓库中写 key），运行采集时加 --llm。模型 ID 与接口地址以商汤官方文档/控制台为准，可用 SENSENOVA_MODEL 环境变量覆盖模型。 双打分与结构化抽取的 prompt 见 prompts 段。",
+    "_comment": "可选 LLM 增强（商汤日日新 SenseNova，OpenAI 兼容接口）。默认关闭：不传 --llm 时零依赖运行，不产生费用。启用：设置环境变量 SENSENOVA_API_KEY（绝不在代码/仓库中写 key），运行采集时加 --llm。模型 ID 与接口地址以商汤官方文档/控制台为准，可用 SENSENOVA_MODEL 环境变量覆盖模型。 双打分与结构化抽取的 prompt 见 prompts 段。 注意：本段会覆盖 collect.py 内置默认值——680da69 把批量/超时调成 3/120 修批量超时，只改了默认值没改这里，CI 一直仍在跑 8/40 的旧值（2026-10-13 发现）。 budget_seconds 是 LLM 阶段全局时间预算（熔断）：超预算时已增强条目照常发布、低分尾部留给下次刷新，堵住 2026-10-13 那种上游半死不活挂 5 小时堵死全部后续刷死的事故。material_* 是评分前补取详情页正文的有界参数（补齐正文仅供打分，落盘前剥离、不发布）。",
     "api_url": "https://token.sensenova.cn/v1/chat/completions",
-    "batch_size": 8,
+    "batch_size": 3,
     "density_penalty": 0.9,
     "max_items": 30,
     "model": "sensenova-6.8-flash-lite",
     "provider": "sensenova",
-    "timeout": 40,
+    "timeout": 120,
     "max_score_items": 30,
-    "max_extract_items": 20
+    "max_extract_items": 20,
+    "budget_seconds": 360,
+    "material_min_summary": 80,
+    "material_max_fetch": 20,
+    "material_per_source": 6,
+    "material_body_chars": 1200
   },
   "scoring": {
     "convergence_cap": 6,

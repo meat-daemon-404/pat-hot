@@ -1050,5 +1050,123 @@ class TestScorePromptContract(unittest.TestCase):
             self.assertIn("{listing}", collect.CONFIG["prompts"][key])
 
 
+class TestMaterialBackfill(unittest.TestCase):
+    """评分前补取正文（AIHOT：不凭标题打分）+ 内部字段绝不发布 + 时间预算熔断。"""
+
+    def _item(self, title, score, summary=None):
+        return {"id": collect.make_id(title, "https://e/" + title), "title": title,
+                "url": "https://e/" + title, "source": "OFweek 光电频道",
+                "source_base": "OFweek 光电频道", "source_type": "html",
+                "category": "激光", "published_at": None,
+                "discovered_at": "2026-10-13T00:00:00+00:00",
+                "summary": summary, "score": score, "keywords": []}
+
+    def setUp(self):
+        # 补取带 time.sleep(0.8) 的礼貌间隔，测试里全部桩掉，不然每轮慢十几秒
+        self._real_sleep = collect.time.sleep
+        collect.time.sleep = lambda s: None
+
+    def tearDown(self):
+        collect.time.sleep = self._real_sleep
+        collect.start_llm_budget(None)
+
+    def test_backfill_fetches_only_thin_summary_candidates(self):
+        items = [self._item("高干条", 90.0, None),
+                 self._item("已有摘要条", 80.0, "甲" * 300)]
+        called = []
+
+        def fake_fetch(url, **kw):
+            called.append(url)
+            return "乙" * 500
+
+        real = collect.fetch_text
+        collect.fetch_text = fake_fetch
+        try:
+            got = collect.llm_backfill_material(items, collect.CONFIG)
+        finally:
+            collect.fetch_text = real
+        self.assertEqual(got, 1)
+        self.assertEqual(called, ["https://e/高干条"], "已有充分摘要的不该再抓")
+        self.assertTrue(items[0].get("_material"))
+        self.assertNotIn("_material", items[1])
+
+    def test_backfill_honors_caps(self):
+        # 两个源各 15 条候选。per_source=2 时单源最多补 2 条；
+        # 若 material_max_fetch 更紧（=3），全局上限必须压住 per_source 配额之和。
+        def mk(i):
+            src = "OFweek 光电频道" if i % 2 == 0 else "OFweek 激光频道"
+            it = self._item("条%d" % i, 100.0 - i)
+            it["source"] = it["source_base"] = src
+            return it
+
+        items = [mk(i) for i in range(30)]
+        real = collect.fetch_text
+        collect.fetch_text = lambda url, **kw: "丙" * 800
+        try:
+            cfg = collect._deep_merge(collect.DEFAULT_CONFIG,
+                                      {"llm": {"material_max_fetch": 40,
+                                               "material_per_source": 2}})
+            got = collect.llm_backfill_material(items, cfg)
+            self.assertEqual(got, 4, "单源上限 2×2 源：per_source 必须压住候选量")
+            for it in items:
+                it.pop("_material", None)
+            cfg2 = collect._deep_merge(collect.DEFAULT_CONFIG,
+                                       {"llm": {"material_max_fetch": 3,
+                                                "material_per_source": 6}})
+            got2 = collect.llm_backfill_material(items, cfg2)
+        finally:
+            collect.fetch_text = real
+        self.assertEqual(got2, 3, "全频道上限必须压住单源配额")
+
+    def test_score_material_prefers_backfilled_body(self):
+        it = self._item("条", 90.0, "短摘要" * 5)
+        it["_material"] = "丁" * 300
+        got = collect.score_material(it, collect.CONFIG, limit=600)
+        self.assertTrue(got.startswith("丁"), "补齐正文优先于 RSS 摘要")
+        self.assertLessEqual(len(got), 600)
+
+    def test_strip_internal_fields_removes_everywhere(self):
+        items = [self._item("条", 90.0)]
+        items[0]["_material"] = "戊" * 200
+        topics = [{"representative": {"_material": "己", "url": "u"}}]
+        collect.strip_internal_fields(items, topics)
+        self.assertNotIn("_material", items[0])
+        self.assertNotIn("_material", topics[0]["representative"])
+
+    def test_budget_fuse_stops_loops(self):
+        collect.start_llm_budget(360)
+        self.assertFalse(collect.llm_over_budget("测试", 0))
+        collect._LLM_DEADLINE[0] = collect.time.monotonic() + 5  # 只剩 5s
+        self.assertTrue(collect.llm_over_budget("测试", 3),
+                        "剩余预算不足一次调用必须熔断")
+        collect.start_llm_budget(None)
+        self.assertFalse(collect.llm_over_budget("测试", 0),
+                         "None 预算=不限（测试直调/无 --llm 路径兼容）")
+
+    def test_llm_enhance_respects_budget(self):
+        calls = [0]
+
+        def fake_chat(messages, cfg, **kw):
+            calls[0] += 1
+            n = len([x for x in messages[0]["content"].split("\n\n") if x.startswith("[")])
+            return {str(i): {"zh_full": "庚" * 30, "density": "中"} for i in range(n)}
+
+        items = [self._item("条%d" % i, 100.0 - i, "材" * 100) for i in range(12)]
+        real_chat = collect._sensenova_chat
+        collect._sensenova_chat = fake_chat
+        try:
+            collect.start_llm_budget(360)
+            first = collect.llm_enhance(items, [], collect.CONFIG)
+            self.assertGreater(first, 0, "预算内正常增强")
+            # 手动把 deadline 推到 5s 后（低于 30s 的安全边际）→ 下一次进入循环即熔断
+            collect._LLM_DEADLINE[0] = collect.time.monotonic() + 5
+            before = calls[0]
+            second = collect.llm_enhance(items, [], collect.CONFIG)
+        finally:
+            collect._sensenova_chat = real_chat
+        self.assertEqual(calls[0], before, "预算用尽后一发调用都不许再发")
+        self.assertEqual(second, 0)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

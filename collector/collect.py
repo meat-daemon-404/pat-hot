@@ -130,6 +130,15 @@ DEFAULT_CONFIG = {
         "max_items": 30, "batch_size": 3, "timeout": 120,
         "density_penalty": 0.9,
         "max_score_items": 30, "max_extract_items": 20,
+        # 材料补取（AIHOT 纪律：只有标题不评分、先补正文）：摘要短于 material_min_summary
+        # 的评分候选，有界地抓详情页正文存 _material（内部字段，落盘前剥离、绝不发布）。
+        # max_fetch 全频道上限、per_source 防单站轰炸；失败静默降级——补材料是增益不是依赖。
+        # 输入截断沿用历史上调好的 600 字预算（批量超时/JSON 截断的教训），补齐的是
+        # "从空白到 600 字真正文"，不是把预算抬高。
+        "material_min_summary": 80, "material_max_fetch": 20,
+        "material_per_source": 6, "material_body_chars": 1200,
+        # LLM 阶段全局时间预算（熔断）：见 start_llm_budget / llm_over_budget
+        "budget_seconds": 360,
     },
     "prompts": {
         # 内置默认值与 collector/config.json 的 prompts 段保持一致（tests/test_collect.py
@@ -2136,6 +2145,106 @@ def generate_images(topics, dailies, generated, cfg, ch_id="tech"):
     return out
 
 
+# ---------------- 材料补取（AIHOT 纪律：先补正文，再打分） ----------------
+# LLM 全局时间预算（AIHOT 的"预算熔断"在单进程静态版的最小移植）。
+# 2026-10-13 实测事故：llm_enhance 覆盖全部条目、按批循环，上游半死不活时
+# 每批 重试退避+超时 无限累加，定时任务在采集步骤挂近 5 小时，把后面的刷新全堵死。
+# 步骤级超时只是把挂死换成失败（数据不发）；熔断让它在预算内收尾——
+# 高排序前已增强的条目保留、照常发布，只有低分尾部本轮跳过，下次刷新继续。
+_LLM_DEADLINE = [None]
+
+
+def start_llm_budget(seconds):
+    """每频道 LLM 阶段开始时设定截止时刻；None/0 表示不限（测试直调兼容）。"""
+    _LLM_DEADLINE[0] = time.monotonic() + seconds if seconds else None
+
+
+def llm_over_budget(stage, done):
+    """预算剩余不足以再发一次带重试的调用（<30s）→ 本阶段就此收尾。
+
+    已完成的条目保留照常发布，只有低分尾部本轮跳过（cands 按分数降序遍历），
+    下次刷新继续。返回 True 表示应当停止，并打一条可观测的日志。
+    """
+    d = _LLM_DEADLINE[0]
+    if d is not None and (d - time.monotonic()) < 30:
+        log("[!] LLM 时间预算用尽，%s 阶段停止：%d 条已完成，其余留给下次刷新"
+            % (stage, done))
+        return True
+    return False
+
+
+def llm_backfill_material(items, cfg):
+    """评分前补取详情页正文，存进内部字段 _material。
+
+    实测：LLM 打分候选里近六成只有标题级材料（HTML 列表站的 summary 为空，
+    如 OFweek 光电 20/30、Nature 量子物理 7/19），模型凭标题打分必然漂——
+    AIHOT 的做法是"只有标题、没有正文的先等待材料，不评分、不凭标题写文案"
+    （docs/selection.md 第 2 步），补材料走 sources 规则（sources/web-list.ts）。
+
+    _material 只供打分/摘要阶段使用，**绝不发布**：write_outputs 落盘前统一剥离
+    （AIHOT 的 site_fulltext 许可口径：默认只展示摘要 + 原文链接，站内全文需
+    信源明确允许；列表站抠下来的正文没有这个许可，塞进 summary 等于全文转载）。
+    有界抓取：全频道上限 + 单源上限 + 间隔，任何失败静默跳过——补材料是增益，
+    不是主流程依赖。返回补齐条数。
+    """
+    lc = cfg["llm"]
+    min_len = lc.get("material_min_summary", 80)
+    cap = lc.get("material_max_fetch", 20)
+    per_src = lc.get("material_per_source", 6)
+    body_chars = lc.get("material_body_chars", 1200)
+    cands = sorted(items, key=lambda i: i["score"], reverse=True)[:lc.get("max_score_items", 30)]
+    cands = [c for c in cands if len((c.get("summary") or "").strip()) < min_len and c.get("url")]
+    got = 0
+    per = {}
+    for it in cands:
+        if got >= cap or llm_over_budget("材料补取", got):
+            break
+        src = it["source"]
+        if per.get(src, 0) >= per_src:
+            continue
+        try:
+            text = fetch_text(it["url"])
+        except Exception:
+            continue
+        body = re.sub(r"\s+", " ", text).strip()[:body_chars]
+        # 抓回来全是导航/免责声明这类噪声时不认作正文（宁缺勿假）
+        if len(body) < max(min_len, 120):
+            continue
+        it["_material"] = body
+        per[src] = per.get(src, 0) + 1
+        got += 1
+        time.sleep(0.8)
+    if got:
+        log("[*] [%s] 材料补取：%d 条补齐详情页正文（仅内部打分用，不发布）" % (_CH, got))
+    return got
+
+
+def score_material(it, cfg, limit=None):
+    """打分/摘要用的材料：补齐的正文优先，其次 RSS 摘要。
+
+    limit 由各调用点决定（打分批量输入要压 token，摘要单条可以给更多材料）；
+    不传则用 material_body_chars。
+    """
+    lc = cfg["llm"]
+    budget = limit or lc.get("material_body_chars", 1200)
+    m = (it.get("_material") or "").strip()
+    src = m if len(m) >= 40 else (it.get("summary") or "").strip()
+    return re.sub(r"\s+", " ", src)[:budget]
+
+
+def strip_internal_fields(items, topics):
+    """落盘前剥离内部字段。
+
+    _material 是评分前补取的列表页正文，**绝不发布**：AIHOT 的 site_fulltext
+    许可口径——默认只展示摘要 + 原文链接，站内全文需要信源明确允许；
+    从列表站抠下来的正文没有这个许可，写进产物等于替原站全文转载。
+    """
+    for it in items or []:
+        it.pop("_material", None)
+    for t in topics or []:
+        (t.get("representative") or {}).pop("_material", None)
+
+
 # ---------------- 可选 LLM 增强（商汤日日新 SenseNova，默认关闭） ----------------
 def _parse_llm_json(text):
     """解析模型返回的 JSON。
@@ -2260,10 +2369,13 @@ def llm_enhance(items, topics, cfg):
     done = 0
     bs = max(1, lc["batch_size"])
     for s in range(0, len(cands), bs):
+        if llm_over_budget("LLM 增强", done):
+            break
         batch = cands[s:s + bs]
         def _listing(b, i):
-            desc = (b.get("summary") or "").strip()
-            desc = re.sub(r"\s+", " ", desc)[:600]
+            # 材料：补齐的详情页正文优先，其次 RSS 摘要（写作允许看来源，
+            # 打分才遮蔽来源——与 AIHOT content-understanding 的口径一致）
+            desc = score_material(b, cfg, limit=600)
             return "[%d] %s\n来源：%s\n摘要：%s" % (i, b.get("title", ""), b.get("source", ""), desc or "（无摘要，仅标题）")
         listing = "\n\n".join(_listing(b, i) for i, b in enumerate(batch))
         base_prompt = _ch_prompt("enhance", cfg).rsplit("{listing}", 1)[0]
@@ -2274,6 +2386,8 @@ def llm_enhance(items, topics, cfg):
             log("[!] LLM 增强整批失败，降级逐条重试: %s" % e)
             # 逐条降级：单条请求更小、更快，坏条目不连累好条目
             for b in batch:
+                if llm_over_budget("LLM 增强（逐条降级）", done):
+                    break
                 try:
                     single_prompt = base_prompt + _listing(b, 0)
                     sres = _sensenova_chat([{"role": "user", "content": single_prompt}], cfg, max_retries=2)
@@ -2311,7 +2425,7 @@ def _llm_score_once(batch, prompt_key, cfg):
     评的是材料内部的证据强度，不是来源；正文缺失时退化为仅标题。
     """
     def _one(b, i):
-        desc = re.sub(r"\s+", " ", (b.get("summary") or "").strip())[:600]
+        desc = score_material(b, cfg, limit=600)
         p = b.get("published_at")
         prec = date_precision(p)
         at = "未知（收录时间不代表发布时间）"
@@ -2349,6 +2463,8 @@ def llm_double_score(items, topics, cfg):
     done = 0
     bs = max(1, lc["batch_size"])
     for s in range(0, len(cands), bs):
+        if llm_over_budget("双打分", done):
+            break
         batch = cands[s:s + bs]
         try:
             sa = _llm_score_once(batch, "score_a", cfg)
@@ -2389,6 +2505,8 @@ def llm_extract(items, cfg):
     done = 0
     bs = max(1, lc["batch_size"])
     for s in range(0, len(cands), bs):
+        if llm_over_budget("结构化抽取", done):
+            break
         batch = cands[s:s + bs]
         listing = "\n".join("[%d] %s | %s" % (i, b.get("title", ""), b.get("source", ""))
                             for i, b in enumerate(batch))
@@ -2588,12 +2706,24 @@ def run_channel(ch_id, sources, args, generated):
     # 可选 LLM 增强（默认关闭；失败自动降级，不阻断）
     if args.llm:
         try:
+            # 全局时间预算熔断（AIHOT 预算熔断的最小移植）：上游半死不活时在
+            # 预算内收尾，已增强条目照常发布——2026-10-13 的 5 小时挂死堵死了
+            # 后续全部定时刷新，步骤级超时只把挂死换成失败，换不回数据发布。
+            start_llm_budget(CONFIG["llm"].get("budget_seconds", 360))
+            # 先补材料再打分/写作（AIHOT：不凭标题评分、不凭标题写文案）
+            llm_backfill_material(items, CONFIG)
             if llm_enhance(items, topics, CONFIG):
                 items.sort(key=lambda i: i["score"], reverse=True)
             llm_double_score(items, topics, CONFIG)
             llm_extract(items, CONFIG)
+            strip_internal_fields(items, topics)
         except Exception as e:
             log("[!] [%s] LLM 增强异常，已跳过: %s" % (ch_id, e))
+            strip_internal_fields(items, None)
+        finally:
+            # 预算只约束本频道的 LLM 阶段；异常路径也必须复位，否则残留的
+            # deadline 会把下一个频道的增强直接熔断掉。
+            start_llm_budget(None)
 
     daily = build_daily(items, topics, generated)
     existing_dailies = {}
