@@ -2,7 +2,9 @@ name: 定时更新 PAT-HOT 数据
 
 on:
   schedule:
-    - cron: "0 22,10 * * *"
+    # 分钟错开整点：GitHub Actions 整点是调度高负载时段，整点 cron 会被延迟数小时甚至直接丢弃
+    # （2026-10-12 18:00 那次直接没创建，另两次分别晚了 9h44m / 4h54m）。此前 17 */6 * * * 连续 10 天全成功。
+    - cron: "17 22,10 * * *"
   workflow_dispatch:
 
 permissions:
