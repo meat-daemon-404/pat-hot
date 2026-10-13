@@ -68,8 +68,11 @@ def score_case(item, cache, cfg, miss_counter):
     """跑两次独立评分，返回 (a, b)；任一失败返回 (None, None) 并计入覆盖率损失。"""
     scores = []
     for key in ("score_a", "score_b"):
+        # 缓存键含"渲染后"的 prompt 哈希：_ch_prompt 会按频道替换领域词，
+        # 直接哈希原文会让 physics 复用 tech 的评分结果。
+        rendered = collect._ch_prompt(key, cfg)
         ck = "%s|%s" % (_digest(item, key),
-                        hashlib.sha1(cfg["prompts"][key].encode("utf-8")).hexdigest()[:12])
+                        hashlib.sha1(rendered.encode("utf-8")).hexdigest()[:12])
         if ck in cache:
             scores.append(cache[ck])
             continue

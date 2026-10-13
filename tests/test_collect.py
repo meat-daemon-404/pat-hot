@@ -980,6 +980,20 @@ class TestScorePromptContract(unittest.TestCase):
         self.assertIn("输入安全边界", p)
         self.assertIn("{listing}", p)
 
+    def test_pages_function_prompt_keeps_same_discipline(self):
+        # functions/api/summarize.js 是线上阅读路径的按需摘要，读不到 Python 侧配置，
+        # 自带一份 prompt。两处漂移过一次（离线侧修掉"根据标题合理展开"的命令式
+        # 编造，线上 Function 还留着）。这个测试锁住它别再漂。
+        p = os.path.join(ROOT, "functions", "api", "summarize.js")
+        if not os.path.exists(p):
+            self.skipTest("functions/api/summarize.js 不存在")
+        with open(p, encoding="utf-8") as f:
+            js = f.read()
+        self.assertNotIn("合理展开", js, "线上 Function 不许命令模型按标题编造正文")
+        self.assertIn("防幻觉规则", js)
+        self.assertIn("输入安全边界", js)
+        self.assertIn("宁短勿扩", js)
+
     def test_llm_enhance_uses_external_prompt(self):
         # llm_enhance 必须走 prompts.enhance，不许再写死内联 prompt
         captured = {}
