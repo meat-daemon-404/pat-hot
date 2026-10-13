@@ -7,3 +7,7 @@ Thumbs.db
 # wrangler 本地缓存含账号凭据（wrangler-account.json），绝不能进仓库
 .wrangler/
 *.log
+# 门槛校准的标注样本与评测报告（个人判断口径 + 模型返回，属本地工作数据）
+.data/
+# 环境变量文件可能含 SENSENOVA_API_KEY 等真实密钥
+.env

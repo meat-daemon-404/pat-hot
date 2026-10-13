@@ -9,6 +9,7 @@
 """
 import json
 import os
+import re
 import shutil
 import sys
 import tempfile
@@ -142,6 +143,62 @@ class TestParseDate(unittest.TestCase):
             self.assertIsNotNone(dt, s)
             self.assertIsNotNone(dt.tzinfo, s)
             self.assertEqual(dt.utcoffset(), timedelta(0), s)
+
+    def test_named_tz_abbreviations_parse(self):
+        # CPython 的 %Z 认不了 CST/EST，以前这类 pubDate 整源解析为 None。
+        # 实测知识分子的 feed 全是 "… 22:56:36 CST"。
+        zh = collect.parse_date("Sun, 11 Oct 2026 22:56:36 CST", "知识分子",
+                                "http://www.zhishifenzi.com/rss")
+        self.assertEqual(zh, datetime(2026, 10, 11, 14, 56, 36, tzinfo=timezone.utc))
+        us = collect.parse_date("Fri, 09 Oct 2026 18:30:00 EST", "IEEE Spectrum",
+                                "https://spectrum.ieee.org/rss/fulltext")
+        self.assertEqual(us, datetime(2026, 10, 9, 23, 30, tzinfo=timezone.utc))
+
+    def test_cst_disambiguated_by_source_not_string(self):
+        # 同一个 "CST"：中文信源按北京时（UTC+8），其它信源按美国中部标准时（UTC-6）。
+        # 不追随夏令时：缩写本身已歧义，再叠 DST 推断只会引入更多猜测；
+        # 一小时误差远小于旧实现"整条解析失败、回退收录时间"的偏差。
+        zh = collect.parse_date("Sun, 11 Oct 2026 22:00:00 CST", "COEMA 中国光电子行业协会",
+                                "https://www.coema.org.cn/")
+        us = collect.parse_date("Sun, 11 Oct 2026 22:00:00 CST", "Some US Blog",
+                                "https://blog.example.com/feed")
+        self.assertEqual(zh, datetime(2026, 10, 11, 14, 0, tzinfo=timezone.utc))
+        self.assertEqual(us, datetime(2026, 10, 12, 4, 0, tzinfo=timezone.utc))
+
+    def test_naive_datetime_uses_source_timezone(self):
+        # 裸时间是中文 CMS 的常态：按 +08:00 读，23:30 归当天而不是 UTC 推后一天
+        cn = collect.parse_date("2026-10-12T23:30:00", "OFweek 光电频道",
+                                "https://www.ofweek.com/")
+        self.assertEqual(cn.astimezone(collect.TZ_CN).isoformat(), "2026-10-12T23:30:00+08:00")
+        en = collect.parse_date("2026-10-12T23:30:00", "Nature Photonics",
+                                "https://www.nature.com/nphoton.rss")
+        self.assertEqual(en, datetime(2026, 10, 12, 23, 30, tzinfo=timezone.utc))
+
+    def test_explicit_Z_never_inherits_source_timezone(self):
+        # 中文名只是显示标签：phys.org 是海外站，带 Z 的瞬时绝不许挪 +08:00
+        dt = collect.parse_date("2026-10-11T10:50:55Z", "Phys.org 物理新闻",
+                                "https://phys.org/rss-feed/physics-news/")
+        self.assertEqual(dt, datetime(2026, 10, 11, 10, 50, 55, tzinfo=timezone.utc))
+
+    def test_month_precision_parses_and_is_earliest_instant(self):
+        # OFweek/COEMA 的 url_date 只抠得出年月。旧实现返回 None →
+        # eff_dt 回退收录时间 → 2022 年的旧文拿满时效分混进精选（实测 5 条 ≥65）。
+        dt = collect.parse_date("2022-05", "OFweek 激光频道", "https://laser.ofweek.com/")
+        self.assertEqual(dt, datetime(2022, 5, 1, tzinfo=collect.TZ_CN).astimezone(timezone.utc))
+        self.assertEqual(collect.date_precision("2022-05"), "month")
+        self.assertEqual(collect.date_precision("2022"), "year")
+        self.assertEqual(collect.date_precision("2022-05-01"), "day")
+        self.assertEqual(collect.date_precision("Sun, 11 Oct 2026 22:56:36 CST"), "minute")
+        self.assertIsNone(collect.date_precision("yesterday"))
+
+    def test_eff_dt_does_not_fall_back_for_month_dates(self):
+        it = {"published_at": "2022-05", "url": "https://laser.ofweek.com/x.html",
+              "source": "OFweek 激光频道", "source_base": "OFweek 激光频道",
+              "discovered_at": "2026-10-12T10:00:00+00:00"}
+        dt = collect.eff_dt(it)
+        # 月级发布时间必须被采用（2022-05-01），而不是回退到收录时间（2026）
+        self.assertEqual(dt.year, 2022)
+        self.assertGreater(collect.age_days(dt), 1000)
 
 
 class TestDedupeAndIdentity(unittest.TestCase):
@@ -858,6 +915,125 @@ class TestLiveReadback(unittest.TestCase):
             "<html><body>旧版 Opto-Hot</body></html>", "test", local_generated=None)
         self.assertTrue(any("快照" in x for x in problems),
                         "无 const S 的旧产物必须报：%s" % problems)
+
+
+class TestScorePromptContract(unittest.TestCase):
+    """评分 prompt 的结构契约（对标 AIHOT selection-score.md）。
+
+    锁住的回归：
+    1. config.json 的 prompts 键集合必须与内置默认值一致——只改一处忘了另一处，
+       --llm 在本地（读 config.json）和缺省回退（读 DEFAULT_CONFIG）会走两套标准。
+    2. 类型权重表每行之和必须等于 10——这是"attention 天然落在 0-100"的唯一依据，
+       某行被改成和≠10 后分数会系统性漂移，精选门槛随之失真而没人报警。
+    3. 注入防护边界与噪声上限字样必须在——去掉它们等于把打分交回给自由心证。
+    """
+
+    def _types_and_weights(self, prompt):
+        rows = re.findall(
+            r"^-\s*(discovery|technology|product|industry|facility|opinion|explainer)"
+            r"\s+(\d)\s+(\d)\s+(\d)\s+(\d)\s+(\d)", prompt, re.M)
+        return rows
+
+    def test_config_prompts_match_defaults_keys(self):
+        cfg_keys = {k for k in collect.CONFIG["prompts"] if not k.startswith("_")}
+        def_keys = {k for k in collect.DEFAULT_CONFIG["prompts"] if not k.startswith("_")}
+        self.assertEqual(cfg_keys, def_keys,
+                         "config.json 与内置默认值的 prompts 键不一致：%s vs %s"
+                         % (sorted(cfg_keys), sorted(def_keys)))
+
+    def test_score_a_weight_rows_sum_to_ten(self):
+        p = collect.CONFIG["prompts"]["score_a"]
+        rows = self._types_and_weights(p)
+        self.assertEqual(len(rows), 7, "七类内容类型应当齐全，实际 %d 行" % len(rows))
+        for r in rows:
+            total = sum(int(x) for x in r[1:])
+            self.assertEqual(total, 10, "%s 行权重之和=%d，应为 10" % (r[0], total))
+
+    def test_score_b_axis_weights_sum_to_ten(self):
+        # score_b 用 mat×4+inc×3+ver×2+tim×1，权重和同样必须是 10
+        self.assertIn("mat×4", collect.CONFIG["prompts"]["score_b"])
+        self.assertEqual(4 + 3 + 2 + 1, 10)
+
+    def test_injection_guard_present(self):
+        for key in ("score_a", "score_b", "extract"):
+            self.assertIn("输入安全边界" if key != "extract" else "不可信数据",
+                          collect.CONFIG["prompts"][key],
+                          "%s 缺少 prompt-injection 防护边界" % key)
+
+    def test_noise_caps_present(self):
+        # 噪声上限是 AIHOT 口径的核心：没有它，长正文和大厂名会自发抬高分数
+        self.assertIn("必须压住的噪声", collect.CONFIG["prompts"]["score_a"])
+        self.assertIn("sig ≤ 4", collect.CONFIG["prompts"]["score_a"])
+        self.assertIn("必须压住的噪声", collect.CONFIG["prompts"]["score_b"])
+
+    def test_anti_hallucination_present_in_extract(self):
+        self.assertIn("防幻觉", collect.CONFIG["prompts"]["extract"])
+        self.assertIn("宁缺不造", collect.CONFIG["prompts"]["extract"])
+
+    def test_enhance_prompt_anti_hallucination(self):
+        # 对标 AIHOT rules-anti-hallucination.md：旧 prompt 里"无摘要时根据标题合理
+        # 展开"是在命令模型编造。新口径必须反向：只复述标题、宁短勿扩。
+        p = collect.CONFIG["prompts"]["enhance"]
+        self.assertNotIn("合理展开", p)
+        self.assertIn("宁短勿扩", p)
+        self.assertIn("防幻觉规则", p)
+        self.assertIn("输入安全边界", p)
+        self.assertIn("{listing}", p)
+
+    def test_llm_enhance_uses_external_prompt(self):
+        # llm_enhance 必须走 prompts.enhance，不许再写死内联 prompt
+        captured = {}
+        real = collect._sensenova_chat
+
+        def fake(messages, cfg, **kw):
+            captured["prompt"] = messages[0]["content"]
+            return {"0": {"summary": " ok", "zh_full": "ok", "density": "中"}}
+
+        items = [{"url": "u1", "title": "标题一", "source": "S", "score": 90.0,
+                  "summary": None, "id": "i1", "discovered_at": "2026-10-13T00:00:00+00:00"}]
+        collect._sensenova_chat = fake
+        try:
+            collect.llm_enhance(items, [], collect.CONFIG)
+        finally:
+            collect._sensenova_chat = real
+        self.assertIn("防幻觉规则", captured.get("prompt", ""))
+        self.assertIn("[0] 标题一", captured.get("prompt", ""))
+
+    def test_score_input_hides_source_and_shows_material(self):
+        # AIHOT buildScoreInput 口径：评分输入故意不给信源名/分级（防来源名气锚定），
+        # 给北京时间与正文；正文缺失时用标题兜底而不是留空。
+        captured = {}
+        real = collect._sensenova_chat
+
+        def fake(messages, cfg, **kw):
+            captured["prompt"] = messages[0]["content"]
+            return {"0": 70, "1": 40}
+
+        batch = [
+            {"title": "钙钛矿组件效率刷新", "source": "Nature Photonics",
+             "source_base": "Nature Photonics", "url": "https://www.nature.com/x",
+             "published_at": "2026-10-12T09:00:00+00:00",
+             "summary": "研究团队宣布效率达到 26.1%。"},
+            {"title": "只有标题的条目", "source": "某公众号",
+             "source_base": "某公众号", "url": "https://mp.example/1",
+             "published_at": None, "summary": None},
+        ]
+        collect._sensenova_chat = fake
+        try:
+            out = collect._llm_score_once(batch, "score_a", collect.CONFIG)
+        finally:
+            collect._sensenova_chat = real
+        p = captured.get("prompt", "")
+        self.assertEqual(out, {0: 70.0, 1: 40.0})
+        self.assertNotIn("Nature Photonics", p, "信源名会锚定评分，输入必须遮蔽")
+        self.assertNotIn("某公众号", p)
+        self.assertIn("26.1%", p, "正文材料必须进入评分输入")
+        self.assertIn("未知（收录时间不代表发布时间）", p, "无发布时间必须显式声明，不许回退收录时间")
+        self.assertIn("【发布时间（北京时间）】", p)
+
+    def test_listing_placeholder_present(self):
+        for key in ("score_a", "score_b", "extract"):
+            self.assertIn("{listing}", collect.CONFIG["prompts"][key])
 
 
 if __name__ == "__main__":
