@@ -130,6 +130,8 @@ DEFAULT_CONFIG = {
         "max_items": 30, "batch_size": 3, "timeout": 120,
         "density_penalty": 0.9,
         "max_score_items": 30, "max_extract_items": 20,
+        # 关推理链：见 _sensenova_chat 注释，实测不关时正文 JSON 预算不足直接畸形
+        "disable_thinking": True,
     },
     "prompts": {
         # 内置默认值与 collector/config.json 的 prompts 段保持一致（tests/test_collect.py
@@ -2176,12 +2178,21 @@ def _sensenova_chat(messages, cfg, max_retries=3):
     if not api_key:
         raise RuntimeError("未设置 SENSENOVA_API_KEY")
     model = os.environ.get("SENSENOVA_MODEL") or lc["model"]
-    payload = json.dumps({
+    req_body = {
         "model": model,
         "messages": messages,
         "temperature": 0.2,
         "response_format": {"type": "json_object"},
-    }).encode("utf-8")
+    }
+    # 关掉推理链：sensenova-6.8-flash-lite 默认把 ~90% 的输出预算花在 reasoning 上
+    # （实测 8 条一批 completion=12605，其中 reasoning=11404），结果正文 JSON 写到一半
+    # 就断，返回畸形体（"Expecting ',' delimiter: line 3 column 41"）却仍是 finish=stop——
+    # 不是截断，是没预算写完整。这正是 2026-10-12 定时任务里 zh_full 全空、且整轮
+    # 跑到 6h 上限被杀的直接原因。thinking=disabled 后同批 9.0s / 978 token / 8 条全可解析，
+    # 摘要质量不降（防幻觉九条照样遵守，无摘要条目仍按规则「宁短勿扩」）。
+    if lc.get("disable_thinking", True):
+        req_body["thinking"] = {"type": "disabled"}
+    payload = json.dumps(req_body).encode("utf-8")
     with_retry = lc["timeout"]
     last_err = None
     for attempt in range(max_retries):

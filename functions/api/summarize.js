@@ -104,6 +104,10 @@ export async function onRequestPost(context) {
           messages,
           temperature: attempt === 0 ? 0.2 : 0,
           response_format: { type: "json_object" },
+          // 关推理链：模型默认把 ~90% 输出预算花在 reasoning 上，正文 JSON 写到一半
+          // 就断（finish=stop 但畸形），且单条常超 20s——逼近 Pages Function 30s 上限，
+          // 实测线上 5 次里 1 次失败。disabled 后同请求 2~10s 且稳定可解析，摘要质量不降。
+          thinking: { type: "disabled" },
         }),
       });
       if (!resp.ok) {

@@ -792,6 +792,65 @@ class TestLlmJsonFence(unittest.TestCase):
             os.environ.pop("SENSENOVA_API_KEY", None)
 
 
+class TestLlmThinkingDisabled(unittest.TestCase):
+    """锁住 2026-10-13 的根因：sensenova-6.8-flash-lite 默认把 ~90% 输出预算花在
+    reasoning 上（实测 8 条一批 completion=12605 / reasoning=11404），正文 JSON 写到
+    一半就断，返回畸形体却仍是 finish=stop。zh_full 因此全站为空，且整轮采集
+    慢到撞 job 超时被杀。thinking={"type":"disabled"} 后同批 9.0s / 978 token / 8 条全可解析。"""
+
+    def _payload(self, cfg):
+        captured = {}
+
+        class R:
+            def read(self):
+                return json.dumps({"choices": [{"message": {"content": '{"0":{}}'}}]}).encode("utf-8")
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+        def fake(req, timeout=None):
+            captured["body"] = json.loads(req.data.decode("utf-8"))
+            return R()
+
+        os.environ["SENSENOVA_API_KEY"] = "k"
+        real = collect.urllib.request.urlopen
+        try:
+            collect.urllib.request.urlopen = fake
+            collect._sensenova_chat([{"role": "user", "content": "x"}], cfg, max_retries=1)
+        finally:
+            collect.urllib.request.urlopen = real
+            os.environ.pop("SENSENOVA_API_KEY", None)
+        return captured["body"]
+
+    def test_default_config_sends_disabled_thinking(self):
+        body = self._payload(collect.CONFIG)
+        self.assertEqual(body.get("thinking"), {"type": "disabled"})
+
+    def test_default_config_value_has_the_key(self):
+        self.assertIn("disable_thinking", collect.DEFAULT_CONFIG["llm"])
+        self.assertTrue(collect.DEFAULT_CONFIG["llm"]["disable_thinking"])
+
+    def test_can_be_reenabled_by_config(self):
+        cfg = json.loads(json.dumps(collect.CONFIG))
+        cfg["llm"]["disable_thinking"] = False
+        body = self._payload(cfg)
+        self.assertNotIn("thinking", body)
+
+    def test_pages_function_sends_same_flag(self):
+        # 线上按需路径读不到 Python 侧配置，自带一份请求体。两处漂移过一次
+        # （prompt 口径），这条锁住 thinking 开关也别只改一边。
+        p = os.path.join(ROOT, "functions", "api", "summarize.js")
+        if not os.path.exists(p):
+            self.skipTest("functions/api/summarize.js 不存在")
+        with open(p, encoding="utf-8") as f:
+            js = f.read()
+        self.assertIn('thinking: { type: "disabled" }', js,
+                      "线上 Function 也必须关推理链，否则单条逼近 30s 上限、约两成失败")
+
+
 class TestChannelSwitchResetsFeedState(unittest.TestCase):
     """切频道必须清空精选页的日期折叠状态。
 
