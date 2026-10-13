@@ -1,79 +1,115 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T14:08:22.657157+00:00",
-  "count": 6,
+  "generatedAt": "2026-10-13T02:21:19.041288+00:00",
+  "count": 10,
   "items": [
     {
       "terms": [
-        "awarded",
-        "cern",
-        "congratulates",
-        "discovery",
-        "francis",
-        "halzen",
-        "high-energy",
-        "neutrinos",
-        "nobel",
-        "physics",
-        "pioneering",
-        "pride",
-        "prize",
-        "role",
-        "winner"
+        "band-limited",
+        "charge",
+        "chromatically",
+        "collective",
+        "conservation",
+        "correlated",
+        "decay",
+        "drive",
+        "driven",
+        "emergent",
+        "engineering",
+        "ergodicity-breaking",
+        "excitations",
+        "fields",
+        "generic",
+        "holstein",
+        "illumination",
+        "kagome",
+        "lattice",
+        "laws",
+        "magnetic",
+        "many-body",
+        "periodic",
+        "phonons",
+        "profilometry",
+        "quantum",
+        "scaling",
+        "speed",
+        "stable",
+        "strong",
+        "ultrahigh-speed",
+        "universal"
       ],
       "source_count": 3,
-      "signal_count": 3,
+      "signal_count": 5,
       "sources": [
-        "CERN 新闻",
-        "New Scientist 物理",
-        "Phys.org 物理新闻"
+        "Nature Physics 学科聚合",
+        "Nature 量子物理",
+        "arXiv quant-ph 论文速递"
       ],
-      "score": 39.7,
-      "latest_at": "2026-10-12T14:08:22.657157+00:00",
+      "score": 53.3,
+      "latest_at": "2026-10-13T02:21:19.041288+00:00",
       "representative": {
-        "title": "CERN congratulates Nobel Prize winner Francis Halzen",
-        "url": "https://home.cern/cern-congratulates-nobel-prize-winner-francis-halzen/",
-        "source": "CERN 新闻",
-        "published_at": "2026-10-06T14:54:19+00:00",
-        "score": 62.0,
-        "summary": "The 2026 Nobel Prize in Physics has been awarded to Francis Halzen for his contributions to the IceCube Neutrino Observatory, which discovered high-energy neutrinos coming from far beyond our Solar System. This work is paving the way for a ",
-        "zh_full": null
+        "title": "Engineering Ergodicity-Breaking and Stable Emergent Conservation Laws in a Generic Quantum Many-body System Under Strong Periodic Drive",
+        "url": "https://arxiv.org/abs/2610.12551",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-10-12T04:00:00+00:00",
+        "score": 54.9,
+        "summary": "arXiv:2610.12551v1 Announce Type: new Abstract: A periodically driven quantum many-body system is believed to approach a locally infinite-temperature-like state as dictated by the ergodicity hypothesis, when all the couplings/parameters are",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2610.12551",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
       },
       "folded_count": 2,
-      "title": "CERN congratulates Nobel Prize winner Francis Halzen",
-      "id": "af840360cfb2",
+      "title": "Collective charge excitations in the kagome lattice driven by Holstein phonons and magnetic fields",
+      "id": "11780d746a21",
       "links": [
         {
-          "title": "CERN congratulates Nobel Prize winner Francis Halzen",
-          "url": "https://home.cern/cern-congratulates-nobel-prize-winner-francis-halzen/",
-          "source": "CERN 新闻",
-          "score": 62.0,
-          "published_at": "2026-10-06T14:54:19+00:00"
+          "title": "Collective charge excitations in the kagome lattice driven by Holstein phonons and magnetic fields",
+          "url": "https://www.nature.com/articles/s41598-026-73723-0",
+          "source": "Nature Physics 学科聚合",
+          "score": 68.3,
+          "published_at": "2026-10-12T00:00:00+00:00"
         },
         {
-          "title": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
-          "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 61.9,
-          "published_at": "2026-10-06T10:26:02+00:00"
+          "title": "Ultrahigh-speed chromatically band-limited illumination profilometry",
+          "url": "https://www.nature.com/articles/s41467-026-78478-w",
+          "source": "Nature Physics 学科聚合",
+          "score": 68.3,
+          "published_at": "2026-10-12T00:00:00+00:00"
         },
         {
-          "title": "Nobel physics winner's pride at pioneering AI role",
-          "url": "https://phys.org/news/2026-10-nobel-physics-winner-pride-ai.html",
-          "source": "Phys.org 物理新闻",
-          "score": 56.0,
-          "published_at": null
+          "title": "A universal speed limit for collective decay in quantum systems",
+          "url": "https://www.nature.com/articles/s41567-026-03445-7",
+          "source": "Nature 量子物理",
+          "score": 56.9,
+          "published_at": "2026-09-25T00:00:00+00:00"
+        },
+        {
+          "title": "Universal scaling laws for correlated decay of many-body quantum systems",
+          "url": "https://www.nature.com/articles/s41567-026-03448-4",
+          "source": "Nature 量子物理",
+          "score": 56.9,
+          "published_at": "2026-09-25T00:00:00+00:00"
+        },
+        {
+          "title": "Engineering Ergodicity-Breaking and Stable Emergent Conservation Laws in a Generic Quantum Many-body System Under Strong Periodic Drive",
+          "url": "https://arxiv.org/abs/2610.12551",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 54.9,
+          "published_at": "2026-10-12T04:00:00+00:00"
         }
       ],
       "top_terms": [
-        "nobel",
-        "physics",
-        "winner",
-        "prize",
-        "pride"
+        "quantum",
+        "collective",
+        "speed",
+        "universal",
+        "decay"
       ],
       "rank": 1,
-      "heat": 39.7,
+      "heat": 53.3,
       "status": "发酵中"
     },
     {
@@ -98,53 +134,59 @@
         "strategies",
         "x-rays"
       ],
-      "source_count": 2,
+      "source_count": 3,
       "signal_count": 4,
       "sources": [
+        "Nature Physics 学科聚合",
         "Nature 量子物理",
         "New Scientist 物理"
       ],
-      "score": 39.0,
-      "latest_at": "2026-10-12T14:08:22.657157+00:00",
+      "score": 43.2,
+      "latest_at": "2026-10-13T02:21:19.041288+00:00",
       "representative": {
         "title": "Chip-mediated manipulation of photonic quantum skyrmions",
         "url": "https://www.nature.com/articles/s41567-026-03487-x",
-        "source": "Nature 量子物理",
+        "source": "Nature Physics 学科聚合",
         "published_at": "2026-10-12T00:00:00+00:00",
-        "score": 63.8,
+        "score": 66.8,
         "summary": "",
-        "zh_full": null
+        "zh_full": null,
+        "refs": {
+          "doi": "10.1038/s41567-026-03487-x",
+          "via": "self_meta",
+          "confidence": "verified"
+        }
       },
-      "folded_count": 1,
+      "folded_count": 2,
       "title": "Chip-mediated manipulation of photonic quantum skyrmions",
       "id": "4434baea1bdc",
       "links": [
         {
           "title": "Chip-mediated manipulation of photonic quantum skyrmions",
           "url": "https://www.nature.com/articles/s41567-026-03487-x",
-          "source": "Nature 量子物理",
-          "score": 63.8,
+          "source": "Nature Physics 学科聚合",
+          "score": 66.8,
           "published_at": "2026-10-12T00:00:00+00:00"
         },
         {
           "title": "Deterministic and programmable fusion for the scalable generation of photonic graph states",
           "url": "https://www.nature.com/articles/s41567-026-03471-5",
           "source": "Nature 量子物理",
-          "score": 55.8,
+          "score": 58.8,
           "published_at": "2026-09-30T00:00:00+00:00"
         },
         {
           "title": "Scaling strategies for photonic neural networks",
           "url": "https://www.nature.com/articles/s42254-026-00984-z",
           "source": "Nature 量子物理",
-          "score": 55.1,
+          "score": 58.1,
           "published_at": "2026-09-29T00:00:00+00:00"
         },
         {
           "title": "Nuclear fusion experiment produces the brightest X-rays on Earth yet",
           "url": "https://www.newscientist.com/article/2589237-nuclear-fusion-experiment-produces-the-brightest-x-rays-on-earth-yet/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 46.8,
+          "score": 49.8,
           "published_at": "2026-09-16T12:00:00+00:00"
         }
       ],
@@ -156,7 +198,208 @@
         "manipulation"
       ],
       "rank": 2,
-      "heat": 39.0,
+      "heat": 43.2,
+      "status": "发酵中"
+    },
+    {
+      "terms": [
+        "analog",
+        "analogue",
+        "continuous-time",
+        "ising",
+        "mitigation",
+        "noise",
+        "quantum",
+        "shastry-sutherland",
+        "simulation"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Nature Physics 学科聚合",
+        "arXiv quant-ph 论文速递"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-10-13T02:21:19.041288+00:00",
+      "representative": {
+        "title": "Analog quantum simulation of Shastry-Sutherland Ising materials",
+        "url": "https://arxiv.org/abs/2610.12800",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-10-12T04:00:00+00:00",
+        "score": 47.0,
+        "summary": "arXiv:2610.12800v1 Announce Type: new Abstract: Frustrated magnets host rich emergent behavior because competing interactions generate dense manifolds of low-energy states. The Ising Shastry-Sutherland model is a paradigmatic setting, motiv",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2610.12800",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "Continuous-time noise mitigation in analogue quantum simulation",
+      "id": "cf5df45aaea5",
+      "links": [
+        {
+          "title": "Continuous-time noise mitigation in analogue quantum simulation",
+          "url": "https://www.nature.com/articles/s41467-026-78310-5",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.4,
+          "published_at": "2026-10-12T00:00:00+00:00"
+        },
+        {
+          "title": "Analog quantum simulation of Shastry-Sutherland Ising materials",
+          "url": "https://arxiv.org/abs/2610.12800",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.0,
+          "published_at": "2026-10-12T04:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "quantum",
+        "simulation",
+        "continuous",
+        "noise",
+        "mitigation"
+      ],
+      "rank": 3,
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "advantage",
+        "architecture",
+        "continuous-variable",
+        "digital",
+        "distribution",
+        "exponential",
+        "quantum",
+        "receiver",
+        "robust",
+        "state"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Nature Physics 学科聚合",
+        "arXiv quant-ph 论文速递"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-10-13T02:21:19.041288+00:00",
+      "representative": {
+        "title": "A robust digital receiver architecture for continuous-variable quantum key distribution",
+        "url": "https://arxiv.org/abs/2610.13090",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-10-12T04:00:00+00:00",
+        "score": 47.0,
+        "summary": "arXiv:2610.13090v1 Announce Type: new Abstract: Continuous-variable quantum key distribution utilizes advanced digital signal processing techniques to mitigate channel impairments, driving the progress of high-performance quantum secure com",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2610.13090",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "Exponential advantage in continuous-variable quantum state learning",
+      "id": "afaf737526aa",
+      "links": [
+        {
+          "title": "Exponential advantage in continuous-variable quantum state learning",
+          "url": "https://www.nature.com/articles/s41534-026-01391-z",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.4,
+          "published_at": "2026-10-12T00:00:00+00:00"
+        },
+        {
+          "title": "A robust digital receiver architecture for continuous-variable quantum key distribution",
+          "url": "https://arxiv.org/abs/2610.13090",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.0,
+          "published_at": "2026-10-12T04:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "continuous",
+        "variable",
+        "quantum",
+        "exponential",
+        "advantage"
+      ],
+      "rank": 4,
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "bidirectional",
+        "center",
+        "centers",
+        "continuous-wave",
+        "diamond",
+        "field",
+        "hundreds",
+        "interconversion",
+        "magnetic",
+        "magnetometry",
+        "megahertz",
+        "microwave",
+        "nitrogen",
+        "nitrogen-vacancy",
+        "strong",
+        "transverse",
+        "vacancy"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Nature Physics 学科聚合",
+        "arXiv quant-ph 论文速递"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-10-13T02:21:19.041288+00:00",
+      "representative": {
+        "title": "Continuous-wave AC magnetometry up to hundreds of megahertz using nitrogen-vacancy centers under a strong transverse magnetic field",
+        "url": "https://arxiv.org/abs/2610.13153",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-10-12T04:00:00+00:00",
+        "score": 47.0,
+        "summary": "arXiv:2610.13153v1 Announce Type: new Abstract: Nitrogen-vacancy (NV) centers in diamond are promising quantum sensors for AC magnetic fields. However, conventional dynamical-decoupling-based magnetometry becomes technically demanding at hi",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2610.13153",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "Bidirectional interconversion of microwave and light with diamond nitrogen vacancy center",
+      "id": "b5257617e48d",
+      "links": [
+        {
+          "title": "Bidirectional interconversion of microwave and light with diamond nitrogen vacancy center",
+          "url": "https://www.nature.com/articles/s41598-026-75363-w",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.4,
+          "published_at": "2026-10-12T00:00:00+00:00"
+        },
+        {
+          "title": "Continuous-wave AC magnetometry up to hundreds of megahertz using nitrogen-vacancy centers under a strong transverse magnetic field",
+          "url": "https://arxiv.org/abs/2610.13153",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.0,
+          "published_at": "2026-10-12T04:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "nitrogen",
+        "vacancy",
+        "bidirectional",
+        "interconversion",
+        "microwave"
+      ],
+      "rank": 5,
+      "heat": 42.0,
       "status": "关注中"
     },
     {
@@ -167,13 +410,13 @@
         "知识分子"
       ],
       "score": 38.0,
-      "latest_at": "2026-10-12T14:08:22.657157+00:00",
+      "latest_at": "2026-10-13T02:21:19.041288+00:00",
       "representative": {
         "title": "2026诺贝尔化学奖给了法国95岁学者和日本75岁学者，日本科学诺奖得主已有28位",
         "url": "http://www.zhishifenzi.com/news/multiple/10694.html",
         "source": "知识分子",
-        "published_at": null,
-        "score": 49.3,
+        "published_at": "2026-10-11T12:18:09+00:00",
+        "score": 58.3,
         "summary": "10月7日，2026年诺贝尔化学奖授予亨利·卡根（Henri B. Kagan）和硤合宪三（Kenso Soai），以表彰他们“发现不对称有机合成中的非线性效应与自催化现象”。2001年，诺贝尔化学奖表彰不对称催化研究，获奖者为威廉·诺尔斯、野依良治和巴里·夏普莱斯。卡根未获奖，引发法国学界不满，时任法国科研部长致信诺贝尔基金会。《自然》当年报道了这场争议。25年后，95岁的卡根因不对称合成中另一项贡献终获诺奖。",
         "zh_full": null
       },
@@ -185,22 +428,22 @@
           "title": "2026诺贝尔化学奖给了法国95岁学者和日本75岁学者，日本科学诺奖得主已有28位",
           "url": "http://www.zhishifenzi.com/news/multiple/10694.html",
           "source": "知识分子",
-          "score": 49.3,
-          "published_at": null
+          "score": 58.3,
+          "published_at": "2026-10-11T12:18:09+00:00"
         },
         {
           "title": "“冰立方”为何获得2026诺贝尔物理奖？现场对话诺奖评委",
           "url": "http://www.zhishifenzi.com/news/multiple/10692.html",
           "source": "知识分子",
-          "score": 49.3,
-          "published_at": null
+          "score": 58.3,
+          "published_at": "2026-10-11T12:15:47+00:00"
         },
         {
           "title": "2026诺贝尔物理奖给了“冰立方”",
           "url": "http://www.zhishifenzi.com/news/multiple/10691.html",
           "source": "知识分子",
-          "score": 49.3,
-          "published_at": null
+          "score": 58.3,
+          "published_at": "2026-10-11T12:14:57+00:00"
         }
       ],
       "top_terms": [
@@ -210,72 +453,203 @@
         "给了",
         "诺奖"
       ],
-      "rank": 3,
+      "rank": 6,
       "heat": 38.0,
       "status": "关注中"
     },
     {
       "terms": [
-        "defects",
-        "diamond",
-        "engineer",
-        "impossible",
-        "intact",
-        "laser",
-        "leaving",
-        "neutrino",
-        "pulses",
+        "birthmarks",
+        "black",
+        "echoes",
+        "hold",
+        "holes",
+        "lasting",
+        "listening",
+        "lives",
+        "many",
+        "past",
         "quantum",
-        "qubits",
         "research",
-        "selectively",
-        "ultraviolet"
+        "traces"
       ],
       "source_count": 2,
-      "signal_count": 2,
+      "signal_count": 3,
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
       ],
-      "score": 32.0,
-      "latest_at": "2026-10-12T14:08:22.657157+00:00",
+      "score": 35.5,
+      "latest_at": "2026-10-13T02:21:19.041288+00:00",
       "representative": {
-        "title": "New research shows a neutrino laser is impossible",
-        "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
+        "title": "Many black holes had past lives, new research shows",
+        "url": "https://news.mit.edu/2026/many-black-holes-had-past-lives-new-research-shows-0707",
         "source": "MIT News 物理",
-        "published_at": "2026-09-02T14:00:00+00:00",
-        "score": 41.2,
-        "summary": "Due to physical and fundamental limitations, an earlier proposal for producing laserlike beams of neutrinos cannot be achieved, scientists report.",
+        "published_at": "2026-07-07T16:00:00+00:00",
+        "score": 42.7,
+        "summary": "Physicists have found signs of colliding black holes that are themselves products of previous black hole smash-ups.",
         "zh_full": null
       },
       "folded_count": 1,
-      "title": "Ultraviolet laser pulses engineer diamond defects selectively, leaving quantum qubits intact",
-      "id": "29fc48178033",
+      "title": "Quantum 'birthmarks' hold lasting traces of a system's past",
+      "id": "2ae8a4216064",
       "links": [
         {
-          "title": "Ultraviolet laser pulses engineer diamond defects selectively, leaving quantum qubits intact",
-          "url": "https://phys.org/news/2026-10-ultraviolet-laser-pulses-diamond-defects.html",
+          "title": "Quantum 'birthmarks' hold lasting traces of a system's past",
+          "url": "https://phys.org/news/2026-10-quantum-birthmarks.html",
           "source": "Phys.org 物理新闻",
-          "score": 51.2,
-          "published_at": null
+          "score": 61.8,
+          "published_at": "2026-10-11T18:20:01+00:00"
         },
         {
-          "title": "New research shows a neutrino laser is impossible",
-          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
+          "title": "Many black holes had past lives, new research shows",
+          "url": "https://news.mit.edu/2026/many-black-holes-had-past-lives-new-research-shows-0707",
           "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-09-02T14:00:00+00:00"
+          "score": 42.7,
+          "published_at": "2026-07-07T16:00:00+00:00"
+        },
+        {
+          "title": "Listening for the echoes of black holes",
+          "url": "https://news.mit.edu/2026/listening-for-echoes-of-black-holes-erin-kara-0626",
+          "source": "MIT News 物理",
+          "score": 42.7,
+          "published_at": "2026-06-26T04:00:00+00:00"
         }
       ],
       "top_terms": [
-        "laser",
-        "ultraviolet",
-        "pulses",
-        "engineer",
-        "diamond"
+        "past",
+        "black",
+        "holes",
+        "quantum",
+        "birthmarks"
       ],
-      "rank": 4,
-      "heat": 32.0,
+      "rank": 7,
+      "heat": 35.5,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "cern",
+        "congratulates",
+        "francis",
+        "halzen",
+        "nobel",
+        "physics",
+        "pioneering",
+        "pride",
+        "prize",
+        "role",
+        "winner"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "CERN 新闻",
+        "Phys.org 物理新闻"
+      ],
+      "score": 22.0,
+      "latest_at": "2026-10-13T02:21:19.041288+00:00",
+      "representative": {
+        "title": "CERN congratulates Nobel Prize winner Francis Halzen",
+        "url": "https://home.cern/cern-congratulates-nobel-prize-winner-francis-halzen/",
+        "source": "CERN 新闻",
+        "published_at": "2026-10-06T14:54:19+00:00",
+        "score": 56.8,
+        "summary": "The 2026 Nobel Prize in Physics has been awarded to Francis Halzen for his contributions to the IceCube Neutrino Observatory, which discovered high-energy neutrinos coming from far beyond our Solar System. This work is paving the way for a ",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "Nobel physics winner's pride at pioneering AI role",
+      "id": "4e5d4ba85a73",
+      "links": [
+        {
+          "title": "Nobel physics winner's pride at pioneering AI role",
+          "url": "https://phys.org/news/2026-10-nobel-physics-winner-pride-ai.html",
+          "source": "Phys.org 物理新闻",
+          "score": 57.7,
+          "published_at": "2026-10-07T22:40:01+00:00"
+        },
+        {
+          "title": "CERN congratulates Nobel Prize winner Francis Halzen",
+          "url": "https://home.cern/cern-congratulates-nobel-prize-winner-francis-halzen/",
+          "source": "CERN 新闻",
+          "score": 56.8,
+          "published_at": "2026-10-06T14:54:19+00:00"
+        }
+      ],
+      "top_terms": [
+        "nobel",
+        "winner",
+        "physics",
+        "pride",
+        "pioneering"
+      ],
+      "rank": 8,
+      "heat": 22.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "acoustic",
+        "confirm",
+        "critical",
+        "disorder",
+        "experiments",
+        "gapless",
+        "persist",
+        "points",
+        "topology"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Nature 量子物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 22.0,
+      "latest_at": "2026-10-13T02:21:19.041288+00:00",
+      "representative": {
+        "title": "Topology from disorder",
+        "url": "https://www.nature.com/articles/s41567-026-03459-1",
+        "source": "Nature 量子物理",
+        "published_at": "2026-09-28T00:00:00+00:00",
+        "score": 51.1,
+        "summary": "",
+        "zh_full": null,
+        "refs": {
+          "doi": "10.1038/s41567-026-03459-1",
+          "via": "self_meta",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "Acoustic experiments confirm topology can persist at gapless critical points",
+      "id": "22209313a3e7",
+      "links": [
+        {
+          "title": "Acoustic experiments confirm topology can persist at gapless critical points",
+          "url": "https://phys.org/news/2026-10-acoustic-topology-persist-gapless-critical.html",
+          "source": "Phys.org 物理新闻",
+          "score": 57.7,
+          "published_at": "2026-10-07T20:40:20+00:00"
+        },
+        {
+          "title": "Topology from disorder",
+          "url": "https://www.nature.com/articles/s41567-026-03459-1",
+          "source": "Nature 量子物理",
+          "score": 51.1,
+          "published_at": "2026-09-28T00:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "topology",
+        "acoustic",
+        "experiments",
+        "confirm",
+        "persist"
+      ],
+      "rank": 9,
+      "heat": 22.0,
       "status": "关注中"
     },
     {
@@ -291,10 +665,10 @@
       "signal_count": 2,
       "sources": [
         "MIT News 物理",
-        "Nature Physics 学科聚合"
+        "Nature 量子物理"
       ],
       "score": 22.0,
-      "latest_at": "2026-10-12T14:08:22.657157+00:00",
+      "latest_at": "2026-10-13T02:21:19.041288+00:00",
       "representative": {
         "title": "A new way to watch heat move through electronics",
         "url": "https://news.mit.edu/2026/new-way-watch-heat-move-through-electronics-0806",
@@ -311,8 +685,8 @@
         {
           "title": "Taking the heat off tantalum",
           "url": "https://www.nature.com/articles/s41563-026-02766-5",
-          "source": "Nature Physics 学科聚合",
-          "score": 58.8,
+          "source": "Nature 量子物理",
+          "score": 58.4,
           "published_at": "2026-10-09T00:00:00+00:00"
         },
         {
@@ -330,66 +704,7 @@
         "way",
         "watch"
       ],
-      "rank": 5,
-      "heat": 22.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "collider",
-        "dark",
-        "hadron",
-        "hunt",
-        "lost",
-        "matter",
-        "quantum",
-        "reveal",
-        "traces"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "MIT News 物理",
-        "New Scientist 物理"
-      ],
-      "score": 22.0,
-      "latest_at": "2026-10-12T14:08:22.657157+00:00",
-      "representative": {
-        "title": "On the hunt for dark matter",
-        "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
-        "source": "MIT News 物理",
-        "published_at": "2026-08-11T04:00:00+00:00",
-        "score": 41.2,
-        "summary": "From Broadway to MIT’s Laboratory for Nuclear Science, PhD student Jessica Fry doesn’t do anything halfway. Now she’s hunting for the universe’s most elusive particle.",
-        "zh_full": null
-      },
-      "folded_count": 1,
-      "title": "On the hunt for dark matter",
-      "id": "ab0bf06fc6cd",
-      "links": [
-        {
-          "title": "On the hunt for dark matter",
-          "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-11T04:00:00+00:00"
-        },
-        {
-          "title": "Lost quantum traces could reveal dark matter at the Large Hadron Collider",
-          "url": "https://www.newscientist.com/article/2586285-lost-quantum-traces-could-reveal-dark-matter-at-the-large-hadron-collider/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 41.2,
-          "published_at": "2026-09-09T15:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "dark",
-        "matter",
-        "hunt",
-        "lost",
-        "quantum"
-      ],
-      "rank": 6,
+      "rank": 10,
       "heat": 22.0,
       "status": "关注中"
     }

@@ -8,9 +8,9 @@
 
 ## 数据 API（静态 JSON，免鉴权，按频道）
 - 接口索引 / OpenAPI: https://sun-zihang.github.io/pat-hot/api/v1/index.json , https://sun-zihang.github.io/pat-hot/api/v1/openapi.json
-- 物理（P）: https://sun-zihang.github.io/pat-hot/api/v1/physics/items.json , https://sun-zihang.github.io/pat-hot/api/v1/physics/hot-topics.json , https://sun-zihang.github.io/pat-hot/api/v1/physics/dailies.json
-- 天文（A）: https://sun-zihang.github.io/pat-hot/api/v1/astro/items.json , https://sun-zihang.github.io/pat-hot/api/v1/astro/hot-topics.json , https://sun-zihang.github.io/pat-hot/api/v1/astro/dailies.json
-- 光电（T）: https://sun-zihang.github.io/pat-hot/api/v1/tech/items.json , https://sun-zihang.github.io/pat-hot/api/v1/tech/hot-topics.json , https://sun-zihang.github.io/pat-hot/api/v1/tech/dailies.json
+- 物理（P）: https://sun-zihang.github.io/pat-hot/api/v1/physics/items.json , https://sun-zihang.github.io/pat-hot/api/v1/physics/hot-topics.json , https://sun-zihang.github.io/pat-hot/api/v1/physics/dailies.json , https://sun-zihang.github.io/pat-hot/api/v1/physics/papers-index.json
+- 天文（A）: https://sun-zihang.github.io/pat-hot/api/v1/astro/items.json , https://sun-zihang.github.io/pat-hot/api/v1/astro/hot-topics.json , https://sun-zihang.github.io/pat-hot/api/v1/astro/dailies.json , https://sun-zihang.github.io/pat-hot/api/v1/astro/papers-index.json
+- 光电（T）: https://sun-zihang.github.io/pat-hot/api/v1/tech/items.json , https://sun-zihang.github.io/pat-hot/api/v1/tech/hot-topics.json , https://sun-zihang.github.io/pat-hot/api/v1/tech/dailies.json , https://sun-zihang.github.io/pat-hot/api/v1/tech/papers-index.json
 
 ## 兼容地址（重构前的扁平路径，仍可用，内容为 T 光电频道）
 - https://sun-zihang.github.io/pat-hot/api/v1/items.json , https://sun-zihang.github.io/pat-hot/api/v1/hot-topics.json , https://sun-zihang.github.io/pat-hot/api/v1/dailies.json
@@ -19,6 +19,13 @@
 ## RSS 订阅（阅读器 / Agent）
 - 主 feed（T 光电）: https://sun-zihang.github.io/pat-hot/feed.xml
 - 分类: https://sun-zihang.github.io/pat-hot/feed/<频道>/category/<slug>.xml
+
+## 事件→论文锚点（papers-index）
+- 每个频道的 https://sun-zihang.github.io/pat-hot/api/v1/<频道>/papers-index.json 只收录**已验证**的 DOI / arXiv 编号，
+  编号来自条目自带文本或详情页头部「本篇自述元数据」（citation_doi / prism.doi /
+  citation_arxiv_id / canonical），confidence 一律为 verified。
+- 条目里没有 refs 字段是**正确结果**，不是抓取失败：产业事件、机构新闻稿、政策公告
+  本身不对应某一篇可指认的论文，本站不为其编造锚点。期刊与预印本源命中率最高。
 
 ## 用法示例（匿名 GET）
 curl https://sun-zihang.github.io/pat-hot/api/v1/tech/hot-topics.json
