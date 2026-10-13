@@ -4,6 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PAT-HOT · 物理·天文·光电热点</title>
+<meta name="description" content="PAT-HOT：物理 / 天文 / 光电三频道资讯热点统计。自动采集公开信源，去重聚类打分，每天 6:00 与 18:00（北京时间）更新，单文件可离线打开，并提供免鉴权 JSON API。">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf9f6">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#151b1f">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PAT-HOT">
+<meta property="og:title" content="PAT-HOT · 物理·天文·光电热点统计">
+<meta property="og:description" content="三频道资讯热点榜、日报与趋势，AIHOT 方法论，开源可离线。">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23176b75'/%3E%3Ctext x='32' y='45' font-family='system-ui,sans-serif' font-size='38' font-weight='800' fill='%23fff' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
 <style>:root{
 --bg:#faf9f6;--sunk:#f3f3ef;--card:#fff;--line:#e9ede9;--line2:#dfe4e1;
 --ink:#202a30;--ink2:#303c42;--ink3:#59656b;--ink4:#8a949a;
@@ -11,27 +21,39 @@
 --hot:#b3402a;--hotsoft:rgba(179,64,42,.07);
 --r1:#b3402a;--r2:#a3642f;--r3:#96702e;--rr:#6b7684;
 --amber:#b8873a;--ok:#2f7d5c;--sh:0 1px 2px rgba(32,42,48,.05);--r:16px;
+--topbg:rgba(250,249,246,.93);--tabbg:rgba(255,255,255,.95);--fav:#87939b;
+color-scheme:light;
+}
+html[data-theme="dark"]{
+--bg:#141a1e;--sunk:#1c242a;--card:#20282e;--line:#2b353c;--line2:#3a464e;
+--ink:#e7eceb;--ink2:#ccd6d4;--ink3:#a0adb0;--ink4:#78858b;
+--ac:#5fbcc4;--acd:#8ed6dc;--acsoft:rgba(95,188,196,.14);
+--hot:#e0785c;--hotsoft:rgba(224,120,92,.15);
+--r1:#e0785c;--r2:#d9a15f;--r3:#cbb35f;--rr:#8a97a0;
+--amber:#d9a94f;--ok:#5cb88a;--sh:0 1px 2px rgba(0,0,0,.4);
+--topbg:rgba(20,26,30,.93);--tabbg:rgba(32,40,46,.95);--fav:#78858b;
+color-scheme:dark;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","HarmonyOS Sans SC","Microsoft YaHei",sans-serif}
 a{color:inherit;text-decoration:none}
 .mono{font-variant-numeric:tabular-nums;font-family:ui-monospace,Menlo,Consolas,monospace}
-.top{position:sticky;top:0;z-index:50;background:rgba(250,249,246,.93);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top{position:sticky;top:0;z-index:50;background:var(--topbg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .top-in{max-width:720px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:6px}
 .logo{font-size:19px;font-weight:800;letter-spacing:1px;white-space:nowrap}
 .logo b{color:var(--ac);font-weight:800}
 .seg{display:flex;background:var(--sunk);border-radius:999px;padding:3px;margin-left:auto}
 .seg a{padding:5px 15px;border-radius:999px;font-size:13px;color:var(--ink3);font-weight:600;white-space:nowrap}
-.seg a.on{background:#fff;color:var(--ink);box-shadow:var(--sh)}
+.seg a.on{background:var(--card);color:var(--ink);box-shadow:var(--sh)}
 .chseg{display:flex;background:var(--sunk);border-radius:999px;padding:3px;gap:2px}
 .chseg a{display:flex;align-items:center;gap:5px;padding:5px 11px;border-radius:999px;font-size:12.5px;color:var(--ink3);font-weight:700;cursor:pointer;white-space:nowrap}
-.chseg a .cl{width:20px;height:20px;border-radius:50%;background:#fff;color:var(--ink3);display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;box-shadow:var(--sh)}
-.chseg a.on{background:#fff;color:var(--ink);box-shadow:var(--sh)}
-.chseg a.on .cl{background:var(--ac);color:#fff}
+.chseg a .cl{width:20px;height:20px;border-radius:50%;background:var(--card);color:var(--ink3);display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;box-shadow:var(--sh)}
+.chseg a.on{background:var(--card);color:var(--ink);box-shadow:var(--sh)}
+.chseg a.on .cl{background:var(--ac);color:var(--bg)}
 @media(max-width:759px){.chseg a .cn{display:none}.chseg a{padding:5px 8px}}
 .xbtn{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--ac);background:var(--acsoft);color:var(--acd);border-radius:999px;padding:7px 18px;font-size:13px;font-weight:700;cursor:pointer;margin-top:10px}
-.xbtn:hover{background:var(--ac);color:#fff}
+.xbtn:hover{background:var(--ac);color:var(--bg)}
 .xbtn .xa{font-size:10px;transition:transform .25s}
 .xod{margin-top:10px}.obtn{display:inline-flex;align-items:center;gap:6px;border:1.5px dashed var(--ac);background:transparent;color:var(--acd);border-radius:999px;padding:7px 18px;font-size:13px;font-weight:700;cursor:pointer}
 .obtn:hover{background:var(--acsoft)}
@@ -52,7 +74,7 @@ a{color:inherit;text-decoration:none}
 .icobtn svg{width:20px;height:20px}
 .swrap{max-width:720px;margin:0 auto;padding:0 16px;display:none}
 .swrap.open{display:block}
-.swrap input{width:100%;border:1px solid var(--line2);background:#fff;border-radius:12px;padding:9px 14px;font-size:14px;outline:0;margin-bottom:10px;color:var(--ink)}
+.swrap input{width:100%;border:1px solid var(--line2);background:var(--card);border-radius:12px;padding:9px 14px;font-size:14px;outline:0;margin-bottom:10px;color:var(--ink)}
 .dnav{display:none;max-width:720px;margin:0 auto;padding:0 16px;gap:2px;overflow-x:auto}
 .dnav a{padding:9px 12px;font-size:13.5px;color:var(--ink3);white-space:nowrap;border-bottom:2px solid transparent}
 .dnav a.on{color:var(--ac);font-weight:700;border-color:var(--ac)}
@@ -77,7 +99,7 @@ a{color:inherit;text-decoration:none}
 .hn small{color:var(--ink4);font-weight:500}
 .hn .up{color:var(--hot)}
 .urow{display:flex;justify-content:flex-end;margin:2px 0 10px}
-.upill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line2);background:#fff;border-radius:999px;padding:6px 14px;font-size:12.5px;color:var(--ink3);cursor:pointer}
+.upill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line2);background:var(--card);border-radius:999px;padding:6px 14px;font-size:12.5px;color:var(--ink3);cursor:pointer}
 .upill .dot{width:14px;height:14px;border-radius:50%;border:1.5px solid var(--line2)}
 .upill.on{color:var(--ac);border-color:var(--ac)}
 .upill.on .dot{background:var(--ac);border-color:var(--ac)}
@@ -88,7 +110,12 @@ a{color:inherit;text-decoration:none}
 .day-h .c{margin-left:auto;font-size:12px;color:var(--ink4)}
 .day-h .arr{font-size:11px;color:var(--ink4)}
 .day.closed .day-b{display:none}
-.icard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;margin-bottom:12px;content-visibility:auto;contain-intrinsic-size:auto 220px}
+/* 这里刻意不加 content-visibility。cb365f8 用它来盖住整页重建的开销，但
+   contain-intrinsic-size 的 220px 与真实卡片高度（131~351，中位 250）不符：
+   快速滑动时浏览器把滑过的卡片换成估高，文档高度在手指下持续塌陷
+   （实测一次 fling 缩 4466px），就是"滑过头 + 整屏空白 + 找不到位置"。
+   全部页已改成追加式渲染，重建开销没了，估高也就没有理由再留着。 */
+.icard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;margin-bottom:12px}
 .icard.read{opacity:.6}
 .irow{display:flex;align-items:center;gap:8px}
 .ava{width:30px;height:30px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:700}
@@ -96,8 +123,8 @@ a{color:inherit;text-decoration:none}
 .itime{font-size:12px;color:var(--ink4)}
 .isp{margin-left:auto;display:flex;align-items:center;gap:6px;flex:none}
 .iscore{background:var(--sunk);border-radius:999px;padding:2px 10px;font-size:13px;font-weight:700}
-.iai{font-size:10px;color:#fff;background:var(--ac);border-radius:5px;padding:1px 5px;font-weight:700}
-.fav{border:0;background:none;font-size:16px;color:#c9cfd3;cursor:pointer;padding:2px;line-height:1}
+.iai{font-size:10px;color:var(--bg);background:var(--ac);border-radius:5px;padding:1px 5px;font-weight:700}
+.fav{border:0;background:none;font-size:16px;color:var(--fav);cursor:pointer;padding:2px;line-height:1}
 .fav.on{color:var(--amber)}
 .ibadges{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 .ititle{font-size:15.5px;font-weight:650;line-height:1.55;margin-top:8px}
@@ -132,7 +159,7 @@ a{color:inherit;text-decoration:none}
 .hbar i{display:block;height:100%;background:var(--ac);border-radius:4px}
 .himg{width:100%;max-height:230px;object-fit:cover;border-radius:10px;margin-top:10px}
 .flag{font-size:11px;border-radius:6px;padding:1px 7px;font-weight:700}
-.f-hot{color:#fff;background:var(--hot)}
+.f-hot{color:var(--bg);background:var(--hot)}
 .f-warm{color:var(--amber);background:rgba(184,135,58,.12)}
 .f-watch{color:var(--ink3);background:var(--sunk)}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
@@ -140,7 +167,7 @@ a{color:inherit;text-decoration:none}
 .chip.term{background:var(--acsoft);color:var(--acd)}
 .hsort{margin-left:auto;display:inline-flex;background:var(--sunk);border-radius:999px;padding:3px}
 .hsort button{border:0;background:none;color:var(--ink3);border-radius:999px;padding:4px 12px;font-size:12px;cursor:pointer}
-.hsort button.on{background:#fff;font-weight:700;color:var(--ink);box-shadow:var(--sh)}
+.hsort button.on{background:var(--card);font-weight:700;color:var(--ink);box-shadow:var(--sh)}
 .hsort select{border:0;background:none;font-size:12px;color:var(--ink3);padding:4px 6px;outline:0}
 .dshell{display:grid;grid-template-columns:170px 1fr;gap:14px;align-items:start}
 .dside{position:sticky;top:150px}
@@ -188,7 +215,7 @@ th{color:var(--ink3);font-size:12px;font-weight:600}
 .bcol .bar{width:64%;background:var(--ac);border-radius:5px 5px 0 0;min-height:2px;opacity:.85}
 .bcol .dl{font-size:10px;color:var(--ink4)}
 .dlrow{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
-.btn{border:1px solid var(--line2);background:#fff;color:var(--ac);border-radius:10px;padding:6px 12px;font-size:13px;cursor:pointer;font-weight:600;white-space:nowrap}
+.btn{border:1px solid var(--line2);background:var(--card);color:var(--ac);border-radius:10px;padding:6px 12px;font-size:13px;cursor:pointer;font-weight:600;white-space:nowrap}
 .tbar-row{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:13px}
 .tbar-name{width:104px;flex:none}
 .tbar-track{flex:1;height:10px;background:var(--sunk);border-radius:6px;overflow:hidden}
@@ -197,13 +224,13 @@ th{color:var(--ink3);font-size:12px;font-weight:600}
 .tup{color:var(--ok);font-weight:700}.tdown{color:var(--hot);font-weight:700}.tflat{color:var(--ink4)}
 .tsec-title{font-size:15px;font-weight:750;margin:16px 0 8px}
 .empty{color:var(--ink4);padding:28px;text-align:center;font-size:13px}
-pre{background:#202a30;color:#e7eceb;border-radius:10px;padding:12px 14px;overflow-x:auto;font-size:12px}
+pre{background:var(--sunk);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px 14px;overflow-x:auto;font-size:12px}
 .anote{font-size:12.5px;color:var(--ink3);margin-top:8px}
 .mrow{display:flex;align-items:center;gap:12px;padding:14px 18px;border-top:1px solid var(--line);font-size:14.5px;font-weight:600}
 .mrow:first-child{border-top:0}
 .mrow small{display:block;font-size:12px;color:var(--ink4);font-weight:400}
 .mrow .go{margin-left:auto;color:var(--ink4)}
-.tabbar{position:fixed;bottom:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);display:flex;padding:6px 4px calc(8px + env(safe-area-inset-bottom))}
+.tabbar{position:fixed;bottom:0;left:0;right:0;z-index:50;background:var(--tabbg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);display:flex;padding:6px 4px calc(8px + env(safe-area-inset-bottom))}
 .tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;color:var(--ink4);padding:4px 2px}
 .tabbar a.on{color:var(--ac);font-weight:700}
 .tabbar svg{width:22px;height:22px}
@@ -211,6 +238,11 @@ footer{max-width:720px;margin:0 auto;padding:8px 20px 26px;font-size:12px;color:
 footer a{color:var(--ac);font-weight:600}
 @media(min-width:760px){.dnav{display:flex}.tabbar{display:none}.wrap{padding-bottom:40px}}
 @media(max-width:759px){.dshell{grid-template-columns:1fr}.dside{position:static}.stats{grid-template-columns:1fr 1fr}}</style>
+<script>
+/* 主题在首屏绘制前落到 <html> 上：app.js 内联在 </body> 之前，等它执行再切深色
+   会先闪一屏浅色。这里只读 localStorage + 系统偏好，不碰任何数据。 */
+(function(){try{var t=localStorage.getItem("pat-theme");if(t!=="light"&&t!=="dark"){t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+</script>
 </head>
 <body>
 <header class="top">
@@ -222,6 +254,7 @@ footer a{color:var(--ac);font-weight:600}
       <a href="#/all" data-seg="all" data-i18n="all">全部</a>
     </nav>
     <button class="icobtn" id="sbtn" aria-label="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+    <button class="icobtn" id="theme" title="主题 / Theme" aria-label="theme">◐</button>
     <button class="icobtn" id="lang" title="语言 / Language">EN</button>
   </div>
   <div class="swrap" id="swrap"><input id="q" type="search" autocomplete="off"></div>
@@ -233,6 +266,7 @@ footer a{color:var(--ac);font-weight:600}
     <a href="#/topics" data-v="topics" data-i18n="topics">主题</a>
     <a href="#/trends" data-v="trends" data-i18n="trends">趋势</a>
     <a href="#/data" data-v="data" data-i18n="data">数据</a>
+    <a href="#/fav" data-v="fav" data-i18n="favPage">收藏</a>
     <a href="#/agent" data-v="agent" data-i18n="agent">Agent 接入</a>
   </nav>
 </header>
@@ -244,6 +278,7 @@ footer a{color:var(--ac);font-weight:600}
   <section id="view-topics" class="view"></section>
   <section id="view-trends" class="view"></section>
   <section id="view-data" class="view"></section>
+  <section id="view-fav" class="view"></section>
   <section id="view-agent" class="view"></section>
   <section id="view-more" class="view"></section>
 </main>
@@ -261,6 +296,12 @@ const META = S.meta || {channels:[], default:"tech"};
 const $ = (sel, root=document) => root.querySelector(sel);
 const $$ = (sel, root=document) => [...root.querySelectorAll(sel)];
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+// ---- 主题 ----
+// 首屏前的内联脚本已把 data-theme 落到 <html> 上，这里只接管切换。
+function themeNow(){ return document.documentElement.getAttribute("data-theme")==="dark"?"dark":"light"; }
+function setTheme(t){ try{ localStorage.setItem("pat-theme",t); }catch(e){}
+  document.documentElement.setAttribute("data-theme",t);
+  const b=$("#theme"); if(b) b.textContent = t==="dark"?"☀":"◐"; }
 // ---- 频道 ----
 let CHID = "";
 try { CHID = localStorage.getItem("pat-channel") || ""; } catch(e){}
@@ -274,7 +315,7 @@ const STATUS_EN = {"爆":"Hot","发酵中":"Trending","关注中":"Watch"};
 const DENS_EN = {"高":"High","中":"Medium","低":"Low"};
 const I18N = {
   zh: { feed:"精选", all:"全部", hot:"热点", daily:"日报", trends:"趋势", more:"更多",
-    allPage:"全部动态", topics:"主题", data:"数据", agent:"Agent 接入",
+    allPage:"全部动态", hotPage:"热点榜", topics:"主题", data:"数据", agent:"Agent 接入",
     search:"搜索", catAll:"全部", sortScore:"按推荐分", sortTime:"按时间",
     thresholdNote:"精选门槛：官方信源 ≥ {o} 分 · 媒体信源 ≥ {m} 分（可在 collector/config.json 调整）",
     hotNow:"当前热点", fullRank:"完整榜单 →", unreadOnly:"只看未读", today:"今天", daySel:"条精选", noMatch:"没有匹配的条目",
@@ -292,10 +333,11 @@ const I18N = {
     catDelta:"分类热度变化", newTopics:"新上榜事件", sustained:"持续发酵", noTrend:"本周暂无趋势数据（需要至少两周的日报归档）",
     menuAllSub:"全部资讯 · 搜索 / 分类 / 排序", menuTopicsSub:"分类统计，点击进入筛选", menuDataSub:"统计与导出", menuAgentSub:"开放 JSON 接口，免鉴权",
     expand:"展开阅读", collapse:"收起", aiSum:"AI 内容概要", srcSum:"来源摘要",
+    favPage:"收藏", favSub:"点过的星标都在这里（只存在本浏览器）", noFav:"还没有收藏：点卡片右上角的 ★ 收藏一条", favCount:"{n} 条收藏",
     extNote:"原文·需外网", readOrig:"阅读原文 ↗（需外网）", loadMore:"加载更多", aiGen:"生成中文摘要", aiLoading:"生成中…", aiFail:"生成失败，点击重试",
     footer:"PAT-HOT · 物理·天文·光电热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
   en: { feed:"Selected", all:"All", hot:"Hot", daily:"Daily", trends:"Trends", more:"More",
-    allPage:"All Items", topics:"Topics", data:"Data", agent:"Agent API",
+    allPage:"All Items", hotPage:"Hot Ranking", topics:"Topics", data:"Data", agent:"Agent API",
     search:"Search", catAll:"All", sortScore:"By score", sortTime:"By time",
     thresholdNote:"Selection bar: official sources ≥ {o} · media sources ≥ {m} (tune in collector/config.json)",
     hotNow:"Trending Now", fullRank:"Full ranking →", unreadOnly:"Unread only", today:"Today", daySel:"selected", noMatch:"No matching items",
@@ -313,6 +355,7 @@ const I18N = {
     catDelta:"Category heat change", newTopics:"New events", sustained:"Sustained events", noTrend:"No trend data yet (needs 2+ weeks of daily archive)",
     menuAllSub:"All items · search / filter / sort", menuTopicsSub:"Category stats — click to filter", menuDataSub:"Stats & export", menuAgentSub:"Open JSON APIs, no auth",
     expand:"Read more", collapse:"Collapse", aiSum:"AI Summary", srcSum:"Source abstract",
+    favPage:"Saved", favSub:"Your stars live in this browser only", noFav:"Nothing saved yet — tap ★ on a card to save it", favCount:"{n} saved",
     extNote:"orig.·needs internet", readOrig:"Read original ↗ (needs internet)", loadMore:"Load more", aiGen:"Generate Chinese summary", aiLoading:"Generating…", aiFail:"Failed, tap to retry",
     footer:"PAT-HOT · physics / astronomy / photonics hot-topic stats (AIHOT methodology) · public data, for reference only · open source on GitHub" }
 };
@@ -446,8 +489,9 @@ function itemCard(it){
 }
 function threshNote(){ const th=C.thresholds||{official:55,media:65}; return T.thresholdNote.replace("{o}",th.official).replace("{m}",th.media); }
 const renderers = {};
+let LAST_VIEW = "";
 function setNav(v){ $$("#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$("#dnav a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$(".seg a").forEach(a=>a.classList.toggle("on",a.dataset.seg===v)); }
-function router(){ const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/"; const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/trends":"trends","/data":"data","/agent":"agent","/more":"more"}; const v=map[name]||"feed"; setNav(v); $$(".view").forEach(x=>x.classList.remove("on")); $("#view-"+v).classList.add("on"); (renderers[v]||renderers.feed)(); window.scrollTo(0,0); }
+function router(){ const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/"; const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/trends":"trends","/data":"data","/fav":"fav","/agent":"agent","/more":"more"}; const v=map[name]||"feed"; if(v==="all"&&LAST_VIEW!=="all") state.allShown=ALL_PAGE; LAST_VIEW=v; setNav(v); $$(".view").forEach(x=>x.classList.remove("on")); $("#view-"+v).classList.add("on"); (renderers[v]||renderers.feed)(); window.scrollTo(0,0); }
 function renderFeed(){
   const root=$("#view-feed");
   const top=(C.topics||[]).slice(0,3);
@@ -584,6 +628,12 @@ function renderData(){
     +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:14px;margin-bottom:6px">'+T.srcTable+'</h3><table><thead><tr><th>'+T.srcTable+'</th><th>'+T.total+'</th><th>'+T.latest+'</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
     +'<div class="dlrow"><a class="btn" href="data/'+CHID+'/report.csv" download>'+T.dlCSV+'</a><a class="btn" href="data/'+CHID+'/items.json" target="_blank">'+T.dlItems+'</a><a class="btn" href="data/'+CHID+'/hot-topics.json" target="_blank">'+T.dlHot+'</a><a class="btn" href="data/'+CHID+'/dailies.json" target="_blank">'+T.dlDaily+'</a></div>';
 }
+function renderFav(){
+  const root=$("#view-fav");
+  const its=C.items.filter(i=>FAV[i.url]).sort((a,b)=>b.score-a.score);
+  root.innerHTML='<div class="card ph"><h1>'+T.favPage+'</h1><span class="sub">'+esc(T.favSub)+'</span></div>'
+    +(its.length?its.map(itemCard).join(""):'<div class="card empty">'+T.noFav+'</div>');
+}
 function renderAgent(){
   const root=$("#view-agent");
   const base=location.href.split("?")[0].split("#")[0].replace(/index\.html$/,"");
@@ -601,15 +651,23 @@ function renderAgent(){
 }
 function renderMore(){
   const root=$("#view-more");
-  const rows=[["#/all","allPage","menuAllSub","☰"],["#/topics","topics","menuTopicsSub","◈"],["#/data","data","menuDataSub","◉"],["#/agent","agent","menuAgentSub","🤖"]];
-  root.innerHTML='<div class="card ph"><h1>'+T.more+'</h1></div><div class="card">'+rows.map(r=>'<a class="mrow" href="'+r[0]+'"><span style="font-size:18px">'+r[3]+'</span><span>'+T[r[1]]+'<small>'+T[r[2]]+'</small></span><span class="go">›</span></a>').join("")+'</div>';
+  const nFav=Object.keys(FAV).filter(u=>C.items.some(i=>i.url===u)).length;
+  const favSub=T.favCount.replace("{n}",nFav);
+  const rows=[["#/all","allPage","menuAllSub","☰"],["#/fav","favPage",favSub,"★"],["#/topics","topics","menuTopicsSub","◈"],["#/data","data","menuDataSub","◉"],["#/agent","agent","menuAgentSub","🤖"]];
+  root.innerHTML='<div class="card ph"><h1>'+T.more+'</h1></div><div class="card">'+rows.map(r=>'<a class="mrow" href="'+r[0]+'"><span style="font-size:18px">'+r[3]+'</span><span>'+T[r[1]]+'<small>'+(T[r[2]]||r[2])+'</small></span><span class="go">›</span></a>').join("")+'</div>';
 }
 function BRAND(){ return "PAT-HOT"; }
-renderers.feed=renderFeed; renderers.all=renderAll; renderers.hot=renderHot; renderers.daily=renderDaily; renderers.topics=renderTopics; renderers.data=renderData; renderers.trends=renderTrends; renderers.agent=renderAgent; renderers.more=renderMore;
+renderers.feed=renderFeed; renderers.all=renderAll; renderers.hot=renderHot; renderers.daily=renderDaily; renderers.topics=renderTopics; renderers.data=renderData; renderers.trends=renderTrends; renderers.fav=renderFav; renderers.agent=renderAgent; renderers.more=renderMore;
 function bind(){
   const q=$("#q");
-  let qTimer=null; q.addEventListener("input",e=>{ state.q=e.target.value; clearTimeout(qTimer); qTimer=setTimeout(()=>{ if(/#\/all/.test(location.hash)){ state.allShown=ALL_PAGE; renderAll(); } },250); });
+  let qTimer=null;
+  // 搜索框此前只在 #/all 路由下有反应：在精选/热点/日报页打字看起来"没反应"。
+  // 现在输入即时跳转全部页，回车也跳（窄屏键盘用户）。
+  const gotoAll=()=>{ state.allShown=ALL_PAGE; if(/#\/all/.test(location.hash)) renderAll(); else location.hash="#/all"; };
+  q.addEventListener("input",e=>{ state.q=e.target.value; clearTimeout(qTimer); qTimer=setTimeout(gotoAll,250); });
+  q.addEventListener("keydown",e=>{ if(e.key==="Enter"){ clearTimeout(qTimer); gotoAll(); } });
   $("#sbtn").onclick=()=>{ const w=$("#swrap"); w.classList.toggle("open"); if(w.classList.contains("open")) q.focus(); };
+  $("#theme").onclick=()=>{ setTheme(themeNow()==="dark"?"light":"dark"); };
   $("#lang").onclick=()=>{ LANG=LANG==="zh"?"en":"zh"; try{localStorage.setItem("pat-lang",LANG);}catch(e){} location.reload(); };
   document.addEventListener("click",e=>{
     const f=e.target.closest("[data-fav]");
@@ -623,7 +681,7 @@ function bind(){
   });
   window.addEventListener("hashchange",router);
   document.addEventListener("keydown",e=>{ if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){ e.preventDefault(); $("#swrap").classList.add("open"); q.focus(); } });
-  renderChSeg(); tr(); router();
+  renderChSeg(); setTheme(themeNow()); tr(); router();
 }
 document.addEventListener("DOMContentLoaded", bind);
 </script>
