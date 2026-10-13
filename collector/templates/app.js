@@ -467,11 +467,11 @@ function renderData(){
   const root=$("#view-data"); const dl=C.daily||{byDay:[],bySource:[]};
   const maxDay=Math.max(...dl.byDay.map(x=>x.count),1);
   const chart='<div class="chart">'+dl.byDay.map(x=>'<div class="bcol"><div class="bar" title="'+x.date+': '+x.count+'" style="height:'+Math.max(2,x.count/maxDay*100).toFixed(1)+'%"></div><span class="dl">'+x.date.slice(5)+'</span></div>').join("")+'</div>';
-  const rows=(dl.bySource||[]).map(s=>'<tr><td>'+esc(s.source)+'</td><td>'+s.count+'</td><td>'+fmtRel(s.latestAt)+'</td></tr>').join("");
+  const rows=(dl.bySource||[]).map(s=>'<tr><td>'+esc(s.source)+'</td><td class="nw">'+s.count+'</td><td class="nw">'+fmtRel(s.latestAt)+'</td></tr>').join("");
   root.innerHTML='<div class="card ph"><h1>'+T.dataPage+'</h1><span class="sub">'+T.dataSub+'</span></div>'
     +'<div class="stats"><div class="stat"><div class="num">'+dl.total+'</div><div class="lbl">'+T.total+'</div></div><div class="stat"><div class="num">'+dl.last24h+'</div><div class="lbl">'+T.h24+'</div></div><div class="stat"><div class="num">'+dl.last7d+'</div><div class="lbl">'+T.h7+'</div></div><div class="stat"><div class="num">'+dl.topicCount+'</div><div class="lbl">'+T.hotTopic+'</div></div></div>'
     +'<div class="card" style="padding:16px 18px"><h3 style="font-size:14px;margin-bottom:6px">'+T.trend+'</h3>'+chart+'</div>'
-    +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:14px;margin-bottom:6px">'+T.srcTable+'</h3><table><thead><tr><th>'+T.srcTable+'</th><th>'+T.total+'</th><th>'+T.latest+'</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
+    +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:14px;margin-bottom:6px">'+T.srcTable+'</h3><div class="tw"><table><thead><tr><th>'+T.srcTable+'</th><th class="nw">'+T.total+'</th><th class="nw">'+T.latest+'</th></tr></thead><tbody>'+rows+'</tbody></table></div></div>'
     +'<div class="dlrow"><a class="btn" href="data/'+CHID+'/report.csv" download>'+T.dlCSV+'</a><a class="btn" href="data/'+CHID+'/items.json" target="_blank">'+T.dlItems+'</a><a class="btn" href="data/'+CHID+'/hot-topics.json" target="_blank">'+T.dlHot+'</a><a class="btn" href="data/'+CHID+'/dailies.json" target="_blank">'+T.dlDaily+'</a></div>';
 }
 function renderFav(){
@@ -491,8 +491,8 @@ function renderAgent(){
     .concat(catFeeds.map(([f,cat])=>'<tr><td class="mono">'+f+'</td><td>'+esc(catName(cat))+'</td><td><a href="'+base+f+'" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>')).join("");
   const moreRows='<tr><td class="mono">api/v1/openapi.json</td><td>OpenAPI 3.1</td><td><a href="'+base+'api/v1/openapi.json" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr><tr><td class="mono">llms.txt</td><td>LLM 友好入口</td><td><a href="'+base+'llms.txt" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>';
   root.innerHTML='<div class="card ph"><h1>'+T.agentPage+'</h1><span class="sub">'+T.agentSub+'</span></div>'
-    +'<div class="card" style="padding:16px 18px"><h3 style="font-size:15px;margin-bottom:4px">🤖 '+T.apiTitle+'</h3><p class="anote">'+T.apiDesc+'</p><p class="anote">'+T.base+'：<span class="mono">'+esc(base)+'</span></p><table style="margin-top:10px"><thead><tr><th>'+T.endpoint+'</th><th>'+T.desc+'</th><th></th></tr></thead><tbody>'+rows+moreRows+'</tbody></table></div>'
-    +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">RSS</h3><table style="margin-top:8px"><tbody>'+feedRows+'</tbody></table></div>'
+    +'<div class="card" style="padding:16px 18px"><h3 style="font-size:15px;margin-bottom:4px">🤖 '+T.apiTitle+'</h3><p class="anote">'+T.apiDesc+'</p><p class="anote">'+T.base+'：<span class="mono">'+esc(base)+'</span></p><div class="tw wide"><table style="margin-top:10px"><thead><tr><th>'+T.endpoint+'</th><th>'+T.desc+'</th><th></th></tr></thead><tbody>'+rows+moreRows+'</tbody></table></div></div>'
+    +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">RSS</h3><div class="tw wide"><table style="margin-top:8px"><tbody>'+feedRows+'</tbody></table></div></div>'
     +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">'+T.curl+'</h3><pre>'+esc(curl)+'</pre><p class="anote">'+T.llmsNote+'</p></div>';
 }
 function renderMore(){

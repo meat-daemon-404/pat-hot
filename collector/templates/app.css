@@ -22,9 +22,13 @@ color-scheme:dark;
 html{-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","HarmonyOS Sans SC","Microsoft YaHei",sans-serif}
 a{color:inherit;text-decoration:none}
-.mono{font-variant-numeric:tabular-nums;font-family:ui-monospace,Menlo,Consolas,monospace}
+/* overflow-wrap 用 anywhere 而不是 break-word：只有 anywhere 参与最小内容宽度
+   的计算，break-word 不参与。智能体页的接口路径（api/v1/tech/hot-topics.json）
+   在没有断行机会时会把 auto 表格的最小宽度撑到 314px，320px 视口下文档宽 370，
+   整页横向滚动。 */
+.mono{font-variant-numeric:tabular-nums;font-family:ui-monospace,Menlo,Consolas,monospace;overflow-wrap:anywhere}
 .top{position:sticky;top:0;z-index:50;background:var(--topbg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top-in{max-width:720px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:6px}
+.top-in{max-width:720px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .logo{font-size:19px;font-weight:800;letter-spacing:1px;white-space:nowrap}
 .logo b{color:var(--ac);font-weight:800}
 .seg{display:flex;background:var(--sunk);border-radius:999px;padding:3px;margin-left:auto}
@@ -44,6 +48,23 @@ a{color:inherit;text-decoration:none}
 .obtn:disabled{opacity:.6;cursor:wait}
 .otxt{margin-top:8px}
 .xbtn.open .xa{transform:rotate(180deg)}
+/* 命中区扩到 44px 高：视觉尺寸一个像素都不动，只把可点区域撑开，
+   所以按钮间距、截图和布局都和改之前一致。伪元素绝对定位，不参与布局，
+   也不会成为 flex 子项。实测改前 xbtn/obtn 高 33、upill 高 30、icobtn 34，
+   都低于 44 的触摸下限，手机上容易点空。 */
+.xbtn,.obtn,.upill,.icobtn{position:relative}
+.xbtn::after,.obtn::after,.upill::after,.icobtn::after{content:"";position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);height:100%;min-height:44px}
+/* 图标按钮只有 34px 宽，左右各外扩 3px。实测两侧邻居只隔 6px（320/360/390/430
+   四个宽度都是），外扩 3px 正好吃满间隙、命中区相接但不重叠：40×44。
+   为什么不外扩到 44 宽：那需要每侧 5px，会超出 6px 的间隙，两个按钮的命中区
+   重叠 2px；重叠带里 DOM 靠后的元素胜出，点在搜索图标右侧会切主题——把一次
+   误触变成整页配色翻转。宁可少 4px 宽，也不要一次会改状态的误触。
+   .icobtn 只在顶栏出现（app.html 三处），别处引用前先确认邻居间距。 */
+.icobtn::after{left:-3px;right:-3px}
+/* 只往上下扩，不往左右扩：头部胶囊彼此只隔 2px，横向扩出去会和邻居的
+   命中区重叠，点哪个由 DOM 顺序决定，反而更糟。 */
+.chseg a,.seg a{position:relative}
+.chseg a::after,.seg a::after{content:"";position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);height:100%;min-height:44px}
 .xbody{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
 .xbody.open{grid-template-rows:1fr}
 .xbody-in{overflow:hidden;min-height:0}
@@ -88,7 +109,9 @@ a{color:inherit;text-decoration:none}
 .upill.on{color:var(--ac);border-color:var(--ac)}
 .upill.on .dot{background:var(--ac);border-color:var(--ac)}
 .day{margin-bottom:18px}
-.day-h{display:flex;align-items:baseline;gap:8px;padding:2px 4px 10px;cursor:pointer;user-select:none;-webkit-user-select:none}
+/* 日期折叠头实测 38px 高，低于 44 的触摸下限。上下各加 3px 补到 44px，
+   标题行本身仍是一行、字号不变，只是可点区域变大、与下方卡片的间距多 3px。 */
+.day-h{display:flex;align-items:baseline;gap:8px;padding:5px 4px 13px;cursor:pointer;user-select:none;-webkit-user-select:none}
 .day-h h2{font-size:16px;font-weight:750}
 .day-h .w{font-size:12.5px;color:var(--ink3)}
 .day-h .c{margin-left:auto;font-size:12px;color:var(--ink4)}
@@ -106,14 +129,22 @@ a{color:inherit;text-decoration:none}
    塌陷是估高不准才有的症状，但"每帧要重新展开视口外内容"是属性本身的代价。 */
 .icard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;margin-bottom:12px}
 .icard.read{opacity:.6}
+/* 元信息行不许折行：来源名和发布时间各占一行会撑高卡片、看起来像排版坏了
+   （360px 实测 isrc 高 42、itime 高 38，都是两行）。来源名可收缩并省略，
+   发布时间短且固定，不参与收缩。 */
 .irow{display:flex;align-items:center;gap:8px}
 .ava{width:30px;height:30px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:700}
-.isrc{font-size:13px;font-weight:650}
-.itime{font-size:12px;color:var(--ink4)}
+.isrc{font-size:13px;font-weight:650;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.itime{font-size:12px;color:var(--ink4);white-space:nowrap;flex:none}
 .isp{margin-left:auto;display:flex;align-items:center;gap:6px;flex:none}
 .iscore{background:var(--sunk);border-radius:999px;padding:2px 10px;font-size:13px;font-weight:700}
 .iai{font-size:10px;color:var(--bg);background:var(--ac);border-radius:5px;padding:1px 5px;font-weight:700}
-.fav{border:0;background:none;font-size:16px;color:var(--fav);cursor:pointer;padding:2px;line-height:1}
+/* 收藏星标 17×20 太小，手指点不中（小于 44×44 的建议下限）。
+   放大到 44×44 的命中区，星形本身仍用 16px 字号保持视觉不变。
+   负外边距把多出来的空白吃掉，卡片右上角布局不受影响：
+   .irow 行高由 30px 的头像决定，星标的 margin box 只有 20px 高。
+   左侧只外扩 6px（正好吃掉 .isp 的 gap），命中区不压到左边的评分胶囊。 */
+.fav{border:0;background:none;font-size:16px;color:var(--fav);cursor:pointer;padding:0;line-height:1;width:44px;height:44px;margin:-12px -12px -12px -6px;display:inline-flex;align-items:center;justify-content:center;flex:none}
 .fav.on{color:var(--amber)}
 .ibadges{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 .ititle{font-size:15.5px;font-weight:650;line-height:1.55;margin-top:8px}
@@ -202,7 +233,23 @@ a{color:inherit;text-decoration:none}
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
 th{color:var(--ink3);font-size:12px;font-weight:600}
+/* 表格自己横向滚动，而不是把列压扁。auto 布局的最小宽度由最长的不可断行
+   片段决定：320px 视口下卡片内宽只有 250，而「api/v1/tech/hot-topics.json」
+   这类接口路径和「7 小时」这类时间列都放不下，于是浏览器把列挤到一两个字符
+   宽——实测 320px 下「7 小时」竖排成三行、表头「打开」也断成两行。
+   分两层：.tw 只做滚动兜底，.tw.wide 才让表格按内容取宽（接口/RSS 这种
+   路径不该断行，宁可横向滚动）。数据来源表不加 wide：来源名允许折行，
+   配合 nowrap 的表头和时间列后，320px 也放得下。 */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tw.wide table{width:max-content;min-width:100%}
+.nw{white-space:nowrap}
 .chart{display:flex;align-items:flex-end;gap:6px;height:110px;padding:10px 4px 0}
+/* 320~380px：14 根柱子配全量 MM-DD 标签的最小宽度是 14×16+13×6=302，
+   超过图表可用宽度（320px 视口下只有 250），标签把列撑出卡片，
+   320px 实测文档宽 342、整页横向滚动。隔一个隐藏一个标签后，
+   有标签的列仍占 16px、没标签的列可以自由收缩，图表回到卡片里。
+   390px 及以上图表宽 ≥320，全量标签放得下，不受影响。 */
+@media(max-width:380px){.chart{gap:3px}.chart .bcol:nth-child(even) .dl{display:none}}
 .bcol{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px;height:100%}
 .bcol .bar{width:64%;background:var(--ac);border-radius:5px 5px 0 0;min-height:2px;opacity:.85}
 .bcol .dl{font-size:10px;color:var(--ink4)}
@@ -228,5 +275,23 @@ pre{background:var(--sunk);color:var(--ink);border:1px solid var(--line);border-
 .tabbar svg{width:22px;height:22px}
 footer{max-width:720px;margin:0 auto;padding:8px 20px 26px;font-size:12px;color:var(--ink4);text-align:center}
 footer a{color:var(--ac);font-weight:600}
+/* footer 在 .wrap 之外，拿不到 .wrap 的 96px 下内边距，而 tabbar 是 fixed
+   且高 66px：滚到底时版权行整段压在标签栏底下（390px 实测遮挡 66px）。 */
+@media(max-width:759px){footer{padding-bottom:calc(26px + 66px + env(safe-area-inset-bottom))}}
+/* 窄屏下 .tw.wide 的接口/RSS 表改为逐条堆叠。问题不是"不够好看"：320~430px
+   实测表格 418px、卡片内宽只有 250~360，第三列（打开 ↗）整个落在卡片外——
+   8 个链接没有一个在可视区内，而 .tw 的横向滚动没有任何视觉提示，用户不会
+   想到去滑，等于所有接口都点不开。堆叠后每条占三行（路径/说明/打开），
+   全部可见、不需要横滑；桌面端仍是原来的三列表格。 */
+@media(max-width:759px){
+  .tw.wide table,.tw.wide tbody,.tw.wide tr,.tw.wide td{display:block}
+  .tw.wide table{width:100%;min-width:0}
+  .tw.wide thead{display:none}
+  .tw.wide tr{border-bottom:1px solid var(--line);padding:9px 0}
+  .tw.wide tr:last-child{border-bottom:0}
+  .tw.wide td{border-bottom:0;padding:1px 0}
+  .tw.wide td.mono{font-size:12.5px}
+  .tw.wide td:last-child{padding-top:5px}
+}
 @media(min-width:760px){.dnav{display:flex}.tabbar{display:none}.wrap{padding-bottom:40px}}
 @media(max-width:759px){.dshell{grid-template-columns:1fr}.dside{position:static}.stats{grid-template-columns:1fr 1fr}}
