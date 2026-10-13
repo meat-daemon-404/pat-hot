@@ -22,6 +22,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 部署前把关（测试 + 契约自检）
+        # 这个工作流是"推送即部署"，此前零把关：本周两次事故（内联 CSS 被转义成
+        # 字面量 \n 的坏产物、模板修复没重渲染 dist）都是从这里裸上线的。
+        # 现在跑 update.yml 同款两道关：纯标准库测试 + --check（产物坏 / 产物旧于
+        # 模板都在此拦下）。硬失败是对的：dist 落后于模板时，宁可站点维持上一个
+        # 好版本、让作者收到一个响亮的红叉"你忘了 --rebuild"，
+        # 也不要静默部署一个"修复没生效"的页面。
+        run: |
+          python -m unittest discover -s tests
+          python collector/collect.py --check
       - name: 准备站点文件
         run: |
           mkdir -p _site
