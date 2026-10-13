@@ -220,6 +220,9 @@ th{color:var(--ink3);font-size:12px;font-weight:600}
 .bcol .bar{width:64%;background:var(--ac);border-radius:5px 5px 0 0;min-height:2px;opacity:.85}
 .bcol .dl{font-size:10px;color:var(--ink4)}
 .dlrow{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.bakrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 16px;margin-top:0}
+.bakrow .sub{flex:1;min-width:200px}
+.bakbtns{display:inline-flex;gap:8px;flex:none}
 .btn{border:1px solid var(--line2);background:var(--card);color:var(--ac);border-radius:10px;padding:6px 12px;font-size:13px;cursor:pointer;font-weight:600;white-space:nowrap}
 .tbar-row{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:13px}
 .tbar-name{width:104px;flex:none}
@@ -340,6 +343,8 @@ const I18N = {
     menuAllSub:"全部资讯 · 搜索 / 分类 / 排序", menuTopicsSub:"分类统计，点击进入筛选", menuDataSub:"统计与导出", menuAgentSub:"开放 JSON 接口，免鉴权",
     expand:"展开阅读", collapse:"收起", aiSum:"AI 内容概要", srcSum:"来源摘要",
     favPage:"收藏", favSub:"点过的星标都在这里（只存在本浏览器）", noFav:"还没有收藏：点卡片右上角的 ★ 收藏一条", favCount:"{n} 条收藏",
+    bakNote:"已读 / 收藏 / 主题 / 语言 / 频道只存在这台浏览器，清缓存就会丢——导出备份换设备也能带走。",
+    bakExport:"导出备份", bakImport:"导入备份", bakDone:"已导入 {n} 项设置，页面即将刷新", bakFail:"读写失败，请重试", badFile:"这不是 PAT-HOT 备份文件，未做任何改动",
     extNote:"原文·需外网", readOrig:"阅读原文 ↗（需外网）", loadMore:"加载更多", aiGen:"生成中文摘要", aiLoading:"生成中…", aiFail:"生成失败，点击重试",
     footer:"PAT-HOT · 物理·天文·光电热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
   en: { feed:"Selected", all:"All", hot:"Hot", daily:"Daily", trends:"Trends", more:"More",
@@ -363,6 +368,8 @@ const I18N = {
     menuAllSub:"All items · search / filter / sort", menuTopicsSub:"Category stats — click to filter", menuDataSub:"Stats & export", menuAgentSub:"Open JSON APIs, no auth",
     expand:"Read more", collapse:"Collapse", aiSum:"AI Summary", srcSum:"Source abstract",
     favPage:"Saved", favSub:"Your stars live in this browser only", noFav:"Nothing saved yet — tap ★ on a card to save it", favCount:"{n} saved",
+    bakNote:"Read / saved / theme / language / channel live in this browser only — export a backup before clearing data or switching devices.",
+    bakExport:"Export backup", bakImport:"Import backup", bakDone:"Restored {n} settings; reloading", bakFail:"Read/write failed, please retry", badFile:"Not a PAT-HOT backup — nothing changed",
     extNote:"orig.·needs internet", readOrig:"Read original ↗ (needs internet)", loadMore:"Load more", aiGen:"Generate Chinese summary", aiLoading:"Generating…", aiFail:"Failed, tap to retry",
     footer:"PAT-HOT · physics / astronomy / photonics hot-topic stats (AIHOT methodology) · public data, for reference only · open source on GitHub" }
 };
@@ -672,11 +679,76 @@ function renderData(){
     +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:14px;margin-bottom:6px">'+T.srcTable+'</h3><table><thead><tr><th>'+T.srcTable+'</th><th>'+T.total+'</th><th>'+T.latest+'</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
     +'<div class="dlrow"><a class="btn" href="data/'+CHID+'/report.csv" download>'+T.dlCSV+'</a><a class="btn" href="data/'+CHID+'/items.json" target="_blank">'+T.dlItems+'</a><a class="btn" href="data/'+CHID+'/hot-topics.json" target="_blank">'+T.dlHot+'</a><a class="btn" href="data/'+CHID+'/dailies.json" target="_blank">'+T.dlDaily+'</a></div>';
 }
+// ---- 本地数据备份（AIHOT：收藏与阅读设置只存本机，但要能导出/导回来）----
+// 清浏览器数据 = 已读、收藏、主题、语言、频道全丢。导出是一个可读的 JSON
+// 文件（用户自己能打开看），导入前解析校验，坏文件只提示不改现场。
+const LS_KEYS = ["pat-read", "pat-fav", "pat-theme", "pat-lang", "pat-channel"];
+function backupPayload(){
+  const out = {app:"PAT-HOT", version:1, exportedAt:new Date().toISOString(), data:{}};
+  LS_KEYS.forEach(function(k){
+    try{ const v = localStorage.getItem(k); if(v !== null) out.data[k] = JSON.parse(v); }
+    catch(e){ try{ const v = localStorage.getItem(k); if(v !== null) out.data[k] = v; }catch(e2){} }
+  });
+  return out;
+}
+function downloadBackup(){
+  try{
+    const blob = new Blob([JSON.stringify(backupPayload(), null, 2)], {type:"application/json"});
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "pat-hot-backup-" + new Date().toISOString().slice(0,10) + ".json";
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 0);
+  }catch(e){ alert(T.bakFail); }
+}
+function applyBackup(text){
+  let o;
+  try{ o = JSON.parse(text); }catch(e){ alert(T.badFile); return false; }
+  if(!o || o.app !== "PAT-HOT" || typeof o.data !== "object"){ alert(T.badFile); return false; }
+  let n = 0;
+  Object.keys(o.data).forEach(function(k){
+    if(LS_KEYS.indexOf(k) < 0) return;
+    try{
+      const v = o.data[k];
+      localStorage.setItem(k, typeof v === "string" ? v : JSON.stringify(v)); n++;
+    }catch(e){}
+  });
+  READ = lsGet("pat-read"); FAV = lsGet("pat-fav");
+  try{ if(o.data["pat-theme"]) setTheme(o.data["pat-theme"]); }catch(e){}
+  alert(T.bakDone.replace("{n}", n));
+  // 语言/频道键也可能被导入改变，最干净的重建方式是整页刷新——localStorage 已落盘。
+  // 绝不能用 File.remove() 之类碰用户的原始备份文件（那会删磁盘上的真文件）。
+  location.reload();
+  return true;
+}
+function pickBackupFile(){
+  const inp = document.createElement("input");
+  inp.type = "file"; inp.accept = ".json,application/json";
+  inp.style.display = "none";
+  inp.onchange = function(){
+    const f = inp.files && inp.files[0];
+    inp.remove();   // 只移除临时 <input> 元素，绝不碰用户磁盘上的备份文件
+    if(!f) return;
+    const rd = new FileReader();
+    rd.onload = function(){ applyBackup(String(rd.result || "")); };
+    rd.onerror = function(){ alert(T.bakFail); };
+    rd.readAsText(f);
+  };
+  document.body.appendChild(inp);
+  inp.click();
+}
 function renderFav(){
   const root=$("#view-fav");
   const its=C.items.filter(i=>FAV[i.url]).sort((a,b)=>b.score-a.score);
+  const tools='<div class="card bakrow"><span class="sub">'+esc(T.bakNote)+'</span>'
+    +'<span class="bakbtns"><button class="btn" id="bexport">'+T.bakExport+'</button>'
+    +'<button class="btn" id="bimport">'+T.bakImport+'</button></span></div>';
   root.innerHTML='<div class="card ph"><h1>'+T.favPage+'</h1><span class="sub">'+esc(T.favSub)+'</span></div>'
+    +tools
     +(its.length?its.map(itemCard).join(""):'<div class="card empty">'+T.noFav+'</div>');
+  const be=$("#bexport"), bi=$("#bimport");
+  if(be) be.onclick=downloadBackup;
+  if(bi) bi.onclick=pickBackupFile;
 }
 function renderAgent(){
   const root=$("#view-agent");

@@ -175,6 +175,48 @@ class TestViewWiring(unittest.TestCase):
         self.assertEqual(_route_map().get("/fav"), "fav")
 
 
+class TestLocalBackup(unittest.TestCase):
+    """收藏/已读/设置的导出导入备份（AIHOT：只存本机，但可以导出、导入备份）。
+
+    锁住的回归：
+    1. LS_KEYS 必须与实际使用的 localStorage 键一致——少一个键，那份数据
+       就悄悄不在备份里，用户换设备后才发现"已读丢了"。
+    2. 导入必须校验 app 标记，坏文件/别的站的文件一律不动现场。
+    3. 导入成功后必须热重载 READ/FAV 并刷新页面——只写 localStorage 不重载
+       等于导入了但看不见。
+    """
+
+    def test_ls_keys_cover_every_used_key(self):
+        m = re.search(r"const LS_KEYS = \[(.*?)\];", JS)
+        self.assertIsNotNone(m, "找不到 LS_KEYS")
+        declared = set(re.findall(r'"([^"]+)"', m.group(1)))
+        used = set(re.findall(r'lsGet\("([^"]+)"\)|lsSet\("([^"]+)"|localStorage\.get(?:Item|).?\("([^"]+)"\)|localStorage\.setItem\("([^"]+)"', JS))
+        used = {x for tup in used for x in tup if x}
+        # pat-theme 由 <head> 引导脚本与 setTheme 直接读写
+        used |= {"pat-theme"}
+        missing = sorted(used - declared)
+        self.assertEqual(missing, [], "这些键在用却不在备份清单里：%s" % missing)
+
+    def test_import_validates_app_marker(self):
+        self.assertIn('o.app !== "PAT-HOT"', JS, "导入必须校验文件来源")
+        self.assertIn("badFile", JS)
+
+    def test_import_reloads_state(self):
+        i = JS.index("function applyBackup")
+        body = JS[i:JS.index("function pickBackupFile")]
+        self.assertIn('READ = lsGet("pat-read")', body)
+        self.assertIn('FAV = lsGet("pat-fav")', body)
+        self.assertIn("location.reload()", body, "导入后必须刷新，否则界面还读旧值")
+
+    def test_import_never_touches_users_file(self):
+        # 回归：初版曾调 f.remove()——那会删用户磁盘上的真备份文件。
+        # 只允许移除临时 <input> 元素本身（inp.remove()）。
+        i = JS.index("function pickBackupFile")
+        body = JS[i:i + 900]
+        self.assertNotIn("f.remove", body, "绝不允许删除用户的备份文件")
+        self.assertIn("inp.remove()", body, "临时 input 用完要从 DOM 摘掉")
+
+
 class TestTemplatePlaceholders(unittest.TestCase):
     def test_html_placeholders_present_exactly_once(self):
         for ph in ("/*__CSS__*/", "/*__JS__*/"):
