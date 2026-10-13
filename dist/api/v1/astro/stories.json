@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T13:33:23.619730+00:00",
+  "generatedAt": "2026-10-13T17:37:36.461691+00:00",
   "count": 9,
   "items": [
     {
-      "id": "80f23728f0c2",
-      "title": "NASA's SpaceX CRS-35 mission to launch health research",
+      "id": "2f8e16419acb",
+      "title": "New solar model maps sun more accurately by checking far-side activity",
       "status": "爆",
       "heat": 92.5,
       "sourceCount": 8,
-      "signalCount": 66,
-      "latestAt": "2026-10-13T13:33:23.619730+00:00",
+      "signalCount": 61,
+      "latestAt": "2026-10-13T17:37:36.461691+00:00",
       "sources": [
         "Astronomy Magazine",
         "ESA 空间科学",
@@ -23,39 +23,39 @@
       ],
       "links": [
         {
-          "title": "NASA's SpaceX CRS-35 mission to launch health research",
-          "url": "https://phys.org/news/2026-10-nasa-spacex-crs-mission-health.html",
+          "title": "New solar model maps sun more accurately by checking far-side activity",
+          "url": "https://phys.org/news/2026-10-solar-sun-accurately-side.html",
           "source": "Phys.org 太空新闻",
           "score": 86.5,
-          "published_at": "2026-10-13T12:00:02+00:00"
+          "published_at": "2026-10-13T17:20:20+00:00"
+        },
+        {
+          "title": "Structure in the unstructured: New phenomenon discovered in the solar wind",
+          "url": "https://phys.org/news/2026-10-unstructured-phenomenon-solar.html",
+          "source": "Phys.org 太空新闻",
+          "score": 86.4,
+          "published_at": "2026-10-13T15:20:06+00:00"
+        },
+        {
+          "title": "Planetary systems reveal two distinct families tied to their host stars",
+          "url": "https://phys.org/news/2026-10-planetary-reveal-distinct-families-host.html",
+          "source": "Phys.org 太空新闻",
+          "score": 86.4,
+          "published_at": "2026-10-13T14:20:46+00:00"
         },
         {
           "title": "NASA JPL Testing Readies Voyager Technologies Lander for Moon Mission",
           "url": "https://www.nasa.gov/missions/moon-base/nasa-jpl-testing-readies-voyager-technologies-lander-for-moon-mission/",
           "source": "NASA 快讯",
-          "score": 86.5,
+          "score": 86.4,
           "published_at": "2026-10-13T13:00:00+00:00"
         },
         {
-          "title": "Mars moon lander set to launch on 19 October",
-          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
-          "source": "ESA 空间科学",
-          "score": 86.5,
-          "published_at": "2026-10-13T12:00:00+00:00"
-        },
-        {
-          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
-          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
+          "title": "Distant NGC 3137 reveals clues about our own galaxy",
+          "url": "https://www.astronomy.com/science/distant-ngc-3137-reveals-clues-about-our-own-galaxy/",
           "source": "Astronomy Magazine",
-          "score": 86.5,
-          "published_at": "2026-10-13T12:27:59+00:00"
-        },
-        {
-          "title": "NASA Science, Cargo Launch on 35th SpaceX Resupply Mission to Station",
-          "url": "https://www.nasa.gov/news-release/nasa-science-cargo-launch-on-35th-spacex-resupply-mission-to-station/",
-          "source": "NASA 快讯",
           "score": 86.4,
-          "published_at": "2026-10-13T11:12:18+00:00"
+          "published_at": "2026-10-13T15:00:00+00:00"
         }
       ],
       "trend": "new",
@@ -63,8 +63,8 @@
       "badges": [
         "surge"
       ],
-      "digest": "NASA 的 SpaceX 第 35 次商业补给任务（CRS-35）于美东时间周二上午 6:33 从佛罗里达州卡纳维拉尔角太空军基地 40 号发射台由猎鹰 9 火箭发射升空，向国际空间站运送超过 6300 磅物资与硬件，其中包括聚焦人类与植物健康、耐药微生物等课题的实验载荷。",
-      "digestTitle": "SpaceX CRS-35 向空间站运送健康研究实验与物资",
+      "digest": "西南研究院（SwRI）团队开发了一种改进的太阳事件预测模型，该模型纳入了太阳远侧的活动，基于2010年以来近同时的全太阳表面观测数据。\n\n一项研究在太阳风中发现了新的现象，指出空间与天体物理系统中的湍流虽然普遍存在，但其物理机制与日常生活中的湍流不同。\n\n由意大利国家天体物理学研究所（INAF）领导的国际团队分析了银河系中超过1000个已知行星系统中的300个最佳表征系统，发现多行星系统可归为两个与宿主恒星相关的不同家族。\n\nNASA喷气推进实验室（JPL）完成了一系列关键测试，为商业月球着陆器在建立月球基地任务中的部署做准备。\n\n哈勃望远镜拍摄的NGC 3137星系图像揭示了其螺旋臂上的星团和红色发射星云，这些星云是恒星形成的摇篮，为研究我们自己的银河系提供了线索。",
+      "digestTitle": "多项天文学研究进展：太阳模型、太阳风、行星系统与月球着陆器",
       "llmScore": 30.5
     },
     {
@@ -74,7 +74,7 @@
       "heat": 32.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-13T13:33:23.619730+00:00",
+      "latestAt": "2026-10-13T17:37:36.461691+00:00",
       "sources": [
         "New Scientist 太空",
         "Phys.org 太空新闻"
@@ -84,22 +84,57 @@
           "title": "Alternative gravity theory offers possible explanation for dark energy changing over time",
           "url": "https://phys.org/news/2026-10-alternative-gravity-theory-explanation-dark.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.6,
+          "score": 60.5,
           "published_at": "2026-10-12T17:40:14+00:00"
         },
         {
           "title": "The telescope that could reveal what dark matter and dark energy are",
           "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 56.6,
+          "score": 56.5,
           "published_at": "2026-10-06T17:00:00+00:00"
+        }
+      ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": "一项替代引力理论提出，暗能量可能并非恒定不变，而是随时间发生变化，这为解释宇宙加速膨胀提供了新的可能。传统观点认为，暗能量在宇宙历史中始终保持不变，是驱动宇宙加速膨胀的神秘成分。该理论试图通过修改引力理论来解释暗能量的动态变化，为理解宇宙演化提供了新的视角。",
+      "digestTitle": "替代引力理论或解释暗能量随时间变化",
+      "llmScore": 27.0
+    },
+    {
+      "id": "e2c86ce98c7b",
+      "title": "The dying sun could tear the solar system apart sooner than thought",
+      "status": "关注中",
+      "heat": 32.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-13T17:37:36.461691+00:00",
+      "sources": [
+        "ESA 空间科学",
+        "Phys.org 太空新闻"
+      ],
+      "links": [
+        {
+          "title": "The dying sun could tear the solar system apart sooner than thought",
+          "url": "https://phys.org/news/2026-10-dying-sun-solar-sooner-thought.html",
+          "source": "Phys.org 太空新闻",
+          "score": 60.5,
+          "published_at": "2026-10-12T17:20:06+00:00"
+        },
+        {
+          "title": "Mars’s oddest cloud may be even odder than we thought",
+          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
+          "source": "ESA 空间科学",
+          "score": 57.1,
+          "published_at": "2026-10-07T15:00:00+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "一项替代引力理论提出，暗能量可能并非恒定不变，而是随时间变化，这为解释宇宙加速膨胀提供了新的可能。长期以来，主流观点认为暗能量在宇宙历史中始终保持不变，是驱动宇宙加速膨胀的神秘成分。该理论试图通过修改引力理论来解释暗能量的动态变化，为理解暗能量本质提供了新的思路。",
-      "digestTitle": "替代引力理论或解释暗能量随时间变化"
+      "digest": "据《天体物理学杂志》发表的新研究，太阳在生命末期失去大量质量后，可能比此前估计更早地破坏太阳系的稳定性，导致行星轨道发生剧烈变化甚至被抛出系统。\n\n此前对太阳终局形态的预测差异较大，新研究更新了这一时间线，提示太阳系结构的瓦解可能提前到来。",
+      "digestTitle": "太阳死亡或加速撕裂太阳系"
     },
     {
       "id": "52f01a36efbb",
@@ -108,7 +143,7 @@
       "heat": 32.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-13T13:33:23.619730+00:00",
+      "latestAt": "2026-10-13T17:37:36.461691+00:00",
       "sources": [
         "New Scientist 太空",
         "Phys.org 太空新闻"
@@ -118,7 +153,7 @@
           "title": "Impossibly fast-moving stars are revealing the Milky Way’s mysterious heart",
           "url": "https://www.newscientist.com/article/2590428-impossibly-fast-moving-stars-are-revealing-the-milky-ways-mysterious-heart/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 56.5,
+          "score": 56.4,
           "published_at": "2026-10-06T15:00:00+00:00"
         },
         {
@@ -129,45 +164,11 @@
           "published_at": "2026-10-12T15:00:49+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": "天文学家正在研究银河系中心围绕超大质量黑洞高速运动的恒星群，认为这些恒星是理解银河系核心的关键。\n\n另一项研究利用阿塔卡马大型毫米波/亚毫米波阵列（ALMA）的射电观测，捕捉到一颗正在经历剧烈转变的垂死恒星，观测数据中显示出一个记录其最后一次爆发过程的环状结构。",
-      "digestTitle": "银河系中心高速恒星与垂死恒星环状遗迹"
-    },
-    {
-      "id": "9ddc21232f2a",
-      "title": "Hubble's superbubble scene",
-      "status": "关注中",
-      "heat": 32.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-13T13:33:23.619730+00:00",
-      "sources": [
-        "ESA 空间科学",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "Hubble's superbubble scene",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/Hubble_s_superbubble_scene",
-          "source": "ESA 空间科学",
-          "score": 41.2,
-          "published_at": "2026-09-03T08:00:00+00:00"
-        },
-        {
-          "title": "Hubble Spots a Suspected Second-Generation Planet",
-          "url": "https://www.universetoday.com/articles/hubble-spots-a-suspected-second-generation-planet",
-          "source": "Universe Today",
-          "score": 36.4,
-          "published_at": "2026-10-12T18:11:45+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": "研究人员在《自然·天文学》发表的一项研究中称，通过重新分析NASA哈勃空间望远镜的存档数据，发现了一处化学线索，表明可能存在一颗“第二代”行星——即由第一代恒星死亡后形成的物质所孕育的行星。该发现来自对大麦哲伦云（LMC）中一个超气泡区域的观测，LMC是环绕银河系的卫星星系之一，距地球约16万光年。研究团队表示，这一线索为理解行星形成与恒星演化的关系提供了新证据，但相关结论仍需进一步观测验证。",
-      "digestTitle": "哈勃发现疑似第二代行星的化学线索"
+      "digest": "天文学家正在研究银河系中心围绕超大质量黑洞高速运动的恒星群，认为这些恒星是理解银河系核心的关键。\n\n另一项研究利用阿塔卡马大型毫米/亚毫米波阵列（ALMA）的射电观测，捕捉到一颗垂死恒星在剧烈转变过程中的影像，数据显示其周围存在一个环状结构，记录了该恒星最后一次爆发。",
+      "digestTitle": "银河系中心高速恒星与垂死恒星环状遗迹研究"
     },
     {
       "id": "4a920184e7e1",
@@ -176,7 +177,7 @@
       "heat": 22.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-13T13:33:23.619730+00:00",
+      "latestAt": "2026-10-13T17:37:36.461691+00:00",
       "sources": [
         "MIT News 太空探索",
         "Phys.org 太空新闻"
@@ -186,7 +187,7 @@
           "title": "Margaret Hamilton, who led a software team for NASA's Apollo program, dies at 90",
           "url": "https://phys.org/news/2026-10-margaret-hamilton-scientist-nasa-apollo.html",
           "source": "Phys.org 太空新闻",
-          "score": 34.6,
+          "score": 34.5,
           "published_at": "2026-10-08T08:37:04+00:00"
         },
         {
@@ -200,42 +201,8 @@
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": "玛格丽特·汉密尔顿去世，享年90岁。她领导团队为NASA阿波罗登月计划编写了飞船载飞行软件，是计算机科学与工程的先驱。\n\n汉密尔顿在麻省理工学院工作二十余年，其开创性工作包括领导团队为首次将人类送上月球的计算机编程。她晚年被视为女性在科技领域的重要象征。",
+      "digest": "玛格丽特·汉密尔顿去世，享年90岁。她领导团队为NASA阿波罗登月计划编写了飞船飞行软件，是首位将人类送上月球的计算机程序的主要负责人。\n\n汉密尔顿在麻省理工学院工作二十余年，在计算机科学与工程领域开拓了新路径，晚年被视为女性在科技领域的重要象征。",
       "digestTitle": "阿波罗计划软件负责人玛格丽特·汉密尔顿去世"
-    },
-    {
-      "id": "bcde4fc253aa",
-      "title": "A Student Finds Three Galaxies and Possibly Solves a Mystery",
-      "status": "关注中",
-      "heat": 22.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-13T13:33:23.619730+00:00",
-      "sources": [
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "A Student Finds Three Galaxies and Possibly Solves a Mystery",
-          "url": "https://www.universetoday.com/articles/a-student-finds-three-galaxies-and-possibly-solves-a-mystery",
-          "source": "Universe Today",
-          "score": 58.3,
-          "published_at": "2026-10-09T06:01:48+00:00"
-        },
-        {
-          "title": "Undergraduate student may have solved puzzle regarding isolated galaxies that have stopped producing stars",
-          "url": "https://phys.org/news/2026-10-undergraduate-student-puzzle-isolated-galaxies.html",
-          "source": "Phys.org 太空新闻",
-          "score": 57.4,
-          "published_at": "2026-10-07T21:20:11+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": "加州大学伯克利分校天体物理学本科生Julian Shapiro发现三座异常星系，被编目为Shapiro Dwarf Galaxies I、II、III。这些星系远离其他星系，且已停止形成恒星，这种组合极为罕见。\n\n据Phys.org报道，这一发现可能解开孤立星系为何停止恒星形成的谜题。报道同时称，Shapiro是少数以名字命名三座星系的本科生之一。",
-      "digestTitle": "加州大学伯克利本科生发现三座异常矮星系"
     },
     {
       "id": "bc61694b3c36",
@@ -244,7 +211,7 @@
       "heat": 22.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-13T13:33:23.619730+00:00",
+      "latestAt": "2026-10-13T17:37:36.461691+00:00",
       "sources": [
         "ESA 空间科学",
         "MIT News 太空探索"
@@ -254,7 +221,7 @@
           "title": "Happy New Year on Mars",
           "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Happy_New_Year_on_Mars",
           "source": "ESA 空间科学",
-          "score": 52.3,
+          "score": 52.2,
           "published_at": "2026-09-30T06:00:00+00:00"
         },
         {
@@ -268,7 +235,7 @@
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": "2026年9月30日10:16 CEST（08:16 UTC），火星完成绕日一周，进入新的火星年。欧洲空间局（ESA）空间科学部门发布了这一时间点的说明。\n\n与此同时，麻省理工学院（MIT）的两名学生通过“MADMEN”项目，体验了火星模拟任务中的挑战与团队磨合。该项目旨在模拟火星任务的环境与协作压力。",
+      "digest": "2026年9月30日10:16 CEST（08:16 UTC），火星完成绕日一周，进入新的火星年，欧洲空间局空间科学部门对此进行了标注。\n\n与此同时，麻省理工学院两名学生参与Project MADMEN，体验火星模拟任务中的挑战与团队磨合。",
       "digestTitle": "火星新年与MIT火星模拟任务"
     },
     {
@@ -278,7 +245,7 @@
       "heat": 21.5,
       "sourceCount": 1,
       "signalCount": 4,
-      "latestAt": "2026-10-13T13:33:23.619730+00:00",
+      "latestAt": "2026-10-13T17:37:36.461691+00:00",
       "sources": [
         "LIGO"
       ],
@@ -312,6 +279,46 @@
           "published_at": "2026-02-25T04:06:26+00:00"
         }
       ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "cc76feb3c9f8",
+      "title": "Science begins for Smile",
+      "status": "关注中",
+      "heat": 18.0,
+      "sourceCount": 1,
+      "signalCount": 3,
+      "latestAt": "2026-10-13T17:37:36.461691+00:00",
+      "sources": [
+        "ESA 空间科学"
+      ],
+      "links": [
+        {
+          "title": "Science begins for Smile",
+          "url": "https://www.esa.int/Science_Exploration/Space_Science/Smile/Science_begins_for_Smile",
+          "source": "ESA 空间科学",
+          "score": 50.4,
+          "published_at": "2026-09-30T07:05:00+00:00"
+        },
+        {
+          "title": "BepiColombo’s Mercury arrival begins - full replay",
+          "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/09/BepiColombo_s_Mercury_arrival_begins_-_full_replay",
+          "source": "ESA 空间科学",
+          "score": 39.3,
+          "published_at": "2026-09-03T15:00:00+00:00"
+        },
+        {
+          "title": "Media briefing: BepiColombo's next milestone towards Mercury",
+          "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/08/Media_briefing_BepiColombo_s_next_milestone_towards_Mercury",
+          "source": "ESA 空间科学",
+          "score": 39.3,
+          "published_at": "2026-08-31T14:00:00+00:00"
+        }
+      ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -325,7 +332,7 @@
       "heat": 18.0,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-13T13:33:23.619730+00:00",
+      "latestAt": "2026-10-13T17:37:36.461691+00:00",
       "sources": [
         "LIGO"
       ],

@@ -1,93 +1,105 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T13:33:23.619730+00:00",
+  "generatedAt": "2026-10-13T17:37:36.461691+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
-      "category": "光通信",
-      "thisWeek": 1339.7,
-      "lastWeek": 618.8,
-      "deltaPct": 116.5
-    },
-    {
-      "category": "其他",
-      "thisWeek": 1115.5,
-      "lastWeek": 1537.0,
-      "deltaPct": -27.4
+      "category": "激光",
+      "thisWeek": 1734.0,
+      "lastWeek": 764.2,
+      "deltaPct": 126.9
     },
     {
       "category": "通信与算力",
-      "thisWeek": 1092.4,
+      "thisWeek": 1590.1,
       "lastWeek": 695.0,
-      "deltaPct": 57.2
+      "deltaPct": 128.8
     },
     {
-      "category": "激光",
-      "thisWeek": 1072.9,
-      "lastWeek": 764.2,
-      "deltaPct": 40.4
+      "category": "其他",
+      "thisWeek": 1509.1,
+      "lastWeek": 1537.0,
+      "deltaPct": -1.8
     },
     {
-      "category": "光学元件与成像",
-      "thisWeek": 869.0,
-      "lastWeek": 687.1,
-      "deltaPct": 26.5
+      "category": "光通信",
+      "thisWeek": 1454.0,
+      "lastWeek": 618.8,
+      "deltaPct": 135.0
     },
     {
       "category": "产业与资本",
-      "thisWeek": 863.4,
+      "thisWeek": 1407.4,
       "lastWeek": 960.6,
-      "deltaPct": -10.1
+      "deltaPct": 46.5
     },
     {
       "category": "科研进展",
-      "thisWeek": 861.2,
+      "thisWeek": 1292.8,
       "lastWeek": 693.0,
-      "deltaPct": 24.3
+      "deltaPct": 86.6
+    },
+    {
+      "category": "光学元件与成像",
+      "thisWeek": 954.9,
+      "lastWeek": 687.1,
+      "deltaPct": 39.0
     },
     {
       "category": "显示与面板",
-      "thisWeek": 594.9,
+      "thisWeek": 640.6,
       "lastWeek": 689.8,
-      "deltaPct": -13.8
+      "deltaPct": -7.1
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 421.3,
+      "thisWeek": 467.1,
       "lastWeek": 606.5,
-      "deltaPct": -30.5
+      "deltaPct": -23.0
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 157.0,
+      "thisWeek": 203.0,
       "lastWeek": 196.9,
-      "deltaPct": -20.3
+      "deltaPct": 3.1
     },
     {
       "category": "光伏与新能源",
-      "thisWeek": 94.5,
+      "thisWeek": 154.5,
       "lastWeek": 68.0,
-      "deltaPct": 39.0
+      "deltaPct": 127.2
     }
   ],
   "newTopics": [
     {
-      "topic_id": "d9d1f75bf9c3",
-      "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
-      "score": 1234.7,
+      "topic_id": "f510f3bd8d72",
+      "title": "工信部对我国网络强国建设提出四点建议",
+      "score": 1327.0,
       "days": 2
     },
     {
-      "topic_id": "f510f3bd8d72",
-      "title": "工信部对我国网络强国建设提出四点建议",
-      "score": 703.2,
-      "days": 1
+      "topic_id": "6bc724825423",
+      "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
+      "score": 1123.7,
+      "days": 2
     },
     {
       "topic_id": "8c01b90c3aae",
       "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
-      "score": 678.3,
-      "days": 1
+      "score": 1067.8,
+      "days": 2
+    },
+    {
+      "topic_id": "d9d1f75bf9c3",
+      "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
+      "score": 464.6,
+      "days": 2
+    },
+    {
+      "topic_id": "0d2e902c4033",
+      "title": "零跑A05把激光雷达带到8万级,真香背后最该看清的不是参数",
+      "score": 288.0,
+      "days": 2
     },
     {
       "topic_id": "9e5d6509787a",
@@ -102,6 +114,12 @@
       "days": 1
     },
     {
+      "topic_id": "4ad553c75912",
+      "title": "中国代表团完成国际电信联盟无线电通信部门第六研究组会议参会任务",
+      "score": 198.8,
+      "days": 2
+    },
+    {
       "topic_id": "da7b21634030",
       "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
       "score": 174.9,
@@ -111,24 +129,6 @@
       "topic_id": "0e8d6608b73f",
       "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
       "score": 162.8,
-      "days": 1
-    },
-    {
-      "topic_id": "affa4875e848",
-      "title": "Photonics Hot List: October 2, 2026",
-      "score": 161.4,
-      "days": 1
-    },
-    {
-      "topic_id": "a7d37b8a7f58",
-      "title": "2026年中国国际信息通信展览会在京开幕",
-      "score": 123.4,
-      "days": 1
-    },
-    {
-      "topic_id": "394c7b74bbd6",
-      "title": "2026年中国国际信息通信展览会在京开幕",
-      "score": 117.4,
       "days": 1
     }
   ],

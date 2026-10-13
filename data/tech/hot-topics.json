@@ -1,10 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T13:33:23.619730+00:00",
+  "generatedAt": "2026-10-13T17:37:36.461691+00:00",
   "count": 10,
   "items": [
     {
       "terms": [
+        "absorption",
         "accelerated",
         "acceptors",
         "accessible",
@@ -17,17 +18,20 @@
         "ahead",
         "ai-powered",
         "alignment",
+        "annual",
         "apart",
         "apochromatic",
         "assess",
         "autofluorescence",
         "automotive",
         "available",
+        "awards",
         "backing",
         "beams",
         "becomes",
         "boost",
         "briefings",
+        "building",
         "buyers",
         "calcium",
         "camera",
@@ -41,13 +45,11 @@
         "chips",
         "circuit",
         "closer",
-        "coating",
         "coatings",
         "cognex",
         "coherence",
         "coherent",
         "college",
-        "complex",
         "computer",
         "computers",
         "conceals",
@@ -63,6 +65,7 @@
         "coupling",
         "critical",
         "crosstalk",
+        "cryogenic",
         "cryogenics",
         "crystal",
         "crystalight",
@@ -71,19 +74,17 @@
         "debating",
         "deep-blue",
         "defects",
-        "delaying",
         "density",
-        "deposition",
         "derivation",
         "designing",
         "detection",
         "diamond",
+        "dielectric",
         "different",
         "digital",
         "dimensional",
         "diodes",
         "distinguish",
-        "dots",
         "doubles",
         "during",
         "dynamically",
@@ -96,15 +97,17 @@
         "einstein",
         "electrically",
         "electronics",
-        "elements",
         "elusive",
         "emissive",
         "emitted",
         "engineer",
+        "engineering",
         "entangled",
+        "enter",
         "equations",
         "eraser",
         "evaluate",
+        "event",
         "evolution",
         "excitations",
         "exciton",
@@ -118,17 +121,19 @@
         "explain",
         "explained",
         "express",
+        "extension",
         "faster",
         "feynman",
         "fiber",
         "fibers",
-        "film",
+        "final",
         "finally",
         "fluorite",
         "focus",
         "force",
         "foundational",
         "foveated",
+        "frontier",
         "future",
         "glass",
         "global-shutter",
@@ -157,6 +162,7 @@
         "information",
         "infrared",
         "infrastructure",
+        "innovators",
         "inspection",
         "intact",
         "integrated",
@@ -183,7 +189,6 @@
         "list",
         "living",
         "long-term",
-        "machine",
         "magnetic",
         "magnetism",
         "makes",
@@ -197,11 +202,13 @@
         "metabolic",
         "metabolism",
         "metamaterial",
+        "metasurfaces",
         "metrology",
         "michelson",
         "microleds",
         "microscope",
         "microscopy",
+        "miss",
         "mistakes",
         "mobile",
         "modern",
@@ -212,6 +219,7 @@
         "more",
         "multi-sensor",
         "multiple",
+        "multipole",
         "nanophosphor",
         "native",
         "natural",
@@ -246,6 +254,7 @@
         "photon",
         "photonic",
         "photonics",
+        "photonicsnxt",
         "photonlink",
         "photons",
         "pigozzi",
@@ -265,12 +274,10 @@
         "precursors",
         "prime",
         "probing",
-        "processes",
         "processing",
         "production-ready",
         "prototyping",
         "pulses",
-        "qleds",
         "quantum",
         "qubits",
         "radar",
@@ -281,9 +288,10 @@
         "reads",
         "real-number",
         "reduced",
-        "reliable",
+        "reflection",
         "research",
         "researchers",
+        "resonances",
         "reveal",
         "reveals",
         "richard",
@@ -308,6 +316,7 @@
         "september",
         "setting",
         "shaping",
+        "shot",
         "signals",
         "silicon",
         "single-photon",
@@ -362,6 +371,7 @@
         "topologies",
         "tour",
         "transforming",
+        "transmission",
         "tunable",
         "tuning",
         "turn",
@@ -370,9 +380,11 @@
         "ultrashort",
         "ultraviolet",
         "universe",
+        "unknown",
         "unlocks",
         "unveils",
         "utilization",
+        "vacuum",
         "vendor",
         "views",
         "virtual",
@@ -381,15 +393,18 @@
         "waves",
         "wirelessly",
         "work",
+        "world",
         "wrong",
         "wrongly",
         "x-ray",
-        "xavveo"
+        "xavveo",
+        "your"
       ],
-      "source_count": 10,
-      "signal_count": 83,
+      "source_count": 11,
+      "signal_count": 84,
       "sources": [
         "EDN 电子工程专辑",
+        "IEEE Spectrum（关键词过滤）",
         "LEDinside 英文",
         "Laser Focus World",
         "Nature Photonics",
@@ -400,14 +415,14 @@
         "YouTube·SPIETV",
         "YouTube·Thorlabs"
       ],
-      "score": 86.0,
-      "latest_at": "2026-10-13T13:33:23.619730+00:00",
+      "score": 87.3,
+      "latest_at": "2026-10-13T17:37:36.461691+00:00",
       "representative": {
         "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
         "url": "https://www.nature.com/articles/s41566-026-02009-8",
         "source": "Nature Photonics",
         "published_at": "2026-10-12T00:00:00+00:00",
-        "score": 94.5,
+        "score": 94.3,
         "summary": "Nature Photonics, Published online: 12 October 2026; doi:10.1038/s41566-026-02009-8 Solid-state emissive guest acceptors enhance organic solar cells by establishing thermally accessible radiative pathways, significantly reducing non-radiati",
         "zh_full": "《Nature Photonics》于2026年10月12日在线发表的一篇论文提出，固态发光型客体受体（solid-state emissive guest acceptors）能够通过建立热可及的辐射跃迁通道，显著降低有机太阳能电池中的非辐射电压损失。该研究将此类受体引入有机太阳能电池体系，实现了三元共混器件的构建，并获得了经认证的20.84%的功率转换效率。这一成果表明，利用固态发光受体调控辐射与非辐射过程，是提升有机太阳能电池效率、减少电压损失的一条可行路径，对推动高效有机光伏材料设计具有重要参考价值。",
         "llm_summary": "该研究在《Nature Photonics》发表，提出固态发光型客体受体可为有机太阳能电池建立热可及的辐射跃迁通道，从而显著降低非辐射电压损失。基于该策略构建的三元共混器件获得了经认证的20.84%功率转换效率，为提升有机光伏效率提供了新方向。",
@@ -415,44 +430,44 @@
         "density": "高",
         "llm_score": 69.0
       },
-      "folded_count": 9,
+      "folded_count": 10,
       "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
-      "id": "29fae5b363f6",
+      "id": "1d0a8e8fc991",
       "links": [
         {
           "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
           "url": "https://www.nature.com/articles/s41566-026-02009-8",
           "source": "Nature Photonics",
-          "score": 94.5,
+          "score": 94.3,
           "published_at": "2026-10-12T00:00:00+00:00"
         },
         {
           "title": "Stable deep-blue organic light-emitting diodes with reduced efficiency roll-off via accelerated exciton utilization",
           "url": "https://www.nature.com/articles/s41566-026-02029-4",
           "source": "Nature Photonics",
-          "score": 94.5,
+          "score": 94.3,
           "published_at": "2026-10-12T00:00:00+00:00"
         },
         {
           "title": "High-entropy molecular contacts enable high-efficiency and stable perovskite solar cells",
           "url": "https://www.nature.com/articles/s41566-026-02028-5",
           "source": "Nature Photonics",
-          "score": 92.5,
+          "score": 92.3,
           "published_at": "2026-10-09T00:00:00+00:00"
         },
         {
           "title": "[News] Coherent Launches PhotonLink™ Integrated Optics Platform for AI Infrastructure",
           "url": "https://www.ledinside.com/news/2026/10/2026_10_08_03",
           "source": "LEDinside 英文",
-          "score": 87.3,
+          "score": 87.1,
           "published_at": "2026-10-07T22:55:19+00:00"
         },
         {
-          "title": "Delaying light from quantum dots",
-          "url": "https://www.nature.com/articles/s41566-026-02015-w",
-          "source": "Nature Photonics",
+          "title": "Engineering the unknown: building vacuum and cryogenic systems for the quantum frontier",
+          "url": "https://physicsworld.com/a/engineering-the-unknown-building-vacuum-and-cryogenic-systems-for-the-quantum-frontier/",
+          "source": "Physics World（关键词过滤）",
           "score": 86.5,
-          "published_at": "2026-09-30T00:00:00+00:00"
+          "published_at": "2026-10-13T16:39:05+00:00"
         }
       ],
       "top_terms": [
@@ -462,13 +477,12 @@
         "photonics",
         "imaging"
       ],
-      "digest": "2026年9月底至10月中旬，Nature Photonics连续刊发多篇光电领域研究，覆盖有机太阳能电池、深蓝光有机发光二极管、钙钛矿太阳能电池、量子点发光调控及光通信集成平台。\n\n其中，固态发光受体被用于为有机太阳能电池建立热可及辐射路径，以降低非辐射损失；磷光体辅助TADF敏化荧光被用于加速激子利用，改善深蓝光OLED的效率滚降；高熵分子接触层通过多种堆积方式提升钙钛矿太阳能电池的载流子传输与稳定性；Förster能量转移可延长量子点接收体的发光衰减，为光学调控提供可能。\n\n此外，Coherent公司宣布推出PhotonLink集成光学平台，整合其光子技术、精密组装与测试能力，面向AI基础设施提供光互连方案。",
-      "digestTitle": "Nature Photonics集中刊发多项光电材料新进展",
+      "digest": "2026年10月9日至12日，Nature Photonics集中刊发多篇光电领域研究。固态发光受体被用于有机太阳能电池，通过建立热可及辐射路径降低非辐射损失；深蓝色OLED借助磷光辅助TADF敏化荧光加速激子利用，以抑制效率滚降；高熵分子接触层通过混合自组装分子改善空穴传输，用于钙钛矿太阳能电池。Coherent同期宣布推出PhotonLink集成光学平台，面向AI基础设施整合其光子技术、精密组装与测试能力。另有报道指出，真空与低温系统扩展是应对量子退相干、推进实用量子设备的关键支撑。",
       "rank": 1,
-      "trend": "down",
-      "trendPct": -11.1,
+      "trend": "flat",
+      "trendPct": 1.5,
       "badges": [],
-      "heat": 86.0,
+      "heat": 87.3,
       "status": "爆"
     },
     {
@@ -483,36 +497,22 @@
         "工信部要闻"
       ],
       "score": 77.5,
-      "latest_at": "2026-10-13T13:33:23.619730+00:00",
+      "latest_at": "2026-10-13T17:37:36.461691+00:00",
       "representative": {
         "title": "工业和信息化部等五部门关于组织开展2026年度国家绿色算力设施推荐工作的通知",
         "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_37e463f44fbd44ed9b0fdf4833c3aacd.html",
         "source": "工信部要闻",
         "published_at": null,
-        "score": 71.0,
+        "score": 63.9,
         "summary": "",
         "zh_full": "（无摘要，仅标题）工业和信息化部等五部门关于组织开展2026年度国家绿色算力设施推荐工作的通知。",
         "llm_summary": "工业和信息化部等五部门关于组织开展2026年度国家绿色算力设施推荐工作的通知。",
         "density": "低"
       },
       "folded_count": 2,
-      "title": "工业和信息化部等五部门关于组织开展2026年度国家绿色算力设施推荐工作的通知",
-      "id": "0b56fc511bfd",
+      "title": "工信部对我国网络强国建设提出四点建议",
+      "id": "f510f3bd8d72",
       "links": [
-        {
-          "title": "工业和信息化部等五部门关于组织开展2026年度国家绿色算力设施推荐工作的通知",
-          "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_37e463f44fbd44ed9b0fdf4833c3aacd.html",
-          "source": "工信部要闻",
-          "score": 71.0,
-          "published_at": null
-        },
-        {
-          "title": "湖北通信管理局召开党组会议 学习贯彻习近平总书记重要指示和全国先进制造业大会精神",
-          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_671ce34c49c44bd6a536f6a789988cee.html",
-          "source": "工信部要闻",
-          "score": 71.0,
-          "published_at": null
-        },
         {
           "title": "工信部对我国网络强国建设提出四点建议",
           "url": "http://www.c114.net/news/16/a997101.html",
@@ -533,22 +533,113 @@
           "source": "C114中国通信网_监管",
           "score": 66.5,
           "published_at": null
+        },
+        {
+          "title": "工信部：2027年基本建成全域覆盖、高效畅通的城域毫秒级算力网络体系",
+          "url": "https://www.c114.com.cn/news/550/a1298868.html",
+          "source": "C114中国通信网_监管",
+          "score": 66.5,
+          "published_at": null
+        },
+        {
+          "title": "工信部等七部门：按需布局算力基础设施 加速算力与行业融合应用",
+          "url": "https://www.c114.com.cn/news/550/a1298426.html",
+          "source": "C114中国通信网_监管",
+          "score": 66.5,
+          "published_at": null
         }
       ],
       "top_terms": [
         "规划",
         "工业",
         "信息",
-        "业和",
-        "和信"
+        "工信",
+        "信部"
       ],
-      "digest": "工业和信息化部办公厅印发《关于全面开展算力态势感知自动化监测工作的通知》，要求加快形成全国算力资源一本账，全面提升算力资源管理效能。\n\n同日，工信部发布《关于进一步加快制造业中试平台体系化布局和高水平建设的通知》，旨在落实《制造业中试创新发展实施意见》，推进中试平台体系化布局，加强高水平中试平台建设，重点布局AI、量子科技等关键领域。",
-      "digestTitle": "工信部推进算力监测与制造业中试平台建设",
+      "digest": "工业和信息化部近期连续印发多项通知，围绕算力基础设施和制造业中试平台作出系统部署。在算力方面，工信部要求全面开展算力态势感知自动化监测，形成全国算力资源一本账；同时启动城域“毫秒用算”专项行动，梯次推进毫秒级算力网络建设，明确到2027年基本形成全域覆盖、高效畅通的城域毫秒用算网络能力体系。工信部等七部门还提出按需布局算力基础设施，加速算力与行业融合应用，并深化“5G+工业互联网”融合创新。\n\n在制造业中试方面，工信部发布通知，要求进一步加快制造业中试平台体系化布局和高水平建设，重点布局人工智能、量子科技等关键领域，以落实《制造业中试创新发展实施意见》。",
+      "digestTitle": "工信部密集部署算力与制造业中试体系建设",
       "rank": 2,
       "trend": "new",
       "trendPct": null,
       "badges": [],
       "heat": 77.5,
+      "status": "发酵中"
+    },
+    {
+      "terms": [
+        "激光",
+        "激光雷达"
+      ],
+      "source_count": 4,
+      "signal_count": 4,
+      "sources": [
+        "搜狗微信·光电行业 · 数码小何",
+        "搜狗微信·光电行业 · 无赖与绅士",
+        "搜狗微信·光电行业 · 汽车之家",
+        "搜狗微信·光电行业 · 车屿99"
+      ],
+      "score": 64.0,
+      "latest_at": "2026-10-13T17:37:36.461691+00:00",
+      "representative": {
+        "title": "零跑B10 540激光雷达版卖到11.98万,家用纯电SUV真能做到“无短板”吗?",
+        "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2pIXth7G-GrFJV_Kwi0GO5j1qXa8Fplpd9fMdZzIDkJmsS_SC_zzr8ivdg645CjieLksEIncH5Pn3rSzAKvqijxyglmdvLa_0e1E_tymB8oJLMYgVKjSQZJkeDNTbeWG9AlTSg5fVzBFEXL3S3TvounXUjRZP2yxh5ea4fJdsyaPyoQpV2eynt71tk70LScnf_5z2n_S9exupQL0Hr9Gyd3Q..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=0F216D3F4D134DDDE8EFB554B2317D60E98794F86ACE6DF0",
+        "source": "搜狗微信·光电行业 · 车屿99",
+        "published_at": "2026-10-13T14:58:41+00:00",
+        "score": 80.1,
+        "summary": "零跑B10 540激光雷达版卖到11.98万,家用纯电SUV真能做到“无短板”吗?11.98万的价格,买一台面向家庭用户的新款纯电SUV,...",
+        "zh_full": "（无摘要，仅标题）标题提到零跑B10 540激光雷达版售价11.98万元，并提问家用纯电SUV是否真能做到“无短板”。",
+        "llm_summary": "标题提到零跑B10 540激光雷达版售价11.98万元，并讨论家用纯电SUV是否真能做到“无短板”。",
+        "density": "低"
+      },
+      "folded_count": 3,
+      "title": "零跑B10 540激光雷达版卖到11.98万,家用纯电SUV真能做到“无短板”吗?",
+      "id": "8c2cae4fb67c",
+      "links": [
+        {
+          "title": "零跑B10 540激光雷达版卖到11.98万,家用纯电SUV真能做到“无短板”吗?",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2pIXth7G-GrFJV_Kwi0GO5j1qXa8Fplpd9fMdZzIDkJmsS_SC_zzr8ivdg645CjieLksEIncH5Pn3rSzAKvqijxyglmdvLa_0e1E_tymB8oJLMYgVKjSQZJkeDNTbeWG9AlTSg5fVzBFEXL3S3TvounXUjRZP2yxh5ea4fJdsyaPyoQpV2eynt71tk70LScnf_5z2n_S9exupQL0Hr9Gyd3Q..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=0F216D3F4D134DDDE8EFB554B2317D60E98794F86ACE6DF0",
+          "source": "搜狗微信·光电行业 · 车屿99",
+          "score": 80.1,
+          "published_at": "2026-10-13T14:58:41+00:00"
+        },
+        {
+          "title": "12.99万起中型纯电SUV,激光雷达+660km续航,家用性价比之选",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2pIXth7G-GrFJV_Kwi0GO5j1qXa8Fplpd9C1pz3wdj596RavCLl_yawXv8FwU3JOLsbHmdFTiaqAFjLz29K9Okf10VYXr3AihXzB6j7TQG9ziC9LHilmY_6Qb71SOiUtTysYm4HKEFHz_-xT2COXV823jieU8-aAyIPFVjPXZQaOshmSix3TQ19HKYclvmolnkUQHv3ZpYINd535pjGOOjYg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=0F216D3F4D134DDDE8EFB554B2317D60E98794F86ACE6DF0",
+          "source": "搜狗微信·光电行业 · 无赖与绅士",
+          "score": 80.1,
+          "published_at": "2026-10-13T16:20:50+00:00"
+        },
+        {
+          "title": "95kW后驱电机,高配带激光雷达,比亚迪第二代海鸥10月20日上市",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2pIXth7G-GrFJV_Kwi0GO5j1qXa8Fplpd9kbXw4pF_mDf3-F0ablGIPC8oiiQTvVGRg5f_e2atGl0sfDSnQGKkLULMz-6JPN4xzM1e-B9cD2drIz5yIGMBtcKuIWO8IwX9XwQ4MIaiWKesmRTWUIXwbBR-8Guyu9UmGHsQX3Z9GI6PCJJq-aUmL0OWAD5kGHJDHW6aLZDKeY6AFV_3u-a3OQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=0F216D3F4D134DDDE8EFB554B2317D60E98794F86ACE6DF0",
+          "source": "搜狗微信·光电行业 · 数码小何",
+          "score": 80.1,
+          "published_at": "2026-10-13T15:19:22+00:00"
+        },
+        {
+          "title": "车顶激光雷达,后排空间巨大,家用中大型SUV看看这辆!",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2pIXth7G-GrFJV_Kwi0GO5j1qXa8Fplpd96s3sIwp7o5Kl7_XuG-NvKTsI1R5xEITvtreMWZX1_1ks4XuJzKBeIq_nYVc4OnJbGYNrG1J-SWRnumXp5CS8r9jpe8EIS-Ajz2vpBrONtE3QsqE-eClR4gtHbQQEAwzowcrSe5Gg-BvuM9EDSIB0aL59qEDqEJZoS1sBbVgest05eBgmN3LoYQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=0F216D3F4D134DDDE8EFB554B2317D60E98794F86ACE6DF0",
+          "source": "搜狗微信·光电行业 · 汽车之家",
+          "score": 79.7,
+          "published_at": "2026-10-13T00:00:45+00:00"
+        }
+      ],
+      "top_terms": [
+        "激光",
+        "光雷",
+        "雷达",
+        "家用",
+        "suv"
+      ],
+      "digest": "零跑B10 540激光雷达版售价11.98万元，比亚迪第二代海鸥高配带激光雷达、10月20日上市，另有12.99万元起的中型纯电SUV宣称搭载激光雷达与660km续航。这些车型均面向家用市场，将激光雷达配置带入10万至13万元价格区间。",
+      "digestTitle": "多款纯电SUV下探激光雷达配置价格",
+      "rank": 3,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [
+        "surge"
+      ],
+      "heat": 64.0,
       "status": "发酵中"
     },
     {
@@ -566,7 +657,7 @@
         "OFweek 光电频道"
       ],
       "score": 60.0,
-      "latest_at": "2026-10-13T13:33:23.619730+00:00",
+      "latest_at": "2026-10-13T17:37:36.461691+00:00",
       "representative": {
         "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
         "url": "https://www.c114.com.cn/news/123/a1316461.html",
@@ -577,8 +668,7 @@
         "zh_full": "C114讯 8月27日消息（颜翊）昨日，本月18日刚刚上市的量子科技公司频准激光披露首份半年度业绩报告。2026年上半年，公司实现营业收入2.56亿元，同比增长42.13%；实现归母净利润8833.57万元，同比增长24.58%。频准激光是一家量子科技公司，于本月18日刚刚上市，此次披露的是其上市后首份半年度业绩报告。",
         "llm_summary": "频准激光于本月18日刚刚上市，随后披露首份半年度业绩报告。2026年上半年，公司实现营业收入2.56亿元，同比增长42.13%；归母净利润8833.57万元，同比增长24.58%。",
         "llm_reason": "新上市量子科技公司首份半年报",
-        "density": "中",
-        "llm_score": 58.5
+        "density": "中"
       },
       "folded_count": 1,
       "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
@@ -616,7 +706,7 @@
           "title": "净利暴增186%！光库科技正在兑现AI算力红利",
           "url": "https://optics.ofweek.com/2026-08/ART-8100-2500-30698997.html",
           "source": "OFweek 光电频道",
-          "score": 66.7,
+          "score": 60.0,
           "published_at": "2026-08"
         }
       ],
@@ -627,11 +717,10 @@
         "净利",
         "同比"
       ],
-      "digest": "2026年上半年，多家光通信企业披露业绩，表现分化明显。频准激光营收2.56亿元，同比增长42.13%，归母净利润8833.57万元，同比增长24.58%。华工科技营收78.22亿元，其中光互联业务38.03亿元，称AI高速光模块快速放量，实现1.6T至3.2T技术跨越及硅光芯片规模化应用。联讯仪器净利润5.67亿元，同比增长903%，称受益AI算力与光模块扩产，高速通信及CPO测试设备放量，毛利率升至70.79%。铭普光磁营收10.63亿元，同比增长31.88%，但净利润仍为-1539万元，较上年同期亏损收窄。光库科技净利润同比增长186%，称正在兑现AI算力红利。",
-      "digestTitle": "多家光通信企业上半年业绩分化，AI算力驱动部分公司高增长",
-      "rank": 3,
-      "trend": "new",
-      "trendPct": null,
+      "digest": "2026年上半年，多家光通信及光电企业披露业绩，整体呈现分化：AI算力与光模块扩产带动部分公司高速增长，也有公司仍处亏损。\n\n频准激光（8月18日上市）上半年营收2.56亿元，同比增长42.13%，归母净利润8833.57万元，同比增长24.58%。华工科技上半年营收78.22亿元，其中光互联业务38.03亿元，称AI高速光模块快速放量，实现1.6T至3.2T技术跨越及硅光芯片规模化应用。联讯仪器上半年净利润5.67亿元，同比增长903%，称受益AI算力与光模块扩产，高速通信及CPO测试设备放量，毛利率升至70.79%，研发投入同比增长83.34%。铭普光磁上半年营收10.63亿元，同比增长31.88%，光通信业务同比增长5%，但净利润仍为-1539万元，较上年同期-7304万元收窄。光库科技被报道净利暴增186%，称正在兑现AI算力红利。",
+      "rank": 4,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 60.0,
       "status": "关注中"
@@ -645,7 +734,7 @@
         "工信部要闻"
       ],
       "score": 49.0,
-      "latest_at": "2026-10-13T13:33:23.619730+00:00",
+      "latest_at": "2026-10-13T17:37:36.461691+00:00",
       "representative": {
         "title": "2026年中国国际信息通信展览会在京开幕",
         "url": "https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_2fc0c942477d4a2694137f8fe8d17f47.html",
@@ -653,7 +742,9 @@
         "published_at": null,
         "score": 58.7,
         "summary": "",
-        "zh_full": null
+        "zh_full": "（无摘要，仅标题）2026年中国国际信息通信展览会在京开幕。",
+        "llm_summary": "2026年中国国际信息通信展览会在京开幕。",
+        "density": "低"
       },
       "folded_count": 1,
       "title": "2026年中国国际信息通信展览会在京开幕",
@@ -695,11 +786,11 @@
         "安全",
         "网络"
       ],
-      "digest": "2026年3月，工业和信息化部围绕信息通信业行风建设、安全生产与网络运行安全等方向作出系统部署。3月11日，工信部召开全国电视电话会议，总结2025年行风建设和纠风工作，部署2026年重点任务，副部长张云明出席并讲话。3月16日，工信部办公厅印发通知，面向各省通信管理局、三大基础电信企业、中国广电、中国铁塔、中国卫星网络集团及相关互联网企业，就全年安全防范工作作出安排。同期，2026年中国国际信息通信展览会在京开幕，安徽通信管理局也组织开展了网络安全宣传周活动。",
-      "digestTitle": "工信部部署2026年信息通信业多项重点工作",
-      "rank": 4,
-      "trend": "down",
-      "trendPct": -12.5,
+      "digest": "2026年3月，工业和信息化部围绕信息通信业安全与行风建设作出两项部署。3月16日，工信部办公厅印发《关于做好2026年信息通信业安全生产和网络运行安全工作的通知》，面向各省通信管理局、三大基础电信企业、中国广电、中国铁塔、中国卫星网络集团及相关互联网企业，就全年安全防范工作作出系统安排。3月11日，工信部召开全国电视电话会议，总结2025年信息通信业行风建设和纠风工作情况，部署2026年重点工作，部党组成员、副部长张云明出席会议并讲话，部总工程师钟志红主持会议。",
+      "digestTitle": "工信部部署2026年信息通信业安全与行风工作",
+      "rank": 5,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 49.0,
       "status": "关注中"
@@ -715,7 +806,7 @@
         "C114中国通信网_设备商"
       ],
       "score": 48.5,
-      "latest_at": "2026-10-13T13:33:23.619730+00:00",
+      "latest_at": "2026-10-13T17:37:36.461691+00:00",
       "representative": {
         "title": "构建开源开放人才生态，夯实产业自主根基｜2026华为ICT学院年会圆满举办",
         "url": "https://www.c114.com.cn/news/126/a1318114.html",
@@ -772,7 +863,7 @@
         "为全",
         "全联"
       ],
-      "rank": 5,
+      "rank": 6,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -798,13 +889,13 @@
         "LEDinside 中文"
       ],
       "score": 42.5,
-      "latest_at": "2026-10-13T13:33:23.619730+00:00",
+      "latest_at": "2026-10-13T17:37:36.461691+00:00",
       "representative": {
         "title": "媒体看光博 | C114通信网：发现MicroLED从芯片到系统的进化",
         "url": "https://cioe.cn/news/3045_info.html",
         "source": "CIOE 中国光博会",
         "published_at": "2026-10-11",
-        "score": 72.7,
+        "score": 65.3,
         "summary": "",
         "zh_full": "（无摘要，仅标题）标题提到C114通信网报道MicroLED从芯片到系统的进化，属于光博会相关媒体内容。由于材料未提供摘要，无法补充更多细节。",
         "llm_summary": "标题提及C114通信网报道MicroLED从芯片到系统的进化，属于光博会相关媒体内容。",
@@ -818,22 +909,15 @@
           "title": "光擎源MicroLED光互连取得新进展，带宽达37 Gbps",
           "url": "https://www.ledinside.cn/news/20261013-62767.html",
           "source": "LEDinside 中文",
-          "score": 74.1,
+          "score": 66.6,
           "published_at": "2026-10-13"
         },
         {
           "title": "媒体看光博 | C114通信网：发现MicroLED从芯片到系统的进化",
           "url": "https://cioe.cn/news/3045_info.html",
           "source": "CIOE 中国光博会",
-          "score": 72.7,
+          "score": 65.3,
           "published_at": "2026-10-11"
-        },
-        {
-          "title": "展商回顾 | 宽光谱CIS与半导体晶圆检测成像方案引关注，新型光电探测器赋能多行业应用",
-          "url": "https://cioe.cn/news/3036_info.html",
-          "source": "CIOE 中国光博会",
-          "score": 60.7,
-          "published_at": "2026-09-23"
         },
         {
           "title": "晶湛半导体MicroLED光通信技术取得新突破",
@@ -843,10 +927,17 @@
           "published_at": "2026-06-17"
         },
         {
+          "title": "展商回顾 | 宽光谱CIS与半导体晶圆检测成像方案引关注，新型光电探测器赋能多行业应用",
+          "url": "https://cioe.cn/news/3036_info.html",
+          "source": "CIOE 中国光博会",
+          "score": 54.5,
+          "published_at": "2026-09-23"
+        },
+        {
           "title": "媒体看光博 | 千家网：光+智能传感领域趋势——全谱段集成、场景化、加大产能",
           "url": "https://cioe.cn/news/3040_info.html",
           "source": "CIOE 中国光博会",
-          "score": 51.3,
+          "score": 51.2,
           "published_at": "2026-09-28"
         }
       ],
@@ -857,11 +948,11 @@
         "媒体看光博",
         "媒体"
       ],
-      "digest": "光擎源在MicroLED光互连技术上取得进展，带宽达到37 Gbps。晶湛半导体也宣布其MicroLED光通信技术取得新突破。在CIOE中国光博会上，多家企业展示了MicroLED从芯片到系统的进化路径，以及宽光谱CIS、半导体晶圆检测成像方案和新型光电探测器等应用，这些技术正赋能多行业。行业趋势显示，光与智能传感领域正朝着全谱段集成、场景化应用和加大产能的方向发展。",
-      "digestTitle": "MicroLED光互连技术取得多项进展",
-      "rank": 6,
-      "trend": "new",
-      "trendPct": null,
+      "digest": "光擎源在MicroLED光互连技术上取得进展，带宽达到37 Gbps。晶湛半导体也在MicroLED光通信技术方面取得新突破。这些进展展示了MicroLED从芯片到系统层面的进化，为光通信领域带来了新的可能性。",
+      "digestTitle": "MicroLED光互连与光通信技术取得多项进展",
+      "rank": 7,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 42.5,
       "status": "关注中"
@@ -884,13 +975,13 @@
         "LEDinside 中文"
       ],
       "score": 41.5,
-      "latest_at": "2026-10-13T13:33:23.619730+00:00",
+      "latest_at": "2026-10-13T17:37:36.461691+00:00",
       "representative": {
         "title": "Cellid联手高通，推出双目全彩AR眼镜设计",
         "url": "https://www.ledinside.cn/news/20261013-62769.html",
         "source": "LEDinside 中文",
         "published_at": "2026-10-13",
-        "score": 69.2,
+        "score": 62.2,
         "summary": "",
         "zh_full": "（无摘要，仅标题）Cellid联手高通，推出双目全彩AR眼镜设计。",
         "llm_summary": "Cellid与高通合作，推出双目全彩AR眼镜设计。",
@@ -904,21 +995,21 @@
           "title": "Cellid联手高通，推出双目全彩AR眼镜设计",
           "url": "https://www.ledinside.cn/news/20261013-62769.html",
           "source": "LEDinside 中文",
-          "score": 69.2,
+          "score": 62.2,
           "published_at": "2026-10-13"
         },
         {
           "title": "双目全彩Micro LED AR眼镜Skynea发布",
           "url": "https://www.ledinside.cn/products/20260924-62639.html",
           "source": "LEDinside 中文",
-          "score": 56.6,
+          "score": 56.5,
           "published_at": "2026-09-24"
         },
         {
           "title": "京东方发布全球最薄玻璃基MicroLED显示屏",
           "url": "https://www.ledinside.cn/products/20260923-62623.html",
           "source": "LEDinside 中文",
-          "score": 55.9,
+          "score": 55.8,
           "published_at": "2026-09-23"
         },
         {
@@ -936,9 +1027,9 @@
         "目全",
         "全彩"
       ],
-      "rank": 7,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 8,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 41.5,
       "status": "关注中"
@@ -979,7 +1070,7 @@
         "YouTube·Photonics Media"
       ],
       "score": 39.0,
-      "latest_at": "2026-10-13T13:33:23.619730+00:00",
+      "latest_at": "2026-10-13T17:37:36.461691+00:00",
       "representative": {
         "title": "Are high-power laser diodes ready to power inertial fusion energy?",
         "url": "https://www.laserfocusworld.com/lasers-sources/article/55410022/leonardo-electronics-us-inc-are-high-power-laser-diodes-ready-to-power-inertial-fusion-energy",
@@ -987,7 +1078,10 @@
         "published_at": null,
         "score": 58.7,
         "summary": "As inertial fusion energy moves from scientific breakthrough to commercial reality, scalable and cost-effective laser hardware is the key to moving from laboratory demonstrations to viable power plants—and low-cost, fusion-grade laser diode",
-        "zh_full": null
+        "zh_full": "随着惯性聚变能源从科学突破迈向商业化现实，可扩展且具成本效益的激光硬件是从实验室演示走向可行发电厂的关键——低成本、聚变级激光二极管可在亚利桑那州规模化制造，从而支撑全球惯性聚变能源供应链。",
+        "llm_summary": "惯性聚变能源正从科学突破走向商业化，可扩展、低成本激光硬件是关键。低成本聚变级激光二极管可在亚利桑那州规模化制造，有望支撑全球惯性聚变能源供应链。",
+        "llm_reason": "聚变级激光二极管产业化前景",
+        "density": "高"
       },
       "folded_count": 1,
       "title": "Are high-power laser diodes ready to power inertial fusion energy?",
@@ -1004,21 +1098,21 @@
           "title": "Marvel Fusion Launches Laser-Focused Subsidiary",
           "url": "https://www.youtube.com/shorts/I1r4OdSKioA",
           "source": "YouTube·Photonics Media",
-          "score": 49.7,
+          "score": 49.6,
           "published_at": "2026-09-28T15:00:39+00:00"
         },
         {
           "title": "Fusion Companies Expand Their Focus, New Imaging Into Brain Health",
           "url": "https://www.youtube.com/watch?v=RuU27dOneuc",
           "source": "YouTube·Photonics Media",
-          "score": 46.9,
+          "score": 46.8,
           "published_at": "2026-09-24T09:00:18+00:00"
         },
         {
           "title": "Xcimer Energy Widens Focus to Directed Energy, Ayar Labs Secures $150m to Advance Co-Packaged Optics",
           "url": "https://www.youtube.com/watch?v=mwmTm3t9z6s",
           "source": "YouTube·Photonics Media",
-          "score": 42.2,
+          "score": 42.1,
           "published_at": "2026-09-17T09:00:32+00:00"
         }
       ],
@@ -1029,11 +1123,10 @@
         "focus",
         "diodes"
       ],
-      "digest": "Marvel Fusion 宣布设立一家以激光技术为核心的子公司，将其业务重心从惯性约束聚变能源拓展到激光硬件领域。公司称，随着惯性聚变从实验室走向商业化，可扩展、低成本、聚变级激光二极管是推动其从演示走向可用电站的关键。该子公司将聚焦激光二极管等核心器件的研发与供应，以支撑聚变能源的规模化落地。",
-      "digestTitle": "Marvel Fusion 设立激光业务子公司",
-      "rank": 8,
-      "trend": "new",
-      "trendPct": null,
+      "digest": "Marvel Fusion 宣布设立一家以激光为核心的子公司，将业务重心扩展到惯性聚变能所需的激光硬件方向。报道指出，惯性聚变要从实验室演示走向可商用的发电站，关键在于可扩展、低成本且达到聚变级要求的激光二极管等硬件。\n\n同期，其他聚变与光电子公司也在调整业务布局：Xcimer Energy 将关注范围扩大到定向能领域，Ayar Labs 获得 1.5 亿美元资金用于推进共封装光学技术。",
+      "rank": 9,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 39.0,
       "status": "关注中"
@@ -1071,7 +1164,7 @@
         "Physics World（关键词过滤）"
       ],
       "score": 39.0,
-      "latest_at": "2026-10-13T13:33:23.619730+00:00",
+      "latest_at": "2026-10-13T17:37:36.461691+00:00",
       "representative": {
         "title": "Doubts cast on ‘superradiant neutrino laser’ proposal",
         "url": "https://physicsworld.com/a/doubts-cast-on-superradiant-neutrino-laser-proposal/",
@@ -1121,69 +1214,13 @@
         "doubts",
         "cast"
       ],
-      "rank": 9,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 39.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [],
-      "source_count": 1,
-      "signal_count": 3,
-      "sources": [
-        "C114中国通信网_要闻精选"
-      ],
-      "score": 38.0,
-      "latest_at": "2026-10-13T13:33:23.619730+00:00",
-      "representative": {
-        "title": "大招齐发，英特尔直击网络转型",
-        "url": "http://www.c114.com.cn/topic/5096/a996852.html?utm_medium=C114&dclid=CLmNp8bEwdICFRwhKgodT4YHqQ",
-        "source": "C114中国通信网_要闻精选",
-        "published_at": null,
-        "score": 58.3,
-        "summary": "运营商是实现5G连接及应用和业务创新的重要基石，也是网络转型的主角。作为中国三大运营商之一的中国电信，正在努力推进网络转型，为5G的到来做好准备。中国电信选择与英特尔合作，采用英特尔RSD实施方案，联手击破运营商在网络转型中的各个难题，真正做到在网络转型之路所向披靡。",
-        "zh_full": null
-      },
-      "folded_count": 0,
-      "title": "大招齐发，英特尔直击网络转型",
-      "id": "40753cddc649",
-      "links": [
-        {
-          "title": "大招齐发，英特尔直击网络转型",
-          "url": "http://www.c114.com.cn/topic/5096/a996852.html?utm_medium=C114&dclid=CLmNp8bEwdICFRwhKgodT4YHqQ",
-          "source": "C114中国通信网_要闻精选",
-          "score": 58.3,
-          "published_at": null
-        },
-        {
-          "title": "英特尔助力电信网络转型 让5G不再是“看上去很美”",
-          "url": "http://www.c114.net/topic/5096/a996887.html",
-          "source": "C114中国通信网_要闻精选",
-          "score": 58.3,
-          "published_at": null
-        },
-        {
-          "title": "对话英特尔：产业协作与标准化助推5G成功",
-          "url": "http://www.c114.net/news/138/a996926.html",
-          "source": "C114中国通信网_要闻精选",
-          "score": 46.7,
-          "published_at": null
-        }
-      ],
-      "top_terms": [
-        "英特",
-        "特尔",
-        "网络",
-        "络转",
-        "转型"
-      ],
+      "digest": "2026年诺贝尔奖公布：生理学或医学奖授予Karl Deisseroth、Peter Hegemann和Georg Nagel，表彰其关于光控离子通道与光遗传学的发现；物理学奖授予Francis Halzen，以表彰IceCube中微子天文台；化学奖授予Henri B. Kagan和Kenso Soai，表彰其关于同手性如何及为何出现的发现。\n\n同期，Physics World报道了一项“超辐射中微子激光”提案引发争议，讨论横跨原子物理与粒子物理领域，外界对其可行性提出质疑。",
+      "digestTitle": "2026年诺贝尔奖揭晓：光遗传学、中微子天文与同手性研究获奖",
       "rank": 10,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "heat": 38.0,
+      "heat": 39.0,
       "status": "关注中"
     }
   ]

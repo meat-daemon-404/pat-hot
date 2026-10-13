@@ -1,35 +1,35 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T13:33:23.619730+00:00",
+  "generatedAt": "2026-10-13T17:37:36.461691+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 283.8,
+      "thisWeek": 519.4,
       "lastWeek": 805.6,
-      "deltaPct": -64.8
+      "deltaPct": -35.5
+    },
+    {
+      "category": "高能与粒子物理",
+      "thisWeek": 312.7,
+      "lastWeek": 158.9,
+      "deltaPct": 96.8
     },
     {
       "category": "其他",
-      "thisWeek": 280.7,
+      "thisWeek": 280.6,
       "lastWeek": 192.9,
       "deltaPct": 45.5
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 241.3,
+      "thisWeek": 241.2,
       "lastWeek": 49.8,
-      "deltaPct": 384.5
-    },
-    {
-      "category": "高能与粒子物理",
-      "thisWeek": 209.0,
-      "lastWeek": 158.9,
-      "deltaPct": 31.5
+      "deltaPct": 384.3
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 60.8,
+      "thisWeek": 60.7,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
@@ -42,15 +42,27 @@
   ],
   "newTopics": [
     {
+      "topic_id": "14544c9dbac6",
+      "title": "Will we observe dark matter as a particle or a wave?",
+      "score": 206.5,
+      "days": 1
+    },
+    {
       "topic_id": "8eae9d96a171",
       "title": "Will we observe dark matter as a particle or a wave?",
-      "score": 301.8,
-      "days": 2
+      "score": 95.0,
+      "days": 1
     },
     {
       "topic_id": "a1d83dca7d86",
       "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
-      "score": 60.8,
+      "score": 60.7,
+      "days": 1
+    },
+    {
+      "topic_id": "f227cd59cf45",
+      "title": "The CERN Pension Fund launches MyPension, its new online portal",
+      "score": 57.7,
       "days": 1
     }
   ],

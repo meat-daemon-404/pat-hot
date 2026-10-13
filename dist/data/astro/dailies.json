@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T13:33:23.619730+00:00",
-  "count": 36,
+  "generatedAt": "2026-10-13T17:37:36.461691+00:00",
+  "count": 37,
   "dailies": {
     "2025-10-28": {
       "date": "2025-10-28",
@@ -3492,20 +3492,34 @@
       "weekday": "周二",
       "label": "2026年10月13日",
       "headline": {
-        "title": "NASA's SpaceX CRS-35 mission to launch health research",
-        "url": "https://phys.org/news/2026-10-nasa-spacex-crs-mission-health.html",
+        "title": "Structure in the unstructured: New phenomenon discovered in the solar wind",
+        "url": "https://phys.org/news/2026-10-unstructured-phenomenon-solar.html",
         "source": "Phys.org 太空新闻",
-        "summary": "NASA 将通过 SpaceX 的 CRS-35 任务，从佛罗里达州卡纳维拉尔角太空军基地向国际空间站运送一批实验。这些实验主要研究人类与植物健康以及耐药微生物，其成果将有益于地球生命健康及未来的太空探索。",
-        "zh_full": "NASA 计划通过 SpaceX 的第 35 次商业补给服务任务（CRS-35），将一批聚焦于人类与植物健康以及耐药微生物的实验送往国际空间站。该任务将从佛罗里达州卡纳维拉尔角太空军基地发射。这些实验旨在推进相关科学研究，其成果不仅有助于改善地球上的生命健康，也将为未来的太空探索任务提供重要支持。",
-        "reason": "涉及空间站健康与耐药菌研究",
-        "density": "中",
-        "score": 86.5,
+        "summary": "研究指出太空等离子体中的湍流与日常湍流不同，因其处于电离状态、与电磁场强耦合且粒子无碰撞，揭示了太阳风中一种新现象。",
+        "zh_full": "湍流无处不在，日常生活中如将牛奶倒入咖啡或海洋与大气中的风暴运动都会产生湍流。太空和天体物理系统中的介质也会产生湍流，但由于介质处于电离状态（即等离子体状态），且流动运动与电磁场强烈耦合，其物理机制与日常湍流不同。此外，由于空间等离子体极其稀薄，粒子之间不会发生碰撞，因此属于无碰撞等离子体。",
+        "reason": "揭示太阳风新物理现象",
+        "density": "高",
+        "score": 86.4,
         "role": "科研",
-        "published_at": "2026-10-13T12:00:02+00:00",
-        "topic_id": "5bfcfc5cfd3b",
-        "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
+        "published_at": "2026-10-13T15:20:06+00:00",
+        "topic_id": "2f8e16419acb",
+        "topic_title": "New solar model maps sun more accurately by checking far-side activity"
       },
       "picks": [
+        {
+          "title": "Planetary systems reveal two distinct families tied to their host stars",
+          "url": "https://phys.org/news/2026-10-planetary-reveal-distinct-families-host.html",
+          "source": "Phys.org 太空新闻",
+          "summary": "INAF团队分析银河系中300个刻画最完善的多行星系统，发现它们可分为两个与宿主恒星相关的不同家族。",
+          "zh_full": "一个由意大利国家天体物理学研究所（INAF）领导的国际研究团队，分析了银河系中已知超过1000个行星系统中刻画最完善的300个样本，发现目前已识别出的多行星系统属于两个截然不同的“家族”，这些家族与其宿主恒星相关联。",
+          "reason": "揭示多行星系统分类规律",
+          "density": "高",
+          "score": 86.4,
+          "role": "科研",
+          "published_at": "2026-10-13T14:20:46+00:00",
+          "topic_id": "2f8e16419acb",
+          "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+        },
         {
           "title": "NASA JPL Testing Readies Voyager Technologies Lander for Moon Mission",
           "url": "https://www.nasa.gov/missions/moon-base/nasa-jpl-testing-readies-voyager-technologies-lander-for-moon-mission/",
@@ -3514,25 +3528,25 @@
           "zh_full": "NASA 喷气推进实验室（JPL）位于南加州，近期对一款商业着陆器进行了一系列关键测试。该着陆器将是 NASA 建立月球基地——人类首个月球前哨站——努力中的前沿装备。测试模拟了太空的极端温度与真空环境，以及强烈的震动和震耳欲聋的噪音等严苛条件，以确保着陆器能够胜任未来的月球任务。",
           "reason": "月球基地关键着陆器通过测试",
           "density": "中",
-          "score": 86.5,
+          "score": 86.4,
           "role": "官方",
           "published_at": "2026-10-13T13:00:00+00:00",
-          "topic_id": "5bfcfc5cfd3b",
-          "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
+          "topic_id": "2f8e16419acb",
+          "topic_title": "New solar model maps sun more accurately by checking far-side activity"
         },
         {
-          "title": "Mars moon lander set to launch on 19 October",
-          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
-          "source": "ESA 空间科学",
-          "summary": "火星卫星探测任务（MMX）计划于 2026 年 10 月 20 日从种子岛宇宙中心搭乘 H3 火箭发射。该任务由 JAXA 主导，联合 NASA、CNES、DLR 和 ESA 合作，将是首个从火卫一采集样本并送回地球的探测任务。",
-          "zh_full": "火星卫星探测任务（MMX）计划于 2026 年 10 月 20 日日本标准时间 04:41（10 月 19 日英国夏令时 20:41 / 中欧夏令时 21:41）从种子岛宇宙中心搭乘 H3 火箭发射升空。MMX 将是首个从火星卫星火卫一（Phobos）采集样本并送回地球的探测任务。该任务由日本宇宙航空研究开发机构（JAXA）主导，并与美国国家航空航天局（NASA）、法国国家空间研究中心（CNES）、德国航空航天中心（DLR）以及欧洲航天局（ESA）合作开展。",
-          "reason": "首个火卫一样本返回任务",
-          "density": "高",
-          "score": 86.5,
-          "role": "官方",
-          "published_at": "2026-10-13T12:00:00+00:00",
-          "topic_id": "5bfcfc5cfd3b",
-          "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
+          "title": "Distant NGC 3137 reveals clues about our own galaxy",
+          "url": "https://www.astronomy.com/science/distant-ngc-3137-reveals-clues-about-our-own-galaxy/",
+          "source": "Astronomy Magazine",
+          "summary": "哈勃望远镜拍摄的NGC 3137星系图像展示了其螺旋臂上的星团与发射星云。该星系跨度近14万光年，其范围超出了图像画框。星云是恒星摇篮，因内部大质量恒星激发氢原子而发光。蓝白色星团代表恒星演化的下一阶段。文章指出，这个遥远星系为我们理解银河系自身提供了线索。",
+          "zh_full": "哈勃望远镜拍摄的NGC 3137星系图像展示了其螺旋臂上点缀的闪耀星团与红宝石色发射星云。该星系跨度近14万光年，其范围超出了这张哈勃图像的画框。这些星云是恒星摇篮，因内部正在形成的质量巨大恒星激发氢原子而发光。蓝白色的星团则代表了恒星演化的下一阶段。文章标题指出，这个遥远的NGC 3137星系为我们理解银河系自身提供了线索。",
+          "reason": "哈勃图像展示星系结构",
+          "density": "中",
+          "score": 86.4,
+          "role": "媒体",
+          "published_at": "2026-10-13T15:00:00+00:00",
+          "topic_id": "2f8e16419acb",
+          "topic_title": "New solar model maps sun more accurately by checking far-side activity"
         },
         {
           "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
@@ -3542,11 +3556,27 @@
           "zh_full": "满月现象发生在地球恰好位于太阳和月球之间时，此时月球面向地球的一面完全被阳光照亮。由于月球绕地球运行，阳光照射月球表面并反射回地球的角度不断变化，导致我们看到的月相随之改变。本文提供了2026年全月亮的日历，帮助读者了解何时可以观测到满月及其不同月相。",
           "reason": "提供2026年满月观测指南",
           "density": "中",
-          "score": 86.5,
+          "score": 86.4,
           "role": "媒体",
           "published_at": "2026-10-13T12:27:59+00:00",
-          "topic_id": "5bfcfc5cfd3b",
-          "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
+          "topic_id": "2f8e16419acb",
+          "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+        }
+      ],
+      "flash": [
+        {
+          "title": "NASA's SpaceX CRS-35 mission to launch health research",
+          "url": "https://phys.org/news/2026-10-nasa-spacex-crs-mission-health.html",
+          "source": "Phys.org 太空新闻",
+          "summary": "NASA 将通过 SpaceX 的 CRS-35 任务，从佛罗里达州卡纳维拉尔角太空军基地向国际空间站运送一批实验。这些实验主要研究人类与植物健康以及耐药微生物，其成果将有益于地球生命健康及未来的太空探索。",
+          "zh_full": "NASA 计划通过 SpaceX 的第 35 次商业补给服务任务（CRS-35），将一批聚焦于人类与植物健康以及耐药微生物的实验送往国际空间站。该任务将从佛罗里达州卡纳维拉尔角太空军基地发射。这些实验旨在推进相关科学研究，其成果不仅有助于改善地球上的生命健康，也将为未来的太空探索任务提供重要支持。",
+          "reason": "涉及空间站健康与耐药菌研究",
+          "density": "中",
+          "score": 86.3,
+          "role": "科研",
+          "published_at": "2026-10-13T12:00:02+00:00",
+          "topic_id": "2f8e16419acb",
+          "topic_title": "New solar model maps sun more accurately by checking far-side activity"
         },
         {
           "title": "NASA Science, Cargo Launch on 35th SpaceX Resupply Mission to Station",
@@ -3556,14 +3586,26 @@
           "zh_full": "NASA 的 SpaceX 第 35 次商业补给任务于美国东部时间周二上午 6:33 从佛罗里达州卡纳维拉尔角太空军基地的 40 号航天发射台升空，搭载猎鹰 9 号火箭，携带超过 6,300 磅的物资与硬件，目的地为国际空间站。发射成功后，SpaceX 的 Dragon 飞船将前往空间站执行后续任务。该任务属于 NASA 商业补给服务的一部分，旨在为空间站持续运送补给与设备，保障在轨科研与人员生活需求。",
           "reason": "国际空间站补给任务进展",
           "density": "中",
-          "score": 86.4,
+          "score": 86.3,
           "role": "官方",
           "published_at": "2026-10-13T11:12:18+00:00",
-          "topic_id": "5bfcfc5cfd3b",
-          "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
-        }
-      ],
-      "flash": [
+          "topic_id": "2f8e16419acb",
+          "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+        },
+        {
+          "title": "Mars moon lander set to launch on 19 October",
+          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
+          "source": "ESA 空间科学",
+          "summary": "火星卫星探测任务（MMX）计划于 2026 年 10 月 20 日从种子岛宇宙中心搭乘 H3 火箭发射。该任务由 JAXA 主导，联合 NASA、CNES、DLR 和 ESA 合作，将是首个从火卫一采集样本并送回地球的探测任务。",
+          "zh_full": "火星卫星探测任务（MMX）计划于 2026 年 10 月 20 日日本标准时间 04:41（10 月 19 日英国夏令时 20:41 / 中欧夏令时 21:41）从种子岛宇宙中心搭乘 H3 火箭发射升空。MMX 将是首个从火星卫星火卫一（Phobos）采集样本并送回地球的探测任务。该任务由日本宇宙航空研究开发机构（JAXA）主导，并与美国国家航空航天局（NASA）、法国国家空间研究中心（CNES）、德国航空航天中心（DLR）以及欧洲航天局（ESA）合作开展。",
+          "reason": "首个火卫一样本返回任务",
+          "density": "高",
+          "score": 86.3,
+          "role": "官方",
+          "published_at": "2026-10-13T12:00:00+00:00",
+          "topic_id": "2f8e16419acb",
+          "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+        },
         {
           "title": "APOD: 2026 October 13 – Desert Stairway to Heaven",
           "url": "https://science.nasa.gov/image-article/apod-2026-october-13-desert-stairway-to-heaven/",
@@ -3572,11 +3614,11 @@
           "zh_full": "（无摘要，仅标题）",
           "reason": null,
           "density": "低",
-          "score": 77.6,
+          "score": 77.5,
           "role": "官方",
           "published_at": "2026-10-13T04:05:00+00:00",
-          "topic_id": "5bfcfc5cfd3b",
-          "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
+          "topic_id": "2f8e16419acb",
+          "topic_title": "New solar model maps sun more accurately by checking far-side activity"
         },
         {
           "title": "Alternative gravity theory offers possible explanation for dark energy changing over time",
@@ -3586,67 +3628,11 @@
           "zh_full": "一项替代引力理论为暗能量可能随时间变化提供了可能的解释。多年来，对暗能量最简单的看法是它保持不变。在整个宇宙历史中，被认为驱动宇宙加速膨胀的这种神秘成分，被认为在每个时期都以相同的方式表现。然而，越来越多的观测正在挑战这一观点。该报道标题为“Alternative gravity theory offers possible explanation for dark energy changing over time”，来源为 Phys.org 太空新闻。材料未提供具体理论名称、观测数据或研究结论。",
           "reason": "暗能量随时间变化的新解释",
           "density": "中",
-          "score": 60.6,
+          "score": 60.5,
           "role": "科研",
           "published_at": "2026-10-12T17:40:14+00:00",
           "topic_id": "15523e1b7268",
           "topic_title": "Alternative gravity theory offers possible explanation for dark energy changing over time"
-        },
-        {
-          "title": "Space waves reveal where Earth's magnetic shield is under pressure",
-          "url": "https://phys.org/news/2026-10-space-reveal-earth-magnetic-shield.html",
-          "source": "Phys.org 太空新闻",
-          "summary": "芬兰奥卢大学团队的新研究聚焦于空间天气中一个理解较少的领域，即地球磁屏蔽边缘处强波的形成位置，以及太阳风得以穿透的位置。",
-          "zh_full": "芬兰奥卢大学研究人员领导的一项新研究，揭示了空间天气中一个理解不足的部分：强大的波在地球磁屏蔽边缘形成的位置，以及太阳风能够找到突破口的位置。",
-          "reason": "揭示磁屏蔽边缘波形成机制",
-          "density": "中",
-          "score": 51.9,
-          "role": "科研",
-          "published_at": "2026-10-13T13:00:18+00:00",
-          "topic_id": "5bfcfc5cfd3b",
-          "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
-        },
-        {
-          "title": "The Sky Today on Tuesday, October 13: Vesta at opposition",
-          "url": "https://www.astronomy.com/observing/the-sky-today-tuesday-october-13-2026/",
-          "source": "Astronomy Magazine",
-          "summary": "本周天象：10月12日水星达最大距角，小行星灶神星于东部夏令时凌晨2点冲日，亮度6.5等，在有一定光污染的天空下也易观测，冲日期间整夜可见。",
-          "zh_full": "本周天象推荐：10月12日水星达到最大距角；小行星4号灶神星在东部夏令时凌晨2点达到冲日。灶神星亮度为6.5等，即使在有一定光污染的天空下也很容易观测。在冲日期间，天体整夜可见。",
-          "reason": "本周灶神星冲日观测指南",
-          "density": "中",
-          "score": 51.8,
-          "role": "媒体",
-          "published_at": "2026-10-13T08:00:00+00:00",
-          "topic_id": "5bfcfc5cfd3b",
-          "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
-        },
-        {
-          "title": "Vera Rubin Observatory spots the largest ultra-fast spinning asteroid yet",
-          "url": "https://phys.org/news/2026-10-vera-rubin-observatory-largest-ultra.html",
-          "source": "Phys.org 太空新闻",
-          "summary": "Vera Rubin Observatory 发现迄今自转最快的超大小行星。小行星自转速度可揭示其物质构成，但现有望远镜观测方法常给出误导性估计。",
-          "zh_full": "Vera Rubin Observatory 发现迄今自转最快的超大小行星。小行星的自转速度可以告诉天文学家关于其物质构成的许多信息。然而，基于望远镜观测的现有自转测量方法往往会产生误导性的估计。",
-          "reason": "发现自转最快超大小行星",
-          "density": "中",
-          "score": 51.4,
-          "role": "科研",
-          "published_at": "2026-10-13T11:40:07+00:00",
-          "topic_id": null,
-          "topic_title": null
-        },
-        {
-          "title": "Primordial helium further confirms our understanding of the Big Bang",
-          "url": "https://phys.org/news/2026-10-primordial-helium-big.html",
-          "source": "Phys.org 太空新闻",
-          "summary": "原始氦进一步证实大爆炸理论。大爆炸早期主要产生氢和氦，比例约为三比一，锂等轻元素仅微量。所有重元素（氧、铁等）均由恒星聚变、超新星或中子星碰撞等天体物理过程产生，至今在宇宙中极为稀有，被统称为金属。",
-          "zh_full": "原始氦进一步证实我们对大爆炸的理解。在大爆炸的早期时刻，两种元素被锻造出来：氢和氦。严格来说，锂等轻元素也产生了微量，但无足轻重。早期宇宙大约三分之氢、三分之一氦。所有更重的元素，从你肺里的氧到你血液中的铁，都是通过天体物理过程创造的——在恒星中聚变、在超新星中形成，或由中子星碰撞散射。即使在当今宇宙中，重元素也极其稀有，天文学家将它们统称为金属。",
-          "reason": "原始氦证实大爆炸理论",
-          "density": "高",
-          "score": 51.0,
-          "role": "科研",
-          "published_at": "2026-10-12T19:20:07+00:00",
-          "topic_id": null,
-          "topic_title": null
         },
         {
           "title": "The dying sun could tear the solar system apart sooner than thought",
@@ -3656,53 +3642,67 @@
           "zh_full": "太阳系的命运取决于太阳。太阳在演化末期会损失大量质量并最终死亡，但关于这一终局的具体形态，科学界估计差异很大。近日发表在《天体物理学杂志快报》（The Astrophysical Journal Letters）上的一项新研究表明，对于太阳系中一些外行星而言，它们的最终结局可能比此前认为的来得更早，时间线从一千万亿年（quintillion years）缩短到大约10亿年。",
           "reason": "太阳演化新研究，时间线大幅缩短",
           "density": "高",
-          "score": 50.9,
+          "score": 60.5,
           "role": "科研",
           "published_at": "2026-10-12T17:20:06+00:00",
-          "topic_id": null,
-          "topic_title": null
+          "topic_id": "e2c86ce98c7b",
+          "topic_title": "The dying sun could tear the solar system apart sooner than thought"
         },
         {
-          "title": "NASA demonstrates next-generation heat shield technologies",
-          "url": "https://phys.org/news/2026-10-nasa-generation-shield-technologies.html",
+          "title": "Space waves reveal where Earth's magnetic shield is under pressure",
+          "url": "https://phys.org/news/2026-10-space-reveal-earth-magnetic-shield.html",
           "source": "Phys.org 太空新闻",
-          "summary": "NASA 正在测试下一代热盾技术，用于保障宇航员从月球和火星任务返回时的安全。报道提到 NASA 采用了一种不寻常的方法，即通过“倒垃圾”的方式进行测试。材料未给出更多技术细节或结果。",
-          "zh_full": "NASA 正在采用一种不寻常的方式来测试热盾技术，以保障宇航员从月球和火星任务返回时的安全：通过“倒垃圾”的方式进行测试。该报道标题为“NASA demonstrates next-generation heat shield technologies”，来源为 Phys.org 太空新闻。摘要仅说明 NASA 采取了一种非传统方法测试热盾，目的是让宇航员在返回任务中保持安全，并提到测试方式与“taking out the trash”相关。材料未提供更多技术细节、试验参数、机构名称或具体结论。",
-          "reason": "NASA 热盾测试新方式",
-          "density": "低",
-          "score": 46.4,
+          "summary": "芬兰奥卢大学团队的新研究聚焦于空间天气中一个理解较少的领域，即地球磁屏蔽边缘处强波的形成位置，以及太阳风得以穿透的位置。",
+          "zh_full": "芬兰奥卢大学研究人员领导的一项新研究，揭示了空间天气中一个理解不足的部分：强大的波在地球磁屏蔽边缘形成的位置，以及太阳风能够找到突破口的位置。",
+          "reason": "揭示磁屏蔽边缘波形成机制",
+          "density": "中",
+          "score": 51.8,
           "role": "科研",
-          "published_at": "2026-10-12T18:40:07+00:00",
-          "topic_id": "5bfcfc5cfd3b",
-          "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
+          "published_at": "2026-10-13T13:00:18+00:00",
+          "topic_id": "2f8e16419acb",
+          "topic_title": "New solar model maps sun more accurately by checking far-side activity"
         },
         {
-          "title": "An Impact Structure With Legs",
-          "url": "https://science.nasa.gov/earth/earth-observatory/an-impact-structure-with-legs/",
-          "source": "NASA 快讯",
-          "summary": "NASA 介绍澳大利亚的蜘蛛坑（Spider Crater），一个形态奇特的撞击构造，因其外观被形容为“有腿”。",
-          "zh_full": "一个有腿的撞击构造。如果地外天体撞击地球还不够令人毛骨悚然，请看澳大利亚的蜘蛛坑。",
-          "reason": "奇特撞击构造",
-          "density": "低",
-          "score": 46.1,
-          "role": "官方",
-          "published_at": "2026-10-13T04:01:00+00:00",
-          "topic_id": null,
-          "topic_title": null
+          "title": "The Sky Today on Tuesday, October 13: Vesta at opposition",
+          "url": "https://www.astronomy.com/observing/the-sky-today-tuesday-october-13-2026/",
+          "source": "Astronomy Magazine",
+          "summary": "本周天象：10月12日水星达最大距角，小行星灶神星于东部夏令时凌晨2点冲日，亮度6.5等，在有一定光污染的天空下也易观测，冲日期间整夜可见。",
+          "zh_full": "本周天象推荐：10月12日水星达到最大距角；小行星4号灶神星在东部夏令时凌晨2点达到冲日。灶神星亮度为6.5等，即使在有一定光污染的天空下也很容易观测。在冲日期间，天体整夜可见。",
+          "reason": "本周灶神星冲日观测指南",
+          "density": "中",
+          "score": 51.7,
+          "role": "媒体",
+          "published_at": "2026-10-13T08:00:00+00:00",
+          "topic_id": "2f8e16419acb",
+          "topic_title": "New solar model maps sun more accurately by checking far-side activity"
         },
         {
           "title": "Hubble Spots a Suspected Second-Generation Planet",
           "url": "https://www.universetoday.com/articles/hubble-spots-a-suspected-second-generation-planet",
           "source": "Universe Today",
-          "summary": "Diligent sleuthing by astronomers has broken open a cold case in the data archive of NASA’s Hubble Space Telescope. In a study published Monday in Nature Astronomy, researchers report uncovering a surprising chemical clue that indicates the",
-          "zh_full": null,
-          "reason": null,
-          "density": null,
-          "score": 36.4,
+          "summary": "天文学家在NASA哈勃空间望远镜的数据档案中破解了一桩悬案。在一项于周一发表在《自然·天文学》上的研究中，研究人员报告发现了一个令人惊讶的化学线索，表明白矮星HS 0209+0832可能拥有一颗第二代行星。",
+          "zh_full": "天文学家通过勤奋的搜寻，在NASA哈勃空间望远镜的数据档案中破解了一桩悬案。在一项于周一发表在《自然·天文学》上的研究中，研究人员报告发现了一个令人惊讶的化学线索，表明白矮星HS 0209+0832可能拥有一颗第二代行星。",
+          "reason": "哈勃数据发现疑似二代行星",
+          "density": "高",
+          "score": 51.5,
           "role": "媒体",
           "published_at": "2026-10-12T18:11:45+00:00",
-          "topic_id": "9ddc21232f2a",
-          "topic_title": "Hubble's superbubble scene"
+          "topic_id": "2f8e16419acb",
+          "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+        },
+        {
+          "title": "Webb spots possible early-universe supernova just days after it happened",
+          "url": "https://phys.org/news/2026-10-webb-early-universe-supernova-days.html",
+          "source": "Phys.org 太空新闻",
+          "summary": "詹姆斯·韦布空间望远镜在早期宇宙中探测到一个可能的超新星 AT 2026abck，位于红移 5.017 的恒星形成星系中，且未借助引力透镜。观测显示该事件在爆炸后仅 4 到 10 天就被捕捉到，论文已于 9 月 29 日上传至 arXiv。",
+          "zh_full": "詹姆斯·韦布空间望远镜（JWST）探测到早期宇宙中一个可能的超新星，时间就在恒星爆炸后仅数日。该暂现源被命名为 AT 2026abck，位于一个恒星形成星系中，红移为 5.017，且是在没有引力透镜帮助的情况下被发现的。JWST 的观测表明，该事件在爆炸后大约仅 4 到 10 天就被捕捉到。相关论文已于 9 月 29 日上传至 arXiv 预印本服务器。",
+          "reason": "早期宇宙超新星观测",
+          "density": "高",
+          "score": 51.4,
+          "role": "科研",
+          "published_at": "2026-10-13T14:50:01+00:00",
+          "topic_id": null,
+          "topic_title": null
         },
         {
           "title": "NASA’s SpaceX CRS-35 Mission to Launch Health Research",
@@ -3721,8 +3721,55 @@
       ],
       "sections": [
         {
+          "category": "恒星与星际介质",
+          "articles": [
+            {
+              "title": "Planetary systems reveal two distinct families tied to their host stars",
+              "url": "https://phys.org/news/2026-10-planetary-reveal-distinct-families-host.html",
+              "source": "Phys.org 太空新闻",
+              "summary": "INAF团队分析银河系中300个刻画最完善的多行星系统，发现它们可分为两个与宿主恒星相关的不同家族。",
+              "zh_full": "一个由意大利国家天体物理学研究所（INAF）领导的国际研究团队，分析了银河系中已知超过1000个行星系统中刻画最完善的300个样本，发现目前已识别出的多行星系统属于两个截然不同的“家族”，这些家族与其宿主恒星相关联。",
+              "reason": "揭示多行星系统分类规律",
+              "density": "高",
+              "score": 86.4,
+              "role": "科研",
+              "published_at": "2026-10-13T14:20:46+00:00",
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+            },
+            {
+              "title": "Webb spots possible early-universe supernova just days after it happened",
+              "url": "https://phys.org/news/2026-10-webb-early-universe-supernova-days.html",
+              "source": "Phys.org 太空新闻",
+              "summary": "詹姆斯·韦布空间望远镜在早期宇宙中探测到一个可能的超新星 AT 2026abck，位于红移 5.017 的恒星形成星系中，且未借助引力透镜。观测显示该事件在爆炸后仅 4 到 10 天就被捕捉到，论文已于 9 月 29 日上传至 arXiv。",
+              "zh_full": "詹姆斯·韦布空间望远镜（JWST）探测到早期宇宙中一个可能的超新星，时间就在恒星爆炸后仅数日。该暂现源被命名为 AT 2026abck，位于一个恒星形成星系中，红移为 5.017，且是在没有引力透镜帮助的情况下被发现的。JWST 的观测表明，该事件在爆炸后大约仅 4 到 10 天就被捕捉到。相关论文已于 9 月 29 日上传至 arXiv 预印本服务器。",
+              "reason": "早期宇宙超新星观测",
+              "density": "高",
+              "score": 51.4,
+              "role": "科研",
+              "published_at": "2026-10-13T14:50:01+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
           "category": "星系与宇宙学",
           "articles": [
+            {
+              "title": "Distant NGC 3137 reveals clues about our own galaxy",
+              "url": "https://www.astronomy.com/science/distant-ngc-3137-reveals-clues-about-our-own-galaxy/",
+              "source": "Astronomy Magazine",
+              "summary": "哈勃望远镜拍摄的NGC 3137星系图像展示了其螺旋臂上的星团与发射星云。该星系跨度近14万光年，其范围超出了图像画框。星云是恒星摇篮，因内部大质量恒星激发氢原子而发光。蓝白色星团代表恒星演化的下一阶段。文章指出，这个遥远星系为我们理解银河系自身提供了线索。",
+              "zh_full": "哈勃望远镜拍摄的NGC 3137星系图像展示了其螺旋臂上点缀的闪耀星团与红宝石色发射星云。该星系跨度近14万光年，其范围超出了这张哈勃图像的画框。这些星云是恒星摇篮，因内部正在形成的质量巨大恒星激发氢原子而发光。蓝白色的星团则代表了恒星演化的下一阶段。文章标题指出，这个遥远的NGC 3137星系为我们理解银河系自身提供了线索。",
+              "reason": "哈勃图像展示星系结构",
+              "density": "中",
+              "score": 86.4,
+              "role": "媒体",
+              "published_at": "2026-10-13T15:00:00+00:00",
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+            },
             {
               "title": "Alternative gravity theory offers possible explanation for dark energy changing over time",
               "url": "https://phys.org/news/2026-10-alternative-gravity-theory-explanation-dark.html",
@@ -3731,7 +3778,7 @@
               "zh_full": "一项替代引力理论为暗能量可能随时间变化提供了可能的解释。多年来，对暗能量最简单的看法是它保持不变。在整个宇宙历史中，被认为驱动宇宙加速膨胀的这种神秘成分，被认为在每个时期都以相同的方式表现。然而，越来越多的观测正在挑战这一观点。该报道标题为“Alternative gravity theory offers possible explanation for dark energy changing over time”，来源为 Phys.org 太空新闻。材料未提供具体理论名称、观测数据或研究结论。",
               "reason": "暗能量随时间变化的新解释",
               "density": "中",
-              "score": 60.6,
+              "score": 60.5,
               "role": "科研",
               "published_at": "2026-10-12T17:40:14+00:00",
               "topic_id": "15523e1b7268",
@@ -3745,7 +3792,7 @@
               "zh_full": "原始氦进一步证实我们对大爆炸的理解。在大爆炸的早期时刻，两种元素被锻造出来：氢和氦。严格来说，锂等轻元素也产生了微量，但无足轻重。早期宇宙大约三分之氢、三分之一氦。所有更重的元素，从你肺里的氧到你血液中的铁，都是通过天体物理过程创造的——在恒星中聚变、在超新星中形成，或由中子星碰撞散射。即使在当今宇宙中，重元素也极其稀有，天文学家将它们统称为金属。",
               "reason": "原始氦证实大爆炸理论",
               "density": "高",
-              "score": 51.0,
+              "score": 50.9,
               "role": "科研",
               "published_at": "2026-10-12T19:20:07+00:00",
               "topic_id": null,
@@ -3757,6 +3804,20 @@
           "category": "太阳与空间物理",
           "articles": [
             {
+              "title": "Structure in the unstructured: New phenomenon discovered in the solar wind",
+              "url": "https://phys.org/news/2026-10-unstructured-phenomenon-solar.html",
+              "source": "Phys.org 太空新闻",
+              "summary": "研究指出太空等离子体中的湍流与日常湍流不同，因其处于电离状态、与电磁场强耦合且粒子无碰撞，揭示了太阳风中一种新现象。",
+              "zh_full": "湍流无处不在，日常生活中如将牛奶倒入咖啡或海洋与大气中的风暴运动都会产生湍流。太空和天体物理系统中的介质也会产生湍流，但由于介质处于电离状态（即等离子体状态），且流动运动与电磁场强烈耦合，其物理机制与日常湍流不同。此外，由于空间等离子体极其稀薄，粒子之间不会发生碰撞，因此属于无碰撞等离子体。",
+              "reason": "揭示太阳风新物理现象",
+              "density": "高",
+              "score": 86.4,
+              "role": "科研",
+              "published_at": "2026-10-13T15:20:06+00:00",
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+            },
+            {
               "title": "The dying sun could tear the solar system apart sooner than thought",
               "url": "https://phys.org/news/2026-10-dying-sun-solar-sooner-thought.html",
               "source": "Phys.org 太空新闻",
@@ -3764,31 +3825,17 @@
               "zh_full": "太阳系的命运取决于太阳。太阳在演化末期会损失大量质量并最终死亡，但关于这一终局的具体形态，科学界估计差异很大。近日发表在《天体物理学杂志快报》（The Astrophysical Journal Letters）上的一项新研究表明，对于太阳系中一些外行星而言，它们的最终结局可能比此前认为的来得更早，时间线从一千万亿年（quintillion years）缩短到大约10亿年。",
               "reason": "太阳演化新研究，时间线大幅缩短",
               "density": "高",
-              "score": 50.9,
+              "score": 60.5,
               "role": "科研",
               "published_at": "2026-10-12T17:20:06+00:00",
-              "topic_id": null,
-              "topic_title": null
+              "topic_id": "e2c86ce98c7b",
+              "topic_title": "The dying sun could tear the solar system apart sooner than thought"
             }
           ]
         },
         {
           "category": "深空探测",
           "articles": [
-            {
-              "title": "NASA's SpaceX CRS-35 mission to launch health research",
-              "url": "https://phys.org/news/2026-10-nasa-spacex-crs-mission-health.html",
-              "source": "Phys.org 太空新闻",
-              "summary": "NASA 将通过 SpaceX 的 CRS-35 任务，从佛罗里达州卡纳维拉尔角太空军基地向国际空间站运送一批实验。这些实验主要研究人类与植物健康以及耐药微生物，其成果将有益于地球生命健康及未来的太空探索。",
-              "zh_full": "NASA 计划通过 SpaceX 的第 35 次商业补给服务任务（CRS-35），将一批聚焦于人类与植物健康以及耐药微生物的实验送往国际空间站。该任务将从佛罗里达州卡纳维拉尔角太空军基地发射。这些实验旨在推进相关科学研究，其成果不仅有助于改善地球上的生命健康，也将为未来的太空探索任务提供重要支持。",
-              "reason": "涉及空间站健康与耐药菌研究",
-              "density": "中",
-              "score": 86.5,
-              "role": "科研",
-              "published_at": "2026-10-13T12:00:02+00:00",
-              "topic_id": "5bfcfc5cfd3b",
-              "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
-            },
             {
               "title": "NASA JPL Testing Readies Voyager Technologies Lander for Moon Mission",
               "url": "https://www.nasa.gov/missions/moon-base/nasa-jpl-testing-readies-voyager-technologies-lander-for-moon-mission/",
@@ -3797,25 +3844,11 @@
               "zh_full": "NASA 喷气推进实验室（JPL）位于南加州，近期对一款商业着陆器进行了一系列关键测试。该着陆器将是 NASA 建立月球基地——人类首个月球前哨站——努力中的前沿装备。测试模拟了太空的极端温度与真空环境，以及强烈的震动和震耳欲聋的噪音等严苛条件，以确保着陆器能够胜任未来的月球任务。",
               "reason": "月球基地关键着陆器通过测试",
               "density": "中",
-              "score": 86.5,
+              "score": 86.4,
               "role": "官方",
               "published_at": "2026-10-13T13:00:00+00:00",
-              "topic_id": "5bfcfc5cfd3b",
-              "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
-            },
-            {
-              "title": "Mars moon lander set to launch on 19 October",
-              "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
-              "source": "ESA 空间科学",
-              "summary": "火星卫星探测任务（MMX）计划于 2026 年 10 月 20 日从种子岛宇宙中心搭乘 H3 火箭发射。该任务由 JAXA 主导，联合 NASA、CNES、DLR 和 ESA 合作，将是首个从火卫一采集样本并送回地球的探测任务。",
-              "zh_full": "火星卫星探测任务（MMX）计划于 2026 年 10 月 20 日日本标准时间 04:41（10 月 19 日英国夏令时 20:41 / 中欧夏令时 21:41）从种子岛宇宙中心搭乘 H3 火箭发射升空。MMX 将是首个从火星卫星火卫一（Phobos）采集样本并送回地球的探测任务。该任务由日本宇宙航空研究开发机构（JAXA）主导，并与美国国家航空航天局（NASA）、法国国家空间研究中心（CNES）、德国航空航天中心（DLR）以及欧洲航天局（ESA）合作开展。",
-              "reason": "首个火卫一样本返回任务",
-              "density": "高",
-              "score": 86.5,
-              "role": "官方",
-              "published_at": "2026-10-13T12:00:00+00:00",
-              "topic_id": "5bfcfc5cfd3b",
-              "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
             },
             {
               "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
@@ -3825,11 +3858,25 @@
               "zh_full": "满月现象发生在地球恰好位于太阳和月球之间时，此时月球面向地球的一面完全被阳光照亮。由于月球绕地球运行，阳光照射月球表面并反射回地球的角度不断变化，导致我们看到的月相随之改变。本文提供了2026年全月亮的日历，帮助读者了解何时可以观测到满月及其不同月相。",
               "reason": "提供2026年满月观测指南",
               "density": "中",
-              "score": 86.5,
+              "score": 86.4,
               "role": "媒体",
               "published_at": "2026-10-13T12:27:59+00:00",
-              "topic_id": "5bfcfc5cfd3b",
-              "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+            },
+            {
+              "title": "NASA's SpaceX CRS-35 mission to launch health research",
+              "url": "https://phys.org/news/2026-10-nasa-spacex-crs-mission-health.html",
+              "source": "Phys.org 太空新闻",
+              "summary": "NASA 将通过 SpaceX 的 CRS-35 任务，从佛罗里达州卡纳维拉尔角太空军基地向国际空间站运送一批实验。这些实验主要研究人类与植物健康以及耐药微生物，其成果将有益于地球生命健康及未来的太空探索。",
+              "zh_full": "NASA 计划通过 SpaceX 的第 35 次商业补给服务任务（CRS-35），将一批聚焦于人类与植物健康以及耐药微生物的实验送往国际空间站。该任务将从佛罗里达州卡纳维拉尔角太空军基地发射。这些实验旨在推进相关科学研究，其成果不仅有助于改善地球上的生命健康，也将为未来的太空探索任务提供重要支持。",
+              "reason": "涉及空间站健康与耐药菌研究",
+              "density": "中",
+              "score": 86.3,
+              "role": "科研",
+              "published_at": "2026-10-13T12:00:02+00:00",
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
             },
             {
               "title": "NASA Science, Cargo Launch on 35th SpaceX Resupply Mission to Station",
@@ -3839,11 +3886,39 @@
               "zh_full": "NASA 的 SpaceX 第 35 次商业补给任务于美国东部时间周二上午 6:33 从佛罗里达州卡纳维拉尔角太空军基地的 40 号航天发射台升空，搭载猎鹰 9 号火箭，携带超过 6,300 磅的物资与硬件，目的地为国际空间站。发射成功后，SpaceX 的 Dragon 飞船将前往空间站执行后续任务。该任务属于 NASA 商业补给服务的一部分，旨在为空间站持续运送补给与设备，保障在轨科研与人员生活需求。",
               "reason": "国际空间站补给任务进展",
               "density": "中",
-              "score": 86.4,
+              "score": 86.3,
               "role": "官方",
               "published_at": "2026-10-13T11:12:18+00:00",
-              "topic_id": "5bfcfc5cfd3b",
-              "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+            },
+            {
+              "title": "Mars moon lander set to launch on 19 October",
+              "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
+              "source": "ESA 空间科学",
+              "summary": "火星卫星探测任务（MMX）计划于 2026 年 10 月 20 日从种子岛宇宙中心搭乘 H3 火箭发射。该任务由 JAXA 主导，联合 NASA、CNES、DLR 和 ESA 合作，将是首个从火卫一采集样本并送回地球的探测任务。",
+              "zh_full": "火星卫星探测任务（MMX）计划于 2026 年 10 月 20 日日本标准时间 04:41（10 月 19 日英国夏令时 20:41 / 中欧夏令时 21:41）从种子岛宇宙中心搭乘 H3 火箭发射升空。MMX 将是首个从火星卫星火卫一（Phobos）采集样本并送回地球的探测任务。该任务由日本宇宙航空研究开发机构（JAXA）主导，并与美国国家航空航天局（NASA）、法国国家空间研究中心（CNES）、德国航空航天中心（DLR）以及欧洲航天局（ESA）合作开展。",
+              "reason": "首个火卫一样本返回任务",
+              "density": "高",
+              "score": 86.3,
+              "role": "官方",
+              "published_at": "2026-10-13T12:00:00+00:00",
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+            },
+            {
+              "title": "ESA's Hera Mission Targets Binary Asteroid Pair in November",
+              "url": "https://www.universetoday.com/articles/esas-hera-mission-targets-binary-asteroid-pair-in-november",
+              "source": "Universe Today",
+              "summary": "欧洲空间局的 Hera 任务将在一个月内以 12 千米/秒的速度与双小行星 Dimorphos-Didymos 交会，以观测 2022 年 NASA DART 任务撞击 Dimorphos 后的后果。ESA 还发布了从 Hera 视角及宇航员视角的模拟展示。",
+              "zh_full": "再过一个月，欧洲空间局（ESA）的 Hera 任务将创造历史。该任务以相对于地球 12 千米/秒的速度，即将与双小行星系统 Dimorphos-Didymos 进行交会。NASA 的双小行星重定向测试（DART）任务于 2022 年撞击了 Dimorphos，而 Hera 将提供对该任务所造成后果的后续观测。欧洲空间局最近发布了一段引人深思的视角展示，呈现了 Hera 的视角，以及一名宇航员在任务高速掠过时可能从这些小行星表面看到的情景。",
+              "reason": "Hera 任务交会双小行星",
+              "density": "中",
+              "score": 51.4,
+              "role": "媒体",
+              "published_at": "2026-10-13T15:23:00+00:00",
+              "topic_id": null,
+              "topic_title": null
             },
             {
               "title": "Vera Rubin Observatory spots the largest ultra-fast spinning asteroid yet",
@@ -3853,7 +3928,7 @@
               "zh_full": "Vera Rubin Observatory 发现迄今自转最快的超大小行星。小行星的自转速度可以告诉天文学家关于其物质构成的许多信息。然而，基于望远镜观测的现有自转测量方法往往会产生误导性的估计。",
               "reason": "发现自转最快超大小行星",
               "density": "中",
-              "score": 51.4,
+              "score": 51.3,
               "role": "科研",
               "published_at": "2026-10-13T11:40:07+00:00",
               "topic_id": null,
@@ -3872,11 +3947,25 @@
               "zh_full": "（无摘要，仅标题）",
               "reason": null,
               "density": "低",
-              "score": 77.6,
+              "score": 77.5,
               "role": "官方",
               "published_at": "2026-10-13T04:05:00+00:00",
-              "topic_id": "5bfcfc5cfd3b",
-              "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+            },
+            {
+              "title": "TB 26-08 Complex Modes in Lightly Damped Structural Systems: A Two-Mode Interaction Perspective",
+              "url": "https://www.nasa.gov/centers-and-facilities/nesc/tb-26-08-complex-modes-in-lightly-damped-structural-systemsa-two-mode-interaction-perspective/",
+              "source": "NASA 快讯",
+              "summary": "NASA 技术简报指出，即使整体阻尼较低，线性结构中仍可能出现复杂模态形状。这通常发生在两个结构模态频率接近并通过非比例阻尼耦合时，且随阻尼相互作用增强而变化。",
+              "zh_full": "NASA 兰利研究中心发布的技术简报 TB 26-08 探讨了在整体阻尼较低的线性结构中，复杂模态形状仍可能出现的现象。该行为可在两个结构模态频率接近、并通过非比例阻尼耦合时发生。随着阻尼相互作用增强，模态特征会发生变化。简报提供了相关联系人与 PDF 下载信息，供进一步查阅。",
+              "reason": "结构动力学研究参考",
+              "density": "中",
+              "score": 51.4,
+              "role": "官方",
+              "published_at": "2026-10-13T15:02:21+00:00",
+              "topic_id": null,
+              "topic_title": null
             },
             {
               "title": "An Impact Structure With Legs",
@@ -3886,7 +3975,7 @@
               "zh_full": "一个有腿的撞击构造。如果地外天体撞击地球还不够令人毛骨悚然，请看澳大利亚的蜘蛛坑。",
               "reason": "奇特撞击构造",
               "density": "低",
-              "score": 46.1,
+              "score": 46.0,
               "role": "官方",
               "published_at": "2026-10-13T04:01:00+00:00",
               "topic_id": null,
@@ -3905,11 +3994,11 @@
               "zh_full": "芬兰奥卢大学研究人员领导的一项新研究，揭示了空间天气中一个理解不足的部分：强大的波在地球磁屏蔽边缘形成的位置，以及太阳风能够找到突破口的位置。",
               "reason": "揭示磁屏蔽边缘波形成机制",
               "density": "中",
-              "score": 51.9,
+              "score": 51.8,
               "role": "科研",
               "published_at": "2026-10-13T13:00:18+00:00",
-              "topic_id": "5bfcfc5cfd3b",
-              "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
             },
             {
               "title": "The Sky Today on Tuesday, October 13: Vesta at opposition",
@@ -3919,11 +4008,25 @@
               "zh_full": "本周天象推荐：10月12日水星达到最大距角；小行星4号灶神星在东部夏令时凌晨2点达到冲日。灶神星亮度为6.5等，即使在有一定光污染的天空下也很容易观测。在冲日期间，天体整夜可见。",
               "reason": "本周灶神星冲日观测指南",
               "density": "中",
-              "score": 51.8,
+              "score": 51.7,
               "role": "媒体",
               "published_at": "2026-10-13T08:00:00+00:00",
-              "topic_id": "5bfcfc5cfd3b",
-              "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+            },
+            {
+              "title": "Hubble Spots a Suspected Second-Generation Planet",
+              "url": "https://www.universetoday.com/articles/hubble-spots-a-suspected-second-generation-planet",
+              "source": "Universe Today",
+              "summary": "天文学家在NASA哈勃空间望远镜的数据档案中破解了一桩悬案。在一项于周一发表在《自然·天文学》上的研究中，研究人员报告发现了一个令人惊讶的化学线索，表明白矮星HS 0209+0832可能拥有一颗第二代行星。",
+              "zh_full": "天文学家通过勤奋的搜寻，在NASA哈勃空间望远镜的数据档案中破解了一桩悬案。在一项于周一发表在《自然·天文学》上的研究中，研究人员报告发现了一个令人惊讶的化学线索，表明白矮星HS 0209+0832可能拥有一颗第二代行星。",
+              "reason": "哈勃数据发现疑似二代行星",
+              "density": "高",
+              "score": 51.5,
+              "role": "媒体",
+              "published_at": "2026-10-12T18:11:45+00:00",
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
             },
             {
               "title": "NASA demonstrates next-generation heat shield technologies",
@@ -3936,46 +4039,46 @@
               "score": 46.4,
               "role": "科研",
               "published_at": "2026-10-12T18:40:07+00:00",
-              "topic_id": "5bfcfc5cfd3b",
-              "topic_title": "NASA's SpaceX CRS-35 mission to launch health research"
-            },
-            {
-              "title": "Hubble Spots a Suspected Second-Generation Planet",
-              "url": "https://www.universetoday.com/articles/hubble-spots-a-suspected-second-generation-planet",
-              "source": "Universe Today",
-              "summary": "Diligent sleuthing by astronomers has broken open a cold case in the data archive of NASA’s Hubble Space Telescope. In a study published Monday in Nature Astronomy, researchers report uncovering a surprising chemical clue that indicates the",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 36.4,
-              "role": "媒体",
-              "published_at": "2026-10-12T18:11:45+00:00",
-              "topic_id": "9ddc21232f2a",
-              "topic_title": "Hubble's superbubble scene"
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
             },
             {
               "title": "Tiny Gold Nanogaps Could Crack the Chirality Puzzle",
               "url": "https://www.universetoday.com/articles/tiny-gold-nanogaps-could-crack-the-chirality-puzzle",
               "source": "Universe Today",
-              "summary": "Looking for biosignatures across the solar system requires looking for asymmetry. Amino acids, the building blocks of proteins, are famously either “left-handed” (L) or “right-handed” (D). We know abiotic processes (i.e. those that create a",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 30.9,
+              "summary": "寻找太阳系生物标志物需要寻找氨基酸的不对称性。非生物过程产生50/50的L/D氨基酸混合物，而生命几乎完全依赖左手性氨基酸。发现不平衡可能指示生命存在。",
+              "zh_full": "寻找太阳系中的生物标志物需要寻找不对称性。氨基酸是蛋白质的构建块，它们要么是“左手性”（L），要么是“右手性”（D）。我们知道非生物过程（即不涉及生命的氨基酸生成过程）会产生两种类型的50/50混合物，称为外消旋混合物。但我们已知的生命几乎完全依赖左手性氨基酸来折叠蛋白质，右手性氨基酸来构建核酸。因此，如果我们在太阳系某处分析的氨基酸中发现类型不平衡，这可能是一个生物标志物。",
+              "reason": "纳米金间隙破解手性谜题",
+              "density": "高",
+              "score": 30.8,
               "role": "媒体",
               "published_at": "2026-10-13T12:00:26+00:00",
               "topic_id": null,
               "topic_title": null
             },
             {
-              "title": "Our 16th annual star products",
-              "url": "https://www.astronomy.com/features/our-16th-annual-star-products/",
+              "title": "Thrown for a loop",
+              "url": "https://www.astronomy.com/picture-of-the-day/photo/thrown-for-a-loop/",
               "source": "Astronomy Magazine",
-              "summary": "Each year, new astronomy equipment reflects advances in technology and the evolving ways observers engage with the night sky. Traditional designs such as Dobsonian reflectors and apochromatic refractors continue to deliver dependable perfor",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 30.9,
+              "summary": "英国摄影师 Ionut Nedelcu 拍摄了距离地球约 2,400 光年的天鹅环超新星遗迹。该遗迹由约 10,000 年前一颗大质量恒星爆炸形成，其发光丝状结构由爆炸冲击波加热的气体构成。拍摄使用了 Hα/OIII/RGB 滤镜，总曝光时间达 17 小时。",
+              "zh_full": "英国中央贝德福德郡的 Ionut Nedelcu 拍摄了天鹅环（Sharpless 2-103），这是一个超新星遗迹，其最亮的弧段构成了面纱星云。该遗迹距离地球约 2,400 光年。其发光的丝状结构描绘了由一颗约 10,000 年前爆炸的大质量恒星产生的冲击波所加热的气体。拍摄者使用了 Hα/OIII/RGB 滤镜，总曝光时间长达 17 小时。",
+              "reason": "展示超新星遗迹的精美天文摄影",
+              "density": "中",
+              "score": 30.8,
+              "role": "媒体",
+              "published_at": "2026-10-13T14:05:28+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Our 16th annual star products",
+              "url": "https://www.astronomy.com/observing/our-16th-annual-star-products/",
+              "source": "Astronomy Magazine",
+              "summary": "Astronomy Magazine 发布第 16 届年度明星产品评选。文章指出，传统 Dobsonian 反射望远镜和消色差折射望远镜依然可靠，而智能望远镜和集成成像系统正推动天文摄影普及。便携性（紧凑镜筒、轻量化）是核心趋势。",
+              "zh_full": "每年，新的天文设备都反映了技术进步以及观测者与夜空互动方式的演变。传统的 Dobsonian 反射望远镜和消色差折射望远镜继续提供可靠的表现，而智能望远镜和集成成像系统正在扩大天文摄影的普及度。便携性仍然是核心主题，紧凑的光学镜筒和轻量化设计受到关注。",
+              "reason": "年度天文器材趋势总结",
+              "density": "中",
+              "score": 30.8,
               "role": "媒体",
               "published_at": "2026-10-13T13:29:16+00:00",
               "topic_id": null,
@@ -3985,11 +4088,11 @@
               "title": "Physics Nobel highlights Antarctica's role in exploring the cosmos",
               "url": "https://phys.org/news/2026-10-physics-nobel-highlights-antarctica-role.html",
               "source": "Phys.org 太空新闻",
-              "summary": "When Belgian American particle physicist Francis Halzen was awarded the 2026 Nobel Prize in physics \"for decisive contributions to the IceCube Neutrino Observatory and the discovery of high-energy neutrinos of astrophysical origin,\" it was ",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 30.6,
+              "summary": "Francis Halzen 因对 IceCube 中微子天文台的贡献及发现天体物理高能中微子获 2026 年诺贝尔物理学奖。文章强调，一个多世纪以来，南极洲环境一直被科学家视为探索地球之外世界的窗口。",
+              "zh_full": "当比利时裔美国粒子物理学家 Francis Halzen 因“对 IceCube 中微子天文台的决定性贡献以及发现天体物理起源的高能中微子”而获得 2026 年诺贝尔物理学奖时，这提醒人们，一个多世纪以来，科学家们一直将南极洲的环境视为通往地球之外世界的窗口。",
+              "reason": "诺贝尔奖与南极天文探索",
+              "density": "高",
+              "score": 30.5,
               "role": "科研",
               "published_at": "2026-10-12T17:20:01+00:00",
               "topic_id": null,
@@ -3999,12 +4102,127 @@
         }
       ],
       "topic_ids": [
+        "2f8e16419acb",
         "5bfcfc5cfd3b",
         "6540815d36b5"
       ],
       "tocCount": 16,
-      "readMinutes": 2,
-      "amended": 1
+      "readMinutes": 1,
+      "amended": 2
+    },
+    "2026-10-14": {
+      "date": "2026-10-14",
+      "weekday": "周三",
+      "label": "2026年10月14日",
+      "headline": {
+        "title": "New solar model maps sun more accurately by checking far-side activity",
+        "url": "https://phys.org/news/2026-10-solar-sun-accurately-side.html",
+        "source": "Phys.org 太空新闻",
+        "summary": "西南研究院团队利用2010至2014年的地球观测与太空数据，构建了包含太阳远侧活动的表面磁通量输运模型，使太阳事件预测比以往更完整准确。",
+        "zh_full": "由西南研究院（SwRI）领导的研究团队开发了一种改进的太阳事件预测模型，该模型纳入了太阳远侧的活动情况。团队研究了2010年至2014年间近乎同时的整个太阳表面地图，将地球观测数据与来自太空资产（显示太阳另一侧）的数据相结合。由此构建的表面磁通量输运（SFT）模型比以往任何模型都更加完整和准确。这一进展对于提升太阳活动预测能力具有重要意义。",
+        "reason": "提升太阳活动预测精度",
+        "density": "高",
+        "score": 86.5,
+        "role": "科研",
+        "published_at": "2026-10-13T17:20:20+00:00",
+        "topic_id": "2f8e16419acb",
+        "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+      },
+      "picks": [
+        {
+          "title": "A Red Dwarf is Taking its Time Eating a Brown Dwarf",
+          "url": "https://www.universetoday.com/articles/a-red-dwarf-is-taking-its-time-eating-a-brown-dwarf",
+          "source": "Universe Today",
+          "summary": "天文学家在约300光年外探测到一条不寻常的三角形光变曲线。他们原本在搜寻“黑寡妇双星”系统，即致密中子星吞噬伴星。然而，他们发现了不同的情况：一颗M型红矮星正在缓慢吞噬其双星伴星——一颗褐矮星。",
+          "zh_full": "天文学家在约300光年外探测到一条不寻常的三角形光变曲线。他们原本是在搜寻“黑寡妇双星”系统，即一颗致密的中子星吞噬其伴星。然而，他们发现了不同的情况：一颗M型红矮星正在缓慢吞噬其双星伴星——一颗褐矮星。",
+          "reason": "发现红矮星吞噬褐矮星",
+          "density": "高",
+          "score": 51.9,
+          "role": "媒体",
+          "published_at": "2026-10-13T17:07:30+00:00",
+          "topic_id": "2f8e16419acb",
+          "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+        },
+        {
+          "title": "JOB OPPORTUNITIES: NASA OFFICE OF THE GENERAL COUNSEL",
+          "url": "https://www.nasa.gov/organizations/ogc/job-opportunities-nasa-office-of-the-general-counsel/",
+          "source": "NASA 快讯",
+          "summary": "（无摘要，仅标题）",
+          "zh_full": "（无摘要，仅标题）",
+          "reason": null,
+          "density": "低",
+          "score": 46.4,
+          "role": "官方",
+          "published_at": "2026-10-13T17:16:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "flash": [],
+      "sections": [
+        {
+          "category": "太阳与空间物理",
+          "articles": [
+            {
+              "title": "New solar model maps sun more accurately by checking far-side activity",
+              "url": "https://phys.org/news/2026-10-solar-sun-accurately-side.html",
+              "source": "Phys.org 太空新闻",
+              "summary": "西南研究院团队利用2010至2014年的地球观测与太空数据，构建了包含太阳远侧活动的表面磁通量输运模型，使太阳事件预测比以往更完整准确。",
+              "zh_full": "由西南研究院（SwRI）领导的研究团队开发了一种改进的太阳事件预测模型，该模型纳入了太阳远侧的活动情况。团队研究了2010年至2014年间近乎同时的整个太阳表面地图，将地球观测数据与来自太空资产（显示太阳另一侧）的数据相结合。由此构建的表面磁通量输运（SFT）模型比以往任何模型都更加完整和准确。这一进展对于提升太阳活动预测能力具有重要意义。",
+              "reason": "提升太阳活动预测精度",
+              "density": "高",
+              "score": 86.5,
+              "role": "科研",
+              "published_at": "2026-10-13T17:20:20+00:00",
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+            }
+          ]
+        },
+        {
+          "category": "科研进展",
+          "articles": [
+            {
+              "title": "JOB OPPORTUNITIES: NASA OFFICE OF THE GENERAL COUNSEL",
+              "url": "https://www.nasa.gov/organizations/ogc/job-opportunities-nasa-office-of-the-general-counsel/",
+              "source": "NASA 快讯",
+              "summary": "（无摘要，仅标题）",
+              "zh_full": "（无摘要，仅标题）",
+              "reason": null,
+              "density": "低",
+              "score": 46.4,
+              "role": "官方",
+              "published_at": "2026-10-13T17:16:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "其他",
+          "articles": [
+            {
+              "title": "A Red Dwarf is Taking its Time Eating a Brown Dwarf",
+              "url": "https://www.universetoday.com/articles/a-red-dwarf-is-taking-its-time-eating-a-brown-dwarf",
+              "source": "Universe Today",
+              "summary": "天文学家在约300光年外探测到一条不寻常的三角形光变曲线。他们原本在搜寻“黑寡妇双星”系统，即致密中子星吞噬伴星。然而，他们发现了不同的情况：一颗M型红矮星正在缓慢吞噬其双星伴星——一颗褐矮星。",
+              "zh_full": "天文学家在约300光年外探测到一条不寻常的三角形光变曲线。他们原本是在搜寻“黑寡妇双星”系统，即一颗致密的中子星吞噬其伴星。然而，他们发现了不同的情况：一颗M型红矮星正在缓慢吞噬其双星伴星——一颗褐矮星。",
+              "reason": "发现红矮星吞噬褐矮星",
+              "density": "高",
+              "score": 51.9,
+              "role": "媒体",
+              "published_at": "2026-10-13T17:07:30+00:00",
+              "topic_id": "2f8e16419acb",
+              "topic_title": "New solar model maps sun more accurately by checking far-side activity"
+            }
+          ]
+        }
+      ],
+      "topic_ids": [
+        "2f8e16419acb"
+      ],
+      "tocCount": 3,
+      "readMinutes": 1
     }
   }
 }
