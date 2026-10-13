@@ -109,6 +109,12 @@ DEFAULT_CONFIG = {
         "recent_hours": 48, "source_cap": 6, "signal_cap": 10,
         "status_hot_min_sources": 5, "status_hot_min_heat": 80.0,
         "status_trending_min_sources": 3,
+        # 运动判定（AIHOT hot.ts 口径，节拍换成"上一轮刷新"）：
+        # 两轮间隔超过 movement_max_gap_hours 就只报状态、不报涨跌（跨周末/停机
+        # 的对比会把恢复说成暴涨）；首轮没有基线，trend 一律 unknown。
+        "movement_max_gap_hours": 26, "movement_new_hours": 6,
+        "movement_rising_pct": 15, "movement_up_pct": 10,
+        "movement_surge_new_sources": 3, "movement_surge_ratio": 0.5,
     },
     "clustering": {"tfidf_threshold": 0.14},
     "fetch": {
@@ -1173,6 +1179,116 @@ def dedupe_topic_titles(topics, items, source_tier=None):
 
 
 # ---------------- 统计 ----------------
+def compute_movement(topics, items, ch_id, generated):
+    """热点榜运动徽标（AIHOT hot.ts:130-237 口径；节拍换成本站的"上一轮发布"）。
+
+    AIHOT 与 6 小时前的快照比：prevAll<=0 记 new，涨跌 ±10% 出 trend，
+    pct>15% 记 rising，近 6h 新参与者 ≥3 且占比 ≥50% 记 surge，
+    且"只有两边都观察到的参与者才参与涨跌"。PAT-HOT 没有小时级时序库，
+    基线就是磁盘上上一轮写出的 data/<ch>/hot-topics.json（每天两轮），
+    同理必须处理"基线不可比"：
+    - 首轮没有基线 / 间隔超过 movement_max_gap_hours（周末、停机恢复）→
+      trend=unknown，绝不把"恢复了采集"说成"暴涨"（AIHOT 的 behind/late
+      排除逻辑的静态对应）；
+    - topic id 首轮未见、或事件最早证据在 movement_new_hours 内 → new；
+    - 其余按两轮 heat 变化给 up/flat/down，pct≥rising 加徽标；
+    - 近 6h 新加入的独立来源 ≥3 且过半 → surge（"多家媒体开始报"）。
+    只增公开字段 trend/trendPct/badges，无模型调用；--channel 单频道跑时
+    未采集的频道不走这里，沿用上一轮已写入的字段（它们描述的就是最后一次
+    真实观测的运动，页面新鲜度徽标已另行标明该频道未刷新）。
+    """
+    hc = CONFIG["heat"]
+    by_id = {i["id"]: i for i in items}
+    prev_doc = None
+    try:
+        with open(os.path.join(DATA_DIR, ch_id, "hot-topics.json"), encoding="utf-8") as f:
+            prev_doc = json.load(f)
+    except Exception:
+        prev_doc = None
+    prev_items = (prev_doc or {}).get("items") or []
+    prev_by_id = {t.get("id"): t for t in prev_items}
+    comparable = False
+    try:
+        gap_h = (generated - datetime.fromisoformat((prev_doc or {}).get("generatedAt"))
+                 ).total_seconds() / 3600.0
+        comparable = 0.5 < gap_h <= hc.get("movement_max_gap_hours", 26)
+    except Exception:
+        comparable = False
+    new_h = hc.get("movement_new_hours", 6)
+    up_pct = hc.get("movement_up_pct", 10)
+    rising_pct = hc.get("movement_rising_pct", 15)
+    prev_by_title = {(t.get("title") or ""): t for t in prev_items}
+    try:
+        prev_at = datetime.fromisoformat((prev_doc or {}).get("generatedAt"))
+    except Exception:
+        prev_at = None
+
+    def _prev_heat(t, its):
+        """上一轮的该事件热度：已发布基线优先（id→标题），不在 Top-N 的用
+        上一轮生成时刻之前已收录的条目按同一公式重算（AIHOT prevAll 语义：
+        "6 小时前没有证据"才算新，而不是"没进过上一轮榜单"才算新）。"""
+        pt = prev_by_id.get(t.get("id")) or prev_by_title.get(t.get("title"))
+        if pt is not None:
+            try:
+                return float(pt.get("heat") or pt.get("score") or 0)
+            except (TypeError, ValueError):
+                return 0.0
+        if prev_at is None:
+            return None
+        old = [i for i in its if (i.get("discovered_at") or "") <= prev_at.isoformat()]
+        if not old:
+            return 0.0
+        srcs = {i["source"] for i in old}
+        win = hc["recent_hours"] / 24.0
+        recent = {i["source"] for i in old
+                  if 0 <= (prev_at - eff_dt(i)).total_seconds() / 86400.0 <= win}
+        return round(100 * (0.45 * min(1.0, len(srcs) / hc["source_cap"])
+                            + 0.35 * min(1.0, len(old) / hc["signal_cap"])
+                            + 0.20 * min(1.0, len(recent) / max(1, len(srcs)))), 1)
+
+    for t in topics:
+        its = [by_id.get(iid) for iid in (t.get("ids") or []) if by_id.get(iid)]
+        # "新"锚定事件最早证据（发布时间优先；无可信发布时间的条目 discovered
+        # 恒等于本轮时刻，全按 discovered 会把每轮都判成"新"）
+        pub_its = [i for i in its if i.get("published_at")
+                   and parse_date(i["published_at"], i.get("source_base") or i.get("source"),
+                                  i.get("url"))]
+        first_at = min((eff_dt(i) for i in pub_its), default=None)
+        is_new = bool(first_at) and (generated - first_at).total_seconds() <= new_h * 3600
+        badges = []
+        trend = "unknown"
+        pct = None
+        if not comparable:
+            # 没有可比基线（首轮 / 间隔过长）只认"确实是刚发生的事"，
+            # 绝不把"恢复了采集"说成"暴涨"
+            trend = "new" if is_new else "unknown"
+        elif is_new:
+            trend = "new"
+        else:
+            ph = _prev_heat(t, its)
+            cur = float(t.get("score") or 0)
+            if ph is None:
+                trend = "unknown"
+            elif ph <= 0:
+                trend = "new"      # 上一窗口零证据 = 刚出现（AIHOT prevAll<=0）
+            else:
+                pct = (cur - ph) / ph * 100.0
+                trend = ("up" if pct > up_pct else
+                         "down" if pct < -up_pct else "flat")
+        if is_new:
+            badges.append("new")
+        if pub_its:
+            edge = generated - timedelta(hours=new_h)
+            src_all = {i["source"] for i in pub_its}
+            src_new = {i["source"] for i in pub_its if eff_dt(i) >= edge}
+            if (len(src_new) >= hc.get("movement_surge_new_sources", 3)
+                    and len(src_new) / max(1, len(src_all)) >= hc.get("movement_surge_ratio", 0.5)):
+                badges.append("surge")
+        if pct is not None and pct >= rising_pct and "surge" not in badges:
+            badges.append("rising")
+        t["trend"] = trend
+        t["trendPct"] = round(pct, 1) if pct is not None else None
+        t["badges"] = badges
 def build_daily(items, topics, generated):
     def in_window(it, days):
         return age_days(eff_dt(it)) <= days
@@ -1857,6 +1973,10 @@ def write_outputs(channel_results, generated):
                 "sourceCount": t["source_count"], "signalCount": t["signal_count"],
                 "latestAt": t["latest_at"], "sources": t.get("sources", []),
                 "links": t.get("links", []),
+                # 运动徽标（AIHOT hot.ts 口径，基线=上一轮发布；见 compute_movement）
+                "trend": t.get("trend", "unknown"),
+                "trendPct": t.get("trendPct"),
+                "badges": t.get("badges", []),
             })
             _rep = t.get("representative") or {}
             if _rep.get("llm_score") is not None:
@@ -1940,7 +2060,11 @@ def write_outputs(channel_results, generated):
                   "heat": t.get("heat", t.get("score")),
                   "sourceCount": t["source_count"], "signalCount": t["signal_count"],
                   "latestAt": t["latest_at"], "sources": t.get("sources", []),
-                  "links": t.get("links", [])}
+                  "links": t.get("links", []),
+                  # 扁平镜像与频道版字段必须一致（同一内容的两个地址）
+                  "trend": t.get("trend", "unknown"),
+                  "trendPct": t.get("trendPct"),
+                  "badges": t.get("badges", [])}
             _rep = t.get("representative") or {}
             if _rep.get("llm_score") is not None:
                 _s["llmScore"] = _rep["llm_score"]
@@ -2762,6 +2886,8 @@ def run_channel(ch_id, sources, args, generated):
     for idx, t in enumerate(topics[:args.topics], 1):
         t["rank"] = idx
     topics = topics[:args.topics]
+    # 运动徽标（AIHOT hot.ts：与上一轮比，只有"两边都观察到的参与者"才参与涨跌）
+    compute_movement(topics, items, ch_id, generated)
     for t in topics:
         t.pop("ids", None)
         t.pop("items", None)

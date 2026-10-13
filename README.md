@@ -38,7 +38,7 @@
 |---|---|---|
 | 精选 #/ | /（精选） | 按日分组的资讯时间线：来源、时间、分类徽章、推荐分、精选标记 |
 | 全部动态 #/all | /all | 全部条目，支持关键词搜索 + 分类筛选 + 按推荐分/时间排序，无限滚动分页 |
-| 热点榜 #/hot | /hot | 排名 + 状态（爆/发酵中/关注中）+ 信源数/信号数/热度值 + 信源展开 |
+| 热点榜 #/hot | /hot | 排名 + 状态（爆/发酵中/关注中）+ **运动徽标（新/升温/多家跟进/回落，AIHOT 与 6h 前比的静态版：与上一轮发布比）** + 信源数/信号数/热度值 + 信源展开 |
 | 光电日报 #/daily | /daily | 报头 + 今日看点 TOC + 分类文章 + 日历归档 |
 | 主题 #/topics | /topics | 分类卡片（24h/7d/总数），点击进入筛选 |
 | 趋势 #/trends | /trends | 分类热度涨跌条、新上榜事件、持续发酵事件 |
@@ -48,7 +48,7 @@
 
 **数据机制**（静态 JSON API，兼容 AIHOT 字段风格）：
 - data/items.json：{id, title, url, links.original, source, category, publishedAt, discoveredAt, score, selected, summary, role, keywords}
-- data/hot-topics.json：{rank, title, status, heat, sourceCount, signalCount, latestAt, sources, links, terms}
+- data/hot-topics.json：{rank, title, status, trend, trendPct, badges, heat, sourceCount, signalCount, latestAt, sources, links, terms}
 - data/dailies.json：按日期归档的日报（历史合并保留）；data/daily.json：统计聚合
 - **Agent 接口**：`api/v1/{items,hot-topics,dailies,daily,stories,index,openapi}.json`（静态 JSON / OpenAPI 3.1，免鉴权）+ 分类 RSS（`feed.xml` / `feed/category/{slug}.xml`）+ 站点根 `llms.txt`
 - 时间窗口语义：优先原文发布时间，缺失回退收录时间；24h / 7d / 日报按北京时间

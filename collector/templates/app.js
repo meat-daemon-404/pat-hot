@@ -27,6 +27,7 @@ const I18N = {
     thresholdNote:"精选门槛：官方信源 ≥ {o} 分 · 媒体信源 ≥ {m} 分（可在 collector/config.json 调整）",
     hotNow:"当前热点", fullRank:"完整榜单 →", unreadOnly:"只看未读", sciOnly:"只看科研", today:"今天", daySel:"条精选", noMatch:"没有匹配的条目",
     heatVal:"热度", sources:"信源", signals:"信号",
+    mvNew:"新", mvRise:"升温", mvSurge:"多家跟进", mvDown:"回落",
     repMore:"另有 {n} 家信源报道", repOne:"1 家信源报道",
     toc:"今日看点", archive:"日报归档",
     headlineK:"头 条", picksK:"今日看点", flashK:"快 讯", moreK:"分栏目浏览",
@@ -49,6 +50,7 @@ const I18N = {
     thresholdNote:"Selection bar: official sources ≥ {o} · media sources ≥ {m} (tune in collector/config.json)",
     hotNow:"Trending Now", fullRank:"Full ranking →", unreadOnly:"Unread only", sciOnly:"Research only", today:"Today", daySel:"selected", noMatch:"No matching items",
     heatVal:"heat", sources:"sources", signals:"signals",
+    mvNew:"new", mvRise:"rising", mvSurge:"surge", mvDown:"cooling",
     repMore:"{n} more sources", repOne:"1 source",
     toc:"Today's picks", archive:"Archive",
     headlineK:"HEADLINE", picksK:"Today's picks", flashK:"Flash", moreK:"Browse by category",
@@ -268,6 +270,16 @@ function renderAll(){
 }
 function hotExpand(t){ const rep=t.representative||{}; const it={id:"t-"+t.id, zh_full:rep.zh_full, llm_summary:rep.llm_summary, summary:rep.summary, url:rep.url||((t.links||[])[0]||{}).url};
   if(!expandable(it)) return ""; return expandBtn(it)+expandBody(it); }
+// 运动徽标（与上一轮相比；collect.py compute_movement 产出，旧数据无字段时静默不显示）
+function movementFlag(t){
+  const b=t.badges||[]; const p=(typeof t.trendPct==="number")?Math.round(t.trendPct):null;
+  const out=[];
+  if(b.indexOf("surge")>=0) out.push('<span class="flag b-surge">'+T.mvSurge+(p!==null?" +"+p+"%":"")+'</span>');
+  else if(b.indexOf("rising")>=0) out.push('<span class="flag b-rise">'+T.mvRise+(p!==null?" +"+p+"%":"")+'</span>');
+  if(b.indexOf("new")>=0) out.push('<span class="flag b-new">'+T.mvNew+'</span>');
+  if(t.trend==="down"&&p!==null) out.push('<span class="flag b-down">'+T.mvDown+' '+p+'%</span>');
+  return out.join(" ");
+}
 function renderHot(){
   const root=$("#view-hot"); let ts=(C.topics||[]).slice();
   if(state.hotSort==="sources") ts.sort((a,b)=>b.source_count-a.source_count);
@@ -275,6 +287,7 @@ function renderHot(){
   const head='<div class="card ph"><h1>'+esc(hotPage())+'</h1><span class="sub">'+esc(hotSub())+'</span><span class="hsort"><button data-hs="heat" class="'+(state.hotSort==="heat"?"on":"")+'">'+T.heatVal+'</button><button data-hs="sources" class="'+(state.hotSort==="sources"?"on":"")+'">'+T.sources+'</button></span></div>';
   root.innerHTML=head+'<div class="card">'+ts.map((t,i)=>{
     const s=t.status; const flag=s==="爆"?'<span class="flag f-hot">'+statusName(s)+'</span>':(s==="发酵中"?'<span class="flag f-warm">'+statusName(s)+'</span>':'<span class="flag f-watch">'+statusName(s)+'</span>');
+    const mflag=movementFlag(t);
     const rep=t.representative||{}; const rurl=rep.url||((t.links||[])[0]||{}).url||"";
     const reason=rep.llm_reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(rep.llm_reason)+'</div>':"";
     const rsum=rep.llm_summary||rep.summary;
@@ -282,7 +295,7 @@ function renderHot(){
     const flinks=(t.links||[]).map(l=>'<a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.title)+'<span class="fs">'+esc(l.source)+'</span></a>').join("");
     const fold=(t.folded_count>0&&flinks)?'<details class="fold"><summary><span>'+T.repMore.replace("{n}",t.folded_count)+'</span><span>›</span></summary><div class="fl">'+flinks+'</div></details>':"";
     const bar='<div class="hbar"><i style="width:'+Math.max(4,Math.round((t.heat||t.score)/maxHeat*100))+'%"></i></div>';
-    return '<div class="hrow r'+(i+1)+'"><div class="hrank">'+(i+1)+'</div><div class="hmain"><div class="htitle"><a href="'+esc(rurl)+'" target="_blank" rel="noopener" data-read="'+esc(rurl)+'">'+esc(t.title)+'</a> '+flag+'</div>'
+    return '<div class="hrow r'+(i+1)+'"><div class="hrank">'+(i+1)+'</div><div class="hmain"><div class="htitle"><a href="'+esc(rurl)+'" target="_blank" rel="noopener" data-read="'+esc(rurl)+'">'+esc(t.title)+'</a> '+flag+mflag+'</div>'
       +'<div class="hmeta"><span>'+esc(rep.source||((t.sources||[])[0]||""))+'</span><span>'+fmtRel(t.latest_at)+'</span><span>'+t.source_count+' '+T.sources+' · '+t.signal_count+' '+T.signals+'</span><span class="mono" style="font-weight:700;color:var(--acd)">'+Math.round(t.heat||t.score)+'</span></div>'
       +reason+(t.image?'<img class="himg" src="'+esc(t.image)+'" alt="" loading="lazy">':"")+(rsum?'<div class="isum">'+esc(rsum.length>200?rsum.slice(0,200)+"…":rsum)+'</div>':"")+hotExpand(t)+bar+'<div class="chips">'+chips+'</div>'+fold+'</div></div>';
   }).join("")+'</div>';
