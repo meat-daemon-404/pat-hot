@@ -1666,6 +1666,36 @@ def build_rss(items, title, link, description, limit=50):
             % (su.escape(title), su.escape(link), su.escape(description), pub, "".join(out)))
 
 
+def prune_stale_feeds(feed_dir, keep_slugs):
+    """删掉本次没有对应数据的分类 feed 文件，返回被删的文件名列表。
+
+    2026-10-13 线上实测回归：astro 本轮没有引力波条目（LIGO 源被 TLS 指纹拦成 403），
+    但 dist/feed/astro/category/gw.xml 还留着上一轮的 5 条 LIGO——于是
+    /feed/astro/category/gw.xml 列出的条目在 /api/v1/astro/items.json 里根本不存在，
+    订阅者拿到的是已消失内容且没有任何告警。分类是数据驱动的，write_outputs 只覆盖
+    当次出现的 slug、从不删除消失的 slug，所以陈旧文件会永久残留。契约自检也看不见：
+    它只查约定地址在不在，不查 feed 与 items 是否一致。
+    """
+    removed = []
+    try:
+        names = os.listdir(feed_dir)
+    except OSError:
+        return removed
+    for fn in names:
+        if not fn.endswith(".xml"):
+            continue
+        if fn[:-4] in keep_slugs:
+            continue
+        try:
+            os.remove(os.path.join(feed_dir, fn))
+            removed.append(fn)
+        except OSError:
+            pass
+    if removed:
+        log("[*] 清理陈旧分类 feed %d 个：%s" % (len(removed), "、".join(sorted(removed))))
+    return removed
+
+
 def build_openapi(generated):
     def ep(summary):
         return {"get": {"summary": summary, "responses": {"200": {"description": "OK"}}}}
@@ -1828,11 +1858,14 @@ def write_outputs(channel_results, generated):
         by_cat = {}
         for it in items:
             by_cat.setdefault(it["category"], []).append(it)
+        written = set()
         for cat, its in by_cat.items():
             slug = CAT_CLS.get(cat, "other")
+            written.add(slug)
             with open(os.path.join(feed_dir, slug + ".xml"), "w", encoding="utf-8") as f:
                 f.write(build_rss(its, "PAT-HOT · %s%s" % (ch["letter"], cat),
                                   SITE_BASE + "#/all", cat, 30))
+        prune_stale_feeds(feed_dir, written)
 
         # 政策/招投标结构化库（仅 T 光电频道）
         if ch_id == "tech":
@@ -1924,11 +1957,14 @@ def write_outputs(channel_results, generated):
         by_cat = {}
         for it in a_items:
             by_cat.setdefault(it["category"], []).append(it)
+        flat_written = set()
         for cat, its in by_cat.items():
             slug = CAT_CLS.get(cat, "other")
+            flat_written.add(slug)
             with open(os.path.join(feed_flat, slug + ".xml"), "w", encoding="utf-8") as f:
                 f.write(build_rss(its, "PAT-HOT · %s" % cat,
                                   SITE_BASE + "#/all", cat, 30))
+        prune_stale_feeds(feed_flat, flat_written)
         # 政策/招投标库只有 T 光电频道产出，但线上一直有扁平地址
         # （data/biz.json、dist/data/biz.json、dist/api/v1/biz.json、biz.csv）。
         # 不镜像就会静默变旧：文件在、返回 200，内容却是上一次的。

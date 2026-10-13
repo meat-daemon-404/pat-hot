@@ -672,6 +672,75 @@ class TestContractGate(unittest.TestCase):
             shutil.rmtree(tmp, ignore_errors=True)
 
 
+class TestStaleFeedPrune(unittest.TestCase):
+    """分类 feed 是数据驱动写出的，但消失的分类不会被删除。
+    2026-10-13 线上实测：astro 本轮无引力波条目（LIGO 源 403），
+    而 dist/feed/astro/category/gw.xml 还留着上一轮 5 条 LIGO，
+    订阅者拿到 /api/v1/astro/items.json 里根本不存在的条目，且无告警。"""
+
+    def _dir(self, names):
+        d = tempfile.mkdtemp(prefix="pathom-feed-")
+        for n in names:
+            with open(os.path.join(d, n), "w", encoding="utf-8") as f:
+                f.write("<rss/>")
+        return d
+
+    def test_removes_xml_not_in_keep_set(self):
+        d = self._dir(["gw.xml", "cosmo.xml", "other.xml"])
+        try:
+            removed = collect.prune_stale_feeds(d, {"cosmo", "other"})
+            self.assertEqual(removed, ["gw.xml"])
+            self.assertFalse(os.path.exists(os.path.join(d, "gw.xml")))
+            self.assertTrue(os.path.exists(os.path.join(d, "cosmo.xml")))
+        finally:
+            shutil.rmtree(d, ignore_errors=True)
+
+    def test_leaves_non_xml_alone(self):
+        d = self._dir(["gw.xml"])
+        with open(os.path.join(d, "README"), "w", encoding="utf-8") as f:
+            f.write("x")
+        try:
+            removed = collect.prune_stale_feeds(d, set())
+            self.assertEqual(removed, ["gw.xml"])
+            self.assertTrue(os.path.exists(os.path.join(d, "README")))
+        finally:
+            shutil.rmtree(d, ignore_errors=True)
+
+    def test_missing_dir_is_not_fatal(self):
+        self.assertEqual(collect.prune_stale_feeds(
+            os.path.join(tempfile.gettempdir(), "pathom-no-such-dir"), set()), [])
+
+    def test_write_outputs_prunes_stale_category_feed(self):
+        """端到端：某分类本轮无数据时，它的 feed 文件必须从产物里消失。"""
+        tmp = tempfile.mkdtemp(prefix="pathom-wo-")
+        real_dist, real_data, real_ch = collect.DIST_DIR, collect.DATA_DIR, collect._CH
+        try:
+            collect.DIST_DIR = os.path.join(tmp, "dist")
+            collect.DATA_DIR = os.path.join(tmp, "data")
+            for ch in collect.CHANNEL_ORDER:
+                os.makedirs(os.path.join(collect.DATA_DIR, ch), exist_ok=True)
+            feed_dir = os.path.join(collect.DIST_DIR, "feed", "astro", "category")
+            os.makedirs(feed_dir, exist_ok=True)
+            with open(os.path.join(feed_dir, "gw.xml"), "w", encoding="utf-8") as f:
+                f.write("<rss/>")          # 上一轮残留
+            gen = collect.now_utc()
+            set_channel = getattr(collect, "set_channel_context", None)
+            if set_channel:
+                set_channel("astro")
+            items = [{"id": "a1", "title": "T", "url": "https://x/1", "source": "S",
+                      "category": "科研进展", "summary": None, "score": 60.0,
+                      "discovered_at": gen.isoformat(), "published_at": None,
+                      "keywords": [], "biz": None, "topic_id": "t1",
+                      "topic_title": "T", "links": {}, "selected": True, "role": "媒体"}]
+            results = {ch: (items, [], {}, {}, {}) for ch in collect.CHANNEL_ORDER}
+            collect.write_outputs(results, gen)
+            self.assertFalse(os.path.exists(os.path.join(feed_dir, "gw.xml")),
+                             "本轮无引力波条目，gw.xml 必须被清掉")
+        finally:
+            collect.DIST_DIR, collect.DATA_DIR, collect._CH = real_dist, real_data, real_ch
+            shutil.rmtree(tmp, ignore_errors=True)
+
+
 class TestLlmBackoff(unittest.TestCase):
     def test_real_status_code_not_string_match(self):
         """旧实现用 "401" in str(e) 判断认证失败，任何文本里含 401 都会误判。
