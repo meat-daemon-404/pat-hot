@@ -130,6 +130,8 @@ DEFAULT_CONFIG = {
         "max_items": 30, "batch_size": 3, "timeout": 120,
         "density_penalty": 0.9,
         "max_score_items": 30, "max_extract_items": 20,
+        # 关推理链：见 _sensenova_chat 注释，实测不关时正文 JSON 预算不足直接畸形
+        "disable_thinking": True,
         # 材料补取（AIHOT 纪律：只有标题不评分、先补正文）：摘要短于 material_min_summary
         # 的评分候选，有界地抓详情页正文存 _material（内部字段，落盘前剥离、绝不发布）。
         # max_fetch 全频道上限、per_source 防单站轰炸；失败静默降级——补材料是增益不是依赖。
@@ -137,7 +139,10 @@ DEFAULT_CONFIG = {
         # "从空白到 600 字真正文"，不是把预算抬高。
         "material_min_summary": 80, "material_max_fetch": 20,
         "material_per_source": 6, "material_body_chars": 1200,
-        # LLM 阶段全局时间预算（熔断）：见 start_llm_budget / llm_over_budget
+        # LLM 阶段全局时间预算（熔断）：见 start_llm_budget / llm_over_budget。
+        # 关推理后全量增强实测约 12 分钟/整轮；360s/频道对正常路径留足余量，
+        # 上游劣化时在预算内收尾发布，不再出现 2026-10-13 那种挂 5 小时
+        # 堵死全部后续定时刷新。
         "budget_seconds": 360,
     },
     "prompts": {
@@ -998,6 +1003,9 @@ def compute_scores(items, topics, source_weight, source_tier=None, cfg=None):
     sig_cap = max(1, sc["signal_cap"])
     rec_days = max(1, sc["recency_days"])
     pub_pen = sc["missing_pubdate_penalty"]
+    # 分类权重：非科研内容（政策/杂项/行业资讯）降权，默认 1.0 不降。
+    # 与前端「只看科研」开关的过滤集合保持一致（见 config 注释）。
+    cat_weights = sc.get("category_weights") or {}
     # 事件 -> 独立来源集合（跨源收敛度）
     topic_sources = {}
     for t in topics:
@@ -1023,8 +1031,9 @@ def compute_scores(items, topics, source_weight, source_tier=None, cfg=None):
         if parsed is None or date_precision(p) in ("month", "year"):
             rec *= pub_pen
         sw = source_weight.get(it["source"], 0.8)
-        it["score"] = round(w_src * sw + w_conv * conv
-                            + w_sig * min(1.0, sig / sig_cap) + w_rec * rec, 1)
+        cat_w = cat_weights.get(it.get("category"), 1.0)
+        it["score"] = round((w_src * sw + w_conv * conv
+                            + w_sig * min(1.0, sig / sig_cap) + w_rec * rec) * cat_w, 1)
         it["convergence"] = round(conv, 3)
     for t in topics:
         finalize_topic(t, items, source_tier, cfg)
@@ -1676,6 +1685,36 @@ def build_rss(items, title, link, description, limit=50, fallback_dt=None):
             % (su.escape(title), su.escape(link), su.escape(description), pub, "".join(out)))
 
 
+def prune_stale_feeds(feed_dir, keep_slugs):
+    """删掉本次没有对应数据的分类 feed 文件，返回被删的文件名列表。
+
+    2026-10-13 线上实测回归：astro 本轮没有引力波条目（LIGO 源被 TLS 指纹拦成 403），
+    但 dist/feed/astro/category/gw.xml 还留着上一轮的 5 条 LIGO——于是
+    /feed/astro/category/gw.xml 列出的条目在 /api/v1/astro/items.json 里根本不存在，
+    订阅者拿到的是已消失内容且没有任何告警。分类是数据驱动的，write_outputs 只覆盖
+    当次出现的 slug、从不删除消失的 slug，所以陈旧文件会永久残留。契约自检也看不见：
+    它只查约定地址在不在，不查 feed 与 items 是否一致。
+    """
+    removed = []
+    try:
+        names = os.listdir(feed_dir)
+    except OSError:
+        return removed
+    for fn in names:
+        if not fn.endswith(".xml"):
+            continue
+        if fn[:-4] in keep_slugs:
+            continue
+        try:
+            os.remove(os.path.join(feed_dir, fn))
+            removed.append(fn)
+        except OSError:
+            pass
+    if removed:
+        log("[*] 清理陈旧分类 feed %d 个：%s" % (len(removed), "、".join(sorted(removed))))
+    return removed
+
+
 def build_openapi(generated):
     def ep(summary):
         return {"get": {"summary": summary, "responses": {"200": {"description": "OK"}}}}
@@ -1848,6 +1887,12 @@ def write_outputs(channel_results, generated):
             with open(os.path.join(feed_dir, slug + ".xml"), "w", encoding="utf-8") as f:
                 f.write(build_rss(by_cat.get(cat, []), "PAT-HOT · %s%s" % (ch["letter"], cat),
                                   SITE_BASE + "#/all", cat, 30, fallback_dt=generated))
+        # keep-set 用「channels.json 声明的全部 slug」，不是「本次写出过的 slug」。
+        # 声明过但本次没数据的分类，上面已经写成合法空 feed，不能删：实测
+        # pat-hot.pages.dev 对缺失路径返回 200 + 1.6 MB 单页 HTML，而不是 404
+        # ——删文件等于把「条目陈旧但仍是 XML」换成「HTML 冒充 feed」，阅读器
+        # 还以为订阅成功了。prune 只负责回收已从 channels.json 移除的 slug。
+        prune_stale_feeds(feed_dir, set(CAT_CLS.values()))
 
         # 政策/招投标结构化库（仅 T 光电频道）
         if ch_id == "tech":
@@ -1944,6 +1989,7 @@ def write_outputs(channel_results, generated):
             with open(os.path.join(feed_flat, slug + ".xml"), "w", encoding="utf-8") as f:
                 f.write(build_rss(by_cat.get(cat, []), "PAT-HOT · %s" % cat,
                                   SITE_BASE + "#/all", cat, 30, fallback_dt=generated))
+        prune_stale_feeds(feed_flat, set(CAT_CLS.values()))
         # 政策/招投标库只有 T 光电频道产出，但线上一直有扁平地址
         # （data/biz.json、dist/data/biz.json、dist/api/v1/biz.json、biz.csv）。
         # 不镜像就会静默变旧：文件在、返回 200，内容却是上一次的。
@@ -2293,12 +2339,21 @@ def _sensenova_chat(messages, cfg, max_retries=3):
     if not api_key:
         raise RuntimeError("未设置 SENSENOVA_API_KEY")
     model = os.environ.get("SENSENOVA_MODEL") or lc["model"]
-    payload = json.dumps({
+    req_body = {
         "model": model,
         "messages": messages,
         "temperature": 0.2,
         "response_format": {"type": "json_object"},
-    }).encode("utf-8")
+    }
+    # 关掉推理链：sensenova-6.8-flash-lite 默认把 ~90% 的输出预算花在 reasoning 上
+    # （实测 8 条一批 completion=12605，其中 reasoning=11404），结果正文 JSON 写到一半
+    # 就断，返回畸形体（"Expecting ',' delimiter: line 3 column 41"）却仍是 finish=stop——
+    # 不是截断，是没预算写完整。这正是 2026-10-12 定时任务里 zh_full 全空、且整轮
+    # 跑到 6h 上限被杀的直接原因。thinking=disabled 后同批 9.0s / 978 token / 8 条全可解析，
+    # 摘要质量不降（防幻觉九条照样遵守，无摘要条目仍按规则「宁短勿扩」）。
+    if lc.get("disable_thinking", True):
+        req_body["thinking"] = {"type": "disabled"}
+    payload = json.dumps(req_body).encode("utf-8")
     with_retry = lc["timeout"]
     last_err = None
     for attempt in range(max_retries):

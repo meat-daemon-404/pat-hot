@@ -14,6 +14,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+import xml.etree.ElementTree
 from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -672,7 +673,123 @@ class TestContractGate(unittest.TestCase):
             shutil.rmtree(tmp, ignore_errors=True)
 
 
-class TestLlmBackoff(unittest.TestCase):
+class TestStaleFeedPrune(unittest.TestCase):
+    """分类 feed 是数据驱动写出的，但消失的分类不会被删除。
+    2026-10-13 线上实测：astro 本轮无引力波条目（LIGO 源 403），
+    而 dist/feed/astro/category/gw.xml 还留着上一轮 5 条 LIGO，
+    订阅者拿到 /api/v1/astro/items.json 里根本不存在的条目，且无告警。"""
+
+    def _dir(self, names):
+        d = tempfile.mkdtemp(prefix="pathom-feed-")
+        for n in names:
+            with open(os.path.join(d, n), "w", encoding="utf-8") as f:
+                f.write("<rss/>")
+        return d
+
+    def test_removes_xml_not_in_keep_set(self):
+        d = self._dir(["gw.xml", "cosmo.xml", "other.xml"])
+        try:
+            removed = collect.prune_stale_feeds(d, {"cosmo", "other"})
+            self.assertEqual(removed, ["gw.xml"])
+            self.assertFalse(os.path.exists(os.path.join(d, "gw.xml")))
+            self.assertTrue(os.path.exists(os.path.join(d, "cosmo.xml")))
+        finally:
+            shutil.rmtree(d, ignore_errors=True)
+
+    def test_leaves_non_xml_alone(self):
+        d = self._dir(["gw.xml"])
+        with open(os.path.join(d, "README"), "w", encoding="utf-8") as f:
+            f.write("x")
+        try:
+            removed = collect.prune_stale_feeds(d, set())
+            self.assertEqual(removed, ["gw.xml"])
+            self.assertTrue(os.path.exists(os.path.join(d, "README")))
+        finally:
+            shutil.rmtree(d, ignore_errors=True)
+
+    def test_missing_dir_is_not_fatal(self):
+        self.assertEqual(collect.prune_stale_feeds(
+            os.path.join(tempfile.gettempdir(), "pathom-no-such-dir"), set()), [])
+
+    def test_write_outputs_empties_feed_without_data(self):
+        """端到端：某分类本轮无数据时，feed 必须变成合法空 feed，而不是残留旧条目。
+
+        2026-10-13 线上实测的两条约束共同决定这个形状：
+        1) 陈旧条目不能留（astro 一度没有引力波条目，gw.xml 却还挂着 5 条 LIGO，
+           订阅者拿到的条目在 /api/v1/astro/items.json 里根本不存在）；
+        2) 文件也不能删——Agent 接入页按 channels.json 声明把每个分类都列成订阅
+           地址，而 pat-hot.pages.dev 对缺失路径返回 200 + 1.6 MB 单页 HTML 而非
+           404，阅读器会以为订阅成功。所以留一个合法空 feed。
+        """
+        tmp = tempfile.mkdtemp(prefix="pathom-wo-")
+        real_dist, real_data, real_ch = collect.DIST_DIR, collect.DATA_DIR, collect._CH
+        try:
+            collect.DIST_DIR = os.path.join(tmp, "dist")
+            collect.DATA_DIR = os.path.join(tmp, "data")
+            for ch in collect.CHANNEL_ORDER:
+                os.makedirs(os.path.join(collect.DATA_DIR, ch), exist_ok=True)
+            feed_dir = os.path.join(collect.DIST_DIR, "feed", "astro", "category")
+            os.makedirs(feed_dir, exist_ok=True)
+            gw = os.path.join(feed_dir, "gw.xml")
+            with open(gw, "w", encoding="utf-8") as f:
+                f.write("<rss><channel><item><title>STALE LIGO</title></item>"
+                        "</channel></rss>")      # 上一轮残留
+            gen = collect.now_utc()
+            set_channel = getattr(collect, "set_channel_context", None)
+            if set_channel:
+                set_channel("astro")
+            items = [{"id": "a1", "title": "T", "url": "https://x/1", "source": "S",
+                      "category": "科研进展", "summary": None, "score": 60.0,
+                      "discovered_at": gen.isoformat(), "published_at": None,
+                      "keywords": [], "biz": None, "topic_id": "t1",
+                      "topic_title": "T", "links": {}, "selected": True, "role": "媒体"}]
+            results = {ch: (items, [], {}, {}, {}) for ch in collect.CHANNEL_ORDER}
+            collect.write_outputs(results, gen)
+
+            self.assertTrue(os.path.exists(gw),
+                            "gw.xml 被删掉了：pages.dev 会拿单页 HTML 顶替它，"
+                            "阅读器收到 200 + HTML 还以为订阅成功")
+            body = open(gw, encoding="utf-8").read()
+            self.assertNotIn("STALE LIGO", body, "无数据的分类仍残留上一轮条目")
+            self.assertEqual(body.count("<item>"), 0, "应是合法空 feed")
+            self.assertTrue(body.lstrip().startswith("<?xml"), "空 feed 也必须是 XML")
+            xml.etree.ElementTree.fromstring(body)   # 可被阅读器解析
+        finally:
+            collect.DIST_DIR, collect.DATA_DIR, collect._CH = real_dist, real_data, real_ch
+            shutil.rmtree(tmp, ignore_errors=True)
+
+    def test_write_outputs_prunes_undeclared_slug(self):
+        """真正该删的是"已从 channels.json 移除"的 slug——那是无人引用的垃圾。"""
+        tmp = tempfile.mkdtemp(prefix="pathom-wo2-")
+        real_dist, real_data, real_ch = collect.DIST_DIR, collect.DATA_DIR, collect._CH
+        try:
+            collect.DIST_DIR = os.path.join(tmp, "dist")
+            collect.DATA_DIR = os.path.join(tmp, "data")
+            for ch in collect.CHANNEL_ORDER:
+                os.makedirs(os.path.join(collect.DATA_DIR, ch), exist_ok=True)
+            feed_dir = os.path.join(collect.DIST_DIR, "feed", "astro", "category")
+            os.makedirs(feed_dir, exist_ok=True)
+            ghost = os.path.join(feed_dir, "zz-retired-category.xml")
+            with open(ghost, "w", encoding="utf-8") as f:
+                f.write("<rss/>")                  # 声明里已经没有这个分类
+            gen = collect.now_utc()
+            set_channel = getattr(collect, "set_channel_context", None)
+            if set_channel:
+                set_channel("astro")
+            items = [{"id": "a1", "title": "T", "url": "https://x/1", "source": "S",
+                      "category": "科研进展", "summary": None, "score": 60.0,
+                      "discovered_at": gen.isoformat(), "published_at": None,
+                      "keywords": [], "biz": None, "topic_id": "t1",
+                      "topic_title": "T", "links": {}, "selected": True, "role": "媒体"}]
+            results = {ch: (items, [], {}, {}, {}) for ch in collect.CHANNEL_ORDER}
+            collect.write_outputs(results, gen)
+            self.assertFalse(os.path.exists(ghost),
+                             "channels.json 已不再声明的 slug 应被回收")
+            self.assertTrue(os.path.exists(
+                os.path.join(feed_dir, "research.xml")), "在声明内的分类不能被误删")
+        finally:
+            collect.DIST_DIR, collect.DATA_DIR, collect._CH = real_dist, real_data, real_ch
+            shutil.rmtree(tmp, ignore_errors=True)
     def test_real_status_code_not_string_match(self):
         """旧实现用 "401" in str(e) 判断认证失败，任何文本里含 401 都会误判。
         现在必须看 HTTPError.code：这里错误文本含 "401" 但状态码是 500，应当重试。"""
@@ -790,6 +907,65 @@ class TestLlmJsonFence(unittest.TestCase):
         finally:
             collect.urllib.request.urlopen = real_urlopen
             os.environ.pop("SENSENOVA_API_KEY", None)
+
+
+class TestLlmThinkingDisabled(unittest.TestCase):
+    """锁住 2026-10-13 的根因：sensenova-6.8-flash-lite 默认把 ~90% 输出预算花在
+    reasoning 上（实测 8 条一批 completion=12605 / reasoning=11404），正文 JSON 写到
+    一半就断，返回畸形体却仍是 finish=stop。zh_full 因此全站为空，且整轮采集
+    慢到撞 job 超时被杀。thinking={"type":"disabled"} 后同批 9.0s / 978 token / 8 条全可解析。"""
+
+    def _payload(self, cfg):
+        captured = {}
+
+        class R:
+            def read(self):
+                return json.dumps({"choices": [{"message": {"content": '{"0":{}}'}}]}).encode("utf-8")
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+        def fake(req, timeout=None):
+            captured["body"] = json.loads(req.data.decode("utf-8"))
+            return R()
+
+        os.environ["SENSENOVA_API_KEY"] = "k"
+        real = collect.urllib.request.urlopen
+        try:
+            collect.urllib.request.urlopen = fake
+            collect._sensenova_chat([{"role": "user", "content": "x"}], cfg, max_retries=1)
+        finally:
+            collect.urllib.request.urlopen = real
+            os.environ.pop("SENSENOVA_API_KEY", None)
+        return captured["body"]
+
+    def test_default_config_sends_disabled_thinking(self):
+        body = self._payload(collect.CONFIG)
+        self.assertEqual(body.get("thinking"), {"type": "disabled"})
+
+    def test_default_config_value_has_the_key(self):
+        self.assertIn("disable_thinking", collect.DEFAULT_CONFIG["llm"])
+        self.assertTrue(collect.DEFAULT_CONFIG["llm"]["disable_thinking"])
+
+    def test_can_be_reenabled_by_config(self):
+        cfg = json.loads(json.dumps(collect.CONFIG))
+        cfg["llm"]["disable_thinking"] = False
+        body = self._payload(cfg)
+        self.assertNotIn("thinking", body)
+
+    def test_pages_function_sends_same_flag(self):
+        # 线上按需路径读不到 Python 侧配置，自带一份请求体。两处漂移过一次
+        # （prompt 口径），这条锁住 thinking 开关也别只改一边。
+        p = os.path.join(ROOT, "functions", "api", "summarize.js")
+        if not os.path.exists(p):
+            self.skipTest("functions/api/summarize.js 不存在")
+        with open(p, encoding="utf-8") as f:
+            js = f.read()
+        self.assertIn('thinking: { type: "disabled" }', js,
+                      "线上 Function 也必须关推理链，否则单条逼近 30s 上限、约两成失败")
 
 
 class TestChannelSwitchResetsFeedState(unittest.TestCase):

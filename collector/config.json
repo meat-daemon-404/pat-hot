@@ -35,6 +35,7 @@
     "density_penalty": 0.9,
     "max_items": 30,
     "model": "sensenova-6.8-flash-lite",
+    "disable_thinking": true,
     "provider": "sensenova",
     "timeout": 120,
     "max_score_items": 30,
@@ -53,7 +54,12 @@
     "w_convergence": 20.0,
     "w_recency": 20.0,
     "w_signal": 15.0,
-    "w_source": 45.0
+    "w_source": 45.0,
+    "category_weights": {
+      "其他": 0.6,
+      "产业与资本": 0.8
+    },
+    "_comment_category_weights": "分类权重：非科研内容降权（1.0=不降）。「其他」多为政策/杂项，「产业与资本」为行业资讯；前端「只看科研」开关默认过滤这两类，两处保持一致"
   },
   "tiers": {
     "default": "media",

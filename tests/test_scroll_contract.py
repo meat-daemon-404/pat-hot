@@ -137,8 +137,9 @@ class TestContentReset(unittest.TestCase):
     后换排序，列表重建为 30 条（docH 7188），但 scrollY 停在 5000——用户落在新
     列表的中段；若原本滚得更深（如 y=20000），会被浏览器钳到 6344，直接落在
     新列表最底部。排序/分类/搜索/主题卡/日报日期/未读筛选/热点排序都是这类
-    "整体替换"。视图缓存引入后问题加倍：SCROLL[v] 还存着旧 y，切走再切回会把
-    旧位置恢复到换掉后的列表上，比原来更糟。
+    "整体替换"，合并进来的「只看科研」是第八类（且同时替换两个视图）。视图缓存
+    引入后问题加倍：SCROLL[v] 还存着旧 y，切走再切回会把旧位置恢复到换掉后的列表
+    上，比原来更糟。
 
     区分：取消星标/标记已读是"删一条"，位置应保持（浏览器 scroll anchoring 处理），
     月份折叠是纯 UI 收起，正文没换——这些都不能走 contentReset。
@@ -167,6 +168,21 @@ class TestContentReset(unittest.TestCase):
             (r'state\.hotSort=b\.dataset\.hs;contentReset\("hot"\)', "热点排序"),
         ]:
             self.assertRegex(flat, pat, "%s 没有走 contentReset，会落在替换后列表的中段" % why)
+
+    def test_sci_toggle_resets_both_list_views(self):
+        """「只看科研」是持久开关，同时决定精选页和全部页的列表内容（合并 2026-10-13
+        远端功能时引入的交互）：只 reset 当前视图，另一个视图会留着上一个筛选条件的
+        列表 + 旧滚动位置，切过去才看到过期内容。两个视图必须一起重置。"""
+        i = JS.index("function sciToggle(")
+        j = JS.index("}", i)
+        body = JS[i:j]
+        self.assertIn('contentReset("feed")', body, "科研开关没重置精选页")
+        self.assertIn('contentReset("all")', body, "科研开关没重置全部页")
+        self.assertIn("state.allShown=ALL_PAGE", body,
+                      "全部页还留着已加载的多页，重置后应从第一页开始")
+        # 两个入口共用一个函数，别各自实现一份漏掉另一个视图
+        self.assertIn("sb.onclick=sciToggle", JS, "精选页科研按钮没走 sciToggle")
+        self.assertIn("sba.onclick=sciToggle", JS, "全部页科研按钮没走 sciToggle")
 
     def test_month_collapse_does_not_reset_position(self):
         """月份折叠只是收起归档，正文没换：走 contentReset 会莫名把用户弹回顶部。"""

@@ -1,392 +1,271 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T14:08:22.657157+00:00",
-  "count": 10,
+  "generatedAt": "2026-10-13T02:56:25.746599+00:00",
+  "count": 8,
   "items": [
     {
-      "id": "f61a00672ad9",
-      "title": "Oct. 12, 1964: Voshkod 1 sends the first crew to space",
-      "status": "发酵中",
-      "heat": 53.3,
-      "sourceCount": 3,
-      "signalCount": 5,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00",
+      "id": "6540815d36b5",
+      "title": "NASA demonstrates next-generation heat shield technologies",
+      "status": "爆",
+      "heat": 91.1,
+      "sourceCount": 9,
+      "signalCount": 89,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00",
       "sources": [
         "Astronomy Magazine",
+        "ESA 空间科学",
+        "LIGO",
         "MIT News 太空探索",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Oct. 12, 1964: Voshkod 1 sends the first crew to space",
-          "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/oct-12-1964-voshkod-1-sends-the-first-crew-to-space/",
-          "source": "Astronomy Magazine",
-          "score": 69.0,
-          "published_at": "2026-10-12T13:00:00+00:00"
-        },
-        {
-          "title": "Oct. 11, 1968: Apollo 7 launches",
-          "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/oct-11-1968-apollo-7-launches/",
-          "source": "Astronomy Magazine",
-          "score": 68.3,
-          "published_at": "2026-10-11T13:00:00+00:00"
-        },
-        {
-          "title": "Oct. 10, 1846: The discovery of Triton",
-          "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/oct-10-1846-the-discovery-of-triton/",
-          "source": "Astronomy Magazine",
-          "score": 67.6,
-          "published_at": "2026-10-10T13:00:00+00:00"
-        },
-        {
-          "title": "Artemis II crew moon photo annotations",
-          "url": "https://phys.org/news/2026-10-artemis-ii-crew-moon-photo.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.0,
-          "published_at": null
-        },
-        {
-          "title": "Lincoln Laboratory laser communications terminal launches on historic Artemis II moon mission",
-          "url": "https://news.mit.edu/2026/lincoln-laboratory-laser-communications-terminal-launches-artemis-ii-0402",
-          "source": "MIT News 太空探索",
-          "score": 49.0,
-          "published_at": "2026-04-02T13:00:00+00:00"
-        }
-      ]
-    },
-    {
-      "id": "91cfb642aaf2",
-      "title": "New Study Shows That Earth and Mars Had Different Origins",
-      "status": "发酵中",
-      "heat": 52.5,
-      "sourceCount": 4,
-      "signalCount": 5,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00",
-      "sources": [
-        "MIT News 太空探索",
+        "NASA 快讯",
         "New Scientist 太空",
         "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "New Study Shows That Earth and Mars Had Different Origins",
-          "url": "https://www.universetoday.com/articles/new-study-shows-that-earth-and-mars-had-different-origins",
-          "source": "Universe Today",
-          "score": 69.2,
-          "published_at": "2026-10-07T21:58:00+00:00"
-        },
-        {
-          "title": "A lack of rockets is creating a crisis for space technology companies",
-          "url": "https://www.newscientist.com/article/2591502-a-lack-of-rockets-is-creating-a-crisis-for-space-technology-companies/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 64.9,
-          "published_at": "2026-10-01T11:00:00+00:00"
-        },
-        {
-          "title": "Alcohol in space: Exotic methanol discovered in planet-building zones",
-          "url": "https://phys.org/news/2026-10-alcohol-space-exotic-methanol-planet.html",
-          "source": "Phys.org 太空新闻",
-          "score": 62.3,
-          "published_at": null
-        },
-        {
-          "title": "Scientists pin down the origins of the moon’s tenuous atmosphere",
-          "url": "https://news.mit.edu/2024/scientists-pin-down-moons-tenuous-atmosphere-origins-0802",
-          "source": "MIT News 太空探索",
-          "score": 52.3,
-          "published_at": "2024-08-02T18:00:00+00:00"
-        },
-        {
-          "title": "Newly discovered Earth-sized planet may lack an atmosphere",
-          "url": "https://news.mit.edu/2024/newly-discovered-earth-sized-planet-may-lack-atmosphere-0515",
-          "source": "MIT News 太空探索",
-          "score": 52.3,
-          "published_at": "2024-05-15T09:00:00+00:00"
-        }
-      ]
-    },
-    {
-      "id": "a8eeafa6dee2",
-      "title": "Meeting report: supermassive black holes and blue notes",
-      "status": "发酵中",
-      "heat": 52.5,
-      "sourceCount": 4,
-      "signalCount": 5,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00",
-      "sources": [
-        "MIT News 太空探索",
-        "Nature 天文和天体物理",
         "Universe Today",
         "arXiv astro-ph.CO 论文速递"
       ],
       "links": [
         {
-          "title": "Meeting report: supermassive black holes and blue notes",
-          "url": "https://www.nature.com/articles/s42254-026-01005-9",
-          "source": "Nature 天文和天体物理",
-          "score": 69.3,
-          "published_at": "2026-10-08T00:00:00+00:00"
+          "title": "NASA demonstrates next-generation heat shield technologies",
+          "url": "https://phys.org/news/2026-10-nasa-generation-shield-technologies.html",
+          "source": "Phys.org 太空新闻",
+          "score": 86.3,
+          "published_at": "2026-10-12T18:40:07+00:00"
         },
         {
-          "title": "Galaxy Evolution Can be Affected by Black Hole Jets",
-          "url": "https://www.universetoday.com/articles/galaxy-evolution-can-be-affected-by-black-hole-jets",
+          "title": "Alternative gravity theory offers possible explanation for dark energy changing over time",
+          "url": "https://phys.org/news/2026-10-alternative-gravity-theory-explanation-dark.html",
+          "source": "Phys.org 太空新闻",
+          "score": 86.2,
+          "published_at": "2026-10-12T17:40:14+00:00"
+        },
+        {
+          "title": "NASA’s SpaceX CRS-35 Mission to Launch Health Research",
+          "url": "https://science.nasa.gov/missions/station/nasas-spacex-crs-35-mission-to-launch-health-research/",
+          "source": "NASA 快讯",
+          "score": 86.2,
+          "published_at": "2026-10-12T17:45:27+00:00"
+        },
+        {
+          "title": "The Preliminary Lunar Science Report for Artemis II is out",
+          "url": "https://phys.org/news/2026-10-preliminary-lunar-science-artemis-ii.html",
+          "source": "Phys.org 太空新闻",
+          "score": 86.1,
+          "published_at": "2026-10-12T14:20:26+00:00"
+        },
+        {
+          "title": "How Will Water Flow on the Moon?",
+          "url": "https://www.universetoday.com/articles/how-will-water-flow-on-the-moon",
           "source": "Universe Today",
-          "score": 68.6,
-          "published_at": "2026-10-07T01:25:41+00:00"
-        },
-        {
-          "title": "A black hole’s jets have a halo effect",
-          "url": "https://www.nature.com/articles/d41586-026-03036-9",
-          "source": "Nature 天文和天体物理",
-          "score": 64.6,
-          "published_at": "2026-10-01T00:00:00+00:00"
-        },
-        {
-          "title": "A possible detection of gas rotation in galaxy groups via the kinetic Sunyaev-Zeldovich effect",
-          "url": "https://arxiv.org/abs/2603.14494",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 58.6,
-          "published_at": "2026-10-12T04:00:00+00:00"
-        },
-        {
-          "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
-          "url": "https://news.mit.edu/2024/using-wobbling-stellar-material-astronomers-measure-supermassive-black-hole-spin-0522",
-          "source": "MIT News 太空探索",
-          "score": 52.3,
-          "published_at": "2024-05-22T15:00:00+00:00"
+          "score": 86.1,
+          "published_at": "2026-10-12T11:50:10+00:00"
         }
       ]
     },
     {
-      "id": "db4d13104259",
-      "title": "Mars’s oddest cloud may be even odder than we thought",
-      "status": "发酵中",
-      "heat": 39.7,
-      "sourceCount": 3,
-      "signalCount": 3,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00",
+      "id": "1612dd22cc9f",
+      "title": "ALMA catches a dying star mid-transformation, with a ring from its last outburst",
+      "status": "关注中",
+      "heat": 32.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00",
       "sources": [
-        "ESA 空间科学",
-        "Nature 天文和天体物理",
+        "New Scientist 太空",
         "Phys.org 太空新闻"
       ],
       "links": [
         {
-          "title": "Mars’s oddest cloud may be even odder than we thought",
-          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
-          "source": "ESA 空间科学",
-          "score": 62.7,
-          "published_at": "2026-10-07T15:00:00+00:00"
-        },
-        {
-          "title": "The Solar System could die one billion times earlier than thought",
-          "url": "https://www.nature.com/articles/d41586-026-03155-3",
-          "source": "Nature 天文和天体物理",
-          "score": 61.6,
-          "published_at": "2026-10-06T00:00:00+00:00"
-        },
-        {
-          "title": "Mars' oddest cloud may be even odder than previously thought",
-          "url": "https://phys.org/news/2026-10-mars-oddest-cloud-odder-previously.html",
+          "title": "ALMA catches a dying star mid-transformation, with a ring from its last outburst",
+          "url": "https://phys.org/news/2026-10-alma-dying-star-mid-outburst.html",
           "source": "Phys.org 太空新闻",
-          "score": 56.0,
-          "published_at": null
+          "score": 60.8,
+          "published_at": "2026-10-12T15:00:49+00:00"
+        },
+        {
+          "title": "Impossibly fast-moving stars are revealing the Milky Way’s mysterious heart",
+          "url": "https://www.newscientist.com/article/2590428-impossibly-fast-moving-stars-are-revealing-the-milky-ways-mysterious-heart/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 56.8,
+          "published_at": "2026-10-06T15:00:00+00:00"
         }
       ]
     },
     {
-      "id": "abaa4ab178c6",
-      "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+      "id": "4a920184e7e1",
+      "title": "Margaret Hamilton, who led a software team for NASA's Apollo program, dies at 90",
       "status": "关注中",
-      "heat": 39.0,
+      "heat": 22.0,
       "sourceCount": 2,
-      "signalCount": 4,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00",
+      "signalCount": 2,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00",
       "sources": [
-        "Astronomy Magazine",
-        "ESA 空间科学"
+        "MIT News 太空探索",
+        "Phys.org 太空新闻"
       ],
       "links": [
         {
-          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
-          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
-          "source": "Astronomy Magazine",
-          "score": 64.1,
-          "published_at": "2026-10-12T12:50:20+00:00"
+          "title": "Margaret Hamilton, who led a software team for NASA's Apollo program, dies at 90",
+          "url": "https://phys.org/news/2026-10-margaret-hamilton-scientist-nasa-apollo.html",
+          "source": "Phys.org 太空新闻",
+          "score": 58.0,
+          "published_at": "2026-10-08T08:37:04+00:00"
         },
         {
-          "title": "Science begins for Smile",
-          "url": "https://www.esa.int/Science_Exploration/Space_Science/Smile/Science_begins_for_Smile",
-          "source": "ESA 空间科学",
-          "score": 56.0,
-          "published_at": "2026-09-30T07:05:00+00:00"
-        },
-        {
-          "title": "BepiColombo’s Mercury arrival begins - full replay",
-          "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/09/BepiColombo_s_Mercury_arrival_begins_-_full_replay",
-          "source": "ESA 空间科学",
-          "score": 44.2,
-          "published_at": "2026-09-03T15:00:00+00:00"
-        },
-        {
-          "title": "Media briefing: BepiColombo's next milestone towards Mercury",
-          "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/08/Media_briefing_BepiColombo_s_next_milestone_towards_Mercury",
-          "source": "ESA 空间科学",
-          "score": 44.2,
-          "published_at": "2026-08-31T14:00:00+00:00"
+          "title": "Margaret Hamilton, computing pioneer who led software development for the Apollo program, dies at 90",
+          "url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
+          "source": "MIT News 太空探索",
+          "score": 57.7,
+          "published_at": "2026-10-07T20:55:00+00:00"
         }
       ]
     },
     {
-      "id": "72ba8f235a09",
-      "title": "The Most Distant FRB Tells The Story Of Its Origin",
+      "id": "bcde4fc253aa",
+      "title": "A Student Finds Three Galaxies and Possibly Solves a Mystery",
       "status": "关注中",
-      "heat": 35.5,
+      "heat": 22.0,
       "sourceCount": 2,
-      "signalCount": 3,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00",
+      "signalCount": 2,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00",
       "sources": [
         "Phys.org 太空新闻",
         "Universe Today"
       ],
       "links": [
         {
-          "title": "The Most Distant FRB Tells The Story Of Its Origin",
-          "url": "https://www.universetoday.com/articles/the-most-distant-frb-tells-the-story-of-its-origin",
-          "source": "Universe Today",
-          "score": 60.7,
-          "published_at": "2026-10-09T17:06:51+00:00"
-        },
-        {
-          "title": "Astronomers pinpoint the most distant fast radio burst ever detected",
-          "url": "https://phys.org/news/2026-10-astronomers-distant-fast-radio.html",
-          "source": "Phys.org 太空新闻",
-          "score": 52.7,
-          "published_at": null
-        },
-        {
-          "title": "Radio galaxy from 12.5 billion years ago may be most powerful ever found",
-          "url": "https://phys.org/news/2026-10-radio-galaxy-billion-years-powerful.html",
-          "source": "Phys.org 太空新闻",
-          "score": 52.7,
-          "published_at": null
-        }
-      ]
-    },
-    {
-      "id": "83a4a74b3abc",
-      "title": "Four astronauts return to Earth after eight months in space",
-      "status": "关注中",
-      "heat": 32.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00",
-      "sources": [
-        "MIT News 太空探索",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Four astronauts return to Earth after eight months in space",
-          "url": "https://phys.org/news/2026-10-astronauts-earth-months-space.html",
-          "source": "Phys.org 太空新闻",
-          "score": 51.2,
-          "published_at": null
-        },
-        {
-          "title": "Fueling a return journey from Mars",
-          "url": "https://news.mit.edu/2026/fueling-return-journey-from-mars-lanie-mckinney-0918",
-          "source": "MIT News 太空探索",
-          "score": 44.9,
-          "published_at": "2026-09-18T04:00:00+00:00"
-        }
-      ]
-    },
-    {
-      "id": "d0a44b305794",
-      "title": "Margaret Hamilton, computing pioneer who led software development for the Apollo program, dies at 90",
-      "status": "关注中",
-      "heat": 32.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00",
-      "sources": [
-        "MIT News 太空探索",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Margaret Hamilton, computing pioneer who led software development for the Apollo program, dies at 90",
-          "url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
-          "source": "MIT News 太空探索",
-          "score": 58.0,
-          "published_at": "2026-10-07T20:55:00+00:00"
-        },
-        {
-          "title": "Margaret Hamilton, who led a software team for NASA's Apollo program, dies at 90",
-          "url": "https://phys.org/news/2026-10-margaret-hamilton-scientist-nasa-apollo.html",
-          "source": "Phys.org 太空新闻",
-          "score": 51.2,
-          "published_at": null
-        }
-      ]
-    },
-    {
-      "id": "666455978f4c",
-      "title": "To Win A Nobel Prize, Go To The Ends Of The Earth",
-      "status": "关注中",
-      "heat": 22.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00",
-      "sources": [
-        "Nature 天文和天体物理",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "To Win A Nobel Prize, Go To The Ends Of The Earth",
-          "url": "https://www.universetoday.com/articles/to-win-a-nobel-prize-go-to-the-ends-of-the-earth",
+          "title": "A Student Finds Three Galaxies and Possibly Solves a Mystery",
+          "url": "https://www.universetoday.com/articles/a-student-finds-three-galaxies-and-possibly-solves-a-mystery",
           "source": "Universe Today",
           "score": 58.6,
-          "published_at": "2026-10-08T16:34:32+00:00"
+          "published_at": "2026-10-09T06:01:48+00:00"
         },
         {
-          "title": "Nobel physics prize awarded for detection of cosmic neutrinos",
-          "url": "https://www.nature.com/articles/d41586-026-03092-1",
-          "source": "Nature 天文和天体物理",
-          "score": 56.8,
-          "published_at": "2026-10-06T00:00:00+00:00"
+          "title": "Undergraduate student may have solved puzzle regarding isolated galaxies that have stopped producing stars",
+          "url": "https://phys.org/news/2026-10-undergraduate-student-puzzle-isolated-galaxies.html",
+          "source": "Phys.org 太空新闻",
+          "score": 57.7,
+          "published_at": "2026-10-07T21:20:11+00:00"
         }
       ]
     },
     {
-      "id": "fa298bf5deb1",
-      "title": "Two large asteroids found spinning as fast as a fairground ride",
+      "id": "8427e7d8c231",
+      "title": "Computer scientist tracks satellites with automated observatory built from off-the-shelf technology",
       "status": "关注中",
       "heat": 22.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00",
+      "latestAt": "2026-10-13T02:56:25.746599+00:00",
       "sources": [
-        "ESA 空间科学",
-        "New Scientist 太空"
+        "MIT News 太空探索",
+        "Phys.org 太空新闻"
       ],
       "links": [
         {
-          "title": "Two large asteroids found spinning as fast as a fairground ride",
-          "url": "https://www.newscientist.com/article/2593044-two-large-asteroids-found-spinning-as-fast-as-fairground-ride/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 59.2,
-          "published_at": "2026-10-09T17:00:00+00:00"
+          "title": "Computer scientist tracks satellites with automated observatory built from off-the-shelf technology",
+          "url": "https://phys.org/news/2026-10-scientist-tracks-satellites-automated-observatory.html",
+          "source": "Phys.org 太空新闻",
+          "score": 57.1,
+          "published_at": "2026-10-07T00:20:01+00:00"
         },
         {
-          "title": "A galaxy spinning out of sync",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/A_galaxy_spinning_out_of_sync",
+          "title": "MIT in the media: Exploring how curiosity-driven science is an essential ingredient in America’s success",
+          "url": "https://news.mit.edu/2026/mit-media-exploring-how-curiosity-driven-science-essential-ingredient-americas-success",
+          "source": "MIT News 太空探索",
+          "score": 41.2,
+          "published_at": "2026-06-25T16:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "id": "144763115ac8",
+      "title": "Cosmic House of Mirrors",
+      "status": "关注中",
+      "heat": 22.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00",
+      "sources": [
+        "ESA 空间科学",
+        "NASA 快讯"
+      ],
+      "links": [
+        {
+          "title": "Cosmic House of Mirrors",
+          "url": "https://www.nasa.gov/image-article/cosmic-house-of-mirrors/",
+          "source": "NASA 快讯",
+          "score": 58.8,
+          "published_at": "2026-10-09T13:57:24+00:00"
+        },
+        {
+          "title": "Galaxies in a cosmic house of mirrors",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/Galaxies_in_a_cosmic_house_of_mirrors",
           "source": "ESA 空间科学",
-          "score": 45.0,
-          "published_at": "2026-09-18T08:00:00+00:00"
+          "score": 52.0,
+          "published_at": "2026-09-29T08:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "id": "bc61694b3c36",
+      "title": "Happy New Year on Mars",
+      "status": "关注中",
+      "heat": 22.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00",
+      "sources": [
+        "ESA 空间科学",
+        "MIT News 太空探索"
+      ],
+      "links": [
+        {
+          "title": "Happy New Year on Mars",
+          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Happy_New_Year_on_Mars",
+          "source": "ESA 空间科学",
+          "score": 52.6,
+          "published_at": "2026-09-30T06:00:00+00:00"
+        },
+        {
+          "title": "Life on Mars, together",
+          "url": "https://news.mit.edu/2024/life-on-mars-together-0313",
+          "source": "MIT News 太空探索",
+          "score": 41.2,
+          "published_at": "2024-03-13T21:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "id": "fd84f254420d",
+      "title": "Testing general relativity with observing run O4a data",
+      "status": "关注中",
+      "heat": 18.0,
+      "sourceCount": 1,
+      "signalCount": 3,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00",
+      "sources": [
+        "LIGO"
+      ],
+      "links": [
+        {
+          "title": "Testing general relativity with observing run O4a data",
+          "url": "https://ligo.org/testing-general-relativity-with-observing-run-o4a-data/",
+          "source": "LIGO",
+          "score": 39.3,
+          "published_at": "2026-04-29T08:00:00+00:00"
+        },
+        {
+          "title": "Exceptional tests of general relativity with GW250114",
+          "url": "https://ligo.org/exceptional-tests-of-general-relativity-with-gw250114/",
+          "source": "LIGO",
+          "score": 39.3,
+          "published_at": "2026-02-04T15:23:09+00:00"
+        },
+        {
+          "title": "LIGO-Virgo-KAGRA Collaboration successfully wraps up its fourth Observing Run",
+          "url": "https://ligo.org/ligo-virgo-kagra-collaboration-successfully-wraps-up-its-fourth-observing-run/",
+          "source": "LIGO",
+          "score": 39.3,
+          "published_at": "2025-11-18T16:06:59+00:00"
         }
       ]
     }

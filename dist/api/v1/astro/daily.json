@@ -1,59 +1,61 @@
 {
-  "generatedAt": "2026-10-12T14:08:22.657157+00:00",
-  "total": 133,
-  "last24h": 48,
-  "last7d": 86,
-  "topicCount": 10,
+  "generatedAt": "2026-10-13T02:56:25.746599+00:00",
+  "total": 146,
+  "last24h": 42,
+  "last7d": 92,
+  "topicCount": 8,
   "byCategory": [
     {
+      "category": "引力波",
+      "total": 5,
+      "last24h": 0,
+      "last7d": 0
+    },
+    {
       "category": "恒星与星际介质",
-      "total": 12,
-      "last24h": 3,
-      "last7d": 8
+      "total": 9,
+      "last24h": 2,
+      "last7d": 7
     },
     {
       "category": "星系与宇宙学",
-      "total": 19,
-      "last24h": 8,
-      "last7d": 13
+      "total": 18,
+      "last24h": 10,
+      "last7d": 14
     },
     {
       "category": "太阳与空间物理",
       "total": 5,
-      "last24h": 2,
+      "last24h": 1,
       "last7d": 3
     },
     {
       "category": "深空探测",
-      "total": 26,
+      "total": 29,
       "last24h": 5,
-      "last7d": 15
+      "last7d": 16
     },
     {
       "category": "科研进展",
-      "total": 29,
+      "total": 34,
       "last24h": 16,
-      "last7d": 22
+      "last7d": 25
     },
     {
       "category": "其他",
-      "total": 42,
-      "last24h": 14,
-      "last7d": 25
+      "total": 46,
+      "last24h": 8,
+      "last7d": 27
     }
   ],
   "byDay": [
-    {
-      "date": "2026-09-29",
-      "count": 3
-    },
     {
       "date": "2026-09-30",
       "count": 2
     },
     {
       "date": "2026-10-01",
-      "count": 3
+      "count": 1
     },
     {
       "date": "2026-10-02",
@@ -69,27 +71,27 @@
     },
     {
       "date": "2026-10-05",
-      "count": 6
+      "count": 1
     },
     {
       "date": "2026-10-06",
-      "count": 6
+      "count": 5
     },
     {
       "date": "2026-10-07",
-      "count": 7
+      "count": 10
     },
     {
       "date": "2026-10-08",
-      "count": 9
+      "count": 11
     },
     {
       "date": "2026-10-09",
-      "count": 3
+      "count": 8
     },
     {
       "date": "2026-10-10",
-      "count": 5
+      "count": 11
     },
     {
       "date": "2026-10-11",
@@ -97,49 +99,58 @@
     },
     {
       "date": "2026-10-12",
-      "count": 48
+      "count": 35
+    },
+    {
+      "date": "2026-10-13",
+      "count": 7
     }
   ],
   "bySource": [
     {
-      "source": "Nature 天文和天体物理",
-      "count": 20,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00"
-    },
-    {
-      "source": "Universe Today",
-      "count": 20,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00"
-    },
-    {
       "source": "Phys.org 太空新闻",
-      "count": 20,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00"
-    },
-    {
-      "source": "arXiv astro-ph.CO 论文速递",
-      "count": 20,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00"
+      "count": 25,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00"
     },
     {
       "source": "MIT News 太空探索",
-      "count": 20,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00"
+      "count": 25,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00"
+    },
+    {
+      "source": "arXiv astro-ph.CO 论文速递",
+      "count": 25,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00"
+    },
+    {
+      "source": "Universe Today",
+      "count": 18,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00"
     },
     {
       "source": "ESA 空间科学",
-      "count": 13,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00"
+      "count": 14,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00"
     },
     {
       "source": "Astronomy Magazine",
       "count": 10,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00"
+      "latestAt": "2026-10-13T02:56:25.746599+00:00"
     },
     {
       "source": "New Scientist 太空",
       "count": 10,
-      "latestAt": "2026-10-12T14:08:22.657157+00:00"
+      "latestAt": "2026-10-13T02:56:25.746599+00:00"
+    },
+    {
+      "source": "LIGO",
+      "count": 10,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00"
+    },
+    {
+      "source": "NASA 快讯",
+      "count": 9,
+      "latestAt": "2026-10-13T02:56:25.746599+00:00"
     }
   ]
 }

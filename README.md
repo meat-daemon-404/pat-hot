@@ -135,6 +135,15 @@ LLM 增强（`llm`）与生图（`images`）的全部参数。
   为日报头条 + 热点榜 Top5 生成配图，存 `dist/assets/img/`（按日期+事件 id 命名，超 `retention_days` 天自动清理）。
 - **两次独立打分**（AIHOT 方法论）：对高分候选条目用两种视角（行业编辑 / 投资分析师）各打一次 0–100，
   取平均为 `llm_score`；平均分低于所属 tier 精选门槛的不进精选。页面分数徽标优先展示 AI 均值（带 AI 角标）。
+- **先补材料再打分**（AIHOT 纪律：不凭标题打分）：摘要不足 `llm.material_min_summary` 字的评分候选，
+  打分前有界抓取详情页正文（`material_max_fetch` 全频道上限、`material_per_source` 单源上限），
+  仅作为模型输入；抓取正文**不发布**（AIHOT site_fulltext 许可口径：站内默认只展示摘要 + 原文链接，
+  全文需信源明确允许），落盘前自动剥离。
+- **LLM 时间预算熔断**（`llm.budget_seconds`，默认 360）：上游半死不活时在预算内收尾——
+  已增强条目照常发布，低分尾部留给下次刷新。2026-10-13 实测事故：无预算时逐批退避无限累加，
+  采集挂近 5 小时并堵死全部后续定时刷新；步骤级超时只把挂死换成失败，换不回数据发布。
+- **配置漂移提醒**：`collector/config.json` 的 `llm` 段覆盖内置默认值——历史上出过
+  "只改默认值没改 config.json，调优从未生效"的事故（680da69 / batch 8→3）。改任何一侧都要同步另一侧。
 - **结构化抽取**：对入选条目抽取 `entities`（公司/机构）、`event`（谁做了什么，一句话）、`tags`（标签），
   存入条目 JSON（只增字段），页面条目卡片直接展示。
 - Prompt 全部外置在 `collector/config.json` 的 `prompts` 段（`score_a` / `score_b` / `extract`），

@@ -25,7 +25,7 @@ const I18N = {
     allPage:"全部动态", hotPage:"热点榜", topics:"主题", data:"数据", agent:"Agent 接入",
     search:"搜索", catAll:"全部", sortScore:"按推荐分", sortTime:"按时间",
     thresholdNote:"精选门槛：官方信源 ≥ {o} 分 · 媒体信源 ≥ {m} 分（可在 collector/config.json 调整）",
-    hotNow:"当前热点", fullRank:"完整榜单 →", unreadOnly:"只看未读", today:"今天", daySel:"条精选", noMatch:"没有匹配的条目",
+    hotNow:"当前热点", fullRank:"完整榜单 →", unreadOnly:"只看未读", sciOnly:"只看科研", today:"今天", daySel:"条精选", noMatch:"没有匹配的条目",
     heatVal:"热度", sources:"信源", signals:"信号",
     repMore:"另有 {n} 家信源报道", repOne:"1 家信源报道",
     toc:"今日看点", archive:"日报归档",
@@ -47,7 +47,7 @@ const I18N = {
     allPage:"All Items", hotPage:"Hot Ranking", topics:"Topics", data:"Data", agent:"Agent API",
     search:"Search", catAll:"All", sortScore:"By score", sortTime:"By time",
     thresholdNote:"Selection bar: official sources ≥ {o} · media sources ≥ {m} (tune in collector/config.json)",
-    hotNow:"Trending Now", fullRank:"Full ranking →", unreadOnly:"Unread only", today:"Today", daySel:"selected", noMatch:"No matching items",
+    hotNow:"Trending Now", fullRank:"Full ranking →", unreadOnly:"Unread only", sciOnly:"Research only", today:"Today", daySel:"selected", noMatch:"No matching items",
     heatVal:"heat", sources:"sources", signals:"signals",
     repMore:"{n} more sources", repOne:"1 source",
     toc:"Today's picks", archive:"Archive",
@@ -71,12 +71,31 @@ try { LANG = localStorage.getItem("pat-lang") || "zh"; } catch(e){}
 const T = I18N[LANG] || I18N.zh;
 function chn(){ return LANG==="en" ? C.name.en : C.name.zh; }
 function feedSub(){ return LANG==="en" ? chn()+" timeline ranked by score" : "按推荐分排序的"+chn()+"时间线"; }
+// 新鲜度说明：数据更新时间 vs 最新文章发布时间，直接回应「数据是昨天的」误会
+function freshNote(){
+  const gen=C.generatedAt||""; let genTxt="";
+  if(gen){ const d=new Date(gen); const b=new Date(d.getTime()+8*3600*1000);
+    const today=todayCN(); const gd=b.toISOString().slice(0,10);
+    const hm=String(b.getUTCHours()).padStart(2,"0")+":"+String(b.getUTCMinutes()).padStart(2,"0");
+    genTxt=(gd===today?(LANG==="en"?"today ":"今天 "):fmtDay(gd)+" ")+hm; }
+  let latest=""; for(const it of (C.items||[])){ const p=it.published_at||""; if(p>latest) latest=p; }
+  let latTxt=""; if(latest){ const lp=latest.slice(0,10);
+    latTxt=(lp===todayCN()?(LANG==="en"?"today ":"今天 "):fmtDay(lp)+" ")+latest.slice(11,16); }
+  if(LANG==="en") return "📡 Data updated "+genTxt+" · Newest article "+latTxt;
+  return "📡 数据 "+genTxt+" 更新 · 最新文章 "+latTxt+" 发布";
+}
 function hotPage(){ return chn()+(LANG==="en"?" Hot Ranking":"热点榜"); }
 function hotSub(){ return LANG==="en" ? "Event-level heat: each independent source counts once per 48h" : "事件级热度：48 小时内每独立来源只计一次"; }
 function dailyPage(){ return chn()+(LANG==="en"?" Daily":"日报"); }
 function dailySub(){ return LANG==="en" ? "Auto-generated daily (with archive)" : "自动生成 · 每日一篇（含历史归档）"; }
 function searchPh(){ return T.search+chn()+(LANG==="en"?" news…":"资讯 / 关键词…"); }
 const state = { q:"", cat:"全部", sort:"score", dailyDate:"", hotSort:"heat", unreadOnly:false, collapsed:{} };
+// 非科研分类：采集端 category_weights 降权的对象；前端「只看科研」开关过滤的对象。两处保持一致。
+const NON_SCI_CATS = ["其他","产业与资本"];
+const SCI_KEY = "pat-sci-only";
+function sciOnly(){ try{ return localStorage.getItem(SCI_KEY)==="1"; }catch(e){ return false; } }
+function setSciOnly(v){ try{ localStorage.setItem(SCI_KEY, v?"1":"0"); }catch(e){} }
+function sciFilter(items){ return sciOnly()?items.filter(i=>NON_SCI_CATS.indexOf(i.category)<0):items; }
 function lsGet(k){ try{ return JSON.parse(localStorage.getItem(k)||"{}"); }catch(e){ return {}; } }
 function lsSet(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
 let READ = lsGet("pat-read"), FAV = lsGet("pat-fav");
@@ -264,6 +283,10 @@ function invalidateAll(){ RENDERED.clear(); for (const k in SCROLL) delete SCROL
 // 且缓存位置要一起清零——否则切走再切回，router 会把旧 y 恢复到换掉后的列表上。
 // 注意与"删掉一条"（取消星标）区分：那种保持位置，交给浏览器 scroll anchoring。
 function contentReset(v){ SCROLL[v]=0; invalidate(v); if(v===LAST_VIEW) window.scrollTo(0,0); }
+// 只看科研是持久开关，同时决定精选页和全部页的列表内容。视图带缓存后，只 reset
+// 当前视图会让另一个视图留着上一个筛选条件的列表 + 旧滚动位置，切过去才看到过期
+// 内容（位置还会被错误恢复）。两个视图一起重置。
+function sciToggle(){ setSciOnly(!sciOnly()); state.allShown=ALL_PAGE; contentReset("feed"); contentReset("all"); }
 function setNav(v){ $$("#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$("#dnav a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$(".seg a").forEach(a=>a.classList.toggle("on",a.dataset.seg===v)); }
 function router(){
   const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/";
@@ -291,15 +314,17 @@ function renderFeed(){
     return '<div class="hr3"><span class="rk r'+(i+1)+'">'+(i+1)+'</span><span class="ht"><a href="'+rurl+'" target="_blank" rel="noopener">'+esc(t.title)+'</a></span><span class="hn mono">'+Math.round(t.heat||t.score)+' <small>'+T.heatVal+'</small> '+arrow+'</span></div>'; }).join("")+'</div>';
   let items=C.items.slice();
   if(state.unreadOnly) items=items.filter(i=>!READ[i.url]);
+  items=sciFilter(items);
   const groups={}; for(const it of items){ const d=effDate(it); (groups[d]=groups[d]||[]).push(it); }
   const days=Object.keys(groups).sort().reverse().slice(0,7);
-  let tl='<div class="urow"><button class="upill'+(state.unreadOnly?" on":"")+'" id="unreadBtn"><span class="dot"></span>'+T.unreadOnly+'</button></div>';
+  let tl='<div class="urow"><button class="upill'+(state.unreadOnly?" on":"")+'" id="unreadBtn"><span class="dot"></span>'+T.unreadOnly+'</button><button class="upill'+(sciOnly()?" on":"")+'" id="sciBtn"><span class="dot"></span>🔬 '+T.sciOnly+'</button></div>';
   if(!days.length) tl+='<div class="empty">'+T.noMatch+'</div>';
   for(const d of days){ const its=groups[d].slice().sort((a,b)=>b.score-a.score).slice(0,20);
     const closed=state.collapsed[d]?" closed":"";
     tl+='<div class="day'+closed+'"><div class="day-h" data-dayh="'+d+'"><h2>'+(isToday(d)?T.today+" ":"")+fmtDay(d)+'</h2><span class="w">'+wdCN(d)+'</span><span class="c">'+its.length+' '+T.daySel+'</span><span class="arr">'+(state.collapsed[d]?"▶":"▼")+'</span></div><div class="day-b">'+its.map(itemCard).join("")+'</div></div>'; }
-  root.innerHTML='<div class="card ph"><h1>'+T.feed+'</h1><span class="sub">'+esc(feedSub())+'</span><div class="note">'+esc(threshNote())+'</div></div>'+hot+tl;
+  root.innerHTML='<div class="card ph"><h1>'+T.feed+'</h1><span class="sub">'+esc(feedSub())+'</span><div class="note">'+esc(freshNote())+'</div><div class="note">'+esc(threshNote())+'</div></div>'+hot+tl;
   const ub=$("#unreadBtn"); if(ub) ub.onclick=()=>{ state.unreadOnly=!state.unreadOnly; contentReset("feed"); };
+  const sb=$("#sciBtn"); if(sb) sb.onclick=sciToggle;
 }
 const ALL_PAGE=30;
 let allObserver=null;
@@ -307,7 +332,7 @@ let allObserver=null;
 // 只有筛选/排序/搜索/换频道才整页重建；无限滚动一律往后追加，绝不重写已有卡片。
 let allCtx=null;
 function allQuery(){
-  let its=C.items.slice();
+  let its=sciFilter(C.items.slice());
   if(state.q){ const q=state.q.toLowerCase(); its=its.filter(i=>(i.title+" "+(i.zh_full||i.llm_summary||i.summary||"")+" "+i.source).toLowerCase().includes(q)); }
   if(state.cat!=="全部") its=its.filter(i=>i.category===state.cat);
   if(state.sort==="score") its.sort((a,b)=>b.score-a.score); else its.sort((a,b)=>b.discovered_at.localeCompare(a.discovered_at));
@@ -341,11 +366,15 @@ function renderAll(){
   const shown=Math.min(state.allShown||ALL_PAGE, its.length);
   allCtx={its,rendered:shown};
   const hasMore=shown<its.length;
-  root.innerHTML='<div class="card ph"><h1>'+T.allPage+'</h1><span class="sub">'+its.length+'</span><span class="hsort" style="margin-left:auto"><select id="all-cat" aria-label="cat"><option value="全部">'+T.catAll+'</option></select><select id="all-sort" aria-label="sort"><option value="score">'+T.sortScore+'</option><option value="time">'+T.sortTime+'</option></select></span><div class="note">'+esc(threshNote())+'</div></div><div id="all-list">'+(its.length?its.slice(0,shown).map(itemCard).join(""):'<div class="empty">'+T.noMatch+'</div>')+'</div>'+(hasMore?'<div id="all-more" class="card" style="text-align:center;padding:14px;cursor:pointer;color:var(--acd);font-weight:600">'+moreLabel(shown,its.length)+'</div>':"");
+  const isSearch=!!(state.q&&state.q.trim());
+  const title=isSearch?('🔍 "'+state.q.trim()+'"') : T.allPage;
+  const sub=isSearch?((LANG==="en"?"Search results · ":"搜索结果 · ")+its.length+(LANG==="en"?"":" 篇")) : (''+its.length);
+  root.innerHTML='<div class="card ph"><h1>'+esc(title)+'</h1><span class="sub">'+esc(sub)+'</span><button class="upill'+(sciOnly()?" on":"")+'" id="sciBtnAll" style="margin-left:8px"><span class="dot"></span>🔬 '+T.sciOnly+'</button><span class="hsort" style="margin-left:auto"><select id="all-cat" aria-label="cat"><option value="全部">'+T.catAll+'</option></select><select id="all-sort" aria-label="sort"><option value="score">'+T.sortScore+'</option><option value="time">'+T.sortTime+'</option></select></span><div class="note">'+esc(threshNote())+'</div></div><div id="all-list">'+(its.length?its.slice(0,shown).map(itemCard).join(""):'<div class="empty">'+T.noMatch+'</div>')+'</div>'+(hasMore?'<div id="all-more" class="card" style="text-align:center;padding:14px;cursor:pointer;color:var(--acd);font-weight:600">'+moreLabel(shown,its.length)+'</div>':"");
   const cats=[...new Set(C.items.map(i=>i.category))];
   const sel=$("#all-cat"); for(const c of cats){ const o=document.createElement("option"); o.value=c; o.textContent=catName(c); if(c===state.cat) o.selected=true; sel.appendChild(o); }
   $("#all-sort").value=state.sort;
   sel.onchange=e=>{ state.cat=e.target.value; state.allShown=ALL_PAGE; contentReset("all"); };
+  const sba=$("#sciBtnAll"); if(sba) sba.onclick=sciToggle;
   $("#all-sort").onchange=e=>{ state.sort=e.target.value; state.allShown=ALL_PAGE; contentReset("all"); };
   observeMore();
 }
@@ -388,7 +417,7 @@ function renderDaily(){
   let cm=""; for(const x of dates){ const m=x.slice(0,7);
     if(m!==cm){ if(cm) side+='</div>'; cm=m; const op=mOpen(m);
       side+='<div class="amonth'+(op?' open':'')+'" data-m="'+m+'"><span>'+m+' <span class="mcount">'+mcount[m]+'</span></span><span class="chev">'+(op?'▾':'▸')+'</span></div><div class="adays'+(op?'':' hide')+'">'; }
-    side+='<div class="dday'+(x===d?" on":"")+'" data-d="'+x+'"><span>'+x.slice(5)+'</span><span>'+wdCN(x)+'</span></div>'; }
+    side+='<div class="dday'+(x===d?" on":"")+'" data-d="'+x+'"><span>'+x+'</span><span>'+wdCN(x)+'</span></div>'; }
   if(cm) side+='</div>';
   side+='</div></aside>';
   let body='<div class="dbody">';
@@ -417,7 +446,8 @@ function renderTopics(){
 function renderTrends(){
   const root=$("#view-trends"); const tr=C.trends||{};
   const weekStart=tr.weekStart||"";
-  let html='<div class="card ph"><h1>'+esc(chn()+(LANG==="en"?" Trends":"趋势"))+'</h1><span class="sub">'+esc((LANG==="en"?"This week vs last week":"本周 vs 上周")+(weekStart?' · '+fmtDay(weekStart):""))+'</span></div>';
+  const trendSub=(LANG==="en"?"This week vs last week":"本周 vs 上周")+(weekStart?(LANG==="en"?" · week starting ":" · 本周自")+fmtDay(weekStart)+(LANG==="en"?"":"起"):"");
+  let html='<div class="card ph"><h1>'+esc(chn()+(LANG==="en"?" Trends":"趋势"))+'</h1><span class="sub">'+esc(trendSub)+'</span></div>';
   const deltas=tr.categoryDelta||[];
   if(!deltas.length){ root.innerHTML=html+'<div class="card"><p class="anote" style="padding:16px 18px">'+T.noTrend+'</p></div>'; return; }
   const maxV=Math.max(...deltas.map(x=>x.thisWeek),1);
