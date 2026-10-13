@@ -54,7 +54,11 @@ jobs:
           path: ~/.cache/huggingface
           key: hf-bge-small-zh-${{ runner.os }}-${{ hashFiles('collector/collect.py') }}
       - name: 运行单元测试（纯标准库，无网络）
-        run: python -m unittest discover -s tests -v
+        run: |
+          python -m unittest discover -s tests -v
+          # 账号/绑定/画像后端（functions/_lib）的纯函数测试：不打网络，
+          # D1 用内存 fake，SM 那一跳用注入的 fetchImpl。见 tests/js/。
+          node --test tests/js
       - name: 运行采集器（真嵌入聚类 + LLM 中文摘要）
         # 挂死就发生在这一步（run#76 拖满 6h、run#79 近 5h）：所有网络调用虽各自带
         # timeout，但 LLM 增强是按批循环、没有全局时钟预算，上游半死不活时批间退避

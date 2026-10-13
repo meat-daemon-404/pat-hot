@@ -70,7 +70,7 @@
 **相比 AIHOT 的改进**：
 - 打分公式透明可复现（AIHOT 为「AI 编辑部评分」，本工具公式见下）
 - 光电行业专属分类（10 类）与领域词表
-- 完全离线可用（单文件 HTML + 内嵌数据），无需后端
+- **数据面免鉴权只读、可完全离线**（单文件 HTML + 内嵌数据，默认不依赖任何后端）；个性化账号需要本站的 D1 + Pages Functions，**未启用时站点行为与静态版一致**（fork 默认零后端、零用户数据）
 - 开源 + MIT + GitHub Actions 自动刷新
 ## 快速开始
 
@@ -304,7 +304,10 @@ pat-hot/
 │   └── llms.txt          # LLM / Agent 友好入口
 ├── agent/skills/opto-hot # 可安装的 Agent Skill（光电频道）
 ├── tests/                # 纯标准库单元测试（python -m unittest discover -s tests）
+├── tests/js/             # 后端纯函数测试（node --test tests/js，无网络）
 ├── functions/api/summarize.js  # Cloudflare Pages Function（按需中文摘要，仅 CF 侧生效）
+├── functions/api/account/ 等   # 账号/绑定/画像 Pages Functions（逻辑在 functions/_lib/）
+├── functions/_lib/       # 上述 Function 的实现本体（crypto/db/http/ranking/snapshot/smclient/handlers）
 ├── scripts/              # 本地计划任务、手动部署脚本、门槛校准评测（eval_selection.py）
 └── .github/workflows/    # update.yml（定时采集+自检+部署）/ pages.yml（推送即部署）
 ```
@@ -336,7 +339,7 @@ T 光电频道镜像过去。`python collector/collect.py --check` 会在提交�
 
 - `scripts/install-schedule.ps1`：注册 Windows 计划任务，每天 12:00 运行一次 `scripts/auto-update.ps1`（采集 → 契约自检 → git 提交 → push，触发 GitHub Pages 重新部署）
 
-## 部署到 Cloudflare Pages（按需中文摘要接口）
+## 部署到 Cloudflare Pages（按需中文摘要接口 + 个性化账号面）
 
 Cloudflare Pages 项目 `pat-hot`（`pat-hot.pages.dev`）**未接 Git 自动发布**，与上面的
 GitHub Pages 是两套独立部署。`functions/api/summarize.js` 这个 Pages Function 只有在
@@ -359,6 +362,66 @@ wrangler pages deploy <静态资源目录> --project-name pat-hot --branch maste
 
 `--branch master` 即 production；换成别的分支名就是预览部署，验证后再用
 `wrangler pages deployment list --project-name pat-hot` 确认。
+
+### 部署前一次性：D1 数据库（个性化账号面才需要）
+
+账号 / 绑定 / 画像快照这三组接口把数据放在 Cloudflare D1 里。**不配 D1 也能部署**：
+缺绑定时这些端点直接返回 `500 DB_UNAVAILABLE` 并说明原因，数据面（静态 JSON）
+与站点浏览完全不受影响——所以只想跑纯静态版的 fork 可以整节跳过。
+
+注意：**Pages 没有 `wrangler pages d1 create` / `wrangler pages d1 bind` 这两个子命令**
+（实测 wrangler 4.150）。D1 库是账号级资源，创建用 `wrangler d1 create`，绑定要么在
+Pages 项目的控制台里加，要么写在 Wrangler 配置文件里：
+
+```
+# ① 建库（一次性，账号级）。输出的 database_id 要留着填进下一步。
+wrangler d1 create pat-hot-identity
+wrangler d1 list          # 忘了 id 时用这个回查
+```
+
+```
+# ② 绑定到 Pages 项目 pat-hot，Variable name 填 PAT_HOT_D1
+#    控制台：Workers & Pages → pat-hot → Settings → Bindings → Add → D1 database
+#    （改完必须重新 deploy 一次才生效，这是 Cloudflare 的硬规矩）
+```
+
+也可以改用配置文件绑定：在项目里加 `wrangler.jsonc`／`wrangler.toml`，写
+`[[d1_databases]] binding = "PAT_HOT_D1" / database_name / database_id`，
+效果与控制台等价。本仓当前**没有**这个文件（直接上传部署），绑定走控制台即可。
+
+```
+# ③ 本地联调（--d1 传 <绑定名>=<database_id>，id 用 wrangler d1 list 回查）
+wrangler pages dev dist --d1 PAT_HOT_D1=<database_id>
+#    密钥与开关用 .dev.vars（已被 .gitignore 挡住，别提交）：
+#    PAT_HOT_STORE_USER_DATA=1
+#    PAT_SHARED_SECRET=...
+#    SM_BASE=https://scholarmatrix.pages.dev
+```
+
+表**不用手工建**：`functions/_lib/db.mjs` 的 `ensureSchema()` 在第一次用到库时按
+`ph_users / ph_sessions / ph_bindings / profile_snapshots / rate_buckets / ph_meta`
+幂等建表（线路契约 §8 W2 的清单），并记下 schema 版本，重启不重复建。
+
+### 环境变量与 Secret
+
+密钥一律走 Pages Secret / 环境变量，不进代码也不进仓库（同 `SENSENOVA_API_KEY`）。
+**production 与 preview 两个环境要分别设**，只设一边的症状是"线上好、预览全红"。
+
+| 变量 | 必填 | 作用 | 没设会怎样 |
+|---|---|---|---|
+| `PAT_HOT_STORE_USER_DATA` | 否（默认关） | 用户数据面总开关，只认字符串 `1` | 账号 / 绑定 / 画像端点统一 `503 STORE_DISABLED`，站点行为与静态版一致（fork 的默认形态） |
+| `PAT_SHARED_SECRET` | 启用账号面时必填 | 与 ScholarMatrix 的共享密钥：兑换绑定码、推送与清除快照都校验它 | `/api/bind/verify` 回 `503 SECRET_MISSING`；`/api/profile-snapshot` 一律 `403`（空密钥与空请求头**不算**匹配） |
+| `SM_BASE` | 否（默认 `https://scholarmatrix.pages.dev`） | PH→SM 回调的地址 | 走契约默认值。代码硬校验：必须 https（本机回环调试例外）、主机必须在 pages.dev / workers.dev 白名单内、不许带路径 |
+
+设密钥的命令（与上面 `SENSENOVA_API_KEY` 同形）：
+
+```
+wrangler pages secret put PAT_SHARED_SECRET --project-name pat-hot            # production
+wrangler pages secret put PAT_SHARED_SECRET --project-name pat-hot -e preview  # preview
+```
+
+`PAT_HOT_STORE_USER_DATA` 与 `SM_BASE` 是明文变量，在控制台 Settings →
+**Variables and Secrets** 里加即可（只有密钥才用 `secret put`）。
 
 三个已知坑（2026-10-12 实测）：
 
