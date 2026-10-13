@@ -1917,24 +1917,7 @@ def write_outputs(channel_results, generated):
         ch = CHANNELS[ch_id]
         tier_map = _CHANNEL_TIERS.get(ch_id, {})
 
-        def _tier_of(it, _tm=tier_map):
-            # 查不到不等于 media：条目自带的 tier 是上一次按同一份配置算出来的，
-            # 只有 sources.json 明确改了该源的 tier 才应覆盖它。表里没这个源
-            # （源被删名/改名）时退回默认值，会把官方条目静默降级到 65 分门槛。
-            return (_tm.get(it.get("source_base") or it["source"])
-                    or it.get("tier")
-                    or tiers.get("default", "media"))
-
-        def _threshold(it):
-            return tiers.get(_tier_of(it), tiers["media"])["select_threshold"]
-
-        for it in items:
-            it.setdefault("links", {})
-            it["links"]["original"] = it["url"]
-            it["tier"] = _tier_of(it)
-            eff = it["llm_score"] if it.get("llm_score") is not None else it["score"]
-            it["selected"] = eff >= _threshold(it)
-            it["role"] = role_tag(it["source"])
+        apply_tier_and_selected(items, tier_map, tiers)
         for t in topics:
             t["heat"] = t["score"]
             if t["source_count"] >= hc["status_hot_min_sources"] and t["score"] >= hc["status_hot_min_heat"]:
@@ -2392,6 +2375,9 @@ def llm_backfill_material(items, cfg):
     per_src = lc.get("material_per_source", 6)
     body_chars = lc.get("material_body_chars", 1200)
     cands = sorted(items, key=lambda i: i["score"], reverse=True)[:lc.get("max_score_items", 30)]
+    # 摘要与打分都已沿用的条目不需要材料了，别再为它花抓取时间
+    # （material_max_fetch 只有 20，被白占就等于把要补的条目挤出去）
+    cands = [c for c in cands if not (c.get("zh_full") and c.get("llm_score") is not None)]
     cands = [c for c in cands if len((c.get("summary") or "").strip()) < min_len and c.get("url")]
     got = 0
     per = {}
@@ -2429,6 +2415,95 @@ def score_material(it, cfg, limit=None):
     m = (it.get("_material") or "").strip()
     src = m if len(m) >= 40 else (it.get("summary") or "").strip()
     return re.sub(r"\s+", " ", src)[:budget]
+
+
+def apply_tier_and_selected(items, tier_map, tiers):
+    """按发布口径设置 tier / selected / role / links.original。
+
+    write_outputs 落盘前调它；run_channel 的 LLM 阶段也要先调一次——
+    llm_extract 的候选是 `[c for c in items if c.get("selected")]`，而
+    selected 原本直到 write_outputs 才被赋值，于是真实采集里候选恒为空、
+    抽取阶段每轮 0 条（2026-10-13 实测：三个频道的 entities/event/tags
+    键完全不存在）。两处共用同一个实现，预筛口径不会和发布口径漂移。
+    """
+    def _tier_of(it, _tm=tier_map):
+        # 查不到不等于 media：条目自带的 tier 是上一次按同一份配置算出来的，
+        # 只有 sources.json 明确改了该源的 tier 才应覆盖它。表里没这个源
+        # （源被删名/改名）时退回默认值，会把官方条目静默降级到 65 分门槛。
+        return (_tm.get(it.get("source_base") or it["source"])
+                or it.get("tier")
+                or tiers.get("default", "media"))
+
+    def _threshold(it):
+        return tiers.get(_tier_of(it), tiers["media"])["select_threshold"]
+
+    for it in items:
+        it.setdefault("links", {})
+        it["links"]["original"] = it["url"]
+        it["tier"] = _tier_of(it)
+        eff = it["llm_score"] if it.get("llm_score") is not None else it["score"]
+        it["selected"] = eff >= _threshold(it)
+        it["role"] = role_tag(it["source"])
+
+
+# 上一轮已经算过、本轮不该重复付费的 LLM 产物。
+# blocked 不列入：预筛是 LLM 流程的第一步，BLOCK 的条目根本走不到后面几阶段，
+# 上一轮产物里也不会有它（AIHOT 口径：BLOCK 的资料不出现在任何公开页面）。
+LLM_CARRY_FIELDS = ("zh_full", "llm_summary", "llm_reason", "density",
+                    "llm_score", "llm_score_a", "llm_score_b",
+                    "entities", "event", "tags")
+
+
+def carry_llm_fields(items, ch_id, cfg):
+    """把上一轮已算出的 LLM 产物按 id 搬回本轮条目，返回搬运条数。
+
+    2026-10-13 实测：连续两轮采集的条目 id/url 重合 80%（tech 281/352、
+    physics 124/145、astro 108/146），而 run_channel 每轮从零构造条目、
+    不带任何 LLM 字段，于是 llm_enhance 每轮都从最高分重做同一批——
+    本轮 153 条 zh_full 里 110 条（72%）上一轮就已存在。预算恒被高分头部
+    吃光，熔断注释里承诺的「其余留给下次刷新」机械上永远兑现不了：
+    低分尾部每一轮都排在头部之后，永远轮不到。
+
+    搬回来不只是省钱：density=低 的降权也在本轮复现，否则沿用判定会比
+    真跑一遍分数更高，精选随之漂移。已有任何 LLM 字段的条目不动。
+    """
+    path = os.path.join(DATA_DIR, ch_id, "items.json")
+    try:
+        with open(path, encoding="utf-8") as f:
+            prev = (json.load(f) or {}).get("items") or []
+    except Exception:
+        return 0
+    by_id = {}
+    for p in prev:
+        pid = p.get("id")
+        if pid and pid not in by_id:
+            by_id[pid] = p
+    penalty = cfg["llm"].get("density_penalty", 0.9)
+    carried = 0
+    for it in items:
+        if any(it.get(k) not in (None, [], "") for k in LLM_CARRY_FIELDS):
+            continue
+        p = by_id.get(it.get("id"))
+        if not p:
+            continue
+        got = False
+        for k in LLM_CARRY_FIELDS:
+            v = p.get(k)
+            if v not in (None, [], ""):
+                it[k] = v
+                got = True
+        if not got:
+            continue
+        # 与 _apply_enhance 同口径：沿用 density 判定就要沿用它的降权。
+        # 但只在"本轮不会再增强"时预先降权——zh_full 缺失的条目会进 enhance
+        # 待处理队列，_apply_enhance 会按新判定自己降一次，这里再降就重复了。
+        if it.get("density") == "低" and it.get("zh_full"):
+            it["score"] = round(it["score"] * penalty, 1)
+        carried += 1
+    if carried:
+        log("[*] [%s] 沿用上一轮 LLM 产物 %d 条（两轮条目重合实测 80%%，避免重复付费）"
+            % (ch_id, carried))
+    return carried
 
 
 def strip_internal_fields(items, topics):
@@ -2771,6 +2846,13 @@ def llm_enhance(items, topics, cfg):
     cands = sorted(items, key=lambda i: i["score"], reverse=True)
     if not cands:
         return 0
+    # 上一轮已算过的条目直接沿用（carry_llm_fields 搬回来的），不再重复付费。
+    # cands 仍是全量：末尾的 topic 代表同步要靠它建 url 映射，
+    # 沿用来的字段也得能同步进 hot-topics.json。
+    todo = [b for b in cands if not b.get("zh_full")]
+    skipped = len(cands) - len(todo)
+    if skipped:
+        log("[*] LLM 增强跳过已沿用条目 %d 条，本轮待处理 %d 条" % (skipped, len(todo)))
     done = 0
     bs = max(1, lc["batch_size"])
     # 本阶段覆盖全部条目、无上限，而双打分/结构化抽取与它共享同一个 deadline。
@@ -2780,10 +2862,10 @@ def llm_enhance(items, topics, cfg):
     # 预留值取实测成本：双打分 10 批×6.9s≈69s + 抽取 7 批×(2.2+1)s≈23s ≈ 92s，
     # 双打分最慢单批实测 13.3s，按最坏留到 150s。
     reserve = max(0, int(lc.get("budget_reserve_seconds", 150)))
-    for s in range(0, len(cands), bs):
+    for s in range(0, len(todo), bs):
         if llm_over_budget("LLM 增强", done, reserve):
             break
-        batch = cands[s:s + bs]
+        batch = todo[s:s + bs]
         def _listing(b, i):
             # 材料：补齐的详情页正文优先，其次 RSS 摘要（写作允许看来源，
             # 打分才遮蔽来源——与 AIHOT content-understanding 的口径一致）
@@ -2872,12 +2954,17 @@ def llm_double_score(items, topics, cfg):
     cands = [c for c in cands if c["score"] >= 50]
     if not cands:
         return 0
+    # 已有 llm_score 的是上一轮沿用来的，不再重复付费；cands 保持全量，
+    # 末尾的 topic 代表同步要从里面挑（沿用分数同样该同步过去）。
+    todo = [c for c in cands if c.get("llm_score") is None]
+    if len(todo) < len(cands):
+        log("[*] 双打分跳过已沿用条目 %d 条" % (len(cands) - len(todo)))
     done = 0
     bs = max(1, lc["batch_size"])
-    for s in range(0, len(cands), bs):
+    for s in range(0, len(todo), bs):
         if llm_over_budget("双打分", done):
             break
-        batch = cands[s:s + bs]
+        batch = todo[s:s + bs]
         try:
             sa = _llm_score_once(batch, "score_a", cfg)
             time.sleep(1)
@@ -2910,7 +2997,14 @@ def llm_extract(items, cfg):
     """LLM 结构化抽取：对入选条目抽取主体（公司/机构）、事件一句话、标签。
     存入 entities / event / tags 字段（只增字段）。失败降级，不阻断。"""
     lc = cfg["llm"]
+    # selected 原本要到 write_outputs 才被赋值，而本函数在它之前跑，
+    # 于是真实采集里这个过滤恒为空、抽取每轮 0 条（2026-10-13 实测：
+    # entities/event/tags 键在三个频道产物里完全不存在）。改为先按
+    # 同一口径预筛——调用方已保证 items 带 tier/selected，这里只做兜底。
+    if any("selected" not in it for it in items):
+        apply_tier_and_selected(items, _CHANNEL_TIERS.get(_CH, {}), cfg["tiers"])
     cands = [c for c in items if c.get("selected")]
+    cands = [c for c in cands if not c.get("entities")]   # 已沿用的不重复付费
     cands = sorted(cands, key=lambda i: i["score"], reverse=True)[:lc.get("max_extract_items", 20)]
     if not cands:
         return 0
@@ -3114,6 +3208,10 @@ def run_channel(ch_id, sources, args, generated):
             # 预算内收尾，已增强条目照常发布——2026-10-13 的 5 小时挂死堵死了
             # 后续全部定时刷新，步骤级超时只把挂死换成失败，换不回数据发布。
             start_llm_budget(CONFIG["llm"].get("budget_seconds", 360))
+            # 先沿用上一轮已算好的 LLM 产物（两轮条目实测重合 80%），
+            # 再补材料——沿用上的条目不必再抓正文、也不必再花摘要预算。
+            if carry_llm_fields(items, ch_id, CONFIG):
+                items.sort(key=lambda i: i["score"], reverse=True)   # 沿用的降权已改分
             # 先补材料再打分/写作（AIHOT：不凭标题评分、不凭标题写文案）
             llm_backfill_material(items, CONFIG)
             # 预筛在写作之前（AIHOT 流程：预筛→评分→写作）：BLOCK 的条目
@@ -3134,6 +3232,8 @@ def run_channel(ch_id, sources, args, generated):
             if llm_enhance(items, topics, CONFIG):
                 items.sort(key=lambda i: i["score"], reverse=True)
             llm_double_score(items, topics, CONFIG)
+            # 预筛要在打分之后：llm_score 会影响 selected 口径
+            apply_tier_and_selected(items, _CHANNEL_TIERS.get(ch_id, {}), CONFIG["tiers"])
             llm_extract(items, CONFIG)
             # 词表订正在写作之后：只修模型自己写坏的那几处用词
             llm_mend_wording(items, topics, CONFIG)

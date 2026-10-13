@@ -1294,6 +1294,32 @@ class TestMaterialBackfill(unittest.TestCase):
             collect.fetch_text = real
         self.assertEqual(got2, 3, "全频道上限必须压住单源配额")
 
+    def test_backfill_skips_fully_carried_items(self):
+        """摘要与打分都沿用的条目不再抓正文。
+
+        material_max_fetch 只有 20，被已沿用的条目白占就等于把真正需要
+        补材料的条目挤出预算（carry 之后高分头部基本都是沿用的）。
+        """
+        seen = []
+
+        def fake_fetch(url, **kw):
+            seen.append(url)
+            return "正文" * 80
+
+        thin = self._item("薄摘要甲", 90.0, "短")
+        carried = self._item("已全沿用", 91.0, "短")
+        carried["zh_full"] = "上一轮写好"
+        carried["llm_score"] = 66.0
+        real = collect.fetch_text
+        collect.fetch_text = fake_fetch
+        try:
+            n = collect.llm_backfill_material([carried, thin], collect.CONFIG)
+        finally:
+            collect.fetch_text = real
+        self.assertEqual(seen, [thin["url"]], "已全沿用的条目不该再抓正文")
+        self.assertNotIn("_material", carried)
+        self.assertGreaterEqual(n, 1)
+
     def test_score_material_prefers_backfilled_body(self):
         it = self._item("条", 90.0, "短摘要" * 5)
         it["_material"] = "丁" * 300
@@ -1394,6 +1420,204 @@ class TestMaterialBackfill(unittest.TestCase):
                          collect.CONFIG["llm"]["budget_reserve_seconds"])
         self.assertGreater(collect.CONFIG["llm"]["budget_reserve_seconds"], 0,
                            "预留为 0 等于没修，后两阶段会被摘要吃光预算")
+
+
+class TestExtractCandidates(unittest.TestCase):
+    """llm_extract 的候选过滤依赖 selected，而 selected 原本要到
+    write_outputs 才被赋值，采集主流程里抽取在它之前跑 → 候选恒为空。
+    2026-10-13 实测：三个频道产物里 entities/event/tags 键完全不存在。"""
+
+    def _item(self, title, score):
+        return {"id": collect.make_id(title, "https://e/" + title), "title": title,
+                "url": "https://e/" + title, "source": "S", "source_base": "S",
+                "source_type": "rss", "category": "激光", "published_at": None,
+                "discovered_at": "2026-10-13T00:00:00+00:00",
+                "summary": "材" * 100, "score": score, "keywords": []}
+
+    def setUp(self):
+        self._real_sleep = collect.time.sleep
+        collect.time.sleep = lambda s: None
+
+    def tearDown(self):
+        collect.time.sleep = self._real_sleep
+
+    def test_extract_selects_items_without_preassigned_selected(self):
+        """未预筛的条目（run_channel 的真实形状）也必须能进抽取候选。"""
+        calls = [0]
+
+        def fake(messages, cfg, **kw):
+            calls[0] += 1
+            n = len([x for x in messages[0]["content"].split("\n") if x.strip().startswith("[")])
+            return {str(i): {"entities": ["公司甲"], "event": "事件一句话",
+                             "tags": ["标签"]} for i in range(n)}
+
+        items = [self._item("条%d" % i, 90.0 - i) for i in range(3)]
+        self.assertNotIn("selected", items[0], "前置条件：run_channel 此刻确实还没有 selected")
+        real = collect._sensenova_chat
+        collect._sensenova_chat = fake
+        try:
+            n = collect.llm_extract(items, collect.CONFIG)
+        finally:
+            collect._sensenova_chat = real
+        self.assertGreater(n, 0, "条目没有 selected 时抽取候选恒为空（线上 bug 本体）")
+        self.assertTrue(any(i.get("entities") for i in items))
+        self.assertGreaterEqual(calls[0], 1)
+
+    def test_extract_skips_carried_over_entities(self):
+        """上一轮已抽过的（沿用来的）不再重复付费。"""
+        calls = [0]
+
+        def fake(messages, cfg, **kw):
+            calls[0] += 1
+            n = len([x for x in messages[0]["content"].split("\n") if x.strip().startswith("[")])
+            return {str(i): {"entities": ["新公司"], "event": "新事件", "tags": []}
+                    for i in range(n)}
+
+        a = self._item("已有实体", 92.0)
+        a["entities"] = ["沿用的公司"]
+        b = self._item("待抽取", 91.0)
+        items = [a, b]
+        real = collect._sensenova_chat
+        collect._sensenova_chat = fake
+        try:
+            collect.llm_extract(items, collect.CONFIG)
+        finally:
+            collect._sensenova_chat = real
+        self.assertEqual(a["entities"], ["沿用的公司"], "沿用实体被覆盖，carry 白做")
+        self.assertTrue(b.get("entities"), "新条目没抽到")
+
+
+class TestCarryLlmFields(unittest.TestCase):
+    """跨轮沿用上一轮 LLM 产物（实测两轮条目 id/url 重合 80%）。"""
+
+    def _item(self, title, score=80.0, **extra):
+        d = {"id": collect.make_id(title, "https://e/" + title), "title": title,
+             "url": "https://e/" + title, "source": "S", "source_base": "S",
+             "source_type": "rss", "category": "激光", "published_at": None,
+             "discovered_at": "2026-10-13T00:00:00+00:00",
+             "summary": "材" * 100, "score": score, "keywords": []}
+        d.update(extra)
+        return d
+
+    def _sandbox(self, prev_items):
+        tmp = tempfile.mkdtemp(prefix="pathom-carry-")
+        d = os.path.join(tmp, "data", "tech")
+        os.makedirs(d, exist_ok=True)
+        with open(os.path.join(d, "items.json"), "w", encoding="utf-8") as f:
+            json.dump({"schemaVersion": 1, "items": prev_items}, f, ensure_ascii=False)
+        return tmp
+
+    def test_carries_and_reapplies_density_penalty(self):
+        it = self._item("同一篇报道", 80.0)
+        prev = [dict(it, zh_full="中文摘要" * 40, llm_summary="概要",
+                     density="低", llm_score=44.0, entities=["甲"], event="事", tags=["t"])]
+        tmp = self._sandbox(prev)
+        real = collect.DATA_DIR
+        try:
+            collect.DATA_DIR = os.path.join(tmp, "data")
+            n = collect.carry_llm_fields([it], "tech", collect.CONFIG)
+        finally:
+            collect.DATA_DIR = real
+            shutil.rmtree(tmp, ignore_errors=True)
+        self.assertEqual(n, 1)
+        self.assertEqual(it["llm_score"], 44.0)
+        self.assertTrue(it["zh_full"])
+        # density=低 的降权必须在本轮复现，否则沿用判定会虚高、精选漂移
+        expect = round(80.0 * collect.CONFIG["llm"]["density_penalty"], 1)
+        self.assertEqual(it["score"], expect, "沿用 density 却没沿用它的降权")
+
+    def test_does_not_override_existing_fields(self):
+        it = self._item("已有本轮结果", 80.0, zh_full="本轮新写的")
+        prev = [dict(it, zh_full="上一轮的旧值")]
+        tmp = self._sandbox(prev)
+        real = collect.DATA_DIR
+        try:
+            collect.DATA_DIR = os.path.join(tmp, "data")
+            n = collect.carry_llm_fields([it], "tech", collect.CONFIG)
+        finally:
+            collect.DATA_DIR = real
+            shutil.rmtree(tmp, ignore_errors=True)
+        self.assertEqual(n, 0)
+        self.assertEqual(it["zh_full"], "本轮新写的")
+
+    def test_missing_history_is_not_fatal(self):
+        tmp = tempfile.mkdtemp(prefix="pathom-carry-none-")
+        real = collect.DATA_DIR
+        try:
+            collect.DATA_DIR = os.path.join(tmp, "data")
+            it = self._item("无历史")
+            self.assertEqual(collect.carry_llm_fields([it], "tech", collect.CONFIG), 0)
+            self.assertNotIn("zh_full", it)
+        finally:
+            collect.DATA_DIR = real
+            shutil.rmtree(tmp, ignore_errors=True)
+
+    def test_no_double_penalty_when_enhance_will_rerun(self):
+        """沿用 density=低 但 zh_full 缺失时不许预先降权。
+
+        这条条目会进 llm_enhance 的待处理队列，_apply_enhance 会按新判定
+        自己降一次；carry 这里再降一次就是重复降权（分数白白多砍 10%）。
+        """
+        it = self._item("只有密度判定", 80.0)
+        prev = [dict(it, density="低", llm_score=44.0)]   # 没有 zh_full
+        tmp = self._sandbox(prev)
+        real = collect.DATA_DIR
+        try:
+            collect.DATA_DIR = os.path.join(tmp, "data")
+            n = collect.carry_llm_fields([it], "tech", collect.CONFIG)
+        finally:
+            collect.DATA_DIR = real
+            shutil.rmtree(tmp, ignore_errors=True)
+        self.assertEqual(n, 1)
+        self.assertEqual(it["score"], 80.0, "zh_full 缺失却预降权，会与 enhance 重复降权")
+        self.assertEqual(it["density"], "低")
+        self.assertNotIn("zh_full", it)
+        # 该条目应留在 enhance 待处理队列里（由 test_enhance_skips_carried_items 覆盖跳过规则）
+        self.assertFalse(it.get("zh_full"))
+
+    def test_enhance_skips_carried_items(self):
+        """llm_enhance 必须跳过已有 zh_full 的条目，不再重复付费。"""
+        calls = []
+
+        def fake(messages, cfg, **kw):
+            calls.append(messages[0]["content"])
+            # enhance 的 prompt 是 base_prompt + listing 直接拼接，首块被粘在
+            # base 尾部、不落在 "\n\n" 边界上，所以按固定下标返回而非数块。
+            return {str(i): {"zh_full": "新" * 30, "density": "中"} for i in range(3)}
+
+        a = self._item("沿用的条目")
+        a["zh_full"] = "上一轮写好"
+        b = self._item("新条目")
+        real = collect._sensenova_chat
+        collect._sensenova_chat = fake
+        try:
+            n = collect.llm_enhance([a, b], [], collect.CONFIG)
+        finally:
+            collect._sensenova_chat = real
+        self.assertEqual(a["zh_full"], "上一轮写好", "沿用条目被重新覆盖")
+        self.assertTrue(b.get("zh_full"), "新条目没被增强")
+        self.assertEqual(n, 1)
+        self.assertNotIn("沿用的条目", "".join(calls), "已沿用条目仍进了 prompt（重复付费）")
+
+
+class TestSelectedSingleImplementation(unittest.TestCase):
+    """selected 口径只许有一处实现：write_outputs 与 LLM 阶段预筛必须同源。"""
+
+    def test_write_outputs_uses_shared_helper(self):
+        src = open(os.path.join(os.path.dirname(collect.__file__), "collect.py"),
+                   encoding="utf-8").read()
+        self.assertEqual(src.count('eff = it["llm_score"]'), 1,
+                         "selected 判定出现第二份实现，两处会漂移")
+        self.assertIn("apply_tier_and_selected(items, tier_map, tiers)", src)
+
+    def test_apply_tier_and_selected_honors_llm_score(self):
+        items = [{"id": "a", "title": "A", "url": "https://e/a", "source": "S",
+                  "source_base": "S", "category": "激光", "discovered_at": "x",
+                  "summary": None, "keywords": [], "score": 70.0,
+                  "llm_score": 30.0}]
+        collect.apply_tier_and_selected(items, {}, collect.CONFIG["tiers"])
+        self.assertFalse(items[0]["selected"], "有 llm_score 时不该回退到启发式分")
+        self.assertTrue(items[0]["links"]["original"])
 
 
 if __name__ == "__main__":
