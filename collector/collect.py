@@ -136,6 +136,8 @@ DEFAULT_CONFIG = {
         "max_items": 30, "batch_size": 3, "timeout": 120,
         "density_penalty": 0.9,
         "max_score_items": 30, "max_extract_items": 20,
+        # 中文摘要阶段为双打分/抽取预留的秒数（共享 deadline，不预留会饿死后两阶段）
+        "budget_reserve_seconds": 150,
         # 关推理链：见 _sensenova_chat 注释，实测不关时正文 JSON 预算不足直接畸形
         "disable_thinking": True,
         # 材料补取（AIHOT 纪律：只有标题不评分、先补正文）：摘要短于 material_min_summary
@@ -2337,16 +2339,22 @@ def start_llm_budget(seconds):
     _LLM_DEADLINE[0] = time.monotonic() + seconds if seconds else None
 
 
-def llm_over_budget(stage, done):
-    """预算剩余不足以再发一次带重试的调用（<30s）→ 本阶段就此收尾。
+def llm_over_budget(stage, done, reserve=0):
+    """预算剩余不足以再发一次带重试的调用（<30s + reserve）→ 本阶段就此收尾。
 
     已完成的条目保留照常发布，只有低分尾部本轮跳过（cands 按分数降序遍历），
     下次刷新继续。返回 True 表示应当停止，并打一条可观测的日志。
+
+    reserve 让上游阶段主动让出时间：llm_enhance 覆盖全部条目、不设上限，
+    与后两个阶段共享同一个 deadline，不留预留就会把预算吃光，
+    使双打分/结构化抽取每轮在第一批就被熔断（2026-10-13 实测 llm_score、
+    entities 键在三个频道的产物里完全不存在）。
     """
     d = _LLM_DEADLINE[0]
-    if d is not None and (d - time.monotonic()) < 30:
-        log("[!] LLM 时间预算用尽，%s 阶段停止：%d 条已完成，其余留给下次刷新"
-            % (stage, done))
+    floor = 30 + max(0, reserve)
+    if d is not None and (d - time.monotonic()) < floor:
+        log("[!] LLM 时间预算用尽（剩余 < %ds），%s 阶段停止：%d 条已完成，其余留给下次刷新"
+            % (floor, stage, done))
         return True
     return False
 
@@ -2555,8 +2563,15 @@ def llm_enhance(items, topics, cfg):
         return 0
     done = 0
     bs = max(1, lc["batch_size"])
+    # 本阶段覆盖全部条目、无上限，而双打分/结构化抽取与它共享同一个 deadline。
+    # 不留预留就会把预算吃光，让那两个阶段每轮在第一批就被熔断——
+    # 2026-10-13 实测：产物里 llm_score / entities / event / tags 键在三个频道全部不存在，
+    # 于是 AI 双打分徽标永不显示、精选实际按启发式分判定、卡片实体 chips 全空。
+    # 预留值取实测成本：双打分 10 批×6.9s≈69s + 抽取 7 批×(2.2+1)s≈23s ≈ 92s，
+    # 双打分最慢单批实测 13.3s，按最坏留到 150s。
+    reserve = max(0, int(lc.get("budget_reserve_seconds", 150)))
     for s in range(0, len(cands), bs):
-        if llm_over_budget("LLM 增强", done):
+        if llm_over_budget("LLM 增强", done, reserve):
             break
         batch = cands[s:s + bs]
         def _listing(b, i):
@@ -2573,7 +2588,7 @@ def llm_enhance(items, topics, cfg):
             log("[!] LLM 增强整批失败，降级逐条重试: %s" % e)
             # 逐条降级：单条请求更小、更快，坏条目不连累好条目
             for b in batch:
-                if llm_over_budget("LLM 增强（逐条降级）", done):
+                if llm_over_budget("LLM 增强（逐条降级）", done, reserve):
                     break
                 try:
                     single_prompt = base_prompt + _listing(b, 0)

@@ -47,6 +47,7 @@
     "max_score_items": 30,
     "max_extract_items": 20,
     "budget_seconds": 360,
+    "budget_reserve_seconds": 150,
     "material_min_summary": 80,
     "material_max_fetch": 20,
     "material_per_source": 6,

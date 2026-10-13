@@ -1343,6 +1343,58 @@ class TestMaterialBackfill(unittest.TestCase):
         self.assertEqual(calls[0], before, "预算用尽后一发调用都不许再发")
         self.assertEqual(second, 0)
 
+    def test_reserve_raises_the_fuse_floor(self):
+        """reserve 把熔断线从 <30s 抬到 <(30+reserve)s。
+
+        这是防回归的关键：中文摘要覆盖全部条目、无上限，与双打分/抽取共享
+        同一个 deadline，不预留就会把预算吃光，让后两阶段每轮第一批即熔断
+        （2026-10-13 实测 llm_score / entities 键在三个频道产物里完全不存在）。
+        """
+        collect.start_llm_budget(360)
+        try:
+            collect._LLM_DEADLINE[0] = collect.time.monotonic() + 100
+            self.assertFalse(collect.llm_over_budget("测试", 0),
+                             "剩 100s、无预留：不该熔断")
+            self.assertTrue(collect.llm_over_budget("测试", 0, reserve=90),
+                            "剩 100s、预留 90s（线=120s）：必须提前收尾")
+            self.assertFalse(collect.llm_over_budget("测试", 0, reserve=50),
+                             "剩 100s、预留 50s（线=80s）：仍可继续")
+        finally:
+            collect.start_llm_budget(None)
+
+    def test_enhance_leaves_reserve_for_later_stages(self):
+        """llm_enhance 必须按配置预留，早于绝对 deadline 收尾。"""
+        calls = [0]
+
+        def fake_chat(messages, cfg, **kw):
+            calls[0] += 1
+            n = len([x for x in messages[0]["content"].split("\n\n") if x.startswith("[")])
+            return {str(i): {"zh_full": "辛" * 30, "density": "中"} for i in range(n)}
+
+        items = [self._item("条%d" % i, 100.0 - i, "材" * 100) for i in range(12)]
+        cfg = json.loads(json.dumps(collect.CONFIG))
+        cfg["llm"]["budget_reserve_seconds"] = 200
+        real = collect._sensenova_chat
+        collect._sensenova_chat = fake_chat
+        try:
+            collect.start_llm_budget(360)
+            collect._LLM_DEADLINE[0] = collect.time.monotonic() + 210  # 剩 210s < 30+200
+            n = collect.llm_enhance(items, [], cfg)
+        finally:
+            collect._sensenova_chat = real
+            collect.start_llm_budget(None)
+        self.assertEqual(calls[0], 0, "预留不足时摘要阶段一发都不许再发")
+        self.assertEqual(n, 0)
+
+    def test_reserve_configured_in_both_places(self):
+        """config.json 与 DEFAULT_CONFIG 都要有该键，且值一致（仓库既有约定）。"""
+        self.assertIn("budget_reserve_seconds", collect.DEFAULT_CONFIG["llm"])
+        self.assertIn("budget_reserve_seconds", collect.CONFIG["llm"])
+        self.assertEqual(collect.DEFAULT_CONFIG["llm"]["budget_reserve_seconds"],
+                         collect.CONFIG["llm"]["budget_reserve_seconds"])
+        self.assertGreater(collect.CONFIG["llm"]["budget_reserve_seconds"], 0,
+                           "预留为 0 等于没修，后两阶段会被摘要吃光预算")
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
