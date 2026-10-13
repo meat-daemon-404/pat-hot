@@ -340,6 +340,37 @@ class TestCollectRefs(unittest.TestCase):
                                    sleeper=lambda s: None)
         self.assertEqual(res["stopped"], "")
 
+    def test_journal_source_absent_is_announced(self):
+        """🔴 期刊源缺席必须出声，哪怕还剩零请求命中。
+
+        首版把触发写成 n_hit==0，于是"25 条锚点面塌成 1 条"这种事故照样静默
+        （2026-10-13 实采 astro 命中 1 条、期刊源全灭，日志毫无动静）。这条测试
+        就是钉住那个被我自己踩过的条件写错。
+        """
+        logs = []
+        real = collect.log
+        collect.log = lambda m: logs.append(m)
+        try:
+            items = [
+                # 唯一有锚的是 arXiv 速递（零请求通路），期刊源本期一条条目都没有
+                {"id": "a", "title": "T", "source": "arXiv quant-ph 论文速递",
+                 "url": "https://arxiv.org/abs/2610.13867",
+                 "summary": "arXiv:2610.13867v1 Abstract:", "score": 40.0},
+                {"id": "b", "title": "Other", "source": "Phys.org 物理新闻",
+                 "url": "https://phys.org/x", "summary": "", "score": 60.0},
+            ]
+            self.assertEqual(sum(1 for i in items if i.get("refs")), 0, "先证还没抽")
+            collect.collect_refs(items, {"refs": {"max_fetch": 5, "per_source": 5,
+                                                  "interval_sec": 0}},
+                                 "physics", {"Nature 量子物理": True, "Nature Photonics": True},
+                                 fetcher=lambda u: nature_like_page(), sleeper=lambda s: None)
+            warns = [l for l in logs if l.startswith("[!]")]
+            self.assertTrue(warns, "期刊源全缺席却没任何告警＝静默退化")
+            self.assertIn("期刊源缺席 2/2", warns[0])
+            self.assertIn("Nature 量子物理", warns[0])
+        finally:
+            collect.log = real
+
 
 class TestPapersIndex(unittest.TestCase):
     def test_only_anchored_items(self):

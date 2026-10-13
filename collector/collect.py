@@ -1524,20 +1524,20 @@ def collect_refs(items, cfg, ch_id, refetch_sources=None, fetcher=None, sleeper=
             it["refs"] = r
         nap(interval)
     n_hit = sum(1 for it in items if it.get("refs"))
-    # 期刊源是本期唯一锚点来源，它们全灭时锚点会静默归零——所有闸门照样绿（源失败
-    # 比例看的是整频道，Nature 两三个源失败淹在 26 个源里到不了 60% 阈值）。2026-10-13
-    # 实测：Nature subjects 系列间歇返回反爬 Challenge 页，一轮全频道重采把 physics
-    # 锚点从 50 打成 0，--check 毫无反应。所以这里必须出声，哪怕只是警告。
+    # 期刊源是本期锚点面的唯一来源，它们缺席时锚点面会塌掉——而所有闸门照样绿：
+    # 源失败比例看的是整频道（Nature 两三个源淹在 26 个源里到不了 60% 阈值），
+    # --check 只看产物形状不管数量。2026-10-13 实测：Nature subjects 系列间歇返回
+    # 反爬 Challenge 页，一轮全频道重采把 physics 锚点从 50 打成 0，无任何动静。
+    # 触发条件不能写 n_hit==0（首版就是这么错的）：期刊源全灭时往往还剩一两条
+    # 零请求命中，n_hit 就非零——25 条的面塌成 1 条同样是事故，必须照报。
     declared = [s for s, v in (refetch_sources or {}).items() if v]
-    if declared and n_hit == 0:
+    if declared:
         present = {it.get("source") for it in items}
         gone = [s for s in declared if s not in present]
-        if len(gone) == len(declared):
-            log("[!] [%s] 本期期刊源（refs_fetch）全部缺席：%s——papers-index 将为空，"
-                "锚点消费方会看到上一期数据" % (ch_id, "、".join(gone)))
-        elif fetched == 0 and per:
-            log("[!] [%s] 期刊源有条目却一条都没拓开（拓取 0），检查 fetch.refs 预算与源站健康"
-                % ch_id)
+        if gone:
+            log("[!] [%s] 期刊源缺席 %d/%d（%s）——本期 papers-index 会明显变薄，"
+                "锚点消费方拿到的覆盖面不如上期"
+                % (ch_id, len(gone), len(declared), "、".join(gone)))
     log("[*] [%s] 文献编号抽取：零请求命中 %d 条，深拓 %d 条（失败 %d），总命中 %d 条（每频道拓取上限 %d、单源 %d）%s"
         % (ch_id, feed_hits, fetched, failed, n_hit, cap, per_src,
            ("；提前收尾：" + stopped) if stopped else ""))
