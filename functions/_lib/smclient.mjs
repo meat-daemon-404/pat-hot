@@ -25,10 +25,16 @@ export class SmCallError extends Error {
 }
 
 /**
- * SM_BASE 只允许 https 且主机在白名单内。
- * 为什么硬校验主机：环境变量是最容易被人误填成 http://localhost 或
- * 带路径/查询的东西，而这一跳带的是共享密钥——密钥泄露给任意
- * host 就是事故。契约 §7 明确"代码里仍硬校验主机"。
+ * SM_BASE 必须落在白名单主机上，且默认只走 https。
+ * 为什么硬校验主机：环境变量是最容易被人误填成带路径/查询或指错站点的东西，
+ * 而这一跳带的是共享密钥——密钥泄露给任意 host 就是事故。契约 §7 明确
+ * "代码里仍硬校验主机"。
+ *
+ * 唯一的 http 例外是本机回环（localhost / 127.0.0.1 / ::1）：
+ * `wrangler pages dev` 与 SM 侧本地 worker 只对讲 http，若一并禁止，
+ * 白名单里的 localhost 就是永远走不通的死分支（上一版正是这样——
+ * 先拦 https 再放行 localhost，两个条件互斥），两端本地对拍直接做不了。
+ * 回环不出本机，明文这一跳不会把密钥递到任何第三方网络上。
  */
 export function resolveSmBaseUrl(env) {
   const raw = String((env && env.SM_BASE) || SM_BASE_DEFAULT).trim();
@@ -36,14 +42,15 @@ export function resolveSmBaseUrl(env) {
   try { u = new URL(raw); } catch (e) {
     throw new SmCallError("SM_BASE_INVALID", "SM_BASE 不是合法 URL：" + raw.slice(0, 80));
   }
-  if (u.protocol !== "https:") {
-    throw new SmCallError("SM_BASE_INVALID", "SM_BASE 必须是 https，收到 " + u.protocol + "//" + u.host);
+  const host = u.hostname.toLowerCase().replace(/^\[|\]$/g, "");
+  const loopback = host === "localhost" || host === "127.0.0.1" || host === "::1";
+  if (u.protocol !== "https:" && !(u.protocol === "http:" && loopback)) {
+    throw new SmCallError("SM_BASE_INVALID",
+      "SM_BASE 必须是 https（本机回环调试可用 http），收到 " + u.protocol + "//" + u.host);
   }
-  const host = u.hostname.toLowerCase();
-  const allowed = /(^|\.)pages\.dev$/i.test(host) || /(^|\.)workers\.dev$/i.test(host)
-    || host === "localhost" || host === "127.0.0.1";
+  const allowed = /(^|\.)pages\.dev$/i.test(host) || /(^|\.)workers\.dev$/i.test(host) || loopback;
   if (!allowed) {
-    throw new SmCallError("SM_BASE_NOT_ALLOWED", "SM_BASE 主机不在白名单（pages.dev/workers.dev/本地调试）：" + host);
+    throw new SmCallError("SM_BASE_NOT_ALLOWED", "SM_BASE 主机不在白名单（pages.dev/workers.dev/本地回环）：" + host);
   }
   if (u.pathname !== "/" && u.pathname !== "") {
     throw new SmCallError("SM_BASE_INVALID", "SM_BASE 只能到主机根，不要带路径：" + raw.slice(0, 80));
@@ -117,23 +124,24 @@ function smMessage(res, fallback) {
 }
 
 /**
- * 兑换一次性绑定码（契约 §1.1 ②）。
- * @returns {{smSubject:string, profile?:object}}
- */
-/**
  * 上游状态 → 对客户端的状态与机器码映射，逐条对齐任务书
  * （401 SECRET_MISMATCH / 410 CODE_INVALID / 502 SM_UNREACHABLE 附原因 / 503 STORE_DISABLED）：
  * 这里定好 SmCallError.status，路由层只如实透出，不再二次猜。
  * 404 与 410 归同一类 CODE_INVALID（"这个码不能用"），但 message 里说清
  * 上游到底是 404 还是 410——分类给机器，真原因给人。
+ *
+ * timeoutMs / fetchImpl 可注入：默认即生产口径（8s + 全局 fetch），
+ * 注入只为让测试在毫秒级验超时分支，不给测试另开一条代码分支。
+ * 兑换一次性绑定码（契约 §1.1 ②）。
+ * @returns {{smSubject:string, profile?:object}}
  */
-export async function redeemBindCode(env, { code, phSubject, fetchImpl } = {}) {
+export async function redeemBindCode(env, { code, phSubject, fetchImpl, timeoutMs } = {}) {
   const base = resolveSmBaseUrl(env);
   const secret = env && env.PAT_SHARED_SECRET;
   const q = "/api/pat/bind.redeem?code=" + encodeURIComponent(String(code || ""));
   let res;
   try {
-    res = await smFetch(base, q, { secret, phSubject, fetchImpl });
+    res = await smFetch(base, q, { secret, phSubject, fetchImpl, timeoutMs });
   } catch (e) {
     // 网络故障与超时都归 502 SM_UNREACHABLE（附真原因）。SM_TIMEOUT 不另立门户：
     // 对前端而言两者同样是"这一跳没走通"，细分在 message 里保留。

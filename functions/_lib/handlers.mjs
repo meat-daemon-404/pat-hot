@@ -282,7 +282,9 @@ export const bindVerifyHandler = (context) => withBackend(context, async ({ requ
   // 🔴 body 里若带 smSubject/phSubject/userId 一律忽略：phSubject 由会话推出，
   // smSubject 只信 SM 兑换响应的回值（契约 §1.1）。
 
-  const redeemed = await redeemBindCode(env, { code, phSubject: u.phSubject });
+  // context.fetchImpl 只在本仓测试里注入（Pages 的 context 没有这个属性，
+  // 生产路径恒为 undefined → smclient 用全局 fetch）。不为测试另开一条代码分支。
+  const redeemed = await redeemBindCode(env, { code, phSubject: u.phSubject, fetchImpl: context.fetchImpl });
   const nowIso = new Date().toISOString();
   await upsertBinding(db, u.phSubject, redeemed.smSubject, nowIso);
 
@@ -328,7 +330,7 @@ export const bindUnbindHandler = (context) => withBackend(context, async ({ requ
 
   let notify = { ok: true };
   try {
-    notify = await notifySmUnbind(env, { phSubject: u.phSubject });
+    notify = await notifySmUnbind(env, { phSubject: u.phSubject, fetchImpl: context.fetchImpl });
   } catch (e) {
     notify = { ok: false, code: e instanceof SmCallError ? e.code : "SM_NOTIFY_FAILED", message: String((e && e.message) || e).slice(0, 200) };
   }
