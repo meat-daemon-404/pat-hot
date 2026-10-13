@@ -318,7 +318,7 @@ const I18N = {
     allPage:"全部动态", hotPage:"热点榜", topics:"主题", data:"数据", agent:"Agent 接入",
     search:"搜索", catAll:"全部", sortScore:"按推荐分", sortTime:"按时间",
     thresholdNote:"精选门槛：官方信源 ≥ {o} 分 · 媒体信源 ≥ {m} 分（可在 collector/config.json 调整）",
-    hotNow:"当前热点", fullRank:"完整榜单 →", unreadOnly:"只看未读", today:"今天", daySel:"条精选", noMatch:"没有匹配的条目",
+    hotNow:"当前热点", fullRank:"完整榜单 →", unreadOnly:"只看未读", sciOnly:"只看科研", today:"今天", daySel:"条精选", noMatch:"没有匹配的条目",
     heatVal:"热度", sources:"信源", signals:"信号",
     repMore:"另有 {n} 家信源报道", repOne:"1 家信源报道",
     toc:"今日看点", archive:"日报归档",
@@ -340,7 +340,7 @@ const I18N = {
     allPage:"All Items", hotPage:"Hot Ranking", topics:"Topics", data:"Data", agent:"Agent API",
     search:"Search", catAll:"All", sortScore:"By score", sortTime:"By time",
     thresholdNote:"Selection bar: official sources ≥ {o} · media sources ≥ {m} (tune in collector/config.json)",
-    hotNow:"Trending Now", fullRank:"Full ranking →", unreadOnly:"Unread only", today:"Today", daySel:"selected", noMatch:"No matching items",
+    hotNow:"Trending Now", fullRank:"Full ranking →", unreadOnly:"Unread only", sciOnly:"Research only", today:"Today", daySel:"selected", noMatch:"No matching items",
     heatVal:"heat", sources:"sources", signals:"signals",
     repMore:"{n} more sources", repOne:"1 source",
     toc:"Today's picks", archive:"Archive",
@@ -370,6 +370,12 @@ function dailyPage(){ return chn()+(LANG==="en"?" Daily":"日报"); }
 function dailySub(){ return LANG==="en" ? "Auto-generated daily (with archive)" : "自动生成 · 每日一篇（含历史归档）"; }
 function searchPh(){ return T.search+chn()+(LANG==="en"?" news…":"资讯 / 关键词…"); }
 const state = { q:"", cat:"全部", sort:"score", dailyDate:"", hotSort:"heat", unreadOnly:false, collapsed:{} };
+// 非科研分类：采集端 category_weights 降权的对象；前端「只看科研」开关过滤的对象。两处保持一致。
+const NON_SCI_CATS = ["其他","产业与资本"];
+const SCI_KEY = "pat-sci-only";
+function sciOnly(){ try{ return localStorage.getItem(SCI_KEY)==="1"; }catch(e){ return false; } }
+function setSciOnly(v){ try{ localStorage.setItem(SCI_KEY, v?"1":"0"); }catch(e){} }
+function sciFilter(items){ return sciOnly()?items.filter(i=>NON_SCI_CATS.indexOf(i.category)<0):items; }
 function lsGet(k){ try{ return JSON.parse(localStorage.getItem(k)||"{}"); }catch(e){ return {}; } }
 function lsSet(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
 let READ = lsGet("pat-read"), FAV = lsGet("pat-fav");
@@ -501,20 +507,22 @@ function renderFeed(){
     return '<div class="hr3"><span class="rk r'+(i+1)+'">'+(i+1)+'</span><span class="ht"><a href="'+rurl+'" target="_blank" rel="noopener">'+esc(t.title)+'</a></span><span class="hn mono">'+Math.round(t.heat||t.score)+' <small>'+T.heatVal+'</small> '+arrow+'</span></div>'; }).join("")+'</div>';
   let items=C.items.slice();
   if(state.unreadOnly) items=items.filter(i=>!READ[i.url]);
+  items=sciFilter(items);
   const groups={}; for(const it of items){ const d=effDate(it); (groups[d]=groups[d]||[]).push(it); }
   const days=Object.keys(groups).sort().reverse().slice(0,7);
-  let tl='<div class="urow"><button class="upill'+(state.unreadOnly?" on":"")+'" id="unreadBtn"><span class="dot"></span>'+T.unreadOnly+'</button></div>';
+  let tl='<div class="urow"><button class="upill'+(state.unreadOnly?" on":"")+'" id="unreadBtn"><span class="dot"></span>'+T.unreadOnly+'</button><button class="upill'+(sciOnly()?" on":"")+'" id="sciBtn"><span class="dot"></span>🔬 '+T.sciOnly+'</button></div>';
   if(!days.length) tl+='<div class="empty">'+T.noMatch+'</div>';
   for(const d of days){ const its=groups[d].slice().sort((a,b)=>b.score-a.score).slice(0,20);
     const closed=state.collapsed[d]?" closed":"";
     tl+='<div class="day'+closed+'"><div class="day-h" data-dayh="'+d+'"><h2>'+(isToday(d)?T.today+" ":"")+fmtDay(d)+'</h2><span class="w">'+wdCN(d)+'</span><span class="c">'+its.length+' '+T.daySel+'</span><span class="arr">'+(state.collapsed[d]?"▶":"▼")+'</span></div><div class="day-b">'+its.map(itemCard).join("")+'</div></div>'; }
   root.innerHTML='<div class="card ph"><h1>'+T.feed+'</h1><span class="sub">'+esc(feedSub())+'</span><div class="note">'+esc(threshNote())+'</div></div>'+hot+tl;
   const ub=$("#unreadBtn"); if(ub) ub.onclick=()=>{ state.unreadOnly=!state.unreadOnly; renderFeed(); };
+  const sb=$("#sciBtn"); if(sb) sb.onclick=()=>{ setSciOnly(!sciOnly()); renderFeed(); };
 }
 const ALL_PAGE=30;
 let allObserver=null;
 function renderAll(){
-  const root=$("#view-all"); let its=C.items.slice();
+  const root=$("#view-all"); let its=sciFilter(C.items.slice());
   if(state.q){ const q=state.q.toLowerCase(); its=its.filter(i=>(i.title+" "+(i.zh_full||i.llm_summary||i.summary||"")+" "+i.source).toLowerCase().includes(q)); }
   if(state.cat!=="全部") its=its.filter(i=>i.category===state.cat);
   if(state.sort==="score") its.sort((a,b)=>b.score-a.score); else its.sort((a,b)=>b.discovered_at.localeCompare(a.discovered_at));
@@ -523,11 +531,12 @@ function renderAll(){
   const isSearch=!!(state.q&&state.q.trim());
   const title=isSearch?('🔍 "'+state.q.trim()+'"') : T.allPage;
   const sub=isSearch?((LANG==="en"?"Search results · ":"搜索结果 · ")+its.length+(LANG==="en"?"":" 篇")) : (''+its.length);
-  root.innerHTML='<div class="card ph"><h1>'+esc(title)+'</h1><span class="sub">'+esc(sub)+'</span><span class="hsort" style="margin-left:auto"><select id="all-cat" aria-label="cat"><option value="全部">'+T.catAll+'</option></select><select id="all-sort" aria-label="sort"><option value="score">'+T.sortScore+'</option><option value="time">'+T.sortTime+'</option></select></span><div class="note">'+esc(threshNote())+'</div></div><div id="all-list">'+(its.length?its.slice(0,shown).map(itemCard).join(""):'<div class="empty">'+T.noMatch+'</div>')+'</div>'+(hasMore?'<div id="all-more" class="card" style="text-align:center;padding:14px;cursor:pointer;color:var(--acd);font-weight:600">'+T.loadMore+' ('+shown+'/'+its.length+')</div>':"");
+  root.innerHTML='<div class="card ph"><h1>'+esc(title)+'</h1><span class="sub">'+esc(sub)+'</span><button class="upill'+(sciOnly()?" on":"")+'" id="sciBtnAll" style="margin-left:8px"><span class="dot"></span>🔬 '+T.sciOnly+'</button><span class="hsort" style="margin-left:auto"><select id="all-cat" aria-label="cat"><option value="全部">'+T.catAll+'</option></select><select id="all-sort" aria-label="sort"><option value="score">'+T.sortScore+'</option><option value="time">'+T.sortTime+'</option></select></span><div class="note">'+esc(threshNote())+'</div></div><div id="all-list">'+(its.length?its.slice(0,shown).map(itemCard).join(""):'<div class="empty">'+T.noMatch+'</div>')+'</div>'+(hasMore?'<div id="all-more" class="card" style="text-align:center;padding:14px;cursor:pointer;color:var(--acd);font-weight:600">'+T.loadMore+' ('+shown+'/'+its.length+')</div>':"");
   const cats=[...new Set(C.items.map(i=>i.category))];
   const sel=$("#all-cat"); for(const c of cats){ const o=document.createElement("option"); o.value=c; o.textContent=catName(c); if(c===state.cat) o.selected=true; sel.appendChild(o); }
   $("#all-sort").value=state.sort;
   sel.onchange=e=>{ state.cat=e.target.value; state.allShown=ALL_PAGE; renderAll(); };
+  const sba=$("#sciBtnAll"); if(sba) sba.onclick=()=>{ setSciOnly(!sciOnly()); state.allShown=ALL_PAGE; renderAll(); };
   $("#all-sort").onchange=e=>{ state.sort=e.target.value; state.allShown=ALL_PAGE; renderAll(); };
   if(allObserver) allObserver.disconnect();
   const more=$("#all-more");
@@ -604,7 +613,8 @@ function renderTopics(){
 function renderTrends(){
   const root=$("#view-trends"); const tr=C.trends||{};
   const weekStart=tr.weekStart||"";
-  let html='<div class="card ph"><h1>'+esc(chn()+(LANG==="en"?" Trends":"趋势"))+'</h1><span class="sub">'+esc((LANG==="en"?"This week vs last week":"本周 vs 上周")+(weekStart?' · '+(LANG==="en"?"week starting ":"本周自")+fmtDay(weekStart)+(LANG==="en"?"":"起")):""))+'</span></div>';
+  const trendSub=(LANG==="en"?"This week vs last week":"本周 vs 上周")+(weekStart?(LANG==="en"?" · week starting ":" · 本周自")+fmtDay(weekStart)+(LANG==="en"?"":"起"):"");
+  let html='<div class="card ph"><h1>'+esc(chn()+(LANG==="en"?" Trends":"趋势"))+'</h1><span class="sub">'+esc(trendSub)+'</span></div>';
   const deltas=tr.categoryDelta||[];
   if(!deltas.length){ root.innerHTML=html+'<div class="card"><p class="anote" style="padding:16px 18px">'+T.noTrend+'</p></div>'; return; }
   const maxV=Math.max(...deltas.map(x=>x.thisWeek),1);

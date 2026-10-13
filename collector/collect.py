@@ -1003,6 +1003,9 @@ def compute_scores(items, topics, source_weight, source_tier=None, cfg=None):
     sig_cap = max(1, sc["signal_cap"])
     rec_days = max(1, sc["recency_days"])
     pub_pen = sc["missing_pubdate_penalty"]
+    # 分类权重：非科研内容（政策/杂项/行业资讯）降权，默认 1.0 不降。
+    # 与前端「只看科研」开关的过滤集合保持一致（见 config 注释）。
+    cat_weights = sc.get("category_weights") or {}
     # 事件 -> 独立来源集合（跨源收敛度）
     topic_sources = {}
     for t in topics:
@@ -1028,8 +1031,9 @@ def compute_scores(items, topics, source_weight, source_tier=None, cfg=None):
         if parsed is None or date_precision(p) in ("month", "year"):
             rec *= pub_pen
         sw = source_weight.get(it["source"], 0.8)
-        it["score"] = round(w_src * sw + w_conv * conv
-                            + w_sig * min(1.0, sig / sig_cap) + w_rec * rec, 1)
+        cat_w = cat_weights.get(it.get("category"), 1.0)
+        it["score"] = round((w_src * sw + w_conv * conv
+                            + w_sig * min(1.0, sig / sig_cap) + w_rec * rec) * cat_w, 1)
         it["convergence"] = round(conv, 3)
     for t in topics:
         finalize_topic(t, items, source_tier, cfg)
