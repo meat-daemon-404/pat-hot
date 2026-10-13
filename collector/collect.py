@@ -1652,10 +1652,13 @@ def render_app_html(channel_results, generated):
     return html
 
 # ---------------- 输出 ----------------
-def build_rss(items, title, link, description, limit=50):
+def build_rss(items, title, link, description, limit=50, fallback_dt=None):
     import xml.sax.saxutils as su
     its = sorted(items, key=lambda it: it["discovered_at"], reverse=True)[:limit]
-    pub_raw = max(it["discovered_at"] for it in its) if its else now_utc().isoformat()
+    # 空 feed 的 lastBuildDate 用本次生成的时刻，不要 now_utc()：否则同一个
+    # 零条目分类每次 --rebuild 都产出不同字节，产物不可复现，git 里天天长噪声。
+    pub_raw = max(it["discovered_at"] for it in its) if its \
+        else (fallback_dt or now_utc()).isoformat()
     # RSS 2.0 要求 RFC 822 日期；同时保留绝对站点地址供阅读器展示
     pub = rfc822(pub_raw) or format_datetime(now_utc(), usegmt=True)
     out = []
@@ -1830,16 +1833,21 @@ def write_outputs(channel_results, generated):
               "count": len(stories), "items": stories}, os.path.join(api_dir, "stories.json"))
 
         # 分类 RSS（按频道）
+        # 输出 channels.json 声明的每一个分类，而不是只输出"本次恰好有条目"的：
+        # Agent 接入页把全部声明分类都列成订阅地址，少写一个就是死链。而且
+        # Cloudflare Pages 对缺失路径返回 200 + 单页 HTML（不是 404），RSS 阅读器
+        # 会以为订阅成功，拿到的却是一份 HTML 文档——比 404 更难被发现。
+        # 零条目的分类照样出一份合法但空的 feed：地址稳定，明天有条目时订阅者
+        # 不用重新发现 URL。
         feed_dir = os.path.join(DIST_DIR, "feed", ch_id, "category")
         os.makedirs(feed_dir, exist_ok=True)
         by_cat = {}
         for it in items:
             by_cat.setdefault(it["category"], []).append(it)
-        for cat, its in by_cat.items():
-            slug = CAT_CLS.get(cat, "other")
+        for cat, slug in sorted(CAT_CLS.items()):
             with open(os.path.join(feed_dir, slug + ".xml"), "w", encoding="utf-8") as f:
-                f.write(build_rss(its, "PAT-HOT · %s%s" % (ch["letter"], cat),
-                                  SITE_BASE + "#/all", cat, 30))
+                f.write(build_rss(by_cat.get(cat, []), "PAT-HOT · %s%s" % (ch["letter"], cat),
+                                  SITE_BASE + "#/all", cat, 30, fallback_dt=generated))
 
         # 政策/招投标结构化库（仅 T 光电频道）
         if ch_id == "tech":
@@ -1925,17 +1933,17 @@ def write_outputs(channel_results, generated):
         shutil.copyfile(os.path.join(DATA_DIR, "report.csv"),
                         os.path.join(flat_dist, "report.csv"))
         # 扁平分类 feed：dist/feed/category/<slug>.xml（老订阅地址）
+        # 与按频道那份同理：覆盖全部声明分类，不只"本次恰好有条目"的。
         set_channel_context(FLAT_ALIAS_CHANNEL)
         feed_flat = os.path.join(DIST_DIR, "feed", "category")
         os.makedirs(feed_flat, exist_ok=True)
         by_cat = {}
         for it in a_items:
             by_cat.setdefault(it["category"], []).append(it)
-        for cat, its in by_cat.items():
-            slug = CAT_CLS.get(cat, "other")
+        for cat, slug in sorted(CAT_CLS.items()):
             with open(os.path.join(feed_flat, slug + ".xml"), "w", encoding="utf-8") as f:
-                f.write(build_rss(its, "PAT-HOT · %s" % cat,
-                                  SITE_BASE + "#/all", cat, 30))
+                f.write(build_rss(by_cat.get(cat, []), "PAT-HOT · %s" % cat,
+                                  SITE_BASE + "#/all", cat, 30, fallback_dt=generated))
         # 政策/招投标库只有 T 光电频道产出，但线上一直有扁平地址
         # （data/biz.json、dist/data/biz.json、dist/api/v1/biz.json、biz.csv）。
         # 不镜像就会静默变旧：文件在、返回 200，内容却是上一次的。
@@ -2928,6 +2936,32 @@ def check_contract(verbose=True):
         lk = re.search(r"<link>([^<]*)</link>", txt)
         if lk and not lk.group(1).startswith("http"):
             problems.append("feed.xml 的 <link> 不是绝对地址: %r" % lk.group(1))
+
+    # 分类 feed 必须覆盖 channels.json 声明的每个分类。
+    # 背景（2026-10-13 实测）：feed 只按"本次恰好有条目的分类"输出，而 Agent
+    # 接入页把全部声明分类都列成订阅地址，于是 physics 的 biophys/statphys、
+    # astro 的 exoplanet 三个地址是死链。Cloudflare Pages 对缺失路径返回
+    # 200 + 单页 HTML 而不是 404，RSS 阅读器拿到 HTML 还以为订阅成功——
+    # 比 404 更难被发现，所以必须在这里当场拦。
+    for ch_id in CHANNEL_ORDER:
+        for cat, slug in sorted(CHANNELS[ch_id]["category_slug"].items()):
+            rel = "feed/%s/category/%s.xml" % (ch_id, slug)
+            fp = os.path.join(DIST_DIR, rel.replace("/", os.sep))
+            if not os.path.exists(fp):
+                problems.append("缺失 %s（%s 频道声明了分类「%s」，Agent 页会把它列成订阅地址）"
+                                % (rel, ch_id, cat))
+                continue
+            with open(fp, encoding="utf-8") as f:
+                head = f.read(64)
+            if not head.lstrip().startswith("<?xml"):
+                problems.append("%s 不是 XML（开头 %r）——阅读器会拿到一份 HTML"
+                                % (rel, head[:24]))
+    # 扁平老订阅地址：光电频道的每个分类都必须还在
+    set_channel_context(FLAT_ALIAS_CHANNEL)
+    for cat, slug in sorted(CHANNELS[FLAT_ALIAS_CHANNEL]["category_slug"].items()):
+        rel = "feed/category/%s.xml" % slug
+        if not os.path.exists(os.path.join(DIST_DIR, rel.replace("/", os.sep))):
+            problems.append("缺失 %s（重构前就发布的订阅地址，分类「%s」）" % (rel, cat))
 
     # 对外文档不能残留改名前的死链或相对地址
     p = os.path.join(DIST_DIR, "llms.txt")
