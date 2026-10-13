@@ -412,7 +412,7 @@ function expandBody(it){ if(!expandable(it)) return ""; const open=EXPANDED.has(
   // 按需 AI 中文摘要：没有 zh_full 时显示按钮
   const od=!it.zh_full?'<div class="xod" id="xod-'+it.id+'"><button class="obtn" data-od="'+esc(it.url)+'">✨ '+T.aiGen+'</button><div class="otxt" style="display:none"></div></div>':"";
   return '<div class="xbody'+(open?" open":"")+'" id="xb-'+it.id+'"><div class="xbody-in">'+zf+ai+rs+od+src+'</div></div>'; }
-function toggleExpand(btn){ const id=btn.dataset.x; const body=document.getElementById("xb-"+CSS.escape(id));
+function toggleExpand(btn){ const id=btn.dataset.x; const body=document.getElementById("xb-"+id);
   const open=EXPANDED.has(id); if(open) EXPANDED.delete(id); else EXPANDED.add(id);
   btn.classList.toggle("open",!open); btn.querySelector("span").textContent=!open?T.collapse:T.expand;
   if(body) body.classList.toggle("open",!open); }
@@ -520,7 +520,10 @@ function renderAll(){
   if(state.sort==="score") its.sort((a,b)=>b.score-a.score); else its.sort((a,b)=>b.discovered_at.localeCompare(a.discovered_at));
   const shown=Math.min(state.allShown||ALL_PAGE, its.length);
   const hasMore=shown<its.length;
-  root.innerHTML='<div class="card ph"><h1>'+T.allPage+'</h1><span class="sub">'+its.length+'</span><span class="hsort" style="margin-left:auto"><select id="all-cat" aria-label="cat"><option value="全部">'+T.catAll+'</option></select><select id="all-sort" aria-label="sort"><option value="score">'+T.sortScore+'</option><option value="time">'+T.sortTime+'</option></select></span><div class="note">'+esc(threshNote())+'</div></div><div id="all-list">'+(its.length?its.slice(0,shown).map(itemCard).join(""):'<div class="empty">'+T.noMatch+'</div>')+'</div>'+(hasMore?'<div id="all-more" class="card" style="text-align:center;padding:14px;cursor:pointer;color:var(--acd);font-weight:600">'+T.loadMore+' ('+shown+'/'+its.length+')</div>':"");
+  const isSearch=!!(state.q&&state.q.trim());
+  const title=isSearch?('🔍 "'+state.q.trim()+'"') : T.allPage;
+  const sub=isSearch?((LANG==="en"?"Search results · ":"搜索结果 · ")+its.length+(LANG==="en"?"":" 篇")) : (''+its.length);
+  root.innerHTML='<div class="card ph"><h1>'+esc(title)+'</h1><span class="sub">'+esc(sub)+'</span><span class="hsort" style="margin-left:auto"><select id="all-cat" aria-label="cat"><option value="全部">'+T.catAll+'</option></select><select id="all-sort" aria-label="sort"><option value="score">'+T.sortScore+'</option><option value="time">'+T.sortTime+'</option></select></span><div class="note">'+esc(threshNote())+'</div></div><div id="all-list">'+(its.length?its.slice(0,shown).map(itemCard).join(""):'<div class="empty">'+T.noMatch+'</div>')+'</div>'+(hasMore?'<div id="all-more" class="card" style="text-align:center;padding:14px;cursor:pointer;color:var(--acd);font-weight:600">'+T.loadMore+' ('+shown+'/'+its.length+')</div>':"");
   const cats=[...new Set(C.items.map(i=>i.category))];
   const sel=$("#all-cat"); for(const c of cats){ const o=document.createElement("option"); o.value=c; o.textContent=catName(c); if(c===state.cat) o.selected=true; sel.appendChild(o); }
   $("#all-sort").value=state.sort;
@@ -573,7 +576,7 @@ function renderDaily(){
   let cm=""; for(const x of dates){ const m=x.slice(0,7);
     if(m!==cm){ if(cm) side+='</div>'; cm=m; const op=mOpen(m);
       side+='<div class="amonth'+(op?' open':'')+'" data-m="'+m+'"><span>'+m+' <span class="mcount">'+mcount[m]+'</span></span><span class="chev">'+(op?'▾':'▸')+'</span></div><div class="adays'+(op?'':' hide')+'">'; }
-    side+='<div class="dday'+(x===d?" on":"")+'" data-d="'+x+'"><span>'+x.slice(5)+'</span><span>'+wdCN(x)+'</span></div>'; }
+    side+='<div class="dday'+(x===d?" on":"")+'" data-d="'+x+'"><span>'+x+'</span><span>'+wdCN(x)+'</span></div>'; }
   if(cm) side+='</div>';
   side+='</div></aside>';
   let body='<div class="dbody">';
@@ -601,7 +604,7 @@ function renderTopics(){
 function renderTrends(){
   const root=$("#view-trends"); const tr=C.trends||{};
   const weekStart=tr.weekStart||"";
-  let html='<div class="card ph"><h1>'+esc(chn()+(LANG==="en"?" Trends":"趋势"))+'</h1><span class="sub">'+esc((LANG==="en"?"This week vs last week":"本周 vs 上周")+(weekStart?' · '+fmtDay(weekStart):""))+'</span></div>';
+  let html='<div class="card ph"><h1>'+esc(chn()+(LANG==="en"?" Trends":"趋势"))+'</h1><span class="sub">'+esc((LANG==="en"?"This week vs last week":"本周 vs 上周")+(weekStart?' · '+(LANG==="en"?"week starting ":"本周自")+fmtDay(weekStart)+(LANG==="en"?"":"起")):""))+'</span></div>';
   const deltas=tr.categoryDelta||[];
   if(!deltas.length){ root.innerHTML=html+'<div class="card"><p class="anote" style="padding:16px 18px">'+T.noTrend+'</p></div>'; return; }
   const maxV=Math.max(...deltas.map(x=>x.thisWeek),1);
