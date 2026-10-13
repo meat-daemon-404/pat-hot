@@ -47,11 +47,25 @@
 | 更多 #/more | - | 语言/频道等次要入口收纳（窄屏） |
 
 **数据机制**（静态 JSON API，兼容 AIHOT 字段风格）：
-- data/items.json：{id, title, url, links.original, source, category, publishedAt, discoveredAt, score, selected, summary, role, keywords}
-- data/hot-topics.json：{rank, title, status, heat, sourceCount, signalCount, latestAt, sources, links, terms}
+- data/items.json：{id, title, url, links.original, source, category, publishedAt, discoveredAt, score, selected, summary, role, keywords, refs?}
+- refs（可选，只增字段）：{doi?, arxiv?, via, confidence:"verified"} — 事件对应的**论文编号锚点**，见下节
+- data/hot-topics.json：{rank, title, status, heat, sourceCount, signalCount, latestAt, sources, links, terms, representative.refs?}
 - data/dailies.json：按日期归档的日报（历史合并保留）；data/daily.json：统计聚合
-- **Agent 接口**：`api/v1/{items,hot-topics,dailies,daily,stories,index,openapi}.json`（静态 JSON / OpenAPI 3.1，免鉴权）+ 分类 RSS（`feed.xml` / `feed/category/{slug}.xml`）+ 站点根 `llms.txt`
+- **Agent 接口**：`api/v1/{items,hot-topics,dailies,daily,stories,trends,papers-index,index,openapi}.json`（静态 JSON / OpenAPI 3.1，免鉴权）+ 分类 RSS（`feed.xml` / `feed/category/{slug}.xml`）+ 站点根 `llms.txt`
 - 时间窗口语义：优先原文发布时间，缺失回退收录时间；24h / 7d / 日报按北京时间
+
+**文献编号锚点（papers-index）**：给「事件 → 论文」提供可独立复核的 DOI / arXiv 编号，供文献管理与研究类工具直接消费。
+
+- 只认**本篇自述**的编号：条目自带文本里的 `arXiv:` / `doi.org`，或详情页 `<head>` 里的
+  `citation_doi` / `prism.doi` / `citation_arxiv_id` / canonical 地址。
+- 🔴 **不扫正文里的 DOI 链接**：期刊页面自带参考文献列表（实测单页 43~246 个合法 DOI），
+  那些属于**别的论文**，抓到本事件名下就是发布假锚点。宁缺毋假。
+- 因此命中率由信源类型决定，不取决于抓取技术：期刊/预印本源接近全中（实测 Nature 系
+  9/9、physics 频道精选条目 11/12），产业资讯与机构新闻稿结构性没有学术编号——
+  **条目没有 refs 字段是正确结果，不是抓取失败**，本站不为产业事件编造锚点。
+- 深拓面由 `collector/sources.json` 的 `refs_fetch: true` 声明（当前 4 个期刊源），
+  配额与节流见 `config.json` 的 `refs` 段；抓取失败照样计入上限，避免源站故障时被集中轰击。
+- `api/v1/<频道>/papers-index.json` 是上述锚点的反查表（只收有编号的条目）。
 
 **相比 AIHOT 的改进**：
 - 打分公式透明可复现（AIHOT 为「AI 编辑部评分」，本工具公式见下）
@@ -113,6 +127,7 @@ LLM 增强（`llm`）与生图（`images`）的全部参数。
 | `daily` | `refresh_days`（默认 1） | 归档刷新窗口：近 N 天按重算刷新，更早的历史原样保留 |
 | `fetch` | `timeout / retries / text_timeout / max_bytes` | 单源超时、抖动重试次数、详情页超时、响应体积上限 |
 | `fetch` | `max_source_failure_ratio`（默认 0.6） | 失败源占比超过即拒绝写出产物，避免发布内容变薄的站点 |
+| `refs` | `max_fetch / per_source / interval_sec / page_max_bytes` | 文献编号（DOI/arXiv）深拓的每频道上限、单源上限、节流、单页读取上限 |
 | `trends` | `lookback_days / sustained_min_days / top_new / top_sustained` | 周维度趋势聚合 |
 | `images` | `retention_days` | 生成配图的保留天数（仅图片，与日报归档无关） |
 
