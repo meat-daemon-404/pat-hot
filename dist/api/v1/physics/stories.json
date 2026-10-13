@@ -1,271 +1,176 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T02:56:25.746599+00:00",
-  "count": 6,
+  "generatedAt": "2026-10-13T13:33:23.619730+00:00",
+  "count": 4,
   "items": [
     {
-      "id": "bb7570ffe109",
-      "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
-      "status": "爆",
-      "heat": 90.0,
-      "sourceCount": 6,
-      "signalCount": 61,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
+      "id": "8eae9d96a171",
+      "title": "Will we observe dark matter as a particle or a wave?",
+      "status": "发酵中",
+      "heat": 75.0,
+      "sourceCount": 4,
+      "signalCount": 22,
+      "latestAt": "2026-10-13T13:33:23.619730+00:00",
       "sources": [
         "CERN 新闻",
         "MIT News 物理",
-        "Nature 量子物理",
         "New Scientist 物理",
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
+        "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
-          "url": "https://phys.org/news/2026-10-gravity-quantum-linked-derivation-einstein.html",
-          "source": "Phys.org 物理新闻",
-          "score": 86.4,
-          "published_at": "2026-10-12T23:20:01+00:00"
-        },
-        {
-          "title": "Magnetic sculpting transforms single-source fields into predetermined shapes with mathematical precision",
-          "url": "https://phys.org/news/2026-10-magnetic-sculpting-source-fields-predetermined.html",
-          "source": "Phys.org 物理新闻",
-          "score": 86.4,
-          "published_at": "2026-10-12T22:40:01+00:00"
+          "title": "Will we observe dark matter as a particle or a wave?",
+          "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 79.7,
+          "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
           "title": "From nonmagnetic to magnetic: A 2D semiconductor with electrically tunable magnetism",
           "url": "https://phys.org/news/2026-10-nonmagnetic-magnetic-2d-semiconductor-electrically.html",
           "source": "Phys.org 物理新闻",
-          "score": 86.4,
+          "score": 79.4,
           "published_at": "2026-10-12T21:40:11+00:00"
         },
         {
-          "title": "One step closer to quantum computers that can correct their own mistakes",
-          "url": "https://phys.org/news/2026-10-closer-quantum.html",
+          "title": "Hybrid quantum computer observes foundational quantum effect in a new setting",
+          "url": "https://phys.org/news/2026-10-hybrid-quantum-foundational-effect.html",
           "source": "Phys.org 物理新闻",
-          "score": 86.2,
-          "published_at": "2026-10-12T15:20:22+00:00"
+          "score": 77.8,
+          "published_at": "2026-10-10T10:57:07+00:00"
         },
         {
-          "title": "Hybrid quantum computers could finally get to grips with light and matter",
-          "url": "https://phys.org/news/2026-10-hybrid-quantum.html",
+          "title": "Liquid-crystal-like magnetism explains puzzling properties in a rare-earth compound",
+          "url": "https://phys.org/news/2026-10-liquid-crystal-magnetism-puzzling-properties.html",
           "source": "Phys.org 物理新闻",
-          "score": 86.0,
-          "published_at": "2026-10-12T10:40:01+00:00"
+          "score": 76.7,
+          "published_at": "2026-10-08T19:20:15+00:00"
+        },
+        {
+          "title": "Beam tests boost progress on detector technologies for the Future Circular Collider",
+          "url": "https://home.cern/beam-tests-boost-progress-on-detector-technologies-for-the-future-circular-collider/",
+          "source": "CERN 新闻",
+          "score": 75.7,
+          "published_at": "2026-10-07T08:56:44+00:00"
         }
       ],
-      "trend": "unknown",
+      "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digest": "多篇报道展示了当前物理学领域的几项重要进展。新科学家专栏作者Chanda Prescod-Weinstein认为，我们或许已经发现了暗物质，但需要确定其表现为粒子还是波才能进行观测。新加坡国立大学等机构的研究人员展示了一种方法，可将磁性引入原本非磁性的二维半导体。牛津大学物理系利用由量子比特和量子振荡器组成的混合量子计算机，在量子模拟中观测到了Aharonov-Bohm效应。赖斯大学的Pengcheng Dai团队发现，一种稀土化合物中令人困惑的性质可由类似液晶的磁性来解释。此外，CERN的束流测试为未来环形对撞机（FCC）的探测器技术推进了进展，该对撞机计划在91公里环上碰撞电子和正电子以精确测定粒子性质。",
+      "digestTitle": "多项前沿物理研究进展：从暗物质探测到未来对撞机技术",
+      "llmScore": 35.0
     },
     {
-      "id": "ffd85b986ef7",
-      "title": "日本诺奖得主再添一人，2026年化学诺奖颁给手性放大研究",
+      "id": "c973df2a3193",
+      "title": "“冰立方”中微子天文台科学家获得2026年物理诺奖",
       "status": "关注中",
-      "heat": 48.5,
+      "heat": 38.0,
       "sourceCount": 1,
-      "signalCount": 6,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
+      "signalCount": 3,
+      "latestAt": "2026-10-13T13:33:23.619730+00:00",
       "sources": [
         "知识分子"
       ],
       "links": [
         {
-          "title": "日本诺奖得主再添一人，2026年化学诺奖颁给手性放大研究",
-          "url": "http://www.zhishifenzi.com/news/multiple/10709.html",
-          "source": "知识分子",
-          "score": 62.8,
-          "published_at": "2026-10-11T14:55:32+00:00"
-        },
-        {
           "title": "“冰立方”中微子天文台科学家获得2026年物理诺奖",
           "url": "http://www.zhishifenzi.com/news/multiple/10707.html",
           "source": "知识分子",
-          "score": 62.8,
+          "score": 58.0,
           "published_at": "2026-10-11T14:53:31+00:00"
-        },
-        {
-          "title": "2026诺贝尔化学奖给了法国95岁学者和日本75岁学者，日本科学诺奖得主已有28位",
-          "url": "http://www.zhishifenzi.com/news/multiple/10694.html",
-          "source": "知识分子",
-          "score": 62.8,
-          "published_at": "2026-10-11T12:18:09+00:00"
         },
         {
           "title": "诺奖颁给冰立方：“天马行空的想法，值得被支持几十年”",
           "url": "http://www.zhishifenzi.com/news/multiple/10693.html",
           "source": "知识分子",
-          "score": 62.8,
+          "score": 34.8,
           "published_at": "2026-10-11T12:16:58+00:00"
         },
         {
           "title": "“冰立方”为何获得2026诺贝尔物理奖？现场对话诺奖评委",
           "url": "http://www.zhishifenzi.com/news/multiple/10692.html",
           "source": "知识分子",
-          "score": 62.8,
+          "score": 34.8,
           "published_at": "2026-10-11T12:15:47+00:00"
         }
       ],
-      "trend": "unknown",
+      "trend": "new",
       "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "llmScore": 58.0
     },
     {
-      "id": "30d545f29a75",
-      "title": "Quantum 'birthmarks' hold lasting traces of a system's past",
+      "id": "a1d83dca7d86",
+      "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
       "status": "关注中",
-      "heat": 35.5,
+      "heat": 32.0,
       "sourceCount": 2,
-      "signalCount": 3,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
+      "signalCount": 2,
+      "latestAt": "2026-10-13T13:33:23.619730+00:00",
       "sources": [
-        "MIT News 物理",
-        "Phys.org 物理新闻"
-      ],
-      "links": [
-        {
-          "title": "Quantum 'birthmarks' hold lasting traces of a system's past",
-          "url": "https://phys.org/news/2026-10-quantum-birthmarks.html",
-          "source": "Phys.org 物理新闻",
-          "score": 61.8,
-          "published_at": "2026-10-11T18:20:01+00:00"
-        },
-        {
-          "title": "Three quantum-inspired cores leave opposite fingerprints on the ringing of black holes",
-          "url": "https://phys.org/news/2026-10-quantum-cores-fingerprints-black-holes.html",
-          "source": "Phys.org 物理新闻",
-          "score": 60.5,
-          "published_at": "2026-10-09T21:40:01+00:00"
-        },
-        {
-          "title": "Many black holes had past lives, new research shows",
-          "url": "https://news.mit.edu/2026/many-black-holes-had-past-lives-new-research-shows-0707",
-          "source": "MIT News 物理",
-          "score": 42.7,
-          "published_at": "2026-07-07T16:00:00+00:00"
-        }
-      ],
-      "trend": "unknown",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "c2e3d4ab9ef5",
-      "title": "Nobel physics winner's pride at pioneering AI role",
-      "status": "发酵中",
-      "heat": 33.0,
-      "sourceCount": 3,
-      "signalCount": 3,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
-      "sources": [
-        "CERN 新闻",
         "New Scientist 物理",
         "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "Nobel physics winner's pride at pioneering AI role",
-          "url": "https://phys.org/news/2026-10-nobel-physics-winner-pride-ai.html",
+          "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
+          "url": "https://phys.org/news/2026-10-gravity-quantum-linked-derivation-einstein.html",
           "source": "Phys.org 物理新闻",
-          "score": 62.5,
-          "published_at": "2026-10-07T22:40:01+00:00"
+          "score": 60.8,
+          "published_at": "2026-10-12T23:20:01+00:00"
         },
         {
-          "title": "CERN congratulates Nobel Prize winner Francis Halzen",
-          "url": "https://home.cern/cern-congratulates-nobel-prize-winner-francis-halzen/",
-          "source": "CERN 新闻",
-          "score": 61.7,
-          "published_at": "2026-10-06T14:54:19+00:00"
-        },
-        {
-          "title": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
-          "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "title": "Embracing the glitches in gravity could give us a unified theory of reality",
+          "url": "https://www.newscientist.com/article/2589429-embracing-the-glitches-in-gravity-could-give-us-a-unified-theory-of-reality/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 61.5,
-          "published_at": "2026-10-06T10:26:02+00:00"
+          "score": 51.2,
+          "published_at": "2026-09-28T15:00:00+00:00"
         }
       ],
-      "trend": "unknown",
-      "trendPct": null,
+      "trend": "down",
+      "trendPct": -64.4,
       "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digest": "近期研究提出，引力与量子信息存在深层联系，时空的几何形状可追溯至量子场中信息的存储方式，相关推导关联到爱因斯坦场方程。\n\n与此同时，物理学家长期面临将引力纳入量子力学的难题。有观点认为，一种激进的后量子理论路径可能解决该问题，并有助于解释其他宇宙学谜题。",
+      "digestTitle": "引力与量子信息关联研究及后量子理论探索",
+      "llmScore": 23.5
     },
     {
-      "id": "e7804936fcc5",
-      "title": "Quantum field theory dynamics in trapped ions",
-      "status": "关注中",
-      "heat": 32.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
-      "sources": [
-        "Nature 量子物理",
-        "arXiv quant-ph 论文速递"
-      ],
-      "links": [
-        {
-          "title": "Quantum field theory dynamics in trapped ions",
-          "url": "https://www.nature.com/articles/s41567-026-03401-5",
-          "source": "Nature 量子物理",
-          "score": 49.1,
-          "published_at": "2026-09-25T00:00:00+00:00"
-        },
-        {
-          "title": "Latent Symmetry in Quantum Zeno Dynamics",
-          "url": "https://arxiv.org/abs/2610.12647",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.0,
-          "published_at": "2026-10-12T04:00:00+00:00"
-        }
-      ],
-      "trend": "unknown",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "0f9e2f253ca0",
-      "title": "Taking the heat off tantalum",
+      "id": "edf28ae8add4",
+      "title": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
       "status": "关注中",
       "heat": 22.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
+      "latestAt": "2026-10-13T13:33:23.619730+00:00",
       "sources": [
-        "MIT News 物理",
-        "Nature 量子物理"
+        "New Scientist 物理",
+        "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "Taking the heat off tantalum",
-          "url": "https://www.nature.com/articles/s41563-026-02766-5",
-          "source": "Nature 量子物理",
-          "score": 58.4,
-          "published_at": "2026-10-09T00:00:00+00:00"
+          "title": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
+          "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 56.4,
+          "published_at": "2026-10-06T10:26:02+00:00"
         },
         {
-          "title": "A new way to watch heat move through electronics",
-          "url": "https://news.mit.edu/2026/new-way-watch-heat-move-through-electronics-0806",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-06T04:00:00+00:00"
+          "title": "Nobel physics winner's pride at pioneering AI role",
+          "url": "https://phys.org/news/2026-10-nobel-physics-winner-pride-ai.html",
+          "source": "Phys.org 物理新闻",
+          "score": 34.5,
+          "published_at": "2026-10-07T22:40:01+00:00"
         }
       ],
-      "trend": "unknown",
+      "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digest": "2026年诺贝尔物理学奖授予弗朗西斯·哈尔岑（Francis Halzen），以表彰其在中微子领域的研究。中微子被称为“来自宇宙的幽灵信使”，其研究有助于人类理解宇宙深处的物理过程。\n\n据Phys.org报道，哈尔岑在获奖后表示，他对自己早期在研究中推广人工智能应用感到自豪。",
+      "digestTitle": "2026年诺贝尔物理学奖授予中微子研究先驱",
+      "llmScore": 63.0
     }
   ]
 }

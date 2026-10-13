@@ -1,37 +1,37 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T02:56:25.746599+00:00",
+  "generatedAt": "2026-10-13T13:33:23.619730+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 790.4,
+      "thisWeek": 283.8,
       "lastWeek": 805.6,
-      "deltaPct": -1.9
-    },
-    {
-      "category": "量子信息与计算",
-      "thisWeek": 431.6,
-      "lastWeek": 0,
-      "deltaPct": 100.0
+      "deltaPct": -64.8
     },
     {
       "category": "其他",
-      "thisWeek": 427.5,
+      "thisWeek": 280.7,
       "lastWeek": 192.9,
-      "deltaPct": 121.6
+      "deltaPct": 45.5
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 248.3,
+      "thisWeek": 241.3,
       "lastWeek": 49.8,
-      "deltaPct": 398.6
+      "deltaPct": 384.5
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 83.0,
+      "thisWeek": 209.0,
       "lastWeek": 158.9,
-      "deltaPct": -47.8
+      "deltaPct": 31.5
+    },
+    {
+      "category": "量子信息与计算",
+      "thisWeek": 60.8,
+      "lastWeek": 0,
+      "deltaPct": 100.0
     },
     {
       "category": "原子分子与光物理",
@@ -42,15 +42,15 @@
   ],
   "newTopics": [
     {
-      "topic_id": "bb7570ffe109",
-      "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
-      "score": 1329.4,
+      "topic_id": "8eae9d96a171",
+      "title": "Will we observe dark matter as a particle or a wave?",
+      "score": 301.8,
       "days": 2
     },
     {
-      "topic_id": "30d545f29a75",
-      "title": "Quantum 'birthmarks' hold lasting traces of a system's past",
-      "score": 61.8,
+      "topic_id": "a1d83dca7d86",
+      "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
+      "score": 60.8,
       "days": 1
     }
   ],

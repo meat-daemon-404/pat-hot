@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T02:56:25.746599+00:00",
-  "count": 8,
+  "generatedAt": "2026-10-13T13:33:23.619730+00:00",
+  "count": 9,
   "items": [
     {
-      "id": "6540815d36b5",
-      "title": "NASA demonstrates next-generation heat shield technologies",
+      "id": "80f23728f0c2",
+      "title": "NASA's SpaceX CRS-35 mission to launch health research",
       "status": "爆",
-      "heat": 91.1,
-      "sourceCount": 9,
-      "signalCount": 89,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
+      "heat": 92.5,
+      "sourceCount": 8,
+      "signalCount": 66,
+      "latestAt": "2026-10-13T13:33:23.619730+00:00",
       "sources": [
         "Astronomy Magazine",
         "ESA 空间科学",
@@ -19,85 +19,155 @@
         "NASA 快讯",
         "New Scientist 太空",
         "Phys.org 太空新闻",
-        "Universe Today",
-        "arXiv astro-ph.CO 论文速递"
+        "Universe Today"
       ],
       "links": [
         {
-          "title": "NASA demonstrates next-generation heat shield technologies",
-          "url": "https://phys.org/news/2026-10-nasa-generation-shield-technologies.html",
+          "title": "NASA's SpaceX CRS-35 mission to launch health research",
+          "url": "https://phys.org/news/2026-10-nasa-spacex-crs-mission-health.html",
           "source": "Phys.org 太空新闻",
-          "score": 86.3,
-          "published_at": "2026-10-12T18:40:07+00:00"
+          "score": 86.5,
+          "published_at": "2026-10-13T12:00:02+00:00"
         },
         {
-          "title": "Alternative gravity theory offers possible explanation for dark energy changing over time",
-          "url": "https://phys.org/news/2026-10-alternative-gravity-theory-explanation-dark.html",
-          "source": "Phys.org 太空新闻",
-          "score": 86.2,
-          "published_at": "2026-10-12T17:40:14+00:00"
-        },
-        {
-          "title": "NASA’s SpaceX CRS-35 Mission to Launch Health Research",
-          "url": "https://science.nasa.gov/missions/station/nasas-spacex-crs-35-mission-to-launch-health-research/",
+          "title": "NASA JPL Testing Readies Voyager Technologies Lander for Moon Mission",
+          "url": "https://www.nasa.gov/missions/moon-base/nasa-jpl-testing-readies-voyager-technologies-lander-for-moon-mission/",
           "source": "NASA 快讯",
-          "score": 86.2,
-          "published_at": "2026-10-12T17:45:27+00:00"
+          "score": 86.5,
+          "published_at": "2026-10-13T13:00:00+00:00"
         },
         {
-          "title": "The Preliminary Lunar Science Report for Artemis II is out",
-          "url": "https://phys.org/news/2026-10-preliminary-lunar-science-artemis-ii.html",
-          "source": "Phys.org 太空新闻",
-          "score": 86.1,
-          "published_at": "2026-10-12T14:20:26+00:00"
+          "title": "Mars moon lander set to launch on 19 October",
+          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
+          "source": "ESA 空间科学",
+          "score": 86.5,
+          "published_at": "2026-10-13T12:00:00+00:00"
         },
         {
-          "title": "How Will Water Flow on the Moon?",
-          "url": "https://www.universetoday.com/articles/how-will-water-flow-on-the-moon",
-          "source": "Universe Today",
-          "score": 86.1,
-          "published_at": "2026-10-12T11:50:10+00:00"
+          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
+          "source": "Astronomy Magazine",
+          "score": 86.5,
+          "published_at": "2026-10-13T12:27:59+00:00"
+        },
+        {
+          "title": "NASA Science, Cargo Launch on 35th SpaceX Resupply Mission to Station",
+          "url": "https://www.nasa.gov/news-release/nasa-science-cargo-launch-on-35th-spacex-resupply-mission-to-station/",
+          "source": "NASA 快讯",
+          "score": 86.4,
+          "published_at": "2026-10-13T11:12:18+00:00"
         }
       ],
-      "trend": "unknown",
+      "trend": "new",
       "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "badges": [
+        "surge"
+      ],
+      "digest": "NASA 的 SpaceX 第 35 次商业补给任务（CRS-35）于美东时间周二上午 6:33 从佛罗里达州卡纳维拉尔角太空军基地 40 号发射台由猎鹰 9 火箭发射升空，向国际空间站运送超过 6300 磅物资与硬件，其中包括聚焦人类与植物健康、耐药微生物等课题的实验载荷。",
+      "digestTitle": "SpaceX CRS-35 向空间站运送健康研究实验与物资",
+      "llmScore": 30.5
     },
     {
-      "id": "1612dd22cc9f",
-      "title": "ALMA catches a dying star mid-transformation, with a ring from its last outburst",
+      "id": "15523e1b7268",
+      "title": "Alternative gravity theory offers possible explanation for dark energy changing over time",
       "status": "关注中",
       "heat": 32.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
+      "latestAt": "2026-10-13T13:33:23.619730+00:00",
       "sources": [
         "New Scientist 太空",
         "Phys.org 太空新闻"
       ],
       "links": [
         {
-          "title": "ALMA catches a dying star mid-transformation, with a ring from its last outburst",
-          "url": "https://phys.org/news/2026-10-alma-dying-star-mid-outburst.html",
+          "title": "Alternative gravity theory offers possible explanation for dark energy changing over time",
+          "url": "https://phys.org/news/2026-10-alternative-gravity-theory-explanation-dark.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.8,
-          "published_at": "2026-10-12T15:00:49+00:00"
+          "score": 60.6,
+          "published_at": "2026-10-12T17:40:14+00:00"
         },
+        {
+          "title": "The telescope that could reveal what dark matter and dark energy are",
+          "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 56.6,
+          "published_at": "2026-10-06T17:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": "一项替代引力理论提出，暗能量可能并非恒定不变，而是随时间变化，这为解释宇宙加速膨胀提供了新的可能。长期以来，主流观点认为暗能量在宇宙历史中始终保持不变，是驱动宇宙加速膨胀的神秘成分。该理论试图通过修改引力理论来解释暗能量的动态变化，为理解暗能量本质提供了新的思路。",
+      "digestTitle": "替代引力理论或解释暗能量随时间变化"
+    },
+    {
+      "id": "52f01a36efbb",
+      "title": "Impossibly fast-moving stars are revealing the Milky Way’s mysterious heart",
+      "status": "关注中",
+      "heat": 32.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-13T13:33:23.619730+00:00",
+      "sources": [
+        "New Scientist 太空",
+        "Phys.org 太空新闻"
+      ],
+      "links": [
         {
           "title": "Impossibly fast-moving stars are revealing the Milky Way’s mysterious heart",
           "url": "https://www.newscientist.com/article/2590428-impossibly-fast-moving-stars-are-revealing-the-milky-ways-mysterious-heart/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 56.8,
+          "score": 56.5,
           "published_at": "2026-10-06T15:00:00+00:00"
+        },
+        {
+          "title": "ALMA catches a dying star mid-transformation, with a ring from its last outburst",
+          "url": "https://phys.org/news/2026-10-alma-dying-star-mid-outburst.html",
+          "source": "Phys.org 太空新闻",
+          "score": 36.3,
+          "published_at": "2026-10-12T15:00:49+00:00"
         }
       ],
-      "trend": "unknown",
+      "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digest": "天文学家正在研究银河系中心围绕超大质量黑洞高速运动的恒星群，认为这些恒星是理解银河系核心的关键。\n\n另一项研究利用阿塔卡马大型毫米波/亚毫米波阵列（ALMA）的射电观测，捕捉到一颗正在经历剧烈转变的垂死恒星，观测数据中显示出一个记录其最后一次爆发过程的环状结构。",
+      "digestTitle": "银河系中心高速恒星与垂死恒星环状遗迹"
+    },
+    {
+      "id": "9ddc21232f2a",
+      "title": "Hubble's superbubble scene",
+      "status": "关注中",
+      "heat": 32.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-13T13:33:23.619730+00:00",
+      "sources": [
+        "ESA 空间科学",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "Hubble's superbubble scene",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/Hubble_s_superbubble_scene",
+          "source": "ESA 空间科学",
+          "score": 41.2,
+          "published_at": "2026-09-03T08:00:00+00:00"
+        },
+        {
+          "title": "Hubble Spots a Suspected Second-Generation Planet",
+          "url": "https://www.universetoday.com/articles/hubble-spots-a-suspected-second-generation-planet",
+          "source": "Universe Today",
+          "score": 36.4,
+          "published_at": "2026-10-12T18:11:45+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": "研究人员在《自然·天文学》发表的一项研究中称，通过重新分析NASA哈勃空间望远镜的存档数据，发现了一处化学线索，表明可能存在一颗“第二代”行星——即由第一代恒星死亡后形成的物质所孕育的行星。该发现来自对大麦哲伦云（LMC）中一个超气泡区域的观测，LMC是环绕银河系的卫星星系之一，距地球约16万光年。研究团队表示，这一线索为理解行星形成与恒星演化的关系提供了新证据，但相关结论仍需进一步观测验证。",
+      "digestTitle": "哈勃发现疑似第二代行星的化学线索"
     },
     {
       "id": "4a920184e7e1",
@@ -106,7 +176,7 @@
       "heat": 22.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
+      "latestAt": "2026-10-13T13:33:23.619730+00:00",
       "sources": [
         "MIT News 太空探索",
         "Phys.org 太空新闻"
@@ -116,22 +186,22 @@
           "title": "Margaret Hamilton, who led a software team for NASA's Apollo program, dies at 90",
           "url": "https://phys.org/news/2026-10-margaret-hamilton-scientist-nasa-apollo.html",
           "source": "Phys.org 太空新闻",
-          "score": 58.0,
+          "score": 34.6,
           "published_at": "2026-10-08T08:37:04+00:00"
         },
         {
           "title": "Margaret Hamilton, computing pioneer who led software development for the Apollo program, dies at 90",
           "url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
           "source": "MIT News 太空探索",
-          "score": 57.7,
+          "score": 34.4,
           "published_at": "2026-10-07T20:55:00+00:00"
         }
       ],
-      "trend": "unknown",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digest": "玛格丽特·汉密尔顿去世，享年90岁。她领导团队为NASA阿波罗登月计划编写了飞船载飞行软件，是计算机科学与工程的先驱。\n\n汉密尔顿在麻省理工学院工作二十余年，其开创性工作包括领导团队为首次将人类送上月球的计算机编程。她晚年被视为女性在科技领域的重要象征。",
+      "digestTitle": "阿波罗计划软件负责人玛格丽特·汉密尔顿去世"
     },
     {
       "id": "bcde4fc253aa",
@@ -140,7 +210,7 @@
       "heat": 22.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
+      "latestAt": "2026-10-13T13:33:23.619730+00:00",
       "sources": [
         "Phys.org 太空新闻",
         "Universe Today"
@@ -150,90 +220,22 @@
           "title": "A Student Finds Three Galaxies and Possibly Solves a Mystery",
           "url": "https://www.universetoday.com/articles/a-student-finds-three-galaxies-and-possibly-solves-a-mystery",
           "source": "Universe Today",
-          "score": 58.6,
+          "score": 58.3,
           "published_at": "2026-10-09T06:01:48+00:00"
         },
         {
           "title": "Undergraduate student may have solved puzzle regarding isolated galaxies that have stopped producing stars",
           "url": "https://phys.org/news/2026-10-undergraduate-student-puzzle-isolated-galaxies.html",
           "source": "Phys.org 太空新闻",
-          "score": 57.7,
+          "score": 57.4,
           "published_at": "2026-10-07T21:20:11+00:00"
         }
       ],
-      "trend": "unknown",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "8427e7d8c231",
-      "title": "Computer scientist tracks satellites with automated observatory built from off-the-shelf technology",
-      "status": "关注中",
-      "heat": 22.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
-      "sources": [
-        "MIT News 太空探索",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Computer scientist tracks satellites with automated observatory built from off-the-shelf technology",
-          "url": "https://phys.org/news/2026-10-scientist-tracks-satellites-automated-observatory.html",
-          "source": "Phys.org 太空新闻",
-          "score": 57.1,
-          "published_at": "2026-10-07T00:20:01+00:00"
-        },
-        {
-          "title": "MIT in the media: Exploring how curiosity-driven science is an essential ingredient in America’s success",
-          "url": "https://news.mit.edu/2026/mit-media-exploring-how-curiosity-driven-science-essential-ingredient-americas-success",
-          "source": "MIT News 太空探索",
-          "score": 41.2,
-          "published_at": "2026-06-25T16:00:00+00:00"
-        }
-      ],
-      "trend": "unknown",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "144763115ac8",
-      "title": "Cosmic House of Mirrors",
-      "status": "关注中",
-      "heat": 22.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
-      "sources": [
-        "ESA 空间科学",
-        "NASA 快讯"
-      ],
-      "links": [
-        {
-          "title": "Cosmic House of Mirrors",
-          "url": "https://www.nasa.gov/image-article/cosmic-house-of-mirrors/",
-          "source": "NASA 快讯",
-          "score": 58.8,
-          "published_at": "2026-10-09T13:57:24+00:00"
-        },
-        {
-          "title": "Galaxies in a cosmic house of mirrors",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/Galaxies_in_a_cosmic_house_of_mirrors",
-          "source": "ESA 空间科学",
-          "score": 52.0,
-          "published_at": "2026-09-29T08:00:00+00:00"
-        }
-      ],
-      "trend": "unknown",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digest": "加州大学伯克利分校天体物理学本科生Julian Shapiro发现三座异常星系，被编目为Shapiro Dwarf Galaxies I、II、III。这些星系远离其他星系，且已停止形成恒星，这种组合极为罕见。\n\n据Phys.org报道，这一发现可能解开孤立星系为何停止恒星形成的谜题。报道同时称，Shapiro是少数以名字命名三座星系的本科生之一。",
+      "digestTitle": "加州大学伯克利本科生发现三座异常矮星系"
     },
     {
       "id": "bc61694b3c36",
@@ -242,7 +244,7 @@
       "heat": 22.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
+      "latestAt": "2026-10-13T13:33:23.619730+00:00",
       "sources": [
         "ESA 空间科学",
         "MIT News 太空探索"
@@ -252,7 +254,7 @@
           "title": "Happy New Year on Mars",
           "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Happy_New_Year_on_Mars",
           "source": "ESA 空间科学",
-          "score": 52.6,
+          "score": 52.3,
           "published_at": "2026-09-30T06:00:00+00:00"
         },
         {
@@ -263,7 +265,54 @@
           "published_at": "2024-03-13T21:00:00+00:00"
         }
       ],
-      "trend": "unknown",
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": "2026年9月30日10:16 CEST（08:16 UTC），火星完成绕日一周，进入新的火星年。欧洲空间局（ESA）空间科学部门发布了这一时间点的说明。\n\n与此同时，麻省理工学院（MIT）的两名学生通过“MADMEN”项目，体验了火星模拟任务中的挑战与团队磨合。该项目旨在模拟火星任务的环境与协作压力。",
+      "digestTitle": "火星新年与MIT火星模拟任务"
+    },
+    {
+      "id": "16ca4c86278b",
+      "title": "GWTC-5.0: Updated LIGO–Virgo–KAGRA Catalog sets new records in precision gravitational wave astronomy",
+      "status": "关注中",
+      "heat": 21.5,
+      "sourceCount": 1,
+      "signalCount": 4,
+      "latestAt": "2026-10-13T13:33:23.619730+00:00",
+      "sources": [
+        "LIGO"
+      ],
+      "links": [
+        {
+          "title": "GWTC-5.0: Updated LIGO–Virgo–KAGRA Catalog sets new records in precision gravitational wave astronomy",
+          "url": "https://ligo.org/gwtc-5-0-updated-ligo-virgo-kagra-catalog-sets-new-records-in-precision-gravitational-wave-astronomy/",
+          "source": "LIGO",
+          "score": 40.8,
+          "published_at": "2026-05-26T12:00:14+00:00"
+        },
+        {
+          "title": "Gravitational wave detectors can now ‘autotune’ their signals",
+          "url": "https://ligo.org/gravitational-wave-detectors-can-now-autotune-their-signals/",
+          "source": "LIGO",
+          "score": 40.8,
+          "published_at": "2026-05-13T01:34:22+00:00"
+        },
+        {
+          "title": "GWTC-4.0: New catalog more than doubles the number of gravitational-wave detections made by LIGO, Virgo, and KAGRA observatories",
+          "url": "https://ligo.org/new-catalog-more-than-doubles-the-number-of-gravitational-wave-detections-made-by-ligo-virgo-and-kagra-observatories/",
+          "source": "LIGO",
+          "score": 40.8,
+          "published_at": "2026-03-05T13:01:12+00:00"
+        },
+        {
+          "title": "Constraints on gravitational waves from the 2024 Vela pulsar glitch",
+          "url": "https://ligo.org/constraints-on-gravitational-waves-from-the-2024-vela-pulsar-glitch/",
+          "source": "LIGO",
+          "score": 40.8,
+          "published_at": "2026-02-25T04:06:26+00:00"
+        }
+      ],
+      "trend": "new",
       "trendPct": null,
       "badges": [],
       "digest": null,
@@ -276,7 +325,7 @@
       "heat": 18.0,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-13T02:56:25.746599+00:00",
+      "latestAt": "2026-10-13T13:33:23.619730+00:00",
       "sources": [
         "LIGO"
       ],
@@ -303,8 +352,8 @@
           "published_at": "2025-11-18T16:06:59+00:00"
         }
       ],
-      "trend": "unknown",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null

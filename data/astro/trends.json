@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T02:56:25.746599+00:00",
+  "generatedAt": "2026-10-13T13:33:23.619730+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
-      "category": "科研进展",
-      "thisWeek": 747.3,
-      "lastWeek": 119.3,
-      "deltaPct": 526.4
+      "category": "深空探测",
+      "thisWeek": 739.0,
+      "lastWeek": 477.7,
+      "deltaPct": 54.7
     },
     {
       "category": "其他",
-      "thisWeek": 707.9,
+      "thisWeek": 642.2,
       "lastWeek": 692.3,
-      "deltaPct": 2.3
+      "deltaPct": -7.2
+    },
+    {
+      "category": "科研进展",
+      "thisWeek": 581.1,
+      "lastWeek": 119.3,
+      "deltaPct": 387.1
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 642.0,
+      "thisWeek": 398.9,
       "lastWeek": 240.1,
-      "deltaPct": 167.4
-    },
-    {
-      "category": "深空探测",
-      "thisWeek": 463.3,
-      "lastWeek": 477.7,
-      "deltaPct": -3.0
+      "deltaPct": 66.1
     },
     {
       "category": "恒星与星际介质",
@@ -35,17 +35,23 @@
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 92.7,
+      "thisWeek": 92.4,
       "lastWeek": 0,
       "deltaPct": 100.0
     }
   ],
   "newTopics": [
     {
+      "topic_id": "5bfcfc5cfd3b",
+      "title": "NASA's SpaceX CRS-35 mission to launch health research",
+      "score": 1011.4,
+      "days": 2
+    },
+    {
       "topic_id": "6540815d36b5",
       "title": "NASA demonstrates next-generation heat shield technologies",
-      "score": 1862.4,
-      "days": 2
+      "score": 434.4,
+      "days": 1
     },
     {
       "topic_id": "a49fb256ee63",
@@ -54,9 +60,21 @@
       "days": 1
     },
     {
-      "topic_id": "1612dd22cc9f",
-      "title": "ALMA catches a dying star mid-transformation, with a ring from its last outburst",
-      "score": 60.8,
+      "topic_id": "15523e1b7268",
+      "title": "Alternative gravity theory offers possible explanation for dark energy changing over time",
+      "score": 60.6,
+      "days": 1
+    },
+    {
+      "topic_id": "9ddc21232f2a",
+      "title": "Hubble's superbubble scene",
+      "score": 36.4,
+      "days": 1
+    },
+    {
+      "topic_id": "52f01a36efbb",
+      "title": "Impossibly fast-moving stars are revealing the Milky Way’s mysterious heart",
+      "score": 36.3,
       "days": 1
     }
   ],
