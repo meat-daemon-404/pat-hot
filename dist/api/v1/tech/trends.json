@@ -1,80 +1,104 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T14:08:22.657157+00:00",
+  "generatedAt": "2026-10-13T02:56:25.746599+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
-      "category": "激光",
-      "thisWeek": 679.2,
-      "lastWeek": 764.2,
-      "deltaPct": -11.1
+      "category": "科研进展",
+      "thisWeek": 1369.9,
+      "lastWeek": 693.0,
+      "deltaPct": 97.7
     },
     {
       "category": "光通信",
-      "thisWeek": 589.8,
+      "thisWeek": 1356.7,
       "lastWeek": 618.8,
-      "deltaPct": -4.7
-    },
-    {
-      "category": "科研进展",
-      "thisWeek": 536.5,
-      "lastWeek": 693.0,
-      "deltaPct": -22.6
+      "deltaPct": 119.2
     },
     {
       "category": "其他",
-      "thisWeek": 520.0,
+      "thisWeek": 1079.2,
       "lastWeek": 1537.0,
-      "deltaPct": -66.2
-    },
-    {
-      "category": "光学元件与成像",
-      "thisWeek": 501.0,
-      "lastWeek": 687.1,
-      "deltaPct": -27.1
-    },
-    {
-      "category": "显示与面板",
-      "thisWeek": 491.2,
-      "lastWeek": 689.8,
-      "deltaPct": -28.8
+      "deltaPct": -29.8
     },
     {
       "category": "产业与资本",
-      "thisWeek": 481.9,
+      "thisWeek": 990.9,
       "lastWeek": 960.6,
-      "deltaPct": -49.8
+      "deltaPct": 3.2
     },
     {
       "category": "通信与算力",
-      "thisWeek": 456.3,
+      "thisWeek": 979.9,
       "lastWeek": 695.0,
-      "deltaPct": -34.3
+      "deltaPct": 41.0
+    },
+    {
+      "category": "激光",
+      "thisWeek": 925.7,
+      "lastWeek": 764.2,
+      "deltaPct": 21.1
+    },
+    {
+      "category": "光学元件与成像",
+      "thisWeek": 671.0,
+      "lastWeek": 687.1,
+      "deltaPct": -2.3
+    },
+    {
+      "category": "显示与面板",
+      "thisWeek": 466.2,
+      "lastWeek": 689.8,
+      "deltaPct": -32.4
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 297.4,
+      "thisWeek": 450.2,
       "lastWeek": 606.5,
-      "deltaPct": -51.0
+      "deltaPct": -25.8
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 166.7,
+      "thisWeek": 238.4,
       "lastWeek": 196.9,
-      "deltaPct": -15.3
+      "deltaPct": 21.1
     },
     {
       "category": "光伏与新能源",
-      "thisWeek": 60.1,
+      "thisWeek": 94.7,
       "lastWeek": 68.0,
-      "deltaPct": -11.6
+      "deltaPct": 39.3
     }
   ],
   "newTopics": [
     {
-      "topic_id": "11c73434e03b",
-      "title": "红旗天工07带激光雷达,16.79万起行吗?",
-      "score": 210.9,
+      "topic_id": "0e8d6608b73f",
+      "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
+      "score": 2015.7,
+      "days": 2
+    },
+    {
+      "topic_id": "f1bb13f709a5",
+      "title": "工信部对我国网络强国建设提出四点建议",
+      "score": 964.0,
+      "days": 1
+    },
+    {
+      "topic_id": "07bc28b0deb8",
+      "title": "长光华芯上半年营收3.91亿元 同比增长82.67%",
+      "score": 794.2,
+      "days": 1
+    },
+    {
+      "topic_id": "9e5d6509787a",
+      "title": "大众首款纯电来了,但激光雷达可能不是全系",
+      "score": 345.1,
+      "days": 2
+    },
+    {
+      "topic_id": "a7d37b8a7f58",
+      "title": "2026年中国国际信息通信展览会在京开幕",
+      "score": 185.1,
       "days": 1
     },
     {
@@ -90,33 +114,9 @@
       "days": 1
     },
     {
-      "topic_id": "e21082303e63",
-      "title": "液冷板激光焊接，智启AI算力“散热革命”新引擎",
-      "score": 142.6,
-      "days": 1
-    },
-    {
-      "topic_id": "824974608ed1",
-      "title": "Topologically steerable ultra-flat electro-optic combs via non-Hermitian frequency lattices",
-      "score": 124.0,
-      "days": 1
-    },
-    {
-      "topic_id": "e5f48246a18c",
-      "title": "精密光纤激光器企业频准激光登陆科创板",
-      "score": 65.7,
-      "days": 1
-    },
-    {
-      "topic_id": "6918b089a364",
-      "title": "UV Fluorescence Sensing of Medical-Chemical-and- Biological Analytes by an AlGaN/Si-on-Sapphire Optoelectronic Chip",
-      "score": 65.4,
-      "days": 1
-    },
-    {
-      "topic_id": "975bab018aaf",
-      "title": "Aubry-Andr\\'e transition in photonic time quasicrystals",
-      "score": 65.4,
+      "topic_id": "4ad553c75912",
+      "title": "中国代表团完成国际电信联盟无线电通信部门第六研究组会议参会任务",
+      "score": 104.6,
       "days": 1
     },
     {

@@ -1,68 +1,62 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T14:08:22.657157+00:00",
+  "generatedAt": "2026-10-13T02:56:25.746599+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
-      "category": "其他",
-      "thisWeek": 447.1,
-      "lastWeek": 692.3,
-      "deltaPct": -35.4
+      "category": "科研进展",
+      "thisWeek": 747.3,
+      "lastWeek": 119.3,
+      "deltaPct": 526.4
     },
     {
-      "category": "科研进展",
-      "thisWeek": 373.7,
-      "lastWeek": 119.3,
-      "deltaPct": 213.2
+      "category": "其他",
+      "thisWeek": 707.9,
+      "lastWeek": 692.3,
+      "deltaPct": 2.3
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 337.5,
+      "thisWeek": 642.0,
       "lastWeek": 240.1,
-      "deltaPct": 40.6
+      "deltaPct": 167.4
     },
     {
       "category": "深空探测",
-      "thisWeek": 272.0,
+      "thisWeek": 463.3,
       "lastWeek": 477.7,
-      "deltaPct": -43.1
+      "deltaPct": -3.0
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 120.7,
+      "thisWeek": 227.8,
       "lastWeek": 160.4,
-      "deltaPct": -24.8
+      "deltaPct": 42.0
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 83.0,
+      "thisWeek": 92.7,
       "lastWeek": 0,
       "deltaPct": 100.0
     }
   ],
   "newTopics": [
     {
-      "topic_id": "abaa4ab178c6",
-      "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
-      "score": 64.1,
+      "topic_id": "6540815d36b5",
+      "title": "NASA demonstrates next-generation heat shield technologies",
+      "score": 1862.4,
+      "days": 2
+    },
+    {
+      "topic_id": "a49fb256ee63",
+      "title": "A possible detection of gas rotation in galaxy groups via the kinetic Sunyaev-Zeldovich effect",
+      "score": 87.4,
       "days": 1
     },
     {
-      "topic_id": "a8eeafa6dee2",
-      "title": "Meeting report: supermassive black holes and blue notes",
-      "score": 58.6,
-      "days": 1
-    },
-    {
-      "topic_id": "db4d13104259",
-      "title": "Mars’s oddest cloud may be even odder than we thought",
-      "score": 56.0,
-      "days": 1
-    },
-    {
-      "topic_id": "83a4a74b3abc",
-      "title": "Four astronauts return to Earth after eight months in space",
-      "score": 51.2,
+      "topic_id": "1612dd22cc9f",
+      "title": "ALMA catches a dying star mid-transformation, with a ring from its last outburst",
+      "score": 60.8,
       "days": 1
     }
   ],

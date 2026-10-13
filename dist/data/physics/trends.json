@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T14:08:22.657157+00:00",
+  "generatedAt": "2026-10-13T02:56:25.746599+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 427.9,
+      "thisWeek": 790.4,
       "lastWeek": 805.6,
-      "deltaPct": -46.9
-    },
-    {
-      "category": "其他",
-      "thisWeek": 392.2,
-      "lastWeek": 192.9,
-      "deltaPct": 103.3
+      "deltaPct": -1.9
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 243.4,
+      "thisWeek": 431.6,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
     {
+      "category": "其他",
+      "thisWeek": 427.5,
+      "lastWeek": 192.9,
+      "deltaPct": 121.6
+    },
+    {
       "category": "凝聚态物理",
-      "thisWeek": 162.2,
+      "thisWeek": 248.3,
       "lastWeek": 49.8,
-      "deltaPct": 225.7
+      "deltaPct": 398.6
     },
     {
       "category": "高能与粒子物理",
@@ -42,30 +42,17 @@
   ],
   "newTopics": [
     {
-      "topic_id": "4eb0397c6c75",
-      "title": "2026诺贝尔化学奖给了法国95岁学者和日本75岁学者，日本科学诺奖得主已有28位",
-      "score": 147.9,
-      "days": 1
+      "topic_id": "bb7570ffe109",
+      "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
+      "score": 1329.4,
+      "days": 2
     },
     {
-      "topic_id": "2f5eb981ef07",
-      "title": "Quantum chip holds multiple photons at once, opening path to scalable memory",
-      "score": 95.6,
-      "days": 1
-    },
-    {
-      "topic_id": "29fc48178033",
-      "title": "Ultraviolet laser pulses engineer diamond defects selectively, leaving quantum qubits intact",
-      "score": 51.2,
+      "topic_id": "30d545f29a75",
+      "title": "Quantum 'birthmarks' hold lasting traces of a system's past",
+      "score": 61.8,
       "days": 1
     }
   ],
-  "sustainedTopics": [
-    {
-      "topic_id": "4434baea1bdc",
-      "title": "Chip-mediated manipulation of photonic quantum skyrmions",
-      "days": 3,
-      "score": 174.7
-    }
-  ]
+  "sustainedTopics": []
 }
