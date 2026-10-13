@@ -27,6 +27,8 @@ const I18N = {
     thresholdNote:"精选门槛：官方信源 ≥ {o} 分 · 媒体信源 ≥ {m} 分（可在 collector/config.json 调整）",
     hotNow:"当前热点", fullRank:"完整榜单 →", unreadOnly:"只看未读", sciOnly:"只看科研", today:"今天", daySel:"条精选", noMatch:"没有匹配的条目",
     heatVal:"热度", sources:"信源", signals:"信号",
+    mvNew:"新", mvRise:"升温", mvSurge:"多家跟进", mvDown:"回落",
+    digestLabel:"事件概览 | ",
     repMore:"另有 {n} 家信源报道", repOne:"1 家信源报道",
     toc:"今日看点", archive:"日报归档",
     headlineK:"头 条", picksK:"今日看点", flashK:"快 讯", moreK:"分栏目浏览",
@@ -41,6 +43,8 @@ const I18N = {
     menuAllSub:"全部资讯 · 搜索 / 分类 / 排序", menuTopicsSub:"分类统计，点击进入筛选", menuDataSub:"统计与导出", menuAgentSub:"开放 JSON 接口，免鉴权",
     expand:"展开阅读", collapse:"收起", aiSum:"AI 内容概要", srcSum:"来源摘要",
     favPage:"收藏", favSub:"点过的星标都在这里（只存在本浏览器）", noFav:"还没有收藏：点卡片右上角的 ★ 收藏一条", favCount:"{n} 条收藏",
+    bakNote:"已读 / 收藏 / 主题 / 语言 / 频道只存在这台浏览器，清缓存就会丢——导出备份换设备也能带走。",
+    bakExport:"导出备份", bakImport:"导入备份", bakDone:"已导入 {n} 项设置，页面即将刷新", bakFail:"读写失败，请重试", badFile:"这不是 PAT-HOT 备份文件，未做任何改动",
     extNote:"原文·需外网", readOrig:"阅读原文 ↗（需外网）", loadMore:"加载更多", aiGen:"生成中文摘要", aiLoading:"生成中…", aiFail:"生成失败，点击重试",
     footer:"PAT-HOT · 物理·天文·光电热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
   en: { feed:"Selected", all:"All", hot:"Hot", daily:"Daily", trends:"Trends", more:"More",
@@ -49,6 +53,8 @@ const I18N = {
     thresholdNote:"Selection bar: official sources ≥ {o} · media sources ≥ {m} (tune in collector/config.json)",
     hotNow:"Trending Now", fullRank:"Full ranking →", unreadOnly:"Unread only", sciOnly:"Research only", today:"Today", daySel:"selected", noMatch:"No matching items",
     heatVal:"heat", sources:"sources", signals:"signals",
+    mvNew:"new", mvRise:"rising", mvSurge:"surge", mvDown:"cooling",
+    digestLabel:"In brief | ",
     repMore:"{n} more sources", repOne:"1 source",
     toc:"Today's picks", archive:"Archive",
     headlineK:"HEADLINE", picksK:"Today's picks", flashK:"Flash", moreK:"Browse by category",
@@ -63,6 +69,8 @@ const I18N = {
     menuAllSub:"All items · search / filter / sort", menuTopicsSub:"Category stats — click to filter", menuDataSub:"Stats & export", menuAgentSub:"Open JSON APIs, no auth",
     expand:"Read more", collapse:"Collapse", aiSum:"AI Summary", srcSum:"Source abstract",
     favPage:"Saved", favSub:"Your stars live in this browser only", noFav:"Nothing saved yet — tap ★ on a card to save it", favCount:"{n} saved",
+    bakNote:"Read / saved / theme / language / channel live in this browser only — export a backup before clearing data or switching devices.",
+    bakExport:"Export backup", bakImport:"Import backup", bakDone:"Restored {n} settings; reloading", bakFail:"Read/write failed, please retry", badFile:"Not a PAT-HOT backup — nothing changed",
     extNote:"orig.·needs internet", readOrig:"Read original ↗ (needs internet)", loadMore:"Load more", aiGen:"Generate Chinese summary", aiLoading:"Generating…", aiFail:"Failed, tap to retry",
     footer:"PAT-HOT · physics / astronomy / photonics hot-topic stats (AIHOT methodology) · public data, for reference only · open source on GitHub" }
 };
@@ -380,6 +388,16 @@ function renderAll(){
 }
 function hotExpand(t){ const rep=t.representative||{}; const it={id:"t-"+t.id, zh_full:rep.zh_full, llm_summary:rep.llm_summary, summary:rep.summary, url:rep.url||((t.links||[])[0]||{}).url};
   if(!expandable(it)) return ""; return expandBtn(it)+expandBody(it); }
+// 运动徽标（与上一轮相比；collect.py compute_movement 产出，旧数据无字段时静默不显示）
+function movementFlag(t){
+  const b=t.badges||[]; const p=(typeof t.trendPct==="number")?Math.round(t.trendPct):null;
+  const out=[];
+  if(b.indexOf("surge")>=0) out.push('<span class="flag b-surge">'+T.mvSurge+(p!==null?" +"+p+"%":"")+'</span>');
+  else if(b.indexOf("rising")>=0) out.push('<span class="flag b-rise">'+T.mvRise+(p!==null?" +"+p+"%":"")+'</span>');
+  if(b.indexOf("new")>=0) out.push('<span class="flag b-new">'+T.mvNew+'</span>');
+  if(t.trend==="down"&&p!==null) out.push('<span class="flag b-down">'+T.mvDown+' '+p+'%</span>');
+  return out.join(" ");
+}
 function renderHot(){
   const root=$("#view-hot"); let ts=(C.topics||[]).slice();
   if(state.hotSort==="sources") ts.sort((a,b)=>b.source_count-a.source_count);
@@ -387,16 +405,21 @@ function renderHot(){
   const head='<div class="card ph"><h1>'+esc(hotPage())+'</h1><span class="sub">'+esc(hotSub())+'</span><span class="hsort"><button data-hs="heat" class="'+(state.hotSort==="heat"?"on":"")+'">'+T.heatVal+'</button><button data-hs="sources" class="'+(state.hotSort==="sources"?"on":"")+'">'+T.sources+'</button></span></div>';
   root.innerHTML=head+'<div class="card">'+ts.map((t,i)=>{
     const s=t.status; const flag=s==="爆"?'<span class="flag f-hot">'+statusName(s)+'</span>':(s==="发酵中"?'<span class="flag f-warm">'+statusName(s)+'</span>':'<span class="flag f-watch">'+statusName(s)+'</span>');
+    const mflag=movementFlag(t);
     const rep=t.representative||{}; const rurl=rep.url||((t.links||[])[0]||{}).url||"";
     const reason=rep.llm_reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(rep.llm_reason)+'</div>':"";
     const rsum=rep.llm_summary||rep.summary;
+    // 事件综述优先（AIHOT story-digest）：多源事件只贴代表稿一句摘要是以偏概全，
+    // 有综述就不再显示单篇摘要。综述标题概括整个事件，替代单篇标题展示。
+    const shownTitle=t.digestTitle||t.title;
+    const dg=t.digest?'<div class="hdigest"><b>'+esc(T.digestLabel)+'</b>'+esc(t.digest)+'</div>':"";
     const chips=((t.top_terms||[]).map(x=>'<span class="chip term">'+esc(x)+'</span>').join(""))+((t.sources||[]).map(x=>'<span class="chip">'+esc(x)+'</span>').join(""));
     const flinks=(t.links||[]).map(l=>'<a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.title)+'<span class="fs">'+esc(l.source)+'</span></a>').join("");
     const fold=(t.folded_count>0&&flinks)?'<details class="fold"><summary><span>'+T.repMore.replace("{n}",t.folded_count)+'</span><span>›</span></summary><div class="fl">'+flinks+'</div></details>':"";
     const bar='<div class="hbar"><i style="width:'+Math.max(4,Math.round((t.heat||t.score)/maxHeat*100))+'%"></i></div>';
-    return '<div class="hrow r'+(i+1)+'"><div class="hrank">'+(i+1)+'</div><div class="hmain"><div class="htitle"><a href="'+esc(rurl)+'" target="_blank" rel="noopener" data-read="'+esc(rurl)+'">'+esc(t.title)+'</a> '+flag+'</div>'
+    return '<div class="hrow r'+(i+1)+'"><div class="hrank">'+(i+1)+'</div><div class="hmain"><div class="htitle"><a href="'+esc(rurl)+'" target="_blank" rel="noopener" data-read="'+esc(rurl)+'">'+esc(shownTitle)+'</a> '+flag+mflag+'</div>'
       +'<div class="hmeta"><span>'+esc(rep.source||((t.sources||[])[0]||""))+'</span><span>'+fmtRel(t.latest_at)+'</span><span>'+t.source_count+' '+T.sources+' · '+t.signal_count+' '+T.signals+'</span><span class="mono" style="font-weight:700;color:var(--acd)">'+Math.round(t.heat||t.score)+'</span></div>'
-      +reason+(t.image?'<img class="himg" src="'+esc(t.image)+'" alt="" loading="lazy">':"")+(rsum?'<div class="isum">'+esc(rsum.length>200?rsum.slice(0,200)+"…":rsum)+'</div>':"")+hotExpand(t)+bar+'<div class="chips">'+chips+'</div>'+fold+'</div></div>';
+      +reason+(t.image?'<img class="himg" src="'+esc(t.image)+'" alt="" loading="lazy">':"")+(dg||(rsum?'<div class="isum">'+esc(rsum.length>200?rsum.slice(0,200)+"…":rsum)+'</div>':""))+hotExpand(t)+bar+'<div class="chips">'+chips+'</div>'+fold+'</div></div>';
   }).join("")+'</div>';
   $$("[data-hs]",root).forEach(b=>b.onclick=()=>{ state.hotSort=b.dataset.hs; contentReset("hot"); });
 }
@@ -474,11 +497,76 @@ function renderData(){
     +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:14px;margin-bottom:6px">'+T.srcTable+'</h3><div class="tw"><table><thead><tr><th>'+T.srcTable+'</th><th class="nw">'+T.total+'</th><th class="nw">'+T.latest+'</th></tr></thead><tbody>'+rows+'</tbody></table></div></div>'
     +'<div class="dlrow"><a class="btn" href="data/'+CHID+'/report.csv" download>'+T.dlCSV+'</a><a class="btn" href="data/'+CHID+'/items.json" target="_blank">'+T.dlItems+'</a><a class="btn" href="data/'+CHID+'/hot-topics.json" target="_blank">'+T.dlHot+'</a><a class="btn" href="data/'+CHID+'/dailies.json" target="_blank">'+T.dlDaily+'</a></div>';
 }
+// ---- 本地数据备份（AIHOT：收藏与阅读设置只存本机，但要能导出/导回来）----
+// 清浏览器数据 = 已读、收藏、主题、语言、频道全丢。导出是一个可读的 JSON
+// 文件（用户自己能打开看），导入前解析校验，坏文件只提示不改现场。
+const LS_KEYS = ["pat-read", "pat-fav", "pat-theme", "pat-lang", "pat-channel"];
+function backupPayload(){
+  const out = {app:"PAT-HOT", version:1, exportedAt:new Date().toISOString(), data:{}};
+  LS_KEYS.forEach(function(k){
+    try{ const v = localStorage.getItem(k); if(v !== null) out.data[k] = JSON.parse(v); }
+    catch(e){ try{ const v = localStorage.getItem(k); if(v !== null) out.data[k] = v; }catch(e2){} }
+  });
+  return out;
+}
+function downloadBackup(){
+  try{
+    const blob = new Blob([JSON.stringify(backupPayload(), null, 2)], {type:"application/json"});
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "pat-hot-backup-" + new Date().toISOString().slice(0,10) + ".json";
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 0);
+  }catch(e){ alert(T.bakFail); }
+}
+function applyBackup(text){
+  let o;
+  try{ o = JSON.parse(text); }catch(e){ alert(T.badFile); return false; }
+  if(!o || o.app !== "PAT-HOT" || typeof o.data !== "object"){ alert(T.badFile); return false; }
+  let n = 0;
+  Object.keys(o.data).forEach(function(k){
+    if(LS_KEYS.indexOf(k) < 0) return;
+    try{
+      const v = o.data[k];
+      localStorage.setItem(k, typeof v === "string" ? v : JSON.stringify(v)); n++;
+    }catch(e){}
+  });
+  READ = lsGet("pat-read"); FAV = lsGet("pat-fav");
+  try{ if(o.data["pat-theme"]) setTheme(o.data["pat-theme"]); }catch(e){}
+  alert(T.bakDone.replace("{n}", n));
+  // 语言/频道键也可能被导入改变，最干净的重建方式是整页刷新——localStorage 已落盘。
+  // 绝不能用 File.remove() 之类碰用户的原始备份文件（那会删磁盘上的真文件）。
+  location.reload();
+  return true;
+}
+function pickBackupFile(){
+  const inp = document.createElement("input");
+  inp.type = "file"; inp.accept = ".json,application/json";
+  inp.style.display = "none";
+  inp.onchange = function(){
+    const f = inp.files && inp.files[0];
+    inp.remove();   // 只移除临时 <input> 元素，绝不碰用户磁盘上的备份文件
+    if(!f) return;
+    const rd = new FileReader();
+    rd.onload = function(){ applyBackup(String(rd.result || "")); };
+    rd.onerror = function(){ alert(T.bakFail); };
+    rd.readAsText(f);
+  };
+  document.body.appendChild(inp);
+  inp.click();
+}
 function renderFav(){
   const root=$("#view-fav");
   const its=C.items.filter(i=>FAV[i.url]).sort((a,b)=>b.score-a.score);
+  const tools='<div class="card bakrow"><span class="sub">'+esc(T.bakNote)+'</span>'
+    +'<span class="bakbtns"><button class="btn" id="bexport">'+T.bakExport+'</button>'
+    +'<button class="btn" id="bimport">'+T.bakImport+'</button></span></div>';
   root.innerHTML='<div class="card ph"><h1>'+T.favPage+'</h1><span class="sub">'+esc(T.favSub)+'</span></div>'
+    +tools
     +(its.length?its.map(itemCard).join(""):'<div class="card empty">'+T.noFav+'</div>');
+  const be=$("#bexport"), bi=$("#bimport");
+  if(be) be.onclick=downloadBackup;
+  if(bi) bi.onclick=pickBackupFile;
 }
 function renderAgent(){
   const root=$("#view-agent");

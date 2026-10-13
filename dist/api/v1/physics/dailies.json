@@ -1826,11 +1826,11 @@
       "zh_full": "来自罗格斯大学、IBM及合作机构的研究人员展示了一种量子计算机在运行过程中自我检查并作出响应的能力。该系统能够在运行期间检测内部状态，并反复重置部分系统以将混乱行为控制在可管理范围内。这一进展表明，量子计算机正在向具备自我纠错能力的方向迈进，有助于提升其稳定性和可靠性，为未来实用化量子计算奠定基础。",
       "reason": "量子纠错关键进展",
       "density": "高",
-      "score": 86.2,
+      "score": 47.5,
       "role": "科研",
       "published_at": "2026-10-12T15:20:22+00:00",
-      "topic_id": "bb7570ffe109",
-      "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
+      "topic_id": "8eae9d96a171",
+      "topic_title": "Will we observe dark matter as a particle or a wave?"
     },
     "picks": [
       {
@@ -1841,11 +1841,55 @@
         "zh_full": "自然界许多重要过程依赖于物质粒子与光及其他力载粒子之间的相互作用。然而，传统计算机在确定这些相互作用中单个粒子的行为方面一直面临困难。混合量子计算机有望在这一领域取得突破，更好地处理光与物质之间的相互作用问题，为理解复杂物理过程提供新的计算手段。",
         "reason": "混合量子计算新应用前景",
         "density": "中",
-        "score": 86.0,
+        "score": 47.5,
         "role": "科研",
         "published_at": "2026-10-12T10:40:01+00:00",
-        "topic_id": "bb7570ffe109",
-        "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
+        "topic_id": "8eae9d96a171",
+        "topic_title": "Will we observe dark matter as a particle or a wave?"
+      },
+      {
+        "title": "Is ‘Attention’ the Essence of Intelligence?",
+        "url": "https://www.quantamagazine.org/is-attention-the-essence-of-intelligence-20261012/",
+        "source": "Quanta Magazine",
+        "summary": "（无摘要，仅标题）",
+        "zh_full": "（无摘要，仅标题）",
+        "reason": null,
+        "density": "低",
+        "score": 27.4,
+        "role": "科研",
+        "published_at": "2026-10-12T14:20:30+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      {
+        "title": "数学的黄金时代与数学家的失落时代",
+        "url": "http://www.zhishifenzi.com/news/news/10711.html",
+        "source": "知识分子",
+        "summary": "（无摘要，仅标题）",
+        "zh_full": "（无摘要，仅标题）",
+        "reason": null,
+        "density": "低",
+        "score": 27.4,
+        "role": "媒体",
+        "published_at": "2026-10-12T04:56:51+00:00",
+        "topic_id": null,
+        "topic_title": null
+      }
+    ],
+    "flash": [
+      {
+        "title": "Quantum 'birthmarks' hold lasting traces of a system's past",
+        "url": "https://phys.org/news/2026-10-quantum-birthmarks.html",
+        "source": "Phys.org 物理新闻",
+        "summary": "（无摘要，仅标题）",
+        "zh_full": "（无摘要，仅标题）",
+        "reason": null,
+        "density": "低",
+        "score": 27.2,
+        "role": "科研",
+        "published_at": "2026-10-11T18:20:01+00:00",
+        "topic_id": null,
+        "topic_title": null
       },
       {
         "title": "Continuous-time noise mitigation in analogue quantum simulation",
@@ -1888,9 +1932,7 @@
         "published_at": "2026-10-12T04:00:00+00:00",
         "topic_id": "bb7570ffe109",
         "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
-      }
-    ],
-    "flash": [
+      },
       {
         "title": "Chip-mediated manipulation of photonic quantum skyrmions",
         "url": "https://www.nature.com/articles/s41567-026-03487-x",
@@ -2202,77 +2244,91 @@
     ],
     "sections": [
       {
-        "category": "量子信息与计算",
+        "category": "其他",
         "articles": [
           {
-            "title": "Continuous-time noise mitigation in analogue quantum simulation",
-            "url": "https://www.nature.com/articles/s41467-026-78310-5",
-            "source": "Nature 量子物理",
-            "summary": "（无摘要，仅标题）",
-            "zh_full": "（无摘要，仅标题）",
-            "reason": null,
-            "density": "低",
-            "score": 77.2,
+            "title": "One step closer to quantum computers that can correct their own mistakes",
+            "url": "https://phys.org/news/2026-10-closer-quantum.html",
+            "source": "Phys.org 物理新闻",
+            "summary": "研究人员展示量子计算机可在运行中自我检查并重置部分系统以控制混乱行为，向具备自我纠错能力的量子计算机迈出一步。",
+            "zh_full": "来自罗格斯大学、IBM及合作机构的研究人员展示了一种量子计算机在运行过程中自我检查并作出响应的能力。该系统能够在运行期间检测内部状态，并反复重置部分系统以将混乱行为控制在可管理范围内。这一进展表明，量子计算机正在向具备自我纠错能力的方向迈进，有助于提升其稳定性和可靠性，为未来实用化量子计算奠定基础。",
+            "reason": "量子纠错关键进展",
+            "density": "高",
+            "score": 47.5,
             "role": "科研",
-            "published_at": "2026-10-12T00:00:00+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
+            "published_at": "2026-10-12T15:20:22+00:00",
+            "topic_id": "8eae9d96a171",
+            "topic_title": "Will we observe dark matter as a particle or a wave?"
           },
           {
-            "title": "Warm-Start Quantum Computation for Energy Readout and State Preparation",
-            "url": "https://arxiv.org/abs/2610.12485",
-            "source": "arXiv quant-ph 论文速递",
-            "summary": "这篇论文讨论量子计算中基态能量估计与基态制备的模块化结构：前端给出近似态，后端读取或优化。作者提出并测量验证，前端与后端之间真正传递的关键信息是近似态在问题哈密顿量本征态上的谱权重分布 $p_n=|\\langle E_n|\\chi\\rangle|^2$。因此前端可替换，作者称在不改变后端的情况下替换了七次。摘要截断，未给出完整方法名和结果。",
-            "zh_full": "arXiv:2610.12485v1 新论文摘要指出，估计基态能量和制备基态都可以拆分为前端与后端：前端提供一个近似态 $|\\chi\\rangle$，后端对其进行读取或优化。作者认为，并在每一步进行测量验证，跨越这一分界的关键量只有前端在问题哈密顿量 $H_P$ 本征态上的谱权重分布 $p_n=|\\langle E_n|\\chi\\rangle|^2$。摘要称，下游所有代价都可以用这个谱权重分布来衡量，因此前端是一个可替换模块；作者表示在不改变右侧后端任何内容的情况下，将前端替换了七次。摘要在“We call the”处截断，未给出后续命名、实验平台、具体数值或完整结论。",
-            "reason": "提出量子基态任务模块化观点",
+            "title": "Hybrid quantum computers could finally get to grips with light and matter",
+            "url": "https://phys.org/news/2026-10-hybrid-quantum.html",
+            "source": "Phys.org 物理新闻",
+            "summary": "传统计算机难以处理物质粒子与光等力载粒子相互作用中单个粒子的行为，混合量子计算机有望在这一领域取得突破。",
+            "zh_full": "自然界许多重要过程依赖于物质粒子与光及其他力载粒子之间的相互作用。然而，传统计算机在确定这些相互作用中单个粒子的行为方面一直面临困难。混合量子计算机有望在这一领域取得突破，更好地处理光与物质之间的相互作用问题，为理解复杂物理过程提供新的计算手段。",
+            "reason": "混合量子计算新应用前景",
             "density": "中",
-            "score": 72.4,
+            "score": 47.5,
             "role": "科研",
-            "published_at": "2026-10-12T04:00:00+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
+            "published_at": "2026-10-12T10:40:01+00:00",
+            "topic_id": "8eae9d96a171",
+            "topic_title": "Will we observe dark matter as a particle or a wave?"
           },
           {
-            "title": "Error correction and quantum information spreading on sparse random graphs",
-            "url": "https://arxiv.org/abs/2610.12597",
-            "source": "arXiv quant-ph 论文速递",
+            "title": "Is ‘Attention’ the Essence of Intelligence?",
+            "url": "https://www.quantamagazine.org/is-attention-the-essence-of-intelligence-20261012/",
+            "source": "Quanta Magazine",
             "summary": "（无摘要，仅标题）",
             "zh_full": "（无摘要，仅标题）",
             "reason": null,
             "density": "低",
-            "score": 65.2,
+            "score": 27.4,
             "role": "科研",
-            "published_at": "2026-10-12T04:00:00+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
+            "published_at": "2026-10-12T14:20:30+00:00",
+            "topic_id": null,
+            "topic_title": null
           },
           {
-            "title": "Analog quantum simulation of Shastry-Sutherland Ising materials",
-            "url": "https://arxiv.org/abs/2610.12800",
-            "source": "arXiv quant-ph 论文速递",
+            "title": "数学的黄金时代与数学家的失落时代",
+            "url": "http://www.zhishifenzi.com/news/news/10711.html",
+            "source": "知识分子",
             "summary": "（无摘要，仅标题）",
             "zh_full": "（无摘要，仅标题）",
             "reason": null,
             "density": "低",
-            "score": 65.2,
-            "role": "科研",
-            "published_at": "2026-10-12T04:00:00+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
+            "score": 27.4,
+            "role": "媒体",
+            "published_at": "2026-10-12T04:56:51+00:00",
+            "topic_id": null,
+            "topic_title": null
           },
           {
-            "title": "Quantum Information-Theoretic Analysis of Optical Fiber Sensing via Stimulated Brillouin Scattering",
-            "url": "https://arxiv.org/abs/2610.12980",
-            "source": "arXiv quant-ph 论文速递",
+            "title": "Quantum 'birthmarks' hold lasting traces of a system's past",
+            "url": "https://phys.org/news/2026-10-quantum-birthmarks.html",
+            "source": "Phys.org 物理新闻",
             "summary": "（无摘要，仅标题）",
             "zh_full": "（无摘要，仅标题）",
             "reason": null,
             "density": "低",
-            "score": 65.2,
+            "score": 27.2,
             "role": "科研",
-            "published_at": "2026-10-12T04:00:00+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
+            "published_at": "2026-10-11T18:20:01+00:00",
+            "topic_id": null,
+            "topic_title": null
+          },
+          {
+            "title": "Nobel physics winner's pride at pioneering AI role",
+            "url": "https://phys.org/news/2026-10-nobel-physics-winner-pride-ai.html",
+            "source": "Phys.org 物理新闻",
+            "summary": "Francis Halzen, winner of the Nobel Prize in physics, spoke with pride on Wednesday about his early promotion of artificial intelligence in his research on neutrinos.",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 56.0,
+            "role": "科研",
+            "published_at": null,
+            "topic_id": "af840360cfb2",
+            "topic_title": "CERN congratulates Nobel Prize winner Francis Halzen"
           }
         ]
       },
@@ -2340,118 +2396,6 @@
       {
         "category": "科研进展",
         "articles": [
-          {
-            "title": "All-optical generation of dense multi-GeV positron beams with longitudinal polarization",
-            "url": "https://www.nature.com/articles/s42005-026-02907-x",
-            "source": "Nature 量子物理",
-            "summary": "（无摘要，仅标题）",
-            "zh_full": "（无摘要，仅标题）",
-            "reason": null,
-            "density": "低",
-            "score": 77.2,
-            "role": "科研",
-            "published_at": "2026-10-12T00:00:00+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
-          },
-          {
-            "title": "Chip-mediated manipulation of photonic quantum skyrmions",
-            "url": "https://www.nature.com/articles/s41567-026-03487-x",
-            "source": "Nature 量子物理",
-            "summary": "（无摘要，仅标题）",
-            "zh_full": "（无摘要，仅标题）",
-            "reason": null,
-            "density": "低",
-            "score": 77.2,
-            "role": "科研",
-            "published_at": "2026-10-12T00:00:00+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
-          },
-          {
-            "title": "Exact solutions of non-Markovian dissipative Ising models",
-            "url": "https://arxiv.org/abs/2610.12546",
-            "source": "arXiv quant-ph 论文速递",
-            "summary": "这篇论文关注量子器件和模拟器中的环境噪声与动力学。作者指出，部分噪声可用马尔可夫耗散描述，但与谐振器或振动模式耦合常导致非马尔可夫动力学，使相互作用许多体系统难以表征。论文识别出一类同时包含非马尔可夫动力学和马尔可夫耗散、且可精确求解的许多体量子系统。摘要截断，未提供具体模型和结论。",
-            "zh_full": "arXiv:2610.12546v1 新论文摘要指出，量子器件和模拟器的应用需要准确理解其动力学以及环境噪声的影响。虽然部分噪声可以建模为马尔可夫耗散，但与谐振器或振动模式的耦合常常还会产生非马尔可夫动力学，使系统难以表征，尤其是相互作用的许多体系统。论文称，作者识别出一类可精确求解的许多体量子系统，这些系统同时具有非马尔可夫动力学和马尔可夫耗散。摘要在“We consider”处截断，未给出具体模型、求解方法、结果或应用细节。",
-            "reason": "非马尔可夫许多体系统精确解",
-            "density": "中",
-            "score": 72.4,
-            "role": "科研",
-            "published_at": "2026-10-12T04:00:00+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
-          },
-          {
-            "title": "Optimal linear-optical interferometers for unitary t-designs in a multi-photon Fock space",
-            "url": "https://arxiv.org/abs/2610.12646",
-            "source": "arXiv quant-ph 论文速递",
-            "summary": "（无摘要，仅标题）",
-            "zh_full": "（无摘要，仅标题）",
-            "reason": null,
-            "density": "低",
-            "score": 65.2,
-            "role": "科研",
-            "published_at": "2026-10-12T04:00:00+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
-          },
-          {
-            "title": "A Catalytic Algorithm for Transposing Unknown Qutrit Unitaries with Tight Query Bounds",
-            "url": "https://arxiv.org/abs/2610.12664",
-            "source": "arXiv quant-ph 论文速递",
-            "summary": "（无摘要，仅标题）",
-            "zh_full": "（无摘要，仅标题）",
-            "reason": null,
-            "density": "低",
-            "score": 65.2,
-            "role": "科研",
-            "published_at": "2026-10-12T04:00:00+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
-          },
-          {
-            "title": "Trainable Quantum-Native Language Models: Dissipative Memory, Capacity Limits, and Hardware Validation",
-            "url": "https://arxiv.org/abs/2610.12806",
-            "source": "arXiv quant-ph 论文速递",
-            "summary": "（无摘要，仅标题）",
-            "zh_full": "（无摘要，仅标题）",
-            "reason": null,
-            "density": "低",
-            "score": 65.2,
-            "role": "科研",
-            "published_at": "2026-10-12T04:00:00+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
-          },
-          {
-            "title": "An Instability of the Quantum Markov Length",
-            "url": "https://arxiv.org/abs/2610.12929",
-            "source": "arXiv quant-ph 论文速递",
-            "summary": "（无摘要，仅标题）",
-            "zh_full": "（无摘要，仅标题）",
-            "reason": null,
-            "density": "低",
-            "score": 65.2,
-            "role": "科研",
-            "published_at": "2026-10-12T04:00:00+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
-          },
-          {
-            "title": "Quantum-assisted rendezvous on hypercubes: a quantum Bernoulli noise approach",
-            "url": "https://arxiv.org/abs/2610.12949",
-            "source": "arXiv quant-ph 论文速递",
-            "summary": "（无摘要，仅标题）",
-            "zh_full": "（无摘要，仅标题）",
-            "reason": null,
-            "density": "低",
-            "score": 65.2,
-            "role": "科研",
-            "published_at": "2026-10-12T04:00:00+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
-          },
           {
             "title": "日本诺奖得主再添一人，2026年化学诺奖颁给手性放大研究",
             "url": "http://www.zhishifenzi.com/news/multiple/10709.html",
@@ -2539,81 +2483,6 @@
         ]
       },
       {
-        "category": "其他",
-        "articles": [
-          {
-            "title": "One step closer to quantum computers that can correct their own mistakes",
-            "url": "https://phys.org/news/2026-10-closer-quantum.html",
-            "source": "Phys.org 物理新闻",
-            "summary": "研究人员展示量子计算机可在运行中自我检查并重置部分系统以控制混乱行为，向具备自我纠错能力的量子计算机迈出一步。",
-            "zh_full": "来自罗格斯大学、IBM及合作机构的研究人员展示了一种量子计算机在运行过程中自我检查并作出响应的能力。该系统能够在运行期间检测内部状态，并反复重置部分系统以将混乱行为控制在可管理范围内。这一进展表明，量子计算机正在向具备自我纠错能力的方向迈进，有助于提升其稳定性和可靠性，为未来实用化量子计算奠定基础。",
-            "reason": "量子纠错关键进展",
-            "density": "高",
-            "score": 86.2,
-            "role": "科研",
-            "published_at": "2026-10-12T15:20:22+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
-          },
-          {
-            "title": "Hybrid quantum computers could finally get to grips with light and matter",
-            "url": "https://phys.org/news/2026-10-hybrid-quantum.html",
-            "source": "Phys.org 物理新闻",
-            "summary": "传统计算机难以处理物质粒子与光等力载粒子相互作用中单个粒子的行为，混合量子计算机有望在这一领域取得突破。",
-            "zh_full": "自然界许多重要过程依赖于物质粒子与光及其他力载粒子之间的相互作用。然而，传统计算机在确定这些相互作用中单个粒子的行为方面一直面临困难。混合量子计算机有望在这一领域取得突破，更好地处理光与物质之间的相互作用问题，为理解复杂物理过程提供新的计算手段。",
-            "reason": "混合量子计算新应用前景",
-            "density": "中",
-            "score": 86.0,
-            "role": "科研",
-            "published_at": "2026-10-12T10:40:01+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
-          },
-          {
-            "title": "Quantum 'birthmarks' hold lasting traces of a system's past",
-            "url": "https://phys.org/news/2026-10-quantum-birthmarks.html",
-            "source": "Phys.org 物理新闻",
-            "summary": "Some classical physical systems can explore many configurations over time until their long-term behavior no longer reveals their starting conditions. The sampling of available configurations according to the appropriate statistical distribu",
-            "zh_full": null,
-            "reason": null,
-            "density": null,
-            "score": 61.8,
-            "role": "科研",
-            "published_at": "2026-10-11T18:20:01+00:00",
-            "topic_id": "30d545f29a75",
-            "topic_title": "Quantum 'birthmarks' hold lasting traces of a system's past"
-          },
-          {
-            "title": "Is ‘Attention’ the Essence of Intelligence?",
-            "url": "https://www.quantamagazine.org/is-attention-the-essence-of-intelligence-20261012/",
-            "source": "Quanta Magazine",
-            "summary": "A mathematical mechanism enables AI models to process language at scale, undergirding the current AI revolution. Our columnist asks: Why is attention the key? The post Is ‘Attention’ the Essence of Intelligence? first appeared on Quanta Mag",
-            "zh_full": null,
-            "reason": null,
-            "density": null,
-            "score": 51.1,
-            "role": "科研",
-            "published_at": "2026-10-12T14:20:30+00:00",
-            "topic_id": null,
-            "topic_title": null
-          },
-          {
-            "title": "Nobel physics winner's pride at pioneering AI role",
-            "url": "https://phys.org/news/2026-10-nobel-physics-winner-pride-ai.html",
-            "source": "Phys.org 物理新闻",
-            "summary": "Francis Halzen, winner of the Nobel Prize in physics, spoke with pride on Wednesday about his early promotion of artificial intelligence in his research on neutrinos.",
-            "zh_full": null,
-            "reason": null,
-            "density": null,
-            "score": 56.0,
-            "role": "科研",
-            "published_at": null,
-            "topic_id": "af840360cfb2",
-            "topic_title": "CERN congratulates Nobel Prize winner Francis Halzen"
-          }
-        ]
-      },
-      {
         "category": "高能与粒子物理",
         "articles": [
           {
@@ -2670,11 +2539,12 @@
       "29fc48178033",
       "4434baea1bdc",
       "4eb0397c6c75",
+      "8eae9d96a171",
       "bb7570ffe109"
     ],
-    "tocCount": 27,
+    "tocCount": 30,
     "readMinutes": 1,
-    "amended": 28
+    "amended": 67
   },
   "2026-09-29": {
     "date": "2026-09-29",
@@ -3558,36 +3428,20 @@
     "weekday": "周二",
     "label": "2026年10月13日",
     "headline": {
-      "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
-      "url": "https://phys.org/news/2026-10-gravity-quantum-linked-derivation-einstein.html",
-      "source": "Phys.org 物理新闻",
-      "summary": "研究通过推导爱因斯坦方程，揭示引力与量子信息之间的深层联系，指出时空形状可追溯至量子场中信息的存储方式，为探索引力的量子本质提供新视角。",
-      "zh_full": "近期研究表明，引力与量子信息之间存在深刻联系，时空的形状可以追溯到量子场中信息存储的方式。这一发现将广义相对论中的引力描述与量子信息理论联系起来，暗示时空几何可能源于量子层面的信息结构。该研究通过推导爱因斯坦方程，展示了引力与量子信息之间的内在关联，为理解引力的量子本质提供了新的视角。",
-      "reason": "引力与量子信息关联",
-      "density": "高",
-      "score": 86.4,
-      "role": "科研",
-      "published_at": "2026-10-12T23:20:01+00:00",
-      "topic_id": "bb7570ffe109",
-      "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
+      "title": "Will we observe dark matter as a particle or a wave?",
+      "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+      "source": "New Scientist 物理",
+      "summary": "专栏作家 Chanda Prescod-Weinstein 提出，我们或许已经发现了暗物质，但要真正观测它，需要先确定它表现为粒子还是波，这将影响观测策略。",
+      "zh_full": "专栏作家 Chanda Prescod-Weinstein 认为，我们或许已经发现了暗物质。要观测暗物质，关键在于弄清楚我们预期它表现为粒子还是波。这一判断将决定后续观测与实验设计的方向。",
+      "reason": "暗物质观测思路",
+      "density": "中",
+      "score": 79.7,
+      "role": "媒体",
+      "published_at": "2026-10-13T08:00:00+00:00",
+      "topic_id": "8eae9d96a171",
+      "topic_title": "Will we observe dark matter as a particle or a wave?"
     },
     "picks": [
-      {
-        "title": "Magnetic sculpting transforms single-source fields into predetermined shapes with mathematical precision",
-        "url": "https://phys.org/news/2026-10-magnetic-sculpting-source-fields-predetermined.html",
-        "source": "Phys.org 物理新闻",
-        "summary": "磁场在多种高科技设备中至关重要，但定制特定形状磁场目前依赖复杂且耗资源的专用磁铁或线圈系统设计，研究提出用数学精度实现单源磁场塑形。",
-        "zh_full": "磁场虽不可见，却是从MRI扫描仪、粒子加速器到原子钟及未来量子计算机等众多技术中的关键组成部分。这些应用都需要具有特定形状和性质的磁场。目前，创建此类定制磁场需要研究人员和工程师为每个应用设计专门优化过的磁铁或大型线圈系统，这是一个复杂且资源密集的过程。",
-        "reason": "磁场塑形技术突破",
-        "density": "中",
-        "score": 86.4,
-        "role": "科研",
-        "published_at": "2026-10-12T22:40:01+00:00",
-        "topic_id": "bb7570ffe109",
-        "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
-      }
-    ],
-    "flash": [
       {
         "title": "From nonmagnetic to magnetic: A 2D semiconductor with electrically tunable magnetism",
         "url": "https://phys.org/news/2026-10-nonmagnetic-magnetic-2d-semiconductor-electrically.html",
@@ -3596,11 +3450,69 @@
         "zh_full": "新加坡国立大学（NUS）研究人员与瑞士、捷克和德国机构科学家合作，展示了一种在原本非磁性的二维（2D）半导体中引入磁性，并通过电压控制其磁性的方法。该成果发表于《Science Advances》，为研究原子级薄材料中电可控磁性提供了新平台，对未来自旋电子学技术具有潜在意义。",
         "reason": "二维半导体电调控磁性",
         "density": "高",
-        "score": 86.4,
+        "score": 79.4,
         "role": "科研",
         "published_at": "2026-10-12T21:40:11+00:00",
-        "topic_id": "bb7570ffe109",
+        "topic_id": "8eae9d96a171",
+        "topic_title": "Will we observe dark matter as a particle or a wave?"
+      },
+      {
+        "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
+        "url": "https://phys.org/news/2026-10-gravity-quantum-linked-derivation-einstein.html",
+        "source": "Phys.org 物理新闻",
+        "summary": "研究通过推导爱因斯坦方程，揭示引力与量子信息之间的深层联系，指出时空形状可追溯至量子场中信息的存储方式，为探索引力的量子本质提供新视角。",
+        "zh_full": "近期研究表明，引力与量子信息之间存在深刻联系，时空的形状可以追溯到量子场中信息存储的方式。这一发现将广义相对论中的引力描述与量子信息理论联系起来，暗示时空几何可能源于量子层面的信息结构。该研究通过推导爱因斯坦方程，展示了引力与量子信息之间的内在关联，为理解引力的量子本质提供了新的视角。",
+        "reason": "引力与量子信息关联",
+        "density": "高",
+        "score": 60.8,
+        "role": "科研",
+        "published_at": "2026-10-12T23:20:01+00:00",
+        "topic_id": "a1d83dca7d86",
         "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
+      },
+      {
+        "title": "LS3 Safety Spotlight: coordinating activities at CERN: monitoring activities – a key step",
+        "url": "https://home.cern/ls3-safety-spotlight-coordinating-activities-at-cern-monitoring-activities-a-key-step/",
+        "source": "CERN 新闻",
+        "summary": "（无摘要，仅标题）",
+        "zh_full": "（无摘要，仅标题）",
+        "reason": null,
+        "density": "低",
+        "score": 46.3,
+        "role": "科研",
+        "published_at": "2026-10-13T10:34:33+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      {
+        "title": "C++ creator talks about the future of programming",
+        "url": "https://home.cern/c-creator-talks-about-the-future-of-programming/",
+        "source": "CERN 新闻",
+        "summary": "（无摘要，仅标题）",
+        "zh_full": "（无摘要，仅标题）",
+        "reason": null,
+        "density": "低",
+        "score": 46.2,
+        "role": "科研",
+        "published_at": "2026-10-13T08:08:49+00:00",
+        "topic_id": null,
+        "topic_title": null
+      }
+    ],
+    "flash": [
+      {
+        "title": "Magnetic sculpting transforms single-source fields into predetermined shapes with mathematical precision",
+        "url": "https://phys.org/news/2026-10-magnetic-sculpting-source-fields-predetermined.html",
+        "source": "Phys.org 物理新闻",
+        "summary": "磁场在多种高科技设备中至关重要，但定制特定形状磁场目前依赖复杂且耗资源的专用磁铁或线圈系统设计，研究提出用数学精度实现单源磁场塑形。",
+        "zh_full": "磁场虽不可见，却是从MRI扫描仪、粒子加速器到原子钟及未来量子计算机等众多技术中的关键组成部分。这些应用都需要具有特定形状和性质的磁场。目前，创建此类定制磁场需要研究人员和工程师为每个应用设计专门优化过的磁铁或大型线圈系统，这是一个复杂且资源密集的过程。",
+        "reason": "磁场塑形技术突破",
+        "density": "中",
+        "score": 47.7,
+        "role": "科研",
+        "published_at": "2026-10-12T22:40:01+00:00",
+        "topic_id": "8eae9d96a171",
+        "topic_title": "Will we observe dark matter as a particle or a wave?"
       }
     ],
     "sections": [
@@ -3615,11 +3527,44 @@
             "zh_full": "近期研究表明，引力与量子信息之间存在深刻联系，时空的形状可以追溯到量子场中信息存储的方式。这一发现将广义相对论中的引力描述与量子信息理论联系起来，暗示时空几何可能源于量子层面的信息结构。该研究通过推导爱因斯坦方程，展示了引力与量子信息之间的内在关联，为理解引力的量子本质提供了新的视角。",
             "reason": "引力与量子信息关联",
             "density": "高",
-            "score": 86.4,
+            "score": 60.8,
             "role": "科研",
             "published_at": "2026-10-12T23:20:01+00:00",
-            "topic_id": "bb7570ffe109",
+            "topic_id": "a1d83dca7d86",
             "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
+          }
+        ]
+      },
+      {
+        "category": "高能与粒子物理",
+        "articles": [
+          {
+            "title": "Will we observe dark matter as a particle or a wave?",
+            "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+            "source": "New Scientist 物理",
+            "summary": "专栏作家 Chanda Prescod-Weinstein 提出，我们或许已经发现了暗物质，但要真正观测它，需要先确定它表现为粒子还是波，这将影响观测策略。",
+            "zh_full": "专栏作家 Chanda Prescod-Weinstein 认为，我们或许已经发现了暗物质。要观测暗物质，关键在于弄清楚我们预期它表现为粒子还是波。这一判断将决定后续观测与实验设计的方向。",
+            "reason": "暗物质观测思路",
+            "density": "中",
+            "score": 79.7,
+            "role": "媒体",
+            "published_at": "2026-10-13T08:00:00+00:00",
+            "topic_id": "8eae9d96a171",
+            "topic_title": "Will we observe dark matter as a particle or a wave?"
+          },
+          {
+            "title": "LS3 Safety Spotlight: coordinating activities at CERN: monitoring activities – a key step",
+            "url": "https://home.cern/ls3-safety-spotlight-coordinating-activities-at-cern-monitoring-activities-a-key-step/",
+            "source": "CERN 新闻",
+            "summary": "（无摘要，仅标题）",
+            "zh_full": "（无摘要，仅标题）",
+            "reason": null,
+            "density": "低",
+            "score": 46.3,
+            "role": "科研",
+            "published_at": "2026-10-13T10:34:33+00:00",
+            "topic_id": null,
+            "topic_title": null
           }
         ]
       },
@@ -3634,11 +3579,30 @@
             "zh_full": "新加坡国立大学（NUS）研究人员与瑞士、捷克和德国机构科学家合作，展示了一种在原本非磁性的二维（2D）半导体中引入磁性，并通过电压控制其磁性的方法。该成果发表于《Science Advances》，为研究原子级薄材料中电可控磁性提供了新平台，对未来自旋电子学技术具有潜在意义。",
             "reason": "二维半导体电调控磁性",
             "density": "高",
-            "score": 86.4,
+            "score": 79.4,
             "role": "科研",
             "published_at": "2026-10-12T21:40:11+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
+            "topic_id": "8eae9d96a171",
+            "topic_title": "Will we observe dark matter as a particle or a wave?"
+          }
+        ]
+      },
+      {
+        "category": "科研进展",
+        "articles": [
+          {
+            "title": "C++ creator talks about the future of programming",
+            "url": "https://home.cern/c-creator-talks-about-the-future-of-programming/",
+            "source": "CERN 新闻",
+            "summary": "（无摘要，仅标题）",
+            "zh_full": "（无摘要，仅标题）",
+            "reason": null,
+            "density": "低",
+            "score": 46.2,
+            "role": "科研",
+            "published_at": "2026-10-13T08:08:49+00:00",
+            "topic_id": null,
+            "topic_title": null
           }
         ]
       },
@@ -3653,19 +3617,22 @@
             "zh_full": "磁场虽不可见，却是从MRI扫描仪、粒子加速器到原子钟及未来量子计算机等众多技术中的关键组成部分。这些应用都需要具有特定形状和性质的磁场。目前，创建此类定制磁场需要研究人员和工程师为每个应用设计专门优化过的磁铁或大型线圈系统，这是一个复杂且资源密集的过程。",
             "reason": "磁场塑形技术突破",
             "density": "中",
-            "score": 86.4,
+            "score": 47.7,
             "role": "科研",
             "published_at": "2026-10-12T22:40:01+00:00",
-            "topic_id": "bb7570ffe109",
-            "topic_title": "Gravity and quantum information linked through a derivation of Einstein's equations"
+            "topic_id": "8eae9d96a171",
+            "topic_title": "Will we observe dark matter as a particle or a wave?"
           }
         ]
       }
     ],
     "topic_ids": [
+      "8eae9d96a171",
+      "a1d83dca7d86",
       "bb7570ffe109"
     ],
-    "tocCount": 3,
-    "readMinutes": 1
+    "tocCount": 6,
+    "readMinutes": 1,
+    "amended": 0
   }
 }

@@ -25,6 +25,7 @@
 - **AIHOT 风格 UI**：九个视图（精选时间线 / 全部动态 / 热点榜 / 光电日报 / 主题 / 趋势 / 数据 / Agent 接入 / 更多），浅色卡片风、侧边导航、评分与热度徽章，移动端自适应
 - **日报归档机制**：自动按天生成光电日报（今日看点 TOC + 分类文章 + 日历归档），历史归档按日期/月份回看
 - **多语言与交互**：中 / English 一键切换；图表 tooltip；热点榜按热度/信源排序；搜索 + 分类 + 排序
+- **本地数据可备份**：已读、收藏、主题、语言、频道只存在这台浏览器（清缓存即丢）；收藏页可**导出**为 JSON 备份、换设备后**导入**恢复（AIHOT 的本地数据 + 导出备份口径）。导出的文件带 `app:"PAT-HOT"` 标记，别的文件会被拒绝且不动现场
 - **Agent 接入**：免鉴权静态 JSON API（`api/v1/<频道>/*`，频道：physics/astro/tech；重构前的扁平 `api/v1/*` 仍保留兼容）+ OpenAPI 3.1 + 分类 RSS feed + `llms.txt` + 可安装 Skill（`agent/skills/opto-hot`）
 - **手机适配**：响应式布局（窄屏单列、顶部搜索、横向导航），移动端可正常浏览
 - **自动化**：内置 GitHub Actions，每天 6:00 / 18:00（北京时间）自动刷新数据并提交
@@ -38,7 +39,7 @@
 |---|---|---|
 | 精选 #/ | /（精选） | 按日分组的资讯时间线：来源、时间、分类徽章、推荐分、精选标记 |
 | 全部动态 #/all | /all | 全部条目，支持关键词搜索 + 分类筛选 + 按推荐分/时间排序，无限滚动分页 |
-| 热点榜 #/hot | /hot | 排名 + 状态（爆/发酵中/关注中）+ 信源数/信号数/热度值 + 信源展开 |
+| 热点榜 #/hot | /hot | 排名 + 状态（爆/发酵中/关注中）+ **运动徽标（新/升温/多家跟进/回落，AIHOT 与 6h 前比的静态版：与上一轮发布比）** + 信源数/信号数/热度值 + 信源展开 |
 | 光电日报 #/daily | /daily | 报头 + 今日看点 TOC + 分类文章 + 日历归档 |
 | 主题 #/topics | /topics | 分类卡片（24h/7d/总数），点击进入筛选 |
 | 趋势 #/trends | /trends | 分类热度涨跌条、新上榜事件、持续发酵事件 |
@@ -48,7 +49,7 @@
 
 **数据机制**（静态 JSON API，兼容 AIHOT 字段风格）：
 - data/items.json：{id, title, url, links.original, source, category, publishedAt, discoveredAt, score, selected, summary, role, keywords}
-- data/hot-topics.json：{rank, title, status, heat, sourceCount, signalCount, latestAt, sources, links, terms}
+- data/hot-topics.json：{rank, title, status, trend, trendPct, badges, heat, sourceCount, signalCount, latestAt, sources, links, terms}
 - data/dailies.json：按日期归档的日报（历史合并保留）；data/daily.json：统计聚合
 - **Agent 接口**：`api/v1/{items,hot-topics,dailies,daily,stories,index,openapi}.json`（静态 JSON / OpenAPI 3.1，免鉴权）+ 分类 RSS（`feed.xml` / `feed/category/{slug}.xml`）+ 站点根 `llms.txt`
 - 时间窗口语义：优先原文发布时间，缺失回退收录时间；24h / 7d / 日报按北京时间
@@ -235,6 +236,9 @@ LLM 增强（`llm`）与生图（`images`）的全部参数。
 - **输入安全边界**：材料的标题/摘要里出现的任何指令、目标分数、格式要求都是不可信数据，prompt 明确拒绝执行（防 prompt-injection）
 - **评分输入遮蔽信源名**：给发布时间（北京时间）+ 正文材料，但不给信源名/分级——来源名气会锚定分数，而 `cre` 轴评的是材料内部的证据强度，不是来源名气
 - **防幻觉（摘要/抽取）**：`extract` 与 `enhance` 带 AIHOT 九条硬约束——摘要里每个专名/数字必须材料可寻、相对时间不换算成年份、不强化原文语气、"首次/唯一"等排他表述只有原文明确才保留；没有正文的条目"宁短勿扩"，不靠标题合理展开编造内容
+- **预筛（`prefilter`）**：写作之前先判"这是不是本行业的事"——`BLOCK` 的条目**不进任何公开页**（且不再为它花摘要/打分的钱），`PASS`/`UNKNOWN` 照常往下走（AIHOT：UNKNOWN 保留待补材料，不直接丢弃）。宽进严出：BLOCK 需要能确认无关的**正面依据**，"没提到本行业"不算；模型失败一律**全部放行**——预筛是增益不是闸门，宁可多发一条也不因抖动清空频道。只对 ≥50 分的高分候选跑（低分条目本来就进不了公开页）
+- **词表订正（`mend`）**：写好的中文文案里用了本站不用的词（夸张词、翻案句），让模型**只改列出的那几处**，意思不变、不增删事实数字；只查模型自己生成的字段（`zh_full`/`llm_summary`/`llm_reason`）——**信源原标题绝不改**（那是替原站改稿）。词表刻意收窄（见 `READER_WORDING`）：`首次/最大/唯一` 这类正文支持的正当用法不进表，否则会误改正常词
+- **事件综述（`digest`）**：为热点榜多源事件写"第一次了解这件事的读者"能看懂的概览（AIHOT `story-digest` 口径）——第一句直接说清核心变化与结论、不按日期逐条复述、只写报道里有的事实、新旧矛盾要写明不能悄悄抹平。实测：光电热点事件平均 11.6 篇报道，此前页面只有一句代表稿摘要。单源事件不写（没有综述可言）
 
 ## 精选门槛校准（改了标准，先校准再上线）
 

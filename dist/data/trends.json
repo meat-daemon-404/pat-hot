@@ -1,104 +1,104 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T02:56:25.746599+00:00",
+  "generatedAt": "2026-10-13T13:33:23.619730+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
-      "category": "科研进展",
-      "thisWeek": 1369.9,
-      "lastWeek": 693.0,
-      "deltaPct": 97.7
-    },
-    {
       "category": "光通信",
-      "thisWeek": 1356.7,
+      "thisWeek": 1339.7,
       "lastWeek": 618.8,
-      "deltaPct": 119.2
+      "deltaPct": 116.5
     },
     {
       "category": "其他",
-      "thisWeek": 1079.2,
+      "thisWeek": 1115.5,
       "lastWeek": 1537.0,
-      "deltaPct": -29.8
-    },
-    {
-      "category": "产业与资本",
-      "thisWeek": 990.9,
-      "lastWeek": 960.6,
-      "deltaPct": 3.2
+      "deltaPct": -27.4
     },
     {
       "category": "通信与算力",
-      "thisWeek": 979.9,
+      "thisWeek": 1092.4,
       "lastWeek": 695.0,
-      "deltaPct": 41.0
+      "deltaPct": 57.2
     },
     {
       "category": "激光",
-      "thisWeek": 925.7,
+      "thisWeek": 1072.9,
       "lastWeek": 764.2,
-      "deltaPct": 21.1
+      "deltaPct": 40.4
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 671.0,
+      "thisWeek": 869.0,
       "lastWeek": 687.1,
-      "deltaPct": -2.3
+      "deltaPct": 26.5
+    },
+    {
+      "category": "产业与资本",
+      "thisWeek": 863.4,
+      "lastWeek": 960.6,
+      "deltaPct": -10.1
+    },
+    {
+      "category": "科研进展",
+      "thisWeek": 861.2,
+      "lastWeek": 693.0,
+      "deltaPct": 24.3
     },
     {
       "category": "显示与面板",
-      "thisWeek": 466.2,
+      "thisWeek": 594.9,
       "lastWeek": 689.8,
-      "deltaPct": -32.4
+      "deltaPct": -13.8
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 450.2,
+      "thisWeek": 421.3,
       "lastWeek": 606.5,
-      "deltaPct": -25.8
+      "deltaPct": -30.5
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 238.4,
+      "thisWeek": 157.0,
       "lastWeek": 196.9,
-      "deltaPct": 21.1
+      "deltaPct": -20.3
     },
     {
       "category": "光伏与新能源",
-      "thisWeek": 94.7,
+      "thisWeek": 94.5,
       "lastWeek": 68.0,
-      "deltaPct": 39.3
+      "deltaPct": 39.0
     }
   ],
   "newTopics": [
     {
-      "topic_id": "0e8d6608b73f",
+      "topic_id": "d9d1f75bf9c3",
       "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
-      "score": 2015.7,
+      "score": 1234.7,
       "days": 2
     },
     {
-      "topic_id": "f1bb13f709a5",
+      "topic_id": "f510f3bd8d72",
       "title": "工信部对我国网络强国建设提出四点建议",
-      "score": 964.0,
+      "score": 703.2,
       "days": 1
     },
     {
-      "topic_id": "07bc28b0deb8",
-      "title": "长光华芯上半年营收3.91亿元 同比增长82.67%",
-      "score": 794.2,
+      "topic_id": "8c01b90c3aae",
+      "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
+      "score": 678.3,
       "days": 1
     },
     {
       "topic_id": "9e5d6509787a",
       "title": "大众首款纯电来了,但激光雷达可能不是全系",
-      "score": 345.1,
+      "score": 276.1,
       "days": 2
     },
     {
-      "topic_id": "a7d37b8a7f58",
-      "title": "2026年中国国际信息通信展览会在京开幕",
-      "score": 185.1,
+      "topic_id": "f1bb13f709a5",
+      "title": "工信部对我国网络强国建设提出四点建议",
+      "score": 204.0,
       "days": 1
     },
     {
@@ -108,27 +108,27 @@
       "days": 1
     },
     {
+      "topic_id": "0e8d6608b73f",
+      "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
+      "score": 162.8,
+      "days": 1
+    },
+    {
       "topic_id": "affa4875e848",
       "title": "Photonics Hot List: October 2, 2026",
       "score": 161.4,
       "days": 1
     },
     {
-      "topic_id": "4ad553c75912",
-      "title": "中国代表团完成国际电信联盟无线电通信部门第六研究组会议参会任务",
-      "score": 104.6,
+      "topic_id": "a7d37b8a7f58",
+      "title": "2026年中国国际信息通信展览会在京开幕",
+      "score": 123.4,
       "days": 1
     },
     {
-      "topic_id": "1421c9e20fde",
-      "title": "UV Fluorescence Sensing of Medical-Chemical-and- Biological Analytes by an AlGaN/Si-on-Sapphire Optoelectronic Chip",
-      "score": 64.2,
-      "days": 1
-    },
-    {
-      "topic_id": "421efee4c714",
-      "title": "三部门关于印发《轻工纺织产业发展“十五五”规划》的通知",
-      "score": 56.8,
+      "topic_id": "394c7b74bbd6",
+      "title": "2026年中国国际信息通信展览会在京开幕",
+      "score": 117.4,
       "days": 1
     }
   ],
