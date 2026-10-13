@@ -128,10 +128,18 @@ DEFAULT_CONFIG = {
     #     学术编号，属结构性无关联。因此抓取面按 sources.json 的 refs_fetch 声明，
     #     不给产业源白烧配额。
     "refs": {
-        "max_fetch": 24,          # 每频道详情页深拓上限
-        "per_source": 10,         # 单源上限，防对同一站点集中请求
+        # 上限取值依据（2026-10-13 实采）：期刊型源每频道 1~2 个、各 20~25 条，
+        # per_source 10 时 astro 的 25 条 Nature 只拓到前 10 条（实测锚点数被这个
+        # 上限卡住，而不是被 max_fetch 卡住）。提到 20/30 后单频道典型 30×(1.5s 抓
+        # + 0.8s 节流) ≈ 70s，三频道 ≈ 3.5 分钟，仍在下方预算与 CI 40 分钟步骤内。
+        "max_fetch": 50,          # 每频道详情页深拓上限
+        "per_source": 25,         # 单源上限＝该源 feed limit 上限，整源不被腰斩
         "interval_sec": 0.8,      # 与政策/招投标详情解析同节奏
         "page_max_bytes": 1500000,  # 编号只在前部元数据里，无需读满 12MB
+        # 时间预算（每频道）：单页最坏 text_timeout×重试 ≈ 35s，30 条上限即 ~17 分钟，
+        # 三频道叠起来会顶穿 CI 那 40 分钟步骤（与 --llm 共用）。超时即在预算内收尾，
+        # 已抽到的编号照常发布——锚点是增益，不是主流程依赖。
+        "budget_seconds": 300,
     },
     "daily": {
         "headline_count": 1, "picks_count": 4, "flash_count": 10,
@@ -1455,7 +1463,8 @@ def source_wants_refs(source_name, cfg_flag=None):
     return any(h in s for h in REFS_SOURCE_HINTS)
 
 
-def collect_refs(items, cfg, ch_id, refetch_sources=None, fetcher=None, sleeper=None):
+def collect_refs(items, cfg, ch_id, refetch_sources=None, fetcher=None, sleeper=None,
+                 clock=None):
     """给条目补 refs（就地改 items），返回 {fetched, hit}。
 
     抓取形态照政策/招投标详情解析那条既有正典：全频道有界 + 单源有界 + 标题级通路
@@ -1466,6 +1475,9 @@ def collect_refs(items, cfg, ch_id, refetch_sources=None, fetcher=None, sleeper=
     cap = rc.get("max_fetch", 24)
     per_src = rc.get("per_source", 10)
     interval = rc.get("interval_sec", 0.8)
+    # 预算从本频道进循环时起算，覆盖"抓取 + 节流"的全部墙钟时间
+    now = clock or time.monotonic
+    deadline = now() + float(rc.get("budget_seconds", 300) or 0)
     refetch_sources = refetch_sources or {}
     do_fetch = fetcher or fetch_head
     nap = sleeper or time.sleep
@@ -1474,6 +1486,7 @@ def collect_refs(items, cfg, ch_id, refetch_sources=None, fetcher=None, sleeper=
     per = {}
     fetched = 0
     failed = 0
+    stopped = ""
     # 第一遍：条目自带字段里就有的编号，不花任何请求
     feed_hits = 0
     for it in items:
@@ -1489,6 +1502,9 @@ def collect_refs(items, cfg, ch_id, refetch_sources=None, fetcher=None, sleeper=
             continue
         if got >= cap or per.get(it["source"], 0) >= per_src:
             continue
+        if now() >= deadline:
+            stopped = "预算耗尽"
+            break
         url = it.get("url") or ""
         if not url.startswith("http"):
             continue
@@ -1508,9 +1524,25 @@ def collect_refs(items, cfg, ch_id, refetch_sources=None, fetcher=None, sleeper=
             it["refs"] = r
         nap(interval)
     n_hit = sum(1 for it in items if it.get("refs"))
-    log("[*] [%s] 文献编号抽取：零请求命中 %d 条，深拓 %d 条（失败 %d），总命中 %d 条（每频道拓取上限 %d、单源 %d）"
-        % (ch_id, feed_hits, fetched, failed, n_hit, cap, per_src))
-    return {"fetched": fetched, "failed": failed, "feed_hits": feed_hits, "hit": n_hit}
+    # 期刊源是本期唯一锚点来源，它们全灭时锚点会静默归零——所有闸门照样绿（源失败
+    # 比例看的是整频道，Nature 两三个源失败淹在 26 个源里到不了 60% 阈值）。2026-10-13
+    # 实测：Nature subjects 系列间歇返回反爬 Challenge 页，一轮全频道重采把 physics
+    # 锚点从 50 打成 0，--check 毫无反应。所以这里必须出声，哪怕只是警告。
+    declared = [s for s, v in (refetch_sources or {}).items() if v]
+    if declared and n_hit == 0:
+        present = {it.get("source") for it in items}
+        gone = [s for s in declared if s not in present]
+        if len(gone) == len(declared):
+            log("[!] [%s] 本期期刊源（refs_fetch）全部缺席：%s——papers-index 将为空，"
+                "锚点消费方会看到上一期数据" % (ch_id, "、".join(gone)))
+        elif fetched == 0 and per:
+            log("[!] [%s] 期刊源有条目却一条都没拓开（拓取 0），检查 fetch.refs 预算与源站健康"
+                % ch_id)
+    log("[*] [%s] 文献编号抽取：零请求命中 %d 条，深拓 %d 条（失败 %d），总命中 %d 条（每频道拓取上限 %d、单源 %d）%s"
+        % (ch_id, feed_hits, fetched, failed, n_hit, cap, per_src,
+           ("；提前收尾：" + stopped) if stopped else ""))
+    return {"fetched": fetched, "failed": failed, "feed_hits": feed_hits,
+            "hit": n_hit, "stopped": stopped}
 
 
 def build_papers_index(items, generated, channel):

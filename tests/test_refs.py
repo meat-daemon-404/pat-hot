@@ -310,6 +310,36 @@ class TestCollectRefs(unittest.TestCase):
                                    sleeper=lambda s: None)
         self.assertEqual(res["fetched"], 0)
 
+    def test_time_budget_stops_and_says_so(self):
+        """预算耗尽必须**可见**：静默收尾等于线上少了一批锚点却没人知道为什么。
+
+        判例：本仓 LLM 阶段那次 5 小时挂死堵死全部定时刷新，正解就是预算熔断 + 播报。
+        clock 注入让这条可确定性测试（不靠真等 300 秒）。
+        """
+        ticks = iter([0.0, 0.0, 10.0, 20.0, 30.0, 40.0, 50.0])
+        seen = []
+        items = [{"id": "n%d" % i, "title": "T%d" % i, "source": "Nature Photonics",
+                  "url": "https://nature.com/a%d" % i, "summary": "", "score": 90.0 - i}
+                 for i in range(20)]
+        res = collect.collect_refs(items, {"refs": {"max_fetch": 50, "per_source": 50,
+                                                    "interval_sec": 0, "budget_seconds": 5}},
+                                   "tech", {},
+                                   fetcher=lambda u: seen.append(u) or NO_META_PAGE,
+                                   sleeper=lambda s: None, clock=lambda: next(ticks))
+        self.assertLess(len(seen), 20, "预算内就该停，不该把 20 条全拓完")
+        self.assertEqual(res["stopped"], "预算耗尽", "提前收尾必须写进返回值与日志")
+        self.assertEqual(res["fetched"], len(seen))
+
+    def test_no_budget_stop_means_empty_string(self):
+        seen = []
+        items = [{"id": "n1", "title": "T", "source": "Nature Photonics",
+                  "url": "https://nature.com/a1", "summary": "", "score": 9.0}]
+        res = collect.collect_refs(items, {"refs": {"max_fetch": 5, "per_source": 5,
+                                                    "interval_sec": 0, "budget_seconds": 300}},
+                                   "tech", {}, fetcher=lambda u: seen.append(u) or NO_META_PAGE,
+                                   sleeper=lambda s: None)
+        self.assertEqual(res["stopped"], "")
+
 
 class TestPapersIndex(unittest.TestCase):
     def test_only_anchored_items(self):
