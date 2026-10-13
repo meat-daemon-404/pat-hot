@@ -14,6 +14,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+import xml.etree.ElementTree
 from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -710,8 +711,16 @@ class TestStaleFeedPrune(unittest.TestCase):
         self.assertEqual(collect.prune_stale_feeds(
             os.path.join(tempfile.gettempdir(), "pathom-no-such-dir"), set()), [])
 
-    def test_write_outputs_prunes_stale_category_feed(self):
-        """端到端：某分类本轮无数据时，它的 feed 文件必须从产物里消失。"""
+    def test_write_outputs_empties_feed_without_data(self):
+        """端到端：某分类本轮无数据时，feed 必须变成合法空 feed，而不是残留旧条目。
+
+        2026-10-13 线上实测的两条约束共同决定这个形状：
+        1) 陈旧条目不能留（astro 一度没有引力波条目，gw.xml 却还挂着 5 条 LIGO，
+           订阅者拿到的条目在 /api/v1/astro/items.json 里根本不存在）；
+        2) 文件也不能删——Agent 接入页按 channels.json 声明把每个分类都列成订阅
+           地址，而 pat-hot.pages.dev 对缺失路径返回 200 + 1.6 MB 单页 HTML 而非
+           404，阅读器会以为订阅成功。所以留一个合法空 feed。
+        """
         tmp = tempfile.mkdtemp(prefix="pathom-wo-")
         real_dist, real_data, real_ch = collect.DIST_DIR, collect.DATA_DIR, collect._CH
         try:
@@ -721,8 +730,10 @@ class TestStaleFeedPrune(unittest.TestCase):
                 os.makedirs(os.path.join(collect.DATA_DIR, ch), exist_ok=True)
             feed_dir = os.path.join(collect.DIST_DIR, "feed", "astro", "category")
             os.makedirs(feed_dir, exist_ok=True)
-            with open(os.path.join(feed_dir, "gw.xml"), "w", encoding="utf-8") as f:
-                f.write("<rss/>")          # 上一轮残留
+            gw = os.path.join(feed_dir, "gw.xml")
+            with open(gw, "w", encoding="utf-8") as f:
+                f.write("<rss><channel><item><title>STALE LIGO</title></item>"
+                        "</channel></rss>")      # 上一轮残留
             gen = collect.now_utc()
             set_channel = getattr(collect, "set_channel_context", None)
             if set_channel:
@@ -734,14 +745,51 @@ class TestStaleFeedPrune(unittest.TestCase):
                       "topic_title": "T", "links": {}, "selected": True, "role": "媒体"}]
             results = {ch: (items, [], {}, {}, {}) for ch in collect.CHANNEL_ORDER}
             collect.write_outputs(results, gen)
-            self.assertFalse(os.path.exists(os.path.join(feed_dir, "gw.xml")),
-                             "本轮无引力波条目，gw.xml 必须被清掉")
+
+            self.assertTrue(os.path.exists(gw),
+                            "gw.xml 被删掉了：pages.dev 会拿单页 HTML 顶替它，"
+                            "阅读器收到 200 + HTML 还以为订阅成功")
+            body = open(gw, encoding="utf-8").read()
+            self.assertNotIn("STALE LIGO", body, "无数据的分类仍残留上一轮条目")
+            self.assertEqual(body.count("<item>"), 0, "应是合法空 feed")
+            self.assertTrue(body.lstrip().startswith("<?xml"), "空 feed 也必须是 XML")
+            xml.etree.ElementTree.fromstring(body)   # 可被阅读器解析
         finally:
             collect.DIST_DIR, collect.DATA_DIR, collect._CH = real_dist, real_data, real_ch
             shutil.rmtree(tmp, ignore_errors=True)
 
-
-class TestLlmBackoff(unittest.TestCase):
+    def test_write_outputs_prunes_undeclared_slug(self):
+        """真正该删的是"已从 channels.json 移除"的 slug——那是无人引用的垃圾。"""
+        tmp = tempfile.mkdtemp(prefix="pathom-wo2-")
+        real_dist, real_data, real_ch = collect.DIST_DIR, collect.DATA_DIR, collect._CH
+        try:
+            collect.DIST_DIR = os.path.join(tmp, "dist")
+            collect.DATA_DIR = os.path.join(tmp, "data")
+            for ch in collect.CHANNEL_ORDER:
+                os.makedirs(os.path.join(collect.DATA_DIR, ch), exist_ok=True)
+            feed_dir = os.path.join(collect.DIST_DIR, "feed", "astro", "category")
+            os.makedirs(feed_dir, exist_ok=True)
+            ghost = os.path.join(feed_dir, "zz-retired-category.xml")
+            with open(ghost, "w", encoding="utf-8") as f:
+                f.write("<rss/>")                  # 声明里已经没有这个分类
+            gen = collect.now_utc()
+            set_channel = getattr(collect, "set_channel_context", None)
+            if set_channel:
+                set_channel("astro")
+            items = [{"id": "a1", "title": "T", "url": "https://x/1", "source": "S",
+                      "category": "科研进展", "summary": None, "score": 60.0,
+                      "discovered_at": gen.isoformat(), "published_at": None,
+                      "keywords": [], "biz": None, "topic_id": "t1",
+                      "topic_title": "T", "links": {}, "selected": True, "role": "媒体"}]
+            results = {ch: (items, [], {}, {}, {}) for ch in collect.CHANNEL_ORDER}
+            collect.write_outputs(results, gen)
+            self.assertFalse(os.path.exists(ghost),
+                             "channels.json 已不再声明的 slug 应被回收")
+            self.assertTrue(os.path.exists(
+                os.path.join(feed_dir, "research.xml")), "在声明内的分类不能被误删")
+        finally:
+            collect.DIST_DIR, collect.DATA_DIR, collect._CH = real_dist, real_data, real_ch
+            shutil.rmtree(tmp, ignore_errors=True)
     def test_real_status_code_not_string_match(self):
         """旧实现用 "401" in str(e) 判断认证失败，任何文本里含 401 都会误判。
         现在必须看 HTTPError.code：这里错误文本含 "401" 但状态码是 500，应当重试。"""
