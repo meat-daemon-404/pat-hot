@@ -381,14 +381,41 @@ const state = { q:"", cat:"全部", sort:"score", dailyDate:"", hotSort:"heat", 
 function lsGet(k){ try{ return JSON.parse(localStorage.getItem(k)||"{}"); }catch(e){ return {}; } }
 function lsSet(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
 let READ = lsGet("pat-read"), FAV = lsGet("pat-fav");
-function markRead(u){ if(!u||READ[u]) return; READ[u]=1; const ks=Object.keys(READ); if(ks.length>800) ks.slice(0,300).forEach(k=>delete READ[k]); lsSet("pat-read",READ); applyReadToDom(u); if(state.unreadOnly) invalidate("feed"); }
+function markRead(u){ if(!u||READ[u]) return; READ[u]=1; const ks=Object.keys(READ); if(ks.length>800) ks.slice(0,300).forEach(k=>delete READ[k]); lsSet("pat-read",READ); applyReadToDom(u); if(state.unreadOnly) removeCardNodeOrInvalidate("feed", u, "read"); }
+// 删掉"某一条"（读掉/取消收藏）时，可见视图只删那一个节点，别整页重画：
+// innerHTML 重建会销毁滚动锚点，实测只看未读时读掉视口上方的卡，scrollY 不变
+// 但视口中心的内容跳了约一张卡（anchorKept:false）——点开文章回来列表已经跳位，
+// 正是录屏最后"往回滑找位置"的机制。节点级删除浏览器 scroll anchoring 认得，
+// 会自动补偿上方高度；隐藏视图没有滚动位置可言，照常 invalidate 即可。
+// 选择器一律不用（URL 塞进属性选择器还得转义），直接比 dataset。
+function removeCardNodeOrInvalidate(v, u, attr){
+  if(v!==LAST_VIEW){ invalidate(v); return; }
+  const root=$("#view-"+v); if(!root){ invalidate(v); return; }
+  $$("["+ (attr==="read"?"data-read":"data-fav") +"]", root).forEach(el=>{
+    if(el.dataset[attr==="read"?"read":"fav"]!==u) return;
+    const c=el.closest(".icard"); if(!c) return;
+    const day=c.closest(".day");
+    c.remove();
+    if(!day) return;
+    if(!day.querySelectorAll(".icard").length){ day.remove(); return; } // 整天读完别留空标题
+    const ce=day.querySelector(".day-h .c");
+    const n=ce?parseInt(ce.textContent,10):NaN;   // "20 条精选"跟着减一，不然计数说谎
+    if(ce && !isNaN(n)) ce.textContent=(n-1)+" "+T.daySel;
+  });
+  // 删空了要补空态：节点级删除绕过了 renderer，不补就是一屏空白，看着像坏了
+  if(!root.querySelector(".icard")){
+    root.insertAdjacentHTML("beforeend", v==="fav"
+      ? '<div class="card empty">'+T.noFav+'</div>'
+      : '<div class="empty">'+T.noMatch+'</div>');
+  }
+}
 // 已读/收藏是"某一张卡片"的状态，而卡片可能同时存在于多个常驻视图里。
 // 视图现在带缓存，重进不会重画，所以这类状态必须就地写回 DOM，
 // 而不是靠重绘传播——否则切回来会看到别的视图还是旧样子。
 function applyReadToDom(u){
   $$('[data-read]').forEach(a=>{ if(a.dataset.read===u){ const c=a.closest(".icard"); if(c) c.classList.add("read"); } });
 }
-function toggleFav(u){ if(FAV[u]) delete FAV[u]; else FAV[u]=1; lsSet("pat-fav",FAV); applyFavToDom(u); invalidate("fav"); invalidate("more"); }
+function toggleFav(u){ if(FAV[u]) delete FAV[u]; else FAV[u]=1; lsSet("pat-fav",FAV); applyFavToDom(u); removeCardNodeOrInvalidate("fav", u, "fav"); invalidate("more"); }
 function applyFavToDom(u){
   $$('[data-fav]').forEach(b=>{ if(b.dataset.fav===u) b.classList.toggle("on", !!FAV[u]); });
 }

@@ -243,7 +243,24 @@ class TestViewCache(unittest.TestCase):
         i = JS.index("function toggleFav(")
         j = JS.index("}", i)
         self.assertIn("applyFavToDom", JS[i:j], "toggleFav 不再同步 DOM")
-        self.assertIn('invalidate("fav")', JS[i:j], "收藏页会留着上一个星标集合")
+        self.assertIn('removeCardNodeOrInvalidate("fav"', JS[i:j],
+                      "收藏页删一条既不作废也不删节点，会留着上一个星标集合")
+
+    def test_single_removal_does_not_rerender_visible_view(self):
+        """读掉/取消收藏只删那一个节点。整页重画会销毁滚动锚点：实测只看未读时
+        读掉视口上方的卡，scrollY 不变但视口中心内容跳了约一张卡（点开文章回来
+        列表已跳位，正是录屏最后"往回滑找位置"的机制）。"""
+        i = JS.index("function markRead(")
+        j = JS.index("}", i)
+        self.assertIn('removeCardNodeOrInvalidate("feed"', JS[i:j],
+                      "markRead 又走 invalidate 整页重画，删一条会跳位置")
+        body = JS[JS.index("function removeCardNodeOrInvalidate("):]
+        body = body[:body.index("\nfunction ", 10)]
+        self.assertIn("c.remove()", body, "不再是节点级删除")
+        self.assertIn("invalidate(v)", body, "隐藏视图仍要 invalidate")
+        self.assertIn("T.noFav", body,
+                      "收藏页删空不补空态：绕过 renderer 后是一屏空白，看着像坏了")
+        self.assertIn("T.noMatch", body, "精选删空同样要补空态")
 
     def test_fav_click_does_not_toggle_class_locally(self):
         """toggleFav 已经用绝对状态写过 class，click 里再 toggle 一次会翻回去。"""
