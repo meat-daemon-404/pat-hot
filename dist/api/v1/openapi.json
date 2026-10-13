@@ -31,6 +31,16 @@
         }
       }
     },
+    "/feed/category/{slug}.xml": {
+      "get": {
+        "summary": "兼容分类 RSS（重构前地址，内容 = 光电 频道）",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/physics/items.json": {
       "get": {
         "summary": "物理：全部条目",
@@ -204,6 +214,66 @@
     "/api/v1/tech/trends.json": {
       "get": {
         "summary": "光电：趋势",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/items.json": {
+      "get": {
+        "summary": "兼容地址（光电 频道）：全部条目",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/hot-topics.json": {
+      "get": {
+        "summary": "兼容地址（光电 频道）：热点榜",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/dailies.json": {
+      "get": {
+        "summary": "兼容地址（光电 频道）：日报归档（裸日期字典）",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/daily.json": {
+      "get": {
+        "summary": "兼容地址（光电 频道）：统计聚合",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/stories.json": {
+      "get": {
+        "summary": "兼容地址（光电 频道）：事件故事",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/trends.json": {
+      "get": {
+        "summary": "兼容地址（光电 频道）：趋势",
         "responses": {
           "200": {
             "description": "OK"
