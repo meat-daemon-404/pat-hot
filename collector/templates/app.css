@@ -118,6 +118,33 @@ a{color:inherit;text-decoration:none}
 .ient{margin-top:6px}
 .itag{display:inline-block;font-size:11px;background:var(--acsoft);color:var(--acd);border-radius:6px;padding:1px 8px;margin:2px 4px 2px 0;font-weight:600}
 .isum{margin-top:6px;font-size:13px;color:var(--ink3)}
+/* ScholarMatrix 出站深链：只在条目有 verified 锚点时出现（smDesc 门控）。
+   它是操作区的次级动作，视觉上让位于「展开阅读」，但用图标+外链语义区分。 */
+.ism{margin-top:10px}
+.smbtn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line2);background:var(--card);color:var(--acd);border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:650;cursor:pointer}
+.smbtn:hover{background:var(--acsoft);border-color:var(--ac)}
+/* 兴趣重排胶囊：有活跃快照才渲染（rankPillHtml），点开去 #/account 看生效词 */
+.rankpill{display:flex;align-items:center;gap:10px;padding:9px 16px;margin-bottom:12px;font-size:12.5px;color:var(--acd);background:var(--acsoft);border-color:var(--line2)}
+.rankpill .rp-t{font-weight:700}
+.rankpill .rp-a{margin-left:auto;color:var(--acd);font-weight:650;text-decoration:underline;white-space:nowrap}
+.rankpill .rp-b{border:1px solid var(--line2);background:var(--card);color:var(--ink3);border-radius:999px;padding:4px 11px;font-size:12px;cursor:pointer;white-space:nowrap}
+.rankpill .rp-b:hover{color:var(--hot);border-color:var(--hot)}
+/* 账号面板 */
+.abind{padding:11px 16px;margin-bottom:12px;font-size:13px;color:var(--acd);background:var(--acsoft)}
+.amsg{padding:11px 16px;margin-bottom:12px;font-size:13px;border-radius:var(--r)}
+.amsg.a-wait{color:var(--ink3);background:var(--sunk)}
+.amsg.a-ok{color:var(--ok);background:rgba(47,125,92,.1)}
+.amsg.a-fail{color:var(--hot);background:var(--hotsoft)}
+.ainfo{padding:16px 18px;margin-bottom:14px}
+.ainfo .ai-row{font-size:13.5px;padding:4px 0;color:var(--ink2)}
+.ainfo .ai-row .mono{color:var(--ink3);margin-left:6px}
+.abody{padding:16px 18px;margin-bottom:14px}
+.aform .arow{display:flex;gap:8px;flex-wrap:wrap}
+.aform input{flex:1;min-width:130px;border:1px solid var(--line2);background:var(--card);border-radius:10px;padding:9px 12px;font-size:14px;outline:0;color:var(--ink)}
+.aform input:focus{border-color:var(--ac)}
+.aform .a-go{margin-top:8px;width:100%}
+.asplit{height:1px;background:var(--line);margin:14px 0}
+.aterms .xsec{margin-top:6px}
 .fold{margin-top:10px;background:var(--sunk);border-radius:10px}
 .fold summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:9px 14px;font-size:12.5px;color:var(--ink3);cursor:pointer}
 .fold summary::-webkit-details-marker{display:none}
