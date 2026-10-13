@@ -98,7 +98,12 @@ a{color:inherit;text-decoration:none}
    contain-intrinsic-size 的 220px 与真实卡片高度（131~351，中位 250）不符：
    快速滑动时浏览器把滑过的卡片换成估高，文档高度在手指下持续塌陷
    （实测一次 fling 缩 4466px），就是"滑过头 + 整屏空白 + 找不到位置"。
-   全部页已改成追加式渲染，重建开销没了，估高也就没有理由再留着。 */
+   全部页已改成追加式渲染，重建开销没了，估高也就没有理由再留着。
+
+   别把它加回来，连"诚实占位"也不行：6x CPU 节流（约中端手机）下对比过
+   content-visibility:auto + 250px 占位（估高已经对上了），滚动 180 张卡片
+   仍有 46 帧超 32ms、p95 40.1ms；去掉后同样滚动只有 3 帧超 32ms、p95 19.2ms。
+   塌陷是估高不准才有的症状，但"每帧要重新展开视口外内容"是属性本身的代价。 */
 .icard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;margin-bottom:12px}
 .icard.read{opacity:.6}
 .irow{display:flex;align-items:center;gap:8px}
@@ -141,7 +146,10 @@ a{color:inherit;text-decoration:none}
 .hmeta{font-size:12px;color:var(--ink4);margin-top:5px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .hbar{height:6px;background:var(--sunk);border-radius:4px;margin-top:8px;overflow:hidden}
 .hbar i{display:block;height:100%;background:var(--ac);border-radius:4px}
-.himg{width:100%;max-height:230px;object-fit:cover;border-radius:10px;margin-top:10px}
+/* aspect-ratio 给 --images 生成的配图预留高度（config 里就是 16:9 / 2752x1536）。
+   没有它，<img loading="lazy"> 落地前盒子是 0 高，图片一解码就把下面整段内容
+   往下推，用户滚到那儿会看到列表突然跳一下——正是刚修掉的那类高度突变。 */
+.himg{display:block;width:100%;aspect-ratio:16/9;max-height:230px;object-fit:cover;border-radius:10px;margin-top:10px;background:var(--sunk)}
 .flag{font-size:11px;border-radius:6px;padding:1px 7px;font-weight:700}
 .f-hot{color:var(--bg);background:var(--hot)}
 .f-warm{color:var(--amber);background:rgba(184,135,58,.12)}

@@ -80,8 +80,17 @@ const state = { q:"", cat:"全部", sort:"score", dailyDate:"", hotSort:"heat", 
 function lsGet(k){ try{ return JSON.parse(localStorage.getItem(k)||"{}"); }catch(e){ return {}; } }
 function lsSet(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
 let READ = lsGet("pat-read"), FAV = lsGet("pat-fav");
-function markRead(u){ if(!u||READ[u]) return; READ[u]=1; const ks=Object.keys(READ); if(ks.length>800) ks.slice(0,300).forEach(k=>delete READ[k]); lsSet("pat-read",READ); }
-function toggleFav(u){ if(FAV[u]) delete FAV[u]; else FAV[u]=1; lsSet("pat-fav",FAV); }
+function markRead(u){ if(!u||READ[u]) return; READ[u]=1; const ks=Object.keys(READ); if(ks.length>800) ks.slice(0,300).forEach(k=>delete READ[k]); lsSet("pat-read",READ); applyReadToDom(u); if(state.unreadOnly) invalidate("feed"); }
+// 已读/收藏是"某一张卡片"的状态，而卡片可能同时存在于多个常驻视图里。
+// 视图现在带缓存，重进不会重画，所以这类状态必须就地写回 DOM，
+// 而不是靠重绘传播——否则切回来会看到别的视图还是旧样子。
+function applyReadToDom(u){
+  $$('[data-read]').forEach(a=>{ if(a.dataset.read===u){ const c=a.closest(".icard"); if(c) c.classList.add("read"); } });
+}
+function toggleFav(u){ if(FAV[u]) delete FAV[u]; else FAV[u]=1; lsSet("pat-fav",FAV); applyFavToDom(u); invalidate("fav"); invalidate("more"); }
+function applyFavToDom(u){
+  $$('[data-fav]').forEach(b=>{ if(b.dataset.fav===u) b.classList.toggle("on", !!FAV[u]); });
+}
 function avaColor(s){ let h=0; for(const c of String(s)) h=(h*31+c.charCodeAt(0))>>>0; return "hsl("+(h%360)+",40%,46%)"; }
 function tr(){ $$("[data-i18n]").forEach(el=>{ const k=el.dataset.i18n; if(T[k]) el.textContent = T[k]; }); $("#lang").textContent = LANG==="zh"?"EN":"中"; $("#q").placeholder = searchPh(); }
 function fmtRel(iso){ if(!iso) return ""; const t=new Date(iso); const d=(Date.now()-t.getTime())/1000; if(d<60) return "刚刚"; if(d<3600) return Math.floor(d/60)+" 分钟前"; if(d<86400) return Math.floor(d/3600)+" 小时前"; return Math.floor(d/86400)+" 天前"; }
@@ -119,7 +128,11 @@ function expandBody(it){ if(!expandable(it)) return ""; const open=EXPANDED.has(
   // 按需 AI 中文摘要：没有 zh_full 时显示按钮
   const od=!it.zh_full?'<div class="xod" id="xod-'+it.id+'"><button class="obtn" data-od="'+esc(it.url)+'">✨ '+T.aiGen+'</button><div class="otxt" style="display:none"></div></div>':"";
   return '<div class="xbody'+(open?" open":"")+'" id="xb-'+it.id+'"><div class="xbody-in">'+zf+ai+rs+od+src+'</div></div>'; }
-function toggleExpand(btn){ const id=btn.dataset.x; const body=document.getElementById("xb-"+CSS.escape(id));
+function toggleExpand(btn){ const id=btn.dataset.x;
+  // CSS.escape 是给选择器用的，不是给 getElementById 用的：id 以数字开头时它会返回
+  // "\35 91a…"，而 DOM 里写的是原始 id="xb-591a…"，于是查不到、按钮点了正文永远不展开。
+  // 全站 577 条里有 364 条（63%）的 id 是纯十六进制、以数字开头，全都中招。
+  const body=document.getElementById("xb-"+id);
   const open=EXPANDED.has(id); if(open) EXPANDED.delete(id); else EXPANDED.add(id);
   btn.classList.toggle("open",!open); btn.querySelector("span").textContent=!open?T.collapse:T.expand;
   if(body) body.classList.toggle("open",!open); }
@@ -179,8 +192,10 @@ function renderChSeg(){ const el=$("#chseg"); if(!el) return;
 function setChannel(id){ if(id===CHID||!S.channels[id]) return;
   CHID=id; C=S.channels[id]; CAT_CLS=C.catCls||{}; CAT_EN=C.catEn||{}; TREND_TITLES=null; EXPANDED.clear();
   state.dailyDate=""; state.cat="全部"; state.q=""; state.allShown=ALL_PAGE; state.collapsed={}; const q=$("#q"); if(q) q.value="";
+  // 换频道等于换了全部数据，九个常驻视图的缓存一起作废
+  invalidateAll();
   try{ localStorage.setItem("pat-channel",id); }catch(e){}
-  renderChSeg(); tr(); router(); window.scrollTo(0,0); }
+  renderChSeg(); tr(); router(); }
 function itemCard(it){
   const rd=READ[it.url]?" read":"", fv=FAV[it.url]?" on":"";
   const src=it.source||"", av=esc((src.trim().charAt(0)||chn()).charAt(0));
@@ -197,8 +212,49 @@ function itemCard(it){
 function threshNote(){ const th=C.thresholds||{official:55,media:65}; return T.thresholdNote.replace("{o}",th.official).replace("{m}",th.media); }
 const renderers = {};
 let LAST_VIEW = "";
+// RENDERED：DOM 已经画好、且内容仍然有效的视图。<section> 是常驻的，切 tab 只是
+// display:none，所以 DOM 本来就还在——重进时不该再画一遍，也不该丢掉阅读位置。
+// 只有数据/筛选真的变了才 invalidate，让 router 重画。
+const RENDERED = new Set();
+const SCROLL = {};
+let RENDERING = "";
+function invalidate(v){
+  RENDERED.delete(v);
+  // 作废的恰好是屏幕上这个视图时，必须立刻重画。否则用户会看到过期内容：
+  // 在收藏页把某条取消星标，它还留在列表里，要切走再切回才消失。
+  if(v===LAST_VIEW && !RENDERING){
+    RENDERING=v;
+    // 重画成功后必须标回 RENDERED：刚画好的视图就是"已渲染且有效"。
+    // 漏了这一步，之后用户滚动的位置在切走时不会被记录（router 的
+    // RENDERED.has 条件不成立），切回时被当成首访重画+弹回顶部，
+    // 位置缓存对"筛选过的视图"静默失效。渲染抛错则不标（下次会重试）。
+    try{ (renderers[v]||renderers.feed)(); RENDERED.add(v); } finally{ RENDERING=""; }
+  }
+}
+function invalidateAll(){ RENDERED.clear(); for (const k in SCROLL) delete SCROLL[k]; }
+// 列表内容被整体替换（排序/分类/搜索/日期/未读筛选）后，旧滚动位置不再对应任何
+// 内容：留在原地=落在新列表的中段，滚得深了还会被钳到新列表底部。必须回顶部，
+// 且缓存位置要一起清零——否则切走再切回，router 会把旧 y 恢复到换掉后的列表上。
+// 注意与"删掉一条"（取消星标）区分：那种保持位置，交给浏览器 scroll anchoring。
+function contentReset(v){ SCROLL[v]=0; invalidate(v); if(v===LAST_VIEW) window.scrollTo(0,0); }
 function setNav(v){ $$("#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$("#dnav a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$(".seg a").forEach(a=>a.classList.toggle("on",a.dataset.seg===v)); }
-function router(){ const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/"; const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/trends":"trends","/data":"data","/fav":"fav","/agent":"agent","/more":"more"}; const v=map[name]||"feed"; if(v==="all"&&LAST_VIEW!=="all") state.allShown=ALL_PAGE; LAST_VIEW=v; setNav(v); $$(".view").forEach(x=>x.classList.remove("on")); $("#view-"+v).classList.add("on"); (renderers[v]||renderers.feed)(); window.scrollTo(0,0); }
+function router(){
+  const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/";
+  const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/trends":"trends","/data":"data","/fav":"fav","/agent":"agent","/more":"more"};
+  const v=map[name]||"feed";
+  // 先记下旧视图的位置：下面一改 class，旧视图就 display:none，文档高度塌了，
+  // scrollY 会被浏览器钳到 0，那时候再读已经来不及。
+  if(LAST_VIEW && RENDERED.has(LAST_VIEW)) SCROLL[LAST_VIEW]=Math.round(window.scrollY);
+  const retap=(v===LAST_VIEW);
+  LAST_VIEW=v;
+  setNav(v);
+  $$(".view").forEach(x=>x.classList.remove("on"));
+  const el=$("#view-"+v); if(!el) return;
+  el.classList.add("on");
+  if(!RENDERED.has(v)){ (renderers[v]||renderers.feed)(); RENDERED.add(v); window.scrollTo(0,0); }
+  else if(retap){ window.scrollTo(0,0); }              // 再点当前 tab：回顶部，和原生 app 一致
+  else { window.scrollTo(0, SCROLL[v]||0); }           // 切回来：回到读过的地方
+}
 function renderFeed(){
   const root=$("#view-feed");
   const top=(C.topics||[]).slice(0,3);
@@ -216,30 +272,55 @@ function renderFeed(){
     const closed=state.collapsed[d]?" closed":"";
     tl+='<div class="day'+closed+'"><div class="day-h" data-dayh="'+d+'"><h2>'+(isToday(d)?T.today+" ":"")+fmtDay(d)+'</h2><span class="w">'+wdCN(d)+'</span><span class="c">'+its.length+' '+T.daySel+'</span><span class="arr">'+(state.collapsed[d]?"▶":"▼")+'</span></div><div class="day-b">'+its.map(itemCard).join("")+'</div></div>'; }
   root.innerHTML='<div class="card ph"><h1>'+T.feed+'</h1><span class="sub">'+esc(feedSub())+'</span><div class="note">'+esc(threshNote())+'</div></div>'+hot+tl;
-  const ub=$("#unreadBtn"); if(ub) ub.onclick=()=>{ state.unreadOnly=!state.unreadOnly; renderFeed(); };
+  const ub=$("#unreadBtn"); if(ub) ub.onclick=()=>{ state.unreadOnly=!state.unreadOnly; contentReset("feed"); };
 }
 const ALL_PAGE=30;
 let allObserver=null;
-function renderAll(){
-  const root=$("#view-all"); let its=C.items.slice();
+// allCtx 保存"当前这一张列表"：its=过滤排序后的全集，rendered=已经插进 DOM 的条数。
+// 只有筛选/排序/搜索/换频道才整页重建；无限滚动一律往后追加，绝不重写已有卡片。
+let allCtx=null;
+function allQuery(){
+  let its=C.items.slice();
   if(state.q){ const q=state.q.toLowerCase(); its=its.filter(i=>(i.title+" "+(i.zh_full||i.llm_summary||i.summary||"")+" "+i.source).toLowerCase().includes(q)); }
   if(state.cat!=="全部") its=its.filter(i=>i.category===state.cat);
   if(state.sort==="score") its.sort((a,b)=>b.score-a.score); else its.sort((a,b)=>b.discovered_at.localeCompare(a.discovered_at));
+  return its;
+}
+function moreLabel(shown,total){ return T.loadMore+' ('+shown+'/'+total+')'; }
+function observeMore(){
+  if(allObserver) allObserver.disconnect();
+  const more=$("#all-more"); if(!more) return;
+  more.onclick=appendAllPage;
+  allObserver=new IntersectionObserver(es=>{ if(es.some(e=>e.isIntersecting)) appendAllPage(); },{rootMargin:"800px"});
+  allObserver.observe(more);
+}
+// 追加下一页。这里刻意不碰已渲染的 DOM：整页 innerHTML 重建会让浏览器把
+// 已有卡片全部作废重排，实测一次 180~280ms，正好落在用户手指还在滑的那一帧。
+function appendAllPage(){
+  if(!allCtx) return;
+  const its=allCtx.its, from=allCtx.rendered;
+  if(from>=its.length) return;
+  const to=Math.min(from+ALL_PAGE, its.length);
+  const list=$("#all-list"); if(!list) return;
+  if(allObserver) allObserver.disconnect();          // 先摘哨兵，避免这一帧连发两次
+  list.insertAdjacentHTML("beforeend", its.slice(from,to).map(itemCard).join(""));
+  allCtx.rendered=to; state.allShown=to;
+  const more=$("#all-more");
+  if(to>=its.length){ if(more) more.remove(); }
+  else if(more){ more.textContent=moreLabel(to,its.length); observeMore(); }
+}
+function renderAll(){
+  const root=$("#view-all"); const its=allQuery();
   const shown=Math.min(state.allShown||ALL_PAGE, its.length);
+  allCtx={its,rendered:shown};
   const hasMore=shown<its.length;
-  root.innerHTML='<div class="card ph"><h1>'+T.allPage+'</h1><span class="sub">'+its.length+'</span><span class="hsort" style="margin-left:auto"><select id="all-cat" aria-label="cat"><option value="全部">'+T.catAll+'</option></select><select id="all-sort" aria-label="sort"><option value="score">'+T.sortScore+'</option><option value="time">'+T.sortTime+'</option></select></span><div class="note">'+esc(threshNote())+'</div></div><div id="all-list">'+(its.length?its.slice(0,shown).map(itemCard).join(""):'<div class="empty">'+T.noMatch+'</div>')+'</div>'+(hasMore?'<div id="all-more" class="card" style="text-align:center;padding:14px;cursor:pointer;color:var(--acd);font-weight:600">'+T.loadMore+' ('+shown+'/'+its.length+')</div>':"");
+  root.innerHTML='<div class="card ph"><h1>'+T.allPage+'</h1><span class="sub">'+its.length+'</span><span class="hsort" style="margin-left:auto"><select id="all-cat" aria-label="cat"><option value="全部">'+T.catAll+'</option></select><select id="all-sort" aria-label="sort"><option value="score">'+T.sortScore+'</option><option value="time">'+T.sortTime+'</option></select></span><div class="note">'+esc(threshNote())+'</div></div><div id="all-list">'+(its.length?its.slice(0,shown).map(itemCard).join(""):'<div class="empty">'+T.noMatch+'</div>')+'</div>'+(hasMore?'<div id="all-more" class="card" style="text-align:center;padding:14px;cursor:pointer;color:var(--acd);font-weight:600">'+moreLabel(shown,its.length)+'</div>':"");
   const cats=[...new Set(C.items.map(i=>i.category))];
   const sel=$("#all-cat"); for(const c of cats){ const o=document.createElement("option"); o.value=c; o.textContent=catName(c); if(c===state.cat) o.selected=true; sel.appendChild(o); }
   $("#all-sort").value=state.sort;
-  sel.onchange=e=>{ state.cat=e.target.value; state.allShown=ALL_PAGE; renderAll(); };
-  $("#all-sort").onchange=e=>{ state.sort=e.target.value; state.allShown=ALL_PAGE; renderAll(); };
-  if(allObserver) allObserver.disconnect();
-  const more=$("#all-more");
-  if(more){
-    more.onclick=()=>{ state.allShown=(state.allShown||ALL_PAGE)+ALL_PAGE; renderAll(); window.scrollBy({top:-60}); };
-    allObserver=new IntersectionObserver(es=>{ if(es[0].isIntersecting){ state.allShown=(state.allShown||ALL_PAGE)+ALL_PAGE; renderAll(); } },{rootMargin:"600px"});
-    allObserver.observe(more);
-  }
+  sel.onchange=e=>{ state.cat=e.target.value; state.allShown=ALL_PAGE; contentReset("all"); };
+  $("#all-sort").onchange=e=>{ state.sort=e.target.value; state.allShown=ALL_PAGE; contentReset("all"); };
+  observeMore();
 }
 function hotExpand(t){ const rep=t.representative||{}; const it={id:"t-"+t.id, zh_full:rep.zh_full, llm_summary:rep.llm_summary, summary:rep.summary, url:rep.url||((t.links||[])[0]||{}).url};
   if(!expandable(it)) return ""; return expandBtn(it)+expandBody(it); }
@@ -261,7 +342,7 @@ function renderHot(){
       +'<div class="hmeta"><span>'+esc(rep.source||((t.sources||[])[0]||""))+'</span><span>'+fmtRel(t.latest_at)+'</span><span>'+t.source_count+' '+T.sources+' · '+t.signal_count+' '+T.signals+'</span><span class="mono" style="font-weight:700;color:var(--acd)">'+Math.round(t.heat||t.score)+'</span></div>'
       +reason+(t.image?'<img class="himg" src="'+esc(t.image)+'" alt="" loading="lazy">':"")+(rsum?'<div class="isum">'+esc(rsum.length>200?rsum.slice(0,200)+"…":rsum)+'</div>':"")+hotExpand(t)+bar+'<div class="chips">'+chips+'</div>'+fold+'</div></div>';
   }).join("")+'</div>';
-  $$("[data-hs]",root).forEach(b=>b.onclick=()=>{ state.hotSort=b.dataset.hs; renderHot(); });
+  $$("[data-hs]",root).forEach(b=>b.onclick=()=>{ state.hotSort=b.dataset.hs; contentReset("hot"); });
 }
 function dailyArticle(a){
   const reason=a.reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(a.reason)+'</div>':"";
@@ -297,13 +378,14 @@ function renderDaily(){
   } else { body+='<div class="empty">-</div>'; }
   body+='</div>';
   root.innerHTML='<div class="card ph"><h1>'+esc(dailyPage())+'</h1><span class="sub">'+esc(dailySub())+'</span></div><div class="dshell">'+side+body+'</div>';
-  $$(".dday", root).forEach(el=>el.onclick=()=>{ state.dailyDate=el.dataset.d; renderDaily(); });
+  $$(".dday", root).forEach(el=>el.onclick=()=>{ state.dailyDate=el.dataset.d; contentReset("daily"); });
+  // 月份折叠只是收起归档列表，正文没换，位置必须保持——不能走 contentReset
   $$(".amonth", root).forEach(el=>el.onclick=()=>{ const m=el.dataset.m; col[m]=mOpen(m); renderDaily(); });
 }
 function renderTopics(){
   const root=$("#view-topics"); const rows=(C.daily&&C.daily.byCategory)||[];
   root.innerHTML='<div class="card ph"><h1>'+T.topics+'</h1><span class="sub">'+esc(chn()+T.topicsSub)+'</span></div><div class="tgrid">'+rows.map(r=>'<div class="tcard" data-cat="'+esc(r.category)+'"><div class="n">'+esc(catName(r.category))+'<span class="bdg b-cat">'+r.total+'</span></div><div class="nums"><span>24h <b>'+r.last24h+'</b></span><span>7d <b>'+r.last7d+'</b></span></div></div>').join("")+'</div>';
-  $$(".tcard", root).forEach(el=>el.onclick=()=>{ state.cat=el.dataset.cat; location.hash="#/all"; });
+  $$(".tcard", root).forEach(el=>el.onclick=()=>{ state.cat=el.dataset.cat; state.allShown=ALL_PAGE; contentReset("all"); location.hash="#/all"; });
 }
 function renderTrends(){
   const root=$("#view-trends"); const tr=C.trends||{};
@@ -370,7 +452,8 @@ function bind(){
   let qTimer=null;
   // 搜索框此前只在 #/all 路由下有反应：在精选/热点/日报页打字看起来"没反应"。
   // 现在输入即时跳转全部页，回车也跳（窄屏键盘用户）。
-  const gotoAll=()=>{ state.allShown=ALL_PAGE; if(/#\/all/.test(location.hash)) renderAll(); else location.hash="#/all"; };
+  // 换查询词=结果集整体替换，落点必须回顶部（contentReset 同时清缓存位置）。
+  const gotoAll=()=>{ state.allShown=ALL_PAGE; contentReset("all"); if(!/#\/all/.test(location.hash)) location.hash="#/all"; };
   q.addEventListener("input",e=>{ state.q=e.target.value; clearTimeout(qTimer); qTimer=setTimeout(gotoAll,250); });
   q.addEventListener("keydown",e=>{ if(e.key==="Enter"){ clearTimeout(qTimer); gotoAll(); } });
   $("#sbtn").onclick=()=>{ const w=$("#swrap"); w.classList.toggle("open"); if(w.classList.contains("open")) q.focus(); };
@@ -378,15 +461,21 @@ function bind(){
   $("#lang").onclick=()=>{ LANG=LANG==="zh"?"en":"zh"; try{localStorage.setItem("pat-lang",LANG);}catch(e){} location.reload(); };
   document.addEventListener("click",e=>{
     const f=e.target.closest("[data-fav]");
-    if(f){ e.preventDefault(); toggleFav(f.dataset.fav); f.classList.toggle("on"); return; }
+    if(f){ e.preventDefault(); toggleFav(f.dataset.fav); return; }   // 类名由 applyFavToDom 统一写，别在这里再翻一次
     const xf=e.target.closest("[data-x]");
     if(xf){ e.preventDefault(); toggleExpand(xf); return; }
     const dh=e.target.closest("[data-dayh]");
     if(dh){ const d=dh.dataset.dayh; state.collapsed[d]=!state.collapsed[d]; dh.closest(".day").classList.toggle("closed"); dh.querySelector(".arr").textContent=state.collapsed[d]?"▶":"▼"; return; }
     const r=e.target.closest("[data-read]");
-    if(r){ markRead(r.dataset.read); const c=r.closest(".icard"); if(c) c.classList.add("read"); }
+    if(r){ markRead(r.dataset.read); }
   });
   window.addEventListener("hashchange",router);
+  // 再点当前 tab 不会改 hash，也就不会触发 hashchange —— router 根本不会被调用。
+  // 位置缓存必须配一个"回到顶部"的出口，否则用户只能手动往上滚。
+  document.addEventListener("click",e=>{
+    const a=e.target.closest('a[href^="#/"],a[href="#/"]');
+    if(a && a.getAttribute("href")===location.hash) router();
+  });
   document.addEventListener("keydown",e=>{ if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){ e.preventDefault(); $("#swrap").classList.add("open"); q.focus(); } });
   renderChSeg(); setTheme(themeNow()); tr(); router();
 }
