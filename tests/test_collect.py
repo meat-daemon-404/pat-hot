@@ -969,12 +969,12 @@ class TestLlmThinkingDisabled(unittest.TestCase):
 
 
 class TestChannelSwitchResetsFeedState(unittest.TestCase):
-    """切频道必须清空精选页的日期折叠状态。
+    """切频道必须清空精选页的日期锚定状态。
 
     回归（2026-10-13）：state.collapsed 以日期为键、跨频道共享，在光电页收起的
-    12/11/10 三天切到物理页后依然收起（浏览器实证复现）——用户看到的就是截图里
-    "今天的精选莫名收起、最旧一天反而展开"。EXPANDED 早就在 setChannel 里 clear，
-    collapsed 是漏网之鱼。"""
+    12/11/10 三天切到物理页后依然收起（浏览器实证复现）。折叠交互后来整体移到
+    日历页（#/cal），跨频道会串台的日期状态变成 state.feedDay / state.calMonth：
+    在物理页锚到 10-12 再切光电，光电没有这一天就会落到空窗口。"""
 
     def _set_channel_body(self):
         with open(os.path.join(ROOT, "collector", "templates", "app.js"),
@@ -984,10 +984,12 @@ class TestChannelSwitchResetsFeedState(unittest.TestCase):
         end = js.index("function itemCard", start)
         return js[start:end]
 
-    def test_set_channel_clears_collapsed(self):
+    def test_set_channel_clears_day_anchor(self):
         body = self._set_channel_body()
-        self.assertIn("state.collapsed={}", body,
-                      "切频道未重置日期折叠状态：折叠会跨频道串台")
+        self.assertIn('state.feedDay=""', body,
+                      "切频道未重置精选页日期锚定：锚点会跨频道串台")
+        self.assertIn('state.calMonth=""', body,
+                      "切频道未重置日历月份：日历会停在别的频道的月份上")
 
     def test_set_channel_still_clears_expanded(self):
         # 同一行的既有约定，防止"修一个丢一个"

@@ -107,6 +107,8 @@ DEFAULT_CONFIG = {
     },
     "heat": {
         "recent_hours": 48, "source_cap": 6, "signal_cap": 10,
+        # 窗口内每家信源最多贡献几个信号：单源连发 N 篇同题稿不该顶满 0.35 项
+        "signal_per_source_cap": 2,
         "status_hot_min_sources": 5, "status_hot_min_heat": 80.0,
         "status_trending_min_sources": 3,
         # 运动判定（AIHOT hot.ts 口径，节拍换成"上一轮刷新"）：
@@ -116,7 +118,8 @@ DEFAULT_CONFIG = {
         "movement_rising_pct": 15, "movement_up_pct": 10,
         "movement_surge_new_sources": 3, "movement_surge_ratio": 0.5,
     },
-    "clustering": {"tfidf_threshold": 0.14},
+    "clustering": {"tfidf_threshold": 0.14, "embed_threshold": 0.72,
+                   "max_cluster_size": 12},
     "fetch": {
         "timeout": 25, "retries": 1, "max_bytes": 12582912,
         "text_timeout": 15,
@@ -925,36 +928,109 @@ def cosine_sim(a, b):
     return dot / (na * nb) if na and nb else 0.0
 
 
+def average_linkage(sim, threshold, size_cap=None, initial=None):
+    """平均链接凝聚聚类：返回每条的组号列表。
+
+    单链（两簇里"任意一对"超过阈值就合并）有链式效应：A~B、B~C 会把并不相似的
+    A、C 拖进同一簇。2026-10-13 实测：嵌入近重复合并在 0.70 阈值下把三频道各
+    22/56/69 条连成单簇（bge-small-zh 对英文短标题的两两相似度 p50≈0.5、
+    p90≈0.61，0.70 落在 p95~p99，一条弱链接就足以连通整库）。平均链接要求两簇
+    之间"所有对的均值"过阈值，单条弱链接拖不动整簇。
+
+    sim: n×n 对称相似度矩阵；initial: 预分组（组号列表），None 表示每条自成一簇；
+    size_cap: 合并后超过该规模就拒绝（None 不限）。簇间相似度用 Lance-Williams
+    增量更新 sim(a∪b,c) = (|a|·sim(a,c)+|b|·sim(b,c)) / (|a|+|b|)，不重扫所有对。
+    """
+    n = len(sim)
+    if initial is None:
+        seed = list(range(n))
+    else:
+        seed = list(initial)
+    members = {}
+    for idx, g in enumerate(seed):
+        members.setdefault(g, []).append(idx)
+    keys = sorted(members.keys())
+    csim = {}
+    for ai in range(len(keys)):
+        a = keys[ai]
+        ma = members[a]
+        for bi in range(ai + 1, len(keys)):
+            b = keys[bi]
+            mb = members[b]
+            tot = 0.0
+            for i in ma:
+                row = sim[i]
+                for j in mb:
+                    tot += row[j]
+            csim[(a, b)] = tot / float(len(ma) * len(mb))
+    alive = set(keys)
+    while len(alive) > 1:
+        best = (threshold, None, None)
+        alive_list = sorted(alive)
+        for ai in range(len(alive_list)):
+            a = alive_list[ai]
+            for bi in range(ai + 1, len(alive_list)):
+                b = alive_list[bi]
+                s = csim.get((a, b))
+                if s is None:
+                    s = csim.get((b, a))
+                if s is None or s <= best[0]:
+                    continue
+                if size_cap and len(members[a]) + len(members[b]) > size_cap:
+                    continue
+                best = (s, a, b)
+        if best[1] is None:
+            break
+        _, a, b = best
+        ma, mb = members[a], members[b]
+        wa, wb = float(len(ma)), float(len(mb))
+        for c in alive:
+            if c == a or c == b:
+                continue
+            sa = csim.get((a, c))
+            if sa is None:
+                sa = csim.get((c, a))
+            sb = csim.get((b, c))
+            if sb is None:
+                sb = csim.get((c, b))
+            if sa is None or sb is None:
+                continue
+            csim[(a, c)] = (sa * wa + sb * wb) / (wa + wb)
+            csim.pop((c, a), None)
+            csim.pop((b, c), None)
+            csim.pop((c, b), None)
+        csim.pop((a, b), None)
+        csim.pop((b, a), None)
+        ma.extend(mb)
+        del members[b]
+        alive.discard(b)
+    out = [0] * n
+    for gid, live_id in enumerate(sorted(alive)):
+        for idx in members[live_id]:
+            out[idx] = gid
+    return out
+
+
 def cluster_semantic(items, threshold=0.14):
-    """语义聚类：TF-IDF 向量贪心聚合为主；可选神经嵌入做近重复合并（OPTOHOT_EMBED=1）"""
+    """语义聚类：TF-IDF 平均链接凝聚为主；可选神经嵌入做近重复合并（OPTOHOT_EMBED=1）。
+
+    两个阶段此前都是单链：TF-IDF 贪心取"任意一对过阈值"合并，嵌入阶段用并查集
+    对 sim>=0.70 的传递闭包。嵌入阶段是巨簇的真正来源（CI 恒设 OPTOHOT_EMBED=1，
+    阈值 0.72 起平均链接在真实数据上把最大簇从 22/56/69 压到 ≤6，见
+    scratch/probe_embed2.py 的实测）。阈值与规模上限走 config 的 clustering 段。
+    """
     n = len(items)
+    cc = CONFIG.get("clustering") or {}
+    size_cap = max(2, int(cc.get("max_cluster_size", 12) or 12))
     tfidf = tfidf_vectors(items)
     sim = [[0.0] * n for _ in range(n)]
     for i in range(n):
         for j in range(i + 1, n):
             s = cosine_sim(tfidf[i], tfidf[j])
             sim[i][j] = sim[j][i] = s
-    groups = list(range(n))
-    while True:
-        best = (threshold, -1, -1)
-        for i in range(n):
-            gi = groups[i]
-            if gi < 0:
-                continue
-            for j in range(i + 1, n):
-                gj = groups[j]
-                if gj < 0 or gi == gj:
-                    continue
-                if sim[i][j] > best[0]:
-                    best = (sim[i][j], i, j)
-        if best[1] < 0:
-            break
-        ga, gb = groups[best[1]], groups[best[2]]
-        for k in range(n):
-            if groups[k] == gb:
-                groups[k] = ga
+    groups = average_linkage(sim, threshold, size_cap=size_cap)
 
-    # 神经近重复合并（真实嵌入；相似度>=0.70 视为同一事件的重复/改写报道）
+    # 神经近重复合并（真实嵌入；平均链接凝聚，阈值 clustering.embed_threshold）
     if os.environ.get("OPTOHOT_EMBED") == "1":
         try:
             os.environ.setdefault("HF_HUB_DOWNLOAD_TIMEOUT", "20")
@@ -972,48 +1048,25 @@ def cluster_semantic(items, threshold=0.14):
                 from sentence_transformers import SentenceTransformer
                 _m = SentenceTransformer("BAAI/bge-small-zh-v1.5")
                 vecs = _m.encode([it["title"] for it in items], normalize_embeddings=True)
-
-                def find(x):
-                    while parent[x] != x:
-                        parent[x] = parent[parent[x]]
-                        x = parent[x]
-                    return x
-
-                def union(a, b):
-                    ra, rb = find(a), find(b)
-                    if ra != rb:
-                        parent[rb] = ra
-
-                parent = list(range(n))
+                embed_thr = float(cc.get("embed_threshold", 0.72) or 0.72)
+                esim = [[0.0] * n for _ in range(n)]
                 for i in range(n):
                     vi = vecs[i]
                     for j in range(i + 1, n):
                         s = float(sum(vi[k] * vecs[j][k] for k in range(len(vi))))
-                        if s >= 0.70:
-                            union(i, j)
-                gset = {}
-                for idx, g in enumerate(groups):
-                    gset.setdefault(g, []).append(idx)
-                for members in gset.values():
-                    for k in range(1, len(members)):
-                        union(members[0], members[k])
-                rootmap = {}
-                ng = [0] * n
-                for x in range(n):
-                    r = find(x)
-                    if r not in rootmap:
-                        rootmap[r] = len(rootmap)
-                    ng[x] = rootmap[r]
-                groups = ng
-                log("[*] 神经近重复合并完成（sentence-transformers / bge-small-zh）")
+                        esim[i][j] = esim[j][i] = s
+                # 以 TF-IDF 簇为初值做平均链接：词面近重复与语义近重复取并集，
+                # 但合并必须整簇平均相似度过阈值，弱链接不再链式传染。
+                groups = average_linkage(esim, embed_thr, size_cap=size_cap,
+                                         initial=groups)
+                log("[*] 神经近重复合并完成（sentence-transformers / bge-small-zh，平均链接）")
         except Exception as e:
             log("[!] 神经嵌入不可用，仅 TF-IDF 聚类: %s" % e)
 
     from collections import defaultdict
     gmap = defaultdict(list)
     for idx, g in enumerate(groups):
-        if g >= 0:
-            gmap[g].append(items[idx])
+        gmap[g].append(items[idx])
     topics = []
     for its in gmap.values():
         if len(its) >= 2:
@@ -1147,14 +1200,21 @@ def finalize_topic(t, items, source_tier=None, cfg=None):
     source_tier = source_tier or {}
     its = [it for it in items if it["id"] in t["ids"]]
     srcs = {i["source"] for i in its}
-    # 48 小时窗口内，每个独立来源只算一次（单源刷榜无效）
-    recent_srcs = {i["source"] for i in its if age_days(eff_dt(i)) <= recent_h / 24.0}
+    # 热度只数 48 小时窗口内的活动：旧实现 signal_count=len(its) 是全历史条数，
+    # 一个三个月前的旧事件只要攒够条数就能拿满 0.35 那一项（实测 61 条旧簇 heat=90）。
+    recent = [i for i in its if age_days(eff_dt(i)) <= recent_h / 24.0]
+    recent_srcs = {i["source"] for i in recent}
+    # 单源刷榜防护：窗口内每家信源最多贡献 signal_per_source_cap 个信号。
+    # 旧实现 0.35 项只看条数不看来源，知识分子连发 6 篇诺奖稿就能排到热点榜第 2。
+    per_src = collections.Counter(i["source"] for i in recent)
+    sig_per_src = max(1, int(hc.get("signal_per_source_cap", 2) or 2))
+    recent_signals = sum(min(c, sig_per_src) for c in per_src.values())
     t["source_count"] = len(srcs)
-    t["signal_count"] = len(its)
+    t["signal_count"] = len(recent)
     t["sources"] = sorted(srcs)
     t["score"] = round(
-        100 * (0.45 * min(1.0, len(srcs) / hc["source_cap"])
-               + 0.35 * min(1.0, len(its) / hc["signal_cap"])
+        100 * (0.45 * min(1.0, len(recent_srcs) / hc["source_cap"])
+               + 0.35 * min(1.0, recent_signals / hc["signal_cap"])
                + 0.20 * min(1.0, len(recent_srcs) / max(1, len(srcs)))), 1)
     t["latest_at"] = max(i["discovered_at"] for i in its)
     rep = pick_representative(its, source_tier)
@@ -1165,8 +1225,9 @@ def finalize_topic(t, items, source_tier=None, cfg=None):
         "zh_full": rep.get("zh_full"),
     }
     t["folded_count"] = max(0, len(srcs) - 1)  # "另有 N 家信源报道"
-    best = max(its, key=lambda i: i["score"])
-    t["title"] = best["title"]
+    # 标题必须与代表报道同源：旧实现标题取 max(score) 那条、链接取 pick_representative
+    # 另选的那条，热点榜卡片"文不对题"（实测 #1 标题是引力论文、点开是 CERN 束流稿）。
+    t["title"] = rep["title"]
     t["terms"] = sorted(t["terms"])
     t["id"] = make_id(t["title"], "|".join(sorted(i["id"] for i in its)))
     t["links"] = [{
@@ -1978,21 +2039,25 @@ def build_dailies(items, existing=None):
 
 
 def build_trends(dailies, generated, cfg):
-    """周维度趋势聚合（AIHOT 周报思想），只消费 dailies.json，不新增采集：
-    - 本周 vs 上周：各分类热度（文章 score 求和）变化
-    - 新上榜事件：本周出现、过去 lookback_days 天未出现过的事件
+    """趋势聚合（滚动窗口），只消费 dailies.json，不新增采集：
+    - 当前窗口 vs 前一窗口：各分类热度（文章 score 求和）变化
+    - 新上榜事件：首次出现落在当前窗口内的事件
     - 持续发酵事件：lookback_days 内出现天数 >= sustained_min_days 的事件
     同一事件跨天只算一件。
+
+    为什么是滚动窗口而不是自然周：自然周在周二时"本周"只攒了 2 天数据，却要和
+    完整的 7 天"上周"比，百分比必然失真（2026-10-13 实测：科研进展 -1.9%、
+    凝聚态物理 +398.6% 都是半截周对整周的产物）。滚动 window_days 天保证两边
+    永远是等长完整窗口；weekStart 字段保留（语义改为当前窗口起点）以兼容旧消费者。
     """
     tc = cfg.get("trends", {})
     lookback = max(7, tc.get("lookback_days", 14))
     min_days = max(2, tc.get("sustained_min_days", 3))
+    win = max(1, int(tc.get("window_days", 7) or 7))
     now_cn = generated.astimezone(TZ_CN).date()
-    monday = now_cn - timedelta(days=now_cn.weekday())
-    this_week = {(monday + timedelta(days=i)).isoformat() for i in range(7)}
-    last_monday = monday - timedelta(days=7)
-    last_week = {(last_monday + timedelta(days=i)).isoformat() for i in range(7)}
-    hist_start = (monday - timedelta(days=lookback)).isoformat()
+    cur_days = {(now_cn - timedelta(days=i)).isoformat() for i in range(win)}
+    prev_days = {(now_cn - timedelta(days=win + i)).isoformat() for i in range(win)}
+    hist_start = (now_cn - timedelta(days=max(lookback, 2 * win))).isoformat()
 
     cat_heat = {"this": collections.Counter(), "last": collections.Counter()}
     topic_days = collections.defaultdict(set)   # topic_id -> set(date)
@@ -2002,7 +2067,7 @@ def build_trends(dailies, generated, cfg):
     for d, entry in (dailies or {}).items():
         if d < hist_start or d > now_cn.isoformat():
             continue
-        bucket = "this" if d in this_week else ("last" if d in last_week else None)
+        bucket = "this" if d in cur_days else ("last" if d in prev_days else None)
         for sec in (entry or {}).get("sections", []) or []:
             cat = sec.get("category") or "其他"
             for a in sec.get("articles", []) or []:
@@ -2023,14 +2088,13 @@ def build_trends(dailies, generated, cfg):
         pct = round((tw - lw) / lw * 100, 1) if lw > 0 else (100.0 if tw > 0 else 0.0)
         category_delta.append({"category": c, "thisWeek": tw, "lastWeek": lw, "deltaPct": pct})
 
-    week_start = monday.isoformat()
+    window_start = min(cur_days)
     new_topics, sustained = [], []
     for tid, days in topic_days.items():
         days_sorted = sorted(days)
-        in_this_week = any(d in this_week for d in days_sorted)
         first_seen = days_sorted[0]
-        if in_this_week and first_seen >= week_start:
-            # 本周首次出现：再确认 lookback 窗口内更早无记录（topic_id 本身即按事件归一）
+        if first_seen >= window_start:
+            # 当前窗口内首次出现：lookback 窗口内更早无记录（topic_id 本身即按事件归一）
             new_topics.append({"topic_id": tid, "title": topic_title.get(tid, tid),
                                "score": round(topic_score[tid], 1), "days": len(days_sorted)})
         if len(days_sorted) >= min_days:
@@ -2044,7 +2108,12 @@ def build_trends(dailies, generated, cfg):
     return {
         "schemaVersion": 1,
         "generatedAt": generated.isoformat(),
-        "weekStart": week_start,
+        "weekStart": window_start,
+        "windowDays": win,
+        "windowStart": window_start,
+        "windowEnd": max(cur_days),
+        "prevStart": min(prev_days),
+        "prevEnd": max(prev_days),
         "categoryDelta": category_delta,
         "newTopics": new_topics[:top_n],
         "sustainedTopics": sustained[:top_s],

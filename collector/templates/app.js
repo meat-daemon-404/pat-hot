@@ -26,6 +26,7 @@ const I18N = {
     search:"搜索", catAll:"全部", sortScore:"按推荐分", sortTime:"按时间",
     thresholdNote:"精选门槛：官方信源 ≥ {o} 分 · 媒体信源 ≥ {m} 分（可在 collector/config.json 调整）",
     hotNow:"当前热点", fullRank:"完整榜单 →", unreadOnly:"只看未读", sciOnly:"只看科研", today:"今天", daySel:"条精选", noMatch:"没有匹配的条目",
+    calPage:"日历", calSub:"按北京日期归档 · 点某天跳回精选时间线", winVs:"近 {n} 天 vs 再前 {n} 天", backLatest:"回到最新",
     heatVal:"热度", sources:"信源", signals:"信号",
     mvNew:"新", mvRise:"升温", mvSurge:"多家跟进", mvDown:"回落",
     digestLabel:"事件概览 | ",
@@ -64,6 +65,7 @@ const I18N = {
     search:"Search", catAll:"All", sortScore:"By score", sortTime:"By time",
     thresholdNote:"Selection bar: official sources ≥ {o} · media sources ≥ {m} (tune in collector/config.json)",
     hotNow:"Trending Now", fullRank:"Full ranking →", unreadOnly:"Unread only", sciOnly:"Research only", today:"Today", daySel:"selected", noMatch:"No matching items",
+    calPage:"Calendar", calSub:"Archived by Beijing date — tap a day to jump to the timeline", winVs:"Last {n}d vs previous {n}d", backLatest:"Back to latest",
     heatVal:"heat", sources:"sources", signals:"signals",
     mvNew:"new", mvRise:"rising", mvSurge:"surge", mvDown:"cooling",
     digestLabel:"In brief | ",
@@ -121,7 +123,7 @@ function hotSub(){ return LANG==="en" ? "Event-level heat: each independent sour
 function dailyPage(){ return chn()+(LANG==="en"?" Daily":"日报"); }
 function dailySub(){ return LANG==="en" ? "Auto-generated daily (with archive)" : "自动生成 · 每日一篇（含历史归档）"; }
 function searchPh(){ return T.search+chn()+(LANG==="en"?" news…":"资讯 / 关键词…"); }
-const state = { q:"", cat:"全部", sort:"score", dailyDate:"", hotSort:"heat", unreadOnly:false, collapsed:{} };
+const state = { q:"", cat:"全部", sort:"score", dailyDate:"", hotSort:"heat", unreadOnly:false, calMonth:"", feedDay:"", calJumpDay:"" };
 // 非科研分类：采集端 category_weights 降权的对象；前端「只看科研」开关过滤的对象。两处保持一致。
 const NON_SCI_CATS = ["其他","产业与资本"];
 const SCI_KEY = "pat-sci-only";
@@ -176,6 +178,8 @@ function effDate(it){ const p=it.published_at; if(p&&p.length>=10) return p.slic
 function fmtDay(dstr){ const parts=dstr.split("-"); if(LANG==="en") return dstr; return parts[0]+"年"+Number(parts[1])+"月"+Number(parts[2])+"日"; }
 function wdCN(dstr){ const d=new Date(dstr+"T00:00:00+08:00").getDay(); return LANG==="en"?["Sun","Mon","Tue","Wed","Thu","Fri","Sat"][d]:["周日","周一","周二","周三","周四","周五","周六"][d]; }
 function todayCN(){ return new Date(Date.now()+8*3600*1000).toISOString().slice(0,10); }
+// 北京日期串平移 n 天（日历/趋势窗口回推用）；非法输入原样返回。
+function shiftDay(dstr,n){ const d=new Date(dstr+"T00:00:00+08:00"); if(isNaN(d.getTime())) return dstr; return new Date(d.getTime()+n*86400*1000).toISOString().slice(0,10); }
 function isToday(d){ return d===todayCN(); }
 function scoreCls(s){ return s>=75?"s-hi":(s>=50?"s-mid":"s-lo"); }
 function pubLabel(it){ if(it.published_at){ const p=it.published_at; if(p.length===7) return p+"（月级）发布"; if(p.length===10) return p+" 发布"; return p.replace("T"," ").slice(5,16)+" 发布"; } return "收录 "+fmtRel(it.discovered_at); }
@@ -300,7 +304,7 @@ function renderChSeg(){ const el=$("#chseg"); if(!el) return;
   el.querySelectorAll("a").forEach(a=>{ a.onclick=()=>setChannel(a.dataset.ch); }); }
 function setChannel(id){ if(id===CHID||!S.channels[id]) return;
   CHID=id; C=S.channels[id]; CAT_CLS=C.catCls||{}; CAT_EN=C.catEn||{}; TREND_TITLES=null; EXPANDED.clear();
-  state.dailyDate=""; state.cat="全部"; state.q=""; state.allShown=ALL_PAGE; state.collapsed={}; const q=$("#q"); if(q) q.value="";
+  state.dailyDate=""; state.cat="全部"; state.q=""; state.allShown=ALL_PAGE; state.feedDay=""; state.calMonth=""; const q=$("#q"); if(q) q.value="";
   // 换频道等于换了全部数据，九个常驻视图的缓存一起作废
   invalidateAll();
   try{ localStorage.setItem("pat-channel",id); }catch(e){}
@@ -353,7 +357,7 @@ function sciToggle(){ setSciOnly(!sciOnly()); state.allShown=ALL_PAGE; contentRe
 function setNav(v){ $$("#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$("#dnav a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$(".seg a").forEach(a=>a.classList.toggle("on",a.dataset.seg===v)); }
 function router(){
   const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/";
-  const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/trends":"trends","/data":"data","/fav":"fav","/agent":"agent","/more":"more","/account":"account"};
+  const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/cal":"cal","/topics":"topics","/trends":"trends","/data":"data","/fav":"fav","/agent":"agent","/more":"more","/account":"account"};
   const v=map[name]||"feed";
   // 先记下旧视图的位置：下面一改 class，旧视图就 display:none，文档高度塌了，
   // scrollY 会被浏览器钳到 0，那时候再读已经来不及。
@@ -373,22 +377,81 @@ function renderFeed(){
   const top=(C.topics||[]).slice(0,3);
   let hot='<div class="card hottop"><div class="hottop-h"><span class="pulse"></span>'+T.hotNow+'<a href="#/hot">'+T.fullRank+'</a></div>'
   +top.map((t,i)=>{ const up=trendOf(t)==="up"; const arrow=up?'<span class="up">▲</span>':"—";
+    // 文字与链接必须同源：后端已把 t.title 定为代表报道的标题（finalize_topic），
+    // 所以链接直接取 representative.url；有事件综述时显示综述标题，链接仍是该事件
+    // 的代表报道。旧实现文字用 max(score) 那条、链接用 representative，文不对题。
+    const shown=t.digestTitle||t.title;
     const rurl=esc((t.representative||{}).url||"#/hot");
-    return '<div class="hr3"><span class="rk r'+(i+1)+'">'+(i+1)+'</span><span class="ht"><a href="'+rurl+'" target="_blank" rel="noopener">'+esc(t.title)+'</a></span><span class="hn mono">'+Math.round(t.heat||t.score)+' <small>'+T.heatVal+'</small> '+arrow+'</span></div>'; }).join("")+'</div>';
-  let items=C.items.slice();
+    return '<div class="hr3"><span class="rk r'+(i+1)+'">'+(i+1)+'</span><span class="ht"><a href="'+rurl+'" target="_blank" rel="noopener">'+esc(shown)+'</a></span><span class="hn mono">'+Math.round(t.heat||t.score)+' <small>'+T.heatVal+'</small> '+arrow+'</span></div>'; }).join("")+'</div>';
+  // 精选页只放过了门槛的条目：旧实现不过滤 selected，「精选」页内容等于全部动态，
+  // 没过门槛的诺奖稿（62.8 分 < 媒体门槛 65）也顶着「精选」标题出现。
+  let items=C.items.filter(i=>i.selected);
   if(state.unreadOnly) items=items.filter(i=>!READ[i.url]);
   items=sciFilter(items);
   const groups={}; for(const it of items){ const d=effDate(it); (groups[d]=groups[d]||[]).push(it); }
-  const days=Object.keys(groups).sort().reverse().slice(0,7);
-  let tl='<div class="urow"><button class="upill'+(state.unreadOnly?" on":"")+'" id="unreadBtn"><span class="dot"></span>'+T.unreadOnly+'</button><button class="upill'+(sciOnly()?" on":"")+'" id="sciBtn"><span class="dot"></span>🔬 '+T.sciOnly+'</button></div>';
-  if(!days.length) tl+='<div class="empty">'+T.noMatch+'</div>';
-  for(const d of days){ const its=groups[d].slice().sort((a,b)=>rankKey(b)-rankKey(a)).slice(0,20);
-    const closed=state.collapsed[d]?" closed":"";
-    tl+='<div class="day'+closed+'"><div class="day-h" data-dayh="'+d+'"><h2>'+(isToday(d)?T.today+" ":"")+fmtDay(d)+'</h2><span class="w">'+wdCN(d)+'</span><span class="c">'+its.length+' '+T.daySel+'</span><span class="arr">'+(state.collapsed[d]?"▶":"▼")+'</span></div><div class="day-b">'+its.map(itemCard).join("")+'</div></div>'; }
+  const days=Object.keys(groups).sort().reverse();
+  const win=state.feedDay?days.filter(d=>d<=state.feedDay).slice(0,7):days.slice(0,7);
+  let tl='<div class="urow">'+(state.feedDay?'<button class="upill on" id="backLatest"><span class="dot"></span>'+T.backLatest+'</button>':"")+'<button class="upill'+(state.unreadOnly?" on":"")+'" id="unreadBtn"><span class="dot"></span>'+T.unreadOnly+'</button><button class="upill'+(sciOnly()?" on":"")+'" id="sciBtn"><span class="dot"></span>🔬 '+T.sciOnly+'</button><a class="upill" href="#/cal" id="calBtn">📅 '+T.calPage+'</a></div>';
+  if(!win.length) tl+='<div class="empty">'+T.noMatch+'</div>';
+  // 组不再折叠（折叠交互已移到独立日历页 #/cal）：组头只作日期分隔与计数。
+  // 计数 = 该天真实精选条数，不再用渲染条数（旧实现 slice(0,20) 后写 its.length，
+  // 34 条精选的一天显示「20 条精选」，0 条精选的一天也显示「20 条精选」）。
+  // 组内排序用 rankKey（W2 画像重排）：绑定快照生效后按兴趣重排，未登录恒等原分数序。
+  for(const d of win){ const its=groups[d].slice().sort((a,b)=>rankKey(b)-rankKey(a));
+    tl+='<div class="day" id="day-'+d+'"><div class="day-h"><h2>'+(isToday(d)?T.today+" ":"")+fmtDay(d)+'</h2><span class="w">'+wdCN(d)+'</span><span class="c">'+its.length+' '+T.daySel+'</span></div><div class="day-b">'+its.map(itemCard).join("")+'</div></div>'; }
   root.innerHTML=rankPillHtml()+'<div class="card ph"><h1>'+T.feed+'</h1><span class="sub">'+esc(feedSub())+'</span><div class="note">'+esc(freshNote())+'</div><div class="note">'+esc(threshNote())+'</div></div>'+hot+tl;
   const ub=$("#unreadBtn"); if(ub) ub.onclick=()=>{ state.unreadOnly=!state.unreadOnly; contentReset("feed"); };
   const sb=$("#sciBtn"); if(sb) sb.onclick=sciToggle;
+  const bl=$("#backLatest"); if(bl) bl.onclick=()=>{ state.feedDay=""; contentReset("feed"); };
   bindRankClear();
+  // 日历页跳过来的落点在这里做：此刻分组刚画进 DOM，router 之后不会再
+  // scrollTo（RENDERED 已置位），顺序是确定的。block:"start" 会把组头
+  // 顶到视口 0 处、压在吸顶 header 下，所以按 header 实测高度留白。
+  if(state.calJumpDay){
+    const day=state.calJumpDay; state.calJumpDay="";
+    requestAnimationFrame(()=>{
+      const g=document.getElementById("day-"+day); if(!g) return;
+      const hd=document.querySelector(".top");
+      const off=hd?Math.ceil(hd.getBoundingClientRect().height):0;
+      window.scrollTo(0, Math.max(0, g.getBoundingClientRect().top+window.scrollY-off-2));
+    });
+  }
+}
+// ---- 日历页：精选时间线的日期导航（替代旧的内联折叠）----
+// 只列真有精选条目的日期（北京日），点某天跳回精选页并滚到该天分组。
+function calDays(){
+  const groups={}; for(const it of C.items){ if(!it.selected) continue; const d=effDate(it); (groups[d]=groups[d]||[]).push(it); }
+  return groups;
+}
+function renderCal(){
+  const root=$("#view-cal"); const groups=calDays();
+  const days=Object.keys(groups).sort().reverse();
+  const cur=state.calMonth||(days[0]||todayCN()).slice(0,7);
+  state.calMonth=cur;
+  const months=[...new Set(days.map(d=>d.slice(0,7)))].sort().reverse();
+  const mi=months.indexOf(cur);
+  const byDay={}; days.forEach(d=>{ byDay[d]=groups[d].length; });
+  // 月历格子：周一开头，七天一行；有精选的日期可点，其余置灰。
+  const first=new Date(cur+"-01T00:00:00+08:00");
+  const lead=(first.getDay()+6)%7;
+  const dim=new Date(Date.UTC(+cur.slice(0,4), +cur.slice(5,7), 1)).getUTCDate();
+  let cells="";
+  for(let i=0;i<lead;i++) cells+='<span class="cal-c off"></span>';
+  for(let dd=1;dd<=dim;dd++){
+    const key=cur+"-"+String(dd).padStart(2,"0");
+    const n=byDay[key]||0;
+    cells+='<a class="cal-c'+(n?"":" off")+(key===todayCN()?" today":"")+'"'+(n?' href="#/" data-calday="'+key+'"':'')+'><span class="cal-d">'+dd+'</span>'+(n?'<span class="cal-n">'+n+'</span>':"")+'</a>';
+  }
+  // 星期表头随语言切换：格子只有 ~35px 宽，英文用两字母（M/S 会撞车）。
+  const wk=(LANG==="en"?["Mo","Tu","We","Th","Fr","Sa","Su"]:["一","二","三","四","五","六","日"])
+    .map(t=>'<span class="cal-w">'+t+'</span>').join("");
+  const grid='<div class="cal-grid">'+wk+cells+'</div>';
+  const nav='<div class="cal-nav"><button class="upill" id="calPrev"'+(mi<=0?" disabled":"")+'>‹</button><span class="cal-m">'+cur+'</span><button class="upill" id="calNext"'+(mi<0||mi>=months.length-1?" disabled":"")+'>›</button></div>';
+  const list='<div class="cal-list">'+days.slice(0,14).map(d=>'<a class="cal-row" href="#/" data-calday="'+d+'"><span>'+fmtDay(d)+'</span><span class="w">'+wdCN(d)+'</span><span class="c">'+byDay[d]+' '+T.daySel+'</span></a>').join("")+'</div>';
+  root.innerHTML='<div class="card ph"><h1>'+T.calPage+'</h1><span class="sub">'+esc(T.calSub)+'</span></div><div class="card" style="padding:14px 16px">'+nav+grid+'</div><div class="card" style="padding:6px 16px 12px"><h3 style="font-size:13px;color:var(--ink3);margin:8px 0 4px">'+T.archive+'</h3>'+list+'</div>';
+  const pv=$("#calPrev"), nx=$("#calNext");
+  if(pv) pv.onclick=()=>{ state.calMonth=months[mi-1]; contentReset("cal"); };
+  if(nx) nx.onclick=()=>{ state.calMonth=months[mi+1]; contentReset("cal"); };
 }
 const ALL_PAGE=30;
 let allObserver=null;
@@ -528,8 +591,15 @@ function renderTopics(){
 }
 function renderTrends(){
   const root=$("#view-trends"); const tr=C.trends||{};
-  const weekStart=tr.weekStart||"";
-  const trendSub=(LANG==="en"?"This week vs last week":"本周 vs 上周")+(weekStart?(LANG==="en"?" · week starting ":" · 本周自")+fmtDay(weekStart)+(LANG==="en"?"":"起"):"");
+  // 滚动窗口文案：旧文案「本周 vs 上周 · 本周自 X 起」在周二时拿 2 天对 7 天，
+  // 百分比全是半截周的假象。新数据带 windowDays/windowStart/windowEnd；
+  // 旧产物没有这些字段时按今天回推，保证文案与数据口径一致而不是谎称自然周。
+  const win=tr.windowDays||7;
+  const we=tr.windowEnd||todayCN();
+  const ws=tr.windowStart||shiftDay(we,-(win-1));
+  let trendSub=T.winVs.replace(/\{n\}/g,String(win));
+  const hasRange=we&&we!==ws;
+  trendSub+=LANG==="en" ? " · "+ws+(hasRange?" → "+we:"") : " · "+ws+(hasRange?" 至 "+we:" 起");
   let html='<div class="card ph"><h1>'+esc(chn()+(LANG==="en"?" Trends":"趋势"))+'</h1><span class="sub">'+esc(trendSub)+'</span></div>';
   const deltas=tr.categoryDelta||[];
   if(!deltas.length){ root.innerHTML=html+'<div class="card"><p class="anote" style="padding:16px 18px">'+T.noTrend+'</p></div>'; return; }
@@ -843,7 +913,7 @@ function renderAccount(){
   if(bindCodeFromHash()&&PROFILE.logged&&ACC.bindTried!==bindCodeFromHash()) redeemBind(false);
 }
 function BRAND(){ return "PAT-HOT"; }
-renderers.feed=renderFeed; renderers.all=renderAll; renderers.hot=renderHot; renderers.daily=renderDaily; renderers.topics=renderTopics; renderers.data=renderData; renderers.trends=renderTrends; renderers.fav=renderFav; renderers.agent=renderAgent; renderers.more=renderMore; renderers.account=renderAccount;
+renderers.feed=renderFeed; renderers.all=renderAll; renderers.hot=renderHot; renderers.daily=renderDaily; renderers.cal=renderCal; renderers.topics=renderTopics; renderers.data=renderData; renderers.trends=renderTrends; renderers.fav=renderFav; renderers.agent=renderAgent; renderers.more=renderMore; renderers.account=renderAccount;
 function bind(){
   const q=$("#q");
   let qTimer=null;
@@ -861,8 +931,18 @@ function bind(){
     if(f){ e.preventDefault(); toggleFav(f.dataset.fav); return; }   // 类名由 applyFavToDom 统一写，别在这里再翻一次
     const xf=e.target.closest("[data-x]");
     if(xf){ e.preventDefault(); toggleExpand(xf); return; }
-    const dh=e.target.closest("[data-dayh]");
-    if(dh){ const d=dh.dataset.dayh; state.collapsed[d]=!state.collapsed[d]; dh.closest(".day").classList.toggle("closed"); dh.querySelector(".arr").textContent=state.collapsed[d]?"▶":"▼"; return; }
+    // 日历页点某天：跳回精选页、把窗口锚到该天并滚到对应分组。
+    // 旧的"点组头折叠"已删除——录屏（2026-10-13）里折叠会把下方内容整体顶走
+    // （单帧 +31px / +164px 的跳位），用户明确要"单独做一个界面，以日历形式，点击跳转"。
+    const cd=e.target.closest("[data-calday]");
+    if(cd){ e.preventDefault(); state.feedDay=cd.dataset.calday; state.unreadOnly=false;
+      // 跳转的滚动不能在这里做：hashchange→router 重画精选是异步任务，
+      // rAF 可能跑在它前面（目标分组还不存在），也可能跑在它后面被
+      // router 的 scrollTo(0,0) 顶掉（320px 实测 y 停在 0）。把落点交给
+      // renderFeed：DOM 画好后自己排帧，顺序才确定。
+      state.calJumpDay=cd.dataset.calday;
+      location.hash="#/"; contentReset("feed");
+      return; }
     const r=e.target.closest("[data-read]");
     if(r){ markRead(r.dataset.read); }
   });
@@ -870,6 +950,12 @@ function bind(){
   // 再点当前 tab 不会改 hash，也就不会触发 hashchange —— router 根本不会被调用。
   // 位置缓存必须配一个"回到顶部"的出口，否则用户只能手动往上滚。
   document.addEventListener("click",e=>{
+    // 日历格子是 a[href="#/"]：data-calday 处理器已 preventDefault 并同步
+    // 改好 hash，这里若再按"再点当前 tab"走一遍，dispatch 中 router 会被
+    // 多调一次，随后 hashchange 判成 retap 归零，把 renderFeed 排好的
+    // 落点顶回 0（trace 实测 scrollTo(507) 之后紧跟 scrollTo(0,0)）。
+    // 被拦截的点击不再二次处理。
+    if(e.defaultPrevented) return;
     const a=e.target.closest('a[href^="#/"],a[href="#/"]');
     if(a && a.getAttribute("href")===location.hash) router();
   });
