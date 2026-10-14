@@ -28,7 +28,7 @@
 - **本地数据可备份**：已读、收藏、主题、语言、频道只存在这台浏览器（清缓存即丢）；收藏页可**导出**为 JSON 备份、换设备后**导入**恢复（AIHOT 的本地数据 + 导出备份口径）。导出的文件带 `app:"PAT-HOT"` 标记，别的文件会被拒绝且不动现场
 - **Agent 接入**：免鉴权静态 JSON API（`api/v1/<频道>/*`，频道：physics/astro/tech；重构前的扁平 `api/v1/*` 仍保留兼容）+ OpenAPI 3.1 + 分类 RSS feed + `llms.txt` + 可安装 Skill（`agent/skills/opto-hot`）
 - **手机适配**：响应式布局（窄屏单列、顶部搜索、横向导航），移动端可正常浏览
-- **自动化**：内置 GitHub Actions，每天 6:00 / 18:00（北京时间）自动刷新数据并提交
+- **自动化**：内置 GitHub Actions，每天约 6:15 / 18:15（北京时间）自动刷新数据并提交
 - **趋势追踪**：周维度聚合（本周 vs 上周分类热度、新上榜/持续发酵事件），独立趋势视图
 - **LLM 深挖**（可选）：两次独立打分定精选资格 + 结构化抽取（主体/事件/标签），prompt 全部外置
 
@@ -311,13 +311,13 @@ pat-hot/
 给外部消费者（RSS 订阅、Agent Skill、llms.txt、README）的兼容层**，由 `collect.py` 每次运行时把
 T 光电频道镜像过去。`python collector/collect.py --check` 会在提交前确认它们都在。
 
-## 每天 6:00 / 18:00（北京时间）自动更新
+## 每天约 6:15 / 18:15（北京时间）自动更新
 
 **GitHub Actions（默认启用，推荐）**
 
 ![workflow](https://github.com/sun-zihang/pat-hot/actions/workflows/update.yml/badge.svg)
 
-`.github/workflows/update.yml` 每天 6:00 与 18:00（北京时间，即 cron `0 22,10 * * *` UTC）各运行一次：
+`.github/workflows/update.yml` 每天 06:17 与 18:17（北京时间，即 cron `17 22,10 * * *` UTC）各起跑一次，采集本身再跑几分钟：
 1. 跑 `tests/` 下的单元测试（纯标准库、无网络）
 2. 运行 `python collector/collect.py --limit 25 --llm` 重新采集（真嵌入聚类）
 3. `python collector/collect.py --check` 自检对外契约，不通过就不提交

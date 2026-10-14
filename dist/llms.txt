@@ -1,6 +1,6 @@
 # PAT-HOT · 物理·天文·光电热点统计
 
-> 物理 / 天文 / 光电三频道资讯聚合与热点统计（AIHOT 模式），数据每天 6:00、18:00（北京时间）自动更新，本站数据为公开内容，适合作为 AI / Agent 的信息来源。
+> 物理 / 天文 / 光电三频道资讯聚合与热点统计（AIHOT 模式），数据每天约 6:15、18:15（北京时间）自动更新（起跑 06:17/18:17 UTC+8，采集需几分钟），本站数据为公开内容，适合作为 AI / Agent 的信息来源。
 
 ## 在线入口
 - 报告页面: https://sun-zihang.github.io/pat-hot/index.html
@@ -27,7 +27,10 @@ curl https://sun-zihang.github.io/pat-hot/api/v1/astro/dailies.json
 curl https://sun-zihang.github.io/pat-hot/feed.xml
 
 ## 约定
-- 数据每天 6:00、18:00（北京时间）更新；可对完整 URL 使用 ETag / If-None-Match 减少拉取。
+- 数据每天约 6:15、18:15（北京时间）更新：定时任务起跑 06:17/18:17，采集本身再跑几分钟；
+  刻意错开整点是因为 Actions 整点队列会被延迟数小时甚至丢弃。
+  轮询请对完整 URL 使用 ETag / If-None-Match，别按整点硬猜；
+  真实批次时刻以每份产物的 generatedAt 为准。
 - items.json 为全量快照，可本地按 published_at / discovered_at / keywords 筛选；
   published_at 可以为 null（RSS 条目常见），按时间筛时先回退收录时间：
   `it.get("published_at") or it["discovered_at"]`。

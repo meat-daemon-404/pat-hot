@@ -1868,7 +1868,7 @@ def build_openapi(generated):
     return {
         "openapi": "3.1.0",
         "info": {"title": "PAT-HOT API v1", "version": "2.0.0",
-                 "description": "物理·天文·光电热点统计静态 JSON 接口（免鉴权，每天 6:00/18:00 北京时间更新，AI/Agent 可直接消费）。"},
+                 "description": "物理·天文·光电热点统计静态 JSON 接口（免鉴权，每天约 6:15 / 18:15 北京时间更新，AI/Agent 可直接消费）。"},
         "servers": [{"url": SITE_BASE.rstrip("/")}],
         "paths": paths,
     }
@@ -2150,7 +2150,7 @@ def write_outputs(channel_results, generated):
         for k in ("items", "hot-topics", "dailies", "daily", "stories", "trends"):
             eps["legacy:%s" % k] = "api/v1/%s.json" % k
     dump({"name": "PAT-HOT API v1",
-          "description": "物理·天文·光电热点统计静态 JSON 接口（免鉴权，每天 6:00/18:00 北京时间更新）。"
+          "description": "物理·天文·光电热点统计静态 JSON 接口（免鉴权，每天约 6:15 / 18:15 北京时间更新）。"
                          "api/v1/<频道>/* 为当前布局；legacy:* 是重构前的扁平地址，内容等同 T 光电频道，仍持续更新。",
           "channels": list(channel_results),
           "defaultChannel": CHANNEL_DEFAULT,
@@ -2166,7 +2166,7 @@ def write_outputs(channel_results, generated):
         for c in channel_results)
     llms = """# PAT-HOT · 物理·天文·光电热点统计
 
-> 物理 / 天文 / 光电三频道资讯聚合与热点统计（AIHOT 模式），数据每天 6:00、18:00（北京时间）自动更新，本站数据为公开内容，适合作为 AI / Agent 的信息来源。
+> 物理 / 天文 / 光电三频道资讯聚合与热点统计（AIHOT 模式），数据每天约 6:15、18:15（北京时间）自动更新（起跑 06:17/18:17 UTC+8，采集需几分钟），本站数据为公开内容，适合作为 AI / Agent 的信息来源。
 
 ## 在线入口
 - 报告页面: {base}/index.html
@@ -2191,7 +2191,10 @@ curl {base}/api/v1/astro/dailies.json
 curl {base}/feed.xml
 
 ## 约定
-- 数据每天 6:00、18:00（北京时间）更新；可对完整 URL 使用 ETag / If-None-Match 减少拉取。
+- 数据每天约 6:15、18:15（北京时间）更新：定时任务起跑 06:17/18:17，采集本身再跑几分钟；
+  刻意错开整点是因为 Actions 整点队列会被延迟数小时甚至丢弃。
+  轮询请对完整 URL 使用 ETag / If-None-Match，别按整点硬猜；
+  真实批次时刻以每份产物的 generatedAt 为准。
 - items.json 为全量快照，可本地按 published_at / discovered_at / keywords 筛选；
   published_at 可以为 null（RSS 条目常见），按时间筛时先回退收录时间：
   `it.get("published_at") or it["discovered_at"]`。
