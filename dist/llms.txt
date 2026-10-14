@@ -28,7 +28,9 @@ curl https://sun-zihang.github.io/pat-hot/feed.xml
 
 ## 约定
 - 数据每天 6:00、18:00（北京时间）更新；可对完整 URL 使用 ETag / If-None-Match 减少拉取。
-- items.json 为全量快照，可本地按 publishedAt / discoveredAt / keywords 筛选。
+- items.json 为全量快照，可本地按 published_at / discovered_at / keywords 筛选；
+  published_at 可以为 null（RSS 条目常见），按时间筛时先回退收录时间：
+  `it.get("published_at") or it["discovered_at"]`。
 - api/v1/dailies.json 为裸日期字典（键是 YYYY-MM-DD）；data/dailies.json 才带 schemaVersion 包装。
 - 公开使用请注明一次数据来源：PAT-HOT（AIHOT 模式，数据源自各公开站点）。
 

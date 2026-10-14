@@ -2192,7 +2192,9 @@ curl {base}/feed.xml
 
 ## 约定
 - 数据每天 6:00、18:00（北京时间）更新；可对完整 URL 使用 ETag / If-None-Match 减少拉取。
-- items.json 为全量快照，可本地按 publishedAt / discoveredAt / keywords 筛选。
+- items.json 为全量快照，可本地按 published_at / discovered_at / keywords 筛选；
+  published_at 可以为 null（RSS 条目常见），按时间筛时先回退收录时间：
+  `it.get("published_at") or it["discovered_at"]`。
 - api/v1/dailies.json 为裸日期字典（键是 YYYY-MM-DD）；data/dailies.json 才带 schemaVersion 包装。
 - 公开使用请注明一次数据来源：PAT-HOT（AIHOT 模式，数据源自各公开站点）。
 
@@ -3418,6 +3420,70 @@ def check_template_drift(html):
     return problems
 
 
+def doc_field_problems(llms_txt, readme_txt):
+    """文档里点名的字段名必须真实存在于产物 JSON。
+
+    2026-10-14 实测：llms.txt 教 Agent「按 publishedAt / discoveredAt 筛选」，
+    README 也这么写，而两份产物的真实键是 published_at / discovered_at（items
+    整份 snake_case）。照文档写的代码取到 undefined，筛 24h 命中 0 条——Agent
+    不会来问人，只会得出"这站没数据"。字段改名只发生在代码侧，文档是另一条
+    变更线，所以唯一事实源只能是产物本身：README 的 {…} 字段清单和 llms.txt 的
+    筛选句都被解析出来，逐个键对 api/v1/<别名频道>/items.json、hot-topics.json
+    的真实键核验。命名本来就是混合的（trendPct/digestTitle 是 camelCase，
+    stories.json 整份 camelCase），所以不搞"统一风格"规则，只验"这个键存在吗"。
+    """
+    problems = []
+
+    def payload(fname):
+        p = os.path.join(DIST_DIR, "api", "v1", FLAT_ALIAS_CHANNEL, fname)
+        if not os.path.exists(p):
+            return None, None  # 产物缺席由存在性检查报错，这里不叠加噪音
+        try:
+            with open(p, encoding="utf-8") as f:
+                doc = json.load(f)
+        except Exception:
+            return None, None
+        items = doc.get("items") if isinstance(doc, dict) else None
+        if not items:
+            return None, None  # 空榜不判定，避免分类清空时假报文档错
+        keys = set()
+        for it in items[:80]:
+            if isinstance(it, dict):
+                keys.update(it.keys())
+        sample = items[0] if isinstance(items[0], dict) else {}
+        return keys, sample
+
+    claims = []
+    for pat, fname, src in (
+            (r"data/items\.json[：:]\{([^}]*)\}", "items.json", "README data/items.json"),
+            (r"data/hot-topics\.json[：:]\{([^}]*)\}", "hot-topics.json", "README data/hot-topics.json")):
+        m = re.search(pat, readme_txt)
+        if m:
+            claims.append((src, re.split(r"[,、]\s*", m.group(1)), fname))
+    m = re.search(r"可本地按([^；;\n]*?)\s*筛选", llms_txt)
+    if m:
+        claims.append(("llms.txt 筛选项", re.split(r"\s*/\s*", m.group(1)), "items.json"))
+
+    cache = {}
+    for src, tokens, fname in claims:
+        if fname not in cache:
+            cache[fname] = payload(fname)
+        keys, sample = cache[fname]
+        if keys is None:
+            continue
+        for tok in tokens:
+            tok = tok.strip().strip("`")
+            if not re.match(r"^[A-Za-z][A-Za-z0-9_]*(\.[A-Za-z][A-Za-z0-9_]*)?$", tok):
+                continue  # 自然语言混排词（如"统计聚合"）不是字段声明
+            root, _, sub = tok.partition(".")
+            if root not in keys:
+                problems.append("%s 教消费者读 `%s`，但 api/v1/%s/%s 的条目里没有这个键"
+                                "（真实键改名了，文档没跟着改）" % (src, tok, FLAT_ALIAS_CHANNEL, fname))
+            elif sub and isinstance((sample.get(root) or {}), dict) and sub not in sample[root]:
+                problems.append("%s 声明的嵌套字段 `%s` 在样例条目里不存在" % (src, tok))
+    return problems
+
+
 def check_contract(verbose=True):
     """返回问题列表；空列表表示对外契约完整。"""
     problems = []
@@ -3501,6 +3567,13 @@ def check_contract(verbose=True):
             problems.append("llms.txt 仍指向已改名的旧仓库地址")
         if "./api/v1" in txt:
             problems.append("llms.txt 仍使用相对地址，Agent 无法直接请求")
+        # 文档字段名 vs 产物真实键（llms.txt + README 一起验，见 doc_field_problems）
+        rp = os.path.join(ROOT, "README.md")
+        readme = ""
+        if os.path.exists(rp):
+            with open(rp, encoding="utf-8") as f:
+                readme = f.read()
+        problems.extend(doc_field_problems(txt, readme))
 
     if REPO_URL and "opto-hot" in REPO_URL:
         problems.append("REPO_URL 指向旧仓库名")

@@ -48,8 +48,8 @@
 | 更多 #/more | - | 语言/频道等次要入口收纳（窄屏） |
 
 **数据机制**（静态 JSON API，兼容 AIHOT 字段风格）：
-- data/items.json：{id, title, url, links.original, source, category, publishedAt, discoveredAt, score, selected, summary, role, keywords}
-- data/hot-topics.json：{rank, title, status, trend, trendPct, badges, heat, sourceCount, signalCount, latestAt, sources, links, terms}
+- data/items.json：{id, title, url, links.original, source, category, published_at, discovered_at, score, selected, summary, role, keywords}（条目字段是 snake_case；published_at 可为 null）
+- data/hot-topics.json：{rank, title, status, trend, trendPct, badges, heat, source_count, signal_count, latest_at, sources, links, terms}（混合命名：trendPct / digestTitle 是 camelCase 例外，计数与时间字段是 snake_case；stories.json 则整份是 camelCase——三份产物别互相类推）
 - data/dailies.json：按日期归档的日报（历史合并保留）；data/daily.json：统计聚合
 - **Agent 接口**：`api/v1/{items,hot-topics,dailies,daily,stories,index,openapi}.json`（静态 JSON / OpenAPI 3.1，免鉴权）+ 分类 RSS（`feed.xml` / `feed/category/{slug}.xml`）+ 站点根 `llms.txt`
 - 时间窗口语义：优先原文发布时间，缺失回退收录时间；24h / 7d / 日报按北京时间
