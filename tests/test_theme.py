@@ -147,6 +147,118 @@ class TestI18nKeyCompleteness(unittest.TestCase):
             self.assertIn(lit, zh, "rows 引用了未知文案键 %s" % lit)
 
 
+class TestShellLocalization(unittest.TestCase):
+    """页面外壳（<head> / 页头 / 页脚 / 相对时间）必须随语言切换。
+
+    回归（2026-10-14 浏览器实测 EN 模式）：切到英文后，标签页标题、
+    <html lang>、meta description、频道导航 aria-label、页脚"生成于 …"、
+    卡片元信息行的"收录 N 小时前"、日报标题"2026年10月13日 · 周二"、
+    以及接口表里写死的"LLM 友好入口 / RSS（T 光电主 feed）"全是中文。
+    这些文案不在 data-i18n 上（在 <head> 里或属性上），所以 tr() 必须
+    单独收口；漏一处，EN 页面就在标签页 / 无障碍标签 / 页脚里混出中文。
+    """
+
+    def _fn(self, name):
+        i = JS.index("function %s(" % name)
+        j = re.search(r"\nfunction ", JS[i + 10:]).start() + i + 10
+        return JS[i:j]
+
+    def test_tr_sets_lang_title_meta_aria_gen(self):
+        tr = self._fn("tr")
+        self.assertIn('document.documentElement.lang', tr,
+                      "tr() 不再改 <html lang>：EN 页面语言标记仍是 zh-CN")
+        self.assertIn("document.title", tr, "tr() 不再改标签页标题")
+        self.assertIn("meta[name=", tr, "tr() 不再改 meta description")
+        self.assertIn('og:title', tr, "tr() 不再改 og:title")
+        self.assertIn('setAttribute("aria-label"', tr, "tr() 不再改频道导航 aria-label")
+        self.assertIn(".gen", tr, "tr() 不再填页脚生成时间：.gen 会空掉或永远是中文")
+
+    def test_footer_gen_uses_data_attribute(self):
+        # 外壳文案进词典后，构建时间戳放 data-gen，由 tr() 按语言拼；
+        # __GEN__ 仍必须原样出现在模板里（构建时替换），否则产物会缺时间。
+        self.assertIn('data-gen="__GEN__"', HTML,
+                      "页脚生成时间不再用 data-gen=\"__GEN__\"：改回写死中文就会漏翻译")
+        self.assertEqual(HTML.count("__GEN__"), 1, "__GEN__ 必须恰好出现一次")
+
+    def test_shell_copy_keys_exist_in_both_langs(self):
+        zh, en = _i18n_keys("zh"), _i18n_keys("en")
+        for k in ("pageTitle", "pageDesc", "ogTitle", "ogDesc",
+                  "channelAria", "genAt", "colon"):
+            self.assertIn(k, zh, "外壳文案键 %s 只有英文有或缺中文" % k)
+            self.assertIn(k, en, "外壳文案键 %s 缺英文" % k)
+
+    def test_relative_time_is_language_aware(self):
+        rel = self._fn("fmtRel")
+        self.assertIn('LANG==="en"', rel,
+                      "fmtRel 又不分语言了：EN 下卡片与数据页会显示「N 小时前」")
+        self.assertIn("ago", rel, "fmtRel 缺英文分支")
+
+    def test_pub_label_is_language_aware(self):
+        pub = self._fn("pubLabel")
+        self.assertIn('LANG==="en"', pub,
+                      "pubLabel 又不分语言：EN 卡片元信息行会漏出「发布 / 收录」")
+
+    def test_score_tooltip_is_language_aware(self):
+        """AI 双打分卡的 tooltip 分语言。
+
+        回归（卡片子树属性扫描——此前的浏览器漏译扫描器跳过了 .icard）：
+        scoreEl 的 title 曾写死 (llm?"AI 双打分均值":"score")+" / 100"，
+        EN 下每张 AI 打分卡悬停都漏中文。" / 100" 语言中立可留，
+        短语必须换成 T.aiScore，且词典里中英各就各位。
+        """
+        se = self._fn("scoreEl")
+        self.assertIn("T.aiScore", se,
+                      "scoreEl 的 AI tooltip 又写死中文：EN 卡片悬停漏「AI 双打分均值」")
+        self.assertNotIn("双打分均值", se, "scoreEl 函数体里不该再出现中文字面量")
+        # 用 _i18n_body 的行首锚定取段，别用裸 "en:"——它会命中值里的英文冒号。
+        for lang, want_cjk in (("zh", True), ("en", False)):
+            body = _i18n_body(lang)
+            m = re.search(r'aiScore:"((?:[^"\\]|\\.)*)"', body)
+            self.assertTrue(m, "%s 段找不到 aiScore" % lang)
+            has = bool(re.search(r"[\u4e00-\u9fff]", m.group(1)))
+            if want_cjk:
+                self.assertTrue(has, "aiScore 的中文值丢了：ZH 卡片 tooltip 会变英文")
+            else:
+                self.assertFalse(has, "aiScore 的英文值混进中文：EN tooltip 又漏了")
+
+    def test_agent_page_has_no_hardcoded_chinese_chrome(self):
+        """接口页表格说明必须走词典或双语三元，不能写死中文。
+
+        注意不能一刀切禁中文：中文分支本来就该含「RSS（T 光电主 feed）」，
+        所以按行查——出现中文的那一行必须同时有英文分支。
+        """
+        i = JS.index("function renderAgent")
+        body = JS[i:JS.index("function renderMore")]
+        lines = body.splitlines()
+        rss = [ln for ln in lines if "主 feed）" in ln]
+        self.assertTrue(rss, "renderAgent 里找不到 RSS 主 feed 说明行，结构变了")
+        for ln in rss:
+            self.assertIn('LANG==="en"', ln,
+                          "RSS 主 feed 说明没有英文分支：EN 下这一格会漏中文")
+            self.assertIn("RSS (main feed", ln, "RSS 主 feed 说明的英文分支没了")
+        self.assertFalse([ln for ln in lines if "友好入口" in ln],
+                         "renderAgent 又写死了「LLM 友好入口」，应改用 T.llmsEntry")
+        self.assertIn("T.llmsEntry", body, "llms.txt 说明不再引用 T.llmsEntry")
+
+    def test_daily_title_rebuilt_in_en(self):
+        # rep.label / rep.weekday 是采集端写死的中文，EN 下必须按 date 重排。
+        # 逐行查 dLabel 与 dWeek：只查整段有没有 LANG 会被另一个变量蒙过——
+        # 变异测试里把 dLabel 单独改回 rep.label，段级检查照样绿。
+        i = JS.index("function renderDaily")
+        body = JS[i:JS.index("function renderTopics")]
+        dl = [ln for ln in body.splitlines() if "const dLabel=" in ln]
+        dw = [ln for ln in body.splitlines() if "const dWeek=" in ln]
+        self.assertEqual(len(dl), 1, "dLabel 定义行找不到或不止一处，日报标题结构变了")
+        self.assertEqual(len(dw), 1, "dWeek 定义行找不到或不止一处")
+        self.assertIn('LANG==="en"', dl[0],
+                      "dLabel 不再分语言：EN 下日报标题会是采集端写死的「2026年10月13日」")
+        self.assertIn('LANG==="en"', dw[0],
+                      "dWeek 不再分语言：EN 下日报标题的星期会是写死的「周二」")
+        self.assertIn("wdCN(rep.date)", dw[0], "EN 日报标题没有用 wdCN(date) 重算星期")
+        self.assertIn("esc(dLabel)", body, "dtitle 不再输出 dLabel")
+        self.assertIn("esc(dWeek)", body, "dtitle 不再输出 dWeek")
+
+
 class TestViewWiring(unittest.TestCase):
     def test_every_route_has_section_and_renderer(self):
         for path, view in _route_map().items():

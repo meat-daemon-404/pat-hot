@@ -59,6 +59,14 @@ const I18N = {
     bindWaiting:"正在关联 ScholarMatrix…", bindFail:"关联失败", bindHint:"检测到 ScholarMatrix 关联码：登录后自动完成关联。",
     needBoth:"邮箱和密码都要填", accWorking:"提交中…", probing:"正在检查登录状态…", netFail:"网络故障：请求没发出去或没回音（不是「暂无数据」）",
     rankPill:"按你的研究兴趣排序", rankView:"查看", rankClear:"清除", rankTerms:"生效主题词", rankCats:"关注分类", rankChs:"关注频道", rankNone:"快照没有主题词（仅按分类/频道命中）",
+    // 页面外壳（head / 页头 / 页脚）：EN 下漏一处就是整页中英混排，所以一律进词典，
+    // 由 tr() 在启动时统一落盘，而不是散在模板里。
+    genAt:"生成于 {t} · 北京时间", pageTitle:"PAT-HOT · 物理·天文·光电热点",
+    pageDesc:"PAT-HOT：物理 / 天文 / 光电三频道资讯热点统计。自动采集公开信源，去重聚类打分，每天 6:00 与 18:00（北京时间）更新，单文件可离线打开，并提供免鉴权 JSON API。",
+    ogTitle:"PAT-HOT · 物理·天文·光电热点统计", ogDesc:"三频道资讯热点榜、日报与趋势，AIHOT 方法论，开源可离线。",
+    channelAria:"频道", themeTitle:"主题 / Theme", langTitle:"语言 / Language", llmsEntry:"LLM 友好入口",
+    aiScore:"AI 双打分均值",
+    colon:"：",
     footer:"PAT-HOT · 物理·天文·光电热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
   en: { feed:"Selected", all:"All", hot:"Hot", daily:"Daily", trends:"Trends", more:"More",
     allPage:"All Items", hotPage:"Hot Ranking", topics:"Topics", data:"Data", agent:"Agent API",
@@ -98,6 +106,12 @@ const I18N = {
     bindWaiting:"Linking to ScholarMatrix…", bindFail:"Link failed", bindHint:"ScholarMatrix link code detected: it will be redeemed once you sign in.",
     needBoth:"Email and password are both required", accWorking:"Working…", probing:"Checking sign-in state…", netFail:"Network failure: the request never got an answer (this is not \"no data\")",
     rankPill:"Ranked by your research interests", rankView:"view", rankClear:"clear", rankTerms:"Active topic terms", rankCats:"Followed categories", rankChs:"Followed channels", rankNone:"Snapshot has no topic terms (matched on category / channel only)",
+    genAt:"Generated {t} · Beijing time", pageTitle:"PAT-HOT · physics / astronomy / photonics",
+    pageDesc:"PAT-HOT: hot-topic stats across three channels — physics / astronomy / photonics. Public sources are collected, deduped, clustered and scored; refreshed at 6:00 and 18:00 Beijing time; one offline-capable file with a keyless JSON API.",
+    ogTitle:"PAT-HOT · physics / astronomy / photonics hot-topic stats", ogDesc:"Hot rankings, daily digests and trends across three channels — AIHOT methodology, open source, offline-capable.",
+    channelAria:"Channel", themeTitle:"Theme / 主题", langTitle:"Language / 语言", llmsEntry:"LLM-friendly entry point",
+    aiScore:"AI double-score mean",
+    colon:": ",
     footer:"PAT-HOT · physics / astronomy / photonics hot-topic stats (AIHOT methodology) · public data, for reference only · open source on GitHub" }
 };
 let LANG = "zh";
@@ -190,7 +204,7 @@ function catBadge(c){ return '<span class="bdg b-cat">'+esc(catName(c))+'</span>
 function pickBadge(){ return '<span class="bdg b-pick">'+T.pick+'</span>'; }
 function tierBadge(t){ return t==="official"?'<span class="bdg b-tier">'+T.official+'</span>':""; }
 function densBadge(d){ if(!d) return ""; const cls=d==="高"?"b-dh":(d==="中"?"b-dm":"b-dl"); return '<span class="bdg '+cls+'" title="'+T.density+'">'+esc(densName(d))+'</span>'; }
-function scoreEl(s,llm){ const ai=llm?'<span class="iai">AI</span>':""; return '<span class="iscore mono '+scoreCls(s)+'" title="'+(llm?"AI 双打分均值":"score")+' / 100">'+Math.round(s)+'</span>'+ai; }
+function scoreEl(s,llm){ const ai=llm?'<span class="iai">AI</span>':""; return '<span class="iscore mono '+scoreCls(s)+'" title="'+(llm?T.aiScore:"score")+' / 100">'+Math.round(s)+'</span>'+ai; }
 // ---- ScholarMatrix 出站深链（契约 §5；W2 前端半最重要的一笔）----
 // 只有条目 refs 里带 verified 的 doi/arxiv 才给出链；无锚点＝不放按钮，宁缺毋假。
 // b64url 与 SM 侧 frontend/src/lib/patJourney.js 的 b64url 严格同形
