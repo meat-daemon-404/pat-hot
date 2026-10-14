@@ -1,19 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T17:37:36.461691+00:00",
-  "count": 6,
+  "generatedAt": "2026-10-14T01:21:56.582979+00:00",
+  "count": 3,
   "items": [
     {
-      "id": "14544c9dbac6",
+      "id": "8d27655670e6",
       "title": "Will we observe dark matter as a particle or a wave?",
       "status": "发酵中",
-      "heat": 80.0,
-      "sourceCount": 4,
-      "signalCount": 31,
-      "latestAt": "2026-10-13T17:37:36.461691+00:00",
+      "heat": 70.8,
+      "sourceCount": 3,
+      "signalCount": 25,
+      "latestAt": "2026-10-14T01:21:56.582979+00:00",
       "sources": [
         "MIT News 物理",
-        "Nature 量子物理",
         "New Scientist 物理",
         "Phys.org 物理新闻"
       ],
@@ -22,205 +21,92 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 79.6,
+          "score": 76.0,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
-        {
-          "title": "From nonmagnetic to magnetic: A 2D semiconductor with electrically tunable magnetism",
-          "url": "https://phys.org/news/2026-10-nonmagnetic-magnetic-2d-semiconductor-electrically.html",
-          "source": "Phys.org 物理新闻",
-          "score": 79.3,
-          "published_at": "2026-10-12T21:40:11+00:00"
-        },
-        {
-          "title": "Continuous-time noise mitigation in analogue quantum simulation",
-          "url": "https://www.nature.com/articles/s41467-026-78310-5",
-          "source": "Nature 量子物理",
-          "score": 78.7,
-          "published_at": "2026-10-12T00:00:00+00:00"
-        },
-        {
-          "title": "All-optical generation of dense multi-GeV positron beams with longitudinal polarization",
-          "url": "https://www.nature.com/articles/s42005-026-02907-x",
-          "source": "Nature 量子物理",
-          "score": 78.7,
-          "published_at": "2026-10-12T00:00:00+00:00"
-        },
-        {
-          "title": "Chip-mediated manipulation of photonic quantum skyrmions",
-          "url": "https://www.nature.com/articles/s41567-026-03487-x",
-          "source": "Nature 量子物理",
-          "score": 78.7,
-          "published_at": "2026-10-12T00:00:00+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 6.7,
-      "badges": [],
-      "digest": "新加坡国立大学（NUS）研究人员与瑞士、捷克、德国机构合作，展示了一种在原本无磁性的二维半导体中引入磁性的方法，并实现磁性的电学可调。报道未给出具体材料体系、调控机制细节或性能指标，也未说明该成果是否已被独立验证或进入应用阶段。",
-      "digestTitle": "新加坡团队实现二维半导体电学调控磁性",
-      "llmScore": 18.0
-    },
-    {
-      "id": "31bada8f336d",
-      "title": "Nuclear clocks tick for the first time",
-      "status": "发酵中",
-      "heat": 61.5,
-      "sourceCount": 4,
-      "signalCount": 9,
-      "latestAt": "2026-10-13T17:37:36.461691+00:00",
-      "sources": [
-        "MIT News 物理",
-        "Nature 量子物理",
-        "New Scientist 物理",
-        "Phys.org 物理新闻"
-      ],
-      "links": [
-        {
-          "title": "Nuclear clocks tick for the first time",
-          "url": "https://www.nature.com/articles/d41586-026-03060-9",
-          "source": "Nature 量子物理",
-          "score": 73.8,
-          "published_at": "2026-10-07T00:00:00+00:00"
-        },
-        {
-          "title": "A thorium-229 optical nuclear clock with feedback loop",
-          "url": "https://www.nature.com/articles/s41586-026-11084-4",
-          "source": "Nature 量子物理",
-          "score": 73.8,
-          "published_at": "2026-10-07T00:00:00+00:00"
-        },
-        {
-          "title": "A nuclear clock synchronized to 229Th",
-          "url": "https://www.nature.com/articles/s41586-026-11122-1",
-          "source": "Nature 量子物理",
-          "score": 73.8,
-          "published_at": "2026-10-07T00:00:00+00:00"
-        },
-        {
-          "title": "Sustainability cost of defect engineering in color centers for quantum communications",
-          "url": "https://www.nature.com/articles/s41467-026-78261-x",
-          "source": "Nature 量子物理",
-          "score": 71.2,
-          "published_at": "2026-10-03T00:00:00+00:00"
-        },
-        {
-          "title": "Deterministic and programmable fusion for the scalable generation of photonic graph states",
-          "url": "https://www.nature.com/articles/s41567-026-03471-5",
-          "source": "Nature 量子物理",
-          "score": 69.2,
-          "published_at": "2026-09-30T00:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": "研究人员利用钍-229同位素的光学核跃迁，首次实现核钟的稳定运行，并构建了带反馈回路的核钟系统，使核钟能够与钍-229跃迁同步。这一进展标志着核钟从概念验证走向可实际运行的阶段，为未来超高精度时间测量和基础物理检验提供了新工具。",
-      "digestTitle": "钍-229核钟首次实现稳定运行"
-    },
-    {
-      "id": "a1d83dca7d86",
-      "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
-      "status": "关注中",
-      "heat": 32.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-13T17:37:36.461691+00:00",
-      "sources": [
-        "New Scientist 物理",
-        "Phys.org 物理新闻"
-      ],
-      "links": [
         {
           "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
           "url": "https://phys.org/news/2026-10-gravity-quantum-linked-derivation-einstein.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.7,
+          "score": 75.8,
           "published_at": "2026-10-12T23:20:01+00:00"
+        },
+        {
+          "title": "Hybrid quantum computer observes foundational quantum effect in a new setting",
+          "url": "https://phys.org/news/2026-10-hybrid-quantum-foundational-effect.html",
+          "source": "Phys.org 物理新闻",
+          "score": 74.1,
+          "published_at": "2026-10-10T10:57:07+00:00"
         },
         {
           "title": "Embracing the glitches in gravity could give us a unified theory of reality",
           "url": "https://www.newscientist.com/article/2589429-embracing-the-glitches-in-gravity-could-give-us-a-unified-theory-of-reality/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 51.1,
+          "score": 66.2,
           "published_at": "2026-09-28T15:00:00+00:00"
+        },
+        {
+          "title": "MIT Quantum Initiative launches postdoctoral fellowship program",
+          "url": "https://news.mit.edu/2026/mit-quantum-initiative-launches-postdoctoral-fellowship-0831",
+          "source": "MIT News 物理",
+          "score": 56.5,
+          "published_at": "2026-08-31T19:30:00+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "down",
+      "trendPct": -11.5,
       "badges": [],
-      "digest": "近期研究提出，引力与量子信息存在深层联系，时空的几何形状可追溯至量子场中信息的存储方式，相关推导关联到爱因斯坦方程。这一方向试图弥合广义相对论与量子力学之间的鸿沟。\n\n与此同时，物理学家长期面临将引力纳入量子力学的难题，有观点提出一种激进的“后量子”路径，认为接纳引力中的“缺陷”可能带来统一理论，并有助于解释其他宇宙谜题。该说法目前仍属理论探索，尚未证实。",
-      "digestTitle": "引力与量子信息关联研究及后量子理论探索",
-      "llmScore": 23.5
+      "digest": "专栏作家Chanda Prescod-Weinstein认为暗物质可能已被发现，但要在实验中观测它，还需先判断它表现为粒子还是波。\n\n牛津大学物理系研究人员用由量子比特和量子振荡器组成的混合量子计算机，在量子模拟中观测到Aharonov–Bohm效应。\n\n另有研究提出引力与量子信息存在深层联系，时空形状可追溯到量子场中信息的存储方式；也有观点认为，将引力纳入量子框架的困难，可能需要一种超越量子力学的后量子方法来解决。",
+      "digestTitle": "暗物质观测路径与量子引力研究进展",
+      "llmScore": 18.0
     },
     {
-      "id": "edf28ae8add4",
-      "title": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
+      "id": "043764b88bac",
+      "title": "New topological microscope tip reveals evidence of 2D altermagnetism",
       "status": "关注中",
-      "heat": 22.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-13T17:37:36.461691+00:00",
+      "heat": 41.5,
+      "sourceCount": 1,
+      "signalCount": 4,
+      "latestAt": "2026-10-14T01:21:56.582979+00:00",
       "sources": [
-        "New Scientist 物理",
         "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
-          "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 56.3,
-          "published_at": "2026-10-06T10:26:02+00:00"
-        },
-        {
-          "title": "Nobel physics winner's pride at pioneering AI role",
-          "url": "https://phys.org/news/2026-10-nobel-physics-winner-pride-ai.html",
+          "title": "New topological microscope tip reveals evidence of 2D altermagnetism",
+          "url": "https://phys.org/news/2026-10-topological-microscope-reveals-evidence-2d.html",
           "source": "Phys.org 物理新闻",
-          "score": 34.4,
-          "published_at": "2026-10-07T22:40:01+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": "2026年诺贝尔物理学奖授予弗朗西斯·哈尔岑（Francis Halzen），以表彰他在中微子领域的研究。中微子被称为来自宇宙的“幽灵信使”，其探测为理解宇宙高能过程提供了关键线索。\n\n据Phys.org报道，哈尔岑在获奖后表示，他对自己早期在研究中推广人工智能应用的做法感到自豪。",
-      "digestTitle": "2026年诺贝尔物理学奖授予中微子研究先驱",
-      "llmScore": 63.0
-    },
-    {
-      "id": "0f9e2f253ca0",
-      "title": "Taking the heat off tantalum",
-      "status": "关注中",
-      "heat": 22.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-13T17:37:36.461691+00:00",
-      "sources": [
-        "MIT News 物理",
-        "Nature 量子物理"
-      ],
-      "links": [
-        {
-          "title": "Taking the heat off tantalum",
-          "url": "https://www.nature.com/articles/s41563-026-02766-5",
-          "source": "Nature 量子物理",
-          "score": 58.0,
-          "published_at": "2026-10-09T00:00:00+00:00"
+          "score": 60.7,
+          "published_at": "2026-10-13T21:10:01+00:00"
         },
         {
-          "title": "A new way to watch heat move through electronics",
-          "url": "https://news.mit.edu/2026/new-way-watch-heat-move-through-electronics-0806",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-06T04:00:00+00:00"
+          "title": "From nonmagnetic to magnetic: A 2D semiconductor with electrically tunable magnetism",
+          "url": "https://phys.org/news/2026-10-nonmagnetic-magnetic-2d-semiconductor-electrically.html",
+          "source": "Phys.org 物理新闻",
+          "score": 60.1,
+          "published_at": "2026-10-12T21:40:11+00:00"
+        },
+        {
+          "title": "Magnetic sculpting transforms single-source fields into predetermined shapes with mathematical precision",
+          "url": "https://phys.org/news/2026-10-magnetic-sculpting-source-fields-predetermined.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.1,
+          "published_at": "2026-10-12T22:40:01+00:00"
+        },
+        {
+          "title": "Nonchaotic model reveals how predictability can emerge from seemingly unpredictable dynamics",
+          "url": "https://phys.org/news/2026-10-nonchaotic-reveals-emerge-seemingly-unpredictable.html",
+          "source": "Phys.org 物理新闻",
+          "score": 31.0,
+          "published_at": "2026-10-08T21:00:08+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "MIT研究人员开发出一种新方法，能够精确测量热量在计算机芯片等多层材料中的传递过程。这一进展为理解电子器件中的热行为提供了新的工具。",
-      "digestTitle": "MIT实现多层材料热流精确测量"
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 52.0
     },
     {
       "id": "c973df2a3193",
@@ -229,7 +115,7 @@
       "heat": 18.0,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-13T17:37:36.461691+00:00",
+      "latestAt": "2026-10-14T01:21:56.582979+00:00",
       "sources": [
         "知识分子"
       ],
@@ -238,26 +124,26 @@
           "title": "“冰立方”中微子天文台科学家获得2026年物理诺奖",
           "url": "http://www.zhishifenzi.com/news/multiple/10707.html",
           "source": "知识分子",
-          "score": 57.9,
+          "score": 57.7,
           "published_at": "2026-10-11T14:53:31+00:00"
         },
         {
           "title": "诺奖颁给冰立方：“天马行空的想法，值得被支持几十年”",
           "url": "http://www.zhishifenzi.com/news/multiple/10693.html",
           "source": "知识分子",
-          "score": 34.7,
+          "score": 34.6,
           "published_at": "2026-10-11T12:16:58+00:00"
         },
         {
           "title": "“冰立方”为何获得2026诺贝尔物理奖？现场对话诺奖评委",
           "url": "http://www.zhishifenzi.com/news/multiple/10692.html",
           "source": "知识分子",
-          "score": 34.7,
+          "score": 34.6,
           "published_at": "2026-10-11T12:15:47+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -52.6,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,

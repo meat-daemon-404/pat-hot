@@ -1,35 +1,35 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T17:37:36.461691+00:00",
+  "generatedAt": "2026-10-14T01:21:56.582979+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
-      "category": "科研进展",
-      "thisWeek": 519.4,
-      "lastWeek": 805.6,
-      "deltaPct": -35.5
-    },
-    {
-      "category": "高能与粒子物理",
-      "thisWeek": 312.7,
-      "lastWeek": 158.9,
-      "deltaPct": 96.8
-    },
-    {
       "category": "其他",
-      "thisWeek": 280.6,
+      "thisWeek": 541.8,
       "lastWeek": 192.9,
-      "deltaPct": 45.5
+      "deltaPct": 180.9
+    },
+    {
+      "category": "科研进展",
+      "thisWeek": 421.4,
+      "lastWeek": 805.6,
+      "deltaPct": -47.7
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 241.2,
+      "thisWeek": 282.7,
       "lastWeek": 49.8,
-      "deltaPct": 384.3
+      "deltaPct": 467.7
+    },
+    {
+      "category": "高能与粒子物理",
+      "thisWeek": 251.0,
+      "lastWeek": 158.9,
+      "deltaPct": 58.0
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 60.7,
+      "thisWeek": 75.8,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
@@ -42,27 +42,21 @@
   ],
   "newTopics": [
     {
-      "topic_id": "14544c9dbac6",
+      "topic_id": "8d27655670e6",
       "title": "Will we observe dark matter as a particle or a wave?",
-      "score": 206.5,
-      "days": 1
+      "score": 335.1,
+      "days": 2
+    },
+    {
+      "topic_id": "043764b88bac",
+      "title": "New topological microscope tip reveals evidence of 2D altermagnetism",
+      "score": 156.9,
+      "days": 2
     },
     {
       "topic_id": "8eae9d96a171",
       "title": "Will we observe dark matter as a particle or a wave?",
       "score": 95.0,
-      "days": 1
-    },
-    {
-      "topic_id": "a1d83dca7d86",
-      "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
-      "score": 60.7,
-      "days": 1
-    },
-    {
-      "topic_id": "f227cd59cf45",
-      "title": "The CERN Pension Fund launches MyPension, its new online portal",
-      "score": 57.7,
       "days": 1
     }
   ],
