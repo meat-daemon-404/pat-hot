@@ -12,6 +12,7 @@
     {
       "name": "Nature Photonics",
       "url": "https://www.nature.com/nphoton.rss",
+      "refs_fetch": true,
       "weight": 0.9,
       "limit": 15,
       "filter_keywords": [],
@@ -367,6 +368,7 @@
     {
       "name": "Nature Physics 学科聚合",
       "url": "https://www.nature.com/subjects/physics.rss",
+      "refs_fetch": true,
       "tier": "official",
       "channel": "physics",
       "weight": 0.7,
@@ -375,6 +377,7 @@
     {
       "name": "Nature 量子物理",
       "url": "https://www.nature.com/subjects/quantum-physics.rss",
+      "refs_fetch": true,
       "tier": "official",
       "channel": "physics",
       "weight": 0.7,
@@ -447,6 +450,7 @@
     {
       "name": "Nature 天文和天体物理",
       "url": "https://www.nature.com/subjects/astronomy-and-astrophysics.rss",
+      "refs_fetch": true,
       "tier": "official",
       "channel": "astro",
       "weight": 0.7,

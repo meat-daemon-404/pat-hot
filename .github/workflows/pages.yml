@@ -34,6 +34,7 @@ jobs:
         # 也不要静默部署一个"修复没生效"的页面。
         run: |
           python -m unittest discover -s tests
+          node --test tests/js
           python collector/collect.py --check
       - name: 准备站点文件
         run: |

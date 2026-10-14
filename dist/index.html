@@ -172,6 +172,33 @@ a{color:inherit;text-decoration:none}
 .ient{margin-top:6px}
 .itag{display:inline-block;font-size:11px;background:var(--acsoft);color:var(--acd);border-radius:6px;padding:1px 8px;margin:2px 4px 2px 0;font-weight:600}
 .isum{margin-top:6px;font-size:13px;color:var(--ink3)}
+/* ScholarMatrix 出站深链：只在条目有 verified 锚点时出现（smDesc 门控）。
+   它是操作区的次级动作，视觉上让位于「展开阅读」，但用图标+外链语义区分。 */
+.ism{margin-top:10px}
+.smbtn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line2);background:var(--card);color:var(--acd);border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:650;cursor:pointer}
+.smbtn:hover{background:var(--acsoft);border-color:var(--ac)}
+/* 兴趣重排胶囊：有活跃快照才渲染（rankPillHtml），点开去 #/account 看生效词 */
+.rankpill{display:flex;align-items:center;gap:10px;padding:9px 16px;margin-bottom:12px;font-size:12.5px;color:var(--acd);background:var(--acsoft);border-color:var(--line2)}
+.rankpill .rp-t{font-weight:700}
+.rankpill .rp-a{margin-left:auto;color:var(--acd);font-weight:650;text-decoration:underline;white-space:nowrap}
+.rankpill .rp-b{border:1px solid var(--line2);background:var(--card);color:var(--ink3);border-radius:999px;padding:4px 11px;font-size:12px;cursor:pointer;white-space:nowrap}
+.rankpill .rp-b:hover{color:var(--hot);border-color:var(--hot)}
+/* 账号面板 */
+.abind{padding:11px 16px;margin-bottom:12px;font-size:13px;color:var(--acd);background:var(--acsoft)}
+.amsg{padding:11px 16px;margin-bottom:12px;font-size:13px;border-radius:var(--r)}
+.amsg.a-wait{color:var(--ink3);background:var(--sunk)}
+.amsg.a-ok{color:var(--ok);background:rgba(47,125,92,.1)}
+.amsg.a-fail{color:var(--hot);background:var(--hotsoft)}
+.ainfo{padding:16px 18px;margin-bottom:14px}
+.ainfo .ai-row{font-size:13.5px;padding:4px 0;color:var(--ink2)}
+.ainfo .ai-row .mono{color:var(--ink3);margin-left:6px}
+.abody{padding:16px 18px;margin-bottom:14px}
+.aform .arow{display:flex;gap:8px;flex-wrap:wrap}
+.aform input{flex:1;min-width:130px;border:1px solid var(--line2);background:var(--card);border-radius:10px;padding:9px 12px;font-size:14px;outline:0;color:var(--ink)}
+.aform input:focus{border-color:var(--ac)}
+.aform .a-go{margin-top:8px;width:100%}
+.asplit{height:1px;background:var(--line);margin:14px 0}
+.aterms .xsec{margin-top:6px}
 .fold{margin-top:10px;background:var(--sunk);border-radius:10px}
 .fold summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:9px 14px;font-size:12.5px;color:var(--ink3);cursor:pointer}
 .fold summary::-webkit-details-marker{display:none}
@@ -355,6 +382,7 @@ footer a{color:var(--ac);font-weight:600}
     <a href="#/fav" data-v="fav" data-i18n="favPage">收藏</a>
     <a href="#/agent" data-v="agent" data-i18n="agent">Agent 接入</a>
     <a href="https://scholarmatrix.pages.dev/settings#account-and-security" target="_blank" rel="noopener" data-i18n="smBind">🔗 关联 ScholarMatrix</a>
+    <a href="#/account" data-v="account" data-i18n="accountPage">账号</a>
   </nav>
 </header>
 <main class="wrap">
@@ -367,6 +395,7 @@ footer a{color:var(--ac);font-weight:600}
   <section id="view-data" class="view"></section>
   <section id="view-fav" class="view"></section>
   <section id="view-agent" class="view"></section>
+  <section id="view-account" class="view"></section>
   <section id="view-more" class="view"></section>
 </main>
 <nav class="tabbar" id="tabbar">
@@ -426,6 +455,17 @@ const I18N = {
     bakNote:"已读 / 收藏 / 主题 / 语言 / 频道只存在这台浏览器，清缓存就会丢——导出备份换设备也能带走。",
     bakExport:"导出备份", bakImport:"导入备份", bakDone:"已导入 {n} 项设置，页面即将刷新", bakFail:"读写失败，请重试", badFile:"这不是 PAT-HOT 备份文件，未做任何改动",
     extNote:"原文·需外网", readOrig:"阅读原文 ↗（需外网）", importSM:"📥 导入学术星轨", smBind:"🔗 关联 ScholarMatrix", loadMore:"加载更多", aiGen:"生成中文摘要", aiLoading:"生成中…", aiFail:"生成失败，点击重试",
+    smDeep:"在 ScholarMatrix 深读", smTip:"带论文编号跳 ScholarMatrix 建真文献",
+    importTip:"存为资讯条目（该事件没有可复核的论文编号）",
+    accountPage:"账号", accountSub:"登录后可绑定 ScholarMatrix：按你的研究兴趣重排、一键深读。",
+    menuAccountSub:"注册 / 登录 · 绑定 ScholarMatrix · 清除我的数据",
+    signIn:"登录", signUp:"注册", emailPh:"邮箱", passwordPh:"密码",
+    accLoggedIn:"已登录", accNoEmail:"邮箱未返回", bindOk:"已关联 ScholarMatrix", accNoBind:"尚未关联 ScholarMatrix", accBindUnknown:"绑定状态未知（画像接口未返回）",
+    accSnapYes:"画像快照：{n} 个主题词生效中", accSnapNo:"画像快照：无生效快照",
+    viewTopics:"查看生效主题词", clearData:"清除我的数据", clearOk:"我的数据已清除", logout:"登出",
+    bindWaiting:"正在关联 ScholarMatrix…", bindFail:"关联失败", bindHint:"检测到 ScholarMatrix 关联码：登录后自动完成关联。",
+    needBoth:"邮箱和密码都要填", accWorking:"提交中…", probing:"正在检查登录状态…", netFail:"网络故障：请求没发出去或没回音（不是「暂无数据」）",
+    rankPill:"按你的研究兴趣排序", rankView:"查看", rankClear:"清除", rankTerms:"生效主题词", rankCats:"关注分类", rankChs:"关注频道", rankNone:"快照没有主题词（仅按分类/频道命中）",
     footer:"PAT-HOT · 物理·天文·光电热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
   en: { feed:"Selected", all:"All", hot:"Hot", daily:"Daily", trends:"Trends", more:"More",
     allPage:"All Items", hotPage:"Hot Ranking", topics:"Topics", data:"Data", agent:"Agent API",
@@ -452,6 +492,17 @@ const I18N = {
     bakNote:"Read / saved / theme / language / channel live in this browser only — export a backup before clearing data or switching devices.",
     bakExport:"Export backup", bakImport:"Import backup", bakDone:"Restored {n} settings; reloading", bakFail:"Read/write failed, please retry", badFile:"Not a PAT-HOT backup — nothing changed",
     extNote:"orig.·needs internet", readOrig:"Read original ↗ (needs internet)", importSM:"📥 Import to ScholarMatrix", smBind:"🔗 Link ScholarMatrix", loadMore:"Load more", aiGen:"Generate Chinese summary", aiLoading:"Generating…", aiFail:"Failed, tap to retry",
+    smDeep:"Open in ScholarMatrix", smTip:"Carries the paper identifier so ScholarMatrix creates a real entry",
+    importTip:"Saved as a news item (this event has no verifiable paper identifier)",
+    accountPage:"Account", accountSub:"Sign in to link ScholarMatrix: rank by your research interests, one-click deep read.",
+    menuAccountSub:"Sign up / log in · link ScholarMatrix · erase my data",
+    signIn:"Log in", signUp:"Sign up", emailPh:"Email", passwordPh:"Password",
+    accLoggedIn:"Signed in", accNoEmail:"email not returned", bindOk:"Linked to ScholarMatrix", accNoBind:"Not linked to ScholarMatrix yet", accBindUnknown:"Link status unknown (profile API did not answer)",
+    accSnapYes:"Profile snapshot: {n} topic terms in effect", accSnapNo:"Profile snapshot: no active snapshot",
+    viewTopics:"View topic terms", clearData:"Erase my data", clearOk:"My data has been erased", logout:"Log out",
+    bindWaiting:"Linking to ScholarMatrix…", bindFail:"Link failed", bindHint:"ScholarMatrix link code detected: it will be redeemed once you sign in.",
+    needBoth:"Email and password are both required", accWorking:"Working…", probing:"Checking sign-in state…", netFail:"Network failure: the request never got an answer (this is not \"no data\")",
+    rankPill:"Ranked by your research interests", rankView:"view", rankClear:"clear", rankTerms:"Active topic terms", rankCats:"Followed categories", rankChs:"Followed channels", rankNone:"Snapshot has no topic terms (matched on category / channel only)",
     footer:"PAT-HOT · physics / astronomy / photonics hot-topic stats (AIHOT methodology) · public data, for reference only · open source on GitHub" }
 };
 let LANG = "zh";
@@ -543,6 +594,33 @@ function pickBadge(){ return '<span class="bdg b-pick">'+T.pick+'</span>'; }
 function tierBadge(t){ return t==="official"?'<span class="bdg b-tier">'+T.official+'</span>':""; }
 function densBadge(d){ if(!d) return ""; const cls=d==="高"?"b-dh":(d==="中"?"b-dm":"b-dl"); return '<span class="bdg '+cls+'" title="'+T.density+'">'+esc(densName(d))+'</span>'; }
 function scoreEl(s,llm){ const ai=llm?'<span class="iai">AI</span>':""; return '<span class="iscore mono '+scoreCls(s)+'" title="'+(llm?"AI 双打分均值":"score")+' / 100">'+Math.round(s)+'</span>'+ai; }
+// ---- ScholarMatrix 出站深链（契约 §5；W2 前端半最重要的一笔）----
+// 只有条目 refs 里带 verified 的 doi/arxiv 才给出链；无锚点＝不放按钮，宁缺毋假。
+// b64url 与 SM 侧 frontend/src/lib/patJourney.js 的 b64url 严格同形
+// （btoa(unescape(encodeURIComponent(s))) 再 +→- /→_ 去尾 =），descriptor 键序也照
+// 它那边 title/kind/source→doi/arxiv/url 的插入序构造，同输入两端逐字节互译。
+function b64url(s){ const b=btoa(unescape(encodeURIComponent(String(s)))); return b.replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,""); }
+const SM_BASE="https://scholarmatrix.pages.dev/";
+function smDesc(it){
+  const r=it?it.refs:null;
+  if(!r||!(r.doi||r.arxiv)) return "";   // 门：refs 且 (doi || arxiv)
+  if(r.confidence!=="verified") return ""; // suspect 不是深读入口（契约 §0：只有 verified 建真论文）
+  const d={title:String(it.title||"").slice(0,300),kind:"paper",source:"pat-hot"};
+  if(r.doi) d.doi=r.doi; if(r.arxiv) d.arxiv=r.arxiv; if(it.url) d.url=it.url;
+  if(!d.title&&!d.doi&&!d.arxiv) return "";
+  return JSON.stringify([d]);
+}
+// 无锚条目降级为资讯条目（契约 §4：不发假论文链接，也不假装它是论文）。
+// 两类描述符共用 smOutHref 这一条拼串路径：多出第二条路＝多一条没过门的出链。
+function smNewsDesc(it){ if(!it.url) return "";
+  const d={ title:String(it.title||"").slice(0,300), url:it.url, abstract:it.zh_full||it.llm_summary||it.summary||"", journal:it.source||"", kind:"news" };
+  if(!d.title&&!d.url) return "";
+  return JSON.stringify([d]);
+}
+function smOutHref(it){ const j=smDesc(it)||smNewsDesc(it); if(!j) return ""; return SM_BASE+"?add="+b64url(j); }
+function smDeepBtn(it){ const h=smOutHref(it); if(!h) return "";
+  const paper=!!smDesc(it); // 有 verified 锚＝深读建真文献，否则＝存一条资讯
+  return '<div class="ism"><a class="smbtn" href="'+esc(h)+'" target="_blank" rel="noopener" title="'+esc(paper?T.smTip:T.importTip)+'">'+(paper?"🔬 ":"📥 ")+esc(paper?T.smDeep:T.importSM)+'</a></div>'; }
 function summaryOf(it){ return it.zh_full || it.llm_summary || it.summary || ""; }
 function cardSummary(it){ const s=summaryOf(it); if(it.zh_full || it.llm_summary) return s.length>160 ? s.slice(0,160)+"…" : s; return s.length>160 ? s.slice(0,160)+"…" : s; }
 function trendSet(){ const tt=C.trends||{}; return new Set([...(tt.newTopics||[]),...(tt.sustainedTopics||[])].map(x=>x.title)); }
@@ -554,20 +632,12 @@ const EXPANDED = new Set();
 // 恰好把摘要为空的条目挡在门外，而那正是最需要按需生成中文的一类（按需通道的存在意义）。
 function expandable(){ return true; }
 function expandBtn(it){ if(!expandable(it)) return ""; const open=EXPANDED.has(it.id); return '<button class="xbtn'+(open?" open":"")+'" data-x="'+it.id+'"><span>'+(open?T.collapse:T.expand)+'</span><span class="xa">▼</span></button>'; }
-// ---- 导入学术星轨（生态打通 · 闭环1） ----
-// 学术星轨 deep-link 导入协议：?add=<base64url(JSON.stringify(descriptors[]))>
-// descriptor: {title?, authors?, year?, journal?, doi?, arxiv?, url?, abstract?, kind?}
-function b64url(s){ const b=btoa(unescape(encodeURIComponent(s))); return b.replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,""); }
-function smImportUrl(it){
-  const d={ title:it.title||"", url:it.url||"", abstract:it.zh_full||it.llm_summary||it.summary||"", journal:it.source||"", kind:"news" };
-  return "https://scholarmatrix.pages.dev/?add="+b64url(JSON.stringify([d]));
-}
-function smImportBtn(it){ if(!it.url) return ""; return '<a class="smbtn" href="'+smImportUrl(it)+'" target="_blank" rel="noopener">'+T.importSM+'</a>'; }
+// 导入学术星轨的出链不在这里：统一走 smOutHref（见文件上方受门控的单一路径）。
 function expandBody(it){ if(!expandable(it)) return ""; const open=EXPANDED.has(it.id);
   const zf=it.zh_full?'<div class="xsec">'+T.aiSum+'</div><div class="xt">'+esc(it.zh_full)+'</div>':"";
   const ai=!it.zh_full&&it.llm_summary?'<div class="xsec">'+T.aiSum+'</div><div class="xt">'+esc(it.llm_summary)+'</div>':"";
   const rs=it.summary?'<div class="xsec">'+T.srcSum+'</div><div class="xt">'+esc(it.summary)+'</div>':"";
-  const src=it.url?'<div class="xsrc"><a href="'+esc(it.url)+'" target="_blank" rel="noopener">'+T.readOrig+'</a>'+smImportBtn(it)+'</div>':"";
+  const src=it.url?'<div class="xsrc"><a href="'+esc(it.url)+'" target="_blank" rel="noopener">'+T.readOrig+'</a></div>':"";
   // 按需 AI 中文摘要：没有 zh_full 时显示按钮
   const od=!it.zh_full?'<div class="xod" id="xod-'+it.id+'"><button class="obtn" data-od="'+esc(it.url)+'">✨ '+T.aiGen+'</button><div class="otxt" style="display:none"></div></div>':"";
   return '<div class="xbody'+(open?" open":"")+'" id="xb-'+it.id+'"><div class="xbody-in">'+zf+ai+rs+od+src+'</div></div>'; }
@@ -650,7 +720,7 @@ function itemCard(it){
   return '<article class="icard'+rd+'"><div class="irow"><span class="ava" style="background:'+avaColor(src)+'">'+av+'</span><span class="isrc">'+esc(src)+'</span><span class="itime">'+esc(pubLabel(it))+'</span><span class="isp">'+scoreEl(s,it.llm_score!=null)+'<button class="fav'+fv+'" data-fav="'+esc(it.url)+'" aria-label="fav">★</button></span></div>'
   +'<div class="ibadges">'+catBadge(it.category)+tierBadge(it.tier)+(it.selected?pickBadge():"")+densBadge(it.density)+'</div>'
   +'<div class="ititle"><a href="'+esc(it.url)+'" target="_blank" rel="noopener" data-read="'+esc(it.url)+'" title="'+T.readOrig+'">'+esc(it.title)+'</a> <span class="ext-tag">'+T.extNote+'</span></div>'
-  +reason+ev+ents+(sum?'<div class="isum">'+esc(sum)+'</div>':"")+expandBtn(it)+expandBody(it)+'</article>';
+  +reason+ev+ents+(sum?'<div class="isum">'+esc(sum)+'</div>':"")+smDeepBtn(it)+expandBtn(it)+expandBody(it)+'</article>';
 }
 function threshNote(){ const th=C.thresholds||{official:55,media:65}; return T.thresholdNote.replace("{o}",th.official).replace("{m}",th.media); }
 const renderers = {};
@@ -687,7 +757,7 @@ function sciToggle(){ setSciOnly(!sciOnly()); state.allShown=ALL_PAGE; contentRe
 function setNav(v){ $$("#tabbar a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$("#dnav a").forEach(a=>a.classList.toggle("on",a.dataset.v===v)); $$(".seg a").forEach(a=>a.classList.toggle("on",a.dataset.seg===v)); }
 function router(){
   const h=(location.hash||"#/").replace("#",""); const name=h.split("?")[0]||"/";
-  const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/trends":"trends","/data":"data","/fav":"fav","/agent":"agent","/more":"more"};
+  const map={"/":"feed","/all":"all","/hot":"hot","/daily":"daily","/topics":"topics","/trends":"trends","/data":"data","/fav":"fav","/agent":"agent","/more":"more","/account":"account"};
   const v=map[name]||"feed";
   // 先记下旧视图的位置：下面一改 class，旧视图就 display:none，文档高度塌了，
   // scrollY 会被浏览器钳到 0，那时候再读已经来不及。
@@ -716,12 +786,13 @@ function renderFeed(){
   const days=Object.keys(groups).sort().reverse().slice(0,7);
   let tl='<div class="urow"><button class="upill'+(state.unreadOnly?" on":"")+'" id="unreadBtn"><span class="dot"></span>'+T.unreadOnly+'</button><button class="upill'+(sciOnly()?" on":"")+'" id="sciBtn"><span class="dot"></span>🔬 '+T.sciOnly+'</button></div>';
   if(!days.length) tl+='<div class="empty">'+T.noMatch+'</div>';
-  for(const d of days){ const its=groups[d].slice().sort((a,b)=>b.score-a.score).slice(0,20);
+  for(const d of days){ const its=groups[d].slice().sort((a,b)=>rankKey(b)-rankKey(a)).slice(0,20);
     const closed=state.collapsed[d]?" closed":"";
     tl+='<div class="day'+closed+'"><div class="day-h" data-dayh="'+d+'"><h2>'+(isToday(d)?T.today+" ":"")+fmtDay(d)+'</h2><span class="w">'+wdCN(d)+'</span><span class="c">'+its.length+' '+T.daySel+'</span><span class="arr">'+(state.collapsed[d]?"▶":"▼")+'</span></div><div class="day-b">'+its.map(itemCard).join("")+'</div></div>'; }
-  root.innerHTML='<div class="card ph"><h1>'+T.feed+'</h1><span class="sub">'+esc(feedSub())+'</span><div class="note">'+esc(freshNote())+'</div><div class="note">'+esc(threshNote())+'</div></div>'+hot+tl;
+  root.innerHTML=rankPillHtml()+'<div class="card ph"><h1>'+T.feed+'</h1><span class="sub">'+esc(feedSub())+'</span><div class="note">'+esc(freshNote())+'</div><div class="note">'+esc(threshNote())+'</div></div>'+hot+tl;
   const ub=$("#unreadBtn"); if(ub) ub.onclick=()=>{ state.unreadOnly=!state.unreadOnly; contentReset("feed"); };
   const sb=$("#sciBtn"); if(sb) sb.onclick=sciToggle;
+  bindRankClear();
 }
 const ALL_PAGE=30;
 let allObserver=null;
@@ -790,9 +861,12 @@ function movementFlag(t){
 function renderHot(){
   const root=$("#view-hot"); let ts=(C.topics||[]).slice();
   if(state.hotSort==="sources") ts.sort((a,b)=>b.source_count-a.source_count);
+  // 只重排、绝不改写：无快照不重排（上游原序＝今天的序）；有快照按
+  // heat×(1+命中权重和) 重排。排名序号 i+1 跟着新序走，热度徽标数字不动。
+  else if(PROFILE.snap) ts.sort((a,b)=>topicKey(b)-topicKey(a));
   const maxHeat=Math.max(...ts.map(t=>t.heat||t.score||0),1);
   const head='<div class="card ph"><h1>'+esc(hotPage())+'</h1><span class="sub">'+esc(hotSub())+'</span><span class="hsort"><button data-hs="heat" class="'+(state.hotSort==="heat"?"on":"")+'">'+T.heatVal+'</button><button data-hs="sources" class="'+(state.hotSort==="sources"?"on":"")+'">'+T.sources+'</button></span></div>';
-  root.innerHTML=head+'<div class="card">'+ts.map((t,i)=>{
+  root.innerHTML=rankPillHtml()+head+'<div class="card">'+ts.map((t,i)=>{
     const s=t.status; const flag=s==="爆"?'<span class="flag f-hot">'+statusName(s)+'</span>':(s==="发酵中"?'<span class="flag f-warm">'+statusName(s)+'</span>':'<span class="flag f-watch">'+statusName(s)+'</span>');
     const mflag=movementFlag(t);
     const rep=t.representative||{}; const rurl=rep.url||((t.links||[])[0]||{}).url||"";
@@ -811,6 +885,7 @@ function renderHot(){
       +reason+(t.image?'<img class="himg" src="'+esc(t.image)+'" alt="" loading="lazy">':"")+(dg||(rsum?'<div class="isum">'+esc(rsum.length>200?rsum.slice(0,200)+"…":rsum)+'</div>':""))+hotExpand(t)+bar+'<div class="chips">'+chips+'</div>'+fold+'</div></div>';
   }).join("")+'</div>';
   $$("[data-hs]",root).forEach(b=>b.onclick=()=>{ state.hotSort=b.dataset.hs; contentReset("hot"); });
+  bindRankClear();
 }
 function dailyArticle(a){
   const reason=a.reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(a.reason)+'</div>':"";
@@ -976,11 +1051,203 @@ function renderMore(){
   const root=$("#view-more");
   const nFav=Object.keys(FAV).filter(u=>C.items.some(i=>i.url===u)).length;
   const favSub=T.favCount.replace("{n}",nFav);
-  const rows=[["#/all","allPage","menuAllSub","☰"],["#/fav","favPage",favSub,"★"],["#/topics","topics","menuTopicsSub","◈"],["#/data","data","menuDataSub","◉"],["#/agent","agent","menuAgentSub","🤖"]];
+  const rows=[["#/all","allPage","menuAllSub","☰"],["#/fav","favPage",favSub,"★"],["#/topics","topics","menuTopicsSub","◈"],["#/data","data","menuDataSub","◉"],["#/agent","agent","menuAgentSub","🤖"],["#/account","accountPage","menuAccountSub","◑"]];
   root.innerHTML='<div class="card ph"><h1>'+T.more+'</h1></div><div class="card">'+rows.map(r=>'<a class="mrow" href="'+r[0]+'"><span style="font-size:18px">'+r[3]+'</span><span>'+T[r[1]]+'<small>'+(T[r[2]]||r[2])+'</small></span><span class="go">›</span></a>').join("")+'</div>';
 }
+// ============================================================================
+// ---- 账号面板 + ScholarMatrix 绑定 + 兴趣重排（W2 前端半，契约 §1/§2/§3）----
+// 纪律：
+// · 探测只以 localStorage 的 ph_logged_in==="1" 为门 —— fork 的静态用户零额外
+//   请求，开源面（未登录路径）与今天逐字节一致。
+// · 失败要说真原因（契约 §0）：网络故障 / 未登录 / 存储关闭，各报各的，
+//   服务端回的 error+机器码原样展示，绝不笼统「操作失败」。
+// · 重排只改顺序：score_final = score × (1 + Σ 命中权重) 只进比较器，
+//   分数徽标 scoreEl / 标题 / 摘要的渲染行一字不动。
+//   主题命中用快照 topics 的 weight；分类/频道命中没有随行权重，
+//   用常量 CAT_HIT_W / CH_HIT_W（契约 §3 未给数值，取保守 0.2，见回报偏差项）。
+// ============================================================================
+const PH_LOGIN_KEY="ph_logged_in";       // 探测门标记：登录成功置 "1"，登出清除
+const CAT_HIT_W=0.2, CH_HIT_W=0.2;       // 分类/频道命中的固定权重（快照未携带时的口径）
+const PROFILE={probed:false,known:false,logged:false,email:"",bound:false,snap:null,topics:[],cats:[],chs:[],expires:"",apiMsg:""};
+const ACC={busy:false,msg:"",msgKind:"",bindTried:""};
+function setLoggedIn(v){ try{ if(v) localStorage.setItem(PH_LOGIN_KEY,"1"); else localStorage.removeItem(PH_LOGIN_KEY); }catch(e){} }
+async function apiCall(method,url,body){
+  try{
+    const r=await fetch(url,{method,credentials:"include",headers:body?{"Content-Type":"application/json"}:{},body:body?JSON.stringify(body):undefined});
+    const t=await r.text(); let j=null; try{ j=t?JSON.parse(t):null; }catch(e){}
+    return {status:r.status,ok:r.ok,json:j,text:t};
+  }catch(e){ return {status:0,ok:false,json:null,text:"",err:String((e&&e.message)||e)}; }
+}
+// 真原因 + 机器码：HTTP 0=网络层失败（请求根本没走完）；其余取 body 的
+// error/reason/message 原文，机器码取 code/machine 键——两端排查都靠它。
+function realError(res,fallback){
+  if(!res) return fallback;
+  if(res.status===0) return T.netFail+(res.err?" · "+res.err:"");
+  const j=res.json||{};
+  const why=j.error||j.reason||j.message||fallback;
+  const code=j.code||j.machine||j.err_code||"";
+  return why+(code?"（"+code+"）":"")+" · HTTP "+res.status;
+}
+function normalizeSnap(p){
+  const s=(p&&(p.snapshot||p.profile))||p||{};
+  const topics=(s.topics||[]).map(x=>typeof x==="string"?{t:String(x).toLowerCase(),w:0.2}:{t:String((x&&x.term)||"").toLowerCase(),w:Number(x&&x.weight)||0}).filter(x=>x.t);
+  return {topics:topics,
+    cats:(s.categories||[]).map(x=>String(x).toLowerCase()),
+    chs:(s.channels||[]).map(String),
+    expires:String(s.expiresAt||""),
+    has:topics.length||(s.categories||[]).length||(s.channels||[]).length};
+}
+async function fetchProfile(){
+  const res=await apiCall("GET","/api/profile");
+  if(res.status===0){ PROFILE.apiMsg=T.netFail; PROFILE.snap=null; return; }
+  if(!res.ok){ PROFILE.apiMsg=realError(res,"/api/profile"); PROFILE.snap=null; PROFILE.bound=false; return; }
+  const p=res.json||{}; PROFILE.apiMsg="";
+  PROFILE.bound=typeof p.bound==="boolean"?p.bound:!!(p.smSubject||(p.snapshot||p.profile||{}).smSubject);
+  const s=normalizeSnap(p);
+  const alive=!s.expires||new Date(s.expires).getTime()>Date.now();
+  PROFILE.topics=s.topics; PROFILE.cats=s.cats; PROFILE.chs=s.chs; PROFILE.expires=s.expires;
+  PROFILE.snap=(s.has&&alive)?s:null;
+  if(PROFILE.snap&&(LAST_VIEW==="feed"||LAST_VIEW==="hot")) rerankCurrentView();
+}
+async function probeAccount(){
+  // 探测门（双重）：localStorage 的 ph_logged_in 必须是 "1"，本函数体自己也要再查一遍——
+  // fork 的静态用户零额外请求，未登录路径与今天逐字节一致。
+  let mark=""; try{ mark=localStorage.getItem(PH_LOGIN_KEY)||""; }catch(e){}
+  if(mark!=="1"){ PROFILE.probed=true; PROFILE.known=true; PROFILE.logged=false; return; }
+  const me=await apiCall("GET","/api/account/me");
+  PROFILE.probed=true;
+  if(me.status===0){ PROFILE.known=false; PROFILE.logged=true; PROFILE.apiMsg=T.netFail; return; } // 会话未知：说网络故障，不装未登录
+  if(me.ok){ PROFILE.known=true; PROFILE.logged=true;
+    const j=me.json||{}; PROFILE.email=j.email||(j.user&&j.user.email)||(j.account&&j.account.email)||"";
+    await fetchProfile();
+  } else if(me.status===401||me.status===403){ PROFILE.known=true; PROFILE.logged=false; setLoggedIn(false); }
+  else { PROFILE.known=false; PROFILE.logged=true; PROFILE.apiMsg=realError(me,"/api/account/me"); }
+}
+function bindCodeFromHash(){ const m=String(location.hash||"").match(/[?&]bind=([^&]+)/); return m?decodeURIComponent(m[1]):""; }
+async function redeemBind(force){
+  const code=bindCodeFromHash();
+  if(!code||!PROFILE.logged) return;
+  if(!force&&ACC.bindTried===code) return;   // 一次性码：同一页面会话只兑一次，第二次必 410
+  ACC.bindTried=code; ACC.busy=true; ACC.msg=T.bindWaiting; ACC.msgKind="wait";
+  if(LAST_VIEW==="account") renderAccount();
+  const res=await apiCall("POST","/api/bind/verify",{code:code});
+  ACC.busy=false;
+  if(res.ok&&res.json&&res.json.ok===true){
+    ACC.msg=T.bindOk; ACC.msgKind="ok";
+    try{ history.replaceState(null,"",location.pathname+"#/account"); }catch(e){} // 一次性码：兑成功即从 URL 摘掉，刷新不再重兑
+    await fetchProfile();
+  }
+  // 失败：bindTried 保留本码，页面存活期间不再自动重兑（一次性码第二次必 410；
+  // 网络故障时用户刷新或重进链接自然重试）。展示服务端回的真原因+机器码。
+  else { ACC.msg=realError(res,T.bindFail); ACC.msgKind="fail"; }
+  if(LAST_VIEW==="account") renderAccount();
+}
+async function accSubmit(kind,btn){
+  const root=btn.closest(".aform"); if(!root||ACC.busy) return;
+  const email=(root.querySelector("[data-acc=email]").value||"").trim();
+  const password=root.querySelector("[data-acc=password]").value||"";
+  if(!email||!password){ ACC.msg=T.needBoth; ACC.msgKind="fail"; renderAccount(); return; }
+  ACC.busy=true; ACC.msg=T.accWorking; ACC.msgKind="wait"; renderAccount();
+  const res=await apiCall("POST","/api/account/"+kind,{email:email,password:password});
+  ACC.busy=false;
+  if(res.ok&&(!res.json||res.json.ok!==false)){
+    setLoggedIn(true); PROFILE.probed=true; PROFILE.known=true; PROFILE.logged=true; PROFILE.email=email; ACC.msg=""; ACC.msgKind="";
+    await fetchProfile(); await redeemBind(false);
+  } else { ACC.msg=realError(res,T[kind==="login"?"signIn":"signUp"]); ACC.msgKind="fail"; }
+  renderAccount();
+}
+async function accClearData(btn){
+  if(ACC.busy) return; ACC.busy=true; ACC.msg=T.accWorking; ACC.msgKind="wait"; renderAccount();
+  const res=await apiCall("DELETE","/api/profile-snapshot");
+  ACC.busy=false;
+  if(res.ok&&(!res.json||res.json.ok!==false)){ PROFILE.snap=null; PROFILE.topics=[]; PROFILE.cats=[]; PROFILE.chs=[];
+    // 清除快照 ≠ 解绑（契约 §1.2）：绑定状态留给服务端口径，这里不列假状态。
+    ACC.msg=T.clearOk; ACC.msgKind="ok"; if(LAST_VIEW==="feed"||LAST_VIEW==="hot") rerankCurrentView(); }
+  else { ACC.msg=realError(res,T.clearData); ACC.msgKind="fail"; }
+  renderAccount();
+}
+async function accLogout(){
+  await apiCall("POST","/api/account/logout");
+  setLoggedIn(false);
+  PROFILE.known=true; PROFILE.logged=false; PROFILE.email=""; PROFILE.bound=false;
+  PROFILE.snap=null; PROFILE.topics=[]; PROFILE.cats=[]; PROFILE.chs=[]; PROFILE.apiMsg="";
+  if(LAST_VIEW==="feed"||LAST_VIEW==="hot") rerankCurrentView();
+  renderAccount();
+}
+// ---- 命中与重排（只进比较器，不动任何显示值）----
+function hitWeight(kws,cat,chan){
+  const s=PROFILE.snap; if(!s) return 0;
+  let sum=0; const hitTopic=new Set();
+  for(const kw of kws||[]){
+    const k=String(kw).toLowerCase(); if(!k) continue;
+    s.topics.forEach((tp,ti)=>{
+      if(hitTopic.has(ti)) return;
+      const exact=(k===tp.t);
+      const contain=(k.length>=4||tp.t.length>=4)&&(k.indexOf(tp.t)>=0||tp.t.indexOf(k)>=0);
+      if(exact||contain){ hitTopic.add(ti); sum+=tp.w; }
+    });
+  }
+  if(cat&&s.cats.indexOf(String(cat).toLowerCase())>=0) sum+=CAT_HIT_W;
+  if(chan&&s.chs.indexOf(String(chan))>=0) sum+=CH_HIT_W;
+  return sum;
+}
+function rankKey(it){ return ((it.score)||0)*(1+hitWeight(it.keywords,it.category,CHID)); }
+function topicKey(t){ return ((t.heat||t.score)||0)*(1+hitWeight((t.top_terms||[]).concat(t.terms||[]),t.category,CHID)); }
+function rerankCurrentView(){ if(LAST_VIEW==="feed") renderFeed(); else if(LAST_VIEW==="hot") renderHot(); }
+function rankPillHtml(){
+  if(!PROFILE.snap) return "";
+  // 胶囊在 feed/hot 两个常驻 section 各渲染一份，清除钮按类取（id 会撞）。
+  return '<div class="rankpill card"><span class="rp-t">◆ '+esc(T.rankPill)+'</span>'
+    +'<a class="rp-a" href="#/account">'+esc(T.rankView)+'</a>'
+    +'<button class="rp-b">'+esc(T.rankClear)+'</button></div>';
+}
+function bindRankClear(){ $$(".rankpill .rp-b").forEach(b=>{ b.onclick=()=>accClearData(b); }); }
+// ---- 账号视图 #/account ----
+let PROBE_SENT=false;
+function maybeProbe(){
+  // 探测门（唯一入口）：localStorage 的 ph_logged_in 标记不在，一个请求都不发。
+  // fork 的静态用户、以及从没登录过的访客，网络面与今天逐字节一致。
+  if(PROBE_SENT||PROFILE.probed) return;
+  let mark=""; try{ mark=localStorage.getItem(PH_LOGIN_KEY)||""; }catch(e){}
+  if(mark!=="1"){ PROFILE.probed=true; PROFILE.known=true; PROFILE.logged=false; return; }
+  PROBE_SENT=true;
+  probeAccount().then(()=>{ if(LAST_VIEW==="account") renderAccount(); });
+}
+function renderAccount(){
+  const root=$("#view-account"); if(!root) return;
+  maybeProbe();
+  let html='<div class="card ph"><h1>'+esc(T.accountPage)+'</h1><span class="sub">'+esc(T.accountSub)+'</span></div>';
+  if(bindCodeFromHash()&&!PROFILE.logged) html+='<div class="card abind">'+esc(T.bindHint)+'</div>';
+  if(ACC.msg) html+='<div class="card amsg a-'+ACC.msgKind+'">'+esc(ACC.msg)+'</div>';
+  if(PROFILE.apiMsg&&!ACC.msg) html+='<div class="card amsg a-fail">'+esc(PROFILE.apiMsg)+'</div>';
+  if(!PROFILE.probed){ html+='<div class="card amsg a-wait">'+esc(T.probing)+'</div>'; root.innerHTML=html; return; }
+  if(PROFILE.logged){
+    html+='<div class="card ainfo"><div class="ai-row"><b>'+esc(T.accLoggedIn)+'</b><span class="mono">'+esc(PROFILE.email||T.accNoEmail)+'</span></div>'
+      +'<div class="ai-row">'+esc(PROFILE.bound?T.bindOk:(PROFILE.apiMsg?T.accBindUnknown:T.accNoBind))+'</div>'
+      +'<div class="ai-row">'+esc(PROFILE.snap?T.accSnapYes.replace("{n}",PROFILE.snap.topics.length):T.accSnapNo)+'</div>';
+    if(PROFILE.snap){
+      const terms=PROFILE.snap.topics.map(x=>'<span class="chip term">'+esc(x.t)+' · '+x.w+'</span>').join("");
+      const cats=PROFILE.snap.cats.map(x=>'<span class="chip">'+esc(x)+'</span>').join("");
+      const chs=PROFILE.snap.chs.map(x=>'<span class="chip">'+esc(x)+'</span>').join("");
+      html+='<details class="fold"><summary><span>'+esc(T.viewTopics)+'</span><span>›</span></summary><div class="fl aterms">'
+        +(terms?'<div class="xsec">'+esc(T.rankTerms)+'</div><div class="chips">'+terms+'</div>':'<div class="anote">'+esc(T.rankNone)+'</div>')
+        +(cats?'<div class="xsec">'+esc(T.rankCats)+'</div><div class="chips">'+cats+'</div>':"")
+        +(chs?'<div class="xsec">'+esc(T.rankChs)+'</div><div class="chips">'+chs+'</div>':"")
+        +'</div></details>';
+    }
+    html+='<div class="dlrow"><button class="btn" id="acc-clear">'+esc(T.clearData)+'</button><button class="btn" id="acc-logout">'+esc(T.logout)+'</button></div></div>';
+  } else {
+    const form=(kind)=>'<form class="aform" data-form="'+kind+'"><div class="arow"><input data-acc=email type="email" autocomplete="email" placeholder="'+esc(T.emailPh)+'"><input data-acc=password type="password" autocomplete="'+(kind==="login"?"current-password":"new-password")+'" placeholder="'+esc(T.passwordPh)+'"></div><button class="btn a-go" type="submit">'+esc(T[kind==="login"?"signIn":"signUp"])+'</button></form>';
+    html+='<div class="card abody">'+form("register")+'<div class="asplit"></div>'+form("login")+'</div>';
+  }
+  root.innerHTML=html;
+  $$(".aform",root).forEach(f=>f.onsubmit=e=>{ e.preventDefault(); accSubmit(f.dataset.form,e.submitter||f.querySelector(".a-go")); });
+  const cb=$("#acc-clear",root); if(cb) cb.onclick=accClearData;
+  const lb=$("#acc-logout",root); if(lb) lb.onclick=accLogout;
+  if(bindCodeFromHash()&&PROFILE.logged&&ACC.bindTried!==bindCodeFromHash()) redeemBind(false);
+}
 function BRAND(){ return "PAT-HOT"; }
-renderers.feed=renderFeed; renderers.all=renderAll; renderers.hot=renderHot; renderers.daily=renderDaily; renderers.topics=renderTopics; renderers.data=renderData; renderers.trends=renderTrends; renderers.fav=renderFav; renderers.agent=renderAgent; renderers.more=renderMore;
+renderers.feed=renderFeed; renderers.all=renderAll; renderers.hot=renderHot; renderers.daily=renderDaily; renderers.topics=renderTopics; renderers.data=renderData; renderers.trends=renderTrends; renderers.fav=renderFav; renderers.agent=renderAgent; renderers.more=renderMore; renderers.account=renderAccount;
 function bind(){
   const q=$("#q");
   let qTimer=null;
@@ -1012,6 +1279,7 @@ function bind(){
   });
   document.addEventListener("keydown",e=>{ if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){ e.preventDefault(); $("#swrap").classList.add("open"); q.focus(); } });
   renderChSeg(); setTheme(themeNow()); tr(); router();
+  maybeProbe();   // 兴趣重排的探测启动点：门在函数体内（localStorage ph_logged_in=1 才发请求）
 }
 document.addEventListener("DOMContentLoaded", bind);
 </script>

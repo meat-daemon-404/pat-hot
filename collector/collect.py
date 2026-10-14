@@ -124,6 +124,29 @@ DEFAULT_CONFIG = {
         # 也不要发布一个"页面 200 但内容很薄"的静默降级站点。
         "max_source_failure_ratio": 0.6,
     },
+    # 文献编号（DOI / arXiv）抽取。给"事件→论文"闭环提供可验证锚点。
+    # 口径来自 2026-10-13 两轮实测（docs/PAT-HOT双向联动方案-2026-10-13.md §2.2）：
+    #   · 详情页正文里出现的所有 doi.org 链接**不能**当本篇编号——Nature 单页实测带
+    #     43~246 个 DOI 全是参考文献列表，抓到就收等于把别人的论文安到本事件头上，
+    #     正面违反"不造假"。所以 extract_refs_from_html 只认「本篇自述元数据」。
+    #   · 能不能抽到由信源类型决定，不由抓取技术决定：期刊论文型源（Nature 系）
+    #     实测 9/9 命中，产业资讯型源（OFweek/搜狗微信/COEMA）0/40——后者根本没有
+    #     学术编号，属结构性无关联。因此抓取面按 sources.json 的 refs_fetch 声明，
+    #     不给产业源白烧配额。
+    "refs": {
+        # 上限取值依据（2026-10-13 实采）：期刊型源每频道 1~2 个、各 20~25 条，
+        # per_source 10 时 astro 的 25 条 Nature 只拓到前 10 条（实测锚点数被这个
+        # 上限卡住，而不是被 max_fetch 卡住）。提到 20/30 后单频道典型 30×(1.5s 抓
+        # + 0.8s 节流) ≈ 70s，三频道 ≈ 3.5 分钟，仍在下方预算与 CI 40 分钟步骤内。
+        "max_fetch": 50,          # 每频道详情页深拓上限
+        "per_source": 25,         # 单源上限＝该源 feed limit 上限，整源不被腰斩
+        "interval_sec": 0.8,      # 与政策/招投标详情解析同节奏
+        "page_max_bytes": 1500000,  # 编号只在前部元数据里，无需读满 12MB
+        # 时间预算（每频道）：单页最坏 text_timeout×重试 ≈ 35s，30 条上限即 ~17 分钟，
+        # 三频道叠起来会顶穿 CI 那 40 分钟步骤（与 --llm 共用）。超时即在预算内收尾，
+        # 已抽到的编号照常发布——锚点是增益，不是主流程依赖。
+        "budget_seconds": 300,
+    },
     "daily": {
         "headline_count": 1, "picks_count": 4, "flash_count": 10,
         "max_per_source": 2, "dedup_window_days": 7, "per_category_limit": 8,
@@ -319,12 +342,15 @@ def _decode_body(raw, encoding, ctype):
     return raw
 
 
-def http_get(url, timeout=None, retries=1):
+def http_get(url, timeout=None, retries=1, max_bytes=None):
     """抓取一个 URL，带重试与响应体上限。
 
     此前任何一次抖动（超时 / 连接重置）都会让整个源在本次运行里消失，而进程仍以
     0 退出：线上数据悄悄变薄却看不出来。现在做一次退避重试，并把失败计数交给
     调用方与 main() 的"源失败比例"闸门。
+
+    max_bytes 允许调用方按用途收窄（缺省仍走 feed 的 12MB 口径）：详情页只取
+    头部元数据的场合，按整页上限读满是对源站的无谓压力。
     """
     timeout = timeout or (CONFIG.get("fetch", {}) or {}).get("timeout", 25)
     last = None
@@ -337,7 +363,7 @@ def http_get(url, timeout=None, retries=1):
                 "Accept": "application/rss+xml, application/xml;q=0.9, text/html;q=0.8, */*;q=0.7",
             })
             with urllib.request.urlopen(req, timeout=timeout) as r:
-                cap = int((CONFIG.get("fetch", {}) or {}).get("max_bytes", MAX_BYTES))
+                cap = int(max_bytes or (CONFIG.get("fetch", {}) or {}).get("max_bytes", MAX_BYTES))
                 raw = r.read(cap + 1)
                 if len(raw) > cap:
                     raise ValueError("响应超过上限 %d 字节" % cap)
@@ -1378,6 +1404,324 @@ def extract_biz_text(text, title=""):
 BIZ_SOURCES = {"中国政府采购网", "中国招标投标公共服务平台", "工信部要闻"}
 
 
+# ---------------- 文献编号（DOI / arXiv）抽取 ----------------
+# 两条通路，可信级别相同但来源不同，都写进 refs 供 ScholarMatrix 建"事件→论文"锚点：
+#   feed_text  —— 条目自带的标题/摘要/原文链接里出现的编号（RSS 源零额外请求）。
+#   self_meta  —— 详情页 <head> 里**本篇自述**的元数据（citation_doi / prism.doi /
+#                 citation_arxiv_id / canonical 的 doi.org 地址）。
+# 两条都不走"正文里任何 doi.org 链接"——实测 Nature 单页 43~246 个 DOI 全是参考文献，
+# 那类链接属于别的论文，收到本事件名下就是造假。故 self_meta 通路只读 <head>，不读正文。
+DOI_SHAPE_RE = re.compile(r"^10\.\d{4,9}/[^\s\"'<>,;)\]}]+$")
+ARX_ID_RE = re.compile(r"^(\d{4}\.\d{4,5})(?:v\d+)?$", re.I)
+# 发布态形状：_clean_arxiv 会剥掉版本后缀，所以产物里出现 v 后缀就意味着抽取层被
+# 绕过（例如有人把原始串直接塞进 refs）。契约校验必须比清洗层**更严**：拿 ARX_ID_RE
+# 去校验发布产物等于自己给自己放行（变异实测漏判 2610.13867v1）。
+ARX_PUBLISHED_RE = re.compile(r"^\d{4}\.\d{4,5}$")
+# 摘要/正文里的 arXiv 写法：arXiv:2610.13867v1 或 arxiv.org/abs/2610.13867
+ARX_IN_TEXT_RE = re.compile(
+    r"(?:arXiv\s*:\s*|arxiv\.org/(?:abs|pdf)/)(\d{4}\.\d{4,5}(?:v\d+)?)", re.I)
+# 文本里的 DOI 必须带上下文（DOI: 或 doi.org 地址），裸的 "10.1234/x" 容易撞上
+# 版本号、项目编号、经费号，宁可少收。
+DOI_IN_TEXT_RE = re.compile(
+    r"(?:DOI[:\s]*|doi\.org/)(10\.\d{4,9}/[^\s\"'<>,;)\]}]+)", re.I)
+# <head> 里认作"本篇自述"的元数据键
+META_DOI_KEYS = ("citation_doi", "dc.identifier.doi", "prism.doi", "DOI")
+META_ARX_KEYS = ("citation_arxiv_id", "citation_arxiv")
+
+
+def _clean_doi(raw):
+    """规范化 DOI：去 doi:/info:doi 前缀与站点前缀、解百分号编码、去尾部标点；
+    形状不符返回 ''。
+
+    实测两处坑（2026-10-13 详情页取证）：
+      · Nature 系页面的 citation_doi / prism.doi 的 content 写作 `doi:10.1038/…`，
+        带前缀。不在这里剥掉，形状校验会把它判成非法、于是**整批 Nature 命中静默
+        归零**——而 Nature 恰恰是唯一能抽到编号的那类源，等于把整条通路做没了。
+      · 站点 href 里的 DOI 常带 %2F（10.1126%2Fscience.abb2823），不解码就直接发布，
+        下游拼出来的是打不开的地址——和 ScholarMatrix 侧 crossref 通路同一个判例。
+    """
+    s = str(raw or "").strip()
+    if not s:
+        return ""
+    for pre in ("doi:", "info:doi/", "info:doi:"):
+        if s.lower().startswith(pre):
+            s = s[len(pre):]
+            break
+    if s.lower().startswith(("https://doi.org/", "http://doi.org/",
+                              "https://dx.doi.org/", "http://dx.doi.org/")):
+        s = s.split("doi.org/", 1)[1]
+    if "%" in s:
+        try:
+            s = urllib.parse.unquote(s)
+        except Exception:
+            pass
+    s = s.rstrip(".;,)]}\"'")
+    return s if DOI_SHAPE_RE.match(s) else ""
+
+
+def _clean_arxiv(raw):
+    """规范化 arXiv 编号：去版本后缀存基号；形状不符返回 ''。"""
+    m = ARX_ID_RE.match(str(raw or "").strip())
+    return m.group(1) if m else ""
+
+
+def _meta_content(head, keys):
+    """从 <head> 取指定元数据键的 content（属性顺序任意，name/property 都认）。"""
+    for key in keys:
+        pat = (r'<meta[^>]+(?:name|property)\s*=\s*["\']%s["\'][^>]*?'
+               r'content\s*=\s*["\']([^"\']*)["\']' % re.escape(key))
+        m = re.search(pat, head, re.I)
+        if m:
+            return htmlmod.unescape(m.group(1))
+        pat2 = (r'<meta[^>]+content\s*=\s*["\']([^"\']*)["\'][^>]*?'
+                r'(?:name|property)\s*=\s*["\']%s["\']' % re.escape(key))
+        m = re.search(pat2, head, re.I)
+        if m:
+            return htmlmod.unescape(m.group(1))
+    return ""
+
+
+def _ref_doi_shape(v):
+    """发布态 DOI 形状。与 _clean_doi 用同一个常量，避免"抽取放行、自检另说一套"。"""
+    return bool(DOI_SHAPE_RE.match(str(v or "")))
+
+
+def _ref_doi_decoded(v):
+    """百分号必须已解开：10.1126%2F… 形状合法却是打不开的地址。"""
+    return "%" not in str(v or "")
+
+
+def head_slice(html_text):
+    """取 <head>…</head>；没有 </head> 时退回前 40000 字符。
+
+    只读头部是这套通路的**安全边界**而不是性能优化：编号一旦从正文里抓就可能抓到
+    参考文献。正文出现在头部之前（坏 HTML）时宁可漏，不可错。
+    """
+    s = str(html_text or "")
+    i = s.lower().find("<head")
+    j = s.lower().find("</head>")
+    if i >= 0 and j > i:
+        return s[i:j]
+    return s[:40000]
+
+
+def extract_refs_from_text(title, summary, url):
+    """通路 feed_text：只用条目自带字段，不额外发请求。"""
+    hay = " | ".join([str(title or ""), str(summary or ""), str(url or "")])
+    refs = {}
+    d = _clean_doi(url) if re.search(r"doi\.org", str(url or ""), re.I) else ""
+    if not d:
+        m = DOI_IN_TEXT_RE.search(hay)
+        d = _clean_doi(m.group(1)) if m else ""
+    m2 = ARX_IN_TEXT_RE.search(hay)
+    a = _clean_arxiv(m2.group(1)) if m2 else ""
+    if d:
+        refs["doi"] = d
+    if a:
+        refs["arxiv"] = a
+    if refs:
+        refs["via"] = "feed_text"
+    return refs
+
+
+def _link_href(head, rel):
+    """取 <link rel="…"> 的 href（属性顺序任意）。canonical 是 <link> 不是 <meta>，
+    所以 _meta_content 覆盖不到它，得单独走一遍。"""
+    pats = (r'<link[^>]+rel\s*=\s*["\']%s["\'][^>]+href\s*=\s*["\']([^"\']+)["\']' % re.escape(rel),
+            r'<link[^>]+href\s*=\s*["\']([^"\']+)["\'][^>]+rel\s*=\s*["\']%s["\']' % re.escape(rel))
+    for p in pats:
+        m = re.search(p, head, re.I)
+        if m:
+            return htmlmod.unescape(m.group(1))
+    return ""
+
+
+def extract_refs_from_html(html_text, item_url=""):
+    """通路 self_meta：只认详情页头部里本篇自述的编号。找不到就返回空——空是正确答案。"""
+    head = head_slice(html_text)
+    refs = {}
+    d = _clean_doi(_meta_content(head, META_DOI_KEYS))
+    if not d:
+        # canonical / og:url 指向 doi.org 时也属于本篇自述
+        for val in (_link_href(head, "canonical"), _meta_content(head, ("og:url",))):
+            if val and re.search(r"doi\.org", val, re.I):
+                d = _clean_doi(val)
+                if d:
+                    break
+    if not d and item_url and re.search(r"doi\.org", str(item_url), re.I):
+        d = _clean_doi(item_url)
+    a = _clean_arxiv(_meta_content(head, META_ARX_KEYS))
+    if d:
+        refs["doi"] = d
+    if a:
+        refs["arxiv"] = a
+    if refs:
+        refs["via"] = "self_meta"
+    return refs
+
+
+def merge_refs(*groups):
+    """合并多条通路的编号，保持键序稳定（doi→arxiv→via）。
+
+    via 记录**证据来源**，可信级别由调用方统一标 verified：两条通路都只在编号属于
+    本篇时才成立，所以 refs 里出现的每个编号都可独立复核（打开就能验）。
+    """
+    out = {}
+    for g in groups:
+        for k in ("doi", "arxiv"):
+            if (g or {}).get(k) and k not in out:
+                out[k] = g[k]
+    if not out:
+        return {}
+    vias = [g.get("via") for g in groups if g and g.get("via")]
+    out["via"] = "+".join(vias) if len(set(vias)) > 1 else (vias[0] if vias else "self_meta")
+    out["confidence"] = "verified"
+    return out
+
+
+def fetch_head(url, max_bytes=None, timeout=None, retries=1):
+    """抓详情页**原始** HTML（不剥标签）——元数据解析需要属性，fetch_text 的
+    标签剥离会把 <meta> 整片吃掉，不能复用。体积上限单独给：编号只在头部，
+    没必要按 feed 的 12MB 上限读满整页。"""
+    cap = int(max_bytes or (CONFIG.get("refs", {}) or {}).get("page_max_bytes", 1500000))
+    timeout = timeout or (CONFIG.get("fetch", {}) or {}).get("text_timeout", 15)
+    data, _ = http_get(url, timeout=timeout, retries=retries, max_bytes=cap)
+    cs = detect_charset(data)
+    return data.decode(cs, "replace")
+
+
+# 期刊/预印本型源的判据：这类站点的条目本身就是一篇论文（或论文的首发报道），
+# 头部元数据里带编号；产业资讯站没有。sources.json 的 refs_fetch 显式声明优先。
+# 判据刻意收窄：裸 "science" 会命中 New Scientist 这类科普杂志，其页面头部多数
+# 没有本篇自述 DOI——拓了也抽不到，白烧源站配额。宁可少列，漏的源用 refs_fetch 补。
+REFS_SOURCE_HINTS = ("nature", "optica", "physical review", "phys. rev",
+                     "applied physics letters", "laser & photonics",
+                     "photonics research", "light: science", "science advances",
+                     "sciencedirect", "iopscience", "arxiv")
+
+
+def source_wants_refs(source_name, cfg_flag=None):
+    if cfg_flag is not None:
+        return bool(cfg_flag)
+    s = str(source_name or "").lower()
+    return any(h in s for h in REFS_SOURCE_HINTS)
+
+
+def collect_refs(items, cfg, ch_id, refetch_sources=None, fetcher=None, sleeper=None,
+                 clock=None):
+    """给条目补 refs（就地改 items），返回 {fetched, hit}。
+
+    抓取形态照政策/招投标详情解析那条既有正典：全频道有界 + 单源有界 + 标题级通路
+    先走（零请求）+ 任何失败静默跳过。深拓只服务"本期会被消费"的条目：先按分数排序
+    取头部，避免对整频道条目集中请求源站。
+    """
+    rc = cfg.get("refs", {}) or {}
+    cap = rc.get("max_fetch", 24)
+    per_src = rc.get("per_source", 10)
+    interval = rc.get("interval_sec", 0.8)
+    # 预算从本频道进循环时起算，覆盖"抓取 + 节流"的全部墙钟时间
+    now = clock or time.monotonic
+    deadline = now() + float(rc.get("budget_seconds", 300) or 0)
+    refetch_sources = refetch_sources or {}
+    do_fetch = fetcher or fetch_head
+    nap = sleeper or time.sleep
+
+    got = 0
+    per = {}
+    fetched = 0
+    failed = 0
+    stopped = ""
+    # 第一遍：条目自带字段里就有的编号，不花任何请求
+    feed_hits = 0
+    for it in items:
+        r = merge_refs(extract_refs_from_text(it.get("title"), it.get("summary"), it.get("url")))
+        if r:
+            it["refs"] = r
+            feed_hits += 1
+    # 第二遍：需要详情页元数据才能定编号的，按分数从高到低有界深拓
+    for it in sorted(items, key=lambda i: -i.get("score", 0)):
+        if (it.get("refs") or {}).get("doi") or (it.get("refs") or {}).get("arxiv"):
+            continue
+        if not source_wants_refs(it.get("source"), refetch_sources.get(it.get("source"))):
+            continue
+        if got >= cap or per.get(it["source"], 0) >= per_src:
+            continue
+        if now() >= deadline:
+            stopped = "预算耗尽"
+            break
+        url = it.get("url") or ""
+        if not url.startswith("http"):
+            continue
+        # 配额在**发起请求之前**就记：抓取失败的详情页照样打了源站，只记成功会让
+        # 一个整站 500 的源被反复拓到超限——那是最不该集中施压的时刻。
+        got += 1
+        per[it["source"]] = per.get(it["source"], 0) + 1
+        try:
+            html_text = do_fetch(url)
+        except Exception:
+            failed += 1
+            continue
+        fetched += 1
+        r = merge_refs(extract_refs_from_text(it.get("title"), it.get("summary"), url),
+                       extract_refs_from_html(html_text, url))
+        if r:
+            it["refs"] = r
+        nap(interval)
+    n_hit = sum(1 for it in items if it.get("refs"))
+    # 期刊源是本期锚点面的唯一来源，它们缺席时锚点面会塌掉——而所有闸门照样绿：
+    # 源失败比例看的是整频道（Nature 两三个源淹在 26 个源里到不了 60% 阈值），
+    # --check 只看产物形状不管数量。2026-10-13 实测：Nature subjects 系列间歇返回
+    # 反爬 Challenge 页，一轮全频道重采把 physics 锚点从 50 打成 0，无任何动静。
+    # 触发条件不能写 n_hit==0（首版就是这么错的）：期刊源全灭时往往还剩一两条
+    # 零请求命中，n_hit 就非零——25 条的面塌成 1 条同样是事故，必须照报。
+    declared = [s for s, v in (refetch_sources or {}).items() if v]
+    if declared:
+        present = {it.get("source") for it in items}
+        gone = [s for s in declared if s not in present]
+        if gone:
+            log("[!] [%s] 期刊源缺席 %d/%d（%s）——本期 papers-index 会明显变薄，"
+                "锚点消费方拿到的覆盖面不如上期"
+                % (ch_id, len(gone), len(declared), "、".join(gone)))
+    log("[*] [%s] 文献编号抽取：零请求命中 %d 条，深拓 %d 条（失败 %d），总命中 %d 条（每频道拓取上限 %d、单源 %d）%s"
+        % (ch_id, feed_hits, fetched, failed, n_hit, cap, per_src,
+           ("；提前收尾：" + stopped) if stopped else ""))
+    return {"fetched": fetched, "failed": failed, "feed_hits": feed_hits,
+            "hit": n_hit, "stopped": stopped}
+
+
+def build_papers_index(items, generated, channel):
+    """把本频道已验证编号汇成反查表，供 ScholarMatrix 一次性拉取建映射。
+
+    只收有编号的条目，且**只带编号与最少必要字段**：这是"事件↔论文"的索引，
+    不是二次发布正文（站内全文许可口径照 _material 那条判例）。
+    """
+    rows = []
+    for it in items:
+        r = it.get("refs") or {}
+        if not (r.get("doi") or r.get("arxiv")):
+            continue
+        rows.append({
+            "id": it["id"],
+            "title": it["title"],
+            "channel": channel,
+            "source": it["source"],
+            "url": it["url"],
+            "doi": r.get("doi"),
+            "arxiv": r.get("arxiv"),
+            "via": r.get("via"),
+            "confidence": r.get("confidence"),
+            "category": it.get("category"),
+            "published_at": it.get("published_at"),
+            "selected": bool(it.get("selected")),
+        })
+    # 精选优先、其次按发布时间从新到旧。两个方向不能塞进一个 key（字符串没法取负），
+    # 所以做两次稳定排序：先按时间倒序，再按"是否精选"分组。
+    rows.sort(key=lambda x: x.get("published_at") or "", reverse=True)
+    rows.sort(key=lambda x: 0 if x["selected"] else 1)
+    return {"schemaVersion": 1, "generatedAt": generated.isoformat(),
+            "channel": channel, "count": len(rows), "items": rows}
+
+
 def extract_biz(title):
     """从标题提取招标/政策结构化字段（项目号/预算/截止时间）——v1 标题级解析"""
     biz = {}
@@ -1858,6 +2202,8 @@ def build_openapi(generated):
         paths["/api/v1/%s/daily.json" % ch_id] = ep("%s：统计聚合" % ch["name"]["zh"])
         paths["/api/v1/%s/stories.json" % ch_id] = ep("%s：事件故事" % ch["name"]["zh"])
         paths["/api/v1/%s/trends.json" % ch_id] = ep("%s：趋势" % ch["name"]["zh"])
+        paths["/api/v1/%s/papers-index.json" % ch_id] = ep(
+            "%s：事件→论文反查表（已验证 DOI/arXiv 锚点）" % ch["name"]["zh"])
     # 重构前就发布的扁平地址（内容 = FLAT_ALIAS_CHANNEL 频道），仍在线且持续更新，
     # 必须一并声明；否则 Agent 读 OpenAPI 会以为这些地址不存在。
     for k, zh in (("items", "全部条目"), ("hot-topics", "热点榜"),
@@ -1977,6 +2323,8 @@ def write_outputs(channel_results, generated):
             _rep = t.get("representative") or {}
             if _rep.get("llm_score") is not None:
                 stories[-1]["llmScore"] = _rep["llm_score"]
+            if _rep.get("refs"):
+                stories[-1]["refs"] = _rep["refs"]
         dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
               "count": len(items), "items": items}, os.path.join(api_dir, "items.json"))
         dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
@@ -1986,6 +2334,16 @@ def write_outputs(channel_results, generated):
         dump(trends, os.path.join(api_dir, "trends.json"))
         dump({"schemaVersion": 1, "generatedAt": generated.isoformat(),
               "count": len(stories), "items": stories}, os.path.join(api_dir, "stories.json"))
+        # 事件→论文反查表。必须在 selected 算完之后写（上面那个循环才赋 it["selected"]），
+        # 否则这张表的"精选"字段会永远是 False——判例：write_outputs 里才有的字段，
+        # 拿到 run_channel 阶段读就是空。
+        # 不进扁平兼容地址：这是重构后**新增**的地址，老消费者从来没见过它，
+        # 镜像到 api/v1/papers-index.json 反而凭空造出一个没人维护的口径。
+        pidx = build_papers_index(items, generated, ch_id)
+        dump(pidx, os.path.join(ch_data, "papers-index.json"))
+        shutil.copyfile(os.path.join(ch_data, "papers-index.json"),
+                        os.path.join(dist_data, "papers-index.json"))
+        dump(pidx, os.path.join(api_dir, "papers-index.json"))
 
         # 分类 RSS（按频道）
         # 输出 channels.json 声明的每一个分类，而不是只输出"本次恰好有条目"的：
@@ -2142,7 +2500,8 @@ def write_outputs(channel_results, generated):
     os.makedirs(api_v1, exist_ok=True)
     eps = {}
     for ch_id in channel_results:
-        for k in ("items", "hot-topics", "dailies", "daily", "stories", "trends"):
+        for k in ("items", "hot-topics", "dailies", "daily", "stories", "trends",
+                  "papers-index"):
             eps["%s/%s" % (ch_id, k)] = "api/v1/%s/%s.json" % (ch_id, k)
     # 重构前就已发布的扁平地址（内容 = T 光电频道）也登记进索引，
     # 否则 Agent 读 index.json 会以为只有频道地址，找不到仍在线上的老地址。
@@ -2161,8 +2520,8 @@ def write_outputs(channel_results, generated):
 
     # ---- llms.txt ----
     ch_lines = "\n".join(
-        "- %s（%s）: {base}/api/v1/%s/items.json , {base}/api/v1/%s/hot-topics.json , {base}/api/v1/%s/dailies.json"
-        % (CHANNELS[c]["name"]["zh"], CHANNELS[c]["letter"], c, c, c)
+        "- %s（%s）: {base}/api/v1/%s/items.json , {base}/api/v1/%s/hot-topics.json , {base}/api/v1/%s/dailies.json , {base}/api/v1/%s/papers-index.json"
+        % (CHANNELS[c]["name"]["zh"], CHANNELS[c]["letter"], c, c, c, c)
         for c in channel_results)
     llms = """# PAT-HOT · 物理·天文·光电热点统计
 
@@ -2183,6 +2542,13 @@ def write_outputs(channel_results, generated):
 ## RSS 订阅（阅读器 / Agent）
 - 主 feed（T 光电）: {base}/feed.xml
 - 分类: {base}/feed/<频道>/category/<slug>.xml
+
+## 事件→论文锚点（papers-index）
+- 每个频道的 {base}/api/v1/<频道>/papers-index.json 只收录**已验证**的 DOI / arXiv 编号，
+  编号来自条目自带文本或详情页头部「本篇自述元数据」（citation_doi / prism.doi /
+  citation_arxiv_id / canonical），confidence 一律为 verified。
+- 条目里没有 refs 字段是**正确结果**，不是抓取失败：产业事件、机构新闻稿、政策公告
+  本身不对应某一篇可指认的论文，本站不为其编造锚点。期刊与预印本源命中率最高。
 
 ## 用法示例（匿名 GET）
 curl {base}/api/v1/tech/hot-topics.json
@@ -3206,6 +3572,26 @@ def run_channel(ch_id, sources, args, generated):
     topics = dedupe_topic_titles(topics, items, _SOURCE_TIER)
     topics.sort(key=lambda t: t["score"], reverse=True)
 
+    # 文献编号（DOI/arXiv）抽取：先走条目自带字段的零请求通路，再对期刊/预印本型源
+    # 有界深拓详情页头部元数据。产业/新闻稿型源结构性没有学术编号，不发请求也不
+    # 造关联——宁缺毋假（口径与实测依据见 DEFAULT_CONFIG["refs"] 的头注）。
+    refetch_flags = {}
+    for stype in ("rss", "html"):
+        for _cfg in ch_sources.get(stype, []):
+            if "refs_fetch" in _cfg:
+                refetch_flags[_cfg["name"]] = _cfg["refs_fetch"]
+    collect_refs(items, CONFIG, ch_id, refetch_flags)
+    # topics 在编号抽取之前就定稿了，representative 里没有 refs；而热点榜/事件故事
+    # 是"这个事件对应哪篇论文"的主要消费面，所以按代表条目 URL 回折一次。
+    # 只认代表条目自己抽到的编号：同事件其它信源的 refs 属于不同文章，折进来就会
+    # 把一个事件对到多篇论文上，那是关联膨胀而不是关联。
+    _by_url = {it["url"]: it.get("refs") for it in items if it.get("refs")}
+    for t in topics:
+        _rep = t.get("representative") or {}
+        _r = _by_url.get(_rep.get("url"))
+        if _r:
+            _rep["refs"] = _r
+
     # 可选 LLM 增强（默认关闭；失败自动降级，不阻断）
     if args.llm:
         try:
@@ -3330,7 +3716,8 @@ def expected_flat_endpoints():
 def expected_channel_endpoints(ch_id):
     return ["api/v1/%s/items.json" % ch_id, "api/v1/%s/hot-topics.json" % ch_id,
             "api/v1/%s/dailies.json" % ch_id, "api/v1/%s/daily.json" % ch_id,
-            "api/v1/%s/stories.json" % ch_id, "api/v1/%s/trends.json" % ch_id]
+            "api/v1/%s/stories.json" % ch_id, "api/v1/%s/trends.json" % ch_id,
+            "api/v1/%s/papers-index.json" % ch_id]
 
 
 def inline_style_block(html):
@@ -3568,6 +3955,87 @@ def check_contract(verbose=True):
     for ch_id in CHANNEL_ORDER:
         for rel in expected_channel_endpoints(ch_id):
             need(rel, "频道 API")
+
+    # 文献编号契约：对外发布的每个 refs 都必须形状合法、来源可复核。
+    # 这里挡的是"把参考书目当成锚点"那类事故——形状合法但指向别的论文的编号，
+    # 靠抽取层（只读头部元数据）挡；已发布产物里出现编码没解开、或缺 via 的编号，
+    # 说明抽取层被改动，当场拦。
+    for ch_id in CHANNEL_ORDER:
+        for rel in ("api/v1/%s/items.json" % ch_id,
+                    "api/v1/%s/hot-topics.json" % ch_id,
+                    "api/v1/%s/stories.json" % ch_id,
+                    "api/v1/%s/papers-index.json" % ch_id):
+            fp = os.path.join(DIST_DIR, rel.replace("/", os.sep))
+            if not os.path.exists(fp):
+                continue
+            try:
+                with open(fp, encoding="utf-8") as f:
+                    doc = json.load(f)
+            except Exception as e:
+                problems.append("%s 解析失败: %s" % (rel, e))
+                continue
+            rows = doc.get("items") or []
+            for it in rows:
+                cand = [it]
+                # hot-topics 的 refs 挂在 representative 上，items/stories 挂在条目自身。
+                # 两种形态都要检视，否则某一种坏了不报红＝门面上有检查、实际只守一个文件。
+                if (it.get("representative") or {}).get("refs"):
+                    cand.append(it["representative"])
+                for c in cand:
+                    r = c.get("refs")
+                    if not r:
+                        continue
+                    bad = []
+                    if r.get("doi"):
+                        if not _ref_doi_shape(r["doi"]):
+                            bad.append("doi 形状不合法 %r" % r["doi"])
+                        elif not _ref_doi_decoded(r["doi"]):
+                            bad.append("doi 未解开百分号编码 %r" % r["doi"])
+                    if r.get("arxiv") and not ARX_PUBLISHED_RE.match(str(r["arxiv"])):
+                        bad.append("arxiv 形状不合法 %r（发布态必须是去版本的基号）" % r["arxiv"])
+                    if not r.get("via"):
+                        bad.append("refs 缺 via（不知道锚点从哪来就没法复核）")
+                    if not r.get("confidence"):
+                        bad.append("refs 缺 confidence")
+                    if bad:
+                        problems.append("%s 条目 %s 的 refs 有问题：%s"
+                                        % (rel, c.get("id") or c.get("title"), "；".join(bad)))
+
+    # papers-index 单独走一遍：这张表的编号是**平铺字段**（doi/arxiv 直接在行上），
+    # 上面那个按 refs 子对象找的检查看不见它——不另开一条，坏 DOI 就能从这条侧门发布。
+    # 也必须是独立循环而不是塞在上面那个 for 里：每个条目重扫整表会让一个坏条目
+    # 报满整表那么多次（实测 50 条重复消息），红得没法读。
+    for ch_id in CHANNEL_ORDER:
+        rel = "api/v1/%s/papers-index.json" % ch_id
+        fp = os.path.join(DIST_DIR, rel.replace("/", os.sep))
+        if not os.path.exists(fp):
+            continue
+        try:
+            with open(fp, encoding="utf-8") as f:
+                rows = (json.load(f) or {}).get("items") or []
+        except Exception as e:
+            problems.append("%s 解析失败: %s" % (rel, e))
+            continue
+        for pit in rows:
+            if not (pit.get("doi") or pit.get("arxiv")):
+                problems.append("%s 条目 %s 没有任何编号（这张表只应收录有锚点的条目）"
+                                % (rel, pit.get("id")))
+                continue
+            if pit.get("doi"):
+                if not _ref_doi_shape(pit["doi"]):
+                    problems.append("%s 条目 %s 的 doi 形状不合法: %r"
+                                    % (rel, pit.get("id"), pit["doi"]))
+                elif not _ref_doi_decoded(pit["doi"]):
+                    problems.append("%s 条目 %s 的 doi 未解开百分号编码: %r"
+                                    % (rel, pit.get("id"), pit["doi"]))
+            if pit.get("arxiv") and not ARX_PUBLISHED_RE.match(str(pit["arxiv"])):
+                problems.append("%s 条目 %s 的 arxiv 不合法: %r"
+                                % (rel, pit.get("id"), pit["arxiv"]))
+            if not pit.get("via"):
+                problems.append("%s 条目 %s 缺 via" % (rel, pit.get("id")))
+            if pit.get("confidence") != "verified":
+                problems.append("%s 条目 %s 的 confidence 不是 verified: %r"
+                                % (rel, pit.get("id"), pit.get("confidence")))
 
     # 形状契约：api/v1/dailies.json 是裸日期字典（线上现状，消费者依赖它）
     p = os.path.join(DIST_DIR, "api", "v1", "dailies.json")

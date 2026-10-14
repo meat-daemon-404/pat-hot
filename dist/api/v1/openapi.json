@@ -101,6 +101,16 @@
         }
       }
     },
+    "/api/v1/physics/papers-index.json": {
+      "get": {
+        "summary": "物理：事件→论文反查表（已验证 DOI/arXiv 锚点）",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/astro/items.json": {
       "get": {
         "summary": "天文：全部条目",
@@ -161,6 +171,16 @@
         }
       }
     },
+    "/api/v1/astro/papers-index.json": {
+      "get": {
+        "summary": "天文：事件→论文反查表（已验证 DOI/arXiv 锚点）",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/tech/items.json": {
       "get": {
         "summary": "光电：全部条目",
@@ -214,6 +234,16 @@
     "/api/v1/tech/trends.json": {
       "get": {
         "summary": "光电：趋势",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/tech/papers-index.json": {
+      "get": {
+        "summary": "光电：事件→论文反查表（已验证 DOI/arXiv 锚点）",
         "responses": {
           "200": {
             "description": "OK"
