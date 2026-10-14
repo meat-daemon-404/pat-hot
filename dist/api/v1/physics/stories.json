@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T01:21:56.582979+00:00",
+  "generatedAt": "2026-10-14T12:02:23.128886+00:00",
   "count": 3,
   "items": [
     {
-      "id": "8d27655670e6",
-      "title": "Will we observe dark matter as a particle or a wave?",
+      "id": "49bc8d90cf0d",
+      "title": "Quantum network test checks entanglement without having to trust detectors",
       "status": "发酵中",
       "heat": 70.8,
       "sourceCount": 3,
-      "signalCount": 25,
-      "latestAt": "2026-10-14T01:21:56.582979+00:00",
+      "signalCount": 26,
+      "latestAt": "2026-10-14T12:02:23.128886+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理",
@@ -18,56 +18,56 @@
       ],
       "links": [
         {
+          "title": "Quantum network test checks entanglement without having to trust detectors",
+          "url": "https://phys.org/news/2026-10-quantum-network-entanglement-detectors.html",
+          "source": "Phys.org 物理新闻",
+          "score": 76.5,
+          "published_at": "2026-10-14T11:00:01+00:00"
+        },
+        {
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 76.0,
+          "score": 75.7,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
           "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
           "url": "https://phys.org/news/2026-10-gravity-quantum-linked-derivation-einstein.html",
           "source": "Phys.org 物理新闻",
-          "score": 75.8,
+          "score": 75.5,
           "published_at": "2026-10-12T23:20:01+00:00"
         },
         {
           "title": "Hybrid quantum computer observes foundational quantum effect in a new setting",
           "url": "https://phys.org/news/2026-10-hybrid-quantum-foundational-effect.html",
           "source": "Phys.org 物理新闻",
-          "score": 74.1,
+          "score": 73.8,
           "published_at": "2026-10-10T10:57:07+00:00"
         },
         {
           "title": "Embracing the glitches in gravity could give us a unified theory of reality",
           "url": "https://www.newscientist.com/article/2589429-embracing-the-glitches-in-gravity-could-give-us-a-unified-theory-of-reality/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 66.2,
+          "score": 65.9,
           "published_at": "2026-09-28T15:00:00+00:00"
-        },
-        {
-          "title": "MIT Quantum Initiative launches postdoctoral fellowship program",
-          "url": "https://news.mit.edu/2026/mit-quantum-initiative-launches-postdoctoral-fellowship-0831",
-          "source": "MIT News 物理",
-          "score": 56.5,
-          "published_at": "2026-08-31T19:30:00+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -11.5,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
-      "digest": "专栏作家Chanda Prescod-Weinstein认为暗物质可能已被发现，但要在实验中观测它，还需先判断它表现为粒子还是波。\n\n牛津大学物理系研究人员用由量子比特和量子振荡器组成的混合量子计算机，在量子模拟中观测到Aharonov–Bohm效应。\n\n另有研究提出引力与量子信息存在深层联系，时空形状可追溯到量子场中信息的存储方式；也有观点认为，将引力纳入量子框架的困难，可能需要一种超越量子力学的后量子方法来解决。",
-      "digestTitle": "暗物质观测路径与量子引力研究进展",
+      "digest": "牛津大学物理系研究人员使用由量子比特和量子振荡器组成的混合量子计算机，在量子模拟中观测到了阿哈罗诺夫-玻姆效应。该效应是一种量子现象，此前主要在特定实验条件下被研究，此次在混合量子计算平台上实现观测，为在新型量子系统中验证基础量子效应提供了实例。",
+      "digestTitle": "牛津混合量子计算机观测阿哈罗诺夫-玻姆效应",
       "llmScore": 18.0
     },
     {
-      "id": "043764b88bac",
+      "id": "06c0a9b6582b",
       "title": "New topological microscope tip reveals evidence of 2D altermagnetism",
       "status": "关注中",
-      "heat": 41.5,
+      "heat": 38.0,
       "sourceCount": 1,
-      "signalCount": 4,
-      "latestAt": "2026-10-14T01:21:56.582979+00:00",
+      "signalCount": 3,
+      "latestAt": "2026-10-14T12:02:23.128886+00:00",
       "sources": [
         "Phys.org 物理新闻"
       ],
@@ -76,33 +76,26 @@
           "title": "New topological microscope tip reveals evidence of 2D altermagnetism",
           "url": "https://phys.org/news/2026-10-topological-microscope-reveals-evidence-2d.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.7,
+          "score": 58.9,
           "published_at": "2026-10-13T21:10:01+00:00"
         },
         {
           "title": "From nonmagnetic to magnetic: A 2D semiconductor with electrically tunable magnetism",
           "url": "https://phys.org/news/2026-10-nonmagnetic-magnetic-2d-semiconductor-electrically.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.1,
+          "score": 58.3,
           "published_at": "2026-10-12T21:40:11+00:00"
         },
         {
           "title": "Magnetic sculpting transforms single-source fields into predetermined shapes with mathematical precision",
           "url": "https://phys.org/news/2026-10-magnetic-sculpting-source-fields-predetermined.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.1,
+          "score": 35.0,
           "published_at": "2026-10-12T22:40:01+00:00"
-        },
-        {
-          "title": "Nonchaotic model reveals how predictability can emerge from seemingly unpredictable dynamics",
-          "url": "https://phys.org/news/2026-10-nonchaotic-reveals-emerge-seemingly-unpredictable.html",
-          "source": "Phys.org 物理新闻",
-          "score": 31.0,
-          "published_at": "2026-10-08T21:00:08+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": -8.4,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -115,7 +108,7 @@
       "heat": 18.0,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-14T01:21:56.582979+00:00",
+      "latestAt": "2026-10-14T12:02:23.128886+00:00",
       "sources": [
         "知识分子"
       ],
@@ -124,21 +117,21 @@
           "title": "“冰立方”中微子天文台科学家获得2026年物理诺奖",
           "url": "http://www.zhishifenzi.com/news/multiple/10707.html",
           "source": "知识分子",
-          "score": 57.7,
+          "score": 57.4,
           "published_at": "2026-10-11T14:53:31+00:00"
         },
         {
           "title": "诺奖颁给冰立方：“天马行空的想法，值得被支持几十年”",
           "url": "http://www.zhishifenzi.com/news/multiple/10693.html",
           "source": "知识分子",
-          "score": 34.6,
+          "score": 34.4,
           "published_at": "2026-10-11T12:16:58+00:00"
         },
         {
           "title": "“冰立方”为何获得2026诺贝尔物理奖？现场对话诺奖评委",
           "url": "http://www.zhishifenzi.com/news/multiple/10692.html",
           "source": "知识分子",
-          "score": 34.6,
+          "score": 34.4,
           "published_at": "2026-10-11T12:15:47+00:00"
         }
       ],

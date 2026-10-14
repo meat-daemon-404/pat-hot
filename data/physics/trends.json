@@ -1,35 +1,35 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T01:21:56.582979+00:00",
+  "generatedAt": "2026-10-14T12:02:23.128886+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
       "category": "其他",
-      "thisWeek": 541.8,
+      "thisWeek": 539.7,
       "lastWeek": 192.9,
-      "deltaPct": 180.9
+      "deltaPct": 179.8
     },
     {
       "category": "科研进展",
-      "thisWeek": 421.4,
+      "thisWeek": 420.2,
       "lastWeek": 805.6,
-      "deltaPct": -47.7
-    },
-    {
-      "category": "凝聚态物理",
-      "thisWeek": 282.7,
-      "lastWeek": 49.8,
-      "deltaPct": 467.7
+      "deltaPct": -47.8
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 251.0,
+      "thisWeek": 301.5,
       "lastWeek": 158.9,
-      "deltaPct": 58.0
+      "deltaPct": 89.7
+    },
+    {
+      "category": "凝聚态物理",
+      "thisWeek": 279.1,
+      "lastWeek": 49.8,
+      "deltaPct": 460.4
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 75.8,
+      "thisWeek": 144.4,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
@@ -42,21 +42,27 @@
   ],
   "newTopics": [
     {
-      "topic_id": "8d27655670e6",
-      "title": "Will we observe dark matter as a particle or a wave?",
-      "score": 335.1,
+      "topic_id": "49bc8d90cf0d",
+      "title": "Quantum network test checks entanglement without having to trust detectors",
+      "score": 402.8,
       "days": 2
     },
     {
-      "topic_id": "043764b88bac",
+      "topic_id": "06c0a9b6582b",
       "title": "New topological microscope tip reveals evidence of 2D altermagnetism",
-      "score": 156.9,
+      "score": 152.2,
       "days": 2
     },
     {
       "topic_id": "8eae9d96a171",
       "title": "Will we observe dark matter as a particle or a wave?",
       "score": 95.0,
+      "days": 1
+    },
+    {
+      "topic_id": "f227cd59cf45",
+      "title": "The CERN Pension Fund launches MyPension, its new online portal",
+      "score": 51.4,
       "days": 1
     }
   ],
