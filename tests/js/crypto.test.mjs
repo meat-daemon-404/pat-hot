@@ -25,6 +25,19 @@ test("pwHash / pwVerify 往返：同口令过，异口令不过", async () => {
   assert.equal(await pwVerify(PW.toLowerCase(), stored), false, "差一个字母必须不过（变异思路：derive 若忽略 password 参数就会两边都过）");
 });
 
+test("迭代数不得超过 Cloudflare Workers 的 WebCrypto 上限", () => {
+  // 🔴 真生产回归钉：首版写 210000，Node 20 的 deriveBits 允许（本地 68 项全绿），
+  // 一上 Pages Functions 注册当场 500：
+  //   "Pbkdf2 failed: iteration counts above 100000 are not supported (requested 210000)"
+  // 也就是说这条只能靠"真跑一次生产"发现——现在把它钉成静态断言，
+  // 谁日后为"提高强度"把数调回 10 万以上，本地就红，不必再等生产炸。
+  assert.ok(PBKDF2_ITERATIONS <= 100000,
+    "Workers 的 PBKDF2 deriveBits 上限是 100000，超过即生产注册 500（Node 测试环境不报错，测不出来）");
+  assert.ok(PBKDF2_ITERATIONS >= 100000,
+    "任务书下限是 ≥100k；若真要调低必须先改任务书口径，不能悄悄降强度");
+  // 变异思路：把 PBKDF2_ITERATIONS 改成 210000 → 第一条红；改成 1000 → 第二条红。
+});
+
 test("同一口令两次散列得到不同存储（salt 随机，不是恒定 hash）", async () => {
   const a = await pwHash(PW);
   const b = await pwHash(PW);

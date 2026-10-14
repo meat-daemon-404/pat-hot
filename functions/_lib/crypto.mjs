@@ -4,7 +4,7 @@
  *
  * 为什么是 PBKDF2 而不是 bcrypt/argon2：Pages Function 跑在 V8 isolate 里，
  * 没有原生 bcrypt，纯 JS 的 argon2/bcrypt 慢一个量级且要引依赖。WebCrypto 的
- * PBKDF2-SHA256 是平台内置、可审计的替代，代价是用高迭代次数（21 万）补强度。
+ * PBKDF2-SHA256 是平台内置、可审计的替代，代价是用高迭代次数（10 万）补强度。
  * 这是取舍，不是"最佳实践"宣称。
  *
  * 存储格式：<saltHex>$<hashHex>$<iterations>
@@ -12,7 +12,11 @@
  * 旧口令仍可校验（没有这一段，提高迭代数会让所有存量账号静默登录失败）。
  */
 
-export const PBKDF2_ITERATIONS = 210000; // ≥100k（任务书下限），Node 20 上约 150–250ms
+// 🔴 100000 是 Cloudflare Workers 的 WebCrypto PBKDF2 硬上限：超过它 deriveBits 直接
+// 抛 "iteration counts above 100000 are not supported"。首版写 210000 在 Node 20 的
+// 测试里全绿（Node 的 WebCrypto 允许更高），一上生产注册就 500——真跑才暴露。
+// 100000 仍是任务书下限（≥100k）；存储格式带迭代数，故日后 Workers 放宽时调高不伤存量。
+export const PBKDF2_ITERATIONS = 100000; // Workers deriveBits 上限，Node 20 上约 70–120ms
 export const PBKDF2_KEY_BITS = 256;
 export const SALT_BYTES = 16;
 export const HANDLE_BYTES = 32; // 256 bit：会话句柄不可猜测，cookie 即能力凭证
