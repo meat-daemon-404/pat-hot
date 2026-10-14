@@ -103,7 +103,17 @@ test("网络故障与超时都归 502 SM_UNREACHABLE，原因分开", async () =
   assert.equal(err.status, 502);
   assert.match(err.message, /ENOTFOUND/, "原始原因要留住");
 
-  const hang = (u, init) => new Promise((_, rej) => init.signal.addEventListener("abort", () => rej(new Error("signal aborted"))));
+  // hang 自己必须留一个 ref'd 定时器：AbortSignal.timeout 的定时器在 Node 里是
+  // unref 的（不阻止进程退出），只挂 abort 监听的话，CI runner 会在事件循环空掉时
+  // 直接把本测试判成 "Promise resolution is still pending"（本地 Node 容忍，CI 不容忍）。
+  // 兜底 3s 远大于 timeoutMs=60，正常路径由 abort 先到，不改变断言语义。
+  const hang = (u, init) => new Promise((_, rej) => {
+    let done = false;
+    const finish = () => { if (done) return; done = true; clearTimeout(keep); rej(new Error("signal aborted")); };
+    const keep = setTimeout(finish, 3000);
+    if (init.signal.aborted) { finish(); return; }
+    init.signal.addEventListener("abort", finish, { once: true });
+  });
   const t0 = Date.now();
   err = null;
   try { await redeemBindCode(ENV, { code: "K", fetchImpl: hang, timeoutMs: 60 }); }
