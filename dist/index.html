@@ -89,6 +89,8 @@ a{color:inherit;text-decoration:none}
 .xbody .xt{font-size:13.5px;color:var(--ink2);line-height:1.75;white-space:pre-wrap}
 .xsrc{margin-top:10px;font-size:12px;color:var(--ink4)}
 .xsrc a{color:var(--ink4);text-decoration:underline}
+.smbtn{display:inline-block;margin-left:12px;padding:4px 12px;border:1px solid var(--ac);border-radius:999px;color:var(--acd)!important;text-decoration:none!important;font-size:12px;font-weight:700}
+.smbtn:hover{background:var(--acsoft)}
 .ext-tag{font-size:11px;color:var(--ink4);font-weight:400;white-space:nowrap}
 .icobtn{width:34px;height:34px;border:0;background:none;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--ink2);cursor:pointer;font-size:13px;font-weight:700;flex:none}
 .icobtn:hover{background:var(--sunk)}
@@ -422,7 +424,7 @@ const I18N = {
     favPage:"收藏", favSub:"点过的星标都在这里（只存在本浏览器）", noFav:"还没有收藏：点卡片右上角的 ★ 收藏一条", favCount:"{n} 条收藏",
     bakNote:"已读 / 收藏 / 主题 / 语言 / 频道只存在这台浏览器，清缓存就会丢——导出备份换设备也能带走。",
     bakExport:"导出备份", bakImport:"导入备份", bakDone:"已导入 {n} 项设置，页面即将刷新", bakFail:"读写失败，请重试", badFile:"这不是 PAT-HOT 备份文件，未做任何改动",
-    extNote:"原文·需外网", readOrig:"阅读原文 ↗（需外网）", loadMore:"加载更多", aiGen:"生成中文摘要", aiLoading:"生成中…", aiFail:"生成失败，点击重试",
+    extNote:"原文·需外网", readOrig:"阅读原文 ↗（需外网）", importSM:"📥 导入学术星轨", loadMore:"加载更多", aiGen:"生成中文摘要", aiLoading:"生成中…", aiFail:"生成失败，点击重试",
     footer:"PAT-HOT · 物理·天文·光电热点统计（AIHOT 方法论）· 数据来自公开网络，仅供参考，不构成投资建议 · GitHub 开源" },
   en: { feed:"Selected", all:"All", hot:"Hot", daily:"Daily", trends:"Trends", more:"More",
     allPage:"All Items", hotPage:"Hot Ranking", topics:"Topics", data:"Data", agent:"Agent API",
@@ -448,7 +450,7 @@ const I18N = {
     favPage:"Saved", favSub:"Your stars live in this browser only", noFav:"Nothing saved yet — tap ★ on a card to save it", favCount:"{n} saved",
     bakNote:"Read / saved / theme / language / channel live in this browser only — export a backup before clearing data or switching devices.",
     bakExport:"Export backup", bakImport:"Import backup", bakDone:"Restored {n} settings; reloading", bakFail:"Read/write failed, please retry", badFile:"Not a PAT-HOT backup — nothing changed",
-    extNote:"orig.·needs internet", readOrig:"Read original ↗ (needs internet)", loadMore:"Load more", aiGen:"Generate Chinese summary", aiLoading:"Generating…", aiFail:"Failed, tap to retry",
+    extNote:"orig.·needs internet", readOrig:"Read original ↗ (needs internet)", importSM:"📥 Import to ScholarMatrix", loadMore:"Load more", aiGen:"Generate Chinese summary", aiLoading:"Generating…", aiFail:"Failed, tap to retry",
     footer:"PAT-HOT · physics / astronomy / photonics hot-topic stats (AIHOT methodology) · public data, for reference only · open source on GitHub" }
 };
 let LANG = "zh";
@@ -551,11 +553,20 @@ const EXPANDED = new Set();
 // 恰好把摘要为空的条目挡在门外，而那正是最需要按需生成中文的一类（按需通道的存在意义）。
 function expandable(){ return true; }
 function expandBtn(it){ if(!expandable(it)) return ""; const open=EXPANDED.has(it.id); return '<button class="xbtn'+(open?" open":"")+'" data-x="'+it.id+'"><span>'+(open?T.collapse:T.expand)+'</span><span class="xa">▼</span></button>'; }
+// ---- 导入学术星轨（生态打通 · 闭环1） ----
+// 学术星轨 deep-link 导入协议：?add=<base64url(JSON.stringify(descriptors[]))>
+// descriptor: {title?, authors?, year?, journal?, doi?, arxiv?, url?, abstract?, kind?}
+function b64url(s){ const b=btoa(unescape(encodeURIComponent(s))); return b.replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,""); }
+function smImportUrl(it){
+  const d={ title:it.title||"", url:it.url||"", abstract:it.zh_full||it.llm_summary||it.summary||"", journal:it.source||"", kind:"news" };
+  return "https://scholarmatrix.pages.dev/?add="+b64url(JSON.stringify([d]));
+}
+function smImportBtn(it){ if(!it.url) return ""; return '<a class="smbtn" href="'+smImportUrl(it)+'" target="_blank" rel="noopener">'+T.importSM+'</a>'; }
 function expandBody(it){ if(!expandable(it)) return ""; const open=EXPANDED.has(it.id);
   const zf=it.zh_full?'<div class="xsec">'+T.aiSum+'</div><div class="xt">'+esc(it.zh_full)+'</div>':"";
   const ai=!it.zh_full&&it.llm_summary?'<div class="xsec">'+T.aiSum+'</div><div class="xt">'+esc(it.llm_summary)+'</div>':"";
   const rs=it.summary?'<div class="xsec">'+T.srcSum+'</div><div class="xt">'+esc(it.summary)+'</div>':"";
-  const src=it.url?'<div class="xsrc"><a href="'+esc(it.url)+'" target="_blank" rel="noopener">'+T.readOrig+'</a></div>':"";
+  const src=it.url?'<div class="xsrc"><a href="'+esc(it.url)+'" target="_blank" rel="noopener">'+T.readOrig+'</a>'+smImportBtn(it)+'</div>':"";
   // 按需 AI 中文摘要：没有 zh_full 时显示按钮
   const od=!it.zh_full?'<div class="xod" id="xod-'+it.id+'"><button class="obtn" data-od="'+esc(it.url)+'">✨ '+T.aiGen+'</button><div class="otxt" style="display:none"></div></div>':"";
   return '<div class="xbody'+(open?" open":"")+'" id="xb-'+it.id+'"><div class="xbody-in">'+zf+ai+rs+od+src+'</div></div>'; }
