@@ -125,6 +125,35 @@ class TestOutboundDeepLink(unittest.TestCase):
         self.assertIn("consth=smOutHref(it);if(!h)return\"\";", body,
                       "smDeepBtn 不再以空 href 短路：无锚条目会渲染出坏按钮")
 
+    def test_button_icon_lives_in_dict(self):
+        """图标只许写在词典值里，拼接处一个都不许有。
+
+        合并后我在 smDeepBtn 里前缀了一次下载图标，而词典值 importSM 本身就带
+        同一个图标——线上实测渲染出「图标图标 导入学术星轨」。这类缺陷人眼在
+        满屏卡片里很容易漏，所以钉成不变量：函数体零图标，词典两处各带一个。
+        变异思路：把 `(paper?"… ":"… ")+esc(...)` 前缀加回去 → 函数体锚当场红；
+        把词典里的图标整个删掉 → 词典侧锚红（防"靠删图标骗过上一条"的假绿）。
+        """
+        def icons(text):
+            # 只认真图标区：杂项符号 U+2600–27BF 与 emoji 区 U+1F000–1FAFF。
+            # 早先用 ord>0x2190 当阈值会把全角标点（＝ U+FF1D、， U+FF0C）也算进去，
+            # 函数体里的中文注释当场假红。
+            return [c for c in text if 0x2600 <= ord(c) <= 0x27BF or 0x1F000 <= ord(c) <= 0x1FAFF]
+
+        self.assertEqual(icons(_fn_body("smDeepBtn")), [],
+                         "smDeepBtn 又拼了图标字符：图标归词典，拼两处就是重复显示")
+        # 转义写法（"\u{1F4E5} " / 代理对 "\uD83D\uDCE5"）渲染出来同样是图标，扫码点扫不到，
+        # 得按字面查——否则这道门能被"用转义重写一遍"轻松绕过（变异实测过两种写法）。
+        body = _fn_body("smDeepBtn")
+        self.assertNotRegex(body, r"\\u\{?1F", "smDeepBtn 里用 \\u 转义藏了图标，绕过了码点扫描")
+        self.assertNotRegex(body, r"\\uD83[CD]", "smDeepBtn 里用代理对转义藏了图标")
+        # 词典侧必须真带着图标，否则上面那条"零图标"只是把图标删光的假绿
+        for key in ("smDeep", "importSM"):
+            vals = re.findall(r'%s:"([^"]*)"' % key, JS)
+            self.assertEqual(len(vals), 2, "%s 应在 zh/en 词典各出现一次，实得 %d" % (key, len(vals)))
+            for v in vals:
+                self.assertTrue(icons(v), "%s 的值丢了图标：%r（与另一类按钮不再成对）" % (key, v))
+
     def test_card_mounts_button_via_gated_helper(self):
         """条目卡操作区挂的是 smDeepBtn(it)（带门），不许卡里直接拼 href。"""
         i = JS.index("function itemCard(")

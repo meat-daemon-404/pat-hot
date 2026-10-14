@@ -47,7 +47,7 @@ const I18N = {
     bakNote:"已读 / 收藏 / 主题 / 语言 / 频道只存在这台浏览器，清缓存就会丢——导出备份换设备也能带走。",
     bakExport:"导出备份", bakImport:"导入备份", bakDone:"已导入 {n} 项设置，页面即将刷新", bakFail:"读写失败，请重试", badFile:"这不是 PAT-HOT 备份文件，未做任何改动",
     extNote:"原文·需外网", readOrig:"阅读原文 ↗（需外网）", importSM:"📥 导入学术星轨", smBind:"🔗 关联 ScholarMatrix", loadMore:"加载更多", aiGen:"生成中文摘要", aiLoading:"生成中…", aiFail:"生成失败，点击重试",
-    smDeep:"在 ScholarMatrix 深读", smTip:"带论文编号跳 ScholarMatrix 建真文献",
+    smDeep:"🔬 在 ScholarMatrix 深读", smTip:"带论文编号跳 ScholarMatrix 建真文献",
     importTip:"存为资讯条目（该事件没有可复核的论文编号）",
     accountPage:"账号", accountSub:"登录后可绑定 ScholarMatrix：按你的研究兴趣重排、一键深读。",
     menuAccountSub:"注册 / 登录 · 绑定 ScholarMatrix · 清除我的数据",
@@ -85,7 +85,7 @@ const I18N = {
     bakNote:"Read / saved / theme / language / channel live in this browser only — export a backup before clearing data or switching devices.",
     bakExport:"Export backup", bakImport:"Import backup", bakDone:"Restored {n} settings; reloading", bakFail:"Read/write failed, please retry", badFile:"Not a PAT-HOT backup — nothing changed",
     extNote:"orig.·needs internet", readOrig:"Read original ↗ (needs internet)", importSM:"📥 Import to ScholarMatrix", smBind:"🔗 Link ScholarMatrix", loadMore:"Load more", aiGen:"Generate Chinese summary", aiLoading:"Generating…", aiFail:"Failed, tap to retry",
-    smDeep:"Open in ScholarMatrix", smTip:"Carries the paper identifier so ScholarMatrix creates a real entry",
+    smDeep:"🔬 Open in ScholarMatrix", smTip:"Carries the paper identifier so ScholarMatrix creates a real entry",
     importTip:"Saved as a news item (this event has no verifiable paper identifier)",
     accountPage:"Account", accountSub:"Sign in to link ScholarMatrix: rank by your research interests, one-click deep read.",
     menuAccountSub:"Sign up / log in · link ScholarMatrix · erase my data",
@@ -211,9 +211,12 @@ function smNewsDesc(it){ if(!it.url) return "";
   return JSON.stringify([d]);
 }
 function smOutHref(it){ const j=smDesc(it)||smNewsDesc(it); if(!j) return ""; return SM_BASE+"?add="+b64url(j); }
+// 出链按钮。图标只写在词典值里（见 smDeep / importSM 两键），函数体里一个图标字符都不许
+// 出现——在这里再拼一次就是线上实测到的图标重复缺陷（两个下载箭头并排）。
+// test_button_icon_lives_in_dict 钉住这条不变量。
 function smDeepBtn(it){ const h=smOutHref(it); if(!h) return "";
   const paper=!!smDesc(it); // 有 verified 锚＝深读建真文献，否则＝存一条资讯
-  return '<div class="ism"><a class="smbtn" href="'+esc(h)+'" target="_blank" rel="noopener" title="'+esc(paper?T.smTip:T.importTip)+'">'+(paper?"🔬 ":"📥 ")+esc(paper?T.smDeep:T.importSM)+'</a></div>'; }
+  return '<div class="ism"><a class="smbtn" href="'+esc(h)+'" target="_blank" rel="noopener" title="'+esc(paper?T.smTip:T.importTip)+'">'+esc(paper?T.smDeep:T.importSM)+'</a></div>'; }
 function summaryOf(it){ return it.zh_full || it.llm_summary || it.summary || ""; }
 function cardSummary(it){ const s=summaryOf(it); if(it.zh_full || it.llm_summary) return s.length>160 ? s.slice(0,160)+"…" : s; return s.length>160 ? s.slice(0,160)+"…" : s; }
 function trendSet(){ const tt=C.trends||{}; return new Set([...(tt.newTopics||[]),...(tt.sustainedTopics||[])].map(x=>x.title)); }
