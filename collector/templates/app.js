@@ -35,6 +35,7 @@ const I18N = {
     topicsSub:"分类统计，点击进入筛选",
     dataPage:"数据", dataSub:"统计与导出", total:"收录总数", h24:"24 小时新增", h7:"7 天新增", hotTopic:"热点话题", trend:"每日收录趋势（近 14 天）",
     srcTable:"数据来源", latest:"最新收录", dlCSV:"下载 CSV", dlItems:"查看 items.json", dlHot:"查看 hot-topics.json", dlDaily:"查看 dailies.json",
+    dlPapers:"论文编号锚点（DOI/arXiv，只收有编号的条目）",
     agentPage:"Agent 接入", agentSub:"面向 AI / LLM / 智能体的数据接口（免鉴权，静态 JSON）", apiTitle:"数据 API（v1）",
     apiDesc:"数据每天 6:00 / 18:00 自动更新，接口免鉴权，AI 智能体 / 脚本可直接消费。", endpoint:"接口", desc:"说明", open:"打开",
     curl:"用法示例（curl）", llmsNote:"站点根目录提供 llms.txt（LLM 友好入口），Agent 可先读取它再按需拉取接口。", base:"接口基地址（本页 URL 去掉 index.html）",
@@ -72,6 +73,7 @@ const I18N = {
     topicsSub:"Category stats — click to filter",
     dataPage:"Data", dataSub:"Stats & export", total:"Total items", h24:"24h new", h7:"7d new", hotTopic:"Hot topics", trend:"Daily trend (14 days)",
     srcTable:"Sources", latest:"Latest", dlCSV:"Download CSV", dlItems:"items.json", dlHot:"hot-topics.json", dlDaily:"dailies.json",
+    dlPapers:"Paper identifier anchors (DOI/arXiv; only entries that have one)",
     agentPage:"Agent API", agentSub:"Open JSON APIs for AI / LLM agents (no auth)", apiTitle:"Data API (v1)",
     apiDesc:"Data refreshes at 6:00 / 18:00 daily. Endpoints need no auth and are agent/script friendly.", endpoint:"Endpoint", desc:"Description", open:"Open",
     curl:"Examples (curl)", llmsNote:"llms.txt at site root is an LLM-friendly entry point.", base:"Base URL (this page URL minus index.html)",
@@ -626,7 +628,7 @@ function renderFav(){
 function renderAgent(){
   const root=$("#view-agent");
   const base=location.href.split("?")[0].split("#")[0].replace(/index\.html$/,"");
-  const eps=[["items",T.dlItems],["hot-topics",T.dlHot],["dailies",T.dlDaily],["daily","daily.json"],["stories","stories.json"],["trends","trends.json"]];
+  const eps=[["items",T.dlItems],["hot-topics",T.dlHot],["dailies",T.dlDaily],["daily","daily.json"],["stories","stories.json"],["trends","trends.json"],["papers-index",T.dlPapers]];
   const rows=eps.map(([k,d])=>'<tr><td class="mono">api/v1/'+CHID+'/'+k+'.json</td><td>'+d+'</td><td><a href="'+base+'api/v1/'+CHID+'/'+k+'.json" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>').join("");
   const curl=eps.map(([k])=>'curl '+base+'api/v1/'+CHID+'/'+k+'.json').join("\n");
   const catFeeds=Object.entries(CAT_CLS).map(([cat,slug])=>["feed/"+CHID+"/category/"+slug+".xml",cat]);
