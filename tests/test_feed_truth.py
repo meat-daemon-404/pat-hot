@@ -78,6 +78,22 @@ class TestCalendarView(unittest.TestCase):
         self.assertIn("renderers.cal=renderCal", JS, "日历视图没注册 renderer")
         self.assertIn('href="#/cal"', HTML, "导航里没有日历入口")
 
+    def test_weekday_header_is_language_aware(self):
+        """星期表头随语言切换：EN 泄漏实测过。
+
+        回归：renderCal 的 <span class="cal-w"> 曾写死 一…日 七个中文字，
+        EN 模式下整页其余全英文、只有这一行是中文。按行查含中文的
+        cal-w 段必须同时带英文分支——不能一刀切禁中文，中文分支本就该在。
+        """
+        i = JS.index("function renderCal")
+        body = JS[i:JS.index("const ALL_PAGE", i)] if "const ALL_PAGE" in JS[i:] else JS[i:]
+        wk = [ln for ln in body.splitlines() if "cal-w" in ln or ("Mo" in ln and "Su" in ln)]
+        self.assertTrue(wk, "找不到星期表头的构造，日历表头结构变了")
+        joined = "".join(wk)
+        self.assertIn('LANG==="en"', joined,
+                      "星期表头不再分语言：EN 下这一行会漏出「一 二 三…」")
+        self.assertIn("Su", joined, "EN 星期表头缺英文项")
+
     def test_calendar_day_jumps_to_feed(self):
         i = JS.index("function bind()")
         body = JS[i:]
