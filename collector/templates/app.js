@@ -127,15 +127,19 @@ function freshNote(){
     const hm=String(b.getUTCHours()).padStart(2,"0")+":"+String(b.getUTCMinutes()).padStart(2,"0");
     genTxt=(gd===today?(LANG==="en"?"today ":"今天 "):fmtDay(gd)+" ")+hm; }
   let latest=""; for(const it of (C.items||[])){ const p=it.published_at||""; if(p>latest) latest=p; }
-  let latTxt=""; if(latest){ const lp=latest.slice(0,10);
-    latTxt=(lp===todayCN()?(LANG==="en"?"today ":"今天 "):fmtDay(lp)+" ")+latest.slice(11,16); }
+  // 最新文章时间必须按北京时间显示：published_at 是 UTC 瞬时，直接切片会把
+  // 北京 10-13 早上的文章写成「10-12 23:20 发布」，和「数据 今天 更新」自相矛盾。
+  let latTxt=""; if(latest){ const lb=new Date(new Date(latest).getTime()+8*3600*1000);
+    const lp=lb.toISOString().slice(0,10);
+    const hm=String(lb.getUTCHours()).padStart(2,"0")+":"+String(lb.getUTCMinutes()).padStart(2,"0");
+    latTxt=(lp===todayCN()?(LANG==="en"?"today ":"今天 "):fmtDay(lp)+" ")+hm; }
   if(LANG==="en") return "📡 Data updated "+genTxt+" · Newest article "+latTxt;
   return "📡 数据 "+genTxt+" 更新 · 最新文章 "+latTxt+" 发布";
 }
 function hotPage(){ return chn()+(LANG==="en"?" Hot Ranking":"热点榜"); }
 function hotSub(){ return LANG==="en" ? "Event-level heat: each independent source counts once per 48h" : "事件级热度：48 小时内每独立来源只计一次"; }
 function dailyPage(){ return chn()+(LANG==="en"?" Daily":"日报"); }
-function dailySub(){ return LANG==="en" ? "Auto-generated daily (with archive)" : "自动生成 · 每日一篇（含历史归档）"; }
+function dailySub(){ return LANG==="en" ? "Auto-generated per collection day (with archive)" : "按采集日自动生成（含历史归档）"; }
 function searchPh(){ return T.search+chn()+(LANG==="en"?" news…":"资讯 / 关键词…"); }
 const state = { q:"", cat:"全部", sort:"score", dailyDate:"", hotSort:"heat", unreadOnly:false, calMonth:"", feedDay:"", calJumpDay:"" };
 // 非科研分类：采集端 category_weights 降权的对象；前端「只看科研」开关过滤的对象。两处保持一致。
@@ -186,9 +190,34 @@ function applyFavToDom(u){
   $$('[data-fav]').forEach(b=>{ if(b.dataset.fav===u) b.classList.toggle("on", !!FAV[u]); });
 }
 function avaColor(s){ let h=0; for(const c of String(s)) h=(h*31+c.charCodeAt(0))>>>0; return "hsl("+(h%360)+",40%,46%)"; }
-function tr(){ $$("[data-i18n]").forEach(el=>{ const k=el.dataset.i18n; if(T[k]) el.textContent = T[k]; }); $("#lang").textContent = LANG==="zh"?"EN":"中"; $("#q").placeholder = searchPh(); }
-function fmtRel(iso){ if(!iso) return ""; const t=new Date(iso); const d=(Date.now()-t.getTime())/1000; if(d<60) return "刚刚"; if(d<3600) return Math.floor(d/60)+" 分钟前"; if(d<86400) return Math.floor(d/3600)+" 小时前"; return Math.floor(d/86400)+" 天前"; }
-function effDate(it){ const p=it.published_at; if(p&&p.length>=10) return p.slice(0,10); const d=new Date(it.discovered_at); return new Date(d.getTime()+8*3600*1000).toISOString().slice(0,10); }
+// 页面外壳本地化：<html lang>、标签页标题、meta、频道 aria、按钮 title、页脚生成时间。
+// 这些文案不在 data-i18n 上（在 <head> 里或属性上），所以 tr() 得单独收口——
+// 漏掉任何一处，EN 页面就会在标签页/无障碍标签/页脚里混出中文。
+function tr(){
+  $$("[data-i18n]").forEach(el=>{ const k=el.dataset.i18n; if(T[k]) el.textContent = T[k]; });
+  $("#lang").textContent = LANG==="zh"?"EN":"中";
+  $("#q").placeholder = searchPh();
+  document.documentElement.lang = LANG==="en"?"en":"zh-CN";
+  document.title = T.pageTitle;
+  const md=document.querySelector('meta[name="description"]'); if(md) md.content = T.pageDesc;
+  const ogt=document.querySelector('meta[property="og:title"]'); if(ogt) ogt.content = T.ogTitle;
+  const ogd=document.querySelector('meta[property="og:description"]'); if(ogd) ogd.content = T.ogDesc;
+  const cs=$("#chseg"); if(cs) cs.setAttribute("aria-label", T.channelAria);
+  const thb=$("#theme"); if(thb) thb.title = T.themeTitle;
+  const lgb=$("#lang"); if(lgb) lgb.title = T.langTitle;
+  const g=$(".gen"); if(g) g.textContent = T.genAt.replace("{t}", g.dataset.gen||"");
+}
+// 相对时间：EN 下此前恒返回「刚刚 / N 分钟前」，卡片元信息行与数据页都在漏中文。
+function fmtRel(iso){ if(!iso) return ""; const t=new Date(iso); const d=(Date.now()-t.getTime())/1000;
+  if(LANG==="en"){
+    if(d<60) return "just now"; if(d<3600) return Math.floor(d/60)+" min ago";
+    if(d<86400) return Math.floor(d/3600)+" h ago"; return Math.floor(d/86400)+" d ago"; }
+  if(d<60) return "刚刚"; if(d<3600) return Math.floor(d/60)+" 分钟前"; if(d<86400) return Math.floor(d/3600)+" 小时前"; return Math.floor(d/86400)+" 天前"; }
+// 条目的「北京日期」：published_at 是 UTC 瞬时，直接切前 10 位会把北京凌晨的
+// 文章归到前一天（27/86 条错位），页面上也永远出不来「今天」这一组。
+// 月级/日级精度没有时刻可换算，原样保留。
+function cnDayOf(p){ if(!p||p.length<19) return p?p.slice(0,10):""; const d=new Date(p); if(isNaN(d.getTime())) return p.slice(0,10); return new Date(d.getTime()+8*3600*1000).toISOString().slice(0,10); }
+function effDate(it){ const p=it.published_at; if(p&&p.length>=10) return cnDayOf(p); const d=new Date(it.discovered_at); return new Date(d.getTime()+8*3600*1000).toISOString().slice(0,10); }
 function fmtDay(dstr){ const parts=dstr.split("-"); if(LANG==="en") return dstr; return parts[0]+"年"+Number(parts[1])+"月"+Number(parts[2])+"日"; }
 function wdCN(dstr){ const d=new Date(dstr+"T00:00:00+08:00").getDay(); return LANG==="en"?["Sun","Mon","Tue","Wed","Thu","Fri","Sat"][d]:["周日","周一","周二","周三","周四","周五","周六"][d]; }
 function todayCN(){ return new Date(Date.now()+8*3600*1000).toISOString().slice(0,10); }
@@ -196,7 +225,17 @@ function todayCN(){ return new Date(Date.now()+8*3600*1000).toISOString().slice(
 function shiftDay(dstr,n){ const d=new Date(dstr+"T00:00:00+08:00"); if(isNaN(d.getTime())) return dstr; return new Date(d.getTime()+n*86400*1000).toISOString().slice(0,10); }
 function isToday(d){ return d===todayCN(); }
 function scoreCls(s){ return s>=75?"s-hi":(s>=50?"s-mid":"s-lo"); }
-function pubLabel(it){ if(it.published_at){ const p=it.published_at; if(p.length===7) return p+"（月级）发布"; if(p.length===10) return p+" 发布"; return p.replace("T"," ").slice(5,16)+" 发布"; } return "收录 "+fmtRel(it.discovered_at); }
+// 发布/收录标签：EN 下同样必须换词，否则卡片元信息行半中半英。
+// 时刻按北京时间显示（与分组日期同源），UTC 原样切片会让卡片时间比真实晚 8 小时。
+function pubLabel(it){
+  if(it.published_at){ const p=it.published_at;
+    if(p.length===7) return LANG==="en" ? p+" (monthly)" : p+"（月级）发布";
+    if(p.length===10) return LANG==="en" ? "published "+p : p+" 发布";
+    const b=new Date(p); const ok=!isNaN(b.getTime());
+    const bb=ok?new Date(b.getTime()+8*3600*1000):null;
+    const stamp=bb?bb.toISOString().slice(5,16).replace("T"," "):p.replace("T"," ").slice(5,16);
+    return LANG==="en" ? "published "+stamp : stamp+" 发布"; }
+  return LANG==="en" ? "added "+fmtRel(it.discovered_at) : "收录 "+fmtRel(it.discovered_at); }
 function catName(c){ return LANG==="en" ? (CAT_EN[c]||c) : c; }
 function statusName(s){ return LANG==="en" ? (STATUS_EN[s]||s) : s; }
 function densName(d){ return LANG==="en" ? (DENS_EN[d]||d) : d; }
@@ -327,7 +366,7 @@ function itemCard(it){
   const rd=READ[it.url]?" read":"", fv=FAV[it.url]?" on":"";
   const src=it.source||"", av=esc((src.trim().charAt(0)||chn()).charAt(0));
   const s=(it.llm_score!=null?it.llm_score:it.score);
-  const reason=it.llm_reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(it.llm_reason)+'</div>':"";
+  const reason=it.llm_reason?'<div class="ireason"><b>'+T.reason+T.colon+'</b>'+esc(it.llm_reason)+'</div>':"";
   const ev=it.event?'<div class="iev">⚡ '+esc(it.event)+'</div>':"";
   const ents=(it.entities&&it.entities.length)?'<div class="ient">'+it.entities.map(e=>'<span class="itag">'+esc(e)+'</span>').join("")+((it.tags||[]).map(t=>'<span class="itag">'+esc(t)+'</span>').join(""))+'</div>':"";
   const sum=cardSummary(it);
@@ -467,6 +506,39 @@ function renderCal(){
   if(pv) pv.onclick=()=>{ state.calMonth=months[mi-1]; contentReset("cal"); };
   if(nx) nx.onclick=()=>{ state.calMonth=months[mi+1]; contentReset("cal"); };
 }
+// ---- 日历页：精选时间线的日期导航（替代旧的内联折叠）----
+// 只列真有精选条目的日期（北京日），点某天跳回精选页并滚到该天分组。
+function calDays(){
+  const groups={}; for(const it of C.items){ if(!it.selected) continue; const d=effDate(it); (groups[d]=groups[d]||[]).push(it); }
+  return groups;
+}
+function renderCal(){
+  const root=$("#view-cal"); const groups=calDays();
+  const days=Object.keys(groups).sort().reverse();
+  const cur=state.calMonth||(days[0]||todayCN()).slice(0,7);
+  state.calMonth=cur;
+  const months=[...new Set(days.map(d=>d.slice(0,7)))].sort().reverse();
+  const mi=months.indexOf(cur);
+  const byDay={}; days.forEach(d=>{ byDay[d]=groups[d].length; });
+  // 月历格子：周一开头，七天一行；有精选的日期可点，其余置灰。
+  const first=new Date(cur+"-01T00:00:00+08:00");
+  const lead=(first.getDay()+6)%7;
+  const dim=new Date(Date.UTC(+cur.slice(0,4), +cur.slice(5,7), 1)).getUTCDate();
+  let cells="";
+  for(let i=0;i<lead;i++) cells+='<span class="cal-c off"></span>';
+  for(let dd=1;dd<=dim;dd++){
+    const key=cur+"-"+String(dd).padStart(2,"0");
+    const n=byDay[key]||0;
+    cells+='<a class="cal-c'+(n?"":" off")+(key===todayCN()?" today":"")+'"'+(n?' href="#/" data-calday="'+key+'"':'')+'><span class="cal-d">'+dd+'</span>'+(n?'<span class="cal-n">'+n+'</span>':"")+'</a>';
+  }
+  const grid='<div class="cal-grid"><span class="cal-w">一</span><span class="cal-w">二</span><span class="cal-w">三</span><span class="cal-w">四</span><span class="cal-w">五</span><span class="cal-w">六</span><span class="cal-w">日</span>'+cells+'</div>';
+  const nav='<div class="cal-nav"><button class="upill" id="calPrev"'+(mi<=0?" disabled":"")+'>‹</button><span class="cal-m">'+cur+'</span><button class="upill" id="calNext"'+(mi<0||mi>=months.length-1?" disabled":"")+'>›</button></div>';
+  const list='<div class="cal-list">'+days.slice(0,14).map(d=>'<a class="cal-row" href="#/" data-calday="'+d+'"><span>'+fmtDay(d)+'</span><span class="w">'+wdCN(d)+'</span><span class="c">'+byDay[d]+' '+T.daySel+'</span></a>').join("")+'</div>';
+  root.innerHTML='<div class="card ph"><h1>'+T.calPage+'</h1><span class="sub">'+esc(T.calSub)+'</span></div><div class="card" style="padding:14px 16px">'+nav+grid+'</div><div class="card" style="padding:6px 16px 12px"><h3 style="font-size:13px;color:var(--ink3);margin:8px 0 4px">'+T.archive+'</h3>'+list+'</div>';
+  const pv=$("#calPrev"), nx=$("#calNext");
+  if(pv) pv.onclick=()=>{ state.calMonth=months[mi-1]; contentReset("cal"); };
+  if(nx) nx.onclick=()=>{ state.calMonth=months[mi+1]; contentReset("cal"); };
+}
 const ALL_PAGE=30;
 let allObserver=null;
 // allCtx 保存"当前这一张列表"：its=过滤排序后的全集，rendered=已经插进 DOM 的条数。
@@ -543,7 +615,7 @@ function renderHot(){
     const s=t.status; const flag=s==="爆"?'<span class="flag f-hot">'+statusName(s)+'</span>':(s==="发酵中"?'<span class="flag f-warm">'+statusName(s)+'</span>':'<span class="flag f-watch">'+statusName(s)+'</span>');
     const mflag=movementFlag(t);
     const rep=t.representative||{}; const rurl=rep.url||((t.links||[])[0]||{}).url||"";
-    const reason=rep.llm_reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(rep.llm_reason)+'</div>':"";
+    const reason=rep.llm_reason?'<div class="ireason"><b>'+T.reason+T.colon+'</b>'+esc(rep.llm_reason)+'</div>':"";
     const rsum=rep.llm_summary||rep.summary;
     // 事件综述优先（AIHOT story-digest）：多源事件只贴代表稿一句摘要是以偏概全，
     // 有综述就不再显示单篇摘要。综述标题概括整个事件，替代单篇标题展示。
@@ -561,7 +633,7 @@ function renderHot(){
   bindRankClear();
 }
 function dailyArticle(a){
-  const reason=a.reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(a.reason)+'</div>':"";
+  const reason=a.reason?'<div class="ireason"><b>'+T.reason+T.colon+'</b>'+esc(a.reason)+'</div>':"";
   const it={id:"d-"+(a.topic_id||a.url||a.title).replace(/[^a-zA-Z0-9]/g,"").slice(0,16), zh_full:a.zh_full, llm_summary:a.llm_summary, summary:a.summary, url:a.url};
   return '<div class="dpick"><div class="t"><a href="'+esc(a.url)+'" target="_blank" rel="noopener" data-read="'+esc(a.url)+'">'+esc(a.title)+'</a></div>'
     +'<div class="m"><span>'+esc(a.source)+'</span><span>'+esc(pubLabel(a))+'</span>'+densBadge(a.density)+'</div>'+reason+(a.summary?'<div class="isum">'+esc(a.summary.length>160?a.summary.slice(0,160)+"…":a.summary)+'</div>':"")+expandBtn(it)+expandBody(it)+'</div>';
@@ -582,9 +654,13 @@ function renderDaily(){
   side+='</div></aside>';
   let body='<div class="dbody">';
   if(rep){
-    body+='<div class="deye">'+BRAND()+' DAILY · '+esc(chn().toUpperCase())+'</div><div class="dtitle">'+esc(rep.label)+' · '+esc(rep.weekday)+'</div>';
+    // rep.label / rep.weekday 是采集端写死的中文（"2026年10月13日" / "周二"），
+    // EN 下必须由前端按 date 重排，否则日报页标题永远是中文。
+    const dLabel=LANG==="en" ? (rep.date||"") : (rep.label||rep.date||"");
+    const dWeek=LANG==="en" ? (rep.date?wdCN(rep.date):"") : (rep.weekday||(rep.date?wdCN(rep.date):""));
+    body+='<div class="deye">'+BRAND()+' DAILY · '+esc(chn().toUpperCase())+'</div><div class="dtitle">'+esc(dLabel)+' · '+esc(dWeek)+'</div>';
     const hl=rep.headline||(((rep.sections||[])[0]||{}).articles||[])[0];
-    if(hl){ body+='<div class="hero"><div class="k">'+T.headlineK+'</div><div class="t"><a href="'+esc(hl.url)+'" target="_blank" rel="noopener" data-read="'+esc(hl.url)+'">'+esc(hl.title)+'</a></div><div class="m"><span>'+esc(hl.source)+'</span><span>'+esc(pubLabel(hl))+'</span>'+densBadge(hl.density)+'</div>'+(hl.image?'<img class="himg" src="'+esc(hl.image)+'" alt="" loading="lazy">':"")+(hl.reason?'<div class="ireason"><b>'+T.reason+'：</b>'+esc(hl.reason)+'</div>':"")+(hl.summary?'<div class="isum">'+esc(hl.summary)+'</div>':"")+'</div>'; }
+    if(hl){ body+='<div class="hero"><div class="k">'+T.headlineK+'</div><div class="t"><a href="'+esc(hl.url)+'" target="_blank" rel="noopener" data-read="'+esc(hl.url)+'">'+esc(hl.title)+'</a></div><div class="m"><span>'+esc(hl.source)+'</span><span>'+esc(pubLabel(hl))+'</span>'+densBadge(hl.density)+'</div>'+(hl.image?'<img class="himg" src="'+esc(hl.image)+'" alt="" loading="lazy">':"")+(hl.reason?'<div class="ireason"><b>'+T.reason+T.colon+'</b>'+esc(hl.reason)+'</div>':"")+(hl.summary?'<div class="isum">'+esc(hl.summary)+'</div>':"")+'</div>'; }
     const picks=rep.picks||[];
     if(picks.length){ body+='<div class="dsec-t">'+T.picksK+'</div><div class="dpicks">'+picks.map(a=>dailyArticle(a)).join("")+'</div>'; }
     const flash=rep.flash||[];
@@ -719,11 +795,11 @@ function renderAgent(){
   const rows=eps.map(([k,d])=>'<tr><td class="mono">api/v1/'+CHID+'/'+k+'.json</td><td>'+d+'</td><td><a href="'+base+'api/v1/'+CHID+'/'+k+'.json" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>').join("");
   const curl=eps.map(([k])=>'curl '+base+'api/v1/'+CHID+'/'+k+'.json').join("\n");
   const catFeeds=Object.entries(CAT_CLS).map(([cat,slug])=>["feed/"+CHID+"/category/"+slug+".xml",cat]);
-  const feedRows=['<tr><td class="mono">feed.xml</td><td>RSS（T 光电主 feed）</td><td><a href="'+base+'feed.xml" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>']
+  const feedRows=['<tr><td class="mono">feed.xml</td><td>'+(LANG==="en"?"RSS (main feed, T photonics)":"RSS（T 光电主 feed）")+'</td><td><a href="'+base+'feed.xml" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>']
     .concat(catFeeds.map(([f,cat])=>'<tr><td class="mono">'+f+'</td><td>'+esc(catName(cat))+'</td><td><a href="'+base+f+'" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>')).join("");
-  const moreRows='<tr><td class="mono">api/v1/openapi.json</td><td>OpenAPI 3.1</td><td><a href="'+base+'api/v1/openapi.json" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr><tr><td class="mono">llms.txt</td><td>LLM 友好入口</td><td><a href="'+base+'llms.txt" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>';
+  const moreRows='<tr><td class="mono">api/v1/openapi.json</td><td>OpenAPI 3.1</td><td><a href="'+base+'api/v1/openapi.json" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr><tr><td class="mono">llms.txt</td><td>'+T.llmsEntry+'</td><td><a href="'+base+'llms.txt" target="_blank" rel="noopener">'+T.open+' ↗</a></td></tr>';
   root.innerHTML='<div class="card ph"><h1>'+T.agentPage+'</h1><span class="sub">'+T.agentSub+'</span></div>'
-    +'<div class="card" style="padding:16px 18px"><h3 style="font-size:15px;margin-bottom:4px">🤖 '+T.apiTitle+'</h3><p class="anote">'+T.apiDesc+'</p><p class="anote">'+T.base+'：<span class="mono">'+esc(base)+'</span></p><div class="tw wide"><table style="margin-top:10px"><thead><tr><th>'+T.endpoint+'</th><th>'+T.desc+'</th><th></th></tr></thead><tbody>'+rows+moreRows+'</tbody></table></div></div>'
+    +'<div class="card" style="padding:16px 18px"><h3 style="font-size:15px;margin-bottom:4px">🤖 '+T.apiTitle+'</h3><p class="anote">'+T.apiDesc+'</p><p class="anote">'+T.base+T.colon+'<span class="mono">'+esc(base)+'</span></p><div class="tw wide"><table style="margin-top:10px"><thead><tr><th>'+T.endpoint+'</th><th>'+T.desc+'</th><th></th></tr></thead><tbody>'+rows+moreRows+'</tbody></table></div></div>'
     +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">RSS</h3><div class="tw wide"><table style="margin-top:8px"><tbody>'+feedRows+'</tbody></table></div></div>'
     +'<div class="card" style="padding:16px 18px;margin-top:14px"><h3 style="font-size:15px;margin-bottom:4px">'+T.curl+'</h3><pre>'+esc(curl)+'</pre><p class="anote">'+T.llmsNote+'</p></div>';
 }
