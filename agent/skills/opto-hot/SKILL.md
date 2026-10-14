@@ -2,12 +2,12 @@
 name: opto-hot
 description: 查询光电行业热点统计（Opto-Hot，AIHOT 模式）的中文光电资讯、热点榜、日报与事件故事。用户询问光电/激光/光通信/显示/半导体/光学等行业新闻、热点、日报时使用。必须通过 Opto-Hot 的公开只读静态 JSON API / RSS 获取当前数据，不凭训练记忆回答新闻；无需 API Key。
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Opto-Hot（光电行业热点统计）
 
-通过 Opto-Hot 公开的静态 JSON API（免鉴权、每天 6:00 / 18:00 北京时间更新）回答光电行业资讯问题。默认输出中文简洁报告。
+通过 Opto-Hot 公开的静态 JSON API（免鉴权、每天约 6:15 / 18:15 北京时间更新）回答光电行业资讯问题。默认输出中文简洁报告。
 
 ## 安全边界
 - 只读取 `api/v1/*.json` 与 `feed/*.xml`。站点基址：`https://sun-zihang.github.io/pat-hot/`

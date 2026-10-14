@@ -3423,7 +3423,7 @@ def check_template_drift(html):
     return problems
 
 
-def doc_field_problems(llms_txt, readme_txt):
+def doc_field_problems(llms_txt, readme_txt, skill_txt=None):
     """文档里点名的字段名必须真实存在于产物 JSON。
 
     2026-10-14 实测：llms.txt 教 Agent「按 publishedAt / discoveredAt 筛选」，
@@ -3447,14 +3447,34 @@ def doc_field_problems(llms_txt, readme_txt):
         except Exception:
             return None, None
         items = doc.get("items") if isinstance(doc, dict) else None
-        if not items:
+        if isinstance(items, list) and items:
+            keys = set()
+            for it in items[:80]:
+                if isinstance(it, dict):
+                    keys.update(it.keys())
+            sample = items[0] if isinstance(items[0], dict) else {}
+            return keys, sample
+        if isinstance(items, list) and not items:
             return None, None  # 空榜不判定，避免分类清空时假报文档错
-        keys = set()
-        for it in items[:80]:
-            if isinstance(it, dict):
-                keys.update(it.keys())
-        sample = items[0] if isinstance(items[0], dict) else {}
-        return keys, sample
+        if not items and isinstance(doc, dict) and "items" not in doc:
+            # 两种非条目形态：dailies.json 是裸日期字典（文档点名的字段在**值**里），
+            # daily.json 是统计聚合（字段在顶层）。按形状分别取键，避免"顶层键全是
+            # 日期"造成的假报，也不放过这两张表的真实漂移。
+            if fname == "dailies.json":
+                # 裸日期字典：文档点名的字段在**值**里。取"最新一期"而不是任意
+                # 80 期的并集——归档的早期格式与当前格式不同（实测 123 期里
+                # headline/picks/flash 只有 18 期有），用并集会把"当前格式已经
+                # 没有某字段"这种真漂移用旧数据糊过去；而 SKILL.md 教的取数是
+                # "取最新或指定日期"，所以必须保真最新一期的形状。
+                dates = sorted((k for k in doc if re.match(r"^\d{4}-\d{2}-\d{2}$", k)))
+                if not dates:
+                    return None, None
+                latest = doc[dates[-1]]
+                if not isinstance(latest, dict):
+                    return None, None
+                return set(latest.keys()), latest
+            return set(doc.keys()), doc
+        return None, None  # 空榜不判定，避免分类清空时假报文档错
 
     claims = []
     for pat, fname, src in (
@@ -3467,6 +3487,35 @@ def doc_field_problems(llms_txt, readme_txt):
     if m:
         claims.append(("llms.txt 筛选项", re.split(r"\s*/\s*", m.group(1)), "items.json"))
 
+    # SKILL.md 的「字段命名」表：每行形如
+    #   | `items.json` | `published_at` / `discovered_at`（下划线） | ... | 其它说明列里有 `a`、`b` |
+    # 表头不参与；第一个反引号里的文件名决定对哪份产物核验；该行其余单元格里
+    # 所有反引号 token 都当字段声明。这张表是"务必照抄，别猜"的官方口径，
+    # 而且会被安装进 ~/.agents/skills/ 成为**离线副本**——网站修好了装着的
+    # 那份还错着，所以它比网页文档更需要钉死。
+    for line in (skill_txt or "").splitlines():
+        if not line.strip().startswith("|"):
+            continue
+        cells = line.split("|")
+        names = re.findall(r"`([A-Za-z0-9_\-]+\.(?:json|xml|txt))`", cells[1])
+        if not names:
+            continue  # 表头 / 分隔行 / 非文件名单元格
+        fname = names[0]
+        if fname not in ("items.json", "hot-topics.json", "stories.json",
+                         "daily.json", "dailies.json", "trends.json", "biz.json"):
+            continue  # 只认已知产物的行（dailies 是裸日期字典，键在下面单独放过）
+        toks = []
+        for cell in cells[2:]:
+            for t in re.findall(r"`([^`]+)`", cell):
+                t = t.strip()
+                # 允许 byCategory[{category,total,last24h,last7d}] 这种"数组元素字段"
+                # 写法：整串就是声明，根键与元素字段一起交给核验分支。
+                if re.match(r"^[A-Za-z][A-Za-z0-9_]*(\.[A-Za-z][A-Za-z0-9_]*)?"
+                            r"(\[\{[A-Za-z0-9_,]+\}\])?$", t):
+                    toks.append(t)
+        if toks:
+            claims.append(("SKILL.md 字段表 %s" % fname, toks, fname))
+
     cache = {}
     for src, tokens, fname in claims:
         if fname not in cache:
@@ -3476,14 +3525,32 @@ def doc_field_problems(llms_txt, readme_txt):
             continue
         for tok in tokens:
             tok = tok.strip().strip("`")
-            if not re.match(r"^[A-Za-z][A-Za-z0-9_]*(\.[A-Za-z][A-Za-z0-9_]*)?$", tok):
+            # 一个 token 三种形态：根键 published_at / 嵌套 links.original /
+            # 数组元素声明 byCategory[{category,total}]。整个后缀必须写成可选，
+            # 否则裸根键会被判成"不是字段声明"而静默放过（上一版就在这里漏掉了
+            # items/hot-topics/dailies 三行的全部核验）。
+            m2 = re.match(r"^([A-Za-z][A-Za-z0-9_]*)"
+                          r"(?:\[\{([A-Za-z0-9_,]+)\}\]|\.([A-Za-z][A-Za-z0-9_]*))?$", tok)
+            if not m2:
                 continue  # 自然语言混排词（如"统计聚合"）不是字段声明
-            root, _, sub = tok.partition(".")
+            root, elem, sub = m2.group(1), m2.group(2), m2.group(3)
             if root not in keys:
                 problems.append("%s 教消费者读 `%s`，但 api/v1/%s/%s 的条目里没有这个键"
                                 "（真实键改名了，文档没跟着改）" % (src, tok, FLAT_ALIAS_CHANNEL, fname))
             elif sub and isinstance((sample.get(root) or {}), dict) and sub not in sample[root]:
                 problems.append("%s 声明的嵌套字段 `%s` 在样例条目里不存在" % (src, tok))
+            elif elem:
+                names = [x for x in elem.split(",") if x]
+                arr = sample.get(root)
+                first = arr[0] if isinstance(arr, list) and arr and isinstance(arr[0], dict) else None
+                if first is None:
+                    problems.append("%s 声明 `%s` 是对象数组，但样例里 %s 不是非空数组"
+                                    % (src, tok, root))
+                else:
+                    miss = [n for n in names if n not in first]
+                    if miss:
+                        problems.append("%s 声明 `%s` 的元素含 %s，样例实际只有 %s"
+                                        % (src, tok, miss, sorted(first.keys())))
     return problems
 
 
@@ -3576,7 +3643,14 @@ def check_contract(verbose=True):
         if os.path.exists(rp):
             with open(rp, encoding="utf-8") as f:
                 readme = f.read()
-        problems.extend(doc_field_problems(txt, readme))
+        # 可安装 Agent Skill 的字段表同批核验（它会被复制进 ~/.agents/skills/
+        # 成为离线副本，网站改了它不会自己跟着改，更需要锁）
+        sp = os.path.join(ROOT, "agent", "skills", "opto-hot", "SKILL.md")
+        skill = ""
+        if os.path.exists(sp):
+            with open(sp, encoding="utf-8") as f:
+                skill = f.read()
+        problems.extend(doc_field_problems(txt, readme, skill))
 
     if REPO_URL and "opto-hot" in REPO_URL:
         problems.append("REPO_URL 指向旧仓库名")
