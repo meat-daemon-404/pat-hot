@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T12:02:23.128886+00:00",
+  "generatedAt": "2026-10-14T15:10:02.576475+00:00",
   "count": 8,
   "items": [
     {
-      "id": "fdcba63f9788",
-      "title": "Oct. 13, 1773: The discovery of the Whirlpool Galaxy",
+      "id": "bba7edd9f937",
+      "title": "New evidence points to two feeding black holes just 175 parsecs apart lurking in the early universe",
       "status": "爆",
       "heat": 91.4,
       "sourceCount": 7,
-      "signalCount": 52,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "signalCount": 50,
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
         "Astronomy Magazine",
         "ESA 空间科学",
@@ -22,11 +22,18 @@
       ],
       "links": [
         {
-          "title": "Oct. 13, 1773: The discovery of the Whirlpool Galaxy",
-          "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/oct-13-1773-the-discovery-of-the-whirlpool-galaxy/",
+          "title": "New evidence points to two feeding black holes just 175 parsecs apart lurking in the early universe",
+          "url": "https://phys.org/news/2026-10-evidence-black-holes-parsecs-lurking.html",
+          "source": "Phys.org 太空新闻",
+          "score": 86.5,
+          "published_at": "2026-10-14T13:40:17+00:00"
+        },
+        {
+          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
           "source": "Astronomy Magazine",
-          "score": 86.2,
-          "published_at": "2026-10-14T01:30:00+00:00"
+          "score": 86.4,
+          "published_at": "2026-10-14T13:23:07+00:00"
         },
         {
           "title": "New Data from the Juno Spacecraft Reveals that Jupiter's Has a Rippling, Wavy Magnetodisk",
@@ -36,33 +43,69 @@
           "published_at": "2026-10-13T23:13:34+00:00"
         },
         {
+          "title": "Oct. 13, 1773: The discovery of the Whirlpool Galaxy",
+          "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/oct-13-1773-the-discovery-of-the-whirlpool-galaxy/",
+          "source": "Astronomy Magazine",
+          "score": 86.1,
+          "published_at": "2026-10-14T01:30:00+00:00"
+        },
+        {
           "title": "NASA JPL testing readies Voyager technologies lander for moon mission",
           "url": "https://phys.org/news/2026-10-nasa-jpl-readies-voyager-technologies.html",
           "source": "Phys.org 太空新闻",
-          "score": 86.0,
-          "published_at": "2026-10-13T19:00:19+00:00"
-        },
-        {
-          "title": "New solar model maps sun more accurately by checking far-side activity",
-          "url": "https://phys.org/news/2026-10-solar-sun-accurately-side.html",
-          "source": "Phys.org 太空新闻",
-          "score": 86.0,
-          "published_at": "2026-10-13T17:20:20+00:00"
-        },
-        {
-          "title": "Structure in the unstructured: New phenomenon discovered in the solar wind",
-          "url": "https://phys.org/news/2026-10-unstructured-phenomenon-solar.html",
-          "source": "Phys.org 太空新闻",
           "score": 85.9,
-          "published_at": "2026-10-13T15:20:06+00:00"
+          "published_at": "2026-10-13T19:00:19+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": null,
-      "digestTitle": null,
+      "digest": "天文学家在红移为3.27的星系MG B2016+112中发现两个正在活跃吸积的超大质量黑洞，二者相距仅175秒差距（约570光年）。该星系对应宇宙年龄约20亿年时的状态，意味着这两个黑洞在宇宙早期就已形成并处于活跃状态。",
+      "digestTitle": "早期宇宙发现两个相距极近的活跃超大质量黑洞",
       "llmScore": 46.0
+    },
+    {
+      "id": "4b7b215b7679",
+      "title": "Curiosity Greets a Spectacular Dawn Sky on Mars",
+      "status": "发酵中",
+      "heat": 46.3,
+      "sourceCount": 3,
+      "signalCount": 3,
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
+      "sources": [
+        "ESA 空间科学",
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "Curiosity Greets a Spectacular Dawn Sky on Mars",
+          "url": "https://www.universetoday.com/articles/curiosity-greets-a-spectacular-dawn-sky-on-mars",
+          "source": "Universe Today",
+          "score": 66.0,
+          "published_at": "2026-10-14T13:51:00+00:00"
+        },
+        {
+          "title": "The dying sun could tear the solar system apart sooner than thought",
+          "url": "https://phys.org/news/2026-10-dying-sun-solar-sooner-thought.html",
+          "source": "Phys.org 太空新闻",
+          "score": 64.7,
+          "published_at": "2026-10-12T17:20:06+00:00"
+        },
+        {
+          "title": "Mars’s oddest cloud may be even odder than we thought",
+          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
+          "source": "ESA 空间科学",
+          "score": 61.3,
+          "published_at": "2026-10-07T15:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": "NASA“好奇号”火星车在夏普山（Mount Sharp）山坡拍摄到一幅壮观的火星黎明全景，展示了火星地质环境的细节，图像未经白平衡调整。\n\n一项发表于《The Astrophysical Journal》的新研究提出，太阳在演化末期可能比此前估计更早地撕裂太阳系，但具体结局仍存在较大不确定性。\n\n欧洲空间局（ESA）利用“火星快车”（Mars Express）数据结合先进气象模型，发现火星上最奇特的云可能涉及一些非常规的物理过程，其成因比此前认为的更为复杂。",
+      "digestTitle": "火星与太阳研究新发现：好奇号全景、太阳演化与奇特云",
+      "llmScore": 26.0
     },
     {
       "id": "7329bfce4138",
@@ -71,7 +114,7 @@
       "heat": 39.7,
       "sourceCount": 3,
       "signalCount": 3,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
         "ESA 空间科学",
         "MIT News 太空探索",
@@ -82,14 +125,14 @@
           "title": "A Trip to Mars Could Break Your Heart - Literally",
           "url": "https://www.universetoday.com/articles/a-trip-to-mars-could-break-your-heart-literally",
           "source": "Universe Today",
-          "score": 66.0,
+          "score": 65.9,
           "published_at": "2026-10-14T11:57:41+00:00"
         },
         {
           "title": "Happy New Year on Mars",
           "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Happy_New_Year_on_Mars",
           "source": "ESA 空间科学",
-          "score": 56.5,
+          "score": 56.4,
           "published_at": "2026-09-30T06:00:00+00:00"
         },
         {
@@ -100,11 +143,11 @@
           "published_at": "2024-03-13T21:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digest": "科学家指出，首批前往火星或深空的其他地方的宇航员将面临地球表面本身为我们屏蔽的两大问题——辐射和失重。已知这两者均可能对宇航员健康产生不利影响，其中辐射和失重对心脏等器官的影响尤为值得关注。\n\n与此同时，2026年9月30日标志着火星新一年（即火星绕太阳公转一周）的开始，地球时间为当天10:16 CEST/08:16 UTC。此外，麻省理工学院（MIT）的Project MADMEN项目让两名学生体验了类似火星任务中的挑战与团队凝聚力。",
+      "digestTitle": "火星任务面临辐射与失重健康挑战"
     },
     {
       "id": "15523e1b7268",
@@ -113,7 +156,7 @@
       "heat": 32.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
         "New Scientist 太空",
         "Phys.org 太空新闻"
@@ -123,66 +166,65 @@
           "title": "Alternative gravity theory offers possible explanation for dark energy changing over time",
           "url": "https://phys.org/news/2026-10-alternative-gravity-theory-explanation-dark.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.0,
+          "score": 59.9,
           "published_at": "2026-10-12T17:40:14+00:00"
         },
         {
           "title": "The telescope that could reveal what dark matter and dark energy are",
           "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 56.0,
+          "score": 55.9,
           "published_at": "2026-10-06T17:00:00+00:00"
         }
       ],
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 27.0
+      "digest": "一篇报道提出，一种替代引力理论可能解释暗能量随时间变化的现象。传统观点认为暗能量在宇宙历史中保持不变，是驱动宇宙加速膨胀的神秘成分，且其作用方式始终一致。该理论为暗能量的动态变化提供了新的解释路径，但报道未说明该理论是否已被证实或获得广泛接受。\n\n另一篇报道提到，NASA的罗曼望远镜作为最新空间天文台，每10个月可获取相当于哈勃望远镜约1000年的观测数据，有望帮助揭示暗物质和暗能量的本质。",
+      "digestTitle": "替代引力理论或解释暗能量随时间变化"
     },
     {
-      "id": "e2c86ce98c7b",
-      "title": "The dying sun could tear the solar system apart sooner than thought",
+      "id": "338ead7e38ad",
+      "title": "Chandrasekhar Placed A Limit On White Dwarfs, But A New Study Finds This Limit Is Not Absolute",
       "status": "关注中",
       "heat": 32.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
-        "ESA 空间科学",
-        "Phys.org 太空新闻"
+        "Phys.org 太空新闻",
+        "Universe Today"
       ],
       "links": [
         {
-          "title": "The dying sun could tear the solar system apart sooner than thought",
-          "url": "https://phys.org/news/2026-10-dying-sun-solar-sooner-thought.html",
-          "source": "Phys.org 太空新闻",
-          "score": 60.0,
-          "published_at": "2026-10-12T17:20:06+00:00"
+          "title": "Chandrasekhar Placed A Limit On White Dwarfs, But A New Study Finds This Limit Is Not Absolute",
+          "url": "https://www.universetoday.com/articles/chandrasekhar-placed-a-limit-on-white-dwarfs-but-a-new-study-finds-this-limit-is-not-absolute",
+          "source": "Universe Today",
+          "score": 36.7,
+          "published_at": "2026-10-14T14:57:08+00:00"
         },
         {
-          "title": "Mars’s oddest cloud may be even odder than we thought",
-          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
-          "source": "ESA 空间科学",
-          "score": 56.6,
-          "published_at": "2026-10-07T15:00:00+00:00"
+          "title": "Strong magnetic fields could allow white dwarfs to grow beyond the Chandrasekhar limit",
+          "url": "https://phys.org/news/2026-10-strong-magnetic-fields-white-dwarfs.html",
+          "source": "Phys.org 太空新闻",
+          "score": 34.7,
+          "published_at": "2026-10-09T17:20:19+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digest": "一项新研究表明，强磁化白矮星有可能突破钱德拉塞卡极限——即白矮星质量不超过1.4倍太阳质量的上限，并给出了这类超钱德拉塞卡白矮星可能形成的机制。钱德拉塞卡极限适用于不强烈自转、也不强磁化的白矮星；当磁场足够强时，这一上限不再绝对。该结论意味着部分白矮星的质量上限可能高于传统认知，但报道未说明这已被观测证实。",
+      "digestTitle": "强磁场白矮星或可突破钱德拉塞卡极限"
     },
     {
       "id": "52f01a36efbb",
       "title": "Impossibly fast-moving stars are revealing the Milky Way’s mysterious heart",
       "status": "关注中",
-      "heat": 32.0,
+      "heat": 22.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
         "New Scientist 太空",
         "Phys.org 太空新闻"
@@ -192,7 +234,7 @@
           "title": "Impossibly fast-moving stars are revealing the Milky Way’s mysterious heart",
           "url": "https://www.newscientist.com/article/2590428-impossibly-fast-moving-stars-are-revealing-the-milky-ways-mysterious-heart/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 55.9,
+          "score": 55.8,
           "published_at": "2026-10-06T15:00:00+00:00"
         },
         {
@@ -203,11 +245,11 @@
           "published_at": "2026-10-12T15:00:49+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "down",
+      "trendPct": -31.2,
       "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digest": "天文学家通过观测银河系中心区域，发现一群恒星以极高速度绕超大质量黑洞运行，研究这些恒星有望帮助理解银河系的核心结构。\n\n另一项研究中，天文学家利用阿塔卡马大型毫米/亚毫米波阵列（ALMA）的射电观测，捕捉到一颗垂死恒星在剧烈转变过程中的影像，数据显示其周围存在一个环状结构，记录了该恒星最后一次爆发。",
+      "digestTitle": "银河系中心高速恒星与垂死恒星环状遗迹观测"
     },
     {
       "id": "16ca4c86278b",
@@ -216,7 +258,7 @@
       "heat": 21.5,
       "sourceCount": 1,
       "signalCount": 4,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
         "LIGO"
       ],
@@ -257,53 +299,13 @@
       "digestTitle": null
     },
     {
-      "id": "cc76feb3c9f8",
-      "title": "Science begins for Smile",
-      "status": "关注中",
-      "heat": 18.0,
-      "sourceCount": 1,
-      "signalCount": 3,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
-      "sources": [
-        "ESA 空间科学"
-      ],
-      "links": [
-        {
-          "title": "Science begins for Smile",
-          "url": "https://www.esa.int/Science_Exploration/Space_Science/Smile/Science_begins_for_Smile",
-          "source": "ESA 空间科学",
-          "score": 49.9,
-          "published_at": "2026-09-30T07:05:00+00:00"
-        },
-        {
-          "title": "BepiColombo’s Mercury arrival begins - full replay",
-          "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/09/BepiColombo_s_Mercury_arrival_begins_-_full_replay",
-          "source": "ESA 空间科学",
-          "score": 39.3,
-          "published_at": "2026-09-03T15:00:00+00:00"
-        },
-        {
-          "title": "Media briefing: BepiColombo's next milestone towards Mercury",
-          "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/08/Media_briefing_BepiColombo_s_next_milestone_towards_Mercury",
-          "source": "ESA 空间科学",
-          "score": 39.3,
-          "published_at": "2026-08-31T14:00:00+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
       "id": "fd84f254420d",
       "title": "Testing general relativity with observing run O4a data",
       "status": "关注中",
       "heat": 18.0,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
         "LIGO"
       ],

@@ -1,105 +1,184 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T12:02:23.128886+00:00",
-  "count": 3,
+  "generatedAt": "2026-10-14T15:10:02.576475+00:00",
+  "count": 5,
   "items": [
     {
-      "id": "49bc8d90cf0d",
-      "title": "Quantum network test checks entanglement without having to trust detectors",
-      "status": "发酵中",
-      "heat": 70.8,
-      "sourceCount": 3,
-      "signalCount": 26,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "id": "33ec101f3d77",
+      "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
+      "status": "爆",
+      "heat": 94.3,
+      "sourceCount": 7,
+      "signalCount": 66,
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
+        "CERN 新闻",
         "MIT News 物理",
+        "Nature Physics 学科聚合",
+        "Nature 量子物理",
         "New Scientist 物理",
-        "Phys.org 物理新闻"
+        "Phys.org 物理新闻",
+        "Quanta Magazine"
       ],
       "links": [
+        {
+          "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
+          "url": "https://www.quantamagazine.org/triplet-of-ghostly-galaxies-hints-at-what-dark-matter-is-and-isnt-20261014/",
+          "source": "Quanta Magazine",
+          "score": 86.5,
+          "published_at": "2026-10-14T14:04:05+00:00"
+        },
         {
           "title": "Quantum network test checks entanglement without having to trust detectors",
           "url": "https://phys.org/news/2026-10-quantum-network-entanglement-detectors.html",
           "source": "Phys.org 物理新闻",
-          "score": 76.5,
+          "score": 86.4,
           "published_at": "2026-10-14T11:00:01+00:00"
         },
         {
-          "title": "Will we observe dark matter as a particle or a wave?",
-          "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 75.7,
-          "published_at": "2026-10-13T08:00:00+00:00"
+          "title": "Continuous Improvement gains momentum at CERN",
+          "url": "https://home.cern/continuous-improvement-gains-momentum-at-cern/",
+          "source": "CERN 新闻",
+          "score": 86.4,
+          "published_at": "2026-10-14T12:53:51+00:00"
         },
         {
-          "title": "Gravity and quantum information linked through a derivation of Einstein's equations",
-          "url": "https://phys.org/news/2026-10-gravity-quantum-linked-derivation-einstein.html",
-          "source": "Phys.org 物理新闻",
-          "score": 75.5,
-          "published_at": "2026-10-12T23:20:01+00:00"
+          "title": "The public consultation for the Future Circular Collider (FCC) project generates extensive dialogue with the local communities",
+          "url": "https://home.cern/une-periode-de-participation-citoyenne-sur-le-projet-de-futur-collisionneur-circulaire-fcc-riche-en-echanges-avec-les-territoires/",
+          "source": "CERN 新闻",
+          "score": 86.4,
+          "published_at": "2026-10-14T11:25:18+00:00"
         },
         {
-          "title": "Hybrid quantum computer observes foundational quantum effect in a new setting",
-          "url": "https://phys.org/news/2026-10-hybrid-quantum-foundational-effect.html",
-          "source": "Phys.org 物理新闻",
-          "score": 73.8,
-          "published_at": "2026-10-10T10:57:07+00:00"
-        },
-        {
-          "title": "Embracing the glitches in gravity could give us a unified theory of reality",
-          "url": "https://www.newscientist.com/article/2589429-embracing-the-glitches-in-gravity-could-give-us-a-unified-theory-of-reality/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 65.9,
-          "published_at": "2026-09-28T15:00:00+00:00"
+          "title": "Computer Security: 2FA to the TechNet",
+          "url": "https://home.cern/computer-security-2fa-to-the-technet/",
+          "source": "CERN 新闻",
+          "score": 86.3,
+          "published_at": "2026-10-14T09:43:10+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "牛津大学物理系研究人员使用由量子比特和量子振荡器组成的混合量子计算机，在量子模拟中观测到了阿哈罗诺夫-玻姆效应。该效应是一种量子现象，此前主要在特定实验条件下被研究，此次在混合量子计算平台上实现观测，为在新型量子系统中验证基础量子效应提供了实例。",
-      "digestTitle": "牛津混合量子计算机观测阿哈罗诺夫-玻姆效应",
-      "llmScore": 18.0
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 15.0
     },
     {
-      "id": "06c0a9b6582b",
-      "title": "New topological microscope tip reveals evidence of 2D altermagnetism",
+      "id": "364d0938fde3",
+      "title": "Nuclear clocks tick for the first time",
       "status": "关注中",
-      "heat": 38.0,
-      "sourceCount": 1,
-      "signalCount": 3,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "heat": 29.0,
+      "sourceCount": 2,
+      "signalCount": 4,
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
+        "Nature 量子物理",
+        "New Scientist 物理"
+      ],
+      "links": [
+        {
+          "title": "Nuclear clocks tick for the first time",
+          "url": "https://www.nature.com/articles/d41586-026-03060-9",
+          "source": "Nature 量子物理",
+          "score": 59.1,
+          "published_at": "2026-10-07T00:00:00+00:00"
+        },
+        {
+          "title": "A thorium-229 optical nuclear clock with feedback loop",
+          "url": "https://www.nature.com/articles/s41586-026-11084-4",
+          "source": "Nature 量子物理",
+          "score": 59.1,
+          "published_at": "2026-10-07T00:00:00+00:00"
+        },
+        {
+          "title": "A nuclear clock synchronized to 229Th",
+          "url": "https://www.nature.com/articles/s41586-026-11122-1",
+          "source": "Nature 量子物理",
+          "score": 59.1,
+          "published_at": "2026-10-07T00:00:00+00:00"
+        },
+        {
+          "title": "Nuclear fusion experiment produces the brightest X-rays on Earth yet",
+          "url": "https://www.newscientist.com/article/2589237-nuclear-fusion-experiment-produces-the-brightest-x-rays-on-earth-yet/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 45.4,
+          "published_at": "2026-09-16T12:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "321636a2b427",
+      "title": "Many black holes had past lives, new research shows",
+      "status": "关注中",
+      "heat": 22.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
+      "sources": [
+        "MIT News 物理",
         "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "New topological microscope tip reveals evidence of 2D altermagnetism",
-          "url": "https://phys.org/news/2026-10-topological-microscope-reveals-evidence-2d.html",
-          "source": "Phys.org 物理新闻",
-          "score": 58.9,
-          "published_at": "2026-10-13T21:10:01+00:00"
+          "title": "Many black holes had past lives, new research shows",
+          "url": "https://news.mit.edu/2026/many-black-holes-had-past-lives-new-research-shows-0707",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-07-07T16:00:00+00:00"
         },
         {
-          "title": "From nonmagnetic to magnetic: A 2D semiconductor with electrically tunable magnetism",
-          "url": "https://phys.org/news/2026-10-nonmagnetic-magnetic-2d-semiconductor-electrically.html",
+          "title": "Three quantum-inspired cores leave opposite fingerprints on the ringing of black holes",
+          "url": "https://phys.org/news/2026-10-quantum-cores-fingerprints-black-holes.html",
           "source": "Phys.org 物理新闻",
-          "score": 58.3,
-          "published_at": "2026-10-12T21:40:11+00:00"
-        },
-        {
-          "title": "Magnetic sculpting transforms single-source fields into predetermined shapes with mathematical precision",
-          "url": "https://phys.org/news/2026-10-magnetic-sculpting-source-fields-predetermined.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.0,
-          "published_at": "2026-10-12T22:40:01+00:00"
+          "score": 34.8,
+          "published_at": "2026-10-09T21:40:01+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": -8.4,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null,
-      "llmScore": 52.0
+      "digestTitle": null
+    },
+    {
+      "id": "0f9e2f253ca0",
+      "title": "Taking the heat off tantalum",
+      "status": "关注中",
+      "heat": 22.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
+      "sources": [
+        "MIT News 物理",
+        "Nature 量子物理"
+      ],
+      "links": [
+        {
+          "title": "Taking the heat off tantalum",
+          "url": "https://www.nature.com/articles/s41563-026-02766-5",
+          "source": "Nature 量子物理",
+          "score": 57.4,
+          "published_at": "2026-10-09T00:00:00+00:00"
+        },
+        {
+          "title": "A new way to watch heat move through electronics",
+          "url": "https://news.mit.edu/2026/new-way-watch-heat-move-through-electronics-0806",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-06T04:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "c973df2a3193",
@@ -108,7 +187,7 @@
       "heat": 18.0,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
         "知识分子"
       ],
@@ -117,7 +196,7 @@
           "title": "“冰立方”中微子天文台科学家获得2026年物理诺奖",
           "url": "http://www.zhishifenzi.com/news/multiple/10707.html",
           "source": "知识分子",
-          "score": 57.4,
+          "score": 57.3,
           "published_at": "2026-10-11T14:53:31+00:00"
         },
         {
@@ -139,8 +218,7 @@
       "trendPct": 0.0,
       "badges": [],
       "digest": null,
-      "digestTitle": null,
-      "llmScore": 58.0
+      "digestTitle": null
     }
   ]
 }

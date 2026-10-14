@@ -1,35 +1,41 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T12:02:23.128886+00:00",
+  "generatedAt": "2026-10-14T15:10:02.576475+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
-      "category": "其他",
-      "thisWeek": 539.7,
-      "lastWeek": 192.9,
-      "deltaPct": 179.8
+      "category": "科研进展",
+      "thisWeek": 1397.3,
+      "lastWeek": 805.6,
+      "deltaPct": 73.4
     },
     {
-      "category": "科研进展",
-      "thisWeek": 420.2,
-      "lastWeek": 805.6,
-      "deltaPct": -47.8
+      "category": "其他",
+      "thisWeek": 655.6,
+      "lastWeek": 192.9,
+      "deltaPct": 239.9
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 301.5,
+      "thisWeek": 570.4,
       "lastWeek": 158.9,
-      "deltaPct": 89.7
+      "deltaPct": 259.0
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 279.1,
+      "thisWeek": 488.2,
       "lastWeek": 49.8,
-      "deltaPct": 460.4
+      "deltaPct": 880.3
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 144.4,
+      "thisWeek": 163.2,
+      "lastWeek": 0,
+      "deltaPct": 100.0
+    },
+    {
+      "category": "等离子体",
+      "thisWeek": 102.2,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
@@ -42,27 +48,15 @@
   ],
   "newTopics": [
     {
-      "topic_id": "49bc8d90cf0d",
-      "title": "Quantum network test checks entanglement without having to trust detectors",
-      "score": 402.8,
-      "days": 2
-    },
-    {
-      "topic_id": "06c0a9b6582b",
-      "title": "New topological microscope tip reveals evidence of 2D altermagnetism",
-      "score": 152.2,
+      "topic_id": "33ec101f3d77",
+      "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
+      "score": 2208.8,
       "days": 2
     },
     {
       "topic_id": "8eae9d96a171",
       "title": "Will we observe dark matter as a particle or a wave?",
       "score": 95.0,
-      "days": 1
-    },
-    {
-      "topic_id": "f227cd59cf45",
-      "title": "The CERN Pension Fund launches MyPension, its new online portal",
-      "score": 51.4,
       "days": 1
     }
   ],

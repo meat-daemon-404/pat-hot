@@ -1,20 +1,21 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T12:02:23.128886+00:00",
+  "generatedAt": "2026-10-14T15:10:02.576475+00:00",
   "count": 10,
   "items": [
     {
-      "id": "ebd3dbc5811f",
-      "title": "[News] Cellid Joins Qualcomm’s the Snapdragon START program to accelerate the development of AR glasses",
+      "id": "7f6c9067937a",
+      "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
       "status": "爆",
-      "heat": 88.9,
-      "sourceCount": 9,
-      "signalCount": 83,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "heat": 88.0,
+      "sourceCount": 10,
+      "signalCount": 90,
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
         "IEEE Spectrum（关键词过滤）",
         "LEDinside 英文",
         "Laser Focus World",
+        "Nature Photonics",
         "Phys.org 物理新闻",
         "Physics World（关键词过滤）",
         "YouTube·Edmund Optics",
@@ -24,47 +25,47 @@
       ],
       "links": [
         {
+          "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
+          "url": "https://www.nature.com/articles/s41566-026-02009-8",
+          "source": "Nature Photonics",
+          "score": 93.7,
+          "published_at": "2026-10-12T00:00:00+00:00"
+        },
+        {
+          "title": "Stable deep-blue organic light-emitting diodes with reduced efficiency roll-off via accelerated exciton utilization",
+          "url": "https://www.nature.com/articles/s41566-026-02029-4",
+          "source": "Nature Photonics",
+          "score": 93.7,
+          "published_at": "2026-10-12T00:00:00+00:00"
+        },
+        {
+          "title": "Phase control of interfering stimulated Raman pathways in the XUV regime",
+          "url": "https://www.nature.com/articles/s41566-026-02024-9",
+          "source": "Nature Photonics",
+          "score": 91.7,
+          "published_at": "2026-10-09T00:00:00+00:00"
+        },
+        {
+          "title": "High-entropy molecular contacts enable high-efficiency and stable perovskite solar cells",
+          "url": "https://www.nature.com/articles/s41566-026-02028-5",
+          "source": "Nature Photonics",
+          "score": 91.7,
+          "published_at": "2026-10-09T00:00:00+00:00"
+        },
+        {
           "title": "[News] Cellid Joins Qualcomm’s the Snapdragon START program to accelerate the development of AR glasses",
           "url": "https://www.ledinside.com/news/2026/10/2026_10_14_01",
           "source": "LEDinside 英文",
-          "score": 90.6,
+          "score": 90.5,
           "published_at": "2026-10-13T22:17:17+00:00"
-        },
-        {
-          "title": "[News] Coherent Launches PhotonLink™ Integrated Optics Platform for AI Infrastructure",
-          "url": "https://www.ledinside.com/news/2026/10/2026_10_08_03",
-          "source": "LEDinside 英文",
-          "score": 86.6,
-          "published_at": "2026-10-07T22:55:19+00:00"
-        },
-        {
-          "title": "A new route to spin-controlled photonics",
-          "url": "https://physicsworld.com/a/a-new-route-to-spin-controlled-photonics/",
-          "source": "Physics World（关键词过滤）",
-          "score": 86.4,
-          "published_at": "2026-10-14T06:51:41+00:00"
-        },
-        {
-          "title": "Engineering the unknown: building vacuum and cryogenic systems for the quantum frontier",
-          "url": "https://physicsworld.com/a/engineering-the-unknown-building-vacuum-and-cryogenic-systems-for-the-quantum-frontier/",
-          "source": "Physics World（关键词过滤）",
-          "score": 86.0,
-          "published_at": "2026-10-13T16:39:05+00:00"
-        },
-        {
-          "title": "Quantum network test checks entanglement without having to trust detectors",
-          "url": "https://phys.org/news/2026-10-quantum-network-entanglement-detectors.html",
-          "source": "Phys.org 物理新闻",
-          "score": 82.0,
-          "published_at": "2026-10-14T11:00:01+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 34.0
+      "digest": "AR眼镜显示与空间识别引擎开发商Cellid宣布加入高通骁龙START计划，以加速其AR眼镜的开发。Cellid称，其“Crux”AR眼镜将在2026年增强企业峰会上展出。",
+      "digestTitle": "Cellid加入高通骁龙START计划加速AR眼镜开发",
+      "llmScore": 77.0
     },
     {
       "id": "833ffe8eccc7",
@@ -73,7 +74,7 @@
       "heat": 77.5,
       "sourceCount": 3,
       "signalCount": 19,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
         "C114中国通信网_监管",
         "C114中国通信网_要闻精选",
@@ -129,7 +130,7 @@
       "heat": 70.8,
       "sourceCount": 3,
       "signalCount": 14,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
         "C114中国通信网_通信财经",
         "LEDinside 中文",
@@ -172,12 +173,56 @@
           "published_at": "2026-08"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
-      "digestTitle": null,
-      "llmScore": 58.5
+      "digestTitle": null
+    },
+    {
+      "id": "3f6c5fdb93d8",
+      "title": "停车难谁还买大车?7万块也能配激光雷达,燃油车都这么卷了?",
+      "status": "发酵中",
+      "heat": 53.0,
+      "sourceCount": 3,
+      "signalCount": 3,
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
+      "sources": [
+        "搜狗微信·光电行业 · Carson的收藏馆",
+        "搜狗微信·光电行业 · 心纸飞机",
+        "搜狗微信·光电行业 · 愤怒的托尼"
+      ],
+      "links": [
+        {
+          "title": "停车难谁还买大车?7万块也能配激光雷达,燃油车都这么卷了?",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2pKVynQ956qWAMsjpqqapXAlqXa8Fplpd9MmraEpk5Zm2EPBfgbfSMnFXob6wRvYc85sakh_jKk1AyTtGXOck0lJRV-yAF8Zmy9LItECadL27TjV-0aQZ3cKtCp2Y0Gmwbi5HfSbHmZUYoEZepVfLoVy4MI0Lh34DeM4sRna8m7lB96e_3W9UY8XYiMrdEoTWp_iHxWkCHMVpj3x9Nw6p-Fg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=16DBF52A06695CF2C5C3980BB8AEA79EC654D0816ACF9E23",
+          "source": "搜狗微信·光电行业 · 心纸飞机",
+          "score": 70.4,
+          "published_at": "2026-10-14T13:32:49+00:00"
+        },
+        {
+          "title": "海鸥换代,7万级小车也要上激光雷达",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2pKVynQ956qWAMsjpqqapXAlqXa8Fplpd9UnyR7Lod9Ew9sNE6UoVkftQlIhLReSzpzaR2wYydSnqbL7xUGhRztqzF2DHX4_k8h4Ju670ib1h4DusjCustVCTXsQcdmtXgeXKxe3UPNvRE6nPtsqOV5kEKzA2GKsysbKzyJgo7YSxxe0WPSNXKB-iXlmi-MHyvRucs4l7Wt26jotuuiAmOIg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=16DBF52A06695CF2C5C3980BB8AEA79EC654D0816ACF9E23",
+          "source": "搜狗微信·光电行业 · Carson的收藏馆",
+          "score": 70.4,
+          "published_at": "2026-10-14T12:18:42+00:00"
+        },
+        {
+          "title": "加长 425mm 还配激光雷达!全新海鸥定档 10.20 上市,7 万级还能卷到哪?",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2pKVynQ956qWAMsjpqqapXAlqXa8Fplpd90O4fgLbyPXCkk67YxtQGoOHMf46o_NK_QEBbKJTe43X515GGS6pLg0xEOOv3k6YSDVMErgPGkXCxqm12CHnjgakb9BPB1fg9sJu1mtg_pIRkj2KsjKp7m7YpmHwiKpCqHApCPVMPlxpJJrUllOQ31Cp_U_D9eg7MMd8eIyWZiaHyPfCoem7FzA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=16DBF52A06695CF2C5C3980BB8AEA79EC654D0816ACF9E23",
+          "source": "搜狗微信·光电行业 · 愤怒的托尼",
+          "score": 70.4,
+          "published_at": "2026-10-14T12:30:28+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [
+        "new",
+        "surge"
+      ],
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "394c7b74bbd6",
@@ -186,7 +231,7 @@
       "heat": 49.0,
       "sourceCount": 2,
       "signalCount": 4,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
         "C114中国通信网_监管",
         "工信部要闻"
@@ -221,8 +266,8 @@
           "published_at": null
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -234,7 +279,7 @@
       "heat": 48.5,
       "sourceCount": 1,
       "signalCount": 6,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
         "C114中国通信网_设备商"
       ],
@@ -282,52 +327,45 @@
       "digestTitle": null
     },
     {
-      "id": "3ad25229250b",
-      "title": "车载激光雷达的“眼睛”:解密自动驾驶背后的光学设计",
+      "id": "36df149fe938",
+      "title": "Doubts cast on ‘superradiant neutrino laser’ proposal",
       "status": "关注中",
-      "heat": 46.0,
+      "heat": 39.0,
       "sourceCount": 2,
-      "signalCount": 6,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "signalCount": 4,
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
-        "OFweek 激光频道",
-        "搜狗微信·光电行业 · 光电资讯"
+        "Laser Focus World",
+        "Physics World（关键词过滤）"
       ],
       "links": [
         {
-          "title": "车载激光雷达的“眼睛”:解密自动驾驶背后的光学设计",
-          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2p61CoCErOQekMsjpqqapXAlqXa8Fplpd9rTeKMSuF4RAkJyG4f3NdBtMOsRR0p3_JgcZFG-v18idu0nntD86Tdm1CNdhPJYHkzntOsIlHBztM-QgX9wmTSVINDwofnqo23r13ZXQ0rTQFGZBTmRNYz8SmvEYTKNB6MwWdl0knyKuXlhPJlPc1-jMjZjEtTAHsOzOc94Nrtxbs46dn8Efgxg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=15B503907124EE5C484E1A8C950061C848559C816ACF715A",
-          "source": "搜狗微信·光电行业 · 光电资讯",
-          "score": 71.6,
-          "published_at": "2026-10-14T09:21:08+00:00"
+          "title": "Doubts cast on ‘superradiant neutrino laser’ proposal",
+          "url": "https://physicsworld.com/a/doubts-cast-on-superradiant-neutrino-laser-proposal/",
+          "source": "Physics World（关键词过滤）",
+          "score": 44.2,
+          "published_at": "2026-09-10T14:43:26+00:00"
         },
         {
-          "title": "自动驾驶激光雷达应如何进行标定？",
-          "url": "https://laser.ofweek.com/2026-04/ART-240002-8140-30685436.html",
-          "source": "OFweek 激光频道",
-          "score": 60.7,
-          "published_at": "2026-04"
+          "title": "Discovery of ‘how and why’ homochirality emerges receives 2026 Nobel Prize in Chemistry",
+          "url": "https://www.laserfocusworld.com/optics/news/55410158/discovery-of-how-and-why-homochirality-emerges-receives-2026-nobel-prize-in-chemistry",
+          "source": "Laser Focus World",
+          "score": 35.2,
+          "published_at": null
         },
         {
-          "title": "自动驾驶中激光雷达搭载越多融合越困难吗？",
-          "url": "https://laser.ofweek.com/2026-04/ART-240002-8140-30685550.html",
-          "source": "OFweek 激光频道",
-          "score": 60.7,
-          "published_at": "2026-04"
+          "title": "2026 Nobel Prize in Physics goes to Francis Halzen for IceCube Neutrino Observatory",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/news/55409835/2026-nobel-prize-in-physics-goes-to-francis-halzen-for-icecube-neutrino-observatory",
+          "source": "Laser Focus World",
+          "score": 35.2,
+          "published_at": null
         },
         {
-          "title": "自动驾驶激光雷达无法识别反光背心吗？",
-          "url": "https://laser.ofweek.com/2026-04/ART-240002-8140-30684861.html",
-          "source": "OFweek 激光频道",
-          "score": 60.7,
-          "published_at": "2026-04"
-        },
-        {
-          "title": "自动驾驶激光雷达中的角分辨率决定了什么？",
-          "url": "https://laser.ofweek.com/2026-04/ART-240015-8140-30684289.html",
-          "source": "OFweek 激光频道",
-          "score": 60.7,
-          "published_at": "2026-04"
+          "title": "Optogenetics nabs 2026 Nobel Prize in Physiology or Medicine",
+          "url": "https://www.laserfocusworld.com/biolife-sciences/news/55409612/optogenetics-nabs-2026-nobel-prize-in-physiology-or-medicine",
+          "source": "Laser Focus World",
+          "score": 35.2,
+          "published_at": null
         }
       ],
       "trend": "new",
@@ -337,31 +375,37 @@
       "digestTitle": null
     },
     {
-      "id": "17033f59aaad",
-      "title": "5500个光引擎替代4.8万颗800G光模块,光模块厂卖的不再是颗数",
+      "id": "40753cddc649",
+      "title": "大招齐发，英特尔直击网络转型",
       "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "heat": 38.0,
+      "sourceCount": 1,
+      "signalCount": 3,
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
-        "搜狗微信·光电行业 · 行知手札",
-        "搜狗微信·光电行业 · 锐叔论市"
+        "C114中国通信网_要闻精选"
       ],
       "links": [
         {
-          "title": "5500个光引擎替代4.8万颗800G光模块,光模块厂卖的不再是颗数",
-          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2pDMjJS9HvZSEMsjpqqapXAlqXa8Fplpd9MXUFRYQMrb6--4iI5qk6fWesQe9UX3DaD4S5bqRCD3vNEgP20DtYNsjLLf6PIkBZezmTQrZtYZoAYDMLMRQaYny-a6P063nMWcawCtT-jVpk93cl4iQ8EVaj9DKr_sw3mCyEvzE-QbDHelt9a6ZWXUqy2DooCFiYIVZM1g1FfgHRtmyIGw2VAg..&amp;type=2&amp;query=%E5%85%89%E6%A8%A1%E5%9D%97&amp;token=15B4F46C7124EE5C484E1A8C950061C848559C816ACF7157",
-          "source": "搜狗微信·光电行业 · 行知手札",
-          "score": 65.5,
-          "published_at": "2026-10-14T05:59:59+00:00"
+          "title": "大招齐发，英特尔直击网络转型",
+          "url": "http://www.c114.com.cn/topic/5096/a996852.html?utm_medium=C114&dclid=CLmNp8bEwdICFRwhKgodT4YHqQ",
+          "source": "C114中国通信网_要闻精选",
+          "score": 58.3,
+          "published_at": null
         },
         {
-          "title": "光模块估值性价比凸显,或领跑AI硬件修复!",
-          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2pDMjJS9HvZSEMsjpqqapXAlqXa8Fplpd9uYpgXiz-VDyeGuLOE2SJ0UAnHwcz2OX6FTp03ojY30ZZ3aVRWuATr2J6jB6zc6SEk2BadjPsdiVMYmhOARohD1AFaSfp3iDon15D1MzxUzevygDQzZrXAg1X1ZY0IVVfyyxWfSVFUlUe2UrP0KswP7RVgS6ScVzfQsZ2ZLJo_KkO8fIRwtipOg..&amp;type=2&amp;query=%E5%85%89%E6%A8%A1%E5%9D%97&amp;token=15B4F46C7124EE5C484E1A8C950061C848559C816ACF7157",
-          "source": "搜狗微信·光电行业 · 锐叔论市",
-          "score": 65.3,
-          "published_at": "2026-10-14T00:45:23+00:00"
+          "title": "英特尔助力电信网络转型 让5G不再是“看上去很美”",
+          "url": "http://www.c114.net/topic/5096/a996887.html",
+          "source": "C114中国通信网_要闻精选",
+          "score": 58.3,
+          "published_at": null
+        },
+        {
+          "title": "对话英特尔：产业协作与标准化助推5G成功",
+          "url": "http://www.c114.net/news/138/a996926.html",
+          "source": "C114中国通信网_要闻精选",
+          "score": 46.7,
+          "published_at": null
         }
       ],
       "trend": "new",
@@ -371,31 +415,37 @@
       "digestTitle": null
     },
     {
-      "id": "1003c373b23a",
-      "title": "激光雷达+英伟达Thor-U加持 700TOPS算力 家用SUV 智驾第一梯队",
+      "id": "79ca1f2a334a",
+      "title": "苹果、亚马逊成功在英国驳回4.94 亿英镑合谋诉讼",
       "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "heat": 38.0,
+      "sourceCount": 1,
+      "signalCount": 3,
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
-        "搜狗微信·光电行业 · 懂车大咖",
-        "搜狗微信·光电行业 · 踢车帮"
+        "C114中国通信网_IT资讯"
       ],
       "links": [
         {
-          "title": "激光雷达+英伟达Thor-U加持 700TOPS算力 家用SUV 智驾第一梯队",
-          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2p61CoCErOQekMsjpqqapXAlqXa8Fplpd9Vh3rIWHyOyNhqc_7VNZ0yqLj5vsxGYUu5Zn18t2HWZjLsJbtlXXpHQW7kW9wzTs5WTU4eyoocIazUqqKCOF_GTwHoCpb0Lu7F_yIqcZhvB5kqUPIB7saFep3Z8gF9a3O7LGijPXuxIJvYayIFtpfvE5M2BL9XqF-30gqcvV6JkYY-UZGbO56rA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=15B503907124EE5C484E1A8C950061C848559C816ACF715A",
-          "source": "搜狗微信·光电行业 · 懂车大咖",
-          "score": 65.6,
-          "published_at": "2026-10-14T09:06:19+00:00"
+          "title": "苹果、亚马逊成功在英国驳回4.94 亿英镑合谋诉讼",
+          "url": "https://www.c114.com.cn/news/213/a1282089.html",
+          "source": "C114中国通信网_IT资讯",
+          "score": 32.3,
+          "published_at": null
         },
         {
-          "title": "【帮看车】激光雷达+6789三电升级!试全新深蓝S07 AI激光版",
-          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2p61CoCErOQekMsjpqqapXAlqXa8Fplpd9Dq6K44symZKSKniVoS19_QIETlNf9iiQLIM_D9dsKfYtGxrqKiwWjOtM0NIqpEWVAdripOt0J9Ym82pwIAV_c0dY15HIfh6uj8smy3umoDfjptQvun_abBgTi5PjFyzPkBJdP0zVX-ruWv0bURqGebjOcSQ1bCeYs-i1Ue5tMTwYJSSFPgfogQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=15B503907124EE5C484E1A8C950061C848559C816ACF715A",
-          "source": "搜狗微信·光电行业 · 踢车帮",
-          "score": 65.4,
-          "published_at": "2026-10-14T04:20:18+00:00"
+          "title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼",
+          "url": "https://www.c114.com.cn/news/213/a1281942.html",
+          "source": "C114中国通信网_IT资讯",
+          "score": 32.3,
+          "published_at": null
+        },
+        {
+          "title": "苹果公司在英面临15亿英镑司法索赔，被指在App Store收费“过高且不公平”",
+          "url": "https://www.c114.com.cn/news/213/a1281915.html",
+          "source": "C114中国通信网_IT资讯",
+          "score": 32.3,
+          "published_at": null
         }
       ],
       "trend": "new",
@@ -405,74 +455,42 @@
       "digestTitle": null
     },
     {
-      "id": "b47ac6a3b70d",
-      "title": "8.68有激光雷达和高阶智驾、13.18万买中型SUV!10-15万新能源这么能打,油车看了直接破防",
+      "id": "d20bdb8e69ce",
+      "title": "搭载透明Micro LED显示屏，标致发布全新电动概念车",
       "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
+      "heat": 38.0,
+      "sourceCount": 1,
+      "signalCount": 3,
+      "latestAt": "2026-10-14T15:10:02.576475+00:00",
       "sources": [
-        "搜狗微信·光电行业 · 觅爱车说",
-        "搜狗微信·光电行业 · 车阅山河"
+        "LEDinside 中文"
       ],
       "links": [
         {
-          "title": "8.68有激光雷达和高阶智驾、13.18万买中型SUV!10-15万新能源这么能打,油车看了直接破防",
-          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2p61CoCErOQekMsjpqqapXAlqXa8Fplpd9kKu_h4KZHYr67S6AfzS11WmWZ2KFQ-fC_SFq3UnJe3bmhqGOmHwHELuQF884VKhaX1bsQGClU1d-xXcbdgxYhYJ2C5OCJtbKs16Cxr1kQx2OfBBxox-5NcdbZuuKmgSSxiPOVyf7_lktP53ihMF1_g1mBkvev2GcBBPDqLpJSvxj32-j2KiwUw..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=15B503907124EE5C484E1A8C950061C848559C816ACF715A",
-          "source": "搜狗微信·光电行业 · 觅爱车说",
-          "score": 65.7,
-          "published_at": "2026-10-14T12:06:32+00:00"
+          "title": "搭载透明Micro LED显示屏，标致发布全新电动概念车",
+          "url": "https://www.ledinside.cn/news/20261014-62789.html",
+          "source": "LEDinside 中文",
+          "score": 67.7,
+          "published_at": "2026-10-14"
         },
         {
-          "title": "10万级车价被直接打穿,激光雷达撞上半固态电",
-          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2p61CoCErOQekMsjpqqapXAlqXa8Fplpd9p-RpYKwO4oS1lO9J5WpsA5yWq57uzPLERw7Ps2gvpO69TRfpxgFv2souMF0rQ0WrUug4rHqmKpLVpBKDctgrWHIM45v93R6KtJknD2c7KM9A3rs7gFOuP7c6RVbf6PH9bOaaE4lo8eGfdoi9JzQRdSxe-vo-K5Ob_XxkUKNTdTkCYioxHkzTmA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=15B503907124EE5C484E1A8C950061C848559C816ACF715A",
-          "source": "搜狗微信·光电行业 · 车阅山河",
-          "score": 65.6,
-          "published_at": "2026-10-14T08:43:22+00:00"
+          "title": "京东方发布全球最薄玻璃基MicroLED显示屏",
+          "url": "https://www.ledinside.cn/products/20260923-62623.html",
+          "source": "LEDinside 中文",
+          "score": 53.7,
+          "published_at": "2026-09-23"
+        },
+        {
+          "title": "LG发布新一代Micro LED显示屏",
+          "url": "https://www.ledinside.cn/products/20260911-62531.html",
+          "source": "LEDinside 中文",
+          "score": 48.3,
+          "published_at": "2026-09-11"
         }
       ],
       "trend": "new",
       "trendPct": null,
-      "badges": [
-        "new"
-      ],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "7560d0777e19",
-      "title": "极狐新款S5官图发布:新增激光雷达、车机焕新,T5/S5双子星即将同台亮相",
-      "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-14T12:02:23.128886+00:00",
-      "sources": [
-        "搜狗微信·光电行业 · 45度说车",
-        "搜狗微信·光电行业 · 七七爸爸探险记"
-      ],
-      "links": [
-        {
-          "title": "极狐新款S5官图发布:新增激光雷达、车机焕新,T5/S5双子星即将同台亮相",
-          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2p61CoCErOQekMsjpqqapXAlqXa8Fplpd9k7DJoUjPe28w8ImcyM6MiVQFM9meGJFciRHNhXEE0Qu5yX8euGWFD8l7CRwyBLGb1vSWuRuhMHD1nJ8D73P13_6NR5heCwyoqb-okWN5oZkWFSdwG1lkPQ5WvJsyqS5rJ8dlJuYb2vHTH3lJUmK28CKxx8_WgXlr-7Uy12apQgqE8RsmObDbtQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=15B503907124EE5C484E1A8C950061C848559C816ACF715A",
-          "source": "搜狗微信·光电行业 · 七七爸爸探险记",
-          "score": 65.6,
-          "published_at": "2026-10-14T09:38:33+00:00"
-        },
-        {
-          "title": "极狐新车开启预热,前备箱+激光雷达+后驱",
-          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-9fN-vB2p61CoCErOQekMsjpqqapXAlqXa8Fplpd9lb8VtnV2R5TO_vKu1swDepxmAJtFt9y98hVfiBArflFpKdLDhgUJNqKVaeZf2w89RLSqyHdVj9zWiZEMzfj2BqvDPxqbJfKqrDMNfafLtufTnQnfYB_cM2pAHNM00IHGQJ74kjz-zO5pjLSMD0Ht9Z4eZXTZamRZd_5aKebuLIdFH6In5Ei3zg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=15B503907124EE5C484E1A8C950061C848559C816ACF715A",
-          "source": "搜狗微信·光电行业 · 45度说车",
-          "score": 65.6,
-          "published_at": "2026-10-14T08:29:52+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [
-        "new"
-      ],
+      "badges": [],
       "digest": null,
       "digestTitle": null
     }
