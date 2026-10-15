@@ -1,25 +1,31 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T15:10:02.576475+00:00",
+  "generatedAt": "2026-10-15T00:33:01.956326+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
-      "category": "其他",
-      "thisWeek": 984.9,
-      "lastWeek": 692.3,
-      "deltaPct": 42.3
+      "category": "深空探测",
+      "thisWeek": 1122.1,
+      "lastWeek": 477.7,
+      "deltaPct": 134.9
     },
     {
-      "category": "深空探测",
-      "thisWeek": 918.4,
-      "lastWeek": 477.7,
-      "deltaPct": 92.3
+      "category": "其他",
+      "thisWeek": 962.8,
+      "lastWeek": 692.3,
+      "deltaPct": 39.1
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 655.9,
+      "thisWeek": 655.4,
       "lastWeek": 240.1,
-      "deltaPct": 173.2
+      "deltaPct": 173.0
+    },
+    {
+      "category": "恒星与星际介质",
+      "thisWeek": 641.3,
+      "lastWeek": 160.4,
+      "deltaPct": 299.8
     },
     {
       "category": "科研进展",
@@ -28,30 +34,30 @@
       "deltaPct": 322.0
     },
     {
-      "category": "恒星与星际介质",
-      "thisWeek": 399.4,
-      "lastWeek": 160.4,
-      "deltaPct": 149.0
-    },
-    {
       "category": "太阳与空间物理",
-      "thisWeek": 277.9,
+      "thisWeek": 277.6,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
     {
       "category": "系外行星",
-      "thisWeek": 51.3,
+      "thisWeek": 51.1,
       "lastWeek": 0,
       "deltaPct": 100.0
     }
   ],
   "newTopics": [
     {
+      "topic_id": "12637861105d",
+      "title": "Green, pink and purple: Astronomers reveal the surprising true colors of white dwarf stars",
+      "score": 985.0,
+      "days": 2
+    },
+    {
       "topic_id": "bba7edd9f937",
       "title": "New evidence points to two feeding black holes just 175 parsecs apart lurking in the early universe",
-      "score": 1433.5,
-      "days": 2
+      "score": 714.7,
+      "days": 1
     },
     {
       "topic_id": "6540815d36b5",
@@ -66,21 +72,21 @@
       "days": 1
     },
     {
+      "topic_id": "d1add21bb66a",
+      "title": "A trip to Mars could come at a heartbreaking cost",
+      "score": 141.3,
+      "days": 2
+    },
+    {
       "topic_id": "4b7b215b7679",
       "title": "Curiosity Greets a Spectacular Dawn Sky on Mars",
-      "score": 130.7,
+      "score": 130.4,
       "days": 2
     },
     {
       "topic_id": "a49fb256ee63",
       "title": "A possible detection of gas rotation in galaxy groups via the kinetic Sunyaev-Zeldovich effect",
       "score": 87.4,
-      "days": 1
-    },
-    {
-      "topic_id": "7329bfce4138",
-      "title": "A Trip to Mars Could Break Your Heart - Literally",
-      "score": 65.9,
       "days": 1
     },
     {
@@ -92,7 +98,7 @@
     {
       "topic_id": "338ead7e38ad",
       "title": "Chandrasekhar Placed A Limit On White Dwarfs, But A New Study Finds This Limit Is Not Absolute",
-      "score": 36.7,
+      "score": 36.5,
       "days": 1
     },
     {
