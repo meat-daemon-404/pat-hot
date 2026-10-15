@@ -1,35 +1,35 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T00:33:01.956326+00:00",
+  "generatedAt": "2026-10-15T15:02:02.939432+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 916.8,
+      "thisWeek": 1473.8,
       "lastWeek": 805.6,
-      "deltaPct": 13.8
+      "deltaPct": 82.9
     },
     {
       "category": "其他",
-      "thisWeek": 799.7,
+      "thisWeek": 895.6,
       "lastWeek": 192.9,
-      "deltaPct": 314.6
+      "deltaPct": 364.3
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 550.2,
+      "thisWeek": 620.3,
       "lastWeek": 158.9,
-      "deltaPct": 246.3
+      "deltaPct": 290.4
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 319.6,
+      "thisWeek": 404.1,
       "lastWeek": 49.8,
-      "deltaPct": 541.8
+      "deltaPct": 711.4
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 262.3,
+      "thisWeek": 364.7,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
@@ -48,22 +48,16 @@
   ],
   "newTopics": [
     {
+      "topic_id": "81aecc617bfa",
+      "title": "From spin wave to superconducting circuit: A one-way street for quantum information",
+      "score": 1381.6,
+      "days": 2
+    },
+    {
       "topic_id": "33ec101f3d77",
       "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
       "score": 692.0,
       "days": 1
-    },
-    {
-      "topic_id": "625733230945",
-      "title": "New topological microscope tip reveals evidence of 2D altermagnetism",
-      "score": 290.4,
-      "days": 2
-    },
-    {
-      "topic_id": "a09fb3599fd8",
-      "title": "From spin wave to superconducting circuit: A one-way street for quantum information",
-      "score": 206.5,
-      "days": 2
     },
     {
       "topic_id": "8eae9d96a171",
@@ -74,13 +68,13 @@
     {
       "topic_id": "4f98d22ac452",
       "title": "Storing memory on a chip with flowing water",
-      "score": 69.1,
+      "score": 68.6,
       "days": 2
     },
     {
       "topic_id": "11e25bee56d4",
       "title": "The public consultation for the Future Circular Collider (FCC) project generates extensive dialogue with the local communities",
-      "score": 62.3,
+      "score": 61.9,
       "days": 1
     }
   ],
