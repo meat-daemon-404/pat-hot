@@ -1,25 +1,31 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T00:25:40.721658+00:00",
+  "generatedAt": "2026-10-16T14:52:46.055774+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1472.2,
+      "thisWeek": 1617.6,
       "lastWeek": 805.6,
-      "deltaPct": 82.7
+      "deltaPct": 100.8
     },
     {
       "category": "其他",
-      "thisWeek": 1062.7,
+      "thisWeek": 1178.8,
       "lastWeek": 192.9,
-      "deltaPct": 450.9
+      "deltaPct": 511.1
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 619.8,
+      "thisWeek": 691.3,
       "lastWeek": 158.9,
-      "deltaPct": 290.1
+      "deltaPct": 335.1
+    },
+    {
+      "category": "量子信息与计算",
+      "thisWeek": 416.5,
+      "lastWeek": 0,
+      "deltaPct": 100.0
     },
     {
       "category": "凝聚态物理",
@@ -28,14 +34,8 @@
       "deltaPct": 710.4
     },
     {
-      "category": "量子信息与计算",
-      "thisWeek": 364.0,
-      "lastWeek": 0,
-      "deltaPct": 100.0
-    },
-    {
       "category": "等离子体",
-      "thisWeek": 102.2,
+      "thisWeek": 174.9,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
@@ -48,9 +48,9 @@
   ],
   "newTopics": [
     {
-      "topic_id": "22120ecf2802",
-      "title": "From spin wave to superconducting circuit: A one-way street for quantum information",
-      "score": 944.0,
+      "topic_id": "07e022871d50",
+      "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
+      "score": 1156.0,
       "days": 2
     },
     {
@@ -72,9 +72,15 @@
       "days": 1
     },
     {
+      "topic_id": "17ca9ae6241f",
+      "title": "From spin wave to superconducting circuit: A one-way street for quantum information",
+      "score": 71.0,
+      "days": 1
+    },
+    {
       "topic_id": "4f98d22ac452",
       "title": "Storing memory on a chip with flowing water",
-      "score": 68.5,
+      "score": 68.2,
       "days": 2
     },
     {
@@ -84,9 +90,15 @@
       "days": 1
     },
     {
-      "topic_id": "f61039cbdb6f",
-      "title": "Nuclear fusion experiment produces the brightest X-rays on Earth yet",
-      "score": 36.7,
+      "topic_id": "4c7f63ab9142",
+      "title": "IBM executive warns of risk of quantum computing hacks",
+      "score": 59.9,
+      "days": 1
+    },
+    {
+      "topic_id": "42a73044cd88",
+      "title": "Nuclear clocks tick for the first time",
+      "score": 38.2,
       "days": 1
     }
   ],

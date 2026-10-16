@@ -1,55 +1,55 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T00:25:40.721658+00:00",
+  "generatedAt": "2026-10-16T14:52:46.055774+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 3538.6,
+      "thisWeek": 3963.6,
       "lastWeek": 764.2,
-      "deltaPct": 363.0
+      "deltaPct": 418.7
     },
     {
       "category": "科研进展",
-      "thisWeek": 3046.0,
+      "thisWeek": 3351.0,
       "lastWeek": 693.0,
-      "deltaPct": 339.5
+      "deltaPct": 383.5
     },
     {
       "category": "通信与算力",
-      "thisWeek": 2803.4,
+      "thisWeek": 2874.4,
       "lastWeek": 695.0,
-      "deltaPct": 303.4
-    },
-    {
-      "category": "其他",
-      "thisWeek": 2719.0,
-      "lastWeek": 1537.0,
-      "deltaPct": 76.9
+      "deltaPct": 313.6
     },
     {
       "category": "产业与资本",
-      "thisWeek": 2712.5,
+      "thisWeek": 2814.7,
       "lastWeek": 960.6,
-      "deltaPct": 182.4
+      "deltaPct": 193.0
+    },
+    {
+      "category": "其他",
+      "thisWeek": 2803.9,
+      "lastWeek": 1537.0,
+      "deltaPct": 82.4
     },
     {
       "category": "光通信",
-      "thisWeek": 2593.5,
+      "thisWeek": 2674.8,
       "lastWeek": 618.8,
-      "deltaPct": 319.1
+      "deltaPct": 332.3
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1757.9,
+      "thisWeek": 1818.9,
       "lastWeek": 687.1,
-      "deltaPct": 155.8
+      "deltaPct": 164.7
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1162.7,
+      "thisWeek": 1481.3,
       "lastWeek": 689.8,
-      "deltaPct": 68.6
+      "deltaPct": 114.7
     },
     {
       "category": "光电芯片与半导体",
@@ -59,9 +59,9 @@
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 341.6,
+      "thisWeek": 376.2,
       "lastWeek": 196.9,
-      "deltaPct": 73.5
+      "deltaPct": 91.1
     },
     {
       "category": "光伏与新能源",
@@ -72,9 +72,9 @@
   ],
   "newTopics": [
     {
-      "topic_id": "1c9ad7549052",
-      "title": "High-resolution retinal matrix imaging via computational motion and aberration correction",
-      "score": 2349.0,
+      "topic_id": "8493a1bf241a",
+      "title": "Perovskite chiral multiple quantum wells with extended spin lifetime via efficient spin cascade",
+      "score": 2736.3,
       "days": 2
     },
     {
@@ -90,16 +90,22 @@
       "days": 2
     },
     {
-      "topic_id": "ce3f5f92cd2c",
-      "title": "工信部对我国网络强国建设提出四点建议",
-      "score": 1208.2,
-      "days": 2
-    },
-    {
       "topic_id": "f510f3bd8d72",
       "title": "工信部对我国网络强国建设提出四点建议",
       "score": 905.1,
       "days": 2
+    },
+    {
+      "topic_id": "ce3f5f92cd2c",
+      "title": "工信部对我国网络强国建设提出四点建议",
+      "score": 725.1,
+      "days": 2
+    },
+    {
+      "topic_id": "870a19576e18",
+      "title": "工信部对我国网络强国建设提出四点建议",
+      "score": 675.0,
+      "days": 1
     },
     {
       "topic_id": "7f6c9067937a",
@@ -124,12 +130,6 @@
       "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
       "score": 464.6,
       "days": 2
-    },
-    {
-      "topic_id": "40753cddc649",
-      "title": "大招齐发，英特尔直击网络转型",
-      "score": 349.8,
-      "days": 3
     }
   ],
   "sustainedTopics": [

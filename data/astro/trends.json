@@ -1,41 +1,47 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T00:25:40.721658+00:00",
+  "generatedAt": "2026-10-16T14:52:46.055774+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
       "category": "深空探测",
-      "thisWeek": 1464.1,
+      "thisWeek": 1599.4,
       "lastWeek": 477.7,
-      "deltaPct": 206.5
+      "deltaPct": 234.8
     },
     {
       "category": "科研进展",
-      "thisWeek": 1364.5,
+      "thisWeek": 1292.9,
       "lastWeek": 119.3,
-      "deltaPct": 1043.8
+      "deltaPct": 983.7
     },
     {
       "category": "其他",
-      "thisWeek": 1082.6,
+      "thisWeek": 1258.3,
       "lastWeek": 692.3,
-      "deltaPct": 56.4
+      "deltaPct": 81.8
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 978.9,
+      "thisWeek": 1241.1,
       "lastWeek": 240.1,
-      "deltaPct": 307.7
+      "deltaPct": 416.9
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 837.1,
+      "thisWeek": 959.9,
       "lastWeek": 160.4,
-      "deltaPct": 421.9
+      "deltaPct": 498.4
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 354.9,
+      "thisWeek": 354.5,
+      "lastWeek": 0,
+      "deltaPct": 100.0
+    },
+    {
+      "category": "系外行星",
+      "thisWeek": 137.0,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
@@ -44,19 +50,13 @@
       "thisWeek": 114.3,
       "lastWeek": 0,
       "deltaPct": 100.0
-    },
-    {
-      "category": "系外行星",
-      "thisWeek": 50.7,
-      "lastWeek": 0,
-      "deltaPct": 100.0
     }
   ],
   "newTopics": [
     {
-      "topic_id": "e170adf99bd7",
-      "title": "Rigorous analysis confirms NASA's Artemis II heat shield performance",
-      "score": 1726.7,
+      "topic_id": "fbad2169505b",
+      "title": "A Distant Supercluster of Galaxies Points To Self-Interacting Dark Matter",
+      "score": 2394.6,
       "days": 2
     },
     {
@@ -86,13 +86,7 @@
     {
       "topic_id": "d1add21bb66a",
       "title": "A trip to Mars could come at a heartbreaking cost",
-      "score": 140.2,
-      "days": 2
-    },
-    {
-      "topic_id": "607e65e99828",
-      "title": "Chandra breaks down 'Treble Clef's' galaxy cluster collision",
-      "score": 131.5,
+      "score": 139.8,
       "days": 2
     },
     {
@@ -112,6 +106,12 @@
       "title": "The Atacama Cosmology Telescope: DR6 Constraints on Isotropic Time-Dependent Cosmic Birefringence from Axion-like Particles",
       "score": 90.7,
       "days": 2
+    },
+    {
+      "topic_id": "a49fb256ee63",
+      "title": "A possible detection of gas rotation in galaxy groups via the kinetic Sunyaev-Zeldovich effect",
+      "score": 87.4,
+      "days": 1
     }
   ],
   "sustainedTopics": [

@@ -1,19 +1,78 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T00:25:40.721658+00:00",
-  "count": 4,
+  "generatedAt": "2026-10-16T14:52:46.055774+00:00",
+  "count": 6,
   "items": [
     {
-      "id": "22120ecf2802",
-      "title": "From spin wave to superconducting circuit: A one-way street for quantum information",
+      "id": "07e022871d50",
+      "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
       "status": "爆",
-      "heat": 93.3,
-      "sourceCount": 6,
-      "signalCount": 40,
-      "latestAt": "2026-10-16T00:25:40.721658+00:00",
+      "heat": 91.4,
+      "sourceCount": 7,
+      "signalCount": 58,
+      "latestAt": "2026-10-16T14:52:46.055774+00:00",
       "sources": [
         "CERN 新闻",
         "MIT News 物理",
+        "Nature 量子物理",
+        "New Scientist 物理",
+        "Phys.org 物理新闻",
+        "Quanta Magazine",
+        "arXiv quant-ph 论文速递"
+      ],
+      "links": [
+        {
+          "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
+          "url": "https://phys.org/news/2026-10-gallium-anomaly-neutrino-shortfall-invoking.html",
+          "source": "Phys.org 物理新闻",
+          "score": 86.4,
+          "published_at": "2026-10-16T12:00:01+00:00"
+        },
+        {
+          "title": "Design and Monte Carlo simulation of a phase grating moiré neutron interferometer to measure the gravitational constant",
+          "url": "https://www.nature.com/articles/s42005-026-02853-8",
+          "source": "Nature 量子物理",
+          "score": 85.4,
+          "published_at": "2026-10-15T00:00:00+00:00"
+        },
+        {
+          "title": "Quantum network test checks entanglement without having to trust detectors",
+          "url": "https://phys.org/news/2026-10-quantum-network-entanglement-detectors.html",
+          "source": "Phys.org 物理新闻",
+          "score": 85.1,
+          "published_at": "2026-10-14T11:00:01+00:00"
+        },
+        {
+          "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
+          "url": "https://www.quantamagazine.org/triplet-of-ghostly-galaxies-hints-at-what-dark-matter-is-and-isnt-20261014/",
+          "source": "Quanta Magazine",
+          "score": 85.1,
+          "published_at": "2026-10-14T14:04:05+00:00"
+        },
+        {
+          "title": "Continuous Improvement gains momentum at CERN",
+          "url": "https://home.cern/continuous-improvement-gains-momentum-at-cern/",
+          "source": "CERN 新闻",
+          "score": 85.1,
+          "published_at": "2026-10-14T12:53:51+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 15.0
+    },
+    {
+      "id": "17ca9ae6241f",
+      "title": "From spin wave to superconducting circuit: A one-way street for quantum information",
+      "status": "发酵中",
+      "heat": 57.5,
+      "sourceCount": 4,
+      "signalCount": 5,
+      "latestAt": "2026-10-16T14:52:46.055774+00:00",
+      "sources": [
         "New Scientist 物理",
         "Phys.org 物理新闻",
         "Quanta Magazine",
@@ -24,119 +83,169 @@
           "title": "From spin wave to superconducting circuit: A one-way street for quantum information",
           "url": "https://phys.org/news/2026-10-superconducting-circuit-street-quantum.html",
           "source": "Phys.org 物理新闻",
-          "score": 85.6,
+          "score": 71.0,
           "published_at": "2026-10-14T16:20:02+00:00"
         },
         {
-          "title": "Quantum network test checks entanglement without having to trust detectors",
-          "url": "https://phys.org/news/2026-10-quantum-network-entanglement-detectors.html",
-          "source": "Phys.org 物理新闻",
-          "score": 85.5,
-          "published_at": "2026-10-14T11:00:01+00:00"
+          "title": "Embracing the glitches in gravity could give us a unified theory of reality",
+          "url": "https://www.newscientist.com/article/2589429-embracing-the-glitches-in-gravity-could-give-us-a-unified-theory-of-reality/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 60.3,
+          "published_at": "2026-09-28T15:00:00+00:00"
         },
         {
-          "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
-          "url": "https://www.quantamagazine.org/triplet-of-ghostly-galaxies-hints-at-what-dark-matter-is-and-isnt-20261014/",
+          "title": "The noise cost of reservoir locality in broadband quantum amplifier chains",
+          "url": "https://arxiv.org/abs/2610.20654",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 58.5,
+          "published_at": "2026-10-16T04:00:00+00:00"
+        },
+        {
+          "title": "Infinite magic and the emergence of the continuum",
+          "url": "https://arxiv.org/abs/2610.20790",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 58.5,
+          "published_at": "2026-10-16T04:00:00+00:00"
+        },
+        {
+          "title": "Is ‘Attention’ the Essence of Intelligence?",
+          "url": "https://www.quantamagazine.org/is-attention-the-essence-of-intelligence-20261012/",
           "source": "Quanta Magazine",
-          "score": 85.5,
-          "published_at": "2026-10-14T14:04:05+00:00"
-        },
-        {
-          "title": "The public consultation for the Future Circular Collider (FCC) project generates extensive dialogue with the local communities",
-          "url": "https://home.cern/une-periode-de-participation-citoyenne-sur-le-projet-de-futur-collisionneur-circulaire-fcc-riche-en-echanges-avec-les-territoires/",
-          "source": "CERN 新闻",
-          "score": 85.5,
-          "published_at": "2026-10-14T11:25:18+00:00"
-        },
-        {
-          "title": "Computer Security: 2FA to the TechNet",
-          "url": "https://home.cern/computer-security-2fa-to-the-technet/",
-          "source": "CERN 新闻",
-          "score": 85.4,
-          "published_at": "2026-10-14T09:43:10+00:00"
+          "score": 41.8,
+          "published_at": "2026-10-12T14:20:30+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "down",
+      "trendPct": -38.4,
       "badges": [],
-      "digest": "美国能源部阿贡国家实验室与相关大学团队报告了一项将自旋波与超导电路耦合的研究，旨在为量子信息传输提供新路径，但报道未给出已验证的实用效果。\n\n另一项量子网络测试提出了一种无需信任探测器的纠缠验证方法，用于提升未来量子通信的安全性。\n\n天文学方面，Quanta Magazine 报道了一组被称为“幽灵”的星系，其碰撞后似乎缺少暗物质，这对某些替代引力理论构成挑战。\n\n欧洲核子研究组织（CERN）完成了未来环形对撞机（FCC）项目在法国和瑞士的公众咨询，并完成了其单点登录及相关服务网关的双因素认证部署。",
-      "digestTitle": "多领域科研与设施进展概览",
-      "llmScore": 28.5
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.20654",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
     },
     {
-      "id": "f61039cbdb6f",
-      "title": "Nuclear fusion experiment produces the brightest X-rays on Earth yet",
+      "id": "4c7f63ab9142",
+      "title": "IBM executive warns of risk of quantum computing hacks",
       "status": "关注中",
-      "heat": 32.0,
+      "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-16T00:25:40.721658+00:00",
+      "latestAt": "2026-10-16T14:52:46.055774+00:00",
       "sources": [
-        "New Scientist 物理",
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
+      ],
+      "links": [
+        {
+          "title": "IBM executive warns of risk of quantum computing hacks",
+          "url": "https://phys.org/news/2026-10-ibm-quantum-hacks.html",
+          "source": "Phys.org 物理新闻",
+          "score": 59.9,
+          "published_at": "2026-10-14T18:50:01+00:00"
+        },
+        {
+          "title": "Perfect and peak state transfer on IBM quantum hardware",
+          "url": "https://arxiv.org/abs/2610.20855",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.4,
+          "published_at": "2026-10-16T04:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.20855",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
+    },
+    {
+      "id": "42a73044cd88",
+      "title": "Nuclear clocks tick for the first time",
+      "status": "关注中",
+      "heat": 39.0,
+      "sourceCount": 2,
+      "signalCount": 4,
+      "latestAt": "2026-10-16T14:52:46.055774+00:00",
+      "sources": [
+        "Nature 量子物理",
         "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "Nuclear fusion experiment produces the brightest X-rays on Earth yet",
-          "url": "https://www.newscientist.com/article/2589237-nuclear-fusion-experiment-produces-the-brightest-x-rays-on-earth-yet/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 41.5,
-          "published_at": "2026-09-16T12:00:00+00:00"
+          "title": "Nuclear clocks tick for the first time",
+          "url": "https://www.nature.com/articles/d41586-026-03060-9",
+          "source": "Nature 量子物理",
+          "score": 57.8,
+          "published_at": "2026-10-07T00:00:00+00:00"
+        },
+        {
+          "title": "A thorium-229 optical nuclear clock with feedback loop",
+          "url": "https://www.nature.com/articles/s41586-026-11084-4",
+          "source": "Nature 量子物理",
+          "score": 57.8,
+          "published_at": "2026-10-07T00:00:00+00:00"
+        },
+        {
+          "title": "A nuclear clock synchronized to 229Th",
+          "url": "https://www.nature.com/articles/s41586-026-11122-1",
+          "source": "Nature 量子物理",
+          "score": 57.8,
+          "published_at": "2026-10-07T00:00:00+00:00"
         },
         {
           "title": "New spectroscopy method enables direct comparisons of nuclear sizes across heavy elements",
           "url": "https://phys.org/news/2026-10-spectroscopy-method-enables-comparisons-nuclear.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.7,
+          "score": 38.2,
           "published_at": "2026-10-15T23:00:01+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "核聚变点火实验产生出地球上最亮的X射线，其亮度可与某些恒星相比，为其他极端实验提供了可能。",
-      "digestTitle": "核聚变实验产生地球最亮X射线"
+      "digest": null,
+      "digestTitle": null
     },
     {
-      "id": "c6d097f9c821",
-      "title": "AI helps design new materials that work in the real world",
+      "id": "0f9e2f253ca0",
+      "title": "Taking the heat off tantalum",
       "status": "关注中",
-      "heat": 25.5,
+      "heat": 22.0,
       "sourceCount": 2,
-      "signalCount": 3,
-      "latestAt": "2026-10-16T00:25:40.721658+00:00",
+      "signalCount": 2,
+      "latestAt": "2026-10-16T14:52:46.055774+00:00",
       "sources": [
         "MIT News 物理",
-        "Phys.org 物理新闻"
+        "Nature 量子物理"
       ],
       "links": [
         {
-          "title": "AI helps design new materials that work in the real world",
-          "url": "https://news.mit.edu/2026/ai-helps-design-new-materials-that-work-in-real-world-0826",
-          "source": "MIT News 物理",
-          "score": 42.7,
-          "published_at": "2026-08-26T09:00:00+00:00"
+          "title": "Taking the heat off tantalum",
+          "url": "https://www.nature.com/articles/s41563-026-02766-5",
+          "source": "Nature 量子物理",
+          "score": 56.1,
+          "published_at": "2026-10-09T00:00:00+00:00"
         },
         {
-          "title": "MIT selected to lead new NSF materials research center",
-          "url": "https://news.mit.edu/2026/mit-to-lead-nsf-materials-research-center-0812",
+          "title": "A new way to watch heat move through electronics",
+          "url": "https://news.mit.edu/2026/new-way-watch-heat-move-through-electronics-0806",
           "source": "MIT News 物理",
-          "score": 42.7,
-          "published_at": "2026-08-12T20:15:00+00:00"
-        },
-        {
-          "title": "Computational model guides lighting design to improve color discrimination in aging eyes",
-          "url": "https://phys.org/news/2026-10-discrimination-aging-eyes.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.8,
-          "published_at": "2026-10-13T22:20:13+00:00"
+          "score": 41.2,
+          "published_at": "2026-08-06T04:00:00+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "MIT开发的“CrysVCD”工具可大幅减少筛选化学不稳定材料设计所需的时间和成本，帮助AI辅助设计能在真实环境中工作的新材料。",
-      "digestTitle": "MIT开发CrysVCD工具筛选稳定材料设计"
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "c973df2a3193",
@@ -145,7 +254,7 @@
       "heat": 18.0,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-16T00:25:40.721658+00:00",
+      "latestAt": "2026-10-16T14:52:46.055774+00:00",
       "sources": [
         "知识分子"
       ],
@@ -154,21 +263,21 @@
           "title": "“冰立方”中微子天文台科学家获得2026年物理诺奖",
           "url": "http://www.zhishifenzi.com/news/multiple/10707.html",
           "source": "知识分子",
-          "score": 56.4,
+          "score": 56.0,
           "published_at": "2026-10-11T14:53:31+00:00"
         },
         {
           "title": "诺奖颁给冰立方：“天马行空的想法，值得被支持几十年”",
           "url": "http://www.zhishifenzi.com/news/multiple/10693.html",
           "source": "知识分子",
-          "score": 33.8,
+          "score": 33.6,
           "published_at": "2026-10-11T12:16:58+00:00"
         },
         {
           "title": "“冰立方”为何获得2026诺贝尔物理奖？现场对话诺奖评委",
           "url": "http://www.zhishifenzi.com/news/multiple/10692.html",
           "source": "知识分子",
-          "score": 33.8,
+          "score": 33.6,
           "published_at": "2026-10-11T12:15:47+00:00"
         }
       ],
