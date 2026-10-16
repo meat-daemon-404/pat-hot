@@ -1,67 +1,67 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T15:02:02.939432+00:00",
+  "generatedAt": "2026-10-16T00:25:40.721658+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 2901.9,
+      "thisWeek": 3538.6,
       "lastWeek": 764.2,
-      "deltaPct": 279.7
+      "deltaPct": 363.0
     },
     {
       "category": "科研进展",
-      "thisWeek": 2823.2,
+      "thisWeek": 3046.0,
       "lastWeek": 693.0,
-      "deltaPct": 307.4
+      "deltaPct": 339.5
     },
     {
       "category": "通信与算力",
-      "thisWeek": 2291.5,
+      "thisWeek": 2803.4,
       "lastWeek": 695.0,
-      "deltaPct": 229.7
+      "deltaPct": 303.4
     },
     {
       "category": "其他",
-      "thisWeek": 2286.3,
+      "thisWeek": 2719.0,
       "lastWeek": 1537.0,
-      "deltaPct": 48.8
+      "deltaPct": 76.9
     },
     {
       "category": "产业与资本",
-      "thisWeek": 2168.7,
+      "thisWeek": 2712.5,
       "lastWeek": 960.6,
-      "deltaPct": 125.8
+      "deltaPct": 182.4
     },
     {
       "category": "光通信",
-      "thisWeek": 1869.5,
+      "thisWeek": 2593.5,
       "lastWeek": 618.8,
-      "deltaPct": 202.1
+      "deltaPct": 319.1
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1410.6,
+      "thisWeek": 1757.9,
       "lastWeek": 687.1,
-      "deltaPct": 105.3
+      "deltaPct": 155.8
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1136.8,
+      "thisWeek": 1162.7,
       "lastWeek": 689.8,
-      "deltaPct": 64.8
+      "deltaPct": 68.6
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 572.4,
+      "thisWeek": 612.1,
       "lastWeek": 606.5,
-      "deltaPct": -5.6
+      "deltaPct": 0.9
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 295.9,
+      "thisWeek": 341.6,
       "lastWeek": 196.9,
-      "deltaPct": 50.3
+      "deltaPct": 73.5
     },
     {
       "category": "光伏与新能源",
@@ -72,15 +72,27 @@
   ],
   "newTopics": [
     {
-      "topic_id": "5ebd16670b34",
-      "title": "Perovskite chiral multiple quantum wells with extended spin lifetime via efficient spin cascade",
-      "score": 2767.8,
+      "topic_id": "1c9ad7549052",
+      "title": "High-resolution retinal matrix imaging via computational motion and aberration correction",
+      "score": 2349.0,
       "days": 2
     },
     {
       "topic_id": "8c01b90c3aae",
       "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
-      "score": 923.4,
+      "score": 1601.7,
+      "days": 3
+    },
+    {
+      "topic_id": "5ebd16670b34",
+      "title": "Perovskite chiral multiple quantum wells with extended spin lifetime via efficient spin cascade",
+      "score": 1485.4,
+      "days": 2
+    },
+    {
+      "topic_id": "ce3f5f92cd2c",
+      "title": "工信部对我国网络强国建设提出四点建议",
+      "score": 1208.2,
       "days": 2
     },
     {
@@ -108,29 +120,30 @@
       "days": 1
     },
     {
-      "topic_id": "ce3f5f92cd2c",
-      "title": "工信部对我国网络强国建设提出四点建议",
-      "score": 559.0,
-      "days": 1
-    },
-    {
       "topic_id": "d9d1f75bf9c3",
       "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
       "score": 464.6,
       "days": 2
     },
     {
-      "topic_id": "cf327d1ed4dc",
-      "title": "工业和信息化部等五部门关于组织开展2026年度国家绿色算力设施推荐工作的通知",
-      "score": 283.8,
-      "days": 1
-    },
-    {
-      "topic_id": "9e5d6509787a",
-      "title": "大众首款纯电来了,但激光雷达可能不是全系",
-      "score": 276.1,
-      "days": 2
+      "topic_id": "40753cddc649",
+      "title": "大招齐发，英特尔直击网络转型",
+      "score": 349.8,
+      "days": 3
     }
   ],
-  "sustainedTopics": []
+  "sustainedTopics": [
+    {
+      "topic_id": "8c01b90c3aae",
+      "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
+      "days": 3,
+      "score": 1601.7
+    },
+    {
+      "topic_id": "40753cddc649",
+      "title": "大招齐发，英特尔直击网络转型",
+      "days": 3,
+      "score": 349.8
+    }
+  ]
 }

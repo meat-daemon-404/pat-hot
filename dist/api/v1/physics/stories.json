@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T15:02:02.939432+00:00",
-  "count": 3,
+  "generatedAt": "2026-10-16T00:25:40.721658+00:00",
+  "count": 4,
   "items": [
     {
-      "id": "81aecc617bfa",
+      "id": "22120ecf2802",
       "title": "From spin wave to superconducting circuit: A one-way street for quantum information",
       "status": "爆",
       "heat": 93.3,
       "sourceCount": 6,
-      "signalCount": 43,
-      "latestAt": "2026-10-15T15:02:02.939432+00:00",
+      "signalCount": 40,
+      "latestAt": "2026-10-16T00:25:40.721658+00:00",
       "sources": [
         "CERN 新闻",
         "MIT News 物理",
@@ -24,88 +24,119 @@
           "title": "From spin wave to superconducting circuit: A one-way street for quantum information",
           "url": "https://phys.org/news/2026-10-superconducting-circuit-street-quantum.html",
           "source": "Phys.org 物理新闻",
-          "score": 85.9,
+          "score": 85.6,
           "published_at": "2026-10-14T16:20:02+00:00"
-        },
-        {
-          "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
-          "url": "https://www.quantamagazine.org/triplet-of-ghostly-galaxies-hints-at-what-dark-matter-is-and-isnt-20261014/",
-          "source": "Quanta Magazine",
-          "score": 85.8,
-          "published_at": "2026-10-14T14:04:05+00:00"
         },
         {
           "title": "Quantum network test checks entanglement without having to trust detectors",
           "url": "https://phys.org/news/2026-10-quantum-network-entanglement-detectors.html",
           "source": "Phys.org 物理新闻",
-          "score": 85.7,
+          "score": 85.5,
           "published_at": "2026-10-14T11:00:01+00:00"
+        },
+        {
+          "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
+          "url": "https://www.quantamagazine.org/triplet-of-ghostly-galaxies-hints-at-what-dark-matter-is-and-isnt-20261014/",
+          "source": "Quanta Magazine",
+          "score": 85.5,
+          "published_at": "2026-10-14T14:04:05+00:00"
+        },
+        {
+          "title": "The public consultation for the Future Circular Collider (FCC) project generates extensive dialogue with the local communities",
+          "url": "https://home.cern/une-periode-de-participation-citoyenne-sur-le-projet-de-futur-collisionneur-circulaire-fcc-riche-en-echanges-avec-les-territoires/",
+          "source": "CERN 新闻",
+          "score": 85.5,
+          "published_at": "2026-10-14T11:25:18+00:00"
         },
         {
           "title": "Computer Security: 2FA to the TechNet",
           "url": "https://home.cern/computer-security-2fa-to-the-technet/",
           "source": "CERN 新闻",
-          "score": 85.7,
+          "score": 85.4,
           "published_at": "2026-10-14T09:43:10+00:00"
-        },
-        {
-          "title": "New topological microscope tip reveals evidence of 2D altermagnetism",
-          "url": "https://phys.org/news/2026-10-topological-microscope-reveals-evidence-2d.html",
-          "source": "Phys.org 物理新闻",
-          "score": 85.3,
-          "published_at": "2026-10-13T21:10:01+00:00"
-        }
-      ],
-      "trend": "up",
-      "trendPct": 16.6,
-      "badges": [
-        "rising"
-      ],
-      "digest": "美国能源部阿贡国家实验室与大学合作团队报告，可将自旋波单向转换为超导电路信号，为量子信息传输提供新路径。\n\nQuanta Magazine报道，三组“幽灵星系”碰撞后疑似失去暗物质，对暗物质本质及替代引力理论构成挑战。\n\n另有研究将拓扑材料制成扫描隧道显微镜探针，在原子分辨率下探测到二维反铁磁性的自旋电子态证据。",
-      "digestTitle": "多领域物理与量子研究进展概览",
-      "llmScore": 15.0
-    },
-    {
-      "id": "11e25bee56d4",
-      "title": "The public consultation for the Future Circular Collider (FCC) project generates extensive dialogue with the local communities",
-      "status": "关注中",
-      "heat": 35.5,
-      "sourceCount": 2,
-      "signalCount": 3,
-      "latestAt": "2026-10-15T15:02:02.939432+00:00",
-      "sources": [
-        "CERN 新闻",
-        "MIT News 物理"
-      ],
-      "links": [
-        {
-          "title": "The public consultation for the Future Circular Collider (FCC) project generates extensive dialogue with the local communities",
-          "url": "https://home.cern/une-periode-de-participation-citoyenne-sur-le-projet-de-futur-collisionneur-circulaire-fcc-riche-en-echanges-avec-les-territoires/",
-          "source": "CERN 新闻",
-          "score": 61.9,
-          "published_at": "2026-10-14T11:25:18+00:00"
-        },
-        {
-          "title": "MIT Quantum Initiative launches postdoctoral fellowship program",
-          "url": "https://news.mit.edu/2026/mit-quantum-initiative-launches-postdoctoral-fellowship-0831",
-          "source": "MIT News 物理",
-          "score": 42.7,
-          "published_at": "2026-08-31T19:30:00+00:00"
-        },
-        {
-          "title": "MIT projects selected for funding under US Department of Energy’s Genesis Mission",
-          "url": "https://news.mit.edu/2026/mit-projects-selected-funding-under-doe-genesis-mission-0723",
-          "source": "MIT News 物理",
-          "score": 42.7,
-          "published_at": "2026-07-23T12:00:00+00:00"
         }
       ],
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": "欧洲核子研究中心（CERN）的未来环形对撞机（FCC）项目公众咨询已于2024年10月在法国（10月1日）和瑞士（10月2日）结束。该咨询自春季启动，历时四个月，旨在与当地社区进行互动和对话。",
-      "digestTitle": "CERN未来环形对撞机项目完成公众咨询",
+      "digest": "美国能源部阿贡国家实验室与相关大学团队报告了一项将自旋波与超导电路耦合的研究，旨在为量子信息传输提供新路径，但报道未给出已验证的实用效果。\n\n另一项量子网络测试提出了一种无需信任探测器的纠缠验证方法，用于提升未来量子通信的安全性。\n\n天文学方面，Quanta Magazine 报道了一组被称为“幽灵”的星系，其碰撞后似乎缺少暗物质，这对某些替代引力理论构成挑战。\n\n欧洲核子研究组织（CERN）完成了未来环形对撞机（FCC）项目在法国和瑞士的公众咨询，并完成了其单点登录及相关服务网关的双因素认证部署。",
+      "digestTitle": "多领域科研与设施进展概览",
       "llmScore": 28.5
+    },
+    {
+      "id": "f61039cbdb6f",
+      "title": "Nuclear fusion experiment produces the brightest X-rays on Earth yet",
+      "status": "关注中",
+      "heat": 32.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-16T00:25:40.721658+00:00",
+      "sources": [
+        "New Scientist 物理",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "Nuclear fusion experiment produces the brightest X-rays on Earth yet",
+          "url": "https://www.newscientist.com/article/2589237-nuclear-fusion-experiment-produces-the-brightest-x-rays-on-earth-yet/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 41.5,
+          "published_at": "2026-09-16T12:00:00+00:00"
+        },
+        {
+          "title": "New spectroscopy method enables direct comparisons of nuclear sizes across heavy elements",
+          "url": "https://phys.org/news/2026-10-spectroscopy-method-enables-comparisons-nuclear.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.7,
+          "published_at": "2026-10-15T23:00:01+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": "核聚变点火实验产生出地球上最亮的X射线，其亮度可与某些恒星相比，为其他极端实验提供了可能。",
+      "digestTitle": "核聚变实验产生地球最亮X射线"
+    },
+    {
+      "id": "c6d097f9c821",
+      "title": "AI helps design new materials that work in the real world",
+      "status": "关注中",
+      "heat": 25.5,
+      "sourceCount": 2,
+      "signalCount": 3,
+      "latestAt": "2026-10-16T00:25:40.721658+00:00",
+      "sources": [
+        "MIT News 物理",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "AI helps design new materials that work in the real world",
+          "url": "https://news.mit.edu/2026/ai-helps-design-new-materials-that-work-in-real-world-0826",
+          "source": "MIT News 物理",
+          "score": 42.7,
+          "published_at": "2026-08-26T09:00:00+00:00"
+        },
+        {
+          "title": "MIT selected to lead new NSF materials research center",
+          "url": "https://news.mit.edu/2026/mit-to-lead-nsf-materials-research-center-0812",
+          "source": "MIT News 物理",
+          "score": 42.7,
+          "published_at": "2026-08-12T20:15:00+00:00"
+        },
+        {
+          "title": "Computational model guides lighting design to improve color discrimination in aging eyes",
+          "url": "https://phys.org/news/2026-10-discrimination-aging-eyes.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.8,
+          "published_at": "2026-10-13T22:20:13+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": "MIT开发的“CrysVCD”工具可大幅减少筛选化学不稳定材料设计所需的时间和成本，帮助AI辅助设计能在真实环境中工作的新材料。",
+      "digestTitle": "MIT开发CrysVCD工具筛选稳定材料设计"
     },
     {
       "id": "c973df2a3193",
@@ -114,7 +145,7 @@
       "heat": 18.0,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-15T15:02:02.939432+00:00",
+      "latestAt": "2026-10-16T00:25:40.721658+00:00",
       "sources": [
         "知识分子"
       ],
@@ -123,21 +154,21 @@
           "title": "“冰立方”中微子天文台科学家获得2026年物理诺奖",
           "url": "http://www.zhishifenzi.com/news/multiple/10707.html",
           "source": "知识分子",
-          "score": 56.7,
+          "score": 56.4,
           "published_at": "2026-10-11T14:53:31+00:00"
         },
         {
           "title": "诺奖颁给冰立方：“天马行空的想法，值得被支持几十年”",
           "url": "http://www.zhishifenzi.com/news/multiple/10693.html",
           "source": "知识分子",
-          "score": 34.0,
+          "score": 33.8,
           "published_at": "2026-10-11T12:16:58+00:00"
         },
         {
           "title": "“冰立方”为何获得2026诺贝尔物理奖？现场对话诺奖评委",
           "url": "http://www.zhishifenzi.com/news/multiple/10692.html",
           "source": "知识分子",
-          "score": 34.0,
+          "score": 33.8,
           "published_at": "2026-10-11T12:15:47+00:00"
         }
       ],

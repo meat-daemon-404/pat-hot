@@ -1,21 +1,22 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T15:02:02.939432+00:00",
-  "count": 8,
+  "generatedAt": "2026-10-16T00:25:40.721658+00:00",
+  "count": 7,
   "items": [
     {
-      "id": "a4443b62394e",
-      "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+      "id": "e170adf99bd7",
+      "title": "Rigorous analysis confirms NASA's Artemis II heat shield performance",
       "status": "爆",
-      "heat": 90.0,
-      "sourceCount": 8,
-      "signalCount": 60,
-      "latestAt": "2026-10-15T15:02:02.939432+00:00",
+      "heat": 91.1,
+      "sourceCount": 9,
+      "signalCount": 72,
+      "latestAt": "2026-10-16T00:25:40.721658+00:00",
       "sources": [
         "Astronomy Magazine",
         "ESA 空间科学",
         "LIGO",
         "MIT News 太空探索",
+        "NASA 快讯",
         "New Scientist 太空",
         "Phys.org 太空新闻",
         "Universe Today",
@@ -23,47 +24,47 @@
       ],
       "links": [
         {
-          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
-          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
-          "source": "Astronomy Magazine",
+          "title": "Rigorous analysis confirms NASA's Artemis II heat shield performance",
+          "url": "https://phys.org/news/2026-10-rigorous-analysis-nasa-artemis-ii.html",
+          "source": "Phys.org 太空新闻",
+          "score": 86.5,
+          "published_at": "2026-10-15T23:40:01+00:00"
+        },
+        {
+          "title": "Lunar fault maps reveal how much the moon is shrinking",
+          "url": "https://phys.org/news/2026-10-lunar-fault-reveal-moon.html",
+          "source": "Phys.org 太空新闻",
+          "score": 86.5,
+          "published_at": "2026-10-15T22:40:08+00:00"
+        },
+        {
+          "title": "How did Mars get its moons? Japan's MMX space mission aims to solve the puzzle",
+          "url": "https://phys.org/news/2026-10-mars-moons-japan-mmx-space.html",
+          "source": "Phys.org 太空新闻",
           "score": 86.4,
-          "published_at": "2026-10-15T11:50:02+00:00"
+          "published_at": "2026-10-15T19:40:05+00:00"
         },
         {
-          "title": "Green, pink and purple: Astronomers reveal the surprising true colors of white dwarf stars",
-          "url": "https://phys.org/news/2026-10-green-pink-purple-astronomers-reveal.html",
-          "source": "Phys.org 太空新闻",
-          "score": 86.1,
-          "published_at": "2026-10-15T00:10:01+00:00"
+          "title": "NASA to Help Unlock Mysteries of Mars’ Moons in Upcoming Mission",
+          "url": "https://science.nasa.gov/directorates/smd/planetary-science-division/nasa-to-help-unlock-mysteries-of-mars-moons-in-upcoming-mission/",
+          "source": "NASA 快讯",
+          "score": 86.4,
+          "published_at": "2026-10-15T19:58:08+00:00"
         },
         {
-          "title": "NASA develops batteries to power humanity's return to moon",
-          "url": "https://phys.org/news/2026-10-nasa-batteries-power-humanity-moon.html",
-          "source": "Phys.org 太空新闻",
-          "score": 86.1,
-          "published_at": "2026-10-14T23:40:02+00:00"
-        },
-        {
-          "title": "Astronomers Observe The Limb Darkening Effect On Nearby Stars",
-          "url": "https://www.universetoday.com/articles/astronomers-observe-the-limb-darkening-effect-on-nearby-stars",
+          "title": "Host Stars Shape Their Planetary Systems Into Two Families",
+          "url": "https://www.universetoday.com/articles/host-stars-shape-their-planetary-systems-into-two-families",
           "source": "Universe Today",
-          "score": 85.9,
-          "published_at": "2026-10-14T16:04:42+00:00"
-        },
-        {
-          "title": "Astronomers Uncover More Intriguing Detail in an Ancient Supernova Remnant",
-          "url": "https://www.universetoday.com/articles/astronomers-uncover-more-intriguing-detail-in-an-ancient-supernova-remnant",
-          "source": "Universe Today",
-          "score": 85.9,
-          "published_at": "2026-10-14T15:44:31+00:00"
+          "score": 86.3,
+          "published_at": "2026-10-15T17:07:40+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "华威大学天文学家发现白矮星可呈现多种颜色，并首次找到一颗在人眼中会呈现绿色的白矮星。此前白矮星通常被认为只发出蓝白色光，这一发现拓展了对这类恒星表面物理条件的认识。\n\n天文学家在若干邻近恒星上观测到与太阳类似的边缘昏暗效应，即恒星边缘比中心区域更暗。该效应可帮助改进对恒星大气及系外行星探测的分析。\n\nNASA研究人员正在开发能在极端低温下工作的电池，以支持人类重返月球的计划。报道指出，普通电池在严寒环境中性能会显著下降，因此需要新的储能方案。",
-      "digestTitle": "多项天文新发现与NASA月球电池研发进展",
-      "llmScore": 46.0
+      "digest": "NASA的Artemis II任务将四名宇航员绕月飞行并安全带回地球，为后续载人登月奠定基础。此次任务的热盾性能经过严格分析，确认其表现符合预期。",
+      "digestTitle": "Artemis II热盾性能获严格分析确认",
+      "llmScore": 34.5
     },
     {
       "id": "d1add21bb66a",
@@ -72,7 +73,7 @@
       "heat": 54.0,
       "sourceCount": 4,
       "signalCount": 4,
-      "latestAt": "2026-10-15T15:02:02.939432+00:00",
+      "latestAt": "2026-10-16T00:25:40.721658+00:00",
       "sources": [
         "ESA 空间科学",
         "MIT News 太空探索",
@@ -84,21 +85,21 @@
           "title": "A trip to Mars could come at a heartbreaking cost",
           "url": "https://phys.org/news/2026-10-mars-heartbreaking.html",
           "source": "Phys.org 太空新闻",
-          "score": 70.4,
+          "score": 70.1,
           "published_at": "2026-10-14T23:00:01+00:00"
         },
         {
           "title": "A Trip to Mars Could Break Your Heart - Literally",
           "url": "https://www.universetoday.com/articles/a-trip-to-mars-could-break-your-heart-literally",
           "source": "Universe Today",
-          "score": 70.1,
+          "score": 69.8,
           "published_at": "2026-10-14T11:57:41+00:00"
         },
         {
           "title": "Happy New Year on Mars",
           "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Happy_New_Year_on_Mars",
           "source": "ESA 空间科学",
-          "score": 60.6,
+          "score": 60.3,
           "published_at": "2026-09-30T06:00:00+00:00"
         },
         {
@@ -112,69 +113,50 @@
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": "科学家指出，宇航员首次前往火星或深空时，将面对地球表面无法提供的两种防护——辐射和失重，而这两者已被证实会对人体产生深远影响。报道特别强调，这种影响可能直接作用于心脏，使深空旅行对宇航员构成严峻的健康挑战。",
-      "digestTitle": "深空旅行对宇航员心脏的潜在影响"
+      "digest": "科学家指出，人类首次前往火星或深空时，宇航员将面对地球表面自然屏蔽的两个威胁：辐射和失重，两者均可能对身体造成严重影响。报道以“可能伤及心脏”为喻，强调这些风险是载人火星任务必须解决的核心难题。\n\n此外，欧洲空间局（ESA）公布，2026年9月30日10:16 CEST（08:16 UTC）火星将开始绕太阳的新一年轨道。麻省理工学院（MIT）的MADMEN项目则通过模拟任务，让两名学生体验火星任务中的挑战与团队协作。",
+      "digestTitle": "首次载人火星任务面临辐射与失重健康风险"
     },
     {
-      "id": "b2173dfe1dd3",
-      "title": "The Atacama Cosmology Telescope: DR6 Constraints on Isotropic Time-Dependent Cosmic Birefringence from Axion-like Particles",
+      "id": "607e65e99828",
+      "title": "Chandra breaks down 'Treble Clef's' galaxy cluster collision",
       "status": "发酵中",
-      "heat": 53.3,
+      "heat": 53.0,
       "sourceCount": 3,
-      "signalCount": 5,
-      "latestAt": "2026-10-15T15:02:02.939432+00:00",
+      "signalCount": 3,
+      "latestAt": "2026-10-16T00:25:40.721658+00:00",
       "sources": [
+        "NASA 快讯",
         "Phys.org 太空新闻",
-        "Universe Today",
-        "arXiv astro-ph.CO 论文速递"
+        "Universe Today"
       ],
       "links": [
         {
-          "title": "The Atacama Cosmology Telescope: DR6 Constraints on Isotropic Time-Dependent Cosmic Birefringence from Axion-like Particles",
-          "url": "https://arxiv.org/abs/2610.19049",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 55.2,
-          "published_at": "2026-10-15T04:00:00+00:00"
+          "title": "Chandra breaks down 'Treble Clef's' galaxy cluster collision",
+          "url": "https://phys.org/news/2026-10-chandra-treble-clef-galaxy-cluster.html",
+          "source": "Phys.org 太空新闻",
+          "score": 65.8,
+          "published_at": "2026-10-15T16:20:14+00:00"
         },
         {
-          "title": "Cosmology with strong gravitational lenses",
-          "url": "https://arxiv.org/abs/2610.19598",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 55.2,
-          "published_at": "2026-10-15T04:00:00+00:00"
-        },
-        {
-          "title": "Magnetically Charged Black Holes from Grand Unified Theory",
-          "url": "https://arxiv.org/abs/2610.19440",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 55.2,
-          "published_at": "2026-10-15T04:00:00+00:00"
+          "title": "Chandra Finds Possible Origin of ‘Treble Clef’ Waves",
+          "url": "https://www.nasa.gov/image-article/chandra-finds-possible-origin-of-treble-clef-waves/",
+          "source": "NASA 快讯",
+          "score": 65.7,
+          "published_at": "2026-10-15T14:19:06+00:00"
         },
         {
           "title": "Chandrasekhar Placed A Limit On White Dwarfs, But A New Study Finds This Limit Is Not Absolute",
           "url": "https://www.universetoday.com/articles/chandrasekhar-placed-a-limit-on-white-dwarfs-but-a-new-study-finds-this-limit-is-not-absolute",
           "source": "Universe Today",
-          "score": 41.0,
-          "published_at": "2026-10-14T14:57:08+00:00"
-        },
-        {
-          "title": "Strong magnetic fields could allow white dwarfs to grow beyond the Chandrasekhar limit",
-          "url": "https://phys.org/news/2026-10-strong-magnetic-fields-white-dwarfs.html",
-          "source": "Phys.org 太空新闻",
           "score": 39.0,
-          "published_at": "2026-10-09T17:20:19+00:00"
+          "published_at": "2026-10-14T14:57:08+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "一项新研究提出，强磁场白矮星可能突破钱德拉塞卡极限，即白矮星质量不超过1.4倍太阳质量的传统上限，并可能形成所谓“超钱德拉塞卡”白矮星。研究还讨论了这类天体如何形成。该结论针对的是强磁场白矮星，不适用于不强烈自转或不受强磁场影响的普通白矮星。",
-      "digestTitle": "强磁场白矮星或可突破钱德拉塞卡极限",
-      "refs": {
-        "arxiv": "2610.19049",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
+      "digest": "天文学家利用NASA的钱德拉X射线天文台分析了一个形似高音谱号的射电波结构，发现其很可能由超大质量黑洞的一次爆发引起。\n\n该结构因形状酷似音乐符号而被命名为“Treble Clef”。钱德拉的观测为解释这一罕见射电形态提供了关键线索，将成因指向活动星系核中的黑洞活动。",
+      "digestTitle": "钱德拉望远镜揭示“高音谱号”射电结构成因"
     },
     {
       "id": "e6777b1261a8",
@@ -183,7 +165,7 @@
       "heat": 49.5,
       "sourceCount": 2,
       "signalCount": 7,
-      "latestAt": "2026-10-15T15:02:02.939432+00:00",
+      "latestAt": "2026-10-16T00:25:40.721658+00:00",
       "sources": [
         "LIGO",
         "arXiv astro-ph.CO 论文速递"
@@ -193,21 +175,21 @@
           "title": "Audible curvaton: modulated phase transition as the origin of large-scale curvature perturbations and gravitational wave anisotropies",
           "url": "https://arxiv.org/abs/2610.18975",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 54.9,
+          "score": 54.6,
           "published_at": "2026-10-15T04:00:00+00:00"
         },
         {
           "title": "Identity Crisis: Untangling Mass-Ordering Artifacts from Compact-Object Pairing in Gravitational-Wave Populations",
           "url": "https://arxiv.org/abs/2610.18962",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 54.9,
+          "score": 54.6,
           "published_at": "2026-10-15T04:00:00+00:00"
         },
         {
           "title": "All Quiet on the Vector Front: Scalar Growth and Perturbative Control in Horndeski--Weyl-squared Gravity",
           "url": "https://arxiv.org/abs/2610.20156",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 54.9,
+          "score": 54.6,
           "published_at": "2026-10-15T04:00:00+00:00"
         },
         {
@@ -225,10 +207,10 @@
           "published_at": "2026-05-13T01:34:22+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": "LIGO–Virgo–KAGRA合作组发布GWTC-5.0引力波事件目录，新增161个2024年4月至2025年1月底探测到的事件，使目录总数创下引力波天文观测精度的新纪录。\n\n同一网络还推出名为“天体物理校准”的新方法，用于自动调整探测器信号以提升对引力波的灵敏度，其作用类似音乐制作中的自动调音。",
+      "digest": "LIGO–Virgo–KAGRA合作组发布了GWTC-5.0引力波事件目录，新增161个在2024年4月至2025年1月底之间探测到的事件，使目录中的引力波事件总数创下新纪录，标志着引力波天文学在精度上迈出新的一步。\n\n与此同时，该探测器网络引入了一项名为“天体物理校准”的新技术，用于提升仪器对引力波的灵敏度，其作用类似于音乐制作中的自动调音功能。",
       "digestTitle": null,
       "refs": {
         "arxiv": "2610.18975",
@@ -243,7 +225,7 @@
       "heat": 39.7,
       "sourceCount": 3,
       "signalCount": 3,
-      "latestAt": "2026-10-15T15:02:02.939432+00:00",
+      "latestAt": "2026-10-16T00:25:40.721658+00:00",
       "sources": [
         "ESA 空间科学",
         "Phys.org 太空新闻",
@@ -254,71 +236,29 @@
           "title": "Curiosity Greets a Spectacular Dawn Sky on Mars",
           "url": "https://www.universetoday.com/articles/curiosity-greets-a-spectacular-dawn-sky-on-mars",
           "source": "Universe Today",
-          "score": 65.3,
+          "score": 65.0,
           "published_at": "2026-10-14T13:51:00+00:00"
         },
         {
           "title": "The dying sun could tear the solar system apart sooner than thought",
           "url": "https://phys.org/news/2026-10-dying-sun-solar-sooner-thought.html",
           "source": "Phys.org 太空新闻",
-          "score": 64.1,
+          "score": 63.8,
           "published_at": "2026-10-12T17:20:06+00:00"
         },
         {
           "title": "Mars’s oddest cloud may be even odder than we thought",
           "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
           "source": "ESA 空间科学",
-          "score": 60.7,
+          "score": 60.4,
           "published_at": "2026-10-07T15:00:00+00:00"
         }
       ],
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": "NASA的“好奇号”火星车在夏普山山坡拍摄到一幅壮观的火星黎明全景图，展示了火星独特的地质景观，该图像未经白平衡调整。\n\n欧洲航天局的“火星快车”探测器结合先进气象模型发现，火星上最奇特的云层背后可能存在非常特殊的物理机制。\n\n一项发表在《天体物理学杂志》上的新研究表明，太阳在死亡过程中可能会比预期更早地撕裂太阳系，其最终命运取决于太阳如何失去大量质量。",
+      "digest": "NASA的“好奇号”火星车在夏普山拍摄到一幅壮观的火星黎明全景图，展示了火星独特的地质景观。\n\n与此同时，一项发表在《天体物理学杂志》上的新研究提出，太阳在死亡过程中可能会比此前预计的更早撕裂太阳系，对太阳系的最终命运提出了新的看法。\n\n此外，欧洲空间局的“火星快车”探测器结合先进的火星气象模型，发现火星上最奇特的云层背后可能存在一些非常规的物理现象。",
       "digestTitle": "火星与太阳研究新发现"
-    },
-    {
-      "id": "f152c5fc928e",
-      "title": "SPHEREx Just Took the Fingerprints of Failed Stars Across Our Cosmic Neighborhood",
-      "status": "发酵中",
-      "heat": 39.7,
-      "sourceCount": 3,
-      "signalCount": 3,
-      "latestAt": "2026-10-15T15:02:02.939432+00:00",
-      "sources": [
-        "New Scientist 太空",
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "SPHEREx Just Took the Fingerprints of Failed Stars Across Our Cosmic Neighborhood",
-          "url": "https://www.universetoday.com/articles/spherex-just-took-the-fingerprints-of-failed-stars-across-our-cosmic-neighborhood",
-          "source": "Universe Today",
-          "score": 65.9,
-          "published_at": "2026-10-15T13:08:24+00:00"
-        },
-        {
-          "title": "Impossibly fast-moving stars are revealing the Milky Way’s mysterious heart",
-          "url": "https://www.newscientist.com/article/2590428-impossibly-fast-moving-stars-are-revealing-the-milky-ways-mysterious-heart/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 60.0,
-          "published_at": "2026-10-06T15:00:00+00:00"
-        },
-        {
-          "title": "ALMA catches a dying star mid-transformation, with a ring from its last outburst",
-          "url": "https://phys.org/news/2026-10-alma-dying-star-mid-outburst.html",
-          "source": "Phys.org 太空新闻",
-          "score": 38.4,
-          "published_at": "2026-10-12T15:00:49+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": "美国宇航局SPHEREx太空望远镜完成对银河系近邻区域的巡天观测，首次系统绘制出褐矮星——即因质量不足无法点燃核聚变、未能成为真正恒星的“失败恒星”——的分布图。褐矮星质量介于大行星与恒星之间，此前因数量稀少、亮度极低而难以普查，SPHEREx通过红外波段观测克服了这一限制。\n\n此次成果为理解恒星形成过程中质量下限的成因提供了新数据。",
-      "digestTitle": "SPHEREx首次绘制褐矮星分布图"
     },
     {
       "id": "39248650a0dc",
@@ -327,7 +267,7 @@
       "heat": 39.0,
       "sourceCount": 2,
       "signalCount": 4,
-      "latestAt": "2026-10-15T15:02:02.939432+00:00",
+      "latestAt": "2026-10-16T00:25:40.721658+00:00",
       "sources": [
         "LIGO",
         "arXiv astro-ph.CO 论文速递"
@@ -337,7 +277,7 @@
           "title": "Testing Departures from the LambdaCDM model in f(T) Gravity with DESI DR2",
           "url": "https://arxiv.org/abs/2610.20002",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 50.4,
+          "score": 50.1,
           "published_at": "2026-10-15T04:00:00+00:00"
         },
         {
@@ -362,10 +302,10 @@
           "published_at": "2025-11-18T16:06:59+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": "LIGO-Virgo-KAGRA 合作组用 O4a 阶段数据重新检验广义相对论，纳入 42 个新的高显著性黑洞并合事件；其中 2025 年 1 月观测到的 GW250114 是迄今最清晰的引力波信号，强度约为 2015 年首次探测的三倍。合作组称，这些观测未发现与广义相对论相矛盾的证据。\n\n另一项研究结合 DESI DR2 重子声学振荡测量与其他宇宙学观测，报告了偏离 ΛCDM 模型的迹象，并在 f(T) 引力框架下检验这些偏离。该结果与广义相对论检验属于不同方向：前者针对宇宙学模型，后者针对引力理论本身。",
+      "digest": "LIGO-Virgo-KAGRA 合作组利用 O4a 阶段新增的 42 个高显著性黑洞并合事件，重新检验了广义相对论的有效性，未发现与广义相对论相悖的偏离。其中，2025 年 1 月观测到的 GW250114 信号是迄今最清晰的引力波事件，强度约为 2015 年首次探测的三倍，为检验广义相对论提供了极佳样本。\n\n与此同时，一项基于 DESI 重子声学振荡（BAO）测量并结合其他宇宙学观测的分析指出，在 f(T) 引力框架下，数据呈现出偏离 ΛCDM 模型的迹象。该研究旨在探索超越标准宇宙学模型的引力理论可能性。\n\n上述工作共同推进了引力波天文学的发展，LIGO-Virgo-KAGRA 合作组宣布其第四轮观测（O4）已成功结束，标志着引力波宇宙探索迈出了重要一步。",
       "digestTitle": "引力波观测检验广义相对论与宇宙学模型",
       "refs": {
         "arxiv": "2610.20002",
@@ -380,7 +320,7 @@
       "heat": 32.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-15T15:02:02.939432+00:00",
+      "latestAt": "2026-10-16T00:25:40.721658+00:00",
       "sources": [
         "ESA 空间科学",
         "arXiv astro-ph.CO 论文速递"
@@ -390,22 +330,22 @@
           "title": "Galaxies in a cosmic house of mirrors",
           "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/Galaxies_in_a_cosmic_house_of_mirrors",
           "source": "ESA 空间科学",
-          "score": 50.3,
+          "score": 50.0,
           "published_at": "2026-09-29T08:00:00+00:00"
         },
         {
           "title": "A Step-Like Transition Underlying the Life and Death of Galaxies",
           "url": "https://arxiv.org/abs/2610.20505",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 47.4,
+          "score": 47.1,
           "published_at": "2026-10-15T04:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": "欧洲空间局（ESA）发布詹姆斯·韦布空间望远镜（JWST）月度图片，画面中星系因引力透镜效应被扭曲、放大并多次成像，呈现出类似“宇宙万花筒”的视觉效果。\n\n与此同时，一篇发表于arXiv的天体物理学论文提出，星系停止形成恒星（即“星系死亡”）的过程可能存在一个阶梯式的转变机制，试图为多种已提出的物理机制提供一个统一的解释框架。",
-      "digestTitle": "JWST拍摄引力透镜星系与星系死亡机制研究"
+      "digest": "詹姆斯·韦布空间望远镜（JWST）拍摄到一幅被引力透镜效应扭曲、放大的星系图像，多个星系在画面中呈现被拉伸、重复的形态，如同进入“宇宙万花筒”。该图像由NASA、ESA与加拿大航天局联合发布，展示了遥远星系在前景天体引力作用下的细节结构。\n\n与此同时，一篇arXiv论文提出，星系停止形成恒星的过程可能存在一种“阶梯式转变”，试图为多种已知的星系演化机制提供一个统一的简单框架。该研究旨在解释星系如何从活跃产星状态过渡到“死亡”状态，但尚未形成广泛共识。",
+      "digestTitle": "JWST揭示引力透镜下的星系镜像奇观"
     }
   ]
 }
