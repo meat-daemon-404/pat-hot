@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T14:52:46.055774+00:00",
+  "generatedAt": "2026-10-17T00:29:59.302520+00:00",
   "channel": "tech",
-  "count": 31,
+  "count": 33,
   "items": [
     {
       "id": "7455a5c2203a",
@@ -12,6 +12,34 @@
       "url": "https://arxiv.org/abs/2610.21027",
       "doi": null,
       "arxiv": "2610.21027",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "科研进展",
+      "published_at": "2026-10-16T04:00:00+00:00",
+      "selected": true
+    },
+    {
+      "id": "1ab7be5086eb",
+      "title": "Monte Carlo Framework for Physics-Based Design and Optimization of X-Ray Compressive Ghost Imaging Systems",
+      "channel": "tech",
+      "source": "arXiv 光学与光子学 (physics.optics)",
+      "url": "https://arxiv.org/abs/2610.21334",
+      "doi": null,
+      "arxiv": "2610.21334",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "光学元件与成像",
+      "published_at": "2026-10-16T04:00:00+00:00",
+      "selected": true
+    },
+    {
+      "id": "bb829557cd7b",
+      "title": "Bayesian Joint Reconstruction and Uncertainty Quantification for Limited-Data Multi-Contrast X-Ray CT",
+      "channel": "tech",
+      "source": "arXiv 光学与光子学 (physics.optics)",
+      "url": "https://arxiv.org/abs/2610.21406",
+      "doi": null,
+      "arxiv": "2610.21406",
       "via": "feed_text",
       "confidence": "verified",
       "category": "科研进展",
@@ -341,20 +369,6 @@
       "selected": true
     },
     {
-      "id": "f3b877d59b3d",
-      "title": "Phase control of interfering stimulated Raman pathways in the XUV regime",
-      "channel": "tech",
-      "source": "Nature Photonics",
-      "url": "https://www.nature.com/articles/s41566-026-02024-9",
-      "doi": "10.1038/s41566-026-02024-9",
-      "arxiv": null,
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "科研进展",
-      "published_at": "2026-10-09T00:00:00+00:00",
-      "selected": true
-    },
-    {
       "id": "881334862d43",
       "title": "High-entropy molecular contacts enable high-efficiency and stable perovskite solar cells",
       "channel": "tech",
@@ -365,6 +379,20 @@
       "via": "feed_text",
       "confidence": "verified",
       "category": "光伏与新能源",
+      "published_at": "2026-10-09T00:00:00+00:00",
+      "selected": true
+    },
+    {
+      "id": "f3b877d59b3d",
+      "title": "Phase control of interfering stimulated Raman pathways in the XUV regime",
+      "channel": "tech",
+      "source": "Nature Photonics",
+      "url": "https://www.nature.com/articles/s41566-026-02024-9",
+      "doi": "10.1038/s41566-026-02024-9",
+      "arxiv": null,
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "科研进展",
       "published_at": "2026-10-09T00:00:00+00:00",
       "selected": true
     },

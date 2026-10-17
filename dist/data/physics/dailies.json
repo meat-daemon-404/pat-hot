@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T14:52:46.055774+00:00",
-  "count": 44,
+  "generatedAt": "2026-10-17T00:29:59.302520+00:00",
+  "count": 45,
   "dailies": {
     "2026-07-21": {
       "date": "2026-07-21",
@@ -5272,10 +5272,10 @@
         "zh_full": null,
         "reason": null,
         "density": null,
-        "score": 86.4,
+        "score": 79.5,
         "role": "科研",
         "published_at": "2026-10-16T12:00:01+00:00",
-        "topic_id": "07e022871d50",
+        "topic_id": "1b53b99d326d",
         "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
       },
       "picks": [
@@ -5287,10 +5287,10 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 72.7,
+          "score": 65.8,
           "role": "科研",
           "published_at": "2026-10-16T04:00:00+00:00",
-          "topic_id": "07e022871d50",
+          "topic_id": "1b53b99d326d",
           "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
         },
         {
@@ -5301,10 +5301,24 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 72.7,
+          "score": 65.8,
           "role": "科研",
           "published_at": "2026-10-16T04:00:00+00:00",
-          "topic_id": "07e022871d50",
+          "topic_id": "1b53b99d326d",
+          "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+        },
+        {
+          "title": "Physics-guided AI reconstructs hidden patterns inside ultrathin magnets from external fields",
+          "url": "https://phys.org/news/2026-10-physics-ai-reconstructs-hidden-patterns.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "To build faster and more energy-efficient computers, researchers need to understand nanoscale magnetic materials. But looking inside these tiny magnets is surprisingly difficult: Modern microscopes only measure the magnetic field outside th",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 47.8,
+          "role": "科研",
+          "published_at": "2026-10-16T15:40:12+00:00",
+          "topic_id": "1b53b99d326d",
           "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
         },
         {
@@ -5315,25 +5329,11 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 51.9,
+          "score": 44.8,
           "role": "科研",
           "published_at": "2026-10-16T13:25:08+00:00",
-          "topic_id": "07e022871d50",
-          "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
-        },
-        {
-          "title": "Laser pulses bring order to a quantum material's tiny electrical regions",
-          "url": "https://phys.org/news/2026-10-laser-pulses-quantum-material-tiny.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "奥本大学研究人员用激光脉冲让晶体内部微小的带电区域变得有序，回答了该量子材料如何自我组织的长期问题，并展示了光控制材料行为的可能性，为信息处理与存储的新技术探索铺路。",
-          "zh_full": "奥本大学（Auburn University）的物理学家利用激光脉冲，使晶体内部微小的带电“岛屿”（即电畴）变得有序。这一发现有助于回答一个存在数十年的问题：该量子材料是如何自我组织的。研究还展示了光如何被用来控制该材料的行为，这被视为迈向探索用于处理和存储信息的新技术的一步。",
-          "reason": "光控量子材料有序化，信息存储新方向",
-          "density": "高",
-          "score": 51.5,
-          "role": "科研",
-          "published_at": "2026-10-15T17:00:07+00:00",
-          "topic_id": "07e022871d50",
-          "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+          "topic_id": "989c28c5029e",
+          "topic_title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t"
         }
       ],
       "flash": [
@@ -5345,10 +5345,10 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 72.7,
+          "score": 65.8,
           "role": "科研",
           "published_at": "2026-10-16T04:00:00+00:00",
-          "topic_id": "07e022871d50",
+          "topic_id": "1b53b99d326d",
           "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
         },
         {
@@ -5359,24 +5359,10 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 72.7,
+          "score": 65.8,
           "role": "科研",
           "published_at": "2026-10-16T04:00:00+00:00",
-          "topic_id": "07e022871d50",
-          "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
-        },
-        {
-          "title": "Alternating Squeezing and Photon Subtraction for Optical Cat-State Generation",
-          "url": "https://arxiv.org/abs/2610.20728",
-          "source": "arXiv quant-ph 论文速递",
-          "summary": "arXiv:2610.20728v1 Announce Type: new Abstract: Schr\\\"{o}dinger cat states are important non-Gaussian resources for quantum information processing and quantum-enhanced metrology. Although photon subtraction from squeezed vacuum states has p",
-          "zh_full": null,
-          "reason": null,
-          "density": null,
-          "score": 72.7,
-          "role": "科研",
-          "published_at": "2026-10-16T04:00:00+00:00",
-          "topic_id": "07e022871d50",
+          "topic_id": "1b53b99d326d",
           "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
         },
         {
@@ -5387,10 +5373,10 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 72.7,
+          "score": 65.8,
           "role": "科研",
           "published_at": "2026-10-16T04:00:00+00:00",
-          "topic_id": "07e022871d50",
+          "topic_id": "1b53b99d326d",
           "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
         },
         {
@@ -5401,10 +5387,10 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 72.7,
+          "score": 65.8,
           "role": "科研",
           "published_at": "2026-10-16T04:00:00+00:00",
-          "topic_id": "07e022871d50",
+          "topic_id": "1b53b99d326d",
           "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
         },
         {
@@ -5415,10 +5401,10 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 72.7,
+          "score": 65.8,
           "role": "科研",
           "published_at": "2026-10-16T04:00:00+00:00",
-          "topic_id": "07e022871d50",
+          "topic_id": "1b53b99d326d",
           "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
         },
         {
@@ -5429,10 +5415,10 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 72.7,
+          "score": 65.8,
           "role": "科研",
           "published_at": "2026-10-16T04:00:00+00:00",
-          "topic_id": "07e022871d50",
+          "topic_id": "1b53b99d326d",
           "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
         },
         {
@@ -5443,10 +5429,10 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 72.7,
+          "score": 65.8,
           "role": "科研",
           "published_at": "2026-10-16T04:00:00+00:00",
-          "topic_id": "07e022871d50",
+          "topic_id": "1b53b99d326d",
           "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
         },
         {
@@ -5457,10 +5443,10 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 72.7,
+          "score": 65.8,
           "role": "科研",
           "published_at": "2026-10-16T04:00:00+00:00",
-          "topic_id": "07e022871d50",
+          "topic_id": "1b53b99d326d",
           "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
         },
         {
@@ -5468,6 +5454,34 @@
           "url": "https://arxiv.org/abs/2610.20987",
           "source": "arXiv quant-ph 论文速递",
           "summary": "arXiv:2610.20987v1 Announce Type: new Abstract: In a quantum augmented network, sharing optical fiber with classical traffic requires quantum wavelength selection to balance logical fidelity, block acceptance, and classical data reception. ",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 65.8,
+          "role": "科研",
+          "published_at": "2026-10-16T04:00:00+00:00",
+          "topic_id": "1b53b99d326d",
+          "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+        },
+        {
+          "title": "Classification of quantum states through conserved operators",
+          "url": "https://arxiv.org/abs/2610.20988",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2610.20988v1 Announce Type: new Abstract: Determining whether quantum states can be interconverted by a prescribed set of transformations is a fundamental problem in quantum information. Here we develop a general classification framew",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 65.8,
+          "role": "科研",
+          "published_at": "2026-10-16T04:00:00+00:00",
+          "topic_id": "1b53b99d326d",
+          "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+        },
+        {
+          "title": "Alternating Squeezing and Photon Subtraction for Optical Cat-State Generation",
+          "url": "https://arxiv.org/abs/2610.20728",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2610.20728v1 Announce Type: new Abstract: Schr\\\"{o}dinger cat states are important non-Gaussian resources for quantum information processing and quantum-enhanced metrology. Although photon subtraction from squeezed vacuum states has p",
           "zh_full": null,
           "reason": null,
           "density": null,
@@ -5490,10 +5504,10 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 72.7,
+              "score": 65.8,
               "role": "科研",
               "published_at": "2026-10-16T04:00:00+00:00",
-              "topic_id": "07e022871d50",
+              "topic_id": "1b53b99d326d",
               "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
             }
           ]
@@ -5509,10 +5523,10 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 86.4,
+              "score": 79.5,
               "role": "科研",
               "published_at": "2026-10-16T12:00:01+00:00",
-              "topic_id": "07e022871d50",
+              "topic_id": "1b53b99d326d",
               "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
             }
           ]
@@ -5528,10 +5542,10 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 72.7,
+              "score": 65.8,
               "role": "科研",
               "published_at": "2026-10-16T04:00:00+00:00",
-              "topic_id": "07e022871d50",
+              "topic_id": "1b53b99d326d",
               "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
             }
           ]
@@ -5547,10 +5561,10 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 72.7,
+              "score": 65.8,
               "role": "科研",
               "published_at": "2026-10-16T04:00:00+00:00",
-              "topic_id": "07e022871d50",
+              "topic_id": "1b53b99d326d",
               "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
             },
             {
@@ -5561,10 +5575,10 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 72.7,
+              "score": 65.8,
               "role": "科研",
               "published_at": "2026-10-16T04:00:00+00:00",
-              "topic_id": "07e022871d50",
+              "topic_id": "1b53b99d326d",
               "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
             },
             {
@@ -5575,10 +5589,10 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 72.7,
+              "score": 65.8,
               "role": "科研",
               "published_at": "2026-10-16T04:00:00+00:00",
-              "topic_id": "07e022871d50",
+              "topic_id": "1b53b99d326d",
               "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
             },
             {
@@ -5589,24 +5603,10 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 72.7,
+              "score": 65.8,
               "role": "科研",
               "published_at": "2026-10-16T04:00:00+00:00",
-              "topic_id": "07e022871d50",
-              "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
-            },
-            {
-              "title": "Alternating Squeezing and Photon Subtraction for Optical Cat-State Generation",
-              "url": "https://arxiv.org/abs/2610.20728",
-              "source": "arXiv quant-ph 论文速递",
-              "summary": "arXiv:2610.20728v1 Announce Type: new Abstract: Schr\\\"{o}dinger cat states are important non-Gaussian resources for quantum information processing and quantum-enhanced metrology. Although photon subtraction from squeezed vacuum states has p",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 72.7,
-              "role": "科研",
-              "published_at": "2026-10-16T04:00:00+00:00",
-              "topic_id": "07e022871d50",
+              "topic_id": "1b53b99d326d",
               "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
             },
             {
@@ -5617,10 +5617,10 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 72.7,
+              "score": 65.8,
               "role": "科研",
               "published_at": "2026-10-16T04:00:00+00:00",
-              "topic_id": "07e022871d50",
+              "topic_id": "1b53b99d326d",
               "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
             },
             {
@@ -5631,10 +5631,10 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 72.7,
+              "score": 65.8,
               "role": "科研",
               "published_at": "2026-10-16T04:00:00+00:00",
-              "topic_id": "07e022871d50",
+              "topic_id": "1b53b99d326d",
               "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
             },
             {
@@ -5645,10 +5645,24 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 72.7,
+              "score": 65.8,
               "role": "科研",
               "published_at": "2026-10-16T04:00:00+00:00",
-              "topic_id": "07e022871d50",
+              "topic_id": "1b53b99d326d",
+              "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+            },
+            {
+              "title": "Entanglement of superpositions in zero-energy subspace: insights from stabilizer theory",
+              "url": "https://arxiv.org/abs/2610.20846",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2610.20846v1 Announce Type: new Abstract: Exact zero-energy eigenstates built from entangled dimers have recently been found in a large class of spin Hamiltonians. While the individual states have a simple structure, their superpositi",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 65.8,
+              "role": "科研",
+              "published_at": "2026-10-16T04:00:00+00:00",
+              "topic_id": "1b53b99d326d",
               "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
             }
           ]
@@ -5657,31 +5671,17 @@
           "category": "其他",
           "articles": [
             {
-              "title": "He Wants AI Benchmarking To Be a Science, Not a Dark Art",
-              "url": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
-              "source": "Quanta Magazine",
-              "summary": "Moritz Hardt, author of a new book on benchmarks, believes these “standardized tests” for artificial intelligence are fundamentally broken — but not unfixable. The post He Wants AI Benchmarking To Be a Science, Not a Dark Art first appeared",
+              "title": "Physics-guided AI reconstructs hidden patterns inside ultrathin magnets from external fields",
+              "url": "https://phys.org/news/2026-10-physics-ai-reconstructs-hidden-patterns.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "To build faster and more energy-efficient computers, researchers need to understand nanoscale magnetic materials. But looking inside these tiny magnets is surprisingly difficult: Modern microscopes only measure the magnetic field outside th",
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 51.9,
+              "score": 47.8,
               "role": "科研",
-              "published_at": "2026-10-16T13:25:08+00:00",
-              "topic_id": "07e022871d50",
-              "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
-            },
-            {
-              "title": "Laser pulses bring order to a quantum material's tiny electrical regions",
-              "url": "https://phys.org/news/2026-10-laser-pulses-quantum-material-tiny.html",
-              "source": "Phys.org 物理新闻",
-              "summary": "奥本大学研究人员用激光脉冲让晶体内部微小的带电区域变得有序，回答了该量子材料如何自我组织的长期问题，并展示了光控制材料行为的可能性，为信息处理与存储的新技术探索铺路。",
-              "zh_full": "奥本大学（Auburn University）的物理学家利用激光脉冲，使晶体内部微小的带电“岛屿”（即电畴）变得有序。这一发现有助于回答一个存在数十年的问题：该量子材料是如何自我组织的。研究还展示了光如何被用来控制该材料的行为，这被视为迈向探索用于处理和存储信息的新技术的一步。",
-              "reason": "光控量子材料有序化，信息存储新方向",
-              "density": "高",
-              "score": 51.5,
-              "role": "科研",
-              "published_at": "2026-10-15T17:00:07+00:00",
-              "topic_id": "07e022871d50",
+              "published_at": "2026-10-16T15:40:12+00:00",
+              "topic_id": "1b53b99d326d",
               "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
             },
             {
@@ -5692,11 +5692,39 @@
               "zh_full": "原子核的大小（即核电荷半径）是一个重要的物理量，反映了核内质子和中子的排列方式。特别是在变形核中，例如稀土元素的原子核，考察电荷半径的变化可以加深我们对核结构和核变形的理解。",
               "reason": "核电荷半径与核变形研究",
               "density": "中",
-              "score": 38.2,
+              "score": 47.5,
               "role": "科研",
               "published_at": "2026-10-15T23:00:01+00:00",
-              "topic_id": "42a73044cd88",
-              "topic_title": "Nuclear clocks tick for the first time"
+              "topic_id": "1b53b99d326d",
+              "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+            },
+            {
+              "title": "Laser pulses bring order to a quantum material's tiny electrical regions",
+              "url": "https://phys.org/news/2026-10-laser-pulses-quantum-material-tiny.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "奥本大学研究人员用激光脉冲让晶体内部微小的带电区域变得有序，回答了该量子材料如何自我组织的长期问题，并展示了光控制材料行为的可能性，为信息处理与存储的新技术探索铺路。",
+              "zh_full": "奥本大学（Auburn University）的物理学家利用激光脉冲，使晶体内部微小的带电“岛屿”（即电畴）变得有序。这一发现有助于回答一个存在数十年的问题：该量子材料是如何自我组织的。研究还展示了光如何被用来控制该材料的行为，这被视为迈向探索用于处理和存储信息的新技术的一步。",
+              "reason": "光控量子材料有序化，信息存储新方向",
+              "density": "高",
+              "score": 47.4,
+              "role": "科研",
+              "published_at": "2026-10-15T17:00:07+00:00",
+              "topic_id": "1b53b99d326d",
+              "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+            },
+            {
+              "title": "He Wants AI Benchmarking To Be a Science, Not a Dark Art",
+              "url": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
+              "source": "Quanta Magazine",
+              "summary": "Moritz Hardt, author of a new book on benchmarks, believes these “standardized tests” for artificial intelligence are fundamentally broken — but not unfixable. The post He Wants AI Benchmarking To Be a Science, Not a Dark Art first appeared",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 44.8,
+              "role": "科研",
+              "published_at": "2026-10-16T13:25:08+00:00",
+              "topic_id": "989c28c5029e",
+              "topic_title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t"
             },
             {
               "title": "Even or odd numbers: A single molecule makes all the difference in the quantum world",
@@ -5706,7 +5734,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 30.9,
+              "score": 30.7,
               "role": "科研",
               "published_at": "2026-10-16T14:20:06+00:00",
               "topic_id": null,
@@ -5720,7 +5748,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 30.9,
+              "score": 30.7,
               "role": "媒体",
               "published_at": "2026-10-16T13:59:18+00:00",
               "topic_id": null,
@@ -5734,7 +5762,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 30.8,
+              "score": 30.6,
               "role": "媒体",
               "published_at": "2026-10-16T06:00:00+00:00",
               "topic_id": null,
@@ -5748,7 +5776,7 @@
               "zh_full": "（无摘要，仅标题）硅自旋量子比特在同时操控三个量子比特时，门保真度超过99.99%。",
               "reason": null,
               "density": "低",
-              "score": 27.5,
+              "score": 27.4,
               "role": "科研",
               "published_at": "2026-10-15T21:20:05+00:00",
               "topic_id": null,
@@ -5759,12 +5787,175 @@
       ],
       "topic_ids": [
         "07e022871d50",
+        "1b53b99d326d",
         "22120ecf2802",
+        "989c28c5029e",
         "f61039cbdb6f"
       ],
-      "tocCount": 15,
-      "readMinutes": 3,
-      "amended": 0
+      "tocCount": 16,
+      "readMinutes": 4,
+      "amended": 1
+    },
+    "2026-10-17": {
+      "date": "2026-10-17",
+      "weekday": "周六",
+      "label": "2026年10月17日",
+      "headline": {
+        "title": "New high-frequency method boosts 2D material readout for next-gen quantum computers",
+        "url": "https://phys.org/news/2026-10-high-frequency-method-boosts-2d.html",
+        "source": "Phys.org 物理新闻",
+        "summary": "Quantum computers represent a next step in the fast-paced evolution of technology. Using quantum bits (qubits), they have the potential to run certain calculations exponentially faster than conventional computers. However, developing and fi",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 47.9,
+        "role": "科研",
+        "published_at": "2026-10-16T22:00:01+00:00",
+        "topic_id": "1b53b99d326d",
+        "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+      },
+      "picks": [
+        {
+          "title": "A highway instead of a racetrack: Strong coupling of light and sound in an optical fiber",
+          "url": "https://phys.org/news/2026-10-highway-racetrack-strong-coupling-optical.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "For the first time, scientists have achieved strong coupling between light and long-lived acoustic vibrations in an optical fiber. Optical fibers are used in both classical telecommunications and quantum communication and could serve not on",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 47.8,
+          "role": "科研",
+          "published_at": "2026-10-16T21:20:01+00:00",
+          "topic_id": "1b53b99d326d",
+          "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+        }
+      ],
+      "flash": [
+        {
+          "title": "World-record intensity in attosecond hard-X-ray pulses could unlock closer study of electrons in atoms and molecules",
+          "url": "https://phys.org/news/2026-10-world-intensity-attosecond-hard-ray.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Researchers used the European XFEL to create X-ray flashes that were not only extremely short but also reached record intensity for this type of pulse. The researchers focused the X-rays to an area roughly 100,000 times smaller than the cro",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 47.8,
+          "role": "科研",
+          "published_at": "2026-10-16T19:10:01+00:00",
+          "topic_id": "1b53b99d326d",
+          "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+        },
+        {
+          "title": "Maxwell's demon learns to turn concealed information into usable energy for microscopic systems",
+          "url": "https://phys.org/news/2026-10-maxwell-demon-concealed-usable-energy.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Since its introduction more than 150 years ago, the thought-provoking idea of Maxwell's demon has profoundly shaped our understanding of the relationship between information and energy. Maxwell's demon is an imagined microscopic gatekeeper ",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 47.8,
+          "role": "科研",
+          "published_at": "2026-10-16T18:50:01+00:00",
+          "topic_id": "1b53b99d326d",
+          "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+        },
+        {
+          "title": "Infrared light overcomes mirror coating obstacle in gravitational wave detector upgrades",
+          "url": "https://phys.org/news/2026-10-infrared-mirror-coating-obstacle-gravitational.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Researchers have developed and tested a new locking method for gravitational wave detectors that will advance the discovery of distant black holes and neutron stars colliding.",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.8,
+          "role": "科研",
+          "published_at": "2026-10-16T21:00:05+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "sections": [
+        {
+          "category": "其他",
+          "articles": [
+            {
+              "title": "New high-frequency method boosts 2D material readout for next-gen quantum computers",
+              "url": "https://phys.org/news/2026-10-high-frequency-method-boosts-2d.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Quantum computers represent a next step in the fast-paced evolution of technology. Using quantum bits (qubits), they have the potential to run certain calculations exponentially faster than conventional computers. However, developing and fi",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 47.9,
+              "role": "科研",
+              "published_at": "2026-10-16T22:00:01+00:00",
+              "topic_id": "1b53b99d326d",
+              "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+            },
+            {
+              "title": "A highway instead of a racetrack: Strong coupling of light and sound in an optical fiber",
+              "url": "https://phys.org/news/2026-10-highway-racetrack-strong-coupling-optical.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "For the first time, scientists have achieved strong coupling between light and long-lived acoustic vibrations in an optical fiber. Optical fibers are used in both classical telecommunications and quantum communication and could serve not on",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 47.8,
+              "role": "科研",
+              "published_at": "2026-10-16T21:20:01+00:00",
+              "topic_id": "1b53b99d326d",
+              "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+            },
+            {
+              "title": "World-record intensity in attosecond hard-X-ray pulses could unlock closer study of electrons in atoms and molecules",
+              "url": "https://phys.org/news/2026-10-world-intensity-attosecond-hard-ray.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Researchers used the European XFEL to create X-ray flashes that were not only extremely short but also reached record intensity for this type of pulse. The researchers focused the X-rays to an area roughly 100,000 times smaller than the cro",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 47.8,
+              "role": "科研",
+              "published_at": "2026-10-16T19:10:01+00:00",
+              "topic_id": "1b53b99d326d",
+              "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+            },
+            {
+              "title": "Maxwell's demon learns to turn concealed information into usable energy for microscopic systems",
+              "url": "https://phys.org/news/2026-10-maxwell-demon-concealed-usable-energy.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Since its introduction more than 150 years ago, the thought-provoking idea of Maxwell's demon has profoundly shaped our understanding of the relationship between information and energy. Maxwell's demon is an imagined microscopic gatekeeper ",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 47.8,
+              "role": "科研",
+              "published_at": "2026-10-16T18:50:01+00:00",
+              "topic_id": "1b53b99d326d",
+              "topic_title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles"
+            },
+            {
+              "title": "Infrared light overcomes mirror coating obstacle in gravitational wave detector upgrades",
+              "url": "https://phys.org/news/2026-10-infrared-mirror-coating-obstacle-gravitational.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Researchers have developed and tested a new locking method for gravitational wave detectors that will advance the discovery of distant black holes and neutron stars colliding.",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.8,
+              "role": "科研",
+              "published_at": "2026-10-16T21:00:05+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        }
+      ],
+      "topic_ids": [
+        "1b53b99d326d"
+      ],
+      "tocCount": 5,
+      "readMinutes": 2
     }
   }
 }

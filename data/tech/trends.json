@@ -1,67 +1,67 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T14:52:46.055774+00:00",
+  "generatedAt": "2026-10-17T00:29:59.302520+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 3963.6,
+      "thisWeek": 4831.6,
       "lastWeek": 764.2,
-      "deltaPct": 418.7
+      "deltaPct": 532.2
     },
     {
       "category": "科研进展",
-      "thisWeek": 3351.0,
+      "thisWeek": 3759.0,
       "lastWeek": 693.0,
-      "deltaPct": 383.5
-    },
-    {
-      "category": "通信与算力",
-      "thisWeek": 2874.4,
-      "lastWeek": 695.0,
-      "deltaPct": 313.6
+      "deltaPct": 442.4
     },
     {
       "category": "产业与资本",
-      "thisWeek": 2814.7,
+      "thisWeek": 3453.9,
       "lastWeek": 960.6,
-      "deltaPct": 193.0
+      "deltaPct": 259.6
     },
     {
-      "category": "其他",
-      "thisWeek": 2803.9,
-      "lastWeek": 1537.0,
-      "deltaPct": 82.4
+      "category": "通信与算力",
+      "thisWeek": 3393.4,
+      "lastWeek": 695.0,
+      "deltaPct": 388.3
     },
     {
       "category": "光通信",
-      "thisWeek": 2674.8,
+      "thisWeek": 3277.0,
       "lastWeek": 618.8,
-      "deltaPct": 332.3
+      "deltaPct": 429.6
+    },
+    {
+      "category": "其他",
+      "thisWeek": 3220.8,
+      "lastWeek": 1537.0,
+      "deltaPct": 109.6
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1818.9,
+      "thisWeek": 2312.6,
       "lastWeek": 687.1,
-      "deltaPct": 164.7
+      "deltaPct": 236.6
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1481.3,
+      "thisWeek": 1526.2,
       "lastWeek": 689.8,
-      "deltaPct": 114.7
+      "deltaPct": 121.3
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 612.1,
+      "thisWeek": 658.1,
       "lastWeek": 606.5,
-      "deltaPct": 0.9
+      "deltaPct": 8.5
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 376.2,
+      "thisWeek": 422.2,
       "lastWeek": 196.9,
-      "deltaPct": 91.1
+      "deltaPct": 114.4
     },
     {
       "category": "光伏与新能源",
@@ -72,21 +72,33 @@
   ],
   "newTopics": [
     {
-      "topic_id": "8493a1bf241a",
-      "title": "Perovskite chiral multiple quantum wells with extended spin lifetime via efficient spin cascade",
-      "score": 2736.3,
+      "topic_id": "4529832de80e",
+      "title": "Localized high-Q resonances enable electrically defined beam steering in lithium niobate metasurfaces",
+      "score": 2552.5,
       "days": 2
     },
     {
       "topic_id": "8c01b90c3aae",
       "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
-      "score": 1601.7,
-      "days": 3
+      "score": 2063.4,
+      "days": 4
     },
     {
       "topic_id": "5ebd16670b34",
       "title": "Perovskite chiral multiple quantum wells with extended spin lifetime via efficient spin cascade",
       "score": 1485.4,
+      "days": 2
+    },
+    {
+      "topic_id": "8493a1bf241a",
+      "title": "Perovskite chiral multiple quantum wells with extended spin lifetime via efficient spin cascade",
+      "score": 1476.3,
+      "days": 2
+    },
+    {
+      "topic_id": "870a19576e18",
+      "title": "工信部对我国网络强国建设提出四点建议",
+      "score": 1416.5,
       "days": 2
     },
     {
@@ -100,12 +112,6 @@
       "title": "工信部对我国网络强国建设提出四点建议",
       "score": 725.1,
       "days": 2
-    },
-    {
-      "topic_id": "870a19576e18",
-      "title": "工信部对我国网络强国建设提出四点建议",
-      "score": 675.0,
-      "days": 1
     },
     {
       "topic_id": "7f6c9067937a",
@@ -124,26 +130,20 @@
       "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
       "score": 574.6,
       "days": 1
-    },
-    {
-      "topic_id": "d9d1f75bf9c3",
-      "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
-      "score": 464.6,
-      "days": 2
     }
   ],
   "sustainedTopics": [
     {
       "topic_id": "8c01b90c3aae",
       "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
-      "days": 3,
-      "score": 1601.7
+      "days": 4,
+      "score": 2063.4
     },
     {
       "topic_id": "40753cddc649",
       "title": "大招齐发，英特尔直击网络转型",
-      "days": 3,
-      "score": 349.8
+      "days": 4,
+      "score": 466.4
     }
   ]
 }

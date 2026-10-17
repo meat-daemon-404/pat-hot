@@ -1,47 +1,47 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T14:52:46.055774+00:00",
+  "generatedAt": "2026-10-17T00:29:59.302520+00:00",
   "weekStart": "2026-10-12",
   "categoryDelta": [
     {
       "category": "深空探测",
-      "thisWeek": 1599.4,
+      "thisWeek": 1907.7,
       "lastWeek": 477.7,
-      "deltaPct": 234.8
-    },
-    {
-      "category": "科研进展",
-      "thisWeek": 1292.9,
-      "lastWeek": 119.3,
-      "deltaPct": 983.7
+      "deltaPct": 299.4
     },
     {
       "category": "其他",
-      "thisWeek": 1258.3,
+      "thisWeek": 1484.5,
       "lastWeek": 692.3,
-      "deltaPct": 81.8
+      "deltaPct": 114.4
+    },
+    {
+      "category": "科研进展",
+      "thisWeek": 1358.6,
+      "lastWeek": 119.3,
+      "deltaPct": 1038.8
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 1241.1,
+      "thisWeek": 1325.9,
       "lastWeek": 240.1,
-      "deltaPct": 416.9
+      "deltaPct": 452.2
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 959.9,
+      "thisWeek": 1010.4,
       "lastWeek": 160.4,
-      "deltaPct": 498.4
+      "deltaPct": 529.9
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 354.5,
+      "thisWeek": 322.7,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
     {
       "category": "系外行星",
-      "thisWeek": 137.0,
+      "thisWeek": 136.7,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
@@ -54,9 +54,9 @@
   ],
   "newTopics": [
     {
-      "topic_id": "fbad2169505b",
-      "title": "A Distant Supercluster of Galaxies Points To Self-Interacting Dark Matter",
-      "score": 2394.6,
+      "topic_id": "2c320511f7ff",
+      "title": "Astronomer leads global team on NASA mission to create unprecedented view of the early universe",
+      "score": 2293.8,
       "days": 2
     },
     {
@@ -69,6 +69,12 @@
       "topic_id": "a4443b62394e",
       "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
       "score": 616.0,
+      "days": 1
+    },
+    {
+      "topic_id": "fbad2169505b",
+      "title": "A Distant Supercluster of Galaxies Points To Self-Interacting Dark Matter",
+      "score": 534.3,
       "days": 1
     },
     {
@@ -106,12 +112,6 @@
       "title": "The Atacama Cosmology Telescope: DR6 Constraints on Isotropic Time-Dependent Cosmic Birefringence from Axion-like Particles",
       "score": 90.7,
       "days": 2
-    },
-    {
-      "topic_id": "a49fb256ee63",
-      "title": "A possible detection of gas rotation in galaxy groups via the kinetic Sunyaev-Zeldovich effect",
-      "score": 87.4,
-      "days": 1
     }
   ],
   "sustainedTopics": [
