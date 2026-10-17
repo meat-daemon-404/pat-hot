@@ -1,114 +1,76 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T00:29:59.302520+00:00",
-  "count": 5,
+  "generatedAt": "2026-10-17T13:44:21.858238+00:00",
+  "count": 10,
   "items": [
     {
-      "id": "1b53b99d326d",
-      "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
-      "status": "发酵中",
-      "heat": 75.0,
-      "sourceCount": 4,
-      "signalCount": 34,
-      "latestAt": "2026-10-17T00:29:59.302520+00:00",
+      "id": "de63e6972270",
+      "title": "A two-stage optimization method for wide-range single-electron quantum magnetic sensing",
+      "status": "关注中",
+      "heat": 45.5,
+      "sourceCount": 2,
+      "signalCount": 3,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
       "sources": [
-        "CERN 新闻",
-        "MIT News 物理",
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
+        "Nature Physics 学科聚合",
+        "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
-          "url": "https://phys.org/news/2026-10-gallium-anomaly-neutrino-shortfall-invoking.html",
+          "title": "A two-stage optimization method for wide-range single-electron quantum magnetic sensing",
+          "url": "https://www.nature.com/articles/s41598-026-76354-7",
+          "source": "Nature Physics 学科聚合",
+          "score": 62.3,
+          "published_at": "2026-10-17T00:00:00+00:00"
+        },
+        {
+          "title": "Directional magnetic field detection with zero-bias surface acoustic wave sensors",
+          "url": "https://www.nature.com/articles/s41598-026-76696-2",
+          "source": "Nature Physics 学科聚合",
+          "score": 62.3,
+          "published_at": "2026-10-17T00:00:00+00:00"
+        },
+        {
+          "title": "Physics-guided AI reconstructs hidden patterns inside ultrathin magnets from external fields",
+          "url": "https://phys.org/news/2026-10-physics-ai-reconstructs-hidden-patterns.html",
           "source": "Phys.org 物理新闻",
-          "score": 79.5,
-          "published_at": "2026-10-16T12:00:01+00:00"
-        },
-        {
-          "title": "Quantum network test checks entanglement without having to trust detectors",
-          "url": "https://phys.org/news/2026-10-quantum-network-entanglement-detectors.html",
-          "source": "Phys.org 物理新闻",
-          "score": 78.1,
-          "published_at": "2026-10-14T11:00:01+00:00"
-        },
-        {
-          "title": "The public consultation for the Future Circular Collider (FCC) project generates extensive dialogue with the local communities",
-          "url": "https://home.cern/une-periode-de-participation-citoyenne-sur-le-projet-de-futur-collisionneur-circulaire-fcc-riche-en-echanges-avec-les-territoires/",
-          "source": "CERN 新闻",
-          "score": 78.1,
-          "published_at": "2026-10-14T11:25:18+00:00"
-        },
-        {
-          "title": "Mechanical trisqueezing in circuit quantum acoustodynamics with SNAIL devices",
-          "url": "https://arxiv.org/abs/2610.20670",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 65.8,
-          "published_at": "2026-10-16T04:00:00+00:00"
-        },
-        {
-          "title": "Quantum Partial Information Decompositions, an Operational Order on Ensembles, and Direct Quantifications of Objective Information",
-          "url": "https://arxiv.org/abs/2610.20694",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 65.8,
-          "published_at": "2026-10-16T04:00:00+00:00"
+          "score": 37.2,
+          "published_at": "2026-10-16T15:40:12+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -17.9,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null,
-      "llmScore": 28.5
+      "llmScore": 14.0
     },
     {
-      "id": "989c28c5029e",
-      "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
-      "status": "发酵中",
-      "heat": 60.7,
-      "sourceCount": 3,
-      "signalCount": 9,
-      "latestAt": "2026-10-17T00:29:59.302520+00:00",
+      "id": "fcbfcec63d7d",
+      "title": "Multiphysics framework for sustainable iron ore reduction–softening–melting: high-energy X-ray computed tomography and moving particle hydrodynamics",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
       "sources": [
-        "MIT News 物理",
-        "New Scientist 物理",
-        "Quanta Magazine"
+        "Nature Physics 学科聚合",
+        "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
-          "url": "https://www.quantamagazine.org/triplet-of-ghostly-galaxies-hints-at-what-dark-matter-is-and-isnt-20261014/",
-          "source": "Quanta Magazine",
-          "score": 73.4,
-          "published_at": "2026-10-14T14:04:05+00:00"
+          "title": "Multiphysics framework for sustainable iron ore reduction–softening–melting: high-energy X-ray computed tomography and moving particle hydrodynamics",
+          "url": "https://www.nature.com/articles/s41598-026-74732-9",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.1,
+          "published_at": "2026-10-16T00:00:00+00:00"
         },
         {
-          "title": "Will we observe dark matter as a particle or a wave?",
-          "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 72.5,
-          "published_at": "2026-10-13T08:00:00+00:00"
-        },
-        {
-          "title": "Physicists are scrambling to make sense of possible dark matter signal",
-          "url": "https://www.newscientist.com/article/2589737-physicists-are-scrambling-to-make-sense-of-possible-dark-matter-signal/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 56.0,
-          "published_at": "2026-09-18T12:00:00+00:00"
-        },
-        {
-          "title": "AI helps design new materials that work in the real world",
-          "url": "https://news.mit.edu/2026/ai-helps-design-new-materials-that-work-in-real-world-0826",
-          "source": "MIT News 物理",
-          "score": 55.0,
-          "published_at": "2026-08-26T09:00:00+00:00"
-        },
-        {
-          "title": "MIT selected to lead new NSF materials research center",
-          "url": "https://news.mit.edu/2026/mit-to-lead-nsf-materials-research-center-0812",
-          "source": "MIT News 物理",
-          "score": 55.0,
-          "published_at": "2026-08-12T20:15:00+00:00"
+          "title": "World-record intensity in attosecond hard-X-ray pulses could unlock closer study of electrons in atoms and molecules",
+          "url": "https://phys.org/news/2026-10-world-intensity-attosecond-hard-ray.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.4,
+          "published_at": "2026-10-16T19:10:01+00:00"
         }
       ],
       "trend": "new",
@@ -118,146 +80,283 @@
       "digestTitle": null
     },
     {
-      "id": "17ca9ae6241f",
-      "title": "From spin wave to superconducting circuit: A one-way street for quantum information",
-      "status": "发酵中",
-      "heat": 52.5,
-      "sourceCount": 4,
-      "signalCount": 5,
-      "latestAt": "2026-10-17T00:29:59.302520+00:00",
-      "sources": [
-        "New Scientist 物理",
-        "Phys.org 物理新闻",
-        "Quanta Magazine",
-        "arXiv quant-ph 论文速递"
-      ],
-      "links": [
-        {
-          "title": "From spin wave to superconducting circuit: A one-way street for quantum information",
-          "url": "https://phys.org/news/2026-10-superconducting-circuit-street-quantum.html",
-          "source": "Phys.org 物理新闻",
-          "score": 70.8,
-          "published_at": "2026-10-14T16:20:02+00:00"
-        },
-        {
-          "title": "Embracing the glitches in gravity could give us a unified theory of reality",
-          "url": "https://www.newscientist.com/article/2589429-embracing-the-glitches-in-gravity-could-give-us-a-unified-theory-of-reality/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 60.1,
-          "published_at": "2026-09-28T15:00:00+00:00"
-        },
-        {
-          "title": "The noise cost of reservoir locality in broadband quantum amplifier chains",
-          "url": "https://arxiv.org/abs/2610.20654",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 58.3,
-          "published_at": "2026-10-16T04:00:00+00:00"
-        },
-        {
-          "title": "Infinite magic and the emergence of the continuum",
-          "url": "https://arxiv.org/abs/2610.20790",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 58.3,
-          "published_at": "2026-10-16T04:00:00+00:00"
-        },
-        {
-          "title": "Is ‘Attention’ the Essence of Intelligence?",
-          "url": "https://www.quantamagazine.org/is-attention-the-essence-of-intelligence-20261012/",
-          "source": "Quanta Magazine",
-          "score": 41.6,
-          "published_at": "2026-10-12T14:20:30+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": -8.7,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "refs": {
-        "arxiv": "2610.20654",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
-    },
-    {
-      "id": "4c7f63ab9142",
-      "title": "IBM executive warns of risk of quantum computing hacks",
+      "id": "a025ac6605c2",
+      "title": "Numerical simulation and structural optimization of electrostatic precipitators for particle purification in space capsules",
       "status": "关注中",
-      "heat": 32.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-17T00:29:59.302520+00:00",
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "links": [
-        {
-          "title": "IBM executive warns of risk of quantum computing hacks",
-          "url": "https://phys.org/news/2026-10-ibm-quantum-hacks.html",
-          "source": "Phys.org 物理新闻",
-          "score": 59.7,
-          "published_at": "2026-10-14T18:50:01+00:00"
-        },
-        {
-          "title": "Perfect and peak state transfer on IBM quantum hardware",
-          "url": "https://arxiv.org/abs/2610.20855",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-10-16T04:00:00+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -23.8,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "refs": {
-        "arxiv": "2610.20855",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
-    },
-    {
-      "id": "c973df2a3193",
-      "title": "“冰立方”中微子天文台科学家获得2026年物理诺奖",
-      "status": "关注中",
-      "heat": 18.0,
+      "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-17T00:29:59.302520+00:00",
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
       "sources": [
-        "知识分子"
+        "Nature Physics 学科聚合"
       ],
       "links": [
         {
-          "title": "“冰立方”中微子天文台科学家获得2026年物理诺奖",
-          "url": "http://www.zhishifenzi.com/news/multiple/10707.html",
-          "source": "知识分子",
-          "score": 55.7,
-          "published_at": "2026-10-11T14:53:31+00:00"
+          "title": "Numerical simulation and structural optimization of electrostatic precipitators for particle purification in space capsules",
+          "url": "https://www.nature.com/articles/s41598-026-74487-3",
+          "source": "Nature Physics 学科聚合",
+          "score": 59.0,
+          "published_at": "2026-10-17T00:00:00+00:00"
         },
         {
-          "title": "诺奖颁给冰立方：“天马行空的想法，值得被支持几十年”",
-          "url": "http://www.zhishifenzi.com/news/multiple/10693.html",
-          "source": "知识分子",
-          "score": 33.4,
-          "published_at": "2026-10-11T12:16:58+00:00"
+          "title": "An integrated bidirectional LSTM and adaptive cubature Kalman filter estimation method for accurate state-of-charge estimation of lithium-ion battery",
+          "url": "https://www.nature.com/articles/s41598-026-74305-w",
+          "source": "Nature Physics 学科聚合",
+          "score": 59.0,
+          "published_at": "2026-10-17T00:00:00+00:00"
         },
         {
-          "title": "“冰立方”为何获得2026诺贝尔物理奖？现场对话诺奖评委",
-          "url": "http://www.zhishifenzi.com/news/multiple/10692.html",
-          "source": "知识分子",
-          "score": 33.4,
-          "published_at": "2026-10-11T12:15:47+00:00"
+          "title": "Simulation of compressible flow and convergence enhancement in finned porous medium PCM systems considering non-linear material properties",
+          "url": "https://www.nature.com/articles/s41598-026-72324-1",
+          "source": "Nature Physics 学科聚合",
+          "score": 59.0,
+          "published_at": "2026-10-17T00:00:00+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "a1a1832fd2c5",
+      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
+      "sources": [
+        "MIT News 物理",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+          "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-05T15:00:00+00:00"
+        },
+        {
+          "title": "New high-frequency method boosts 2D material readout for next-gen quantum computers",
+          "url": "https://phys.org/news/2026-10-high-frequency-method-boosts-2d.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.4,
+          "published_at": "2026-10-16T22:00:01+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "8a821cbdec28",
+      "title": "New research shows a neutrino laser is impossible",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
+      "sources": [
+        "MIT News 物理",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
+          "url": "https://phys.org/news/2026-10-gallium-anomaly-neutrino-shortfall-invoking.html",
+          "source": "Phys.org 物理新闻",
+          "score": 60.5,
+          "published_at": "2026-10-16T12:00:01+00:00"
+        },
+        {
+          "title": "New research shows a neutrino laser is impossible",
+          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-09-02T14:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "85527929a2c8",
+      "title": "Spatially resolving isomeric trisaccharides on surfaces with Orbitrap-SIMS",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
+      "sources": [
+        "Nature Physics 学科聚合",
+        "Nature 量子物理"
+      ],
+      "links": [
+        {
+          "title": "Spatially resolving isomeric trisaccharides on surfaces with Orbitrap-SIMS",
+          "url": "https://www.nature.com/articles/s41467-026-78604-8",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.8,
+          "published_at": "2026-10-17T00:00:00+00:00"
+        },
+        {
+          "title": "InAsSb surface quantum well with in situ deposited Nb as a platform for hybrid devices",
+          "url": "https://www.nature.com/articles/s42005-026-02861-8",
+          "source": "Nature 量子物理",
+          "score": 50.8,
+          "published_at": "2026-10-02T00:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null,
-      "llmScore": 58.0
+      "llmScore": 13.5
+    },
+    {
+      "id": "b257e926ff00",
+      "title": "Stochastic SEIR dynamics via graph Laplacian diffusion under transmission uncertainty",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
+      "sources": [
+        "Nature Physics 学科聚合",
+        "Nature 量子物理"
+      ],
+      "links": [
+        {
+          "title": "Stochastic SEIR dynamics via graph Laplacian diffusion under transmission uncertainty",
+          "url": "https://www.nature.com/articles/s41598-026-73910-z",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.8,
+          "published_at": "2026-10-17T00:00:00+00:00"
+        },
+        {
+          "title": "All-optical generation of dense multi-GeV positron beams with longitudinal polarization",
+          "url": "https://www.nature.com/articles/s42005-026-02907-x",
+          "source": "Nature 量子物理",
+          "score": 57.5,
+          "published_at": "2026-10-12T00:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "115d3dfa3414",
+      "title": "Chaos control with broken symmetries",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
+      "sources": [
+        "Nature Physics 学科聚合",
+        "Nature 量子物理"
+      ],
+      "links": [
+        {
+          "title": "Chaos control with broken symmetries",
+          "url": "https://www.nature.com/articles/s41567-026-03480-4",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.1,
+          "published_at": "2026-10-16T00:00:00+00:00"
+        },
+        {
+          "title": "Order from chaos with adaptive circuits on quantum hardware",
+          "url": "https://www.nature.com/articles/s41567-026-03470-6",
+          "source": "Nature 量子物理",
+          "score": 55.5,
+          "published_at": "2026-10-09T00:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "1593d1254e7f",
+      "title": "AI helps design new materials that work in the real world",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
+      "sources": [
+        "MIT News 物理",
+        "Nature Physics 学科聚合"
+      ],
+      "links": [
+        {
+          "title": "The extraction of work from hidden degrees of freedom",
+          "url": "https://www.nature.com/articles/s41567-026-03442-w",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.1,
+          "published_at": "2026-10-16T00:00:00+00:00"
+        },
+        {
+          "title": "AI helps design new materials that work in the real world",
+          "url": "https://news.mit.edu/2026/ai-helps-design-new-materials-that-work-in-real-world-0826",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-26T09:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "160d00ed8982",
+      "title": "IceCube just won a Nobel prize. Protect astroparticle physics projects with the same potential",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
+      "sources": [
+        "Nature Physics 学科聚合",
+        "New Scientist 物理"
+      ],
+      "links": [
+        {
+          "title": "IceCube just won a Nobel prize. Protect astroparticle physics projects with the same potential",
+          "url": "https://www.nature.com/articles/d41586-026-03308-4",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.1,
+          "published_at": "2026-10-16T00:00:00+00:00"
+        },
+        {
+          "title": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
+          "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 53.7,
+          "published_at": "2026-10-06T10:26:02+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
     }
   ]
 }

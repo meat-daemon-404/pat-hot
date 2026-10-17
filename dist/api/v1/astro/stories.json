@@ -1,253 +1,222 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T00:29:59.302520+00:00",
-  "count": 8,
+  "generatedAt": "2026-10-17T13:44:21.858238+00:00",
+  "count": 10,
   "items": [
     {
-      "id": "2c320511f7ff",
-      "title": "Astronomer leads global team on NASA mission to create unprecedented view of the early universe",
-      "status": "爆",
-      "heat": 93.3,
-      "sourceCount": 9,
-      "signalCount": 77,
-      "latestAt": "2026-10-17T00:29:59.302520+00:00",
+      "id": "87242a7c762d",
+      "title": "Artemis II Heat Shield After Splashdown",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
       "sources": [
-        "Astronomy Magazine",
-        "ESA 空间科学",
-        "LIGO",
-        "MIT News 太空探索",
         "NASA 快讯",
-        "New Scientist 太空",
-        "Phys.org 太空新闻",
-        "Universe Today",
-        "arXiv astro-ph.CO 论文速递"
+        "Phys.org 太空新闻"
       ],
       "links": [
-        {
-          "title": "Astronomer leads global team on NASA mission to create unprecedented view of the early universe",
-          "url": "https://phys.org/news/2026-10-astronomer-global-team-nasa-mission.html",
-          "source": "Phys.org 太空新闻",
-          "score": 86.5,
-          "published_at": "2026-10-16T23:20:01+00:00"
-        },
-        {
-          "title": "NASA Names Stephen Cash Marshall Space Flight Center Director",
-          "url": "https://www.nasa.gov/news-release/nasa-names-stephen-cash-marshall-space-flight-center-director/",
-          "source": "NASA 快讯",
-          "score": 86.4,
-          "published_at": "2026-10-16T20:14:39+00:00"
-        },
-        {
-          "title": "A distant supercluster of galaxies points to self-interacting dark matter",
-          "url": "https://phys.org/news/2026-10-distant-supercluster-galaxies-interacting-dark.html",
-          "source": "Phys.org 太空新闻",
-          "score": 86.3,
-          "published_at": "2026-10-16T18:00:08+00:00"
-        },
         {
           "title": "Artemis II Heat Shield After Splashdown",
           "url": "https://www.nasa.gov/image-article/artemis-ii-heat-shield-after-splashdown/",
           "source": "NASA 快讯",
-          "score": 86.3,
+          "score": 60.6,
           "published_at": "2026-10-16T16:28:01+00:00"
         },
         {
-          "title": "Japan prepares to launch sample return mission to Phobos",
-          "url": "https://www.astronomy.com/space-exploration/japan-prepares-to-launch-sample-return-mission-to-phobos/",
-          "source": "Astronomy Magazine",
-          "score": 86.3,
-          "published_at": "2026-10-16T19:05:00+00:00"
+          "title": "Rigorous analysis confirms NASA's Artemis II heat shield performance",
+          "url": "https://phys.org/news/2026-10-rigorous-analysis-nasa-artemis-ii.html",
+          "source": "Phys.org 太空新闻",
+          "score": 60.1,
+          "published_at": "2026-10-15T23:40:01+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "llmScore": 51.0
     },
     {
-      "id": "d1add21bb66a",
-      "title": "A trip to Mars could come at a heartbreaking cost",
-      "status": "发酵中",
-      "heat": 44.0,
-      "sourceCount": 4,
-      "signalCount": 4,
-      "latestAt": "2026-10-17T00:29:59.302520+00:00",
-      "sources": [
-        "ESA 空间科学",
-        "MIT News 太空探索",
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "A trip to Mars could come at a heartbreaking cost",
-          "url": "https://phys.org/news/2026-10-mars-heartbreaking.html",
-          "source": "Phys.org 太空新闻",
-          "score": 69.5,
-          "published_at": "2026-10-14T23:00:01+00:00"
-        },
-        {
-          "title": "A Trip to Mars Could Break Your Heart - Literally",
-          "url": "https://www.universetoday.com/articles/a-trip-to-mars-could-break-your-heart-literally",
-          "source": "Universe Today",
-          "score": 69.1,
-          "published_at": "2026-10-14T11:57:41+00:00"
-        },
-        {
-          "title": "Happy New Year on Mars",
-          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Happy_New_Year_on_Mars",
-          "source": "ESA 空间科学",
-          "score": 59.6,
-          "published_at": "2026-09-30T06:00:00+00:00"
-        },
-        {
-          "title": "Life on Mars, together",
-          "url": "https://news.mit.edu/2024/life-on-mars-together-0313",
-          "source": "MIT News 太空探索",
-          "score": 50.8,
-          "published_at": "2024-03-13T21:00:00+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -10.2,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "590750e45752",
-      "title": "Breaking de Sitter Symmetry with Cosmic Topology: Cosmological Role of Infrared Vacuum Freedom",
+      "id": "6e151cdf71da",
+      "title": "Japan prepares to launch sample return mission to Phobos",
       "status": "关注中",
-      "heat": 32.0,
+      "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-17T00:29:59.302520+00:00",
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
       "sources": [
-        "ESA 空间科学",
-        "arXiv astro-ph.CO 论文速递"
+        "Astronomy Magazine",
+        "New Scientist 太空"
       ],
       "links": [
         {
-          "title": "Breaking de Sitter Symmetry with Cosmic Topology: Cosmological Role of Infrared Vacuum Freedom",
-          "url": "https://arxiv.org/abs/2609.28637",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 47.1,
-          "published_at": "2026-10-16T04:00:00+00:00"
+          "title": "Japan prepares to launch sample return mission to Phobos",
+          "url": "https://www.astronomy.com/space-exploration/japan-prepares-to-launch-sample-return-mission-to-phobos/",
+          "source": "Astronomy Magazine",
+          "score": 60.6,
+          "published_at": "2026-10-16T19:05:00+00:00"
         },
         {
-          "title": "Roman lifts off on a mission to survey the infrared sky",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/08/Roman_lifts_off_on_a_mission_to_survey_the_infrared_sky",
-          "source": "ESA 空间科学",
-          "score": 41.2,
-          "published_at": "2026-08-31T07:00:00+00:00"
+          "title": "Japan is launching a mission to Mars’s largest moon Phobos",
+          "url": "https://www.newscientist.com/article/2594332-japan-is-launching-a-mission-to-marss-largest-moon-phobos/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 60.6,
+          "published_at": "2026-10-16T17:00:00+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null,
-      "refs": {
-        "arxiv": "2609.28637",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
+      "llmScore": 57.0
     },
     {
-      "id": "15429aec5572",
-      "title": "Curiosity Greets a Spectacular Dawn Sky on Mars",
+      "id": "a89bff125beb",
+      "title": "The Sky Today on Friday, October 16: Tethys and its shadow transit",
       "status": "关注中",
-      "heat": 22.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-17T00:29:59.302520+00:00",
+      "heat": 34.5,
+      "sourceCount": 1,
+      "signalCount": 3,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
       "sources": [
-        "ESA 空间科学",
-        "Universe Today"
+        "Astronomy Magazine"
       ],
       "links": [
         {
-          "title": "Curiosity Greets a Spectacular Dawn Sky on Mars",
-          "url": "https://www.universetoday.com/articles/curiosity-greets-a-spectacular-dawn-sky-on-mars",
-          "source": "Universe Today",
-          "score": 59.5,
-          "published_at": "2026-10-14T13:51:00+00:00"
+          "title": "The Sky Today on Friday, October 16: Tethys and its shadow transit",
+          "url": "https://www.astronomy.com/observing/the-sky-today-friday-october-16-2026/",
+          "source": "Astronomy Magazine",
+          "score": 60.0,
+          "published_at": "2026-10-16T08:00:00+00:00"
+        },
+        {
+          "title": "The Sky Today on Saturday, October 17: Watch Wild Ducks",
+          "url": "https://www.astronomy.com/observing/the-sky-today-saturday-october-17-2026/",
+          "source": "Astronomy Magazine",
+          "score": 36.4,
+          "published_at": "2026-10-17T08:00:00+00:00"
+        },
+        {
+          "title": "The Sky This Week from October 16 to 23: The Orionid meteor shower peaks",
+          "url": "https://www.astronomy.com/the-sky-this-week/the-sky-this-week-from-october-16-to-23-2026/",
+          "source": "Astronomy Magazine",
+          "score": 36.0,
+          "published_at": "2026-10-16T05:00:00+00:00"
+        },
+        {
+          "title": "The Sky Today on Thursday, October 15: Double crater Messier",
+          "url": "https://www.astronomy.com/observing/the-sky-today-thursday-october-15-2026/",
+          "source": "Astronomy Magazine",
+          "score": 35.6,
+          "published_at": "2026-10-15T08:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 30.0
+    },
+    {
+      "id": "01f3d877bc72",
+      "title": "Mars’s oddest cloud may be even odder than we thought",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
+      "sources": [
+        "ESA 空间科学",
+        "Phys.org 太空新闻"
+      ],
+      "links": [
+        {
+          "title": "Lone, starless cloud may be a 'dark' galaxy",
+          "url": "https://phys.org/news/2026-10-lone-starless-cloud-dark-galaxy.html",
+          "source": "Phys.org 太空新闻",
+          "score": 61.2,
+          "published_at": "2026-10-17T13:40:04+00:00"
         },
         {
           "title": "Mars’s oddest cloud may be even odder than we thought",
           "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
           "source": "ESA 空间科学",
-          "score": 54.9,
+          "score": 54.5,
           "published_at": "2026-10-07T15:00:00+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "llmScore": 26.0
     },
     {
-      "id": "31099ba37475",
-      "title": "Science begins for Smile",
+      "id": "b565e3a35af8",
+      "title": "A distant supercluster of galaxies points to self-interacting dark matter",
       "status": "关注中",
-      "heat": 22.0,
+      "heat": 21.0,
       "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-17T00:29:59.302520+00:00",
+      "signalCount": 1,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
       "sources": [
-        "ESA 空间科学",
-        "MIT News 太空探索"
+        "New Scientist 太空",
+        "Phys.org 太空新闻"
       ],
       "links": [
         {
-          "title": "Science begins for Smile",
-          "url": "https://www.esa.int/Science_Exploration/Space_Science/Smile/Science_begins_for_Smile",
-          "source": "ESA 空间科学",
-          "score": 50.0,
-          "published_at": "2026-09-30T07:05:00+00:00"
+          "title": "A distant supercluster of galaxies points to self-interacting dark matter",
+          "url": "https://phys.org/news/2026-10-distant-supercluster-galaxies-interacting-dark.html",
+          "source": "Phys.org 太空新闻",
+          "score": 60.6,
+          "published_at": "2026-10-16T18:00:08+00:00"
         },
         {
-          "title": "MIT in the media: Exploring how curiosity-driven science is an essential ingredient in America’s success",
-          "url": "https://news.mit.edu/2026/mit-media-exploring-how-curiosity-driven-science-essential-ingredient-americas-success",
-          "source": "MIT News 太空探索",
-          "score": 24.7,
-          "published_at": "2026-06-25T16:00:00+00:00"
+          "title": "The telescope that could reveal what dark matter and dark energy are",
+          "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 53.9,
+          "published_at": "2026-10-06T17:00:00+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "llmScore": 36.0
     },
     {
-      "id": "b8c1bbaf157f",
-      "title": "A galaxy spinning out of sync",
+      "id": "772cc63068a4",
+      "title": "Hubble's superbubble scene",
       "status": "关注中",
-      "heat": 22.0,
+      "heat": 21.0,
       "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-17T00:29:59.302520+00:00",
+      "signalCount": 1,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
       "sources": [
         "ESA 空间科学",
-        "New Scientist 太空"
+        "Phys.org 太空新闻"
       ],
       "links": [
         {
-          "title": "A galaxy spinning out of sync",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/A_galaxy_spinning_out_of_sync",
+          "title": "Hubble's superbubble scene",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/Hubble_s_superbubble_scene",
           "source": "ESA 空间科学",
-          "score": 42.0,
-          "published_at": "2026-09-18T08:00:00+00:00"
+          "score": 41.2,
+          "published_at": "2026-09-03T08:00:00+00:00"
         },
         {
-          "title": "Two large asteroids found spinning as fast as a fairground ride",
-          "url": "https://www.newscientist.com/article/2593044-two-large-asteroids-found-spinning-as-fast-as-fairground-ride/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 33.8,
-          "published_at": "2026-10-09T17:00:00+00:00"
+          "title": "NASA's Hubble spies spiral's edge",
+          "url": "https://phys.org/news/2026-10-nasa-hubble-spies-spiral-edge.html",
+          "source": "Phys.org 太空新闻",
+          "score": 36.4,
+          "published_at": "2026-10-16T17:40:08+00:00"
         }
       ],
       "trend": "new",
@@ -257,88 +226,155 @@
       "digestTitle": null
     },
     {
-      "id": "16ca4c86278b",
-      "title": "GWTC-5.0: Updated LIGO–Virgo–KAGRA Catalog sets new records in precision gravitational wave astronomy",
+      "id": "a1046b8f1da0",
+      "title": "Mars moon lander set to launch on 19 October",
       "status": "关注中",
-      "heat": 21.5,
-      "sourceCount": 1,
-      "signalCount": 4,
-      "latestAt": "2026-10-17T00:29:59.302520+00:00",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
       "sources": [
-        "LIGO"
+        "ESA 空间科学",
+        "Phys.org 太空新闻"
       ],
       "links": [
         {
-          "title": "GWTC-5.0: Updated LIGO–Virgo–KAGRA Catalog sets new records in precision gravitational wave astronomy",
-          "url": "https://ligo.org/gwtc-5-0-updated-ligo-virgo-kagra-catalog-sets-new-records-in-precision-gravitational-wave-astronomy/",
-          "source": "LIGO",
-          "score": 40.8,
-          "published_at": "2026-05-26T12:00:14+00:00"
+          "title": "How did Mars get its moons? Japan's MMX space mission aims to solve the puzzle",
+          "url": "https://phys.org/news/2026-10-mars-moons-japan-mmx-space.html",
+          "source": "Phys.org 太空新闻",
+          "score": 60.0,
+          "published_at": "2026-10-15T19:40:05+00:00"
         },
         {
-          "title": "Gravitational wave detectors can now ‘autotune’ their signals",
-          "url": "https://ligo.org/gravitational-wave-detectors-can-now-autotune-their-signals/",
-          "source": "LIGO",
-          "score": 40.8,
-          "published_at": "2026-05-13T01:34:22+00:00"
-        },
-        {
-          "title": "GWTC-4.0: New catalog more than doubles the number of gravitational-wave detections made by LIGO, Virgo, and KAGRA observatories",
-          "url": "https://ligo.org/new-catalog-more-than-doubles-the-number-of-gravitational-wave-detections-made-by-ligo-virgo-and-kagra-observatories/",
-          "source": "LIGO",
-          "score": 40.8,
-          "published_at": "2026-03-05T13:01:12+00:00"
-        },
-        {
-          "title": "Constraints on gravitational waves from the 2024 Vela pulsar glitch",
-          "url": "https://ligo.org/constraints-on-gravitational-waves-from-the-2024-vela-pulsar-glitch/",
-          "source": "LIGO",
-          "score": 40.8,
-          "published_at": "2026-02-25T04:06:26+00:00"
+          "title": "Mars moon lander set to launch on 19 October",
+          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
+          "source": "ESA 空间科学",
+          "score": 58.4,
+          "published_at": "2026-10-13T12:00:00+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "llmScore": 46.0
     },
     {
-      "id": "fd84f254420d",
-      "title": "Testing general relativity with observing run O4a data",
+      "id": "140dcf67ab21",
+      "title": "NASA Satellites Observe Historic 2026 El Niño",
       "status": "关注中",
-      "heat": 18.0,
-      "sourceCount": 1,
-      "signalCount": 3,
-      "latestAt": "2026-10-17T00:29:59.302520+00:00",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
       "sources": [
-        "LIGO"
+        "NASA 快讯",
+        "Universe Today"
       ],
       "links": [
         {
-          "title": "Testing general relativity with observing run O4a data",
-          "url": "https://ligo.org/testing-general-relativity-with-observing-run-o4a-data/",
-          "source": "LIGO",
-          "score": 39.3,
-          "published_at": "2026-04-29T08:00:00+00:00"
+          "title": "NASA Satellites Observe Historic 2026 El Niño",
+          "url": "https://science.nasa.gov/earth/nasa-satellites-observe-historic-2026-el-nino/",
+          "source": "NASA 快讯",
+          "score": 59.9,
+          "published_at": "2026-10-15T17:59:22+00:00"
         },
         {
-          "title": "Exceptional tests of general relativity with GW250114",
-          "url": "https://ligo.org/exceptional-tests-of-general-relativity-with-gw250114/",
-          "source": "LIGO",
-          "score": 39.3,
-          "published_at": "2026-02-04T15:23:09+00:00"
-        },
-        {
-          "title": "LIGO-Virgo-KAGRA Collaboration successfully wraps up its fourth Observing Run",
-          "url": "https://ligo.org/ligo-virgo-kagra-collaboration-successfully-wraps-up-its-fourth-observing-run/",
-          "source": "LIGO",
-          "score": 39.3,
-          "published_at": "2025-11-18T16:06:59+00:00"
+          "title": "Astronomers Observe The Limb Darkening Effect On Nearby Stars",
+          "url": "https://www.universetoday.com/articles/astronomers-observe-the-limb-darkening-effect-on-nearby-stars",
+          "source": "Universe Today",
+          "score": 59.2,
+          "published_at": "2026-10-14T16:04:42+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 35.0
+    },
+    {
+      "id": "4c7f235a5dbf",
+      "title": "NASA to Help Unlock Mysteries of Mars’ Moons in Upcoming Mission",
+      "status": "发酵中",
+      "heat": 17.7,
+      "sourceCount": 3,
+      "signalCount": 1,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
+      "sources": [
+        "MIT News 太空探索",
+        "NASA 快讯",
+        "Phys.org 太空新闻"
+      ],
+      "links": [
+        {
+          "title": "NASA to Help Unlock Mysteries of Mars’ Moons in Upcoming Mission",
+          "url": "https://science.nasa.gov/directorates/smd/planetary-science-division/nasa-to-help-unlock-mysteries-of-mars-moons-in-upcoming-mission/",
+          "source": "NASA 快讯",
+          "score": 66.3,
+          "published_at": "2026-10-15T19:58:08+00:00"
+        },
+        {
+          "title": "NASA develops batteries to power humanity's return to moon",
+          "url": "https://phys.org/news/2026-10-nasa-batteries-power-humanity-moon.html",
+          "source": "Phys.org 太空新闻",
+          "score": 65.8,
+          "published_at": "2026-10-14T23:40:02+00:00"
+        },
+        {
+          "title": "NASA JPL testing readies Voyager technologies lander for moon mission",
+          "url": "https://phys.org/news/2026-10-nasa-jpl-readies-voyager-technologies.html",
+          "source": "Phys.org 太空新闻",
+          "score": 65.0,
+          "published_at": "2026-10-13T19:00:19+00:00"
+        },
+        {
+          "title": "Lincoln Laboratory laser communications terminal launches on historic Artemis II moon mission",
+          "url": "https://news.mit.edu/2026/lincoln-laboratory-laser-communications-terminal-launches-artemis-ii-0402",
+          "source": "MIT News 太空探索",
+          "score": 47.5,
+          "published_at": "2026-04-02T13:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 34.5
+    },
+    {
+      "id": "34f0f9be64c7",
+      "title": "Astronomers spot a giant planet that is as light as cotton candy",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-10-17T13:44:21.858238+00:00",
+      "sources": [
+        "MIT News 太空探索",
+        "Phys.org 太空新闻"
+      ],
+      "links": [
+        {
+          "title": "Green, pink and purple: Astronomers reveal the surprising true colors of white dwarf stars",
+          "url": "https://phys.org/news/2026-10-green-pink-purple-astronomers-reveal.html",
+          "source": "Phys.org 太空新闻",
+          "score": 59.5,
+          "published_at": "2026-10-15T00:10:01+00:00"
+        },
+        {
+          "title": "Astronomers spot a giant planet that is as light as cotton candy",
+          "url": "https://news.mit.edu/2024/astronomers-spot-giant-planet-light-as-cotton-candy-0514",
+          "source": "MIT News 太空探索",
+          "score": 24.7,
+          "published_at": "2024-05-14T17:30:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null

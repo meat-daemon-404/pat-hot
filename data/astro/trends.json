@@ -1,47 +1,46 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T00:29:59.302520+00:00",
-  "weekStart": "2026-10-12",
+  "generatedAt": "2026-10-17T13:44:21.858238+00:00",
+  "weekStart": "2026-10-11",
+  "windowDays": 7,
+  "windowStart": "2026-10-11",
+  "windowEnd": "2026-10-17",
+  "prevStart": "2026-10-04",
+  "prevEnd": "2026-10-10",
   "categoryDelta": [
     {
       "category": "深空探测",
-      "thisWeek": 1907.7,
-      "lastWeek": 477.7,
-      "deltaPct": 299.4
+      "thisWeek": 1766.7,
+      "lastWeek": 370.2,
+      "deltaPct": 377.2
     },
     {
       "category": "其他",
-      "thisWeek": 1484.5,
-      "lastWeek": 692.3,
-      "deltaPct": 114.4
-    },
-    {
-      "category": "科研进展",
-      "thisWeek": 1358.6,
-      "lastWeek": 119.3,
-      "deltaPct": 1038.8
+      "thisWeek": 1681.0,
+      "lastWeek": 522.9,
+      "deltaPct": 221.5
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 1325.9,
+      "thisWeek": 1253.2,
       "lastWeek": 240.1,
-      "deltaPct": 452.2
+      "deltaPct": 421.9
+    },
+    {
+      "category": "科研进展",
+      "thisWeek": 1116.1,
+      "lastWeek": 119.3,
+      "deltaPct": 835.5
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 1010.4,
-      "lastWeek": 160.4,
-      "deltaPct": 529.9
+      "thisWeek": 952.5,
+      "lastWeek": 109.9,
+      "deltaPct": 766.7
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 322.7,
-      "lastWeek": 0,
-      "deltaPct": 100.0
-    },
-    {
-      "category": "系外行星",
-      "thisWeek": 136.7,
+      "thisWeek": 322.5,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
@@ -50,15 +49,15 @@
       "thisWeek": 114.3,
       "lastWeek": 0,
       "deltaPct": 100.0
+    },
+    {
+      "category": "系外行星",
+      "thisWeek": 110.7,
+      "lastWeek": 0,
+      "deltaPct": 100.0
     }
   ],
   "newTopics": [
-    {
-      "topic_id": "2c320511f7ff",
-      "title": "Astronomer leads global team on NASA mission to create unprecedented view of the early universe",
-      "score": 2293.8,
-      "days": 2
-    },
     {
       "topic_id": "bba7edd9f937",
       "title": "New evidence points to two feeding black holes just 175 parsecs apart lurking in the early universe",
@@ -84,6 +83,12 @@
       "days": 1
     },
     {
+      "topic_id": "2c320511f7ff",
+      "title": "Astronomer leads global team on NASA mission to create unprecedented view of the early universe",
+      "score": 362.0,
+      "days": 1
+    },
+    {
       "topic_id": "5bfcfc5cfd3b",
       "title": "NASA's SpaceX CRS-35 mission to launch health research",
       "score": 351.3,
@@ -96,30 +101,23 @@
       "days": 2
     },
     {
+      "topic_id": "a89bff125beb",
+      "title": "The Sky Today on Friday, October 16: Tethys and its shadow transit",
+      "score": 132.4,
+      "days": 2
+    },
+    {
       "topic_id": "4b7b215b7679",
       "title": "Curiosity Greets a Spectacular Dawn Sky on Mars",
       "score": 130.0,
       "days": 2
     },
     {
-      "topic_id": "e6777b1261a8",
-      "title": "Audible curvaton: modulated phase transition as the origin of large-scale curvature perturbations and gravitational wave anisotropies",
-      "score": 98.5,
+      "topic_id": "6e151cdf71da",
+      "title": "Japan prepares to launch sample return mission to Phobos",
+      "score": 121.2,
       "days": 1
-    },
-    {
-      "topic_id": "b2173dfe1dd3",
-      "title": "The Atacama Cosmology Telescope: DR6 Constraints on Isotropic Time-Dependent Cosmic Birefringence from Axion-like Particles",
-      "score": 90.7,
-      "days": 2
     }
   ],
-  "sustainedTopics": [
-    {
-      "topic_id": "91cfb642aaf2",
-      "title": "New Study Shows That Earth and Mars Had Different Origins",
-      "days": 3,
-      "score": 196.4
-    }
-  ]
+  "sustainedTopics": []
 }

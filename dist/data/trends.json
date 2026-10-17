@@ -1,67 +1,72 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T00:29:59.302520+00:00",
-  "weekStart": "2026-10-12",
+  "generatedAt": "2026-10-17T13:44:21.858238+00:00",
+  "weekStart": "2026-10-11",
+  "windowDays": 7,
+  "windowStart": "2026-10-11",
+  "windowEnd": "2026-10-17",
+  "prevStart": "2026-10-04",
+  "prevEnd": "2026-10-10",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4831.6,
-      "lastWeek": 764.2,
-      "deltaPct": 532.2
-    },
-    {
-      "category": "科研进展",
-      "thisWeek": 3759.0,
-      "lastWeek": 693.0,
-      "deltaPct": 442.4
-    },
-    {
-      "category": "产业与资本",
-      "thisWeek": 3453.9,
-      "lastWeek": 960.6,
-      "deltaPct": 259.6
+      "thisWeek": 5155.2,
+      "lastWeek": 64.2,
+      "deltaPct": 7929.9
     },
     {
       "category": "通信与算力",
-      "thisWeek": 3393.4,
-      "lastWeek": 695.0,
-      "deltaPct": 388.3
-    },
-    {
-      "category": "光通信",
-      "thisWeek": 3277.0,
-      "lastWeek": 618.8,
-      "deltaPct": 429.6
+      "thisWeek": 4319.2,
+      "lastWeek": 0,
+      "deltaPct": 100.0
     },
     {
       "category": "其他",
-      "thisWeek": 3220.8,
-      "lastWeek": 1537.0,
-      "deltaPct": 109.6
+      "thisWeek": 4229.0,
+      "lastWeek": 661.8,
+      "deltaPct": 539.0
+    },
+    {
+      "category": "产业与资本",
+      "thisWeek": 4226.7,
+      "lastWeek": 210.6,
+      "deltaPct": 1907.0
+    },
+    {
+      "category": "光通信",
+      "thisWeek": 3767.3,
+      "lastWeek": 243.8,
+      "deltaPct": 1445.2
+    },
+    {
+      "category": "科研进展",
+      "thisWeek": 3756.2,
+      "lastWeek": 68.0,
+      "deltaPct": 5423.8
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 2312.6,
-      "lastWeek": 687.1,
-      "deltaPct": 236.6
+      "thisWeek": 2567.8,
+      "lastWeek": 87.1,
+      "deltaPct": 2848.1
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1526.2,
-      "lastWeek": 689.8,
-      "deltaPct": 121.3
+      "thisWeek": 1866.2,
+      "lastWeek": 340.4,
+      "deltaPct": 448.2
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 658.1,
-      "lastWeek": 606.5,
-      "deltaPct": 8.5
+      "thisWeek": 988.1,
+      "lastWeek": 276.5,
+      "deltaPct": 257.4
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 422.2,
-      "lastWeek": 196.9,
-      "deltaPct": 114.4
+      "thisWeek": 562.2,
+      "lastWeek": 56.9,
+      "deltaPct": 888.0
     },
     {
       "category": "光伏与新能源",
@@ -72,15 +77,9 @@
   ],
   "newTopics": [
     {
-      "topic_id": "4529832de80e",
-      "title": "Localized high-Q resonances enable electrically defined beam steering in lithium niobate metasurfaces",
-      "score": 2552.5,
-      "days": 2
-    },
-    {
       "topic_id": "8c01b90c3aae",
       "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
-      "score": 2063.4,
+      "score": 1645.0,
       "days": 4
     },
     {
@@ -98,7 +97,7 @@
     {
       "topic_id": "870a19576e18",
       "title": "工信部对我国网络强国建设提出四点建议",
-      "score": 1416.5,
+      "score": 1151.2,
       "days": 2
     },
     {
@@ -130,6 +129,12 @@
       "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
       "score": 574.6,
       "days": 1
+    },
+    {
+      "topic_id": "d9d1f75bf9c3",
+      "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
+      "score": 464.6,
+      "days": 2
     }
   ],
   "sustainedTopics": [
@@ -137,13 +142,13 @@
       "topic_id": "8c01b90c3aae",
       "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
       "days": 4,
-      "score": 2063.4
+      "score": 1645.0
     },
     {
       "topic_id": "40753cddc649",
       "title": "大招齐发，英特尔直击网络转型",
-      "days": 4,
-      "score": 466.4
+      "days": 3,
+      "score": 349.8
     }
   ]
 }

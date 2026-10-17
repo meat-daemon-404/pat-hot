@@ -1,37 +1,42 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T00:29:59.302520+00:00",
-  "weekStart": "2026-10-12",
+  "generatedAt": "2026-10-17T13:44:21.858238+00:00",
+  "weekStart": "2026-10-11",
+  "windowDays": 7,
+  "windowStart": "2026-10-11",
+  "windowEnd": "2026-10-17",
+  "prevStart": "2026-10-04",
+  "prevEnd": "2026-10-10",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1562.4,
-      "lastWeek": 805.6,
-      "deltaPct": 93.9
+      "thisWeek": 2255.1,
+      "lastWeek": 503.2,
+      "deltaPct": 348.2
     },
     {
       "category": "其他",
-      "thisWeek": 1446.1,
+      "thisWeek": 1332.3,
       "lastWeek": 192.9,
-      "deltaPct": 649.7
+      "deltaPct": 590.7
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 684.4,
+      "thisWeek": 665.4,
       "lastWeek": 158.9,
-      "deltaPct": 330.7
-    },
-    {
-      "category": "量子信息与计算",
-      "thisWeek": 409.6,
-      "lastWeek": 0,
-      "deltaPct": 100.0
+      "deltaPct": 318.8
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 403.6,
+      "thisWeek": 454.1,
       "lastWeek": 49.8,
-      "deltaPct": 710.4
+      "deltaPct": 811.8
+    },
+    {
+      "category": "量子信息与计算",
+      "thisWeek": 343.8,
+      "lastWeek": 0,
+      "deltaPct": 100.0
     },
     {
       "category": "等离子体",
@@ -47,12 +52,6 @@
     }
   ],
   "newTopics": [
-    {
-      "topic_id": "1b53b99d326d",
-      "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
-      "score": 1071.5,
-      "days": 2
-    },
     {
       "topic_id": "33ec101f3d77",
       "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
@@ -70,6 +69,24 @@
       "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
       "score": 239.2,
       "days": 1
+    },
+    {
+      "topic_id": "a025ac6605c2",
+      "title": "Numerical simulation and structural optimization of electrostatic precipitators for particle purification in space capsules",
+      "score": 177.0,
+      "days": 1
+    },
+    {
+      "topic_id": "de63e6972270",
+      "title": "A two-stage optimization method for wide-range single-electron quantum magnetic sensing",
+      "score": 161.8,
+      "days": 2
+    },
+    {
+      "topic_id": "fcbfcec63d7d",
+      "title": "Multiphysics framework for sustainable iron ore reduction–softening–melting: high-energy X-ray computed tomography and moving particle hydrodynamics",
+      "score": 96.5,
+      "days": 2
     },
     {
       "topic_id": "8eae9d96a171",
@@ -90,21 +107,9 @@
       "days": 2
     },
     {
-      "topic_id": "11e25bee56d4",
-      "title": "The public consultation for the Future Circular Collider (FCC) project generates extensive dialogue with the local communities",
-      "score": 61.9,
-      "days": 1
-    },
-    {
-      "topic_id": "4c7f63ab9142",
-      "title": "IBM executive warns of risk of quantum computing hacks",
-      "score": 59.9,
-      "days": 1
-    },
-    {
-      "topic_id": "989c28c5029e",
-      "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
-      "score": 44.8,
+      "topic_id": "1b53b99d326d",
+      "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
+      "score": 65.8,
       "days": 1
     }
   ],
