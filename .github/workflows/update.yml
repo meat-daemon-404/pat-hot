@@ -105,6 +105,25 @@ jobs:
           path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: 发布 Cloudflare Pages（pat-hot.pages.dev，可选）
+        # pages.dev 未接 Git 自动发布（见 README「部署到 Cloudflare Pages」节），过去只认
+        # 手动 wrangler deploy，于是定时刷新只更新 GitHub Pages，pages.dev 一路落后——
+        # 而 SM 侧 PatHotRail 读的正是 pages.dev 的 papers-index，链路时效被这条缺口拖住。
+        # 这一步把同一次产物也发到 pages.dev，闭合缺口。
+        # 门控：仓库未配置 CLOUDFLARE_API_TOKEN 时整步跳过（不红、不影响 GitHub Pages 部署），
+        # 配好 secret 即自动生效。functions/ 与 dist 同级，wrangler 从仓库根自动打包 Functions。
+        # 用运行时 shell 守卫而不是 step 级 if：一是 step 的 if 读不到本步自己 env: 里的值
+        # （GitHub 已知限制，写成 env.X != '' 会恒假静默失效），二是本文件对
+        # SENSENOVA_API_KEY 已用同款守卫口径，两处一致才看得懂。
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "ℹ️ 未配置 CLOUDFLARE_API_TOKEN Secret，跳过 pat-hot.pages.dev 发布（GitHub Pages 不受影响）"
+            exit 0
+          fi
+          npx --yes wrangler@4 pages deploy dist --project-name pat-hot --branch master --commit-dirty=true
       - name: 线上回读自检（部署后 gate）
         # deploy-pages 成功只代表"部署动作完成"，不代表线上内容正确——
         # 2026-10-12 的坏产物（内联 CSS 被转义 + 旧版单频道）就是部署"成功"上线的。
