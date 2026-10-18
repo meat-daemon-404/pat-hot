@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T00:03:46.006233+00:00",
+  "generatedAt": "2026-10-18T14:02:56.185312+00:00",
   "count": 4,
   "items": [
     {
@@ -10,7 +10,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -20,22 +20,22 @@
           "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
           "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
           "source": "MIT News 物理",
-          "score": 41.2,
+          "score": 37.1,
           "published_at": "2026-08-05T15:00:00+00:00"
         },
         {
           "title": "New high-frequency method boosts 2D material readout for next-gen quantum computers",
           "url": "https://phys.org/news/2026-10-high-frequency-method-boosts-2d.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.3,
+          "score": 36.0,
           "published_at": "2026-10-16T22:00:01+00:00"
         }
       ],
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digest": "MIT研究人员开发出一种新技术，可制备晶圆级、空气稳定的超薄超导体样品，克服了将这些材料用于量子技术的主要障碍。另一项研究提出了一种高频方法，提升了二维材料的读出能力，用于下一代量子计算机。两项进展分别针对量子计算中的材料制备和信号读出环节。",
+      "digestTitle": "两项新技术推进量子计算材料应用"
     },
     {
       "id": "4721ee460be2",
@@ -44,7 +44,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -61,12 +61,12 @@
           "title": "Laser pulses bring order to a quantum material's tiny electrical regions",
           "url": "https://phys.org/news/2026-10-laser-pulses-quantum-material-tiny.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.8,
+          "score": 35.5,
           "published_at": "2026-10-15T17:00:07+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -78,7 +78,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -88,14 +88,14 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 58.1,
+          "score": 57.7,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
           "title": "On the hunt for dark matter",
           "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
           "source": "MIT News 物理",
-          "score": 41.2,
+          "score": 37.1,
           "published_at": "2026-08-11T04:00:00+00:00"
         }
       ],
@@ -112,25 +112,25 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
       ],
       "links": [
         {
-          "title": "Physicists are scrambling to make sense of possible dark matter signal",
-          "url": "https://www.newscientist.com/article/2589737-physicists-are-scrambling-to-make-sense-of-possible-dark-matter-signal/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 41.5,
-          "published_at": "2026-09-18T12:00:00+00:00"
-        },
-        {
           "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
           "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
           "source": "MIT News 物理",
-          "score": 41.2,
+          "score": 37.1,
           "published_at": "2026-08-07T09:00:00+00:00"
+        },
+        {
+          "title": "Physicists are scrambling to make sense of possible dark matter signal",
+          "url": "https://www.newscientist.com/article/2589737-physicists-are-scrambling-to-make-sense-of-possible-dark-matter-signal/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 37.1,
+          "published_at": "2026-09-18T12:00:00+00:00"
         }
       ],
       "trend": "new",

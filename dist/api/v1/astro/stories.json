@@ -1,42 +1,64 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T00:03:46.006233+00:00",
+  "generatedAt": "2026-10-18T14:02:56.185312+00:00",
   "count": 10,
   "items": [
     {
-      "id": "6e151cdf71da",
-      "title": "Japan prepares to launch sample return mission to Phobos",
-      "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
+      "id": "f73fa0faac63",
+      "title": "Japan's MMX mission aims to swipe soil samples from Mars's moon Phobos",
+      "status": "发酵中",
+      "heat": 56.5,
+      "sourceCount": 3,
+      "signalCount": 4,
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
       "sources": [
         "Astronomy Magazine",
-        "New Scientist 太空"
+        "New Scientist 太空",
+        "Phys.org 太空新闻"
       ],
       "links": [
+        {
+          "title": "Japan's MMX mission aims to swipe soil samples from Mars's moon Phobos",
+          "url": "https://phys.org/news/2026-10-japan-mmx-mission-aims-swipe.html",
+          "source": "Phys.org 太空新闻",
+          "score": 69.0,
+          "published_at": "2026-10-18T14:00:01+00:00"
+        },
+        {
+          "title": "Japan to launch spacecraft on a mission to get samples from a Martian moon",
+          "url": "https://phys.org/news/2026-10-japan-spacecraft-mission-samples-martian.html",
+          "source": "Phys.org 太空新闻",
+          "score": 68.9,
+          "published_at": "2026-10-18T11:38:40+00:00"
+        },
         {
           "title": "Japan prepares to launch sample return mission to Phobos",
           "url": "https://www.astronomy.com/space-exploration/japan-prepares-to-launch-sample-return-mission-to-phobos/",
           "source": "Astronomy Magazine",
-          "score": 60.4,
+          "score": 67.8,
           "published_at": "2026-10-16T19:05:00+00:00"
         },
         {
           "title": "Japan is launching a mission to Mars’s largest moon Phobos",
           "url": "https://www.newscientist.com/article/2594332-japan-is-launching-a-mission-to-marss-largest-moon-phobos/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 60.3,
+          "score": 67.7,
           "published_at": "2026-10-16T17:00:00+00:00"
+        },
+        {
+          "title": "How did Mars get its moons? Japan's MMX space mission aims to solve the puzzle",
+          "url": "https://phys.org/news/2026-10-mars-moons-japan-mmx-space.html",
+          "source": "Phys.org 太空新闻",
+          "score": 67.2,
+          "published_at": "2026-10-15T19:40:05+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null,
-      "llmScore": 57.0
+      "llmScore": 36.0
     },
     {
       "id": "3abf798e8fbd",
@@ -45,7 +67,7 @@
       "heat": 35.3,
       "sourceCount": 3,
       "signalCount": 2,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
       "sources": [
         "MIT News 太空探索",
         "Phys.org 太空新闻",
@@ -56,77 +78,29 @@
           "title": "New Research Reveals How Long Stays in Space Affects the Human Genome",
           "url": "https://www.universetoday.com/articles/new-research-reveals-how-long-stays-in-space-affects-the-human-genome",
           "source": "Universe Today",
-          "score": 39.6,
+          "score": 39.4,
           "published_at": "2026-10-17T23:11:28+00:00"
         },
         {
           "title": "Plants shift gene activity within minutes of entering spaceflight, experiment reveals",
           "url": "https://phys.org/news/2026-10-shift-gene-minutes-spaceflight-reveals.html",
           "source": "Phys.org 太空新闻",
-          "score": 39.2,
+          "score": 38.9,
           "published_at": "2026-10-16T23:00:01+00:00"
         },
         {
           "title": "The next generation’s guide to the new space economy",
           "url": "https://news.mit.edu/2026/guide-to-new-space-economy-1002",
           "source": "MIT News 太空探索",
-          "score": 33.4,
+          "score": 33.2,
           "published_at": "2026-10-02T14:50:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "a89bff125beb",
-      "title": "The Sky Today on Friday, October 16: Tethys and its shadow transit",
-      "status": "关注中",
-      "heat": 34.5,
-      "sourceCount": 1,
-      "signalCount": 3,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
-      "sources": [
-        "Astronomy Magazine"
-      ],
-      "links": [
-        {
-          "title": "The Sky Today on Friday, October 16: Tethys and its shadow transit",
-          "url": "https://www.astronomy.com/observing/the-sky-today-friday-october-16-2026/",
-          "source": "Astronomy Magazine",
-          "score": 59.7,
-          "published_at": "2026-10-16T08:00:00+00:00"
-        },
-        {
-          "title": "The Sky Today on Saturday, October 17: Watch Wild Ducks",
-          "url": "https://www.astronomy.com/observing/the-sky-today-saturday-october-17-2026/",
-          "source": "Astronomy Magazine",
-          "score": 36.2,
-          "published_at": "2026-10-17T08:00:00+00:00"
-        },
-        {
-          "title": "The Sky This Week from October 16 to 23: The Orionid meteor shower peaks",
-          "url": "https://www.astronomy.com/the-sky-this-week/the-sky-this-week-from-october-16-to-23-2026/",
-          "source": "Astronomy Magazine",
-          "score": 35.8,
-          "published_at": "2026-10-16T05:00:00+00:00"
-        },
-        {
-          "title": "The Sky Today on Thursday, October 15: Double crater Messier",
-          "url": "https://www.astronomy.com/observing/the-sky-today-thursday-october-15-2026/",
-          "source": "Astronomy Magazine",
-          "score": 35.4,
-          "published_at": "2026-10-15T08:00:00+00:00"
         }
       ],
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
       "digest": null,
-      "digestTitle": null,
-      "llmScore": 30.0
+      "digestTitle": null
     },
     {
       "id": "01f3d877bc72",
@@ -135,7 +109,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
       "sources": [
         "ESA 空间科学",
         "Phys.org 太空新闻"
@@ -145,14 +119,14 @@
           "title": "Lone, starless cloud may be a 'dark' galaxy",
           "url": "https://phys.org/news/2026-10-lone-starless-cloud-dark-galaxy.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.9,
+          "score": 60.5,
           "published_at": "2026-10-17T13:40:04+00:00"
         },
         {
           "title": "Mars’s oddest cloud may be even odder than we thought",
           "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
           "source": "ESA 空间科学",
-          "score": 54.2,
+          "score": 53.9,
           "published_at": "2026-10-07T15:00:00+00:00"
         }
       ],
@@ -170,7 +144,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
       "sources": [
         "New Scientist 太空",
         "Phys.org 太空新闻"
@@ -180,14 +154,14 @@
           "title": "A distant supercluster of galaxies points to self-interacting dark matter",
           "url": "https://phys.org/news/2026-10-distant-supercluster-galaxies-interacting-dark.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.3,
+          "score": 59.9,
           "published_at": "2026-10-16T18:00:08+00:00"
         },
         {
           "title": "The telescope that could reveal what dark matter and dark energy are",
           "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 53.6,
+          "score": 53.2,
           "published_at": "2026-10-06T17:00:00+00:00"
         }
       ],
@@ -205,7 +179,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
       "sources": [
         "ESA 空间科学",
         "Phys.org 太空新闻"
@@ -222,7 +196,7 @@
           "title": "NASA's Hubble spies spiral's edge",
           "url": "https://phys.org/news/2026-10-nasa-hubble-spies-spiral-edge.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.2,
+          "score": 36.0,
           "published_at": "2026-10-16T17:40:08+00:00"
         }
       ],
@@ -239,7 +213,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
       "sources": [
         "NASA 快讯",
         "Phys.org 太空新闻"
@@ -249,58 +223,23 @@
           "title": "Artemis II Heat Shield After Splashdown",
           "url": "https://www.nasa.gov/image-article/artemis-ii-heat-shield-after-splashdown/",
           "source": "NASA 快讯",
-          "score": 60.3,
+          "score": 59.9,
           "published_at": "2026-10-16T16:28:01+00:00"
         },
         {
           "title": "Rigorous analysis confirms NASA's Artemis II heat shield performance",
           "url": "https://phys.org/news/2026-10-rigorous-analysis-nasa-artemis-ii.html",
           "source": "Phys.org 太空新闻",
-          "score": 59.8,
+          "score": 59.4,
           "published_at": "2026-10-15T23:40:01+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -50.0,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
       "llmScore": 51.0
-    },
-    {
-      "id": "a1046b8f1da0",
-      "title": "Mars moon lander set to launch on 19 October",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
-      "sources": [
-        "ESA 空间科学",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "How did Mars get its moons? Japan's MMX space mission aims to solve the puzzle",
-          "url": "https://phys.org/news/2026-10-mars-moons-japan-mmx-space.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.7,
-          "published_at": "2026-10-15T19:40:05+00:00"
-        },
-        {
-          "title": "Mars moon lander set to launch on 19 October",
-          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
-          "source": "ESA 空间科学",
-          "score": 58.2,
-          "published_at": "2026-10-13T12:00:00+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -100.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 46.0
     },
     {
       "id": "34f0f9be64c7",
@@ -309,7 +248,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
       "sources": [
         "MIT News 太空探索",
         "Phys.org 太空新闻"
@@ -319,7 +258,7 @@
           "title": "Green, pink and purple: Astronomers reveal the surprising true colors of white dwarf stars",
           "url": "https://phys.org/news/2026-10-green-pink-purple-astronomers-reveal.html",
           "source": "Phys.org 太空新闻",
-          "score": 59.2,
+          "score": 58.8,
           "published_at": "2026-10-15T00:10:01+00:00"
         },
         {
@@ -337,13 +276,13 @@
       "digestTitle": null
     },
     {
-      "id": "4c7f235a5dbf",
+      "id": "2d563d3bc7e2",
       "title": "NASA to Help Unlock Mysteries of Mars’ Moons in Upcoming Mission",
       "status": "发酵中",
       "heat": 0.0,
       "sourceCount": 3,
       "signalCount": 0,
-      "latestAt": "2026-10-18T00:03:46.006233+00:00",
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
       "sources": [
         "MIT News 太空探索",
         "NASA 快讯",
@@ -354,37 +293,107 @@
           "title": "NASA to Help Unlock Mysteries of Mars’ Moons in Upcoming Mission",
           "url": "https://science.nasa.gov/directorates/smd/planetary-science-division/nasa-to-help-unlock-mysteries-of-mars-moons-in-upcoming-mission/",
           "source": "NASA 快讯",
-          "score": 66.0,
+          "score": 64.2,
           "published_at": "2026-10-15T19:58:08+00:00"
         },
         {
           "title": "NASA develops batteries to power humanity's return to moon",
           "url": "https://phys.org/news/2026-10-nasa-batteries-power-humanity-moon.html",
           "source": "Phys.org 太空新闻",
-          "score": 65.5,
+          "score": 63.6,
           "published_at": "2026-10-14T23:40:02+00:00"
-        },
-        {
-          "title": "NASA JPL testing readies Voyager technologies lander for moon mission",
-          "url": "https://phys.org/news/2026-10-nasa-jpl-readies-voyager-technologies.html",
-          "source": "Phys.org 太空新闻",
-          "score": 64.7,
-          "published_at": "2026-10-13T19:00:19+00:00"
         },
         {
           "title": "Lincoln Laboratory laser communications terminal launches on historic Artemis II moon mission",
           "url": "https://news.mit.edu/2026/lincoln-laboratory-laser-communications-terminal-launches-artemis-ii-0402",
           "source": "MIT News 太空探索",
-          "score": 47.5,
+          "score": 46.0,
           "published_at": "2026-04-02T13:00:00+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null,
       "llmScore": 34.5
+    },
+    {
+      "id": "9533a2d5c91d",
+      "title": "A trip to Mars could come at a heartbreaking cost",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "A trip to Mars could come at a heartbreaking cost",
+          "url": "https://phys.org/news/2026-10-mars-heartbreaking.html",
+          "source": "Phys.org 太空新闻",
+          "score": 58.7,
+          "published_at": "2026-10-14T23:00:01+00:00"
+        },
+        {
+          "title": "A Trip to Mars Could Break Your Heart - Literally",
+          "url": "https://www.universetoday.com/articles/a-trip-to-mars-could-break-your-heart-literally",
+          "source": "Universe Today",
+          "score": 58.4,
+          "published_at": "2026-10-14T11:57:41+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 17.0
+    },
+    {
+      "id": "574152134c20",
+      "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
+      "status": "发酵中",
+      "heat": 0.0,
+      "sourceCount": 3,
+      "signalCount": 0,
+      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "sources": [
+        "LIGO",
+        "MIT News 太空探索",
+        "Phys.org 太空新闻"
+      ],
+      "links": [
+        {
+          "title": "New evidence points to two feeding black holes just 175 parsecs apart lurking in the early universe",
+          "url": "https://phys.org/news/2026-10-evidence-black-holes-parsecs-lurking.html",
+          "source": "Phys.org 太空新闻",
+          "score": 63.3,
+          "published_at": "2026-10-14T13:40:17+00:00"
+        },
+        {
+          "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
+          "url": "https://news.mit.edu/2024/using-wobbling-stellar-material-astronomers-measure-supermassive-black-hole-spin-0522",
+          "source": "MIT News 太空探索",
+          "score": 46.0,
+          "published_at": "2024-05-22T15:00:00+00:00"
+        },
+        {
+          "title": "Pair of distinct black hole mergers sheds new light on nature of their formation and evolution",
+          "url": "https://ligo.org/pair-of-distinct-black-hole-mergers-sheds-new-light-on-nature-of-their-formation-and-evolution/",
+          "source": "LIGO",
+          "score": 46.0,
+          "published_at": "2025-10-28T15:01:12+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
     }
   ]
 }

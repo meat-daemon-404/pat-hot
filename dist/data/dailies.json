@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T00:03:46.006233+00:00",
+  "generatedAt": "2026-10-18T14:02:56.185312+00:00",
   "count": 127,
   "dailies": {
     "2026-03-26": {
@@ -14342,13 +14342,57 @@
         "zh_full": null,
         "reason": null,
         "density": null,
-        "score": 66.8,
+        "score": 66.4,
         "role": "媒体",
         "published_at": "2026-10-16T21:37:37+00:00",
         "topic_id": "a74e97d8f49a",
         "topic_title": "Photonics Hot List: October 16, 2026"
       },
       "picks": [
+        {
+          "title": "A highway instead of a racetrack: Strong coupling of light and sound in an optical fiber",
+          "url": "https://phys.org/news/2026-10-highway-racetrack-strong-coupling-optical.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "For the first time, scientists have achieved strong coupling between light and long-lived acoustic vibrations in an optical fiber. Optical fibers are used in both classical telecommunications and quantum communication and could serve not on",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 55.5,
+          "role": "科研",
+          "published_at": "2026-10-16T21:20:01+00:00",
+          "topic_id": "8529464c7318",
+          "topic_title": "Strong coupling of photon to an electron on helium"
+        },
+        {
+          "title": "Infrared light overcomes mirror coating obstacle in gravitational wave detector upgrades",
+          "url": "https://phys.org/news/2026-10-infrared-mirror-coating-obstacle-gravitational.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Researchers have developed and tested a new locking method for gravitational wave detectors that will advance the discovery of distant black holes and neutron stars colliding.",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 45.9,
+          "role": "科研",
+          "published_at": "2026-10-16T21:00:05+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "flash": [
+        {
+          "title": "Maxwell's demon learns to turn concealed information into usable energy for microscopic systems",
+          "url": "https://phys.org/news/2026-10-maxwell-demon-concealed-usable-energy.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Since its introduction more than 150 years ago, the thought-provoking idea of Maxwell's demon has profoundly shaped our understanding of the relationship between information and energy. Maxwell's demon is an imagined microscopic gatekeeper ",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 45.8,
+          "role": "科研",
+          "published_at": "2026-10-16T18:50:01+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
         {
           "title": "New high-frequency method boosts 2D material readout for next-gen quantum computers",
           "url": "https://phys.org/news/2026-10-high-frequency-method-boosts-2d.html",
@@ -14362,20 +14406,6 @@
           "published_at": "2026-10-16T22:00:01+00:00",
           "topic_id": "b5e6b8e8034a",
           "topic_title": "New high-frequency method boosts 2D material readout for next-gen quantum computers"
-        },
-        {
-          "title": "A highway instead of a racetrack: Strong coupling of light and sound in an optical fiber",
-          "url": "https://phys.org/news/2026-10-highway-racetrack-strong-coupling-optical.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "For the first time, scientists have achieved strong coupling between light and long-lived acoustic vibrations in an optical fiber. Optical fibers are used in both classical telecommunications and quantum communication and could serve not on",
-          "zh_full": null,
-          "reason": null,
-          "density": null,
-          "score": 55.9,
-          "role": "科研",
-          "published_at": "2026-10-16T21:20:01+00:00",
-          "topic_id": "8529464c7318",
-          "topic_title": "Strong coupling of photon to an electron on helium"
         },
         {
           "title": "与众06/07上新搭激光雷达,纯电大众首次下探10万以内",
@@ -14402,36 +14432,6 @@
           "score": 55.5,
           "role": "媒体",
           "published_at": "2026-10-17T07:04:40+00:00",
-          "topic_id": null,
-          "topic_title": null
-        }
-      ],
-      "flash": [
-        {
-          "title": "Infrared light overcomes mirror coating obstacle in gravitational wave detector upgrades",
-          "url": "https://phys.org/news/2026-10-infrared-mirror-coating-obstacle-gravitational.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "Researchers have developed and tested a new locking method for gravitational wave detectors that will advance the discovery of distant black holes and neutron stars colliding.",
-          "zh_full": null,
-          "reason": null,
-          "density": null,
-          "score": 46.2,
-          "role": "科研",
-          "published_at": "2026-10-16T21:00:05+00:00",
-          "topic_id": null,
-          "topic_title": null
-        },
-        {
-          "title": "Maxwell's demon learns to turn concealed information into usable energy for microscopic systems",
-          "url": "https://phys.org/news/2026-10-maxwell-demon-concealed-usable-energy.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "Since its introduction more than 150 years ago, the thought-provoking idea of Maxwell's demon has profoundly shaped our understanding of the relationship between information and energy. Maxwell's demon is an imagined microscopic gatekeeper ",
-          "zh_full": null,
-          "reason": null,
-          "density": null,
-          "score": 46.2,
-          "role": "科研",
-          "published_at": "2026-10-16T18:50:01+00:00",
           "topic_id": null,
           "topic_title": null
         },
@@ -14704,81 +14704,6 @@
       ],
       "sections": [
         {
-          "category": "激光",
-          "articles": [
-            {
-              "title": "与众06/07上新搭激光雷达,纯电大众首次下探10万以内",
-              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS2S8cAr--_7UfEMbXovmjbe588qRbWIfelqXa8Fplpd9QWMcH_Zu-CydS3nkWkuwcKDOHQ3wo3fhQU9Eekm_uO3wpjgzOAEgc5IT8qBdQOVWSzNg1W_eIB8n7yzdR70K6BA7d9tcsEEB8OnaXEv3f6UQxfcicuoLTVkKXjhtTUggk8Y3SdfXGJVk9uf5BMPSFSaPEdLABkMbmiQobxmoVh8O8fIRwtipOg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=37C029E472D568D7C2C49DD1933EBA3AC32473706AD41020",
-              "source": "搜狗微信·光电行业 · E车汇",
-              "summary": "两款车型将起售价下探至9.99万元,同时新增激光雷达版本与77.5kWh长续航版本,在智能驾驶、智能座舱与续航能力上完成全面进阶...",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 55.7,
-              "role": "媒体",
-              "published_at": "2026-10-17T14:03:34+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "搭前备箱,车顶增加激光雷达,2027款极狐阿尔法S5官图发布!",
-              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS2S8cAr--_7UfEMbXovmjbe588qRbWIfelqXa8Fplpd9_bgxigcTjnGNT0Hof6eEDaWXgrdLPgZNiVBUdYGBWtVW5h5hEdy-4sxRMMKGeBhBGzG5stou7thH1WC0e7b-dJ9MRxtSrStG8uAN9PvD_-uh7o88DOhfkaAKHyxJYf5DnBt4Mb1d_v2MO22bl4pNwb4mdCozSiSzv9NPtCqiFkHFcvUoAZZH7Q..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=37C029E472D568D7C2C49DD1933EBA3AC32473706AD41020",
-              "source": "搜狗微信·光电行业 · 易车",
-              "summary": "另外车顶还配备了激光雷达,智驾能力上也将有质的飞跃.侧面来看,新车延续了动感的溜背造型,并采用无边框车门以及隐藏式门把...",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 55.5,
-              "role": "媒体",
-              "published_at": "2026-10-17T07:04:40+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "美国家地理空间情报局更新卫星激光雷达三维环境侦察技术征集文件",
-              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS2S8cAr--_7UecgcUxQduhS4RuiOjk0c0VqXa8Fplpd9ZzReDA1lbTtbiA9UuMPRU3E5LesHYHl4UfaVtgaS3jTbVtZ9ALZlmASRUWDGYZQE61-gmGGn6stBiaXPFaqbSDZEquIDVDxDMbdV6FSfMD5Rzn2W5wrkaivaCgC0P6DCi0_9Z7BHBLPkUn1aWkcaz0geNLz9XwEqrx4hqk160xtOJBjQH7pCxQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=33CC6E84E57665F7C3C29ACD75DAE5D3C401E7A36AD37FB3",
-              "source": "搜狗微信·光电行业 · 治策科技",
-              "summary": "国外战环领域开源信息日报聚焦变化,洞见趋势2026年10月17日 星期六1、测绘地理保障01美国家地理空间情报局更新卫星激光雷达...",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 55.9,
-              "role": "媒体",
-              "published_at": "2026-10-17T09:47:41+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "尺寸升级五座布局+前备厢+可选激光雷达一文看懂全新比亚迪海鸥",
-              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS2S8cAr--_7UecgcUxQduhS4RuiOjk0c0VqXa8Fplpd9xh32RLxEqalrzhZKTMGCp9N2Qfv09EJaCV_eLuy6y8zC8zKgyKr9CpJeY7X-1AUwVor5-_wHZV58xMELJwtsFRa1k-vS7CTN1S2JE_GnJmVQgg20-Zw_8nDW4ZrkQNNhHqfBhzHP7RHT-UA6B8UPqNzHw2KesPo4RbIFgbdDP215LU3lqtPw9g..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=33CC6E84E57665F7C3C29ACD75DAE5D3C401E7A36AD37FB3",
-              "source": "搜狗微信·光电行业 · 南栀4350",
-              "summary": "尺寸升级、五座布局、前备厢,甚至把激光雷达塞进选装包.全新比亚迪海鸥这波硬件堆料,不仅让持币观望的普通购车者眼花缭乱,...",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 55.9,
-              "role": "媒体",
-              "published_at": "2026-10-17T10:00:07+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
-              "url": "https://www.laserfocusworld.com/resources/media-gallery/55411422/dont-miss-laser-focus-worlds-photonicsnxt-2026-virtual-event",
-              "source": "Laser Focus World",
-              "summary": "Laser Focus World 的 PhotonicsNXT 2026 虚拟活动面向光学、光子学与量子社区，提供为期两天的教育性演讲，涵盖进展、创新与应用。",
-              "zh_full": "Laser Focus World 宣布其 PhotonicsNXT 2026 虚拟活动即将举行，提醒读者不要错过。该活动面向光学、光子学与量子社区，提供为期两天的教育性演讲系列，内容涵盖一系列进展、创新与应用。摘要未提供更多具体议程、日期或演讲者信息。",
-              "reason": "行业虚拟活动预告",
-              "density": "低",
-              "score": 72.9,
-              "role": "媒体",
-              "published_at": null,
-              "topic_id": "4529832de80e",
-              "topic_title": "Localized high-Q resonances enable electrically defined beam steering in lithium niobate metasurfaces"
-            }
-          ]
-        },
-        {
           "category": "光通信",
           "articles": [
             {
@@ -14789,7 +14714,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 66.8,
+              "score": 66.4,
               "role": "媒体",
               "published_at": "2026-10-16T21:37:37+00:00",
               "topic_id": "a74e97d8f49a",
@@ -14803,7 +14728,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 55.9,
+              "score": 55.5,
               "role": "科研",
               "published_at": "2026-10-16T21:20:01+00:00",
               "topic_id": "8529464c7318",
@@ -14850,7 +14775,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 46.2,
+              "score": 45.9,
               "role": "科研",
               "published_at": "2026-10-16T21:00:05+00:00",
               "topic_id": null,
@@ -14932,20 +14857,6 @@
           "category": "科研进展",
           "articles": [
             {
-              "title": "New high-frequency method boosts 2D material readout for next-gen quantum computers",
-              "url": "https://phys.org/news/2026-10-high-frequency-method-boosts-2d.html",
-              "source": "Phys.org 物理新闻",
-              "summary": "Quantum computers represent a next step in the fast-paced evolution of technology. Using quantum bits (qubits), they have the potential to run certain calculations exponentially faster than conventional computers. However, developing and fi",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 55.9,
-              "role": "科研",
-              "published_at": "2026-10-16T22:00:01+00:00",
-              "topic_id": "b5e6b8e8034a",
-              "topic_title": "New high-frequency method boosts 2D material readout for next-gen quantum computers"
-            },
-            {
               "title": "Maxwell's demon learns to turn concealed information into usable energy for microscopic systems",
               "url": "https://phys.org/news/2026-10-maxwell-demon-concealed-usable-energy.html",
               "source": "Phys.org 物理新闻",
@@ -14953,7 +14864,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 46.2,
+              "score": 45.8,
               "role": "科研",
               "published_at": "2026-10-16T18:50:01+00:00",
               "topic_id": null,
@@ -15014,6 +14925,53 @@
               "published_at": null,
               "topic_id": null,
               "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "激光",
+          "articles": [
+            {
+              "title": "美国家地理空间情报局更新卫星激光雷达三维环境侦察技术征集文件",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS2S8cAr--_7UecgcUxQduhS4RuiOjk0c0VqXa8Fplpd9ZzReDA1lbTtbiA9UuMPRU3E5LesHYHl4UfaVtgaS3jTbVtZ9ALZlmASRUWDGYZQE61-gmGGn6stBiaXPFaqbSDZEquIDVDxDMbdV6FSfMD5Rzn2W5wrkaivaCgC0P6DCi0_9Z7BHBLPkUn1aWkcaz0geNLz9XwEqrx4hqk160xtOJBjQH7pCxQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=33CC6E84E57665F7C3C29ACD75DAE5D3C401E7A36AD37FB3",
+              "source": "搜狗微信·光电行业 · 治策科技",
+              "summary": "国外战环领域开源信息日报聚焦变化,洞见趋势2026年10月17日 星期六1、测绘地理保障01美国家地理空间情报局更新卫星激光雷达...",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.9,
+              "role": "媒体",
+              "published_at": "2026-10-17T09:47:41+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "尺寸升级五座布局+前备厢+可选激光雷达一文看懂全新比亚迪海鸥",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS2S8cAr--_7UecgcUxQduhS4RuiOjk0c0VqXa8Fplpd9xh32RLxEqalrzhZKTMGCp9N2Qfv09EJaCV_eLuy6y8zC8zKgyKr9CpJeY7X-1AUwVor5-_wHZV58xMELJwtsFRa1k-vS7CTN1S2JE_GnJmVQgg20-Zw_8nDW4ZrkQNNhHqfBhzHP7RHT-UA6B8UPqNzHw2KesPo4RbIFgbdDP215LU3lqtPw9g..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=33CC6E84E57665F7C3C29ACD75DAE5D3C401E7A36AD37FB3",
+              "source": "搜狗微信·光电行业 · 南栀4350",
+              "summary": "尺寸升级、五座布局、前备厢,甚至把激光雷达塞进选装包.全新比亚迪海鸥这波硬件堆料,不仅让持币观望的普通购车者眼花缭乱,...",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.9,
+              "role": "媒体",
+              "published_at": "2026-10-17T10:00:07+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
+              "url": "https://www.laserfocusworld.com/resources/media-gallery/55411422/dont-miss-laser-focus-worlds-photonicsnxt-2026-virtual-event",
+              "source": "Laser Focus World",
+              "summary": "Laser Focus World 的 PhotonicsNXT 2026 虚拟活动面向光学、光子学与量子社区，提供为期两天的教育性演讲，涵盖进展、创新与应用。",
+              "zh_full": "Laser Focus World 宣布其 PhotonicsNXT 2026 虚拟活动即将举行，提醒读者不要错过。该活动面向光学、光子学与量子社区，提供为期两天的教育性演讲系列，内容涵盖一系列进展、创新与应用。摘要未提供更多具体议程、日期或演讲者信息。",
+              "reason": "行业虚拟活动预告",
+              "density": "低",
+              "score": 72.9,
+              "role": "媒体",
+              "published_at": null,
+              "topic_id": "4529832de80e",
+              "topic_title": "Localized high-Q resonances enable electrically defined beam steering in lithium niobate metasurfaces"
             }
           ]
         },
@@ -15575,28 +15533,100 @@
         "fb3ab254bc4f"
       ],
       "tocCount": 26,
-      "readMinutes": 2,
-      "amended": 91
+      "readMinutes": 1,
+      "amended": 164
     },
     "2026-10-18": {
       "date": "2026-10-18",
       "weekday": "周日",
       "label": "2026年10月18日",
       "headline": {
-        "title": "华工科技：2026年上半年，光互联业务营收38.03亿元",
-        "url": "https://www.c114.com.cn/news/123/a1316431.html",
-        "source": "C114中国通信网_通信财经",
-        "summary": "华工科技2026年上半年营收78.22亿元，光互联业务营收38.03亿元。AI高速光模块快速放量，实现1.6T至3.2T技术跨越及硅光芯片规模化应用。",
-        "zh_full": "华工科技2026年上半年营收78.22亿元，其中光互联业务达38.03亿元。AI高速光模块快速放量，实现1.6T至3.2T技术跨越及硅光芯片规模化应用。",
-        "reason": "光互联业务放量与技术跨越",
-        "density": "高",
+        "title": "大招齐发，英特尔直击网络转型",
+        "url": "http://www.c114.com.cn/topic/5096/a996852.html?utm_medium=C114&dclid=CLmNp8bEwdICFRwhKgodT4YHqQ",
+        "source": "C114中国通信网_要闻精选",
+        "summary": "运营商是实现5G连接及应用和业务创新的重要基石，也是网络转型的主角。作为中国三大运营商之一的中国电信，正在努力推进网络转型，为5G的到来做好准备。中国电信选择与英特尔合作，采用英特尔RSD实施方案，联手击破运营商在网络转型中的各个难题，真正做到在网络转型之路所向披靡。",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
         "score": 56.8,
         "role": "行业媒体",
         "published_at": null,
-        "topic_id": "9f8710ab3d29",
-        "topic_title": "华工科技：2026年上半年，光互联业务营收38.03亿元"
+        "topic_id": "5bc32d86db90",
+        "topic_title": "大招齐发，英特尔直击网络转型"
       },
       "picks": [
+        {
+          "title": "英特尔助力电信网络转型 让5G不再是“看上去很美”",
+          "url": "http://www.c114.net/topic/5096/a996887.html",
+          "source": "C114中国通信网_要闻精选",
+          "summary": "实现5G愿景，可并不仅仅是从基站到手机终端那点事。对无线技术进行革新，只是5G万里长征中的一段路。虽然对于普通消费者而言，这是他们未来能够从手机端看到的变革，但更多他们看不到的变化——电信运营商网络的转型。",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 56.8,
+          "role": "行业媒体",
+          "published_at": null,
+          "topic_id": "5bc32d86db90",
+          "topic_title": "大招齐发，英特尔直击网络转型"
+        },
+        {
+          "title": "华工科技：2026年上半年，光互联业务营收38.03亿元",
+          "url": "https://www.c114.com.cn/news/123/a1316431.html",
+          "source": "C114中国通信网_通信财经",
+          "summary": "华工科技2026年上半年营收78.22亿元，光互联业务营收38.03亿元。AI高速光模块快速放量，实现1.6T至3.2T技术跨越及硅光芯片规模化应用。",
+          "zh_full": "华工科技2026年上半年营收78.22亿元，其中光互联业务达38.03亿元。AI高速光模块快速放量，实现1.6T至3.2T技术跨越及硅光芯片规模化应用。",
+          "reason": "光互联业务放量与技术跨越",
+          "density": "高",
+          "score": 56.8,
+          "role": "行业媒体",
+          "published_at": null,
+          "topic_id": "9f8710ab3d29",
+          "topic_title": "华工科技：2026年上半年，光互联业务营收38.03亿元"
+        },
+        {
+          "title": "油车也有激光雷达!吉利星瑞L PLUS上市",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw0vH71jBt04xz2jdWayclZXkG60jajsvFqXa8Fplpd9g6otSExsX_PT84gdEvC-x3WZW6vbZl3Gvrmp5bXQ7073ZXdS3HBOANQgGGQJTFQRLIp2acgt8byjX3DfWve8HHteHhe1qAhGTwdQpKFSF429KY10IQT2KN5x5ct6mi5-21pjezjCufCRNpNM0S36U1O751C60OKeylKh4sBI-pLP28temKTOwg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=3D2CC3F79C58D5ABC0B9E1A1B1A6F3E7C04D08F46AD4D509",
+          "source": "搜狗微信·光电行业 · 汽车行业关注",
+          "summary": "值得一提的是,星瑞L PLUS(混动燃油顶配)还配备激光雷达,采用的是千里浩瀚H5辅助驾驶方案,采用3R11V1L感知架构——3颗...",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 56.0,
+          "role": "媒体",
+          "published_at": "2026-10-18T13:08:23+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "9.99万的大众带激光雷达,10万级纯电的规矩要变了",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw0vH71jBt04xz2jdWayclZXkG60jajsvFqXa8Fplpd93_lifxblXSEGNToE2hS7A-82JvU22r3S-eTcMRotNWLyxHblBCAzSe6cgZn9xObwZ3chB_yN75bVExiBVLng8jicRU0UfRUdw8wM1VwhIERaOD4jdqV_4SN-80_dDIEfYqLskDZL8qg0fGBcM79URLtExKT-w4QThggnKLV5-0dj3x9Nw6p-Fg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=3D2CC3F79C58D5ABC0B9E1A1B1A6F3E7C04D08F46AD4D509",
+          "source": "搜狗微信·光电行业 · 诚懂车",
+          "summary": "10万出头买台大众,还带激光雷达——这话放两年前说出去,你敢信?!但大众安徽这次真把新款与众07的门槛拉到了9.99万,双十一...",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 55.9,
+          "role": "媒体",
+          "published_at": "2026-10-18T11:26:34+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "flash": [
+        {
+          "title": "方盒子造型,搭激光雷达,林肯旗舰新能源SUV官方谍照发布!",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw0vH71jBt04xz2jdWayclZXkG60jajsvFqXa8Fplpd9x3Jnlt170-Qkw4QpUbcMZ1x80d8R2XpfTcXO-VAiMnmjAyCBWakC6W2IbKMHvJsIkEkZ0jhOXanOjqkSObHptmh7zMCrnZywqrbaaexBWzVJLpZkJPlZ4v40qlE4_6U_t9iWSCUS4BxTGRDF6CzjEnTgsb60lfC8xT_SweaoMGEC2Qmj7RgGwQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=3D2CC3F79C58D5ABC0B9E1A1B1A6F3E7C04D08F46AD4D509",
+          "source": "搜狗微信·光电行业 · 易车",
+          "summary": "虽然目前还有严密伪装,但依然能看出该车采用霸气的方盒子造型,此外车顶配备了激光雷达,预示该车将拥有高阶智能驾驶辅助能力...",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 55.8,
+          "role": "媒体",
+          "published_at": "2026-10-18T07:04:28+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
         {
           "title": "Are high-power laser diodes ready to power inertial fusion energy?",
           "url": "https://www.laserfocusworld.com/lasers-sources/article/55410022/leonardo-electronics-us-inc-are-high-power-laser-diodes-ready-to-power-inertial-fusion-energy",
@@ -15610,6 +15640,34 @@
           "published_at": null,
           "topic_id": "c14a1dd718b8",
           "topic_title": "Are high-power laser diodes ready to power inertial fusion energy?"
+        },
+        {
+          "title": "【快讯】新增激光雷达版,新款与众06、与众07正式上市",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw0vH71jBt04xz2jdWayclZXkG60jajsvFqXa8Fplpd9G3aR3i-rsIolKmprY9ANfvEbLBHtPYKmKUvJt-Fro97itkANYUl-bofSovPYimSMi-RRk0fsb6KAdTeptF1w9YGTBx8Ke-yAcmYfWSM6vSc2qBGZCFvirxFBlz5bPoGYTtsCVDYsQV6jCKpa-q_I5qRFQFsSFjbshkb_xZxVXTzs46dn8Efgxg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=3D2CC3F79C58D5ABC0B9E1A1B1A6F3E7C04D08F46AD4D509",
+          "source": "搜狗微信·光电行业 · 踢车帮",
+          "summary": "导读新款与众06和与众07新增激光雷达版本,在高速NOA的基础上全面支持城市NOA领航辅助.10月17日,大众安徽旗下纯电SUV与...",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 55.7,
+          "role": "媒体",
+          "published_at": "2026-10-18T03:37:28+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "光模块反制概念,相关公司梳理(附名单)",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw0vH71jBt04WRQ3nxY1WEhXkG60jajsvFqXa8Fplpd9IRK3MIbC_Gtkk6jb3FGCRSwXlBnXyKJkX0jSl1C1ve9w1K_rc6gKwTKmBU0VMdoE2ttajD5YXXj1OJlGYnRbnHqfJBVsZEaAty_dG6phIaCbL9IahhwmQp1qyH5mjQ7CrWhS2qmttIzXuFKGibdM9AS18bDLRjd9m1VZvNGJ0rLP28temKTOwg..&amp;type=2&amp;query=%E5%85%89%E6%A8%A1%E5%9D%97&amp;token=3D2CB2389C58D5ABC0B9E1A1B1A6F3E7C04D08F46AD4D506",
+          "source": "搜狗微信·光电行业 · 概念股掘金",
+          "summary": "“光模块反制”并不是一个标准的产业分类,近期市场主要是围绕美国对中国光收发模块产业链潜在限制,以及中国在镓、锗等关键半...",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 55.5,
+          "role": "媒体",
+          "published_at": "2026-10-17T22:01:02+00:00",
+          "topic_id": null,
+          "topic_title": null
         },
         {
           "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
@@ -15652,9 +15710,7 @@
           "published_at": null,
           "topic_id": null,
           "topic_title": null
-        }
-      ],
-      "flash": [
+        },
         {
           "title": "Juniper今年发力电信市场：重振国内运营商业务",
           "url": "http://www.c114.net/news/16/a997327.html",
@@ -15698,20 +15754,6 @@
           "topic_title": null
         },
         {
-          "title": "中国移动智能家庭网关设备集采：上海贝尔获得50%份额",
-          "url": "http://www.c114.net/news/118/a997270.html",
-          "source": "C114中国通信网_要闻精选",
-          "summary": "中国移动2017年智能家庭网关设备集中采购（公开部分模型二）已结束，共有三家企业中标：上海贝尔获得50%份额，烽火获得30%，华为获得20%。",
-          "zh_full": "备受关注的中国移动2017年智能家庭网关设备集中采购（公开部分模型二）已于日前结束。此次集采共有三家企业中标，上海贝尔获得50%份额，烽火获得30%，华为获得20%。",
-          "reason": "运营商集采份额分配",
-          "density": "中",
-          "score": 50.5,
-          "role": "行业媒体",
-          "published_at": null,
-          "topic_id": null,
-          "topic_title": null
-        },
-        {
           "title": "徐直军详解视频驱动力与挑战：华为助力运营商淘金万亿级新市场",
           "url": "http://www.c114.net/news/126/a996989.html",
           "source": "C114中国通信网_要闻精选",
@@ -15733,34 +15775,6 @@
           "zh_full": "在近日于西班牙巴塞罗那举行的2017世界移动大会（MWC 2017）上，5G成为本次展会的最大亮点之一。各5G研发组织、运营商、设备商、学术界以及合作伙伴等产业链各方在5G研发方面的最新进展备受业界关注。其中，移动通信设备商纷纷选择在大会期间发布新品和解决方案，以期在5G竞赛中占得先机。",
           "reason": "5G竞赛打响，设备商新品密集发布",
           "density": "中",
-          "score": 50.5,
-          "role": "行业媒体",
-          "published_at": null,
-          "topic_id": null,
-          "topic_title": null
-        },
-        {
-          "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
-          "url": "https://www.c114.com.cn/news/123/a1316461.html",
-          "source": "C114中国通信网_通信财经",
-          "summary": "频准激光于本月18日刚刚上市，随后披露首份半年度业绩报告。2026年上半年，公司实现营业收入2.56亿元，同比增长42.13%；归母净利润8833.57万元，同比增长24.58%。",
-          "zh_full": "C114讯 8月27日消息（颜翊）昨日，本月18日刚刚上市的量子科技公司频准激光披露首份半年度业绩报告。2026年上半年，公司实现营业收入2.56亿元，同比增长42.13%；实现归母净利润8833.57万元，同比增长24.58%。频准激光是一家量子科技公司，于本月18日刚刚上市，此次披露的是其上市后首份半年度业绩报告。",
-          "reason": "新上市量子科技公司首份半年报",
-          "density": "中",
-          "score": 50.5,
-          "role": "行业媒体",
-          "published_at": null,
-          "topic_id": null,
-          "topic_title": null
-        },
-        {
-          "title": "光互联测试产品需求激增，联讯仪器上半年净利润同比增长903%",
-          "url": "https://www.c114.com.cn/news/123/a1316416.html",
-          "source": "C114中国通信网_通信财经",
-          "summary": "联讯仪器2026年上半年净利润5.67亿元，同比增903%。受益于AI算力与光模块扩产，高速通信及CPO测试设备放量，毛利率升至70.79%，研发投入同比增长83.34%。",
-          "zh_full": "联讯仪器2026年上半年净利润达5.67亿元，同比增长903%。业绩大幅增长主要受益于AI算力需求提升与光模块扩产，带动高速通信及CPO测试设备放量。公司毛利率升至70.79%，研发投入同比增长83.34%。光互联测试产品需求激增是本轮增长的核心驱动因素。",
-          "reason": "光互联测试需求激增，业绩爆发",
-          "density": "高",
           "score": 50.5,
           "role": "行业媒体",
           "published_at": null,
@@ -15801,6 +15815,48 @@
           "category": "激光",
           "articles": [
             {
+              "title": "油车也有激光雷达!吉利星瑞L PLUS上市",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw0vH71jBt04xz2jdWayclZXkG60jajsvFqXa8Fplpd9g6otSExsX_PT84gdEvC-x3WZW6vbZl3Gvrmp5bXQ7073ZXdS3HBOANQgGGQJTFQRLIp2acgt8byjX3DfWve8HHteHhe1qAhGTwdQpKFSF429KY10IQT2KN5x5ct6mi5-21pjezjCufCRNpNM0S36U1O751C60OKeylKh4sBI-pLP28temKTOwg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=3D2CC3F79C58D5ABC0B9E1A1B1A6F3E7C04D08F46AD4D509",
+              "source": "搜狗微信·光电行业 · 汽车行业关注",
+              "summary": "值得一提的是,星瑞L PLUS(混动燃油顶配)还配备激光雷达,采用的是千里浩瀚H5辅助驾驶方案,采用3R11V1L感知架构——3颗...",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 56.0,
+              "role": "媒体",
+              "published_at": "2026-10-18T13:08:23+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "9.99万的大众带激光雷达,10万级纯电的规矩要变了",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw0vH71jBt04xz2jdWayclZXkG60jajsvFqXa8Fplpd93_lifxblXSEGNToE2hS7A-82JvU22r3S-eTcMRotNWLyxHblBCAzSe6cgZn9xObwZ3chB_yN75bVExiBVLng8jicRU0UfRUdw8wM1VwhIERaOD4jdqV_4SN-80_dDIEfYqLskDZL8qg0fGBcM79URLtExKT-w4QThggnKLV5-0dj3x9Nw6p-Fg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=3D2CC3F79C58D5ABC0B9E1A1B1A6F3E7C04D08F46AD4D509",
+              "source": "搜狗微信·光电行业 · 诚懂车",
+              "summary": "10万出头买台大众,还带激光雷达——这话放两年前说出去,你敢信?!但大众安徽这次真把新款与众07的门槛拉到了9.99万,双十一...",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.9,
+              "role": "媒体",
+              "published_at": "2026-10-18T11:26:34+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "方盒子造型,搭激光雷达,林肯旗舰新能源SUV官方谍照发布!",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw0vH71jBt04xz2jdWayclZXkG60jajsvFqXa8Fplpd9x3Jnlt170-Qkw4QpUbcMZ1x80d8R2XpfTcXO-VAiMnmjAyCBWakC6W2IbKMHvJsIkEkZ0jhOXanOjqkSObHptmh7zMCrnZywqrbaaexBWzVJLpZkJPlZ4v40qlE4_6U_t9iWSCUS4BxTGRDF6CzjEnTgsb60lfC8xT_SweaoMGEC2Qmj7RgGwQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=3D2CC3F79C58D5ABC0B9E1A1B1A6F3E7C04D08F46AD4D509",
+              "source": "搜狗微信·光电行业 · 易车",
+              "summary": "虽然目前还有严密伪装,但依然能看出该车采用霸气的方盒子造型,此外车顶配备了激光雷达,预示该车将拥有高阶智能驾驶辅助能力...",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.8,
+              "role": "媒体",
+              "published_at": "2026-10-18T07:04:28+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
               "title": "Are high-power laser diodes ready to power inertial fusion energy?",
               "url": "https://www.laserfocusworld.com/lasers-sources/article/55410022/leonardo-electronics-us-inc-are-high-power-laser-diodes-ready-to-power-inertial-fusion-energy",
               "source": "Laser Focus World",
@@ -15813,6 +15869,20 @@
               "published_at": null,
               "topic_id": "c14a1dd718b8",
               "topic_title": "Are high-power laser diodes ready to power inertial fusion energy?"
+            },
+            {
+              "title": "【快讯】新增激光雷达版,新款与众06、与众07正式上市",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw0vH71jBt04xz2jdWayclZXkG60jajsvFqXa8Fplpd9G3aR3i-rsIolKmprY9ANfvEbLBHtPYKmKUvJt-Fro97itkANYUl-bofSovPYimSMi-RRk0fsb6KAdTeptF1w9YGTBx8Ke-yAcmYfWSM6vSc2qBGZCFvirxFBlz5bPoGYTtsCVDYsQV6jCKpa-q_I5qRFQFsSFjbshkb_xZxVXTzs46dn8Efgxg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=3D2CC3F79C58D5ABC0B9E1A1B1A6F3E7C04D08F46AD4D509",
+              "source": "搜狗微信·光电行业 · 踢车帮",
+              "summary": "导读新款与众06和与众07新增激光雷达版本,在高速NOA的基础上全面支持城市NOA领航辅助.10月17日,大众安徽旗下纯电SUV与...",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.7,
+              "role": "媒体",
+              "published_at": "2026-10-18T03:37:28+00:00",
+              "topic_id": null,
+              "topic_title": null
             },
             {
               "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
@@ -15960,6 +16030,20 @@
               "topic_title": "华工科技：2026年上半年，光互联业务营收38.03亿元"
             },
             {
+              "title": "光模块反制概念,相关公司梳理(附名单)",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw0vH71jBt04WRQ3nxY1WEhXkG60jajsvFqXa8Fplpd9IRK3MIbC_Gtkk6jb3FGCRSwXlBnXyKJkX0jSl1C1ve9w1K_rc6gKwTKmBU0VMdoE2ttajD5YXXj1OJlGYnRbnHqfJBVsZEaAty_dG6phIaCbL9IahhwmQp1qyH5mjQ7CrWhS2qmttIzXuFKGibdM9AS18bDLRjd9m1VZvNGJ0rLP28temKTOwg..&amp;type=2&amp;query=%E5%85%89%E6%A8%A1%E5%9D%97&amp;token=3D2CB2389C58D5ABC0B9E1A1B1A6F3E7C04D08F46AD4D506",
+              "source": "搜狗微信·光电行业 · 概念股掘金",
+              "summary": "“光模块反制”并不是一个标准的产业分类,近期市场主要是围绕美国对中国光收发模块产业链潜在限制,以及中国在镓、锗等关键半...",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.5,
+              "role": "媒体",
+              "published_at": "2026-10-17T22:01:02+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
               "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
               "url": "https://www.laserfocusworld.com/executive-forum/podcast/55411597/podcast-expert-insights-photonics-quantum-computing",
               "source": "Laser Focus World",
@@ -15981,20 +16065,6 @@
               "zh_full": "联讯仪器2026年上半年净利润达5.67亿元，同比增长903%。业绩大幅增长主要受益于AI算力需求提升与光模块扩产，带动高速通信及CPO测试设备放量。公司毛利率升至70.79%，研发投入同比增长83.34%。光互联测试产品需求激增是本轮增长的核心驱动因素。",
               "reason": "光互联测试需求激增，业绩爆发",
               "density": "高",
-              "score": 50.5,
-              "role": "行业媒体",
-              "published_at": null,
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "铭普光磁上半年光通信业务同比增长5%",
-              "url": "https://www.c114.com.cn/news/123/a1316190.html",
-              "source": "C114中国通信网_通信财经",
-              "summary": "铭普光磁2026年上半年营收10.63亿元，同比增长31.88%；净利润-1539万元，去年同期-7304万元。扣非后净利润-2353万元，去年同期-7779万元。光通信业务同比增长5%。",
-              "zh_full": "铭普光磁日前发布了2026年半年度报告。报告显示，上半年营收10.63亿元，同比增长31.88%；净利润-1539万元，去年同期-7304万元。扣非后净利润-2353万元，去年同期-7779万元。光通信业务同比增长5%。",
-              "reason": "光通信业务增长，亏损收窄",
-              "density": "中",
               "score": 50.5,
               "role": "行业媒体",
               "published_at": null,
@@ -16025,6 +16095,20 @@
         {
           "category": "光电芯片与半导体",
           "articles": [
+            {
+              "title": "Hybrid diamond chip strengthens interactions between light and quantum bits",
+              "url": "https://phys.org/news/2026-10-hybrid-diamond-chip-interactions-quantum.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Researchers have developed and demonstrated a new hybrid photonic platform that integrates quantum emitters with photonic devices, providing a way to reliably control the interaction between photons and quantum information carriers. The chi",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 47.0,
+              "role": "科研",
+              "published_at": "2026-10-18T13:00:05+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
             {
               "title": "英特尔代工获微软下一代AI芯片订单，将采用18A工艺",
               "url": "https://www.c114.com.cn/news/211/a1298974.html",
@@ -16146,7 +16230,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 46.8,
+              "score": 46.4,
               "role": "科研",
               "published_at": "2026-10-17T18:00:02+00:00",
               "topic_id": null,
@@ -16331,6 +16415,34 @@
           "category": "通信与算力",
           "articles": [
             {
+              "title": "大招齐发，英特尔直击网络转型",
+              "url": "http://www.c114.com.cn/topic/5096/a996852.html?utm_medium=C114&dclid=CLmNp8bEwdICFRwhKgodT4YHqQ",
+              "source": "C114中国通信网_要闻精选",
+              "summary": "运营商是实现5G连接及应用和业务创新的重要基石，也是网络转型的主角。作为中国三大运营商之一的中国电信，正在努力推进网络转型，为5G的到来做好准备。中国电信选择与英特尔合作，采用英特尔RSD实施方案，联手击破运营商在网络转型中的各个难题，真正做到在网络转型之路所向披靡。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 56.8,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": "5bc32d86db90",
+              "topic_title": "大招齐发，英特尔直击网络转型"
+            },
+            {
+              "title": "英特尔助力电信网络转型 让5G不再是“看上去很美”",
+              "url": "http://www.c114.net/topic/5096/a996887.html",
+              "source": "C114中国通信网_要闻精选",
+              "summary": "实现5G愿景，可并不仅仅是从基站到手机终端那点事。对无线技术进行革新，只是5G万里长征中的一段路。虽然对于普通消费者而言，这是他们未来能够从手机端看到的变革，但更多他们看不到的变化——电信运营商网络的转型。",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 56.8,
+              "role": "行业媒体",
+              "published_at": null,
+              "topic_id": "5bc32d86db90",
+              "topic_title": "大招齐发，英特尔直击网络转型"
+            },
+            {
               "title": "青海通信管理局学习贯彻习近平总书记重要指示和全国先进制造业大会精神",
               "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_69882109910744a4a610c6942428b2f1.html",
               "source": "工信部要闻",
@@ -16407,34 +16519,6 @@
               "summary": "中国移动2017年智能家庭网关设备集中采购（公开部分模型二）已结束，共有三家企业中标：上海贝尔获得50%份额，烽火获得30%，华为获得20%。",
               "zh_full": "备受关注的中国移动2017年智能家庭网关设备集中采购（公开部分模型二）已于日前结束。此次集采共有三家企业中标，上海贝尔获得50%份额，烽火获得30%，华为获得20%。",
               "reason": "运营商集采份额分配",
-              "density": "中",
-              "score": 50.5,
-              "role": "行业媒体",
-              "published_at": null,
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "徐直军详解视频驱动力与挑战：华为助力运营商淘金万亿级新市场",
-              "url": "http://www.c114.net/news/126/a996989.html",
-              "source": "C114中国通信网_要闻精选",
-              "summary": "徐直军在2017世界移动大会Keynote上提出，内容与视频正在重新定义电信产业，视频业务对运营商已成必须。华为将自身定位为运营商视频业务成功的使能者，帮助运营商发展视频业务并获得增长。",
-              "zh_full": "徐直军在2017世界移动大会期间的Keynote上发表了“让视频成为运营商增长的新动力”的主题演讲。他指出，内容、视频正在重新定义电信产业，对运营商来说视频业务已成必须，华为将自己定位为运营商视频业务成功的使能者，帮助运营商发展视频业务并获得增长。",
-              "reason": "运营商视频业务战略",
-              "density": "中",
-              "score": 50.5,
-              "role": "行业媒体",
-              "published_at": null,
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "MWC 2017之无线篇：设备商5G竞赛正式打响",
-              "url": "http://www.c114.net/news/16/a996704.html",
-              "source": "C114中国通信网_要闻精选",
-              "summary": "2017世界移动大会在西班牙巴塞罗那举行，5G成为最大亮点之一。产业链各方在5G研发方面的最新进展备受关注，移动通信设备商纷纷发布新品和解决方案，以期在5G竞赛中占得先机。",
-              "zh_full": "在近日于西班牙巴塞罗那举行的2017世界移动大会（MWC 2017）上，5G成为本次展会的最大亮点之一。各5G研发组织、运营商、设备商、学术界以及合作伙伴等产业链各方在5G研发方面的最新进展备受业界关注。其中，移动通信设备商纷纷选择在大会期间发布新品和解决方案，以期在5G竞赛中占得先机。",
-              "reason": "5G竞赛打响，设备商新品密集发布",
               "density": "中",
               "score": 50.5,
               "role": "行业媒体",
@@ -16563,13 +16647,15 @@
         }
       ],
       "topic_ids": [
+        "5bc32d86db90",
         "8b97383c16fd",
         "9f8710ab3d29",
         "c14a1dd718b8",
         "da461eac78df"
       ],
-      "tocCount": 15,
-      "readMinutes": 1
+      "tocCount": 19,
+      "readMinutes": 1,
+      "amended": 6
     }
   }
 }

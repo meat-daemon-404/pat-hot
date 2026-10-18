@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T00:03:46.006233+00:00",
+  "generatedAt": "2026-10-18T14:02:56.185312+00:00",
   "count": 4,
   "items": [
     {
@@ -25,13 +25,13 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-18T00:03:46.006233+00:00",
+      "latest_at": "2026-10-18T14:02:56.185312+00:00",
       "representative": {
         "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
         "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
         "source": "MIT News 物理",
         "published_at": "2026-08-05T15:00:00+00:00",
-        "score": 41.2,
+        "score": 37.1,
         "summary": "A new technique produces wafer-scale samples, overcoming a major roadblock to using these materials in quantum technologies.",
         "zh_full": "（无摘要，仅标题）",
         "llm_summary": "（无摘要，仅标题）",
@@ -45,24 +45,26 @@
           "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
           "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
           "source": "MIT News 物理",
-          "score": 41.2,
+          "score": 37.1,
           "published_at": "2026-08-05T15:00:00+00:00"
         },
         {
           "title": "New high-frequency method boosts 2D material readout for next-gen quantum computers",
           "url": "https://phys.org/news/2026-10-high-frequency-method-boosts-2d.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.3,
+          "score": 36.0,
           "published_at": "2026-10-16T22:00:01+00:00"
         }
       ],
       "top_terms": [
         "quantum",
-        "frequency",
-        "boosts",
-        "readout",
-        "next"
+        "researchers",
+        "air",
+        "stable",
+        "ultrathin"
       ],
+      "digest": "MIT研究人员开发出一种新技术，可制备晶圆级、空气稳定的超薄超导体样品，克服了将这些材料用于量子技术的主要障碍。另一项研究提出了一种高频方法，提升了二维材料的读出能力，用于下一代量子计算机。两项进展分别针对量子计算中的材料制备和信号读出环节。",
+      "digestTitle": "两项新技术推进量子计算材料应用",
       "rank": 1,
       "trend": "flat",
       "trendPct": 0.0,
@@ -90,7 +92,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-18T00:03:46.006233+00:00",
+      "latest_at": "2026-10-18T14:02:56.185312+00:00",
       "representative": {
         "title": "New research shows a neutrino laser is impossible",
         "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
@@ -118,20 +120,20 @@
           "title": "Laser pulses bring order to a quantum material's tiny electrical regions",
           "url": "https://phys.org/news/2026-10-laser-pulses-quantum-material-tiny.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.8,
+          "score": 35.5,
           "published_at": "2026-10-15T17:00:07+00:00"
         }
       ],
       "top_terms": [
         "laser",
-        "pulses",
-        "bring",
-        "quantum",
-        "tiny"
+        "research",
+        "neutrino",
+        "impossible",
+        "pulses"
       ],
       "rank": 2,
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 0.0,
       "status": "关注中"
@@ -152,13 +154,13 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-18T00:03:46.006233+00:00",
+      "latest_at": "2026-10-18T14:02:56.185312+00:00",
       "representative": {
         "title": "On the hunt for dark matter",
         "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
         "source": "MIT News 物理",
         "published_at": "2026-08-11T04:00:00+00:00",
-        "score": 41.2,
+        "score": 37.1,
         "summary": "From Broadway to MIT’s Laboratory for Nuclear Science, PhD student Jessica Fry doesn’t do anything halfway. Now she’s hunting for the universe’s most elusive particle.",
         "zh_full": "MIT News 报道，从百老汇到 MIT 核科学实验室，博士生 Jessica Fry 做事从不半途而废。如今她正在搜寻宇宙中最难以捉摸的粒子——暗物质。",
         "llm_summary": "MIT 博士生 Jessica Fry 正在搜寻宇宙中最难以捉摸的粒子——暗物质，报道提到她从百老汇到 MIT 核科学实验室的经历。",
@@ -173,23 +175,23 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 58.1,
+          "score": 57.7,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
           "title": "On the hunt for dark matter",
           "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
           "source": "MIT News 物理",
-          "score": 41.2,
+          "score": 37.1,
           "published_at": "2026-08-11T04:00:00+00:00"
         }
       ],
       "top_terms": [
         "dark",
         "matter",
-        "hunt",
         "observe",
-        "particle"
+        "particle",
+        "wave"
       ],
       "rank": 3,
       "trend": "new",
@@ -221,13 +223,13 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-18T00:03:46.006233+00:00",
+      "latest_at": "2026-10-18T14:02:56.185312+00:00",
       "representative": {
         "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
         "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
         "source": "MIT News 物理",
         "published_at": "2026-08-07T09:00:00+00:00",
-        "score": 41.2,
+        "score": 37.1,
         "summary": "The study could help scientists understand how superconductivity and other more complex phenomena emerge in quantum materials.",
         "zh_full": "（无摘要，仅标题）",
         "llm_summary": "（无摘要，仅标题）",
@@ -238,18 +240,18 @@
       "id": "e8fe52bd8930",
       "links": [
         {
-          "title": "Physicists are scrambling to make sense of possible dark matter signal",
-          "url": "https://www.newscientist.com/article/2589737-physicists-are-scrambling-to-make-sense-of-possible-dark-matter-signal/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 41.5,
-          "published_at": "2026-09-18T12:00:00+00:00"
-        },
-        {
           "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
           "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
           "source": "MIT News 物理",
-          "score": 41.2,
+          "score": 37.1,
           "published_at": "2026-08-07T09:00:00+00:00"
+        },
+        {
+          "title": "Physicists are scrambling to make sense of possible dark matter signal",
+          "url": "https://www.newscientist.com/article/2589737-physicists-are-scrambling-to-make-sense-of-possible-dark-matter-signal/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 37.1,
+          "published_at": "2026-09-18T12:00:00+00:00"
         }
       ],
       "top_terms": [
