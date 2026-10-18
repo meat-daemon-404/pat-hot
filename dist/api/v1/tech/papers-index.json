@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T13:44:21.858238+00:00",
+  "generatedAt": "2026-10-18T00:03:46.006233+00:00",
   "channel": "tech",
   "count": 8,
   "items": [
@@ -47,20 +47,6 @@
       "selected": true
     },
     {
-      "id": "19634476b694",
-      "title": "Stable deep-blue organic light-emitting diodes with reduced efficiency roll-off via accelerated exciton utilization",
-      "channel": "tech",
-      "source": "Nature Photonics",
-      "url": "https://www.nature.com/articles/s41566-026-02029-4",
-      "doi": "10.1038/s41566-026-02029-4",
-      "arxiv": null,
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "科研进展",
-      "published_at": "2026-10-12T00:00:00+00:00",
-      "selected": true
-    },
-    {
       "id": "497d2a439e28",
       "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
       "channel": "tech",
@@ -75,17 +61,17 @@
       "selected": true
     },
     {
-      "id": "881334862d43",
-      "title": "High-entropy molecular contacts enable high-efficiency and stable perovskite solar cells",
+      "id": "19634476b694",
+      "title": "Stable deep-blue organic light-emitting diodes with reduced efficiency roll-off via accelerated exciton utilization",
       "channel": "tech",
       "source": "Nature Photonics",
-      "url": "https://www.nature.com/articles/s41566-026-02028-5",
-      "doi": "10.1038/s41566-026-02028-5",
+      "url": "https://www.nature.com/articles/s41566-026-02029-4",
+      "doi": "10.1038/s41566-026-02029-4",
       "arxiv": null,
       "via": "feed_text",
       "confidence": "verified",
-      "category": "光伏与新能源",
-      "published_at": "2026-10-09T00:00:00+00:00",
+      "category": "科研进展",
+      "published_at": "2026-10-12T00:00:00+00:00",
       "selected": true
     },
     {
@@ -113,6 +99,20 @@
       "via": "feed_text",
       "confidence": "verified",
       "category": "科研进展",
+      "published_at": "2026-10-09T00:00:00+00:00",
+      "selected": false
+    },
+    {
+      "id": "881334862d43",
+      "title": "High-entropy molecular contacts enable high-efficiency and stable perovskite solar cells",
+      "channel": "tech",
+      "source": "Nature Photonics",
+      "url": "https://www.nature.com/articles/s41566-026-02028-5",
+      "doi": "10.1038/s41566-026-02028-5",
+      "arxiv": null,
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "光伏与新能源",
       "published_at": "2026-10-09T00:00:00+00:00",
       "selected": false
     }

@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T13:44:21.858238+00:00",
-  "weekStart": "2026-10-11",
+  "generatedAt": "2026-10-18T00:03:46.006233+00:00",
+  "weekStart": "2026-10-12",
   "windowDays": 7,
-  "windowStart": "2026-10-11",
-  "windowEnd": "2026-10-17",
-  "prevStart": "2026-10-04",
-  "prevEnd": "2026-10-10",
+  "windowStart": "2026-10-12",
+  "windowEnd": "2026-10-18",
+  "prevStart": "2026-10-05",
+  "prevEnd": "2026-10-11",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 2255.1,
-      "lastWeek": 503.2,
-      "deltaPct": 348.2
+      "thisWeek": 1478.4,
+      "lastWeek": 805.6,
+      "deltaPct": 83.5
     },
     {
       "category": "其他",
-      "thisWeek": 1332.3,
+      "thisWeek": 1356.5,
       "lastWeek": 192.9,
-      "deltaPct": 590.7
+      "deltaPct": 603.2
     },
     {
       "category": "高能与粒子物理",
@@ -71,24 +71,6 @@
       "days": 1
     },
     {
-      "topic_id": "a025ac6605c2",
-      "title": "Numerical simulation and structural optimization of electrostatic precipitators for particle purification in space capsules",
-      "score": 177.0,
-      "days": 1
-    },
-    {
-      "topic_id": "de63e6972270",
-      "title": "A two-stage optimization method for wide-range single-electron quantum magnetic sensing",
-      "score": 161.8,
-      "days": 2
-    },
-    {
-      "topic_id": "fcbfcec63d7d",
-      "title": "Multiphysics framework for sustainable iron ore reduction–softening–melting: high-energy X-ray computed tomography and moving particle hydrodynamics",
-      "score": 96.5,
-      "days": 2
-    },
-    {
       "topic_id": "8eae9d96a171",
       "title": "Will we observe dark matter as a particle or a wave?",
       "score": 95.0,
@@ -110,6 +92,24 @@
       "topic_id": "1b53b99d326d",
       "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
       "score": 65.8,
+      "days": 1
+    },
+    {
+      "topic_id": "11e25bee56d4",
+      "title": "The public consultation for the Future Circular Collider (FCC) project generates extensive dialogue with the local communities",
+      "score": 61.9,
+      "days": 1
+    },
+    {
+      "topic_id": "8a821cbdec28",
+      "title": "New research shows a neutrino laser is impossible",
+      "score": 60.5,
+      "days": 1
+    },
+    {
+      "topic_id": "115d3dfa3414",
+      "title": "Chaos control with broken symmetries",
+      "score": 60.1,
       "days": 1
     }
   ],
