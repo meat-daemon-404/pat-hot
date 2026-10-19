@@ -1,54 +1,54 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T00:14:12.390584+00:00",
-  "weekStart": "2026-10-13",
+  "generatedAt": "2026-10-19T17:00:28.829026+00:00",
+  "weekStart": "2026-10-14",
   "windowDays": 7,
-  "windowStart": "2026-10-13",
-  "windowEnd": "2026-10-19",
-  "prevStart": "2026-10-06",
-  "prevEnd": "2026-10-12",
+  "windowStart": "2026-10-14",
+  "windowEnd": "2026-10-20",
+  "prevStart": "2026-10-07",
+  "prevEnd": "2026-10-13",
   "categoryDelta": [
     {
       "category": "深空探测",
-      "thisWeek": 1678.3,
-      "lastWeek": 732.9,
-      "deltaPct": 129.0
+      "thisWeek": 1520.8,
+      "lastWeek": 911.0,
+      "deltaPct": 66.9
     },
     {
       "category": "其他",
-      "thisWeek": 1254.5,
-      "lastWeek": 961.9,
-      "deltaPct": 30.4
-    },
-    {
-      "category": "星系与宇宙学",
-      "thisWeek": 963.8,
-      "lastWeek": 480.5,
-      "deltaPct": 100.6
-    },
-    {
-      "category": "恒星与星际介质",
-      "thisWeek": 732.3,
-      "lastWeek": 388.2,
-      "deltaPct": 88.6
+      "thisWeek": 1091.3,
+      "lastWeek": 1283.5,
+      "deltaPct": -15.0
     },
     {
       "category": "科研进展",
-      "thisWeek": 658.8,
-      "lastWeek": 576.7,
-      "deltaPct": 14.2
+      "thisWeek": 1057.2,
+      "lastWeek": 622.7,
+      "deltaPct": 69.8
     },
     {
-      "category": "太阳与空间物理",
-      "thisWeek": 281.0,
-      "lastWeek": 41.5,
-      "deltaPct": 577.1
+      "category": "星系与宇宙学",
+      "thisWeek": 968.6,
+      "lastWeek": 629.4,
+      "deltaPct": 53.9
+    },
+    {
+      "category": "恒星与星际介质",
+      "thisWeek": 598.3,
+      "lastWeek": 512.2,
+      "deltaPct": 16.8
     },
     {
       "category": "系外行星",
       "thisWeek": 171.1,
       "lastWeek": 0,
       "deltaPct": 100.0
+    },
+    {
+      "category": "太阳与空间物理",
+      "thisWeek": 168.1,
+      "lastWeek": 192.0,
+      "deltaPct": -12.4
     },
     {
       "category": "引力波",
@@ -58,12 +58,6 @@
     }
   ],
   "newTopics": [
-    {
-      "topic_id": "bba7edd9f937",
-      "title": "New evidence points to two feeding black holes just 175 parsecs apart lurking in the early universe",
-      "score": 714.7,
-      "days": 1
-    },
     {
       "topic_id": "a4443b62394e",
       "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
@@ -85,8 +79,8 @@
     {
       "topic_id": "14d22a1810d2",
       "title": "Japan to launch historic round-trip mission to Mars moon",
-      "score": 210.7,
-      "days": 2
+      "score": 140.3,
+      "days": 1
     },
     {
       "topic_id": "d1add21bb66a",
@@ -101,12 +95,6 @@
       "days": 1
     },
     {
-      "topic_id": "4b7b215b7679",
-      "title": "Curiosity Greets a Spectacular Dawn Sky on Mars",
-      "score": 130.0,
-      "days": 2
-    },
-    {
       "topic_id": "87242a7c762d",
       "title": "Artemis II Heat Shield After Splashdown",
       "score": 120.0,
@@ -116,6 +104,18 @@
       "topic_id": "11c66408e132",
       "title": "APOD: 2026 October 18 – Sonified: Eagle Nebula Pillars",
       "score": 117.2,
+      "days": 2
+    },
+    {
+      "topic_id": "e6777b1261a8",
+      "title": "Audible curvaton: modulated phase transition as the origin of large-scale curvature perturbations and gravitational wave anisotropies",
+      "score": 98.5,
+      "days": 1
+    },
+    {
+      "topic_id": "87c30a2e5193",
+      "title": "The Sky Today on Sunday, October 18: Another Tethys transit",
+      "score": 96.4,
       "days": 2
     }
   ],

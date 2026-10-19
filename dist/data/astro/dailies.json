@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T00:14:12.390584+00:00",
-  "count": 42,
+  "generatedAt": "2026-10-19T17:00:28.829026+00:00",
+  "count": 43,
   "dailies": {
     "2025-10-28": {
       "date": "2025-10-28",
@@ -6841,15 +6841,326 @@
         "zh_full": "日本科学家正准备执行一项前往火星卫星的任务，以采集样本，这些样本可能有助于揭示太阳系的起源以及地球生命的起源。该任务旨在成为首次往返火星区域的任务。",
         "reason": "首次往返火星区域采样任务",
         "density": "中",
-        "score": 70.4,
+        "score": 73.3,
         "role": "科研",
         "published_at": "2026-10-18T20:20:01+00:00",
-        "topic_id": "14d22a1810d2",
-        "topic_title": "Japan to launch historic round-trip mission to Mars moon"
+        "topic_id": "d02e95b80c74",
+        "topic_title": "Lincoln Laboratory laser communications terminal launches on historic Artemis II moon mission"
       },
-      "picks": [],
-      "flash": [],
+      "picks": [
+        {
+          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
+          "source": "Astronomy Magazine",
+          "summary": "满月是地球位于太阳和月球之间时，月球面向地球的一面被完全照亮。本文提供2026年满月日历，帮助读者了解满月及月相观测时间。",
+          "zh_full": "满月现象发生在地球恰好位于太阳和月球之间时，此时月球面向地球的一面完全被阳光照亮。由于月球绕地球运行，阳光照射月球表面并反射回地球的角度不断变化，导致我们看到的月相随之改变。本文提供了2026年全月亮的日历，帮助读者了解何时可以观测到满月及其不同月相。",
+          "reason": "提供2026年满月观测指南",
+          "density": "中",
+          "score": 61.1,
+          "role": "媒体",
+          "published_at": "2026-10-19T13:26:15+00:00",
+          "topic_id": "1703854d352c",
+          "topic_title": "Mars moon lander set to launch on 19 October"
+        },
+        {
+          "title": "APOD: 2026 October 19 – Treble Clef: Unusual X-ray Hot Radio Source",
+          "url": "https://science.nasa.gov/image-article/apod-2026-october-19-treble-clef-unusual-x-ray-hot-radio-source/",
+          "source": "NASA 快讯",
+          "summary": "APOD Science APOD APOD: 2026 October 19 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 60.8,
+          "role": "官方",
+          "published_at": "2026-10-19T04:05:00+00:00",
+          "topic_id": "83d4553ba2df",
+          "topic_title": "APOD: 2026 October 19 – Treble Clef: Unusual X-ray Hot Radio Source"
+        },
+        {
+          "title": "Euclid discovers new comet",
+          "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_discovers_new_comet",
+          "source": "ESA 空间科学",
+          "summary": "The European Space Agency’s Euclid space telescope has discovered its first previously unknown comet, in images taken between 16 and 24 September 2026.",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 51.4,
+          "role": "官方",
+          "published_at": "2026-10-19T12:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Oct. 19, 2017: The discovery of ‘Oumuamua",
+          "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/oct-19-2017-the-discovery-of-oumuamua/",
+          "source": "Astronomy Magazine",
+          "summary": "Sometime around the year 1837, a strange object passed an invisible cosmic mile marker: 1,000 astronomical units from the Sun. (One astronomical unit, or AU, is the average Earth-Sun distance.) For more than a century, it continued undetect",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 51.4,
+          "role": "媒体",
+          "published_at": "2026-10-19T13:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "flash": [
+        {
+          "title": "Autumn Paints Poland’s Bieszczady Mountains",
+          "url": "https://science.nasa.gov/earth/earth-observatory/autumn-paints-polands-bieszczady-mountains/",
+          "source": "NASA 快讯",
+          "summary": "Fall color covers the forested slopes of Bieszczady National Park, while patches of polonina, a type of high-mountain meadow, have turned tan.",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 51.1,
+          "role": "官方",
+          "published_at": "2026-10-19T04:01:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Analytic and numerical study of dark matter halos in the Horndeski theory",
+          "url": "https://arxiv.org/abs/2610.22819",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "summary": "arXiv:2610.22819v1 Announce Type: new Abstract: The models of modified gravity that can explain the late-time accelerated expansion of the Universe must pass the local tests of gravity, introducing a screening mechanism so that any addition",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 44.0,
+          "role": "科研",
+          "published_at": "2026-10-19T04:00:00+00:00",
+          "topic_id": "10b310970a52",
+          "topic_title": "Analytic and numerical study of dark matter halos in the Horndeski theory"
+        },
+        {
+          "title": "Foreground Groups and Host-Galaxy Geometry in the Dispersion-Measure Scatter of Fast Radio Bursts",
+          "url": "https://arxiv.org/abs/2610.23333",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "summary": "arXiv:2610.23333v1 Announce Type: new Abstract: Localized fast radio bursts (FRBs) show substantial scatter in dispersion measure (DM) about the mean cosmic DM--redshift relation, also known as the Macquart relation. Both foreground structu",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 44.0,
+          "role": "科研",
+          "published_at": "2026-10-19T04:00:00+00:00",
+          "topic_id": "9acaae856a4d",
+          "topic_title": "Foreground Groups and Host-Galaxy Geometry in the Dispersion-Measure Scatter of Fast Radio Bursts"
+        },
+        {
+          "title": "Galaxy bias of radio AGN and star-forming galaxies from MIGHTEE and CMB lensing",
+          "url": "https://arxiv.org/abs/2610.23567",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "summary": "arXiv:2610.23567v1 Announce Type: new Abstract: Radio galaxies play a significant role in galaxy evolution through feedback mechanisms, making it important to characterize the environments in which they reside. We measure the cross-correlat",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 44.0,
+          "role": "科研",
+          "published_at": "2026-10-19T04:00:00+00:00",
+          "topic_id": "9acaae856a4d",
+          "topic_title": "Foreground Groups and Host-Galaxy Geometry in the Dispersion-Measure Scatter of Fast Radio Bursts"
+        },
+        {
+          "title": "Gravitational Waves as a Probe of Multi-Fluid Cosmologies: General Formalism and the Case of Cosmological Stasis",
+          "url": "https://arxiv.org/abs/2610.23808",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "summary": "arXiv:2610.23808v1 Announce Type: new Abstract: Scalar-induced gravitational waves (SIGWs) provide a powerful probe of the expansion history of the universe prior to the Big Bang. Indeed, the production of such gravity waves depends on the ",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 44.0,
+          "role": "科研",
+          "published_at": "2026-10-19T04:00:00+00:00",
+          "topic_id": "10c026c00b46",
+          "topic_title": "Gravitational Waves as a Probe of Multi-Fluid Cosmologies: General Formalism and the Case of Cosmological Stasis"
+        },
+        {
+          "title": "Geometrical and Optical Design of the GUEST Laser-Ranged Test Masses for the Detection of Gravitational Waves in the muHz range",
+          "url": "https://arxiv.org/abs/2610.20298",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "summary": "arXiv:2610.20298v1 Announce Type: cross Abstract: The GUEST (Gravitational Universe Exploration with Satellite Tracking) mission aims at detecting gravitational waves in the yet almost unexplored $\\mu$Hz frequency range through high-precisi",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 44.0,
+          "role": "科研",
+          "published_at": "2026-10-19T04:00:00+00:00",
+          "topic_id": "10c026c00b46",
+          "topic_title": "Gravitational Waves as a Probe of Multi-Fluid Cosmologies: General Formalism and the Case of Cosmological Stasis"
+        },
+        {
+          "title": "Learning without relearning physical symmetry: an SO(3)-equivariant convolutional network (CNN) on the sphere",
+          "url": "https://arxiv.org/abs/2610.23821",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "summary": "arXiv:2610.23821v1 Announce Type: cross Abstract: Many of the most important datasets in the physical sciences live natively on the sphere, and these data often carry no preferred position or orientation. Using methods that do not reflect t",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 44.0,
+          "role": "科研",
+          "published_at": "2026-10-19T04:00:00+00:00",
+          "topic_id": "2acd17d6aaf7",
+          "topic_title": "Learning without relearning physical symmetry: an SO(3)-equivariant convolutional network (CNN) on the sphere"
+        },
+        {
+          "title": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
+          "url": "https://arxiv.org/abs/2610.23825",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "summary": "arXiv:2610.23825v1 Announce Type: cross Abstract: The evidence, $\\mathcal{Z} = p(x | \\mathcal{M})$, of a data-generating model $\\mathcal{M}$ is a powerful tool in Bayesian frameworks: it enables model inference, model misspecification tests",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 44.0,
+          "role": "科研",
+          "published_at": "2026-10-19T04:00:00+00:00",
+          "topic_id": "2acd17d6aaf7",
+          "topic_title": "Learning without relearning physical symmetry: an SO(3)-equivariant convolutional network (CNN) on the sphere"
+        },
+        {
+          "title": "Clustering effects on the Dark Siren determination of H_0: A simulation study",
+          "url": "https://arxiv.org/abs/2511.12334",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "summary": "arXiv:2511.12334v2 Announce Type: replace Abstract: We investigate the cosmological power of gravitational wave (GWs) events without electromagnetic counterparts using high-resolution, cosmological simulations that include realistic cluster",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 44.0,
+          "role": "科研",
+          "published_at": "2026-10-19T04:00:00+00:00",
+          "topic_id": "10b310970a52",
+          "topic_title": "Analytic and numerical study of dark matter halos in the Horndeski theory"
+        },
+        {
+          "title": "Primordial Power Spectrum from the Lensed CMB Temperature Spectrum using Iterative Delensing and Fourier Denoising",
+          "url": "https://arxiv.org/abs/2610.22648",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "summary": "arXiv:2610.22648v1 Announce Type: new Abstract: The CMB power spectra are a strong probe of the primordial power spectrum (PPS) of the initial inflationary scalar perturbations. There are many proposed models, from the simpler power law for",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 37.6,
+          "role": "科研",
+          "published_at": "2026-10-19T04:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
       "sections": [
+        {
+          "category": "恒星与星际介质",
+          "articles": [
+            {
+              "title": "Simulating dust collapse: the impact of gauge choices on primordial black hole formation",
+              "url": "https://arxiv.org/abs/2610.23218",
+              "source": "arXiv astro-ph.CO 论文速递",
+              "summary": "arXiv:2610.23218v1 Announce Type: cross Abstract: We investigate why numerical relativity simulations of dust collapse in a matter-dominated era frequently fail before primordial black hole formation due to numerical limitations and inappro",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.6,
+              "role": "科研",
+              "published_at": "2026-10-19T04:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "星系与宇宙学",
+          "articles": [
+            {
+              "title": "Foreground Groups and Host-Galaxy Geometry in the Dispersion-Measure Scatter of Fast Radio Bursts",
+              "url": "https://arxiv.org/abs/2610.23333",
+              "source": "arXiv astro-ph.CO 论文速递",
+              "summary": "arXiv:2610.23333v1 Announce Type: new Abstract: Localized fast radio bursts (FRBs) show substantial scatter in dispersion measure (DM) about the mean cosmic DM--redshift relation, also known as the Macquart relation. Both foreground structu",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 44.0,
+              "role": "科研",
+              "published_at": "2026-10-19T04:00:00+00:00",
+              "topic_id": "9acaae856a4d",
+              "topic_title": "Foreground Groups and Host-Galaxy Geometry in the Dispersion-Measure Scatter of Fast Radio Bursts"
+            },
+            {
+              "title": "Galaxy bias of radio AGN and star-forming galaxies from MIGHTEE and CMB lensing",
+              "url": "https://arxiv.org/abs/2610.23567",
+              "source": "arXiv astro-ph.CO 论文速递",
+              "summary": "arXiv:2610.23567v1 Announce Type: new Abstract: Radio galaxies play a significant role in galaxy evolution through feedback mechanisms, making it important to characterize the environments in which they reside. We measure the cross-correlat",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 44.0,
+              "role": "科研",
+              "published_at": "2026-10-19T04:00:00+00:00",
+              "topic_id": "9acaae856a4d",
+              "topic_title": "Foreground Groups and Host-Galaxy Geometry in the Dispersion-Measure Scatter of Fast Radio Bursts"
+            },
+            {
+              "title": "Primordial Power Spectrum from the Lensed CMB Temperature Spectrum using Iterative Delensing and Fourier Denoising",
+              "url": "https://arxiv.org/abs/2610.22648",
+              "source": "arXiv astro-ph.CO 论文速递",
+              "summary": "arXiv:2610.22648v1 Announce Type: new Abstract: The CMB power spectra are a strong probe of the primordial power spectrum (PPS) of the initial inflationary scalar perturbations. There are many proposed models, from the simpler power law for",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.6,
+              "role": "科研",
+              "published_at": "2026-10-19T04:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "How bright can a galaxy be? Extreme value predictions for high-redshift survey observables",
+              "url": "https://arxiv.org/abs/2610.23016",
+              "source": "arXiv astro-ph.CO 论文速递",
+              "summary": "arXiv:2610.23016v1 Announce Type: cross Abstract: Assessing the significance of extreme galaxy candidates has typically relied on redshifts and stellar / halo masses inferred through inverse modelling, which carries substantial systematic u",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.6,
+              "role": "科研",
+              "published_at": "2026-10-19T04:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "The metric-affine mathring{R}^2 scalaron: parameter-free inflation",
+              "url": "https://arxiv.org/abs/2610.23522",
+              "source": "arXiv astro-ph.CO 论文速递",
+              "summary": "arXiv:2610.23522v1 Announce Type: cross Abstract: We present a model of slow-roll inflation in metric-affine gravity, where the connection is independent of the metric. We require that the Einstein-Hilbert term is the only operator that bre",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.6,
+              "role": "科研",
+              "published_at": "2026-10-19T04:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "太阳与空间物理",
+          "articles": [
+            {
+              "title": "Understanding sub-arcsecond scale radio sources and space weather with the SKA-Low using interplanetary scintillation",
+              "url": "https://arxiv.org/abs/2610.23220",
+              "source": "arXiv astro-ph.CO 论文速递",
+              "summary": "arXiv:2610.23220v1 Announce Type: cross Abstract: Continuum surveys with SKA-Low will provide excellent spectral information for detected objects. However, the angular resolution it provides cannot clearly distinguish between extended radio",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.6,
+              "role": "科研",
+              "published_at": "2026-10-19T04:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
         {
           "category": "深空探测",
           "articles": [
@@ -6861,17 +7172,288 @@
               "zh_full": "日本科学家正准备执行一项前往火星卫星的任务，以采集样本，这些样本可能有助于揭示太阳系的起源以及地球生命的起源。该任务旨在成为首次往返火星区域的任务。",
               "reason": "首次往返火星区域采样任务",
               "density": "中",
-              "score": 70.4,
+              "score": 73.3,
               "role": "科研",
               "published_at": "2026-10-18T20:20:01+00:00",
-              "topic_id": "14d22a1810d2",
-              "topic_title": "Japan to launch historic round-trip mission to Mars moon"
+              "topic_id": "d02e95b80c74",
+              "topic_title": "Lincoln Laboratory laser communications terminal launches on historic Artemis II moon mission"
+            },
+            {
+              "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+              "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
+              "source": "Astronomy Magazine",
+              "summary": "满月是地球位于太阳和月球之间时，月球面向地球的一面被完全照亮。本文提供2026年满月日历，帮助读者了解满月及月相观测时间。",
+              "zh_full": "满月现象发生在地球恰好位于太阳和月球之间时，此时月球面向地球的一面完全被阳光照亮。由于月球绕地球运行，阳光照射月球表面并反射回地球的角度不断变化，导致我们看到的月相随之改变。本文提供了2026年全月亮的日历，帮助读者了解何时可以观测到满月及其不同月相。",
+              "reason": "提供2026年满月观测指南",
+              "density": "中",
+              "score": 61.1,
+              "role": "媒体",
+              "published_at": "2026-10-19T13:26:15+00:00",
+              "topic_id": "1703854d352c",
+              "topic_title": "Mars moon lander set to launch on 19 October"
+            },
+            {
+              "title": "Euclid discovers new comet",
+              "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_discovers_new_comet",
+              "source": "ESA 空间科学",
+              "summary": "The European Space Agency’s Euclid space telescope has discovered its first previously unknown comet, in images taken between 16 and 24 September 2026.",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.4,
+              "role": "官方",
+              "published_at": "2026-10-19T12:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "科研进展",
+          "articles": [
+            {
+              "title": "APOD: 2026 October 19 – Treble Clef: Unusual X-ray Hot Radio Source",
+              "url": "https://science.nasa.gov/image-article/apod-2026-october-19-treble-clef-unusual-x-ray-hot-radio-source/",
+              "source": "NASA 快讯",
+              "summary": "APOD Science APOD APOD: 2026 October 19 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 60.8,
+              "role": "官方",
+              "published_at": "2026-10-19T04:05:00+00:00",
+              "topic_id": "83d4553ba2df",
+              "topic_title": "APOD: 2026 October 19 – Treble Clef: Unusual X-ray Hot Radio Source"
+            },
+            {
+              "title": "Oct. 19, 2017: The discovery of ‘Oumuamua",
+              "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/oct-19-2017-the-discovery-of-oumuamua/",
+              "source": "Astronomy Magazine",
+              "summary": "Sometime around the year 1837, a strange object passed an invisible cosmic mile marker: 1,000 astronomical units from the Sun. (One astronomical unit, or AU, is the average Earth-Sun distance.) For more than a century, it continued undetect",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.4,
+              "role": "媒体",
+              "published_at": "2026-10-19T13:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Autumn Paints Poland’s Bieszczady Mountains",
+              "url": "https://science.nasa.gov/earth/earth-observatory/autumn-paints-polands-bieszczady-mountains/",
+              "source": "NASA 快讯",
+              "summary": "Fall color covers the forested slopes of Bieszczady National Park, while patches of polonina, a type of high-mountain meadow, have turned tan.",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.1,
+              "role": "官方",
+              "published_at": "2026-10-19T04:01:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Analytic and numerical study of dark matter halos in the Horndeski theory",
+              "url": "https://arxiv.org/abs/2610.22819",
+              "source": "arXiv astro-ph.CO 论文速递",
+              "summary": "arXiv:2610.22819v1 Announce Type: new Abstract: The models of modified gravity that can explain the late-time accelerated expansion of the Universe must pass the local tests of gravity, introducing a screening mechanism so that any addition",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 44.0,
+              "role": "科研",
+              "published_at": "2026-10-19T04:00:00+00:00",
+              "topic_id": "10b310970a52",
+              "topic_title": "Analytic and numerical study of dark matter halos in the Horndeski theory"
+            },
+            {
+              "title": "Gravitational Waves as a Probe of Multi-Fluid Cosmologies: General Formalism and the Case of Cosmological Stasis",
+              "url": "https://arxiv.org/abs/2610.23808",
+              "source": "arXiv astro-ph.CO 论文速递",
+              "summary": "arXiv:2610.23808v1 Announce Type: new Abstract: Scalar-induced gravitational waves (SIGWs) provide a powerful probe of the expansion history of the universe prior to the Big Bang. Indeed, the production of such gravity waves depends on the ",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 44.0,
+              "role": "科研",
+              "published_at": "2026-10-19T04:00:00+00:00",
+              "topic_id": "10c026c00b46",
+              "topic_title": "Gravitational Waves as a Probe of Multi-Fluid Cosmologies: General Formalism and the Case of Cosmological Stasis"
+            },
+            {
+              "title": "Geometrical and Optical Design of the GUEST Laser-Ranged Test Masses for the Detection of Gravitational Waves in the muHz range",
+              "url": "https://arxiv.org/abs/2610.20298",
+              "source": "arXiv astro-ph.CO 论文速递",
+              "summary": "arXiv:2610.20298v1 Announce Type: cross Abstract: The GUEST (Gravitational Universe Exploration with Satellite Tracking) mission aims at detecting gravitational waves in the yet almost unexplored $\\mu$Hz frequency range through high-precisi",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 44.0,
+              "role": "科研",
+              "published_at": "2026-10-19T04:00:00+00:00",
+              "topic_id": "10c026c00b46",
+              "topic_title": "Gravitational Waves as a Probe of Multi-Fluid Cosmologies: General Formalism and the Case of Cosmological Stasis"
+            },
+            {
+              "title": "Learning without relearning physical symmetry: an SO(3)-equivariant convolutional network (CNN) on the sphere",
+              "url": "https://arxiv.org/abs/2610.23821",
+              "source": "arXiv astro-ph.CO 论文速递",
+              "summary": "arXiv:2610.23821v1 Announce Type: cross Abstract: Many of the most important datasets in the physical sciences live natively on the sphere, and these data often carry no preferred position or orientation. Using methods that do not reflect t",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 44.0,
+              "role": "科研",
+              "published_at": "2026-10-19T04:00:00+00:00",
+              "topic_id": "2acd17d6aaf7",
+              "topic_title": "Learning without relearning physical symmetry: an SO(3)-equivariant convolutional network (CNN) on the sphere"
+            },
+            {
+              "title": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
+              "url": "https://arxiv.org/abs/2610.23825",
+              "source": "arXiv astro-ph.CO 论文速递",
+              "summary": "arXiv:2610.23825v1 Announce Type: cross Abstract: The evidence, $\\mathcal{Z} = p(x | \\mathcal{M})$, of a data-generating model $\\mathcal{M}$ is a powerful tool in Bayesian frameworks: it enables model inference, model misspecification tests",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 44.0,
+              "role": "科研",
+              "published_at": "2026-10-19T04:00:00+00:00",
+              "topic_id": "2acd17d6aaf7",
+              "topic_title": "Learning without relearning physical symmetry: an SO(3)-equivariant convolutional network (CNN) on the sphere"
+            }
+          ]
+        },
+        {
+          "category": "其他",
+          "articles": [
+            {
+              "title": "The Sky Today on Monday, October 19: Feast your eyes on the Southern Fish",
+              "url": "https://www.astronomy.com/observing/the-sky-today-monday-october-19-2026/",
+              "source": "Astronomy Magazine",
+              "summary": "Looking for a sky event this week? Check out our full Sky This Week column. October 18: Another Tethys transit Hanging over the southern horizon this evening is the constellation Piscis Austrinus the Southern Fish. Although you might not ha",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 35.4,
+              "role": "媒体",
+              "published_at": "2026-10-19T08:00:00+00:00",
+              "topic_id": "94b599e5bbf0",
+              "topic_title": "The Sky Today on Sunday, October 18: Another Tethys transit"
+            },
+            {
+              "title": "Enigmatic Mercury will remain a puzzle until someone sends a lander",
+              "url": "https://phys.org/news/2026-10-enigmatic-mercury-puzzle-lander.html",
+              "source": "Phys.org 太空新闻",
+              "summary": "Mercury remains one of our solar system's most elusive and difficult planets to study. It's easier to send probes to the icy moons of Saturn or Jupiter, or even to Pluto, than to land on our innermost planet, Mercury.",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.8,
+              "role": "科研",
+              "published_at": "2026-10-19T13:20:02+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "A hamburger with a tail",
+              "url": "https://www.astronomy.com/picture-of-the-day/photo/a-hamburger-with-a-tail/",
+              "source": "Astronomy Magazine",
+              "summary": "Dave Doctor from Las Cruces, New Mexico The Hamburger Galaxy (NGC 3628) is an edge-on spiral in Leo, some 30 million light-years away, and a member of the Leo Triplet along with M65 and M66. Tidal interactions with those neighbors has extra",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.8,
+              "role": "媒体",
+              "published_at": "2026-10-19T10:13:02+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Retired pilot helps historical society buy Neil Armstrong's boyhood home for tours",
+              "url": "https://phys.org/news/2026-10-historical-society-buy-neil-armstrong.html",
+              "source": "Phys.org 太空新闻",
+              "summary": "Ken Schreiber was 9 when Neil Armstrong took his first steps on the moon in 1969—a moment he would never forget. Like Armstrong, he became a military fighter pilot.",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.7,
+              "role": "科研",
+              "published_at": "2026-10-19T07:54:26+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Why the Drake equation is still important 65 years after its creation",
+              "url": "https://www.newscientist.com/article/2594385-why-the-drake-equation-is-still-important-65-years-after-its-creation/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+              "source": "New Scientist 太空",
+              "summary": "The Drake equation provides a way to guess how many aliens we might be able to communicate with, but it’s also a prime example of the importance of scientific guessing, says columnist Leah Crane",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.7,
+              "role": "媒体",
+              "published_at": "2026-10-19T08:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
             }
           ]
         }
       ],
       "topic_ids": [
-        "14d22a1810d2"
+        "14d22a1810d2",
+        "1703854d352c",
+        "83d4553ba2df",
+        "d02e95b80c74"
+      ],
+      "tocCount": 15,
+      "readMinutes": 3,
+      "amended": 0
+    },
+    "2026-10-20": {
+      "date": "2026-10-20",
+      "weekday": "周二",
+      "label": "2026年10月20日",
+      "headline": {
+        "title": "Martian Dawn",
+        "url": "https://www.nasa.gov/image-article/martian-dawn/",
+        "source": "NASA 快讯",
+        "summary": "NASA’s Curiosity captures the dawn on Mars – as well as elongated ridges formed by wind erosion, or yardangs – in this close-up from a panorama released on Oct. 6, 2026. This is the most detailed view yet of distant, wind-carved Martian cli",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 61.1,
+        "role": "官方",
+        "published_at": "2026-10-19T16:03:51+00:00",
+        "topic_id": "1737f424dcf2",
+        "topic_title": "Martian Dawn"
+      },
+      "picks": [],
+      "flash": [],
+      "sections": [
+        {
+          "category": "科研进展",
+          "articles": [
+            {
+              "title": "Martian Dawn",
+              "url": "https://www.nasa.gov/image-article/martian-dawn/",
+              "source": "NASA 快讯",
+              "summary": "NASA’s Curiosity captures the dawn on Mars – as well as elongated ridges formed by wind erosion, or yardangs – in this close-up from a panorama released on Oct. 6, 2026. This is the most detailed view yet of distant, wind-carved Martian cli",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 61.1,
+              "role": "官方",
+              "published_at": "2026-10-19T16:03:51+00:00",
+              "topic_id": "1737f424dcf2",
+              "topic_title": "Martian Dawn"
+            }
+          ]
+        }
+      ],
+      "topic_ids": [
+        "1737f424dcf2"
       ],
       "tocCount": 1,
       "readMinutes": 1

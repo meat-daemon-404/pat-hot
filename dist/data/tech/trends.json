@@ -1,87 +1,81 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T00:14:12.390584+00:00",
-  "weekStart": "2026-10-13",
+  "generatedAt": "2026-10-19T17:00:28.829026+00:00",
+  "weekStart": "2026-10-14",
   "windowDays": 7,
-  "windowStart": "2026-10-13",
-  "windowEnd": "2026-10-19",
-  "prevStart": "2026-10-06",
-  "prevEnd": "2026-10-12",
+  "windowStart": "2026-10-14",
+  "windowEnd": "2026-10-20",
+  "prevStart": "2026-10-07",
+  "prevEnd": "2026-10-13",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4465.6,
-      "lastWeek": 1148.4,
-      "deltaPct": 288.9
+      "thisWeek": 4546.8,
+      "lastWeek": 1778.8,
+      "deltaPct": 155.6
     },
     {
       "category": "产业与资本",
-      "thisWeek": 3813.5,
-      "lastWeek": 1364.2,
-      "deltaPct": 179.5
-    },
-    {
-      "category": "通信与算力",
-      "thisWeek": 3510.6,
-      "lastWeek": 1151.3,
-      "deltaPct": 204.9
-    },
-    {
-      "category": "其他",
-      "thisWeek": 3330.4,
-      "lastWeek": 2083.0,
-      "deltaPct": 59.9
-    },
-    {
-      "category": "科研进展",
-      "thisWeek": 3097.6,
-      "lastWeek": 1207.7,
-      "deltaPct": 156.5
+      "thisWeek": 3791.9,
+      "lastWeek": 1909.8,
+      "deltaPct": 98.5
     },
     {
       "category": "光通信",
-      "thisWeek": 2977.0,
-      "lastWeek": 1370.1,
-      "deltaPct": 117.3
+      "thisWeek": 3296.1,
+      "lastWeek": 1579.1,
+      "deltaPct": 108.7
+    },
+    {
+      "category": "科研进展",
+      "thisWeek": 3129.3,
+      "lastWeek": 1693.8,
+      "deltaPct": 84.8
+    },
+    {
+      "category": "其他",
+      "thisWeek": 3025.2,
+      "lastWeek": 2652.9,
+      "deltaPct": 14.0
+    },
+    {
+      "category": "通信与算力",
+      "thisWeek": 3007.4,
+      "lastWeek": 1719.4,
+      "deltaPct": 74.9
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 2008.8,
-      "lastWeek": 1104.5,
-      "deltaPct": 81.9
+      "thisWeek": 2258.6,
+      "lastWeek": 1196.5,
+      "deltaPct": 88.8
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1248.8,
-      "lastWeek": 984.6,
-      "deltaPct": 26.8
+      "thisWeek": 1497.7,
+      "lastWeek": 1030.6,
+      "deltaPct": 45.3
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 503.1,
-      "lastWeek": 900.2,
-      "deltaPct": -44.1
+      "thisWeek": 468.3,
+      "lastWeek": 1027.0,
+      "deltaPct": -54.4
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 403.2,
-      "lastWeek": 307.9,
-      "deltaPct": 31.0
+      "thisWeek": 458.8,
+      "lastWeek": 353.9,
+      "deltaPct": 29.6
     },
     {
       "category": "光伏与新能源",
-      "thisWeek": 59.4,
-      "lastWeek": 162.5,
-      "deltaPct": -63.4
+      "thisWeek": 0,
+      "lastWeek": 221.9,
+      "deltaPct": -100.0
     }
   ],
   "newTopics": [
-    {
-      "topic_id": "8c01b90c3aae",
-      "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
-      "score": 1645.0,
-      "days": 4
-    },
     {
       "topic_id": "5ebd16670b34",
       "title": "Perovskite chiral multiple quantum wells with extended spin lifetime via efficient spin cascade",
@@ -101,21 +95,15 @@
       "days": 2
     },
     {
-      "topic_id": "f510f3bd8d72",
-      "title": "工信部对我国网络强国建设提出四点建议",
-      "score": 905.1,
-      "days": 2
+      "topic_id": "a74e97d8f49a",
+      "title": "Photonics Hot List: October 16, 2026",
+      "score": 831.4,
+      "days": 4
     },
     {
       "topic_id": "ce3f5f92cd2c",
       "title": "工信部对我国网络强国建设提出四点建议",
       "score": 725.1,
-      "days": 2
-    },
-    {
-      "topic_id": "7f6c9067937a",
-      "title": "Solid-state emissive acceptors enable thermally accessible radiative pathways for efficient organic solar cells",
-      "score": 642.8,
       "days": 2
     },
     {
@@ -125,19 +113,37 @@
       "days": 1
     },
     {
-      "topic_id": "a74e97d8f49a",
-      "title": "Photonics Hot List: October 16, 2026",
-      "score": 578.6,
-      "days": 3
-    },
-    {
       "topic_id": "2ad793a81ae5",
       "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
       "score": 574.6,
       "days": 1
+    },
+    {
+      "topic_id": "4529832de80e",
+      "title": "Localized high-Q resonances enable electrically defined beam steering in lithium niobate metasurfaces",
+      "score": 418.9,
+      "days": 2
+    },
+    {
+      "topic_id": "40753cddc649",
+      "title": "大招齐发，英特尔直击网络转型",
+      "score": 349.8,
+      "days": 3
+    },
+    {
+      "topic_id": "77df7ffc1ce6",
+      "title": "三部门关于印发《轻工纺织产业发展“十五五”规划》的通知",
+      "score": 298.8,
+      "days": 3
     }
   ],
   "sustainedTopics": [
+    {
+      "topic_id": "da7b21634030",
+      "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
+      "days": 5,
+      "score": 735.3
+    },
     {
       "topic_id": "8c01b90c3aae",
       "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
@@ -145,58 +151,52 @@
       "score": 1645.0
     },
     {
-      "topic_id": "da7b21634030",
-      "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
-      "days": 4,
-      "score": 595.2
-    },
-    {
       "topic_id": "a74e97d8f49a",
       "title": "Photonics Hot List: October 16, 2026",
-      "days": 3,
-      "score": 578.6
-    },
-    {
-      "topic_id": "40753cddc649",
-      "title": "大招齐发，英特尔直击网络转型",
-      "days": 3,
-      "score": 349.8
-    },
-    {
-      "topic_id": "77df7ffc1ce6",
-      "title": "三部门关于印发《轻工纺织产业发展“十五五”规划》的通知",
-      "days": 3,
-      "score": 298.8
-    },
-    {
-      "topic_id": "b0bbcd7062bb",
-      "title": "广和通上半年营收37.78亿元增长1.92% 净利润同比下降71.63%",
-      "days": 3,
-      "score": 273.0
+      "days": 4,
+      "score": 831.4
     },
     {
       "topic_id": "9f8710ab3d29",
       "title": "华工科技：2026年上半年，光互联业务营收38.03亿元",
-      "days": 3,
-      "score": 193.3
+      "days": 4,
+      "score": 295.6
     },
     {
       "topic_id": "ff9baccacead",
       "title": "欧盟否认重新评估对美国科技巨头调查，但未来走向不明",
-      "days": 3,
-      "score": 188.4
+      "days": 4,
+      "score": 251.2
     },
     {
-      "topic_id": "2788fec2119d",
-      "title": "Optical imaging and spectroscopy enhance precision agriculture",
-      "days": 3,
-      "score": 150.3
+      "topic_id": "8579455b5d54",
+      "title": "华为全联接大会2026全光峰会举办，F5G-A全光网加速AI普惠千行万业",
+      "days": 4,
+      "score": 227.5
     },
     {
       "topic_id": "569c89c31ce9",
       "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
-      "days": 3,
-      "score": 144.3
+      "days": 4,
+      "score": 192.4
+    },
+    {
+      "topic_id": "3db37b135ae4",
+      "title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼",
+      "days": 4,
+      "score": 157.0
+    },
+    {
+      "topic_id": "b60b7f7c9968",
+      "title": "华为全联接大会2026丨鲲鹏携手伙伴深化硬件开放与生态繁荣，共启算力产业新征程",
+      "days": 4,
+      "score": 136.4
+    },
+    {
+      "topic_id": "329557835790",
+      "title": "Doubts cast on ‘superradiant neutrino laser’ proposal",
+      "days": 4,
+      "score": 133.6
     }
   ]
 }

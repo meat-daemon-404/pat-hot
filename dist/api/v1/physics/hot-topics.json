@@ -1,90 +1,185 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T00:14:12.390584+00:00",
+  "generatedAt": "2026-10-19T17:00:28.829026+00:00",
   "count": 7,
   "items": [
     {
       "terms": [
-        "atoms",
-        "attosecond",
-        "bi2o3",
-        "characteristics",
-        "closer",
-        "composites",
-        "dental",
-        "diagnostic",
-        "dosimetric",
-        "electrons",
-        "energy",
-        "hard-x-ray",
-        "hdpe",
-        "intensity",
-        "investigation",
-        "level",
-        "molecules",
-        "nanocomposites",
-        "pulses",
-        "range",
-        "real-time",
-        "shielding",
-        "silicone",
-        "unlock",
-        "world-record",
-        "x-ray",
-        "x-rays"
+        "agassi",
+        "bohmian",
+        "bounds",
+        "discrimination",
+        "dispersive",
+        "dynamical",
+        "dynamics",
+        "extended",
+        "landau",
+        "long-suspected",
+        "mechanics",
+        "metric",
+        "nonequilibrium",
+        "perturbations",
+        "physicists",
+        "processor",
+        "prove",
+        "pure",
+        "quantum",
+        "quantum-assisted",
+        "robustness",
+        "speed",
+        "states",
+        "theory",
+        "thermalization",
+        "transitions",
+        "unambiguous"
+      ],
+      "source_count": 2,
+      "signal_count": 5,
+      "sources": [
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
+      ],
+      "score": 45.5,
+      "latest_at": "2026-10-19T17:00:28.829026+00:00",
+      "representative": {
+        "title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor",
+        "url": "https://arxiv.org/abs/2610.22482",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-10-19T04:00:00+00:00",
+        "score": 51.8,
+        "summary": "arXiv:2610.22482v1 Announce Type: new Abstract: Direct continuous quantum phase transitions between phases that break distinct symmetries challenge the conventional Landau-Ginzburg-Wilson paradigm and provide a framework for deconfined quan",
+        "zh_full": "在打破不同对称性的相之间发生的直接连续量子相变，对传统的Landau-Ginzburg-Wilson范式提出了挑战，并为解禁量子临界性提供了框架。本研究利用超导量子处理器，在受挫一维自旋链中研究了Landau理论所禁止的铁磁-价键固体（FM-VBS）相变。通过将矩阵乘积态辅助的电路制备与量子硬件测量相结合，研究揭示了长程铁磁关联的抑制现象。",
+        "llm_summary": "本研究利用超导量子处理器，在受挫一维自旋链中探索了Landau理论所禁止的铁磁-价键固体（FM-VBS）相变。通过矩阵乘积态辅助电路制备与量子硬件测量相结合的方法，揭示了长程铁磁关联的抑制。该工作挑战了传统Landau-Ginzburg-Wilson范式，为解禁量子临界性研究提供了新框架。",
+        "llm_reason": "量子处理器探索Landau理论禁区相变",
+        "density": "高",
+        "llm_score": 51.5
+      },
+      "folded_count": 1,
+      "title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor",
+      "id": "a91c8f6231b8",
+      "links": [
+        {
+          "title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor",
+          "url": "https://arxiv.org/abs/2610.22482",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 51.8,
+          "published_at": "2026-10-19T04:00:00+00:00"
+        },
+        {
+          "title": "Metric and Dispersive Dynamics of Phase Perturbations in Bohmian Quantum Mechanics",
+          "url": "https://arxiv.org/abs/2610.22737",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 51.8,
+          "published_at": "2026-10-19T04:00:00+00:00"
+        },
+        {
+          "title": "Quantum-Assisted Unambiguous Discrimination of Pure States with Robustness Bounds",
+          "url": "https://arxiv.org/abs/2610.22954",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 51.8,
+          "published_at": "2026-10-19T04:00:00+00:00"
+        },
+        {
+          "title": "Nonequilibrium Dynamical Quantum Phase Transitions in the Extended Agassi Model",
+          "url": "https://arxiv.org/abs/2610.23096",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 51.8,
+          "published_at": "2026-10-19T04:00:00+00:00"
+        },
+        {
+          "title": "Physicists prove a long-suspected quantum speed limit for thermalization",
+          "url": "https://phys.org/news/2026-10-physicists-quantum-limit-thermalization.html",
+          "source": "Phys.org 物理新闻",
+          "score": 39.0,
+          "published_at": "2026-10-18T17:20:01+00:00"
+        }
+      ],
+      "top_terms": [
+        "quantum",
+        "transitions",
+        "landau",
+        "theory",
+        "processor"
+      ],
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 45.5,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "axiomatic",
+        "entangled",
+        "finds",
+        "graphene",
+        "hold",
+        "multi-time",
+        "multiple",
+        "operational",
+        "preparation",
+        "probabilistic",
+        "quantum",
+        "states",
+        "superconductivity",
+        "theories",
+        "topological"
       ],
       "source_count": 2,
       "signal_count": 2,
       "sources": [
-        "Nature Physics 学科聚合",
-        "Phys.org 物理新闻"
+        "MIT News 物理",
+        "arXiv quant-ph 论文速递"
       ],
       "score": 24.5,
-      "latest_at": "2026-10-19T00:14:12.390584+00:00",
+      "latest_at": "2026-10-19T17:00:28.829026+00:00",
       "representative": {
-        "title": "Investigation of the dosimetric characteristics of real-time silicone/Bi2O3 nanocomposites for the diagnostic level X-rays",
-        "url": "https://www.nature.com/articles/s41598-026-76522-9",
-        "source": "Nature Physics 学科聚合",
-        "published_at": "2026-10-18T00:00:00+00:00",
-        "score": 62.0,
-        "summary": "",
-        "zh_full": null,
-        "llm_score": 5.0
+        "title": "Multi-Time States in Quantum and Operational Probabilistic Theories: An Axiomatic Framework",
+        "url": "https://arxiv.org/abs/2610.22489",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-10-19T04:00:00+00:00",
+        "score": 48.8,
+        "summary": "arXiv:2610.22489v1 Announce Type: new Abstract: Quantum states over time were introduced, in part, to extend Bayesian probability to quantum theory and have since found applications across diverse areas, ranging from quantum causality and o",
+        "zh_full": "量子态随时间的演化（multi-time states）最初被引入是为了将贝叶斯概率扩展到量子理论中，此后在量子因果性、开放系统动力学以及宏观实在性检验等多个领域得到应用。目前，针对马尔可夫动力学的公理化描述已经存在，但能够容纳非马尔可夫动力学的通用框架仍然缺失。此外，将该框架从量子力学推广到一般物理理论也尚未实现。本文提出了一套公理化框架，旨在为量子理论和一般操作概率理论中的多时间态提供统一的数学基础。（摘要在原文中被截断，后续内容不可见。）",
+        "llm_summary": "本文针对量子多时间态（multi-time states）的公理化描述展开研究。多时间态最初为将贝叶斯概率推广至量子理论而引入，现已应用于量子因果性、开放系统动力学和宏观实在性检验等领域。现有公理化框架仅适用于马尔可夫动力学，缺乏对非马尔可夫动力学的通用描述，且尚未推广到一般物理理论。本文提出了一套新的公理化框架，试图填补这一空白。",
+        "llm_reason": "量子多时间态公理化框架新进展",
+        "density": "高"
       },
       "folded_count": 1,
-      "title": "Investigation of the dosimetric characteristics of real-time silicone/Bi2O3 nanocomposites for the diagnostic level X-rays",
-      "id": "1c8548c84167",
+      "title": "Multi-Time States in Quantum and Operational Probabilistic Theories: An Axiomatic Framework",
+      "id": "b82bd9b50b6f",
       "links": [
         {
-          "title": "Investigation of the dosimetric characteristics of real-time silicone/Bi2O3 nanocomposites for the diagnostic level X-rays",
-          "url": "https://www.nature.com/articles/s41598-026-76522-9",
-          "source": "Nature Physics 学科聚合",
-          "score": 62.0,
-          "published_at": "2026-10-18T00:00:00+00:00"
+          "title": "Multi-Time States in Quantum and Operational Probabilistic Theories: An Axiomatic Framework",
+          "url": "https://arxiv.org/abs/2610.22489",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 48.8,
+          "published_at": "2026-10-19T04:00:00+00:00"
         },
         {
-          "title": "Enhanced X-ray shielding performance of HDPE–Sb₂O₃ composites in the diagnostic dental X-ray energy range",
-          "url": "https://www.nature.com/articles/s41598-026-76097-5",
-          "source": "Nature Physics 学科聚合",
-          "score": 62.0,
-          "published_at": "2026-10-18T00:00:00+00:00"
+          "title": "Programmable Preparation of Topological Entangled States",
+          "url": "https://arxiv.org/abs/2610.22738",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 48.8,
+          "published_at": "2026-10-19T04:00:00+00:00"
         },
         {
-          "title": "World-record intensity in attosecond hard-X-ray pulses could unlock closer study of electrons in atoms and molecules",
-          "url": "https://phys.org/news/2026-10-world-intensity-attosecond-hard-ray.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.7,
-          "published_at": "2026-10-16T19:10:01+00:00"
+          "title": "Graphene can hold multiple states of superconductivity, a new study finds",
+          "url": "https://news.mit.edu/2026/graphene-can-hold-multiple-states-of-superconductivity-0629",
+          "source": "MIT News 物理",
+          "score": 38.4,
+          "published_at": "2026-06-29T15:00:00+00:00"
         }
       ],
       "top_terms": [
-        "ray",
-        "diagnostic",
-        "world",
-        "record",
-        "intensity"
+        "states",
+        "quantum",
+        "operational",
+        "probabilistic",
+        "theories"
       ],
-      "rank": 1,
+      "rank": 2,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -112,13 +207,13 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-19T00:14:12.390584+00:00",
+      "latest_at": "2026-10-19T17:00:28.829026+00:00",
       "representative": {
         "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
         "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
         "source": "MIT News 物理",
         "published_at": "2026-08-05T15:00:00+00:00",
-        "score": 41.2,
+        "score": 37.1,
         "summary": "A new technique produces wafer-scale samples, overcoming a major roadblock to using these materials in quantum technologies.",
         "zh_full": "（无摘要，仅标题）",
         "llm_summary": "（无摘要，仅标题）",
@@ -132,14 +227,14 @@
           "title": "New monolithic ion trap opens quantum simulations to more researchers",
           "url": "https://phys.org/news/2026-10-monolithic-ion-quantum-simulations.html",
           "source": "Phys.org 物理新闻",
-          "score": 61.0,
+          "score": 60.5,
           "published_at": "2026-10-18T18:00:06+00:00"
         },
         {
           "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
           "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
           "source": "MIT News 物理",
-          "score": 41.2,
+          "score": 37.1,
           "published_at": "2026-08-05T15:00:00+00:00"
         }
       ],
@@ -150,7 +245,7 @@
         "monolithic",
         "ion"
       ],
-      "rank": 2,
+      "rank": 3,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -159,97 +254,64 @@
     },
     {
       "terms": [
-        "acoustic",
-        "atomic",
-        "detection",
-        "directional",
-        "external",
-        "fiber",
-        "field",
-        "fields",
-        "hidden",
-        "high-dimensional",
-        "long-coherence",
-        "magnetic",
-        "magnets",
-        "multimode",
-        "optimization",
-        "patterns",
-        "photons",
-        "physics-guided",
+        "drags",
+        "earth",
+        "entanglement",
+        "measure",
         "quantum",
-        "reconstructs",
-        "sensing",
-        "sensors",
-        "single-electron",
-        "state",
-        "surface",
-        "synthesis",
-        "two-stage",
-        "ultrathin",
-        "wave",
-        "wide-range",
-        "zero-bias"
+        "quantumness",
+        "schwarzschild",
+        "sensor",
+        "sitter",
+        "spacetime"
       ],
       "source_count": 2,
       "signal_count": 1,
       "sources": [
-        "Nature Physics 学科聚合",
-        "Phys.org 物理新闻"
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-19T00:14:12.390584+00:00",
+      "latest_at": "2026-10-19T17:00:28.829026+00:00",
       "representative": {
-        "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
-        "url": "https://www.nature.com/articles/s41534-026-01398-6",
-        "source": "Nature Physics 学科聚合",
-        "published_at": "2026-10-18T00:00:00+00:00",
-        "score": 63.5,
-        "summary": "",
-        "zh_full": null,
-        "llm_score": 21.5
+        "title": "Quantumness of Entanglement in Schwarzschild de Sitter Spacetime",
+        "url": "https://arxiv.org/abs/2610.22761",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-10-19T04:00:00+00:00",
+        "score": 47.3,
+        "summary": "arXiv:2610.22761v1 Announce Type: new Abstract: We investigate genuine multipartite entanglement and genuine tripartite nonlocality of a noisy generalized GHZ state in Schwarzschild-de Sitter spacetime. The genuine multipartite concurrence ",
+        "zh_full": "本文研究了Schwarzschild-de Sitter时空中含噪广义GHZ态的真实多体纠缠和真实三体非局域性。研究采用真实多体并发度（genuine multipartite concurrence）和优化Svetlichny参数来刻画这两种量子关联。结果表明，黑洞事件视界和宇宙学事件视界以不同方式在物理可及和不可及的约化态之间重新分配真实多体纠缠，而Svetlichny违背仅出现在物理可及态中。（摘要在原文中被截断，后续内容不可见。）",
+        "llm_summary": "本文在Schwarzschild-de Sitter时空中研究含噪广义GHZ态的真实多体纠缠与真实三体非局域性。利用真实多体并发度和优化Svetlichny参数进行刻画，发现黑洞事件视界与宇宙学事件视界对真实多体纠缠的重新分配方式不同，且Svetlichny违背仅出现在物理可及的约化态中。该研究揭示了弯曲时空对量子关联的独特影响。",
+        "llm_reason": "弯曲时空中量子纠缠的非平凡分布",
+        "density": "高"
       },
       "folded_count": 1,
-      "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
-      "id": "fc61077e5a73",
+      "title": "Quantumness of Entanglement in Schwarzschild de Sitter Spacetime",
+      "id": "213a4b379b5d",
       "links": [
         {
-          "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
-          "url": "https://www.nature.com/articles/s41534-026-01398-6",
-          "source": "Nature Physics 学科聚合",
-          "score": 63.5,
-          "published_at": "2026-10-18T00:00:00+00:00"
+          "title": "Quantumness of Entanglement in Schwarzschild de Sitter Spacetime",
+          "url": "https://arxiv.org/abs/2610.22761",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.3,
+          "published_at": "2026-10-19T04:00:00+00:00"
         },
         {
-          "title": "A two-stage optimization method for wide-range single-electron quantum magnetic sensing",
-          "url": "https://www.nature.com/articles/s41598-026-76354-7",
-          "source": "Nature Physics 学科聚合",
-          "score": 62.8,
-          "published_at": "2026-10-17T00:00:00+00:00"
-        },
-        {
-          "title": "Directional magnetic field detection with zero-bias surface acoustic wave sensors",
-          "url": "https://www.nature.com/articles/s41598-026-76696-2",
-          "source": "Nature Physics 学科聚合",
-          "score": 62.8,
-          "published_at": "2026-10-17T00:00:00+00:00"
-        },
-        {
-          "title": "Physics-guided AI reconstructs hidden patterns inside ultrathin magnets from external fields",
-          "url": "https://phys.org/news/2026-10-physics-ai-reconstructs-hidden-patterns.html",
+          "title": "Quantum sensor could measure how Earth drags spacetime",
+          "url": "https://phys.org/news/2026-10-quantum-sensor-earth-spacetime.html",
           "source": "Phys.org 物理新闻",
-          "score": 37.6,
-          "published_at": "2026-10-16T15:40:12+00:00"
+          "score": 31.5,
+          "published_at": "2026-10-15T10:40:01+00:00"
         }
       ],
       "top_terms": [
-        "magnetic",
-        "physics",
-        "guided",
-        "reconstructs",
-        "hidden"
+        "spacetime",
+        "quantumness",
+        "entanglement",
+        "schwarzschild",
+        "sitter"
       ],
-      "rank": 3,
+      "rank": 4,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -276,7 +338,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-19T00:14:12.390584+00:00",
+      "latest_at": "2026-10-19T17:00:28.829026+00:00",
       "representative": {
         "title": "New research shows a neutrino laser is impossible",
         "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
@@ -304,85 +366,16 @@
           "title": "Laser pulses bring order to a quantum material's tiny electrical regions",
           "url": "https://phys.org/news/2026-10-laser-pulses-quantum-material-tiny.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.4,
+          "score": 35.1,
           "published_at": "2026-10-15T17:00:07+00:00"
         }
       ],
       "top_terms": [
         "laser",
-        "pulses",
-        "bring",
-        "quantum",
-        "tiny"
-      ],
-      "rank": 4,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "diffusion",
-        "dynamics",
-        "finds",
-        "graph",
-        "graphene",
-        "hold",
-        "laplacian",
-        "multiple",
-        "seir",
-        "states",
-        "stochastic",
-        "superconductivity",
-        "transmission",
-        "uncertainty"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "MIT News 物理",
-        "Nature Physics 学科聚合"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-10-19T00:14:12.390584+00:00",
-      "representative": {
-        "title": "Graphene can hold multiple states of superconductivity, a new study finds",
-        "url": "https://news.mit.edu/2026/graphene-can-hold-multiple-states-of-superconductivity-0629",
-        "source": "MIT News 物理",
-        "published_at": "2026-06-29T15:00:00+00:00",
-        "score": 41.2,
-        "summary": "What’s more, the superconducting states get stronger under conditions expected to kill them.",
-        "zh_full": "（无摘要，仅标题）",
-        "llm_summary": "（无摘要，仅标题）",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Graphene can hold multiple states of superconductivity, a new study finds",
-      "id": "b8c85f88e0ba",
-      "links": [
-        {
-          "title": "Stochastic SEIR dynamics via graph Laplacian diffusion under transmission uncertainty",
-          "url": "https://www.nature.com/articles/s41598-026-73910-z",
-          "source": "Nature Physics 学科聚合",
-          "score": 59.8,
-          "published_at": "2026-10-17T00:00:00+00:00"
-        },
-        {
-          "title": "Graphene can hold multiple states of superconductivity, a new study finds",
-          "url": "https://news.mit.edu/2026/graphene-can-hold-multiple-states-of-superconductivity-0629",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-06-29T15:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "stochastic",
-        "seir",
-        "dynamics",
-        "graph",
-        "laplacian"
+        "research",
+        "neutrino",
+        "impossible",
+        "pulses"
       ],
       "rank": 5,
       "trend": "new",
@@ -407,13 +400,13 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-19T00:14:12.390584+00:00",
+      "latest_at": "2026-10-19T17:00:28.829026+00:00",
       "representative": {
         "title": "On the hunt for dark matter",
         "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
         "source": "MIT News 物理",
         "published_at": "2026-08-11T04:00:00+00:00",
-        "score": 41.2,
+        "score": 37.1,
         "summary": "From Broadway to MIT’s Laboratory for Nuclear Science, PhD student Jessica Fry doesn’t do anything halfway. Now she’s hunting for the universe’s most elusive particle.",
         "zh_full": "MIT News 报道，从百老汇到 MIT 核科学实验室，博士生 Jessica Fry 做事从不半途而废。如今她正在搜寻宇宙中最难以捉摸的粒子——暗物质。",
         "llm_summary": "MIT 博士生 Jessica Fry 正在搜寻宇宙中最难以捉摸的粒子——暗物质，报道提到她从百老汇到 MIT 核科学实验室的经历。",
@@ -428,23 +421,23 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 57.4,
+          "score": 56.9,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
           "title": "On the hunt for dark matter",
           "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
           "source": "MIT News 物理",
-          "score": 41.2,
+          "score": 37.1,
           "published_at": "2026-08-11T04:00:00+00:00"
         }
       ],
       "top_terms": [
         "dark",
         "matter",
-        "hunt",
         "observe",
-        "particle"
+        "particle",
+        "wave"
       ],
       "rank": 6,
       "trend": "new",
@@ -476,13 +469,13 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-19T00:14:12.390584+00:00",
+      "latest_at": "2026-10-19T17:00:28.829026+00:00",
       "representative": {
         "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
         "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
         "source": "MIT News 物理",
         "published_at": "2026-08-07T09:00:00+00:00",
-        "score": 41.2,
+        "score": 37.1,
         "summary": "The study could help scientists understand how superconductivity and other more complex phenomena emerge in quantum materials.",
         "zh_full": "（无摘要，仅标题）",
         "llm_summary": "（无摘要，仅标题）",
@@ -496,14 +489,14 @@
           "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
           "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
           "source": "MIT News 物理",
-          "score": 41.2,
+          "score": 37.1,
           "published_at": "2026-08-07T09:00:00+00:00"
         },
         {
           "title": "Physicists are scrambling to make sense of possible dark matter signal",
           "url": "https://www.newscientist.com/article/2589737-physicists-are-scrambling-to-make-sense-of-possible-dark-matter-signal/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 41.2,
+          "score": 37.1,
           "published_at": "2026-09-18T12:00:00+00:00"
         }
       ],
