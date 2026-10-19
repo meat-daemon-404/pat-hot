@@ -1,41 +1,132 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T14:02:56.185312+00:00",
-  "count": 4,
+  "generatedAt": "2026-10-19T00:14:12.390584+00:00",
+  "count": 7,
   "items": [
     {
-      "id": "a1a1832fd2c5",
+      "id": "1c8548c84167",
+      "title": "Investigation of the dosimetric characteristics of real-time silicone/Bi2O3 nanocomposites for the diagnostic level X-rays",
+      "status": "关注中",
+      "heat": 24.5,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
+      "sources": [
+        "Nature Physics 学科聚合",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "Investigation of the dosimetric characteristics of real-time silicone/Bi2O3 nanocomposites for the diagnostic level X-rays",
+          "url": "https://www.nature.com/articles/s41598-026-76522-9",
+          "source": "Nature Physics 学科聚合",
+          "score": 62.0,
+          "published_at": "2026-10-18T00:00:00+00:00"
+        },
+        {
+          "title": "Enhanced X-ray shielding performance of HDPE–Sb₂O₃ composites in the diagnostic dental X-ray energy range",
+          "url": "https://www.nature.com/articles/s41598-026-76097-5",
+          "source": "Nature Physics 学科聚合",
+          "score": 62.0,
+          "published_at": "2026-10-18T00:00:00+00:00"
+        },
+        {
+          "title": "World-record intensity in attosecond hard-X-ray pulses could unlock closer study of electrons in atoms and molecules",
+          "url": "https://phys.org/news/2026-10-world-intensity-attosecond-hard-ray.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.7,
+          "published_at": "2026-10-16T19:10:01+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 5.0
+    },
+    {
+      "id": "9312d0f1b7d0",
       "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
       ],
       "links": [
         {
+          "title": "New monolithic ion trap opens quantum simulations to more researchers",
+          "url": "https://phys.org/news/2026-10-monolithic-ion-quantum-simulations.html",
+          "source": "Phys.org 物理新闻",
+          "score": 61.0,
+          "published_at": "2026-10-18T18:00:06+00:00"
+        },
+        {
           "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
           "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
           "source": "MIT News 物理",
-          "score": 37.1,
+          "score": 41.2,
           "published_at": "2026-08-05T15:00:00+00:00"
-        },
-        {
-          "title": "New high-frequency method boosts 2D material readout for next-gen quantum computers",
-          "url": "https://phys.org/news/2026-10-high-frequency-method-boosts-2d.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.0,
-          "published_at": "2026-10-16T22:00:01+00:00"
         }
       ],
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": "MIT研究人员开发出一种新技术，可制备晶圆级、空气稳定的超薄超导体样品，克服了将这些材料用于量子技术的主要障碍。另一项研究提出了一种高频方法，提升了二维材料的读出能力，用于下一代量子计算机。两项进展分别针对量子计算中的材料制备和信号读出环节。",
-      "digestTitle": "两项新技术推进量子计算材料应用"
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "fc61077e5a73",
+      "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
+      "sources": [
+        "Nature Physics 学科聚合",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
+          "url": "https://www.nature.com/articles/s41534-026-01398-6",
+          "source": "Nature Physics 学科聚合",
+          "score": 63.5,
+          "published_at": "2026-10-18T00:00:00+00:00"
+        },
+        {
+          "title": "A two-stage optimization method for wide-range single-electron quantum magnetic sensing",
+          "url": "https://www.nature.com/articles/s41598-026-76354-7",
+          "source": "Nature Physics 学科聚合",
+          "score": 62.8,
+          "published_at": "2026-10-17T00:00:00+00:00"
+        },
+        {
+          "title": "Directional magnetic field detection with zero-bias surface acoustic wave sensors",
+          "url": "https://www.nature.com/articles/s41598-026-76696-2",
+          "source": "Nature Physics 学科聚合",
+          "score": 62.8,
+          "published_at": "2026-10-17T00:00:00+00:00"
+        },
+        {
+          "title": "Physics-guided AI reconstructs hidden patterns inside ultrathin magnets from external fields",
+          "url": "https://phys.org/news/2026-10-physics-ai-reconstructs-hidden-patterns.html",
+          "source": "Phys.org 物理新闻",
+          "score": 37.6,
+          "published_at": "2026-10-16T15:40:12+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 21.5
     },
     {
       "id": "4721ee460be2",
@@ -44,7 +135,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -61,8 +152,42 @@
           "title": "Laser pulses bring order to a quantum material's tiny electrical regions",
           "url": "https://phys.org/news/2026-10-laser-pulses-quantum-material-tiny.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.5,
+          "score": 35.4,
           "published_at": "2026-10-15T17:00:07+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "b8c85f88e0ba",
+      "title": "Graphene can hold multiple states of superconductivity, a new study finds",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
+      "sources": [
+        "MIT News 物理",
+        "Nature Physics 学科聚合"
+      ],
+      "links": [
+        {
+          "title": "Stochastic SEIR dynamics via graph Laplacian diffusion under transmission uncertainty",
+          "url": "https://www.nature.com/articles/s41598-026-73910-z",
+          "source": "Nature Physics 学科聚合",
+          "score": 59.8,
+          "published_at": "2026-10-17T00:00:00+00:00"
+        },
+        {
+          "title": "Graphene can hold multiple states of superconductivity, a new study finds",
+          "url": "https://news.mit.edu/2026/graphene-can-hold-multiple-states-of-superconductivity-0629",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-06-29T15:00:00+00:00"
         }
       ],
       "trend": "new",
@@ -78,7 +203,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -88,14 +213,14 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 57.7,
+          "score": 57.4,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
           "title": "On the hunt for dark matter",
           "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
           "source": "MIT News 物理",
-          "score": 37.1,
+          "score": 41.2,
           "published_at": "2026-08-11T04:00:00+00:00"
         }
       ],
@@ -112,7 +237,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -122,14 +247,14 @@
           "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
           "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
           "source": "MIT News 物理",
-          "score": 37.1,
+          "score": 41.2,
           "published_at": "2026-08-07T09:00:00+00:00"
         },
         {
           "title": "Physicists are scrambling to make sense of possible dark matter signal",
           "url": "https://www.newscientist.com/article/2589737-physicists-are-scrambling-to-make-sense-of-possible-dark-matter-signal/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 37.1,
+          "score": 41.2,
           "published_at": "2026-09-18T12:00:00+00:00"
         }
       ],

@@ -1,52 +1,52 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T14:02:56.185312+00:00",
-  "weekStart": "2026-10-12",
+  "generatedAt": "2026-10-19T00:14:12.390584+00:00",
+  "weekStart": "2026-10-13",
   "windowDays": 7,
-  "windowStart": "2026-10-12",
-  "windowEnd": "2026-10-18",
-  "prevStart": "2026-10-05",
-  "prevEnd": "2026-10-11",
+  "windowStart": "2026-10-13",
+  "windowEnd": "2026-10-19",
+  "prevStart": "2026-10-06",
+  "prevEnd": "2026-10-12",
   "categoryDelta": [
     {
       "category": "深空探测",
-      "thisWeek": 1861.0,
-      "lastWeek": 477.7,
-      "deltaPct": 289.6
+      "thisWeek": 1678.3,
+      "lastWeek": 732.9,
+      "deltaPct": 129.0
     },
     {
       "category": "其他",
-      "thisWeek": 1618.2,
-      "lastWeek": 692.3,
-      "deltaPct": 133.7
+      "thisWeek": 1254.5,
+      "lastWeek": 961.9,
+      "deltaPct": 30.4
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 1251.1,
-      "lastWeek": 240.1,
-      "deltaPct": 421.1
-    },
-    {
-      "category": "科研进展",
-      "thisWeek": 1116.2,
-      "lastWeek": 119.3,
-      "deltaPct": 835.6
+      "thisWeek": 963.8,
+      "lastWeek": 480.5,
+      "deltaPct": 100.6
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 960.4,
-      "lastWeek": 160.4,
-      "deltaPct": 498.8
+      "thisWeek": 732.3,
+      "lastWeek": 388.2,
+      "deltaPct": 88.6
+    },
+    {
+      "category": "科研进展",
+      "thisWeek": 658.8,
+      "lastWeek": 576.7,
+      "deltaPct": 14.2
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 322.5,
-      "lastWeek": 0,
-      "deltaPct": 100.0
+      "thisWeek": 281.0,
+      "lastWeek": 41.5,
+      "deltaPct": 577.1
     },
     {
       "category": "系外行星",
-      "thisWeek": 171.4,
+      "thisWeek": 171.1,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
@@ -77,27 +77,15 @@
       "days": 1
     },
     {
-      "topic_id": "6540815d36b5",
-      "title": "NASA demonstrates next-generation heat shield technologies",
-      "score": 434.4,
-      "days": 1
-    },
-    {
       "topic_id": "2c320511f7ff",
       "title": "Astronomer leads global team on NASA mission to create unprecedented view of the early universe",
       "score": 362.0,
       "days": 1
     },
     {
-      "topic_id": "5bfcfc5cfd3b",
-      "title": "NASA's SpaceX CRS-35 mission to launch health research",
-      "score": 351.3,
-      "days": 1
-    },
-    {
-      "topic_id": "f73fa0faac63",
-      "title": "Japan's MMX mission aims to swipe soil samples from Mars's moon Phobos",
-      "score": 273.4,
+      "topic_id": "14d22a1810d2",
+      "title": "Japan to launch historic round-trip mission to Mars moon",
+      "score": 210.7,
       "days": 2
     },
     {
@@ -105,6 +93,12 @@
       "title": "A trip to Mars could come at a heartbreaking cost",
       "score": 139.8,
       "days": 2
+    },
+    {
+      "topic_id": "f73fa0faac63",
+      "title": "Japan's MMX mission aims to swipe soil samples from Mars's moon Phobos",
+      "score": 135.5,
+      "days": 1
     },
     {
       "topic_id": "4b7b215b7679",
@@ -116,6 +110,12 @@
       "topic_id": "87242a7c762d",
       "title": "Artemis II Heat Shield After Splashdown",
       "score": 120.0,
+      "days": 2
+    },
+    {
+      "topic_id": "11c66408e132",
+      "title": "APOD: 2026 October 18 – Sonified: Eagle Nebula Pillars",
+      "score": 117.2,
       "days": 2
     }
   ],

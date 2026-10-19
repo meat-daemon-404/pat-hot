@@ -1,65 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T14:02:56.185312+00:00",
+  "generatedAt": "2026-10-19T00:14:12.390584+00:00",
   "count": 10,
   "items": [
-    {
-      "id": "a74e97d8f49a",
-      "title": "Photonics Hot List: October 16, 2026",
-      "status": "发酵中",
-      "heat": 38.8,
-      "sourceCount": 3,
-      "signalCount": 5,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
-      "sources": [
-        "Laser Focus World",
-        "YouTube·Photonics Media",
-        "YouTube·SPIETV"
-      ],
-      "links": [
-        {
-          "title": "Photonics Hot List: October 16, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
-          "source": "Laser Focus World",
-          "score": 66.5,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: September 25, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55407650/photonics-hot-list-september-25-2026",
-          "source": "Laser Focus World",
-          "score": 66.5,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: September 18, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55406013/photonics-hot-list-september-18-2026",
-          "source": "Laser Focus World",
-          "score": 66.5,
-          "published_at": null
-        },
-        {
-          "title": "A Look Back on Photonics West 2026",
-          "url": "https://www.youtube.com/shorts/ne-cuXI4otA",
-          "source": "YouTube·SPIETV",
-          "score": 66.4,
-          "published_at": "2026-10-16T21:37:37+00:00"
-        },
-        {
-          "title": "Photonics Hot List: October 2, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55409170/photonics-hot-list-october-2-2026",
-          "source": "Laser Focus World",
-          "score": 59.9,
-          "published_at": null
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 18.5
-    },
     {
       "id": "da7b21634030",
       "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
@@ -67,7 +10,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
       "sources": [
         "C114中国通信网_通信财经"
       ],
@@ -107,7 +50,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 4,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
       "sources": [
         "工信部要闻"
       ],
@@ -148,39 +91,129 @@
       "digestTitle": null
     },
     {
-      "id": "8529464c7318",
-      "title": "Strong coupling of photon to an electron on helium",
+      "id": "a74e97d8f49a",
+      "title": "Photonics Hot List: October 16, 2026",
+      "status": "发酵中",
+      "heat": 21.2,
+      "sourceCount": 3,
+      "signalCount": 4,
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
+      "sources": [
+        "Laser Focus World",
+        "YouTube·Photonics Media",
+        "YouTube·SPIETV"
+      ],
+      "links": [
+        {
+          "title": "Photonics Hot List: October 16, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
+          "source": "Laser Focus World",
+          "score": 66.5,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: September 25, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55407650/photonics-hot-list-september-25-2026",
+          "source": "Laser Focus World",
+          "score": 66.5,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: September 18, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55406013/photonics-hot-list-september-18-2026",
+          "source": "Laser Focus World",
+          "score": 66.5,
+          "published_at": null
+        },
+        {
+          "title": "A Look Back on Photonics West 2026",
+          "url": "https://www.youtube.com/shorts/ne-cuXI4otA",
+          "source": "YouTube·SPIETV",
+          "score": 66.1,
+          "published_at": "2026-10-16T21:37:37+00:00"
+        },
+        {
+          "title": "Photonics Hot List: October 2, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55409170/photonics-hot-list-october-2-2026",
+          "source": "Laser Focus World",
+          "score": 59.9,
+          "published_at": null
+        }
+      ],
+      "trend": "down",
+      "trendPct": -45.4,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 18.5
+    },
+    {
+      "id": "85ab436dce3b",
+      "title": "Phase control of interfering stimulated Raman pathways in the XUV regime",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
       "sources": [
         "Nature Photonics",
         "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "Strong coupling of photon to an electron on helium",
-          "url": "https://www.nature.com/articles/s41566-026-02018-7",
+          "title": "Phase control of interfering stimulated Raman pathways in the XUV regime",
+          "url": "https://www.nature.com/articles/s41566-026-02024-9",
           "source": "Nature Photonics",
-          "score": 57.8,
-          "published_at": "2026-09-30T00:00:00+00:00"
+          "score": 63.5,
+          "published_at": "2026-10-09T00:00:00+00:00"
         },
         {
-          "title": "A highway instead of a racetrack: Strong coupling of light and sound in an optical fiber",
-          "url": "https://phys.org/news/2026-10-highway-racetrack-strong-coupling-optical.html",
+          "title": "Physicists prove a long-suspected quantum speed limit for thermalization",
+          "url": "https://phys.org/news/2026-10-physicists-quantum-limit-thermalization.html",
           "source": "Phys.org 物理新闻",
-          "score": 55.5,
-          "published_at": "2026-10-16T21:20:01+00:00"
+          "score": 56.5,
+          "published_at": "2026-10-18T17:20:01+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null,
-      "llmScore": 38.0
+      "digestTitle": null
+    },
+    {
+      "id": "91f61ef3f9cf",
+      "title": "A new way to detect stabilizing properties of optical devices",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
+      "sources": [
+        "Phys.org 物理新闻",
+        "Physics World（关键词过滤）"
+      ],
+      "links": [
+        {
+          "title": "A new way to detect stabilizing properties of optical devices",
+          "url": "https://phys.org/news/2026-10-stabilizing-properties-optical-devices.html",
+          "source": "Phys.org 物理新闻",
+          "score": 56.5,
+          "published_at": "2026-10-18T18:00:01+00:00"
+        },
+        {
+          "title": "Optical vortices provide a natural way to create topologies",
+          "url": "https://physicsworld.com/a/optical-vortices-provide-a-natural-way-to-create-topologies/",
+          "source": "Physics World（关键词过滤）",
+          "score": 24.7,
+          "published_at": "2026-09-09T09:26:01+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "569c89c31ce9",
@@ -189,7 +222,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
       "sources": [
         "C114中国通信网_通信财经",
         "OFweek 光电频道"
@@ -223,7 +256,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
       "sources": [
         "C114中国通信网_IT资讯",
         "COEMA 中国光电子行业协会"
@@ -257,7 +290,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
       "sources": [
         "Laser Focus World",
         "Physics World（关键词过滤）"
@@ -274,7 +307,7 @@
           "title": "In situ and operando optical microscopy and spectroscopy: investigating perovskite optoelectronic devices at work",
           "url": "https://physicsworld.com/a/in-situ-and-operando-optical-microscopy-and-spectroscopy-investigating-perovskite-optoelectronic-devices-at-work/",
           "source": "Physics World（关键词过滤）",
-          "score": 25.8,
+          "score": 25.6,
           "published_at": "2026-09-21T07:13:41+00:00"
         }
       ],
@@ -291,7 +324,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
       "sources": [
         "Laser Focus World",
         "YouTube·Photonics Media"
@@ -308,7 +341,7 @@
           "title": "Marvel Fusion Launches Laser-Focused Subsidiary",
           "url": "https://www.youtube.com/shorts/I1r4OdSKioA",
           "source": "YouTube·Photonics Media",
-          "score": 43.4,
+          "score": 43.1,
           "published_at": "2026-09-28T15:00:39+00:00"
         }
       ],
@@ -326,7 +359,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
+      "latestAt": "2026-10-19T00:14:12.390584+00:00",
       "sources": [
         "Laser Focus World",
         "Physics World（关键词过滤）"
@@ -347,42 +380,8 @@
           "published_at": null
         }
       ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "f52fbb07f5cb",
-      "title": "Even or odd numbers: A single molecule makes all the difference in the quantum world",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-18T14:02:56.185312+00:00",
-      "sources": [
-        "Phys.org 物理新闻",
-        "Physics World（关键词过滤）"
-      ],
-      "links": [
-        {
-          "title": "Even or odd numbers: A single molecule makes all the difference in the quantum world",
-          "url": "https://phys.org/news/2026-10-odd-molecule-difference-quantum-world.html",
-          "source": "Phys.org 物理新闻",
-          "score": 55.3,
-          "published_at": "2026-10-16T14:20:06+00:00"
-        },
-        {
-          "title": "Real-number quantum theory can be more wrong than you thought",
-          "url": "https://physicsworld.com/a/real-number-quantum-theory-can-be-more-wrong-than-you-thought/",
-          "source": "Physics World（关键词过滤）",
-          "score": 41.2,
-          "published_at": "2026-09-09T09:29:06+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null

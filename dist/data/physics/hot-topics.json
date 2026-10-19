@@ -1,21 +1,108 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T14:02:56.185312+00:00",
-  "count": 4,
+  "generatedAt": "2026-10-19T00:14:12.390584+00:00",
+  "count": 7,
   "items": [
     {
       "terms": [
+        "atoms",
+        "attosecond",
+        "bi2o3",
+        "characteristics",
+        "closer",
+        "composites",
+        "dental",
+        "diagnostic",
+        "dosimetric",
+        "electrons",
+        "energy",
+        "hard-x-ray",
+        "hdpe",
+        "intensity",
+        "investigation",
+        "level",
+        "molecules",
+        "nanocomposites",
+        "pulses",
+        "range",
+        "real-time",
+        "shielding",
+        "silicone",
+        "unlock",
+        "world-record",
+        "x-ray",
+        "x-rays"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Nature Physics 学科聚合",
+        "Phys.org 物理新闻"
+      ],
+      "score": 24.5,
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
+      "representative": {
+        "title": "Investigation of the dosimetric characteristics of real-time silicone/Bi2O3 nanocomposites for the diagnostic level X-rays",
+        "url": "https://www.nature.com/articles/s41598-026-76522-9",
+        "source": "Nature Physics 学科聚合",
+        "published_at": "2026-10-18T00:00:00+00:00",
+        "score": 62.0,
+        "summary": "",
+        "zh_full": null,
+        "llm_score": 5.0
+      },
+      "folded_count": 1,
+      "title": "Investigation of the dosimetric characteristics of real-time silicone/Bi2O3 nanocomposites for the diagnostic level X-rays",
+      "id": "1c8548c84167",
+      "links": [
+        {
+          "title": "Investigation of the dosimetric characteristics of real-time silicone/Bi2O3 nanocomposites for the diagnostic level X-rays",
+          "url": "https://www.nature.com/articles/s41598-026-76522-9",
+          "source": "Nature Physics 学科聚合",
+          "score": 62.0,
+          "published_at": "2026-10-18T00:00:00+00:00"
+        },
+        {
+          "title": "Enhanced X-ray shielding performance of HDPE–Sb₂O₃ composites in the diagnostic dental X-ray energy range",
+          "url": "https://www.nature.com/articles/s41598-026-76097-5",
+          "source": "Nature Physics 学科聚合",
+          "score": 62.0,
+          "published_at": "2026-10-18T00:00:00+00:00"
+        },
+        {
+          "title": "World-record intensity in attosecond hard-X-ray pulses could unlock closer study of electrons in atoms and molecules",
+          "url": "https://phys.org/news/2026-10-world-intensity-attosecond-hard-ray.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.7,
+          "published_at": "2026-10-16T19:10:01+00:00"
+        }
+      ],
+      "top_terms": [
+        "ray",
+        "diagnostic",
+        "world",
+        "record",
+        "intensity"
+      ],
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 24.5,
+      "status": "关注中"
+    },
+    {
+      "terms": [
         "air-stable",
-        "boosts",
-        "computers",
-        "high-frequency",
+        "monolithic",
         "more",
-        "next-gen",
+        "opens",
         "quantum",
-        "readout",
         "researchers",
         "scalable",
+        "simulations",
         "superconductors",
+        "trap",
         "ultrathin"
       ],
       "source_count": 2,
@@ -25,13 +112,13 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
       "representative": {
         "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
         "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
         "source": "MIT News 物理",
         "published_at": "2026-08-05T15:00:00+00:00",
-        "score": 37.1,
+        "score": 41.2,
         "summary": "A new technique produces wafer-scale samples, overcoming a major roadblock to using these materials in quantum technologies.",
         "zh_full": "（无摘要，仅标题）",
         "llm_summary": "（无摘要，仅标题）",
@@ -39,35 +126,132 @@
       },
       "folded_count": 1,
       "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-      "id": "a1a1832fd2c5",
+      "id": "9312d0f1b7d0",
       "links": [
+        {
+          "title": "New monolithic ion trap opens quantum simulations to more researchers",
+          "url": "https://phys.org/news/2026-10-monolithic-ion-quantum-simulations.html",
+          "source": "Phys.org 物理新闻",
+          "score": 61.0,
+          "published_at": "2026-10-18T18:00:06+00:00"
+        },
         {
           "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
           "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
           "source": "MIT News 物理",
-          "score": 37.1,
+          "score": 41.2,
           "published_at": "2026-08-05T15:00:00+00:00"
-        },
-        {
-          "title": "New high-frequency method boosts 2D material readout for next-gen quantum computers",
-          "url": "https://phys.org/news/2026-10-high-frequency-method-boosts-2d.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.0,
-          "published_at": "2026-10-16T22:00:01+00:00"
         }
       ],
       "top_terms": [
         "quantum",
+        "more",
         "researchers",
-        "air",
-        "stable",
-        "ultrathin"
+        "monolithic",
+        "ion"
       ],
-      "digest": "MIT研究人员开发出一种新技术，可制备晶圆级、空气稳定的超薄超导体样品，克服了将这些材料用于量子技术的主要障碍。另一项研究提出了一种高频方法，提升了二维材料的读出能力，用于下一代量子计算机。两项进展分别针对量子计算中的材料制备和信号读出环节。",
-      "digestTitle": "两项新技术推进量子计算材料应用",
-      "rank": 1,
+      "rank": 2,
       "trend": "flat",
       "trendPct": 0.0,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "acoustic",
+        "atomic",
+        "detection",
+        "directional",
+        "external",
+        "fiber",
+        "field",
+        "fields",
+        "hidden",
+        "high-dimensional",
+        "long-coherence",
+        "magnetic",
+        "magnets",
+        "multimode",
+        "optimization",
+        "patterns",
+        "photons",
+        "physics-guided",
+        "quantum",
+        "reconstructs",
+        "sensing",
+        "sensors",
+        "single-electron",
+        "state",
+        "surface",
+        "synthesis",
+        "two-stage",
+        "ultrathin",
+        "wave",
+        "wide-range",
+        "zero-bias"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Nature Physics 学科聚合",
+        "Phys.org 物理新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
+      "representative": {
+        "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
+        "url": "https://www.nature.com/articles/s41534-026-01398-6",
+        "source": "Nature Physics 学科聚合",
+        "published_at": "2026-10-18T00:00:00+00:00",
+        "score": 63.5,
+        "summary": "",
+        "zh_full": null,
+        "llm_score": 21.5
+      },
+      "folded_count": 1,
+      "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
+      "id": "fc61077e5a73",
+      "links": [
+        {
+          "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
+          "url": "https://www.nature.com/articles/s41534-026-01398-6",
+          "source": "Nature Physics 学科聚合",
+          "score": 63.5,
+          "published_at": "2026-10-18T00:00:00+00:00"
+        },
+        {
+          "title": "A two-stage optimization method for wide-range single-electron quantum magnetic sensing",
+          "url": "https://www.nature.com/articles/s41598-026-76354-7",
+          "source": "Nature Physics 学科聚合",
+          "score": 62.8,
+          "published_at": "2026-10-17T00:00:00+00:00"
+        },
+        {
+          "title": "Directional magnetic field detection with zero-bias surface acoustic wave sensors",
+          "url": "https://www.nature.com/articles/s41598-026-76696-2",
+          "source": "Nature Physics 学科聚合",
+          "score": 62.8,
+          "published_at": "2026-10-17T00:00:00+00:00"
+        },
+        {
+          "title": "Physics-guided AI reconstructs hidden patterns inside ultrathin magnets from external fields",
+          "url": "https://phys.org/news/2026-10-physics-ai-reconstructs-hidden-patterns.html",
+          "source": "Phys.org 物理新闻",
+          "score": 37.6,
+          "published_at": "2026-10-16T15:40:12+00:00"
+        }
+      ],
+      "top_terms": [
+        "magnetic",
+        "physics",
+        "guided",
+        "reconstructs",
+        "hidden"
+      ],
+      "rank": 3,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -92,7 +276,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
       "representative": {
         "title": "New research shows a neutrino laser is impossible",
         "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
@@ -120,18 +304,87 @@
           "title": "Laser pulses bring order to a quantum material's tiny electrical regions",
           "url": "https://phys.org/news/2026-10-laser-pulses-quantum-material-tiny.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.5,
+          "score": 35.4,
           "published_at": "2026-10-15T17:00:07+00:00"
         }
       ],
       "top_terms": [
         "laser",
-        "research",
-        "neutrino",
-        "impossible",
-        "pulses"
+        "pulses",
+        "bring",
+        "quantum",
+        "tiny"
       ],
-      "rank": 2,
+      "rank": 4,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "diffusion",
+        "dynamics",
+        "finds",
+        "graph",
+        "graphene",
+        "hold",
+        "laplacian",
+        "multiple",
+        "seir",
+        "states",
+        "stochastic",
+        "superconductivity",
+        "transmission",
+        "uncertainty"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "MIT News 物理",
+        "Nature Physics 学科聚合"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
+      "representative": {
+        "title": "Graphene can hold multiple states of superconductivity, a new study finds",
+        "url": "https://news.mit.edu/2026/graphene-can-hold-multiple-states-of-superconductivity-0629",
+        "source": "MIT News 物理",
+        "published_at": "2026-06-29T15:00:00+00:00",
+        "score": 41.2,
+        "summary": "What’s more, the superconducting states get stronger under conditions expected to kill them.",
+        "zh_full": "（无摘要，仅标题）",
+        "llm_summary": "（无摘要，仅标题）",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "Graphene can hold multiple states of superconductivity, a new study finds",
+      "id": "b8c85f88e0ba",
+      "links": [
+        {
+          "title": "Stochastic SEIR dynamics via graph Laplacian diffusion under transmission uncertainty",
+          "url": "https://www.nature.com/articles/s41598-026-73910-z",
+          "source": "Nature Physics 学科聚合",
+          "score": 59.8,
+          "published_at": "2026-10-17T00:00:00+00:00"
+        },
+        {
+          "title": "Graphene can hold multiple states of superconductivity, a new study finds",
+          "url": "https://news.mit.edu/2026/graphene-can-hold-multiple-states-of-superconductivity-0629",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-06-29T15:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "stochastic",
+        "seir",
+        "dynamics",
+        "graph",
+        "laplacian"
+      ],
+      "rank": 5,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -154,13 +407,13 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
       "representative": {
         "title": "On the hunt for dark matter",
         "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
         "source": "MIT News 物理",
         "published_at": "2026-08-11T04:00:00+00:00",
-        "score": 37.1,
+        "score": 41.2,
         "summary": "From Broadway to MIT’s Laboratory for Nuclear Science, PhD student Jessica Fry doesn’t do anything halfway. Now she’s hunting for the universe’s most elusive particle.",
         "zh_full": "MIT News 报道，从百老汇到 MIT 核科学实验室，博士生 Jessica Fry 做事从不半途而废。如今她正在搜寻宇宙中最难以捉摸的粒子——暗物质。",
         "llm_summary": "MIT 博士生 Jessica Fry 正在搜寻宇宙中最难以捉摸的粒子——暗物质，报道提到她从百老汇到 MIT 核科学实验室的经历。",
@@ -175,25 +428,25 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 57.7,
+          "score": 57.4,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
           "title": "On the hunt for dark matter",
           "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
           "source": "MIT News 物理",
-          "score": 37.1,
+          "score": 41.2,
           "published_at": "2026-08-11T04:00:00+00:00"
         }
       ],
       "top_terms": [
         "dark",
         "matter",
+        "hunt",
         "observe",
-        "particle",
-        "wave"
+        "particle"
       ],
-      "rank": 3,
+      "rank": 6,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -223,13 +476,13 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
       "representative": {
         "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
         "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
         "source": "MIT News 物理",
         "published_at": "2026-08-07T09:00:00+00:00",
-        "score": 37.1,
+        "score": 41.2,
         "summary": "The study could help scientists understand how superconductivity and other more complex phenomena emerge in quantum materials.",
         "zh_full": "（无摘要，仅标题）",
         "llm_summary": "（无摘要，仅标题）",
@@ -243,14 +496,14 @@
           "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
           "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
           "source": "MIT News 物理",
-          "score": 37.1,
+          "score": 41.2,
           "published_at": "2026-08-07T09:00:00+00:00"
         },
         {
           "title": "Physicists are scrambling to make sense of possible dark matter signal",
           "url": "https://www.newscientist.com/article/2589737-physicists-are-scrambling-to-make-sense-of-possible-dark-matter-signal/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 37.1,
+          "score": 41.2,
           "published_at": "2026-09-18T12:00:00+00:00"
         }
       ],
@@ -261,7 +514,7 @@
         "assemble",
         "reassemble"
       ],
-      "rank": 4,
+      "rank": 7,
       "trend": "new",
       "trendPct": null,
       "badges": [],

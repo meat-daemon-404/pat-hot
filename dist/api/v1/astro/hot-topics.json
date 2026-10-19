@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T14:02:56.185312+00:00",
+  "generatedAt": "2026-10-19T00:14:12.390584+00:00",
   "count": 10,
   "items": [
     {
       "terms": [
         "aims",
+        "historic",
         "japan",
         "largest",
         "launch",
@@ -19,6 +20,7 @@
         "prepares",
         "puzzle",
         "return",
+        "round-trip",
         "sample",
         "samples",
         "soil",
@@ -28,62 +30,65 @@
         "swipe"
       ],
       "source_count": 3,
-      "signal_count": 4,
+      "signal_count": 3,
       "sources": [
         "Astronomy Magazine",
         "New Scientist 太空",
         "Phys.org 太空新闻"
       ],
-      "score": 56.5,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
+      "score": 21.2,
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
       "representative": {
-        "title": "Japan's MMX mission aims to swipe soil samples from Mars's moon Phobos",
-        "url": "https://phys.org/news/2026-10-japan-mmx-mission-aims-swipe.html",
+        "title": "Japan to launch historic round-trip mission to Mars moon",
+        "url": "https://phys.org/news/2026-10-japan-historic-mission-mars-moon.html",
         "source": "Phys.org 太空新闻",
-        "published_at": "2026-10-18T14:00:01+00:00",
-        "score": 69.0,
-        "summary": "A Japanese space mission is about to launch towards Mars. But it will not land on the planet itself. Instead, the Martian Moons Exploration (MMX) mission will focus on Phobos, the bigger of Mars's two small moons.",
-        "zh_full": null,
-        "llm_score": 36.0
+        "published_at": "2026-10-18T20:20:01+00:00",
+        "score": 70.4,
+        "summary": "Japanese scientists are readying a mission to Mars' moons to retrieve samples that could help unlock the origins of the solar system and life on Earth, in what aims to be the first round trip to the Martian region.",
+        "zh_full": "日本科学家正准备执行一项前往火星卫星的任务，以采集样本，这些样本可能有助于揭示太阳系的起源以及地球生命的起源。该任务旨在成为首次往返火星区域的任务。",
+        "llm_summary": "日本科学家正准备执行一项前往火星卫星的采样任务，目标是采集可能帮助揭示太阳系起源和地球生命起源的样本。该任务旨在成为首次往返火星区域的任务。",
+        "llm_reason": "首次往返火星区域采样任务",
+        "density": "中",
+        "llm_score": 41.5
       },
       "folded_count": 2,
-      "title": "Japan's MMX mission aims to swipe soil samples from Mars's moon Phobos",
-      "id": "f73fa0faac63",
+      "title": "Japan to launch historic round-trip mission to Mars moon",
+      "id": "14d22a1810d2",
       "links": [
+        {
+          "title": "Japan to launch historic round-trip mission to Mars moon",
+          "url": "https://phys.org/news/2026-10-japan-historic-mission-mars-moon.html",
+          "source": "Phys.org 太空新闻",
+          "score": 70.4,
+          "published_at": "2026-10-18T20:20:01+00:00"
+        },
         {
           "title": "Japan's MMX mission aims to swipe soil samples from Mars's moon Phobos",
           "url": "https://phys.org/news/2026-10-japan-mmx-mission-aims-swipe.html",
           "source": "Phys.org 太空新闻",
-          "score": 69.0,
+          "score": 70.2,
           "published_at": "2026-10-18T14:00:01+00:00"
         },
         {
           "title": "Japan to launch spacecraft on a mission to get samples from a Martian moon",
           "url": "https://phys.org/news/2026-10-japan-spacecraft-mission-samples-martian.html",
           "source": "Phys.org 太空新闻",
-          "score": 68.9,
+          "score": 70.1,
           "published_at": "2026-10-18T11:38:40+00:00"
         },
         {
           "title": "Japan prepares to launch sample return mission to Phobos",
           "url": "https://www.astronomy.com/space-exploration/japan-prepares-to-launch-sample-return-mission-to-phobos/",
           "source": "Astronomy Magazine",
-          "score": 67.8,
+          "score": 69.0,
           "published_at": "2026-10-16T19:05:00+00:00"
         },
         {
           "title": "Japan is launching a mission to Mars’s largest moon Phobos",
           "url": "https://www.newscientist.com/article/2594332-japan-is-launching-a-mission-to-marss-largest-moon-phobos/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 67.7,
+          "score": 69.0,
           "published_at": "2026-10-16T17:00:00+00:00"
-        },
-        {
-          "title": "How did Mars get its moons? Japan's MMX space mission aims to solve the puzzle",
-          "url": "https://phys.org/news/2026-10-mars-moons-japan-mmx-space.html",
-          "source": "Phys.org 太空新闻",
-          "score": 67.2,
-          "published_at": "2026-10-15T19:40:05+00:00"
         }
       ],
       "top_terms": [
@@ -91,14 +96,86 @@
         "mission",
         "mars",
         "moon",
-        "phobos"
+        "launch"
       ],
+      "digest": "日本宇宙航空研究开发机构（JAXA）计划发射火星卫星探测（MMX）任务，前往火星较大的卫星火卫一采集样本并返回地球，这是人类首次往返火星区域的采样任务。\n\n该任务旨在揭示太阳系起源及地球生命起源，并解答困扰科学家百余年关于火卫一来源的谜题。报道中发射日期存在差异：Astronomy Magazine称目标为10月19日，New Scientist称10月20日。",
+      "digestTitle": "日本JAXA发射MMX任务采集火卫一样本",
       "rank": 1,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 56.5,
+      "heat": 21.2,
       "status": "发酵中"
+    },
+    {
+      "terms": [
+        "cloud",
+        "dark",
+        "even",
+        "galaxy",
+        "lone",
+        "mars",
+        "odder",
+        "oddest",
+        "starless",
+        "than",
+        "thought"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "ESA 空间科学",
+        "Phys.org 太空新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
+      "representative": {
+        "title": "Mars’s oddest cloud may be even odder than we thought",
+        "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
+        "source": "ESA 空间科学",
+        "published_at": "2026-10-07T15:00:00+00:00",
+        "score": 53.6,
+        "summary": "Scientists using the European Space Agency's Mars Express , in combination with a state-of-the-art meteorological model of the Red Planet, have found that there may be some very exotic physics behind Mars’s most curious cloud.",
+        "zh_full": "科学家利用欧洲空间局的火星快车探测器，并结合一个先进的火星气象模型，发现火星上最奇特的那片云背后可能存在一些非常奇特的物理过程。这项研究关注的是火星上一种异常云的形成机制，试图通过观测数据与模型模拟来解释其成因。",
+        "llm_summary": "科学家利用欧洲空间局的火星快车探测器和先进的火星气象模型，发现火星上最奇特的一片云背后可能存在非常奇特的物理过程。研究聚焦于这种异常云的形成机制，通过观测与模型模拟来解释其成因。",
+        "llm_reason": "火星异常云形成机制新发现",
+        "density": "中",
+        "llm_score": 26.0
+      },
+      "folded_count": 1,
+      "title": "Mars’s oddest cloud may be even odder than we thought",
+      "id": "01f3d877bc72",
+      "links": [
+        {
+          "title": "Lone, starless cloud may be a 'dark' galaxy",
+          "url": "https://phys.org/news/2026-10-lone-starless-cloud-dark-galaxy.html",
+          "source": "Phys.org 太空新闻",
+          "score": 60.2,
+          "published_at": "2026-10-17T13:40:04+00:00"
+        },
+        {
+          "title": "Mars’s oddest cloud may be even odder than we thought",
+          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
+          "source": "ESA 空间科学",
+          "score": 53.6,
+          "published_at": "2026-10-07T15:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "cloud",
+        "lone",
+        "starless",
+        "dark",
+        "galaxy"
+      ],
+      "digest": "中国FAST射电望远镜发现一团致密氢云，周围无可见恒星或星系，含近50万（数据不完整），被认为是迄今最强的孤立\"暗星系\"候选体之一。\n\n欧洲空间局利用火星快车探测器结合火星气象模型，发现火星上最奇特的云团背后可能存在非常奇特的物理机制。",
+      "digestTitle": "FAST发现疑似暗星系，火星云团或涉奇异物理",
+      "rank": 2,
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
     },
     {
       "terms": [
@@ -123,20 +200,20 @@
         "stays"
       ],
       "source_count": 3,
-      "signal_count": 2,
+      "signal_count": 1,
       "sources": [
         "MIT News 太空探索",
         "Phys.org 太空新闻",
         "Universe Today"
       ],
-      "score": 35.3,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
+      "score": 17.7,
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
       "representative": {
         "title": "The next generation’s guide to the new space economy",
         "url": "https://news.mit.edu/2026/guide-to-new-space-economy-1002",
         "source": "MIT News 太空探索",
         "published_at": "2026-10-02T14:50:00+00:00",
-        "score": 33.2,
+        "score": 33.0,
         "summary": "An industry report published by students in an MIT aerospace entrepreneurship class lays out guidance for aspiring space leaders and investors.",
         "zh_full": "MIT 航空航天创业课程的学生发布了一份行业报告，为有志成为太空领域领导者和投资者的人提供指导。报告面向下一代，聚焦新兴太空经济。摘要未说明报告的具体内容、数据或结论。",
         "llm_summary": "MIT 航空航天创业课程学生发布行业报告，为未来太空经济领域的领导者和投资者提供指导。",
@@ -151,21 +228,21 @@
           "title": "New Research Reveals How Long Stays in Space Affects the Human Genome",
           "url": "https://www.universetoday.com/articles/new-research-reveals-how-long-stays-in-space-affects-the-human-genome",
           "source": "Universe Today",
-          "score": 39.4,
+          "score": 39.2,
           "published_at": "2026-10-17T23:11:28+00:00"
         },
         {
           "title": "Plants shift gene activity within minutes of entering spaceflight, experiment reveals",
           "url": "https://phys.org/news/2026-10-shift-gene-minutes-spaceflight-reveals.html",
           "source": "Phys.org 太空新闻",
-          "score": 38.9,
+          "score": 38.8,
           "published_at": "2026-10-16T23:00:01+00:00"
         },
         {
           "title": "The next generation’s guide to the new space economy",
           "url": "https://news.mit.edu/2026/guide-to-new-space-economy-1002",
           "source": "MIT News 太空探索",
-          "score": 33.2,
+          "score": 33.0,
           "published_at": "2026-10-02T14:50:00+00:00"
         }
       ],
@@ -176,80 +253,12 @@
         "shift",
         "gene"
       ],
-      "rank": 2,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 35.3,
-      "status": "发酵中"
-    },
-    {
-      "terms": [
-        "cloud",
-        "dark",
-        "even",
-        "galaxy",
-        "lone",
-        "mars",
-        "odder",
-        "oddest",
-        "starless",
-        "than",
-        "thought"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "ESA 空间科学",
-        "Phys.org 太空新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
-      "representative": {
-        "title": "Mars’s oddest cloud may be even odder than we thought",
-        "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
-        "source": "ESA 空间科学",
-        "published_at": "2026-10-07T15:00:00+00:00",
-        "score": 53.9,
-        "summary": "Scientists using the European Space Agency's Mars Express , in combination with a state-of-the-art meteorological model of the Red Planet, have found that there may be some very exotic physics behind Mars’s most curious cloud.",
-        "zh_full": "科学家利用欧洲空间局的火星快车探测器，并结合一个先进的火星气象模型，发现火星上最奇特的那片云背后可能存在一些非常奇特的物理过程。这项研究关注的是火星上一种异常云的形成机制，试图通过观测数据与模型模拟来解释其成因。",
-        "llm_summary": "科学家利用欧洲空间局的火星快车探测器和先进的火星气象模型，发现火星上最奇特的一片云背后可能存在非常奇特的物理过程。研究聚焦于这种异常云的形成机制，通过观测与模型模拟来解释其成因。",
-        "llm_reason": "火星异常云形成机制新发现",
-        "density": "中",
-        "llm_score": 26.0
-      },
-      "folded_count": 1,
-      "title": "Mars’s oddest cloud may be even odder than we thought",
-      "id": "01f3d877bc72",
-      "links": [
-        {
-          "title": "Lone, starless cloud may be a 'dark' galaxy",
-          "url": "https://phys.org/news/2026-10-lone-starless-cloud-dark-galaxy.html",
-          "source": "Phys.org 太空新闻",
-          "score": 60.5,
-          "published_at": "2026-10-17T13:40:04+00:00"
-        },
-        {
-          "title": "Mars’s oddest cloud may be even odder than we thought",
-          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
-          "source": "ESA 空间科学",
-          "score": 53.9,
-          "published_at": "2026-10-07T15:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "cloud",
-        "lone",
-        "starless",
-        "dark",
-        "galaxy"
-      ],
       "rank": 3,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "down",
+      "trendPct": -49.9,
       "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
+      "heat": 17.7,
+      "status": "发酵中"
     },
     {
       "terms": [
@@ -265,19 +274,19 @@
         "telescope"
       ],
       "source_count": 2,
-      "signal_count": 1,
+      "signal_count": 0,
       "sources": [
         "New Scientist 太空",
         "Phys.org 太空新闻"
       ],
-      "score": 21.0,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
+      "score": 0.0,
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
       "representative": {
         "title": "A distant supercluster of galaxies points to self-interacting dark matter",
         "url": "https://phys.org/news/2026-10-distant-supercluster-galaxies-interacting-dark.html",
         "source": "Phys.org 太空新闻",
         "published_at": "2026-10-16T18:00:08+00:00",
-        "score": 59.9,
+        "score": 59.7,
         "summary": "Seven billion light-years from Earth, there is an unexpected cluster of galaxies. It has two regions in the process of colliding with each other with a combined mass of more than two quadrillion solar masses. Given its mass, the distant clu",
         "zh_full": "在距地球七十亿光年之外，存在一个出乎意料的星系团。该星系团有两个区域正在相互碰撞，总质量超过两千万亿个太阳质量。鉴于其巨大质量，这个遥远的星系团被昵称为'El Gordo'（胖子）。它的特殊之处在于，对于宇宙那个时期来说，它的规模异常庞大。如此巨大的超星系团为何能如此早地形成？这一发现指向自相互作用暗物质（self-interacting dark matter）的可能性。",
         "llm_summary": "距地球七十亿光年处发现一个名为'El Gordo'的异常庞大星系团，总质量超两千万亿太阳质量，两个区域正在碰撞。其规模对于宇宙早期而言异常巨大，该发现指向自相互作用暗物质。",
@@ -293,14 +302,14 @@
           "title": "A distant supercluster of galaxies points to self-interacting dark matter",
           "url": "https://phys.org/news/2026-10-distant-supercluster-galaxies-interacting-dark.html",
           "source": "Phys.org 太空新闻",
-          "score": 59.9,
+          "score": 59.7,
           "published_at": "2026-10-16T18:00:08+00:00"
         },
         {
           "title": "The telescope that could reveal what dark matter and dark energy are",
           "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 53.2,
+          "score": 53.0,
           "published_at": "2026-10-06T17:00:00+00:00"
         }
       ],
@@ -312,10 +321,10 @@
         "galaxies"
       ],
       "rank": 4,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "down",
+      "trendPct": -100.0,
       "badges": [],
-      "heat": 21.0,
+      "heat": 0.0,
       "status": "关注中"
     },
     {
@@ -329,13 +338,13 @@
         "superbubble"
       ],
       "source_count": 2,
-      "signal_count": 1,
+      "signal_count": 0,
       "sources": [
         "ESA 空间科学",
         "Phys.org 太空新闻"
       ],
-      "score": 21.0,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
+      "score": 0.0,
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
       "representative": {
         "title": "Hubble's superbubble scene",
         "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/Hubble_s_superbubble_scene",
@@ -362,7 +371,7 @@
           "title": "NASA's Hubble spies spiral's edge",
           "url": "https://phys.org/news/2026-10-nasa-hubble-spies-spiral-edge.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.0,
+          "score": 35.8,
           "published_at": "2026-10-16T17:40:08+00:00"
         }
       ],
@@ -374,10 +383,10 @@
         "edge"
       ],
       "rank": 5,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "down",
+      "trendPct": -100.0,
       "badges": [],
-      "heat": 21.0,
+      "heat": 0.0,
       "status": "关注中"
     },
     {
@@ -391,19 +400,19 @@
         "splashdown"
       ],
       "source_count": 2,
-      "signal_count": 1,
+      "signal_count": 0,
       "sources": [
         "NASA 快讯",
         "Phys.org 太空新闻"
       ],
-      "score": 21.0,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
+      "score": 0.0,
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
       "representative": {
         "title": "Artemis II Heat Shield After Splashdown",
         "url": "https://www.nasa.gov/image-article/artemis-ii-heat-shield-after-splashdown/",
         "source": "NASA 快讯",
         "published_at": "2026-10-16T16:28:01+00:00",
-        "score": 59.9,
+        "score": 59.6,
         "summary": "Shortly after NASA’s Artemis II mission splashed down on April 10, 2026, U.S. Navy divers captured underwater imagery of the Orion spacecraft’s heat shield. In the months after, the agency measured whether the thermal protection system effe",
         "zh_full": null,
         "llm_score": 51.0
@@ -416,14 +425,14 @@
           "title": "Artemis II Heat Shield After Splashdown",
           "url": "https://www.nasa.gov/image-article/artemis-ii-heat-shield-after-splashdown/",
           "source": "NASA 快讯",
-          "score": 59.9,
+          "score": 59.6,
           "published_at": "2026-10-16T16:28:01+00:00"
         },
         {
           "title": "Rigorous analysis confirms NASA's Artemis II heat shield performance",
           "url": "https://phys.org/news/2026-10-rigorous-analysis-nasa-artemis-ii.html",
           "source": "Phys.org 太空新闻",
-          "score": 59.4,
+          "score": 59.1,
           "published_at": "2026-10-15T23:40:01+00:00"
         }
       ],
@@ -435,10 +444,10 @@
         "confirms"
       ],
       "rank": 6,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "down",
+      "trendPct": -100.0,
       "badges": [],
-      "heat": 21.0,
+      "heat": 0.0,
       "status": "关注中"
     },
     {
@@ -467,7 +476,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
       "representative": {
         "title": "Astronomers spot a giant planet that is as light as cotton candy",
         "url": "https://news.mit.edu/2024/astronomers-spot-giant-planet-light-as-cotton-candy-0514",
@@ -487,7 +496,7 @@
           "title": "Green, pink and purple: Astronomers reveal the surprising true colors of white dwarf stars",
           "url": "https://phys.org/news/2026-10-green-pink-purple-astronomers-reveal.html",
           "source": "Phys.org 太空新闻",
-          "score": 58.8,
+          "score": 58.5,
           "published_at": "2026-10-15T00:10:01+00:00"
         },
         {
@@ -542,13 +551,13 @@
         "Phys.org 太空新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
       "representative": {
         "title": "NASA to Help Unlock Mysteries of Mars’ Moons in Upcoming Mission",
         "url": "https://science.nasa.gov/directorates/smd/planetary-science-division/nasa-to-help-unlock-mysteries-of-mars-moons-in-upcoming-mission/",
         "source": "NASA 快讯",
         "published_at": "2026-10-15T19:58:08+00:00",
-        "score": 64.2,
+        "score": 63.9,
         "summary": "NASA is playing an important role in JAXA’s (Japan Aerospace Exploration Agency) MMX (Martian Moons eXploration) mission, to advance our understanding of Mars’ moons and build on the agency’s long history of exploring the Red Planet. The mi",
         "zh_full": "NASA 将在日本宇宙航空研究开发机构（JAXA）的 MMX（Martian Moons eXploration，火星卫星探索）任务中发挥重要作用，以推进对火星卫星的理解，并延续该机构长期探索火星的历史。该任务旨在刻画并确定火星两颗卫星火卫一（Phobos）和火卫二（Deimos）的特征与起源，并运送样本。摘要在此处截断，未提供更多细节。",
         "llm_summary": "NASA 将参与 JAXA 的 MMX 火星卫星探索任务，目标是刻画并确定火卫一和火卫二的特征与起源，并运送样本。该任务延续 NASA 长期探索火星的历史，有助于增进对火星卫星的理解。",
@@ -564,14 +573,14 @@
           "title": "NASA to Help Unlock Mysteries of Mars’ Moons in Upcoming Mission",
           "url": "https://science.nasa.gov/directorates/smd/planetary-science-division/nasa-to-help-unlock-mysteries-of-mars-moons-in-upcoming-mission/",
           "source": "NASA 快讯",
-          "score": 64.2,
+          "score": 63.9,
           "published_at": "2026-10-15T19:58:08+00:00"
         },
         {
           "title": "NASA develops batteries to power humanity's return to moon",
           "url": "https://phys.org/news/2026-10-nasa-batteries-power-humanity-moon.html",
           "source": "Phys.org 太空新闻",
-          "score": 63.6,
+          "score": 63.3,
           "published_at": "2026-10-14T23:40:02+00:00"
         },
         {
@@ -614,13 +623,13 @@
         "Universe Today"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
       "representative": {
         "title": "A trip to Mars could come at a heartbreaking cost",
         "url": "https://phys.org/news/2026-10-mars-heartbreaking.html",
         "source": "Phys.org 太空新闻",
         "published_at": "2026-10-14T23:00:01+00:00",
-        "score": 58.7,
+        "score": 58.5,
         "summary": "When astronauts first travel to Mars or anywhere else in deep space, they will have to contend with two problems that our planet protects us from on its surface—radiation and weightlessness. Scientists already know both can have a profound ",
         "zh_full": "当宇航员首次前往火星或深空其他地点时，他们将不得不面对地球表面为我们屏蔽的两大问题——辐射和失重。科学家已经知道这两者都会对人体产生深远影响，但影响的具体程度以及能持续多久仍然是一个谜。",
         "llm_summary": "深空任务中宇航员将面对辐射与失重两大挑战，二者对人体有深远影响，但影响程度和持续时间仍不明确。",
@@ -636,14 +645,14 @@
           "title": "A trip to Mars could come at a heartbreaking cost",
           "url": "https://phys.org/news/2026-10-mars-heartbreaking.html",
           "source": "Phys.org 太空新闻",
-          "score": 58.7,
+          "score": 58.5,
           "published_at": "2026-10-14T23:00:01+00:00"
         },
         {
           "title": "A Trip to Mars Could Break Your Heart - Literally",
           "url": "https://www.universetoday.com/articles/a-trip-to-mars-could-break-your-heart-literally",
           "source": "Universe Today",
-          "score": 58.4,
+          "score": 58.2,
           "published_at": "2026-10-14T11:57:41+00:00"
         }
       ],
@@ -698,7 +707,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-18T14:02:56.185312+00:00",
+      "latest_at": "2026-10-19T00:14:12.390584+00:00",
       "representative": {
         "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
         "url": "https://news.mit.edu/2024/using-wobbling-stellar-material-astronomers-measure-supermassive-black-hole-spin-0522",
@@ -718,7 +727,7 @@
           "title": "New evidence points to two feeding black holes just 175 parsecs apart lurking in the early universe",
           "url": "https://phys.org/news/2026-10-evidence-black-holes-parsecs-lurking.html",
           "source": "Phys.org 太空新闻",
-          "score": 63.3,
+          "score": 63.0,
           "published_at": "2026-10-14T13:40:17+00:00"
         },
         {
