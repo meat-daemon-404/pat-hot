@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-10-19T17:00:28.829026+00:00",
-  "total": 119,
-  "last24h": 31,
-  "last7d": 68,
-  "topicCount": 7,
+  "generatedAt": "2026-10-20T01:06:59.180397+00:00",
+  "total": 145,
+  "last24h": 32,
+  "last7d": 79,
+  "topicCount": 10,
   "byCategory": [
     {
       "category": "量子信息与计算",
-      "total": 3,
-      "last24h": 2,
-      "last7d": 3
+      "total": 6,
+      "last24h": 1,
+      "last7d": 4
     },
     {
       "category": "高能与粒子物理",
-      "total": 15,
-      "last24h": 0,
-      "last7d": 9
+      "total": 16,
+      "last24h": 1,
+      "last7d": 10
     },
     {
       "category": "凝聚态物理",
-      "total": 2,
-      "last24h": 1,
-      "last7d": 1
+      "total": 4,
+      "last24h": 2,
+      "last7d": 3
     },
     {
       "category": "原子分子与光物理",
@@ -37,13 +37,13 @@
     },
     {
       "category": "科研进展",
-      "total": 51,
+      "total": 72,
       "last24h": 22,
-      "last7d": 26
+      "last7d": 33
     },
     {
       "category": "其他",
-      "total": 45,
+      "total": 44,
       "last24h": 4,
       "last7d": 27
     }
@@ -51,15 +51,15 @@
   "byDay": [
     {
       "date": "2026-10-07",
-      "count": 0
+      "count": 4
     },
     {
       "date": "2026-10-08",
-      "count": 1
+      "count": 2
     },
     {
       "date": "2026-10-09",
-      "count": 0
+      "count": 2
     },
     {
       "date": "2026-10-10",
@@ -67,31 +67,31 @@
     },
     {
       "date": "2026-10-11",
-      "count": 18
+      "count": 19
     },
     {
       "date": "2026-10-12",
-      "count": 2
+      "count": 5
     },
     {
       "date": "2026-10-13",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-10-14",
-      "count": 7
-    },
-    {
-      "date": "2026-10-15",
       "count": 11
     },
     {
+      "date": "2026-10-15",
+      "count": 10
+    },
+    {
       "date": "2026-10-16",
-      "count": 9
+      "count": 11
     },
     {
       "date": "2026-10-17",
-      "count": 5
+      "count": 6
     },
     {
       "date": "2026-10-18",
@@ -99,48 +99,53 @@
     },
     {
       "date": "2026-10-19",
-      "count": 31
+      "count": 32
     },
     {
       "date": "2026-10-20",
-      "count": 0
+      "count": 4
     }
   ],
   "bySource": [
     {
       "source": "Phys.org 物理新闻",
       "count": 25,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00"
+      "latestAt": "2026-10-20T01:06:59.180397+00:00"
+    },
+    {
+      "source": "Nature 量子物理",
+      "count": 25,
+      "latestAt": "2026-10-20T01:06:59.180397+00:00"
     },
     {
       "source": "arXiv quant-ph 论文速递",
       "count": 25,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00"
+      "latestAt": "2026-10-20T01:06:59.180397+00:00"
     },
     {
       "source": "MIT News 物理",
       "count": 25,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00"
+      "latestAt": "2026-10-20T01:06:59.180397+00:00"
     },
     {
       "source": "知识分子",
-      "count": 19,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00"
+      "count": 20,
+      "latestAt": "2026-10-20T01:06:59.180397+00:00"
     },
     {
       "source": "New Scientist 物理",
       "count": 10,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00"
+      "latestAt": "2026-10-20T01:06:59.180397+00:00"
     },
     {
       "source": "CERN 新闻",
       "count": 10,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00"
+      "latestAt": "2026-10-20T01:06:59.180397+00:00"
     },
     {
       "source": "Quanta Magazine",
       "count": 5,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00"
+      "latestAt": "2026-10-20T01:06:59.180397+00:00"
     }
   ]
 }

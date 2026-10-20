@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T17:00:28.829026+00:00",
-  "count": 7,
+  "generatedAt": "2026-10-20T01:06:59.180397+00:00",
+  "count": 10,
   "items": [
     {
-      "id": "a91c8f6231b8",
+      "id": "b709dbd42b25",
       "title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor",
       "status": "关注中",
       "heat": 45.5,
       "sourceCount": 2,
-      "signalCount": 5,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
+      "signalCount": 4,
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "arXiv quant-ph 论文速递"
@@ -20,44 +20,42 @@
           "title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor",
           "url": "https://arxiv.org/abs/2610.22482",
           "source": "arXiv quant-ph 论文速递",
-          "score": 51.8,
+          "score": 50.1,
           "published_at": "2026-10-19T04:00:00+00:00"
         },
         {
           "title": "Metric and Dispersive Dynamics of Phase Perturbations in Bohmian Quantum Mechanics",
           "url": "https://arxiv.org/abs/2610.22737",
           "source": "arXiv quant-ph 论文速递",
-          "score": 51.8,
-          "published_at": "2026-10-19T04:00:00+00:00"
-        },
-        {
-          "title": "Quantum-Assisted Unambiguous Discrimination of Pure States with Robustness Bounds",
-          "url": "https://arxiv.org/abs/2610.22954",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 51.8,
+          "score": 50.1,
           "published_at": "2026-10-19T04:00:00+00:00"
         },
         {
           "title": "Nonequilibrium Dynamical Quantum Phase Transitions in the Extended Agassi Model",
           "url": "https://arxiv.org/abs/2610.23096",
           "source": "arXiv quant-ph 论文速递",
-          "score": 51.8,
+          "score": 50.1,
           "published_at": "2026-10-19T04:00:00+00:00"
         },
         {
           "title": "Physicists prove a long-suspected quantum speed limit for thermalization",
           "url": "https://phys.org/news/2026-10-physicists-quantum-limit-thermalization.html",
           "source": "Phys.org 物理新闻",
-          "score": 39.0,
+          "score": 38.0,
           "published_at": "2026-10-18T17:20:01+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
-      "llmScore": 51.5
+      "llmScore": 51.5,
+      "refs": {
+        "arxiv": "2610.22482",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
     },
     {
       "id": "b82bd9b50b6f",
@@ -66,7 +64,7 @@
       "heat": 24.5,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
       "sources": [
         "MIT News 物理",
         "arXiv quant-ph 论文速递"
@@ -76,29 +74,34 @@
           "title": "Multi-Time States in Quantum and Operational Probabilistic Theories: An Axiomatic Framework",
           "url": "https://arxiv.org/abs/2610.22489",
           "source": "arXiv quant-ph 论文速递",
-          "score": 48.8,
+          "score": 48.6,
           "published_at": "2026-10-19T04:00:00+00:00"
         },
         {
           "title": "Programmable Preparation of Topological Entangled States",
           "url": "https://arxiv.org/abs/2610.22738",
           "source": "arXiv quant-ph 论文速递",
-          "score": 48.8,
+          "score": 48.6,
           "published_at": "2026-10-19T04:00:00+00:00"
         },
         {
           "title": "Graphene can hold multiple states of superconductivity, a new study finds",
           "url": "https://news.mit.edu/2026/graphene-can-hold-multiple-states-of-superconductivity-0629",
           "source": "MIT News 物理",
-          "score": 38.4,
+          "score": 42.7,
           "published_at": "2026-06-29T15:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.22489",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
     },
     {
       "id": "9312d0f1b7d0",
@@ -107,7 +110,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -117,14 +120,14 @@
           "title": "New monolithic ion trap opens quantum simulations to more researchers",
           "url": "https://phys.org/news/2026-10-monolithic-ion-quantum-simulations.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.5,
+          "score": 60.3,
           "published_at": "2026-10-18T18:00:06+00:00"
         },
         {
           "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
           "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
           "source": "MIT News 物理",
-          "score": 37.1,
+          "score": 41.2,
           "published_at": "2026-08-05T15:00:00+00:00"
         }
       ],
@@ -135,38 +138,199 @@
       "digestTitle": null
     },
     {
-      "id": "213a4b379b5d",
-      "title": "Quantumness of Entanglement in Schwarzschild de Sitter Spacetime",
+      "id": "c40c9e8b1b46",
+      "title": "Quantum Tsallis Entropy Estimation: Near-Optimal Bounds and High-Precision Improvements",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "arXiv quant-ph 论文速递"
       ],
       "links": [
         {
-          "title": "Quantumness of Entanglement in Schwarzschild de Sitter Spacetime",
-          "url": "https://arxiv.org/abs/2610.22761",
+          "title": "Quantum Tsallis Entropy Estimation: Near-Optimal Bounds and High-Precision Improvements",
+          "url": "https://arxiv.org/abs/2610.22983",
           "source": "arXiv quant-ph 论文速递",
-          "score": 47.3,
+          "score": 47.1,
           "published_at": "2026-10-19T04:00:00+00:00"
         },
         {
-          "title": "Quantum sensor could measure how Earth drags spacetime",
-          "url": "https://phys.org/news/2026-10-quantum-sensor-earth-spacetime.html",
+          "title": "Quantum calculations reveal how spin defects lose energy",
+          "url": "https://phys.org/news/2026-10-quantum-reveal-defects-energy.html",
           "source": "Phys.org 物理新闻",
-          "score": 31.5,
-          "published_at": "2026-10-15T10:40:01+00:00"
+          "score": 34.9,
+          "published_at": "2026-10-15T15:40:09+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.22983",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
+    },
+    {
+      "id": "e695b9fa5e7d",
+      "title": "Quantumness of Entanglement in Schwarzschild de Sitter Spacetime",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "sources": [
+        "Nature 量子物理",
+        "arXiv quant-ph 论文速递"
+      ],
+      "links": [
+        {
+          "title": "Genuine continuous quantumness",
+          "url": "https://www.nature.com/articles/s41534-026-01389-7",
+          "source": "Nature 量子物理",
+          "score": 57.1,
+          "published_at": "2026-10-14T00:00:00+00:00"
+        },
+        {
+          "title": "Quantumness of Entanglement in Schwarzschild de Sitter Spacetime",
+          "url": "https://arxiv.org/abs/2610.22761",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.1,
+          "published_at": "2026-10-19T04:00:00+00:00"
+        }
+      ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.22761",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
+    },
+    {
+      "id": "4f6b453bf0e6",
+      "title": "Quantum-Assisted Unambiguous Discrimination of Pure States with Robustness Bounds",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "sources": [
+        "Nature 量子物理",
+        "arXiv quant-ph 论文速递"
+      ],
+      "links": [
+        {
+          "title": "Continuous-time noise mitigation in analogue quantum simulation",
+          "url": "https://www.nature.com/articles/s41467-026-78310-5",
+          "source": "Nature 量子物理",
+          "score": 55.8,
+          "published_at": "2026-10-12T00:00:00+00:00"
+        },
+        {
+          "title": "Quantum-Assisted Unambiguous Discrimination of Pure States with Robustness Bounds",
+          "url": "https://arxiv.org/abs/2610.22954",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.1,
+          "published_at": "2026-10-19T04:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.22954",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
+    },
+    {
+      "id": "6c384414b1f0",
+      "title": "Controlled PROP: Theory and Applications to Quantum Circuits",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "sources": [
+        "Nature 量子物理",
+        "arXiv quant-ph 论文速递"
+      ],
+      "links": [
+        {
+          "title": "Order from chaos with adaptive circuits on quantum hardware",
+          "url": "https://www.nature.com/articles/s41567-026-03470-6",
+          "source": "Nature 量子物理",
+          "score": 53.8,
+          "published_at": "2026-10-09T00:00:00+00:00"
+        },
+        {
+          "title": "Controlled PROP: Theory and Applications to Quantum Circuits",
+          "url": "https://arxiv.org/abs/2610.23192",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.1,
+          "published_at": "2026-10-19T04:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.23192",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
+    },
+    {
+      "id": "a544cbd60e11",
+      "title": "Liouvillian Non-Invertible Symmetry",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "sources": [
+        "Nature 量子物理",
+        "arXiv quant-ph 论文速递"
+      ],
+      "links": [
+        {
+          "title": "Non-reciprocity in quantum technologies",
+          "url": "https://www.nature.com/articles/s41567-026-03464-4",
+          "source": "Nature 量子物理",
+          "score": 52.5,
+          "published_at": "2026-10-07T00:00:00+00:00"
+        },
+        {
+          "title": "Liouvillian Non-Invertible Symmetry",
+          "url": "https://arxiv.org/abs/2610.23111",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.1,
+          "published_at": "2026-10-19T04:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.23111",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
     },
     {
       "id": "4721ee460be2",
@@ -175,7 +339,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -192,7 +356,7 @@
           "title": "Laser pulses bring order to a quantum material's tiny electrical regions",
           "url": "https://phys.org/news/2026-10-laser-pulses-quantum-material-tiny.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.1,
+          "score": 35.0,
           "published_at": "2026-10-15T17:00:07+00:00"
         }
       ],
@@ -203,65 +367,31 @@
       "digestTitle": null
     },
     {
-      "id": "1dc3e2185b16",
-      "title": "On the hunt for dark matter",
+      "id": "5f9f135d3c14",
+      "title": "A new way to watch heat move through electronics",
       "status": "关注中",
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
       "sources": [
         "MIT News 物理",
-        "New Scientist 物理"
+        "Nature 量子物理"
       ],
       "links": [
         {
-          "title": "Will we observe dark matter as a particle or a wave?",
-          "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 56.9,
-          "published_at": "2026-10-13T08:00:00+00:00"
+          "title": "Taking the heat off tantalum",
+          "url": "https://www.nature.com/articles/s41563-026-02766-5",
+          "source": "Nature 量子物理",
+          "score": 53.8,
+          "published_at": "2026-10-09T00:00:00+00:00"
         },
         {
-          "title": "On the hunt for dark matter",
-          "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
+          "title": "A new way to watch heat move through electronics",
+          "url": "https://news.mit.edu/2026/new-way-watch-heat-move-through-electronics-0806",
           "source": "MIT News 物理",
-          "score": 37.1,
-          "published_at": "2026-08-11T04:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "e8fe52bd8930",
-      "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
-      "sources": [
-        "MIT News 物理",
-        "New Scientist 物理"
-      ],
-      "links": [
-        {
-          "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-          "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
-          "source": "MIT News 物理",
-          "score": 37.1,
-          "published_at": "2026-08-07T09:00:00+00:00"
-        },
-        {
-          "title": "Physicists are scrambling to make sense of possible dark matter signal",
-          "url": "https://www.newscientist.com/article/2589737-physicists-are-scrambling-to-make-sense-of-possible-dark-matter-signal/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 37.1,
-          "published_at": "2026-09-18T12:00:00+00:00"
+          "score": 41.2,
+          "published_at": "2026-08-06T04:00:00+00:00"
         }
       ],
       "trend": "new",

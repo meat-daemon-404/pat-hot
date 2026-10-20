@@ -1,8 +1,50 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T17:00:28.829026+00:00",
+  "generatedAt": "2026-10-20T01:06:59.180397+00:00",
   "count": 10,
   "items": [
+    {
+      "id": "745a9059dc2f",
+      "title": "Thermalization-induced self-polarization of temporally incoherent light: A nonequilibrium wave turbulence kinetic approach",
+      "status": "关注中",
+      "heat": 45.5,
+      "sourceCount": 2,
+      "signalCount": 3,
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "sources": [
+        "Phys.org 物理新闻",
+        "arXiv 光学与光子学 (physics.optics)"
+      ],
+      "links": [
+        {
+          "title": "Thermalization-induced self-polarization of temporally incoherent light: A nonequilibrium wave turbulence kinetic approach",
+          "url": "https://arxiv.org/abs/2610.23061",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 66.6,
+          "published_at": "2026-10-19T04:00:00+00:00"
+        },
+        {
+          "title": "Noise suppression of quantum frequency conversion in thin-film lithium niobate waveguides via adapted poling",
+          "url": "https://arxiv.org/abs/2610.23575",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 66.6,
+          "published_at": "2026-10-19T04:00:00+00:00"
+        },
+        {
+          "title": "Normally forbidden emissions from graphene could expose quantum fluctuations in incoming light",
+          "url": "https://phys.org/news/2026-10-forbidden-emissions-graphene-expose-quantum.html",
+          "source": "Phys.org 物理新闻",
+          "score": 58.0,
+          "published_at": "2026-10-19T17:40:04+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 34.0
+    },
     {
       "id": "23deaa3a7074",
       "title": "[News] Raontech and SN Display Collaborate on Perovskite-Based MicroLED Microdisplays",
@@ -10,7 +52,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
       "sources": [
         "LEDinside 中文",
         "LEDinside 英文"
@@ -20,22 +62,23 @@
           "title": "Raontech携手SN Display，探索钙钛矿AR显示方案",
           "url": "https://www.ledinside.cn/news/20261019-62816.html",
           "source": "LEDinside 中文",
-          "score": 69.5,
+          "score": 69.2,
           "published_at": "2026-10-19"
         },
         {
           "title": "[News] Raontech and SN Display Collaborate on Perovskite-Based MicroLED Microdisplays",
           "url": "https://www.ledinside.com/news/2026/10/2026_10_19_02",
           "source": "LEDinside 英文",
-          "score": 64.7,
+          "score": 64.5,
           "published_at": "2026-10-18T07:29:02+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "llmScore": 43.5
     },
     {
       "id": "286e9ea0ded6",
@@ -44,7 +87,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
       "sources": [
         "C114中国通信网_通信财经",
         "LEDinside 中文"
@@ -54,7 +97,7 @@
           "title": "亨通光电、腾景科技业绩预增",
           "url": "https://www.ledinside.cn/fsa/20261019-62821.html",
           "source": "LEDinside 中文",
-          "score": 55.6,
+          "score": 55.4,
           "published_at": "2026-10-19"
         },
         {
@@ -65,11 +108,96 @@
           "published_at": null
         }
       ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "b46c663202b7",
+      "title": "9.99万起买代步车!激光雷达+城市NOA,CLTC续航里程538km!",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "sources": [
+        "搜狗微信·光电行业 · 30秒懂车",
+        "搜狗微信·光电行业 · 汽车之家"
+      ],
+      "links": [
+        {
+          "title": "9.99万起买代步车!激光雷达+城市NOA,CLTC续航里程538km!",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS27yBh3vuss2BLUpT5xkzz8g30VqyH5x-FqXa8Fplpd9QxU2WakDLbu_R-8L3PaH3hDcbqLOlqPdfgpVCzvnTTz9PkKp1YBK4THsSAcXKt79ox_qUeFZ3B4eoqgMu1rgVHa3_F88xghJOfdpLrRsOCkaDMQzyjuGBfA2MWOGWgm-YclIWAxm-G3K0KruSiuW8sp5qkHp8Uam0ij93pASZtGrCDCayYmfpA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=4C1493BEF11921021610492D6670B0471793829E6AD6C20F",
+          "source": "搜狗微信·光电行业 · 汽车之家",
+          "score": 65.6,
+          "published_at": "2026-10-20T00:00:52+00:00"
+        },
+        {
+          "title": "9.99万起 德系纯电轿跑 激光雷达+城市NOA 670km续航",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS27yBh3vuss2BLUpT5xkzz8g30VqyH5x-FqXa8Fplpd9J1vDGkkwqrXMuBAOLPCDjSv57icTNRYI9uvcJ5rzr_KrOe8V2iNGUpPF81UIQNi_TBeoE6IOAnfQErVxZZbG0TqLSGU7Kh-w3kKWzel93-ldKyAGw9zb42D3iPHCY_C43oA7eZIObau-ABIWM2GJB9rP6GplZsiInS_0lntPrgbS-e4Yz84xMA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=4C1493BEF11921021610492D6670B0471793829E6AD6C20F",
+          "source": "搜狗微信·光电行业 · 30秒懂车",
+          "score": 65.3,
+          "published_at": "2026-10-19T10:37:25+00:00"
+        }
+      ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "llmScore": 5.0
+    },
+    {
+      "id": "f0e7b270ef7f",
+      "title": "All-optical Lithography for Spatiotemporal Patterning of High-Modulation Azopolymer Microreliefs",
+      "status": "发酵中",
+      "heat": 38.8,
+      "sourceCount": 3,
+      "signalCount": 3,
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "sources": [
+        "Laser Focus World",
+        "Physics World（关键词过滤）",
+        "arXiv 光学与光子学 (physics.optics)"
+      ],
+      "links": [
+        {
+          "title": "All-optical Lithography for Spatiotemporal Patterning of High-Modulation Azopolymer Microreliefs",
+          "url": "https://arxiv.org/abs/2512.25048",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 71.4,
+          "published_at": "2026-10-19T04:00:00+00:00"
+        },
+        {
+          "title": "Optical Characterization Measurements of Commercial Polyvinyltoluene Scintillators for Accurate Geant4 Detector Modeling",
+          "url": "https://arxiv.org/abs/2608.13710",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 71.4,
+          "published_at": "2026-10-19T04:00:00+00:00"
+        },
+        {
+          "title": "Optical imaging and spectroscopy enhance precision agriculture",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
+          "source": "Laser Focus World",
+          "score": 62.0,
+          "published_at": null
+        },
+        {
+          "title": "In situ and operando optical microscopy and spectroscopy: investigating perovskite optoelectronic devices at work",
+          "url": "https://physicsworld.com/a/in-situ-and-operando-optical-microscopy-and-spectroscopy-investigating-perovskite-optoelectronic-devices-at-work/",
+          "source": "Physics World（关键词过滤）",
+          "score": 29.0,
+          "published_at": "2026-09-21T07:13:41+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 46.0
     },
     {
       "id": "da7b21634030",
@@ -78,7 +206,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
       "sources": [
         "C114中国通信网_通信财经"
       ],
@@ -118,7 +246,7 @@
       "heat": 21.2,
       "sourceCount": 3,
       "signalCount": 4,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
       "sources": [
         "Laser Focus World",
         "YouTube·Photonics Media",
@@ -157,7 +285,7 @@
           "title": "A Look Back on Photonics West 2026",
           "url": "https://www.youtube.com/shorts/ne-cuXI4otA",
           "source": "YouTube·SPIETV",
-          "score": 65.6,
+          "score": 65.4,
           "published_at": "2026-10-16T21:37:37+00:00"
         }
       ],
@@ -175,7 +303,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "Physics World（关键词过滤）"
@@ -185,7 +313,7 @@
           "title": "A new way to detect stabilizing properties of optical devices",
           "url": "https://phys.org/news/2026-10-stabilizing-properties-optical-devices.html",
           "source": "Phys.org 物理新闻",
-          "score": 56.0,
+          "score": 55.8,
           "published_at": "2026-10-18T18:00:01+00:00"
         },
         {
@@ -209,7 +337,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "Physics World（关键词过滤）"
@@ -219,7 +347,7 @@
           "title": "Physicists prove a long-suspected quantum speed limit for thermalization",
           "url": "https://phys.org/news/2026-10-physicists-quantum-limit-thermalization.html",
           "source": "Phys.org 物理新闻",
-          "score": 56.0,
+          "score": 55.8,
           "published_at": "2026-10-18T17:20:01+00:00"
         },
         {
@@ -230,8 +358,8 @@
           "published_at": "2026-09-10T07:11:10+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -243,7 +371,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
+      "latestAt": "2026-10-20T01:06:59.180397+00:00",
       "sources": [
         "C114中国通信网_通信财经",
         "OFweek 光电频道"
@@ -262,108 +390,6 @@
           "source": "OFweek 光电频道",
           "score": 43.7,
           "published_at": "2026-08"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "e5f48246a18c",
-      "title": "精密光纤激光器企业频准激光登陆科创板",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
-      "sources": [
-        "C114中国通信网_IT资讯",
-        "COEMA 中国光电子行业协会"
-      ],
-      "links": [
-        {
-          "title": "精密光纤激光器企业频准激光登陆科创板",
-          "url": "https://www.coema.org.cn/industry/202608/5795.html",
-          "source": "COEMA 中国光电子行业协会",
-          "score": 45.7,
-          "published_at": "2026-08"
-        },
-        {
-          "title": "宇树科技计划登陆科创板 中国移动已投资",
-          "url": "https://www.c114.com.cn/news/212/a1292374.html",
-          "source": "C114中国通信网_IT资讯",
-          "score": 44.5,
-          "published_at": null
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "c14a1dd718b8",
-      "title": "Are high-power laser diodes ready to power inertial fusion energy?",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
-      "sources": [
-        "Laser Focus World",
-        "YouTube·Photonics Media"
-      ],
-      "links": [
-        {
-          "title": "Are high-power laser diodes ready to power inertial fusion energy?",
-          "url": "https://www.laserfocusworld.com/lasers-sources/article/55410022/leonardo-electronics-us-inc-are-high-power-laser-diodes-ready-to-power-inertial-fusion-energy",
-          "source": "Laser Focus World",
-          "score": 55.7,
-          "published_at": null
-        },
-        {
-          "title": "Marvel Fusion Launches Laser-Focused Subsidiary",
-          "url": "https://www.youtube.com/shorts/I1r4OdSKioA",
-          "source": "YouTube·Photonics Media",
-          "score": 42.6,
-          "published_at": "2026-09-28T15:00:39+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "329557835790",
-      "title": "Doubts cast on ‘superradiant neutrino laser’ proposal",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-19T17:00:28.829026+00:00",
-      "sources": [
-        "Laser Focus World",
-        "Physics World（关键词过滤）"
-      ],
-      "links": [
-        {
-          "title": "Doubts cast on ‘superradiant neutrino laser’ proposal",
-          "url": "https://physicsworld.com/a/doubts-cast-on-superradiant-neutrino-laser-proposal/",
-          "source": "Physics World（关键词过滤）",
-          "score": 41.2,
-          "published_at": "2026-09-10T14:43:26+00:00"
-        },
-        {
-          "title": "2026 Nobel Prize in Physics goes to Francis Halzen for IceCube Neutrino Observatory",
-          "url": "https://www.laserfocusworld.com/detectors-imaging/news/55409835/2026-nobel-prize-in-physics-goes-to-francis-halzen-for-icecube-neutrino-observatory",
-          "source": "Laser Focus World",
-          "score": 33.4,
-          "published_at": null
         }
       ],
       "trend": "flat",

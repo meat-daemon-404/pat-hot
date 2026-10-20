@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T17:00:28.829026+00:00",
+  "generatedAt": "2026-10-20T01:06:59.180397+00:00",
   "weekStart": "2026-10-14",
   "windowDays": 7,
   "windowStart": "2026-10-14",
@@ -10,33 +10,33 @@
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1402.6,
+      "thisWeek": 1403.8,
       "lastWeek": 1418.5,
-      "deltaPct": -1.1
+      "deltaPct": -1.0
     },
     {
       "category": "其他",
-      "thisWeek": 1236.5,
+      "thisWeek": 1292.9,
       "lastWeek": 430.2,
-      "deltaPct": 187.4
+      "deltaPct": 200.5
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 405.6,
+      "thisWeek": 456.9,
       "lastWeek": 356.6,
-      "deltaPct": 13.7
+      "deltaPct": 28.1
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 356.5,
+      "thisWeek": 356.1,
       "lastWeek": 85.4,
-      "deltaPct": 317.4
+      "deltaPct": 317.0
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 255.7,
+      "thisWeek": 306.8,
       "lastWeek": 297.0,
-      "deltaPct": -13.9
+      "deltaPct": 3.3
     },
     {
       "category": "等离子体",
@@ -46,15 +46,15 @@
     },
     {
       "category": "统计物理与软物质",
-      "thisWeek": 51.8,
+      "thisWeek": 50.1,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
     {
       "category": "原子分子与光物理",
-      "thisWeek": 37.6,
+      "thisWeek": 37.4,
       "lastWeek": 41.5,
-      "deltaPct": -9.4
+      "deltaPct": -9.9
     }
   ],
   "newTopics": [
@@ -65,15 +65,15 @@
       "days": 1
     },
     {
-      "topic_id": "a91c8f6231b8",
-      "title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor",
-      "score": 246.2,
-      "days": 1
-    },
-    {
       "topic_id": "07e022871d50",
       "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
       "score": 239.2,
+      "days": 1
+    },
+    {
+      "topic_id": "b709dbd42b25",
+      "title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor",
+      "score": 188.3,
       "days": 1
     },
     {
@@ -91,7 +91,7 @@
     {
       "topic_id": "b82bd9b50b6f",
       "title": "Multi-Time States in Quantum and Operational Probabilistic Theories: An Axiomatic Framework",
-      "score": 97.6,
+      "score": 97.2,
       "days": 1
     },
     {
