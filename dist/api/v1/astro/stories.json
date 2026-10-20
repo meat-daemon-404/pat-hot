@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T01:06:59.180397+00:00",
+  "generatedAt": "2026-10-20T15:06:18.142135+00:00",
   "count": 10,
   "items": [
     {
@@ -10,7 +10,7 @@
       "heat": 53.0,
       "sourceCount": 3,
       "signalCount": 3,
-      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "latestAt": "2026-10-20T15:06:18.142135+00:00",
       "sources": [
         "ESA 空间科学",
         "Phys.org 太空新闻",
@@ -21,22 +21,80 @@
           "title": "The ESA's Euclid Space Telescope Has Discovered A New Comet",
           "url": "https://www.universetoday.com/articles/the-esas-euclid-space-telescope-has-discovered-a-new-comet",
           "source": "Universe Today",
-          "score": 65.9,
+          "score": 65.5,
           "published_at": "2026-10-19T19:56:36+00:00"
         },
         {
           "title": "Euclid discovers its first new comet 810 million miles from Earth",
           "url": "https://phys.org/news/2026-10-euclid-comet-million-miles-earth.html",
           "source": "Phys.org 太空新闻",
-          "score": 65.8,
+          "score": 65.4,
           "published_at": "2026-10-19T17:20:01+00:00"
         },
         {
           "title": "Euclid discovers new comet",
           "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_discovers_new_comet",
           "source": "ESA 空间科学",
-          "score": 65.6,
+          "score": 65.2,
           "published_at": "2026-10-19T12:00:00+00:00"
+        }
+      ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 34.5
+    },
+    {
+      "id": "f8eb52d75ed5",
+      "title": "MMX lifts off to Mars’s moon Phobos",
+      "status": "发酵中",
+      "heat": 51.5,
+      "sourceCount": 4,
+      "signalCount": 5,
+      "latestAt": "2026-10-20T15:06:18.142135+00:00",
+      "sources": [
+        "Astronomy Magazine",
+        "ESA 空间科学",
+        "New Scientist 太空",
+        "Phys.org 太空新闻"
+      ],
+      "links": [
+        {
+          "title": "Japan launches spacecraft to mysterious moons of Mars in a bold mission to bring home soil samples",
+          "url": "https://phys.org/news/2026-10-japan-spacecraft-mysterious-moons-mars.html",
+          "source": "Phys.org 太空新闻",
+          "score": 78.2,
+          "published_at": "2026-10-20T09:40:13+00:00"
+        },
+        {
+          "title": "MMX lifts off to Mars’s moon Phobos",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/MMX_lifts_off_to_Mars_s_moon_Phobos",
+          "source": "ESA 空间科学",
+          "score": 78.1,
+          "published_at": "2026-10-20T07:00:00+00:00"
+        },
+        {
+          "title": "Japan to launch world-first mission to moon of Mars",
+          "url": "https://phys.org/news/2026-10-japan-world-mission-moon-mars.html",
+          "source": "Phys.org 太空新闻",
+          "score": 77.8,
+          "published_at": "2026-10-19T19:30:01+00:00"
+        },
+        {
+          "title": "Japan to launch historic round-trip mission to Mars moon",
+          "url": "https://phys.org/news/2026-10-japan-historic-mission-mars-moon.html",
+          "source": "Phys.org 太空新闻",
+          "score": 77.1,
+          "published_at": "2026-10-18T20:20:01+00:00"
+        },
+        {
+          "title": "Japan's MMX mission aims to swipe soil samples from Mars's moon Phobos",
+          "url": "https://phys.org/news/2026-10-japan-mmx-mission-aims-swipe.html",
+          "source": "Phys.org 太空新闻",
+          "score": 77.0,
+          "published_at": "2026-10-18T14:00:01+00:00"
         }
       ],
       "trend": "new",
@@ -44,34 +102,34 @@
       "badges": [],
       "digest": null,
       "digestTitle": null,
-      "llmScore": 34.5
+      "llmScore": 57.5
     },
     {
-      "id": "67d61cdc0373",
-      "title": "Cosmic 'hamburger' offers rare edge-on view of where giant planets may take shape",
+      "id": "003eed846ef2",
+      "title": "NASA’s Simulated Mars Crew Marks One Year Inside Habitat",
       "status": "关注中",
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "latestAt": "2026-10-20T15:06:18.142135+00:00",
       "sources": [
-        "Astronomy Magazine",
+        "NASA 快讯",
         "Phys.org 太空新闻"
       ],
       "links": [
         {
-          "title": "Cosmic 'hamburger' offers rare edge-on view of where giant planets may take shape",
-          "url": "https://phys.org/news/2026-10-cosmic-hamburger-rare-edge-view.html",
-          "source": "Phys.org 太空新闻",
-          "score": 36.6,
-          "published_at": "2026-10-19T20:20:01+00:00"
+          "title": "NASA’s Simulated Mars Crew Marks One Year Inside Habitat",
+          "url": "https://www.nasa.gov/humans-in-space/nasas-simulated-mars-crew-marks-one-year-inside-habitat/",
+          "source": "NASA 快讯",
+          "score": 60.6,
+          "published_at": "2026-10-19T18:01:51+00:00"
         },
         {
-          "title": "A hamburger with a tail",
-          "url": "https://www.astronomy.com/picture-of-the-day/photo/a-hamburger-with-a-tail/",
-          "source": "Astronomy Magazine",
-          "score": 36.4,
-          "published_at": "2026-10-19T10:13:02+00:00"
+          "title": "Lucy mission marks 5 years of discoveries",
+          "url": "https://phys.org/news/2026-10-lucy-mission-years-discoveries.html",
+          "source": "Phys.org 太空新闻",
+          "score": 36.6,
+          "published_at": "2026-10-20T11:00:07+00:00"
         }
       ],
       "trend": "new",
@@ -81,64 +139,74 @@
       "digestTitle": null
     },
     {
-      "id": "9e44f6fb4a31",
-      "title": "Mars moon lander set to launch on 19 October",
-      "status": "发酵中",
-      "heat": 35.5,
-      "sourceCount": 4,
-      "signalCount": 5,
-      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "id": "67d61cdc0373",
+      "title": "Cosmic 'hamburger' offers rare edge-on view of where giant planets may take shape",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-20T15:06:18.142135+00:00",
       "sources": [
         "Astronomy Magazine",
-        "ESA 空间科学",
-        "New Scientist 太空",
         "Phys.org 太空新闻"
       ],
       "links": [
         {
-          "title": "Japan to launch world-first mission to moon of Mars",
-          "url": "https://phys.org/news/2026-10-japan-world-mission-moon-mars.html",
+          "title": "Cosmic 'hamburger' offers rare edge-on view of where giant planets may take shape",
+          "url": "https://phys.org/news/2026-10-cosmic-hamburger-rare-edge-view.html",
           "source": "Phys.org 太空新闻",
-          "score": 75.2,
-          "published_at": "2026-10-19T19:30:01+00:00"
+          "score": 36.4,
+          "published_at": "2026-10-19T20:20:01+00:00"
         },
         {
-          "title": "Japan to launch historic round-trip mission to Mars moon",
-          "url": "https://phys.org/news/2026-10-japan-historic-mission-mars-moon.html",
-          "source": "Phys.org 太空新闻",
-          "score": 74.5,
-          "published_at": "2026-10-18T20:20:01+00:00"
-        },
-        {
-          "title": "Japan's MMX mission aims to swipe soil samples from Mars's moon Phobos",
-          "url": "https://phys.org/news/2026-10-japan-mmx-mission-aims-swipe.html",
-          "source": "Phys.org 太空新闻",
-          "score": 74.4,
-          "published_at": "2026-10-18T14:00:01+00:00"
-        },
-        {
-          "title": "Japan to launch spacecraft on a mission to get samples from a Martian moon",
-          "url": "https://phys.org/news/2026-10-japan-spacecraft-mission-samples-martian.html",
-          "source": "Phys.org 太空新闻",
-          "score": 74.3,
-          "published_at": "2026-10-18T11:38:40+00:00"
-        },
-        {
-          "title": "Japan is launching a mission to Mars’s largest moon Phobos",
-          "url": "https://www.newscientist.com/article/2594332-japan-is-launching-a-mission-to-marss-largest-moon-phobos/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 73.1,
-          "published_at": "2026-10-16T17:00:00+00:00"
+          "title": "A hamburger with a tail",
+          "url": "https://www.astronomy.com/picture-of-the-day/photo/a-hamburger-with-a-tail/",
+          "source": "Astronomy Magazine",
+          "score": 36.2,
+          "published_at": "2026-10-19T10:13:02+00:00"
         }
       ],
-      "trend": "up",
-      "trendPct": 69.0,
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "60a432747714",
+      "title": "The Moon is Still Shrinking as it Cools. That Could Create a Hazard for Lunar Mission.",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-20T15:06:18.142135+00:00",
+      "sources": [
+        "Astronomy Magazine",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "The Moon is Still Shrinking as it Cools. That Could Create a Hazard for Lunar Mission.",
+          "url": "https://www.universetoday.com/articles/the-moon-is-still-shrinking-as-it-cools-that-could-create-a-hazard-for-lunar-mission",
+          "source": "Universe Today",
+          "score": 61.1,
+          "published_at": "2026-10-20T13:56:57+00:00"
+        },
+        {
+          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
+          "source": "Astronomy Magazine",
+          "score": 61.1,
+          "published_at": "2026-10-20T13:09:30+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
       "badges": [
-        "rising"
+        "new"
       ],
       "digest": null,
-      "digestTitle": null,
-      "llmScore": 46.0
+      "digestTitle": null
     },
     {
       "id": "29fe77358c84",
@@ -147,7 +215,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "latestAt": "2026-10-20T15:06:18.142135+00:00",
       "sources": [
         "MIT News 太空探索",
         "Phys.org 太空新闻"
@@ -164,12 +232,12 @@
           "title": "Planetary 'twins' Uranus and Neptune may have different origin stories",
           "url": "https://phys.org/news/2026-10-planetary-twins-uranus-neptune-stories.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.7,
+          "score": 36.4,
           "published_at": "2026-10-19T22:40:06+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -181,7 +249,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "latestAt": "2026-10-20T15:06:18.142135+00:00",
       "sources": [
         "Phys.org 太空新闻",
         "Universe Today"
@@ -191,50 +259,50 @@
           "title": "The Chemistry in Stellar Nurseries is Complex, and a New 3D Model Highlights It",
           "url": "https://www.universetoday.com/articles/the-chemistry-in-stellar-nurseries-is-complex-and-a-new-3d-model-highlights-it",
           "source": "Universe Today",
-          "score": 61.1,
+          "score": 60.7,
           "published_at": "2026-10-19T22:09:34+00:00"
         },
         {
           "title": "New 3D model reveals how shadows reshape chemistry in stellar nurseries",
           "url": "https://phys.org/news/2026-10-3d-reveals-shadows-reshape-chemistry.html",
           "source": "Phys.org 太空新闻",
-          "score": 59.1,
+          "score": 58.7,
           "published_at": "2026-10-16T22:40:04+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
       "llmScore": 37.5
     },
     {
-      "id": "a2c130832e93",
-      "title": "Webb captures commotion from nebula’s stellar jets",
+      "id": "40e54127781e",
+      "title": "Curiosity Blog, Sols 5036-5042: Watching the Clouds Go By",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "latestAt": "2026-10-20T15:06:18.142135+00:00",
       "sources": [
-        "ESA 空间科学",
-        "Universe Today"
+        "NASA 快讯",
+        "Nature 天文和天体物理"
       ],
       "links": [
         {
-          "title": "Webb Captures This Golden Galaxy Cluster in All it's Glory",
-          "url": "https://www.universetoday.com/articles/webb-captures-the-golden-galaxy-cluster-in-all-its-glory",
-          "source": "Universe Today",
-          "score": 61.1,
-          "published_at": "2026-10-19T22:02:00+00:00"
+          "title": "Curiosity Blog, Sols 5036-5042: Watching the Clouds Go By",
+          "url": "https://science.nasa.gov/blog/curiosity-blog-sols-5036-5042-watching-the-clouds-go-by/",
+          "source": "NASA 快讯",
+          "score": 60.8,
+          "published_at": "2026-10-20T01:21:38+00:00"
         },
         {
-          "title": "Webb captures commotion from nebula’s stellar jets",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Webb_captures_commotion_from_nebula_s_stellar_jets",
-          "source": "ESA 空间科学",
-          "score": 52.2,
-          "published_at": "2026-10-06T13:00:00+00:00"
+          "title": "Getting above the clouds",
+          "url": "https://www.nature.com/articles/s42254-026-01006-8",
+          "source": "Nature 天文和天体物理",
+          "score": 56.1,
+          "published_at": "2026-10-13T00:00:00+00:00"
         }
       ],
       "trend": "new",
@@ -244,65 +312,65 @@
       "digestTitle": null
     },
     {
-      "id": "90aad1f1c71d",
-      "title": "Martian Dawn",
+      "id": "bbdae4c72712",
+      "title": "Discovery of a second-generation planet candidate accreting onto a white dwarf",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "latestAt": "2026-10-20T15:06:18.142135+00:00",
       "sources": [
-        "NASA 快讯",
-        "Universe Today"
+        "Astronomy Magazine",
+        "Nature 天文和天体物理"
       ],
       "links": [
         {
-          "title": "Martian Dawn",
-          "url": "https://www.nasa.gov/image-article/martian-dawn/",
-          "source": "NASA 快讯",
-          "score": 60.9,
-          "published_at": "2026-10-19T16:03:51+00:00"
+          "title": "Oct. 19, 2017: The discovery of ‘Oumuamua",
+          "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/oct-19-2017-the-discovery-of-oumuamua/",
+          "source": "Astronomy Magazine",
+          "score": 60.4,
+          "published_at": "2026-10-19T13:00:00+00:00"
         },
         {
-          "title": "Curiosity Greets a Spectacular Dawn Sky on Mars",
-          "url": "https://www.universetoday.com/articles/curiosity-greets-a-spectacular-dawn-sky-on-mars",
-          "source": "Universe Today",
-          "score": 57.5,
-          "published_at": "2026-10-14T13:51:00+00:00"
+          "title": "Discovery of a second-generation planet candidate accreting onto a white dwarf",
+          "url": "https://www.nature.com/articles/s41550-026-02983-7",
+          "source": "Nature 天文和天体物理",
+          "score": 50.7,
+          "published_at": "2026-10-05T00:00:00+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -50.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null
     },
     {
-      "id": "8eba37555f16",
-      "title": "Software",
+      "id": "73fa676c24ac",
+      "title": "The Human Fingerprint on Earth’s Water Cycle",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-20T01:06:59.180397+00:00",
+      "latestAt": "2026-10-20T15:06:18.142135+00:00",
       "sources": [
         "MIT News 太空探索",
         "NASA 快讯"
       ],
       "links": [
         {
-          "title": "Software",
-          "url": "https://www.nasa.gov/centers-and-facilities/glenn/acoustics-software/",
+          "title": "The Human Fingerprint on Earth’s Water Cycle",
+          "url": "https://science.nasa.gov/earth/earth-observatory/the-human-fingerprint-on-earths-water-cycle/",
           "source": "NASA 快讯",
-          "score": 61.0,
-          "published_at": "2026-10-19T18:11:40+00:00"
+          "score": 60.9,
+          "published_at": "2026-10-20T04:01:00+00:00"
         },
         {
-          "title": "Margaret Hamilton, computing pioneer who led software development for the Apollo program, dies at 90",
-          "url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
+          "title": "A carbon-lite atmosphere could be a sign of water and life on other terrestrial planets, MIT study finds",
+          "url": "https://news.mit.edu/2023/carbon-lite-atmosphere-life-terrestrial-planets-mit-study-1228",
           "source": "MIT News 太空探索",
-          "score": 31.8,
-          "published_at": "2026-10-07T20:55:00+00:00"
+          "score": 24.7,
+          "published_at": "2023-12-28T10:00:00+00:00"
         }
       ],
       "trend": "new",
@@ -310,83 +378,6 @@
       "badges": [],
       "digest": null,
       "digestTitle": null
-    },
-    {
-      "id": "fa25cc4537a4",
-      "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
-      "status": "发酵中",
-      "heat": 17.7,
-      "sourceCount": 3,
-      "signalCount": 1,
-      "latestAt": "2026-10-20T01:06:59.180397+00:00",
-      "sources": [
-        "LIGO",
-        "MIT News 太空探索",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "New Observations Show How Black Holes Stir Up Material Surrounding A Galaxy",
-          "url": "https://www.universetoday.com/articles/new-observations-show-how-black-holes-stir-up-material-surrounding-a-galaxy",
-          "source": "Universe Today",
-          "score": 65.8,
-          "published_at": "2026-10-19T17:10:49+00:00"
-        },
-        {
-          "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
-          "url": "https://news.mit.edu/2024/using-wobbling-stellar-material-astronomers-measure-supermassive-black-hole-spin-0522",
-          "source": "MIT News 太空探索",
-          "score": 46.0,
-          "published_at": "2024-05-22T15:00:00+00:00"
-        },
-        {
-          "title": "Pair of distinct black hole mergers sheds new light on nature of their formation and evolution",
-          "url": "https://ligo.org/pair-of-distinct-black-hole-mergers-sheds-new-light-on-nature-of-their-formation-and-evolution/",
-          "source": "LIGO",
-          "score": 46.0,
-          "published_at": "2025-10-28T15:01:12+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "01f3d877bc72",
-      "title": "Mars’s oddest cloud may be even odder than we thought",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-20T01:06:59.180397+00:00",
-      "sources": [
-        "ESA 空间科学",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Lone, starless cloud may be a 'dark' galaxy",
-          "url": "https://phys.org/news/2026-10-lone-starless-cloud-dark-galaxy.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.5,
-          "published_at": "2026-10-17T13:40:04+00:00"
-        },
-        {
-          "title": "Mars’s oddest cloud may be even odder than we thought",
-          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
-          "source": "ESA 空间科学",
-          "score": 52.9,
-          "published_at": "2026-10-07T15:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 26.0
     }
   ]
 }

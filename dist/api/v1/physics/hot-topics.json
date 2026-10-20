@@ -1,187 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T01:06:59.180397+00:00",
-  "count": 10,
+  "generatedAt": "2026-10-20T15:06:18.142135+00:00",
+  "count": 6,
   "items": [
-    {
-      "terms": [
-        "agassi",
-        "bohmian",
-        "dispersive",
-        "dynamical",
-        "dynamics",
-        "extended",
-        "landau",
-        "long-suspected",
-        "mechanics",
-        "metric",
-        "nonequilibrium",
-        "perturbations",
-        "physicists",
-        "processor",
-        "prove",
-        "quantum",
-        "speed",
-        "theory",
-        "thermalization",
-        "transitions"
-      ],
-      "source_count": 2,
-      "signal_count": 4,
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 45.5,
-      "latest_at": "2026-10-20T01:06:59.180397+00:00",
-      "representative": {
-        "title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor",
-        "url": "https://arxiv.org/abs/2610.22482",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-19T04:00:00+00:00",
-        "score": 50.1,
-        "summary": "arXiv:2610.22482v1 Announce Type: new Abstract: Direct continuous quantum phase transitions between phases that break distinct symmetries challenge the conventional Landau-Ginzburg-Wilson paradigm and provide a framework for deconfined quan",
-        "zh_full": "在打破不同对称性的相之间发生的直接连续量子相变，对传统的Landau-Ginzburg-Wilson范式提出了挑战，并为解禁量子临界性提供了框架。本研究利用超导量子处理器，在受挫一维自旋链中研究了Landau理论所禁止的铁磁-价键固体（FM-VBS）相变。通过将矩阵乘积态辅助的电路制备与量子硬件测量相结合，研究揭示了长程铁磁关联的抑制现象。",
-        "refs": {
-          "arxiv": "2610.22482",
-          "via": "feed_text",
-          "confidence": "verified"
-        },
-        "llm_summary": "本研究利用超导量子处理器，在受挫一维自旋链中探索了Landau理论所禁止的铁磁-价键固体（FM-VBS）相变。通过矩阵乘积态辅助电路制备与量子硬件测量相结合的方法，揭示了长程铁磁关联的抑制。该工作挑战了传统Landau-Ginzburg-Wilson范式，为解禁量子临界性研究提供了新框架。",
-        "llm_reason": "量子处理器探索Landau理论禁区相变",
-        "density": "高",
-        "llm_score": 51.5
-      },
-      "folded_count": 1,
-      "title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor",
-      "id": "b709dbd42b25",
-      "links": [
-        {
-          "title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor",
-          "url": "https://arxiv.org/abs/2610.22482",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 50.1,
-          "published_at": "2026-10-19T04:00:00+00:00"
-        },
-        {
-          "title": "Metric and Dispersive Dynamics of Phase Perturbations in Bohmian Quantum Mechanics",
-          "url": "https://arxiv.org/abs/2610.22737",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 50.1,
-          "published_at": "2026-10-19T04:00:00+00:00"
-        },
-        {
-          "title": "Nonequilibrium Dynamical Quantum Phase Transitions in the Extended Agassi Model",
-          "url": "https://arxiv.org/abs/2610.23096",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 50.1,
-          "published_at": "2026-10-19T04:00:00+00:00"
-        },
-        {
-          "title": "Physicists prove a long-suspected quantum speed limit for thermalization",
-          "url": "https://phys.org/news/2026-10-physicists-quantum-limit-thermalization.html",
-          "source": "Phys.org 物理新闻",
-          "score": 38.0,
-          "published_at": "2026-10-18T17:20:01+00:00"
-        }
-      ],
-      "top_terms": [
-        "quantum",
-        "transitions",
-        "physicists",
-        "prove",
-        "long"
-      ],
-      "rank": 1,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 45.5,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "axiomatic",
-        "entangled",
-        "finds",
-        "graphene",
-        "hold",
-        "multi-time",
-        "multiple",
-        "operational",
-        "preparation",
-        "probabilistic",
-        "quantum",
-        "states",
-        "superconductivity",
-        "theories",
-        "topological"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "MIT News 物理",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 24.5,
-      "latest_at": "2026-10-20T01:06:59.180397+00:00",
-      "representative": {
-        "title": "Multi-Time States in Quantum and Operational Probabilistic Theories: An Axiomatic Framework",
-        "url": "https://arxiv.org/abs/2610.22489",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-19T04:00:00+00:00",
-        "score": 48.6,
-        "summary": "arXiv:2610.22489v1 Announce Type: new Abstract: Quantum states over time were introduced, in part, to extend Bayesian probability to quantum theory and have since found applications across diverse areas, ranging from quantum causality and o",
-        "zh_full": "量子态随时间的演化（multi-time states）最初被引入是为了将贝叶斯概率扩展到量子理论中，此后在量子因果性、开放系统动力学以及宏观实在性检验等多个领域得到应用。目前，针对马尔可夫动力学的公理化描述已经存在，但能够容纳非马尔可夫动力学的通用框架仍然缺失。此外，将该框架从量子力学推广到一般物理理论也尚未实现。本文提出了一套公理化框架，旨在为量子理论和一般操作概率理论中的多时间态提供统一的数学基础。（摘要在原文中被截断，后续内容不可见。）",
-        "refs": {
-          "arxiv": "2610.22489",
-          "via": "feed_text",
-          "confidence": "verified"
-        },
-        "llm_summary": "本文针对量子多时间态（multi-time states）的公理化描述展开研究。多时间态最初为将贝叶斯概率推广至量子理论而引入，现已应用于量子因果性、开放系统动力学和宏观实在性检验等领域。现有公理化框架仅适用于马尔可夫动力学，缺乏对非马尔可夫动力学的通用描述，且尚未推广到一般物理理论。本文提出了一套新的公理化框架，试图填补这一空白。",
-        "llm_reason": "量子多时间态公理化框架新进展",
-        "density": "高"
-      },
-      "folded_count": 1,
-      "title": "Multi-Time States in Quantum and Operational Probabilistic Theories: An Axiomatic Framework",
-      "id": "b82bd9b50b6f",
-      "links": [
-        {
-          "title": "Multi-Time States in Quantum and Operational Probabilistic Theories: An Axiomatic Framework",
-          "url": "https://arxiv.org/abs/2610.22489",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 48.6,
-          "published_at": "2026-10-19T04:00:00+00:00"
-        },
-        {
-          "title": "Programmable Preparation of Topological Entangled States",
-          "url": "https://arxiv.org/abs/2610.22738",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 48.6,
-          "published_at": "2026-10-19T04:00:00+00:00"
-        },
-        {
-          "title": "Graphene can hold multiple states of superconductivity, a new study finds",
-          "url": "https://news.mit.edu/2026/graphene-can-hold-multiple-states-of-superconductivity-0629",
-          "source": "MIT News 物理",
-          "score": 42.7,
-          "published_at": "2026-06-29T15:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "states",
-        "graphene",
-        "hold",
-        "multiple",
-        "superconductivity"
-      ],
-      "rank": 2,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 24.5,
-      "status": "关注中"
-    },
     {
       "terms": [
         "air-stable",
@@ -203,7 +24,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-20T01:06:59.180397+00:00",
+      "latest_at": "2026-10-20T15:06:18.142135+00:00",
       "representative": {
         "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
         "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
@@ -223,7 +44,7 @@
           "title": "New monolithic ion trap opens quantum simulations to more researchers",
           "url": "https://phys.org/news/2026-10-monolithic-ion-quantum-simulations.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.3,
+          "score": 59.9,
           "published_at": "2026-10-18T18:00:06+00:00"
         },
         {
@@ -241,352 +62,9 @@
         "monolithic",
         "ion"
       ],
-      "rank": 3,
+      "rank": 1,
       "trend": "flat",
       "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "bounds",
-        "calculations",
-        "defects",
-        "energy",
-        "entropy",
-        "estimation",
-        "high-precision",
-        "improvements",
-        "lose",
-        "near-optimal",
-        "quantum",
-        "reveal",
-        "spin",
-        "tsallis"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-20T01:06:59.180397+00:00",
-      "representative": {
-        "title": "Quantum Tsallis Entropy Estimation: Near-Optimal Bounds and High-Precision Improvements",
-        "url": "https://arxiv.org/abs/2610.22983",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-19T04:00:00+00:00",
-        "score": 47.1,
-        "summary": "arXiv:2610.22983v1 Announce Type: new Abstract: Estimating statistical properties of probability distributions is a fundamental problem in statistics and theoretical computer science. We develop quantum algorithms for estimating the $q$-Tsa",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.22983",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "Quantum Tsallis Entropy Estimation: Near-Optimal Bounds and High-Precision Improvements",
-      "id": "c40c9e8b1b46",
-      "links": [
-        {
-          "title": "Quantum Tsallis Entropy Estimation: Near-Optimal Bounds and High-Precision Improvements",
-          "url": "https://arxiv.org/abs/2610.22983",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-10-19T04:00:00+00:00"
-        },
-        {
-          "title": "Quantum calculations reveal how spin defects lose energy",
-          "url": "https://phys.org/news/2026-10-quantum-reveal-defects-energy.html",
-          "source": "Phys.org 物理新闻",
-          "score": 34.9,
-          "published_at": "2026-10-15T15:40:09+00:00"
-        }
-      ],
-      "top_terms": [
-        "quantum",
-        "calculations",
-        "reveal",
-        "spin",
-        "defects"
-      ],
-      "rank": 4,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "continuous",
-        "entanglement",
-        "genuine",
-        "quantumness",
-        "schwarzschild",
-        "sitter",
-        "spacetime"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature 量子物理",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-20T01:06:59.180397+00:00",
-      "representative": {
-        "title": "Quantumness of Entanglement in Schwarzschild de Sitter Spacetime",
-        "url": "https://arxiv.org/abs/2610.22761",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-19T04:00:00+00:00",
-        "score": 47.1,
-        "summary": "arXiv:2610.22761v1 Announce Type: new Abstract: We investigate genuine multipartite entanglement and genuine tripartite nonlocality of a noisy generalized GHZ state in Schwarzschild-de Sitter spacetime. The genuine multipartite concurrence ",
-        "zh_full": "本文研究了Schwarzschild-de Sitter时空中含噪广义GHZ态的真实多体纠缠和真实三体非局域性。研究采用真实多体并发度（genuine multipartite concurrence）和优化Svetlichny参数来刻画这两种量子关联。结果表明，黑洞事件视界和宇宙学事件视界以不同方式在物理可及和不可及的约化态之间重新分配真实多体纠缠，而Svetlichny违背仅出现在物理可及态中。（摘要在原文中被截断，后续内容不可见。）",
-        "refs": {
-          "arxiv": "2610.22761",
-          "via": "feed_text",
-          "confidence": "verified"
-        },
-        "llm_summary": "本文在Schwarzschild-de Sitter时空中研究含噪广义GHZ态的真实多体纠缠与真实三体非局域性。利用真实多体并发度和优化Svetlichny参数进行刻画，发现黑洞事件视界与宇宙学事件视界对真实多体纠缠的重新分配方式不同，且Svetlichny违背仅出现在物理可及的约化态中。该研究揭示了弯曲时空对量子关联的独特影响。",
-        "llm_reason": "弯曲时空中量子纠缠的非平凡分布",
-        "density": "高"
-      },
-      "folded_count": 1,
-      "title": "Quantumness of Entanglement in Schwarzschild de Sitter Spacetime",
-      "id": "e695b9fa5e7d",
-      "links": [
-        {
-          "title": "Genuine continuous quantumness",
-          "url": "https://www.nature.com/articles/s41534-026-01389-7",
-          "source": "Nature 量子物理",
-          "score": 57.1,
-          "published_at": "2026-10-14T00:00:00+00:00"
-        },
-        {
-          "title": "Quantumness of Entanglement in Schwarzschild de Sitter Spacetime",
-          "url": "https://arxiv.org/abs/2610.22761",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-10-19T04:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "quantumness",
-        "genuine",
-        "continuous",
-        "entanglement",
-        "schwarzschild"
-      ],
-      "rank": 5,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "analogue",
-        "bounds",
-        "continuous-time",
-        "discrimination",
-        "mitigation",
-        "noise",
-        "pure",
-        "quantum",
-        "quantum-assisted",
-        "robustness",
-        "simulation",
-        "states",
-        "unambiguous"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature 量子物理",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-20T01:06:59.180397+00:00",
-      "representative": {
-        "title": "Quantum-Assisted Unambiguous Discrimination of Pure States with Robustness Bounds",
-        "url": "https://arxiv.org/abs/2610.22954",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-19T04:00:00+00:00",
-        "score": 47.1,
-        "summary": "arXiv:2610.22954v1 Announce Type: new Abstract: We propose a hybrid quantum-classical framework for the unambiguous discrimination of pure states by combining the noisy intermediate-scale quantum semidefinite program solver (NSS) with the r",
-        "zh_full": "本文提出了一种混合量子-经典框架，用于纯态的无歧义区分（unambiguous discrimination of pure states）。该框架将噪声中等规模量子半定规划求解器（NSS, noisy intermediate-scale quantum semidefinite program solver）与互逆态表示（reciprocal-state representation）相结合。在NSS方法中，给定的半定规划（SDP）被表示在由选定的试探态（ansatz states）张成的子空间内，所需物理量通过量子线路进行估计，而最终的优化过程则在经典计算机上完成。这种设计使得NSS天然适用于涉及量子线路制备态（circuit-prepared states）的区分问题。论文标题还提及了鲁棒性界限（robustness bounds），但摘要在此处截断，未提供关于该界限的具体推导或数值结果。",
-        "refs": {
-          "arxiv": "2610.22954",
-          "via": "feed_text",
-          "confidence": "verified"
-        },
-        "llm_summary": "本文提出了一种混合量子-经典框架，用于纯态的无歧义区分。该框架将噪声中等规模量子半定规划求解器（NSS）与互逆态表示相结合。NSS将半定规划表示在试探态张成的子空间内，用量子线路估计物理量，经典端完成优化，适用于线路制备态的区分问题。摘要在此处截断，未涉及标题中提到的鲁棒性界限。",
-        "llm_reason": "量子态区分新框架，NSS方法",
-        "density": "高"
-      },
-      "folded_count": 1,
-      "title": "Quantum-Assisted Unambiguous Discrimination of Pure States with Robustness Bounds",
-      "id": "4f6b453bf0e6",
-      "links": [
-        {
-          "title": "Continuous-time noise mitigation in analogue quantum simulation",
-          "url": "https://www.nature.com/articles/s41467-026-78310-5",
-          "source": "Nature 量子物理",
-          "score": 55.8,
-          "published_at": "2026-10-12T00:00:00+00:00"
-        },
-        {
-          "title": "Quantum-Assisted Unambiguous Discrimination of Pure States with Robustness Bounds",
-          "url": "https://arxiv.org/abs/2610.22954",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-10-19T04:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "quantum",
-        "continuous",
-        "noise",
-        "mitigation",
-        "analogue"
-      ],
-      "rank": 6,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "adaptive",
-        "chaos",
-        "circuits",
-        "controlled",
-        "hardware",
-        "prop",
-        "quantum",
-        "theory"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature 量子物理",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-20T01:06:59.180397+00:00",
-      "representative": {
-        "title": "Controlled PROP: Theory and Applications to Quantum Circuits",
-        "url": "https://arxiv.org/abs/2610.23192",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-19T04:00:00+00:00",
-        "score": 47.1,
-        "summary": "arXiv:2610.23192v1 Announce Type: new Abstract: Control is a fundamental concept in quantum and reversible computational models. It enables the conditional application of a transformation to a system, depending on the state of another syste",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.23192",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "Controlled PROP: Theory and Applications to Quantum Circuits",
-      "id": "6c384414b1f0",
-      "links": [
-        {
-          "title": "Order from chaos with adaptive circuits on quantum hardware",
-          "url": "https://www.nature.com/articles/s41567-026-03470-6",
-          "source": "Nature 量子物理",
-          "score": 53.8,
-          "published_at": "2026-10-09T00:00:00+00:00"
-        },
-        {
-          "title": "Controlled PROP: Theory and Applications to Quantum Circuits",
-          "url": "https://arxiv.org/abs/2610.23192",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-10-19T04:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "circuits",
-        "quantum",
-        "chaos",
-        "adaptive",
-        "hardware"
-      ],
-      "rank": 7,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "liouvillian",
-        "non-invertible",
-        "non-reciprocity",
-        "quantum",
-        "symmetry"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature 量子物理",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-20T01:06:59.180397+00:00",
-      "representative": {
-        "title": "Liouvillian Non-Invertible Symmetry",
-        "url": "https://arxiv.org/abs/2610.23111",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-19T04:00:00+00:00",
-        "score": 47.1,
-        "summary": "arXiv:2610.23111v1 Announce Type: new Abstract: Non-invertible symmetries extend conventional symmetries beyond group-like transformations and play an important role in quantum field theory and many-body physics. However, a general framewor",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.23111",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "Liouvillian Non-Invertible Symmetry",
-      "id": "a544cbd60e11",
-      "links": [
-        {
-          "title": "Non-reciprocity in quantum technologies",
-          "url": "https://www.nature.com/articles/s41567-026-03464-4",
-          "source": "Nature 量子物理",
-          "score": 52.5,
-          "published_at": "2026-10-07T00:00:00+00:00"
-        },
-        {
-          "title": "Liouvillian Non-Invertible Symmetry",
-          "url": "https://arxiv.org/abs/2610.23111",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-10-19T04:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "non",
-        "reciprocity",
-        "quantum",
-        "liouvillian",
-        "invertible"
-      ],
-      "rank": 8,
-      "trend": "new",
-      "trendPct": null,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -611,7 +89,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-20T01:06:59.180397+00:00",
+      "latest_at": "2026-10-20T15:06:18.142135+00:00",
       "representative": {
         "title": "New research shows a neutrino laser is impossible",
         "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
@@ -639,7 +117,7 @@
           "title": "Laser pulses bring order to a quantum material's tiny electrical regions",
           "url": "https://phys.org/news/2026-10-laser-pulses-quantum-material-tiny.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.0,
+          "score": 34.7,
           "published_at": "2026-10-15T17:00:07+00:00"
         }
       ],
@@ -650,7 +128,84 @@
         "quantum",
         "tiny"
       ],
-      "rank": 9,
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "analogue",
+        "cern",
+        "continuous",
+        "continuous-time",
+        "gains",
+        "genuine",
+        "improvement",
+        "mitigation",
+        "momentum",
+        "noise",
+        "quantum",
+        "quantumness",
+        "simulation"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "CERN 新闻",
+        "Nature 量子物理"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-10-20T15:06:18.142135+00:00",
+      "representative": {
+        "title": "Continuous Improvement gains momentum at CERN",
+        "url": "https://home.cern/continuous-improvement-gains-momentum-at-cern/",
+        "source": "CERN 新闻",
+        "published_at": "2026-10-14T12:53:51+00:00",
+        "score": 58.6,
+        "summary": "In January, the Continuous Improvement (CI) Team launched the CERNidée portal as one way for the CERN community to share ideas for simplifying processes, improving services and removing obstacles in their daily work. Suggestions arrived at ",
+        "zh_full": "CERN 新闻报道称，CERN 的持续改进（Continuous Improvement, CI）团队于1月推出了 CERNidée 门户，作为 CERN 社区分享简化流程、改进服务和消除日常工作障碍想法的一种方式。在2026年上半年，建议以平均每个 CERN 工作日超过一条的速度提交。持续改进的核心在于将这些想法转化为实际行动。摘要未提供更多关于具体改进项目或实施结果的细节。",
+        "llm_summary": "CERN 于1月推出 CERNidée 门户，供社区提交简化流程、改进服务的建议。2026年上半年建议提交频率超过每个工作日一条。持续改进旨在将这些想法转化为实际改进。",
+        "llm_reason": "CERN 内部流程改进机制与社区参与",
+        "density": "中",
+        "llm_score": 15.0
+      },
+      "folded_count": 1,
+      "title": "Continuous Improvement gains momentum at CERN",
+      "id": "f6a0d9949eba",
+      "links": [
+        {
+          "title": "Continuous Improvement gains momentum at CERN",
+          "url": "https://home.cern/continuous-improvement-gains-momentum-at-cern/",
+          "source": "CERN 新闻",
+          "score": 58.6,
+          "published_at": "2026-10-14T12:53:51+00:00"
+        },
+        {
+          "title": "Genuine continuous quantumness",
+          "url": "https://www.nature.com/articles/s41534-026-01389-7",
+          "source": "Nature 量子物理",
+          "score": 58.2,
+          "published_at": "2026-10-14T00:00:00+00:00"
+        },
+        {
+          "title": "Continuous-time noise mitigation in analogue quantum simulation",
+          "url": "https://www.nature.com/articles/s41467-026-78310-5",
+          "source": "Nature 量子物理",
+          "score": 56.9,
+          "published_at": "2026-10-12T00:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "continuous",
+        "genuine",
+        "quantumness",
+        "noise",
+        "mitigation"
+      ],
+      "rank": 3,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -673,7 +228,7 @@
         "Nature 量子物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-20T01:06:59.180397+00:00",
+      "latest_at": "2026-10-20T15:06:18.142135+00:00",
       "representative": {
         "title": "A new way to watch heat move through electronics",
         "url": "https://news.mit.edu/2026/new-way-watch-heat-move-through-electronics-0806",
@@ -694,7 +249,7 @@
           "title": "Taking the heat off tantalum",
           "url": "https://www.nature.com/articles/s41563-026-02766-5",
           "source": "Nature 量子物理",
-          "score": 53.8,
+          "score": 53.4,
           "published_at": "2026-10-09T00:00:00+00:00"
         },
         {
@@ -712,7 +267,137 @@
         "way",
         "watch"
       ],
-      "rank": 10,
+      "rank": 4,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "dark",
+        "hunt",
+        "matter",
+        "observe",
+        "particle",
+        "wave"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "MIT News 物理",
+        "New Scientist 物理"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-10-20T15:06:18.142135+00:00",
+      "representative": {
+        "title": "On the hunt for dark matter",
+        "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
+        "source": "MIT News 物理",
+        "published_at": "2026-08-11T04:00:00+00:00",
+        "score": 41.2,
+        "summary": "From Broadway to MIT’s Laboratory for Nuclear Science, PhD student Jessica Fry doesn’t do anything halfway. Now she’s hunting for the universe’s most elusive particle.",
+        "zh_full": "MIT News 报道，从百老汇到 MIT 核科学实验室，博士生 Jessica Fry 做事从不半途而废。如今她正在搜寻宇宙中最难以捉摸的粒子——暗物质。",
+        "llm_summary": "MIT 博士生 Jessica Fry 正在搜寻宇宙中最难以捉摸的粒子——暗物质，报道提到她从百老汇到 MIT 核科学实验室的经历。",
+        "llm_reason": "暗物质搜寻人物报道",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "On the hunt for dark matter",
+      "id": "1dc3e2185b16",
+      "links": [
+        {
+          "title": "Will we observe dark matter as a particle or a wave?",
+          "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 56.3,
+          "published_at": "2026-10-13T08:00:00+00:00"
+        },
+        {
+          "title": "On the hunt for dark matter",
+          "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-11T04:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "dark",
+        "matter",
+        "hunt",
+        "observe",
+        "particle"
+      ],
+      "rank": 5,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "assemble",
+        "coexisting",
+        "dark",
+        "electrons",
+        "matter",
+        "phases",
+        "physicists",
+        "possible",
+        "reassemble",
+        "scrambling",
+        "sense",
+        "signal",
+        "watch"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "MIT News 物理",
+        "New Scientist 物理"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-10-20T15:06:18.142135+00:00",
+      "representative": {
+        "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
+        "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
+        "source": "MIT News 物理",
+        "published_at": "2026-08-07T09:00:00+00:00",
+        "score": 41.2,
+        "summary": "The study could help scientists understand how superconductivity and other more complex phenomena emerge in quantum materials.",
+        "zh_full": "（无摘要，仅标题）",
+        "llm_summary": "（无摘要，仅标题）",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
+      "id": "e8fe52bd8930",
+      "links": [
+        {
+          "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
+          "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-07T09:00:00+00:00"
+        },
+        {
+          "title": "Physicists are scrambling to make sense of possible dark matter signal",
+          "url": "https://www.newscientist.com/article/2589737-physicists-are-scrambling-to-make-sense-of-possible-dark-matter-signal/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 41.2,
+          "published_at": "2026-09-18T12:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "physicists",
+        "watch",
+        "electrons",
+        "assemble",
+        "reassemble"
+      ],
+      "rank": 6,
       "trend": "new",
       "trendPct": null,
       "badges": [],

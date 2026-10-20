@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T01:06:59.180397+00:00",
+  "generatedAt": "2026-10-20T15:06:18.142135+00:00",
   "count": 48,
   "dailies": {
     "2026-07-21": {
@@ -6509,7 +6509,7 @@
         "zh_full": "某些量子系统的复杂性极高，即便是最强大的超级计算机也难以模拟其行为。一种解决方案是量子模拟：在实验室中构建一个可控的量子系统，并通过调节使其模拟研究者想要理解的量子系统。据Phys.org报道，一项新的单片离子阱技术有望将量子模拟向更多研究者开放。",
         "reason": "量子模拟新硬件进展",
         "density": "中",
-        "score": 60.3,
+        "score": 59.9,
         "role": "科研",
         "published_at": "2026-10-18T18:00:06+00:00",
         "topic_id": "9312d0f1b7d0",
@@ -6524,7 +6524,7 @@
           "zh_full": "2026年7月28日，CMS实验的核心部件——像素探测器，在成功运行10年后已被成功取出。此次拆卸工作历时一周完成。该像素探测器的首次升级（Phase-1）最初于2010年提出，于2017年初在年末技术停机期间安装。探测器配备了约1800个模块。此次拆卸是通往HiLumi（高亮度）升级的持续工作的一部分。新闻配图展示了CMS前向像素探测器（四分之一部分，含3个半圆盘）拆卸后的近景。",
           "reason": "CMS像素探测器退役，HiLumi升级",
           "density": "高",
-          "score": 51.1,
+          "score": 50.7,
           "role": "科研",
           "published_at": "2026-10-19T09:44:30+00:00",
           "topic_id": null,
@@ -6538,9 +6538,67 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 50.8,
+          "score": 50.4,
           "role": "科研",
           "published_at": "2026-10-19T00:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "X-rays reveal surprisingly long-lived spin waves in copper oxide",
+          "url": "https://phys.org/news/2026-10-rays-reveal-copper-oxide.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Today's computer technology, based on silicon chips, is slowly reaching its physical limits. Components cannot be miniaturized indefinitely, and clock speeds cannot be increased indefinitely. At the same time, huge AI data centers are being",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.5,
+          "role": "科研",
+          "published_at": "2026-10-19T15:40:06+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?",
+          "url": "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/",
+          "source": "Quanta Magazine",
+          "summary": "Unlike other recent AI proofs, this one has been unpacked by human experts. The implications, one mathematician said, are “staggering.” The post AI Proved the Quasi-Riemann Hypothesis. What Happens Now? first appeared on Quanta Magazine",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.5,
+          "role": "科研",
+          "published_at": "2026-10-19T15:40:26+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "flash": [
+        {
+          "title": "A new way to detect stabilizing properties of optical devices",
+          "url": "https://phys.org/news/2026-10-stabilizing-properties-optical-devices.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "In optical fibers, chips and other light-guiding devices, minor defects can scatter photons and disrupt their path. A new study demonstrates a way to reveal properties which, in certain systems, help light wave behavior withstand such flaws",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.1,
+          "role": "科研",
+          "published_at": "2026-10-18T18:00:01+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Physicists prove a long-suspected quantum speed limit for thermalization",
+          "url": "https://phys.org/news/2026-10-physicists-quantum-limit-thermalization.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Whether we are waiting for a car windshield to defrost in winter or a warm drink to cool down, how long it takes for an object to settle into a stable, even temperature within its environment (thermal equilibrium) depends on numerous factor",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.1,
+          "role": "科研",
+          "published_at": "2026-10-18T17:20:01+00:00",
           "topic_id": null,
           "topic_title": null
         },
@@ -6571,9 +6629,7 @@
           "published_at": "2026-10-19T04:00:00+00:00",
           "topic_id": "b709dbd42b25",
           "topic_title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor"
-        }
-      ],
-      "flash": [
+        },
         {
           "title": "Nonequilibrium Dynamical Quantum Phase Transitions in the Extended Agassi Model",
           "url": "https://arxiv.org/abs/2610.23096",
@@ -6769,7 +6825,7 @@
               "zh_full": "某些量子系统的复杂性极高，即便是最强大的超级计算机也难以模拟其行为。一种解决方案是量子模拟：在实验室中构建一个可控的量子系统，并通过调节使其模拟研究者想要理解的量子系统。据Phys.org报道，一项新的单片离子阱技术有望将量子模拟向更多研究者开放。",
               "reason": "量子模拟新硬件进展",
               "density": "中",
-              "score": 60.3,
+              "score": 59.9,
               "role": "科研",
               "published_at": "2026-10-18T18:00:06+00:00",
               "topic_id": "9312d0f1b7d0",
@@ -6792,21 +6848,96 @@
           ]
         },
         {
-          "category": "凝聚态物理",
+          "category": "科研进展",
           "articles": [
             {
-              "title": "Programmable Preparation of Topological Entangled States",
-              "url": "https://arxiv.org/abs/2610.22738",
-              "source": "arXiv quant-ph 论文速递",
-              "summary": "本文研究拓扑光子平台中纠缠态的可编程制备问题。拓扑光子平台利用对称性保护的光学模式实现稳健的量子态生成，但传统方法中纠缠态由晶格几何决定，无法灵活编程。作者提出通过逆向工程方法实现拓扑纠缠态的可编程制备，这对于可扩展量子信息处理、量子网络和光子量子计算具有重要意义。",
-              "zh_full": "可编程地制备纠缠量子态是可扩展量子信息处理、量子网络和光子量子计算的核心需求。拓扑光子平台通过将信息编码在对称性保护的光学模式中，为稳健的量子态生成提供了一条有吸引力的路径，但由此产生的纠缠态通常由晶格几何结构决定，因此缺乏可编程性。本文通过逆向工程方法（inverse engineering）展示了拓扑纠缠态的可编程制备。（摘要在原文中被截断，后续内容不可见。）",
-              "reason": "拓扑纠缠态可编程制备新方法",
+              "title": "CMS pixel detector extracted after 10 years of successful operations",
+              "url": "https://home.cern/cms-pixel-detector-extracted-after-10-years-of-successful-operations/",
+              "source": "CERN 新闻",
+              "summary": "CMS实验的核心部件——像素探测器，在成功运行10年后已被取出，拆卸历时一周。该探测器的Phase-1升级最初于2010年提出，2017年初在年末技术停机期间安装，配备约1800个模块。此次拆卸是通往HiLumi升级的持续工作的一部分。配图展示了前向像素探测器拆卸后的近景。",
+              "zh_full": "2026年7月28日，CMS实验的核心部件——像素探测器，在成功运行10年后已被成功取出。此次拆卸工作历时一周完成。该像素探测器的首次升级（Phase-1）最初于2010年提出，于2017年初在年末技术停机期间安装。探测器配备了约1800个模块。此次拆卸是通往HiLumi（高亮度）升级的持续工作的一部分。新闻配图展示了CMS前向像素探测器（四分之一部分，含3个半圆盘）拆卸后的近景。",
+              "reason": "CMS像素探测器退役，HiLumi升级",
               "density": "高",
-              "score": 48.6,
+              "score": 50.7,
               "role": "科研",
-              "published_at": "2026-10-19T04:00:00+00:00",
-              "topic_id": "b82bd9b50b6f",
-              "topic_title": "Multi-Time States in Quantum and Operational Probabilistic Theories: An Axiomatic Framework"
+              "published_at": "2026-10-19T09:44:30+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Light and mirrors move large quantum computers closer to reality",
+              "url": "https://www.nature.com/articles/d41586-026-03237-2",
+              "source": "Nature 量子物理",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 50.4,
+              "role": "科研",
+              "published_at": "2026-10-19T00:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "其他",
+          "articles": [
+            {
+              "title": "X-rays reveal surprisingly long-lived spin waves in copper oxide",
+              "url": "https://phys.org/news/2026-10-rays-reveal-copper-oxide.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Today's computer technology, based on silicon chips, is slowly reaching its physical limits. Components cannot be miniaturized indefinitely, and clock speeds cannot be increased indefinitely. At the same time, huge AI data centers are being",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.5,
+              "role": "科研",
+              "published_at": "2026-10-19T15:40:06+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?",
+              "url": "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/",
+              "source": "Quanta Magazine",
+              "summary": "Unlike other recent AI proofs, this one has been unpacked by human experts. The implications, one mathematician said, are “staggering.” The post AI Proved the Quasi-Riemann Hypothesis. What Happens Now? first appeared on Quanta Magazine",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.5,
+              "role": "科研",
+              "published_at": "2026-10-19T15:40:26+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "A new way to detect stabilizing properties of optical devices",
+              "url": "https://phys.org/news/2026-10-stabilizing-properties-optical-devices.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "In optical fibers, chips and other light-guiding devices, minor defects can scatter photons and disrupt their path. A new study demonstrates a way to reveal properties which, in certain systems, help light wave behavior withstand such flaws",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.1,
+              "role": "科研",
+              "published_at": "2026-10-18T18:00:01+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Physicists prove a long-suspected quantum speed limit for thermalization",
+              "url": "https://phys.org/news/2026-10-physicists-quantum-limit-thermalization.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Whether we are waiting for a car windshield to defrost in winter or a warm drink to cool down, how long it takes for an object to settle into a stable, even temperature within its environment (thermal equilibrium) depends on numerous factor",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.1,
+              "role": "科研",
+              "published_at": "2026-10-18T17:20:01+00:00",
+              "topic_id": null,
+              "topic_title": null
             }
           ]
         },
@@ -6828,203 +6959,6 @@
               "topic_title": null
             }
           ]
-        },
-        {
-          "category": "统计物理与软物质",
-          "articles": [
-            {
-              "title": "Nonequilibrium Dynamical Quantum Phase Transitions in the Extended Agassi Model",
-              "url": "https://arxiv.org/abs/2610.23096",
-              "source": "arXiv quant-ph 论文速递",
-              "summary": "研究扩展Agassi模型中非平衡动力学量子相变，通过精确对角化考察同能级配对、单极-单极和跨能级配对强度的突然淬火。用Loschmidt回波和返回率函数刻画动力学，发现跨越平衡相边界的淬火在返回率中产生尖峰结构，且随系统尺寸增大呈现非解析性。摘要在有限尺寸标度讨论处截断。",
-              "zh_full": "本文研究了扩展Agassi模型中非平衡动力学量子相变（DQPTs）。研究通过精确对角化方法，考察了同能级配对（Σ）、单极-单极（χ）和跨能级配对（Λ）强度的突然淬火（sudden quenches）后的非平衡动力学。动力学特征通过Loschmidt回波和强度归一化返回率函数进行刻画。跨越平衡相边界的淬火在返回率中产生尖峰状结构（cusp-like structures），并随系统尺寸增大表现出非解析性。摘要在讨论平衡有限尺寸到大尺寸标度时截断。",
-              "reason": "非平衡量子相变，精确对角化",
-              "density": "高",
-              "score": 50.1,
-              "role": "科研",
-              "published_at": "2026-10-19T04:00:00+00:00",
-              "topic_id": "b709dbd42b25",
-              "topic_title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor"
-            }
-          ]
-        },
-        {
-          "category": "科研进展",
-          "articles": [
-            {
-              "title": "CMS pixel detector extracted after 10 years of successful operations",
-              "url": "https://home.cern/cms-pixel-detector-extracted-after-10-years-of-successful-operations/",
-              "source": "CERN 新闻",
-              "summary": "CMS实验的核心部件——像素探测器，在成功运行10年后已被取出，拆卸历时一周。该探测器的Phase-1升级最初于2010年提出，2017年初在年末技术停机期间安装，配备约1800个模块。此次拆卸是通往HiLumi升级的持续工作的一部分。配图展示了前向像素探测器拆卸后的近景。",
-              "zh_full": "2026年7月28日，CMS实验的核心部件——像素探测器，在成功运行10年后已被成功取出。此次拆卸工作历时一周完成。该像素探测器的首次升级（Phase-1）最初于2010年提出，于2017年初在年末技术停机期间安装。探测器配备了约1800个模块。此次拆卸是通往HiLumi（高亮度）升级的持续工作的一部分。新闻配图展示了CMS前向像素探测器（四分之一部分，含3个半圆盘）拆卸后的近景。",
-              "reason": "CMS像素探测器退役，HiLumi升级",
-              "density": "高",
-              "score": 51.1,
-              "role": "科研",
-              "published_at": "2026-10-19T09:44:30+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "Light and mirrors move large quantum computers closer to reality",
-              "url": "https://www.nature.com/articles/d41586-026-03237-2",
-              "source": "Nature 量子物理",
-              "summary": "",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 50.8,
-              "role": "科研",
-              "published_at": "2026-10-19T00:00:00+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor",
-              "url": "https://arxiv.org/abs/2610.22482",
-              "source": "arXiv quant-ph 论文速递",
-              "summary": "本研究利用超导量子处理器，在受挫一维自旋链中探索了Landau理论所禁止的铁磁-价键固体（FM-VBS）相变。通过矩阵乘积态辅助电路制备与量子硬件测量相结合的方法，揭示了长程铁磁关联的抑制。该工作挑战了传统Landau-Ginzburg-Wilson范式，为解禁量子临界性研究提供了新框架。",
-              "zh_full": "在打破不同对称性的相之间发生的直接连续量子相变，对传统的Landau-Ginzburg-Wilson范式提出了挑战，并为解禁量子临界性提供了框架。本研究利用超导量子处理器，在受挫一维自旋链中研究了Landau理论所禁止的铁磁-价键固体（FM-VBS）相变。通过将矩阵乘积态辅助的电路制备与量子硬件测量相结合，研究揭示了长程铁磁关联的抑制现象。",
-              "reason": "量子处理器探索Landau理论禁区相变",
-              "density": "高",
-              "score": 50.1,
-              "role": "科研",
-              "published_at": "2026-10-19T04:00:00+00:00",
-              "topic_id": "b709dbd42b25",
-              "topic_title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor"
-            },
-            {
-              "title": "Metric and Dispersive Dynamics of Phase Perturbations in Bohmian Quantum Mechanics",
-              "url": "https://arxiv.org/abs/2610.22737",
-              "source": "arXiv quant-ph 论文速递",
-              "summary": "本研究在Bohmian量子力学框架下，通过对Madelung变换相关流体动力学方程的线性化，推导了相位扰动的有效度规。研究将此前作者的工作推广为更一般结构，保留了量子势的完整泛函变分并纳入外部经典势，为Bohmian动力学中的相位扰动分析提供了更完整的理论框架。",
-              "zh_full": "通过在Bohmian动力学背景下对Madelung变换相关的流体动力学方程进行线性化，研究者推导出了背景态周围相位扰动的有效度规。研究表明，此前由同一作者获得的度规自然地作为更一般结构的特例出现，在该一般结构中，量子势的完整泛函变分被保留，且可以纳入外部经典势。这一推广保留了量子势的依赖性。",
-              "reason": "Bohmian力学相位扰动度规推广",
-              "density": "高",
-              "score": 50.1,
-              "role": "科研",
-              "published_at": "2026-10-19T04:00:00+00:00",
-              "topic_id": "b709dbd42b25",
-              "topic_title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor"
-            },
-            {
-              "title": "Multi-Time States in Quantum and Operational Probabilistic Theories: An Axiomatic Framework",
-              "url": "https://arxiv.org/abs/2610.22489",
-              "source": "arXiv quant-ph 论文速递",
-              "summary": "本文针对量子多时间态（multi-time states）的公理化描述展开研究。多时间态最初为将贝叶斯概率推广至量子理论而引入，现已应用于量子因果性、开放系统动力学和宏观实在性检验等领域。现有公理化框架仅适用于马尔可夫动力学，缺乏对非马尔可夫动力学的通用描述，且尚未推广到一般物理理论。本文提出了一套新的公理化框架，试图填补这一空白。",
-              "zh_full": "量子态随时间的演化（multi-time states）最初被引入是为了将贝叶斯概率扩展到量子理论中，此后在量子因果性、开放系统动力学以及宏观实在性检验等多个领域得到应用。目前，针对马尔可夫动力学的公理化描述已经存在，但能够容纳非马尔可夫动力学的通用框架仍然缺失。此外，将该框架从量子力学推广到一般物理理论也尚未实现。本文提出了一套公理化框架，旨在为量子理论和一般操作概率理论中的多时间态提供统一的数学基础。（摘要在原文中被截断，后续内容不可见。）",
-              "reason": "量子多时间态公理化框架新进展",
-              "density": "高",
-              "score": 48.6,
-              "role": "科研",
-              "published_at": "2026-10-19T04:00:00+00:00",
-              "topic_id": "b82bd9b50b6f",
-              "topic_title": "Multi-Time States in Quantum and Operational Probabilistic Theories: An Axiomatic Framework"
-            },
-            {
-              "title": "Quantumness of Entanglement in Schwarzschild de Sitter Spacetime",
-              "url": "https://arxiv.org/abs/2610.22761",
-              "source": "arXiv quant-ph 论文速递",
-              "summary": "本文在Schwarzschild-de Sitter时空中研究含噪广义GHZ态的真实多体纠缠与真实三体非局域性。利用真实多体并发度和优化Svetlichny参数进行刻画，发现黑洞事件视界与宇宙学事件视界对真实多体纠缠的重新分配方式不同，且Svetlichny违背仅出现在物理可及的约化态中。该研究揭示了弯曲时空对量子关联的独特影响。",
-              "zh_full": "本文研究了Schwarzschild-de Sitter时空中含噪广义GHZ态的真实多体纠缠和真实三体非局域性。研究采用真实多体并发度（genuine multipartite concurrence）和优化Svetlichny参数来刻画这两种量子关联。结果表明，黑洞事件视界和宇宙学事件视界以不同方式在物理可及和不可及的约化态之间重新分配真实多体纠缠，而Svetlichny违背仅出现在物理可及态中。（摘要在原文中被截断，后续内容不可见。）",
-              "reason": "弯曲时空中量子纠缠的非平凡分布",
-              "density": "高",
-              "score": 47.1,
-              "role": "科研",
-              "published_at": "2026-10-19T04:00:00+00:00",
-              "topic_id": "e695b9fa5e7d",
-              "topic_title": "Quantumness of Entanglement in Schwarzschild de Sitter Spacetime"
-            },
-            {
-              "title": "Quantum-Assisted Unambiguous Discrimination of Pure States with Robustness Bounds",
-              "url": "https://arxiv.org/abs/2610.22954",
-              "source": "arXiv quant-ph 论文速递",
-              "summary": "本文提出了一种混合量子-经典框架，用于纯态的无歧义区分。该框架将噪声中等规模量子半定规划求解器（NSS）与互逆态表示相结合。NSS将半定规划表示在试探态张成的子空间内，用量子线路估计物理量，经典端完成优化，适用于线路制备态的区分问题。摘要在此处截断，未涉及标题中提到的鲁棒性界限。",
-              "zh_full": "本文提出了一种混合量子-经典框架，用于纯态的无歧义区分（unambiguous discrimination of pure states）。该框架将噪声中等规模量子半定规划求解器（NSS, noisy intermediate-scale quantum semidefinite program solver）与互逆态表示（reciprocal-state representation）相结合。在NSS方法中，给定的半定规划（SDP）被表示在由选定的试探态（ansatz states）张成的子空间内，所需物理量通过量子线路进行估计，而最终的优化过程则在经典计算机上完成。这种设计使得NSS天然适用于涉及量子线路制备态（circuit-prepared states）的区分问题。论文标题还提及了鲁棒性界限（robustness bounds），但摘要在此处截断，未提供关于该界限的具体推导或数值结果。",
-              "reason": "量子态区分新框架，NSS方法",
-              "density": "高",
-              "score": 47.1,
-              "role": "科研",
-              "published_at": "2026-10-19T04:00:00+00:00",
-              "topic_id": "4f6b453bf0e6",
-              "topic_title": "Quantum-Assisted Unambiguous Discrimination of Pure States with Robustness Bounds"
-            },
-            {
-              "title": "Quantum Tsallis Entropy Estimation: Near-Optimal Bounds and High-Precision Improvements",
-              "url": "https://arxiv.org/abs/2610.22983",
-              "source": "arXiv quant-ph 论文速递",
-              "summary": "arXiv:2610.22983v1 Announce Type: new Abstract: Estimating statistical properties of probability distributions is a fundamental problem in statistics and theoretical computer science. We develop quantum algorithms for estimating the $q$-Tsa",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 47.1,
-              "role": "科研",
-              "published_at": "2026-10-19T04:00:00+00:00",
-              "topic_id": "c40c9e8b1b46",
-              "topic_title": "Quantum Tsallis Entropy Estimation: Near-Optimal Bounds and High-Precision Improvements"
-            }
-          ]
-        },
-        {
-          "category": "其他",
-          "articles": [
-            {
-              "title": "Physicists prove a long-suspected quantum speed limit for thermalization",
-              "url": "https://phys.org/news/2026-10-physicists-quantum-limit-thermalization.html",
-              "source": "Phys.org 物理新闻",
-              "summary": "Whether we are waiting for a car windshield to defrost in winter or a warm drink to cool down, how long it takes for an object to settle into a stable, even temperature within its environment (thermal equilibrium) depends on numerous factor",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 38.0,
-              "role": "科研",
-              "published_at": "2026-10-18T17:20:01+00:00",
-              "topic_id": "b709dbd42b25",
-              "topic_title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor"
-            },
-            {
-              "title": "X-rays reveal surprisingly long-lived spin waves in copper oxide",
-              "url": "https://phys.org/news/2026-10-rays-reveal-copper-oxide.html",
-              "source": "Phys.org 物理新闻",
-              "summary": "Today's computer technology, based on silicon chips, is slowly reaching its physical limits. Components cannot be miniaturized indefinitely, and clock speeds cannot be increased indefinitely. At the same time, huge AI data centers are being",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 30.7,
-              "role": "科研",
-              "published_at": "2026-10-19T15:40:06+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?",
-              "url": "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/",
-              "source": "Quanta Magazine",
-              "summary": "Unlike other recent AI proofs, this one has been unpacked by human experts. The implications, one mathematician said, are “staggering.” The post AI Proved the Quasi-Riemann Hypothesis. What Happens Now? first appeared on Quanta Magazine",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 30.7,
-              "role": "科研",
-              "published_at": "2026-10-19T15:40:26+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "A new way to detect stabilizing properties of optical devices",
-              "url": "https://phys.org/news/2026-10-stabilizing-properties-optical-devices.html",
-              "source": "Phys.org 物理新闻",
-              "summary": "In optical fibers, chips and other light-guiding devices, minor defects can scatter photons and disrupt their path. A new study demonstrates a way to reveal properties which, in certain systems, help light wave behavior withstand such flaws",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 30.4,
-              "role": "科研",
-              "published_at": "2026-10-18T18:00:01+00:00",
-              "topic_id": null,
-              "topic_title": null
-            }
-          ]
         }
       ],
       "topic_ids": [
@@ -7033,29 +6967,43 @@
         "a91c8f6231b8",
         "b709dbd42b25"
       ],
-      "tocCount": 18,
+      "tocCount": 22,
       "readMinutes": 2,
-      "amended": 3
+      "amended": 20
     },
     "2026-10-20": {
       "date": "2026-10-20",
       "weekday": "周二",
       "label": "2026年10月20日",
       "headline": {
-        "title": "Normally forbidden emissions from graphene could expose quantum fluctuations in incoming light",
-        "url": "https://phys.org/news/2026-10-forbidden-emissions-graphene-expose-quantum.html",
-        "source": "Phys.org 物理新闻",
-        "summary": "Voltage fluctuations, light fluctuations, temperature fluctuations—any fluctuations are troublesome and thus undesirable. They don't just cause discomfort; in engineering and medical applications, they affect the accuracy of measurements or",
+        "title": "Taking the temperature of a cancer cell",
+        "url": "https://www.nature.com/articles/s42254-026-01013-9",
+        "source": "Nature 量子物理",
+        "summary": "",
         "zh_full": null,
         "reason": null,
         "density": null,
-        "score": 51.3,
+        "score": 51.1,
         "role": "科研",
-        "published_at": "2026-10-19T17:40:04+00:00",
+        "published_at": "2026-10-20T00:00:00+00:00",
         "topic_id": null,
         "topic_title": null
       },
       "picks": [
+        {
+          "title": "Normally forbidden emissions from graphene could expose quantum fluctuations in incoming light",
+          "url": "https://phys.org/news/2026-10-forbidden-emissions-graphene-expose-quantum.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Voltage fluctuations, light fluctuations, temperature fluctuations—any fluctuations are troublesome and thus undesirable. They don't just cause discomfort; in engineering and medical applications, they affect the accuracy of measurements or",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 50.9,
+          "role": "科研",
+          "published_at": "2026-10-19T17:40:04+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
         {
           "title": "Are we about to solve the greatest mystery of the neutrino?",
           "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
@@ -7064,12 +7012,28 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 51.3,
+          "score": 50.9,
           "role": "媒体",
           "published_at": "2026-10-19T19:00:00+00:00",
           "topic_id": null,
           "topic_title": null
         },
+        {
+          "title": "A quantum pathway to entropy-free energy transfer",
+          "url": "https://phys.org/news/2026-10-quantum-pathway-entropy-free-energy.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "For scientists, breakthroughs often stem from unexpected turns. A research team led by Oscar Dahlsten, an associate professor in the Department of Physics at City University of Hong Kong (CityUHK), set out to prove a theoretical limitation,",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 34.7,
+          "role": "科研",
+          "published_at": "2026-10-20T15:00:01+00:00",
+          "topic_id": "4bec972cc4eb",
+          "topic_title": "A quantum pathway to entropy-free energy transfer"
+        }
+      ],
+      "flash": [
         {
           "title": "Forgotten particle could answer mystery of why we exist, say physicists",
           "url": "https://phys.org/news/2026-10-forgotten-particle-mystery-physicists.html",
@@ -7078,14 +7042,12 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 30.9,
+          "score": 30.6,
           "role": "科研",
           "published_at": "2026-10-19T23:10:02+00:00",
           "topic_id": null,
           "topic_title": null
-        }
-      ],
-      "flash": [
+        },
         {
           "title": "Scientists redetermine a key strontium frequency with 50 times better precision for quantum technologies",
           "url": "https://phys.org/news/2026-10-scientists-redetermine-key-strontium-frequency.html",
@@ -7094,7 +7056,7 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 30.8,
+          "score": 30.5,
           "role": "科研",
           "published_at": "2026-10-19T17:20:18+00:00",
           "topic_id": null,
@@ -7113,7 +7075,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 51.3,
+              "score": 50.9,
               "role": "媒体",
               "published_at": "2026-10-19T19:00:00+00:00",
               "topic_id": null,
@@ -7132,9 +7094,28 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 51.3,
+              "score": 50.9,
               "role": "科研",
               "published_at": "2026-10-19T17:40:04+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "科研进展",
+          "articles": [
+            {
+              "title": "Taking the temperature of a cancer cell",
+              "url": "https://www.nature.com/articles/s42254-026-01013-9",
+              "source": "Nature 量子物理",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.1,
+              "role": "科研",
+              "published_at": "2026-10-20T00:00:00+00:00",
               "topic_id": null,
               "topic_title": null
             }
@@ -7144,6 +7125,20 @@
           "category": "其他",
           "articles": [
             {
+              "title": "A quantum pathway to entropy-free energy transfer",
+              "url": "https://phys.org/news/2026-10-quantum-pathway-entropy-free-energy.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "For scientists, breakthroughs often stem from unexpected turns. A research team led by Oscar Dahlsten, an associate professor in the Department of Physics at City University of Hong Kong (CityUHK), set out to prove a theoretical limitation,",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 34.7,
+              "role": "科研",
+              "published_at": "2026-10-20T15:00:01+00:00",
+              "topic_id": "4bec972cc4eb",
+              "topic_title": "A quantum pathway to entropy-free energy transfer"
+            },
+            {
               "title": "Forgotten particle could answer mystery of why we exist, say physicists",
               "url": "https://phys.org/news/2026-10-forgotten-particle-mystery-physicists.html",
               "source": "Phys.org 物理新闻",
@@ -7151,7 +7146,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 30.9,
+              "score": 30.6,
               "role": "科研",
               "published_at": "2026-10-19T23:10:02+00:00",
               "topic_id": null,
@@ -7165,7 +7160,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 30.8,
+              "score": 30.5,
               "role": "科研",
               "published_at": "2026-10-19T17:20:18+00:00",
               "topic_id": null,
@@ -7174,9 +7169,12 @@
           ]
         }
       ],
-      "topic_ids": [],
-      "tocCount": 4,
-      "readMinutes": 2
+      "topic_ids": [
+        "4bec972cc4eb"
+      ],
+      "tocCount": 6,
+      "readMinutes": 2,
+      "amended": 0
     }
   }
 }

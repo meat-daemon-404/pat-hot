@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T01:06:59.180397+00:00",
+  "generatedAt": "2026-10-20T15:06:18.142135+00:00",
   "weekStart": "2026-10-14",
   "windowDays": 7,
   "windowStart": "2026-10-14",
@@ -9,44 +9,38 @@
   "prevEnd": "2026-10-13",
   "categoryDelta": [
     {
-      "category": "科研进展",
-      "thisWeek": 1403.8,
-      "lastWeek": 1418.5,
-      "deltaPct": -1.0
+      "category": "其他",
+      "thisWeek": 1318.4,
+      "lastWeek": 430.2,
+      "deltaPct": 206.5
     },
     {
-      "category": "其他",
-      "thisWeek": 1292.9,
-      "lastWeek": 430.2,
-      "deltaPct": 200.5
+      "category": "科研进展",
+      "thisWeek": 1164.0,
+      "lastWeek": 1418.5,
+      "deltaPct": -17.9
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 456.9,
+      "thisWeek": 456.5,
       "lastWeek": 356.6,
-      "deltaPct": 28.1
+      "deltaPct": 28.0
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 356.1,
+      "thisWeek": 355.7,
       "lastWeek": 85.4,
-      "deltaPct": 317.0
+      "deltaPct": 316.5
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 306.8,
+      "thisWeek": 257.8,
       "lastWeek": 297.0,
-      "deltaPct": 3.3
+      "deltaPct": -13.2
     },
     {
       "category": "等离子体",
       "thisWeek": 168.0,
-      "lastWeek": 0,
-      "deltaPct": 100.0
-    },
-    {
-      "category": "统计物理与软物质",
-      "thisWeek": 50.1,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
@@ -71,12 +65,6 @@
       "days": 1
     },
     {
-      "topic_id": "b709dbd42b25",
-      "title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor",
-      "score": 188.3,
-      "days": 1
-    },
-    {
       "topic_id": "1c8548c84167",
       "title": "Investigation of the dosimetric characteristics of real-time silicone/Bi2O3 nanocomposites for the diagnostic level X-rays",
       "score": 124.0,
@@ -86,12 +74,6 @@
       "topic_id": "99dc3bb39eed",
       "title": "Interfacial control and evaporation pinning of nanocapillary filling from ambient to serpentinization temperatures",
       "score": 114.4,
-      "days": 1
-    },
-    {
-      "topic_id": "b82bd9b50b6f",
-      "title": "Multi-Time States in Quantum and Operational Probabilistic Theories: An Axiomatic Framework",
-      "score": 97.2,
       "days": 1
     },
     {
@@ -116,6 +98,18 @@
       "topic_id": "fc61077e5a73",
       "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
       "score": 63.5,
+      "days": 1
+    },
+    {
+      "topic_id": "11e25bee56d4",
+      "title": "The public consultation for the Future Circular Collider (FCC) project generates extensive dialogue with the local communities",
+      "score": 61.9,
+      "days": 1
+    },
+    {
+      "topic_id": "8a821cbdec28",
+      "title": "New research shows a neutrino laser is impossible",
+      "score": 60.5,
       "days": 1
     }
   ],
