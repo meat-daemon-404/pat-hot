@@ -1,16 +1,84 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T15:06:18.142135+00:00",
-  "count": 6,
+  "generatedAt": "2026-10-21T00:38:52.847750+00:00",
+  "count": 5,
   "items": [
     {
-      "id": "9312d0f1b7d0",
-      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+      "id": "77abdba5a228",
+      "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "sources": [
+        "New Scientist 物理",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
+          "url": "https://phys.org/news/2026-10-gun-mystery-high-temperature-superconductivity.html",
+          "source": "Phys.org 物理新闻",
+          "score": 61.0,
+          "published_at": "2026-10-20T20:00:07+00:00"
+        },
+        {
+          "title": "Are we about to solve the greatest mystery of the neutrino?",
+          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 60.3,
+          "published_at": "2026-10-19T19:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "ba97a7431554",
+      "title": "Quantum probability can't be derived without assuming it first",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-20T15:06:18.142135+00:00",
+      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "sources": [
+        "New Scientist 物理",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "Quantum probability can't be derived without assuming it first",
+          "url": "https://phys.org/news/2026-10-quantum-probability-derived-assuming.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.6,
+          "published_at": "2026-10-20T15:50:01+00:00"
+        },
+        {
+          "title": "Could consciousness be quantum?",
+          "url": "https://www.newscientist.com/video/2592247-could-consciousness-be-quantum/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 31.4,
+          "published_at": "2026-10-07T17:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "9312d0f1b7d0",
+      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-10-21T00:38:52.847750+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -20,7 +88,7 @@
           "title": "New monolithic ion trap opens quantum simulations to more researchers",
           "url": "https://phys.org/news/2026-10-monolithic-ion-quantum-simulations.html",
           "source": "Phys.org 物理新闻",
-          "score": 59.9,
+          "score": 59.6,
           "published_at": "2026-10-18T18:00:06+00:00"
         },
         {
@@ -31,118 +99,8 @@
           "published_at": "2026-08-05T15:00:00+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "4721ee460be2",
-      "title": "New research shows a neutrino laser is impossible",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-20T15:06:18.142135+00:00",
-      "sources": [
-        "MIT News 物理",
-        "Phys.org 物理新闻"
-      ],
-      "links": [
-        {
-          "title": "New research shows a neutrino laser is impossible",
-          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-09-02T14:00:00+00:00"
-        },
-        {
-          "title": "Laser pulses bring order to a quantum material's tiny electrical regions",
-          "url": "https://phys.org/news/2026-10-laser-pulses-quantum-material-tiny.html",
-          "source": "Phys.org 物理新闻",
-          "score": 34.7,
-          "published_at": "2026-10-15T17:00:07+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "f6a0d9949eba",
-      "title": "Continuous Improvement gains momentum at CERN",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-20T15:06:18.142135+00:00",
-      "sources": [
-        "CERN 新闻",
-        "Nature 量子物理"
-      ],
-      "links": [
-        {
-          "title": "Continuous Improvement gains momentum at CERN",
-          "url": "https://home.cern/continuous-improvement-gains-momentum-at-cern/",
-          "source": "CERN 新闻",
-          "score": 58.6,
-          "published_at": "2026-10-14T12:53:51+00:00"
-        },
-        {
-          "title": "Genuine continuous quantumness",
-          "url": "https://www.nature.com/articles/s41534-026-01389-7",
-          "source": "Nature 量子物理",
-          "score": 58.2,
-          "published_at": "2026-10-14T00:00:00+00:00"
-        },
-        {
-          "title": "Continuous-time noise mitigation in analogue quantum simulation",
-          "url": "https://www.nature.com/articles/s41467-026-78310-5",
-          "source": "Nature 量子物理",
-          "score": 56.9,
-          "published_at": "2026-10-12T00:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 15.0
-    },
-    {
-      "id": "5f9f135d3c14",
-      "title": "A new way to watch heat move through electronics",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-20T15:06:18.142135+00:00",
-      "sources": [
-        "MIT News 物理",
-        "Nature 量子物理"
-      ],
-      "links": [
-        {
-          "title": "Taking the heat off tantalum",
-          "url": "https://www.nature.com/articles/s41563-026-02766-5",
-          "source": "Nature 量子物理",
-          "score": 53.4,
-          "published_at": "2026-10-09T00:00:00+00:00"
-        },
-        {
-          "title": "A new way to watch heat move through electronics",
-          "url": "https://news.mit.edu/2026/new-way-watch-heat-move-through-electronics-0806",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-06T04:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "down",
+      "trendPct": -100.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -154,7 +112,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-20T15:06:18.142135+00:00",
+      "latestAt": "2026-10-21T00:38:52.847750+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -164,7 +122,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 56.3,
+          "score": 56.0,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
@@ -188,7 +146,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-20T15:06:18.142135+00:00",
+      "latestAt": "2026-10-21T00:38:52.847750+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"

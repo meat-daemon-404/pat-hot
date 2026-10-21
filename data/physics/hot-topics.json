@@ -1,8 +1,126 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T15:06:18.142135+00:00",
-  "count": 6,
+  "generatedAt": "2026-10-21T00:38:52.847750+00:00",
+  "count": 5,
   "items": [
+    {
+      "terms": [
+        "greatest",
+        "high-temperature",
+        "mystery",
+        "neutrino",
+        "smoking",
+        "solve",
+        "superconductivity"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "New Scientist 物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-10-21T00:38:52.847750+00:00",
+      "representative": {
+        "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
+        "url": "https://phys.org/news/2026-10-gun-mystery-high-temperature-superconductivity.html",
+        "source": "Phys.org 物理新闻",
+        "published_at": "2026-10-20T20:00:07+00:00",
+        "score": 61.0,
+        "summary": "Superconductivity has many important practical applications, including creating powerful magnets used in high-resolution medical scans, transporting electricity efficiently and building ultrasensitive measuring devices. Until now, understan",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
+      "id": "77abdba5a228",
+      "links": [
+        {
+          "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
+          "url": "https://phys.org/news/2026-10-gun-mystery-high-temperature-superconductivity.html",
+          "source": "Phys.org 物理新闻",
+          "score": 61.0,
+          "published_at": "2026-10-20T20:00:07+00:00"
+        },
+        {
+          "title": "Are we about to solve the greatest mystery of the neutrino?",
+          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 60.3,
+          "published_at": "2026-10-19T19:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "solve",
+        "mystery",
+        "smoking",
+        "gun",
+        "temperature"
+      ],
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "assuming",
+        "consciousness",
+        "derived",
+        "probability",
+        "quantum"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "New Scientist 物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-10-21T00:38:52.847750+00:00",
+      "representative": {
+        "title": "Quantum probability can't be derived without assuming it first",
+        "url": "https://phys.org/news/2026-10-quantum-probability-derived-assuming.html",
+        "source": "Phys.org 物理新闻",
+        "published_at": "2026-10-20T15:50:01+00:00",
+        "score": 36.6,
+        "summary": "For nearly a century, physicists have relied on the Born rule to calculate the chances of different outcomes when they measure a quantum system. Yet despite decades of effort, nobody has managed to derive the rule from more basic mathematic",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "Quantum probability can't be derived without assuming it first",
+      "id": "ba97a7431554",
+      "links": [
+        {
+          "title": "Quantum probability can't be derived without assuming it first",
+          "url": "https://phys.org/news/2026-10-quantum-probability-derived-assuming.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.6,
+          "published_at": "2026-10-20T15:50:01+00:00"
+        },
+        {
+          "title": "Could consciousness be quantum?",
+          "url": "https://www.newscientist.com/video/2592247-could-consciousness-be-quantum/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 31.4,
+          "published_at": "2026-10-07T17:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "quantum",
+        "probability",
+        "derived",
+        "assuming",
+        "consciousness"
+      ],
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
     {
       "terms": [
         "air-stable",
@@ -18,13 +136,13 @@
         "ultrathin"
       ],
       "source_count": 2,
-      "signal_count": 1,
+      "signal_count": 0,
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
       ],
-      "score": 21.0,
-      "latest_at": "2026-10-20T15:06:18.142135+00:00",
+      "score": 0.0,
+      "latest_at": "2026-10-21T00:38:52.847750+00:00",
       "representative": {
         "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
         "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
@@ -44,7 +162,7 @@
           "title": "New monolithic ion trap opens quantum simulations to more researchers",
           "url": "https://phys.org/news/2026-10-monolithic-ion-quantum-simulations.html",
           "source": "Phys.org 物理新闻",
-          "score": 59.9,
+          "score": 59.6,
           "published_at": "2026-10-18T18:00:06+00:00"
         },
         {
@@ -62,214 +180,9 @@
         "monolithic",
         "ion"
       ],
-      "rank": 1,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "bring",
-        "electrical",
-        "impossible",
-        "laser",
-        "neutrino",
-        "pulses",
-        "quantum",
-        "regions",
-        "research",
-        "tiny"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "MIT News 物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-10-20T15:06:18.142135+00:00",
-      "representative": {
-        "title": "New research shows a neutrino laser is impossible",
-        "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
-        "source": "MIT News 物理",
-        "published_at": "2026-09-02T14:00:00+00:00",
-        "score": 41.2,
-        "summary": "Due to physical and fundamental limitations, an earlier proposal for producing laserlike beams of neutrinos cannot be achieved, scientists report.",
-        "zh_full": "据MIT News报道，科学家报告称，由于物理和根本性限制，此前关于产生类似激光的中微子束的提案无法实现。这项新研究表明，中微子激光是不可能的。",
-        "llm_summary": "科学家报告称，由于物理和根本性限制，此前关于产生类似激光的中微子束的提案无法实现。这项新研究表明，中微子激光是不可能的。",
-        "llm_reason": "中微子激光可行性研究",
-        "density": "中"
-      },
-      "folded_count": 1,
-      "title": "New research shows a neutrino laser is impossible",
-      "id": "4721ee460be2",
-      "links": [
-        {
-          "title": "New research shows a neutrino laser is impossible",
-          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-09-02T14:00:00+00:00"
-        },
-        {
-          "title": "Laser pulses bring order to a quantum material's tiny electrical regions",
-          "url": "https://phys.org/news/2026-10-laser-pulses-quantum-material-tiny.html",
-          "source": "Phys.org 物理新闻",
-          "score": 34.7,
-          "published_at": "2026-10-15T17:00:07+00:00"
-        }
-      ],
-      "top_terms": [
-        "laser",
-        "pulses",
-        "bring",
-        "quantum",
-        "tiny"
-      ],
-      "rank": 2,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "analogue",
-        "cern",
-        "continuous",
-        "continuous-time",
-        "gains",
-        "genuine",
-        "improvement",
-        "mitigation",
-        "momentum",
-        "noise",
-        "quantum",
-        "quantumness",
-        "simulation"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "CERN 新闻",
-        "Nature 量子物理"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-10-20T15:06:18.142135+00:00",
-      "representative": {
-        "title": "Continuous Improvement gains momentum at CERN",
-        "url": "https://home.cern/continuous-improvement-gains-momentum-at-cern/",
-        "source": "CERN 新闻",
-        "published_at": "2026-10-14T12:53:51+00:00",
-        "score": 58.6,
-        "summary": "In January, the Continuous Improvement (CI) Team launched the CERNidée portal as one way for the CERN community to share ideas for simplifying processes, improving services and removing obstacles in their daily work. Suggestions arrived at ",
-        "zh_full": "CERN 新闻报道称，CERN 的持续改进（Continuous Improvement, CI）团队于1月推出了 CERNidée 门户，作为 CERN 社区分享简化流程、改进服务和消除日常工作障碍想法的一种方式。在2026年上半年，建议以平均每个 CERN 工作日超过一条的速度提交。持续改进的核心在于将这些想法转化为实际行动。摘要未提供更多关于具体改进项目或实施结果的细节。",
-        "llm_summary": "CERN 于1月推出 CERNidée 门户，供社区提交简化流程、改进服务的建议。2026年上半年建议提交频率超过每个工作日一条。持续改进旨在将这些想法转化为实际改进。",
-        "llm_reason": "CERN 内部流程改进机制与社区参与",
-        "density": "中",
-        "llm_score": 15.0
-      },
-      "folded_count": 1,
-      "title": "Continuous Improvement gains momentum at CERN",
-      "id": "f6a0d9949eba",
-      "links": [
-        {
-          "title": "Continuous Improvement gains momentum at CERN",
-          "url": "https://home.cern/continuous-improvement-gains-momentum-at-cern/",
-          "source": "CERN 新闻",
-          "score": 58.6,
-          "published_at": "2026-10-14T12:53:51+00:00"
-        },
-        {
-          "title": "Genuine continuous quantumness",
-          "url": "https://www.nature.com/articles/s41534-026-01389-7",
-          "source": "Nature 量子物理",
-          "score": 58.2,
-          "published_at": "2026-10-14T00:00:00+00:00"
-        },
-        {
-          "title": "Continuous-time noise mitigation in analogue quantum simulation",
-          "url": "https://www.nature.com/articles/s41467-026-78310-5",
-          "source": "Nature 量子物理",
-          "score": 56.9,
-          "published_at": "2026-10-12T00:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "continuous",
-        "genuine",
-        "quantumness",
-        "noise",
-        "mitigation"
-      ],
       "rank": 3,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "electronics",
-        "heat",
-        "move",
-        "taking",
-        "tantalum",
-        "watch"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "MIT News 物理",
-        "Nature 量子物理"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-10-20T15:06:18.142135+00:00",
-      "representative": {
-        "title": "A new way to watch heat move through electronics",
-        "url": "https://news.mit.edu/2026/new-way-watch-heat-move-through-electronics-0806",
-        "source": "MIT News 物理",
-        "published_at": "2026-08-06T04:00:00+00:00",
-        "score": 41.2,
-        "summary": "MIT researchers can now precisely measure how heat moves through multilayered materials like computer chips.",
-        "zh_full": "（无摘要，仅标题）MIT研究人员现在能够精确测量热量在多层材料（如计算机芯片）中的传递方式。",
-        "llm_summary": "（无摘要，仅标题）MIT研究人员现在能够精确测量热量在多层材料（如计算机芯片）中的传递方式。",
-        "llm_reason": "热管理测量新进展",
-        "density": "中"
-      },
-      "folded_count": 1,
-      "title": "A new way to watch heat move through electronics",
-      "id": "5f9f135d3c14",
-      "links": [
-        {
-          "title": "Taking the heat off tantalum",
-          "url": "https://www.nature.com/articles/s41563-026-02766-5",
-          "source": "Nature 量子物理",
-          "score": 53.4,
-          "published_at": "2026-10-09T00:00:00+00:00"
-        },
-        {
-          "title": "A new way to watch heat move through electronics",
-          "url": "https://news.mit.edu/2026/new-way-watch-heat-move-through-electronics-0806",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-06T04:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "heat",
-        "taking",
-        "tantalum",
-        "way",
-        "watch"
-      ],
-      "rank": 4,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "down",
+      "trendPct": -100.0,
       "badges": [],
       "heat": 0.0,
       "status": "关注中"
@@ -290,7 +203,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-20T15:06:18.142135+00:00",
+      "latest_at": "2026-10-21T00:38:52.847750+00:00",
       "representative": {
         "title": "On the hunt for dark matter",
         "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
@@ -311,7 +224,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 56.3,
+          "score": 56.0,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
@@ -329,7 +242,7 @@
         "observe",
         "particle"
       ],
-      "rank": 5,
+      "rank": 4,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -359,7 +272,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-20T15:06:18.142135+00:00",
+      "latest_at": "2026-10-21T00:38:52.847750+00:00",
       "representative": {
         "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
         "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
@@ -397,7 +310,7 @@
         "assemble",
         "reassemble"
       ],
-      "rank": 6,
+      "rank": 5,
       "trend": "new",
       "trendPct": null,
       "badges": [],

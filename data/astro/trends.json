@@ -1,69 +1,63 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T15:06:18.142135+00:00",
-  "weekStart": "2026-10-14",
+  "generatedAt": "2026-10-21T00:38:52.847750+00:00",
+  "weekStart": "2026-10-15",
   "windowDays": 7,
-  "windowStart": "2026-10-14",
-  "windowEnd": "2026-10-20",
-  "prevStart": "2026-10-07",
-  "prevEnd": "2026-10-13",
+  "windowStart": "2026-10-15",
+  "windowEnd": "2026-10-21",
+  "prevStart": "2026-10-08",
+  "prevEnd": "2026-10-14",
   "categoryDelta": [
     {
       "category": "深空探测",
-      "thisWeek": 2030.5,
-      "lastWeek": 911.0,
-      "deltaPct": 122.9
+      "thisWeek": 1990.1,
+      "lastWeek": 1159.2,
+      "deltaPct": 71.7
     },
     {
       "category": "其他",
-      "thisWeek": 1475.6,
-      "lastWeek": 1283.5,
-      "deltaPct": 15.0
+      "thisWeek": 1362.4,
+      "lastWeek": 1449.7,
+      "deltaPct": -6.0
     },
     {
       "category": "科研进展",
-      "thisWeek": 1059.4,
+      "thisWeek": 877.1,
       "lastWeek": 622.7,
-      "deltaPct": 70.1
-    },
-    {
-      "category": "星系与宇宙学",
-      "thisWeek": 959.0,
-      "lastWeek": 629.4,
-      "deltaPct": 52.4
+      "deltaPct": 40.9
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 827.2,
-      "lastWeek": 512.2,
-      "deltaPct": 61.5
+      "thisWeek": 818.6,
+      "lastWeek": 535.8,
+      "deltaPct": 52.8
+    },
+    {
+      "category": "星系与宇宙学",
+      "thisWeek": 792.0,
+      "lastWeek": 753.1,
+      "deltaPct": 5.2
     },
     {
       "category": "系外行星",
-      "thisWeek": 171.1,
-      "lastWeek": 0,
-      "deltaPct": 100.0
-    },
-    {
-      "category": "太阳与空间物理",
-      "thisWeek": 167.9,
-      "lastWeek": 192.0,
-      "deltaPct": -12.6
+      "thisWeek": 181.4,
+      "lastWeek": 50.7,
+      "deltaPct": 257.8
     },
     {
       "category": "引力波",
       "thisWeek": 114.3,
       "lastWeek": 0,
       "deltaPct": 100.0
+    },
+    {
+      "category": "太阳与空间物理",
+      "thisWeek": 82.7,
+      "lastWeek": 277.2,
+      "deltaPct": -70.2
     }
   ],
   "newTopics": [
-    {
-      "topic_id": "a4443b62394e",
-      "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
-      "score": 616.0,
-      "days": 1
-    },
     {
       "topic_id": "fbad2169505b",
       "title": "A Distant Supercluster of Galaxies Points To Self-Interacting Dark Matter",
@@ -77,15 +71,15 @@
       "days": 1
     },
     {
-      "topic_id": "f8eb52d75ed5",
+      "topic_id": "b5d0e8e7049f",
       "title": "MMX lifts off to Mars’s moon Phobos",
-      "score": 357.9,
+      "score": 284.3,
       "days": 2
     },
     {
       "topic_id": "8548712ad2e5",
       "title": "Euclid discovers new comet",
-      "score": 196.1,
+      "score": 195.5,
       "days": 2
     },
     {
@@ -95,21 +89,9 @@
       "days": 1
     },
     {
-      "topic_id": "d1add21bb66a",
-      "title": "A trip to Mars could come at a heartbreaking cost",
-      "score": 139.8,
-      "days": 2
-    },
-    {
       "topic_id": "f73fa0faac63",
       "title": "Japan's MMX mission aims to swipe soil samples from Mars's moon Phobos",
       "score": 135.5,
-      "days": 1
-    },
-    {
-      "topic_id": "60a432747714",
-      "title": "The Moon is Still Shrinking as it Cools. That Could Create a Hazard for Lunar Mission.",
-      "score": 122.2,
       "days": 1
     },
     {
@@ -117,6 +99,24 @@
       "title": "Artemis II Heat Shield After Splashdown",
       "score": 120.0,
       "days": 2
+    },
+    {
+      "topic_id": "11c66408e132",
+      "title": "APOD: 2026 October 18 – Sonified: Eagle Nebula Pillars",
+      "score": 117.2,
+      "days": 2
+    },
+    {
+      "topic_id": "adc930b7b577",
+      "title": "'Terror of kings': Why the 1066 appearance of Halley's Comet terrified the medieval world",
+      "score": 114.7,
+      "days": 2
+    },
+    {
+      "topic_id": "e6777b1261a8",
+      "title": "Audible curvaton: modulated phase transition as the origin of large-scale curvature perturbations and gravitational wave anisotropies",
+      "score": 98.5,
+      "days": 1
     }
   ],
   "sustainedTopics": []

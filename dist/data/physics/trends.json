@@ -1,48 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T15:06:18.142135+00:00",
-  "weekStart": "2026-10-14",
+  "generatedAt": "2026-10-21T00:38:52.847750+00:00",
+  "weekStart": "2026-10-15",
   "windowDays": 7,
-  "windowStart": "2026-10-14",
-  "windowEnd": "2026-10-20",
-  "prevStart": "2026-10-07",
-  "prevEnd": "2026-10-13",
+  "windowStart": "2026-10-15",
+  "windowEnd": "2026-10-21",
+  "prevStart": "2026-10-08",
+  "prevEnd": "2026-10-14",
   "categoryDelta": [
     {
       "category": "其他",
-      "thisWeek": 1318.4,
-      "lastWeek": 430.2,
-      "deltaPct": 206.5
+      "thisWeek": 1174.9,
+      "lastWeek": 712.0,
+      "deltaPct": 65.0
     },
     {
       "category": "科研进展",
-      "thisWeek": 1164.0,
-      "lastWeek": 1418.5,
-      "deltaPct": -17.9
-    },
-    {
-      "category": "高能与粒子物理",
-      "thisWeek": 456.5,
-      "lastWeek": 356.6,
-      "deltaPct": 28.0
+      "thisWeek": 930.8,
+      "lastWeek": 1600.6,
+      "deltaPct": -41.8
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 355.7,
-      "lastWeek": 85.4,
-      "deltaPct": 316.5
+      "thisWeek": 278.6,
+      "lastWeek": 162.5,
+      "deltaPct": 71.4
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 257.8,
-      "lastWeek": 297.0,
-      "deltaPct": -13.2
+      "thisWeek": 233.2,
+      "lastWeek": 382.3,
+      "deltaPct": -39.0
+    },
+    {
+      "category": "高能与粒子物理",
+      "thisWeek": 221.8,
+      "lastWeek": 552.6,
+      "deltaPct": -59.9
     },
     {
       "category": "等离子体",
-      "thisWeek": 168.0,
-      "lastWeek": 0,
-      "deltaPct": 100.0
+      "thisWeek": 65.8,
+      "lastWeek": 102.2,
+      "deltaPct": -35.6
     },
     {
       "category": "原子分子与光物理",
@@ -52,12 +52,6 @@
     }
   ],
   "newTopics": [
-    {
-      "topic_id": "81aecc617bfa",
-      "title": "From spin wave to superconducting circuit: A one-way street for quantum information",
-      "score": 538.7,
-      "days": 1
-    },
     {
       "topic_id": "07e022871d50",
       "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
@@ -69,6 +63,12 @@
       "title": "Investigation of the dosimetric characteristics of real-time silicone/Bi2O3 nanocomposites for the diagnostic level X-rays",
       "score": 124.0,
       "days": 1
+    },
+    {
+      "topic_id": "77abdba5a228",
+      "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
+      "score": 121.3,
+      "days": 2
     },
     {
       "topic_id": "99dc3bb39eed",
@@ -83,12 +83,6 @@
       "days": 1
     },
     {
-      "topic_id": "4f98d22ac452",
-      "title": "Storing memory on a chip with flowing water",
-      "score": 68.2,
-      "days": 2
-    },
-    {
       "topic_id": "1b53b99d326d",
       "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
       "score": 65.8,
@@ -101,15 +95,21 @@
       "days": 1
     },
     {
-      "topic_id": "11e25bee56d4",
-      "title": "The public consultation for the Future Circular Collider (FCC) project generates extensive dialogue with the local communities",
-      "score": 61.9,
-      "days": 1
-    },
-    {
       "topic_id": "8a821cbdec28",
       "title": "New research shows a neutrino laser is impossible",
       "score": 60.5,
+      "days": 1
+    },
+    {
+      "topic_id": "115d3dfa3414",
+      "title": "Chaos control with broken symmetries",
+      "score": 60.1,
+      "days": 1
+    },
+    {
+      "topic_id": "1593d1254e7f",
+      "title": "AI helps design new materials that work in the real world",
+      "score": 60.1,
       "days": 1
     }
   ],
