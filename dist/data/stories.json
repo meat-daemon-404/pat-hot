@@ -1,39 +1,220 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T00:38:52.847750+00:00",
+  "generatedAt": "2026-10-21T15:15:43.940625+00:00",
   "count": 10,
   "items": [
     {
-      "id": "fc1fa856c650",
-      "title": "这台“最小闪充车”还有激光雷达!",
+      "id": "4d86eced5fe7",
+      "title": "Allight: A Perfect Photon Collector",
+      "status": "关注中",
+      "heat": 45.5,
+      "sourceCount": 2,
+      "signalCount": 3,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "sources": [
+        "Laser Focus World",
+        "arXiv 光学与光子学 (physics.optics)"
+      ],
+      "links": [
+        {
+          "title": "Allight: A Perfect Photon Collector",
+          "url": "https://arxiv.org/abs/2610.27161",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 66.8,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        },
+        {
+          "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
+          "url": "https://www.laserfocusworld.com/executive-forum/podcast/55411597/podcast-expert-insights-photonics-quantum-computing",
+          "source": "Laser Focus World",
+          "score": 57.2,
+          "published_at": null
+        },
+        {
+          "title": "PODCAST: The Photonics Roundup",
+          "url": "https://www.laserfocusworld.com/resources/podcast/55410296/podcast-the-photonics-roundup",
+          "source": "Laser Focus World",
+          "score": 51.5,
+          "published_at": null
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 55.0
+    },
+    {
+      "id": "59c151cdc5e0",
+      "title": "Nanophotonic Extreme Ultraviolet Polarimeter",
       "status": "关注中",
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
-        "搜狗微信·光电行业 · 有车以后",
-        "搜狗微信·光电行业 · 车动态"
+        "Phys.org 物理新闻",
+        "arXiv 光学与光子学 (physics.optics)"
       ],
       "links": [
         {
-          "title": "这台“最小闪充车”还有激光雷达!",
-          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS0GDPgwOQD2EduqtHXJtTB2owr4G9eTaPVqXa8Fplpd9yN71CHFaKxeCWRvlIuYse01uRnanT3Il-aprvQzziZh0ixnSzr3QG5RcTiJdEnue2XZLog6GSZy4u20grkU_OR6lRO0gjDKGDXBkiKJryZPzDLKpoCSj1dppjZwLc7b0J9cMIGUUuqgnRnnP_wqKR9HJxeJFsPeCMc4icC9jhfs5eBgmN3LoYQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=56AB1DC31430883723227D6C0F4B8134241AC4056AD80D13",
-          "source": "搜狗微信·光电行业 · 有车以后",
-          "score": 65.4,
-          "published_at": "2026-10-20T14:37:47+00:00"
+          "title": "Nanophotonic Extreme Ultraviolet Polarimeter",
+          "url": "https://arxiv.org/abs/2610.27705",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 65.3,
+          "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
-          "title": "零跑A10s上市,最贵黑化钢炮,还有激光雷达",
-          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS0GDPgwOQD2EduqtHXJtTB2owr4G9eTaPVqXa8Fplpd9klebc-D7e491AEJdBKnMN-IxS_tts-zqyqe4bHdHezqXGawHqdADrWiNQEO3Zev54xPfW0fpQtW1F27O2QkRMf1sAhHPFzYvc7KPn5jU1MGLEDZQESB6XA8fmzyciJahlmIni8sWDBcTALVolUpSU10ojedHVBV2V06CET_u5XSfxjh3za6jWA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=56AB1DC31430883723227D6C0F4B8134241AC4056AD80D13",
-          "source": "搜狗微信·光电行业 · 车动态",
-          "score": 65.2,
-          "published_at": "2026-10-20T08:46:51+00:00"
+          "title": "Steering electrons with extreme ultraviolet light—team achieves quantum coherent control",
+          "url": "https://phys.org/news/2026-10-electrons-extreme-ultraviolet-team-quantum.html",
+          "source": "Phys.org 物理新闻",
+          "score": 56.1,
+          "published_at": "2026-10-20T18:00:31+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "af68c467f8b2",
+      "title": "Enhanced orbital-angular-momentum dimensionality and spatial-spectral decoupling in thin-film SPDC",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "sources": [
+        "Laser Focus World",
+        "arXiv 光学与光子学 (physics.optics)"
+      ],
+      "links": [
+        {
+          "title": "Enhanced orbital-angular-momentum dimensionality and spatial-spectral decoupling in thin-film SPDC",
+          "url": "https://arxiv.org/abs/2610.28020",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 65.3,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        },
+        {
+          "title": "Optical imaging and spectroscopy enhance precision agriculture",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
+          "source": "Laser Focus World",
+          "score": 50.1,
+          "published_at": null
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "53ad4f7a22ea",
+      "title": "Experimental demonstration of attosecond hard X-ray pulses",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "sources": [
+        "Nature Photonics",
+        "arXiv 光学与光子学 (physics.optics)"
+      ],
+      "links": [
+        {
+          "title": "Experimental demonstration of attosecond hard X-ray pulses",
+          "url": "https://www.nature.com/articles/s41566-026-02026-7",
+          "source": "Nature Photonics",
+          "score": 69.1,
+          "published_at": "2026-10-20T00:00:00+00:00"
+        },
+        {
+          "title": "Attosecond Quantum Optical Spectroscopy of Topological Materials",
+          "url": "https://arxiv.org/abs/2610.28046",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 65.3,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 67.5
+    },
+    {
+      "id": "a815596da9a5",
+      "title": "Dual Transverse Vortex-Spin-Momentum Locking in Rotating-Wave Structured Light",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "sources": [
+        "Laser Focus World",
+        "arXiv 光学与光子学 (physics.optics)"
+      ],
+      "links": [
+        {
+          "title": "Dual Transverse Vortex-Spin-Momentum Locking in Rotating-Wave Structured Light",
+          "url": "https://arxiv.org/abs/2610.28242",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 65.3,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        },
+        {
+          "title": "Wide-aperture wavefront sensing from thermal imaging",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55408187/wide-aperture-wavefront-sensing-from-thermal-imaging",
+          "source": "Laser Focus World",
+          "score": 55.7,
+          "published_at": null
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "4f180951644b",
+      "title": "Quantum probability can't be derived without assuming it first",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "sources": [
+        "Laser Focus World",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "Quantum probability can't be derived without assuming it first",
+          "url": "https://phys.org/news/2026-10-quantum-probability-derived-assuming.html",
+          "source": "Phys.org 物理新闻",
+          "score": 56.0,
+          "published_at": "2026-10-20T15:50:01+00:00"
+        },
+        {
+          "title": "Quantum dot lasers may unlock next era of AI optical interconnects",
+          "url": "https://www.laserfocusworld.com/lasers-sources/article/55412860/veeco-instruments-inc-quantum-dot-lasers-may-unlock-next-era-of-ai-optical-interconnects",
+          "source": "Laser Focus World",
+          "score": 55.7,
+          "published_at": null
+        }
+      ],
+      "trend": "up",
+      "trendPct": 100.0,
+      "badges": [
+        "rising"
+      ],
       "digest": null,
       "digestTitle": null
     },
@@ -44,7 +225,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
         "C114中国通信网_通信财经"
       ],
@@ -78,123 +259,38 @@
       "digestTitle": null
     },
     {
-      "id": "a74e97d8f49a",
-      "title": "Photonics Hot List: October 16, 2026",
-      "status": "发酵中",
-      "heat": 21.2,
-      "sourceCount": 3,
-      "signalCount": 4,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
-      "sources": [
-        "Laser Focus World",
-        "YouTube·Photonics Media",
-        "YouTube·SPIETV"
-      ],
-      "links": [
-        {
-          "title": "Photonics Hot List: October 16, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
-          "source": "Laser Focus World",
-          "score": 66.5,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 2, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55409170/photonics-hot-list-october-2-2026",
-          "source": "Laser Focus World",
-          "score": 66.5,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: September 25, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55407650/photonics-hot-list-september-25-2026",
-          "source": "Laser Focus World",
-          "score": 66.5,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: September 18, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55406013/photonics-hot-list-september-18-2026",
-          "source": "Laser Focus World",
-          "score": 66.5,
-          "published_at": null
-        },
-        {
-          "title": "A Look Back on Photonics West 2026",
-          "url": "https://www.youtube.com/shorts/ne-cuXI4otA",
-          "source": "YouTube·SPIETV",
-          "score": 64.7,
-          "published_at": "2026-10-16T21:37:37+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 18.5
-    },
-    {
-      "id": "0c3509082488",
-      "title": "Intrinsic backward emission of coherent Raman photons from homogeneous media",
+      "id": "3c8f16647f93",
+      "title": "Single-photon time qubit: Quantum-vacuum control and complementarity of the arrow of time",
       "status": "关注中",
-      "heat": 21.0,
+      "heat": 24.5,
       "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "signalCount": 2,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
-        "Nature Photonics",
-        "Phys.org 物理新闻"
+        "Physics World（关键词过滤）",
+        "arXiv 光学与光子学 (physics.optics)"
       ],
       "links": [
         {
-          "title": "Intrinsic backward emission of coherent Raman photons from homogeneous media",
-          "url": "https://www.nature.com/articles/s41566-026-01995-z",
-          "source": "Nature Photonics",
-          "score": 68.8,
-          "published_at": "2026-10-19T00:00:00+00:00"
+          "title": "Single-photon time qubit: Quantum-vacuum control and complementarity of the arrow of time",
+          "url": "https://arxiv.org/abs/2610.27639",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 66.8,
+          "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
-          "title": "Normally forbidden emissions from graphene could expose quantum fluctuations in incoming light",
-          "url": "https://phys.org/news/2026-10-forbidden-emissions-graphene-expose-quantum.html",
-          "source": "Phys.org 物理新闻",
-          "score": 55.8,
-          "published_at": "2026-10-19T17:40:04+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -50.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 46.0
-    },
-    {
-      "id": "713d32aae883",
-      "title": "Quantum probability can't be derived without assuming it first",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
-      "sources": [
-        "Phys.org 物理新闻",
-        "Physics World（关键词过滤）"
-      ],
-      "links": [
-        {
-          "title": "Quantum probability can't be derived without assuming it first",
-          "url": "https://phys.org/news/2026-10-quantum-probability-derived-assuming.html",
-          "source": "Phys.org 物理新闻",
-          "score": 56.4,
-          "published_at": "2026-10-20T15:50:01+00:00"
+          "title": "Photonic band structure by direct second-kind free-space boundary integral equations",
+          "url": "https://arxiv.org/abs/2610.28494",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 66.8,
+          "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
-          "title": "Using quantum entanglement to probe hidden properties of quarks",
-          "url": "https://physicsworld.com/a/using-quantum-entanglement-to-probe-hidden-properties-of-quarks/",
+          "title": "Single-photon measurements confirm Richard Feynman’s vision of quantum mechanics",
+          "url": "https://physicsworld.com/a/single-photon-measurements-confirm-richard-feynmans-vision-of-quantum-mechanics/",
           "source": "Physics World（关键词过滤）",
-          "score": 52.0,
-          "published_at": "2026-10-07T08:05:41+00:00"
+          "score": 40.6,
+          "published_at": "2026-09-25T08:20:12+00:00"
         }
       ],
       "trend": "new",
@@ -204,167 +300,88 @@
       "digestTitle": null
     },
     {
-      "id": "286e9ea0ded6",
-      "title": "亨通光电上半年净利润31.2亿元 同比增长93.38%",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
-      "sources": [
-        "C114中国通信网_通信财经",
-        "LEDinside 中文"
-      ],
-      "links": [
-        {
-          "title": "亨通光电、腾景科技业绩预增",
-          "url": "https://www.ledinside.cn/fsa/20261019-62821.html",
-          "source": "LEDinside 中文",
-          "score": 54.9,
-          "published_at": "2026-10-19"
-        },
-        {
-          "title": "亨通光电上半年净利润31.2亿元 同比增长93.38%",
-          "url": "https://www.c114.com.cn/news/123/a1316458.html",
-          "source": "C114中国通信网_通信财经",
-          "score": 48.1,
-          "published_at": null
-        }
-      ],
-      "trend": "down",
-      "trendPct": -50.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "569c89c31ce9",
-      "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
-      "sources": [
-        "C114中国通信网_通信财经",
-        "OFweek 光电频道"
-      ],
-      "links": [
-        {
-          "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
-          "url": "https://www.c114.com.cn/news/123/a1316157.html",
-          "source": "C114中国通信网_通信财经",
-          "score": 48.1,
-          "published_at": null
-        },
-        {
-          "title": "融资20亿、供货中际旭创，这家光器件公司IPO了！",
-          "url": "https://optics.ofweek.com/2026-08/ART-8100-2500-30699180.html",
-          "source": "OFweek 光电频道",
-          "score": 43.7,
-          "published_at": "2026-08"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "e5f48246a18c",
-      "title": "精密光纤激光器企业频准激光登陆科创板",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
-      "sources": [
-        "C114中国通信网_IT资讯",
-        "COEMA 中国光电子行业协会"
-      ],
-      "links": [
-        {
-          "title": "精密光纤激光器企业频准激光登陆科创板",
-          "url": "https://www.coema.org.cn/industry/202608/5795.html",
-          "source": "COEMA 中国光电子行业协会",
-          "score": 45.7,
-          "published_at": "2026-08"
-        },
-        {
-          "title": "宇树科技计划登陆科创板 中国移动已投资",
-          "url": "https://www.c114.com.cn/news/212/a1292374.html",
-          "source": "C114中国通信网_IT资讯",
-          "score": 44.5,
-          "published_at": null
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "2788fec2119d",
-      "title": "Optical imaging and spectroscopy enhance precision agriculture",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "id": "57c05bd42c76",
+      "title": "Photonics Hot List: September 25, 2026",
+      "status": "发酵中",
+      "heat": 21.2,
+      "sourceCount": 3,
+      "signalCount": 3,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
         "Laser Focus World",
-        "Physics World（关键词过滤）"
+        "YouTube·Photonics Media",
+        "YouTube·SPIETV"
       ],
       "links": [
         {
-          "title": "Optical imaging and spectroscopy enhance precision agriculture",
-          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
+          "title": "Photonics Hot List: September 25, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55407650/photonics-hot-list-september-25-2026",
           "source": "Laser Focus World",
-          "score": 55.7,
+          "score": 65.0,
           "published_at": null
         },
         {
-          "title": "In situ and operando optical microscopy and spectroscopy: investigating perovskite optoelectronic devices at work",
-          "url": "https://physicsworld.com/a/in-situ-and-operando-optical-microscopy-and-spectroscopy-investigating-perovskite-optoelectronic-devices-at-work/",
-          "source": "Physics World（关键词过滤）",
-          "score": 24.8,
-          "published_at": "2026-09-21T07:13:41+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "c14a1dd718b8",
-      "title": "Are high-power laser diodes ready to power inertial fusion energy?",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
-      "sources": [
-        "Laser Focus World",
-        "YouTube·Photonics Media"
-      ],
-      "links": [
-        {
-          "title": "Are high-power laser diodes ready to power inertial fusion energy?",
-          "url": "https://www.laserfocusworld.com/lasers-sources/article/55410022/leonardo-electronics-us-inc-are-high-power-laser-diodes-ready-to-power-inertial-fusion-energy",
+          "title": "Photonics Hot List: October 16, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
           "source": "Laser Focus World",
-          "score": 55.7,
+          "score": 58.5,
           "published_at": null
         },
         {
-          "title": "Marvel Fusion Launches Laser-Focused Subsidiary",
-          "url": "https://www.youtube.com/shorts/I1r4OdSKioA",
+          "title": "Photonics Hot List: October 2, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55409170/photonics-hot-list-october-2-2026",
+          "source": "Laser Focus World",
+          "score": 58.5,
+          "published_at": null
+        },
+        {
+          "title": "A Look Back on Photonics West 2026",
+          "url": "https://www.youtube.com/shorts/ne-cuXI4otA",
+          "source": "YouTube·SPIETV",
+          "score": 56.5,
+          "published_at": "2026-10-16T21:37:37+00:00"
+        },
+        {
+          "title": "Photonics Spectra Sensing Technologies Summit 2026",
+          "url": "https://www.youtube.com/watch?v=57_odMmja30",
           "source": "YouTube·Photonics Media",
-          "score": 41.7,
-          "published_at": "2026-09-28T15:00:39+00:00"
+          "score": 47.4,
+          "published_at": "2026-10-01T15:00:15+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 15.0
+    },
+    {
+      "id": "0aa014d8c48e",
+      "title": "Controlling Optical Quantum Interference with Plasmonic Metasurfaces",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "sources": [
+        "IEEE Spectrum（关键词过滤）",
+        "arXiv 光学与光子学 (physics.optics)"
+      ],
+      "links": [
+        {
+          "title": "Controlling Optical Quantum Interference with Plasmonic Metasurfaces",
+          "url": "https://arxiv.org/abs/2610.27226",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 65.3,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        },
+        {
+          "title": "Engineering Multipole Resonances in Dielectric Metasurfaces for Transmission, Reflection, and Absorption Control",
+          "url": "https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
+          "source": "IEEE Spectrum（关键词过滤）",
+          "score": 29.0,
+          "published_at": "2026-10-02T10:00:03+00:00"
         }
       ],
       "trend": "new",

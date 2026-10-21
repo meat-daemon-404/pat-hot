@@ -1,19 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T00:38:52.847750+00:00",
+  "generatedAt": "2026-10-21T15:15:43.940625+00:00",
   "count": 10,
   "items": [
     {
-      "id": "b5d0e8e7049f",
-      "title": "MMX lifts off to Mars’s moon Phobos",
+      "id": "feea657299fb",
+      "title": "JAXA's Martian Moons eXploration Mission is on its Way to Mars and Phobos",
       "status": "发酵中",
-      "heat": 60.0,
-      "sourceCount": 5,
+      "heat": 51.5,
+      "sourceCount": 4,
       "signalCount": 4,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
         "Astronomy Magazine",
-        "ESA 空间科学",
         "New Scientist 太空",
         "Phys.org 太空新闻",
         "Universe Today"
@@ -23,57 +22,90 @@
           "title": "JAXA's Martian Moons eXploration Mission is on its Way to Mars and Phobos",
           "url": "https://www.universetoday.com/articles/jaxas-martian-moons-exploration-mission-is-on-its-way-to-mars-and-phobos",
           "source": "Universe Today",
-          "score": 81.5,
+          "score": 71.8,
           "published_at": "2026-10-20T20:09:31+00:00"
         },
         {
           "title": "Japan launches spacecraft to mysterious moons of Mars in a bold mission to bring home soil samples",
           "url": "https://phys.org/news/2026-10-japan-spacecraft-mysterious-moons-mars.html",
           "source": "Phys.org 太空新闻",
-          "score": 81.2,
+          "score": 71.5,
           "published_at": "2026-10-20T09:40:13+00:00"
         },
         {
-          "title": "MMX lifts off to Mars’s moon Phobos",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/MMX_lifts_off_to_Mars_s_moon_Phobos",
-          "source": "ESA 空间科学",
-          "score": 81.2,
-          "published_at": "2026-10-20T07:00:00+00:00"
+          "title": "Japan to launch world-first mission to moon of Mars",
+          "url": "https://phys.org/news/2026-10-japan-world-mission-moon-mars.html",
+          "source": "Phys.org 太空新闻",
+          "score": 71.1,
+          "published_at": "2026-10-19T19:30:01+00:00"
         },
         {
-          "title": "Japan to launch historic round-trip mission to Mars moon",
-          "url": "https://phys.org/news/2026-10-japan-historic-mission-mars-moon.html",
-          "source": "Phys.org 太空新闻",
-          "score": 80.2,
-          "published_at": "2026-10-18T20:20:01+00:00"
+          "title": "Japan is launching a mission to Mars’s largest moon Phobos",
+          "url": "https://www.newscientist.com/article/2594332-japan-is-launching-a-mission-to-marss-largest-moon-phobos/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 69.0,
+          "published_at": "2026-10-16T17:00:00+00:00"
         },
         {
-          "title": "Japan's MMX mission aims to swipe soil samples from Mars's moon Phobos",
-          "url": "https://phys.org/news/2026-10-japan-mmx-mission-aims-swipe.html",
-          "source": "Phys.org 太空新闻",
-          "score": 80.0,
-          "published_at": "2026-10-18T14:00:01+00:00"
+          "title": "Japan sends MMX toward the martian moons",
+          "url": "https://www.astronomy.com/whats-launching-this-week/japan-sends-mmx-toward-the-martian-moons/",
+          "source": "Astronomy Magazine",
+          "score": 42.7,
+          "published_at": "2026-10-19T21:37:51+00:00"
         }
       ],
-      "trend": "up",
-      "trendPct": 16.5,
-      "badges": [
-        "rising"
-      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
       "digest": null,
       "digestTitle": null,
-      "llmScore": 57.5
+      "llmScore": 56.0
     },
     {
-      "id": "8548712ad2e5",
-      "title": "Euclid discovers new comet",
-      "status": "发酵中",
-      "heat": 53.0,
-      "sourceCount": 3,
-      "signalCount": 3,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "id": "47b446159db5",
+      "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
-        "ESA 空间科学",
+        "Astronomy Magazine",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
+          "source": "Astronomy Magazine",
+          "score": 61.1,
+          "published_at": "2026-10-21T13:30:03+00:00"
+        },
+        {
+          "title": "The Moon is Still Shrinking as it Cools. That Could Create a Hazard for Lunar Mission.",
+          "url": "https://www.universetoday.com/articles/the-moon-is-still-shrinking-as-it-cools-that-could-create-a-hazard-for-lunar-mission",
+          "source": "Universe Today",
+          "score": 60.5,
+          "published_at": "2026-10-20T13:56:57+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 12.0
+    },
+    {
+      "id": "dbe8795b3279",
+      "title": "Newly discovered Earth-sized planet may lack an atmosphere",
+      "status": "发酵中",
+      "heat": 35.3,
+      "sourceCount": 3,
+      "signalCount": 2,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "sources": [
+        "MIT News 太空探索",
         "Phys.org 太空新闻",
         "Universe Today"
       ],
@@ -82,64 +114,134 @@
           "title": "The ESA's Euclid Space Telescope Has Discovered A New Comet",
           "url": "https://www.universetoday.com/articles/the-esas-euclid-space-telescope-has-discovered-a-new-comet",
           "source": "Universe Today",
-          "score": 65.2,
+          "score": 64.8,
           "published_at": "2026-10-19T19:56:36+00:00"
         },
         {
           "title": "Euclid discovers its first new comet 810 million miles from Earth",
           "url": "https://phys.org/news/2026-10-euclid-comet-million-miles-earth.html",
           "source": "Phys.org 太空新闻",
-          "score": 65.1,
+          "score": 64.7,
           "published_at": "2026-10-19T17:20:01+00:00"
         },
         {
-          "title": "Euclid discovers new comet",
-          "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_discovers_new_comet",
-          "source": "ESA 空间科学",
-          "score": 65.0,
-          "published_at": "2026-10-19T12:00:00+00:00"
+          "title": "Newly discovered Earth-sized planet may lack an atmosphere",
+          "url": "https://news.mit.edu/2024/newly-discovered-earth-sized-planet-may-lack-atmosphere-0515",
+          "source": "MIT News 太空探索",
+          "score": 27.6,
+          "published_at": "2024-05-15T09:00:00+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 34.5
-    },
-    {
-      "id": "67d61cdc0373",
-      "title": "Cosmic 'hamburger' offers rare edge-on view of where giant planets may take shape",
-      "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
-      "sources": [
-        "Astronomy Magazine",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Cosmic 'hamburger' offers rare edge-on view of where giant planets may take shape",
-          "url": "https://phys.org/news/2026-10-cosmic-hamburger-rare-edge-view.html",
-          "source": "Phys.org 太空新闻",
-          "score": 36.2,
-          "published_at": "2026-10-19T20:20:01+00:00"
-        },
-        {
-          "title": "A hamburger with a tail",
-          "url": "https://www.astronomy.com/picture-of-the-day/photo/a-hamburger-with-a-tail/",
-          "source": "Astronomy Magazine",
-          "score": 36.1,
-          "published_at": "2026-10-19T10:13:02+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null
+    },
+    {
+      "id": "6486ec6e74f2",
+      "title": "Gamma-ray Bursts as Cosmological Probes Calibrated with Strongly Lensed Quasars and Neural Networks",
+      "status": "关注中",
+      "heat": 34.5,
+      "sourceCount": 1,
+      "signalCount": 3,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "sources": [
+        "arXiv astro-ph.CO 论文速递"
+      ],
+      "links": [
+        {
+          "title": "Gamma-ray Bursts as Cosmological Probes Calibrated with Strongly Lensed Quasars and Neural Networks",
+          "url": "https://arxiv.org/abs/2610.27009",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 45.5,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        },
+        {
+          "title": "The Future of Gamma-Ray Bursts as Probes of the Epoch of Reionization in the Era of JWST and the Extremely Large Telescope",
+          "url": "https://arxiv.org/abs/2610.27282",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 45.5,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        },
+        {
+          "title": "Optical and Ultraviolet Emission from the Gas Photoionized by Gaia BH3: Archival Constraints and Predictions for the 2029 Periastron",
+          "url": "https://arxiv.org/abs/2610.27075",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 45.5,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.27009",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
+    },
+    {
+      "id": "68ac1c2985dc",
+      "title": "DDELenS: Tomographic Weak Lensing Simulations with Dynamical Dark Energy",
+      "status": "关注中",
+      "heat": 24.5,
+      "sourceCount": 2,
+      "signalCount": 4,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "sources": [
+        "New Scientist 太空",
+        "arXiv astro-ph.CO 论文速递"
+      ],
+      "links": [
+        {
+          "title": "The telescope that could reveal what dark matter and dark energy are",
+          "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 55.7,
+          "published_at": "2026-10-06T17:00:00+00:00"
+        },
+        {
+          "title": "DDELenS: Tomographic Weak Lensing Simulations with Dynamical Dark Energy",
+          "url": "https://arxiv.org/abs/2610.27088",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 51.8,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        },
+        {
+          "title": "Are Dynamical Dark-Energy Cosmologies Old Enough?",
+          "url": "https://arxiv.org/abs/2610.27209",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 51.8,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        },
+        {
+          "title": "A Natural Dark Matter-Dark Energy Interaction from Axion-Monopole Dynamics",
+          "url": "https://arxiv.org/abs/2610.27059",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 51.8,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        },
+        {
+          "title": "Stability Analysis of Axion Dark Energy Model",
+          "url": "https://arxiv.org/abs/2610.27514",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 51.8,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.27088",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
     },
     {
       "id": "733996c29660",
@@ -148,7 +250,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
         "MIT News 太空探索",
         "Phys.org 太空新闻"
@@ -158,7 +260,7 @@
           "title": "Water as we've never known it: Physicists test water beyond Earth-like conditions",
           "url": "https://phys.org/news/2026-10-weve-physicists-earth-conditions.html",
           "source": "Phys.org 太空新闻",
-          "score": 61.0,
+          "score": 60.6,
           "published_at": "2026-10-20T20:10:02+00:00"
         },
         {
@@ -169,8 +271,8 @@
           "published_at": "2024-03-20T04:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -182,7 +284,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
         "MIT News 太空探索",
         "Phys.org 太空新闻"
@@ -199,12 +301,46 @@
           "title": "Planetary 'twins' Uranus and Neptune may have different origin stories",
           "url": "https://phys.org/news/2026-10-planetary-twins-uranus-neptune-stories.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.3,
+          "score": 36.0,
           "published_at": "2026-10-19T22:40:06+00:00"
         }
       ],
       "trend": "flat",
       "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "67d61cdc0373",
+      "title": "Cosmic 'hamburger' offers rare edge-on view of where giant planets may take shape",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "sources": [
+        "Astronomy Magazine",
+        "Phys.org 太空新闻"
+      ],
+      "links": [
+        {
+          "title": "Cosmic 'hamburger' offers rare edge-on view of where giant planets may take shape",
+          "url": "https://phys.org/news/2026-10-cosmic-hamburger-rare-edge-view.html",
+          "source": "Phys.org 太空新闻",
+          "score": 36.0,
+          "published_at": "2026-10-19T20:20:01+00:00"
+        },
+        {
+          "title": "A hamburger with a tail",
+          "url": "https://www.astronomy.com/picture-of-the-day/photo/a-hamburger-with-a-tail/",
+          "source": "Astronomy Magazine",
+          "score": 35.8,
+          "published_at": "2026-10-19T10:13:02+00:00"
+        }
+      ],
+      "trend": "down",
+      "trendPct": -50.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -216,7 +352,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
         "MIT News 太空探索",
         "Universe Today"
@@ -226,7 +362,7 @@
           "title": "Scientists Use Ancient Rains to Map the Possible Origin Life on Mars",
           "url": "https://www.universetoday.com/articles/scientists-use-ancient-rains-to-map-the-possible-origin-life-on-mars",
           "source": "Universe Today",
-          "score": 62.6,
+          "score": 62.2,
           "published_at": "2026-10-20T23:16:34+00:00"
         },
         {
@@ -244,147 +380,50 @@
           "published_at": "2024-03-04T05:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
     },
     {
-      "id": "df5061c3c12d",
-      "title": "High-orbit satellites could light the way for travel to the moon",
+      "id": "992602440b7a",
+      "title": "Kinematically isolating intracluster light in AS1063: a distinct stellar population tracing the dark matter core",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
-        "MIT News 太空探索",
-        "Universe Today"
+        "Universe Today",
+        "arXiv astro-ph.CO 论文速递"
       ],
       "links": [
         {
-          "title": "The Moon is Still Shrinking as it Cools. That Could Create a Hazard for Lunar Mission.",
-          "url": "https://www.universetoday.com/articles/the-moon-is-still-shrinking-as-it-cools-that-could-create-a-hazard-for-lunar-mission",
+          "title": "A Distant Supercluster of Galaxies Points To Self-Interacting Dark Matter",
+          "url": "https://www.universetoday.com/articles/a-distant-supercluster-of-galaxies-points-to-self-interacting-dark-matter",
           "source": "Universe Today",
-          "score": 60.9,
-          "published_at": "2026-10-20T13:56:57+00:00"
+          "score": 57.8,
+          "published_at": "2026-10-16T14:21:42+00:00"
         },
         {
-          "title": "High-orbit satellites could light the way for travel to the moon",
-          "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
-          "source": "MIT News 太空探索",
-          "score": 41.2,
-          "published_at": "2026-08-10T18:10:00+00:00"
+          "title": "Kinematically isolating intracluster light in AS1063: a distinct stellar population tracing the dark matter core",
+          "url": "https://arxiv.org/abs/2610.28013",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 47.3,
+          "published_at": "2026-10-21T04:00:00+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "a2c130832e93",
-      "title": "Webb captures commotion from nebula’s stellar jets",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
-      "sources": [
-        "ESA 空间科学",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "Webb Captures This Golden Galaxy Cluster in All it's Glory",
-          "url": "https://www.universetoday.com/articles/webb-captures-the-golden-galaxy-cluster-in-all-its-glory",
-          "source": "Universe Today",
-          "score": 60.4,
-          "published_at": "2026-10-19T22:02:00+00:00"
-        },
-        {
-          "title": "Webb captures commotion from nebula’s stellar jets",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Webb_captures_commotion_from_nebula_s_stellar_jets",
-          "source": "ESA 空间科学",
-          "score": 51.5,
-          "published_at": "2026-10-06T13:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "85cdcec24f29",
-      "title": "A galaxy spinning out of sync",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
-      "sources": [
-        "ESA 空间科学",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "New Observations Show How Black Holes Stir Up Material Surrounding A Galaxy",
-          "url": "https://www.universetoday.com/articles/new-observations-show-how-black-holes-stir-up-material-surrounding-a-galaxy",
-          "source": "Universe Today",
-          "score": 60.3,
-          "published_at": "2026-10-19T17:10:49+00:00"
-        },
-        {
-          "title": "A galaxy spinning out of sync",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/A_galaxy_spinning_out_of_sync",
-          "source": "ESA 空间科学",
-          "score": 41.2,
-          "published_at": "2026-09-18T08:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "9d0ce273bf53",
-      "title": "BepiColombo’s Mercury arrival begins - full replay",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
-      "sources": [
-        "Astronomy Magazine",
-        "ESA 空间科学"
-      ],
-      "links": [
-        {
-          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
-          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
-          "source": "Astronomy Magazine",
-          "score": 60.8,
-          "published_at": "2026-10-20T13:09:30+00:00"
-        },
-        {
-          "title": "BepiColombo’s Mercury arrival begins - full replay",
-          "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/09/BepiColombo_s_Mercury_arrival_begins_-_full_replay",
-          "source": "ESA 空间科学",
-          "score": 41.2,
-          "published_at": "2026-09-03T15:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.28013",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
     }
   ]
 }

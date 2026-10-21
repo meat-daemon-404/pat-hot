@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T00:38:52.847750+00:00",
+  "generatedAt": "2026-10-21T15:15:43.940625+00:00",
   "weekStart": "2026-10-15",
   "windowDays": 7,
   "windowStart": "2026-10-15",
@@ -10,21 +10,33 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 3962.2,
+      "thisWeek": 4070.0,
       "lastWeek": 2948.1,
-      "deltaPct": 34.4
+      "deltaPct": 38.1
     },
     {
       "category": "产业与资本",
-      "thisWeek": 3652.2,
+      "thisWeek": 3695.1,
       "lastWeek": 2568.9,
-      "deltaPct": 42.2
+      "deltaPct": 43.8
     },
     {
       "category": "光通信",
-      "thisWeek": 3431.2,
+      "thisWeek": 3484.2,
       "lastWeek": 1855.0,
-      "deltaPct": 85.0
+      "deltaPct": 87.8
+    },
+    {
+      "category": "科研进展",
+      "thisWeek": 3354.3,
+      "lastWeek": 2449.1,
+      "deltaPct": 37.0
+    },
+    {
+      "category": "其他",
+      "thisWeek": 2912.3,
+      "lastWeek": 2897.8,
+      "deltaPct": 0.5
     },
     {
       "category": "通信与算力",
@@ -33,28 +45,16 @@
       "deltaPct": 26.5
     },
     {
-      "category": "科研进展",
-      "thisWeek": 2822.5,
-      "lastWeek": 2449.1,
-      "deltaPct": 15.2
-    },
-    {
-      "category": "其他",
-      "thisWeek": 2779.5,
-      "lastWeek": 2897.8,
-      "deltaPct": -4.1
-    },
-    {
       "category": "光学元件与成像",
-      "thisWeek": 2190.7,
+      "thisWeek": 2488.5,
       "lastWeek": 1434.3,
-      "deltaPct": 52.7
+      "deltaPct": 73.5
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1439.9,
+      "thisWeek": 1078.0,
       "lastWeek": 1302.7,
-      "deltaPct": 10.5
+      "deltaPct": -17.2
     },
     {
       "category": "光电芯片与半导体",
@@ -64,15 +64,15 @@
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 505.2,
+      "thisWeek": 504.8,
       "lastWeek": 399.9,
-      "deltaPct": 26.3
+      "deltaPct": 26.2
     },
     {
       "category": "光伏与新能源",
-      "thisWeek": 0,
+      "thisWeek": 55.7,
       "lastWeek": 221.9,
-      "deltaPct": -100.0
+      "deltaPct": -74.9
     }
   ],
   "newTopics": [
@@ -91,7 +91,7 @@
     {
       "topic_id": "a74e97d8f49a",
       "title": "Photonics Hot List: October 16, 2026",
-      "score": 1084.2,
+      "score": 897.9,
       "days": 5
     },
     {
@@ -113,6 +113,12 @@
       "days": 5
     },
     {
+      "topic_id": "b0bbcd7062bb",
+      "title": "广和通上半年营收37.78亿元增长1.92% 净利润同比下降71.63%",
+      "score": 364.0,
+      "days": 4
+    },
+    {
       "topic_id": "8579455b5d54",
       "title": "华为全联接大会2026全光峰会举办，F5G-A全光网加速AI普惠千行万业",
       "score": 318.5,
@@ -129,12 +135,6 @@
       "title": "三部门关于印发《轻工纺织产业发展“十五五”规划》的通知",
       "score": 298.8,
       "days": 3
-    },
-    {
-      "topic_id": "cf327d1ed4dc",
-      "title": "工业和信息化部等五部门关于组织开展2026年度国家绿色算力设施推荐工作的通知",
-      "score": 283.8,
-      "days": 1
     }
   ],
   "sustainedTopics": [
@@ -148,7 +148,7 @@
       "topic_id": "a74e97d8f49a",
       "title": "Photonics Hot List: October 16, 2026",
       "days": 5,
-      "score": 1084.2
+      "score": 897.9
     },
     {
       "topic_id": "9f8710ab3d29",
@@ -167,12 +167,6 @@
       "title": "欧盟否认重新评估对美国科技巨头调查，但未来走向不明",
       "days": 5,
       "score": 314.0
-    },
-    {
-      "topic_id": "2788fec2119d",
-      "title": "Optical imaging and spectroscopy enhance precision agriculture",
-      "days": 5,
-      "score": 250.5
     },
     {
       "topic_id": "569c89c31ce9",
@@ -197,6 +191,12 @@
       "title": "Doubts cast on ‘superradiant neutrino laser’ proposal",
       "days": 5,
       "score": 167.0
+    },
+    {
+      "topic_id": "8c01b90c3aae",
+      "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
+      "days": 4,
+      "score": 1645.0
     }
   ]
 }

@@ -1,41 +1,82 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T00:38:52.847750+00:00",
-  "count": 5,
+  "generatedAt": "2026-10-21T15:15:43.940625+00:00",
+  "count": 7,
   "items": [
     {
-      "id": "77abdba5a228",
-      "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
+      "id": "1eaca0ec3885",
+      "title": "Physicists trap and tame single particle of antimatter for months",
       "status": "关注中",
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
         "New Scientist 物理",
         "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
-          "url": "https://phys.org/news/2026-10-gun-mystery-high-temperature-superconductivity.html",
+          "title": "Physicists trap and tame single particle of antimatter for months",
+          "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
           "source": "Phys.org 物理新闻",
-          "score": 61.0,
-          "published_at": "2026-10-20T20:00:07+00:00"
+          "score": 61.2,
+          "published_at": "2026-10-21T15:00:10+00:00"
         },
         {
-          "title": "Are we about to solve the greatest mystery of the neutrino?",
-          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "title": "A single antimatter particle was held in a trap for months",
+          "url": "https://www.newscientist.com/article/2594955-a-single-antimatter-particle-was-held-in-a-trap-for-months/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 60.3,
-          "published_at": "2026-10-19T19:00:00+00:00"
+          "score": 61.2,
+          "published_at": "2026-10-21T15:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [
+        "new"
+      ],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "aa0961b20cf8",
+      "title": "R\\'enyi multi-entropy of graph states and the n -> 1 limit",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "sources": [
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
+      ],
+      "links": [
+        {
+          "title": "R\\'enyi multi-entropy of graph states and the n -> 1 limit",
+          "url": "https://arxiv.org/abs/2610.27080",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.4,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        },
+        {
+          "title": "A quantum pathway to entropy-free energy transfer",
+          "url": "https://phys.org/news/2026-10-quantum-pathway-entropy-free-energy.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.3,
+          "published_at": "2026-10-20T15:00:01+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.27080",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
     },
     {
       "id": "ba97a7431554",
@@ -44,7 +85,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
         "New Scientist 物理",
         "Phys.org 物理新闻"
@@ -54,15 +95,49 @@
           "title": "Quantum probability can't be derived without assuming it first",
           "url": "https://phys.org/news/2026-10-quantum-probability-derived-assuming.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.6,
+          "score": 36.3,
           "published_at": "2026-10-20T15:50:01+00:00"
         },
         {
           "title": "Could consciousness be quantum?",
           "url": "https://www.newscientist.com/video/2592247-could-consciousness-be-quantum/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 31.4,
+          "score": 31.1,
           "published_at": "2026-10-07T17:00:00+00:00"
+        }
+      ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "7e7427289fca",
+      "title": "New research shows a neutrino laser is impossible",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "sources": [
+        "MIT News 物理",
+        "New Scientist 物理"
+      ],
+      "links": [
+        {
+          "title": "Are we about to solve the greatest mystery of the neutrino?",
+          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 59.9,
+          "published_at": "2026-10-19T19:00:00+00:00"
+        },
+        {
+          "title": "New research shows a neutrino laser is impossible",
+          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-09-02T14:00:00+00:00"
         }
       ],
       "trend": "new",
@@ -72,13 +147,52 @@
       "digestTitle": null
     },
     {
+      "id": "59c69cec301d",
+      "title": "The next phase of quantum energy science: from mechanisms to applications",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "sources": [
+        "MIT News 物理",
+        "arXiv quant-ph 论文速递"
+      ],
+      "links": [
+        {
+          "title": "The next phase of quantum energy science: from mechanisms to applications",
+          "url": "https://arxiv.org/abs/2610.27165",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.4,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        },
+        {
+          "title": "MIT projects selected for funding under US Department of Energy’s Genesis Mission",
+          "url": "https://news.mit.edu/2026/mit-projects-selected-funding-under-doe-genesis-mission-0723",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-07-23T12:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.27165",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
+    },
+    {
       "id": "9312d0f1b7d0",
       "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
       "status": "关注中",
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -88,7 +202,7 @@
           "title": "New monolithic ion trap opens quantum simulations to more researchers",
           "url": "https://phys.org/news/2026-10-monolithic-ion-quantum-simulations.html",
           "source": "Phys.org 物理新闻",
-          "score": 59.6,
+          "score": 59.2,
           "published_at": "2026-10-18T18:00:06+00:00"
         },
         {
@@ -99,8 +213,8 @@
           "published_at": "2026-08-05T15:00:00+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -112,7 +226,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
+      "latestAt": "2026-10-21T15:15:43.940625+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -122,7 +236,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 56.0,
+          "score": 55.6,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
@@ -131,40 +245,6 @@
           "source": "MIT News 物理",
           "score": 41.2,
           "published_at": "2026-08-11T04:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "e8fe52bd8930",
-      "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-21T00:38:52.847750+00:00",
-      "sources": [
-        "MIT News 物理",
-        "New Scientist 物理"
-      ],
-      "links": [
-        {
-          "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-          "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-07T09:00:00+00:00"
-        },
-        {
-          "title": "Physicists are scrambling to make sense of possible dark matter signal",
-          "url": "https://www.newscientist.com/article/2589737-physicists-are-scrambling-to-make-sense-of-possible-dark-matter-signal/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 41.2,
-          "published_at": "2026-09-18T12:00:00+00:00"
         }
       ],
       "trend": "new",

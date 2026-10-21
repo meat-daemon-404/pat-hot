@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T00:38:52.847750+00:00",
+  "generatedAt": "2026-10-21T15:15:43.940625+00:00",
   "weekStart": "2026-10-15",
   "windowDays": 7,
   "windowStart": "2026-10-15",
@@ -9,34 +9,34 @@
   "prevEnd": "2026-10-14",
   "categoryDelta": [
     {
-      "category": "其他",
-      "thisWeek": 1174.9,
-      "lastWeek": 712.0,
-      "deltaPct": 65.0
+      "category": "科研进展",
+      "thisWeek": 1264.4,
+      "lastWeek": 1600.6,
+      "deltaPct": -21.0
     },
     {
-      "category": "科研进展",
-      "thisWeek": 930.8,
-      "lastWeek": 1600.6,
-      "deltaPct": -41.8
+      "category": "其他",
+      "thisWeek": 1209.1,
+      "lastWeek": 712.0,
+      "deltaPct": 69.8
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 278.6,
+      "thisWeek": 404.3,
       "lastWeek": 162.5,
-      "deltaPct": 71.4
-    },
-    {
-      "category": "凝聚态物理",
-      "thisWeek": 233.2,
-      "lastWeek": 382.3,
-      "deltaPct": -39.0
+      "deltaPct": 148.8
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 221.8,
+      "thisWeek": 343.8,
       "lastWeek": 552.6,
-      "deltaPct": -59.9
+      "deltaPct": -37.8
+    },
+    {
+      "category": "凝聚态物理",
+      "thisWeek": 260.5,
+      "lastWeek": 382.3,
+      "deltaPct": -31.9
     },
     {
       "category": "等离子体",
@@ -65,16 +65,34 @@
       "days": 1
     },
     {
-      "topic_id": "77abdba5a228",
-      "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
-      "score": 121.3,
-      "days": 2
+      "topic_id": "1eaca0ec3885",
+      "title": "Physicists trap and tame single particle of antimatter for months",
+      "score": 122.4,
+      "days": 1
     },
     {
       "topic_id": "99dc3bb39eed",
       "title": "Interfacial control and evaporation pinning of nanocapillary filling from ambient to serpentinization temperatures",
       "score": 114.4,
       "days": 1
+    },
+    {
+      "topic_id": "5f0573946c70",
+      "title": "Quantum algorithm for high-dimensional nonlinear stochastic differential equations based on Carleman linearization",
+      "score": 88.0,
+      "days": 1
+    },
+    {
+      "topic_id": "c12690a88ade",
+      "title": "Polynomial-Time Classical Simulation of BosonSampling under Any Constant-Fraction Photon Loss",
+      "score": 88.0,
+      "days": 1
+    },
+    {
+      "topic_id": "aa0961b20cf8",
+      "title": "R\\'enyi multi-entropy of graph states and the n -> 1 limit",
+      "score": 83.7,
+      "days": 2
     },
     {
       "topic_id": "17ca9ae6241f",
@@ -92,24 +110,6 @@
       "topic_id": "fc61077e5a73",
       "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
       "score": 63.5,
-      "days": 1
-    },
-    {
-      "topic_id": "8a821cbdec28",
-      "title": "New research shows a neutrino laser is impossible",
-      "score": 60.5,
-      "days": 1
-    },
-    {
-      "topic_id": "115d3dfa3414",
-      "title": "Chaos control with broken symmetries",
-      "score": 60.1,
-      "days": 1
-    },
-    {
-      "topic_id": "1593d1254e7f",
-      "title": "AI helps design new materials that work in the real world",
-      "score": 60.1,
       "days": 1
     }
   ],
