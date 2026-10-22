@@ -1,17 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T15:15:43.940625+00:00",
-  "count": 7,
+  "generatedAt": "2026-10-22T00:42:58.384922+00:00",
+  "count": 10,
   "items": [
     {
-      "id": "1eaca0ec3885",
-      "title": "Physicists trap and tame single particle of antimatter for months",
-      "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "id": "42ea9b847d4c",
+      "title": "A single antimatter particle in a cage opens door to ‘revolutionary’ physics",
+      "status": "发酵中",
+      "heat": 53.0,
+      "sourceCount": 3,
+      "signalCount": 3,
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
+        "Nature Physics 学科聚合",
         "New Scientist 物理",
         "Phys.org 物理新闻"
       ],
@@ -20,51 +21,90 @@
           "title": "Physicists trap and tame single particle of antimatter for months",
           "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
           "source": "Phys.org 物理新闻",
-          "score": 61.2,
+          "score": 65.7,
           "published_at": "2026-10-21T15:00:10+00:00"
         },
         {
           "title": "A single antimatter particle was held in a trap for months",
           "url": "https://www.newscientist.com/article/2594955-a-single-antimatter-particle-was-held-in-a-trap-for-months/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 61.2,
+          "score": 65.7,
           "published_at": "2026-10-21T15:00:00+00:00"
+        },
+        {
+          "title": "A single antimatter particle in a cage opens door to ‘revolutionary’ physics",
+          "url": "https://www.nature.com/articles/d41586-026-03342-2",
+          "source": "Nature Physics 学科聚合",
+          "score": 65.3,
+          "published_at": "2026-10-21T00:00:00+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
-      "badges": [
-        "new"
-      ],
+      "badges": [],
       "digest": null,
       "digestTitle": null
     },
     {
-      "id": "aa0961b20cf8",
-      "title": "R\\'enyi multi-entropy of graph states and the n -> 1 limit",
+      "id": "e8e68bc23d26",
+      "title": "Interpretable AI reveals hidden structure in nuclear masses",
       "status": "关注中",
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
-        "Phys.org 物理新闻",
+        "Nature Physics 学科聚合",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "Interpretable AI reveals hidden structure in nuclear masses",
+          "url": "https://www.nature.com/articles/s44488-026-00017-9",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.5,
+          "published_at": "2026-10-21T00:00:00+00:00"
+        },
+        {
+          "title": "A hidden rivalry between two quantum states at the heart of superconductors",
+          "url": "https://phys.org/news/2026-10-hidden-rivalry-quantum-states-heart.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.3,
+          "published_at": "2026-10-20T22:00:07+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "464d4b8c0d97",
+      "title": "Low-nonlinearity advantage of hollow-core fiber for wavelength multiplexing of quantum entanglement and classical DWDM signals",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
+      "sources": [
+        "Nature Physics 学科聚合",
         "arXiv quant-ph 论文速递"
       ],
       "links": [
         {
-          "title": "R\\'enyi multi-entropy of graph states and the n -> 1 limit",
-          "url": "https://arxiv.org/abs/2610.27080",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.4,
-          "published_at": "2026-10-21T04:00:00+00:00"
+          "title": "Effects of waveguide tube geometry and surrounding medium conditions on acoustic emission signal attenuation",
+          "url": "https://www.nature.com/articles/s41598-026-76871-5",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.5,
+          "published_at": "2026-10-21T00:00:00+00:00"
         },
         {
-          "title": "A quantum pathway to entropy-free energy transfer",
-          "url": "https://phys.org/news/2026-10-quantum-pathway-entropy-free-energy.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.3,
-          "published_at": "2026-10-20T15:00:01+00:00"
+          "title": "Low-nonlinearity advantage of hollow-core fiber for wavelength multiplexing of quantum entanglement and classical DWDM signals",
+          "url": "https://arxiv.org/abs/2610.27540",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.1,
+          "published_at": "2026-10-21T04:00:00+00:00"
         }
       ],
       "trend": "new",
@@ -73,7 +113,99 @@
       "digest": null,
       "digestTitle": null,
       "refs": {
-        "arxiv": "2610.27080",
+        "arxiv": "2610.27540",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
+    },
+    {
+      "id": "b1e518f5ca4f",
+      "title": "Quantum algorithm for high-dimensional nonlinear stochastic differential equations based on Carleman linearization",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
+      "sources": [
+        "Nature Physics 学科聚合",
+        "arXiv quant-ph 论文速递"
+      ],
+      "links": [
+        {
+          "title": "Quantum state smoothing for tracking optical quantum dynamics and recovering purity and squeezing",
+          "url": "https://www.nature.com/articles/s41534-026-01390-0",
+          "source": "Nature Physics 学科聚合",
+          "score": 62.0,
+          "published_at": "2026-10-21T00:00:00+00:00"
+        },
+        {
+          "title": "Quantitative relationship between coupled structural dynamics and collective order in the original Vicsek model",
+          "url": "https://www.nature.com/articles/s42005-026-02933-9",
+          "source": "Nature Physics 学科聚合",
+          "score": 61.3,
+          "published_at": "2026-10-20T00:00:00+00:00"
+        },
+        {
+          "title": "Quantum algorithm for high-dimensional nonlinear stochastic differential equations based on Carleman linearization",
+          "url": "https://arxiv.org/abs/2610.27416",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 48.6,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.27416",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
+    },
+    {
+      "id": "535376e07d5c",
+      "title": "Concurrent Entanglement Purification Scheduling in Dynamic Quantum Networks",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
+      "sources": [
+        "Nature Physics 学科聚合",
+        "arXiv quant-ph 论文速递"
+      ],
+      "links": [
+        {
+          "title": "Configuration dependent crosstalk amplification in superconducting quantum processors",
+          "url": "https://www.nature.com/articles/s41598-026-70466-w",
+          "source": "Nature Physics 学科聚合",
+          "score": 62.0,
+          "published_at": "2026-10-21T00:00:00+00:00"
+        },
+        {
+          "title": "Multi-scale higher-order contagion dynamics in complex networks",
+          "url": "https://www.nature.com/articles/s42005-026-02864-5",
+          "source": "Nature Physics 学科聚合",
+          "score": 61.3,
+          "published_at": "2026-10-20T00:00:00+00:00"
+        },
+        {
+          "title": "Concurrent Entanglement Purification Scheduling in Dynamic Quantum Networks",
+          "url": "https://arxiv.org/abs/2610.26900",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 48.6,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.26900",
         "via": "feed_text",
         "confidence": "verified"
       }
@@ -85,7 +217,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "New Scientist 物理",
         "Phys.org 物理新闻"
@@ -95,53 +227,19 @@
           "title": "Quantum probability can't be derived without assuming it first",
           "url": "https://phys.org/news/2026-10-quantum-probability-derived-assuming.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.3,
+          "score": 36.2,
           "published_at": "2026-10-20T15:50:01+00:00"
         },
         {
           "title": "Could consciousness be quantum?",
           "url": "https://www.newscientist.com/video/2592247-could-consciousness-be-quantum/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 31.1,
+          "score": 31.0,
           "published_at": "2026-10-07T17:00:00+00:00"
         }
       ],
       "trend": "flat",
       "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "7e7427289fca",
-      "title": "New research shows a neutrino laser is impossible",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
-      "sources": [
-        "MIT News 物理",
-        "New Scientist 物理"
-      ],
-      "links": [
-        {
-          "title": "Are we about to solve the greatest mystery of the neutrino?",
-          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 59.9,
-          "published_at": "2026-10-19T19:00:00+00:00"
-        },
-        {
-          "title": "New research shows a neutrino laser is impossible",
-          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-09-02T14:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -153,7 +251,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "MIT News 物理",
         "arXiv quant-ph 论文速递"
@@ -163,7 +261,7 @@
           "title": "The next phase of quantum energy science: from mechanisms to applications",
           "url": "https://arxiv.org/abs/2610.27165",
           "source": "arXiv quant-ph 论文速递",
-          "score": 47.4,
+          "score": 47.1,
           "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
@@ -174,8 +272,8 @@
           "published_at": "2026-07-23T12:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -186,31 +284,70 @@
       }
     },
     {
-      "id": "9312d0f1b7d0",
-      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+      "id": "d6fb419637b2",
+      "title": "R\\'enyi multi-entropy of graph states and the n -> 1 limit",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
+      "sources": [
+        "MIT News 物理",
+        "arXiv quant-ph 论文速递"
+      ],
+      "links": [
+        {
+          "title": "R\\'enyi multi-entropy of graph states and the n -> 1 limit",
+          "url": "https://arxiv.org/abs/2610.27080",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.1,
+          "published_at": "2026-10-21T04:00:00+00:00"
+        },
+        {
+          "title": "Graphene can hold multiple states of superconductivity, a new study finds",
+          "url": "https://news.mit.edu/2026/graphene-can-hold-multiple-states-of-superconductivity-0629",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-06-29T15:00:00+00:00"
+        }
+      ],
+      "trend": "down",
+      "trendPct": -50.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.27080",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
+    },
+    {
+      "id": "28bff6063ff9",
+      "title": "Direct observation of the Lindhard continuum using resonant inelastic X-ray scattering",
       "status": "关注中",
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
-        "MIT News 物理",
+        "Nature Physics 学科聚合",
         "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "New monolithic ion trap opens quantum simulations to more researchers",
-          "url": "https://phys.org/news/2026-10-monolithic-ion-quantum-simulations.html",
-          "source": "Phys.org 物理新闻",
-          "score": 59.2,
-          "published_at": "2026-10-18T18:00:06+00:00"
+          "title": "Direct observation of the Lindhard continuum using resonant inelastic X-ray scattering",
+          "url": "https://www.nature.com/articles/s41467-026-78503-y",
+          "source": "Nature Physics 学科聚合",
+          "score": 59.8,
+          "published_at": "2026-10-20T00:00:00+00:00"
         },
         {
-          "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-          "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-05T15:00:00+00:00"
+          "title": "X-rays reveal surprisingly long-lived spin waves in copper oxide",
+          "url": "https://phys.org/news/2026-10-rays-reveal-copper-oxide.html",
+          "source": "Phys.org 物理新闻",
+          "score": 35.7,
+          "published_at": "2026-10-19T15:40:06+00:00"
         }
       ],
       "trend": "new",
@@ -220,31 +357,31 @@
       "digestTitle": null
     },
     {
-      "id": "1dc3e2185b16",
-      "title": "On the hunt for dark matter",
+      "id": "9312d0f1b7d0",
+      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
       "status": "关注中",
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "MIT News 物理",
-        "New Scientist 物理"
+        "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "Will we observe dark matter as a particle or a wave?",
-          "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 55.6,
-          "published_at": "2026-10-13T08:00:00+00:00"
+          "title": "New monolithic ion trap opens quantum simulations to more researchers",
+          "url": "https://phys.org/news/2026-10-monolithic-ion-quantum-simulations.html",
+          "source": "Phys.org 物理新闻",
+          "score": 59.0,
+          "published_at": "2026-10-18T18:00:06+00:00"
         },
         {
-          "title": "On the hunt for dark matter",
-          "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
+          "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+          "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
           "source": "MIT News 物理",
           "score": 41.2,
-          "published_at": "2026-08-11T04:00:00+00:00"
+          "published_at": "2026-08-05T15:00:00+00:00"
         }
       ],
       "trend": "new",

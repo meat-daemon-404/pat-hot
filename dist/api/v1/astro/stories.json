@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T15:15:43.940625+00:00",
+  "generatedAt": "2026-10-22T00:42:58.384922+00:00",
   "count": 10,
   "items": [
     {
-      "id": "feea657299fb",
-      "title": "JAXA's Martian Moons eXploration Mission is on its Way to Mars and Phobos",
+      "id": "407af64f963d",
+      "title": "MMX lifts off to Mars’s moon Phobos",
       "status": "发酵中",
-      "heat": 51.5,
+      "heat": 48.0,
       "sourceCount": 4,
-      "signalCount": 4,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "signalCount": 3,
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "Astronomy Magazine",
-        "New Scientist 太空",
+        "ESA 空间科学",
         "Phys.org 太空新闻",
         "Universe Today"
       ],
@@ -22,36 +22,36 @@
           "title": "JAXA's Martian Moons eXploration Mission is on its Way to Mars and Phobos",
           "url": "https://www.universetoday.com/articles/jaxas-martian-moons-exploration-mission-is-on-its-way-to-mars-and-phobos",
           "source": "Universe Today",
-          "score": 71.8,
+          "score": 73.0,
           "published_at": "2026-10-20T20:09:31+00:00"
         },
         {
           "title": "Japan launches spacecraft to mysterious moons of Mars in a bold mission to bring home soil samples",
           "url": "https://phys.org/news/2026-10-japan-spacecraft-mysterious-moons-mars.html",
           "source": "Phys.org 太空新闻",
-          "score": 71.5,
+          "score": 72.7,
           "published_at": "2026-10-20T09:40:13+00:00"
+        },
+        {
+          "title": "MMX lifts off to Mars’s moon Phobos",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/MMX_lifts_off_to_Mars_s_moon_Phobos",
+          "source": "ESA 空间科学",
+          "score": 72.7,
+          "published_at": "2026-10-20T07:00:00+00:00"
         },
         {
           "title": "Japan to launch world-first mission to moon of Mars",
           "url": "https://phys.org/news/2026-10-japan-world-mission-moon-mars.html",
           "source": "Phys.org 太空新闻",
-          "score": 71.1,
+          "score": 72.4,
           "published_at": "2026-10-19T19:30:01+00:00"
         },
         {
-          "title": "Japan is launching a mission to Mars’s largest moon Phobos",
-          "url": "https://www.newscientist.com/article/2594332-japan-is-launching-a-mission-to-marss-largest-moon-phobos/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 69.0,
-          "published_at": "2026-10-16T17:00:00+00:00"
-        },
-        {
-          "title": "Japan sends MMX toward the martian moons",
-          "url": "https://www.astronomy.com/whats-launching-this-week/japan-sends-mmx-toward-the-martian-moons/",
-          "source": "Astronomy Magazine",
-          "score": 42.7,
-          "published_at": "2026-10-19T21:37:51+00:00"
+          "title": "Mars moon lander set to launch on 19 October",
+          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
+          "source": "ESA 空间科学",
+          "score": 68.1,
+          "published_at": "2026-10-13T12:00:00+00:00"
         }
       ],
       "trend": "new",
@@ -59,77 +59,34 @@
       "badges": [],
       "digest": null,
       "digestTitle": null,
-      "llmScore": 56.0
+      "llmScore": 59.0
     },
     {
-      "id": "47b446159db5",
-      "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+      "id": "d85aab47b980",
+      "title": "For students with their sights set on space medicine, a new community takes flight",
       "status": "关注中",
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
-      "sources": [
-        "Astronomy Magazine",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
-          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
-          "source": "Astronomy Magazine",
-          "score": 61.1,
-          "published_at": "2026-10-21T13:30:03+00:00"
-        },
-        {
-          "title": "The Moon is Still Shrinking as it Cools. That Could Create a Hazard for Lunar Mission.",
-          "url": "https://www.universetoday.com/articles/the-moon-is-still-shrinking-as-it-cools-that-could-create-a-hazard-for-lunar-mission",
-          "source": "Universe Today",
-          "score": 60.5,
-          "published_at": "2026-10-20T13:56:57+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 12.0
-    },
-    {
-      "id": "dbe8795b3279",
-      "title": "Newly discovered Earth-sized planet may lack an atmosphere",
-      "status": "发酵中",
-      "heat": 35.3,
-      "sourceCount": 3,
-      "signalCount": 2,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "MIT News 太空探索",
-        "Phys.org 太空新闻",
-        "Universe Today"
+        "Phys.org 太空新闻"
       ],
       "links": [
         {
-          "title": "The ESA's Euclid Space Telescope Has Discovered A New Comet",
-          "url": "https://www.universetoday.com/articles/the-esas-euclid-space-telescope-has-discovered-a-new-comet",
-          "source": "Universe Today",
-          "score": 64.8,
-          "published_at": "2026-10-19T19:56:36+00:00"
-        },
-        {
-          "title": "Euclid discovers its first new comet 810 million miles from Earth",
-          "url": "https://phys.org/news/2026-10-euclid-comet-million-miles-earth.html",
-          "source": "Phys.org 太空新闻",
-          "score": 64.7,
-          "published_at": "2026-10-19T17:20:01+00:00"
-        },
-        {
-          "title": "Newly discovered Earth-sized planet may lack an atmosphere",
-          "url": "https://news.mit.edu/2024/newly-discovered-earth-sized-planet-may-lack-atmosphere-0515",
+          "title": "For students with their sights set on space medicine, a new community takes flight",
+          "url": "https://news.mit.edu/2026/mit-doctors-without-gravity-takes-flight-1021",
           "source": "MIT News 太空探索",
-          "score": 27.6,
-          "published_at": "2024-05-15T09:00:00+00:00"
+          "score": 36.6,
+          "published_at": "2026-10-21T20:40:00+00:00"
+        },
+        {
+          "title": "Using eyedrops in space—wearable patch offers a new approach",
+          "url": "https://phys.org/news/2026-10-eyedrops-space-wearable-patch-approach.html",
+          "source": "Phys.org 太空新闻",
+          "score": 36.2,
+          "published_at": "2026-10-20T21:00:04+00:00"
         }
       ],
       "trend": "new",
@@ -139,13 +96,82 @@
       "digestTitle": null
     },
     {
+      "id": "636655253159",
+      "title": "Webb Captures Stars in the Early Stages of Life in a Nearby Stellar Nursery",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
+      "sources": [
+        "Astronomy Magazine",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "Webb Captures Stars in the Early Stages of Life in a Nearby Stellar Nursery",
+          "url": "https://www.universetoday.com/articles/webb-captures-stars-in-the-early-stages-of-life-in-a-nearby-stellar-nursery",
+          "source": "Universe Today",
+          "score": 61.0,
+          "published_at": "2026-10-21T20:36:44+00:00"
+        },
+        {
+          "title": "JWST tours Orion’s hidden stellar nursery",
+          "url": "https://www.astronomy.com/science/jwst-tours-orions-hidden-stellar-nursery/",
+          "source": "Astronomy Magazine",
+          "score": 60.3,
+          "published_at": "2026-10-20T16:36:55+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "47b446159db5",
+      "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
+      "sources": [
+        "Astronomy Magazine",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
+          "source": "Astronomy Magazine",
+          "score": 60.9,
+          "published_at": "2026-10-21T13:30:03+00:00"
+        },
+        {
+          "title": "The Moon is Still Shrinking as it Cools. That Could Create a Hazard for Lunar Mission.",
+          "url": "https://www.universetoday.com/articles/the-moon-is-still-shrinking-as-it-cools-that-could-create-a-hazard-for-lunar-mission",
+          "source": "Universe Today",
+          "score": 60.2,
+          "published_at": "2026-10-20T13:56:57+00:00"
+        }
+      ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 12.0
+    },
+    {
       "id": "6486ec6e74f2",
       "title": "Gamma-ray Bursts as Cosmological Probes Calibrated with Strongly Lensed Quasars and Neural Networks",
       "status": "关注中",
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "arXiv astro-ph.CO 论文速递"
       ],
@@ -154,26 +180,26 @@
           "title": "Gamma-ray Bursts as Cosmological Probes Calibrated with Strongly Lensed Quasars and Neural Networks",
           "url": "https://arxiv.org/abs/2610.27009",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.5,
+          "score": 45.3,
           "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
           "title": "The Future of Gamma-Ray Bursts as Probes of the Epoch of Reionization in the Era of JWST and the Extremely Large Telescope",
           "url": "https://arxiv.org/abs/2610.27282",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.5,
+          "score": 45.3,
           "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
           "title": "Optical and Ultraviolet Emission from the Gas Photoionized by Gaia BH3: Archival Constraints and Predictions for the 2029 Periastron",
           "url": "https://arxiv.org/abs/2610.27075",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.5,
+          "score": 45.3,
           "published_at": "2026-10-21T04:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -184,57 +210,51 @@
       }
     },
     {
-      "id": "68ac1c2985dc",
+      "id": "b33ac41ad55c",
       "title": "DDELenS: Tomographic Weak Lensing Simulations with Dynamical Dark Energy",
       "status": "关注中",
-      "heat": 24.5,
-      "sourceCount": 2,
+      "heat": 34.5,
+      "sourceCount": 1,
       "signalCount": 4,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
-        "New Scientist 太空",
         "arXiv astro-ph.CO 论文速递"
       ],
       "links": [
         {
-          "title": "The telescope that could reveal what dark matter and dark energy are",
-          "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 55.7,
-          "published_at": "2026-10-06T17:00:00+00:00"
-        },
-        {
           "title": "DDELenS: Tomographic Weak Lensing Simulations with Dynamical Dark Energy",
           "url": "https://arxiv.org/abs/2610.27088",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 51.8,
+          "score": 46.8,
           "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
           "title": "Are Dynamical Dark-Energy Cosmologies Old Enough?",
           "url": "https://arxiv.org/abs/2610.27209",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 51.8,
+          "score": 46.8,
           "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
           "title": "A Natural Dark Matter-Dark Energy Interaction from Axion-Monopole Dynamics",
           "url": "https://arxiv.org/abs/2610.27059",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 51.8,
+          "score": 46.8,
           "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
           "title": "Stability Analysis of Axion Dark Energy Model",
           "url": "https://arxiv.org/abs/2610.27514",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 51.8,
+          "score": 46.8,
           "published_at": "2026-10-21T04:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
+      "trend": "up",
+      "trendPct": 40.8,
+      "badges": [
+        "rising"
+      ],
       "digest": null,
       "digestTitle": null,
       "refs": {
@@ -250,7 +270,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "MIT News 太空探索",
         "Phys.org 太空新闻"
@@ -260,7 +280,7 @@
           "title": "Water as we've never known it: Physicists test water beyond Earth-like conditions",
           "url": "https://phys.org/news/2026-10-weve-physicists-earth-conditions.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.6,
+          "score": 60.4,
           "published_at": "2026-10-20T20:10:02+00:00"
         },
         {
@@ -278,140 +298,31 @@
       "digestTitle": null
     },
     {
-      "id": "29fe77358c84",
-      "title": "Scientists pin down the origins of the moon’s tenuous atmosphere",
+      "id": "398b9e7dca03",
+      "title": "Japan is launching a mission to Mars’s largest moon Phobos",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
-        "MIT News 太空探索",
+        "New Scientist 太空",
         "Phys.org 太空新闻"
       ],
       "links": [
         {
-          "title": "Scientists pin down the origins of the moon’s tenuous atmosphere",
-          "url": "https://news.mit.edu/2024/scientists-pin-down-moons-tenuous-atmosphere-origins-0802",
-          "source": "MIT News 太空探索",
-          "score": 41.2,
-          "published_at": "2024-08-02T18:00:00+00:00"
+          "title": "Japan is launching a mission to Mars’s largest moon Phobos",
+          "url": "https://www.newscientist.com/article/2594332-japan-is-launching-a-mission-to-marss-largest-moon-phobos/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 57.6,
+          "published_at": "2026-10-16T17:00:00+00:00"
         },
         {
-          "title": "Planetary 'twins' Uranus and Neptune may have different origin stories",
-          "url": "https://phys.org/news/2026-10-planetary-twins-uranus-neptune-stories.html",
+          "title": "Aurora supercomputer powers two of the largest cosmological simulations to date",
+          "url": "https://phys.org/news/2026-10-aurora-supercomputer-powers-largest-cosmological.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.0,
-          "published_at": "2026-10-19T22:40:06+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "67d61cdc0373",
-      "title": "Cosmic 'hamburger' offers rare edge-on view of where giant planets may take shape",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
-      "sources": [
-        "Astronomy Magazine",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Cosmic 'hamburger' offers rare edge-on view of where giant planets may take shape",
-          "url": "https://phys.org/news/2026-10-cosmic-hamburger-rare-edge-view.html",
-          "source": "Phys.org 太空新闻",
-          "score": 36.0,
-          "published_at": "2026-10-19T20:20:01+00:00"
-        },
-        {
-          "title": "A hamburger with a tail",
-          "url": "https://www.astronomy.com/picture-of-the-day/photo/a-hamburger-with-a-tail/",
-          "source": "Astronomy Magazine",
-          "score": 35.8,
-          "published_at": "2026-10-19T10:13:02+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -50.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "d1b2b867f5a7",
-      "title": "Study: Rocks from Mars’ Jezero Crater, which likely predate life on Earth, contain signs of water",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
-      "sources": [
-        "MIT News 太空探索",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "Scientists Use Ancient Rains to Map the Possible Origin Life on Mars",
-          "url": "https://www.universetoday.com/articles/scientists-use-ancient-rains-to-map-the-possible-origin-life-on-mars",
-          "source": "Universe Today",
-          "score": 62.2,
-          "published_at": "2026-10-20T23:16:34+00:00"
-        },
-        {
-          "title": "Study: Rocks from Mars’ Jezero Crater, which likely predate life on Earth, contain signs of water",
-          "url": "https://news.mit.edu/2024/study-mars-jezero-crater-rocks-contain-signs-of-water-0814",
-          "source": "MIT News 太空探索",
-          "score": 42.7,
-          "published_at": "2024-08-14T15:00:00+00:00"
-        },
-        {
-          "title": "Study determines the original orientations of rocks drilled on Mars",
-          "url": "https://news.mit.edu/2024/study-determines-original-orientations-rocks-drilled-mars-0304",
-          "source": "MIT News 太空探索",
-          "score": 42.7,
-          "published_at": "2024-03-04T05:00:00+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "992602440b7a",
-      "title": "Kinematically isolating intracluster light in AS1063: a distinct stellar population tracing the dark matter core",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
-      "sources": [
-        "Universe Today",
-        "arXiv astro-ph.CO 论文速递"
-      ],
-      "links": [
-        {
-          "title": "A Distant Supercluster of Galaxies Points To Self-Interacting Dark Matter",
-          "url": "https://www.universetoday.com/articles/a-distant-supercluster-of-galaxies-points-to-self-interacting-dark-matter",
-          "source": "Universe Today",
-          "score": 57.8,
-          "published_at": "2026-10-16T14:21:42+00:00"
-        },
-        {
-          "title": "Kinematically isolating intracluster light in AS1063: a distinct stellar population tracing the dark matter core",
-          "url": "https://arxiv.org/abs/2610.28013",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 47.3,
-          "published_at": "2026-10-21T04:00:00+00:00"
+          "score": 36.2,
+          "published_at": "2026-10-20T20:00:14+00:00"
         }
       ],
       "trend": "new",
@@ -419,11 +330,76 @@
       "badges": [],
       "digest": null,
       "digestTitle": null,
-      "refs": {
-        "arxiv": "2610.28013",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
+      "llmScore": 45.5
+    },
+    {
+      "id": "cff3cee55829",
+      "title": "How Flare Ribbons Reveal Hidden Solar Explosions on the Sun",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
+      "sources": [
+        "New Scientist 太空",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "How Flare Ribbons Reveal Hidden Solar Explosions on the Sun",
+          "url": "https://www.universetoday.com/articles/how-flare-ribbons-reveal-hidden-solar-explosions-on-the-sun",
+          "source": "Universe Today",
+          "score": 61.1,
+          "published_at": "2026-10-21T23:18:19+00:00"
+        },
+        {
+          "title": "The telescope that could reveal what dark matter and dark energy are",
+          "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 50.9,
+          "published_at": "2026-10-06T17:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 26.0
+    },
+    {
+      "id": "874f50f99e0a",
+      "title": "Solar Orbiter tracks origin of mysterious magnetic switchbacks",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
+      "sources": [
+        "ESA 空间科学",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "Solar Orbiter Traces Giant Magnetic Switchbacks Directly Back to the Sun",
+          "url": "https://www.universetoday.com/articles/solar-orbiter-traces-giant-magnetic-switchbacks-directly-back-to-the-sun",
+          "source": "Universe Today",
+          "score": 60.9,
+          "published_at": "2026-10-21T15:43:19+00:00"
+        },
+        {
+          "title": "Solar Orbiter tracks origin of mysterious magnetic switchbacks",
+          "url": "https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter/Solar_Orbiter_tracks_origin_of_mysterious_magnetic_switchbacks",
+          "source": "ESA 空间科学",
+          "score": 52.1,
+          "published_at": "2026-10-08T09:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
     }
   ]
 }

@@ -1,69 +1,63 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T15:15:43.940625+00:00",
-  "weekStart": "2026-10-15",
+  "generatedAt": "2026-10-22T00:42:58.384922+00:00",
+  "weekStart": "2026-10-16",
   "windowDays": 7,
-  "windowStart": "2026-10-15",
-  "windowEnd": "2026-10-21",
-  "prevStart": "2026-10-08",
-  "prevEnd": "2026-10-14",
+  "windowStart": "2026-10-16",
+  "windowEnd": "2026-10-22",
+  "prevStart": "2026-10-09",
+  "prevEnd": "2026-10-15",
   "categoryDelta": [
     {
       "category": "深空探测",
-      "thisWeek": 1997.2,
-      "lastWeek": 1159.2,
-      "deltaPct": 72.3
+      "thisWeek": 1809.6,
+      "lastWeek": 1238.4,
+      "deltaPct": 46.1
     },
     {
       "category": "其他",
-      "thisWeek": 1445.3,
-      "lastWeek": 1449.7,
-      "deltaPct": -0.3
+      "thisWeek": 1527.6,
+      "lastWeek": 1492.6,
+      "deltaPct": 2.3
     },
     {
       "category": "科研进展",
-      "thisWeek": 1242.5,
-      "lastWeek": 622.7,
-      "deltaPct": 99.5
+      "thisWeek": 1059.6,
+      "lastWeek": 799.1,
+      "deltaPct": 32.6
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 1142.9,
-      "lastWeek": 753.1,
-      "deltaPct": 51.8
+      "thisWeek": 933.3,
+      "lastWeek": 946.4,
+      "deltaPct": -1.4
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 952.9,
-      "lastWeek": 535.8,
-      "deltaPct": 77.8
-    },
-    {
-      "category": "系外行星",
-      "thisWeek": 181.0,
-      "lastWeek": 50.7,
-      "deltaPct": 257.0
+      "thisWeek": 799.3,
+      "lastWeek": 800.3,
+      "deltaPct": -0.1
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 133.8,
+      "thisWeek": 255.5,
       "lastWeek": 277.2,
-      "deltaPct": -51.7
+      "deltaPct": -7.8
+    },
+    {
+      "category": "系外行星",
+      "thisWeek": 180.8,
+      "lastWeek": 50.7,
+      "deltaPct": 256.6
     },
     {
       "category": "引力波",
-      "thisWeek": 114.3,
-      "lastWeek": 0,
-      "deltaPct": 100.0
+      "thisWeek": 0,
+      "lastWeek": 114.3,
+      "deltaPct": -100.0
     }
   ],
   "newTopics": [
-    {
-      "topic_id": "fbad2169505b",
-      "title": "A Distant Supercluster of Galaxies Points To Self-Interacting Dark Matter",
-      "score": 534.3,
-      "days": 1
-    },
     {
       "topic_id": "2c320511f7ff",
       "title": "Astronomer leads global team on NASA mission to create unprecedented view of the early universe",
@@ -71,15 +65,15 @@
       "days": 1
     },
     {
-      "topic_id": "feea657299fb",
-      "title": "JAXA's Martian Moons eXploration Mission is on its Way to Mars and Phobos",
-      "score": 250.0,
-      "days": 2
+      "topic_id": "b33ac41ad55c",
+      "title": "DDELenS: Tomographic Weak Lensing Simulations with Dynamical Dark Energy",
+      "score": 187.2,
+      "days": 1
     },
     {
-      "topic_id": "68ac1c2985dc",
-      "title": "DDELenS: Tomographic Weak Lensing Simulations with Dynamical Dark Energy",
-      "score": 207.2,
+      "topic_id": "feea657299fb",
+      "title": "JAXA's Martian Moons eXploration Mission is on its Way to Mars and Phobos",
+      "score": 178.2,
       "days": 1
     },
     {
@@ -91,7 +85,7 @@
     {
       "topic_id": "6486ec6e74f2",
       "title": "Gamma-ray Bursts as Cosmological Probes Calibrated with Strongly Lensed Quasars and Neural Networks",
-      "score": 136.5,
+      "score": 135.9,
       "days": 1
     },
     {
@@ -109,7 +103,13 @@
     {
       "topic_id": "47b446159db5",
       "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
-      "score": 121.6,
+      "score": 121.4,
+      "days": 2
+    },
+    {
+      "topic_id": "636655253159",
+      "title": "Webb Captures Stars in the Early Stages of Life in a Nearby Stellar Nursery",
+      "score": 121.3,
       "days": 2
     },
     {

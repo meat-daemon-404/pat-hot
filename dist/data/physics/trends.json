@@ -1,42 +1,42 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T15:15:43.940625+00:00",
-  "weekStart": "2026-10-15",
+  "generatedAt": "2026-10-22T00:42:58.384922+00:00",
+  "weekStart": "2026-10-16",
   "windowDays": 7,
-  "windowStart": "2026-10-15",
-  "windowEnd": "2026-10-21",
-  "prevStart": "2026-10-08",
-  "prevEnd": "2026-10-14",
+  "windowStart": "2026-10-16",
+  "windowEnd": "2026-10-22",
+  "prevStart": "2026-10-09",
+  "prevEnd": "2026-10-15",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1264.4,
-      "lastWeek": 1600.6,
-      "deltaPct": -21.0
+      "thisWeek": 1282.4,
+      "lastWeek": 1637.2,
+      "deltaPct": -21.7
     },
     {
       "category": "其他",
-      "thisWeek": 1209.1,
-      "lastWeek": 712.0,
-      "deltaPct": 69.8
-    },
-    {
-      "category": "量子信息与计算",
-      "thisWeek": 404.3,
-      "lastWeek": 162.5,
-      "deltaPct": 148.8
-    },
-    {
-      "category": "高能与粒子物理",
-      "thisWeek": 343.8,
-      "lastWeek": 552.6,
-      "deltaPct": -37.8
+      "thisWeek": 1111.2,
+      "lastWeek": 966.6,
+      "deltaPct": 15.0
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 260.5,
-      "lastWeek": 382.3,
-      "deltaPct": -31.9
+      "thisWeek": 403.2,
+      "lastWeek": 453.4,
+      "deltaPct": -11.1
+    },
+    {
+      "category": "高能与粒子物理",
+      "thisWeek": 317.1,
+      "lastWeek": 604.9,
+      "deltaPct": -47.6
+    },
+    {
+      "category": "量子信息与计算",
+      "thisWeek": 227.1,
+      "lastWeek": 343.8,
+      "deltaPct": -33.9
     },
     {
       "category": "等离子体",
@@ -53,9 +53,9 @@
   ],
   "newTopics": [
     {
-      "topic_id": "07e022871d50",
-      "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
-      "score": 239.2,
+      "topic_id": "42ea9b847d4c",
+      "title": "A single antimatter particle in a cage opens door to ‘revolutionary’ physics",
+      "score": 196.7,
       "days": 1
     },
     {
@@ -65,40 +65,34 @@
       "days": 1
     },
     {
-      "topic_id": "1eaca0ec3885",
-      "title": "Physicists trap and tame single particle of antimatter for months",
-      "score": 122.4,
-      "days": 1
-    },
-    {
       "topic_id": "99dc3bb39eed",
       "title": "Interfacial control and evaporation pinning of nanocapillary filling from ambient to serpentinization temperatures",
       "score": 114.4,
       "days": 1
     },
     {
-      "topic_id": "5f0573946c70",
+      "topic_id": "b1e518f5ca4f",
       "title": "Quantum algorithm for high-dimensional nonlinear stochastic differential equations based on Carleman linearization",
-      "score": 88.0,
+      "score": 110.6,
       "days": 1
     },
     {
-      "topic_id": "c12690a88ade",
-      "title": "Polynomial-Time Classical Simulation of BosonSampling under Any Constant-Fraction Photon Loss",
-      "score": 88.0,
+      "topic_id": "e8e68bc23d26",
+      "title": "Interpretable AI reveals hidden structure in nuclear masses",
+      "score": 96.8,
       "days": 1
     },
     {
-      "topic_id": "aa0961b20cf8",
-      "title": "R\\'enyi multi-entropy of graph states and the n -> 1 limit",
-      "score": 83.7,
+      "topic_id": "70f929637d2f",
+      "title": "Perovskite laser maintains stable performance over 400 million pulses",
+      "score": 69.3,
+      "days": 1
+    },
+    {
+      "topic_id": "735e34acdafc",
+      "title": "Ultrafast light can control ferromagnetism without relying on heating",
+      "score": 68.8,
       "days": 2
-    },
-    {
-      "topic_id": "17ca9ae6241f",
-      "title": "From spin wave to superconducting circuit: A one-way street for quantum information",
-      "score": 71.0,
-      "days": 1
     },
     {
       "topic_id": "1b53b99d326d",
@@ -110,6 +104,12 @@
       "topic_id": "fc61077e5a73",
       "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
       "score": 63.5,
+      "days": 1
+    },
+    {
+      "topic_id": "535376e07d5c",
+      "title": "Concurrent Entanglement Purification Scheduling in Dynamic Quantum Networks",
+      "score": 62.0,
       "days": 1
     }
   ],

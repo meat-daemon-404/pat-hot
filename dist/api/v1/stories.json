@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T15:15:43.940625+00:00",
+  "generatedAt": "2026-10-22T00:42:58.384922+00:00",
   "count": 10,
   "items": [
     {
-      "id": "4d86eced5fe7",
+      "id": "c6144be125e1",
       "title": "Allight: A Perfect Photon Collector",
       "status": "关注中",
-      "heat": 45.5,
+      "heat": 42.0,
       "sourceCount": 2,
-      "signalCount": 3,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "signalCount": 2,
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "Laser Focus World",
         "arXiv 光学与光子学 (physics.optics)"
@@ -20,26 +20,19 @@
           "title": "Allight: A Perfect Photon Collector",
           "url": "https://arxiv.org/abs/2610.27161",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 66.8,
+          "score": 65.1,
           "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
           "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
           "url": "https://www.laserfocusworld.com/executive-forum/podcast/55411597/podcast-expert-insights-photonics-quantum-computing",
           "source": "Laser Focus World",
-          "score": 57.2,
-          "published_at": null
-        },
-        {
-          "title": "PODCAST: The Photonics Roundup",
-          "url": "https://www.laserfocusworld.com/resources/podcast/55410296/podcast-the-photonics-roundup",
-          "source": "Laser Focus World",
-          "score": 51.5,
+          "score": 55.7,
           "published_at": null
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": -7.7,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -52,7 +45,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "arXiv 光学与光子学 (physics.optics)"
@@ -62,48 +55,48 @@
           "title": "Nanophotonic Extreme Ultraviolet Polarimeter",
           "url": "https://arxiv.org/abs/2610.27705",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.3,
+          "score": 65.1,
           "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
           "title": "Steering electrons with extreme ultraviolet light—team achieves quantum coherent control",
           "url": "https://phys.org/news/2026-10-electrons-extreme-ultraviolet-team-quantum.html",
           "source": "Phys.org 物理新闻",
-          "score": 56.1,
+          "score": 55.8,
           "published_at": "2026-10-20T18:00:31+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
     },
     {
-      "id": "af68c467f8b2",
-      "title": "Enhanced orbital-angular-momentum dimensionality and spatial-spectral decoupling in thin-film SPDC",
+      "id": "38f87916b6a8",
+      "title": "Attosecond Quantum Optical Spectroscopy of Topological Materials",
       "status": "关注中",
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "Laser Focus World",
         "arXiv 光学与光子学 (physics.optics)"
       ],
       "links": [
         {
-          "title": "Enhanced orbital-angular-momentum dimensionality and spatial-spectral decoupling in thin-film SPDC",
-          "url": "https://arxiv.org/abs/2610.28020",
+          "title": "Attosecond Quantum Optical Spectroscopy of Topological Materials",
+          "url": "https://arxiv.org/abs/2610.28046",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.3,
+          "score": 65.1,
           "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
           "title": "Optical imaging and spectroscopy enhance precision agriculture",
           "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
           "source": "Laser Focus World",
-          "score": 50.1,
+          "score": 55.7,
           "published_at": null
         }
       ],
@@ -114,48 +107,13 @@
       "digestTitle": null
     },
     {
-      "id": "53ad4f7a22ea",
-      "title": "Experimental demonstration of attosecond hard X-ray pulses",
-      "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
-      "sources": [
-        "Nature Photonics",
-        "arXiv 光学与光子学 (physics.optics)"
-      ],
-      "links": [
-        {
-          "title": "Experimental demonstration of attosecond hard X-ray pulses",
-          "url": "https://www.nature.com/articles/s41566-026-02026-7",
-          "source": "Nature Photonics",
-          "score": 69.1,
-          "published_at": "2026-10-20T00:00:00+00:00"
-        },
-        {
-          "title": "Attosecond Quantum Optical Spectroscopy of Topological Materials",
-          "url": "https://arxiv.org/abs/2610.28046",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.3,
-          "published_at": "2026-10-21T04:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 67.5
-    },
-    {
       "id": "a815596da9a5",
       "title": "Dual Transverse Vortex-Spin-Momentum Locking in Rotating-Wave Structured Light",
       "status": "关注中",
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "Laser Focus World",
         "arXiv 光学与光子学 (physics.optics)"
@@ -165,12 +123,46 @@
           "title": "Dual Transverse Vortex-Spin-Momentum Locking in Rotating-Wave Structured Light",
           "url": "https://arxiv.org/abs/2610.28242",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.3,
+          "score": 65.1,
           "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
           "title": "Wide-aperture wavefront sensing from thermal imaging",
           "url": "https://www.laserfocusworld.com/detectors-imaging/article/55408187/wide-aperture-wavefront-sensing-from-thermal-imaging",
+          "source": "Laser Focus World",
+          "score": 55.7,
+          "published_at": null
+        }
+      ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "260079bbbe40",
+      "title": "X-ray free-electron laser sets new record for shortest high-energy pulses",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
+      "sources": [
+        "Laser Focus World",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "X-ray free-electron laser sets new record for shortest high-energy pulses",
+          "url": "https://phys.org/news/2026-10-ray-free-electron-laser-shortest.html",
+          "source": "Phys.org 物理新闻",
+          "score": 56.5,
+          "published_at": "2026-10-21T18:40:10+00:00"
+        },
+        {
+          "title": "Are high-power laser diodes ready to power inertial fusion energy?",
+          "url": "https://www.laserfocusworld.com/lasers-sources/article/55410022/leonardo-electronics-us-inc-are-high-power-laser-diodes-ready-to-power-inertial-fusion-energy",
           "source": "Laser Focus World",
           "score": 55.7,
           "published_at": null
@@ -189,7 +181,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "Laser Focus World",
         "Phys.org 物理新闻"
@@ -199,7 +191,7 @@
           "title": "Quantum probability can't be derived without assuming it first",
           "url": "https://phys.org/news/2026-10-quantum-probability-derived-assuming.html",
           "source": "Phys.org 物理新闻",
-          "score": 56.0,
+          "score": 55.7,
           "published_at": "2026-10-20T15:50:01+00:00"
         },
         {
@@ -210,11 +202,9 @@
           "published_at": null
         }
       ],
-      "trend": "up",
-      "trendPct": 100.0,
-      "badges": [
-        "rising"
-      ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
       "digest": null,
       "digestTitle": null
     },
@@ -225,7 +215,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "C114中国通信网_通信财经"
       ],
@@ -259,38 +249,44 @@
       "digestTitle": null
     },
     {
-      "id": "3c8f16647f93",
-      "title": "Single-photon time qubit: Quantum-vacuum control and complementarity of the arrow of time",
+      "id": "bfab6bacbfec",
+      "title": "Photonics Hot List: October 16, 2026",
       "status": "关注中",
-      "heat": 24.5,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "heat": 34.5,
+      "sourceCount": 1,
+      "signalCount": 4,
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
-        "Physics World（关键词过滤）",
-        "arXiv 光学与光子学 (physics.optics)"
+        "Laser Focus World"
       ],
       "links": [
         {
-          "title": "Single-photon time qubit: Quantum-vacuum control and complementarity of the arrow of time",
-          "url": "https://arxiv.org/abs/2610.27639",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 66.8,
-          "published_at": "2026-10-21T04:00:00+00:00"
+          "title": "Photonics Hot List: October 16, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
+          "source": "Laser Focus World",
+          "score": 55.3,
+          "published_at": null
         },
         {
-          "title": "Photonic band structure by direct second-kind free-space boundary integral equations",
-          "url": "https://arxiv.org/abs/2610.28494",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 66.8,
-          "published_at": "2026-10-21T04:00:00+00:00"
+          "title": "PODCAST: The Photonics Roundup",
+          "url": "https://www.laserfocusworld.com/resources/podcast/55410296/podcast-the-photonics-roundup",
+          "source": "Laser Focus World",
+          "score": 55.3,
+          "published_at": null
         },
         {
-          "title": "Single-photon measurements confirm Richard Feynman’s vision of quantum mechanics",
-          "url": "https://physicsworld.com/a/single-photon-measurements-confirm-richard-feynmans-vision-of-quantum-mechanics/",
-          "source": "Physics World（关键词过滤）",
-          "score": 40.6,
-          "published_at": "2026-09-25T08:20:12+00:00"
+          "title": "Photonics Hot List: October 2, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55409170/photonics-hot-list-october-2-2026",
+          "source": "Laser Focus World",
+          "score": 55.3,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: September 25, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55407650/photonics-hot-list-september-25-2026",
+          "source": "Laser Focus World",
+          "score": 55.3,
+          "published_at": null
         }
       ],
       "trend": "new",
@@ -300,61 +296,44 @@
       "digestTitle": null
     },
     {
-      "id": "57c05bd42c76",
-      "title": "Photonics Hot List: September 25, 2026",
-      "status": "发酵中",
-      "heat": 21.2,
-      "sourceCount": 3,
+      "id": "e1933fca8759",
+      "title": "Discovery of ‘how and why’ homochirality emerges receives 2026 Nobel Prize in Chemistry",
+      "status": "关注中",
+      "heat": 34.5,
+      "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
-        "Laser Focus World",
-        "YouTube·Photonics Media",
-        "YouTube·SPIETV"
+        "Laser Focus World"
       ],
       "links": [
         {
-          "title": "Photonics Hot List: September 25, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55407650/photonics-hot-list-september-25-2026",
+          "title": "Discovery of ‘how and why’ homochirality emerges receives 2026 Nobel Prize in Chemistry",
+          "url": "https://www.laserfocusworld.com/optics/news/55410158/discovery-of-how-and-why-homochirality-emerges-receives-2026-nobel-prize-in-chemistry",
           "source": "Laser Focus World",
-          "score": 65.0,
+          "score": 32.3,
           "published_at": null
         },
         {
-          "title": "Photonics Hot List: October 16, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
+          "title": "2026 Nobel Prize in Physics goes to Francis Halzen for IceCube Neutrino Observatory",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/news/55409835/2026-nobel-prize-in-physics-goes-to-francis-halzen-for-icecube-neutrino-observatory",
           "source": "Laser Focus World",
-          "score": 58.5,
+          "score": 32.3,
           "published_at": null
         },
         {
-          "title": "Photonics Hot List: October 2, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55409170/photonics-hot-list-october-2-2026",
+          "title": "Optogenetics nabs 2026 Nobel Prize in Physiology or Medicine",
+          "url": "https://www.laserfocusworld.com/biolife-sciences/news/55409612/optogenetics-nabs-2026-nobel-prize-in-physiology-or-medicine",
           "source": "Laser Focus World",
-          "score": 58.5,
+          "score": 32.3,
           "published_at": null
-        },
-        {
-          "title": "A Look Back on Photonics West 2026",
-          "url": "https://www.youtube.com/shorts/ne-cuXI4otA",
-          "source": "YouTube·SPIETV",
-          "score": 56.5,
-          "published_at": "2026-10-16T21:37:37+00:00"
-        },
-        {
-          "title": "Photonics Spectra Sensing Technologies Summit 2026",
-          "url": "https://www.youtube.com/watch?v=57_odMmja30",
-          "source": "YouTube·Photonics Media",
-          "score": 47.4,
-          "published_at": "2026-10-01T15:00:15+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null,
-      "llmScore": 15.0
+      "digestTitle": null
     },
     {
       "id": "0aa014d8c48e",
@@ -363,7 +342,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-21T15:15:43.940625+00:00",
+      "latestAt": "2026-10-22T00:42:58.384922+00:00",
       "sources": [
         "IEEE Spectrum（关键词过滤）",
         "arXiv 光学与光子学 (physics.optics)"
@@ -373,19 +352,19 @@
           "title": "Controlling Optical Quantum Interference with Plasmonic Metasurfaces",
           "url": "https://arxiv.org/abs/2610.27226",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.3,
+          "score": 65.1,
           "published_at": "2026-10-21T04:00:00+00:00"
         },
         {
           "title": "Engineering Multipole Resonances in Dielectric Metasurfaces for Transmission, Reflection, and Absorption Control",
           "url": "https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
           "source": "IEEE Spectrum（关键词过滤）",
-          "score": 29.0,
+          "score": 28.8,
           "published_at": "2026-10-02T10:00:03+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
