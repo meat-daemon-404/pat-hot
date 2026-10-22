@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T00:42:58.384922+00:00",
+  "generatedAt": "2026-10-22T15:17:57.005590+00:00",
   "weekStart": "2026-10-16",
   "windowDays": 7,
   "windowStart": "2026-10-16",
@@ -10,33 +10,33 @@
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1282.4,
+      "thisWeek": 1530.3,
       "lastWeek": 1637.2,
-      "deltaPct": -21.7
+      "deltaPct": -6.5
     },
     {
       "category": "其他",
-      "thisWeek": 1111.2,
+      "thisWeek": 1162.2,
       "lastWeek": 966.6,
-      "deltaPct": 15.0
-    },
-    {
-      "category": "凝聚态物理",
-      "thisWeek": 403.2,
-      "lastWeek": 453.4,
-      "deltaPct": -11.1
-    },
-    {
-      "category": "高能与粒子物理",
-      "thisWeek": 317.1,
-      "lastWeek": 604.9,
-      "deltaPct": -47.6
+      "deltaPct": 20.2
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 227.1,
+      "thisWeek": 503.5,
       "lastWeek": 343.8,
-      "deltaPct": -33.9
+      "deltaPct": 46.5
+    },
+    {
+      "category": "凝聚态物理",
+      "thisWeek": 389.9,
+      "lastWeek": 453.4,
+      "deltaPct": -14.0
+    },
+    {
+      "category": "高能与粒子物理",
+      "thisWeek": 315.9,
+      "lastWeek": 604.9,
+      "deltaPct": -47.8
     },
     {
       "category": "等离子体",
@@ -55,7 +55,13 @@
     {
       "topic_id": "42ea9b847d4c",
       "title": "A single antimatter particle in a cage opens door to ‘revolutionary’ physics",
-      "score": 196.7,
+      "score": 195.5,
+      "days": 1
+    },
+    {
+      "topic_id": "d462b13e1c2f",
+      "title": "A hybrid artificial intelligence framework for three-dimensional electromagnetic field mapping using airborne measurements in general aviation",
+      "score": 176.7,
       "days": 1
     },
     {
@@ -71,28 +77,28 @@
       "days": 1
     },
     {
-      "topic_id": "b1e518f5ca4f",
-      "title": "Quantum algorithm for high-dimensional nonlinear stochastic differential equations based on Carleman linearization",
-      "score": 110.6,
+      "topic_id": "ffca0fd5dc3f",
+      "title": "AI-quantum hybrid channel modeling and noise mitigation for 5G/6G wireless networks: the AQCME framework",
+      "score": 114.1,
+      "days": 2
+    },
+    {
+      "topic_id": "41f286b9b2e6",
+      "title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling",
+      "score": 111.1,
       "days": 1
     },
     {
-      "topic_id": "e8e68bc23d26",
-      "title": "Interpretable AI reveals hidden structure in nuclear masses",
-      "score": 96.8,
+      "topic_id": "aea6bcdeb06c",
+      "title": "From Qubit Tensorization to Gaussian Optimizers in Bosonic Systems",
+      "score": 108.1,
       "days": 1
     },
     {
       "topic_id": "70f929637d2f",
       "title": "Perovskite laser maintains stable performance over 400 million pulses",
-      "score": 69.3,
-      "days": 1
-    },
-    {
-      "topic_id": "735e34acdafc",
-      "title": "Ultrafast light can control ferromagnetism without relying on heating",
       "score": 68.8,
-      "days": 2
+      "days": 1
     },
     {
       "topic_id": "1b53b99d326d",
@@ -104,12 +110,6 @@
       "topic_id": "fc61077e5a73",
       "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
       "score": 63.5,
-      "days": 1
-    },
-    {
-      "topic_id": "535376e07d5c",
-      "title": "Concurrent Entanglement Purification Scheduling in Dynamic Quantum Networks",
-      "score": 62.0,
       "days": 1
     }
   ],

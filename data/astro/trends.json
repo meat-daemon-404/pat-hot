@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T00:42:58.384922+00:00",
+  "generatedAt": "2026-10-22T15:17:57.005590+00:00",
   "weekStart": "2026-10-16",
   "windowDays": 7,
   "windowStart": "2026-10-16",
@@ -10,51 +10,51 @@
   "categoryDelta": [
     {
       "category": "深空探测",
-      "thisWeek": 1809.6,
+      "thisWeek": 1871.9,
       "lastWeek": 1238.4,
-      "deltaPct": 46.1
+      "deltaPct": 51.2
     },
     {
       "category": "其他",
-      "thisWeek": 1527.6,
+      "thisWeek": 1580.6,
       "lastWeek": 1492.6,
-      "deltaPct": 2.3
+      "deltaPct": 5.9
     },
     {
       "category": "科研进展",
-      "thisWeek": 1059.6,
+      "thisWeek": 1425.3,
       "lastWeek": 799.1,
-      "deltaPct": 32.6
+      "deltaPct": 78.4
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 933.3,
+      "thisWeek": 1266.4,
       "lastWeek": 946.4,
-      "deltaPct": -1.4
+      "deltaPct": 33.8
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 799.3,
+      "thisWeek": 1013.8,
       "lastWeek": 800.3,
-      "deltaPct": -0.1
+      "deltaPct": 26.7
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 255.5,
+      "thisWeek": 363.5,
       "lastWeek": 277.2,
-      "deltaPct": -7.8
+      "deltaPct": 31.1
     },
     {
       "category": "系外行星",
-      "thisWeek": 180.8,
+      "thisWeek": 170.7,
       "lastWeek": 50.7,
-      "deltaPct": 256.6
+      "deltaPct": 236.7
     },
     {
       "category": "引力波",
-      "thisWeek": 0,
+      "thisWeek": 166.7,
       "lastWeek": 114.3,
-      "deltaPct": -100.0
+      "deltaPct": 45.8
     }
   ],
   "newTopics": [
@@ -83,6 +83,12 @@
       "days": 1
     },
     {
+      "topic_id": "db607e3406b2",
+      "title": "Gravothermal Evolution of Self-Interacting Dark Matter Halos across Knudsen Numbers",
+      "score": 136.5,
+      "days": 1
+    },
+    {
       "topic_id": "6486ec6e74f2",
       "title": "Gamma-ray Bursts as Cosmological Probes Calibrated with Strongly Lensed Quasars and Neural Networks",
       "score": 135.9,
@@ -95,28 +101,22 @@
       "days": 1
     },
     {
+      "topic_id": "6223dd2ace80",
+      "title": "MMX lifts off to Mars’s moon Phobos",
+      "score": 130.8,
+      "days": 2
+    },
+    {
       "topic_id": "dbe8795b3279",
       "title": "Newly discovered Earth-sized planet may lack an atmosphere",
       "score": 129.5,
       "days": 1
     },
     {
-      "topic_id": "47b446159db5",
-      "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
-      "score": 121.4,
-      "days": 2
-    },
-    {
-      "topic_id": "636655253159",
-      "title": "Webb Captures Stars in the Early Stages of Life in a Nearby Stellar Nursery",
-      "score": 121.3,
-      "days": 2
-    },
-    {
-      "topic_id": "87242a7c762d",
-      "title": "Artemis II Heat Shield After Splashdown",
-      "score": 120.0,
-      "days": 2
+      "topic_id": "00fb52c9432f",
+      "title": "Supernova Explosions First Aided, Then Later Impeded, the Epoch of Reionization",
+      "score": 121.8,
+      "days": 1
     }
   ],
   "sustainedTopics": []
