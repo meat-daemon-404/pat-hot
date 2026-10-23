@@ -1,69 +1,63 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T15:17:57.005590+00:00",
-  "weekStart": "2026-10-16",
+  "generatedAt": "2026-10-23T00:41:21.268107+00:00",
+  "weekStart": "2026-10-17",
   "windowDays": 7,
-  "windowStart": "2026-10-16",
-  "windowEnd": "2026-10-22",
-  "prevStart": "2026-10-09",
-  "prevEnd": "2026-10-15",
+  "windowStart": "2026-10-17",
+  "windowEnd": "2026-10-23",
+  "prevStart": "2026-10-10",
+  "prevEnd": "2026-10-16",
   "categoryDelta": [
     {
-      "category": "深空探测",
-      "thisWeek": 1871.9,
-      "lastWeek": 1238.4,
-      "deltaPct": 51.2
-    },
-    {
       "category": "其他",
-      "thisWeek": 1580.6,
-      "lastWeek": 1492.6,
-      "deltaPct": 5.9
+      "thisWeek": 1656.2,
+      "lastWeek": 1602.2,
+      "deltaPct": 3.4
     },
     {
       "category": "科研进展",
-      "thisWeek": 1425.3,
-      "lastWeek": 799.1,
-      "deltaPct": 78.4
+      "thisWeek": 1534.0,
+      "lastWeek": 1126.8,
+      "deltaPct": 36.1
     },
     {
-      "category": "星系与宇宙学",
-      "thisWeek": 1266.4,
-      "lastWeek": 946.4,
-      "deltaPct": 33.8
+      "category": "深空探测",
+      "thisWeek": 1533.0,
+      "lastWeek": 1633.7,
+      "deltaPct": -6.2
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 1013.8,
-      "lastWeek": 800.3,
-      "deltaPct": 26.7
+      "thisWeek": 1041.9,
+      "lastWeek": 901.4,
+      "deltaPct": 15.6
+    },
+    {
+      "category": "星系与宇宙学",
+      "thisWeek": 1032.0,
+      "lastWeek": 1080.3,
+      "deltaPct": -4.5
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 363.5,
-      "lastWeek": 277.2,
-      "deltaPct": 31.1
-    },
-    {
-      "category": "系外行星",
-      "thisWeek": 170.7,
-      "lastWeek": 50.7,
-      "deltaPct": 236.7
+      "thisWeek": 368.8,
+      "lastWeek": 322.5,
+      "deltaPct": 14.4
     },
     {
       "category": "引力波",
-      "thisWeek": 166.7,
+      "thisWeek": 165.7,
       "lastWeek": 114.3,
-      "deltaPct": 45.8
+      "deltaPct": 45.0
+    },
+    {
+      "category": "系外行星",
+      "thisWeek": 110.7,
+      "lastWeek": 110.7,
+      "deltaPct": 0.0
     }
   ],
   "newTopics": [
-    {
-      "topic_id": "2c320511f7ff",
-      "title": "Astronomer leads global team on NASA mission to create unprecedented view of the early universe",
-      "score": 362.0,
-      "days": 1
-    },
     {
       "topic_id": "b33ac41ad55c",
       "title": "DDELenS: Tomographic Weak Lensing Simulations with Dynamical Dark Energy",
@@ -83,14 +77,14 @@
       "days": 1
     },
     {
-      "topic_id": "db607e3406b2",
-      "title": "Gravothermal Evolution of Self-Interacting Dark Matter Halos across Knudsen Numbers",
-      "score": 136.5,
+      "topic_id": "6486ec6e74f2",
+      "title": "Gamma-ray Bursts as Cosmological Probes Calibrated with Strongly Lensed Quasars and Neural Networks",
+      "score": 135.9,
       "days": 1
     },
     {
-      "topic_id": "6486ec6e74f2",
-      "title": "Gamma-ray Bursts as Cosmological Probes Calibrated with Strongly Lensed Quasars and Neural Networks",
+      "topic_id": "db607e3406b2",
+      "title": "Gravothermal Evolution of Self-Interacting Dark Matter Halos across Knudsen Numbers",
       "score": 135.9,
       "days": 1
     },
@@ -101,22 +95,28 @@
       "days": 1
     },
     {
-      "topic_id": "6223dd2ace80",
-      "title": "MMX lifts off to Mars’s moon Phobos",
-      "score": 130.8,
-      "days": 2
-    },
-    {
       "topic_id": "dbe8795b3279",
       "title": "Newly discovered Earth-sized planet may lack an atmosphere",
       "score": 129.5,
       "days": 1
     },
     {
+      "topic_id": "1f2d7a0848d9",
+      "title": "Stars brewing in a nebulous cauldron",
+      "score": 121.7,
+      "days": 2
+    },
+    {
       "topic_id": "00fb52c9432f",
       "title": "Supernova Explosions First Aided, Then Later Impeded, the Epoch of Reionization",
-      "score": 121.8,
+      "score": 121.2,
       "days": 1
+    },
+    {
+      "topic_id": "11c66408e132",
+      "title": "APOD: 2026 October 18 – Sonified: Eagle Nebula Pillars",
+      "score": 117.2,
+      "days": 2
     }
   ],
   "sustainedTopics": []

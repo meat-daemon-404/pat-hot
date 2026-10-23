@@ -1,54 +1,54 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T15:17:57.005590+00:00",
-  "weekStart": "2026-10-16",
+  "generatedAt": "2026-10-23T00:41:21.268107+00:00",
+  "weekStart": "2026-10-17",
   "windowDays": 7,
-  "windowStart": "2026-10-16",
-  "windowEnd": "2026-10-22",
-  "prevStart": "2026-10-09",
-  "prevEnd": "2026-10-15",
+  "windowStart": "2026-10-17",
+  "windowEnd": "2026-10-23",
+  "prevStart": "2026-10-10",
+  "prevEnd": "2026-10-16",
   "categoryDelta": [
     {
-      "category": "科研进展",
-      "thisWeek": 1530.3,
-      "lastWeek": 1637.2,
-      "deltaPct": -6.5
+      "category": "其他",
+      "thisWeek": 1012.9,
+      "lastWeek": 1167.7,
+      "deltaPct": -13.3
     },
     {
-      "category": "其他",
-      "thisWeek": 1162.2,
-      "lastWeek": 966.6,
-      "deltaPct": 20.2
+      "category": "科研进展",
+      "thisWeek": 988.9,
+      "lastWeek": 2079.6,
+      "deltaPct": -52.4
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 503.5,
+      "thisWeek": 481.0,
       "lastWeek": 343.8,
-      "deltaPct": 46.5
+      "deltaPct": 39.9
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 389.9,
-      "lastWeek": 453.4,
-      "deltaPct": -14.0
+      "thisWeek": 347.1,
+      "lastWeek": 503.9,
+      "deltaPct": -31.1
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 315.9,
-      "lastWeek": 604.9,
-      "deltaPct": -47.8
-    },
-    {
-      "category": "等离子体",
-      "thisWeek": 65.8,
-      "lastWeek": 102.2,
-      "deltaPct": -35.6
+      "thisWeek": 316.5,
+      "lastWeek": 665.4,
+      "deltaPct": -52.4
     },
     {
       "category": "原子分子与光物理",
       "thisWeek": 37.4,
       "lastWeek": 41.5,
       "deltaPct": -9.9
+    },
+    {
+      "category": "等离子体",
+      "thisWeek": 0,
+      "lastWeek": 168.0,
+      "deltaPct": -100.0
     }
   ],
   "newTopics": [
@@ -56,12 +56,6 @@
       "topic_id": "42ea9b847d4c",
       "title": "A single antimatter particle in a cage opens door to ‘revolutionary’ physics",
       "score": 195.5,
-      "days": 1
-    },
-    {
-      "topic_id": "d462b13e1c2f",
-      "title": "A hybrid artificial intelligence framework for three-dimensional electromagnetic field mapping using airborne measurements in general aviation",
-      "score": 176.7,
       "days": 1
     },
     {
@@ -77,39 +71,45 @@
       "days": 1
     },
     {
-      "topic_id": "ffca0fd5dc3f",
-      "title": "AI-quantum hybrid channel modeling and noise mitigation for 5G/6G wireless networks: the AQCME framework",
-      "score": 114.1,
-      "days": 2
-    },
-    {
-      "topic_id": "41f286b9b2e6",
+      "topic_id": "ab8efd8b67d2",
       "title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling",
-      "score": 111.1,
+      "score": 107.6,
       "days": 1
     },
     {
-      "topic_id": "aea6bcdeb06c",
-      "title": "From Qubit Tensorization to Gaussian Optimizers in Bosonic Systems",
-      "score": 108.1,
+      "topic_id": "a162c00c868a",
+      "title": "Interacting quantum reference frames",
+      "score": 87.6,
       "days": 1
     },
     {
-      "topic_id": "70f929637d2f",
-      "title": "Perovskite laser maintains stable performance over 400 million pulses",
-      "score": 68.8,
+      "topic_id": "095db10d0e47",
+      "title": "Optimization versus fair sampling in quantum annealing: An exactly characterized frustrated Ising benchmark",
+      "score": 87.6,
       "days": 1
     },
     {
-      "topic_id": "1b53b99d326d",
-      "title": "Solving the gallium anomaly: New calculation may explain neutrino shortfall without invoking new particles",
-      "score": 65.8,
-      "days": 1
+      "topic_id": "63b2465c2161",
+      "title": "Ultrafast light pulses track molecular motion with three-femtosecond resolution",
+      "score": 68.9,
+      "days": 2
     },
     {
       "topic_id": "fc61077e5a73",
       "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
       "score": 63.5,
+      "days": 1
+    },
+    {
+      "topic_id": "8adeafe3eb5e",
+      "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
+      "score": 61.1,
+      "days": 1
+    },
+    {
+      "topic_id": "4ae78368b877",
+      "title": "Effects of waveguide tube geometry and surrounding medium conditions on acoustic emission signal attenuation",
+      "score": 60.1,
       "days": 1
     }
   ],

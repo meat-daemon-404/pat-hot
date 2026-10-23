@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T15:17:57.005590+00:00",
-  "count": 50,
+  "generatedAt": "2026-10-23T00:41:21.268107+00:00",
+  "count": 51,
   "dailies": {
     "2026-07-21": {
       "date": "2026-07-21",
@@ -7999,31 +7999,31 @@
       "headline": {
         "title": "Teleportation transition of surface codes on a superconducting quantum processor",
         "url": "https://www.nature.com/articles/s41567-026-03484-0",
-        "source": "Nature Physics 学科聚合",
+        "source": "Nature 量子物理",
         "summary": "",
         "zh_full": null,
         "reason": null,
         "density": null,
-        "score": 62.2,
+        "score": 60.5,
         "role": "科研",
         "published_at": "2026-10-22T00:00:00+00:00",
-        "topic_id": "41f286b9b2e6",
+        "topic_id": "ab8efd8b67d2",
         "topic_title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling"
       },
       "picks": [
         {
           "title": "Enhancing bosonic qubit protection by squeezing",
           "url": "https://www.nature.com/articles/s41467-026-78025-7",
-          "source": "Nature Physics 学科聚合",
+          "source": "Nature 量子物理",
           "summary": "",
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 60.7,
+          "score": 50.8,
           "role": "科研",
           "published_at": "2026-10-22T00:00:00+00:00",
-          "topic_id": "aea6bcdeb06c",
-          "topic_title": "From Qubit Tensorization to Gaussian Optimizers in Bosonic Systems"
+          "topic_id": null,
+          "topic_title": null
         },
         {
           "title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling",
@@ -8033,11 +8033,83 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 48.9,
+          "score": 47.1,
           "role": "科研",
           "published_at": "2026-10-22T04:00:00+00:00",
-          "topic_id": "41f286b9b2e6",
+          "topic_id": "ab8efd8b67d2",
           "topic_title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling"
+        },
+        {
+          "title": "Boundary exceptional point driven chiral switch of topological edge states",
+          "url": "https://arxiv.org/abs/2610.29316",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2610.29316v1 Announce Type: new Abstract: We theoretically investigate the interplay of topology and localized non-Hermiticity in a finite Su-Schrieffer-Heeger chain characterized by non-Hermitian potentials at its boundaries. By tuni",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 47.1,
+          "role": "科研",
+          "published_at": "2026-10-22T04:00:00+00:00",
+          "topic_id": "8eae0eb98102",
+          "topic_title": "Boundary exceptional point driven chiral switch of topological edge states"
+        },
+        {
+          "title": "X-ray free-electron laser sets new record for shortest high-energy pulses",
+          "url": "https://phys.org/news/2026-10-ray-free-electron-laser-shortest.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Researchers at the Linac Coherent Light Source (LCLS) at the U.S. Department of Energy's SLAC National Accelerator Laboratory have measured the shortest high-energy X-ray pulses ever recorded at an X-ray free-electron laser (XFEL). The puls",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 34.2,
+          "role": "科研",
+          "published_at": "2026-10-21T18:40:10+00:00",
+          "topic_id": "765376051dba",
+          "topic_title": "X-ray free-electron laser sets new record for shortest high-energy pulses"
+        }
+      ],
+      "flash": [
+        {
+          "title": "A van der Waals photon-ratchet for enhancing spin-defect emission and quantum sensing",
+          "url": "https://www.nature.com/articles/s41467-026-78802-4",
+          "source": "Nature 量子物理",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 50.8,
+          "role": "科研",
+          "published_at": "2026-10-22T00:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
+          "url": "https://www.nature.com/articles/s41586-026-11312-x",
+          "source": "Nature 量子物理",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 50.8,
+          "role": "科研",
+          "published_at": "2026-10-22T00:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
+          "url": "https://www.nature.com/articles/s41467-026-78386-z",
+          "source": "Nature 量子物理",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 50.8,
+          "role": "科研",
+          "published_at": "2026-10-22T00:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
         },
         {
           "title": "Quantum Simulation of Non-Markovian Open Quantum Systems via Low-Rank Kernel Compression and Coupling Dilution",
@@ -8047,28 +8119,96 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 48.9,
+          "score": 47.1,
           "role": "科研",
           "published_at": "2026-10-22T04:00:00+00:00",
-          "topic_id": "41f286b9b2e6",
-          "topic_title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling"
+          "topic_id": "d01cca2f35f4",
+          "topic_title": "Quantum Simulation of Non-Markovian Open Quantum Systems via Low-Rank Kernel Compression and Coupling Dilution"
         },
         {
-          "title": "Perovskite laser maintains stable performance over 400 million pulses",
-          "url": "https://phys.org/news/2026-10-perovskite-laser-stable-million-pulses.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "In a study published in Advanced Optical Materials, researchers at Vilnius University (VU) demonstrated perovskite-based laser structures that maintained stable performance over more than 400 million pulses. Their findings address one of th",
+          "title": "Interacting quantum reference frames",
+          "url": "https://arxiv.org/abs/2610.28732",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2610.28732v1 Announce Type: new Abstract: We formulate quantum reference frames within the Dirac quantization of gauge theories, where physical states are obtained from a kinematical Hilbert space $\\mathcal{H}_{\\rm kin}$ by group aver",
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 34.4,
+          "score": 43.8,
           "role": "科研",
-          "published_at": "2026-10-21T22:00:02+00:00",
-          "topic_id": "70f929637d2f",
-          "topic_title": "Perovskite laser maintains stable performance over 400 million pulses"
-        }
-      ],
-      "flash": [
+          "published_at": "2026-10-22T04:00:00+00:00",
+          "topic_id": "a162c00c868a",
+          "topic_title": "Interacting quantum reference frames"
+        },
+        {
+          "title": "Digital Quantum Simulation of Dynamics in Interacting Fields",
+          "url": "https://arxiv.org/abs/2610.28993",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2610.28993v1 Announce Type: new Abstract: Matter under extreme conditions behaves as a non-equilibrium, strongly-interacting quantum system. Such systems are in the non-perturbative regime of quantum chromodynamics (QCD), where their ",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 43.8,
+          "role": "科研",
+          "published_at": "2026-10-22T04:00:00+00:00",
+          "topic_id": "a162c00c868a",
+          "topic_title": "Interacting quantum reference frames"
+        },
+        {
+          "title": "Optimization versus fair sampling in quantum annealing: An exactly characterized frustrated Ising benchmark",
+          "url": "https://arxiv.org/abs/2610.29035",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2610.29035v1 Announce Type: new Abstract: Reaching a degenerate ground-state manifold and sampling it uniformly are distinct properties of a quantum annealer. We quantify this distinction using an Ising ring with additional couplings ",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 43.8,
+          "role": "科研",
+          "published_at": "2026-10-22T04:00:00+00:00",
+          "topic_id": "095db10d0e47",
+          "topic_title": "Optimization versus fair sampling in quantum annealing: An exactly characterized frustrated Ising benchmark"
+        },
+        {
+          "title": "Alignment of the amplitudes of stored states for solving the associative memory problem using quantum annealing",
+          "url": "https://arxiv.org/abs/2610.29190",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2610.29190v1 Announce Type: new Abstract: The solution of combinatorial optimization problems by means of quantum annealing is based on the preparation of an equally superposition state. Such superposition is crucial to the associativ",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 43.8,
+          "role": "科研",
+          "published_at": "2026-10-22T04:00:00+00:00",
+          "topic_id": "095db10d0e47",
+          "topic_title": "Optimization versus fair sampling in quantum annealing: An exactly characterized frustrated Ising benchmark"
+        },
+        {
+          "title": "Separability does not certify zero-noise extrapolation: Factorial diagnostics in dynamic quantum circuits",
+          "url": "https://arxiv.org/abs/2610.28705",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2610.28705v1 Announce Type: new Abstract: Separately amplifying gate, latency, and mid-circuit measurement errors can simplify zero-noise extrapolation, but a weak interaction between amplification knobs does not establish an accurate",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 37.4,
+          "role": "科研",
+          "published_at": "2026-10-22T04:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Local Clifford equivalence to CSS codes: Polynomial-time classification and conversion",
+          "url": "https://arxiv.org/abs/2610.28737",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2610.28737v1 Announce Type: new Abstract: Calderbank--Shor--Steane (CSS) codes support decoding and fault-tolerant logical operations through separate pure $X$ and pure $Z$ stabilizer checks. Generator choices and single-qubit Cliffor",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 37.4,
+          "role": "科研",
+          "published_at": "2026-10-22T04:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
         {
           "title": "Risk assessment of insulator contamination in thermal power plants by integrating dynamic physical priors and spatiotemporal heterogeneous graphs",
           "url": "https://www.nature.com/articles/s41598-026-77192-3",
@@ -8217,16 +8357,16 @@
             {
               "title": "Enhancing bosonic qubit protection by squeezing",
               "url": "https://www.nature.com/articles/s41467-026-78025-7",
-              "source": "Nature Physics 学科聚合",
+              "source": "Nature 量子物理",
               "summary": "",
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 60.7,
+              "score": 50.8,
               "role": "科研",
               "published_at": "2026-10-22T00:00:00+00:00",
-              "topic_id": "aea6bcdeb06c",
-              "topic_title": "From Qubit Tensorization to Gaussian Optimizers in Bosonic Systems"
+              "topic_id": null,
+              "topic_title": null
             },
             {
               "title": "Quantum Simulation of Non-Markovian Open Quantum Systems via Low-Rank Kernel Compression and Coupling Dilution",
@@ -8236,25 +8376,11 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 48.9,
+              "score": 47.1,
               "role": "科研",
               "published_at": "2026-10-22T04:00:00+00:00",
-              "topic_id": "41f286b9b2e6",
-              "topic_title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling"
-            },
-            {
-              "title": "From Qubit Tensorization to Gaussian Optimizers in Bosonic Systems",
-              "url": "https://arxiv.org/abs/2610.28902",
-              "source": "arXiv quant-ph 论文速递",
-              "summary": "arXiv:2610.28902v1 Announce Type: new Abstract: We develop a method for deriving Gaussian optimality results for bosonic quantum systems from inequalities for qubit systems. Inspired by Gross's derivation of the Gaussian logarithmic Sobolev",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 47.4,
-              "role": "科研",
-              "published_at": "2026-10-22T04:00:00+00:00",
-              "topic_id": "aea6bcdeb06c",
-              "topic_title": "From Qubit Tensorization to Gaussian Optimizers in Bosonic Systems"
+              "topic_id": "d01cca2f35f4",
+              "topic_title": "Quantum Simulation of Non-Markovian Open Quantum Systems via Low-Rank Kernel Compression and Coupling Dilution"
             },
             {
               "title": "Digital Quantum Simulation of Dynamics in Interacting Fields",
@@ -8264,11 +8390,25 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 44.0,
+              "score": 43.8,
               "role": "科研",
               "published_at": "2026-10-22T04:00:00+00:00",
               "topic_id": "a162c00c868a",
               "topic_title": "Interacting quantum reference frames"
+            },
+            {
+              "title": "From Qubit Tensorization to Gaussian Optimizers in Bosonic Systems",
+              "url": "https://arxiv.org/abs/2610.28902",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2610.28902v1 Announce Type: new Abstract: We develop a method for deriving Gaussian optimality results for bosonic quantum systems from inequalities for qubit systems. Inspired by Gross's derivation of the Gaussian logarithmic Sobolev",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.4,
+              "role": "科研",
+              "published_at": "2026-10-22T04:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
             },
             {
               "title": "Buffer-Qubit-Based Quantum Circuit Allocation Method Against Crosstalk Attacks",
@@ -8278,7 +8418,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 37.7,
+              "score": 37.4,
               "role": "科研",
               "published_at": "2026-10-22T04:00:00+00:00",
               "topic_id": null,
@@ -8292,7 +8432,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 37.7,
+              "score": 37.4,
               "role": "科研",
               "published_at": "2026-10-22T04:00:00+00:00",
               "topic_id": null,
@@ -8306,15 +8446,15 @@
             {
               "title": "Teleportation transition of surface codes on a superconducting quantum processor",
               "url": "https://www.nature.com/articles/s41567-026-03484-0",
-              "source": "Nature Physics 学科聚合",
+              "source": "Nature 量子物理",
               "summary": "",
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 62.2,
+              "score": 60.5,
               "role": "科研",
               "published_at": "2026-10-22T00:00:00+00:00",
-              "topic_id": "41f286b9b2e6",
+              "topic_id": "ab8efd8b67d2",
               "topic_title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling"
             },
             {
@@ -8325,11 +8465,11 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 37.7,
+              "score": 47.1,
               "role": "科研",
               "published_at": "2026-10-22T04:00:00+00:00",
-              "topic_id": null,
-              "topic_title": null
+              "topic_id": "8eae0eb98102",
+              "topic_title": "Boundary exceptional point driven chiral switch of topological edge states"
             }
           ]
         },
@@ -8337,114 +8477,114 @@
           "category": "科研进展",
           "articles": [
             {
-              "title": "Risk assessment of insulator contamination in thermal power plants by integrating dynamic physical priors and spatiotemporal heterogeneous graphs",
-              "url": "https://www.nature.com/articles/s41598-026-77192-3",
-              "source": "Nature Physics 学科聚合",
+              "title": "A van der Waals photon-ratchet for enhancing spin-defect emission and quantum sensing",
+              "url": "https://www.nature.com/articles/s41467-026-78802-4",
+              "source": "Nature 量子物理",
               "summary": "",
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 60.7,
+              "score": 50.8,
               "role": "科研",
               "published_at": "2026-10-22T00:00:00+00:00",
-              "topic_id": "de8348e69cf4",
-              "topic_title": "Risk assessment of insulator contamination in thermal power plants by integrating dynamic physical priors and spatiotemporal heterogeneous graphs"
+              "topic_id": null,
+              "topic_title": null
             },
             {
-              "title": "Evidence of optical Aharonov-Bohm interference in spin-polarized moiré excitonic complexes",
-              "url": "https://www.nature.com/articles/s41467-026-78018-6",
-              "source": "Nature Physics 学科聚合",
+              "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
+              "url": "https://www.nature.com/articles/s41586-026-11312-x",
+              "source": "Nature 量子物理",
               "summary": "",
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 60.7,
+              "score": 50.8,
               "role": "科研",
               "published_at": "2026-10-22T00:00:00+00:00",
-              "topic_id": "2bc8a4cc6fed",
-              "topic_title": "Evidence of optical Aharonov-Bohm interference in spin-polarized moiré excitonic complexes"
+              "topic_id": null,
+              "topic_title": null
             },
             {
-              "title": "Zero-field spin-wave networks with integrated non-volatile memory",
-              "url": "https://www.nature.com/articles/s41563-026-02778-1",
-              "source": "Nature Physics 学科聚合",
+              "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
+              "url": "https://www.nature.com/articles/s41467-026-78386-z",
+              "source": "Nature 量子物理",
               "summary": "",
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 60.7,
+              "score": 50.8,
               "role": "科研",
               "published_at": "2026-10-22T00:00:00+00:00",
-              "topic_id": "064f2fdb2a1e",
-              "topic_title": "Zero-field spin-wave networks with integrated non-volatile memory"
+              "topic_id": null,
+              "topic_title": null
             },
             {
-              "title": "A hybrid artificial intelligence framework for three-dimensional electromagnetic field mapping using airborne measurements in general aviation",
-              "url": "https://www.nature.com/articles/s41598-026-77076-6",
-              "source": "Nature Physics 学科聚合",
-              "summary": "",
+              "title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling",
+              "url": "https://arxiv.org/abs/2610.29058",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2610.29058v1 Announce Type: new Abstract: A ligand can adopt multiple conformations within the same binding site, and these conformations can interact differently with the surrounding protein. Multiconformer modeling must therefore de",
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 58.9,
+              "score": 47.1,
               "role": "科研",
-              "published_at": "2026-10-22T00:00:00+00:00",
-              "topic_id": "d462b13e1c2f",
-              "topic_title": "A hybrid artificial intelligence framework for three-dimensional electromagnetic field mapping using airborne measurements in general aviation"
+              "published_at": "2026-10-22T04:00:00+00:00",
+              "topic_id": "ab8efd8b67d2",
+              "topic_title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling"
             },
             {
-              "title": "Transient response of a cylindrical cavity in three-dimensional elastic space under impact loading: an analytical solution",
-              "url": "https://www.nature.com/articles/s41598-026-74338-1",
-              "source": "Nature Physics 学科聚合",
-              "summary": "",
+              "title": "Interacting quantum reference frames",
+              "url": "https://arxiv.org/abs/2610.28732",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2610.28732v1 Announce Type: new Abstract: We formulate quantum reference frames within the Dirac quantization of gauge theories, where physical states are obtained from a kinematical Hilbert space $\\mathcal{H}_{\\rm kin}$ by group aver",
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 58.9,
+              "score": 43.8,
               "role": "科研",
-              "published_at": "2026-10-22T00:00:00+00:00",
-              "topic_id": "d462b13e1c2f",
-              "topic_title": "A hybrid artificial intelligence framework for three-dimensional electromagnetic field mapping using airborne measurements in general aviation"
+              "published_at": "2026-10-22T04:00:00+00:00",
+              "topic_id": "a162c00c868a",
+              "topic_title": "Interacting quantum reference frames"
             },
             {
-              "title": "Determining depth-resolved spatial distribution of solid–electrolyte interphase using non-destructive angle-resolved X-ray photoelectron spectroscopy for lithium-metal batteries",
-              "url": "https://www.nature.com/articles/s41467-026-78168-7",
-              "source": "Nature Physics 学科聚合",
-              "summary": "",
+              "title": "Optimization versus fair sampling in quantum annealing: An exactly characterized frustrated Ising benchmark",
+              "url": "https://arxiv.org/abs/2610.29035",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2610.29035v1 Announce Type: new Abstract: Reaching a degenerate ground-state manifold and sampling it uniformly are distinct properties of a quantum annealer. We quantify this distinction using an Ising ring with additional couplings ",
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 58.9,
+              "score": 43.8,
               "role": "科研",
-              "published_at": "2026-10-22T00:00:00+00:00",
-              "topic_id": "d462b13e1c2f",
-              "topic_title": "A hybrid artificial intelligence framework for three-dimensional electromagnetic field mapping using airborne measurements in general aviation"
+              "published_at": "2026-10-22T04:00:00+00:00",
+              "topic_id": "095db10d0e47",
+              "topic_title": "Optimization versus fair sampling in quantum annealing: An exactly characterized frustrated Ising benchmark"
             },
             {
-              "title": "AI-quantum hybrid channel modeling and noise mitigation for 5G/6G wireless networks: the AQCME framework",
-              "url": "https://www.nature.com/articles/s41598-026-67540-8",
-              "source": "Nature Physics 学科聚合",
-              "summary": "",
+              "title": "Alignment of the amplitudes of stored states for solving the associative memory problem using quantum annealing",
+              "url": "https://arxiv.org/abs/2610.29190",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2610.29190v1 Announce Type: new Abstract: The solution of combinatorial optimization problems by means of quantum annealing is based on the preparation of an equally superposition state. Such superposition is crucial to the associativ",
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 57.4,
+              "score": 43.8,
               "role": "科研",
-              "published_at": "2026-10-22T00:00:00+00:00",
-              "topic_id": "ffca0fd5dc3f",
-              "topic_title": "AI-quantum hybrid channel modeling and noise mitigation for 5G/6G wireless networks: the AQCME framework"
+              "published_at": "2026-10-22T04:00:00+00:00",
+              "topic_id": "095db10d0e47",
+              "topic_title": "Optimization versus fair sampling in quantum annealing: An exactly characterized frustrated Ising benchmark"
             },
             {
-              "title": "Perfect supercurrent diode efficiency in chiral nanotube based weak links",
-              "url": "https://www.nature.com/articles/s42005-026-02925-9",
-              "source": "Nature Physics 学科聚合",
-              "summary": "",
+              "title": "Separability does not certify zero-noise extrapolation: Factorial diagnostics in dynamic quantum circuits",
+              "url": "https://arxiv.org/abs/2610.28705",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2610.28705v1 Announce Type: new Abstract: Separately amplifying gate, latency, and mid-circuit measurement errors can simplify zero-noise extrapolation, but a weak interaction between amplification knobs does not establish an accurate",
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 51.1,
+              "score": 37.4,
               "role": "科研",
-              "published_at": "2026-10-22T00:00:00+00:00",
+              "published_at": "2026-10-22T04:00:00+00:00",
               "topic_id": null,
               "topic_title": null
             }
@@ -8454,20 +8594,6 @@
           "category": "其他",
           "articles": [
             {
-              "title": "Perovskite laser maintains stable performance over 400 million pulses",
-              "url": "https://phys.org/news/2026-10-perovskite-laser-stable-million-pulses.html",
-              "source": "Phys.org 物理新闻",
-              "summary": "In a study published in Advanced Optical Materials, researchers at Vilnius University (VU) demonstrated perovskite-based laser structures that maintained stable performance over more than 400 million pulses. Their findings address one of th",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 34.4,
-              "role": "科研",
-              "published_at": "2026-10-21T22:00:02+00:00",
-              "topic_id": "70f929637d2f",
-              "topic_title": "Perovskite laser maintains stable performance over 400 million pulses"
-            },
-            {
               "title": "X-ray free-electron laser sets new record for shortest high-energy pulses",
               "url": "https://phys.org/news/2026-10-ray-free-electron-laser-shortest.html",
               "source": "Phys.org 物理新闻",
@@ -8475,11 +8601,25 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 34.4,
+              "score": 34.2,
               "role": "科研",
               "published_at": "2026-10-21T18:40:10+00:00",
-              "topic_id": "70f929637d2f",
-              "topic_title": "Perovskite laser maintains stable performance over 400 million pulses"
+              "topic_id": "765376051dba",
+              "topic_title": "X-ray free-electron laser sets new record for shortest high-energy pulses"
+            },
+            {
+              "title": "Ultrafast light can control ferromagnetism without relying on heating",
+              "url": "https://phys.org/news/2026-10-ultrafast-ferromagnetism.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Despite being known for more mundane uses such as sticking notes to refrigerators or keeping bags shut, magnetization is one of the most fundamental and useful properties of a material. Indeed, it forms the physical basis for storing most o",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 34.2,
+              "role": "科研",
+              "published_at": "2026-10-21T17:40:04+00:00",
+              "topic_id": "63b2465c2161",
+              "topic_title": "Ultrafast light pulses track molecular motion with three-femtosecond resolution"
             },
             {
               "title": "Lost Schrödinger manuscript reveals his true view of quantum randomness",
@@ -8489,7 +8629,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 30.9,
+              "score": 30.7,
               "role": "科研",
               "published_at": "2026-10-22T13:00:01+00:00",
               "topic_id": null,
@@ -8503,7 +8643,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 30.8,
+              "score": 30.7,
               "role": "科研",
               "published_at": "2026-10-22T11:00:04+00:00",
               "topic_id": null,
@@ -8517,23 +8657,23 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 30.6,
+              "score": 30.5,
               "role": "科研",
               "published_at": "2026-10-21T22:20:07+00:00",
               "topic_id": null,
               "topic_title": null
             },
             {
-              "title": "Ultrafast light can control ferromagnetism without relying on heating",
-              "url": "https://phys.org/news/2026-10-ultrafast-ferromagnetism.html",
+              "title": "Perovskite laser maintains stable performance over 400 million pulses",
+              "url": "https://phys.org/news/2026-10-perovskite-laser-stable-million-pulses.html",
               "source": "Phys.org 物理新闻",
-              "summary": "Despite being known for more mundane uses such as sticking notes to refrigerators or keeping bags shut, magnetization is one of the most fundamental and useful properties of a material. Indeed, it forms the physical basis for storing most o",
+              "summary": "In a study published in Advanced Optical Materials, researchers at Vilnius University (VU) demonstrated perovskite-based laser structures that maintained stable performance over more than 400 million pulses. Their findings address one of th",
               "zh_full": null,
               "reason": null,
               "density": null,
               "score": 30.5,
               "role": "科研",
-              "published_at": "2026-10-21T17:40:04+00:00",
+              "published_at": "2026-10-21T22:00:02+00:00",
               "topic_id": null,
               "topic_title": null
             }
@@ -8543,11 +8683,153 @@
       "topic_ids": [
         "41f286b9b2e6",
         "70f929637d2f",
+        "765376051dba",
+        "8eae0eb98102",
+        "ab8efd8b67d2",
         "aea6bcdeb06c"
       ],
-      "tocCount": 15,
+      "tocCount": 25,
       "readMinutes": 2,
-      "amended": 0
+      "amended": 10
+    },
+    "2026-10-23": {
+      "date": "2026-10-23",
+      "weekday": "周五",
+      "label": "2026年10月23日",
+      "headline": {
+        "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
+        "url": "https://phys.org/news/2026-10-neutrino-science-year-nobel-prize.html",
+        "source": "Phys.org 物理新闻",
+        "summary": "If you wanted a Nobel Prize, you would do well to study neutrinos. To date, the Nobel Prize in Physics has been awarded five times to research related to neutrino detection and discovery. This year, Francis Halzen earned the Nobel \"for deci",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 61.1,
+        "role": "科研",
+        "published_at": "2026-10-22T23:30:01+00:00",
+        "topic_id": "8adeafe3eb5e",
+        "topic_title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics"
+      },
+      "picks": [
+        {
+          "title": "Diamond laser system achieves 100% optical contrast in magnetic-field readout",
+          "url": "https://phys.org/news/2026-10-diamond-laser-optical-contrast-magnetic.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Researchers at Fraunhofer IAF have developed a laser-enhanced quantum sensor that combines high magnetic-field sensitivity with a large dynamic range. Using laser threshold magnetometry, they improved the ratio of sensitivity and dynamic ra",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 36.6,
+          "role": "科研",
+          "published_at": "2026-10-22T18:20:08+00:00",
+          "topic_id": "58655d0f38b0",
+          "topic_title": "All-optical generation of dense multi-GeV positron beams with longitudinal polarization"
+        }
+      ],
+      "flash": [
+        {
+          "title": "Ultrafast light pulses track molecular motion with three-femtosecond resolution",
+          "url": "https://phys.org/news/2026-10-ultrafast-pulses-track-molecular-motion.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Researchers have observed a molecule in the first instants after it has absorbed light and tracked the coordinated motion of electrons and nuclei with a temporal resolution of three femtoseconds. This is the result achieved by an internatio",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 34.7,
+          "role": "科研",
+          "published_at": "2026-10-22T23:00:02+00:00",
+          "topic_id": "63b2465c2161",
+          "topic_title": "Ultrafast light pulses track molecular motion with three-femtosecond resolution"
+        },
+        {
+          "title": "Quantum interference traps electron waves in metal for first time",
+          "url": "https://phys.org/news/2026-10-quantum-electron-metal.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Ever since quantum mechanics first described particles, like electrons, as rippling waves, researchers have wondered if those waves could be trapped in place. Writing today in Science a century later, a team of Columbia University researche",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.8,
+          "role": "科研",
+          "published_at": "2026-10-22T18:00:18+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "sections": [
+        {
+          "category": "高能与粒子物理",
+          "articles": [
+            {
+              "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
+              "url": "https://phys.org/news/2026-10-neutrino-science-year-nobel-prize.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "If you wanted a Nobel Prize, you would do well to study neutrinos. To date, the Nobel Prize in Physics has been awarded five times to research related to neutrino detection and discovery. This year, Francis Halzen earned the Nobel \"for deci",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 61.1,
+              "role": "科研",
+              "published_at": "2026-10-22T23:30:01+00:00",
+              "topic_id": "8adeafe3eb5e",
+              "topic_title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics"
+            }
+          ]
+        },
+        {
+          "category": "其他",
+          "articles": [
+            {
+              "title": "Diamond laser system achieves 100% optical contrast in magnetic-field readout",
+              "url": "https://phys.org/news/2026-10-diamond-laser-optical-contrast-magnetic.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Researchers at Fraunhofer IAF have developed a laser-enhanced quantum sensor that combines high magnetic-field sensitivity with a large dynamic range. Using laser threshold magnetometry, they improved the ratio of sensitivity and dynamic ra",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 36.6,
+              "role": "科研",
+              "published_at": "2026-10-22T18:20:08+00:00",
+              "topic_id": "58655d0f38b0",
+              "topic_title": "All-optical generation of dense multi-GeV positron beams with longitudinal polarization"
+            },
+            {
+              "title": "Ultrafast light pulses track molecular motion with three-femtosecond resolution",
+              "url": "https://phys.org/news/2026-10-ultrafast-pulses-track-molecular-motion.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Researchers have observed a molecule in the first instants after it has absorbed light and tracked the coordinated motion of electrons and nuclei with a temporal resolution of three femtoseconds. This is the result achieved by an internatio",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 34.7,
+              "role": "科研",
+              "published_at": "2026-10-22T23:00:02+00:00",
+              "topic_id": "63b2465c2161",
+              "topic_title": "Ultrafast light pulses track molecular motion with three-femtosecond resolution"
+            },
+            {
+              "title": "Quantum interference traps electron waves in metal for first time",
+              "url": "https://phys.org/news/2026-10-quantum-electron-metal.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Ever since quantum mechanics first described particles, like electrons, as rippling waves, researchers have wondered if those waves could be trapped in place. Writing today in Science a century later, a team of Columbia University researche",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.8,
+              "role": "科研",
+              "published_at": "2026-10-22T18:00:18+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        }
+      ],
+      "topic_ids": [
+        "58655d0f38b0",
+        "8adeafe3eb5e"
+      ],
+      "tocCount": 4,
+      "readMinutes": 2
     }
   }
 }
