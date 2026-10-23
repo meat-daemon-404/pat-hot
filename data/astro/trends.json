@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T00:41:21.268107+00:00",
+  "generatedAt": "2026-10-23T15:06:53.127788+00:00",
   "weekStart": "2026-10-17",
   "windowDays": 7,
   "windowStart": "2026-10-17",
@@ -10,45 +10,45 @@
   "categoryDelta": [
     {
       "category": "其他",
-      "thisWeek": 1656.2,
+      "thisWeek": 1739.9,
       "lastWeek": 1602.2,
-      "deltaPct": 3.4
+      "deltaPct": 8.6
     },
     {
       "category": "科研进展",
-      "thisWeek": 1534.0,
+      "thisWeek": 1730.6,
       "lastWeek": 1126.8,
-      "deltaPct": 36.1
+      "deltaPct": 53.6
     },
     {
       "category": "深空探测",
-      "thisWeek": 1533.0,
+      "thisWeek": 1723.9,
       "lastWeek": 1633.7,
-      "deltaPct": -6.2
-    },
-    {
-      "category": "恒星与星际介质",
-      "thisWeek": 1041.9,
-      "lastWeek": 901.4,
-      "deltaPct": 15.6
+      "deltaPct": 5.5
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 1032.0,
+      "thisWeek": 1228.3,
       "lastWeek": 1080.3,
-      "deltaPct": -4.5
+      "deltaPct": 13.7
+    },
+    {
+      "category": "恒星与星际介质",
+      "thisWeek": 1134.8,
+      "lastWeek": 901.4,
+      "deltaPct": 25.9
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 368.8,
+      "thisWeek": 380.2,
       "lastWeek": 322.5,
-      "deltaPct": 14.4
+      "deltaPct": 17.9
     },
     {
       "category": "引力波",
-      "thisWeek": 165.7,
+      "thisWeek": 247.4,
       "lastWeek": 114.3,
-      "deltaPct": 45.0
+      "deltaPct": 116.4
     },
     {
       "category": "系外行星",
@@ -58,6 +58,12 @@
     }
   ],
   "newTopics": [
+    {
+      "topic_id": "da7e23a8fc20",
+      "title": "High-orbit satellites could light the way for travel to the moon",
+      "score": 240.8,
+      "days": 2
+    },
     {
       "topic_id": "b33ac41ad55c",
       "title": "DDELenS: Tomographic Weak Lensing Simulations with Dynamical Dark Energy",
@@ -74,6 +80,12 @@
       "topic_id": "14d22a1810d2",
       "title": "Japan to launch historic round-trip mission to Mars moon",
       "score": 140.3,
+      "days": 1
+    },
+    {
+      "topic_id": "80ee3eb28797",
+      "title": "Constraints on interacting dark energy with a constant equation of state in light of DESI DR2: The role of the interaction term",
+      "score": 136.5,
       "days": 1
     },
     {
@@ -95,28 +107,16 @@
       "days": 1
     },
     {
+      "topic_id": "3be3cfa59f8a",
+      "title": "Tiny ‘solar flares’ recreated in the lab may explain corona mystery",
+      "score": 130.3,
+      "days": 2
+    },
+    {
       "topic_id": "dbe8795b3279",
       "title": "Newly discovered Earth-sized planet may lack an atmosphere",
       "score": 129.5,
       "days": 1
-    },
-    {
-      "topic_id": "1f2d7a0848d9",
-      "title": "Stars brewing in a nebulous cauldron",
-      "score": 121.7,
-      "days": 2
-    },
-    {
-      "topic_id": "00fb52c9432f",
-      "title": "Supernova Explosions First Aided, Then Later Impeded, the Epoch of Reionization",
-      "score": 121.2,
-      "days": 1
-    },
-    {
-      "topic_id": "11c66408e132",
-      "title": "APOD: 2026 October 18 – Sonified: Eagle Nebula Pillars",
-      "score": 117.2,
-      "days": 2
     }
   ],
   "sustainedTopics": []

@@ -1,60 +1,68 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T00:41:21.268107+00:00",
+  "generatedAt": "2026-10-23T15:06:53.127788+00:00",
   "count": 10,
   "items": [
     {
       "terms": [
-        "antimatter",
-        "held",
-        "particle",
-        "physicists",
-        "tame",
-        "trap"
+        "contrast",
+        "delta-doped",
+        "diamond",
+        "isotope",
+        "laser",
+        "magnetic-field",
+        "optical",
+        "readout",
+        "resolvable",
+        "spectra"
       ],
       "source_count": 2,
       "signal_count": 2,
       "sources": [
-        "New Scientist 物理",
-        "Phys.org 物理新闻"
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-23T00:41:21.268107+00:00",
+      "latest_at": "2026-10-23T15:06:53.127788+00:00",
       "representative": {
-        "title": "Physicists trap and tame single particle of antimatter for months",
-        "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
-        "source": "Phys.org 物理新闻",
-        "published_at": "2026-10-21T15:00:10+00:00",
-        "score": 60.2,
-        "summary": "For the first time, Northwestern University physicists have coaxed a single positron—the antimatter counterpart of an electron—into an exquisitely controlled quantum state.",
+        "title": "Delta-Doped GeV^- in diamond with isotope resolvable optical spectra",
+        "url": "https://arxiv.org/abs/2610.30375",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-10-23T04:00:00+00:00",
+        "score": 47.4,
+        "summary": "arXiv:2610.30375v1 Announce Type: new Abstract: Group IV color centers in diamond -- silicon, germanium, tin, and lead-vacancy centers -- are a promising platform for quantum networking. Typical Group-IV creation utilizes ion implantation d",
         "zh_full": null,
-        "llm_score": 54.5
+        "refs": {
+          "arxiv": "2610.30375",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
       },
       "folded_count": 1,
-      "title": "Physicists trap and tame single particle of antimatter for months",
-      "id": "1eaca0ec3885",
+      "title": "Delta-Doped GeV^- in diamond with isotope resolvable optical spectra",
+      "id": "190779b33ec6",
       "links": [
         {
-          "title": "Physicists trap and tame single particle of antimatter for months",
-          "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
-          "source": "Phys.org 物理新闻",
-          "score": 60.2,
-          "published_at": "2026-10-21T15:00:10+00:00"
+          "title": "Delta-Doped GeV^- in diamond with isotope resolvable optical spectra",
+          "url": "https://arxiv.org/abs/2610.30375",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.4,
+          "published_at": "2026-10-23T04:00:00+00:00"
         },
         {
-          "title": "A single antimatter particle was held in a trap for months",
-          "url": "https://www.newscientist.com/article/2594955-a-single-antimatter-particle-was-held-in-a-trap-for-months/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 60.2,
-          "published_at": "2026-10-21T15:00:00+00:00"
+          "title": "Diamond laser system achieves 100% optical contrast in magnetic-field readout",
+          "url": "https://phys.org/news/2026-10-diamond-laser-optical-contrast-magnetic.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.4,
+          "published_at": "2026-10-22T18:20:08+00:00"
         }
       ],
       "top_terms": [
-        "trap",
-        "particle",
-        "antimatter",
-        "physicists",
-        "tame"
+        "diamond",
+        "optical",
+        "laser",
+        "contrast",
+        "magnetic"
       ],
       "rank": 1,
       "trend": "new",
@@ -65,75 +73,170 @@
     },
     {
       "terms": [
-        "codes",
-        "conformer",
-        "ligand",
-        "modeling",
-        "multiconformer",
-        "optimization",
-        "processor",
-        "quantum",
-        "quantum-classical",
-        "qubo-based",
-        "selection",
-        "superconducting",
-        "surface",
-        "teleportation",
-        "transition"
+        "ferromagnetism",
+        "flow",
+        "heating",
+        "light-based",
+        "microscope",
+        "molecular",
+        "motion",
+        "precise",
+        "pulses",
+        "relying",
+        "resolution",
+        "scanning",
+        "three-femtosecond",
+        "track",
+        "tunneling",
+        "ultrafast"
       ],
-      "source_count": 2,
-      "signal_count": 2,
+      "source_count": 1,
+      "signal_count": 3,
       "sources": [
-        "Nature 量子物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 34.5,
+      "latest_at": "2026-10-23T15:06:53.127788+00:00",
+      "representative": {
+        "title": "Light-based method enables precise control of ultrafast electron flow in a scanning tunneling microscope",
+        "url": "https://phys.org/news/2026-10-based-method-enables-precise-ultrafast.html",
+        "source": "Phys.org 物理新闻",
+        "published_at": "2026-10-23T08:10:01+00:00",
+        "score": 35.5,
+        "summary": "What would it take to watch an electron move through a material? Researchers would need to see individual atoms and capture an electron's motion at incredibly short timescales. A Technion-led team has brought those two capabilities together",
+        "zh_full": null
+      },
+      "folded_count": 0,
+      "title": "Light-based method enables precise control of ultrafast electron flow in a scanning tunneling microscope",
+      "id": "044306bf2ce5",
+      "links": [
+        {
+          "title": "Light-based method enables precise control of ultrafast electron flow in a scanning tunneling microscope",
+          "url": "https://phys.org/news/2026-10-based-method-enables-precise-ultrafast.html",
+          "source": "Phys.org 物理新闻",
+          "score": 35.5,
+          "published_at": "2026-10-23T08:10:01+00:00"
+        },
+        {
+          "title": "Ultrafast light pulses track molecular motion with three-femtosecond resolution",
+          "url": "https://phys.org/news/2026-10-ultrafast-pulses-track-molecular-motion.html",
+          "source": "Phys.org 物理新闻",
+          "score": 35.3,
+          "published_at": "2026-10-22T23:00:02+00:00"
+        },
+        {
+          "title": "Ultrafast light can control ferromagnetism without relying on heating",
+          "url": "https://phys.org/news/2026-10-ultrafast-ferromagnetism.html",
+          "source": "Phys.org 物理新闻",
+          "score": 34.8,
+          "published_at": "2026-10-21T17:40:04+00:00"
+        }
+      ],
+      "top_terms": [
+        "ultrafast",
+        "precise",
+        "flow",
+        "scanning",
+        "tunneling"
+      ],
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 34.5,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "back-action-evading",
+        "bose-hubbard",
+        "chiral",
+        "controlled-z",
+        "decoherence-free",
+        "dimer",
+        "errors",
+        "exceptional",
+        "finite-level",
+        "gates",
+        "high-fidelity",
+        "mathcal",
+        "measurements",
+        "nondemolition",
+        "overall",
+        "point",
+        "quantum",
+        "qubits",
+        "rate-operator-engineered",
+        "robust",
+        "state",
+        "subsystems",
+        "superconducting",
+        "symmetric",
+        "system-parameter",
+        "transfer",
+        "transmon",
+        "uncertainties",
+        "variables"
+      ],
+      "source_count": 1,
+      "signal_count": 3,
+      "sources": [
         "arXiv quant-ph 论文速递"
       ],
-      "score": 42.0,
-      "latest_at": "2026-10-23T00:41:21.268107+00:00",
+      "score": 34.5,
+      "latest_at": "2026-10-23T15:06:53.127788+00:00",
       "representative": {
-        "title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling",
-        "url": "https://arxiv.org/abs/2610.29058",
+        "title": "On the Structure of Quantum Finite-Level Systems: Decoherence-Free Subsystems, Quantum Nondemolition Variables, and Back-Action-Evading Measurements",
+        "url": "https://arxiv.org/abs/2610.30616",
         "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-22T04:00:00+00:00",
-        "score": 47.1,
-        "summary": "arXiv:2610.29058v1 Announce Type: new Abstract: A ligand can adopt multiple conformations within the same binding site, and these conformations can interact differently with the surrounding protein. Multiconformer modeling must therefore de",
+        "published_at": "2026-10-23T04:00:00+00:00",
+        "score": 45.5,
+        "summary": "arXiv:2610.30616v1 Announce Type: new Abstract: The purpose of this paper is to conduct a comprehensive structural analysis of quantum finite-level systems in the Heisenberg picture, where the evolution of system observables is modeled by b",
         "zh_full": null,
         "refs": {
-          "arxiv": "2610.29058",
+          "arxiv": "2610.30616",
           "via": "feed_text",
           "confidence": "verified"
         }
       },
-      "folded_count": 1,
-      "title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling",
-      "id": "ab8efd8b67d2",
+      "folded_count": 0,
+      "title": "On the Structure of Quantum Finite-Level Systems: Decoherence-Free Subsystems, Quantum Nondemolition Variables, and Back-Action-Evading Measurements",
+      "id": "b717da0964b2",
       "links": [
         {
-          "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-          "url": "https://www.nature.com/articles/s41567-026-03484-0",
-          "source": "Nature 量子物理",
-          "score": 60.5,
-          "published_at": "2026-10-22T00:00:00+00:00"
+          "title": "On the Structure of Quantum Finite-Level Systems: Decoherence-Free Subsystems, Quantum Nondemolition Variables, and Back-Action-Evading Measurements",
+          "url": "https://arxiv.org/abs/2610.30616",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 45.5,
+          "published_at": "2026-10-23T04:00:00+00:00"
         },
         {
-          "title": "QUBO-Based Conformer Selection with Quantum-Classical Hybrid Optimization for Multiconformer Ligand Modeling",
-          "url": "https://arxiv.org/abs/2610.29058",
+          "title": "High-fidelity and robust controlled-Z gates for superconducting transmon qubits. II. System-parameter uncertainties and overall errors",
+          "url": "https://arxiv.org/abs/2610.30681",
           "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-10-22T04:00:00+00:00"
+          "score": 45.5,
+          "published_at": "2026-10-23T04:00:00+00:00"
+        },
+        {
+          "title": "Exceptional point structure and chiral state transfer in a rate-operator-engineered mathcal{PT}-symmetric Bose-Hubbard dimer",
+          "url": "https://arxiv.org/abs/2610.30836",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 45.5,
+          "published_at": "2026-10-23T04:00:00+00:00"
         }
       ],
       "top_terms": [
         "quantum",
-        "teleportation",
-        "transition",
-        "surface",
-        "codes"
+        "finite",
+        "level",
+        "decoherence",
+        "free"
       ],
-      "rank": 2,
-      "trend": "flat",
-      "trendPct": -7.7,
+      "rank": 3,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
-      "heat": 42.0,
+      "heat": 34.5,
       "status": "关注中"
     },
     {
@@ -157,15 +260,19 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-23T00:41:21.268107+00:00",
+      "latest_at": "2026-10-23T15:06:53.127788+00:00",
       "representative": {
         "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
         "url": "https://phys.org/news/2026-10-neutrino-science-year-nobel-prize.html",
         "source": "Phys.org 物理新闻",
         "published_at": "2026-10-22T23:30:01+00:00",
-        "score": 61.1,
+        "score": 60.7,
         "summary": "If you wanted a Nobel Prize, you would do well to study neutrinos. To date, the Nobel Prize in Physics has been awarded five times to research related to neutrino detection and discovery. This year, Francis Halzen earned the Nobel \"for deci",
-        "zh_full": null
+        "zh_full": "如果你想要获得诺贝尔奖，研究中微子是个不错的选择。迄今为止，诺贝尔物理学奖已有五次授予与中微子探测和发现相关的研究。今年，弗朗西斯·哈尔岑（Francis Halzen）因“对冰立方中微子天文台的决定性贡献以及发现天体物理起源的高能中微子”而获得诺贝尔奖。",
+        "llm_summary": "诺贝尔物理学奖今年授予弗朗西斯·哈尔岑（Francis Halzen），表彰其对冰立方中微子天文台的决定性贡献以及发现天体物理起源的高能中微子。中微子研究是物理学领域的重要方向，迄今为止诺贝尔物理学奖已有五次授予与中微子探测和发现相关的研究。",
+        "llm_reason": "中微子研究获诺贝尔奖",
+        "density": "高",
+        "llm_score": 41.0
       },
       "folded_count": 1,
       "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
@@ -175,14 +282,14 @@
           "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
           "url": "https://phys.org/news/2026-10-neutrino-science-year-nobel-prize.html",
           "source": "Phys.org 物理新闻",
-          "score": 61.1,
+          "score": 60.7,
           "published_at": "2026-10-22T23:30:01+00:00"
         },
         {
           "title": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
           "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 50.1,
+          "score": 49.7,
           "published_at": "2026-10-06T10:26:02+00:00"
         }
       ],
@@ -193,143 +300,77 @@
         "neutrino",
         "anyway"
       ],
-      "rank": 3,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "all-optical",
-        "beams",
-        "contrast",
-        "dense",
-        "diamond",
-        "laser",
-        "longitudinal",
-        "magnetic-field",
-        "multi-gev",
-        "optical",
-        "polarization",
-        "positron",
-        "readout"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-23T00:41:21.268107+00:00",
-      "representative": {
-        "title": "All-optical generation of dense multi-GeV positron beams with longitudinal polarization",
-        "url": "https://www.nature.com/articles/s42005-026-02907-x",
-        "source": "Nature 量子物理",
-        "published_at": "2026-10-12T00:00:00+00:00",
-        "score": 53.8,
-        "summary": "",
-        "zh_full": null
-      },
-      "folded_count": 1,
-      "title": "All-optical generation of dense multi-GeV positron beams with longitudinal polarization",
-      "id": "58655d0f38b0",
-      "links": [
-        {
-          "title": "All-optical generation of dense multi-GeV positron beams with longitudinal polarization",
-          "url": "https://www.nature.com/articles/s42005-026-02907-x",
-          "source": "Nature 量子物理",
-          "score": 53.8,
-          "published_at": "2026-10-12T00:00:00+00:00"
-        },
-        {
-          "title": "Diamond laser system achieves 100% optical contrast in magnetic-field readout",
-          "url": "https://phys.org/news/2026-10-diamond-laser-optical-contrast-magnetic.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.6,
-          "published_at": "2026-10-22T18:20:08+00:00"
-        }
-      ],
-      "top_terms": [
-        "optical",
-        "diamond",
-        "laser",
-        "contrast",
-        "magnetic"
-      ],
       "rank": 4,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
     },
     {
       "terms": [
-        "boundary",
-        "chiral",
-        "driven",
-        "edge",
-        "exceptional",
-        "exceptional-point-induced",
-        "kerr-cat",
-        "liouvillian",
-        "point",
-        "qubit",
-        "states",
-        "switch",
-        "topological",
-        "transition"
+        "atomic",
+        "competition",
+        "distant",
+        "dynamics",
+        "entangled",
+        "ions",
+        "keeps",
+        "memory",
+        "memory--transport",
+        "physical",
+        "quantum",
+        "reset",
+        "seconds",
+        "two-bath"
       ],
       "source_count": 2,
       "signal_count": 1,
       "sources": [
-        "Nature 量子物理",
+        "Phys.org 物理新闻",
         "arXiv quant-ph 论文速递"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-23T00:41:21.268107+00:00",
+      "latest_at": "2026-10-23T15:06:53.127788+00:00",
       "representative": {
-        "title": "Boundary exceptional point driven chiral switch of topological edge states",
-        "url": "https://arxiv.org/abs/2610.29316",
+        "title": "Memory--Transport Competition in Physical Two-Bath Quantum Reset Dynamics",
+        "url": "https://arxiv.org/abs/2610.30457",
         "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-22T04:00:00+00:00",
-        "score": 47.1,
-        "summary": "arXiv:2610.29316v1 Announce Type: new Abstract: We theoretically investigate the interplay of topology and localized non-Hermiticity in a finite Su-Schrieffer-Heeger chain characterized by non-Hermitian potentials at its boundaries. By tuni",
+        "published_at": "2026-10-23T04:00:00+00:00",
+        "score": 47.4,
+        "summary": "arXiv:2610.30457v1 Announce Type: new Abstract: Coherence preservation and environmental renewal offer competing ways of controlling quantum memory and transport. We show that a seemingly natural protocol which exactly replaces the bath occ",
         "zh_full": null,
         "refs": {
-          "arxiv": "2610.29316",
+          "arxiv": "2610.30457",
           "via": "feed_text",
           "confidence": "verified"
         }
       },
       "folded_count": 1,
-      "title": "Boundary exceptional point driven chiral switch of topological edge states",
-      "id": "8eae0eb98102",
+      "title": "Memory--Transport Competition in Physical Two-Bath Quantum Reset Dynamics",
+      "id": "5d6b33166ebc",
       "links": [
         {
-          "title": "Liouvillian exceptional-point-induced phase transition in a single Kerr-cat qubit",
-          "url": "https://www.nature.com/articles/s42005-026-02919-7",
-          "source": "Nature 量子物理",
-          "score": 55.1,
-          "published_at": "2026-10-14T00:00:00+00:00"
+          "title": "Memory--Transport Competition in Physical Two-Bath Quantum Reset Dynamics",
+          "url": "https://arxiv.org/abs/2610.30457",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.4,
+          "published_at": "2026-10-23T04:00:00+00:00"
         },
         {
-          "title": "Boundary exceptional point driven chiral switch of topological edge states",
-          "url": "https://arxiv.org/abs/2610.29316",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-10-22T04:00:00+00:00"
+          "title": "Atomic memory keeps distant ions entangled for about 10 seconds",
+          "url": "https://phys.org/news/2026-10-atomic-memory-distant-ions-entangled.html",
+          "source": "Phys.org 物理新闻",
+          "score": 35.8,
+          "published_at": "2026-10-21T11:40:12+00:00"
         }
       ],
       "top_terms": [
-        "exceptional",
-        "point",
-        "liouvillian",
-        "induced",
-        "transition"
+        "memory",
+        "atomic",
+        "keeps",
+        "distant",
+        "ions"
       ],
       "rank": 5,
       "trend": "new",
@@ -340,70 +381,65 @@
     },
     {
       "terms": [
-        "compression",
-        "coupling",
-        "dilution",
-        "kernel",
-        "low-rank",
-        "non-markovian",
-        "non-reciprocity",
-        "open",
-        "quantum",
-        "simulation"
+        "antimatter",
+        "held",
+        "particle",
+        "physicists",
+        "tame",
+        "trap"
       ],
       "source_count": 2,
-      "signal_count": 1,
+      "signal_count": 0,
       "sources": [
-        "Nature 量子物理",
-        "arXiv quant-ph 论文速递"
+        "New Scientist 物理",
+        "Phys.org 物理新闻"
       ],
-      "score": 21.0,
-      "latest_at": "2026-10-23T00:41:21.268107+00:00",
+      "score": 0.0,
+      "latest_at": "2026-10-23T15:06:53.127788+00:00",
       "representative": {
-        "title": "Quantum Simulation of Non-Markovian Open Quantum Systems via Low-Rank Kernel Compression and Coupling Dilution",
-        "url": "https://arxiv.org/abs/2610.29372",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-22T04:00:00+00:00",
-        "score": 47.1,
-        "summary": "arXiv:2610.29372v1 Announce Type: new Abstract: We present an error-controlled framework for the quantum simulation of non-Markovian open-system dynamics in Gaussian environments. For a system coupled linearly to a Gaussian environment with",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.29372",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
+        "title": "Physicists trap and tame single particle of antimatter for months",
+        "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
+        "source": "Phys.org 物理新闻",
+        "published_at": "2026-10-21T15:00:10+00:00",
+        "score": 59.8,
+        "summary": "For the first time, Northwestern University physicists have coaxed a single positron—the antimatter counterpart of an electron—into an exquisitely controlled quantum state.",
+        "zh_full": "西北大学（Northwestern University）的物理学家首次将单个正电子——电子的反物质对应粒子——诱入一个极其精确控制的量子态中，并将其捕获长达数月。这是物理学领域的一项重要突破。",
+        "llm_summary": "西北大学物理学家首次将单个正电子（电子的反物质对应粒子）诱入精确控制的量子态中，并捕获长达数月。这是反物质研究的重要突破。",
+        "llm_reason": "首次捕获单个反物质粒子",
+        "density": "高",
+        "llm_score": 54.5
       },
       "folded_count": 1,
-      "title": "Quantum Simulation of Non-Markovian Open Quantum Systems via Low-Rank Kernel Compression and Coupling Dilution",
-      "id": "d01cca2f35f4",
+      "title": "Physicists trap and tame single particle of antimatter for months",
+      "id": "1eaca0ec3885",
       "links": [
         {
-          "title": "Non-reciprocity in quantum technologies",
-          "url": "https://www.nature.com/articles/s41567-026-03464-4",
-          "source": "Nature 量子物理",
-          "score": 50.5,
-          "published_at": "2026-10-07T00:00:00+00:00"
+          "title": "Physicists trap and tame single particle of antimatter for months",
+          "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
+          "source": "Phys.org 物理新闻",
+          "score": 59.8,
+          "published_at": "2026-10-21T15:00:10+00:00"
         },
         {
-          "title": "Quantum Simulation of Non-Markovian Open Quantum Systems via Low-Rank Kernel Compression and Coupling Dilution",
-          "url": "https://arxiv.org/abs/2610.29372",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-10-22T04:00:00+00:00"
+          "title": "A single antimatter particle was held in a trap for months",
+          "url": "https://www.newscientist.com/article/2594955-a-single-antimatter-particle-was-held-in-a-trap-for-months/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 59.8,
+          "published_at": "2026-10-21T15:00:00+00:00"
         }
       ],
       "top_terms": [
-        "quantum",
-        "non",
-        "reciprocity",
-        "simulation",
-        "markovian"
+        "trap",
+        "particle",
+        "antimatter",
+        "physicists",
+        "tame"
       ],
       "rank": 6,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "down",
+      "trendPct": -100.0,
       "badges": [],
-      "heat": 21.0,
+      "heat": 0.0,
       "status": "关注中"
     },
     {
@@ -429,7 +465,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-23T00:41:21.268107+00:00",
+      "latest_at": "2026-10-23T15:06:53.127788+00:00",
       "representative": {
         "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
         "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
@@ -456,7 +492,7 @@
           "title": "Steering electrons with extreme ultraviolet light—team achieves quantum coherent control",
           "url": "https://phys.org/news/2026-10-electrons-extreme-ultraviolet-team-quantum.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.8,
+          "score": 35.5,
           "published_at": "2026-10-20T18:00:31+00:00"
         }
       ],
@@ -489,13 +525,13 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-23T00:41:21.268107+00:00",
+      "latest_at": "2026-10-23T15:06:53.127788+00:00",
       "representative": {
         "title": "Quantum probability can't be derived without assuming it first",
         "url": "https://phys.org/news/2026-10-quantum-probability-derived-assuming.html",
         "source": "Phys.org 物理新闻",
         "published_at": "2026-10-20T15:50:01+00:00",
-        "score": 35.8,
+        "score": 35.5,
         "summary": "For nearly a century, physicists have relied on the Born rule to calculate the chances of different outcomes when they measure a quantum system. Yet despite decades of effort, nobody has managed to derive the rule from more basic mathematic",
         "zh_full": null
       },
@@ -507,14 +543,14 @@
           "title": "Quantum probability can't be derived without assuming it first",
           "url": "https://phys.org/news/2026-10-quantum-probability-derived-assuming.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.8,
+          "score": 35.5,
           "published_at": "2026-10-20T15:50:01+00:00"
         },
         {
           "title": "Could consciousness be quantum?",
           "url": "https://www.newscientist.com/video/2592247-could-consciousness-be-quantum/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 30.6,
+          "score": 30.3,
           "published_at": "2026-10-07T17:00:00+00:00"
         }
       ],
@@ -526,8 +562,8 @@
         "consciousness"
       ],
       "rank": 8,
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 0.0,
       "status": "关注中"
@@ -549,7 +585,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-23T00:41:21.268107+00:00",
+      "latest_at": "2026-10-23T15:06:53.127788+00:00",
       "representative": {
         "title": "New research shows a neutrino laser is impossible",
         "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
@@ -570,7 +606,7 @@
           "title": "Are we about to solve the greatest mystery of the neutrino?",
           "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 59.0,
+          "score": 58.6,
           "published_at": "2026-10-19T19:00:00+00:00"
         },
         {
@@ -611,7 +647,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-23T00:41:21.268107+00:00",
+      "latest_at": "2026-10-23T15:06:53.127788+00:00",
       "representative": {
         "title": "On the hunt for dark matter",
         "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
@@ -632,7 +668,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 54.7,
+          "score": 54.3,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
