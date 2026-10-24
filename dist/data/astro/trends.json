@@ -1,67 +1,67 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T15:06:53.127788+00:00",
-  "weekStart": "2026-10-17",
+  "generatedAt": "2026-10-24T00:44:16.149625+00:00",
+  "weekStart": "2026-10-18",
   "windowDays": 7,
-  "windowStart": "2026-10-17",
-  "windowEnd": "2026-10-23",
-  "prevStart": "2026-10-10",
-  "prevEnd": "2026-10-16",
+  "windowStart": "2026-10-18",
+  "windowEnd": "2026-10-24",
+  "prevStart": "2026-10-11",
+  "prevEnd": "2026-10-17",
   "categoryDelta": [
     {
+      "category": "深空探测",
+      "thisWeek": 1589.3,
+      "lastWeek": 1779.6,
+      "deltaPct": -10.7
+    },
+    {
       "category": "其他",
-      "thisWeek": 1739.9,
-      "lastWeek": 1602.2,
-      "deltaPct": 8.6
+      "thisWeek": 1574.6,
+      "lastWeek": 1717.3,
+      "deltaPct": -8.3
     },
     {
       "category": "科研进展",
-      "thisWeek": 1730.6,
-      "lastWeek": 1126.8,
-      "deltaPct": 53.6
-    },
-    {
-      "category": "深空探测",
-      "thisWeek": 1723.9,
-      "lastWeek": 1633.7,
-      "deltaPct": 5.5
-    },
-    {
-      "category": "星系与宇宙学",
-      "thisWeek": 1228.3,
-      "lastWeek": 1080.3,
-      "deltaPct": 13.7
+      "thisWeek": 1561.3,
+      "lastWeek": 1116.2,
+      "deltaPct": 39.9
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 1134.8,
-      "lastWeek": 901.4,
-      "deltaPct": 25.9
+      "thisWeek": 1192.1,
+      "lastWeek": 951.8,
+      "deltaPct": 25.2
+    },
+    {
+      "category": "星系与宇宙学",
+      "thisWeek": 1056.1,
+      "lastWeek": 1251.1,
+      "deltaPct": -15.6
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 380.2,
+      "thisWeek": 441.1,
       "lastWeek": 322.5,
-      "deltaPct": 17.9
+      "deltaPct": 36.8
     },
     {
       "category": "引力波",
-      "thisWeek": 247.4,
+      "thisWeek": 246.9,
       "lastWeek": 114.3,
-      "deltaPct": 116.4
+      "deltaPct": 116.0
     },
     {
       "category": "系外行星",
-      "thisWeek": 110.7,
+      "thisWeek": 171.8,
       "lastWeek": 110.7,
-      "deltaPct": 0.0
+      "deltaPct": 55.2
     }
   ],
   "newTopics": [
     {
       "topic_id": "da7e23a8fc20",
       "title": "High-orbit satellites could light the way for travel to the moon",
-      "score": 240.8,
+      "score": 240.0,
       "days": 2
     },
     {
@@ -83,12 +83,6 @@
       "days": 1
     },
     {
-      "topic_id": "80ee3eb28797",
-      "title": "Constraints on interacting dark energy with a constant equation of state in light of DESI DR2: The role of the interaction term",
-      "score": 136.5,
-      "days": 1
-    },
-    {
       "topic_id": "6486ec6e74f2",
       "title": "Gamma-ray Bursts as Cosmological Probes Calibrated with Strongly Lensed Quasars and Neural Networks",
       "score": 135.9,
@@ -101,15 +95,15 @@
       "days": 1
     },
     {
-      "topic_id": "f73fa0faac63",
-      "title": "Japan's MMX mission aims to swipe soil samples from Mars's moon Phobos",
-      "score": 135.5,
+      "topic_id": "80ee3eb28797",
+      "title": "Constraints on interacting dark energy with a constant equation of state in light of DESI DR2: The role of the interaction term",
+      "score": 135.9,
       "days": 1
     },
     {
       "topic_id": "3be3cfa59f8a",
       "title": "Tiny ‘solar flares’ recreated in the lab may explain corona mystery",
-      "score": 130.3,
+      "score": 130.1,
       "days": 2
     },
     {
@@ -117,6 +111,12 @@
       "title": "Newly discovered Earth-sized planet may lack an atmosphere",
       "score": 129.5,
       "days": 1
+    },
+    {
+      "topic_id": "1f2d7a0848d9",
+      "title": "Stars brewing in a nebulous cauldron",
+      "score": 120.6,
+      "days": 2
     }
   ],
   "sustainedTopics": []

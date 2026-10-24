@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T15:06:53.127788+00:00",
-  "count": 10,
+  "generatedAt": "2026-10-24T00:44:16.149625+00:00",
+  "count": 9,
   "items": [
     {
       "terms": [
@@ -23,13 +23,13 @@
         "arXiv quant-ph 论文速递"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-23T15:06:53.127788+00:00",
+      "latest_at": "2026-10-24T00:44:16.149625+00:00",
       "representative": {
         "title": "Delta-Doped GeV^- in diamond with isotope resolvable optical spectra",
         "url": "https://arxiv.org/abs/2610.30375",
         "source": "arXiv quant-ph 论文速递",
         "published_at": "2026-10-23T04:00:00+00:00",
-        "score": 47.4,
+        "score": 47.1,
         "summary": "arXiv:2610.30375v1 Announce Type: new Abstract: Group IV color centers in diamond -- silicon, germanium, tin, and lead-vacancy centers -- are a promising platform for quantum networking. Typical Group-IV creation utilizes ion implantation d",
         "zh_full": null,
         "refs": {
@@ -46,14 +46,14 @@
           "title": "Delta-Doped GeV^- in diamond with isotope resolvable optical spectra",
           "url": "https://arxiv.org/abs/2610.30375",
           "source": "arXiv quant-ph 论文速递",
-          "score": 47.4,
+          "score": 47.1,
           "published_at": "2026-10-23T04:00:00+00:00"
         },
         {
           "title": "Diamond laser system achieves 100% optical contrast in magnetic-field readout",
           "url": "https://phys.org/news/2026-10-diamond-laser-optical-contrast-magnetic.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.4,
+          "score": 36.2,
           "published_at": "2026-10-22T18:20:08+00:00"
         }
       ],
@@ -65,85 +65,10 @@
         "magnetic"
       ],
       "rank": 1,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 42.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "ferromagnetism",
-        "flow",
-        "heating",
-        "light-based",
-        "microscope",
-        "molecular",
-        "motion",
-        "precise",
-        "pulses",
-        "relying",
-        "resolution",
-        "scanning",
-        "three-femtosecond",
-        "track",
-        "tunneling",
-        "ultrafast"
-      ],
-      "source_count": 1,
-      "signal_count": 3,
-      "sources": [
-        "Phys.org 物理新闻"
-      ],
-      "score": 34.5,
-      "latest_at": "2026-10-23T15:06:53.127788+00:00",
-      "representative": {
-        "title": "Light-based method enables precise control of ultrafast electron flow in a scanning tunneling microscope",
-        "url": "https://phys.org/news/2026-10-based-method-enables-precise-ultrafast.html",
-        "source": "Phys.org 物理新闻",
-        "published_at": "2026-10-23T08:10:01+00:00",
-        "score": 35.5,
-        "summary": "What would it take to watch an electron move through a material? Researchers would need to see individual atoms and capture an electron's motion at incredibly short timescales. A Technion-led team has brought those two capabilities together",
-        "zh_full": null
-      },
-      "folded_count": 0,
-      "title": "Light-based method enables precise control of ultrafast electron flow in a scanning tunneling microscope",
-      "id": "044306bf2ce5",
-      "links": [
-        {
-          "title": "Light-based method enables precise control of ultrafast electron flow in a scanning tunneling microscope",
-          "url": "https://phys.org/news/2026-10-based-method-enables-precise-ultrafast.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.5,
-          "published_at": "2026-10-23T08:10:01+00:00"
-        },
-        {
-          "title": "Ultrafast light pulses track molecular motion with three-femtosecond resolution",
-          "url": "https://phys.org/news/2026-10-ultrafast-pulses-track-molecular-motion.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.3,
-          "published_at": "2026-10-22T23:00:02+00:00"
-        },
-        {
-          "title": "Ultrafast light can control ferromagnetism without relying on heating",
-          "url": "https://phys.org/news/2026-10-ultrafast-ferromagnetism.html",
-          "source": "Phys.org 物理新闻",
-          "score": 34.8,
-          "published_at": "2026-10-21T17:40:04+00:00"
-        }
-      ],
-      "top_terms": [
-        "ultrafast",
-        "precise",
-        "flow",
-        "scanning",
-        "tunneling"
-      ],
-      "rank": 2,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 34.5,
       "status": "关注中"
     },
     {
@@ -184,13 +109,13 @@
         "arXiv quant-ph 论文速递"
       ],
       "score": 34.5,
-      "latest_at": "2026-10-23T15:06:53.127788+00:00",
+      "latest_at": "2026-10-24T00:44:16.149625+00:00",
       "representative": {
         "title": "On the Structure of Quantum Finite-Level Systems: Decoherence-Free Subsystems, Quantum Nondemolition Variables, and Back-Action-Evading Measurements",
         "url": "https://arxiv.org/abs/2610.30616",
         "source": "arXiv quant-ph 论文速递",
         "published_at": "2026-10-23T04:00:00+00:00",
-        "score": 45.5,
+        "score": 45.3,
         "summary": "arXiv:2610.30616v1 Announce Type: new Abstract: The purpose of this paper is to conduct a comprehensive structural analysis of quantum finite-level systems in the Heisenberg picture, where the evolution of system observables is modeled by b",
         "zh_full": null,
         "refs": {
@@ -207,21 +132,21 @@
           "title": "On the Structure of Quantum Finite-Level Systems: Decoherence-Free Subsystems, Quantum Nondemolition Variables, and Back-Action-Evading Measurements",
           "url": "https://arxiv.org/abs/2610.30616",
           "source": "arXiv quant-ph 论文速递",
-          "score": 45.5,
+          "score": 45.3,
           "published_at": "2026-10-23T04:00:00+00:00"
         },
         {
           "title": "High-fidelity and robust controlled-Z gates for superconducting transmon qubits. II. System-parameter uncertainties and overall errors",
           "url": "https://arxiv.org/abs/2610.30681",
           "source": "arXiv quant-ph 论文速递",
-          "score": 45.5,
+          "score": 45.3,
           "published_at": "2026-10-23T04:00:00+00:00"
         },
         {
           "title": "Exceptional point structure and chiral state transfer in a rate-operator-engineered mathcal{PT}-symmetric Bose-Hubbard dimer",
           "url": "https://arxiv.org/abs/2610.30836",
           "source": "arXiv quant-ph 论文速递",
-          "score": 45.5,
+          "score": 45.3,
           "published_at": "2026-10-23T04:00:00+00:00"
         }
       ],
@@ -232,9 +157,9 @@
         "decoherence",
         "free"
       ],
-      "rank": 3,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 2,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 34.5,
       "status": "关注中"
@@ -260,13 +185,13 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-23T15:06:53.127788+00:00",
+      "latest_at": "2026-10-24T00:44:16.149625+00:00",
       "representative": {
         "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
         "url": "https://phys.org/news/2026-10-neutrino-science-year-nobel-prize.html",
         "source": "Phys.org 物理新闻",
         "published_at": "2026-10-22T23:30:01+00:00",
-        "score": 60.7,
+        "score": 60.5,
         "summary": "If you wanted a Nobel Prize, you would do well to study neutrinos. To date, the Nobel Prize in Physics has been awarded five times to research related to neutrino detection and discovery. This year, Francis Halzen earned the Nobel \"for deci",
         "zh_full": "如果你想要获得诺贝尔奖，研究中微子是个不错的选择。迄今为止，诺贝尔物理学奖已有五次授予与中微子探测和发现相关的研究。今年，弗朗西斯·哈尔岑（Francis Halzen）因“对冰立方中微子天文台的决定性贡献以及发现天体物理起源的高能中微子”而获得诺贝尔奖。",
         "llm_summary": "诺贝尔物理学奖今年授予弗朗西斯·哈尔岑（Francis Halzen），表彰其对冰立方中微子天文台的决定性贡献以及发现天体物理起源的高能中微子。中微子研究是物理学领域的重要方向，迄今为止诺贝尔物理学奖已有五次授予与中微子探测和发现相关的研究。",
@@ -282,14 +207,14 @@
           "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
           "url": "https://phys.org/news/2026-10-neutrino-science-year-nobel-prize.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.7,
+          "score": 60.5,
           "published_at": "2026-10-22T23:30:01+00:00"
         },
         {
           "title": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
           "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 49.7,
+          "score": 49.4,
           "published_at": "2026-10-06T10:26:02+00:00"
         }
       ],
@@ -300,7 +225,7 @@
         "neutrino",
         "anyway"
       ],
-      "rank": 4,
+      "rank": 3,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -331,13 +256,13 @@
         "arXiv quant-ph 论文速递"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-23T15:06:53.127788+00:00",
+      "latest_at": "2026-10-24T00:44:16.149625+00:00",
       "representative": {
         "title": "Memory--Transport Competition in Physical Two-Bath Quantum Reset Dynamics",
         "url": "https://arxiv.org/abs/2610.30457",
         "source": "arXiv quant-ph 论文速递",
         "published_at": "2026-10-23T04:00:00+00:00",
-        "score": 47.4,
+        "score": 47.1,
         "summary": "arXiv:2610.30457v1 Announce Type: new Abstract: Coherence preservation and environmental renewal offer competing ways of controlling quantum memory and transport. We show that a seemingly natural protocol which exactly replaces the bath occ",
         "zh_full": null,
         "refs": {
@@ -354,14 +279,14 @@
           "title": "Memory--Transport Competition in Physical Two-Bath Quantum Reset Dynamics",
           "url": "https://arxiv.org/abs/2610.30457",
           "source": "arXiv quant-ph 论文速递",
-          "score": 47.4,
+          "score": 47.1,
           "published_at": "2026-10-23T04:00:00+00:00"
         },
         {
           "title": "Atomic memory keeps distant ions entangled for about 10 seconds",
           "url": "https://phys.org/news/2026-10-atomic-memory-distant-ions-entangled.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.8,
+          "score": 35.7,
           "published_at": "2026-10-21T11:40:12+00:00"
         }
       ],
@@ -372,9 +297,9 @@
         "distant",
         "ions"
       ],
-      "rank": 5,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 4,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -395,13 +320,13 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-23T15:06:53.127788+00:00",
+      "latest_at": "2026-10-24T00:44:16.149625+00:00",
       "representative": {
         "title": "Physicists trap and tame single particle of antimatter for months",
         "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
         "source": "Phys.org 物理新闻",
         "published_at": "2026-10-21T15:00:10+00:00",
-        "score": 59.8,
+        "score": 59.6,
         "summary": "For the first time, Northwestern University physicists have coaxed a single positron—the antimatter counterpart of an electron—into an exquisitely controlled quantum state.",
         "zh_full": "西北大学（Northwestern University）的物理学家首次将单个正电子——电子的反物质对应粒子——诱入一个极其精确控制的量子态中，并将其捕获长达数月。这是物理学领域的一项重要突破。",
         "llm_summary": "西北大学物理学家首次将单个正电子（电子的反物质对应粒子）诱入精确控制的量子态中，并捕获长达数月。这是反物质研究的重要突破。",
@@ -417,14 +342,14 @@
           "title": "Physicists trap and tame single particle of antimatter for months",
           "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
           "source": "Phys.org 物理新闻",
-          "score": 59.8,
+          "score": 59.6,
           "published_at": "2026-10-21T15:00:10+00:00"
         },
         {
           "title": "A single antimatter particle was held in a trap for months",
           "url": "https://www.newscientist.com/article/2594955-a-single-antimatter-particle-was-held-in-a-trap-for-months/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 59.8,
+          "score": 59.6,
           "published_at": "2026-10-21T15:00:00+00:00"
         }
       ],
@@ -435,9 +360,69 @@
         "physicists",
         "tame"
       ],
+      "rank": 5,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "greatest",
+        "high-temperature",
+        "mystery",
+        "neutrino",
+        "smoking",
+        "solve",
+        "superconductivity"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "New Scientist 物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-10-24T00:44:16.149625+00:00",
+      "representative": {
+        "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
+        "url": "https://phys.org/news/2026-10-gun-mystery-high-temperature-superconductivity.html",
+        "source": "Phys.org 物理新闻",
+        "published_at": "2026-10-20T20:00:07+00:00",
+        "score": 59.0,
+        "summary": "Superconductivity has many important practical applications, including creating powerful magnets used in high-resolution medical scans, transporting electricity efficiently and building ultrasensitive measuring devices. Until now, understan",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
+      "id": "77abdba5a228",
+      "links": [
+        {
+          "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
+          "url": "https://phys.org/news/2026-10-gun-mystery-high-temperature-superconductivity.html",
+          "source": "Phys.org 物理新闻",
+          "score": 59.0,
+          "published_at": "2026-10-20T20:00:07+00:00"
+        },
+        {
+          "title": "Are we about to solve the greatest mystery of the neutrino?",
+          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 58.3,
+          "published_at": "2026-10-19T19:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "solve",
+        "mystery",
+        "smoking",
+        "gun",
+        "temperature"
+      ],
       "rank": 6,
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 0.0,
       "status": "关注中"
@@ -465,7 +450,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-23T15:06:53.127788+00:00",
+      "latest_at": "2026-10-24T00:44:16.149625+00:00",
       "representative": {
         "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
         "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
@@ -492,7 +477,7 @@
           "title": "Steering electrons with extreme ultraviolet light—team achieves quantum coherent control",
           "url": "https://phys.org/news/2026-10-electrons-extreme-ultraviolet-team-quantum.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.5,
+          "score": 35.4,
           "published_at": "2026-10-20T18:00:31+00:00"
         }
       ],
@@ -525,13 +510,13 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-23T15:06:53.127788+00:00",
+      "latest_at": "2026-10-24T00:44:16.149625+00:00",
       "representative": {
         "title": "Quantum probability can't be derived without assuming it first",
         "url": "https://phys.org/news/2026-10-quantum-probability-derived-assuming.html",
         "source": "Phys.org 物理新闻",
         "published_at": "2026-10-20T15:50:01+00:00",
-        "score": 35.5,
+        "score": 35.4,
         "summary": "For nearly a century, physicists have relied on the Born rule to calculate the chances of different outcomes when they measure a quantum system. Yet despite decades of effort, nobody has managed to derive the rule from more basic mathematic",
         "zh_full": null
       },
@@ -543,14 +528,14 @@
           "title": "Quantum probability can't be derived without assuming it first",
           "url": "https://phys.org/news/2026-10-quantum-probability-derived-assuming.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.5,
+          "score": 35.4,
           "published_at": "2026-10-20T15:50:01+00:00"
         },
         {
           "title": "Could consciousness be quantum?",
           "url": "https://www.newscientist.com/video/2592247-could-consciousness-be-quantum/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 30.3,
+          "score": 30.2,
           "published_at": "2026-10-07T17:00:00+00:00"
         }
       ],
@@ -562,69 +547,6 @@
         "consciousness"
       ],
       "rank": 8,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "greatest",
-        "impossible",
-        "laser",
-        "mystery",
-        "neutrino",
-        "research",
-        "solve"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "MIT News 物理",
-        "New Scientist 物理"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-10-23T15:06:53.127788+00:00",
-      "representative": {
-        "title": "New research shows a neutrino laser is impossible",
-        "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
-        "source": "MIT News 物理",
-        "published_at": "2026-09-02T14:00:00+00:00",
-        "score": 41.2,
-        "summary": "Due to physical and fundamental limitations, an earlier proposal for producing laserlike beams of neutrinos cannot be achieved, scientists report.",
-        "zh_full": "据MIT News报道，科学家报告称，由于物理和根本性限制，此前关于产生类似激光的中微子束的提案无法实现。这项新研究表明，中微子激光是不可能的。",
-        "llm_summary": "科学家报告称，由于物理和根本性限制，此前关于产生类似激光的中微子束的提案无法实现。这项新研究表明，中微子激光是不可能的。",
-        "llm_reason": "中微子激光可行性研究",
-        "density": "中"
-      },
-      "folded_count": 1,
-      "title": "New research shows a neutrino laser is impossible",
-      "id": "7e7427289fca",
-      "links": [
-        {
-          "title": "Are we about to solve the greatest mystery of the neutrino?",
-          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 58.6,
-          "published_at": "2026-10-19T19:00:00+00:00"
-        },
-        {
-          "title": "New research shows a neutrino laser is impossible",
-          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-09-02T14:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "neutrino",
-        "research",
-        "laser",
-        "impossible",
-        "solve"
-      ],
-      "rank": 9,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -647,7 +569,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-23T15:06:53.127788+00:00",
+      "latest_at": "2026-10-24T00:44:16.149625+00:00",
       "representative": {
         "title": "On the hunt for dark matter",
         "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
@@ -668,7 +590,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 54.3,
+          "score": 54.0,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
@@ -686,7 +608,7 @@
         "observe",
         "particle"
       ],
-      "rank": 10,
+      "rank": 9,
       "trend": "new",
       "trendPct": null,
       "badges": [],

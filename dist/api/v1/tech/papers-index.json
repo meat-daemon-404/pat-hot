@@ -1,37 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T15:06:53.127788+00:00",
+  "generatedAt": "2026-10-24T00:44:16.149625+00:00",
   "channel": "tech",
   "count": 33,
   "items": [
-    {
-      "id": "6e9c3354fc1f",
-      "title": "Confinement of hybridized light modes in nonlinear-optical superpotentials",
-      "channel": "tech",
-      "source": "arXiv 光学与光子学 (physics.optics)",
-      "url": "https://arxiv.org/abs/2610.31643",
-      "doi": null,
-      "arxiv": "2610.31643",
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "科研进展",
-      "published_at": "2026-10-23T04:00:00+00:00",
-      "selected": true
-    },
-    {
-      "id": "5fbb932302fe",
-      "title": "Shaping Near Fields of Photonic Modes into Topological Textures",
-      "channel": "tech",
-      "source": "arXiv 光学与光子学 (physics.optics)",
-      "url": "https://arxiv.org/abs/2610.31207",
-      "doi": null,
-      "arxiv": "2610.31207",
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "科研进展",
-      "published_at": "2026-10-23T04:00:00+00:00",
-      "selected": true
-    },
     {
       "id": "dbfa64c2973c",
       "title": "Metasurface engineering of transient photothermal responses for vibrational imaging at living interfaces",
@@ -57,6 +29,20 @@
       "via": "feed_text",
       "confidence": "verified",
       "category": "科研进展",
+      "published_at": "2026-10-23T04:00:00+00:00",
+      "selected": true
+    },
+    {
+      "id": "3e007f511546",
+      "title": "Intrinsic Angular Momentum Contribution to the Sagnac Response of a Rotating Helical Optical Fiber",
+      "channel": "tech",
+      "source": "arXiv 光学与光子学 (physics.optics)",
+      "url": "https://arxiv.org/abs/2610.30898",
+      "doi": null,
+      "arxiv": "2610.30898",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "光通信",
       "published_at": "2026-10-23T04:00:00+00:00",
       "selected": true
     },
@@ -229,20 +215,6 @@
       "selected": true
     },
     {
-      "id": "3e007f511546",
-      "title": "Intrinsic Angular Momentum Contribution to the Sagnac Response of a Rotating Helical Optical Fiber",
-      "channel": "tech",
-      "source": "arXiv 光学与光子学 (physics.optics)",
-      "url": "https://arxiv.org/abs/2610.30898",
-      "doi": null,
-      "arxiv": "2610.30898",
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "光通信",
-      "published_at": "2026-10-23T04:00:00+00:00",
-      "selected": true
-    },
-    {
       "id": "a78ba28e7207",
       "title": "Effective-action formulation of mathbf{k}-odd bianisotropy and unidirectional polarization rotation in nonlocal temporal metamaterials",
       "channel": "tech",
@@ -409,6 +381,34 @@
       "category": "激光",
       "published_at": "2026-10-19T00:00:00+00:00",
       "selected": true
+    },
+    {
+      "id": "6e9c3354fc1f",
+      "title": "Confinement of hybridized light modes in nonlinear-optical superpotentials",
+      "channel": "tech",
+      "source": "arXiv 光学与光子学 (physics.optics)",
+      "url": "https://arxiv.org/abs/2610.31643",
+      "doi": null,
+      "arxiv": "2610.31643",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "科研进展",
+      "published_at": "2026-10-23T04:00:00+00:00",
+      "selected": false
+    },
+    {
+      "id": "5fbb932302fe",
+      "title": "Shaping Near Fields of Photonic Modes into Topological Textures",
+      "channel": "tech",
+      "source": "arXiv 光学与光子学 (physics.optics)",
+      "url": "https://arxiv.org/abs/2610.31207",
+      "doi": null,
+      "arxiv": "2610.31207",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "科研进展",
+      "published_at": "2026-10-23T04:00:00+00:00",
+      "selected": false
     },
     {
       "id": "b8b58676d75d",
