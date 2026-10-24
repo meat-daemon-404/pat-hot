@@ -1,325 +1,233 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T00:44:16.149625+00:00",
+  "generatedAt": "2026-10-24T14:03:13.171215+00:00",
   "count": 10,
   "items": [
     {
       "terms": [
-        "black",
-        "bound",
-        "calculations",
-        "dependence",
-        "events",
-        "holes",
-        "magellanic",
-        "maximum",
-        "microlensing",
-        "near",
-        "primordial",
-        "rate",
-        "same",
-        "spinning",
-        "split",
-        "suggest",
-        "weaker"
+        "accelerate",
+        "adopting",
+        "aerocapture",
+        "apollo",
+        "artemis",
+        "astronauts",
+        "base",
+        "bonanza",
+        "ends",
+        "future",
+        "interplanetary",
+        "inversion",
+        "land",
+        "lander",
+        "leaves",
+        "mission",
+        "missions",
+        "moon",
+        "nasa",
+        "operations",
+        "partners",
+        "plan",
+        "scientific",
+        "swift",
+        "test",
+        "unlock",
+        "urgency"
       ],
-      "source_count": 2,
-      "signal_count": 2,
+      "source_count": 3,
+      "signal_count": 4,
       "sources": [
+        "NASA 快讯",
         "Phys.org 太空新闻",
-        "arXiv astro-ph.CO 论文速递"
+        "Universe Today"
       ],
-      "score": 42.0,
-      "latest_at": "2026-10-24T00:44:16.149625+00:00",
+      "score": 38.8,
+      "latest_at": "2026-10-24T14:03:13.171215+00:00",
       "representative": {
-        "title": "Same Events, Weaker Bound: Model Dependence in Magellanic Microlensing Limits on Primordial Black Holes",
-        "url": "https://arxiv.org/abs/2610.30510",
-        "source": "arXiv astro-ph.CO 论文速递",
-        "published_at": "2026-10-23T04:00:00+00:00",
-        "score": 47.1,
-        "summary": "arXiv:2610.30510v1 Announce Type: new Abstract: OGLE microlensing of the Magellanic Clouds sets the leading bounds on primordial black holes (PBHs) as dark matter from $10^{-8}$ to $10^{3}\\,M_\\odot$. Holding the detected events and survey e",
+        "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+        "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
+        "source": "NASA 快讯",
+        "published_at": "2026-10-23T22:39:39+00:00",
+        "score": 68.6,
+        "summary": "As NASA returns humans to the lunar surface and establishes a long-term presence on our closest celestial neighbor, the agency and commercial human landing system providers Blue Origin and SpaceX have streamlined the designs and changed bot",
         "zh_full": null,
-        "refs": {
-          "arxiv": "2610.30510",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
+        "llm_score": 45.0
       },
-      "folded_count": 1,
-      "title": "Same Events, Weaker Bound: Model Dependence in Magellanic Microlensing Limits on Primordial Black Holes",
-      "id": "8c90bbbce8d5",
+      "folded_count": 2,
+      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+      "id": "340e3a74576c",
       "links": [
         {
-          "title": "Same Events, Weaker Bound: Model Dependence in Magellanic Microlensing Limits on Primordial Black Holes",
-          "url": "https://arxiv.org/abs/2610.30510",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 47.1,
-          "published_at": "2026-10-23T04:00:00+00:00"
+          "title": "NASA adopting Apollo's urgency to build a moon base and land astronauts within 2 years",
+          "url": "https://phys.org/news/2026-10-nasa-apollo-urgency-moon-base.html",
+          "source": "Phys.org 太空新闻",
+          "score": 68.9,
+          "published_at": "2026-10-24T09:28:00+00:00"
         },
         {
-          "title": "Black holes spinning near maximum rate could split in two, calculations suggest",
-          "url": "https://phys.org/news/2026-10-black-holes-maximum.html",
-          "source": "Phys.org 太空新闻",
-          "score": 36.6,
-          "published_at": "2026-10-23T18:20:12+00:00"
+          "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+          "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
+          "source": "NASA 快讯",
+          "score": 68.6,
+          "published_at": "2026-10-23T22:39:39+00:00"
+        },
+        {
+          "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
+          "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/",
+          "source": "NASA 快讯",
+          "score": 68.6,
+          "published_at": "2026-10-23T22:37:53+00:00"
+        },
+        {
+          "title": "NASA’s Swift Mission Ends, Leaves Behind Scientific Bonanza",
+          "url": "https://science.nasa.gov/missions/swift/nasas-swift-mission-ends/",
+          "source": "NASA 快讯",
+          "score": 68.5,
+          "published_at": "2026-10-23T21:51:19+00:00"
+        },
+        {
+          "title": "How Inversion and NASA Plan to Unlock Interplanetary Aerocapture",
+          "url": "https://www.universetoday.com/articles/how-inversion-and-nasa-plan-to-unlock-interplanetary-aerocapture-mb-edits",
+          "source": "Universe Today",
+          "score": 40.2,
+          "published_at": "2026-10-21T16:12:00+00:00"
         }
       ],
       "top_terms": [
-        "black",
-        "holes",
-        "spinning",
-        "near",
-        "maximum"
+        "nasa",
+        "moon",
+        "lander",
+        "mission",
+        "adopting"
       ],
       "rank": 1,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
+      "heat": 38.8,
+      "status": "发酵中"
     },
     {
       "terms": [
-        "brewing",
-        "cauldron",
-        "image",
-        "nebulous",
-        "reveals",
-        "stars",
-        "webb",
-        "young"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "ESA 空间科学",
-        "Phys.org 太空新闻"
-      ],
-      "score": 42.0,
-      "latest_at": "2026-10-24T00:44:16.149625+00:00",
-      "representative": {
-        "title": "Stars brewing in a nebulous cauldron",
-        "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Stars_brewing_in_a_nebulous_cauldron",
-        "source": "ESA 空间科学",
-        "published_at": "2026-10-22T08:00:00+00:00",
-        "score": 60.0,
-        "summary": "Image: Stars brewing in a nebulous cauldron",
-        "zh_full": null
-      },
-      "folded_count": 1,
-      "title": "Stars brewing in a nebulous cauldron",
-      "id": "1f2d7a0848d9",
-      "links": [
-        {
-          "title": "Webb image reveals young stars brewing in a nebulous cauldron",
-          "url": "https://phys.org/news/2026-10-webb-image-reveals-young-stars.html",
-          "source": "Phys.org 太空新闻",
-          "score": 60.3,
-          "published_at": "2026-10-22T17:40:01+00:00"
-        },
-        {
-          "title": "Stars brewing in a nebulous cauldron",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Stars_brewing_in_a_nebulous_cauldron",
-          "source": "ESA 空间科学",
-          "score": 60.0,
-          "published_at": "2026-10-22T08:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "stars",
-        "brewing",
-        "nebulous",
-        "cauldron",
-        "webb"
-      ],
-      "rank": 2,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
+        "astronomers",
         "black",
+        "black hole",
         "centers",
         "decade-old",
+        "distinct",
         "ejected",
         "evidence",
+        "evolution",
+        "formation",
         "galactic",
+        "hole",
         "holes",
+        "measure",
+        "mergers",
+        "nature",
+        "pair",
         "prediction",
         "quasar",
         "recoiling",
+        "sheds",
+        "spin",
+        "stellar",
         "supermassive",
         "supports",
-        "survey"
+        "survey",
+        "wobbling"
       ],
-      "source_count": 2,
+      "source_count": 4,
       "signal_count": 2,
       "sources": [
+        "LIGO",
+        "MIT News 太空探索",
         "Phys.org 太空新闻",
         "Universe Today"
       ],
-      "score": 42.0,
-      "latest_at": "2026-10-24T00:44:16.149625+00:00",
+      "score": 32.0,
+      "latest_at": "2026-10-24T14:03:13.171215+00:00",
       "representative": {
-        "title": "Supermassive black holes ejected from galactic centers? Quasar survey supports decade-old prediction",
-        "url": "https://phys.org/news/2026-10-supermassive-black-holes-ejected-galactic.html",
-        "source": "Phys.org 太空新闻",
-        "published_at": "2026-10-22T16:20:25+00:00",
-        "score": 36.2,
-        "summary": "By analyzing data on around 100,000 quasars, or extremely luminous galactic nuclei, researchers at Eötvös Loránd University (ELTE) have found statistical evidence that some supermassive black holes at the centers of galaxies are ejected fro",
-        "zh_full": null
+        "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
+        "url": "https://news.mit.edu/2024/using-wobbling-stellar-material-astronomers-measure-supermassive-black-hole-spin-0522",
+        "source": "MIT News 太空探索",
+        "published_at": "2024-05-22T15:00:00+00:00",
+        "score": 50.8,
+        "summary": "The results offer a new way to probe supermassive black holes and their evolution across the universe.",
+        "zh_full": "（无摘要，仅标题）",
+        "llm_summary": "（无摘要，仅标题）",
+        "density": "低"
       },
-      "folded_count": 1,
-      "title": "Supermassive black holes ejected from galactic centers? Quasar survey supports decade-old prediction",
-      "id": "e0433852e684",
+      "folded_count": 3,
+      "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
+      "id": "68a6e1be1a60",
       "links": [
         {
-          "title": "Supermassive black holes ejected from galactic centers? Quasar survey supports decade-old prediction",
-          "url": "https://phys.org/news/2026-10-supermassive-black-holes-ejected-galactic.html",
-          "source": "Phys.org 太空新闻",
-          "score": 36.2,
-          "published_at": "2026-10-22T16:20:25+00:00"
+          "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
+          "url": "https://news.mit.edu/2024/using-wobbling-stellar-material-astronomers-measure-supermassive-black-hole-spin-0522",
+          "source": "MIT News 太空探索",
+          "score": 50.8,
+          "published_at": "2024-05-22T15:00:00+00:00"
+        },
+        {
+          "title": "Pair of distinct black hole mergers sheds new light on nature of their formation and evolution",
+          "url": "https://ligo.org/pair-of-distinct-black-hole-mergers-sheds-new-light-on-nature-of-their-formation-and-evolution/",
+          "source": "LIGO",
+          "score": 50.8,
+          "published_at": "2025-10-28T15:01:12+00:00"
         },
         {
           "title": "New Evidence for an Old Prediction: Recoiling Supermassive Black Holes",
           "url": "https://www.universetoday.com/articles/new-evidence-for-an-old-prediction-recoiling-supermassive-black-holes",
           "source": "Universe Today",
-          "score": 36.2,
+          "score": 41.8,
           "published_at": "2026-10-22T17:52:01+00:00"
+        },
+        {
+          "title": "Supermassive black holes ejected from galactic centers? Quasar survey supports decade-old prediction",
+          "url": "https://phys.org/news/2026-10-supermassive-black-holes-ejected-galactic.html",
+          "source": "Phys.org 太空新闻",
+          "score": 41.7,
+          "published_at": "2026-10-22T16:20:25+00:00"
         }
       ],
       "top_terms": [
-        "supermassive",
         "black",
+        "supermassive",
         "holes",
         "old",
         "prediction"
       ],
-      "rank": 3,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "assessing",
-        "consistency",
-        "constant",
-        "constraints",
-        "cosmological",
-        "dark",
-        "dark-energy",
-        "data",
-        "desi",
-        "disagreement",
-        "energy",
-        "equation",
-        "exact",
-        "geometrization",
-        "gravity",
-        "growth",
-        "interacting",
-        "matter",
-        "metric",
-        "neural",
-        "partial",
-        "posterior",
-        "reconstruction",
-        "role",
-        "simulation-calibrated",
-        "state",
-        "term"
-      ],
-      "source_count": 1,
-      "signal_count": 3,
-      "sources": [
-        "arXiv astro-ph.CO 论文速递"
-      ],
-      "score": 34.5,
-      "latest_at": "2026-10-24T00:44:16.149625+00:00",
-      "representative": {
-        "title": "Constraints on interacting dark energy with a constant equation of state in light of DESI DR2: The role of the interaction term",
-        "url": "https://arxiv.org/abs/2610.30784",
-        "source": "arXiv astro-ph.CO 论文速递",
-        "published_at": "2026-10-23T04:00:00+00:00",
-        "score": 45.3,
-        "summary": "arXiv:2610.30784v1 Announce Type: new Abstract: Recent DESI baryon acoustic oscillation (BAO) analyses suggest a preference for an evolving dark energy equation of state (EoS) that crosses the phantom divide $w=-1$. Interactions between dar",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.30784",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 0,
-      "title": "Constraints on interacting dark energy with a constant equation of state in light of DESI DR2: The role of the interaction term",
-      "id": "80ee3eb28797",
-      "links": [
-        {
-          "title": "Constraints on interacting dark energy with a constant equation of state in light of DESI DR2: The role of the interaction term",
-          "url": "https://arxiv.org/abs/2610.30784",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.3,
-          "published_at": "2026-10-23T04:00:00+00:00"
-        },
-        {
-          "title": "Assessing the consistency of the CPL dark-energy model with cosmological data: Simulation-calibrated neural posterior disagreement",
-          "url": "https://arxiv.org/abs/2610.31044",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.3,
-          "published_at": "2026-10-23T04:00:00+00:00"
-        },
-        {
-          "title": "Partial geometrization of dark matter in metric f(R) gravity: Exact reconstruction and growth constraints",
-          "url": "https://arxiv.org/abs/2610.30201",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.3,
-          "published_at": "2026-10-23T04:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "dark",
-        "constraints",
-        "energy",
-        "interacting",
-        "constant"
-      ],
-      "rank": 4,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 34.5,
-      "status": "关注中"
+      "heat": 32.0,
+      "status": "发酵中"
     },
     {
       "terms": [
         "calendar",
-        "catch",
         "conjunction",
-        "early-morning",
         "friday",
         "full",
         "gaze",
         "high-orbit",
         "hunter",
         "iapetus",
+        "mercury",
         "moon",
         "near",
         "neptune",
         "october",
-        "orionids",
         "phases",
         "satellites",
+        "saturday",
+        "stands",
+        "still",
         "superior",
         "thursday",
         "today",
         "travel",
-        "wednesday",
         "when"
       ],
       "source_count": 2,
@@ -329,7 +237,7 @@
         "MIT News 太空探索"
       ],
       "score": 24.5,
-      "latest_at": "2026-10-24T00:44:16.149625+00:00",
+      "latest_at": "2026-10-24T14:03:13.171215+00:00",
       "representative": {
         "title": "High-orbit satellites could light the way for travel to the moon",
         "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
@@ -343,27 +251,27 @@
       },
       "folded_count": 1,
       "title": "High-orbit satellites could light the way for travel to the moon",
-      "id": "da7e23a8fc20",
+      "id": "2632e28a4dcf",
       "links": [
         {
           "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
           "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
           "source": "Astronomy Magazine",
-          "score": 66.9,
+          "score": 66.5,
           "published_at": "2026-10-23T13:30:41+00:00"
         },
         {
           "title": "The Sky Today on Friday, October 23: Nab Neptune near the Moon",
           "url": "https://www.astronomy.com/observing/the-sky-today-friday-october-23-2026/",
           "source": "Astronomy Magazine",
-          "score": 66.7,
+          "score": 66.3,
           "published_at": "2026-10-23T08:00:00+00:00"
         },
         {
           "title": "The Sky This Week from October 23 to 30: Gaze at the Full Hunter’s Moon",
           "url": "https://www.astronomy.com/the-sky-this-week/the-sky-this-week-from-october-23-to-30-2026/",
           "source": "Astronomy Magazine",
-          "score": 66.6,
+          "score": 66.2,
           "published_at": "2026-10-23T05:00:00+00:00"
         },
         {
@@ -374,11 +282,11 @@
           "published_at": "2026-08-10T18:10:00+00:00"
         },
         {
-          "title": "The Sky Today on Thursday, October 22: Iapetus at superior conjunction",
-          "url": "https://www.astronomy.com/observing/the-sky-today-thursday-october-22-2026/",
+          "title": "The Sky Today on Saturday, October 24: Mercury stands still",
+          "url": "https://www.astronomy.com/observing/the-sky-today-saturday-october-24-2026/",
           "source": "Astronomy Magazine",
-          "score": 39.6,
-          "published_at": "2026-10-22T08:00:00+00:00"
+          "score": 40.2,
+          "published_at": "2026-10-24T08:00:00+00:00"
         }
       ],
       "top_terms": [
@@ -388,7 +296,7 @@
         "today",
         "full"
       ],
-      "rank": 5,
+      "rank": 3,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -422,7 +330,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-24T00:44:16.149625+00:00",
+      "latest_at": "2026-10-24T14:03:13.171215+00:00",
       "representative": {
         "title": "Lincoln Laboratory laser communications terminal launches on historic Artemis II moon mission",
         "url": "https://news.mit.edu/2026/lincoln-laboratory-laser-communications-terminal-launches-artemis-ii-0402",
@@ -442,7 +350,7 @@
           "title": "Artemis I: Crystals of experimental detectors record radiation doses near the moon",
           "url": "https://phys.org/news/2026-10-artemis-crystals-experimental-detectors-doses.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.9,
+          "score": 60.5,
           "published_at": "2026-10-23T15:40:01+00:00"
         },
         {
@@ -460,9 +368,9 @@
         "experimental",
         "detectors"
       ],
-      "rank": 6,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 4,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -489,13 +397,13 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-24T00:44:16.149625+00:00",
+      "latest_at": "2026-10-24T14:03:13.171215+00:00",
       "representative": {
         "title": "Webb captures commotion from nebula’s stellar jets",
         "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Webb_captures_commotion_from_nebula_s_stellar_jets",
         "source": "ESA 空间科学",
         "published_at": "2026-10-06T13:00:00+00:00",
-        "score": 49.5,
+        "score": 49.1,
         "summary": "Image: Webb captures commotion from nebula’s stellar jets",
         "zh_full": null
       },
@@ -507,14 +415,14 @@
           "title": "Webb captures stars in the early stages of life in a nearby stellar nursery",
           "url": "https://phys.org/news/2026-10-webb-captures-stars-early-stages.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.3,
+          "score": 59.9,
           "published_at": "2026-10-22T17:40:18+00:00"
         },
         {
           "title": "Webb captures commotion from nebula’s stellar jets",
           "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Webb_captures_commotion_from_nebula_s_stellar_jets",
           "source": "ESA 空间科学",
-          "score": 49.5,
+          "score": 49.1,
           "published_at": "2026-10-06T13:00:00+00:00"
         }
       ],
@@ -525,9 +433,70 @@
         "stars",
         "early"
       ],
-      "rank": 7,
+      "rank": 5,
       "trend": "flat",
       "trendPct": 0.0,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "brewing",
+        "cauldron",
+        "image",
+        "nebulous",
+        "reveals",
+        "stars",
+        "webb",
+        "young"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "ESA 空间科学",
+        "Phys.org 太空新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-10-24T14:03:13.171215+00:00",
+      "representative": {
+        "title": "Stars brewing in a nebulous cauldron",
+        "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Stars_brewing_in_a_nebulous_cauldron",
+        "source": "ESA 空间科学",
+        "published_at": "2026-10-22T08:00:00+00:00",
+        "score": 59.7,
+        "summary": "Image: Stars brewing in a nebulous cauldron",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "Stars brewing in a nebulous cauldron",
+      "id": "1f2d7a0848d9",
+      "links": [
+        {
+          "title": "Webb image reveals young stars brewing in a nebulous cauldron",
+          "url": "https://phys.org/news/2026-10-webb-image-reveals-young-stars.html",
+          "source": "Phys.org 太空新闻",
+          "score": 59.9,
+          "published_at": "2026-10-22T17:40:01+00:00"
+        },
+        {
+          "title": "Stars brewing in a nebulous cauldron",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Stars_brewing_in_a_nebulous_cauldron",
+          "source": "ESA 空间科学",
+          "score": 59.7,
+          "published_at": "2026-10-22T08:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "stars",
+        "brewing",
+        "nebulous",
+        "cauldron",
+        "webb"
+      ],
+      "rank": 6,
+      "trend": "down",
+      "trendPct": -50.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -549,13 +518,13 @@
         "Universe Today"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-24T00:44:16.149625+00:00",
+      "latest_at": "2026-10-24T14:03:13.171215+00:00",
       "representative": {
         "title": "There should be black holes in our neighborhood. Can we find them?",
         "url": "https://phys.org/news/2026-10-black-holes-neighborhood.html",
         "source": "Phys.org 太空新闻",
         "published_at": "2026-10-22T14:40:07+00:00",
-        "score": 36.1,
+        "score": 35.9,
         "summary": "Scientific estimates show that there should be between about 100 million and 1 billion stellar-mass black holes in the Milky Way. But they aren't easy to locate. They're not like supermassive black holes (SMBH) at the centers of galaxies. T",
         "zh_full": null
       },
@@ -567,14 +536,14 @@
           "title": "There should be black holes in our neighborhood. Can we find them?",
           "url": "https://phys.org/news/2026-10-black-holes-neighborhood.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.1,
+          "score": 35.9,
           "published_at": "2026-10-22T14:40:07+00:00"
         },
         {
           "title": "There Should Be Black Holes in our Neighbourhood. Can We Find Them?",
           "url": "https://www.universetoday.com/articles/there-should-be-black-holes-in-our-neighbourhood-can-we-find-them",
           "source": "Universe Today",
-          "score": 35.8,
+          "score": 35.6,
           "published_at": "2026-10-21T17:46:00+00:00"
         }
       ],
@@ -585,9 +554,9 @@
         "our",
         "find"
       ],
-      "rank": 8,
-      "trend": "down",
-      "trendPct": -50.0,
+      "rank": 7,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -615,13 +584,13 @@
         "Universe Today"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-24T00:44:16.149625+00:00",
+      "latest_at": "2026-10-24T14:03:13.171215+00:00",
       "representative": {
         "title": "Supernova Explosions First Aided, Then Later Impeded, the Epoch of Reionization",
         "url": "https://www.universetoday.com/articles/supernova-explosions-first-aided-then-later-impeded-the-epoch-of-reionization",
         "source": "Universe Today",
         "published_at": "2026-10-22T14:53:56+00:00",
-        "score": 60.2,
+        "score": 59.9,
         "summary": "The Epoch of Reionization is when radiation from early galaxies and their stars reionized neutral hydrogen and let light travel freely through the cosmos. Some research shows that supernovae helped the process. But new research shows that, ",
         "zh_full": null,
         "llm_score": 37.0
@@ -634,14 +603,14 @@
           "title": "Supernova Explosions First Aided, Then Later Impeded, the Epoch of Reionization",
           "url": "https://www.universetoday.com/articles/supernova-explosions-first-aided-then-later-impeded-the-epoch-of-reionization",
           "source": "Universe Today",
-          "score": 60.2,
+          "score": 59.9,
           "published_at": "2026-10-22T14:53:56+00:00"
         },
         {
           "title": "Hubble observations challenge supernova winds' role in cosmic reionization",
           "url": "https://phys.org/news/2026-10-hubble-supernova-role-cosmic-reionization.html",
           "source": "Phys.org 太空新闻",
-          "score": 59.6,
+          "score": 59.3,
           "published_at": "2026-10-21T17:20:15+00:00"
         }
       ],
@@ -652,21 +621,86 @@
         "challenge",
         "winds"
       ],
-      "rank": 9,
-      "trend": "down",
-      "trendPct": -50.0,
+      "rank": 8,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
     },
     {
       "terms": [
-        "dark",
-        "energy",
+        "astronomers",
+        "engine",
+        "field",
+        "flares",
+        "kepler",
+        "most",
+        "nasa",
+        "powerful",
+        "rs-25",
+        "stellar",
+        "stennis",
+        "tests",
+        "uncover"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "NASA 快讯",
+        "Phys.org 太空新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-10-24T14:03:13.171215+00:00",
+      "representative": {
+        "title": "RS-25 Engine Tests at NASA Stennis",
+        "url": "https://www.nasa.gov/image-article/rs-25-engine-tests-at-nasa-stennis/",
+        "source": "NASA 快讯",
+        "published_at": "2026-10-23T18:57:04+00:00",
+        "score": 60.6,
+        "summary": "Teams at NASA’s Stennis Space Center near Bay St. Louis, Mississippi tested RS-25 engine No. 10001 on Oct. 21, 2026. The hot fire test lasted for almost eight-and-a-half minutes (500 seconds), the same amount of time RS-25 engines fire duri",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "RS-25 Engine Tests at NASA Stennis",
+      "id": "38f73eab2a7c",
+      "links": [
+        {
+          "title": "RS-25 Engine Tests at NASA Stennis",
+          "url": "https://www.nasa.gov/image-article/rs-25-engine-tests-at-nasa-stennis/",
+          "source": "NASA 快讯",
+          "score": 60.6,
+          "published_at": "2026-10-23T18:57:04+00:00"
+        },
+        {
+          "title": "Astronomers uncover the engine behind the most powerful stellar flares in the Kepler field",
+          "url": "https://phys.org/news/2026-10-astronomers-uncover-powerful-stellar-flares.html",
+          "source": "Phys.org 太空新闻",
+          "score": 59.1,
+          "published_at": "2026-10-21T13:20:06+00:00"
+        }
+      ],
+      "top_terms": [
+        "engine",
+        "astronomers",
+        "uncover",
+        "most",
+        "powerful"
+      ],
+      "rank": 9,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "economy",
         "exoplanet",
-        "matter",
+        "guide",
+        "next",
         "private",
-        "reveal",
         "space",
         "targets",
         "telescope",
@@ -675,45 +709,48 @@
       "source_count": 2,
       "signal_count": 1,
       "sources": [
-        "New Scientist 太空",
+        "MIT News 太空探索",
         "Universe Today"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-24T00:44:16.149625+00:00",
+      "latest_at": "2026-10-24T14:03:13.171215+00:00",
       "representative": {
-        "title": "27 Exoplanet Targets for the World's First Private Space Telescope",
-        "url": "https://www.universetoday.com/articles/27-exoplanet-targets-for-the-worlds-first-private-space-telescope",
-        "source": "Universe Today",
-        "published_at": "2026-10-23T22:33:37+00:00",
-        "score": 61.1,
-        "summary": "Get ready for the age of private space telescopes. The Lazuli Space Telescope will launch in a few years and part of its mission is to observe exoplanets. New research presents a list of 27 exoplanet targets, some of which are very well-kno",
-        "zh_full": null
+        "title": "The next generation’s guide to the new space economy",
+        "url": "https://news.mit.edu/2026/guide-to-new-space-economy-1002",
+        "source": "MIT News 太空探索",
+        "published_at": "2026-10-02T14:50:00+00:00",
+        "score": 27.9,
+        "summary": "An industry report published by students in an MIT aerospace entrepreneurship class lays out guidance for aspiring space leaders and investors.",
+        "zh_full": "MIT 航空航天创业课程的学生发布了一份行业报告，为有志成为太空领域领导者和投资者的人提供指导。报告面向下一代，聚焦新兴太空经济。摘要未说明报告的具体内容、数据或结论。",
+        "llm_summary": "MIT 航空航天创业课程学生发布行业报告，为未来太空经济领域的领导者和投资者提供指导。",
+        "llm_reason": "太空经济入门指南",
+        "density": "低"
       },
       "folded_count": 1,
-      "title": "27 Exoplanet Targets for the World's First Private Space Telescope",
-      "id": "ba44316d362a",
+      "title": "The next generation’s guide to the new space economy",
+      "id": "2d24421356b5",
       "links": [
         {
           "title": "27 Exoplanet Targets for the World's First Private Space Telescope",
           "url": "https://www.universetoday.com/articles/27-exoplanet-targets-for-the-worlds-first-private-space-telescope",
           "source": "Universe Today",
-          "score": 61.1,
+          "score": 60.7,
           "published_at": "2026-10-23T22:33:37+00:00"
         },
         {
-          "title": "The telescope that could reveal what dark matter and dark energy are",
-          "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 49.6,
-          "published_at": "2026-10-06T17:00:00+00:00"
+          "title": "The next generation’s guide to the new space economy",
+          "url": "https://news.mit.edu/2026/guide-to-new-space-economy-1002",
+          "source": "MIT News 太空探索",
+          "score": 27.9,
+          "published_at": "2026-10-02T14:50:00+00:00"
         }
       ],
       "top_terms": [
-        "telescope",
-        "dark",
+        "space",
         "exoplanet",
         "targets",
-        "world"
+        "world",
+        "private"
       ],
       "rank": 10,
       "trend": "new",

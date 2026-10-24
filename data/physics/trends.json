@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T00:44:16.149625+00:00",
+  "generatedAt": "2026-10-24T14:03:13.171215+00:00",
   "weekStart": "2026-10-18",
   "windowDays": 7,
   "windowStart": "2026-10-18",
@@ -9,34 +9,34 @@
   "prevEnd": "2026-10-17",
   "categoryDelta": [
     {
-      "category": "其他",
-      "thisWeek": 1086.5,
-      "lastWeek": 1324.5,
-      "deltaPct": -18.0
+      "category": "科研进展",
+      "thisWeek": 1136.9,
+      "lastWeek": 1780.8,
+      "deltaPct": -36.2
     },
     {
-      "category": "科研进展",
-      "thisWeek": 1009.9,
-      "lastWeek": 1780.8,
-      "deltaPct": -43.3
+      "category": "其他",
+      "thisWeek": 1084.3,
+      "lastWeek": 1324.5,
+      "deltaPct": -18.1
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 471.6,
+      "thisWeek": 598.0,
       "lastWeek": 343.8,
-      "deltaPct": 37.2
+      "deltaPct": 73.9
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 315.9,
+      "thisWeek": 375.6,
       "lastWeek": 665.4,
-      "deltaPct": -52.5
+      "deltaPct": -43.6
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 284.8,
+      "thisWeek": 299.6,
       "lastWeek": 454.1,
-      "deltaPct": -37.3
+      "deltaPct": -34.0
     },
     {
       "category": "原子分子与光物理",
@@ -59,12 +59,6 @@
       "days": 1
     },
     {
-      "topic_id": "b717da0964b2",
-      "title": "On the Structure of Quantum Finite-Level Systems: Decoherence-Free Subsystems, Quantum Nondemolition Variables, and Back-Action-Evading Measurements",
-      "score": 135.9,
-      "days": 1
-    },
-    {
       "topic_id": "1c8548c84167",
       "title": "Investigation of the dosimetric characteristics of real-time silicone/Bi2O3 nanocomposites for the diagnostic level X-rays",
       "score": 124.0,
@@ -79,19 +73,19 @@
     {
       "topic_id": "044306bf2ce5",
       "title": "Light-based method enables precise control of ultrafast electron flow in a scanning tunneling microscope",
-      "score": 105.3,
+      "score": 104.8,
       "days": 2
     },
     {
-      "topic_id": "190779b33ec6",
-      "title": "Delta-Doped GeV^- in diamond with isotope resolvable optical spectra",
-      "score": 83.3,
+      "topic_id": "6e2c661e708a",
+      "title": "Co-localized optical and acoustic defect modes enable resonantly enhanced photoelastic readout in a one-dimensional phoxonic multilayer",
+      "score": 96.1,
       "days": 1
     },
     {
       "topic_id": "f575369094fa",
       "title": "丘成桐谈AI与数学：这是最令人兴奋、也是最危险的时代",
-      "score": 69.0,
+      "score": 68.5,
       "days": 1
     },
     {
@@ -107,9 +101,15 @@
       "days": 1
     },
     {
-      "topic_id": "8adeafe3eb5e",
-      "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
-      "score": 60.5,
+      "topic_id": "4ae78368b877",
+      "title": "Effects of waveguide tube geometry and surrounding medium conditions on acoustic emission signal attenuation",
+      "score": 60.1,
+      "days": 1
+    },
+    {
+      "topic_id": "d26f974bb4b5",
+      "title": "Particle collisions on a quantum computer",
+      "score": 60.1,
       "days": 1
     }
   ],

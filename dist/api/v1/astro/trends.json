@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T00:44:16.149625+00:00",
+  "generatedAt": "2026-10-24T14:03:13.171215+00:00",
   "weekStart": "2026-10-18",
   "windowDays": 7,
   "windowStart": "2026-10-18",
@@ -10,39 +10,39 @@
   "categoryDelta": [
     {
       "category": "深空探测",
-      "thisWeek": 1589.3,
+      "thisWeek": 1853.8,
       "lastWeek": 1779.6,
-      "deltaPct": -10.7
-    },
-    {
-      "category": "其他",
-      "thisWeek": 1574.6,
-      "lastWeek": 1717.3,
-      "deltaPct": -8.3
+      "deltaPct": 4.2
     },
     {
       "category": "科研进展",
-      "thisWeek": 1561.3,
+      "thisWeek": 1732.5,
       "lastWeek": 1116.2,
-      "deltaPct": 39.9
+      "deltaPct": 55.2
+    },
+    {
+      "category": "其他",
+      "thisWeek": 1679.4,
+      "lastWeek": 1717.3,
+      "deltaPct": -2.2
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 1192.1,
+      "thisWeek": 1094.4,
       "lastWeek": 951.8,
-      "deltaPct": 25.2
+      "deltaPct": 15.0
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 1056.1,
+      "thisWeek": 1010.8,
       "lastWeek": 1251.1,
-      "deltaPct": -15.6
+      "deltaPct": -19.2
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 441.1,
+      "thisWeek": 440.3,
       "lastWeek": 322.5,
-      "deltaPct": 36.8
+      "deltaPct": 36.5
     },
     {
       "category": "引力波",
@@ -52,16 +52,22 @@
     },
     {
       "category": "系外行星",
-      "thisWeek": 171.8,
+      "thisWeek": 171.4,
       "lastWeek": 110.7,
-      "deltaPct": 55.2
+      "deltaPct": 54.8
     }
   ],
   "newTopics": [
     {
-      "topic_id": "da7e23a8fc20",
+      "topic_id": "340e3a74576c",
+      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+      "score": 274.6,
+      "days": 1
+    },
+    {
+      "topic_id": "2632e28a4dcf",
       "title": "High-orbit satellites could light the way for travel to the moon",
-      "score": 240.0,
+      "score": 239.2,
       "days": 2
     },
     {
@@ -95,15 +101,9 @@
       "days": 1
     },
     {
-      "topic_id": "80ee3eb28797",
-      "title": "Constraints on interacting dark energy with a constant equation of state in light of DESI DR2: The role of the interaction term",
-      "score": 135.9,
-      "days": 1
-    },
-    {
       "topic_id": "3be3cfa59f8a",
       "title": "Tiny ‘solar flares’ recreated in the lab may explain corona mystery",
-      "score": 130.1,
+      "score": 129.7,
       "days": 2
     },
     {
@@ -113,10 +113,10 @@
       "days": 1
     },
     {
-      "topic_id": "1f2d7a0848d9",
-      "title": "Stars brewing in a nebulous cauldron",
-      "score": 120.6,
-      "days": 2
+      "topic_id": "00fb52c9432f",
+      "title": "Supernova Explosions First Aided, Then Later Impeded, the Epoch of Reionization",
+      "score": 120.4,
+      "days": 1
     }
   ],
   "sustainedTopics": []
