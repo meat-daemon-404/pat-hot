@@ -9340,7 +9340,7 @@
       "zh_full": null,
       "reason": null,
       "density": null,
-      "score": 30.4,
+      "score": 30.2,
       "role": "科研",
       "published_at": "2026-10-23T21:20:02+00:00",
       "topic_id": null,
@@ -9355,7 +9355,7 @@
         "zh_full": null,
         "reason": null,
         "density": null,
-        "score": 30.4,
+        "score": 30.2,
         "role": "科研",
         "published_at": "2026-10-23T20:20:08+00:00",
         "topic_id": null,
@@ -9390,7 +9390,7 @@
             "zh_full": null,
             "reason": null,
             "density": null,
-            "score": 30.4,
+            "score": 30.2,
             "role": "科研",
             "published_at": "2026-10-23T21:20:02+00:00",
             "topic_id": null,
@@ -9404,7 +9404,7 @@
             "zh_full": null,
             "reason": null,
             "density": null,
-            "score": 30.4,
+            "score": 30.2,
             "role": "科研",
             "published_at": "2026-10-23T20:20:08+00:00",
             "topic_id": null,
@@ -9418,7 +9418,7 @@
     ],
     "tocCount": 3,
     "readMinutes": 2,
-    "amended": 1
+    "amended": 2
   },
   "2026-10-25": {
     "date": "2026-10-25",
@@ -9432,13 +9432,27 @@
       "zh_full": null,
       "reason": null,
       "density": null,
-      "score": 57.7,
+      "score": 57.3,
       "role": "科研",
       "published_at": "2026-10-24T19:00:06+00:00",
       "topic_id": "2484b311455b",
       "topic_title": "Single X-ray pulse reveals plasma nanostructures across scales with one camera"
     },
     "picks": [
+      {
+        "title": "菲尔兹奖得主邓煜：AI时代的数学研究，人永远是主体",
+        "url": "http://www.zhishifenzi.com/news/multiple/10737.html",
+        "source": "知识分子",
+        "summary": "邓煜受邀在《知识分子》与《赛先生》联合举办的论坛发表线上主旨演讲",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 51.5,
+        "role": "媒体",
+        "published_at": "2026-10-25T14:08:46+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
       {
         "title": "'One-positron cyclotron' could test a key prediction of the Standard Model",
         "url": "https://phys.org/news/2026-10-positron-cyclotron-key-standard.html",
@@ -9447,9 +9461,23 @@
         "zh_full": null,
         "reason": null,
         "density": null,
-        "score": 51.3,
+        "score": 50.9,
         "role": "科研",
         "published_at": "2026-10-24T17:20:02+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      {
+        "title": "相比黑猩猩，人类为什么更容易患上骨关节炎？",
+        "url": "http://www.zhishifenzi.com/depth/depth/10736.html",
+        "source": "知识分子",
+        "summary": "一项基因组学研究表明，人类关节软骨中关键缓冲成分硫酸化糖胺聚糖（sGAG）的含量仅为黑猩猩等类人猿的约三分之一。这种在演化过程中出现的基因表达下调与软骨成分改变，虽然塑造了人类独特的骨骼形态，但也可能使人类更容易患上骨关节炎等退行性骨骼疾病。",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 30.9,
+        "role": "媒体",
+        "published_at": "2026-10-25T13:58:44+00:00",
         "topic_id": null,
         "topic_title": null
       }
@@ -9467,7 +9495,7 @@
             "zh_full": null,
             "reason": null,
             "density": null,
-            "score": 51.3,
+            "score": 50.9,
             "role": "科研",
             "published_at": "2026-10-24T17:20:02+00:00",
             "topic_id": null,
@@ -9486,11 +9514,49 @@
             "zh_full": null,
             "reason": null,
             "density": null,
-            "score": 57.7,
+            "score": 57.3,
             "role": "科研",
             "published_at": "2026-10-24T19:00:06+00:00",
             "topic_id": "2484b311455b",
             "topic_title": "Single X-ray pulse reveals plasma nanostructures across scales with one camera"
+          }
+        ]
+      },
+      {
+        "category": "科研进展",
+        "articles": [
+          {
+            "title": "菲尔兹奖得主邓煜：AI时代的数学研究，人永远是主体",
+            "url": "http://www.zhishifenzi.com/news/multiple/10737.html",
+            "source": "知识分子",
+            "summary": "邓煜受邀在《知识分子》与《赛先生》联合举办的论坛发表线上主旨演讲",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 51.5,
+            "role": "媒体",
+            "published_at": "2026-10-25T14:08:46+00:00",
+            "topic_id": null,
+            "topic_title": null
+          }
+        ]
+      },
+      {
+        "category": "其他",
+        "articles": [
+          {
+            "title": "相比黑猩猩，人类为什么更容易患上骨关节炎？",
+            "url": "http://www.zhishifenzi.com/depth/depth/10736.html",
+            "source": "知识分子",
+            "summary": "一项基因组学研究表明，人类关节软骨中关键缓冲成分硫酸化糖胺聚糖（sGAG）的含量仅为黑猩猩等类人猿的约三分之一。这种在演化过程中出现的基因表达下调与软骨成分改变，虽然塑造了人类独特的骨骼形态，但也可能使人类更容易患上骨关节炎等退行性骨骼疾病。",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 30.9,
+            "role": "媒体",
+            "published_at": "2026-10-25T13:58:44+00:00",
+            "topic_id": null,
+            "topic_title": null
           }
         ]
       }
@@ -9498,7 +9564,8 @@
     "topic_ids": [
       "2484b311455b"
     ],
-    "tocCount": 2,
-    "readMinutes": 2
+    "tocCount": 4,
+    "readMinutes": 2,
+    "amended": 0
   }
 }

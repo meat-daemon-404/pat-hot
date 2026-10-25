@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T00:22:01.082609+00:00",
+  "generatedAt": "2026-10-25T14:24:16.028710+00:00",
   "weekStart": "2026-10-19",
   "windowDays": 7,
   "windowStart": "2026-10-19",
@@ -10,9 +10,9 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 3672.3,
+      "thisWeek": 3794.0,
       "lastWeek": 4558.5,
-      "deltaPct": -19.4
+      "deltaPct": -16.8
     },
     {
       "category": "产业与资本",
@@ -22,9 +22,9 @@
     },
     {
       "category": "光通信",
-      "thisWeek": 3129.3,
+      "thisWeek": 3199.9,
       "lastWeek": 3265.4,
-      "deltaPct": -4.2
+      "deltaPct": -2.0
     },
     {
       "category": "通信与算力",
@@ -46,9 +46,9 @@
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1805.6,
+      "thisWeek": 1815.3,
       "lastWeek": 2196.7,
-      "deltaPct": -17.8
+      "deltaPct": -17.4
     },
     {
       "category": "显示与面板",
@@ -83,6 +83,12 @@
       "days": 6
     },
     {
+      "topic_id": "c14a1dd718b8",
+      "title": "Are high-power laser diodes ready to power inertial fusion energy?",
+      "score": 222.8,
+      "days": 4
+    },
+    {
       "topic_id": "dc961a659f94",
       "title": "Discovery of ‘how and why’ homochirality emerges receives 2026 Nobel Prize in Chemistry",
       "score": 219.8,
@@ -95,9 +101,15 @@
       "days": 2
     },
     {
-      "topic_id": "c14a1dd718b8",
-      "title": "Are high-power laser diodes ready to power inertial fusion energy?",
-      "score": 167.1,
+      "topic_id": "ba306bad328d",
+      "title": "Photonics Hot List: October 23, 2026",
+      "score": 177.7,
+      "days": 1
+    },
+    {
+      "topic_id": "0daaaeb49f06",
+      "title": "Optical imaging and spectroscopy enhance precision agriculture",
+      "score": 154.5,
       "days": 3
     },
     {
@@ -123,18 +135,6 @@
       "title": "Quantum probability can't be derived without assuming it first",
       "score": 111.7,
       "days": 2
-    },
-    {
-      "topic_id": "4d86eced5fe7",
-      "title": "Allight: A Perfect Photon Collector",
-      "score": 108.7,
-      "days": 1
-    },
-    {
-      "topic_id": "6aec187ed191",
-      "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-      "score": 108.7,
-      "days": 1
     }
   ],
   "sustainedTopics": [

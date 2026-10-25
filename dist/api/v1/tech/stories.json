@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T00:22:01.082609+00:00",
+  "generatedAt": "2026-10-25T14:24:16.028710+00:00",
   "count": 10,
   "items": [
     {
@@ -10,7 +10,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
         "C114中国通信网_监管",
         "工信部要闻"
@@ -44,7 +44,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
         "C114中国通信网_通信财经"
       ],
@@ -78,55 +78,13 @@
       "digestTitle": null
     },
     {
-      "id": "3c09fab78453",
-      "title": "Photonics Hot List: October 23, 2026",
-      "status": "关注中",
-      "heat": 34.5,
-      "sourceCount": 1,
-      "signalCount": 3,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
-      "sources": [
-        "Laser Focus World"
-      ],
-      "links": [
-        {
-          "title": "Photonics Hot List: October 23, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
-          "source": "Laser Focus World",
-          "score": 53.8,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 16, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
-          "source": "Laser Focus World",
-          "score": 53.8,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 2, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55409170/photonics-hot-list-october-2-2026",
-          "source": "Laser Focus World",
-          "score": 53.8,
-          "published_at": null
-        }
-      ],
-      "trend": "up",
-      "trendPct": 62.7,
-      "badges": [
-        "rising"
-      ],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
       "id": "88fd1c079570",
       "title": "工业和信息化部等八部门关于印发《产业基础能力提升“十五五”规划》的通知",
       "status": "关注中",
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
         "工信部要闻"
       ],
@@ -166,7 +124,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
         "工信部要闻"
       ],
@@ -200,46 +158,61 @@
       "digestTitle": null
     },
     {
-      "id": "6aec187ed191",
-      "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-      "status": "关注中",
-      "heat": 24.5,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "id": "ba306bad328d",
+      "title": "Photonics Hot List: October 23, 2026",
+      "status": "发酵中",
+      "heat": 21.2,
+      "sourceCount": 3,
+      "signalCount": 3,
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
         "Laser Focus World",
-        "Physics World（关键词过滤）"
+        "YouTube·Photonics Media",
+        "YouTube·SPIETV"
       ],
       "links": [
         {
-          "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-          "url": "https://www.laserfocusworld.com/executive-forum/podcast/55411597/podcast-expert-insights-photonics-quantum-computing",
+          "title": "Photonics Hot List: October 23, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
           "source": "Laser Focus World",
-          "score": 57.2,
+          "score": 63.5,
           "published_at": null
         },
         {
-          "title": "PODCAST: The Photonics Roundup",
-          "url": "https://www.laserfocusworld.com/resources/podcast/55410296/podcast-the-photonics-roundup",
+          "title": "Photonics Hot List: October 16, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
           "source": "Laser Focus World",
-          "score": 57.2,
+          "score": 63.5,
           "published_at": null
         },
         {
-          "title": "Debating the future of photonics: experts assess the challenges and opportunities ahead",
-          "url": "https://physicsworld.com/a/debating-the-future-of-photonics-experts-assess-the-challenges-and-opportunities-ahead/",
-          "source": "Physics World（关键词过滤）",
-          "score": 46.8,
-          "published_at": "2026-10-01T07:00:18+00:00"
+          "title": "Photonics Hot List: October 2, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55409170/photonics-hot-list-october-2-2026",
+          "source": "Laser Focus World",
+          "score": 63.5,
+          "published_at": null
+        },
+        {
+          "title": "A Look Back on Photonics West 2026",
+          "url": "https://www.youtube.com/shorts/ne-cuXI4otA",
+          "source": "YouTube·SPIETV",
+          "score": 58.7,
+          "published_at": "2026-10-16T21:37:37+00:00"
+        },
+        {
+          "title": "Photonics Spectra Sensing Technologies Summit 2026",
+          "url": "https://www.youtube.com/watch?v=57_odMmja30",
+          "source": "YouTube·Photonics Media",
+          "score": 48.5,
+          "published_at": "2026-10-01T15:00:15+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "down",
+      "trendPct": -38.6,
       "badges": [],
       "digest": null,
       "digestTitle": null,
-      "llmScore": 15.0
+      "llmScore": 18.5
     },
     {
       "id": "cbfac64228d2",
@@ -248,7 +221,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
         "Nature Photonics",
         "Phys.org 物理新闻"
@@ -258,19 +231,19 @@
           "title": "Experimental demonstration of attosecond hard X-ray pulses",
           "url": "https://www.nature.com/articles/s41566-026-02026-7",
           "source": "Nature Photonics",
-          "score": 66.8,
+          "score": 66.4,
           "published_at": "2026-10-20T00:00:00+00:00"
         },
         {
           "title": "Single X-ray pulse reveals plasma nanostructures across scales with one camera",
           "url": "https://phys.org/news/2026-10-ray-pulse-reveals-plasma-nanostructures.html",
           "source": "Phys.org 物理新闻",
-          "score": 56.5,
+          "score": 56.1,
           "published_at": "2026-10-24T19:00:06+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -288,7 +261,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
         "Laser Focus World",
         "Phys.org 物理新闻"
@@ -305,7 +278,7 @@
           "title": "Quantum probability can't be derived without assuming it first",
           "url": "https://phys.org/news/2026-10-quantum-probability-derived-assuming.html",
           "source": "Phys.org 物理新闻",
-          "score": 53.8,
+          "score": 53.4,
           "published_at": "2026-10-20T15:50:01+00:00"
         }
       ],
@@ -322,7 +295,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
         "C114中国通信网_通信财经",
         "OFweek 光电频道"
@@ -343,8 +316,8 @@
           "published_at": "2026-08"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -356,7 +329,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
         "C114中国通信网_IT资讯",
         "COEMA 中国光电子行业协会"
@@ -375,6 +348,47 @@
           "source": "C114中国通信网_IT资讯",
           "score": 44.5,
           "published_at": null
+        }
+      ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "0daaaeb49f06",
+      "title": "Optical imaging and spectroscopy enhance precision agriculture",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
+      "sources": [
+        "Laser Focus World",
+        "YouTube·SPIETV"
+      ],
+      "links": [
+        {
+          "title": "Optical imaging and spectroscopy enhance precision agriculture",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
+          "source": "Laser Focus World",
+          "score": 57.2,
+          "published_at": null
+        },
+        {
+          "title": "AI Briefings: Multimodal Optical Imaging Strategy to Evaluate the Microscopic Biodistribution of ...",
+          "url": "https://www.youtube.com/watch?v=umTZvXqVsso",
+          "source": "YouTube·SPIETV",
+          "score": 54.2,
+          "published_at": "2026-10-19T15:15:27+00:00"
+        },
+        {
+          "title": "AI Briefings: Shaping the Future of Optical Imaging, the Importance of Tissue Phantoms",
+          "url": "https://www.youtube.com/watch?v=MxetD1y7hS0",
+          "source": "YouTube·SPIETV",
+          "score": 38.2,
+          "published_at": "2026-08-17T15:11:19+00:00"
         }
       ],
       "trend": "new",

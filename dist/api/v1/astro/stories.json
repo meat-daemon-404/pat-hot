@@ -1,40 +1,105 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T00:22:01.082609+00:00",
+  "generatedAt": "2026-10-25T14:24:16.028710+00:00",
   "count": 10,
   "items": [
     {
-      "id": "2632e28a4dcf",
+      "id": "7f7fd1ffb83d",
+      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+      "status": "发酵中",
+      "heat": 39.0,
+      "sourceCount": 4,
+      "signalCount": 4,
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
+      "sources": [
+        "MIT News 太空探索",
+        "NASA 快讯",
+        "Nature 天文和天体物理",
+        "Phys.org 太空新闻"
+      ],
+      "links": [
+        {
+          "title": "NASA adopting Apollo's urgency to build a moon base and land astronauts within 2 years",
+          "url": "https://phys.org/news/2026-10-nasa-apollo-urgency-moon-base.html",
+          "source": "Phys.org 太空新闻",
+          "score": 73.0,
+          "published_at": "2026-10-24T09:28:00+00:00"
+        },
+        {
+          "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+          "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
+          "source": "NASA 快讯",
+          "score": 72.7,
+          "published_at": "2026-10-23T22:39:39+00:00"
+        },
+        {
+          "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
+          "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/",
+          "source": "NASA 快讯",
+          "score": 72.7,
+          "published_at": "2026-10-23T22:37:53+00:00"
+        },
+        {
+          "title": "Artemis I: Crystals of experimental detectors record radiation doses near the moon",
+          "url": "https://phys.org/news/2026-10-artemis-crystals-experimental-detectors-doses.html",
+          "source": "Phys.org 太空新闻",
+          "score": 72.5,
+          "published_at": "2026-10-23T15:40:01+00:00"
+        },
+        {
+          "title": "NASA releases trove of Moon data from historic Artemis II flight",
+          "url": "https://www.nature.com/articles/d41586-026-03197-7",
+          "source": "Nature 天文和天体物理",
+          "score": 61.4,
+          "published_at": "2026-10-07T00:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 46.5
+    },
+    {
+      "id": "cb58da4ae623",
       "title": "High-orbit satellites could light the way for travel to the moon",
       "status": "关注中",
       "heat": 24.5,
       "sourceCount": 2,
-      "signalCount": 4,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "signalCount": 2,
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
         "Astronomy Magazine",
         "MIT News 太空探索"
       ],
       "links": [
         {
+          "title": "The Sky Today on Sunday, October 25: Dione crosses Saturn",
+          "url": "https://www.astronomy.com/observing/the-sky-today-sunday-october-25-2026/",
+          "source": "Astronomy Magazine",
+          "score": 67.0,
+          "published_at": "2026-10-25T08:00:00+00:00"
+        },
+        {
           "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
           "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
           "source": "Astronomy Magazine",
-          "score": 66.2,
+          "score": 65.8,
           "published_at": "2026-10-23T13:30:41+00:00"
         },
         {
           "title": "The Sky Today on Friday, October 23: Nab Neptune near the Moon",
           "url": "https://www.astronomy.com/observing/the-sky-today-friday-october-23-2026/",
           "source": "Astronomy Magazine",
-          "score": 66.0,
+          "score": 65.7,
           "published_at": "2026-10-23T08:00:00+00:00"
         },
         {
           "title": "The Sky This Week from October 23 to 30: Gaze at the Full Hunter’s Moon",
           "url": "https://www.astronomy.com/the-sky-this-week/the-sky-this-week-from-october-23-to-30-2026/",
           "source": "Astronomy Magazine",
-          "score": 66.0,
+          "score": 65.6,
           "published_at": "2026-10-23T05:00:00+00:00"
         },
         {
@@ -43,13 +108,6 @@
           "source": "MIT News 太空探索",
           "score": 47.2,
           "published_at": "2026-08-10T18:10:00+00:00"
-        },
-        {
-          "title": "The Sky Today on Saturday, October 24: Mercury stands still",
-          "url": "https://www.astronomy.com/observing/the-sky-today-saturday-october-24-2026/",
-          "source": "Astronomy Magazine",
-          "score": 40.0,
-          "published_at": "2026-10-24T08:00:00+00:00"
         }
       ],
       "trend": "flat",
@@ -65,7 +123,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
         "New Scientist 太空",
         "Phys.org 太空新闻"
@@ -75,49 +133,15 @@
           "title": "How flare ribbons reveal hidden solar explosions on the sun",
           "url": "https://phys.org/news/2026-10-flare-ribbons-reveal-hidden-solar.html",
           "source": "Phys.org 太空新闻",
-          "score": 61.0,
+          "score": 60.6,
           "published_at": "2026-10-24T18:00:01+00:00"
         },
         {
           "title": "Tiny ‘solar flares’ recreated in the lab may explain corona mystery",
           "url": "https://www.newscientist.com/article/2595244-tiny-solar-flares-recreated-in-the-lab-may-explain-corona-mystery/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 59.7,
+          "score": 59.3,
           "published_at": "2026-10-22T19:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "aac79df06d2f",
-      "title": "Lincoln Laboratory laser communications terminal launches on historic Artemis II moon mission",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
-      "sources": [
-        "MIT News 太空探索",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Artemis I: Crystals of experimental detectors record radiation doses near the moon",
-          "url": "https://phys.org/news/2026-10-artemis-crystals-experimental-detectors-doses.html",
-          "source": "Phys.org 太空新闻",
-          "score": 60.3,
-          "published_at": "2026-10-23T15:40:01+00:00"
-        },
-        {
-          "title": "Lincoln Laboratory laser communications terminal launches on historic Artemis II moon mission",
-          "url": "https://news.mit.edu/2026/lincoln-laboratory-laser-communications-terminal-launches-artemis-ii-0402",
-          "source": "MIT News 太空探索",
-          "score": 41.2,
-          "published_at": "2026-04-02T13:00:00+00:00"
         }
       ],
       "trend": "flat",
@@ -127,15 +151,92 @@
       "digestTitle": null
     },
     {
-      "id": "2d24421356b5",
-      "title": "The next generation’s guide to the new space economy",
+      "id": "38f73eab2a7c",
+      "title": "RS-25 Engine Tests at NASA Stennis",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
-        "MIT News 太空探索",
+        "NASA 快讯",
+        "Phys.org 太空新闻"
+      ],
+      "links": [
+        {
+          "title": "RS-25 Engine Tests at NASA Stennis",
+          "url": "https://www.nasa.gov/image-article/rs-25-engine-tests-at-nasa-stennis/",
+          "source": "NASA 快讯",
+          "score": 60.0,
+          "published_at": "2026-10-23T18:57:04+00:00"
+        },
+        {
+          "title": "Astronomers uncover the engine behind the most powerful stellar flares in the Kepler field",
+          "url": "https://phys.org/news/2026-10-astronomers-uncover-powerful-stellar-flares.html",
+          "source": "Phys.org 太空新闻",
+          "score": 58.5,
+          "published_at": "2026-10-21T13:20:06+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 41.0
+    },
+    {
+      "id": "b2100aac412b",
+      "title": "Surprise! White dwarf stars come in a rainbow of colours",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
+      "sources": [
+        "Nature 天文和天体物理",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "Surprise! White dwarf stars come in a rainbow of colours",
+          "url": "https://www.nature.com/articles/d41586-026-03319-1",
+          "source": "Nature 天文和天体物理",
+          "score": 59.6,
+          "published_at": "2026-10-21T00:00:00+00:00"
+        },
+        {
+          "title": "A white dwarf polluted by its own ashes",
+          "url": "https://www.nature.com/articles/s41550-026-02982-8",
+          "source": "Nature 天文和天体物理",
+          "score": 48.9,
+          "published_at": "2026-10-05T00:00:00+00:00"
+        },
+        {
+          "title": "White Dwarfs Are Actually…Yellow, Green, Pink, and Purple?",
+          "url": "https://www.universetoday.com/articles/white-dwarfs-are-actuallyyellow-green-pink-and-purple",
+          "source": "Universe Today",
+          "score": 37.0,
+          "published_at": "2026-10-24T01:32:55+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 5.0
+    },
+    {
+      "id": "77cbed3d8420",
+      "title": "Exocomets in a planet nursery",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
+      "sources": [
+        "Nature 天文和天体物理",
         "Universe Today"
       ],
       "links": [
@@ -143,19 +244,19 @@
           "title": "27 Exoplanet Targets for the World's First Private Space Telescope",
           "url": "https://www.universetoday.com/articles/27-exoplanet-targets-for-the-worlds-first-private-space-telescope",
           "source": "Universe Today",
-          "score": 60.4,
+          "score": 60.1,
           "published_at": "2026-10-23T22:33:37+00:00"
         },
         {
-          "title": "The next generation’s guide to the new space economy",
-          "url": "https://news.mit.edu/2026/guide-to-new-space-economy-1002",
-          "source": "MIT News 太空探索",
-          "score": 27.7,
-          "published_at": "2026-10-02T14:50:00+00:00"
+          "title": "Exocomets in a planet nursery",
+          "url": "https://www.nature.com/articles/s41467-026-78757-6",
+          "source": "Nature 天文和天体物理",
+          "score": 52.1,
+          "published_at": "2026-10-12T00:00:00+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -167,7 +268,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
         "New Scientist 太空",
         "Universe Today"
@@ -177,15 +278,50 @@
           "title": "The Largest Canyon in the Solar System is Still Tectonically Active",
           "url": "https://www.universetoday.com/articles/the-largest-canyon-in-the-solar-system-is-still-tectonically-active",
           "source": "Universe Today",
-          "score": 60.4,
+          "score": 60.0,
           "published_at": "2026-10-23T21:09:09+00:00"
         },
         {
           "title": "Japan is launching a mission to Mars’s largest moon Phobos",
           "url": "https://www.newscientist.com/article/2594332-japan-is-launching-a-mission-to-marss-largest-moon-phobos/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 55.6,
+          "score": 55.2,
           "published_at": "2026-10-16T17:00:00+00:00"
+        }
+      ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 44.0
+    },
+    {
+      "id": "291e08e906c1",
+      "title": "APOD: 2026 October 25 – Dark Matter in a Simulated Universe",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
+      "sources": [
+        "NASA 快讯",
+        "New Scientist 太空"
+      ],
+      "links": [
+        {
+          "title": "APOD: 2026 October 25 – Dark Matter in a Simulated Universe",
+          "url": "https://science.nasa.gov/image-article/apod-2026-october-25-dark-matter-in-a-simulated-universe/",
+          "source": "NASA 快讯",
+          "score": 61.0,
+          "published_at": "2026-10-25T08:19:48+00:00"
+        },
+        {
+          "title": "The telescope that could reveal what dark matter and dark energy are",
+          "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 48.6,
+          "published_at": "2026-10-06T17:00:00+00:00"
         }
       ],
       "trend": "new",
@@ -193,194 +329,76 @@
       "badges": [],
       "digest": null,
       "digestTitle": null,
-      "llmScore": 44.0
+      "llmScore": 5.0
     },
     {
-      "id": "0abe4f24bfda",
-      "title": "Webb captures commotion from nebula’s stellar jets",
+      "id": "d5773bad7239",
+      "title": "NASA, Virginia Launch Power Partnership for Energy Security",
       "status": "关注中",
-      "heat": 0.0,
+      "heat": 21.0,
       "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
+      "signalCount": 1,
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
       "sources": [
         "ESA 空间科学",
-        "Phys.org 太空新闻"
+        "NASA 快讯"
       ],
       "links": [
         {
-          "title": "Webb captures stars in the early stages of life in a nearby stellar nursery",
-          "url": "https://phys.org/news/2026-10-webb-captures-stars-early-stages.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.6,
-          "published_at": "2026-10-22T17:40:18+00:00"
+          "title": "NASA, Virginia Launch Power Partnership for Energy Security",
+          "url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-power-energy-partnership/",
+          "source": "NASA 快讯",
+          "score": 59.9,
+          "published_at": "2026-10-23T17:50:21+00:00"
         },
         {
-          "title": "Webb captures commotion from nebula’s stellar jets",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Webb_captures_commotion_from_nebula_s_stellar_jets",
+          "title": "Mars moon lander set to launch on 19 October",
+          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
           "source": "ESA 空间科学",
-          "score": 48.8,
-          "published_at": "2026-10-06T13:00:00+00:00"
+          "score": 53.1,
+          "published_at": "2026-10-13T12:00:00+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -100.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "1f2d7a0848d9",
-      "title": "Stars brewing in a nebulous cauldron",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
-      "sources": [
-        "ESA 空间科学",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Webb image reveals young stars brewing in a nebulous cauldron",
-          "url": "https://phys.org/news/2026-10-webb-image-reveals-young-stars.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.6,
-          "published_at": "2026-10-22T17:40:01+00:00"
-        },
-        {
-          "title": "Stars brewing in a nebulous cauldron",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Stars_brewing_in_a_nebulous_cauldron",
-          "source": "ESA 空间科学",
-          "score": 59.4,
-          "published_at": "2026-10-22T08:00:00+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -100.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "68a6e1be1a60",
-      "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
-      "status": "发酵中",
-      "heat": 0.0,
-      "sourceCount": 4,
-      "signalCount": 0,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
-      "sources": [
-        "LIGO",
-        "MIT News 太空探索",
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
-          "url": "https://news.mit.edu/2024/using-wobbling-stellar-material-astronomers-measure-supermassive-black-hole-spin-0522",
-          "source": "MIT News 太空探索",
-          "score": 50.8,
-          "published_at": "2024-05-22T15:00:00+00:00"
-        },
-        {
-          "title": "Pair of distinct black hole mergers sheds new light on nature of their formation and evolution",
-          "url": "https://ligo.org/pair-of-distinct-black-hole-mergers-sheds-new-light-on-nature-of-their-formation-and-evolution/",
-          "source": "LIGO",
-          "score": 50.8,
-          "published_at": "2025-10-28T15:01:12+00:00"
-        },
-        {
-          "title": "Supermassive black holes ejected from galactic centers? Quasar survey supports decade-old prediction",
-          "url": "https://phys.org/news/2026-10-supermassive-black-holes-ejected-galactic.html",
-          "source": "Phys.org 太空新闻",
-          "score": 41.6,
-          "published_at": "2026-10-22T16:20:25+00:00"
-        },
-        {
-          "title": "New Evidence for an Old Prediction: Recoiling Supermassive Black Holes",
-          "url": "https://www.universetoday.com/articles/new-evidence-for-an-old-prediction-recoiling-supermassive-black-holes",
-          "source": "Universe Today",
-          "score": 41.6,
-          "published_at": "2026-10-22T17:52:01+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -100.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "f5667eabcaed",
-      "title": "There should be black holes in our neighborhood. Can we find them?",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
-      "sources": [
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "There should be black holes in our neighborhood. Can we find them?",
-          "url": "https://phys.org/news/2026-10-black-holes-neighborhood.html",
-          "source": "Phys.org 太空新闻",
-          "score": 35.7,
-          "published_at": "2026-10-22T14:40:07+00:00"
-        },
-        {
-          "title": "There Should Be Black Holes in our Neighbourhood. Can We Find Them?",
-          "url": "https://www.universetoday.com/articles/there-should-be-black-holes-in-our-neighbourhood-can-we-find-them",
-          "source": "Universe Today",
-          "score": 35.4,
-          "published_at": "2026-10-21T17:46:00+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -100.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "00fb52c9432f",
-      "title": "Supernova Explosions First Aided, Then Later Impeded, the Epoch of Reionization",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-25T00:22:01.082609+00:00",
-      "sources": [
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "Supernova Explosions First Aided, Then Later Impeded, the Epoch of Reionization",
-          "url": "https://www.universetoday.com/articles/supernova-explosions-first-aided-then-later-impeded-the-epoch-of-reionization",
-          "source": "Universe Today",
-          "score": 59.6,
-          "published_at": "2026-10-22T14:53:56+00:00"
-        },
-        {
-          "title": "Hubble observations challenge supernova winds' role in cosmic reionization",
-          "url": "https://phys.org/news/2026-10-hubble-supernova-role-cosmic-reionization.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.0,
-          "published_at": "2026-10-21T17:20:15+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null,
-      "llmScore": 37.0
+      "llmScore": 27.5
+    },
+    {
+      "id": "7e9713449690",
+      "title": "Newly discovered Earth-sized planet may lack an atmosphere",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-25T14:24:16.028710+00:00",
+      "sources": [
+        "Astronomy Magazine",
+        "MIT News 太空探索"
+      ],
+      "links": [
+        {
+          "title": "Oct. 25, 1671: Iapetus is discovered",
+          "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/oct-25-1671-iapetus-is-discovered/",
+          "source": "Astronomy Magazine",
+          "score": 36.7,
+          "published_at": "2026-10-25T13:00:00+00:00"
+        },
+        {
+          "title": "Newly discovered Earth-sized planet may lack an atmosphere",
+          "url": "https://news.mit.edu/2024/newly-discovered-earth-sized-planet-may-lack-atmosphere-0515",
+          "source": "MIT News 太空探索",
+          "score": 24.7,
+          "published_at": "2024-05-15T09:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
     }
   ]
 }
