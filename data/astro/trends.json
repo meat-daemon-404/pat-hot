@@ -1,36 +1,36 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T14:03:13.171215+00:00",
-  "weekStart": "2026-10-18",
+  "generatedAt": "2026-10-25T00:22:01.082609+00:00",
+  "weekStart": "2026-10-19",
   "windowDays": 7,
-  "windowStart": "2026-10-18",
-  "windowEnd": "2026-10-24",
-  "prevStart": "2026-10-11",
-  "prevEnd": "2026-10-17",
+  "windowStart": "2026-10-19",
+  "windowEnd": "2026-10-25",
+  "prevStart": "2026-10-12",
+  "prevEnd": "2026-10-18",
   "categoryDelta": [
     {
-      "category": "深空探测",
-      "thisWeek": 1853.8,
-      "lastWeek": 1779.6,
-      "deltaPct": 4.2
+      "category": "其他",
+      "thisWeek": 1608.2,
+      "lastWeek": 1617.8,
+      "deltaPct": -0.6
     },
     {
       "category": "科研进展",
-      "thisWeek": 1732.5,
+      "thisWeek": 1545.8,
       "lastWeek": 1116.2,
-      "deltaPct": 55.2
+      "deltaPct": 38.5
     },
     {
-      "category": "其他",
-      "thisWeek": 1679.4,
-      "lastWeek": 1717.3,
-      "deltaPct": -2.2
+      "category": "深空探测",
+      "thisWeek": 1453.2,
+      "lastWeek": 1863.1,
+      "deltaPct": -22.0
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 1094.4,
-      "lastWeek": 951.8,
-      "deltaPct": 15.0
+      "thisWeek": 1035.0,
+      "lastWeek": 960.1,
+      "deltaPct": 7.8
     },
     {
       "category": "星系与宇宙学",
@@ -40,9 +40,9 @@
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 440.3,
+      "thisWeek": 494.9,
       "lastWeek": 322.5,
-      "deltaPct": 36.5
+      "deltaPct": 53.5
     },
     {
       "category": "引力波",
@@ -52,22 +52,16 @@
     },
     {
       "category": "系外行星",
-      "thisWeek": 171.4,
-      "lastWeek": 110.7,
-      "deltaPct": 54.8
+      "thisWeek": 110.7,
+      "lastWeek": 171.1,
+      "deltaPct": -35.3
     }
   ],
   "newTopics": [
     {
-      "topic_id": "340e3a74576c",
-      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
-      "score": 274.6,
-      "days": 1
-    },
-    {
       "topic_id": "2632e28a4dcf",
       "title": "High-orbit satellites could light the way for travel to the moon",
-      "score": 239.2,
+      "score": 239.0,
       "days": 2
     },
     {
@@ -80,12 +74,6 @@
       "topic_id": "feea657299fb",
       "title": "JAXA's Martian Moons eXploration Mission is on its Way to Mars and Phobos",
       "score": 178.2,
-      "days": 1
-    },
-    {
-      "topic_id": "14d22a1810d2",
-      "title": "Japan to launch historic round-trip mission to Mars moon",
-      "score": 140.3,
       "days": 1
     },
     {
@@ -117,6 +105,18 @@
       "title": "Supernova Explosions First Aided, Then Later Impeded, the Epoch of Reionization",
       "score": 120.4,
       "days": 1
+    },
+    {
+      "topic_id": "1f2d7a0848d9",
+      "title": "Stars brewing in a nebulous cauldron",
+      "score": 120.2,
+      "days": 2
+    },
+    {
+      "topic_id": "37946b8a45d6",
+      "title": "Cosmological Gravitational Wave Collider Physics",
+      "score": 107.5,
+      "days": 2
     }
   ],
   "sustainedTopics": []

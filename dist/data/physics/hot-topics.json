@@ -1,77 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T14:03:13.171215+00:00",
-  "count": 10,
+  "generatedAt": "2026-10-25T00:22:01.082609+00:00",
+  "count": 5,
   "items": [
-    {
-      "terms": [
-        "acoustic",
-        "co-localized",
-        "contrast",
-        "defect",
-        "diamond",
-        "laser",
-        "magnetic-field",
-        "modes",
-        "multilayer",
-        "one-dimensional",
-        "optical",
-        "photoelastic",
-        "phoxonic",
-        "readout",
-        "resonantly"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "Nature Physics 学科聚合",
-        "Phys.org 物理新闻"
-      ],
-      "score": 42.0,
-      "latest_at": "2026-10-24T14:03:13.171215+00:00",
-      "representative": {
-        "title": "Co-localized optical and acoustic defect modes enable resonantly enhanced photoelastic readout in a one-dimensional phoxonic multilayer",
-        "url": "https://www.nature.com/articles/s41598-026-72367-4",
-        "source": "Nature Physics 学科聚合",
-        "published_at": "2026-10-23T00:00:00+00:00",
-        "score": 60.1,
-        "summary": "",
-        "zh_full": null,
-        "llm_score": 27.5
-      },
-      "folded_count": 1,
-      "title": "Co-localized optical and acoustic defect modes enable resonantly enhanced photoelastic readout in a one-dimensional phoxonic multilayer",
-      "id": "6e2c661e708a",
-      "links": [
-        {
-          "title": "Co-localized optical and acoustic defect modes enable resonantly enhanced photoelastic readout in a one-dimensional phoxonic multilayer",
-          "url": "https://www.nature.com/articles/s41598-026-72367-4",
-          "source": "Nature Physics 学科聚合",
-          "score": 60.1,
-          "published_at": "2026-10-23T00:00:00+00:00"
-        },
-        {
-          "title": "Diamond laser system achieves 100% optical contrast in magnetic-field readout",
-          "url": "https://phys.org/news/2026-10-diamond-laser-optical-contrast-magnetic.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.0,
-          "published_at": "2026-10-22T18:20:08+00:00"
-        }
-      ],
-      "top_terms": [
-        "optical",
-        "readout",
-        "localized",
-        "acoustic",
-        "defect"
-      ],
-      "rank": 1,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
-    },
     {
       "terms": [
         "anyway",
@@ -87,19 +18,19 @@
         "science"
       ],
       "source_count": 2,
-      "signal_count": 1,
+      "signal_count": 0,
       "sources": [
         "New Scientist 物理",
         "Phys.org 物理新闻"
       ],
-      "score": 21.0,
-      "latest_at": "2026-10-24T14:03:13.171215+00:00",
+      "score": 0.0,
+      "latest_at": "2026-10-25T00:22:01.082609+00:00",
       "representative": {
         "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
         "url": "https://phys.org/news/2026-10-neutrino-science-year-nobel-prize.html",
         "source": "Phys.org 物理新闻",
         "published_at": "2026-10-22T23:30:01+00:00",
-        "score": 60.1,
+        "score": 59.8,
         "summary": "If you wanted a Nobel Prize, you would do well to study neutrinos. To date, the Nobel Prize in Physics has been awarded five times to research related to neutrino detection and discovery. This year, Francis Halzen earned the Nobel \"for deci",
         "zh_full": "如果你想要获得诺贝尔奖，研究中微子是个不错的选择。迄今为止，诺贝尔物理学奖已有五次授予与中微子探测和发现相关的研究。今年，弗朗西斯·哈尔岑（Francis Halzen）因“对冰立方中微子天文台的决定性贡献以及发现天体物理起源的高能中微子”而获得诺贝尔奖。",
         "llm_summary": "诺贝尔物理学奖今年授予弗朗西斯·哈尔岑（Francis Halzen），表彰其对冰立方中微子天文台的决定性贡献以及发现天体物理起源的高能中微子。中微子研究是物理学领域的重要方向，迄今为止诺贝尔物理学奖已有五次授予与中微子探测和发现相关的研究。",
@@ -115,14 +46,14 @@
           "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
           "url": "https://phys.org/news/2026-10-neutrino-science-year-nobel-prize.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.1,
+          "score": 59.8,
           "published_at": "2026-10-22T23:30:01+00:00"
         },
         {
           "title": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
           "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 49.1,
+          "score": 48.8,
           "published_at": "2026-10-06T10:26:02+00:00"
         }
       ],
@@ -133,535 +64,265 @@
         "neutrino",
         "anyway"
       ],
-      "rank": 2,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "rank": 1,
+      "trend": "down",
+      "trendPct": -100.0,
       "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "atomic",
-        "demon",
-        "distant",
-        "entangled",
-        "ions",
-        "keeps",
-        "maxwell",
-        "memory",
-        "seconds"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature Physics 学科聚合",
-        "Phys.org 物理新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-24T14:03:13.171215+00:00",
-      "representative": {
-        "title": "Maxwell’s demon with memory",
-        "url": "https://www.nature.com/articles/s41567-026-03509-8",
-        "source": "Nature Physics 学科聚合",
-        "published_at": "2026-10-23T00:00:00+00:00",
-        "score": 60.1,
-        "summary": "",
-        "zh_full": null,
-        "llm_score": 7.0
-      },
-      "folded_count": 1,
-      "title": "Maxwell’s demon with memory",
-      "id": "cb6c7c306f8e",
-      "links": [
-        {
-          "title": "Maxwell’s demon with memory",
-          "url": "https://www.nature.com/articles/s41567-026-03509-8",
-          "source": "Nature Physics 学科聚合",
-          "score": 60.1,
-          "published_at": "2026-10-23T00:00:00+00:00"
-        },
-        {
-          "title": "Atomic memory keeps distant ions entangled for about 10 seconds",
-          "url": "https://phys.org/news/2026-10-atomic-memory-distant-ions-entangled.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.5,
-          "published_at": "2026-10-21T11:40:12+00:00"
-        }
-      ],
-      "top_terms": [
-        "memory",
-        "maxwell",
-        "demon",
-        "atomic",
-        "keeps"
-      ],
-      "rank": 3,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "cascaded",
-        "coherent",
-        "electrons",
-        "extreme",
-        "flat",
-        "high-numerical-aperture",
-        "momentum",
-        "optics",
-        "quantum",
-        "relay",
-        "steering",
-        "team",
-        "ultraviolet"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature Physics 学科聚合",
-        "Phys.org 物理新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-24T14:03:13.171215+00:00",
-      "representative": {
-        "title": "High-numerical-aperture extreme ultraviolet flat optics via a cascaded momentum relay",
-        "url": "https://www.nature.com/articles/s41467-026-78214-4",
-        "source": "Nature Physics 学科聚合",
-        "published_at": "2026-10-23T00:00:00+00:00",
-        "score": 60.1,
-        "summary": "",
-        "zh_full": null,
-        "llm_score": 7.5
-      },
-      "folded_count": 1,
-      "title": "High-numerical-aperture extreme ultraviolet flat optics via a cascaded momentum relay",
-      "id": "e234f85cfe41",
-      "links": [
-        {
-          "title": "High-numerical-aperture extreme ultraviolet flat optics via a cascaded momentum relay",
-          "url": "https://www.nature.com/articles/s41467-026-78214-4",
-          "source": "Nature Physics 学科聚合",
-          "score": 60.1,
-          "published_at": "2026-10-23T00:00:00+00:00"
-        },
-        {
-          "title": "Steering electrons with extreme ultraviolet light—team achieves quantum coherent control",
-          "url": "https://phys.org/news/2026-10-electrons-extreme-ultraviolet-team-quantum.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.2,
-          "published_at": "2026-10-20T18:00:31+00:00"
-        }
-      ],
-      "top_terms": [
-        "extreme",
-        "ultraviolet",
-        "numerical",
-        "aperture",
-        "flat"
-      ],
-      "rank": 4,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "atomic",
-        "collisions",
-        "detected",
-        "determination",
-        "full",
-        "individual",
-        "low-dose",
-        "neural",
-        "opening",
-        "pathways",
-        "physics",
-        "physics-aware",
-        "potentially",
-        "robust",
-        "tomography"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature Physics 学科聚合",
-        "Phys.org 物理新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-24T14:03:13.171215+00:00",
-      "representative": {
-        "title": "Physics-aware neural networks enable robust and full atomic structure determination via low-dose atomic electron tomography",
-        "url": "https://www.nature.com/articles/s41524-026-02363-9",
-        "source": "Nature Physics 学科聚合",
-        "published_at": "2026-10-23T00:00:00+00:00",
-        "score": 60.1,
-        "summary": "",
-        "zh_full": null,
-        "llm_score": 32.0
-      },
-      "folded_count": 1,
-      "title": "Physics-aware neural networks enable robust and full atomic structure determination via low-dose atomic electron tomography",
-      "id": "4f70f85bfa22",
-      "links": [
-        {
-          "title": "Physics-aware neural networks enable robust and full atomic structure determination via low-dose atomic electron tomography",
-          "url": "https://www.nature.com/articles/s41524-026-02363-9",
-          "source": "Nature Physics 学科聚合",
-          "score": 60.1,
-          "published_at": "2026-10-23T00:00:00+00:00"
-        },
-        {
-          "title": "Individual atomic collisions can now be detected in the lab, potentially opening up pathways to new physics",
-          "url": "https://phys.org/news/2026-10-individual-atomic-collisions-lab-potentially.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.2,
-          "published_at": "2026-10-20T17:10:01+00:00"
-        }
-      ],
-      "top_terms": [
-        "atomic",
-        "physics",
-        "aware",
-        "neural",
-        "robust"
-      ],
-      "rank": 5,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "codes",
-        "collisions",
-        "computer",
-        "particle",
-        "processor",
-        "quantum",
-        "superconducting",
-        "surface",
-        "teleportation",
-        "transition"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature Physics 学科聚合",
-        "Nature 量子物理"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-24T14:03:13.171215+00:00",
-      "representative": {
-        "title": "Particle collisions on a quantum computer",
-        "url": "https://www.nature.com/articles/s41567-026-03490-2",
-        "source": "Nature Physics 学科聚合",
-        "published_at": "2026-10-23T00:00:00+00:00",
-        "score": 60.1,
-        "summary": "",
-        "zh_full": null,
-        "llm_score": 9.5
-      },
-      "folded_count": 1,
-      "title": "Particle collisions on a quantum computer",
-      "id": "d26f974bb4b5",
-      "links": [
-        {
-          "title": "Particle collisions on a quantum computer",
-          "url": "https://www.nature.com/articles/s41567-026-03490-2",
-          "source": "Nature Physics 学科聚合",
-          "score": 60.1,
-          "published_at": "2026-10-23T00:00:00+00:00"
-        },
-        {
-          "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-          "url": "https://www.nature.com/articles/s41567-026-03484-0",
-          "source": "Nature 量子物理",
-          "score": 59.4,
-          "published_at": "2026-10-22T00:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "quantum",
-        "particle",
-        "collisions",
-        "computer",
-        "teleportation"
-      ],
-      "rank": 6,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "effects",
-        "emission",
-        "enhancing",
-        "giant",
-        "interphase",
-        "magnetic",
-        "orbital",
-        "photon-ratchet",
-        "quantum",
-        "sensing",
-        "spin-defect",
-        "topological",
-        "waals",
-        "zeeman"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature Physics 学科聚合",
-        "Nature 量子物理"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-24T14:03:13.171215+00:00",
-      "representative": {
-        "title": "Giant orbital Zeeman effects in a magnetic topological van der Waals interphase",
-        "url": "https://www.nature.com/articles/s41467-026-78016-8",
-        "source": "Nature Physics 学科聚合",
-        "published_at": "2026-10-23T00:00:00+00:00",
-        "score": 60.1,
-        "summary": "",
-        "zh_full": null,
-        "llm_score": 9.0
-      },
-      "folded_count": 1,
-      "title": "Giant orbital Zeeman effects in a magnetic topological van der Waals interphase",
-      "id": "e3fea907e885",
-      "links": [
-        {
-          "title": "Giant orbital Zeeman effects in a magnetic topological van der Waals interphase",
-          "url": "https://www.nature.com/articles/s41467-026-78016-8",
-          "source": "Nature Physics 学科聚合",
-          "score": 60.1,
-          "published_at": "2026-10-23T00:00:00+00:00"
-        },
-        {
-          "title": "A van der Waals photon-ratchet for enhancing spin-defect emission and quantum sensing",
-          "url": "https://www.nature.com/articles/s41467-026-78802-4",
-          "source": "Nature 量子物理",
-          "score": 59.4,
-          "published_at": "2026-10-22T00:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "van",
-        "der",
-        "waals",
-        "giant",
-        "orbital"
-      ],
-      "rank": 7,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
+      "heat": 0.0,
       "status": "关注中"
     },
     {
       "terms": [
         "antimatter",
-        "assemble",
-        "briefing",
-        "chat",
-        "coexisting",
-        "electrons",
-        "equivalent",
-        "phases",
+        "held",
+        "particle",
         "physicists",
-        "reassemble",
-        "successfully",
-        "trapped",
-        "watch"
+        "tame",
+        "trap"
       ],
       "source_count": 2,
-      "signal_count": 1,
+      "signal_count": 0,
+      "sources": [
+        "New Scientist 物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-10-25T00:22:01.082609+00:00",
+      "representative": {
+        "title": "Physicists trap and tame single particle of antimatter for months",
+        "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
+        "source": "Phys.org 物理新闻",
+        "published_at": "2026-10-21T15:00:10+00:00",
+        "score": 58.9,
+        "summary": "For the first time, Northwestern University physicists have coaxed a single positron—the antimatter counterpart of an electron—into an exquisitely controlled quantum state.",
+        "zh_full": "西北大学（Northwestern University）的物理学家首次将单个正电子——电子的反物质对应粒子——诱入一个极其精确控制的量子态中，并将其捕获长达数月。这是物理学领域的一项重要突破。",
+        "llm_summary": "西北大学物理学家首次将单个正电子（电子的反物质对应粒子）诱入精确控制的量子态中，并捕获长达数月。这是反物质研究的重要突破。",
+        "llm_reason": "首次捕获单个反物质粒子",
+        "density": "高",
+        "llm_score": 54.5
+      },
+      "folded_count": 1,
+      "title": "Physicists trap and tame single particle of antimatter for months",
+      "id": "1eaca0ec3885",
+      "links": [
+        {
+          "title": "Physicists trap and tame single particle of antimatter for months",
+          "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
+          "source": "Phys.org 物理新闻",
+          "score": 58.9,
+          "published_at": "2026-10-21T15:00:10+00:00"
+        },
+        {
+          "title": "A single antimatter particle was held in a trap for months",
+          "url": "https://www.newscientist.com/article/2594955-a-single-antimatter-particle-was-held-in-a-trap-for-months/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 58.9,
+          "published_at": "2026-10-21T15:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "trap",
+        "particle",
+        "antimatter",
+        "physicists",
+        "tame"
+      ],
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "greatest",
+        "high-temperature",
+        "mystery",
+        "neutrino",
+        "smoking",
+        "solve",
+        "superconductivity"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "New Scientist 物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-10-25T00:22:01.082609+00:00",
+      "representative": {
+        "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
+        "url": "https://phys.org/news/2026-10-gun-mystery-high-temperature-superconductivity.html",
+        "source": "Phys.org 物理新闻",
+        "published_at": "2026-10-20T20:00:07+00:00",
+        "score": 58.4,
+        "summary": "Superconductivity has many important practical applications, including creating powerful magnets used in high-resolution medical scans, transporting electricity efficiently and building ultrasensitive measuring devices. Until now, understan",
+        "zh_full": null,
+        "llm_score": 17.0
+      },
+      "folded_count": 1,
+      "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
+      "id": "77abdba5a228",
+      "links": [
+        {
+          "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
+          "url": "https://phys.org/news/2026-10-gun-mystery-high-temperature-superconductivity.html",
+          "source": "Phys.org 物理新闻",
+          "score": 58.4,
+          "published_at": "2026-10-20T20:00:07+00:00"
+        },
+        {
+          "title": "Are we about to solve the greatest mystery of the neutrino?",
+          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 57.7,
+          "published_at": "2026-10-19T19:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "solve",
+        "mystery",
+        "smoking",
+        "gun",
+        "temperature"
+      ],
+      "rank": 3,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "air-stable",
+        "coherent",
+        "electrons",
+        "extreme",
+        "more",
+        "quantum",
+        "researchers",
+        "scalable",
+        "steering",
+        "superconductors",
+        "team",
+        "ultrathin",
+        "ultraviolet"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
       "sources": [
         "MIT News 物理",
-        "Nature Physics 学科聚合"
+        "Phys.org 物理新闻"
       ],
-      "score": 21.0,
-      "latest_at": "2026-10-24T14:03:13.171215+00:00",
+      "score": 0.0,
+      "latest_at": "2026-10-25T00:22:01.082609+00:00",
       "representative": {
-        "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-        "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
+        "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+        "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
         "source": "MIT News 物理",
-        "published_at": "2026-08-07T09:00:00+00:00",
-        "score": 37.1,
-        "summary": "The study could help scientists understand how superconductivity and other more complex phenomena emerge in quantum materials.",
+        "published_at": "2026-08-05T15:00:00+00:00",
+        "score": 41.2,
+        "summary": "A new technique produces wafer-scale samples, overcoming a major roadblock to using these materials in quantum technologies.",
         "zh_full": "（无摘要，仅标题）",
         "llm_summary": "（无摘要，仅标题）",
         "density": "低"
       },
       "folded_count": 1,
-      "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-      "id": "03bffcf00beb",
+      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+      "id": "8d0c000ce3ad",
       "links": [
         {
-          "title": "Briefing Chat: How physicists successfully trapped the electron's antimatter equivalent",
-          "url": "https://www.nature.com/articles/d41586-026-03418-z",
-          "source": "Nature Physics 学科聚合",
-          "score": 60.1,
-          "published_at": "2026-10-23T00:00:00+00:00"
-        },
-        {
-          "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-          "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
+          "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+          "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
           "source": "MIT News 物理",
-          "score": 37.1,
-          "published_at": "2026-08-07T09:00:00+00:00"
+          "score": 41.2,
+          "published_at": "2026-08-05T15:00:00+00:00"
+        },
+        {
+          "title": "Steering electrons with extreme ultraviolet light—team achieves quantum coherent control",
+          "url": "https://phys.org/news/2026-10-electrons-extreme-ultraviolet-team-quantum.html",
+          "source": "Phys.org 物理新闻",
+          "score": 35.0,
+          "published_at": "2026-10-20T18:00:31+00:00"
         }
       ],
       "top_terms": [
-        "physicists",
-        "briefing",
-        "chat",
-        "successfully",
-        "trapped"
+        "quantum",
+        "steering",
+        "electrons",
+        "extreme",
+        "ultraviolet"
       ],
-      "rank": 8,
+      "rank": 4,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 21.0,
+      "heat": 0.0,
       "status": "关注中"
     },
     {
       "terms": [
-        "array",
-        "gates",
-        "high-fidelity",
-        "multi-photon",
-        "qubit",
-        "removal",
-        "simultaneous",
-        "single-qubit",
-        "spin",
-        "transition",
-        "ultrafast"
+        "dark",
+        "hunt",
+        "matter",
+        "observe",
+        "particle",
+        "wave"
       ],
       "source_count": 2,
-      "signal_count": 1,
+      "signal_count": 0,
       "sources": [
-        "Nature Physics 学科聚合",
-        "Nature 量子物理"
+        "MIT News 物理",
+        "New Scientist 物理"
       ],
-      "score": 21.0,
-      "latest_at": "2026-10-24T14:03:13.171215+00:00",
+      "score": 0.0,
+      "latest_at": "2026-10-25T00:22:01.082609+00:00",
       "representative": {
-        "title": "Ultrafast single-qubit gates through multi-photon transition removal",
-        "url": "https://www.nature.com/articles/s41467-026-78373-4",
-        "source": "Nature Physics 学科聚合",
-        "published_at": "2026-10-23T00:00:00+00:00",
-        "score": 60.1,
-        "summary": "",
-        "zh_full": null,
-        "llm_score": 6.0
+        "title": "On the hunt for dark matter",
+        "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
+        "source": "MIT News 物理",
+        "published_at": "2026-08-11T04:00:00+00:00",
+        "score": 41.2,
+        "summary": "From Broadway to MIT’s Laboratory for Nuclear Science, PhD student Jessica Fry doesn’t do anything halfway. Now she’s hunting for the universe’s most elusive particle.",
+        "zh_full": "MIT News 报道，从百老汇到 MIT 核科学实验室，博士生 Jessica Fry 做事从不半途而废。如今她正在搜寻宇宙中最难以捉摸的粒子——暗物质。",
+        "llm_summary": "MIT 博士生 Jessica Fry 正在搜寻宇宙中最难以捉摸的粒子——暗物质，报道提到她从百老汇到 MIT 核科学实验室的经历。",
+        "llm_reason": "暗物质搜寻人物报道",
+        "density": "低"
       },
       "folded_count": 1,
-      "title": "Ultrafast single-qubit gates through multi-photon transition removal",
-      "id": "230a81058ba0",
+      "title": "On the hunt for dark matter",
+      "id": "1dc3e2185b16",
       "links": [
         {
-          "title": "Ultrafast single-qubit gates through multi-photon transition removal",
-          "url": "https://www.nature.com/articles/s41467-026-78373-4",
-          "source": "Nature Physics 学科聚合",
-          "score": 60.1,
-          "published_at": "2026-10-23T00:00:00+00:00"
+          "title": "Will we observe dark matter as a particle or a wave?",
+          "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 53.4,
+          "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
-          "title": "Simultaneous high-fidelity single-qubit gates in a spin qubit array",
-          "url": "https://www.nature.com/articles/s41567-026-03466-2",
-          "source": "Nature 量子物理",
-          "score": 54.8,
-          "published_at": "2026-10-15T00:00:00+00:00"
+          "title": "On the hunt for dark matter",
+          "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-11T04:00:00+00:00"
         }
       ],
       "top_terms": [
-        "qubit",
-        "gates",
-        "ultrafast",
-        "photon",
-        "transition"
+        "dark",
+        "matter",
+        "hunt",
+        "observe",
+        "particle"
       ],
-      "rank": 9,
+      "rank": 5,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "chains",
-        "coupling",
-        "molecular",
-        "parity-dependent",
-        "spin",
-        "superconductor"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature Physics 学科聚合",
-        "Nature 量子物理"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-24T14:03:13.171215+00:00",
-      "representative": {
-        "title": "Technology with a spin",
-        "url": "https://www.nature.com/articles/s41928-026-01734-w",
-        "source": "Nature Physics 学科聚合",
-        "published_at": "2026-10-23T00:00:00+00:00",
-        "score": 60.1,
-        "summary": "",
-        "zh_full": null,
-        "llm_score": 10.5
-      },
-      "folded_count": 1,
-      "title": "Technology with a spin",
-      "id": "adea56a7542e",
-      "links": [
-        {
-          "title": "Technology with a spin",
-          "url": "https://www.nature.com/articles/s41928-026-01734-w",
-          "source": "Nature Physics 学科聚合",
-          "score": 60.1,
-          "published_at": "2026-10-23T00:00:00+00:00"
-        },
-        {
-          "title": "Parity-dependent coupling of molecular spin chains to a superconductor",
-          "url": "https://www.nature.com/articles/s41586-026-11117-y",
-          "source": "Nature 量子物理",
-          "score": 54.1,
-          "published_at": "2026-10-14T00:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "spin",
-        "parity",
-        "dependent",
-        "coupling",
-        "molecular"
-      ],
-      "rank": 10,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
+      "heat": 0.0,
       "status": "关注中"
     }
   ]

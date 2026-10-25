@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T14:03:13.171215+00:00",
-  "weekStart": "2026-10-18",
+  "generatedAt": "2026-10-25T00:22:01.082609+00:00",
+  "weekStart": "2026-10-19",
   "windowDays": 7,
-  "windowStart": "2026-10-18",
-  "windowEnd": "2026-10-24",
-  "prevStart": "2026-10-11",
-  "prevEnd": "2026-10-17",
+  "windowStart": "2026-10-19",
+  "windowEnd": "2026-10-25",
+  "prevStart": "2026-10-12",
+  "prevEnd": "2026-10-18",
   "categoryDelta": [
     {
-      "category": "科研进展",
-      "thisWeek": 1136.9,
-      "lastWeek": 1780.8,
-      "deltaPct": -36.2
+      "category": "其他",
+      "thisWeek": 1022.8,
+      "lastWeek": 1385.6,
+      "deltaPct": -26.2
     },
     {
-      "category": "其他",
-      "thisWeek": 1084.3,
-      "lastWeek": 1324.5,
-      "deltaPct": -18.1
+      "category": "科研进展",
+      "thisWeek": 777.6,
+      "lastWeek": 1780.3,
+      "deltaPct": -56.3
     },
     {
       "category": "量子信息与计算",
@@ -28,9 +28,9 @@
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 375.6,
+      "thisWeek": 426.9,
       "lastWeek": 665.4,
-      "deltaPct": -43.6
+      "deltaPct": -35.8
     },
     {
       "category": "凝聚态物理",
@@ -39,16 +39,16 @@
       "deltaPct": -34.0
     },
     {
+      "category": "等离子体",
+      "thisWeek": 57.7,
+      "lastWeek": 168.0,
+      "deltaPct": -65.7
+    },
+    {
       "category": "原子分子与光物理",
       "thisWeek": 37.4,
       "lastWeek": 41.5,
       "deltaPct": -9.9
-    },
-    {
-      "category": "等离子体",
-      "thisWeek": 0,
-      "lastWeek": 168.0,
-      "deltaPct": -100.0
     }
   ],
   "newTopics": [
@@ -56,18 +56,6 @@
       "topic_id": "42ea9b847d4c",
       "title": "A single antimatter particle in a cage opens door to ‘revolutionary’ physics",
       "score": 195.5,
-      "days": 1
-    },
-    {
-      "topic_id": "1c8548c84167",
-      "title": "Investigation of the dosimetric characteristics of real-time silicone/Bi2O3 nanocomposites for the diagnostic level X-rays",
-      "score": 124.0,
-      "days": 1
-    },
-    {
-      "topic_id": "99dc3bb39eed",
-      "title": "Interfacial control and evaporation pinning of nanocapillary filling from ambient to serpentinization temperatures",
-      "score": 114.4,
       "days": 1
     },
     {
@@ -95,12 +83,6 @@
       "days": 1
     },
     {
-      "topic_id": "fc61077e5a73",
-      "title": "Programmable high-dimensional state synthesis through a 20-m multimode fiber via long-coherence atomic photons",
-      "score": 63.5,
-      "days": 1
-    },
-    {
       "topic_id": "4ae78368b877",
       "title": "Effects of waveguide tube geometry and surrounding medium conditions on acoustic emission signal attenuation",
       "score": 60.1,
@@ -109,6 +91,24 @@
     {
       "topic_id": "d26f974bb4b5",
       "title": "Particle collisions on a quantum computer",
+      "score": 60.1,
+      "days": 1
+    },
+    {
+      "topic_id": "230a81058ba0",
+      "title": "Ultrafast single-qubit gates through multi-photon transition removal",
+      "score": 60.1,
+      "days": 1
+    },
+    {
+      "topic_id": "8adeafe3eb5e",
+      "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
+      "score": 60.1,
+      "days": 1
+    },
+    {
+      "topic_id": "03bffcf00beb",
+      "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
       "score": 60.1,
       "days": 1
     }

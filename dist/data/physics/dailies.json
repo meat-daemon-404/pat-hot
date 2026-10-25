@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T14:03:13.171215+00:00",
-  "count": 52,
+  "generatedAt": "2026-10-25T00:22:01.082609+00:00",
+  "count": 53,
   "dailies": {
     "2026-07-21": {
       "date": "2026-07-21",
@@ -9337,34 +9337,20 @@
       "weekday": "周六",
       "label": "2026年10月24日",
       "headline": {
-        "title": "Nuclear magnetic resonance on a single atom with a local probe",
-        "url": "https://www.nature.com/articles/s41467-026-78801-5",
-        "source": "Nature 量子物理",
-        "summary": "",
+        "title": "Counting magnetic flux quanta offers new way to measure photon numbers",
+        "url": "https://phys.org/news/2026-10-magnetic-flux-quanta-photon.html",
+        "source": "Phys.org 物理新闻",
+        "summary": "Researchers at AIST have directly observed magnetic flux quanta generated in a superconductor by photon absorption and demonstrated a new principle of photon detection that identifies the number of photons based on the number of these flux ",
         "zh_full": null,
         "reason": null,
         "density": null,
-        "score": 57.4,
+        "score": 30.4,
         "role": "科研",
-        "published_at": "2026-10-24T00:00:00+00:00",
-        "topic_id": "b141594d0865",
-        "topic_title": "Nuclear magnetic resonance on a single atom with a local probe"
+        "published_at": "2026-10-23T21:20:02+00:00",
+        "topic_id": null,
+        "topic_title": null
       },
       "picks": [
-        {
-          "title": "Counting magnetic flux quanta offers new way to measure photon numbers",
-          "url": "https://phys.org/news/2026-10-magnetic-flux-quanta-photon.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "Researchers at AIST have directly observed magnetic flux quanta generated in a superconductor by photon absorption and demonstrated a new principle of photon detection that identifies the number of photons based on the number of these flux ",
-          "zh_full": null,
-          "reason": null,
-          "density": null,
-          "score": 30.6,
-          "role": "科研",
-          "published_at": "2026-10-23T21:20:02+00:00",
-          "topic_id": null,
-          "topic_title": null
-        },
         {
           "title": "Plain silicon grating reveals a hidden 'twist' in light from electron beams",
           "url": "https://phys.org/news/2026-10-plain-silicon-reveals-hidden-electron.html",
@@ -9373,34 +9359,30 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 30.6,
+          "score": 30.4,
           "role": "科研",
           "published_at": "2026-10-23T20:20:08+00:00",
           "topic_id": null,
           "topic_title": null
         }
       ],
-      "flash": [],
-      "sections": [
+      "flash": [
         {
-          "category": "科研进展",
-          "articles": [
-            {
-              "title": "Nuclear magnetic resonance on a single atom with a local probe",
-              "url": "https://www.nature.com/articles/s41467-026-78801-5",
-              "source": "Nature 量子物理",
-              "summary": "",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 57.4,
-              "role": "科研",
-              "published_at": "2026-10-24T00:00:00+00:00",
-              "topic_id": "b141594d0865",
-              "topic_title": "Nuclear magnetic resonance on a single atom with a local probe"
-            }
-          ]
-        },
+          "title": "Nuclear magnetic resonance on a single atom with a local probe",
+          "url": "https://www.nature.com/articles/s41467-026-78801-5",
+          "source": "Nature 量子物理",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 57.4,
+          "role": "科研",
+          "published_at": "2026-10-24T00:00:00+00:00",
+          "topic_id": "b141594d0865",
+          "topic_title": "Nuclear magnetic resonance on a single atom with a local probe"
+        }
+      ],
+      "sections": [
         {
           "category": "其他",
           "articles": [
@@ -9412,7 +9394,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 30.6,
+              "score": 30.4,
               "role": "科研",
               "published_at": "2026-10-23T21:20:02+00:00",
               "topic_id": null,
@@ -9426,7 +9408,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 30.6,
+              "score": 30.4,
               "role": "科研",
               "published_at": "2026-10-23T20:20:08+00:00",
               "topic_id": null,
@@ -9440,7 +9422,88 @@
       ],
       "tocCount": 3,
       "readMinutes": 2,
-      "amended": 0
+      "amended": 1
+    },
+    "2026-10-25": {
+      "date": "2026-10-25",
+      "weekday": "周日",
+      "label": "2026年10月25日",
+      "headline": {
+        "title": "Single X-ray pulse reveals plasma nanostructures across scales with one camera",
+        "url": "https://phys.org/news/2026-10-ray-pulse-reveals-plasma-nanostructures.html",
+        "source": "Phys.org 物理新闻",
+        "summary": "Understanding instabilities and turbulence in plasmas is one of the key challenges across a wide range of plasma research fields, including nuclear fusion, astrophysics and laser-plasma physics. In plasmas, slight disturbances can grow due ",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 57.7,
+        "role": "科研",
+        "published_at": "2026-10-24T19:00:06+00:00",
+        "topic_id": "2484b311455b",
+        "topic_title": "Single X-ray pulse reveals plasma nanostructures across scales with one camera"
+      },
+      "picks": [
+        {
+          "title": "'One-positron cyclotron' could test a key prediction of the Standard Model",
+          "url": "https://phys.org/news/2026-10-positron-cyclotron-key-standard.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "The positron is the antimatter counterpart of the electron, identical in mass but carrying an equal and opposite electric charge. Like the electron, it also behaves like a tiny bar magnet, and according to a key prediction of the Standard M",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 51.3,
+          "role": "科研",
+          "published_at": "2026-10-24T17:20:02+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "flash": [],
+      "sections": [
+        {
+          "category": "高能与粒子物理",
+          "articles": [
+            {
+              "title": "'One-positron cyclotron' could test a key prediction of the Standard Model",
+              "url": "https://phys.org/news/2026-10-positron-cyclotron-key-standard.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "The positron is the antimatter counterpart of the electron, identical in mass but carrying an equal and opposite electric charge. Like the electron, it also behaves like a tiny bar magnet, and according to a key prediction of the Standard M",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.3,
+              "role": "科研",
+              "published_at": "2026-10-24T17:20:02+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "等离子体",
+          "articles": [
+            {
+              "title": "Single X-ray pulse reveals plasma nanostructures across scales with one camera",
+              "url": "https://phys.org/news/2026-10-ray-pulse-reveals-plasma-nanostructures.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Understanding instabilities and turbulence in plasmas is one of the key challenges across a wide range of plasma research fields, including nuclear fusion, astrophysics and laser-plasma physics. In plasmas, slight disturbances can grow due ",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 57.7,
+              "role": "科研",
+              "published_at": "2026-10-24T19:00:06+00:00",
+              "topic_id": "2484b311455b",
+              "topic_title": "Single X-ray pulse reveals plasma nanostructures across scales with one camera"
+            }
+          ]
+        }
+      ],
+      "topic_ids": [
+        "2484b311455b"
+      ],
+      "tocCount": 2,
+      "readMinutes": 2
     }
   }
 }
