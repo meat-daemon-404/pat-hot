@@ -1,8 +1,77 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T14:24:16.028710+00:00",
-  "count": 5,
+  "generatedAt": "2026-10-26T00:24:20.625514+00:00",
+  "count": 8,
   "items": [
+    {
+      "id": "9cfb7317249c",
+      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-26T00:24:20.625514+00:00",
+      "sources": [
+        "Nature 量子物理",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "Supercurrent enables the reading of quantum information without destroying it",
+          "url": "https://phys.org/news/2026-10-supercurrent-enables-quantum-destroying.html",
+          "source": "Phys.org 物理新闻",
+          "score": 61.0,
+          "published_at": "2026-10-25T19:00:20+00:00"
+        },
+        {
+          "title": "Teleportation transition of surface codes on a superconducting quantum processor",
+          "url": "https://www.nature.com/articles/s41567-026-03484-0",
+          "source": "Nature 量子物理",
+          "score": 58.5,
+          "published_at": "2026-10-22T00:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 23.0
+    },
+    {
+      "id": "20eded67e41f",
+      "title": "AI helps design new materials that work in the real world",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-26T00:24:20.625514+00:00",
+      "sources": [
+        "MIT News 物理",
+        "Nature Physics 学科聚合"
+      ],
+      "links": [
+        {
+          "title": "Improving low-cost NO₂ sensor reliability under real-world air quality conditions by calibrating distributions instead of data points",
+          "url": "https://www.nature.com/articles/s41598-026-77029-z",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.5,
+          "published_at": "2026-10-25T00:00:00+00:00"
+        },
+        {
+          "title": "AI helps design new materials that work in the real world",
+          "url": "https://news.mit.edu/2026/ai-helps-design-new-materials-that-work-in-real-world-0826",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-26T09:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
     {
       "id": "8adeafe3eb5e",
       "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
@@ -10,7 +79,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-25T14:24:16.028710+00:00",
+      "latestAt": "2026-10-26T00:24:20.625514+00:00",
       "sources": [
         "New Scientist 物理",
         "Phys.org 物理新闻"
@@ -20,14 +89,14 @@
           "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
           "url": "https://phys.org/news/2026-10-neutrino-science-year-nobel-prize.html",
           "source": "Phys.org 物理新闻",
-          "score": 59.4,
+          "score": 59.1,
           "published_at": "2026-10-22T23:30:01+00:00"
         },
         {
           "title": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
           "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 48.4,
+          "score": 48.1,
           "published_at": "2026-10-06T10:26:02+00:00"
         }
       ],
@@ -39,13 +108,47 @@
       "llmScore": 41.0
     },
     {
+      "id": "58655d0f38b0",
+      "title": "All-optical generation of dense multi-GeV positron beams with longitudinal polarization",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-10-26T00:24:20.625514+00:00",
+      "sources": [
+        "Nature 量子物理",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "All-optical generation of dense multi-GeV positron beams with longitudinal polarization",
+          "url": "https://www.nature.com/articles/s42005-026-02907-x",
+          "source": "Nature 量子物理",
+          "score": 51.8,
+          "published_at": "2026-10-12T00:00:00+00:00"
+        },
+        {
+          "title": "Diamond laser system achieves 100% optical contrast in magnetic-field readout",
+          "url": "https://phys.org/news/2026-10-diamond-laser-optical-contrast-magnetic.html",
+          "source": "Phys.org 物理新闻",
+          "score": 35.4,
+          "published_at": "2026-10-22T18:20:08+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
       "id": "1eaca0ec3885",
       "title": "Physicists trap and tame single particle of antimatter for months",
       "status": "关注中",
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-25T14:24:16.028710+00:00",
+      "latestAt": "2026-10-26T00:24:20.625514+00:00",
       "sources": [
         "New Scientist 物理",
         "Phys.org 物理新闻"
@@ -55,14 +158,14 @@
           "title": "Physicists trap and tame single particle of antimatter for months",
           "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
           "source": "Phys.org 物理新闻",
-          "score": 58.5,
+          "score": 58.2,
           "published_at": "2026-10-21T15:00:10+00:00"
         },
         {
           "title": "A single antimatter particle was held in a trap for months",
           "url": "https://www.newscientist.com/article/2594955-a-single-antimatter-particle-was-held-in-a-trap-for-months/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 58.5,
+          "score": 58.2,
           "published_at": "2026-10-21T15:00:00+00:00"
         }
       ],
@@ -80,7 +183,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-25T14:24:16.028710+00:00",
+      "latestAt": "2026-10-26T00:24:20.625514+00:00",
       "sources": [
         "New Scientist 物理",
         "Phys.org 物理新闻"
@@ -90,14 +193,14 @@
           "title": "'Smoking gun' may help solve mystery of high-temperature superconductivity",
           "url": "https://phys.org/news/2026-10-gun-mystery-high-temperature-superconductivity.html",
           "source": "Phys.org 物理新闻",
-          "score": 58.0,
+          "score": 57.7,
           "published_at": "2026-10-20T20:00:07+00:00"
         },
         {
           "title": "Are we about to solve the greatest mystery of the neutrino?",
           "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 57.3,
+          "score": 57.0,
           "published_at": "2026-10-19T19:00:00+00:00"
         }
       ],
@@ -109,38 +212,39 @@
       "llmScore": 17.0
     },
     {
-      "id": "8d0c000ce3ad",
-      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+      "id": "b141594d0865",
+      "title": "Nuclear magnetic resonance on a single atom with a local probe",
       "status": "关注中",
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-25T14:24:16.028710+00:00",
+      "latestAt": "2026-10-26T00:24:20.625514+00:00",
       "sources": [
-        "MIT News 物理",
-        "Phys.org 物理新闻"
+        "Nature Physics 学科聚合",
+        "Nature 量子物理"
       ],
       "links": [
         {
-          "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-          "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-05T15:00:00+00:00"
+          "title": "Nuclear magnetic resonance on a single atom with a local probe",
+          "url": "https://www.nature.com/articles/s41467-026-78801-5",
+          "source": "Nature Physics 学科聚合",
+          "score": 59.8,
+          "published_at": "2026-10-24T00:00:00+00:00"
         },
         {
-          "title": "Steering electrons with extreme ultraviolet light—team achieves quantum coherent control",
-          "url": "https://phys.org/news/2026-10-electrons-extreme-ultraviolet-team-quantum.html",
-          "source": "Phys.org 物理新闻",
-          "score": 34.8,
-          "published_at": "2026-10-20T18:00:31+00:00"
+          "title": "From a single atom to manufacturable quantum processors in silicon",
+          "url": "https://www.nature.com/articles/s41565-026-02300-3",
+          "source": "Nature 量子物理",
+          "score": 52.5,
+          "published_at": "2026-10-13T00:00:00+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "llmScore": 13.0
     },
     {
       "id": "1dc3e2185b16",
@@ -149,7 +253,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-25T14:24:16.028710+00:00",
+      "latestAt": "2026-10-26T00:24:20.625514+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -159,7 +263,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 53.0,
+          "score": 52.7,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {

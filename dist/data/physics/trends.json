@@ -1,54 +1,54 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T14:24:16.028710+00:00",
-  "weekStart": "2026-10-19",
+  "generatedAt": "2026-10-26T00:24:20.625514+00:00",
+  "weekStart": "2026-10-20",
   "windowDays": 7,
-  "windowStart": "2026-10-19",
-  "windowEnd": "2026-10-25",
-  "prevStart": "2026-10-12",
-  "prevEnd": "2026-10-18",
+  "windowStart": "2026-10-20",
+  "windowEnd": "2026-10-26",
+  "prevStart": "2026-10-13",
+  "prevEnd": "2026-10-19",
   "categoryDelta": [
     {
-      "category": "其他",
-      "thisWeek": 1053.3,
-      "lastWeek": 1385.6,
-      "deltaPct": -24.0
+      "category": "科研进展",
+      "thisWeek": 1055.0,
+      "lastWeek": 1643.8,
+      "deltaPct": -35.8
     },
     {
-      "category": "科研进展",
-      "thisWeek": 829.1,
-      "lastWeek": 1780.3,
-      "deltaPct": -53.4
+      "category": "其他",
+      "thisWeek": 962.7,
+      "lastWeek": 1273.8,
+      "deltaPct": -24.4
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 598.0,
-      "lastWeek": 343.8,
-      "deltaPct": 73.9
+      "thisWeek": 561.7,
+      "lastWeek": 441.1,
+      "deltaPct": 27.3
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 426.5,
-      "lastWeek": 665.4,
-      "deltaPct": -35.9
+      "thisWeek": 426.2,
+      "lastWeek": 582.4,
+      "deltaPct": -26.8
     },
     {
       "category": "凝聚态物理",
       "thisWeek": 299.6,
-      "lastWeek": 454.1,
-      "deltaPct": -34.0
+      "lastWeek": 292.2,
+      "deltaPct": 2.5
     },
     {
       "category": "等离子体",
-      "thisWeek": 57.3,
+      "thisWeek": 50.7,
       "lastWeek": 168.0,
-      "deltaPct": -65.9
+      "deltaPct": -69.8
     },
     {
       "category": "原子分子与光物理",
-      "thisWeek": 37.4,
-      "lastWeek": 41.5,
-      "deltaPct": -9.9
+      "thisWeek": 0,
+      "lastWeek": 37.4,
+      "deltaPct": -100.0
     }
   ],
   "newTopics": [
@@ -83,6 +83,18 @@
       "days": 1
     },
     {
+      "topic_id": "9cfb7317249c",
+      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
+      "score": 61.0,
+      "days": 1
+    },
+    {
+      "topic_id": "20eded67e41f",
+      "title": "AI helps design new materials that work in the real world",
+      "score": 60.5,
+      "days": 1
+    },
+    {
       "topic_id": "4ae78368b877",
       "title": "Effects of waveguide tube geometry and surrounding medium conditions on acoustic emission signal attenuation",
       "score": 60.1,
@@ -97,18 +109,6 @@
     {
       "topic_id": "230a81058ba0",
       "title": "Ultrafast single-qubit gates through multi-photon transition removal",
-      "score": 60.1,
-      "days": 1
-    },
-    {
-      "topic_id": "8adeafe3eb5e",
-      "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
-      "score": 60.1,
-      "days": 1
-    },
-    {
-      "topic_id": "03bffcf00beb",
-      "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
       "score": 60.1,
       "days": 1
     }
