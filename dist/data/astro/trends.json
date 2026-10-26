@@ -1,54 +1,54 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T00:24:20.625514+00:00",
-  "weekStart": "2026-10-20",
+  "generatedAt": "2026-10-26T16:49:12.371032+00:00",
+  "weekStart": "2026-10-21",
   "windowDays": 7,
-  "windowStart": "2026-10-20",
-  "windowEnd": "2026-10-26",
-  "prevStart": "2026-10-13",
-  "prevEnd": "2026-10-19",
+  "windowStart": "2026-10-21",
+  "windowEnd": "2026-10-27",
+  "prevStart": "2026-10-14",
+  "prevEnd": "2026-10-20",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1662.6,
-      "lastWeek": 770.0,
-      "deltaPct": 115.9
+      "thisWeek": 1900.9,
+      "lastWeek": 877.1,
+      "deltaPct": 116.7
     },
     {
       "category": "深空探测",
-      "thisWeek": 1642.4,
-      "lastWeek": 1750.2,
-      "deltaPct": -6.2
+      "thisWeek": 1349.7,
+      "lastWeek": 1904.0,
+      "deltaPct": -29.1
     },
     {
       "category": "其他",
-      "thisWeek": 1456.7,
-      "lastWeek": 1447.7,
-      "deltaPct": 0.6
+      "thisWeek": 1186.2,
+      "lastWeek": 1458.3,
+      "deltaPct": -18.7
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 1059.3,
-      "lastWeek": 769.7,
-      "deltaPct": 37.6
+      "thisWeek": 1184.7,
+      "lastWeek": 749.5,
+      "deltaPct": 58.1
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 987.5,
-      "lastWeek": 1038.6,
-      "deltaPct": -4.9
+      "thisWeek": 1184.1,
+      "lastWeek": 957.7,
+      "deltaPct": 23.6
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 456.5,
-      "lastWeek": 318.4,
-      "deltaPct": 43.4
+      "thisWeek": 517.7,
+      "lastWeek": 167.9,
+      "deltaPct": 208.3
     },
     {
       "category": "引力波",
-      "thisWeek": 246.9,
+      "thisWeek": 284.5,
       "lastWeek": 114.3,
-      "deltaPct": 116.0
+      "deltaPct": 148.9
     },
     {
       "category": "系外行星",
@@ -77,12 +77,6 @@
       "days": 1
     },
     {
-      "topic_id": "feea657299fb",
-      "title": "JAXA's Martian Moons eXploration Mission is on its Way to Mars and Phobos",
-      "score": 178.2,
-      "days": 1
-    },
-    {
       "topic_id": "6486ec6e74f2",
       "title": "Gamma-ray Bursts as Cosmological Probes Calibrated with Strongly Lensed Quasars and Neural Networks",
       "score": 135.9,
@@ -95,16 +89,16 @@
       "days": 1
     },
     {
+      "topic_id": "e3841fffc931",
+      "title": "High-orbit satellites could light the way for travel to the moon",
+      "score": 134.0,
+      "days": 1
+    },
+    {
       "topic_id": "3be3cfa59f8a",
       "title": "Tiny ‘solar flares’ recreated in the lab may explain corona mystery",
       "score": 129.7,
       "days": 2
-    },
-    {
-      "topic_id": "dbe8795b3279",
-      "title": "Newly discovered Earth-sized planet may lack an atmosphere",
-      "score": 129.5,
-      "days": 1
     },
     {
       "topic_id": "00fb52c9432f",
@@ -116,6 +110,12 @@
       "topic_id": "1f2d7a0848d9",
       "title": "Stars brewing in a nebulous cauldron",
       "score": 120.2,
+      "days": 2
+    },
+    {
+      "topic_id": "e5597bddffca",
+      "title": "APOD: 2026 October 24 – Rosetta’s Selfie",
+      "score": 113.8,
       "days": 2
     }
   ],

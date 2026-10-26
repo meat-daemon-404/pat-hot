@@ -1,42 +1,42 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T00:24:20.625514+00:00",
-  "weekStart": "2026-10-20",
+  "generatedAt": "2026-10-26T16:49:12.371032+00:00",
+  "weekStart": "2026-10-21",
   "windowDays": 7,
-  "windowStart": "2026-10-20",
-  "windowEnd": "2026-10-26",
-  "prevStart": "2026-10-13",
-  "prevEnd": "2026-10-19",
+  "windowStart": "2026-10-21",
+  "windowEnd": "2026-10-27",
+  "prevStart": "2026-10-14",
+  "prevEnd": "2026-10-20",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1055.0,
-      "lastWeek": 1643.8,
-      "deltaPct": -35.8
+      "thisWeek": 1428.1,
+      "lastWeek": 1112.9,
+      "deltaPct": 28.3
     },
     {
       "category": "其他",
-      "thisWeek": 962.7,
-      "lastWeek": 1273.8,
-      "deltaPct": -24.4
+      "thisWeek": 953.0,
+      "lastWeek": 1355.5,
+      "deltaPct": -29.7
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 561.7,
-      "lastWeek": 441.1,
-      "deltaPct": 27.3
+      "thisWeek": 718.1,
+      "lastWeek": 355.7,
+      "deltaPct": 101.9
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 426.2,
-      "lastWeek": 582.4,
-      "deltaPct": -26.8
+      "thisWeek": 366.3,
+      "lastWeek": 465.5,
+      "deltaPct": -21.3
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 299.6,
-      "lastWeek": 292.2,
-      "deltaPct": 2.5
+      "thisWeek": 334.3,
+      "lastWeek": 257.1,
+      "deltaPct": 30.0
     },
     {
       "category": "等离子体",
@@ -59,6 +59,12 @@
       "days": 1
     },
     {
+      "topic_id": "ab2d58460ede",
+      "title": "Mutual Information Across Quantum Reference Frame Perspectives",
+      "score": 107.9,
+      "days": 1
+    },
+    {
       "topic_id": "044306bf2ce5",
       "title": "Light-based method enables precise control of ultrafast electron flow in a scanning tunneling microscope",
       "score": 104.8,
@@ -68,6 +74,18 @@
       "topic_id": "6e2c661e708a",
       "title": "Co-localized optical and acoustic defect modes enable resonantly enhanced photoelastic readout in a one-dimensional phoxonic multilayer",
       "score": 96.1,
+      "days": 1
+    },
+    {
+      "topic_id": "97e77bbc80e9",
+      "title": "Fidelity Dynamics of a Jaynes--Cummings Qubit under Markovian and Non-Markovian Coupling Noise",
+      "score": 88.0,
+      "days": 1
+    },
+    {
+      "topic_id": "6ad11ce69b69",
+      "title": "QuantumMatterExplorer: An Autonomous Agent for the Discovery of Quantum Many-Body Phases of Matter",
+      "score": 88.0,
       "days": 1
     },
     {
@@ -83,12 +101,6 @@
       "days": 1
     },
     {
-      "topic_id": "9cfb7317249c",
-      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-      "score": 61.0,
-      "days": 1
-    },
-    {
       "topic_id": "20eded67e41f",
       "title": "AI helps design new materials that work in the real world",
       "score": 60.5,
@@ -97,18 +109,6 @@
     {
       "topic_id": "4ae78368b877",
       "title": "Effects of waveguide tube geometry and surrounding medium conditions on acoustic emission signal attenuation",
-      "score": 60.1,
-      "days": 1
-    },
-    {
-      "topic_id": "d26f974bb4b5",
-      "title": "Particle collisions on a quantum computer",
-      "score": 60.1,
-      "days": 1
-    },
-    {
-      "topic_id": "230a81058ba0",
-      "title": "Ultrafast single-qubit gates through multi-photon transition removal",
       "score": 60.1,
       "days": 1
     }

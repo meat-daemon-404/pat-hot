@@ -1,48 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T00:24:20.625514+00:00",
+  "generatedAt": "2026-10-26T16:49:12.371032+00:00",
   "count": 10,
   "items": [
     {
-      "id": "cb58da4ae623",
+      "id": "e3841fffc931",
       "title": "High-orbit satellites could light the way for travel to the moon",
       "status": "关注中",
       "heat": 24.5,
       "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-26T00:24:20.625514+00:00",
+      "signalCount": 3,
+      "latestAt": "2026-10-26T16:49:12.371032+00:00",
       "sources": [
         "Astronomy Magazine",
         "MIT News 太空探索"
       ],
       "links": [
         {
-          "title": "The Sky Today on Sunday, October 25: Dione crosses Saturn",
-          "url": "https://www.astronomy.com/observing/the-sky-today-sunday-october-25-2026/",
-          "source": "Astronomy Magazine",
-          "score": 66.7,
-          "published_at": "2026-10-25T08:00:00+00:00"
-        },
-        {
           "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
           "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
           "source": "Astronomy Magazine",
-          "score": 65.5,
-          "published_at": "2026-10-23T13:30:41+00:00"
+          "score": 67.1,
+          "published_at": "2026-10-26T13:41:22+00:00"
+        },
+        {
+          "title": "The Sky Today on Monday, October 26: Observe the October Hunter’s Moon",
+          "url": "https://www.astronomy.com/observing/the-sky-today-monday-october-26-2026/",
+          "source": "Astronomy Magazine",
+          "score": 66.9,
+          "published_at": "2026-10-26T08:00:00+00:00"
+        },
+        {
+          "title": "The Sky Today on Sunday, October 25: Dione crosses Saturn",
+          "url": "https://www.astronomy.com/observing/the-sky-today-sunday-october-25-2026/",
+          "source": "Astronomy Magazine",
+          "score": 66.3,
+          "published_at": "2026-10-25T08:00:00+00:00"
         },
         {
           "title": "The Sky Today on Friday, October 23: Nab Neptune near the Moon",
           "url": "https://www.astronomy.com/observing/the-sky-today-friday-october-23-2026/",
           "source": "Astronomy Magazine",
-          "score": 65.4,
+          "score": 64.9,
           "published_at": "2026-10-23T08:00:00+00:00"
-        },
-        {
-          "title": "The Sky This Week from October 23 to 30: Gaze at the Full Hunter’s Moon",
-          "url": "https://www.astronomy.com/the-sky-this-week/the-sky-this-week-from-october-23-to-30-2026/",
-          "source": "Astronomy Magazine",
-          "score": 65.3,
-          "published_at": "2026-10-23T05:00:00+00:00"
         },
         {
           "title": "High-orbit satellites could light the way for travel to the moon",
@@ -59,13 +59,48 @@
       "digestTitle": null
     },
     {
+      "id": "11d07cb9912b",
+      "title": "JWST and ALMA reveal a dusty, rapidly growing black hole in the early universe",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-26T16:49:12.371032+00:00",
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "JWST and ALMA reveal a dusty, rapidly growing black hole in the early universe",
+          "url": "https://phys.org/news/2026-10-jwst-alma-reveal-dusty-rapidly.html",
+          "source": "Phys.org 太空新闻",
+          "score": 61.1,
+          "published_at": "2026-10-26T13:20:36+00:00"
+        },
+        {
+          "title": "JWST Reveals a Lopsided Alien World with Blistering Evening Winds",
+          "url": "https://www.universetoday.com/articles/jwst-reveals-a-lopsided-alien-world-with-blistering-evening-winds",
+          "source": "Universe Today",
+          "score": 35.4,
+          "published_at": "2026-10-23T10:54:33+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 57.0
+    },
+    {
       "id": "c091d4fb12a3",
       "title": "Milky Way's disk grew 'upside down,' with younger stars forming in ever-thinner layers",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-26T00:24:20.625514+00:00",
+      "latestAt": "2026-10-26T16:49:12.371032+00:00",
       "sources": [
         "New Scientist 太空",
         "Phys.org 太空新闻"
@@ -75,26 +110,26 @@
           "title": "Milky Way's disk grew 'upside down,' with younger stars forming in ever-thinner layers",
           "url": "https://phys.org/news/2026-10-milky-disk-grew-upside-younger.html",
           "source": "Phys.org 太空新闻",
-          "score": 62.5,
+          "score": 62.0,
           "published_at": "2026-10-25T18:30:02+00:00"
         },
         {
           "title": "Stellar collision may explain why Orion Nebula's planet-forming disks appear younger than its stars",
           "url": "https://phys.org/news/2026-10-stellar-collision-orion-nebula-planet.html",
           "source": "Phys.org 太空新闻",
-          "score": 61.2,
+          "score": 60.7,
           "published_at": "2026-10-23T19:00:01+00:00"
         },
         {
           "title": "Impossibly fast-moving stars are revealing the Milky Way’s mysterious heart",
           "url": "https://www.newscientist.com/article/2590428-impossibly-fast-moving-stars-are-revealing-the-milky-ways-mysterious-heart/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 49.7,
+          "score": 49.3,
           "published_at": "2026-10-06T15:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -107,7 +142,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-26T00:24:20.625514+00:00",
+      "latestAt": "2026-10-26T16:49:12.371032+00:00",
       "sources": [
         "New Scientist 太空",
         "Phys.org 太空新闻"
@@ -117,14 +152,14 @@
           "title": "How flare ribbons reveal hidden solar explosions on the sun",
           "url": "https://phys.org/news/2026-10-flare-ribbons-reveal-hidden-solar.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.3,
+          "score": 59.9,
           "published_at": "2026-10-24T18:00:01+00:00"
         },
         {
           "title": "Tiny ‘solar flares’ recreated in the lab may explain corona mystery",
           "url": "https://www.newscientist.com/article/2595244-tiny-solar-flares-recreated-in-the-lab-may-explain-corona-mystery/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 59.0,
+          "score": 58.6,
           "published_at": "2026-10-22T19:00:00+00:00"
         }
       ],
@@ -135,39 +170,130 @@
       "digestTitle": null
     },
     {
-      "id": "291e08e906c1",
-      "title": "APOD: 2026 October 25 – Dark Matter in a Simulated Universe",
+      "id": "9d1e27e3db80",
+      "title": "NASA, USDA Sign Agreement Advancing Earth Science, Agriculture",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-26T00:24:20.625514+00:00",
+      "latestAt": "2026-10-26T16:49:12.371032+00:00",
       "sources": [
         "NASA 快讯",
-        "New Scientist 太空"
+        "Phys.org 太空新闻"
       ],
       "links": [
         {
-          "title": "APOD: 2026 October 25 – Dark Matter in a Simulated Universe",
-          "url": "https://science.nasa.gov/image-article/apod-2026-october-25-dark-matter-in-a-simulated-universe/",
+          "title": "NASA, USDA Sign Agreement Advancing Earth Science, Agriculture",
+          "url": "https://www.nasa.gov/news-release/nasa-usda-sign-agreement-advancing-earth-science-agriculture/",
           "source": "NASA 快讯",
-          "score": 60.7,
-          "published_at": "2026-10-25T08:19:48+00:00"
+          "score": 65.6,
+          "published_at": "2026-10-26T13:54:25+00:00"
         },
         {
-          "title": "The telescope that could reveal what dark matter and dark energy are",
-          "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 48.3,
-          "published_at": "2026-10-06T17:00:00+00:00"
+          "title": "NASA adopting Apollo's urgency to build a moon base and land astronauts within 2 years",
+          "url": "https://phys.org/news/2026-10-nasa-apollo-urgency-moon-base.html",
+          "source": "Phys.org 太空新闻",
+          "score": 64.1,
+          "published_at": "2026-10-24T09:28:00+00:00"
+        },
+        {
+          "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+          "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
+          "source": "NASA 快讯",
+          "score": 63.8,
+          "published_at": "2026-10-23T22:39:39+00:00"
+        },
+        {
+          "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
+          "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/",
+          "source": "NASA 快讯",
+          "score": 63.8,
+          "published_at": "2026-10-23T22:37:53+00:00"
+        },
+        {
+          "title": "NASA’s Swift Mission Ends, Leaves Behind Scientific Bonanza",
+          "url": "https://science.nasa.gov/missions/swift/nasas-swift-mission-ends/",
+          "source": "NASA 快讯",
+          "score": 63.8,
+          "published_at": "2026-10-23T21:51:19+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null,
-      "llmScore": 5.0
+      "llmScore": 34.0
+    },
+    {
+      "id": "7daa46be2538",
+      "title": "Parker Solar Probe Spots Twisted Magnetic Braids Growing in the Solar Wind",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-26T16:49:12.371032+00:00",
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "Parker Solar Probe Spots Twisted Magnetic Braids Growing in the Solar Wind",
+          "url": "https://www.universetoday.com/articles/parker-solar-probe-spots-twisted-magnetic-braids-growing-in-the-solar-wind",
+          "source": "Universe Today",
+          "score": 61.2,
+          "published_at": "2026-10-26T16:26:34+00:00"
+        },
+        {
+          "title": "Black hole observations uncover evidence of solar storm–like magnetic eruptions",
+          "url": "https://phys.org/news/2026-10-black-hole-uncover-evidence-solar.html",
+          "source": "Phys.org 太空新闻",
+          "score": 58.4,
+          "published_at": "2026-10-22T15:03:31+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 45.0
+    },
+    {
+      "id": "875dd2d54550",
+      "title": "Hunting Red Leaves with Satellites",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-26T16:49:12.371032+00:00",
+      "sources": [
+        "LIGO",
+        "NASA 快讯"
+      ],
+      "links": [
+        {
+          "title": "Hunting Red Leaves with Satellites",
+          "url": "https://science.nasa.gov/earth/earth-observatory/hunting-red-leaves-with-satellites/",
+          "source": "NASA 快讯",
+          "score": 60.8,
+          "published_at": "2026-10-26T04:01:00+00:00"
+        },
+        {
+          "title": "Ten years later, LIGO is a black-hole hunting machine",
+          "url": "https://ligo.org/ten-years-later-ligo-is-a-black-hole-hunting-machine/",
+          "source": "LIGO",
+          "score": 41.2,
+          "published_at": "2025-09-10T15:00:21+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 13.5
     },
     {
       "id": "7e9713449690",
@@ -176,7 +302,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-26T00:24:20.625514+00:00",
+      "latestAt": "2026-10-26T16:49:12.371032+00:00",
       "sources": [
         "Astronomy Magazine",
         "MIT News 太空探索"
@@ -186,7 +312,7 @@
           "title": "Oct. 25, 1671: Iapetus is discovered",
           "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/oct-25-1671-iapetus-is-discovered/",
           "source": "Astronomy Magazine",
-          "score": 36.5,
+          "score": 36.2,
           "published_at": "2026-10-25T13:00:00+00:00"
         },
         {
@@ -204,156 +330,31 @@
       "digestTitle": null
     },
     {
-      "id": "340e3a74576c",
-      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
-      "status": "发酵中",
-      "heat": 17.7,
-      "sourceCount": 3,
+      "id": "4c95a0d208ce",
+      "title": "Stochastic dynamics of cosmological inflation in general relativity",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-26T00:24:20.625514+00:00",
+      "latestAt": "2026-10-26T16:49:12.371032+00:00",
       "sources": [
-        "NASA 快讯",
-        "Phys.org 太空新闻",
-        "Universe Today"
+        "LIGO",
+        "arXiv astro-ph.CO 论文速递"
       ],
       "links": [
         {
-          "title": "NASA adopting Apollo's urgency to build a moon base and land astronauts within 2 years",
-          "url": "https://phys.org/news/2026-10-nasa-apollo-urgency-moon-base.html",
-          "source": "Phys.org 太空新闻",
-          "score": 67.9,
-          "published_at": "2026-10-24T09:28:00+00:00"
+          "title": "Stochastic dynamics of cosmological inflation in general relativity",
+          "url": "https://arxiv.org/abs/2610.32592",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 47.3,
+          "published_at": "2026-10-26T04:00:00+00:00"
         },
         {
-          "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
-          "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
-          "source": "NASA 快讯",
-          "score": 67.6,
-          "published_at": "2026-10-23T22:39:39+00:00"
-        },
-        {
-          "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
-          "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/",
-          "source": "NASA 快讯",
-          "score": 67.6,
-          "published_at": "2026-10-23T22:37:53+00:00"
-        },
-        {
-          "title": "NASA’s Swift Mission Ends, Leaves Behind Scientific Bonanza",
-          "url": "https://science.nasa.gov/missions/swift/nasas-swift-mission-ends/",
-          "source": "NASA 快讯",
-          "score": 67.6,
-          "published_at": "2026-10-23T21:51:19+00:00"
-        },
-        {
-          "title": "How Inversion and NASA Plan to Unlock Interplanetary Aerocapture",
-          "url": "https://www.universetoday.com/articles/how-inversion-and-nasa-plan-to-unlock-interplanetary-aerocapture-mb-edits",
-          "source": "Universe Today",
-          "score": 39.7,
-          "published_at": "2026-10-21T16:12:00+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -54.6,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 46.5
-    },
-    {
-      "id": "aac79df06d2f",
-      "title": "Lincoln Laboratory laser communications terminal launches on historic Artemis II moon mission",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-26T00:24:20.625514+00:00",
-      "sources": [
-        "MIT News 太空探索",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Artemis I: Crystals of experimental detectors record radiation doses near the moon",
-          "url": "https://phys.org/news/2026-10-artemis-crystals-experimental-detectors-doses.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.6,
-          "published_at": "2026-10-23T15:40:01+00:00"
-        },
-        {
-          "title": "Lincoln Laboratory laser communications terminal launches on historic Artemis II moon mission",
-          "url": "https://news.mit.edu/2026/lincoln-laboratory-laser-communications-terminal-launches-artemis-ii-0402",
-          "source": "MIT News 太空探索",
+          "title": "Exceptional tests of general relativity with GW250114",
+          "url": "https://ligo.org/exceptional-tests-of-general-relativity-with-gw250114/",
+          "source": "LIGO",
           "score": 41.2,
-          "published_at": "2026-04-02T13:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "0abe4f24bfda",
-      "title": "Webb captures commotion from nebula’s stellar jets",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-26T00:24:20.625514+00:00",
-      "sources": [
-        "ESA 空间科学",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Webb captures stars in the early stages of life in a nearby stellar nursery",
-          "url": "https://phys.org/news/2026-10-webb-captures-stars-early-stages.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.0,
-          "published_at": "2026-10-22T17:40:18+00:00"
-        },
-        {
-          "title": "Webb captures commotion from nebula’s stellar jets",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Webb_captures_commotion_from_nebula_s_stellar_jets",
-          "source": "ESA 空间科学",
-          "score": 48.2,
-          "published_at": "2026-10-06T13:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "1f2d7a0848d9",
-      "title": "Stars brewing in a nebulous cauldron",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-26T00:24:20.625514+00:00",
-      "sources": [
-        "ESA 空间科学",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Webb image reveals young stars brewing in a nebulous cauldron",
-          "url": "https://phys.org/news/2026-10-webb-image-reveals-young-stars.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.0,
-          "published_at": "2026-10-22T17:40:01+00:00"
-        },
-        {
-          "title": "Stars brewing in a nebulous cauldron",
-          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Stars_brewing_in_a_nebulous_cauldron",
-          "source": "ESA 空间科学",
-          "score": 58.7,
-          "published_at": "2026-10-22T08:00:00+00:00"
+          "published_at": "2026-02-04T15:23:09+00:00"
         }
       ],
       "trend": "new",
@@ -361,49 +362,61 @@
       "badges": [],
       "digest": null,
       "digestTitle": null,
-      "llmScore": 18.0
+      "refs": {
+        "arxiv": "2610.32592",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
     },
     {
-      "id": "68a6e1be1a60",
-      "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
+      "id": "1d033c0aa92f",
+      "title": "The Loud Tail of the Supermassive Black Hole Binary Population: Multimessenger Candidates and Prospects for SKAO",
       "status": "发酵中",
-      "heat": 0.0,
-      "sourceCount": 4,
-      "signalCount": 0,
-      "latestAt": "2026-10-26T00:24:20.625514+00:00",
+      "heat": 15.0,
+      "sourceCount": 5,
+      "signalCount": 1,
+      "latestAt": "2026-10-26T16:49:12.371032+00:00",
       "sources": [
         "LIGO",
         "MIT News 太空探索",
         "Phys.org 太空新闻",
-        "Universe Today"
+        "Universe Today",
+        "arXiv astro-ph.CO 论文速递"
       ],
       "links": [
+        {
+          "title": "The Loud Tail of the Supermassive Black Hole Binary Population: Multimessenger Candidates and Prospects for SKAO",
+          "url": "https://arxiv.org/abs/2609.13363",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 61.8,
+          "published_at": "2026-10-26T04:00:00+00:00"
+        },
         {
           "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
           "url": "https://news.mit.edu/2024/using-wobbling-stellar-material-astronomers-measure-supermassive-black-hole-spin-0522",
           "source": "MIT News 太空探索",
-          "score": 50.8,
+          "score": 55.7,
           "published_at": "2024-05-22T15:00:00+00:00"
         },
         {
           "title": "Pair of distinct black hole mergers sheds new light on nature of their formation and evolution",
           "url": "https://ligo.org/pair-of-distinct-black-hole-mergers-sheds-new-light-on-nature-of-their-formation-and-evolution/",
           "source": "LIGO",
-          "score": 50.8,
+          "score": 55.7,
           "published_at": "2025-10-28T15:01:12+00:00"
         },
         {
           "title": "Supermassive black holes ejected from galactic centers? Quasar survey supports decade-old prediction",
           "url": "https://phys.org/news/2026-10-supermassive-black-holes-ejected-galactic.html",
           "source": "Phys.org 太空新闻",
-          "score": 41.2,
+          "score": 43.8,
           "published_at": "2026-10-22T16:20:25+00:00"
         },
         {
           "title": "New Evidence for an Old Prediction: Recoiling Supermassive Black Holes",
           "url": "https://www.universetoday.com/articles/new-evidence-for-an-old-prediction-recoiling-supermassive-black-holes",
           "source": "Universe Today",
-          "score": 41.2,
+          "score": 43.8,
           "published_at": "2026-10-22T17:52:01+00:00"
         }
       ],
@@ -411,7 +424,13 @@
       "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "llmScore": 50.0,
+      "refs": {
+        "arxiv": "2609.13363",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
     }
   ]
 }
