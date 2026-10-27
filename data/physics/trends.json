@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T16:49:12.371032+00:00",
+  "generatedAt": "2026-10-27T01:30:21.069748+00:00",
   "weekStart": "2026-10-21",
   "windowDays": 7,
   "windowStart": "2026-10-21",
@@ -10,21 +10,21 @@
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1428.1,
+      "thisWeek": 1426.1,
       "lastWeek": 1112.9,
-      "deltaPct": 28.3
+      "deltaPct": 28.1
     },
     {
       "category": "其他",
-      "thisWeek": 953.0,
+      "thisWeek": 1025.4,
       "lastWeek": 1355.5,
-      "deltaPct": -29.7
+      "deltaPct": -24.4
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 718.1,
+      "thisWeek": 716.9,
       "lastWeek": 355.7,
-      "deltaPct": 101.9
+      "deltaPct": 101.5
     },
     {
       "category": "高能与粒子物理",
@@ -34,9 +34,9 @@
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 334.3,
+      "thisWeek": 333.9,
       "lastWeek": 257.1,
-      "deltaPct": 30.0
+      "deltaPct": 29.9
     },
     {
       "category": "等离子体",
@@ -61,7 +61,7 @@
     {
       "topic_id": "ab2d58460ede",
       "title": "Mutual Information Across Quantum Reference Frame Perspectives",
-      "score": 107.9,
+      "score": 107.4,
       "days": 1
     },
     {
@@ -79,14 +79,20 @@
     {
       "topic_id": "97e77bbc80e9",
       "title": "Fidelity Dynamics of a Jaynes--Cummings Qubit under Markovian and Non-Markovian Coupling Noise",
-      "score": 88.0,
+      "score": 87.4,
       "days": 1
     },
     {
       "topic_id": "6ad11ce69b69",
       "title": "QuantumMatterExplorer: An Autonomous Agent for the Discovery of Quantum Many-Body Phases of Matter",
-      "score": 88.0,
+      "score": 87.4,
       "days": 1
+    },
+    {
+      "topic_id": "e53a0752f0b2",
+      "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
+      "score": 83.7,
+      "days": 2
     },
     {
       "topic_id": "f575369094fa",
@@ -104,12 +110,6 @@
       "topic_id": "20eded67e41f",
       "title": "AI helps design new materials that work in the real world",
       "score": 60.5,
-      "days": 1
-    },
-    {
-      "topic_id": "4ae78368b877",
-      "title": "Effects of waveguide tube geometry and surrounding medium conditions on acoustic emission signal attenuation",
-      "score": 60.1,
       "days": 1
     }
   ],

@@ -1,8 +1,79 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T16:49:12.371032+00:00",
+  "generatedAt": "2026-10-27T01:30:21.069748+00:00",
   "count": 7,
   "items": [
+    {
+      "terms": [
+        "combines",
+        "element",
+        "hyperspectral",
+        "imaging",
+        "infrared",
+        "optical",
+        "photons",
+        "quantum",
+        "resolution",
+        "soft",
+        "spectroscopy",
+        "undetected",
+        "x-ray"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
+      "representative": {
+        "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
+        "url": "https://arxiv.org/abs/2610.32292",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-10-26T04:00:00+00:00",
+        "score": 47.1,
+        "summary": "arXiv:2610.32292v1 Announce Type: new Abstract: Quantum sensing in the infrared regime often demands the use of expensive and cryogenically operated detectors. Nonlinear interferometry has paved the way for information transfer from the inf",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2610.32292",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
+      "id": "e53a0752f0b2",
+      "links": [
+        {
+          "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
+          "url": "https://arxiv.org/abs/2610.32292",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.1,
+          "published_at": "2026-10-26T04:00:00+00:00"
+        },
+        {
+          "title": "Single optical element combines soft X-ray imaging and spectroscopy",
+          "url": "https://phys.org/news/2026-10-optical-element-combines-soft-ray.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.6,
+          "published_at": "2026-10-26T20:20:11+00:00"
+        }
+      ],
+      "top_terms": [
+        "imaging",
+        "optical",
+        "element",
+        "combines",
+        "soft"
+      ],
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
     {
       "terms": [
         "destroying",
@@ -22,13 +93,13 @@
         "arXiv quant-ph 论文速递"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
       "representative": {
         "title": "Mutual Information Across Quantum Reference Frame Perspectives",
         "url": "https://arxiv.org/abs/2610.31729",
         "source": "arXiv quant-ph 论文速递",
         "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 47.3,
+        "score": 47.1,
         "summary": "arXiv:2610.31729v1 Announce Type: new Abstract: In quantum information theory, standard notions typically presuppose a fixed partition of the world into subsystems, encoded in a tensor product structure of the Hilbert space. Yet, in some sc",
         "zh_full": null,
         "refs": {
@@ -45,14 +116,14 @@
           "title": "Supercurrent enables the reading of quantum information without destroying it",
           "url": "https://phys.org/news/2026-10-supercurrent-enables-quantum-destroying.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.6,
+          "score": 60.3,
           "published_at": "2026-10-25T19:00:20+00:00"
         },
         {
           "title": "Mutual Information Across Quantum Reference Frame Perspectives",
           "url": "https://arxiv.org/abs/2610.31729",
           "source": "arXiv quant-ph 论文速递",
-          "score": 47.3,
+          "score": 47.1,
           "published_at": "2026-10-26T04:00:00+00:00"
         }
       ],
@@ -63,11 +134,79 @@
         "reading",
         "destroying"
       ],
-      "rank": 1,
+      "rank": 2,
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "demand",
+        "experiments",
+        "focus",
+        "metalens",
+        "microscope",
+        "moving",
+        "optics",
+        "robotic",
+        "runs",
+        "sets",
+        "switches",
+        "voltage"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "MIT News 物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
+      "representative": {
+        "title": "Robotic lab sets up and runs optics experiments on demand",
+        "url": "https://news.mit.edu/2026/robotic-lab-runs-optics-experiments-on-demand-0917",
+        "source": "MIT News 物理",
+        "published_at": "2026-09-17T04:00:00+00:00",
+        "score": 41.2,
+        "summary": "The autonomous system could speed up testing of high-tech materials for applications such as solar cells, sensors, video displays, and quantum technologies.",
+        "zh_full": "（无摘要，仅标题）一个机器人实验室能够按需搭建并运行光学实验。该自主系统有望加速对太阳能电池、传感器、视频显示和量子技术等应用所需的高科技材料的测试。",
+        "llm_summary": "一个机器人实验室能够按需搭建并运行光学实验。该自主系统有望加速对太阳能电池、传感器、视频显示和量子技术等应用所需的高科技材料的测试。",
+        "llm_reason": "机器人自动化光学实验",
+        "density": "中"
+      },
+      "folded_count": 1,
+      "title": "Robotic lab sets up and runs optics experiments on demand",
+      "id": "8800c2dbe031",
+      "links": [
+        {
+          "title": "Robotic lab sets up and runs optics experiments on demand",
+          "url": "https://news.mit.edu/2026/robotic-lab-runs-optics-experiments-on-demand-0917",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-09-17T04:00:00+00:00"
+        },
+        {
+          "title": "Metalens microscope switches focus with voltage, not moving optics",
+          "url": "https://phys.org/news/2026-10-metalens-microscope-focus-voltage-optics.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.6,
+          "published_at": "2026-10-26T21:20:10+00:00"
+        }
+      ],
+      "top_terms": [
+        "optics",
+        "metalens",
+        "microscope",
+        "switches",
+        "focus"
+      ],
+      "rank": 3,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 42.0,
+      "heat": 21.0,
       "status": "关注中"
     },
     {
@@ -97,13 +236,13 @@
         "arXiv quant-ph 论文速递"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
       "representative": {
         "title": "Photon-Number Discrimination from Increasing Time-of-Arrival Separation in Wide Superconducting Microstrip Single-Photon Detectors",
         "url": "https://arxiv.org/abs/2610.32154",
         "source": "arXiv quant-ph 论文速递",
         "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 47.3,
+        "score": 47.1,
         "summary": "arXiv:2610.32154v1 Announce Type: new Abstract: Measurements of photon-number-dependent time-of-arrival (TOA) distributions in wide NbN superconducting microstrip single-photon detectors (SMSPDs) are presented. Two \\SI{10}{\\um}-long devices",
         "zh_full": null,
         "refs": {
@@ -120,14 +259,14 @@
           "title": "Photon-Number Discrimination from Increasing Time-of-Arrival Separation in Wide Superconducting Microstrip Single-Photon Detectors",
           "url": "https://arxiv.org/abs/2610.32154",
           "source": "arXiv quant-ph 论文速递",
-          "score": 47.3,
+          "score": 47.1,
           "published_at": "2026-10-26T04:00:00+00:00"
         },
         {
           "title": "Counting magnetic flux quanta offers new way to measure photon numbers",
           "url": "https://phys.org/news/2026-10-magnetic-flux-quanta-photon.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.6,
+          "score": 35.4,
           "published_at": "2026-10-23T21:20:02+00:00"
         }
       ],
@@ -138,77 +277,9 @@
         "flux",
         "quanta"
       ],
-      "rank": 2,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "bogoliubov",
-        "contrast",
-        "diamond",
-        "dirac",
-        "dynamics",
-        "laser",
-        "magnetic-field",
-        "optical",
-        "readout",
-        "zitterbewegung"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
-      "representative": {
-        "title": "Bogoliubov Dynamics and Zitterbewegung in Optical Dirac Systems",
-        "url": "https://arxiv.org/abs/2610.32209",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 47.3,
-        "summary": "arXiv:2610.32209v1 Announce Type: new Abstract: We develop a bosonic Bogoliubov description of Zitterbewegung in time-dependent optical-Dirac systems. Within the optical-Dirac framework, the anomalous pair-creation and pair-annihilation ter",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.32209",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "Bogoliubov Dynamics and Zitterbewegung in Optical Dirac Systems",
-      "id": "b6d8dd2c17e9",
-      "links": [
-        {
-          "title": "Bogoliubov Dynamics and Zitterbewegung in Optical Dirac Systems",
-          "url": "https://arxiv.org/abs/2610.32209",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.3,
-          "published_at": "2026-10-26T04:00:00+00:00"
-        },
-        {
-          "title": "Diamond laser system achieves 100% optical contrast in magnetic-field readout",
-          "url": "https://phys.org/news/2026-10-diamond-laser-optical-contrast-magnetic.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.1,
-          "published_at": "2026-10-22T18:20:08+00:00"
-        }
-      ],
-      "top_terms": [
-        "optical",
-        "diamond",
-        "laser",
-        "contrast",
-        "magnetic"
-      ],
-      "rank": 3,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 4,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -234,13 +305,13 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
       "representative": {
         "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
         "url": "https://phys.org/news/2026-10-neutrino-science-year-nobel-prize.html",
         "source": "Phys.org 物理新闻",
         "published_at": "2026-10-22T23:30:01+00:00",
-        "score": 58.7,
+        "score": 58.4,
         "summary": "If you wanted a Nobel Prize, you would do well to study neutrinos. To date, the Nobel Prize in Physics has been awarded five times to research related to neutrino detection and discovery. This year, Francis Halzen earned the Nobel \"for deci",
         "zh_full": "如果你想要获得诺贝尔奖，研究中微子是个不错的选择。迄今为止，诺贝尔物理学奖已有五次授予与中微子探测和发现相关的研究。今年，弗朗西斯·哈尔岑（Francis Halzen）因“对冰立方中微子天文台的决定性贡献以及发现天体物理起源的高能中微子”而获得诺贝尔奖。",
         "llm_summary": "诺贝尔物理学奖今年授予弗朗西斯·哈尔岑（Francis Halzen），表彰其对冰立方中微子天文台的决定性贡献以及发现天体物理起源的高能中微子。中微子研究是物理学领域的重要方向，迄今为止诺贝尔物理学奖已有五次授予与中微子探测和发现相关的研究。",
@@ -256,14 +327,14 @@
           "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
           "url": "https://phys.org/news/2026-10-neutrino-science-year-nobel-prize.html",
           "source": "Phys.org 物理新闻",
-          "score": 58.7,
+          "score": 58.4,
           "published_at": "2026-10-22T23:30:01+00:00"
         },
         {
           "title": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
           "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 47.7,
+          "score": 47.4,
           "published_at": "2026-10-06T10:26:02+00:00"
         }
       ],
@@ -273,69 +344,6 @@
         "physics",
         "neutrino",
         "anyway"
-      ],
-      "rank": 4,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "antimatter",
-        "held",
-        "particle",
-        "physicists",
-        "tame",
-        "trap"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "New Scientist 物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
-      "representative": {
-        "title": "Physicists trap and tame single particle of antimatter for months",
-        "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
-        "source": "Phys.org 物理新闻",
-        "published_at": "2026-10-21T15:00:10+00:00",
-        "score": 57.8,
-        "summary": "For the first time, Northwestern University physicists have coaxed a single positron—the antimatter counterpart of an electron—into an exquisitely controlled quantum state.",
-        "zh_full": "西北大学（Northwestern University）的物理学家首次将单个正电子——电子的反物质对应粒子——诱入一个极其精确控制的量子态中，并将其捕获长达数月。这是物理学领域的一项重要突破。",
-        "llm_summary": "西北大学物理学家首次将单个正电子（电子的反物质对应粒子）诱入精确控制的量子态中，并捕获长达数月。这是反物质研究的重要突破。",
-        "llm_reason": "首次捕获单个反物质粒子",
-        "density": "高",
-        "llm_score": 54.5
-      },
-      "folded_count": 1,
-      "title": "Physicists trap and tame single particle of antimatter for months",
-      "id": "1eaca0ec3885",
-      "links": [
-        {
-          "title": "Physicists trap and tame single particle of antimatter for months",
-          "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
-          "source": "Phys.org 物理新闻",
-          "score": 57.8,
-          "published_at": "2026-10-21T15:00:10+00:00"
-        },
-        {
-          "title": "A single antimatter particle was held in a trap for months",
-          "url": "https://www.newscientist.com/article/2594955-a-single-antimatter-particle-was-held-in-a-trap-for-months/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 57.8,
-          "published_at": "2026-10-21T15:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "trap",
-        "particle",
-        "antimatter",
-        "physicists",
-        "tame"
       ],
       "rank": 5,
       "trend": "new",
@@ -361,7 +369,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
       "representative": {
         "title": "New research shows a neutrino laser is impossible",
         "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
@@ -382,7 +390,7 @@
           "title": "Are we about to solve the greatest mystery of the neutrino?",
           "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 56.6,
+          "score": 56.3,
           "published_at": "2026-10-19T19:00:00+00:00"
         },
         {
@@ -423,7 +431,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
       "representative": {
         "title": "On the hunt for dark matter",
         "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
@@ -444,7 +452,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 52.3,
+          "score": 52.0,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {

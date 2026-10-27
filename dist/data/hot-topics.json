@@ -1,95 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T16:49:12.371032+00:00",
+  "generatedAt": "2026-10-27T01:30:21.069748+00:00",
   "count": 10,
   "items": [
-    {
-      "terms": [
-        "arrays",
-        "camera",
-        "capture",
-        "dual",
-        "elliptical",
-        "emission",
-        "hypersound",
-        "iii-v",
-        "integrated",
-        "movies",
-        "nanopillar",
-        "nanoscale",
-        "nanostructures",
-        "photodetection",
-        "plasma",
-        "pulse",
-        "reveals",
-        "scales",
-        "silicon",
-        "surfaces",
-        "wavefronts",
-        "x-ray"
-      ],
-      "source_count": 2,
-      "signal_count": 3,
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv 光学与光子学 (physics.optics)"
-      ],
-      "score": 45.5,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
-      "representative": {
-        "title": "Integrated elliptical III-V nanopillar arrays on silicon for dual photodetection and light emission",
-        "url": "https://arxiv.org/abs/2610.32744",
-        "source": "arXiv 光学与光子学 (physics.optics)",
-        "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 66.8,
-        "summary": "arXiv:2610.32744v1 Announce Type: new Abstract: Next-generation on-chip photonic devices require compact, energy-efficient components integrating photodetection and light emission on silicon platforms. Achieving broadband photodetection com",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.32744",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "Integrated elliptical III-V nanopillar arrays on silicon for dual photodetection and light emission",
-      "id": "a4e666367946",
-      "links": [
-        {
-          "title": "Integrated elliptical III-V nanopillar arrays on silicon for dual photodetection and light emission",
-          "url": "https://arxiv.org/abs/2610.32744",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 66.8,
-          "published_at": "2026-10-26T04:00:00+00:00"
-        },
-        {
-          "title": "Electron Wavefronts Capture Nanoscale Movies of Hypersound at Surfaces",
-          "url": "https://arxiv.org/abs/2610.32419",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 66.8,
-          "published_at": "2026-10-26T04:00:00+00:00"
-        },
-        {
-          "title": "Single X-ray pulse reveals plasma nanostructures across scales with one camera",
-          "url": "https://phys.org/news/2026-10-ray-pulse-reveals-plasma-nanostructures.html",
-          "source": "Phys.org 物理新闻",
-          "score": 56.9,
-          "published_at": "2026-10-24T19:00:06+00:00"
-        }
-      ],
-      "top_terms": [
-        "integrated",
-        "elliptical",
-        "iii",
-        "nanopillar",
-        "arrays"
-      ],
-      "rank": 1,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 45.5,
-      "status": "关注中"
-    },
     {
       "terms": [
         "foundry",
@@ -110,13 +23,13 @@
         "arXiv 光学与光子学 (physics.optics)"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
       "representative": {
         "title": "Toward Topology-Optimized Foundry PDKs: A Seeded Design Framework for Multimode Interferometers",
         "url": "https://arxiv.org/abs/2608.18308",
         "source": "arXiv 光学与光子学 (physics.optics)",
         "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 65.3,
+        "score": 65.1,
         "summary": "arXiv:2608.18308v2 Announce Type: replace Abstract: We present an end-to-end design methodology for multimode interferometer (MMI)-based photonic devices that combines parameter optimization (PO) on analytical models with seeded topology op",
         "zh_full": null,
         "refs": {
@@ -133,7 +46,7 @@
           "title": "Toward Topology-Optimized Foundry PDKs: A Seeded Design Framework for Multimode Interferometers",
           "url": "https://arxiv.org/abs/2608.18308",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.3,
+          "score": 65.1,
           "published_at": "2026-10-26T04:00:00+00:00"
         },
         {
@@ -151,7 +64,137 @@
         "pdks",
         "seeded"
       ],
+      "rank": 1,
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "agriculture",
+        "combines",
+        "element",
+        "imaging",
+        "optical",
+        "precision",
+        "soft",
+        "spectroscopy",
+        "x-ray"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Laser Focus World",
+        "Phys.org 物理新闻"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
+      "representative": {
+        "title": "Single optical element combines soft X-ray imaging and spectroscopy",
+        "url": "https://phys.org/news/2026-10-optical-element-combines-soft-ray.html",
+        "source": "Phys.org 物理新闻",
+        "published_at": "2026-10-26T20:20:11+00:00",
+        "score": 56.5,
+        "summary": "An international research team from Germany, Switzerland and Japan has demonstrated in a recent study that a single reflection zone plate (RZP) can perform both soft X-ray imaging and resonant inelastic X-ray scattering (RIXS) mapping. The ",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "Single optical element combines soft X-ray imaging and spectroscopy",
+      "id": "3d4e95569571",
+      "links": [
+        {
+          "title": "Single optical element combines soft X-ray imaging and spectroscopy",
+          "url": "https://phys.org/news/2026-10-optical-element-combines-soft-ray.html",
+          "source": "Phys.org 物理新闻",
+          "score": 56.5,
+          "published_at": "2026-10-26T20:20:11+00:00"
+        },
+        {
+          "title": "Optical imaging and spectroscopy enhance precision agriculture",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
+          "source": "Laser Focus World",
+          "score": 55.7,
+          "published_at": null
+        }
+      ],
+      "top_terms": [
+        "optical",
+        "imaging",
+        "spectroscopy",
+        "element",
+        "combines"
+      ],
       "rank": 2,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [
+        "new"
+      ],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "cooked",
+        "diseases",
+        "doubles",
+        "fiber",
+        "growth",
+        "lasers",
+        "neurodegenerative",
+        "paradigm",
+        "physicists",
+        "range",
+        "reveal",
+        "supercontinuum",
+        "ultralow-noise"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Laser Focus World",
+        "Phys.org 物理新闻"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
+      "representative": {
+        "title": "Physicists reveal new paradigm for fiber growth in neurodegenerative diseases",
+        "url": "https://phys.org/news/2026-10-physicists-reveal-paradigm-fiber-growth.html",
+        "source": "Phys.org 物理新闻",
+        "published_at": "2026-10-26T15:40:06+00:00",
+        "score": 56.4,
+        "summary": "Some proteins that are linked to neurodegenerative diseases can form both liquid droplets and amyloid fibers. But how are these two states connected, and where do the fibers grow? Leiden physicists Liru Feng and Louise Jawerth have discover",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "Physicists reveal new paradigm for fiber growth in neurodegenerative diseases",
+      "id": "8d06abff8b17",
+      "links": [
+        {
+          "title": "Physicists reveal new paradigm for fiber growth in neurodegenerative diseases",
+          "url": "https://phys.org/news/2026-10-physicists-reveal-paradigm-fiber-growth.html",
+          "source": "Phys.org 物理新闻",
+          "score": 56.4,
+          "published_at": "2026-10-26T15:40:06+00:00"
+        },
+        {
+          "title": "‘Cooked’ fiber doubles range of ultralow-noise supercontinuum lasers",
+          "url": "https://www.laserfocusworld.com/lasers-sources/article/55408688/cooked-fiber-doubles-range-of-ultralow-noise-supercontinuum-lasers",
+          "source": "Laser Focus World",
+          "score": 55.7,
+          "published_at": null
+        }
+      ],
+      "top_terms": [
+        "fiber",
+        "physicists",
+        "reveal",
+        "paradigm",
+        "growth"
+      ],
+      "rank": 3,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -167,7 +210,7 @@
         "工信部要闻"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
       "representative": {
         "title": "工业和信息化部工业软件标准化技术委员会成立",
         "url": "http://www.miit.gov.cn/xwfb/bldhd/art/2026/art_7a7c491a6b3944a698572843bbee81fb.html",
@@ -203,7 +246,7 @@
         "化技",
         "技术"
       ],
-      "rank": 3,
+      "rank": 4,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -219,49 +262,109 @@
       "signal_count": 2,
       "sources": [
         "搜狗微信·光电行业 · 大河报",
-        "搜狗微信·光电行业 · 百姓关注"
+        "搜狗微信·光电行业 · 都市频道"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
       "representative": {
-        "title": "浙江一女子行车途中车顶激光雷达被风筝线割开,“天窗也刮坏了,门框也划了很深的伤痕”,车主:风筝线来源难追踪,车辆定损1.5万元",
-        "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS07XdexdSAmpFAlr085fn4MqkZ_Sx3PrI1qXa8Fplpd9D4pIW0VDicnFifWv09WqqwWlfC13q0hsQkR9khIHLvWzqlSFdDpvfx2KM6nz-IYsLEZorAO9QI6w9Qo8iJur5ZDwW5dSdGP61bFlGW58p4d4to4bfgVcR0XvK87hcC2NHJKp1oaDqvMq3DvPl5wxgch8kI6CsksDjmn-mJ8XpKifxjh3za6jWA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=96EDEE1C80642F5E4A4F148B1C5D56D14AC3DB896ADF886F",
-        "source": "搜狗微信·光电行业 · 大河报",
-        "published_at": "2026-10-26T10:28:38+00:00",
-        "score": 65.5,
-        "summary": "10月25日,浙江杭州一网友发帖称,自己正常驾车在高架上行驶时,车顶的激光雷达突然被空中飘着的风筝线割到.“天窗也刮坏了,...",
-        "zh_full": null
+        "title": "车主驾车过高架被风筝线割坏激光雷达,定损1.5万元,放风筝的人却找不到",
+        "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS07XdexdSAmpVXFGd18uGllgpLDFyxV--VqXa8Fplpd9RAW5HsKAoeEupyRgA1lblf9WFtoP2c85c6cO0IT6Df91HKIZvlxgFKl5CFHg4APzh_DnuYysCDezSfI1diV66yONEgKW-s4fel2mM-ZuPeFXV9dtQ2PwLDPTTPMJkBj4Vs6nujwvHDg9a7uglbRAveGjOzF4_JlQ2sgdgfVPkZ089kyxDwoXvg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=9B31A49DAAF59438797F27B0ED02C6D079408E9C6AE00201",
+        "source": "搜狗微信·光电行业 · 都市频道",
+        "published_at": "2026-10-27T00:04:41+00:00",
+        "score": 65.6,
+        "summary": "10月25日,浙江杭州车主余女士驾车行驶至东湖高架时,遭遇空中飘浮的风筝线,车辆激光雷达被割坏,车身多处出现割痕.余女士称...",
+        "zh_full": null,
+        "llm_score": 15.5
       },
       "folded_count": 1,
-      "title": "浙江一女子行车途中车顶激光雷达被风筝线割开,“天窗也刮坏了,门框也划了很深的伤痕”,车主:风筝线来源难追踪,车辆定损1.5万元",
-      "id": "a0a357537fc8",
+      "title": "车主驾车过高架被风筝线割坏激光雷达,定损1.5万元,放风筝的人却找不到",
+      "id": "c088699928ca",
       "links": [
         {
-          "title": "浙江一女子行车途中车顶激光雷达被风筝线割开,“天窗也刮坏了,门框也划了很深的伤痕”,车主:风筝线来源难追踪,车辆定损1.5万元",
-          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS07XdexdSAmpFAlr085fn4MqkZ_Sx3PrI1qXa8Fplpd9D4pIW0VDicnFifWv09WqqwWlfC13q0hsQkR9khIHLvWzqlSFdDpvfx2KM6nz-IYsLEZorAO9QI6w9Qo8iJur5ZDwW5dSdGP61bFlGW58p4d4to4bfgVcR0XvK87hcC2NHJKp1oaDqvMq3DvPl5wxgch8kI6CsksDjmn-mJ8XpKifxjh3za6jWA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=96EDEE1C80642F5E4A4F148B1C5D56D14AC3DB896ADF886F",
-          "source": "搜狗微信·光电行业 · 大河报",
-          "score": 65.5,
-          "published_at": "2026-10-26T10:28:38+00:00"
+          "title": "车主驾车过高架被风筝线割坏激光雷达,定损1.5万元,放风筝的人却找不到",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS07XdexdSAmpVXFGd18uGllgpLDFyxV--VqXa8Fplpd9RAW5HsKAoeEupyRgA1lblf9WFtoP2c85c6cO0IT6Df91HKIZvlxgFKl5CFHg4APzh_DnuYysCDezSfI1diV66yONEgKW-s4fel2mM-ZuPeFXV9dtQ2PwLDPTTPMJkBj4Vs6nujwvHDg9a7uglbRAveGjOzF4_JlQ2sgdgfVPkZ089kyxDwoXvg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=9B31A49DAAF59438797F27B0ED02C6D079408E9C6AE00201",
+          "source": "搜狗微信·光电行业 · 都市频道",
+          "score": 65.6,
+          "published_at": "2026-10-27T00:04:41+00:00"
         },
         {
-          "title": "车主驾车过高架被风筝线割坏激光雷达,定损1.5万元,放风筝的人却找不到",
-          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS07XdexdSAmpFAlr085fn4MqkZ_Sx3PrI1qXa8Fplpd9fb2ldI0VzM7PcHYN9YEOyQBc1xGzOXJf4pCZ1bKaUDNBvKHXeAGPGxC6q2RSYljyj0CmpSBP6TSjyuUIPL_bEBY3h3NKgXUKSLr4fWKP5F9SpgURsTShBmiv2PIkNbYuwRFtzwre2FJ_9sDcHJLlRDSySJ01QaMAnHVeWOguCo1FkDr8IT4KYw..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=96EDEE1C80642F5E4A4F148B1C5D56D14AC3DB896ADF886F",
-          "source": "搜狗微信·光电行业 · 百姓关注",
-          "score": 65.5,
-          "published_at": "2026-10-26T11:50:46+00:00"
+          "title": "浙江一女子行车途中车顶激光雷达被风筝线割开,“天窗也刮坏了,门框也划了很深的伤痕”,车主:风筝线来源难追踪,车辆定损1.5万元",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS07XdexdSAmpVXFGd18uGllgpLDFyxV--VqXa8Fplpd9AaES4wk3-AhbZJakUds4aFpUlYmI9C16lHA789vwD1x2GKHUMeiI7SaTonPxQ3N1kKLcCSxr_x0E1vchaMYDzRL_Gw0fB8yxw_A3bJUPHFw0nV_rGm3BkQ8pYqQ39fEKiHwxVBWqXzoPd2wc8j9RPtrLN1_MSSbaV4FmpY4vVfJe0WC6Sbi7DA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=9B31A49DAAF59438797F27B0ED02C6D079408E9C6AE00201",
+          "source": "搜狗微信·光电行业 · 大河报",
+          "score": 65.2,
+          "published_at": "2026-10-26T10:28:38+00:00"
         }
       ],
       "top_terms": [
         "风筝",
         "万元",
-        "筝线",
         "车主",
+        "筝线",
         "定损"
       ],
-      "rank": 4,
+      "rank": 5,
       "trend": "new",
       "trendPct": null,
       "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "ray7",
+        "激光",
+        "激光雷达"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "搜狗微信·光电行业 · 大成4527",
+        "搜狗微信·光电行业 · 研驾社"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
+      "representative": {
+        "title": "零跑A05卖到8万元级还装激光雷达,真香还是“配置看着很贵”?",
+        "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS07XdexdSAmpVXFGd18uGllgpLDFyxV--VqXa8Fplpd9He2uM-j-2ykhJNt_8bv1xjpBNemwaS9TlQcdRaqK7wJyet1dqe2K_Sxd6Y1lGAG7n8SrbXrYAYpwVY40l6FVc7XL_kZJhY3QE_nM_HRWMLiC40-0JKFb7ijwZ7CJ2d8kr1kArXgJ_4LpcJZDKI_lKWVm263JJIukvN7sq3cxce96VKrzu_4XKA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=9B31A49DAAF59438797F27B0ED02C6D079408E9C6AE00201",
+        "source": "搜狗微信·光电行业 · 大成4527",
+        "published_at": "2026-10-27T01:40:45+00:00",
+        "score": 65.7,
+        "summary": "零跑A05卖到8万元级还装激光雷达,真香还是“配置看着很贵”?8万元级别的纯电动车,竟然配备了激光雷达、智能驾驶辅助以及14....",
+        "zh_full": null,
+        "llm_score": 8.5
+      },
+      "folded_count": 1,
+      "title": "零跑A05卖到8万元级还装激光雷达,真香还是“配置看着很贵”?",
+      "id": "6b09bac90a8d",
+      "links": [
+        {
+          "title": "零跑A05卖到8万元级还装激光雷达,真香还是“配置看着很贵”?",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS07XdexdSAmpVXFGd18uGllgpLDFyxV--VqXa8Fplpd9He2uM-j-2ykhJNt_8bv1xjpBNemwaS9TlQcdRaqK7wJyet1dqe2K_Sxd6Y1lGAG7n8SrbXrYAYpwVY40l6FVc7XL_kZJhY3QE_nM_HRWMLiC40-0JKFb7ijwZ7CJ2d8kr1kArXgJ_4LpcJZDKI_lKWVm263JJIukvN7sq3cxce96VKrzu_4XKA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=9B31A49DAAF59438797F27B0ED02C6D079408E9C6AE00201",
+          "source": "搜狗微信·光电行业 · 大成4527",
+          "score": 65.7,
+          "published_at": "2026-10-27T01:40:45+00:00"
+        },
+        {
+          "title": "13万买5米后驱+激光雷达,埃安Ray7是真香还是又一个坑?",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS07XdexdSAmpVXFGd18uGllgpLDFyxV--VqXa8Fplpd99MaqvgiZ75BCFmekav_oCLujpv62VUUNa4qVWzfAmSAoRhVw04GQclcv-jMWjzBD4l48O0SXnZIXAu7TrrgmUcQO57Z-uvvI8j_HcCaJwT6aOD2RAd02zgNHjSM8IyQYsTL1bhGrwoBCFvRRdkE4cmEvHIasie_cIXR0yCStzKHwdVqCwyPdzA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=9B31A49DAAF59438797F27B0ED02C6D079408E9C6AE00201",
+          "source": "搜狗微信·光电行业 · 研驾社",
+          "score": 65.6,
+          "published_at": "2026-10-27T00:58:27+00:00"
+        }
+      ],
+      "top_terms": [
+        "激光",
+        "光雷",
+        "雷达",
+        "真香",
+        "香还"
+      ],
+      "rank": 6,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [
+        "new"
+      ],
       "heat": 42.0,
       "status": "关注中"
     },
@@ -272,10 +375,7 @@
         "entanglement",
         "frequency",
         "generating",
-        "hyperspectral",
-        "imaging",
         "inelastic",
-        "infrared",
         "laser",
         "matter",
         "noise",
@@ -287,30 +387,28 @@
         "photons",
         "quantum",
         "radio",
-        "resolution",
         "resolve",
         "resonant",
         "scattering",
         "squeezed",
         "stochastic",
-        "undetected",
         "vacuum",
         "variance",
         "x-ray"
       ],
       "source_count": 1,
-      "signal_count": 4,
+      "signal_count": 3,
       "sources": [
         "arXiv 光学与光子学 (physics.optics)"
       ],
       "score": 34.5,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
       "representative": {
         "title": "Stochastic Analysis of Laser Phase Noise in Photonics-Assisted Radio Frequency Beamforming",
         "url": "https://arxiv.org/abs/2610.32563",
         "source": "arXiv 光学与光子学 (physics.optics)",
         "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 65.0,
+        "score": 63.2,
         "summary": "arXiv:2610.32563v1 Announce Type: new Abstract: This paper develops a stochastic model for quantifying the impact of laser phase noise on photonics-assisted radio frequency (RF) beamforming. Unlike conventional deterministic models, the pre",
         "zh_full": null,
         "refs": {
@@ -321,47 +419,40 @@
       },
       "folded_count": 0,
       "title": "Stochastic Analysis of Laser Phase Noise in Photonics-Assisted Radio Frequency Beamforming",
-      "id": "21dc28e3b41c",
+      "id": "215ac2b0195e",
       "links": [
         {
           "title": "Stochastic Analysis of Laser Phase Noise in Photonics-Assisted Radio Frequency Beamforming",
           "url": "https://arxiv.org/abs/2610.32563",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.0,
+          "score": 63.2,
           "published_at": "2026-10-26T04:00:00+00:00"
         },
         {
           "title": "Photoelectrons resolve the phase-dependent variance of bright squeezed vacuum",
           "url": "https://arxiv.org/abs/2610.31811",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.0,
-          "published_at": "2026-10-26T04:00:00+00:00"
-        },
-        {
-          "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
-          "url": "https://arxiv.org/abs/2610.32292",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.0,
+          "score": 63.2,
           "published_at": "2026-10-26T04:00:00+00:00"
         },
         {
           "title": "Generating entanglement in quantum matter with pathway-entangled photons via resonant inelastic X-ray scattering",
           "url": "https://arxiv.org/abs/2610.32936",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.0,
+          "score": 63.2,
           "published_at": "2026-10-26T04:00:00+00:00"
         }
       ],
       "top_terms": [
-        "quantum",
-        "photons",
         "stochastic",
         "laser",
-        "noise"
+        "noise",
+        "photonics",
+        "assisted"
       ],
-      "rank": 5,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 7,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 34.5,
       "status": "关注中"
@@ -374,7 +465,7 @@
         "C114中国通信网_通信财经"
       ],
       "score": 34.5,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
       "representative": {
         "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
         "url": "https://www.c114.com.cn/news/123/a1315966.html",
@@ -420,10 +511,72 @@
         "上半",
         "半年"
       ],
-      "rank": 6,
+      "rank": 8,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
+      "heat": 34.5,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "list",
+        "october",
+        "photonics"
+      ],
+      "source_count": 1,
+      "signal_count": 3,
+      "sources": [
+        "Laser Focus World"
+      ],
+      "score": 34.5,
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
+      "representative": {
+        "title": "Photonics Hot List: October 23, 2026",
+        "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
+        "source": "Laser Focus World",
+        "published_at": null,
+        "score": 53.8,
+        "summary": "In this episode: An optical imaging combo approach explores Alzheimer's disease, the week in photonics business news, and a multiquantum well material shows potential for nonlinear photonics.",
+        "zh_full": null
+      },
+      "folded_count": 0,
+      "title": "Photonics Hot List: October 23, 2026",
+      "id": "3c09fab78453",
+      "links": [
+        {
+          "title": "Photonics Hot List: October 23, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
+          "source": "Laser Focus World",
+          "score": 53.8,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: October 16, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
+          "source": "Laser Focus World",
+          "score": 53.8,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: October 2, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55409170/photonics-hot-list-october-2-2026",
+          "source": "Laser Focus World",
+          "score": 53.8,
+          "published_at": null
+        }
+      ],
+      "top_terms": [
+        "photonics",
+        "list",
+        "october"
+      ],
+      "rank": 9,
+      "trend": "up",
+      "trendPct": 62.7,
+      "badges": [
+        "rising"
+      ],
       "heat": 34.5,
       "status": "关注中"
     },
@@ -435,7 +588,7 @@
         "工信部要闻"
       ],
       "score": 34.5,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
+      "latest_at": "2026-10-27T01:30:21.069748+00:00",
       "representative": {
         "title": "工业和信息化部等八部门关于印发《产业基础能力提升“十五五”规划》的通知",
         "url": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_b111a48b309b49d08f9c65b7d0d7a490.html",
@@ -478,227 +631,11 @@
         "和信",
         "信息"
       ],
-      "rank": 7,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 34.5,
-      "status": "关注中"
-    },
-    {
-      "terms": [],
-      "source_count": 1,
-      "signal_count": 3,
-      "sources": [
-        "工信部要闻"
-      ],
-      "score": 34.5,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
-      "representative": {
-        "title": "湖南通信管理局印发《湖南省信息通信行业发展“十五五”规划》",
-        "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_36b817fa538349d883cb14430a9d9e4e.html",
-        "source": "工信部要闻",
-        "published_at": null,
-        "score": 53.8,
-        "summary": "",
-        "zh_full": null
-      },
-      "folded_count": 0,
-      "title": "湖南通信管理局印发《湖南省信息通信行业发展“十五五”规划》",
-      "id": "cc9f5de8fed9",
-      "links": [
-        {
-          "title": "湖南通信管理局印发《湖南省信息通信行业发展“十五五”规划》",
-          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_36b817fa538349d883cb14430a9d9e4e.html",
-          "source": "工信部要闻",
-          "score": 53.8,
-          "published_at": null
-        },
-        {
-          "title": "河南通信管理局正式发布《河南省信息通信行业发展“十五五”规划》",
-          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_9741d75fd33943fa971df840536781ea.html",
-          "source": "工信部要闻",
-          "score": 43.1,
-          "published_at": null
-        },
-        {
-          "title": "安徽通信管理局发布《安徽省信息通信业发展“十五五”规划》",
-          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_8de32f7bba2d4ef89cdafe08195f2cf8.html",
-          "source": "工信部要闻",
-          "score": 43.1,
-          "published_at": null
-        }
-      ],
-      "top_terms": [
-        "通信",
-        "规划",
-        "信管",
-        "管理",
-        "理局"
-      ],
-      "rank": 8,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 34.5,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "back",
-        "list",
-        "look",
-        "october",
-        "photonics",
-        "sensing",
-        "spectra",
-        "summit",
-        "west"
-      ],
-      "source_count": 3,
-      "signal_count": 3,
-      "sources": [
-        "Laser Focus World",
-        "YouTube·Photonics Media",
-        "YouTube·SPIETV"
-      ],
-      "score": 21.2,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
-      "representative": {
-        "title": "Photonics Hot List: October 23, 2026",
-        "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
-        "source": "Laser Focus World",
-        "published_at": null,
-        "score": 63.5,
-        "summary": "In this episode: An optical imaging combo approach explores Alzheimer's disease, the week in photonics business news, and a multiquantum well material shows potential for nonlinear photonics.",
-        "zh_full": null,
-        "llm_score": 18.5
-      },
-      "folded_count": 2,
-      "title": "Photonics Hot List: October 23, 2026",
-      "id": "ba306bad328d",
-      "links": [
-        {
-          "title": "Photonics Hot List: October 23, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
-          "source": "Laser Focus World",
-          "score": 63.5,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 16, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
-          "source": "Laser Focus World",
-          "score": 63.5,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 2, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55409170/photonics-hot-list-october-2-2026",
-          "source": "Laser Focus World",
-          "score": 63.5,
-          "published_at": null
-        },
-        {
-          "title": "A Look Back on Photonics West 2026",
-          "url": "https://www.youtube.com/shorts/ne-cuXI4otA",
-          "source": "YouTube·SPIETV",
-          "score": 58.0,
-          "published_at": "2026-10-16T21:37:37+00:00"
-        },
-        {
-          "title": "Photonics Spectra Sensing Technologies Summit 2026",
-          "url": "https://www.youtube.com/watch?v=57_odMmja30",
-          "source": "YouTube·Photonics Media",
-          "score": 47.8,
-          "published_at": "2026-10-01T15:00:15+00:00"
-        }
-      ],
-      "top_terms": [
-        "photonics",
-        "list",
-        "october",
-        "spectra",
-        "sensing"
-      ],
-      "rank": 9,
-      "trend": "down",
-      "trendPct": -38.6,
-      "badges": [],
-      "heat": 21.2,
-      "status": "发酵中"
-    },
-    {
-      "terms": [
-        "cavity-based",
-        "confirm",
-        "electro-optic",
-        "feynman",
-        "measurements",
-        "mechanics",
-        "multiport",
-        "photonic",
-        "port",
-        "quantum",
-        "richard",
-        "routing",
-        "shifter",
-        "single-photon",
-        "vision"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Physics World（关键词过滤）",
-        "arXiv 光学与光子学 (physics.optics)"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-26T16:49:12.371032+00:00",
-      "representative": {
-        "title": "Multiport photonic routing with a single cavity-based electro-optic phase shifter per port",
-        "url": "https://arxiv.org/abs/2610.31757",
-        "source": "arXiv 光学与光子学 (physics.optics)",
-        "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 65.3,
-        "summary": "arXiv:2610.31757v1 Announce Type: new Abstract: Programmable photonic meshes can perform general linear transformations, but universal transformations on $N$ modes require $O(N^2)$ programmable phase shifters, which cannot simultaneously ac",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.31757",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "Multiport photonic routing with a single cavity-based electro-optic phase shifter per port",
-      "id": "1a8d4591c361",
-      "links": [
-        {
-          "title": "Multiport photonic routing with a single cavity-based electro-optic phase shifter per port",
-          "url": "https://arxiv.org/abs/2610.31757",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.3,
-          "published_at": "2026-10-26T04:00:00+00:00"
-        },
-        {
-          "title": "Single-photon measurements confirm Richard Feynman’s vision of quantum mechanics",
-          "url": "https://physicsworld.com/a/single-photon-measurements-confirm-richard-feynmans-vision-of-quantum-mechanics/",
-          "source": "Physics World（关键词过滤）",
-          "score": 41.2,
-          "published_at": "2026-09-25T08:20:12+00:00"
-        }
-      ],
-      "top_terms": [
-        "multiport",
-        "photonic",
-        "routing",
-        "cavity",
-        "electro"
-      ],
       "rank": 10,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "heat": 21.0,
+      "heat": 34.5,
       "status": "关注中"
     }
   ]

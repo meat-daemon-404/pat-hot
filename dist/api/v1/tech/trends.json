@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T16:49:12.371032+00:00",
+  "generatedAt": "2026-10-27T01:30:21.069748+00:00",
   "weekStart": "2026-10-21",
   "windowDays": 7,
   "windowStart": "2026-10-21",
@@ -10,49 +10,49 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4046.0,
+      "thisWeek": 4453.0,
       "lastWeek": 4529.8,
-      "deltaPct": -10.7
+      "deltaPct": -1.7
     },
     {
       "category": "产业与资本",
-      "thisWeek": 3141.5,
+      "thisWeek": 3141.3,
       "lastWeek": 3938.5,
       "deltaPct": -20.2
     },
     {
       "category": "光通信",
-      "thisWeek": 3011.8,
+      "thisWeek": 3059.2,
       "lastWeek": 3239.9,
-      "deltaPct": -7.0
+      "deltaPct": -5.6
     },
     {
       "category": "通信与算力",
-      "thisWeek": 2474.6,
+      "thisWeek": 2474.4,
       "lastWeek": 3057.9,
       "deltaPct": -19.1
     },
     {
       "category": "科研进展",
-      "thisWeek": 2410.1,
+      "thisWeek": 2405.2,
       "lastWeek": 3318.6,
-      "deltaPct": -27.4
+      "deltaPct": -27.5
     },
     {
       "category": "其他",
-      "thisWeek": 2252.3,
+      "thisWeek": 2288.2,
       "lastWeek": 3128.5,
-      "deltaPct": -28.0
+      "deltaPct": -26.9
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1784.2,
+      "thisWeek": 1890.3,
       "lastWeek": 2199.0,
-      "deltaPct": -18.9
+      "deltaPct": -14.0
     },
     {
       "category": "显示与面板",
-      "thisWeek": 866.1,
+      "thisWeek": 865.7,
       "lastWeek": 1304.1,
       "deltaPct": -33.6
     },
@@ -77,16 +77,16 @@
   ],
   "newTopics": [
     {
-      "topic_id": "ba306bad328d",
-      "title": "Photonics Hot List: October 23, 2026",
-      "score": 355.4,
-      "days": 2
+      "topic_id": "6aec187ed191",
+      "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
+      "score": 268.9,
+      "days": 3
     },
     {
-      "topic_id": "21dc28e3b41c",
-      "title": "Stochastic Analysis of Laser Phase Noise in Photonics-Assisted Radio Frequency Beamforming",
-      "score": 260.0,
-      "days": 1
+      "topic_id": "ba306bad328d",
+      "title": "Photonics Hot List: October 23, 2026",
+      "score": 234.8,
+      "days": 2
     },
     {
       "topic_id": "cc9f5de8fed9",
@@ -107,6 +107,18 @@
       "days": 4
     },
     {
+      "topic_id": "3c09fab78453",
+      "title": "Photonics Hot List: October 23, 2026",
+      "score": 204.4,
+      "days": 2
+    },
+    {
+      "topic_id": "215ac2b0195e",
+      "title": "Stochastic Analysis of Laser Phase Noise in Photonics-Assisted Radio Frequency Beamforming",
+      "score": 189.6,
+      "days": 1
+    },
+    {
       "topic_id": "bc72d5d904af",
       "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
       "score": 188.4,
@@ -119,22 +131,10 @@
       "days": 5
     },
     {
-      "topic_id": "6aec187ed191",
-      "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-      "score": 160.2,
-      "days": 2
-    },
-    {
       "topic_id": "e115f1c14e82",
       "title": "Narrow-linewidth, piezoelectrically tunable photonic integrated blue laser",
       "score": 134.2,
       "days": 2
-    },
-    {
-      "topic_id": "a4e666367946",
-      "title": "Integrated elliptical III-V nanopillar arrays on silicon for dual photodetection and light emission",
-      "score": 133.6,
-      "days": 1
     }
   ],
   "sustainedTopics": [

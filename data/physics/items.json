@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T16:49:12.371032+00:00",
+  "generatedAt": "2026-10-27T01:30:21.069748+00:00",
   "count": 110,
   "items": [
     {
@@ -13,7 +13,7 @@
       "source_type": "rss",
       "category": "量子信息与计算",
       "published_at": "2026-10-25T19:00:20+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "One of the fundamental challenges of quantum computing is obtaining information from a quantum bit, or qubit. Unlike a conventional bit, which can be read repeatedly without altering its content, direct measurement of a quantum system typically causes the state to collapse before it can be determined. In other words, reading the information modifies it.",
       "keywords": [
         "destroying",
@@ -23,17 +23,17 @@
         "supercurrent"
       ],
       "biz": null,
-      "score": 60.6,
+      "score": 60.3,
       "convergence": 0.333,
       "topic_id": "ab2d58460ede",
       "topic_title": "Mutual Information Across Quantum Reference Frame Perspectives",
-      "llm_score": 26.5,
-      "llm_score_a": 15.0,
-      "llm_score_b": 38.0,
       "zh_full": "量子计算面临的一项根本性挑战是如何从量子比特（qubit）中获取信息。与可以被反复读取而不改变其内容的传统比特不同，对量子系统进行直接测量通常会导致量子态在信息被确定之前就发生坍缩。换言之，读取信息本身就会改变信息。标题指出，超电流（supercurrent）使得在不破坏量子信息的情况下读取量子信息成为可能。",
       "llm_summary": "量子计算的核心难题之一是如何读取量子比特信息而不破坏其状态。传统比特可反复读取而不改变内容，但量子系统的直接测量通常导致量子态坍缩，读取即改变。标题提出超电流技术有望实现无损读取。",
       "llm_reason": "量子信息读取的关键突破",
       "density": "中",
+      "llm_score": 26.5,
+      "llm_score_a": 15.0,
+      "llm_score_b": 38.0,
       "links": {
         "original": "https://phys.org/news/2026-10-supercurrent-enables-quantum-destroying.html"
       },
@@ -51,7 +51,7 @@
       "source_type": "rss",
       "category": "高能与粒子物理",
       "published_at": "2026-10-22T23:30:01+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "If you wanted a Nobel Prize, you would do well to study neutrinos. To date, the Nobel Prize in Physics has been awarded five times to research related to neutrino detection and discovery. This year, Francis Halzen earned the Nobel \"for decisive contributions to the IceCube Neutrino Observatory and the discovery of high-energy neutrinos of astrophysical origin.\"",
       "keywords": [
         "anyway",
@@ -63,7 +63,7 @@
         "science"
       ],
       "biz": null,
-      "score": 58.7,
+      "score": 58.4,
       "convergence": 0.333,
       "topic_id": "8adeafe3eb5e",
       "topic_title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
@@ -82,81 +82,6 @@
       "role": "科研"
     },
     {
-      "id": "301fa4f37be7",
-      "title": "Physicists trap and tame single particle of antimatter for months",
-      "url": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html",
-      "channel": "physics",
-      "source": "Phys.org 物理新闻",
-      "source_base": "Phys.org 物理新闻",
-      "source_type": "rss",
-      "category": "高能与粒子物理",
-      "published_at": "2026-10-21T15:00:10+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
-      "summary": "For the first time, Northwestern University physicists have coaxed a single positron—the antimatter counterpart of an electron—into an exquisitely controlled quantum state.",
-      "keywords": [
-        "antimatter",
-        "particle",
-        "physicists",
-        "tame",
-        "trap"
-      ],
-      "biz": null,
-      "score": 57.8,
-      "convergence": 0.333,
-      "topic_id": "1eaca0ec3885",
-      "topic_title": "Physicists trap and tame single particle of antimatter for months",
-      "zh_full": "西北大学（Northwestern University）的物理学家首次将单个正电子——电子的反物质对应粒子——诱入一个极其精确控制的量子态中，并将其捕获长达数月。这是物理学领域的一项重要突破。",
-      "llm_summary": "西北大学物理学家首次将单个正电子（电子的反物质对应粒子）诱入精确控制的量子态中，并捕获长达数月。这是反物质研究的重要突破。",
-      "llm_reason": "首次捕获单个反物质粒子",
-      "density": "高",
-      "llm_score": 54.5,
-      "llm_score_a": 67.0,
-      "llm_score_b": 42.0,
-      "links": {
-        "original": "https://phys.org/news/2026-10-physicists-particle-antimatter-months.html"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "科研"
-    },
-    {
-      "id": "4c87381e7c30",
-      "title": "A single antimatter particle was held in a trap for months",
-      "url": "https://www.newscientist.com/article/2594955-a-single-antimatter-particle-was-held-in-a-trap-for-months/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-      "channel": "physics",
-      "source": "New Scientist 物理",
-      "source_base": "New Scientist 物理",
-      "source_type": "rss",
-      "category": "高能与粒子物理",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
-      "summary": "After trapping a positron for the first time, physicists plan to use the resulting data to look for answers to one of particle physics’ biggest questions",
-      "keywords": [
-        "antimatter",
-        "held",
-        "particle",
-        "trap"
-      ],
-      "biz": null,
-      "score": 57.8,
-      "convergence": 0.333,
-      "topic_id": "1eaca0ec3885",
-      "topic_title": "Physicists trap and tame single particle of antimatter for months",
-      "zh_full": "在首次捕获正电子之后，物理学家计划利用由此产生的数据来寻找粒子物理学最大问题之一的答案。单个反物质粒子被捕获在陷阱中长达数月。",
-      "llm_summary": "物理学家首次捕获正电子后，计划利用相关数据探索粒子物理学最大问题之一的答案。单个反物质粒子已被捕获在陷阱中长达数月。",
-      "llm_reason": "反物质研究新进展",
-      "density": "中",
-      "llm_score": 50.5,
-      "llm_score_a": 67.0,
-      "llm_score_b": 34.0,
-      "links": {
-        "original": "https://www.newscientist.com/article/2594955-a-single-antimatter-particle-was-held-in-a-trap-for-months/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "媒体"
-    },
-    {
       "id": "6766f92a2c23",
       "title": "Are we about to solve the greatest mystery of the neutrino?",
       "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
@@ -166,7 +91,7 @@
       "source_type": "rss",
       "category": "高能与粒子物理",
       "published_at": "2026-10-19T19:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "We have long had a seemingly simple question about neutrinos: how much do they weigh? Now, a gigantic experiment in China is poised to find out – and the answer could transform particle physics forever",
       "keywords": [
         "greatest",
@@ -175,17 +100,17 @@
         "solve"
       ],
       "biz": null,
-      "score": 56.6,
+      "score": 56.3,
       "convergence": 0.333,
       "topic_id": "7e7427289fca",
       "topic_title": "New research shows a neutrino laser is impossible",
-      "llm_score": 37.5,
-      "llm_score_a": 54.0,
-      "llm_score_b": 21.0,
       "zh_full": "关于中微子，我们长期以来一直有一个看似简单的问题：它们有多重？如今，中国的一项巨型实验即将揭晓答案——而这个答案可能会永远改变粒子物理学。",
       "llm_summary": "中微子的质量是粒子物理学中长期悬而未决的问题。中国的一项巨型实验即将给出答案，该结果可能对粒子物理学产生深远影响。",
       "llm_reason": "中微子质量实验进展",
       "density": "中",
+      "llm_score": 37.5,
+      "llm_score_a": 54.0,
+      "llm_score_b": 21.0,
       "links": {
         "original": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS"
       },
@@ -203,7 +128,7 @@
       "source_type": "rss",
       "category": "高能与粒子物理",
       "published_at": "2026-10-13T08:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "We have arguably already discovered dark matter, says columnist Chanda Prescod-Weinstein. To observe it, we will need to figure out whether we expect it to act like a particle or a wave.",
       "keywords": [
         "dark",
@@ -213,7 +138,7 @@
         "wave"
       ],
       "biz": null,
-      "score": 52.3,
+      "score": 52.0,
       "convergence": 0.333,
       "topic_id": "1dc3e2185b16",
       "topic_title": "On the hunt for dark matter",
@@ -241,7 +166,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T14:30:01+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "For the first time, researchers in Japan have directly mapped several components of the stress field surrounding an atomic-scale flaw in the crystal structure of diamond. Led by Tokuyuki Teraji at Japan's National Institute for Materials Science, the team achieved its result using nitrogen-vacancy (NV) centers in diamond, whose spin states respond differently to stress depending on how they are oriented relative to the stress field.",
       "keywords": [
         "confirm",
@@ -253,7 +178,7 @@
         "year-old"
       ],
       "biz": null,
-      "score": 51.4,
+      "score": 51.2,
       "convergence": 0.0,
       "zh_full": "日本研究人员首次直接绘制了钻石晶体结构中一个原子尺度缺陷周围应力场的多个分量。该研究由日本国立材料科学研究所的寺石德行（Tokuyuki Teraji）领导，团队利用钻石中的氮空位（NV）中心实现了这一成果。NV中心的自旋态会根据其相对于应力场的取向不同而对应力产生不同的响应。标题指出，这一发现证实了关于晶体应力的80年理论。",
       "llm_summary": "日本研究人员利用钻石中的氮空位（NV）中心，首次直接绘制了钻石晶体中原子尺度缺陷周围应力场的多个分量。NV中心的自旋态对应力场的响应取决于其相对取向。该成果证实了关于晶体应力的80年理论，由日本国立材料科学研究所的寺石德行领导完成。",
@@ -276,7 +201,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "The new simulation tracks dark matter, galaxies, stars, and cosmic structures over the universe’s first 2 billion years, in greater detail and volume than ever before.",
       "keywords": [
         "ages",
@@ -287,7 +212,7 @@
         "watch"
       ],
       "biz": null,
-      "score": 51.1,
+      "score": 50.9,
       "convergence": 0.0,
       "zh_full": "麻省理工学院（MIT）新闻发布了一项名为Lumina的新模拟研究。该模拟追踪了宇宙最初20亿年间的暗物质、星系、恒星以及宇宙结构的演化过程，在细节程度和覆盖体积上都达到了前所未有的水平。这一模拟旨在帮助研究者观察宇宙如何从'黑暗时代'中浮现出来。Lumina模拟覆盖了宇宙诞生后的前20亿年，这一时期是宇宙从原始状态向复杂结构演化的关键阶段。模拟追踪的对象包括暗物质、星系、恒星以及更宏观的宇宙结构，这些要素共同构成了宇宙早期演化的图景。与以往的模拟相比，Lumina在细节程度和覆盖体积上都实现了显著提升，为研究者提供了前所未有的观测视角，有助于深入理解宇宙早期结构的形成与演化机制。这一模拟的发布标志着宇宙学模拟技术在细节和规模上的重要进步，为未来研究提供了新的基础。",
       "llm_summary": "麻省理工学院（MIT）发布了一项名为Lumina的新模拟研究。该模拟追踪了宇宙最初20亿年间的暗物质、星系、恒星以及宇宙结构的演化过程，在细节程度和覆盖体积上都达到了前所未有的水平。这一模拟旨在帮助研究者观察宇宙如何从'黑暗时代'中浮现出来，为理解宇宙早期结构的形成与演化提供了新的视角。",
@@ -310,19 +235,19 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-25T14:08:46+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "邓煜受邀在《知识分子》与《赛先生》联合举办的论坛发表线上主旨演讲",
       "keywords": [],
       "biz": null,
-      "score": 50.8,
+      "score": 50.5,
       "convergence": 0.0,
-      "llm_score": 37.5,
-      "llm_score_a": 39.0,
-      "llm_score_b": 36.0,
       "zh_full": "菲尔兹奖得主、芝加哥大学数学系教授邓煜于2026年10月25日受邀在《知识分子》与《赛先生》联合举办的论坛上发表线上主旨演讲，系统阐述了他对AI时代数学研究的思考。邓煜认为，AI可以帮助数学家探索思路、处理技术细节，但不能取代人的自主思考。针对近期某AI公司公布的大量数学证明，他提出AI的发展需要遵循学术规范，研究者也应拥有对数据使用的选择权，并建立可追溯的贡献认定机制。展望未来，邓煜认为AI有望加强数学不同分支之间的联系，推动数学研究更深入地回应现实问题。但他强调，无论AI变得多么强大，数学研究都不应放弃以人为主体。这一演讲反映了数学界在AI狂飙突进的当下所面临的危机与讨论。",
       "llm_summary": "菲尔兹奖得主邓煜在《知识分子》与《赛先生》联合论坛上发表演讲，阐述AI时代数学研究的思考。他认为AI可辅助探索思路和处理技术细节，但不能取代人的自主思考。针对AI公司公布数学证明的现象，他呼吁遵循学术规范、保障数据使用选择权、建立贡献认定机制。他看好AI加强数学分支联系的前景，但强调数学研究不应放弃以人为主体。",
       "llm_reason": "菲尔兹奖得主谈AI与数学研究",
       "density": "中",
+      "llm_score": 37.5,
+      "llm_score_a": 39.0,
+      "llm_score_b": 36.0,
       "links": {
         "original": "http://www.zhishifenzi.com/news/multiple/10737.html"
       },
@@ -340,7 +265,7 @@
       "source_type": "rss",
       "category": "等离子体",
       "published_at": "2026-10-24T19:00:06+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Understanding instabilities and turbulence in plasmas is one of the key challenges across a wide range of plasma research fields, including nuclear fusion, astrophysics and laser-plasma physics. In plasmas, slight disturbances can grow due to instabilities, and energy is transferred between structures of various sizes due to turbulence. These phenomena give rise to structures ranging from very small to large, which significantly influence the overall motion and energy flow of the plasma.",
       "keywords": [
         "camera",
@@ -352,15 +277,15 @@
         "x-ray"
       ],
       "biz": null,
-      "score": 50.2,
+      "score": 50.0,
       "convergence": 0.0,
-      "llm_score": 38.0,
-      "llm_score_a": 35.0,
-      "llm_score_b": 41.0,
       "zh_full": "理解等离子体中的不稳定性与湍流是核聚变、天体物理和激光等离子体物理等多个领域的关键挑战。在等离子体中，微小的扰动可能因不稳定性而增长，能量则通过湍流在不同尺度的结构之间传递。这些现象产生了从极小到极大的各种结构，显著影响等离子体的整体运动和能量流动。据Phys.org报道，研究人员利用单次X射线脉冲和一台相机，成功揭示了跨越多个尺度的等离子体纳米结构。这一技术突破为研究等离子体中的不稳定性与湍流提供了新的观测手段，有助于深入理解等离子体中从纳米到宏观尺度的结构演化及其对整体运动和能量流动的影响，对核聚变、天体物理和激光等离子体物理等领域的研究具有重要意义。该研究展示了单次X射线脉冲结合单台相机在等离子体结构观测方面的潜力。",
       "llm_summary": "研究人员利用单次X射线脉冲和一台相机，成功揭示了跨越多个尺度的等离子体纳米结构。理解等离子体中的不稳定性与湍流是核聚变、天体物理和激光等离子体物理等领域的关键挑战。微小扰动因不稳定性增长，能量通过湍流在不同尺度结构间传递，产生从极小到极大的各种结构，显著影响等离子体的整体运动和能量流动。这一技术突破为相关研究提供了新的观测手段。",
       "llm_reason": "单次X射线脉冲揭示等离子体纳米结构",
       "density": "高",
+      "llm_score": 38.0,
+      "llm_score_a": 35.0,
+      "llm_score_b": 41.0,
       "links": {
         "original": "https://phys.org/news/2026-10-ray-pulse-reveals-plasma-nanostructures.html"
       },
@@ -378,7 +303,7 @@
       "source_type": "rss",
       "category": "高能与粒子物理",
       "published_at": "2026-10-24T17:20:02+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "The positron is the antimatter counterpart of the electron, identical in mass but carrying an equal and opposite electric charge. Like the electron, it also behaves like a tiny bar magnet, and according to a key prediction of the Standard Model of particle physics, its magnetic moment should be exactly equal and opposite to the electron's.",
       "keywords": [
         "cyclotron",
@@ -388,7 +313,7 @@
         "test"
       ],
       "biz": null,
-      "score": 50.2,
+      "score": 49.9,
       "convergence": 0.0,
       "llm_score": 35.0,
       "llm_score_a": 29.0,
@@ -410,7 +335,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-23T12:40:02+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Quantum systems can occupy superpositions, quantum states that combine different possibilities. For instance, a microwave field can be prepared in a superposition of an empty state and a state that contains microwave light.",
       "keywords": [
         "back",
@@ -422,7 +347,7 @@
         "when"
       ],
       "biz": null,
-      "score": 49.4,
+      "score": 49.1,
       "convergence": 0.0,
       "llm_score": 25.0,
       "llm_score_a": 26.0,
@@ -444,11 +369,11 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-23T11:22:32+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "数学家王国祯、王虹，物理学家贾金锋、叶军获颁2026年“求是杰出科学家奖”。",
       "keywords": [],
       "biz": null,
-      "score": 49.3,
+      "score": 49.1,
       "convergence": 0.0,
       "llm_score": 40.0,
       "llm_score_a": 53.0,
@@ -470,11 +395,11 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-23T10:44:15+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "对老年人而言，跌倒远不只是一次普通的意外。",
       "keywords": [],
       "biz": null,
-      "score": 49.3,
+      "score": 49.1,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/news/multiple/10723.html"
@@ -493,19 +418,54 @@
       "source_type": "rss",
       "category": "量子信息与计算",
       "published_at": "2026-10-23T10:40:13+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "计算对于人类进步的重要性已毋庸置疑。凭借颠覆现有技术体系的巨大潜力，量子计算已成为备受瞩目的前沿科技之一，也是国际科技竞争的关键领域。",
       "keywords": [
         "量子计算"
       ],
       "biz": null,
-      "score": 49.3,
+      "score": 49.1,
       "convergence": 0.0,
       "llm_score": 44.5,
       "llm_score_a": 43.0,
       "llm_score_b": 46.0,
       "links": {
         "original": "http://www.zhishifenzi.com/depth/depth/10718.html"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "媒体"
+    },
+    {
+      "id": "4c87381e7c30",
+      "title": "A single antimatter particle was held in a trap for months",
+      "url": "https://www.newscientist.com/article/2594955-a-single-antimatter-particle-was-held-in-a-trap-for-months/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+      "channel": "physics",
+      "source": "New Scientist 物理",
+      "source_base": "New Scientist 物理",
+      "source_type": "rss",
+      "category": "高能与粒子物理",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
+      "summary": "After trapping a positron for the first time, physicists plan to use the resulting data to look for answers to one of particle physics’ biggest questions",
+      "keywords": [
+        "antimatter",
+        "held",
+        "particle",
+        "trap"
+      ],
+      "biz": null,
+      "score": 47.9,
+      "convergence": 0.0,
+      "zh_full": "在首次捕获正电子之后，物理学家计划利用由此产生的数据来寻找粒子物理学最大问题之一的答案。单个反物质粒子被捕获在陷阱中长达数月。",
+      "llm_summary": "物理学家首次捕获正电子后，计划利用相关数据探索粒子物理学最大问题之一的答案。单个反物质粒子已被捕获在陷阱中长达数月。",
+      "llm_reason": "反物质研究新进展",
+      "density": "中",
+      "llm_score": 50.5,
+      "llm_score_a": 67.0,
+      "llm_score_b": 34.0,
+      "links": {
+        "original": "https://www.newscientist.com/article/2594955-a-single-antimatter-particle-was-held-in-a-trap-for-months/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS"
       },
       "tier": "media",
       "selected": false,
@@ -521,7 +481,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-06T10:26:02+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "The 2026 Nobel prize in physics has been won by Francis Halzen for his work on neutrinos, which serve as 'ghost-like messengers from the cosmos'",
       "keywords": [
         "awarded",
@@ -533,7 +493,7 @@
         "prize"
       ],
       "biz": null,
-      "score": 47.7,
+      "score": 47.4,
       "convergence": 0.333,
       "topic_id": "8adeafe3eb5e",
       "topic_title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
@@ -561,7 +521,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.31729v1 Announce Type: new Abstract: In quantum information theory, standard notions typically presuppose a fixed partition of the world into subsystems, encoded in a tensor product structure of the Hilbert space. Yet, in some scenarios, the subsystem structure is not uniquely fixed. A case in point is the description of subsystems relative to different quantum reference frames (QRFs), where the tensor product structure, although fixed in a specific QRF, changes across different QRFs. Such a relativity of subsystems underlies many interesting features of QRFs, such as the relativity of entanglement, entropy, and coherence. It also raises a broader question: how do we compare the information across different subsystem perspectives, especially when the corresponding subsystem algebras overlap? Here, we propose a notion of quantum mutual information across different QRF perspectives, which captures the correlations between subsystems relative to different frames of reference. To do so, we focus on an algebraic definition of subsystems. Studying in detail the union and overlap between subsystem algebras relative to different QRFs, we find that the usual definition of mutual information in terms of the chain law overcounts the information associated to the overlap. Based on this insight, we propose a modified chain law and show that the resulting notion of mutual information satisfies subadditivity and connects naturally to other measures found in the literature [1]. Our investigations not only provide a way to quantify the relation between different QRF perspectives from an information-theoretic point of view but also sheds light on some important features of quantum information in absence of a fixed tensor product structure.",
       "keywords": [
         "frame",
@@ -572,7 +532,7 @@
         "reference"
       ],
       "biz": null,
-      "score": 47.3,
+      "score": 47.1,
       "convergence": 0.333,
       "topic_id": "ab2d58460ede",
       "topic_title": "Mutual Information Across Quantum Reference Frame Perspectives",
@@ -598,7 +558,7 @@
       "source_type": "rss",
       "category": "凝聚态物理",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.32154v1 Announce Type: new Abstract: Measurements of photon-number-dependent time-of-arrival (TOA) distributions in wide NbN superconducting microstrip single-photon detectors (SMSPDs) are presented. Two \\SI{10}{\\um}-long devices with widths of \\SI{3.2}{\\um} and \\SI{6.4}{\\um} are characterized under pulsed \\SI{515}{nm} excitation. The TOA histograms are described by sums of exponentially modified Gaussian (EMG) components, with the wider device exhibiting components assigned to photon numbers up to \\(n=8\\). Adjacent TOA peaks become more distinguishable relative to their widths at higher photon number, in contrast to the compression of neighboring photon-number timing shifts observed in conventional narrow-wire SNSPDs. For the components assigned to \\(n=7\\) and \\(n=8\\), the FWHM-normalized peak separation is \\(2.15\\), and the fitted EMG distributions yield an equal-prior pairwise TOA-assignment fidelity of \\(99.6\\%\\). The EMG exponential-tail parameter \\(\\tau_n\\) decreases strongly with photon number, while the Gaussian-location parameter \\(\\mu_n\\) continues to shift between neighboring components. A phenomenological model motivated by absorption-site-dependent vortex processes and collective current redistribution captures these timing trends. These results support wide SMSPDs as a platform for TOA-based photon-number discrimination at high photon number, relevant to multiphoton-state characterization and photonic quantum information processing. The same geometry also provides a setting to examine how the spatial distribution of photon absorption affects vortex-assisted detection.",
       "keywords": [
         "detectors",
@@ -613,7 +573,7 @@
         "wide"
       ],
       "biz": null,
-      "score": 47.3,
+      "score": 47.1,
       "convergence": 0.333,
       "topic_id": "3d41abd72bf6",
       "topic_title": "Photon-Number Discrimination from Increasing Time-of-Arrival Separation in Wide Superconducting Microstrip Single-Photon Detectors",
@@ -630,36 +590,38 @@
       "role": "科研"
     },
     {
-      "id": "38fcc2f4bd60",
-      "title": "Bogoliubov Dynamics and Zitterbewegung in Optical Dirac Systems",
-      "url": "https://arxiv.org/abs/2610.32209",
+      "id": "6c10656d4bad",
+      "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
+      "url": "https://arxiv.org/abs/2610.32292",
       "channel": "physics",
       "source": "arXiv quant-ph 论文速递",
       "source_base": "arXiv quant-ph 论文速递",
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
-      "summary": "arXiv:2610.32209v1 Announce Type: new Abstract: We develop a bosonic Bogoliubov description of Zitterbewegung in time-dependent optical-Dirac systems. Within the optical-Dirac framework, the anomalous pair-creation and pair-annihilation terms of a bosonic Bogoliubov Hamiltonian correspond to couplings between the positive- and negative-frequency sectors, whose coherence underlies the Zitterbewegung response. When the constitutive parameters vary in time, the resulting moving-frame connection generates dynamical interbranch coupling and positive--negative-frequency coherence. Under periodic modulation, this coupling becomes resonant near $\\Omega\\simeq2\\omega_0$, leading to parametric amplification of the coherence and consequently to an enhanced Zitterbewegung motion.",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
+      "summary": "arXiv:2610.32292v1 Announce Type: new Abstract: Quantum sensing in the infrared regime often demands the use of expensive and cryogenically operated detectors. Nonlinear interferometry has paved the way for information transfer from the infrared to the near--infrared or visible regime in various quantum technologies. A particularly interesting application of these interferometers involves spectrally--resolved quantum imaging using undetected photons, enabled by the use of temperature--tunable parametric amplifiers. In this work, we demonstrate spectrally resolved transmission imaging with undetected photons around 1550 nm using a spontaneous parametric down conversion based folded nonlinear interferometric scheme, registering the attenuation of a zebrafish larva as a biological feasibility test. We characterize and calibrate the interferometer, having achieved spectrally resolved interference fringes with a maximum baseline visibility of $\\sim 74\\%$ in the near--infrared regime. Phase--stepped readout of a grating spectrometer gives a resolving power of $\\sim1460$ (from the spectrometer's point spread function) at 1550 nm, and $\\sim 730$ from the coherence length, the finest reported for imaging with undetected photons, over an instantaneous spectral window of $\\approx 51$ cm$^{-1}$.",
       "keywords": [
-        "bogoliubov",
-        "dirac",
-        "dynamics",
-        "optical",
-        "zitterbewegung"
+        "hyperspectral",
+        "imaging",
+        "infrared",
+        "photons",
+        "quantum",
+        "resolution",
+        "undetected"
       ],
       "biz": null,
-      "score": 47.3,
+      "score": 47.1,
       "convergence": 0.333,
-      "topic_id": "b6d8dd2c17e9",
-      "topic_title": "Bogoliubov Dynamics and Zitterbewegung in Optical Dirac Systems",
+      "topic_id": "e53a0752f0b2",
+      "topic_title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
       "refs": {
-        "arxiv": "2610.32209",
+        "arxiv": "2610.32292",
         "via": "feed_text",
         "confidence": "verified"
       },
       "links": {
-        "original": "https://arxiv.org/abs/2610.32209"
+        "original": "https://arxiv.org/abs/2610.32292"
       },
       "tier": "official",
       "selected": false,
@@ -675,7 +637,7 @@
       "source_type": "rss",
       "category": "量子信息与计算",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.31938v1 Announce Type: new Abstract: We analytically investigate the fidelity dynamics of a Jaynes--Cummings qubit coupled to a single-mode cavity in the presence of stochastic fluctuations of the qubit--cavity coupling. Such fluctuations naturally arise in cavity- and circuit-QED platforms due to fabrication imperfections, control-field noise, mechanical vibrations, and environmental disturbances. Since the qubit--cavity coupling governs the rate of coherent energy and information exchange, understanding the effects of its fluctuations is essential for assessing the performance of quantum communication, quantum sensing, and quantum information-processing protocols. We consider both Gaussian white noise and Ornstein--Uhlenbeck noise with finite correlation time as models for the coupling fluctuations. Exploiting the closed dynamics within each excitation manifold, we derive exact analytical expressions for the noise-averaged density matrix and the fidelity relative to the ideal noiseless evolution. We show that the fidelity is determined by a single decoherence factor governed by the integrated noise correlation function, establishing a direct connection between microscopic coupling fluctuations and macroscopic coherence loss. In the white-noise limit, the fidelity decays exponentially, whereas finite noise correlation times produce nonexponential decay and slower coherence loss. We further show that the crossover between Markovian-like and non-Markovian regimes is controlled by the ratio of the noise correlation rate to the coherent coupling strength, and that decoherence increases with photon number because of the enhanced effective qubit--cavity coupling. These results provide a unified analytical framework for quantifying decoherence induced by stochastic coupling fluctuations and for evaluating the robustness of cavity-QED protocols under correlated noise.",
       "keywords": [
         "coupling",
@@ -688,7 +650,7 @@
         "qubit"
       ],
       "biz": null,
-      "score": 44.0,
+      "score": 43.7,
       "convergence": 0.167,
       "topic_id": "97e77bbc80e9",
       "topic_title": "Fidelity Dynamics of a Jaynes--Cummings Qubit under Markovian and Non-Markovian Coupling Noise",
@@ -714,7 +676,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.31947v1 Announce Type: new Abstract: We investigate qubit entanglement dynamics in a two-qubit cavity system with stochastically fluctuating coupling strength, comparing white noise (Markovian) and Ornstein-Uhlenbeck noise (non-Markovian) processes. We analytically solve the system dynamics for both Fock and coherent cavity states and systematically characterize how initial qubit configurations affect entanglement generation and preservation. Our results reveal distinct dynamical regimes: in the Fock-state cavity, initial states in the single-excitation subspace generate robust qubit entanglement in decoherence-free subspaces, while initially entangled states in the double-excitation subspace exhibit inevitable decay without protective symmetries. For coherent cavities, we identify a critical photon-number threshold in the intermediate coherent-state amplitude regime where dynamics transition from low-frequency to high-frequency entanglement oscillations, while universal entanglement loss occurs at large amplitudes. Remarkable resilience against entanglement sudden death emerges under strong non-Markovian noise with long correlation times, where repeated revivals occur. These findings establish cavity photon statistics and environmental memory time as key control parameters for engineering qubit entanglement dynamics in qubit-cavity systems, revealing how system-environment correlations govern quantum information preservation.",
       "keywords": [
         "coherence",
@@ -727,7 +689,7 @@
         "stochastic"
       ],
       "biz": null,
-      "score": 44.0,
+      "score": 43.7,
       "convergence": 0.167,
       "topic_id": "97e77bbc80e9",
       "topic_title": "Fidelity Dynamics of a Jaynes--Cummings Qubit under Markovian and Non-Markovian Coupling Noise",
@@ -753,7 +715,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.32001v1 Announce Type: new Abstract: Mapping the phase diagram of a new quantum Hamiltonian demands expert judgement at every step: which observables to measure, where in parameter space to compute, or how to separate genuine order from finite-size artefacts. We introduce QuantumMatterExplorer, an autonomous agent that takes only a Hamiltonian and its parameter ranges as input and returns a phase diagram obtained from its own numerical simulations. The agent is built on a large language model and is designed to reason over a long horizon, maintain a persistent written plan, and drive a set of computational tools, with density-matrix renormalization group (DMRG) calculations cross-checked against independent exact diagonalization. The agent combines a large language model with persistent planning, a library of expert computational-physics skills, and density-matrix renormalization group calculations validated against independent exact diagonalization. It adaptively selects quantities to evaluate, refines parameter scans, and performs finite-size analyses as evidence accumulates. After validating the approach on Hamiltonians with known transitions, we challenge it with a frustrated bilinear-biquadratic spin-1 chain with single-ion anisotropy, whose two-dimensional phase diagram was published only recently and is unlikely to appear in any training corpus. Given no hint about the expected physics, the agent proposes which observables to probe, and identifies candidate N\\'eel, Haldane and dimerized phases, in broad agreement with the reference phase diagram. It also detects incommensurate correlations and infers the frustration-dependent geometry of the phase boundaries, all within an eight-hour compute budget. These results open a practical route to the autonomous computational discovery of new phases of quantum matter.",
       "keywords": [
         "agent",
@@ -766,7 +728,7 @@
         "quantummatterexplorer"
       ],
       "biz": null,
-      "score": 44.0,
+      "score": 43.7,
       "convergence": 0.167,
       "topic_id": "6ad11ce69b69",
       "topic_title": "QuantumMatterExplorer: An Autonomous Agent for the Discovery of Quantum Many-Body Phases of Matter",
@@ -792,7 +754,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.32152v1 Announce Type: new Abstract: Fault-Tolerant Quantum Computers (FTQCs) commonly use the surface code to encode program qubits as error-corrected logical qubits. Unfortunately, the surface code has a poor encoding rate, so recent work has proposed Yoked Surface Codes (YSCs), which concatenate the surface code with a high-rate quantum code. The surface code qubits in YSCs are protected by the checks, or yokes, of the high-rate code. YSCs have 1D and 2D variants, which are $1.8\\times$ and $4.5\\times$ more efficient than the surface code, respectively. Modern FTQC architectures use a two-level hierarchy: surface codes perform logical operations (compute) while 2D YSCs store idle program qubits (memory). To load a qubit from memory, the FTQC first performs retrieval, which logically moves a program qubit from a 2D YSC into a surface code (8 cycles). However, retrieval is not fault-tolerant, so the FTQC must verify the load by measuring all the yokes of the 2D YSC (178 cycles). As verification dominates memory access latency, eliminating it can provide a speedup of $5.7\\times$. Our goal is to reduce the verification overhead of 2D YSCs while retaining their storage efficiency. We exploit the fact that 1D YSCs, though less storage-efficient, incur negligible verification latency. We propose Trident, which expands the two-level hierarchy into a three-level hierarchy by adding a small intermediate level containing a 1D YSC (L1). If most loads hit L1 rather than L2 (2D YSC tier), it can significantly reduce verification overhead. We present two variants: Trident-D (demand-driven) and Trident-P (prefetch-driven), which achieve speedups of $2.8\\times$ and $4.2\\times$, respectively, while increasing the physical qubit cost of memory by only 4.9%.",
       "keywords": [
         "codes",
@@ -807,7 +769,7 @@
         "yoked"
       ],
       "biz": null,
-      "score": 44.0,
+      "score": 43.7,
       "convergence": 0.167,
       "topic_id": "3dfef2c60337",
       "topic_title": "Trident: Efficient Load Verification for Yoked Surface Codes using a Three-Level Memory Hierarchy",
@@ -833,7 +795,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.32156v1 Announce Type: new Abstract: Predicting and controlling driven quantum systems requires access to dynamics across physical parameters, initial states, and evolution times. A reusable neural model must capture this dependence while preserving unitary structure and maintaining accuracy over long-time coherent evolution. Here we introduce Quantum Evolution Networks (QENs), which map physical parameters and time to complete propagators for periodically driven three-spin registers. Shared networks learn unitary one-period propagators and compatible within-period paths, enabling predictions through known periodic composition without query-specific numerical integration. For transverse driving, the fifth-percentile fidelity, minimized over input states and sampled times, is 0.9947 over 24 periods on 256 held-out configurations. A leading-order analysis of spectrally resolved endpoint residuals predicts multicycle process error more accurately than quadratic or spectrum-averaged estimates. Interventions at matched single-period infidelity produce orders-of-magnitude differences in multicycle infidelity, demonstrating the importance of residual orientation. Compatible component replacements identify how endpoint and within-period approximations limit reconstruction accuracy. These results establish a reusable neural representation of the studied propagator families and connect its learned residual structure to its observed long-time reliability.",
       "keywords": [
         "coherent",
@@ -847,7 +809,7 @@
         "spin"
       ],
       "biz": null,
-      "score": 44.0,
+      "score": 43.7,
       "convergence": 0.167,
       "topic_id": "6ad11ce69b69",
       "topic_title": "QuantumMatterExplorer: An Autonomous Agent for the Discovery of Quantum Many-Body Phases of Matter",
@@ -873,7 +835,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.32267v1 Announce Type: new Abstract: Encoded magic states are essential for universal fault-tolerant quantum computation, but their resource-efficient preparation in high-rate quantum codes remains challenging. To address this limitation, we propose two-layer verification, which combines local verification of independently prepared subblocks with logical verification after their embedding into a target code. This hierarchy detects harmful error patterns, including even-parity logical-eigenvalue flips that are invisible to a collective product check alone. We demonstrate this scheme for a $[[21,3,5]]$ code by constructing a circuit that embeds three verified seven-qubit Steane-code magic states into the target code. Circuit-level simulations of $T$- and $S$-state preparation show logical-error suppression consistent with the code distance. These results demonstrate the potential of two-layer verification as a design principle for reliable magic-state preparation in quantum codes encoding multiple logical qubits.",
       "keywords": [
         "codes",
@@ -886,7 +848,7 @@
         "verification"
       ],
       "biz": null,
-      "score": 44.0,
+      "score": 43.7,
       "convergence": 0.167,
       "topic_id": "3dfef2c60337",
       "topic_title": "Trident: Efficient Load Verification for Yoked Surface Codes using a Three-Level Memory Hierarchy",
@@ -912,7 +874,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-05T15:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "The discovery reveals a new way that stars and planetary companions can interact.",
       "keywords": [
         "astronomers",
@@ -925,7 +887,7 @@
         "star"
       ],
       "biz": null,
-      "score": 43.8,
+      "score": 43.5,
       "convergence": 0.167,
       "topic_id": "f6dd5bd153f3",
       "topic_title": "Astronomers catch a star slowly snacking on a brown dwarf, 300 light years away",
@@ -944,6 +906,42 @@
       "role": "官方"
     },
     {
+      "id": "09e32053df2c",
+      "title": "Robotic lab sets up and runs optics experiments on demand",
+      "url": "https://news.mit.edu/2026/robotic-lab-runs-optics-experiments-on-demand-0917",
+      "channel": "physics",
+      "source": "MIT News 物理",
+      "source_base": "MIT News 物理",
+      "source_type": "rss",
+      "category": "科研进展",
+      "published_at": "2026-09-17T04:00:00+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
+      "summary": "The autonomous system could speed up testing of high-tech materials for applications such as solar cells, sensors, video displays, and quantum technologies.",
+      "keywords": [
+        "demand",
+        "experiments",
+        "optics",
+        "robotic",
+        "runs",
+        "sets"
+      ],
+      "biz": null,
+      "score": 41.2,
+      "convergence": 0.333,
+      "topic_id": "8800c2dbe031",
+      "topic_title": "Robotic lab sets up and runs optics experiments on demand",
+      "zh_full": "（无摘要，仅标题）一个机器人实验室能够按需搭建并运行光学实验。该自主系统有望加速对太阳能电池、传感器、视频显示和量子技术等应用所需的高科技材料的测试。",
+      "llm_summary": "一个机器人实验室能够按需搭建并运行光学实验。该自主系统有望加速对太阳能电池、传感器、视频显示和量子技术等应用所需的高科技材料的测试。",
+      "llm_reason": "机器人自动化光学实验",
+      "density": "中",
+      "links": {
+        "original": "https://news.mit.edu/2026/robotic-lab-runs-optics-experiments-on-demand-0917"
+      },
+      "tier": "official",
+      "selected": false,
+      "role": "官方"
+    },
+    {
       "id": "cae7438060b3",
       "title": "New research shows a neutrino laser is impossible",
       "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
@@ -953,7 +951,7 @@
       "source_type": "rss",
       "category": "高能与粒子物理",
       "published_at": "2026-09-02T14:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Due to physical and fundamental limitations, an earlier proposal for producing laserlike beams of neutrinos cannot be achieved, scientists report.",
       "keywords": [
         "impossible",
@@ -990,7 +988,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-08-12T15:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "The mashup of a black hole and an enormous star has never been seen before and could explain the mysterious little red dots often found in deep-space images.",
       "keywords": [
         "astronomers",
@@ -1030,7 +1028,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-07-07T14:45:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "The professor of physics and inaugural director of the NSF AI Institute for Artificial Intelligence and Fundamental Interactions will lead LNS and continue his research in particle physics.",
       "keywords": [
         "director",
@@ -1067,7 +1065,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-07-01T18:30:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Wyslouch remains the director of the Bates Research and Engineering Center and will continue research on heavy ion collisions.",
       "keywords": [
         "boleslaw",
@@ -1104,7 +1102,7 @@
       "source_type": "rss",
       "category": "量子信息与计算",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.31694v1 Announce Type: new Abstract: Fault-tolerant quantum compilers implement gates through Pauli-product measurements and classical feedback. Verifying such a compiler requires reasoning about the quantum state and the recorded outcomes together: a correction reads an outcome, a gate's internal outcomes must be hidden from its caller, and an application's outcomes must survive optimization. We introduce QPPM, a language for Pauli-product measurement programs, with a weakest-precondition semantics over store-indexed matrix assertions, following quantum Hoare logic with classical variables. Every program terminates, so the Hoare logic is a syntactic presentation of weakest preconditions whose soundness and relative completeness are immediate. Its value is that component specifications compose. All results are mechanized in Lean. We verify lowering of Clifford+$T$ circuits to QPPM with private outcomes and supplied magic states, and an optimizer that eliminates measurements, fuses and reorders rotations, and schedules logical rounds while preserving every outcome that subsequent code can read. A compositional approximation relation bounds the effect of synthesis error on specifications and on output trace distance, and a certificate-checked pipeline selects, among synthesized circuits that meet the user's error limit, the one with the lowest certified depth bound. On QASMBench, verified fusion and scheduling reduce logical measurement depth by a median of 17.9\\%, and complete source-to-QPPM allowances are certified for all 35 valid selected small-suite inputs.",
       "keywords": [
         "compilation",
@@ -1116,7 +1114,7 @@
         "verified"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.31694",
@@ -1140,7 +1138,7 @@
       "source_type": "rss",
       "category": "量子信息与计算",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.31775v1 Announce Type: new Abstract: We show that a classical client with no quantum hardware can use a single untrusted and potentially malicious quantum server as if it were its own trusted quantum computer. Through the server, the client can privately choose and run quantum computations, prepare quantum states, and process quantum states supplied by other parties. It can also keep quantum memory on the server, hidden from the server itself, and use that memory in later computations so its quantum state persists across rounds of interaction. Together, these capabilities let a purely classical party act as a quantum party in a variety of interactive protocols. We expect this virtual quantum computer to be a broadly useful tool. As immediate applications, we resolve two known open problems: (1) classical verification of quantum sampling with negligible computational soundness error, and (2) remote state preparation of arbitrary efficiently preparable quantum states. Underlying all of these results is a general-purpose, maliciously secure two-party computation protocol between a classical client and a quantum server, which we construct assuming only the post-quantum hardness of learning with errors.",
       "keywords": [
         "classical",
@@ -1150,7 +1148,7 @@
         "quantum"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.31775",
@@ -1174,7 +1172,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.31792v1 Announce Type: new Abstract: Understanding how collective phenomena such as pairing and deformation emerge in interacting fermionic systems, and how the correlations underlying them shape the resources required for their simulation, is a central challenge in many-body physics. We investigate various aspects of quantum complexity in a fermionic system exhibiting two main forms of collectivity, specifically deformation and pairing, through entanglement, non-stabilizerness, and fermionic non-Gaussianity. In the deformed phase, high entanglement coexists with low non-stabilizerness, while the superfluid pairing phase, by contrast, exhibits substantial multipartite entanglement and non-stabilizerness, together with maximal fermionic anti-flatness. In a second step we examine how to describe the phase diagram of the system in a classically scalable and symmetry-preserving way, by combining stabilizer-state expansion and variational basis optimization. A physics-guided decomposition of the Hamiltonian identifies the relevant stabilizer states, which can be constructed from graph states. A single stabilizer state captures the deformed phase to a large extent, and, although the number of stabilizer states required to describe the pairing phase grows exponentially with system size, a symmetry-preserving basis rotation yields a high-fidelity approximation using far fewer states. This rotated state can then serve as a practical starting point for quantum refinement.",
       "keywords": [
         "complexity",
@@ -1186,7 +1184,7 @@
         "stabilizer-state"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.31792",
@@ -1210,7 +1208,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.31877v1 Announce Type: new Abstract: Practical quantum computations can require logical error rates of $10^{-12}$ or lower. Quantum low-density parity-check (QLDPC) codes are promising candidates for reaching such rates with low qubit overhead, provided that their syndromes can be decoded efficiently. Repeated noisy syndrome measurements introduce temporal degeneracy into the space-time decoding graph. We characterize the temporal kernel, whose vectors have zero total data parity, and show that it is generated by elementary temporal codewords of weight $d_v+2$, where $d_v$ is the variable-node degree. For $(d_v,d_c)$-regular parity-check matrices with fixed degrees $d_v,d_c>2$ and girth greater than four, we derive counting bounds and construct degenerate error patterns of weight $(d_v+2)/2$ for even $d_v$ and $d_v+1$ for odd $d_v$, with multiplicity $\\Theta(nr)$ in the blocklength $n$ and number of measurement rounds $r$. Under the isolation assumption, these patterns cause local failures of deterministic isotropic message-passing decoders under a flooding schedule. These failures depend on the node degrees rather than the minimum distance; for the bivariate bicycle (BB) codes considered, their weight is equal to four. Monte carlo simulations and fixed-weight importance sampling quantify harmful low-weight degenerate error patterns for the min-sum (MS) decoder beyond the isolation assumption. Motivated by the identified symmetries, we propose space-time anisotropic min-sum decoding with syndrome-guided realizations. Its complexity is linear in the number of Tanner graph edges for fixed maximum number of iterations and number of decoders. Numerical results on BB codes show threshold-like behavior acrossthe tested code sizes and improved failure probabilities relative to MS decoding with ordered statistics decoding post-processing.",
       "keywords": [
         "codes",
@@ -1226,7 +1224,7 @@
         "temporal"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.31877",
@@ -1250,7 +1248,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.31885v1 Announce Type: new Abstract: Optimizing the control of large quantum systems is a resource-intensive task, where the convergence rate of the underlying iterative schemes is crucial. The recently developed Quantum Projection Operator-Based Newton Method for Trajectory Optimization (Q-PRONTO) offers a unique quadratic convergence for controlling quantum states, while most model-based solvers guarantee only an approximately linear convergence rate. As a proof of concept, here, we design and benchmark single-qubit gates optimized by Q-PRONTO based on the circuit Hamiltonian of a fluxonium superconducting qubit. To ensure that we can apply a long string of arbitrary pulses to the circuit, we modify the firmware associated with the Quantum Instrumentation Control Kit (QICK) by altering its memory allocation. We characterize the performance of the optimal solutions using standard randomized benchmarking and achieve a total error per gate of $6.6\\times10^{-4}$.",
       "keywords": [
         "circuit",
@@ -1260,7 +1258,7 @@
         "q-pronto"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.31885",
@@ -1284,7 +1282,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.31933v1 Announce Type: new Abstract: Multimode entangled pure Gaussian states are an essential resource for continuous variable (CV) quantum information processing. Menicucci et al. [2011] have shown how to describe them as graphs with complex adjacency matrices. Among such complex graph states (CGSs), quantum optics experimental setups straightforwardly display correlations described by purely imaginary graph states (iRGSs) whereas theoretical literature favors off-diagonal real graph state (RGS) descriptions, which actually reflect the entanglement structure in the infinite squeezing limit [Gonzalez-Arciniegas et al. 2021]. We study them beyond this ideal case, thus establishing in the finite squeezing regime an equivalence criterion for the generic case of CGSs through a graph propagating set of conditions which either finds a Gaussian Local Unitary (GLU) converting one state to another or gives a proof of impossibility if such a GLU does not exist. In the experimentally relevant case of the conversion between iRGSs and RGSs, the set of conditions results in simple relations between the topologies of the equivalent real and imaginary graphs. Finally, we show that the canonical forms of iRGSs and RGSs imply that the topology of the CV real and imaginary graph states are too rigid to admit any exact qumode local-addition analogue to the qubit complementation or qudit local-addition, thus demonstrating the non-existence of any exact qumode local-addition for these states. We however define an approximate one when the squeezing is strong enough.",
       "keywords": [
         "continuous",
@@ -1298,7 +1296,7 @@
         "variable"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.31933",
@@ -1322,7 +1320,7 @@
       "source_type": "rss",
       "category": "量子信息与计算",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.31998v1 Announce Type: new Abstract: Semiconductor triple-quantum dots (TQDs) are a promising platform for scalable quantum information processing, but the community has so far lacked access to affordable and flexible high-speed control electronics. SpinQICK, an open-source spin qubit-control package built on the Xilinx Radio Frequency System-on-Chip (RFSoC), directly addresses this gap by leveraging the high sampling-rate signal generation and advanced digital signal processing (DSP) capabilities of the Quantum Instrumentation Control Kit (QICK) to enable precise time-domain voltage control and readout of semiconductor spin qubits. In this paper, we use spinQICK to demonstrate coherent control, state preparation, and readout of a fully connected triangular exchange-only device. We also introduce and experimentally verify a novel dynamical decoupling (DD) sequence enabled by the triangular TQD and leverage its unique decoupling properties to characterize electrical noise. These results establish spinQICK as a low-cost, flexible platform for semiconductor spin qubit control and provide a pathway for hardware optimization through qubit-level noise diagnostics.",
       "keywords": [
         "connected",
@@ -1332,7 +1330,7 @@
         "rfsoc-based"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.31998",
@@ -1356,7 +1354,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.32014v1 Announce Type: new Abstract: Given Hermitian observable $A$, the variance of $A$ is given by the difference of expectations $\\langle A^2\\rangle - \\langle A\\rangle^2$, where the expectation of an observable implicitly assumes a choice of state for the underlying system. As a sub-case of a general lower bound for the sum of variances for finitely many arbitrary elements in a $C^*$-algebra, we prove that the sum of the variances for $d$ observables $A_1, \\dots , A_d$ is greater than some expression in the expectations $\\langle i[A_j,A_k]\\rangle$ for $j\\neq k$ plus the square of the smallest singular value of the associated localizer. In special cases, this expression is just a root mean square average. Our technique also derives a general containment between the Clifford pseudospectra and quadratic pseudospectra for $d$ observables.",
       "keywords": [
         "additive",
@@ -1365,7 +1363,7 @@
         "uncertainty"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.32014",
@@ -1389,7 +1387,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.32037v1 Announce Type: new Abstract: Many-body localisation, Hilbert space fragmentation and quantum many-body scars (QMBS) are well-established mechanisms of ergodicity breaking in quantum systems. Recently, asymptotic quantum many-body scars (AQMBS), non-thermal states whose stability grows with system size, have been proposed theoretically and probed experimentally. Here, we show that AQMBS arise naturally as remnants of certain quantum phase transitions. For a broad class of frustration-free Hamiltonians, we prove that their gapless excitations survive deformation into a scarred Hamiltonian as states whose energy variance is bounded by the excitation gap. Consequently, the gapless excitations at a quantum critical point become AQMBS of the scarred Hamiltonian. Their fidelity relaxation time is then set by the critical scaling of the gap, determined by the dynamic critical exponent. Modelling the critical Fredkin and Motzkin chains and the two-dimensional PVBS model, we obtain AQMBS whose variances directly reflect the dynamic exponents of the underlying transitions. Where the gap of the Motzkin chain closes super-exponentially, we find exponentially stable AQMBS, for which we also observe numerical evidence of volume-law entanglement.",
       "keywords": [
         "arising",
@@ -1400,7 +1398,7 @@
         "transitions"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.32037",
@@ -1424,7 +1422,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.32049v1 Announce Type: new Abstract: In distributed quantum computing, quantum networks provide a potential infrastructure for long-range quantum information processing. Controlled quantum teleportation (CQT) is a key practically relevant protocol that can connect two parties on a network and enables a third party, the controller to allow or abort the secure teleportation of an arbitrary single-qubit state between the two parties. We investigate the robustness of a three-qubit GHZ resource under bit-flip, phase-flip, depolarizing, and amplitude-damping noise. Using the Kraus-operator formalism, we characterize the noisy resource through multipartite quantum discord, genuine multipartite concurrence (GMC), localizable entanglement (LE), and CQT fidelity. We also outline a proof-of-concept photonic implementation for preparing the three-qubit GHZ resource and realizing the CQT protocol, which could enable experimental investigation of the effects of noise. Our results show that bit-flip and amplitude-damping noise generally preserve useful mutipartite quantum correlations over broader noise parameter ranges. Interestingly, multipartite discord exhibits freezing under bit-flip noise over a finite parameter regime. Moreover, discord can persist beyond the sudden death of genuine multipartite entanglement, revealing the distinct robustness of nonclassical correlations. We further demonstrate that CQT fidelity which characterizes the performance of CQT can exceed the classical threshold even after GMC vanishes, while LE more closely reflects the operational usefulness of the noisy resource. These findings highlight the complementary roles of quantum correlations and entanglement in assessing the resilience of GHZ-based protocols.",
       "keywords": [
         "channels",
@@ -1437,7 +1435,7 @@
         "teleportation"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.32049",
@@ -1461,7 +1459,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.32054v1 Announce Type: new Abstract: We present a comprehensive framework for the real-space construction of center-of-mass (c.m.) momentum eigenstates in two-dimensional (2D) quantum many-body systems. Unlike standard momentum-space approaches, our real-space formalism explicitly captures the non-uniformity of cyclic subspace dimensions, which are fundamentally governed by the spatial symmetries of the many-body configurations and particle statistics. We demonstrate that performing 2D real-space translations on multi-particle states naturally induces non-trivial translation phase factors associated with the characters of these stabilizer subgroups, leading to a renormalization of permissible momentum values. Notably, we identify an anomalous cross-dimensional momentum coupling in highly symmetric particle distributions, where the permissible momentum values in one direction are strictly constrained by those in the perpendicular direction. We emphasize the algorithmic necessity of this coupling, as neglecting it leads to missing or duplicated basis states in numerical implementations. Concrete examples are provided to demonstrate the practical implementation and physical consequences of this framework.",
       "keywords": [
         "center-of-mass",
@@ -1476,7 +1474,7 @@
         "two-dimensional"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.32054",
@@ -1500,7 +1498,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.32145v1 Announce Type: new Abstract: In classical cryptography, one-way functions are necessary for most of cryptography. In the quantum world, however, Kretschmer at {TQC'21} and subsequent works have demonstrated that quantum versions of various primitives in minicrypt, such as signatures and private-key encryption, do not require quantum-computable one-way functions (\\textsf{qOWF}s). However, the question of the necessity of \\textsf{qOWF}s for primitives in Cryptomania like public-key encryption with classical public keys and ciphertexts (\\textsf{qPKE}) has remained open. We provide a comprehensive picture of the relationship between \\textsf{qPKE} and \\textsf{qOWF}. First, our main result is a black-box separation between \\textsf{qOWF}s and \\textsf{qPKE}. In particular, we show that relative to a unitary, real, and self-inverse oracle, there exists a \\textsf{qPKE} scheme (with classical keys and ciphertexts), but \\textsf{qOWF}s do not exist. Further, our oracles admit a point-function obfuscation construction, thus ruling out black-box construction of \\textsf{qOWF} from point function obfuscations. On the positive side, we construct \\textsf{qPKE} from quantum indistinguishability obfuscation for quantum circuits with classical obfuscated descriptions and efficiently verifiable one-way puzzles, which is known to be a potentially weaker assumption than \\textsf{qOWF}s, due to an existing black-box separation. Our construction is the quantum analog of the classical construction of \\textsf{PKE} from one-way functions and indistinguishability obfuscation in the quantum computation with classical communication (QCCC) setting.",
       "keywords": [
         "classical",
@@ -1511,7 +1509,7 @@
         "quantum"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.32145",
@@ -1520,6 +1518,40 @@
       },
       "links": {
         "original": "https://arxiv.org/abs/2610.32145"
+      },
+      "tier": "official",
+      "selected": false,
+      "role": "科研"
+    },
+    {
+      "id": "38fcc2f4bd60",
+      "title": "Bogoliubov Dynamics and Zitterbewegung in Optical Dirac Systems",
+      "url": "https://arxiv.org/abs/2610.32209",
+      "channel": "physics",
+      "source": "arXiv quant-ph 论文速递",
+      "source_base": "arXiv quant-ph 论文速递",
+      "source_type": "rss",
+      "category": "科研进展",
+      "published_at": "2026-10-26T04:00:00+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
+      "summary": "arXiv:2610.32209v1 Announce Type: new Abstract: We develop a bosonic Bogoliubov description of Zitterbewegung in time-dependent optical-Dirac systems. Within the optical-Dirac framework, the anomalous pair-creation and pair-annihilation terms of a bosonic Bogoliubov Hamiltonian correspond to couplings between the positive- and negative-frequency sectors, whose coherence underlies the Zitterbewegung response. When the constitutive parameters vary in time, the resulting moving-frame connection generates dynamical interbranch coupling and positive--negative-frequency coherence. Under periodic modulation, this coupling becomes resonant near $\\Omega\\simeq2\\omega_0$, leading to parametric amplification of the coherence and consequently to an enhanced Zitterbewegung motion.",
+      "keywords": [
+        "bogoliubov",
+        "dirac",
+        "dynamics",
+        "optical",
+        "zitterbewegung"
+      ],
+      "biz": null,
+      "score": 37.4,
+      "convergence": 0.0,
+      "refs": {
+        "arxiv": "2610.32209",
+        "via": "feed_text",
+        "confidence": "verified"
+      },
+      "links": {
+        "original": "https://arxiv.org/abs/2610.32209"
       },
       "tier": "official",
       "selected": false,
@@ -1535,7 +1567,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.32218v1 Announce Type: new Abstract: Quantum secret sharing protects distributed quantum information against unauthorized reconstruction, yet existing schemes provide no intrinsic accountability when shares are leaked or forged. This missing capability is particularly relevant in realistic distributed settings, where compromised participants may either expose valid shares or maliciously interfere with reconstruction. Here we establish a framework for traceable quantum secret sharing under these two threat models. We introduce leakage-verifiable and traceable quantum secret sharing (LVT-QSS), which attributes leaked shares through an explicit leakage verification mechanism, and malicious-traceable and accountable quantum secret sharing (MTA-QSS), which identifies participants who submit forged shares during reconstruction. We formulate security definitions for both settings and prove that the proposed protocols satisfy the corresponding guarantees against the relevant adversaries. Numerical simulations under per-share depolarizing noise further quantify the robustness of the proposed schemes and identify verification as the dominant noise sensitive stage. These results incorporate accountability into quantum secret sharing and provide a foundation for traceable distributed quantum cryptography.",
       "keywords": [
         "quantum",
@@ -1544,7 +1576,7 @@
         "traceable"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.32218",
@@ -1568,7 +1600,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.32227v1 Announce Type: new Abstract: Quantum subroutines, like their classical counterparts, serve as essential components of larger algorithms. They can be realized using gate based architectures or measurement based quantum computation (MBQC), where computation proceeds through adaptive measurements on highly entangled cluster states. In this work, we implement a phase oracle as a reusable subroutine within the MBQC framework using experimentally feasible cluster states. Unlike prior demonstrations of Grover's algorithm in MBQC that omit explicit oracle construction, our approach provides a transparent formulation of the oracle subroutine, including its measurement patterns, byproduct correlations, density-matrix simulations, and corresponding MBQC measurement circuits.",
       "keywords": [
         "cluster",
@@ -1578,7 +1610,7 @@
         "subroutine"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.32227",
@@ -1602,7 +1634,7 @@
       "source_type": "rss",
       "category": "凝聚态物理",
       "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "arXiv:2610.32287v1 Announce Type: new Abstract: Self-assembled two-dimensional molecular aggregates provide a versatile platform for engineering excitonic states, including topologically nontrivial edge states. However, these edge-states are difficult to probe optically: they have weak far-field transition strengths, and far-field spectra do not reveal whether an excitation is localized at the edge. For an aggregate consisting of two sublattices of molecules with genuinely complex transition dipoles, we show that spatially resolved near-field spectroscopy encodes the full spatial structure of these states. The resulting near-field maps do not mirror the site populations, but instead exhibit strongly nonuniform, interference-like features. We demonstrate that a convolutional neural network can reconstruct the complex expansion coefficients of the eigenstates from these maps, and that this reconstruction is robust against substantial random noise.",
       "keywords": [
         "aggregates",
@@ -1614,7 +1646,7 @@
         "topological"
       ],
       "biz": null,
-      "score": 37.6,
+      "score": 37.4,
       "convergence": 0.0,
       "refs": {
         "arxiv": "2610.32287",
@@ -1623,42 +1655,6 @@
       },
       "links": {
         "original": "https://arxiv.org/abs/2610.32287"
-      },
-      "tier": "official",
-      "selected": false,
-      "role": "科研"
-    },
-    {
-      "id": "6c10656d4bad",
-      "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
-      "url": "https://arxiv.org/abs/2610.32292",
-      "channel": "physics",
-      "source": "arXiv quant-ph 论文速递",
-      "source_base": "arXiv quant-ph 论文速递",
-      "source_type": "rss",
-      "category": "科研进展",
-      "published_at": "2026-10-26T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
-      "summary": "arXiv:2610.32292v1 Announce Type: new Abstract: Quantum sensing in the infrared regime often demands the use of expensive and cryogenically operated detectors. Nonlinear interferometry has paved the way for information transfer from the infrared to the near--infrared or visible regime in various quantum technologies. A particularly interesting application of these interferometers involves spectrally--resolved quantum imaging using undetected photons, enabled by the use of temperature--tunable parametric amplifiers. In this work, we demonstrate spectrally resolved transmission imaging with undetected photons around 1550 nm using a spontaneous parametric down conversion based folded nonlinear interferometric scheme, registering the attenuation of a zebrafish larva as a biological feasibility test. We characterize and calibrate the interferometer, having achieved spectrally resolved interference fringes with a maximum baseline visibility of $\\sim 74\\%$ in the near--infrared regime. Phase--stepped readout of a grating spectrometer gives a resolving power of $\\sim1460$ (from the spectrometer's point spread function) at 1550 nm, and $\\sim 730$ from the coherence length, the finest reported for imaging with undetected photons, over an instantaneous spectral window of $\\approx 51$ cm$^{-1}$.",
-      "keywords": [
-        "hyperspectral",
-        "imaging",
-        "infrared",
-        "photons",
-        "quantum",
-        "resolution",
-        "undetected"
-      ],
-      "biz": null,
-      "score": 37.6,
-      "convergence": 0.0,
-      "refs": {
-        "arxiv": "2610.32292",
-        "via": "feed_text",
-        "confidence": "verified"
-      },
-      "links": {
-        "original": "https://arxiv.org/abs/2610.32292"
       },
       "tier": "official",
       "selected": false,
@@ -1674,7 +1670,7 @@
       "source_type": "rss",
       "category": "高能与粒子物理",
       "published_at": "2026-08-11T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "From Broadway to MIT’s Laboratory for Nuclear Science, PhD student Jessica Fry doesn’t do anything halfway. Now she’s hunting for the universe’s most elusive particle.",
       "keywords": [
         "dark",
@@ -1701,6 +1697,72 @@
       "role": "官方"
     },
     {
+      "id": "3a47d3cba356",
+      "title": "Metalens microscope switches focus with voltage, not moving optics",
+      "url": "https://phys.org/news/2026-10-metalens-microscope-focus-voltage-optics.html",
+      "channel": "physics",
+      "source": "Phys.org 物理新闻",
+      "source_base": "Phys.org 物理新闻",
+      "source_type": "rss",
+      "category": "其他",
+      "published_at": "2026-10-26T21:20:10+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
+      "summary": "Just as it is difficult for a camera to keep both a nearby flower and a distant mountain sharply focused at the same time, conventional optical microscopes face a similar challenge when imaging structures located at different depths inside the body. Tighter focusing of light improves spatial resolution, but at the same time reduces the depth range over which the image remains sharply focused.",
+      "keywords": [
+        "focus",
+        "metalens",
+        "microscope",
+        "moving",
+        "optics",
+        "switches",
+        "voltage"
+      ],
+      "biz": null,
+      "score": 36.6,
+      "convergence": 0.333,
+      "topic_id": "8800c2dbe031",
+      "topic_title": "Robotic lab sets up and runs optics experiments on demand",
+      "links": {
+        "original": "https://phys.org/news/2026-10-metalens-microscope-focus-voltage-optics.html"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "科研"
+    },
+    {
+      "id": "e5774e01aa39",
+      "title": "Single optical element combines soft X-ray imaging and spectroscopy",
+      "url": "https://phys.org/news/2026-10-optical-element-combines-soft-ray.html",
+      "channel": "physics",
+      "source": "Phys.org 物理新闻",
+      "source_base": "Phys.org 物理新闻",
+      "source_type": "rss",
+      "category": "其他",
+      "published_at": "2026-10-26T20:20:11+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
+      "summary": "An international research team from Germany, Switzerland and Japan has demonstrated in a recent study that a single reflection zone plate (RZP) can perform both soft X-ray imaging and resonant inelastic X-ray scattering (RIXS) mapping. The approach could simplify future instruments that need to determine both where structures are located in a material and how their electronic properties vary.",
+      "keywords": [
+        "combines",
+        "element",
+        "imaging",
+        "optical",
+        "soft",
+        "spectroscopy",
+        "x-ray"
+      ],
+      "biz": null,
+      "score": 36.6,
+      "convergence": 0.333,
+      "topic_id": "e53a0752f0b2",
+      "topic_title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
+      "links": {
+        "original": "https://phys.org/news/2026-10-optical-element-combines-soft-ray.html"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "科研"
+    },
+    {
       "id": "23671c4afc3a",
       "title": "Counting magnetic flux quanta offers new way to measure photon numbers",
       "url": "https://phys.org/news/2026-10-magnetic-flux-quanta-photon.html",
@@ -1710,7 +1772,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T21:20:02+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Researchers at AIST have directly observed magnetic flux quanta generated in a superconductor by photon absorption and demonstrated a new principle of photon detection that identifies the number of photons based on the number of these flux quanta.",
       "keywords": [
         "counting",
@@ -1722,44 +1784,12 @@
         "quanta"
       ],
       "biz": null,
-      "score": 35.6,
+      "score": 35.4,
       "convergence": 0.333,
       "topic_id": "3d41abd72bf6",
       "topic_title": "Photon-Number Discrimination from Increasing Time-of-Arrival Separation in Wide Superconducting Microstrip Single-Photon Detectors",
       "links": {
         "original": "https://phys.org/news/2026-10-magnetic-flux-quanta-photon.html"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "科研"
-    },
-    {
-      "id": "b0d8f2b4cef7",
-      "title": "Diamond laser system achieves 100% optical contrast in magnetic-field readout",
-      "url": "https://phys.org/news/2026-10-diamond-laser-optical-contrast-magnetic.html",
-      "channel": "physics",
-      "source": "Phys.org 物理新闻",
-      "source_base": "Phys.org 物理新闻",
-      "source_type": "rss",
-      "category": "其他",
-      "published_at": "2026-10-22T18:20:08+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
-      "summary": "Researchers at Fraunhofer IAF have developed a laser-enhanced quantum sensor that combines high magnetic-field sensitivity with a large dynamic range. Using laser threshold magnetometry, they improved the ratio of sensitivity and dynamic range by a factor of up to 590 compared with state-of-the-art approaches. The breakthrough is enabled by the first demonstration of 100% optical contrast, combined with strong laser readout signals. The results, published in Nature Communications, open up new prospects for medical diagnostics, navigation, and resource exploration.",
-      "keywords": [
-        "contrast",
-        "diamond",
-        "laser",
-        "magnetic-field",
-        "optical",
-        "readout"
-      ],
-      "biz": null,
-      "score": 35.1,
-      "convergence": 0.333,
-      "topic_id": "b6d8dd2c17e9",
-      "topic_title": "Bogoliubov Dynamics and Zitterbewegung in Optical Dirac Systems",
-      "links": {
-        "original": "https://phys.org/news/2026-10-diamond-laser-optical-contrast-magnetic.html"
       },
       "tier": "media",
       "selected": false,
@@ -1775,7 +1805,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T08:10:01+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "What would it take to watch an electron move through a material? Researchers would need to see individual atoms and capture an electron's motion at incredibly short timescales. A Technion-led team has brought those two capabilities together in a scanning tunneling microscope, using carefully shaped laser pulses to control the direction of electron flow while preserving nanoscale spatial resolution.",
       "keywords": [
         "flow",
@@ -1787,7 +1817,7 @@
         "ultrafast"
       ],
       "biz": null,
-      "score": 34.3,
+      "score": 34.1,
       "convergence": 0.167,
       "topic_id": "044306bf2ce5",
       "topic_title": "Light-based method enables precise control of ultrafast electron flow in a scanning tunneling microscope",
@@ -1808,7 +1838,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-22T23:00:02+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Researchers have observed a molecule in the first instants after it has absorbed light and tracked the coordinated motion of electrons and nuclei with a temporal resolution of three femtoseconds. This is the result achieved by an international research group led by the Politecnico di Milano, which has developed a new apparatus for studying ultrafast photochemical processes.",
       "keywords": [
         "molecular",
@@ -1820,7 +1850,7 @@
         "ultrafast"
       ],
       "biz": null,
-      "score": 34.1,
+      "score": 34.0,
       "convergence": 0.167,
       "topic_id": "044306bf2ce5",
       "topic_title": "Light-based method enables precise control of ultrafast electron flow in a scanning tunneling microscope",
@@ -1841,7 +1871,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-21T17:40:04+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Despite being known for more mundane uses such as sticking notes to refrigerators or keeping bags shut, magnetization is one of the most fundamental and useful properties of a material. Indeed, it forms the physical basis for storing most of our digital information, encoding the bits used in hard drives, computer memories and credit cards.",
       "keywords": [
         "ferromagnetism",
@@ -1850,7 +1880,7 @@
         "ultrafast"
       ],
       "biz": null,
-      "score": 33.6,
+      "score": 33.5,
       "convergence": 0.167,
       "topic_id": "044306bf2ce5",
       "topic_title": "Light-based method enables precise control of ultrafast electron flow in a scanning tunneling microscope",
@@ -1871,7 +1901,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-22T11:00:04+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Semiconductors with wider bandgaps could pave the way for smaller, more efficient electronics that can handle far higher voltages, but the wider this gap becomes, the harder it is to control how well a material conducts electricity. Now, a team led by Darrell Schlom at Cornell University has shown that adding silicon to thin films of aluminum gallium oxide can keep this control intact at bandgaps wider than any semiconductor before it. Their research has been published in Nature.",
       "keywords": [
         "bandgap",
@@ -1882,12 +1912,46 @@
         "sets"
       ],
       "biz": null,
-      "score": 33.0,
+      "score": 32.9,
       "convergence": 0.167,
       "topic_id": "350401924584",
       "topic_title": "Sapphire-grown semiconductor film sets bandgap record",
       "links": {
         "original": "https://phys.org/news/2026-10-sapphire-grown-semiconductor-bandgap.html"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "科研"
+    },
+    {
+      "id": "95b11ab3d659",
+      "title": "X-ray free-electron laser sets new record for shortest high-energy pulses",
+      "url": "https://phys.org/news/2026-10-ray-free-electron-laser-shortest.html",
+      "channel": "physics",
+      "source": "Phys.org 物理新闻",
+      "source_base": "Phys.org 物理新闻",
+      "source_type": "rss",
+      "category": "其他",
+      "published_at": "2026-10-21T18:40:10+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
+      "summary": "Researchers at the Linac Coherent Light Source (LCLS) at the U.S. Department of Energy's SLAC National Accelerator Laboratory have measured the shortest high-energy X-ray pulses ever recorded at an X-ray free-electron laser (XFEL). The pulses had photon energies of about 9 kiloelectronvolts (keV) and clocked in at durations of 100 to 400 attoseconds—mere billionths of a billionth of a second. The results are published in Nature Photonics.",
+      "keywords": [
+        "free-electron",
+        "high-energy",
+        "laser",
+        "pulses",
+        "record",
+        "sets",
+        "shortest",
+        "x-ray"
+      ],
+      "biz": null,
+      "score": 32.6,
+      "convergence": 0.167,
+      "topic_id": "350401924584",
+      "topic_title": "Sapphire-grown semiconductor film sets bandgap record",
+      "links": {
+        "original": "https://phys.org/news/2026-10-ray-free-electron-laser-shortest.html"
       },
       "tier": "media",
       "selected": false,
@@ -1903,7 +1967,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-09-28T15:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Physicists have long struggled with their goal of making gravity a quantum force. A radical post-quantum approach might solve that problem – and clear up other cosmic mysteries, too",
       "keywords": [
         "embracing",
@@ -1915,7 +1979,7 @@
         "unified"
       ],
       "biz": null,
-      "score": 32.8,
+      "score": 32.5,
       "convergence": 0.0,
       "zh_full": "物理学家长期以来一直试图将引力纳入量子力学的框架，使其成为一种量子力。然而，这一目标至今尚未实现，引力与量子理论之间的鸿沟仍是物理学中的核心难题之一。本文提出，一种激进的“后量子”（post-quantum）思路或许能够解决这一问题，并有望同时澄清其他宇宙学谜题。文章认为，与其继续坚持将引力强行纳入现有量子框架，不如重新审视我们对引力的理解，甚至接受引力中存在的“缺陷”或“故障”（glitches），这些看似不协调的特征可能正是通向统一现实理论的关键线索。该观点挑战了传统量子引力研究路径，暗示未来的突破可能来自对现有理论框架的根本性反思，而非渐进式修补。",
       "llm_summary": "本文讨论物理学家长期未能将引力纳入量子理论框架的困境，并提出一种激进的“后量子”思路可能解决该问题。文章认为，接受引力中存在的“缺陷”或“故障”或许正是通向统一现实理论的关键，这一观点挑战了传统量子引力研究路径，暗示未来突破可能来自对现有理论框架的根本性反思。",
@@ -1932,74 +1996,6 @@
       "role": "媒体"
     },
     {
-      "id": "95b11ab3d659",
-      "title": "X-ray free-electron laser sets new record for shortest high-energy pulses",
-      "url": "https://phys.org/news/2026-10-ray-free-electron-laser-shortest.html",
-      "channel": "physics",
-      "source": "Phys.org 物理新闻",
-      "source_base": "Phys.org 物理新闻",
-      "source_type": "rss",
-      "category": "其他",
-      "published_at": "2026-10-21T18:40:10+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
-      "summary": "Researchers at the Linac Coherent Light Source (LCLS) at the U.S. Department of Energy's SLAC National Accelerator Laboratory have measured the shortest high-energy X-ray pulses ever recorded at an X-ray free-electron laser (XFEL). The pulses had photon energies of about 9 kiloelectronvolts (keV) and clocked in at durations of 100 to 400 attoseconds—mere billionths of a billionth of a second. The results are published in Nature Photonics.",
-      "keywords": [
-        "free-electron",
-        "high-energy",
-        "laser",
-        "pulses",
-        "record",
-        "sets",
-        "shortest",
-        "x-ray"
-      ],
-      "biz": null,
-      "score": 32.7,
-      "convergence": 0.167,
-      "topic_id": "350401924584",
-      "topic_title": "Sapphire-grown semiconductor film sets bandgap record",
-      "links": {
-        "original": "https://phys.org/news/2026-10-ray-free-electron-laser-shortest.html"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "科研"
-    },
-    {
-      "id": "09e32053df2c",
-      "title": "Robotic lab sets up and runs optics experiments on demand",
-      "url": "https://news.mit.edu/2026/robotic-lab-runs-optics-experiments-on-demand-0917",
-      "channel": "physics",
-      "source": "MIT News 物理",
-      "source_base": "MIT News 物理",
-      "source_type": "rss",
-      "category": "科研进展",
-      "published_at": "2026-09-17T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
-      "summary": "The autonomous system could speed up testing of high-tech materials for applications such as solar cells, sensors, video displays, and quantum technologies.",
-      "keywords": [
-        "demand",
-        "experiments",
-        "optics",
-        "robotic",
-        "runs",
-        "sets"
-      ],
-      "biz": null,
-      "score": 31.5,
-      "convergence": 0.0,
-      "zh_full": "（无摘要，仅标题）一个机器人实验室能够按需搭建并运行光学实验。该自主系统有望加速对太阳能电池、传感器、视频显示和量子技术等应用所需的高科技材料的测试。",
-      "llm_summary": "一个机器人实验室能够按需搭建并运行光学实验。该自主系统有望加速对太阳能电池、传感器、视频显示和量子技术等应用所需的高科技材料的测试。",
-      "llm_reason": "机器人自动化光学实验",
-      "density": "中",
-      "links": {
-        "original": "https://news.mit.edu/2026/robotic-lab-runs-optics-experiments-on-demand-0917"
-      },
-      "tier": "official",
-      "selected": false,
-      "role": "官方"
-    },
-    {
       "id": "397a0f41db69",
       "title": "MIT Quantum Initiative launches postdoctoral fellowship program",
       "url": "https://news.mit.edu/2026/mit-quantum-initiative-launches-postdoctoral-fellowship-0831",
@@ -2009,7 +2005,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-08-31T19:30:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "The Institute welcomes its first cohort of QMIT Fellows this fall to advance interdisciplinary quantum research.",
       "keywords": [
         "fellowship",
@@ -2046,7 +2042,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-08-31T19:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "New research offers support for the possibility that complex biological molecules could exist in the highly acidic environment of Venus’s cloud layer.",
       "keywords": [
         "conditions",
@@ -2080,7 +2076,7 @@
       "source_type": "rss",
       "category": "高能与粒子物理",
       "published_at": "2026-08-28T20:35:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Physics PhD student Manu Srivastava helped high school students in India develop a test that could contribute to one of the world’s largest neutrino experiments.",
       "keywords": [
         "cern",
@@ -2117,7 +2113,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-08-12T20:15:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "The Materials Research Science and Engineering Center unites researchers across disciplines to develop technologies for medical imaging, sustainable metals production, and next-generation electronics.",
       "keywords": [
         "center",
@@ -2152,7 +2148,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-08-06T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "MIT researchers can now precisely measure how heat moves through multilayered materials like computer chips.",
       "keywords": [
         "electronics",
@@ -2184,7 +2180,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-26T15:40:06+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Some proteins that are linked to neurodegenerative diseases can form both liquid droplets and amyloid fibers. But how are these two states connected, and where do the fibers grow? Leiden physicists Liru Feng and Louise Jawerth have discovered a counter-intuitive mechanism.",
       "keywords": [
         "diseases",
@@ -2196,7 +2192,7 @@
         "reveal"
       ],
       "biz": null,
-      "score": 30.9,
+      "score": 30.7,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-10-physicists-reveal-paradigm-fiber-growth.html"
@@ -2215,7 +2211,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-26T14:28:02+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "A team of Yale researchers has figured out what gives a magnetic material its mysterious properties, a discovery that could help boost computing memory and the field of \"spintronics.\" Their work is published in Physical Review Letters.",
       "keywords": [
         "competing",
@@ -2229,38 +2225,10 @@
         "tiny"
       ],
       "biz": null,
-      "score": 30.9,
+      "score": 30.7,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-10-tiny-shifts-iron-content-potential.html"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "科研"
-    },
-    {
-      "id": "bc5fb7cd6826",
-      "title": "How Voting Is Like a Klein Bottle",
-      "url": "https://www.quantamagazine.org/how-voting-is-like-a-klein-bottle-20261026/",
-      "channel": "physics",
-      "source": "Quanta Magazine",
-      "source_base": "Quanta Magazine",
-      "source_type": "rss",
-      "category": "其他",
-      "published_at": "2026-10-26T14:54:29+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
-      "summary": "A new topological model connects a centuries-old voting paradox to a surface with no distinct inside or outside. The post How Voting Is Like a Klein Bottle first appeared on Quanta Magazine",
-      "keywords": [
-        "bottle",
-        "klein",
-        "like",
-        "voting"
-      ],
-      "biz": null,
-      "score": 30.9,
-      "convergence": 0.0,
-      "links": {
-        "original": "https://www.quantamagazine.org/how-voting-is-like-a-klein-bottle-20261026/"
       },
       "tier": "media",
       "selected": false,
@@ -2276,7 +2244,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-26T13:40:06+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Quantum computers need qubits that can be controlled both quickly and reliably. Yet making semiconductor spin qubits faster often makes them more sensitive to electrical noise, creating a difficult trade-off.",
       "keywords": [
         "balance",
@@ -2288,10 +2256,38 @@
         "stability"
       ],
       "biz": null,
-      "score": 30.8,
+      "score": 30.7,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-10-extra-quantum-dot-stability-qubits.html"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "科研"
+    },
+    {
+      "id": "bc5fb7cd6826",
+      "title": "How Voting Is Like a Klein Bottle",
+      "url": "https://www.quantamagazine.org/how-voting-is-like-a-klein-bottle-20261026/",
+      "channel": "physics",
+      "source": "Quanta Magazine",
+      "source_base": "Quanta Magazine",
+      "source_type": "rss",
+      "category": "其他",
+      "published_at": "2026-10-26T14:54:29+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
+      "summary": "A new topological model connects a centuries-old voting paradox to a surface with no distinct inside or outside. The post How Voting Is Like a Klein Bottle first appeared on Quanta Magazine",
+      "keywords": [
+        "bottle",
+        "klein",
+        "like",
+        "voting"
+      ],
+      "biz": null,
+      "score": 30.7,
+      "convergence": 0.0,
+      "links": {
+        "original": "https://www.quantamagazine.org/how-voting-is-like-a-klein-bottle-20261026/"
       },
       "tier": "media",
       "selected": false,
@@ -2307,7 +2303,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-25T17:00:01+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "A team at HZB has, for the first time, reported polar vortices in (BaTiO₃/SrTiO₃)₁₀ superlattices on silicon. These results expand the range of materials and substrates on which polar topological textures can occur and open up new options for incorporating complex ferroelectric states into silicon-based technologies.",
       "keywords": [
         "discovered",
@@ -2319,7 +2315,7 @@
         "vortices"
       ],
       "biz": null,
-      "score": 30.5,
+      "score": 30.4,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-10-patterns-polar-vortices-free-superlattices.html"
@@ -2338,11 +2334,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-25T13:58:44+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "一项基因组学研究表明，人类关节软骨中关键缓冲成分硫酸化糖胺聚糖（sGAG）的含量仅为黑猩猩等类人猿的约三分之一。这种在演化过程中出现的基因表达下调与软骨成分改变，虽然塑造了人类独特的骨骼形态，但也可能使人类更容易患上骨关节炎等退行性骨骼疾病。",
       "keywords": [],
       "biz": null,
-      "score": 30.5,
+      "score": 30.3,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/depth/depth/10736.html"
@@ -2361,7 +2357,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T20:20:08+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "In 1953, two physicists showed that an electron beam skimming past a grating emits light whose color depends only on the electron's speed and the grating's spacing. Known as Smith-Purcell radiation, this phenomenon has become a useful tool for building compact, tunable light sources and tracking particle beams without touching them.",
       "keywords": [
         "beams",
@@ -2373,7 +2369,7 @@
         "twist"
       ],
       "biz": null,
-      "score": 29.8,
+      "score": 29.6,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-10-plain-silicon-reveals-hidden-electron.html"
@@ -2392,7 +2388,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T14:20:25+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Glass can keep a drink safely contained, protect a smartphone screen, or serve as a foundation for electronic components. But when it comes to controlling heat, this familiar material still holds some scientific mysteries. Now, researchers have identified a key factor governing how efficiently heat travels through silicate glass, offering a new guideline for designing glass materials for next-generation electronic devices.",
       "keywords": [
         "conducting",
@@ -2404,7 +2400,7 @@
         "sound"
       ],
       "biz": null,
-      "score": 29.7,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-10-glass-good-key.html"
@@ -2423,7 +2419,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T14:54:10+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "To invade red blood cells, the deadly protist creates a temporary molecular portal that disappears behind it — a door we can now see in fine detail. The post Malaria Parasite Caught in the Act of Breaking and Entering first appeared on Quanta Magazine",
       "keywords": [
         "caught",
@@ -2432,7 +2428,7 @@
         "parasite"
       ],
       "biz": null,
-      "score": 29.7,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "https://www.quantamagazine.org/malaria-parasite-caught-in-the-act-of-breaking-and-entering-20261023/"
@@ -2451,11 +2447,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T11:21:41+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "许家窑人的身份在分子层面得到确认，也让研究者第一次有机会系统认识丹尼索瓦人的形态特征。",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/news/multiple/10734.html"
@@ -2474,11 +2470,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T11:20:58+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "最近，困扰数学界30余年的三维Ghys猜想，在中国数学家与AI协作下取得突破。",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/news/multiple/10733.html"
@@ -2497,13 +2493,13 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T11:20:11+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "9月28日，在沃森追思会结束后，我和博后老板Michael Wigler餐叙闲聊，期间他讲了一句让我印象很深的话：Double helix structure also made Watson（双螺旋结构亦塑造了沃森）。",
       "keywords": [
         "watson"
       ],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/depth/depth/10732.html"
@@ -2522,11 +2518,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T11:19:16+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "商周撰写的科学三巨人传记，孟德尔与詹纳都可以被同时冠以科学家与博物学家的头衔，而巴斯德稍有不同，更像一位真正现代意义上的科学家。",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/news/multiple/10731.html"
@@ -2545,11 +2541,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T11:18:07+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "鸟类的飞行能力是如何演化出来的？",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/news/multiple/10729.html"
@@ -2568,11 +2564,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T11:17:08+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "美国科学家开发出一种名为 PhotoTat 的智能纹身墨水，只需经过几秒钟紫外光照射，原本隐形的图案便会迅速显现，并可以在需要时再次“消失”。",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/news/multiple/10728.html"
@@ -2591,11 +2587,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T11:16:27+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "10月11日，“丘成桐数学与人工智能实验室联盟”在北京宣布成立。",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/depth/depth/10727.html"
@@ -2614,11 +2610,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T10:46:34+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "近日，法默的新书《理解混沌：更好的经济理论，更好地理解世界》中文版出版。",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/depth/depth/10726.html"
@@ -2637,11 +2633,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T10:45:40+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "10月6日，Openai一下子在网上放出722 篇文章，包含了400 个左右数学猜想的解，对数学界造成巨大的冲击。我愿意称之为“第四次数学危机”。",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/depth/depth/10725.html"
@@ -2660,11 +2656,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T10:44:56+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "有了计算机，还要不要数学家？",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/depth/depth/10724.html"
@@ -2683,11 +2679,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T10:43:41+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "2026年10月18日是杨振宁逝世一周年，《知识分子》重发此文，以纪念杨振宁先生。访谈者施郁当时是复旦大学教授，目前为中国科学技术大学教授。",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/depth/depth/10722.html"
@@ -2706,11 +2702,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T10:42:49+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "70年前，杨振宁与李政道因提出弱相互作用中宇称不守恒的理论，获得1957年诺贝尔物理学奖。这项工作深刻影响了现代物理学的发展。",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/depth/depth/10721.html"
@@ -2729,11 +2725,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T10:42:14+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "当公众最需要人文与社会科学提供意义坐标时，听到的却常常只有两种声音：困在概念里的自我循环，或是对技术的情绪化惊惧。",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/depth/depth/10720.html"
@@ -2752,11 +2748,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T10:40:56+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "一个被人类创造和培育的系统，有没有可能逐步脱离人类，获得维持自身存在所需要的能力？",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/depth/depth/10719.html"
@@ -2775,11 +2771,11 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-23T10:39:37+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "2026年10月6日，75岁的戴维·鲍尔库姆（David Baulcombe）出任剑桥三一学院第41任院长。",
       "keywords": [],
       "biz": null,
-      "score": 29.6,
+      "score": 29.5,
       "convergence": 0.0,
       "links": {
         "original": "http://www.zhishifenzi.com/news/multiple/10717.html"
@@ -2787,6 +2783,36 @@
       "tier": "media",
       "selected": false,
       "role": "媒体"
+    },
+    {
+      "id": "b0d8f2b4cef7",
+      "title": "Diamond laser system achieves 100% optical contrast in magnetic-field readout",
+      "url": "https://phys.org/news/2026-10-diamond-laser-optical-contrast-magnetic.html",
+      "channel": "physics",
+      "source": "Phys.org 物理新闻",
+      "source_base": "Phys.org 物理新闻",
+      "source_type": "rss",
+      "category": "其他",
+      "published_at": "2026-10-22T18:20:08+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
+      "summary": "Researchers at Fraunhofer IAF have developed a laser-enhanced quantum sensor that combines high magnetic-field sensitivity with a large dynamic range. Using laser threshold magnetometry, they improved the ratio of sensitivity and dynamic range by a factor of up to 590 compared with state-of-the-art approaches. The breakthrough is enabled by the first demonstration of 100% optical contrast, combined with strong laser readout signals. The results, published in Nature Communications, open up new prospects for medical diagnostics, navigation, and resource exploration.",
+      "keywords": [
+        "contrast",
+        "diamond",
+        "laser",
+        "magnetic-field",
+        "optical",
+        "readout"
+      ],
+      "biz": null,
+      "score": 29.2,
+      "convergence": 0.0,
+      "links": {
+        "original": "https://phys.org/news/2026-10-diamond-laser-optical-contrast-magnetic.html"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "科研"
     },
     {
       "id": "4d9416591064",
@@ -2798,7 +2824,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-22T18:00:18+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Ever since quantum mechanics first described particles, like electrons, as rippling waves, researchers have wondered if those waves could be trapped in place. Writing today in Science a century later, a team of Columbia University researchers reports waves of electrons becoming trapped for the first time in a metal called Pd₅AlI₂.",
       "keywords": [
         "interference",
@@ -2808,7 +2834,7 @@
         "waves"
       ],
       "biz": null,
-      "score": 29.3,
+      "score": 29.2,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-10-quantum-electron-metal.html"
@@ -2827,7 +2853,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-22T13:00:01+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Unlike classical physics, quantum mechanics generally cannot tell us exactly what will happen in an individual event. Instead, it predicts the probabilities of different outcomes. As one of the theory's early pioneers, Erwin Schrödinger played a key role in debates about what this randomness really means. However, part of his contribution has stayed hidden for more than 80 years.",
       "keywords": [
         "dinger",
@@ -2841,7 +2867,7 @@
         "view"
       ],
       "biz": null,
-      "score": 29.2,
+      "score": 29.1,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-10-lost-schrdinger-manuscript-reveals-true.html"
@@ -2860,7 +2886,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-21T22:20:07+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Scientists from the Quantum Technologies Group at the Institute of Physics Zagreb, in collaboration with a colleague from the Physics Department at the Faculty of Science (PMF), have experimentally demonstrated for the first time the existence of discrete one-dimensional (1D) solitons in an optically induced photonic lattice in warm rubidium vapor.",
       "keywords": [
         "atomic",
@@ -2874,7 +2900,7 @@
         "vapor"
       ],
       "biz": null,
-      "score": 29.0,
+      "score": 28.8,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-10-laser-lattice-reveals-discrete-solitons.html"
@@ -2893,7 +2919,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-21T22:00:02+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "In a study published in Advanced Optical Materials, researchers at Vilnius University (VU) demonstrated perovskite-based laser structures that maintained stable performance over more than 400 million pulses. Their findings address one of the major challenges limiting the practical use of perovskites: their instability. These semiconductor materials could play an important role in next-generation optical technologies, but their tendency to degrade has long posed a challenge for researchers worldwide.",
       "keywords": [
         "laser",
@@ -2904,40 +2930,10 @@
         "stable"
       ],
       "biz": null,
-      "score": 29.0,
+      "score": 28.8,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-10-perovskite-laser-stable-million-pulses.html"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "科研"
-    },
-    {
-      "id": "9782e89e52d0",
-      "title": "'Invisible' tweak could help make protein shakes less clumpy",
-      "url": "https://phys.org/news/2026-10-invisible-tweak-protein-clumpy.html",
-      "channel": "physics",
-      "source": "Phys.org 物理新闻",
-      "source_base": "Phys.org 物理新闻",
-      "source_type": "rss",
-      "category": "其他",
-      "published_at": "2026-10-21T15:40:16+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
-      "summary": "Scientists from RMIT University and Riga Technical University in Latvia have shown that static charge left on surfaces can be controlled, which may have big benefits for companies needing to avoid the little zap in production of common household goods. The discovery could even one day help stop powders such as protein, chocolate malt powders and coffee from clumping.",
-      "keywords": [
-        "clumpy",
-        "invisible",
-        "less",
-        "protein",
-        "shakes",
-        "tweak"
-      ],
-      "biz": null,
-      "score": 28.9,
-      "convergence": 0.0,
-      "links": {
-        "original": "https://phys.org/news/2026-10-invisible-tweak-protein-clumpy.html"
       },
       "tier": "media",
       "selected": false,
@@ -2953,7 +2949,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-21T14:00:07+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Winning entries in the 2026 Nikon Small World competitions reveal the hidden interactions that govern everyday life. The post See Inside Cells Like Never Before in These Vivid Microscopic Images first appeared on Quanta Magazine",
       "keywords": [
         "cells",
@@ -2965,7 +2961,7 @@
         "vivid"
       ],
       "biz": null,
-      "score": 28.9,
+      "score": 28.7,
       "convergence": 0.0,
       "links": {
         "original": "https://www.quantamagazine.org/see-inside-cells-like-never-before-in-these-vivid-microscopic-images-20261021/"
@@ -2984,7 +2980,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-09-25T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "As she became integral to an international particle physics experiment, PhD student Faith Reyes found confidence in herself as a scientist.",
       "keywords": [
         "fundamental",
@@ -3017,7 +3013,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-09-22T04:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Established after World War II, the School of the Humanities, Arts, and Social Sciences is an integral part of the MIT experience. Three faculty reflect on the school’s ongoing impact.",
       "keywords": [
         "podcast",
@@ -3048,7 +3044,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-09-16T18:30:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Inaugural artist Amy Karle will join astrophysicists at MIT’s Kavli Institute to explore questions about the universe and translate them into an immersive multimedia experience.",
       "keywords": [
         "artist",
@@ -3082,7 +3078,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-08-26T09:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "The “CrysVCD” tool developed at MIT could cut the huge amounts of time and money spent on screening out chemically unstable designs.",
       "keywords": [
         "real",
@@ -3115,7 +3111,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-08-07T09:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "The study could help scientists understand how superconductivity and other more complex phenomena emerge in quantum materials.",
       "keywords": [
         "assemble",
@@ -3152,7 +3148,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-08-05T15:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "A new technique produces wafer-scale samples, overcoming a major roadblock to using these materials in quantum technologies.",
       "keywords": [
         "air-stable",
@@ -3197,7 +3193,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-07-23T19:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Professor Anna-Christina Eilers is “Committed to Caring” for building a culture around attentiveness and community.",
       "keywords": [
         "looking",
@@ -3226,7 +3222,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-07-23T12:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Initial research projects advance national priorities across natural resources, manufacturing, nuclear physics, and more.",
       "keywords": [
         "department",
@@ -3263,7 +3259,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-07-22T17:30:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "The rising senior is passionate about soccer, nuclear fusion, and advocating on behalf of his fellow student-athletes at MIT.",
       "keywords": [
         "captain",
@@ -3296,7 +3292,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-07-21T15:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "An MIT-led team used bright radio bursts to illuminate a vast source of matter that was previously unaccounted for.",
       "keywords": [
         "diffuse",
@@ -3333,7 +3329,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-07-17T09:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "As sea levels rise and saltwater seeps into freshwater, stressed aquatic populations may retain overall growth even as diversity declines, MIT scientists find.",
       "keywords": [
         "affect",
@@ -3365,7 +3361,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-07-07T16:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Physicists have found signs of colliding black holes that are themselves products of previous black hole smash-ups.",
       "keywords": [
         "black",
@@ -3398,7 +3394,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-19T15:40:26+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Unlike other recent AI proofs, this one has been unpacked by human experts. The implications, one mathematician said, are “staggering.” The post AI Proved the Quasi-Riemann Hypothesis. What Happens Now? first appeared on Quanta Magazine",
       "keywords": [
         "happens",
@@ -3407,10 +3403,38 @@
         "quasi-riemann"
       ],
       "biz": null,
-      "score": 28.1,
+      "score": 27.9,
       "convergence": 0.0,
       "links": {
         "original": "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "科研"
+    },
+    {
+      "id": "a9f789273e9f",
+      "title": "He Wants AI Benchmarking To Be a Science, Not a Dark Art",
+      "url": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
+      "channel": "physics",
+      "source": "Quanta Magazine",
+      "source_base": "Quanta Magazine",
+      "source_type": "rss",
+      "category": "其他",
+      "published_at": "2026-10-16T13:25:08+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
+      "summary": "Moritz Hardt, author of a new book on benchmarks, believes these “standardized tests” for artificial intelligence are fundamentally broken — but not unfixable. The post He Wants AI Benchmarking To Be a Science, Not a Dark Art first appeared on Quanta Magazine",
+      "keywords": [
+        "benchmarking",
+        "dark",
+        "science",
+        "wants"
+      ],
+      "biz": null,
+      "score": 26.7,
+      "convergence": 0.0,
+      "links": {
+        "original": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/"
       },
       "tier": "media",
       "selected": false,
@@ -3426,7 +3450,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-16T13:59:18+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "Since 1972, officials have added 27 leap seconds to the universal clock, but in a meeting this week in France they have decided to abandon the practice",
       "keywords": [
         "abolish",
@@ -3437,7 +3461,7 @@
         "voted"
       ],
       "biz": null,
-      "score": 26.9,
+      "score": 26.7,
       "convergence": 0.0,
       "links": {
         "original": "https://www.newscientist.com/article/2594285-scientists-have-just-voted-to-abolish-leap-seconds/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS"
@@ -3445,34 +3469,6 @@
       "tier": "media",
       "selected": false,
       "role": "媒体"
-    },
-    {
-      "id": "a9f789273e9f",
-      "title": "He Wants AI Benchmarking To Be a Science, Not a Dark Art",
-      "url": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
-      "channel": "physics",
-      "source": "Quanta Magazine",
-      "source_base": "Quanta Magazine",
-      "source_type": "rss",
-      "category": "其他",
-      "published_at": "2026-10-16T13:25:08+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
-      "summary": "Moritz Hardt, author of a new book on benchmarks, believes these “standardized tests” for artificial intelligence are fundamentally broken — but not unfixable. The post He Wants AI Benchmarking To Be a Science, Not a Dark Art first appeared on Quanta Magazine",
-      "keywords": [
-        "benchmarking",
-        "dark",
-        "science",
-        "wants"
-      ],
-      "biz": null,
-      "score": 26.8,
-      "convergence": 0.0,
-      "links": {
-        "original": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "科研"
     },
     {
       "id": "9118f9c6f9a2",
@@ -3484,7 +3480,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-16T06:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "AI has taken huge strides in computer programming and mathematics – physics could be next",
       "keywords": [
         "field",
@@ -3494,7 +3490,7 @@
         "upside"
       ],
       "biz": null,
-      "score": 26.7,
+      "score": 26.6,
       "convergence": 0.0,
       "links": {
         "original": "https://www.newscientist.com/article/2593273-will-physics-be-the-next-field-to-get-turned-upside-down-by-ai/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS"
@@ -3513,7 +3509,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-14T17:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "We should stop trying to use physics to understand the fundamental nature of reality because it cannot unify all the different properties of reality that we experience",
       "keywords": [
         "carlo",
@@ -3523,7 +3519,7 @@
         "ways"
       ],
       "biz": null,
-      "score": 23.5,
+      "score": 23.4,
       "convergence": 0.0,
       "zh_full": "（无摘要，仅标题）",
       "llm_summary": "（无摘要，仅标题）",
@@ -3545,14 +3541,14 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-07T17:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "A controversial idea linking quantum physics and consciousness is moving from speculation towards experiments that could finally put it to the test",
       "keywords": [
         "consciousness",
         "quantum"
       ],
       "biz": null,
-      "score": 23.3,
+      "score": 23.2,
       "convergence": 0.0,
       "zh_full": "一个将量子物理与意识联系起来的争议性想法正从推测走向实验，这些实验最终可能对其进行检验。",
       "llm_summary": "一个将量子物理与意识联系起来的争议性想法正从推测走向实验，这些实验最终可能对其进行检验。",
@@ -3575,7 +3571,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-09-21T16:00:00+00:00",
-      "discovered_at": "2026-10-26T16:49:12.371032+00:00",
+      "discovered_at": "2026-10-27T01:30:21.069748+00:00",
       "summary": "According to Newton’s third law, all actions are paired with reciprocal reactions. But breaking this principle allowed an artificial swimmer to move upstream in a quantum stream of light",
       "keywords": [
         "breaks",

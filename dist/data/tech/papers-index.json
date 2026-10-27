@@ -1,37 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T16:49:12.371032+00:00",
+  "generatedAt": "2026-10-27T01:30:21.069748+00:00",
   "channel": "tech",
   "count": 33,
   "items": [
-    {
-      "id": "cd017a7f91c0",
-      "title": "Integrated elliptical III-V nanopillar arrays on silicon for dual photodetection and light emission",
-      "channel": "tech",
-      "source": "arXiv 光学与光子学 (physics.optics)",
-      "url": "https://arxiv.org/abs/2610.32744",
-      "doi": null,
-      "arxiv": "2610.32744",
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "科研进展",
-      "published_at": "2026-10-26T04:00:00+00:00",
-      "selected": true
-    },
-    {
-      "id": "f4e8de726d72",
-      "title": "Electron Wavefronts Capture Nanoscale Movies of Hypersound at Surfaces",
-      "channel": "tech",
-      "source": "arXiv 光学与光子学 (physics.optics)",
-      "url": "https://arxiv.org/abs/2610.32419",
-      "doi": null,
-      "arxiv": "2610.32419",
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "科研进展",
-      "published_at": "2026-10-26T04:00:00+00:00",
-      "selected": true
-    },
     {
       "id": "b9d30a83a7d3",
       "title": "Multiport photonic routing with a single cavity-based electro-optic phase shifter per port",
@@ -43,6 +15,20 @@
       "via": "feed_text",
       "confidence": "verified",
       "category": "科研进展",
+      "published_at": "2026-10-26T04:00:00+00:00",
+      "selected": true
+    },
+    {
+      "id": "6c10656d4bad",
+      "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
+      "channel": "tech",
+      "source": "arXiv 光学与光子学 (physics.optics)",
+      "url": "https://arxiv.org/abs/2610.32292",
+      "doi": null,
+      "arxiv": "2610.32292",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "光学元件与成像",
       "published_at": "2026-10-26T04:00:00+00:00",
       "selected": true
     },
@@ -99,20 +85,6 @@
       "via": "feed_text",
       "confidence": "verified",
       "category": "科研进展",
-      "published_at": "2026-10-26T04:00:00+00:00",
-      "selected": true
-    },
-    {
-      "id": "6c10656d4bad",
-      "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
-      "channel": "tech",
-      "source": "arXiv 光学与光子学 (physics.optics)",
-      "url": "https://arxiv.org/abs/2610.32292",
-      "doi": null,
-      "arxiv": "2610.32292",
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "光学元件与成像",
       "published_at": "2026-10-26T04:00:00+00:00",
       "selected": true
     },
@@ -409,6 +381,34 @@
       "category": "激光",
       "published_at": "2026-10-19T00:00:00+00:00",
       "selected": true
+    },
+    {
+      "id": "cd017a7f91c0",
+      "title": "Integrated elliptical III-V nanopillar arrays on silicon for dual photodetection and light emission",
+      "channel": "tech",
+      "source": "arXiv 光学与光子学 (physics.optics)",
+      "url": "https://arxiv.org/abs/2610.32744",
+      "doi": null,
+      "arxiv": "2610.32744",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "科研进展",
+      "published_at": "2026-10-26T04:00:00+00:00",
+      "selected": false
+    },
+    {
+      "id": "f4e8de726d72",
+      "title": "Electron Wavefronts Capture Nanoscale Movies of Hypersound at Surfaces",
+      "channel": "tech",
+      "source": "arXiv 光学与光子学 (physics.optics)",
+      "url": "https://arxiv.org/abs/2610.32419",
+      "doi": null,
+      "arxiv": "2610.32419",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "科研进展",
+      "published_at": "2026-10-26T04:00:00+00:00",
+      "selected": false
     },
     {
       "id": "b8b58676d75d",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T16:49:12.371032+00:00",
+  "generatedAt": "2026-10-27T01:30:21.069748+00:00",
   "channel": "physics",
   "count": 25,
   "items": [
@@ -33,13 +33,13 @@
       "selected": false
     },
     {
-      "id": "38fcc2f4bd60",
-      "title": "Bogoliubov Dynamics and Zitterbewegung in Optical Dirac Systems",
+      "id": "6c10656d4bad",
+      "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
       "channel": "physics",
       "source": "arXiv quant-ph 论文速递",
-      "url": "https://arxiv.org/abs/2610.32209",
+      "url": "https://arxiv.org/abs/2610.32292",
       "doi": null,
-      "arxiv": "2610.32209",
+      "arxiv": "2610.32292",
       "via": "feed_text",
       "confidence": "verified",
       "category": "科研进展",
@@ -299,6 +299,20 @@
       "selected": false
     },
     {
+      "id": "38fcc2f4bd60",
+      "title": "Bogoliubov Dynamics and Zitterbewegung in Optical Dirac Systems",
+      "channel": "physics",
+      "source": "arXiv quant-ph 论文速递",
+      "url": "https://arxiv.org/abs/2610.32209",
+      "doi": null,
+      "arxiv": "2610.32209",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "科研进展",
+      "published_at": "2026-10-26T04:00:00+00:00",
+      "selected": false
+    },
+    {
       "id": "3f1ef456cc11",
       "title": "Traceable Quantum Secret Sharing",
       "channel": "physics",
@@ -337,20 +351,6 @@
       "via": "feed_text",
       "confidence": "verified",
       "category": "凝聚态物理",
-      "published_at": "2026-10-26T04:00:00+00:00",
-      "selected": false
-    },
-    {
-      "id": "6c10656d4bad",
-      "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
-      "channel": "physics",
-      "source": "arXiv quant-ph 论文速递",
-      "url": "https://arxiv.org/abs/2610.32292",
-      "doi": null,
-      "arxiv": "2610.32292",
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "科研进展",
       "published_at": "2026-10-26T04:00:00+00:00",
       "selected": false
     }
