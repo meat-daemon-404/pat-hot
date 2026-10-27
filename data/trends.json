@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T01:30:21.069748+00:00",
+  "generatedAt": "2026-10-27T15:54:28.019914+00:00",
   "weekStart": "2026-10-21",
   "windowDays": 7,
   "windowStart": "2026-10-21",
@@ -10,57 +10,57 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4453.0,
+      "thisWeek": 4524.1,
       "lastWeek": 4529.8,
-      "deltaPct": -1.7
+      "deltaPct": -0.1
     },
     {
       "category": "产业与资本",
-      "thisWeek": 3141.3,
+      "thisWeek": 3237.1,
       "lastWeek": 3938.5,
-      "deltaPct": -20.2
+      "deltaPct": -17.8
     },
     {
       "category": "光通信",
-      "thisWeek": 3059.2,
+      "thisWeek": 3234.6,
       "lastWeek": 3239.9,
-      "deltaPct": -5.6
-    },
-    {
-      "category": "通信与算力",
-      "thisWeek": 2474.4,
-      "lastWeek": 3057.9,
-      "deltaPct": -19.1
+      "deltaPct": -0.2
     },
     {
       "category": "科研进展",
-      "thisWeek": 2405.2,
+      "thisWeek": 2882.6,
       "lastWeek": 3318.6,
-      "deltaPct": -27.5
+      "deltaPct": -13.1
+    },
+    {
+      "category": "通信与算力",
+      "thisWeek": 2529.3,
+      "lastWeek": 3057.9,
+      "deltaPct": -17.3
     },
     {
       "category": "其他",
-      "thisWeek": 2288.2,
+      "thisWeek": 2395.9,
       "lastWeek": 3128.5,
-      "deltaPct": -26.9
+      "deltaPct": -23.4
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1890.3,
+      "thisWeek": 2245.6,
       "lastWeek": 2199.0,
-      "deltaPct": -14.0
+      "deltaPct": 2.1
     },
     {
       "category": "显示与面板",
-      "thisWeek": 865.7,
+      "thisWeek": 985.3,
       "lastWeek": 1304.1,
-      "deltaPct": -33.6
+      "deltaPct": -24.4
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 821.0,
+      "thisWeek": 867.8,
       "lastWeek": 468.3,
-      "deltaPct": 75.3
+      "deltaPct": 85.3
     },
     {
       "category": "光传感与激光雷达",
@@ -77,22 +77,16 @@
   ],
   "newTopics": [
     {
-      "topic_id": "6aec187ed191",
-      "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-      "score": 268.9,
-      "days": 3
-    },
-    {
-      "topic_id": "ba306bad328d",
-      "title": "Photonics Hot List: October 23, 2026",
-      "score": 234.8,
-      "days": 2
-    },
-    {
       "topic_id": "cc9f5de8fed9",
       "title": "湖南通信管理局印发《湖南省信息通信行业发展“十五五”规划》",
       "score": 215.2,
       "days": 4
+    },
+    {
+      "topic_id": "6aec187ed191",
+      "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
+      "score": 211.7,
+      "days": 3
     },
     {
       "topic_id": "8ff90487d1f2",
@@ -107,12 +101,6 @@
       "days": 4
     },
     {
-      "topic_id": "3c09fab78453",
-      "title": "Photonics Hot List: October 23, 2026",
-      "score": 204.4,
-      "days": 2
-    },
-    {
       "topic_id": "215ac2b0195e",
       "title": "Stochastic Analysis of Laser Phase Noise in Photonics-Assisted Radio Frequency Beamforming",
       "score": 189.6,
@@ -123,6 +111,18 @@
       "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
       "score": 188.4,
       "days": 4
+    },
+    {
+      "topic_id": "ba306bad328d",
+      "title": "Photonics Hot List: October 23, 2026",
+      "score": 177.7,
+      "days": 1
+    },
+    {
+      "topic_id": "d6361a026b9d",
+      "title": "Photonics Hot List: October 23, 2026",
+      "score": 164.3,
+      "days": 1
     },
     {
       "topic_id": "88fd1c079570",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T01:30:21.069748+00:00",
+  "generatedAt": "2026-10-27T15:54:28.019914+00:00",
   "count": 55,
   "dailies": {
     "2026-07-21": {
@@ -10291,20 +10291,50 @@
       "weekday": "周二",
       "label": "2026年10月27日",
       "headline": {
-        "title": "Metalens microscope switches focus with voltage, not moving optics",
-        "url": "https://phys.org/news/2026-10-metalens-microscope-focus-voltage-optics.html",
+        "title": "Radio waves drive a fusion plasma current that could help reactors run continuously",
+        "url": "https://phys.org/news/2026-10-radio-fusion-plasma-current-reactors.html",
         "source": "Phys.org 物理新闻",
-        "summary": "Just as it is difficult for a camera to keep both a nearby flower and a distant mountain sharply focused at the same time, conventional optical microscopes face a similar challenge when imaging structures located at different depths inside ",
+        "summary": "For the first time, a team of physicists in the U.S. has clearly demonstrated a \"helicon current drive\" in a nuclear fusion experiment. Led by Jeff Lestz at General Atomics, San Diego, the team took advantage of the latest advances in tokam",
         "zh_full": null,
         "reason": null,
         "density": null,
-        "score": 36.6,
+        "score": 51.4,
         "role": "科研",
-        "published_at": "2026-10-26T21:20:10+00:00",
-        "topic_id": "8800c2dbe031",
-        "topic_title": "Robotic lab sets up and runs optics experiments on demand"
+        "published_at": "2026-10-27T11:20:01+00:00",
+        "topic_id": null,
+        "topic_title": null
       },
       "picks": [
+        {
+          "title": "Order in a quantum chaotic sea",
+          "url": "https://www.nature.com/articles/s41567-026-03513-y",
+          "source": "Nature 量子物理",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 51.1,
+          "role": "科研",
+          "published_at": "2026-10-27T00:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Metalens microscope switches focus with voltage, not moving optics",
+          "url": "https://phys.org/news/2026-10-metalens-microscope-focus-voltage-optics.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Just as it is difficult for a camera to keep both a nearby flower and a distant mountain sharply focused at the same time, conventional optical microscopes face a similar challenge when imaging structures located at different depths inside ",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 36.4,
+          "role": "科研",
+          "published_at": "2026-10-26T21:20:10+00:00",
+          "topic_id": "8800c2dbe031",
+          "topic_title": "Robotic lab sets up and runs optics experiments on demand"
+        }
+      ],
+      "flash": [
         {
           "title": "Single optical element combines soft X-ray imaging and spectroscopy",
           "url": "https://phys.org/news/2026-10-optical-element-combines-soft-ray.html",
@@ -10313,15 +10343,66 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 36.6,
+          "score": 36.4,
           "role": "科研",
           "published_at": "2026-10-26T20:20:11+00:00",
           "topic_id": "e53a0752f0b2",
           "topic_title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons"
+        },
+        {
+          "title": "New converter could bridge light wavelength gap in quantum communications",
+          "url": "https://phys.org/news/2026-10-bridge-wavelength-gap-quantum-communications.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Quantum networks, systems that connect devices using quantum mechanical effects, could potentially allow users to share information more securely and efficiently. Building these networks typically entails linking stationary qubits, units of",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.8,
+          "role": "科研",
+          "published_at": "2026-10-27T12:40:01+00:00",
+          "topic_id": null,
+          "topic_title": null
         }
       ],
-      "flash": [],
       "sections": [
+        {
+          "category": "等离子体",
+          "articles": [
+            {
+              "title": "Radio waves drive a fusion plasma current that could help reactors run continuously",
+              "url": "https://phys.org/news/2026-10-radio-fusion-plasma-current-reactors.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "For the first time, a team of physicists in the U.S. has clearly demonstrated a \"helicon current drive\" in a nuclear fusion experiment. Led by Jeff Lestz at General Atomics, San Diego, the team took advantage of the latest advances in tokam",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.4,
+              "role": "科研",
+              "published_at": "2026-10-27T11:20:01+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "科研进展",
+          "articles": [
+            {
+              "title": "Order in a quantum chaotic sea",
+              "url": "https://www.nature.com/articles/s41567-026-03513-y",
+              "source": "Nature 量子物理",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.1,
+              "role": "科研",
+              "published_at": "2026-10-27T00:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
         {
           "category": "其他",
           "articles": [
@@ -10333,7 +10414,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 36.6,
+              "score": 36.4,
               "role": "科研",
               "published_at": "2026-10-26T21:20:10+00:00",
               "topic_id": "8800c2dbe031",
@@ -10347,11 +10428,25 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 36.6,
+              "score": 36.4,
               "role": "科研",
               "published_at": "2026-10-26T20:20:11+00:00",
               "topic_id": "e53a0752f0b2",
               "topic_title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons"
+            },
+            {
+              "title": "New converter could bridge light wavelength gap in quantum communications",
+              "url": "https://phys.org/news/2026-10-bridge-wavelength-gap-quantum-communications.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Quantum networks, systems that connect devices using quantum mechanical effects, could potentially allow users to share information more securely and efficiently. Building these networks typically entails linking stationary qubits, units of",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.8,
+              "role": "科研",
+              "published_at": "2026-10-27T12:40:01+00:00",
+              "topic_id": null,
+              "topic_title": null
             }
           ]
         }
@@ -10360,8 +10455,9 @@
         "8800c2dbe031",
         "e53a0752f0b2"
       ],
-      "tocCount": 2,
-      "readMinutes": 2
+      "tocCount": 5,
+      "readMinutes": 2,
+      "amended": 0
     }
   }
 }
