@@ -1,60 +1,60 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T01:21:53.016728+00:00",
-  "weekStart": "2026-10-22",
+  "generatedAt": "2026-10-28T16:40:33.835581+00:00",
+  "weekStart": "2026-10-23",
   "windowDays": 7,
-  "windowStart": "2026-10-22",
-  "windowEnd": "2026-10-28",
-  "prevStart": "2026-10-15",
-  "prevEnd": "2026-10-21",
+  "windowStart": "2026-10-23",
+  "windowEnd": "2026-10-29",
+  "prevStart": "2026-10-16",
+  "prevEnd": "2026-10-22",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 2020.4,
-      "lastWeek": 1241.9,
-      "deltaPct": 62.7
+      "thisWeek": 1762.6,
+      "lastWeek": 1652.1,
+      "deltaPct": 6.7
     },
     {
       "category": "深空探测",
-      "thisWeek": 1540.0,
-      "lastWeek": 1941.7,
-      "deltaPct": -20.7
+      "thisWeek": 1648.7,
+      "lastWeek": 1866.7,
+      "deltaPct": -11.7
     },
     {
       "category": "其他",
-      "thisWeek": 1363.2,
-      "lastWeek": 1451.7,
-      "deltaPct": -6.1
-    },
-    {
-      "category": "恒星与星际介质",
-      "thisWeek": 1217.0,
-      "lastWeek": 940.1,
-      "deltaPct": 29.5
+      "thisWeek": 1128.5,
+      "lastWeek": 1641.1,
+      "deltaPct": -31.2
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 1118.5,
-      "lastWeek": 1126.6,
-      "deltaPct": -0.7
+      "thisWeek": 1127.7,
+      "lastWeek": 1264.4,
+      "deltaPct": -10.8
+    },
+    {
+      "category": "恒星与星际介质",
+      "thisWeek": 962.2,
+      "lastWeek": 967.6,
+      "deltaPct": -0.6
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 682.9,
-      "lastWeek": 193.6,
-      "deltaPct": 252.7
-    },
-    {
-      "category": "引力波",
-      "thisWeek": 284.3,
-      "lastWeek": 114.3,
-      "deltaPct": 148.7
+      "thisWeek": 576.7,
+      "lastWeek": 360.1,
+      "deltaPct": 60.1
     },
     {
       "category": "系外行星",
-      "thisWeek": 110.9,
+      "thisWeek": 176.9,
       "lastWeek": 170.7,
-      "deltaPct": -35.0
+      "deltaPct": 3.6
+    },
+    {
+      "category": "引力波",
+      "thisWeek": 118.6,
+      "lastWeek": 165.7,
+      "deltaPct": -28.4
     }
   ],
   "newTopics": [
@@ -71,27 +71,15 @@
       "days": 1
     },
     {
-      "topic_id": "daa991d822eb",
-      "title": "NASA’s Perseverance Views Dust at Neretva Vallis",
-      "score": 186.2,
-      "days": 2
-    },
-    {
-      "topic_id": "cbb43460de2f",
-      "title": "NASA’s Neo Surveyor Sunshade",
-      "score": 176.1,
-      "days": 2
-    },
-    {
       "topic_id": "727f88ee8946",
       "title": "Constraining Ultralight Dark Matter in Dynamical Dark Energy Cosmologies",
       "score": 150.3,
       "days": 1
     },
     {
-      "topic_id": "db607e3406b2",
-      "title": "Gravothermal Evolution of Self-Interacting Dark Matter Halos across Knudsen Numbers",
-      "score": 135.9,
+      "topic_id": "658c194ac15b",
+      "title": "Mars moon lander set to launch on 19 October",
+      "score": 140.7,
       "days": 1
     },
     {
@@ -107,16 +95,28 @@
       "days": 1
     },
     {
-      "topic_id": "3be3cfa59f8a",
-      "title": "Tiny ‘solar flares’ recreated in the lab may explain corona mystery",
-      "score": 129.7,
-      "days": 2
+      "topic_id": "daa991d822eb",
+      "title": "NASA’s Perseverance Views Dust at Neretva Vallis",
+      "score": 123.8,
+      "days": 1
     },
     {
-      "topic_id": "00fb52c9432f",
-      "title": "Supernova Explosions First Aided, Then Later Impeded, the Epoch of Reionization",
-      "score": 120.4,
+      "topic_id": "72298c2e24ff",
+      "title": "The Rubin Observatory Finds Its First Dwarf Planet Candidate",
+      "score": 121.8,
       "days": 1
+    },
+    {
+      "topic_id": "cbb43460de2f",
+      "title": "NASA’s Neo Surveyor Sunshade",
+      "score": 117.0,
+      "days": 1
+    },
+    {
+      "topic_id": "e5597bddffca",
+      "title": "APOD: 2026 October 24 – Rosetta’s Selfie",
+      "score": 113.8,
+      "days": 2
     }
   ],
   "sustainedTopics": []

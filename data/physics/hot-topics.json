@@ -1,347 +1,109 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T01:21:53.016728+00:00",
-  "count": 10,
+  "generatedAt": "2026-10-28T16:40:33.835581+00:00",
+  "count": 4,
   "items": [
     {
       "terms": [
-        "abnormal",
-        "casing",
+        "analog",
+        "atoms",
+        "automatic",
         "communications",
-        "computing",
-        "effects",
-        "element",
-        "enabled",
-        "finite",
-        "iii-nitride-based",
-        "in-sensor",
-        "interfacial",
+        "diagonal",
+        "differentiation",
+        "efficient",
+        "experiments",
+        "locally",
         "loop",
         "magnetic",
         "measurements",
         "medicine",
-        "perforated",
-        "polarization",
-        "positioning",
+        "meet",
+        "metastable",
+        "open",
+        "optimal",
+        "programs",
         "quantum",
         "sensor",
-        "signals",
-        "simulation",
-        "three-dimensional"
+        "switching",
+        "trajectories",
+        "unraveling"
       ],
       "source_count": 2,
-      "signal_count": 2,
+      "signal_count": 3,
       "sources": [
-        "Nature Physics 学科聚合",
-        "Phys.org 物理新闻"
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
       ],
-      "score": 42.0,
-      "latest_at": "2026-10-28T01:21:53.016728+00:00",
+      "score": 45.5,
+      "latest_at": "2026-10-28T16:40:33.835581+00:00",
       "representative": {
-        "title": "III-nitride-based in-sensor computing enabled by interfacial polarization effects",
-        "url": "https://www.nature.com/articles/s41563-026-02780-7",
-        "source": "Nature Physics 学科聚合",
-        "published_at": "2026-10-27T00:00:00+00:00",
-        "score": 62.0,
-        "summary": "",
-        "zh_full": "本文标题为：基于III族氮化物的界面极化效应实现传感器内计算。该研究利用III族氮化物的界面极化效应，实现传感器内计算功能。",
-        "llm_summary": "该研究基于III族氮化物的界面极化效应，实现传感器内计算。",
-        "density": "低",
-        "llm_score": 12.5
+        "title": "Diagonal, Switching, and Locally Optimal Unraveling for efficient quantum trajectories in metastable open quantum systems",
+        "url": "https://arxiv.org/abs/2610.36067",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-10-28T04:00:00+00:00",
+        "score": 48.8,
+        "summary": "arXiv:2610.36067v1 Announce Type: new Abstract: Open quantum systems can display metastability, with multiple long-lived states coexisting. Examples include the bistability of bright and dim manifolds in nonlinear driven resonators, or the ",
+        "zh_full": "开放量子系统可以表现出亚稳态，即多个长寿命状态共存。例子包括非线性驱动谐振器中亮流形和暗流形的双稳态，以及参数驱动系统中相反相位的长寿命相干态——这是基于猫态量子计算机的构建模块。亚稳态通常出现在密度矩阵演化不切实际的系统尺寸下。量子轨迹通过演化波函数而非密度矩阵来缓解这一问题。亚稳态随后在量子轨迹的长时间行为中显现。本文提出对角化、切换和局部最优解缠方法，用于高效生成亚稳态开放量子系统的量子轨迹。这些方法旨在提高计算效率，使原本难以处理的系统尺寸变得可行。",
+        "refs": {
+          "arxiv": "2610.36067",
+          "via": "feed_text",
+          "confidence": "verified"
+        },
+        "llm_summary": "开放量子系统常出现多个长寿命共存的亚稳态，但密度矩阵演化在较大系统尺寸下不切实际。量子轨迹通过演化波函数缓解此问题。本文提出对角化、切换和局部最优解缠方法，用于高效生成亚稳态开放量子系统的量子轨迹，提升计算效率。",
+        "llm_reason": "提出高效量子轨迹方法，解决亚稳态系统计算难题",
+        "density": "高"
       },
       "folded_count": 1,
-      "title": "III-nitride-based in-sensor computing enabled by interfacial polarization effects",
-      "id": "4b905b1e4759",
+      "title": "Diagonal, Switching, and Locally Optimal Unraveling for efficient quantum trajectories in metastable open quantum systems",
+      "id": "a02cd8f01a53",
       "links": [
         {
-          "title": "III-nitride-based in-sensor computing enabled by interfacial polarization effects",
-          "url": "https://www.nature.com/articles/s41563-026-02780-7",
-          "source": "Nature Physics 学科聚合",
-          "score": 62.0,
-          "published_at": "2026-10-27T00:00:00+00:00"
+          "title": "Diagonal, Switching, and Locally Optimal Unraveling for efficient quantum trajectories in metastable open quantum systems",
+          "url": "https://arxiv.org/abs/2610.36067",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 48.8,
+          "published_at": "2026-10-28T04:00:00+00:00"
         },
         {
-          "title": "Three-dimensional finite element simulation study on abnormal magnetic positioning signals inside perforated casing",
-          "url": "https://www.nature.com/articles/s41598-026-76910-1",
-          "source": "Nature Physics 学科聚合",
-          "score": 61.3,
-          "published_at": "2026-10-26T00:00:00+00:00"
+          "title": "Analog Quantum Experiments Meet Automatic Differentiation - from Programs to Atoms",
+          "url": "https://arxiv.org/abs/2610.36167",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 48.8,
+          "published_at": "2026-10-28T04:00:00+00:00"
         },
         {
           "title": "Quantum sensor loop design could improve magnetic measurements for medicine and communications",
           "url": "https://phys.org/news/2026-10-quantum-sensor-loop-magnetic-medicine.html",
           "source": "Phys.org 物理新闻",
-          "score": 37.5,
+          "score": 37.2,
           "published_at": "2026-10-27T17:40:06+00:00"
         }
       ],
       "top_terms": [
-        "sensor",
-        "magnetic",
         "quantum",
+        "sensor",
         "loop",
+        "magnetic",
         "measurements"
       ],
+      "digest": "阿德莱德大学量子工程师发现一种新的环路设计，可改进全球最灵敏的电磁场传感器，有望推动脑成像、医学诊断和通信技术发展。该设计通过优化传感器结构，提高了对微弱磁场的探测能力，但具体性能提升幅度尚未披露。",
+      "digestTitle": "量子传感器环路设计提升磁场测量精度",
       "rank": 1,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 42.0,
+      "heat": 45.5,
       "status": "关注中"
     },
     {
       "terms": [
-        "combines",
-        "element",
-        "hyperspectral",
-        "imaging",
-        "infrared",
-        "optical",
-        "photons",
-        "quantum",
-        "resolution",
-        "soft",
-        "spectroscopy",
-        "undetected",
-        "x-ray"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 42.0,
-      "latest_at": "2026-10-28T01:21:53.016728+00:00",
-      "representative": {
-        "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
-        "url": "https://arxiv.org/abs/2610.32292",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 46.4,
-        "summary": "arXiv:2610.32292v1 Announce Type: new Abstract: Quantum sensing in the infrared regime often demands the use of expensive and cryogenically operated detectors. Nonlinear interferometry has paved the way for information transfer from the inf",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.32292",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
-      "id": "e53a0752f0b2",
-      "links": [
-        {
-          "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
-          "url": "https://arxiv.org/abs/2610.32292",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 46.4,
-          "published_at": "2026-10-26T04:00:00+00:00"
-        },
-        {
-          "title": "Single optical element combines soft X-ray imaging and spectroscopy",
-          "url": "https://phys.org/news/2026-10-optical-element-combines-soft-ray.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.2,
-          "published_at": "2026-10-26T20:20:11+00:00"
-        }
-      ],
-      "top_terms": [
-        "imaging",
-        "optical",
-        "element",
-        "combines",
-        "soft"
-      ],
-      "rank": 2,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "adaptive",
-        "channels",
-        "complexity",
-        "controlled",
-        "correlations",
-        "deformation",
-        "delay",
-        "efficient",
-        "expansions",
-        "fermionic",
-        "fidelity",
-        "fractional",
-        "global",
-        "metrology",
-        "multi-parameter",
-        "neural",
-        "noisy",
-        "pairing",
-        "polynomial",
-        "proportional",
-        "quantized",
-        "quantum",
-        "robustness",
-        "stabilizer-state",
-        "strategy",
-        "synchronization",
-        "teleportation",
-        "two-dimensional",
-        "uncertain",
-        "variable-order"
-      ],
-      "source_count": 3,
-      "signal_count": 2,
-      "sources": [
-        "Nature Physics 学科聚合",
-        "Nature 量子物理",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 21.2,
-      "latest_at": "2026-10-28T01:21:53.016728+00:00",
-      "representative": {
-        "title": "Quantum Complexity and Stabilizer-State Expansions: From Pairing to Deformation in Fermionic Systems",
-        "url": "https://arxiv.org/abs/2610.31792",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 52.7,
-        "summary": "arXiv:2610.31792v1 Announce Type: new Abstract: Understanding how collective phenomena such as pairing and deformation emerge in interacting fermionic systems, and how the correlations underlying them shape the resources required for their ",
-        "zh_full": "理解集体现象（如配对和形变）如何在相互作用费米子系统中涌现，以及底层关联如何塑造模拟所需的资源，是多体物理的核心挑战。我们通过纠缠、非稳定性和费米子非高斯性，研究了一个表现出两种主要集体形式（形变和配对）的费米子系统中量子复杂性的各个方面。在形变相中，高纠缠与低非稳定性共存。",
-        "refs": {
-          "arxiv": "2610.31792",
-          "via": "feed_text",
-          "confidence": "verified"
-        },
-        "llm_summary": "该研究探讨了相互作用费米子系统中配对和形变等集体现象，通过纠缠、非稳定性和费米子非高斯性研究量子复杂性，发现形变相中高纠缠与低非稳定性共存。",
-        "llm_reason": "研究费米子系统量子复杂性",
-        "density": "中"
-      },
-      "folded_count": 2,
-      "title": "Quantum Complexity and Stabilizer-State Expansions: From Pairing to Deformation in Fermionic Systems",
-      "id": "398b793302be",
-      "links": [
-        {
-          "title": "Global polynomial synchronization of uncertain fractional variable-order BAM neural networks with proportional delay via quantized control",
-          "url": "https://www.nature.com/articles/s41598-026-76904-z",
-          "source": "Nature Physics 学科聚合",
-          "score": 66.1,
-          "published_at": "2026-10-26T00:00:00+00:00"
-        },
-        {
-          "title": "Efficient adaptive control strategy for multi-parameter quantum metrology in two-dimensional systems",
-          "url": "https://www.nature.com/articles/s42005-026-02912-0",
-          "source": "Nature 量子物理",
-          "score": 64.1,
-          "published_at": "2026-10-23T00:00:00+00:00"
-        },
-        {
-          "title": "Quantum Complexity and Stabilizer-State Expansions: From Pairing to Deformation in Fermionic Systems",
-          "url": "https://arxiv.org/abs/2610.31792",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 52.7,
-          "published_at": "2026-10-26T04:00:00+00:00"
-        },
-        {
-          "title": "Robustness of Quantum Correlations and Controlled Teleportation Fidelity under Noisy Channels",
-          "url": "https://arxiv.org/abs/2610.32049",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 52.7,
-          "published_at": "2026-10-26T04:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "quantum",
-        "global",
-        "polynomial",
-        "synchronization",
-        "uncertain"
-      ],
-      "rank": 3,
-      "trend": "down",
-      "trendPct": -13.5,
-      "badges": [],
-      "heat": 21.2,
-      "status": "发酵中"
-    },
-    {
-      "terms": [
-        "conductance",
-        "current-driven",
-        "ghost",
-        "machine",
-        "machine-learning",
-        "molecular",
-        "particles",
-        "program",
-        "rotation-enhanced",
-        "spine",
-        "trail"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-28T01:21:53.016728+00:00",
-      "representative": {
-        "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
-        "url": "https://www.nature.com/articles/s41586-026-11312-x",
-        "source": "Nature 量子物理",
-        "published_at": "2026-10-22T00:00:00+00:00",
-        "score": 57.1,
-        "summary": "",
-        "zh_full": "（无摘要，仅标题）电流驱动的分子机器，具有旋转增强的电导。",
-        "llm_summary": "（无摘要，仅标题）电流驱动的分子机器，具有旋转增强的电导。",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
-      "id": "4b99df810729",
-      "links": [
-        {
-          "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
-          "url": "https://www.nature.com/articles/s41586-026-11312-x",
-          "source": "Nature 量子物理",
-          "score": 57.1,
-          "published_at": "2026-10-22T00:00:00+00:00"
-        },
-        {
-          "title": "SPINE: A machine-learning program is on the trail of ghost particles",
-          "url": "https://phys.org/news/2026-10-spine-machine-trail-ghost-particles.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.6,
-          "published_at": "2026-10-27T19:10:01+00:00"
-        }
-      ],
-      "top_terms": [
-        "machine",
-        "spine",
-        "program",
-        "trail",
-        "ghost"
-      ],
-      "rank": 4,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
+        "consensus",
         "destroying",
-        "frame",
         "information",
-        "mutual",
-        "perspectives",
         "quantum",
         "reading",
-        "reference",
+        "redistribution",
         "supercurrent"
       ],
       "source_count": 2,
@@ -351,38 +113,41 @@
         "arXiv quant-ph 论文速递"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-28T01:21:53.016728+00:00",
+      "latest_at": "2026-10-28T16:40:33.835581+00:00",
       "representative": {
-        "title": "Mutual Information Across Quantum Reference Frame Perspectives",
-        "url": "https://arxiv.org/abs/2610.31729",
+        "title": "Consensus And Information Redistribution In Quantum Networks",
+        "url": "https://arxiv.org/abs/2610.36391",
         "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 46.4,
-        "summary": "arXiv:2610.31729v1 Announce Type: new Abstract: In quantum information theory, standard notions typically presuppose a fixed partition of the world into subsystems, encoded in a tensor product structure of the Hilbert space. Yet, in some sc",
-        "zh_full": null,
+        "published_at": "2026-10-28T04:00:00+00:00",
+        "score": 47.3,
+        "summary": "arXiv:2610.36391v1 Announce Type: new Abstract: Consensus algorithms are mechanisms driving nodes of a network to agreement. In quantum networks they also redistribute information encoded in the global quantum state, allowing global propert",
+        "zh_full": "arXiv:2610.36391v1，公告类型：新提交。摘要：共识算法是驱动网络节点达成一致的机制。在量子网络中，它们还重新分配编码在全局量子态中的信息，使得无需重构全局态即可从局部测量推断全局属性。受此启发，我们研究了由离散随机幺正动力学支配的qudit网络中的去中心化量子共识。我们刻画了解析渐近动力学，识别了演化所保留的全局信息，并推导了不同（此处原文截断，未提供完整条件）的条件。",
         "refs": {
-          "arxiv": "2610.31729",
+          "arxiv": "2610.36391",
           "via": "feed_text",
           "confidence": "verified"
-        }
+        },
+        "llm_summary": "研究探讨量子网络中的去中心化共识算法，发现其可重新分配全局量子态信息，使局部测量能推断全局属性。研究刻画了离散随机幺正动力学下的解析渐近动力学，并识别演化保留的全局信息。",
+        "llm_reason": "量子网络共识与信息重分配机制，具理论创新性",
+        "density": "高"
       },
       "folded_count": 1,
-      "title": "Mutual Information Across Quantum Reference Frame Perspectives",
-      "id": "ab2d58460ede",
+      "title": "Consensus And Information Redistribution In Quantum Networks",
+      "id": "162040c659a9",
       "links": [
         {
           "title": "Supercurrent enables the reading of quantum information without destroying it",
           "url": "https://phys.org/news/2026-10-supercurrent-enables-quantum-destroying.html",
           "source": "Phys.org 物理新闻",
-          "score": 59.7,
+          "score": 59.2,
           "published_at": "2026-10-25T19:00:20+00:00"
         },
         {
-          "title": "Mutual Information Across Quantum Reference Frame Perspectives",
-          "url": "https://arxiv.org/abs/2610.31729",
+          "title": "Consensus And Information Redistribution In Quantum Networks",
+          "url": "https://arxiv.org/abs/2610.36391",
           "source": "arXiv quant-ph 论文速递",
-          "score": 46.4,
-          "published_at": "2026-10-26T04:00:00+00:00"
+          "score": 47.3,
+          "published_at": "2026-10-28T04:00:00+00:00"
         }
       ],
       "top_terms": [
@@ -392,358 +157,136 @@
         "reading",
         "destroying"
       ],
-      "rank": 5,
-      "trend": "down",
-      "trendPct": -50.0,
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
     },
     {
       "terms": [
-        "counting",
-        "detectors",
-        "discrimination",
-        "flux",
-        "increasing",
-        "magnetic",
-        "measure",
-        "microstrip",
-        "numbers",
-        "photon",
-        "photon-number",
-        "quanta",
-        "separation",
-        "single-photon",
-        "superconducting",
-        "time-of-arrival",
-        "wide"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-28T01:21:53.016728+00:00",
-      "representative": {
-        "title": "Photon-Number Discrimination from Increasing Time-of-Arrival Separation in Wide Superconducting Microstrip Single-Photon Detectors",
-        "url": "https://arxiv.org/abs/2610.32154",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 46.4,
-        "summary": "arXiv:2610.32154v1 Announce Type: new Abstract: Measurements of photon-number-dependent time-of-arrival (TOA) distributions in wide NbN superconducting microstrip single-photon detectors (SMSPDs) are presented. Two \\SI{10}{\\um}-long devices",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.32154",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "Photon-Number Discrimination from Increasing Time-of-Arrival Separation in Wide Superconducting Microstrip Single-Photon Detectors",
-      "id": "3d41abd72bf6",
-      "links": [
-        {
-          "title": "Photon-Number Discrimination from Increasing Time-of-Arrival Separation in Wide Superconducting Microstrip Single-Photon Detectors",
-          "url": "https://arxiv.org/abs/2610.32154",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 46.4,
-          "published_at": "2026-10-26T04:00:00+00:00"
-        },
-        {
-          "title": "Counting magnetic flux quanta offers new way to measure photon numbers",
-          "url": "https://phys.org/news/2026-10-magnetic-flux-quanta-photon.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.0,
-          "published_at": "2026-10-23T21:20:02+00:00"
-        }
-      ],
-      "top_terms": [
-        "photon",
-        "counting",
-        "magnetic",
-        "flux",
-        "quanta"
-      ],
-      "rank": 6,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "classical",
-        "collisions",
-        "computer",
-        "entire",
-        "leash",
-        "particle",
-        "quantum"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature 量子物理",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-28T01:21:53.016728+00:00",
-      "representative": {
-        "title": "The Entire Quantum Computer on a Classical Leash",
-        "url": "https://arxiv.org/abs/2610.31775",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 46.4,
-        "summary": "arXiv:2610.31775v1 Announce Type: new Abstract: We show that a classical client with no quantum hardware can use a single untrusted and potentially malicious quantum server as if it were its own trusted quantum computer. Through the server,",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.31775",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "The Entire Quantum Computer on a Classical Leash",
-      "id": "5c8bdb2d667a",
-      "links": [
-        {
-          "title": "Particle collisions on a quantum computer",
-          "url": "https://www.nature.com/articles/s41567-026-03490-2",
-          "source": "Nature 量子物理",
-          "score": 57.8,
-          "published_at": "2026-10-23T00:00:00+00:00"
-        },
-        {
-          "title": "The Entire Quantum Computer on a Classical Leash",
-          "url": "https://arxiv.org/abs/2610.31775",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 46.4,
-          "published_at": "2026-10-26T04:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "quantum",
-        "computer",
-        "particle",
-        "collisions",
-        "entire"
-      ],
-      "rank": 7,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "codes",
-        "efficient",
-        "hierarchy",
-        "load",
-        "memory",
-        "processor",
-        "quantum",
-        "superconducting",
-        "surface",
-        "teleportation",
-        "three-level",
-        "transition",
-        "trident",
-        "verification",
-        "yoked"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature 量子物理",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-28T01:21:53.016728+00:00",
-      "representative": {
-        "title": "Trident: Efficient Load Verification for Yoked Surface Codes using a Three-Level Memory Hierarchy",
-        "url": "https://arxiv.org/abs/2610.32152",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 46.4,
-        "summary": "arXiv:2610.32152v1 Announce Type: new Abstract: Fault-Tolerant Quantum Computers (FTQCs) commonly use the surface code to encode program qubits as error-corrected logical qubits. Unfortunately, the surface code has a poor encoding rate, so ",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.32152",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "Trident: Efficient Load Verification for Yoked Surface Codes using a Three-Level Memory Hierarchy",
-      "id": "629e0800ed28",
-      "links": [
-        {
-          "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-          "url": "https://www.nature.com/articles/s41567-026-03484-0",
-          "source": "Nature 量子物理",
-          "score": 57.1,
-          "published_at": "2026-10-22T00:00:00+00:00"
-        },
-        {
-          "title": "Trident: Efficient Load Verification for Yoked Surface Codes using a Three-Level Memory Hierarchy",
-          "url": "https://arxiv.org/abs/2610.32152",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 46.4,
-          "published_at": "2026-10-26T04:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "surface",
-        "codes",
-        "teleportation",
-        "transition",
-        "superconducting"
-      ],
-      "rank": 8,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "author",
-        "continuous",
-        "correction",
-        "gaussian",
-        "graph",
-        "graphical",
-        "hubbard",
-        "local",
-        "neural",
-        "quantum",
-        "rigidity",
-        "solving",
-        "states",
-        "transformations",
-        "variable"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature 量子物理",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-28T01:21:53.016728+00:00",
-      "representative": {
-        "title": "Graphical Rigidity of Continuous Variable Graph States under Gaussian Local Transformations",
-        "url": "https://arxiv.org/abs/2610.31933",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-10-26T04:00:00+00:00",
-        "score": 46.4,
-        "summary": "arXiv:2610.31933v1 Announce Type: new Abstract: Multimode entangled pure Gaussian states are an essential resource for continuous variable (CV) quantum information processing. Menicucci et al. [2011] have shown how to describe them as graph",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.31933",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "Graphical Rigidity of Continuous Variable Graph States under Gaussian Local Transformations",
-      "id": "a4a7a9fc0105",
-      "links": [
-        {
-          "title": "Author Correction: Solving the Hubbard model with neural quantum states",
-          "url": "https://www.nature.com/articles/s41467-026-79114-3",
-          "source": "Nature 量子物理",
-          "score": 56.5,
-          "published_at": "2026-10-21T00:00:00+00:00"
-        },
-        {
-          "title": "Graphical Rigidity of Continuous Variable Graph States under Gaussian Local Transformations",
-          "url": "https://arxiv.org/abs/2610.31933",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 46.4,
-          "published_at": "2026-10-26T04:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "states",
-        "author",
-        "correction",
-        "solving",
-        "hubbard"
-      ],
-      "rank": 9,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "altermagnetism",
-        "beams",
-        "grating",
-        "hidden",
-        "plain",
-        "reveals",
-        "silicon",
-        "simple",
-        "twist"
+        "greatest",
+        "impossible",
+        "laser",
+        "mystery",
+        "neutrino",
+        "research",
+        "solve"
       ],
       "source_count": 2,
       "signal_count": 0,
       "sources": [
-        "Nature Physics 学科聚合",
-        "Phys.org 物理新闻"
+        "MIT News 物理",
+        "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-28T01:21:53.016728+00:00",
+      "latest_at": "2026-10-28T16:40:33.835581+00:00",
       "representative": {
-        "title": "A simple twist to altermagnetism",
-        "url": "https://www.nature.com/articles/s41567-026-03495-x",
-        "source": "Nature Physics 学科聚合",
-        "published_at": "2026-10-26T00:00:00+00:00",
-        "score": 59.8,
-        "summary": "",
-        "zh_full": "（无摘要，仅标题）标题为《A simple twist to altermagnetism》，即《交错磁性的简单扭转》。该文探讨了交错磁性（altermagnetism）的一种简单扭转方式，可能涉及材料或物理机制的新见解。",
-        "llm_summary": "该文报道了交错磁性研究中的一种简单扭转方法或现象。",
-        "llm_reason": "交错磁性是当前凝聚态物理热点",
-        "density": "低"
+        "title": "New research shows a neutrino laser is impossible",
+        "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
+        "source": "MIT News 物理",
+        "published_at": "2026-09-02T14:00:00+00:00",
+        "score": 41.2,
+        "summary": "Due to physical and fundamental limitations, an earlier proposal for producing laserlike beams of neutrinos cannot be achieved, scientists report.",
+        "zh_full": "据MIT News报道，科学家报告称，由于物理和根本性限制，此前关于产生类似激光的中微子束的提案无法实现。这项新研究表明，中微子激光是不可能的。",
+        "llm_summary": "科学家报告称，由于物理和根本性限制，此前关于产生类似激光的中微子束的提案无法实现。这项新研究表明，中微子激光是不可能的。",
+        "llm_reason": "中微子激光可行性研究",
+        "density": "中"
       },
       "folded_count": 1,
-      "title": "A simple twist to altermagnetism",
-      "id": "048f5c9e88b4",
+      "title": "New research shows a neutrino laser is impossible",
+      "id": "7e7427289fca",
       "links": [
         {
-          "title": "A simple twist to altermagnetism",
-          "url": "https://www.nature.com/articles/s41567-026-03495-x",
-          "source": "Nature Physics 学科聚合",
-          "score": 59.8,
-          "published_at": "2026-10-26T00:00:00+00:00"
+          "title": "Are we about to solve the greatest mystery of the neutrino?",
+          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 55.2,
+          "published_at": "2026-10-19T19:00:00+00:00"
         },
         {
-          "title": "Plain silicon grating reveals a hidden 'twist' in light from electron beams",
-          "url": "https://phys.org/news/2026-10-plain-silicon-reveals-hidden-electron.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.0,
-          "published_at": "2026-10-23T20:20:08+00:00"
+          "title": "New research shows a neutrino laser is impossible",
+          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-09-02T14:00:00+00:00"
         }
       ],
       "top_terms": [
-        "twist",
-        "plain",
-        "silicon",
-        "grating",
-        "reveals"
+        "neutrino",
+        "research",
+        "laser",
+        "impossible",
+        "solve"
       ],
-      "rank": 10,
+      "digest": "中国一项大型实验即将测量中微子的质量，这一结果可能彻底改变粒子物理学。长期以来，中微子质量一直是个未解之谜，而该实验有望首次给出明确答案。与此同时，MIT的研究人员报告称，早先提出的中微子激光方案因物理和基本限制而无法实现，这一结论推翻了此前关于可能产生中微子激光束的提议。",
+      "digestTitle": "中微子质量测量实验即将揭晓答案",
+      "rank": 3,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "dark",
+        "hunt",
+        "matter",
+        "observe",
+        "particle",
+        "wave"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "MIT News 物理",
+        "New Scientist 物理"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-10-28T16:40:33.835581+00:00",
+      "representative": {
+        "title": "On the hunt for dark matter",
+        "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
+        "source": "MIT News 物理",
+        "published_at": "2026-08-11T04:00:00+00:00",
+        "score": 41.2,
+        "summary": "From Broadway to MIT’s Laboratory for Nuclear Science, PhD student Jessica Fry doesn’t do anything halfway. Now she’s hunting for the universe’s most elusive particle.",
+        "zh_full": "MIT News 报道，从百老汇到 MIT 核科学实验室，博士生 Jessica Fry 做事从不半途而废。如今她正在搜寻宇宙中最难以捉摸的粒子——暗物质。",
+        "llm_summary": "MIT 博士生 Jessica Fry 正在搜寻宇宙中最难以捉摸的粒子——暗物质，报道提到她从百老汇到 MIT 核科学实验室的经历。",
+        "llm_reason": "暗物质搜寻人物报道",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "On the hunt for dark matter",
+      "id": "1dc3e2185b16",
+      "links": [
+        {
+          "title": "Will we observe dark matter as a particle or a wave?",
+          "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 50.9,
+          "published_at": "2026-10-13T08:00:00+00:00"
+        },
+        {
+          "title": "On the hunt for dark matter",
+          "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-11T04:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "dark",
+        "matter",
+        "hunt",
+        "observe",
+        "particle"
+      ],
+      "digest": "物理学家尚不确定暗物质应表现为粒子还是波动，这决定了观测策略。专栏作者Chanda Prescod-Weinstein称，暗物质可能已被发现，但需明确其行为方式才能设计观测实验。MIT博士生Jessica Fry正在实验室中搜寻这种最难以捉摸的粒子，但现有报道未提供任何已证实的观测结果。",
+      "digestTitle": "暗物质观测：粒子还是波动？",
+      "rank": 4,
       "trend": "new",
       "trendPct": null,
       "badges": [],

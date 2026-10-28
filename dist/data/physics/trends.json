@@ -1,42 +1,42 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T01:21:53.016728+00:00",
-  "weekStart": "2026-10-22",
+  "generatedAt": "2026-10-28T16:40:33.835581+00:00",
+  "weekStart": "2026-10-23",
   "windowDays": 7,
-  "windowStart": "2026-10-22",
-  "windowEnd": "2026-10-28",
-  "prevStart": "2026-10-15",
-  "prevEnd": "2026-10-21",
+  "windowStart": "2026-10-23",
+  "windowEnd": "2026-10-29",
+  "prevStart": "2026-10-16",
+  "prevEnd": "2026-10-22",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1615.4,
-      "lastWeek": 1148.4,
-      "deltaPct": 40.7
+      "thisWeek": 2025.4,
+      "lastWeek": 1063.0,
+      "deltaPct": 90.5
     },
     {
       "category": "其他",
-      "thisWeek": 999.0,
-      "lastWeek": 1273.5,
-      "deltaPct": -21.6
+      "thisWeek": 925.2,
+      "lastWeek": 1164.5,
+      "deltaPct": -20.5
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 587.1,
-      "lastWeek": 408.4,
-      "deltaPct": 43.8
+      "thisWeek": 562.9,
+      "lastWeek": 339.3,
+      "deltaPct": 65.9
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 253.1,
-      "lastWeek": 361.1,
-      "deltaPct": -29.9
+      "thisWeek": 348.1,
+      "lastWeek": 290.0,
+      "deltaPct": 20.0
     },
     {
       "category": "高能与粒子物理",
       "thisWeek": 170.8,
-      "lastWeek": 416.9,
-      "deltaPct": -59.0
+      "lastWeek": 315.9,
+      "deltaPct": -45.9
     },
     {
       "category": "等离子体",
@@ -53,16 +53,16 @@
   ],
   "newTopics": [
     {
+      "topic_id": "a02cd8f01a53",
+      "title": "Diagonal, Switching, and Locally Optimal Unraveling for efficient quantum trajectories in metastable open quantum systems",
+      "score": 134.8,
+      "days": 1
+    },
+    {
       "topic_id": "ab2d58460ede",
       "title": "Mutual Information Across Quantum Reference Frame Perspectives",
       "score": 107.4,
       "days": 1
-    },
-    {
-      "topic_id": "044306bf2ce5",
-      "title": "Light-based method enables precise control of ultrafast electron flow in a scanning tunneling microscope",
-      "score": 104.8,
-      "days": 2
     },
     {
       "topic_id": "6e2c661e708a",
@@ -71,10 +71,28 @@
       "days": 1
     },
     {
-      "topic_id": "4b905b1e4759",
-      "title": "III-nitride-based in-sensor computing enabled by interfacial polarization effects",
-      "score": 93.3,
-      "days": 2
+      "topic_id": "41ce72c68b5e",
+      "title": "Scientists uncover new way to control magnetism and topology using light in atomically thin materials",
+      "score": 92.0,
+      "days": 1
+    },
+    {
+      "topic_id": "d5db0656aa9e",
+      "title": "An algebraic characterisation of n-qubit pure-state invariants",
+      "score": 88.0,
+      "days": 1
+    },
+    {
+      "topic_id": "a3358ac7d732",
+      "title": "Quantum circuit simulation with high-order optical tensor processing",
+      "score": 88.0,
+      "days": 1
+    },
+    {
+      "topic_id": "752e27473b6d",
+      "title": "Probability bounds on trajectory-level exceedances of quantum speed limits under continuous-measurement feedback",
+      "score": 88.0,
+      "days": 1
     },
     {
       "topic_id": "97e77bbc80e9",
@@ -93,24 +111,6 @@
       "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
       "score": 83.3,
       "days": 2
-    },
-    {
-      "topic_id": "f575369094fa",
-      "title": "丘成桐谈AI与数学：这是最令人兴奋、也是最危险的时代",
-      "score": 68.5,
-      "days": 1
-    },
-    {
-      "topic_id": "350401924584",
-      "title": "Sapphire-grown semiconductor film sets bandgap record",
-      "score": 68.2,
-      "days": 1
-    },
-    {
-      "topic_id": "20eded67e41f",
-      "title": "AI helps design new materials that work in the real world",
-      "score": 60.5,
-      "days": 1
     }
   ],
   "sustainedTopics": []
