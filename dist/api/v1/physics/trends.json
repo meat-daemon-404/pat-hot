@@ -1,48 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T15:54:28.019914+00:00",
-  "weekStart": "2026-10-21",
+  "generatedAt": "2026-10-28T01:21:53.016728+00:00",
+  "weekStart": "2026-10-22",
   "windowDays": 7,
-  "windowStart": "2026-10-21",
-  "windowEnd": "2026-10-27",
-  "prevStart": "2026-10-14",
-  "prevEnd": "2026-10-20",
+  "windowStart": "2026-10-22",
+  "windowEnd": "2026-10-28",
+  "prevStart": "2026-10-15",
+  "prevEnd": "2026-10-21",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1477.2,
-      "lastWeek": 1112.9,
-      "deltaPct": 32.7
+      "thisWeek": 1615.4,
+      "lastWeek": 1148.4,
+      "deltaPct": 40.7
     },
     {
       "category": "其他",
-      "thisWeek": 1055.8,
-      "lastWeek": 1355.5,
-      "deltaPct": -22.1
+      "thisWeek": 999.0,
+      "lastWeek": 1273.5,
+      "deltaPct": -21.6
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 716.9,
-      "lastWeek": 355.7,
-      "deltaPct": 101.5
-    },
-    {
-      "category": "高能与粒子物理",
-      "thisWeek": 366.3,
-      "lastWeek": 465.5,
-      "deltaPct": -21.3
+      "thisWeek": 587.1,
+      "lastWeek": 408.4,
+      "deltaPct": 43.8
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 333.9,
-      "lastWeek": 257.1,
-      "deltaPct": 29.9
+      "thisWeek": 253.1,
+      "lastWeek": 361.1,
+      "deltaPct": -29.9
+    },
+    {
+      "category": "高能与粒子物理",
+      "thisWeek": 170.8,
+      "lastWeek": 416.9,
+      "deltaPct": -59.0
     },
     {
       "category": "等离子体",
-      "thisWeek": 102.1,
-      "lastWeek": 168.0,
-      "deltaPct": -39.2
+      "thisWeek": 101.8,
+      "lastWeek": 65.8,
+      "deltaPct": 54.7
     },
     {
       "category": "原子分子与光物理",
@@ -52,12 +52,6 @@
     }
   ],
   "newTopics": [
-    {
-      "topic_id": "42ea9b847d4c",
-      "title": "A single antimatter particle in a cage opens door to ‘revolutionary’ physics",
-      "score": 195.5,
-      "days": 1
-    },
     {
       "topic_id": "ab2d58460ede",
       "title": "Mutual Information Across Quantum Reference Frame Perspectives",
@@ -77,6 +71,12 @@
       "days": 1
     },
     {
+      "topic_id": "4b905b1e4759",
+      "title": "III-nitride-based in-sensor computing enabled by interfacial polarization effects",
+      "score": 93.3,
+      "days": 2
+    },
+    {
       "topic_id": "97e77bbc80e9",
       "title": "Fidelity Dynamics of a Jaynes--Cummings Qubit under Markovian and Non-Markovian Coupling Noise",
       "score": 87.4,
@@ -91,7 +91,7 @@
     {
       "topic_id": "e53a0752f0b2",
       "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
-      "score": 83.5,
+      "score": 83.3,
       "days": 2
     },
     {

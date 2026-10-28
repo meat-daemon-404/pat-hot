@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T15:54:28.019914+00:00",
+  "generatedAt": "2026-10-28T01:21:53.016728+00:00",
   "count": 10,
   "items": [
     {
@@ -24,15 +24,19 @@
         "Phys.org 太空新闻"
       ],
       "score": 45.5,
-      "latest_at": "2026-10-27T15:54:28.019914+00:00",
+      "latest_at": "2026-10-28T01:21:53.016728+00:00",
       "representative": {
         "title": "NASA’s Perseverance Views Dust at Neretva Vallis",
         "url": "https://science.nasa.gov/photojournal/nasas-perseverance-views-dust-at-neretva-vallis/",
         "source": "NASA 快讯",
         "published_at": "2026-10-26T22:48:12+00:00",
-        "score": 62.2,
+        "score": 61.9,
         "summary": "Description This 360-degree look at Neretva Vallis within Mars’ Jezero Crater was stitched together using 217 images acquired by the rover’s Mastcam-Z on May 20, 2024, the 1,155th Martian day, or sol, of the mission. While it is a wind-swep",
-        "zh_full": null
+        "zh_full": "NASA的毅力号火星车在火星杰泽罗陨石坑内的内雷特瓦利斯谷拍摄了360度全景，该图像由Mastcam-Z相机于2024年5月20日（任务第1155个火星日）获取的217张图像拼接而成。如今这里是风沙肆虐的尘土景象，但数十亿年前，它曾是向陨石坑注入淡水的河道。",
+        "llm_summary": "毅力号火星车在内雷特瓦利斯谷拍摄了360度全景，由217张Mastcam-Z图像拼接而成，拍摄于2024年5月20日（第1155个火星日）。如今是风沙景象，但数十亿年前曾是注入淡水的河道。",
+        "llm_reason": "展示火星古河道遗迹的360度全景",
+        "density": "中",
+        "llm_score": 35.5
       },
       "folded_count": 1,
       "title": "NASA’s Perseverance Views Dust at Neretva Vallis",
@@ -42,21 +46,21 @@
           "title": "Perseverance offers clues to protect crews from ultrafine Mars dust",
           "url": "https://phys.org/news/2026-10-perseverance-clues-crews-ultrafine-mars.html",
           "source": "Phys.org 太空新闻",
-          "score": 62.7,
+          "score": 62.4,
           "published_at": "2026-10-27T16:00:01+00:00"
         },
         {
           "title": "NASA’s Perseverance Views Dust at Neretva Vallis",
           "url": "https://science.nasa.gov/photojournal/nasas-perseverance-views-dust-at-neretva-vallis/",
           "source": "NASA 快讯",
-          "score": 62.2,
+          "score": 61.9,
           "published_at": "2026-10-26T22:48:12+00:00"
         },
         {
           "title": "NASA’s Perseverance Offers Clues to Protect Crews From Mars Dust",
           "url": "https://www.nasa.gov/missions/mars-2020-perseverance/nasas-perseverance-offers-clues-to-protect-crews-from-mars-dust/",
           "source": "NASA 快讯",
-          "score": 62.1,
+          "score": 61.9,
           "published_at": "2026-10-26T21:07:28+00:00"
         }
       ],
@@ -68,10 +72,76 @@
         "crews"
       ],
       "rank": 1,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 45.5,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "dead",
+        "debris",
+        "disk",
+        "double",
+        "future",
+        "hints",
+        "orbiting",
+        "planets",
+        "solar",
+        "star"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-10-28T01:21:53.016728+00:00",
+      "representative": {
+        "title": "Double debris disk orbiting a dead star hints at our solar system's future",
+        "url": "https://phys.org/news/2026-10-debris-disk-orbiting-dead-star.html",
+        "source": "Phys.org 太空新闻",
+        "published_at": "2026-10-27T22:00:12+00:00",
+        "score": 61.1,
+        "summary": "Astronomers using the European Southern Observatory's Very Large Telescope (ESO's VLT) have found a rare disk of debris around a dead star that provides a glimpse of what may happen to our solar system. Unlike in similar systems previously ",
+        "zh_full": null,
+        "llm_score": 49.5
+      },
+      "folded_count": 1,
+      "title": "Double debris disk orbiting a dead star hints at our solar system's future",
+      "id": "ed82abbc5ec4",
+      "links": [
+        {
+          "title": "Double debris disk orbiting a dead star hints at our solar system's future",
+          "url": "https://phys.org/news/2026-10-debris-disk-orbiting-dead-star.html",
+          "source": "Phys.org 太空新闻",
+          "score": 61.1,
+          "published_at": "2026-10-27T22:00:12+00:00"
+        },
+        {
+          "title": "Dead Planets Orbiting a Dead Star",
+          "url": "https://www.universetoday.com/articles/dead-planets-orbiting-a-dead-star",
+          "source": "Universe Today",
+          "score": 36.6,
+          "published_at": "2026-10-27T22:04:16+00:00"
+        }
+      ],
+      "top_terms": [
+        "dead",
+        "orbiting",
+        "star",
+        "double",
+        "debris"
+      ],
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [
+        "new"
+      ],
+      "heat": 42.0,
       "status": "关注中"
     },
     {
@@ -96,13 +166,13 @@
         "Universe Today"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-27T15:54:28.019914+00:00",
+      "latest_at": "2026-10-28T01:21:53.016728+00:00",
       "representative": {
         "title": "Earth may have formed much of its water as the planet grew",
         "url": "https://phys.org/news/2026-10-earth-planet-grew.html",
         "source": "Phys.org 太空新闻",
         "published_at": "2026-10-27T15:40:01+00:00",
-        "score": 36.7,
+        "score": 36.5,
         "summary": "Earth may have produced much of its water during the planet's formation, as rocky pebbles reacted with the hydrogen-rich atmosphere surrounding the young planet, according to new research published in Nature Geoscience. The findings offer a",
         "zh_full": null
       },
@@ -114,14 +184,14 @@
           "title": "Earth may have formed much of its water as the planet grew",
           "url": "https://phys.org/news/2026-10-earth-planet-grew.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.7,
+          "score": 36.5,
           "published_at": "2026-10-27T15:40:01+00:00"
         },
         {
           "title": "Asymmetric space waves map pressure on Earth's magnetic shield",
           "url": "https://www.universetoday.com/articles/asymmetric-space-waves-map-pressure-on-earths-magnetic-shield",
           "source": "Universe Today",
-          "score": 36.5,
+          "score": 36.3,
           "published_at": "2026-10-27T01:19:08+00:00"
         }
       ],
@@ -132,7 +202,73 @@
         "water",
         "planet"
       ],
-      "rank": 2,
+      "rank": 3,
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "black",
+        "collisions",
+        "common",
+        "early",
+        "explain",
+        "holes",
+        "massive",
+        "stellar",
+        "supermassive",
+        "universe",
+        "when",
+        "young"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-10-28T01:21:53.016728+00:00",
+      "representative": {
+        "title": "Massive Stellar Collisions Could Explain Early Supermassive Black Holes",
+        "url": "https://www.universetoday.com/articles/massive-stellar-collisions-could-explain-early-supermassive-black-holes",
+        "source": "Universe Today",
+        "published_at": "2026-10-27T18:49:29+00:00",
+        "score": 61.0,
+        "summary": "Dense stellar environments were common in the early Universe. These environments fostered more numerous stellar collisions, and some of those would've been mergers that formed very massive stars. Those stars would've exploded as supernovae,",
+        "zh_full": null,
+        "llm_score": 41.5
+      },
+      "folded_count": 1,
+      "title": "Massive Stellar Collisions Could Explain Early Supermassive Black Holes",
+      "id": "7014eee423bc",
+      "links": [
+        {
+          "title": "Massive Stellar Collisions Could Explain Early Supermassive Black Holes",
+          "url": "https://www.universetoday.com/articles/massive-stellar-collisions-could-explain-early-supermassive-black-holes",
+          "source": "Universe Today",
+          "score": 61.0,
+          "published_at": "2026-10-27T18:49:29+00:00"
+        },
+        {
+          "title": "Stellar collisions may have been common when the universe was young",
+          "url": "https://phys.org/news/2026-10-stellar-collisions-common-universe-young.html",
+          "source": "Phys.org 太空新闻",
+          "score": 60.2,
+          "published_at": "2026-10-26T15:00:32+00:00"
+        }
+      ],
+      "top_terms": [
+        "stellar",
+        "collisions",
+        "massive",
+        "explain",
+        "early"
+      ],
+      "rank": 4,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -172,15 +308,18 @@
         "Phys.org 太空新闻"
       ],
       "score": 35.3,
-      "latest_at": "2026-10-27T15:54:28.019914+00:00",
+      "latest_at": "2026-10-28T01:21:53.016728+00:00",
       "representative": {
         "title": "NASA SEES Interns Tackle Real-World Challenges in Lunar Exploration",
         "url": "https://science.nasa.gov/learning-resources/science-activation/nasa-sees-interns-tackle-real-world-challenges-in-lunar-exploration/",
         "source": "NASA 快讯",
         "published_at": "2026-10-26T19:28:08+00:00",
-        "score": 65.4,
+        "score": 65.2,
         "summary": "The NASA STEM (Science, Technology, Engineering, and Mathematics) Enhancement in Earth Science (SEES) Internship Program at the University of Texas Center for Space Research places high school students on small, mission-focused research tea",
-        "zh_full": null
+        "zh_full": "NASA SEES（科学、技术、工程和数学地球科学增强）实习项目由德克萨斯大学空间研究中心主办，将高中生安排到小型、任务导向的研究团队中，由NASA、学术界和工业界专家指导。2026年夏季，SEES MATRIX（任务架构工具研究、集成与探索）团队……（原文摘要在此处截断，未提供更多内容）。",
+        "llm_summary": "NASA SEES实习项目将高中生编入小型研究团队，由专家指导，参与月球探索相关任务。2026年夏季的MATRIX团队信息因原文截断未能完整呈现。",
+        "density": "低",
+        "llm_score": 21.5
       },
       "folded_count": 2,
       "title": "NASA SEES Interns Tackle Real-World Challenges in Lunar Exploration",
@@ -190,37 +329,104 @@
           "title": "NASA SEES Interns Tackle Real-World Challenges in Lunar Exploration",
           "url": "https://science.nasa.gov/learning-resources/science-activation/nasa-sees-interns-tackle-real-world-challenges-in-lunar-exploration/",
           "source": "NASA 快讯",
-          "score": 65.4,
+          "score": 65.2,
           "published_at": "2026-10-26T19:28:08+00:00"
         },
         {
           "title": "Polar weather on Jupiter and Saturn hints at the planets’ interior details",
           "url": "https://news.mit.edu/2026/polar-weather-jupiter-saturn-hints-planets-interior-details-0119",
           "source": "MIT News 太空探索",
-          "score": 46.0,
+          "score": 41.4,
           "published_at": "2026-01-19T20:00:00+00:00"
         },
         {
           "title": "Clouds on a lava planet challenge what astronomers expected",
           "url": "https://phys.org/news/2026-10-clouds-lava-planet-astronomers.html",
           "source": "Phys.org 太空新闻",
-          "score": 39.2,
+          "score": 39.1,
           "published_at": "2026-10-26T17:20:01+00:00"
         }
       ],
       "top_terms": [
-        "clouds",
-        "lava",
-        "planet",
-        "challenge",
-        "astronomers"
+        "nasa",
+        "sees",
+        "interns",
+        "tackle",
+        "real"
       ],
-      "rank": 3,
+      "rank": 5,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
       "heat": 35.3,
       "status": "发酵中"
+    },
+    {
+      "terms": [
+        "cells",
+        "gets",
+        "inspected",
+        "nasa",
+        "solar",
+        "sunshade",
+        "surveyor"
+      ],
+      "source_count": 1,
+      "signal_count": 3,
+      "sources": [
+        "NASA 快讯"
+      ],
+      "score": 34.5,
+      "latest_at": "2026-10-28T01:21:53.016728+00:00",
+      "representative": {
+        "title": "NASA’s Neo Surveyor Sunshade",
+        "url": "https://www.nasa.gov/image-article/nasas-neo-surveyor-sunshade/",
+        "source": "NASA 快讯",
+        "published_at": "2026-10-27T17:58:57+00:00",
+        "score": 59.1,
+        "summary": "A technician inspects the large sunshade of NASA’s Near-Earth Object (NEO) Surveyor mission in this image released on Oct. 26, 2026. The sunshade structure, which stands 20 feet (6 meters) tall and measures 8 feet (2.4 meters) wide at its b",
+        "zh_full": null,
+        "llm_score": 48.5
+      },
+      "folded_count": 0,
+      "title": "NASA’s Neo Surveyor Sunshade",
+      "id": "cbb43460de2f",
+      "links": [
+        {
+          "title": "NASA’s Neo Surveyor Sunshade",
+          "url": "https://www.nasa.gov/image-article/nasas-neo-surveyor-sunshade/",
+          "source": "NASA 快讯",
+          "score": 59.1,
+          "published_at": "2026-10-27T17:58:57+00:00"
+        },
+        {
+          "title": "NEO Surveyor’s Sunshade Gets Inspected",
+          "url": "https://science.nasa.gov/photojournal/neo-surveyors-sunshade-gets-inspected/",
+          "source": "NASA 快讯",
+          "score": 58.5,
+          "published_at": "2026-10-26T20:53:13+00:00"
+        },
+        {
+          "title": "Solar Cells Inspected on NASA’s NEO Surveyor",
+          "url": "https://science.nasa.gov/photojournal/solar-cells-inspected-on-nasas-neo-surveyor/",
+          "source": "NASA 快讯",
+          "score": 58.5,
+          "published_at": "2026-10-26T20:52:24+00:00"
+        }
+      ],
+      "top_terms": [
+        "neo",
+        "surveyor",
+        "nasa",
+        "sunshade",
+        "inspected"
+      ],
+      "rank": 6,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 34.5,
+      "status": "关注中"
     },
     {
       "terms": [
@@ -252,20 +458,15 @@
         "arXiv astro-ph.CO 论文速递"
       ],
       "score": 34.5,
-      "latest_at": "2026-10-27T15:54:28.019914+00:00",
+      "latest_at": "2026-10-28T01:21:53.016728+00:00",
       "representative": {
         "title": "Correlations between Dynamical Dark Energy and Neutrino Parameters",
         "url": "https://arxiv.org/abs/2610.34445",
         "source": "arXiv astro-ph.CO 论文速递",
         "published_at": "2026-10-27T04:00:00+00:00",
-        "score": 45.5,
+        "score": 45.2,
         "summary": "arXiv:2610.34445v1 Announce Type: new Abstract: Recent Baryon Acoustic Oscillation (BAO) data from the Dark Energy Spectroscopic Instrument (DESI), fitted jointly with Cosmic Microwave Background (CMB) and Type Ia Supernovae (SNe) data, fav",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.34445",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
+        "zh_full": null
       },
       "folded_count": 0,
       "title": "Correlations between Dynamical Dark Energy and Neutrino Parameters",
@@ -275,21 +476,21 @@
           "title": "Correlations between Dynamical Dark Energy and Neutrino Parameters",
           "url": "https://arxiv.org/abs/2610.34445",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.5,
+          "score": 45.2,
           "published_at": "2026-10-27T04:00:00+00:00"
         },
         {
           "title": "Dark Matter and MOND successes and degeneracies in reproducing SPARC rotation curves and weak lensing data",
           "url": "https://arxiv.org/abs/2610.33157",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.5,
+          "score": 45.2,
           "published_at": "2026-10-27T04:00:00+00:00"
         },
         {
           "title": "Exploring the Limits: Neutrino Mass and Interacting Dark Sector in the DESI Era",
           "url": "https://arxiv.org/abs/2610.33729",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.5,
+          "score": 45.2,
           "published_at": "2026-10-27T04:00:00+00:00"
         }
       ],
@@ -300,9 +501,9 @@
         "dynamical",
         "energy"
       ],
-      "rank": 4,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 7,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 34.5,
       "status": "关注中"
@@ -318,17 +519,13 @@
         "high-orbit",
         "hunter",
         "kemble",
-        "mercury",
         "monday",
         "moon",
         "observe",
         "october",
         "phases",
         "satellites",
-        "saturday",
         "saturn",
-        "stands",
-        "still",
         "sunday",
         "today",
         "travel",
@@ -342,13 +539,13 @@
         "MIT News 太空探索"
       ],
       "score": 24.5,
-      "latest_at": "2026-10-27T15:54:28.019914+00:00",
+      "latest_at": "2026-10-28T01:21:53.016728+00:00",
       "representative": {
         "title": "High-orbit satellites could light the way for travel to the moon",
         "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
         "source": "MIT News 太空探索",
         "published_at": "2026-08-10T18:10:00+00:00",
-        "score": 47.2,
+        "score": 41.1,
         "summary": "Acting as cooperative optical beacons, the satellites could provide GPS-like navigation and communications support for spacecraft operating across cislunar space.",
         "zh_full": "（无摘要，仅标题）",
         "llm_summary": "（无摘要，仅标题）",
@@ -356,52 +553,52 @@
       },
       "folded_count": 1,
       "title": "High-orbit satellites could light the way for travel to the moon",
-      "id": "f6a6508b9268",
+      "id": "6f72251d599b",
       "links": [
         {
           "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
           "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
           "source": "Astronomy Magazine",
-          "score": 67.1,
+          "score": 65.3,
           "published_at": "2026-10-27T13:51:07+00:00"
         },
         {
           "title": "The Sky Today on Monday, October 26: Observe the October Hunter’s Moon",
           "url": "https://www.astronomy.com/observing/the-sky-today-monday-october-26-2026/",
           "source": "Astronomy Magazine",
-          "score": 66.3,
+          "score": 64.5,
           "published_at": "2026-10-26T08:00:00+00:00"
         },
         {
           "title": "The Sky Today on Sunday, October 25: Dione crosses Saturn",
           "url": "https://www.astronomy.com/observing/the-sky-today-sunday-october-25-2026/",
           "source": "Astronomy Magazine",
-          "score": 65.6,
+          "score": 57.4,
           "published_at": "2026-10-25T08:00:00+00:00"
         },
         {
           "title": "High-orbit satellites could light the way for travel to the moon",
           "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
           "source": "MIT News 太空探索",
-          "score": 47.2,
+          "score": 41.1,
           "published_at": "2026-08-10T18:10:00+00:00"
         },
         {
           "title": "The Sky Today on Tuesday, October 27: Follow Kemble’s Cascade",
           "url": "https://www.astronomy.com/observing/the-sky-today-tuesday-october-27-2026/",
           "source": "Astronomy Magazine",
-          "score": 40.2,
+          "score": 39.1,
           "published_at": "2026-10-27T08:00:00+00:00"
         }
       ],
       "top_terms": [
-        "october",
         "moon",
+        "october",
         "sky",
         "today",
         "full"
       ],
-      "rank": 5,
+      "rank": 8,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -438,20 +635,15 @@
         "arXiv astro-ph.CO 论文速递"
       ],
       "score": 24.5,
-      "latest_at": "2026-10-27T15:54:28.019914+00:00",
+      "latest_at": "2026-10-28T01:21:53.016728+00:00",
       "representative": {
         "title": "Constraining Ultralight Dark Matter in Dynamical Dark Energy Cosmologies",
         "url": "https://arxiv.org/abs/2610.33332",
         "source": "arXiv astro-ph.CO 论文速递",
         "published_at": "2026-10-27T04:00:00+00:00",
-        "score": 50.3,
+        "score": 50.1,
         "summary": "arXiv:2610.33332v1 Announce Type: cross Abstract: We investigate the cosmological implications of scalar-field dark matter (SFDM) in a dynamical dark energy framework, extending previous analyses that considered SFDM within the standard $\\L",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2610.33332",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
+        "zh_full": null
       },
       "folded_count": 1,
       "title": "Constraining Ultralight Dark Matter in Dynamical Dark Energy Cosmologies",
@@ -461,28 +653,28 @@
           "title": "Constraining Ultralight Dark Matter in Dynamical Dark Energy Cosmologies",
           "url": "https://arxiv.org/abs/2610.33332",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 50.3,
+          "score": 50.1,
           "published_at": "2026-10-27T04:00:00+00:00"
         },
         {
           "title": "Spiralling into Dark Energy: Axio-Dilaton Attractors in Light of Current Data",
           "url": "https://arxiv.org/abs/2610.34380",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 50.3,
+          "score": 50.1,
           "published_at": "2026-10-27T04:00:00+00:00"
         },
         {
           "title": "Relating Dark Dimension Size with Dark Energy via 5D Quintessence Potential and Casimir Energy",
           "url": "https://arxiv.org/abs/2610.35124",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 50.3,
+          "score": 50.1,
           "published_at": "2026-10-27T04:00:00+00:00"
         },
         {
           "title": "The telescope that could reveal what dark matter and dark energy are",
           "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 50.2,
+          "score": 49.9,
           "published_at": "2026-10-06T17:00:00+00:00"
         }
       ],
@@ -490,12 +682,12 @@
         "dark",
         "energy",
         "matter",
-        "telescope",
-        "reveal"
+        "constraining",
+        "ultralight"
       ],
-      "rank": 6,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 9,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 24.5,
       "status": "关注中"
@@ -528,13 +720,13 @@
         "Universe Today"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-27T15:54:28.019914+00:00",
+      "latest_at": "2026-10-28T01:21:53.016728+00:00",
       "representative": {
         "title": "JWST and ALMA reveal a dusty, rapidly growing black hole in the early universe",
         "url": "https://phys.org/news/2026-10-jwst-alma-reveal-dusty-rapidly.html",
         "source": "Phys.org 太空新闻",
         "published_at": "2026-10-26T13:20:36+00:00",
-        "score": 60.4,
+        "score": 60.2,
         "summary": "A new study reveals a dust-reddened quasar from a time when the universe was less than a billion years old. Located at a redshift of 6.5488, the object J1440+0019 contains a rapidly accreting supermassive black hole with a mass of about 1.1",
         "zh_full": null,
         "llm_score": 57.0
@@ -547,14 +739,14 @@
           "title": "JWST and ALMA reveal a dusty, rapidly growing black hole in the early universe",
           "url": "https://phys.org/news/2026-10-jwst-alma-reveal-dusty-rapidly.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.4,
+          "score": 60.2,
           "published_at": "2026-10-26T13:20:36+00:00"
         },
         {
           "title": "JWST Reveals a Lopsided Alien World with Blistering Evening Winds",
           "url": "https://www.universetoday.com/articles/jwst-reveals-a-lopsided-alien-world-with-blistering-evening-winds",
           "source": "Universe Today",
-          "score": 35.0,
+          "score": 34.9,
           "published_at": "2026-10-23T10:54:33+00:00"
         }
       ],
@@ -565,228 +757,9 @@
         "dusty",
         "rapidly"
       ],
-      "rank": 7,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "appear",
-        "collision",
-        "disk",
-        "disks",
-        "ever-thinner",
-        "explain",
-        "fast-moving",
-        "forming",
-        "grew",
-        "heart",
-        "impossibly",
-        "layers",
-        "milky",
-        "mysterious",
-        "nebula",
-        "orion",
-        "planet-forming",
-        "revealing",
-        "stars",
-        "stellar",
-        "than",
-        "upside",
-        "younger"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "New Scientist 太空",
-        "Phys.org 太空新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-27T15:54:28.019914+00:00",
-      "representative": {
-        "title": "Milky Way's disk grew 'upside down,' with younger stars forming in ever-thinner layers",
-        "url": "https://phys.org/news/2026-10-milky-disk-grew-upside-younger.html",
-        "source": "Phys.org 太空新闻",
-        "published_at": "2026-10-25T18:30:02+00:00",
-        "score": 61.4,
-        "summary": "The Milky Way is home to hundreds of billions of stars arranged in a glorious spiral pattern. But beyond the obvious spiral, our galaxy has other physical characteristics. It's divided into a galactic bulge, a galactic disk and a galactic h",
-        "zh_full": "银河系拥有数千亿颗恒星，排列成壮丽的螺旋图案。但除了明显的螺旋结构外，我们的星系还有其他物理特征：它被分为银核、银盘和银晕三个部分。标题提到银河系银盘以'倒置'方式生长，较年轻的恒星在越来越薄的层中形成，但原文摘要未提供更多细节。",
-        "llm_summary": "银河系银盘以'倒置'方式生长，较年轻恒星在越来越薄的层中形成。银河系由银核、银盘和银晕三部分组成，拥有数千亿颗恒星。",
-        "llm_reason": "银河系结构新发现",
-        "density": "中",
-        "llm_score": 48.0
-      },
-      "folded_count": 1,
-      "title": "Milky Way's disk grew 'upside down,' with younger stars forming in ever-thinner layers",
-      "id": "c091d4fb12a3",
-      "links": [
-        {
-          "title": "Milky Way's disk grew 'upside down,' with younger stars forming in ever-thinner layers",
-          "url": "https://phys.org/news/2026-10-milky-disk-grew-upside-younger.html",
-          "source": "Phys.org 太空新闻",
-          "score": 61.4,
-          "published_at": "2026-10-25T18:30:02+00:00"
-        },
-        {
-          "title": "Stellar collision may explain why Orion Nebula's planet-forming disks appear younger than its stars",
-          "url": "https://phys.org/news/2026-10-stellar-collision-orion-nebula-planet.html",
-          "source": "Phys.org 太空新闻",
-          "score": 60.1,
-          "published_at": "2026-10-23T19:00:01+00:00"
-        },
-        {
-          "title": "Impossibly fast-moving stars are revealing the Milky Way’s mysterious heart",
-          "url": "https://www.newscientist.com/article/2590428-impossibly-fast-moving-stars-are-revealing-the-milky-ways-mysterious-heart/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 48.6,
-          "published_at": "2026-10-06T15:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "stars",
-        "milky",
-        "way",
-        "younger",
-        "forming"
-      ],
-      "rank": 8,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "adopting",
-        "apollo",
-        "astronauts",
-        "base",
-        "california",
-        "experience",
-        "invites",
-        "land",
-        "landing",
-        "media",
-        "moon",
-        "nasa",
-        "simulation",
-        "urgency"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "NASA 快讯",
-        "Phys.org 太空新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-27T15:54:28.019914+00:00",
-      "representative": {
-        "title": "NASA Invites Media to Moon Landing Simulation Experience in California",
-        "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-moon-landing-simulation-experience-in-california/",
-        "source": "NASA 快讯",
-        "published_at": "2026-10-26T17:13:44+00:00",
-        "score": 60.5,
-        "summary": "Members of the media are invited to tour a new lunar landing simulator at NASA’s Ames Research Center in California's Silicon Valley on Thursday, Oct. 29, and Friday, Oct. 30.",
-        "zh_full": null
-      },
-      "folded_count": 1,
-      "title": "NASA Invites Media to Moon Landing Simulation Experience in California",
-      "id": "964bfd30f786",
-      "links": [
-        {
-          "title": "NASA Invites Media to Moon Landing Simulation Experience in California",
-          "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-moon-landing-simulation-experience-in-california/",
-          "source": "NASA 快讯",
-          "score": 60.5,
-          "published_at": "2026-10-26T17:13:44+00:00"
-        },
-        {
-          "title": "NASA adopting Apollo's urgency to build a moon base and land astronauts within 2 years",
-          "url": "https://phys.org/news/2026-10-nasa-apollo-urgency-moon-base.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.0,
-          "published_at": "2026-10-24T09:28:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "nasa",
-        "moon",
-        "adopting",
-        "apollo",
-        "urgency"
-      ],
-      "rank": 9,
-      "trend": "down",
-      "trendPct": -14.3,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "charts",
-        "give",
-        "gravitational",
-        "hand",
-        "helping",
-        "hubble",
-        "lenses",
-        "nasa",
-        "path",
-        "roman",
-        "space",
-        "telescope"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-27T15:54:28.019914+00:00",
-      "representative": {
-        "title": "Hubble Will Give the Roman Space Telescope a Helping Hand",
-        "url": "https://www.universetoday.com/articles/hubble-will-give-the-roman-space-telescope-a-helping-hand",
-        "source": "Universe Today",
-        "published_at": "2026-10-27T13:17:41+00:00",
-        "score": 61.1,
-        "summary": "The Nancy Grace Roman Space Telescope will use gravitational microlensing to study dark matter. But it's a wide-field survey telescope, and the venerable Hubble Space Telescope can do things it can't do. That's why the Hubble is lending a h",
-        "zh_full": null
-      },
-      "folded_count": 1,
-      "title": "Hubble Will Give the Roman Space Telescope a Helping Hand",
-      "id": "384bd1354b89",
-      "links": [
-        {
-          "title": "Hubble Will Give the Roman Space Telescope a Helping Hand",
-          "url": "https://www.universetoday.com/articles/hubble-will-give-the-roman-space-telescope-a-helping-hand",
-          "source": "Universe Today",
-          "score": 61.1,
-          "published_at": "2026-10-27T13:17:41+00:00"
-        },
-        {
-          "title": "NASA's Hubble charts path for Roman with gravitational lenses",
-          "url": "https://phys.org/news/2026-10-nasa-hubble-path-roman-gravitational.html",
-          "source": "Phys.org 太空新闻",
-          "score": 35.1,
-          "published_at": "2026-10-23T14:50:01+00:00"
-        }
-      ],
-      "top_terms": [
-        "hubble",
-        "roman",
-        "nasa",
-        "charts",
-        "path"
-      ],
       "rank": 10,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"

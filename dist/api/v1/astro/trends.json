@@ -1,48 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T15:54:28.019914+00:00",
-  "weekStart": "2026-10-21",
+  "generatedAt": "2026-10-28T01:21:53.016728+00:00",
+  "weekStart": "2026-10-22",
   "windowDays": 7,
-  "windowStart": "2026-10-21",
-  "windowEnd": "2026-10-27",
-  "prevStart": "2026-10-14",
-  "prevEnd": "2026-10-20",
+  "windowStart": "2026-10-22",
+  "windowEnd": "2026-10-28",
+  "prevStart": "2026-10-15",
+  "prevEnd": "2026-10-21",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 2309.5,
-      "lastWeek": 877.1,
-      "deltaPct": 163.3
+      "thisWeek": 2020.4,
+      "lastWeek": 1241.9,
+      "deltaPct": 62.7
     },
     {
       "category": "深空探测",
-      "thisWeek": 1769.4,
-      "lastWeek": 1904.0,
-      "deltaPct": -7.1
-    },
-    {
-      "category": "星系与宇宙学",
-      "thisWeek": 1460.2,
-      "lastWeek": 957.7,
-      "deltaPct": 52.5
-    },
-    {
-      "category": "恒星与星际介质",
-      "thisWeek": 1434.2,
-      "lastWeek": 749.5,
-      "deltaPct": 91.4
+      "thisWeek": 1540.0,
+      "lastWeek": 1941.7,
+      "deltaPct": -20.7
     },
     {
       "category": "其他",
-      "thisWeek": 1430.6,
-      "lastWeek": 1458.3,
-      "deltaPct": -1.9
+      "thisWeek": 1363.2,
+      "lastWeek": 1451.7,
+      "deltaPct": -6.1
+    },
+    {
+      "category": "恒星与星际介质",
+      "thisWeek": 1217.0,
+      "lastWeek": 940.1,
+      "deltaPct": 29.5
+    },
+    {
+      "category": "星系与宇宙学",
+      "thisWeek": 1118.5,
+      "lastWeek": 1126.6,
+      "deltaPct": -0.7
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 680.9,
-      "lastWeek": 167.9,
-      "deltaPct": 305.5
+      "thisWeek": 682.9,
+      "lastWeek": 193.6,
+      "deltaPct": 252.7
     },
     {
       "category": "引力波",
@@ -52,9 +52,9 @@
     },
     {
       "category": "系外行星",
-      "thisWeek": 161.5,
-      "lastWeek": 171.1,
-      "deltaPct": -5.6
+      "thisWeek": 110.9,
+      "lastWeek": 170.7,
+      "deltaPct": -35.0
     }
   ],
   "newTopics": [
@@ -71,33 +71,33 @@
       "days": 1
     },
     {
-      "topic_id": "b33ac41ad55c",
-      "title": "DDELenS: Tomographic Weak Lensing Simulations with Dynamical Dark Energy",
-      "score": 187.2,
-      "days": 1
+      "topic_id": "daa991d822eb",
+      "title": "NASA’s Perseverance Views Dust at Neretva Vallis",
+      "score": 186.2,
+      "days": 2
+    },
+    {
+      "topic_id": "cbb43460de2f",
+      "title": "NASA’s Neo Surveyor Sunshade",
+      "score": 176.1,
+      "days": 2
     },
     {
       "topic_id": "727f88ee8946",
       "title": "Constraining Ultralight Dark Matter in Dynamical Dark Energy Cosmologies",
-      "score": 150.9,
-      "days": 1
-    },
-    {
-      "topic_id": "2cb0b8d786cf",
-      "title": "Correlations between Dynamical Dark Energy and Neutrino Parameters",
-      "score": 136.5,
-      "days": 1
-    },
-    {
-      "topic_id": "6486ec6e74f2",
-      "title": "Gamma-ray Bursts as Cosmological Probes Calibrated with Strongly Lensed Quasars and Neural Networks",
-      "score": 135.9,
+      "score": 150.3,
       "days": 1
     },
     {
       "topic_id": "db607e3406b2",
       "title": "Gravothermal Evolution of Self-Interacting Dark Matter Halos across Knudsen Numbers",
       "score": 135.9,
+      "days": 1
+    },
+    {
+      "topic_id": "2cb0b8d786cf",
+      "title": "Correlations between Dynamical Dark Energy and Neutrino Parameters",
+      "score": 135.6,
       "days": 1
     },
     {
@@ -113,9 +113,9 @@
       "days": 2
     },
     {
-      "topic_id": "daa991d822eb",
-      "title": "NASA’s Perseverance Views Dust at Neretva Vallis",
-      "score": 124.3,
+      "topic_id": "00fb52c9432f",
+      "title": "Supernova Explosions First Aided, Then Later Impeded, the Epoch of Reionization",
+      "score": 120.4,
       "days": 1
     }
   ],

@@ -1,116 +1,122 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T15:54:28.019914+00:00",
-  "weekStart": "2026-10-21",
+  "generatedAt": "2026-10-28T01:21:53.016728+00:00",
+  "weekStart": "2026-10-22",
   "windowDays": 7,
-  "windowStart": "2026-10-21",
-  "windowEnd": "2026-10-27",
-  "prevStart": "2026-10-14",
-  "prevEnd": "2026-10-20",
+  "windowStart": "2026-10-22",
+  "windowEnd": "2026-10-28",
+  "prevStart": "2026-10-15",
+  "prevEnd": "2026-10-21",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4524.1,
-      "lastWeek": 4529.8,
-      "deltaPct": -0.1
+      "thisWeek": 4423.4,
+      "lastWeek": 3935.2,
+      "deltaPct": 12.4
     },
     {
       "category": "产业与资本",
-      "thisWeek": 3237.1,
-      "lastWeek": 3938.5,
-      "deltaPct": -17.8
+      "thisWeek": 3137.3,
+      "lastWeek": 3749.0,
+      "deltaPct": -16.3
     },
     {
       "category": "光通信",
-      "thisWeek": 3234.6,
-      "lastWeek": 3239.9,
-      "deltaPct": -0.2
+      "thisWeek": 3086.9,
+      "lastWeek": 3539.9,
+      "deltaPct": -12.8
     },
     {
       "category": "科研进展",
-      "thisWeek": 2882.6,
-      "lastWeek": 3318.6,
-      "deltaPct": -13.1
+      "thisWeek": 2729.3,
+      "lastWeek": 2986.8,
+      "deltaPct": -8.6
     },
     {
       "category": "通信与算力",
-      "thisWeek": 2529.3,
-      "lastWeek": 3057.9,
-      "deltaPct": -17.3
+      "thisWeek": 2520.8,
+      "lastWeek": 2902.3,
+      "deltaPct": -13.1
     },
     {
       "category": "其他",
-      "thisWeek": 2395.9,
-      "lastWeek": 3128.5,
-      "deltaPct": -23.4
+      "thisWeek": 2117.0,
+      "lastWeek": 3090.7,
+      "deltaPct": -31.5
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 2245.6,
-      "lastWeek": 2199.0,
-      "deltaPct": 2.1
+      "thisWeek": 2001.1,
+      "lastWeek": 2317.5,
+      "deltaPct": -13.7
     },
     {
       "category": "显示与面板",
-      "thisWeek": 985.3,
-      "lastWeek": 1304.1,
-      "deltaPct": -24.4
+      "thisWeek": 866.1,
+      "lastWeek": 1196.8,
+      "deltaPct": -27.6
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 867.8,
-      "lastWeek": 468.3,
-      "deltaPct": 85.3
+      "thisWeek": 743.3,
+      "lastWeek": 638.8,
+      "deltaPct": 16.4
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 322.0,
+      "thisWeek": 375.1,
       "lastWeek": 504.8,
-      "deltaPct": -36.2
+      "deltaPct": -25.7
     },
     {
       "category": "光伏与新能源",
-      "thisWeek": 110.8,
-      "lastWeek": 0,
-      "deltaPct": 100.0
+      "thisWeek": 55.4,
+      "lastWeek": 55.4,
+      "deltaPct": 0.0
     }
   ],
   "newTopics": [
     {
-      "topic_id": "cc9f5de8fed9",
-      "title": "湖南通信管理局印发《湖南省信息通信行业发展“十五五”规划》",
-      "score": 215.2,
+      "topic_id": "6aec187ed191",
+      "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
+      "score": 320.4,
       "days": 4
     },
     {
-      "topic_id": "6aec187ed191",
-      "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-      "score": 211.7,
-      "days": 3
-    },
-    {
-      "topic_id": "8ff90487d1f2",
-      "title": "贵州九部门明确任务分工加快提升基层应急通信保障能力",
-      "score": 209.2,
-      "days": 2
+      "topic_id": "cc9f5de8fed9",
+      "title": "湖南通信管理局印发《湖南省信息通信行业发展“十五五”规划》",
+      "score": 269.0,
+      "days": 5
     },
     {
       "topic_id": "f76d6c8926de",
       "title": "工业和信息化部工业软件标准化技术委员会成立",
-      "score": 204.8,
-      "days": 4
+      "score": 256.0,
+      "days": 5
+    },
+    {
+      "topic_id": "bc72d5d904af",
+      "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
+      "score": 235.5,
+      "days": 5
+    },
+    {
+      "topic_id": "2e0a41654e17",
+      "title": "湖北通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动",
+      "score": 210.8,
+      "days": 2
+    },
+    {
+      "topic_id": "3c09fab78453",
+      "title": "Photonics Hot List: October 23, 2026",
+      "score": 204.4,
+      "days": 2
     },
     {
       "topic_id": "215ac2b0195e",
       "title": "Stochastic Analysis of Laser Phase Noise in Photonics-Assisted Radio Frequency Beamforming",
       "score": 189.6,
       "days": 1
-    },
-    {
-      "topic_id": "bc72d5d904af",
-      "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
-      "score": 188.4,
-      "days": 4
     },
     {
       "topic_id": "ba306bad328d",
@@ -129,68 +135,62 @@
       "title": "工业和信息化部等八部门关于印发《产业基础能力提升“十五五”规划》的通知",
       "score": 161.5,
       "days": 5
-    },
-    {
-      "topic_id": "e115f1c14e82",
-      "title": "Narrow-linewidth, piezoelectrically tunable photonic integrated blue laser",
-      "score": 134.2,
-      "days": 2
     }
   ],
   "sustainedTopics": [
     {
       "topic_id": "da7b21634030",
       "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
-      "days": 11,
-      "score": 1541.1
+      "days": 12,
+      "score": 1681.2
     },
     {
       "topic_id": "9f8710ab3d29",
       "title": "华工科技：2026年上半年，光互联业务营收38.03亿元",
-      "days": 11,
-      "score": 954.9
+      "days": 12,
+      "score": 1057.2
     },
     {
       "topic_id": "ff9baccacead",
       "title": "欧盟否认重新评估对美国科技巨头调查，但未来走向不明",
-      "days": 11,
-      "score": 690.8
+      "days": 12,
+      "score": 753.6
     },
     {
       "topic_id": "3db37b135ae4",
       "title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼",
-      "days": 11,
-      "score": 596.6
+      "days": 12,
+      "score": 659.4
     },
     {
       "topic_id": "8579455b5d54",
       "title": "华为全联接大会2026全光峰会举办，F5G-A全光网加速AI普惠千行万业",
-      "days": 11,
-      "score": 591.5
+      "days": 12,
+      "score": 637.0
     },
     {
       "topic_id": "569c89c31ce9",
       "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
-      "days": 11,
-      "score": 529.1
+      "days": 12,
+      "score": 577.2
     },
     {
       "topic_id": "b60b7f7c9968",
       "title": "华为全联接大会2026丨鲲鹏携手伙伴深化硬件开放与生态繁荣，共启算力产业新征程",
-      "days": 11,
-      "score": 375.1
+      "days": 12,
+      "score": 409.2
     },
     {
       "topic_id": "329557835790",
       "title": "Doubts cast on ‘superradiant neutrino laser’ proposal",
-      "days": 11,
-      "score": 367.4
+      "days": 12,
+      "score": 400.8
     },
     {
       "topic_id": "b0bbcd7062bb",
       "title": "广和通上半年营收37.78亿元增长1.92% 净利润同比下降71.63%",
-      "days": 10,
-      "score": 910.0
+      "days": 11,
+      "score": 1001.0
     },
     {
       "topic_id": "5bc32d86db90",

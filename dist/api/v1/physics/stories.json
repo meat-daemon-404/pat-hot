@@ -1,8 +1,50 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T15:54:28.019914+00:00",
+  "generatedAt": "2026-10-28T01:21:53.016728+00:00",
   "count": 10,
   "items": [
+    {
+      "id": "4b905b1e4759",
+      "title": "III-nitride-based in-sensor computing enabled by interfacial polarization effects",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
+      "sources": [
+        "Nature Physics 学科聚合",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "III-nitride-based in-sensor computing enabled by interfacial polarization effects",
+          "url": "https://www.nature.com/articles/s41563-026-02780-7",
+          "source": "Nature Physics 学科聚合",
+          "score": 62.0,
+          "published_at": "2026-10-27T00:00:00+00:00"
+        },
+        {
+          "title": "Three-dimensional finite element simulation study on abnormal magnetic positioning signals inside perforated casing",
+          "url": "https://www.nature.com/articles/s41598-026-76910-1",
+          "source": "Nature Physics 学科聚合",
+          "score": 61.3,
+          "published_at": "2026-10-26T00:00:00+00:00"
+        },
+        {
+          "title": "Quantum sensor loop design could improve magnetic measurements for medicine and communications",
+          "url": "https://phys.org/news/2026-10-quantum-sensor-loop-magnetic-medicine.html",
+          "source": "Phys.org 物理新闻",
+          "score": 37.5,
+          "published_at": "2026-10-27T17:40:06+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 12.5
+    },
     {
       "id": "e53a0752f0b2",
       "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
@@ -10,7 +52,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "arXiv quant-ph 论文速递"
@@ -20,14 +62,14 @@
           "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
           "url": "https://arxiv.org/abs/2610.32292",
           "source": "arXiv quant-ph 论文速递",
-          "score": 46.7,
+          "score": 46.4,
           "published_at": "2026-10-26T04:00:00+00:00"
         },
         {
           "title": "Single optical element combines soft X-ray imaging and spectroscopy",
           "url": "https://phys.org/news/2026-10-optical-element-combines-soft-ray.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.4,
+          "score": 36.2,
           "published_at": "2026-10-26T20:20:11+00:00"
         }
       ],
@@ -43,81 +85,50 @@
       }
     },
     {
-      "id": "ab2d58460ede",
-      "title": "Mutual Information Across Quantum Reference Frame Perspectives",
-      "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "links": [
-        {
-          "title": "Supercurrent enables the reading of quantum information without destroying it",
-          "url": "https://phys.org/news/2026-10-supercurrent-enables-quantum-destroying.html",
-          "source": "Phys.org 物理新闻",
-          "score": 59.9,
-          "published_at": "2026-10-25T19:00:20+00:00"
-        },
-        {
-          "title": "Mutual Information Across Quantum Reference Frame Perspectives",
-          "url": "https://arxiv.org/abs/2610.31729",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 46.7,
-          "published_at": "2026-10-26T04:00:00+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "refs": {
-        "arxiv": "2610.31729",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
-    },
-    {
-      "id": "db19be8d6a60",
+      "id": "398b793302be",
       "title": "Quantum Complexity and Stabilizer-State Expansions: From Pairing to Deformation in Fermionic Systems",
-      "status": "关注中",
-      "heat": 24.5,
-      "sourceCount": 2,
+      "status": "发酵中",
+      "heat": 21.2,
+      "sourceCount": 3,
       "signalCount": 2,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
+        "Nature Physics 学科聚合",
         "Nature 量子物理",
         "arXiv quant-ph 论文速递"
       ],
       "links": [
         {
+          "title": "Global polynomial synchronization of uncertain fractional variable-order BAM neural networks with proportional delay via quantized control",
+          "url": "https://www.nature.com/articles/s41598-026-76904-z",
+          "source": "Nature Physics 学科聚合",
+          "score": 66.1,
+          "published_at": "2026-10-26T00:00:00+00:00"
+        },
+        {
           "title": "Efficient adaptive control strategy for multi-parameter quantum metrology in two-dimensional systems",
           "url": "https://www.nature.com/articles/s42005-026-02912-0",
           "source": "Nature 量子物理",
-          "score": 59.6,
+          "score": 64.1,
           "published_at": "2026-10-23T00:00:00+00:00"
         },
         {
           "title": "Quantum Complexity and Stabilizer-State Expansions: From Pairing to Deformation in Fermionic Systems",
           "url": "https://arxiv.org/abs/2610.31792",
           "source": "arXiv quant-ph 论文速递",
-          "score": 48.2,
+          "score": 52.7,
           "published_at": "2026-10-26T04:00:00+00:00"
         },
         {
           "title": "Robustness of Quantum Correlations and Controlled Teleportation Fidelity under Noisy Channels",
           "url": "https://arxiv.org/abs/2610.32049",
           "source": "arXiv quant-ph 论文速递",
-          "score": 48.2,
+          "score": 52.7,
           "published_at": "2026-10-26T04:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "down",
+      "trendPct": -13.5,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -128,38 +139,77 @@
       }
     },
     {
-      "id": "8800c2dbe031",
-      "title": "Robotic lab sets up and runs optics experiments on demand",
+      "id": "4b99df810729",
+      "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
-        "MIT News 物理",
+        "Nature 量子物理",
         "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "Robotic lab sets up and runs optics experiments on demand",
-          "url": "https://news.mit.edu/2026/robotic-lab-runs-optics-experiments-on-demand-0917",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-09-17T04:00:00+00:00"
+          "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
+          "url": "https://www.nature.com/articles/s41586-026-11312-x",
+          "source": "Nature 量子物理",
+          "score": 57.1,
+          "published_at": "2026-10-22T00:00:00+00:00"
         },
         {
-          "title": "Metalens microscope switches focus with voltage, not moving optics",
-          "url": "https://phys.org/news/2026-10-metalens-microscope-focus-voltage-optics.html",
+          "title": "SPINE: A machine-learning program is on the trail of ghost particles",
+          "url": "https://phys.org/news/2026-10-spine-machine-trail-ghost-particles.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.4,
-          "published_at": "2026-10-26T21:20:10+00:00"
+          "score": 36.6,
+          "published_at": "2026-10-27T19:10:01+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null
+    },
+    {
+      "id": "ab2d58460ede",
+      "title": "Mutual Information Across Quantum Reference Frame Perspectives",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
+      "sources": [
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
+      ],
+      "links": [
+        {
+          "title": "Supercurrent enables the reading of quantum information without destroying it",
+          "url": "https://phys.org/news/2026-10-supercurrent-enables-quantum-destroying.html",
+          "source": "Phys.org 物理新闻",
+          "score": 59.7,
+          "published_at": "2026-10-25T19:00:20+00:00"
+        },
+        {
+          "title": "Mutual Information Across Quantum Reference Frame Perspectives",
+          "url": "https://arxiv.org/abs/2610.31729",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 46.4,
+          "published_at": "2026-10-26T04:00:00+00:00"
+        }
+      ],
+      "trend": "down",
+      "trendPct": -50.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2610.31729",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
     },
     {
       "id": "3d41abd72bf6",
@@ -168,7 +218,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "arXiv quant-ph 论文速递"
@@ -178,14 +228,14 @@
           "title": "Photon-Number Discrimination from Increasing Time-of-Arrival Separation in Wide Superconducting Microstrip Single-Photon Detectors",
           "url": "https://arxiv.org/abs/2610.32154",
           "source": "arXiv quant-ph 论文速递",
-          "score": 46.7,
+          "score": 46.4,
           "published_at": "2026-10-26T04:00:00+00:00"
         },
         {
           "title": "Counting magnetic flux quanta offers new way to measure photon numbers",
           "url": "https://phys.org/news/2026-10-magnetic-flux-quanta-photon.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.2,
+          "score": 35.0,
           "published_at": "2026-10-23T21:20:02+00:00"
         }
       ],
@@ -207,7 +257,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
         "Nature 量子物理",
         "arXiv quant-ph 论文速递"
@@ -217,19 +267,19 @@
           "title": "Particle collisions on a quantum computer",
           "url": "https://www.nature.com/articles/s41567-026-03490-2",
           "source": "Nature 量子物理",
-          "score": 58.1,
+          "score": 57.8,
           "published_at": "2026-10-23T00:00:00+00:00"
         },
         {
           "title": "The Entire Quantum Computer on a Classical Leash",
           "url": "https://arxiv.org/abs/2610.31775",
           "source": "arXiv quant-ph 论文速递",
-          "score": 46.7,
+          "score": 46.4,
           "published_at": "2026-10-26T04:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -246,7 +296,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
         "Nature 量子物理",
         "arXiv quant-ph 论文速递"
@@ -256,19 +306,19 @@
           "title": "Teleportation transition of surface codes on a superconducting quantum processor",
           "url": "https://www.nature.com/articles/s41567-026-03484-0",
           "source": "Nature 量子物理",
-          "score": 57.4,
+          "score": 57.1,
           "published_at": "2026-10-22T00:00:00+00:00"
         },
         {
           "title": "Trident: Efficient Load Verification for Yoked Surface Codes using a Three-Level Memory Hierarchy",
           "url": "https://arxiv.org/abs/2610.32152",
           "source": "arXiv quant-ph 论文速递",
-          "score": 46.7,
+          "score": 46.4,
           "published_at": "2026-10-26T04:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -285,7 +335,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
         "Nature 量子物理",
         "arXiv quant-ph 论文速递"
@@ -295,19 +345,19 @@
           "title": "Author Correction: Solving the Hubbard model with neural quantum states",
           "url": "https://www.nature.com/articles/s41467-026-79114-3",
           "source": "Nature 量子物理",
-          "score": 56.7,
+          "score": 56.5,
           "published_at": "2026-10-21T00:00:00+00:00"
         },
         {
           "title": "Graphical Rigidity of Continuous Variable Graph States under Gaussian Local Transformations",
           "url": "https://arxiv.org/abs/2610.31933",
           "source": "arXiv quant-ph 论文速递",
-          "score": 46.7,
+          "score": 46.4,
           "published_at": "2026-10-26T04:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -318,66 +368,31 @@
       }
     },
     {
-      "id": "8adeafe3eb5e",
-      "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
+      "id": "048f5c9e88b4",
+      "title": "A simple twist to altermagnetism",
       "status": "关注中",
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
-        "New Scientist 物理",
+        "Nature Physics 学科聚合",
         "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "What is a neutrino anyway? A look at the science behind this year's Nobel Prize in Physics",
-          "url": "https://phys.org/news/2026-10-neutrino-science-year-nobel-prize.html",
+          "title": "A simple twist to altermagnetism",
+          "url": "https://www.nature.com/articles/s41567-026-03495-x",
+          "source": "Nature Physics 学科聚合",
+          "score": 59.8,
+          "published_at": "2026-10-26T00:00:00+00:00"
+        },
+        {
+          "title": "Plain silicon grating reveals a hidden 'twist' in light from electron beams",
+          "url": "https://phys.org/news/2026-10-plain-silicon-reveals-hidden-electron.html",
           "source": "Phys.org 物理新闻",
-          "score": 58.0,
-          "published_at": "2026-10-22T23:30:01+00:00"
-        },
-        {
-          "title": "Nobel prize in physics awarded for discovery of high-energy neutrinos",
-          "url": "https://www.newscientist.com/article/2592237-nobel-prize-in-physics-awarded-for-discovery-of-high-energy-neutrinos/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 47.0,
-          "published_at": "2026-10-06T10:26:02+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 41.0
-    },
-    {
-      "id": "16367ac7fb4f",
-      "title": "A new way to watch heat move through electronics",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
-      "sources": [
-        "MIT News 物理",
-        "Nature 量子物理"
-      ],
-      "links": [
-        {
-          "title": "Light and mirrors move large quantum computers closer to reality",
-          "url": "https://www.nature.com/articles/d41586-026-03237-2",
-          "source": "Nature 量子物理",
-          "score": 55.4,
-          "published_at": "2026-10-19T00:00:00+00:00"
-        },
-        {
-          "title": "A new way to watch heat move through electronics",
-          "url": "https://news.mit.edu/2026/new-way-watch-heat-move-through-electronics-0806",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-06T04:00:00+00:00"
+          "score": 35.0,
+          "published_at": "2026-10-23T20:20:08+00:00"
         }
       ],
       "trend": "new",

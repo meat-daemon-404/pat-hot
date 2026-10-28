@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T15:54:28.019914+00:00",
+  "generatedAt": "2026-10-28T01:21:53.016728+00:00",
   "count": 10,
   "items": [
     {
@@ -10,7 +10,7 @@
       "heat": 45.5,
       "sourceCount": 2,
       "signalCount": 3,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
         "NASA 快讯",
         "Phys.org 太空新闻"
@@ -20,29 +20,67 @@
           "title": "Perseverance offers clues to protect crews from ultrafine Mars dust",
           "url": "https://phys.org/news/2026-10-perseverance-clues-crews-ultrafine-mars.html",
           "source": "Phys.org 太空新闻",
-          "score": 62.7,
+          "score": 62.4,
           "published_at": "2026-10-27T16:00:01+00:00"
         },
         {
           "title": "NASA’s Perseverance Views Dust at Neretva Vallis",
           "url": "https://science.nasa.gov/photojournal/nasas-perseverance-views-dust-at-neretva-vallis/",
           "source": "NASA 快讯",
-          "score": 62.2,
+          "score": 61.9,
           "published_at": "2026-10-26T22:48:12+00:00"
         },
         {
           "title": "NASA’s Perseverance Offers Clues to Protect Crews From Mars Dust",
           "url": "https://www.nasa.gov/missions/mars-2020-perseverance/nasas-perseverance-offers-clues-to-protect-crews-from-mars-dust/",
           "source": "NASA 快讯",
-          "score": 62.1,
+          "score": 61.9,
           "published_at": "2026-10-26T21:07:28+00:00"
+        }
+      ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 35.5
+    },
+    {
+      "id": "ed82abbc5ec4",
+      "title": "Double debris disk orbiting a dead star hints at our solar system's future",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "Double debris disk orbiting a dead star hints at our solar system's future",
+          "url": "https://phys.org/news/2026-10-debris-disk-orbiting-dead-star.html",
+          "source": "Phys.org 太空新闻",
+          "score": 61.1,
+          "published_at": "2026-10-27T22:00:12+00:00"
+        },
+        {
+          "title": "Dead Planets Orbiting a Dead Star",
+          "url": "https://www.universetoday.com/articles/dead-planets-orbiting-a-dead-star",
+          "source": "Universe Today",
+          "score": 36.6,
+          "published_at": "2026-10-27T22:04:16+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
-      "badges": [],
+      "badges": [
+        "new"
+      ],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "llmScore": 49.5
     },
     {
       "id": "48bc86cb28a8",
@@ -51,7 +89,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
         "Phys.org 太空新闻",
         "Universe Today"
@@ -61,22 +99,57 @@
           "title": "Earth may have formed much of its water as the planet grew",
           "url": "https://phys.org/news/2026-10-earth-planet-grew.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.7,
+          "score": 36.5,
           "published_at": "2026-10-27T15:40:01+00:00"
         },
         {
           "title": "Asymmetric space waves map pressure on Earth's magnetic shield",
           "url": "https://www.universetoday.com/articles/asymmetric-space-waves-map-pressure-on-earths-magnetic-shield",
           "source": "Universe Today",
-          "score": 36.5,
+          "score": 36.3,
           "published_at": "2026-10-27T01:19:08+00:00"
+        }
+      ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "7014eee423bc",
+      "title": "Massive Stellar Collisions Could Explain Early Supermassive Black Holes",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "Massive Stellar Collisions Could Explain Early Supermassive Black Holes",
+          "url": "https://www.universetoday.com/articles/massive-stellar-collisions-could-explain-early-supermassive-black-holes",
+          "source": "Universe Today",
+          "score": 61.0,
+          "published_at": "2026-10-27T18:49:29+00:00"
+        },
+        {
+          "title": "Stellar collisions may have been common when the universe was young",
+          "url": "https://phys.org/news/2026-10-stellar-collisions-common-universe-young.html",
+          "source": "Phys.org 太空新闻",
+          "score": 60.2,
+          "published_at": "2026-10-26T15:00:32+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "llmScore": 41.5
     },
     {
       "id": "19d31aca3764",
@@ -85,7 +158,7 @@
       "heat": 35.3,
       "sourceCount": 3,
       "signalCount": 2,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
         "MIT News 太空探索",
         "NASA 快讯",
@@ -96,22 +169,104 @@
           "title": "NASA SEES Interns Tackle Real-World Challenges in Lunar Exploration",
           "url": "https://science.nasa.gov/learning-resources/science-activation/nasa-sees-interns-tackle-real-world-challenges-in-lunar-exploration/",
           "source": "NASA 快讯",
-          "score": 65.4,
+          "score": 65.2,
           "published_at": "2026-10-26T19:28:08+00:00"
         },
         {
           "title": "Polar weather on Jupiter and Saturn hints at the planets’ interior details",
           "url": "https://news.mit.edu/2026/polar-weather-jupiter-saturn-hints-planets-interior-details-0119",
           "source": "MIT News 太空探索",
-          "score": 46.0,
+          "score": 41.4,
           "published_at": "2026-01-19T20:00:00+00:00"
         },
         {
           "title": "Clouds on a lava planet challenge what astronomers expected",
           "url": "https://phys.org/news/2026-10-clouds-lava-planet-astronomers.html",
           "source": "Phys.org 太空新闻",
-          "score": 39.2,
+          "score": 39.1,
           "published_at": "2026-10-26T17:20:01+00:00"
+        }
+      ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 21.5
+    },
+    {
+      "id": "cbb43460de2f",
+      "title": "NASA’s Neo Surveyor Sunshade",
+      "status": "关注中",
+      "heat": 34.5,
+      "sourceCount": 1,
+      "signalCount": 3,
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
+      "sources": [
+        "NASA 快讯"
+      ],
+      "links": [
+        {
+          "title": "NASA’s Neo Surveyor Sunshade",
+          "url": "https://www.nasa.gov/image-article/nasas-neo-surveyor-sunshade/",
+          "source": "NASA 快讯",
+          "score": 59.1,
+          "published_at": "2026-10-27T17:58:57+00:00"
+        },
+        {
+          "title": "NEO Surveyor’s Sunshade Gets Inspected",
+          "url": "https://science.nasa.gov/photojournal/neo-surveyors-sunshade-gets-inspected/",
+          "source": "NASA 快讯",
+          "score": 58.5,
+          "published_at": "2026-10-26T20:53:13+00:00"
+        },
+        {
+          "title": "Solar Cells Inspected on NASA’s NEO Surveyor",
+          "url": "https://science.nasa.gov/photojournal/solar-cells-inspected-on-nasas-neo-surveyor/",
+          "source": "NASA 快讯",
+          "score": 58.5,
+          "published_at": "2026-10-26T20:52:24+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 48.5
+    },
+    {
+      "id": "2cb0b8d786cf",
+      "title": "Correlations between Dynamical Dark Energy and Neutrino Parameters",
+      "status": "关注中",
+      "heat": 34.5,
+      "sourceCount": 1,
+      "signalCount": 3,
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
+      "sources": [
+        "arXiv astro-ph.CO 论文速递"
+      ],
+      "links": [
+        {
+          "title": "Correlations between Dynamical Dark Energy and Neutrino Parameters",
+          "url": "https://arxiv.org/abs/2610.34445",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 45.2,
+          "published_at": "2026-10-27T04:00:00+00:00"
+        },
+        {
+          "title": "Dark Matter and MOND successes and degeneracies in reproducing SPARC rotation curves and weak lensing data",
+          "url": "https://arxiv.org/abs/2610.33157",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 45.2,
+          "published_at": "2026-10-27T04:00:00+00:00"
+        },
+        {
+          "title": "Exploring the Limits: Neutrino Mass and Interacting Dark Sector in the DESI Era",
+          "url": "https://arxiv.org/abs/2610.33729",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 45.2,
+          "published_at": "2026-10-27T04:00:00+00:00"
         }
       ],
       "trend": "flat",
@@ -121,58 +276,13 @@
       "digestTitle": null
     },
     {
-      "id": "2cb0b8d786cf",
-      "title": "Correlations between Dynamical Dark Energy and Neutrino Parameters",
-      "status": "关注中",
-      "heat": 34.5,
-      "sourceCount": 1,
-      "signalCount": 3,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
-      "sources": [
-        "arXiv astro-ph.CO 论文速递"
-      ],
-      "links": [
-        {
-          "title": "Correlations between Dynamical Dark Energy and Neutrino Parameters",
-          "url": "https://arxiv.org/abs/2610.34445",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.5,
-          "published_at": "2026-10-27T04:00:00+00:00"
-        },
-        {
-          "title": "Dark Matter and MOND successes and degeneracies in reproducing SPARC rotation curves and weak lensing data",
-          "url": "https://arxiv.org/abs/2610.33157",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.5,
-          "published_at": "2026-10-27T04:00:00+00:00"
-        },
-        {
-          "title": "Exploring the Limits: Neutrino Mass and Interacting Dark Sector in the DESI Era",
-          "url": "https://arxiv.org/abs/2610.33729",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.5,
-          "published_at": "2026-10-27T04:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "refs": {
-        "arxiv": "2610.34445",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
-    },
-    {
-      "id": "f6a6508b9268",
+      "id": "6f72251d599b",
       "title": "High-orbit satellites could light the way for travel to the moon",
       "status": "关注中",
       "heat": 24.5,
       "sourceCount": 2,
       "signalCount": 3,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
         "Astronomy Magazine",
         "MIT News 太空探索"
@@ -182,35 +292,35 @@
           "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
           "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
           "source": "Astronomy Magazine",
-          "score": 67.1,
+          "score": 65.3,
           "published_at": "2026-10-27T13:51:07+00:00"
         },
         {
           "title": "The Sky Today on Monday, October 26: Observe the October Hunter’s Moon",
           "url": "https://www.astronomy.com/observing/the-sky-today-monday-october-26-2026/",
           "source": "Astronomy Magazine",
-          "score": 66.3,
+          "score": 64.5,
           "published_at": "2026-10-26T08:00:00+00:00"
         },
         {
           "title": "The Sky Today on Sunday, October 25: Dione crosses Saturn",
           "url": "https://www.astronomy.com/observing/the-sky-today-sunday-october-25-2026/",
           "source": "Astronomy Magazine",
-          "score": 65.6,
+          "score": 57.4,
           "published_at": "2026-10-25T08:00:00+00:00"
         },
         {
           "title": "High-orbit satellites could light the way for travel to the moon",
           "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
           "source": "MIT News 太空探索",
-          "score": 47.2,
+          "score": 41.1,
           "published_at": "2026-08-10T18:10:00+00:00"
         },
         {
           "title": "The Sky Today on Tuesday, October 27: Follow Kemble’s Cascade",
           "url": "https://www.astronomy.com/observing/the-sky-today-tuesday-october-27-2026/",
           "source": "Astronomy Magazine",
-          "score": 40.2,
+          "score": 39.1,
           "published_at": "2026-10-27T08:00:00+00:00"
         }
       ],
@@ -227,7 +337,7 @@
       "heat": 24.5,
       "sourceCount": 2,
       "signalCount": 3,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
         "New Scientist 太空",
         "arXiv astro-ph.CO 论文速递"
@@ -237,41 +347,36 @@
           "title": "Constraining Ultralight Dark Matter in Dynamical Dark Energy Cosmologies",
           "url": "https://arxiv.org/abs/2610.33332",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 50.3,
+          "score": 50.1,
           "published_at": "2026-10-27T04:00:00+00:00"
         },
         {
           "title": "Spiralling into Dark Energy: Axio-Dilaton Attractors in Light of Current Data",
           "url": "https://arxiv.org/abs/2610.34380",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 50.3,
+          "score": 50.1,
           "published_at": "2026-10-27T04:00:00+00:00"
         },
         {
           "title": "Relating Dark Dimension Size with Dark Energy via 5D Quintessence Potential and Casimir Energy",
           "url": "https://arxiv.org/abs/2610.35124",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 50.3,
+          "score": 50.1,
           "published_at": "2026-10-27T04:00:00+00:00"
         },
         {
           "title": "The telescope that could reveal what dark matter and dark energy are",
           "url": "https://www.newscientist.com/article/2591580-the-telescope-that-could-reveal-what-dark-matter-and-dark-energy-are/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 50.2,
+          "score": 49.9,
           "published_at": "2026-10-06T17:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
-      "digestTitle": null,
-      "refs": {
-        "arxiv": "2610.33332",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
+      "digestTitle": null
     },
     {
       "id": "11d07cb9912b",
@@ -280,7 +385,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
+      "latestAt": "2026-10-28T01:21:53.016728+00:00",
       "sources": [
         "Phys.org 太空新闻",
         "Universe Today"
@@ -290,14 +395,14 @@
           "title": "JWST and ALMA reveal a dusty, rapidly growing black hole in the early universe",
           "url": "https://phys.org/news/2026-10-jwst-alma-reveal-dusty-rapidly.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.4,
+          "score": 60.2,
           "published_at": "2026-10-26T13:20:36+00:00"
         },
         {
           "title": "JWST Reveals a Lopsided Alien World with Blistering Evening Winds",
           "url": "https://www.universetoday.com/articles/jwst-reveals-a-lopsided-alien-world-with-blistering-evening-winds",
           "source": "Universe Today",
-          "score": 35.0,
+          "score": 34.9,
           "published_at": "2026-10-23T10:54:33+00:00"
         }
       ],
@@ -307,116 +412,6 @@
       "digest": null,
       "digestTitle": null,
       "llmScore": 57.0
-    },
-    {
-      "id": "c091d4fb12a3",
-      "title": "Milky Way's disk grew 'upside down,' with younger stars forming in ever-thinner layers",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
-      "sources": [
-        "New Scientist 太空",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Milky Way's disk grew 'upside down,' with younger stars forming in ever-thinner layers",
-          "url": "https://phys.org/news/2026-10-milky-disk-grew-upside-younger.html",
-          "source": "Phys.org 太空新闻",
-          "score": 61.4,
-          "published_at": "2026-10-25T18:30:02+00:00"
-        },
-        {
-          "title": "Stellar collision may explain why Orion Nebula's planet-forming disks appear younger than its stars",
-          "url": "https://phys.org/news/2026-10-stellar-collision-orion-nebula-planet.html",
-          "source": "Phys.org 太空新闻",
-          "score": 60.1,
-          "published_at": "2026-10-23T19:00:01+00:00"
-        },
-        {
-          "title": "Impossibly fast-moving stars are revealing the Milky Way’s mysterious heart",
-          "url": "https://www.newscientist.com/article/2590428-impossibly-fast-moving-stars-are-revealing-the-milky-ways-mysterious-heart/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 48.6,
-          "published_at": "2026-10-06T15:00:00+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 48.0
-    },
-    {
-      "id": "964bfd30f786",
-      "title": "NASA Invites Media to Moon Landing Simulation Experience in California",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
-      "sources": [
-        "NASA 快讯",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "NASA Invites Media to Moon Landing Simulation Experience in California",
-          "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-moon-landing-simulation-experience-in-california/",
-          "source": "NASA 快讯",
-          "score": 60.5,
-          "published_at": "2026-10-26T17:13:44+00:00"
-        },
-        {
-          "title": "NASA adopting Apollo's urgency to build a moon base and land astronauts within 2 years",
-          "url": "https://phys.org/news/2026-10-nasa-apollo-urgency-moon-base.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.0,
-          "published_at": "2026-10-24T09:28:00+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -14.3,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "384bd1354b89",
-      "title": "Hubble Will Give the Roman Space Telescope a Helping Hand",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-10-27T15:54:28.019914+00:00",
-      "sources": [
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "links": [
-        {
-          "title": "Hubble Will Give the Roman Space Telescope a Helping Hand",
-          "url": "https://www.universetoday.com/articles/hubble-will-give-the-roman-space-telescope-a-helping-hand",
-          "source": "Universe Today",
-          "score": 61.1,
-          "published_at": "2026-10-27T13:17:41+00:00"
-        },
-        {
-          "title": "NASA's Hubble charts path for Roman with gravitational lenses",
-          "url": "https://phys.org/news/2026-10-nasa-hubble-path-roman-gravitational.html",
-          "source": "Phys.org 太空新闻",
-          "score": 35.1,
-          "published_at": "2026-10-23T14:50:01+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
     }
   ]
 }
