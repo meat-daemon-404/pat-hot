@@ -1,60 +1,60 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T01:49:25.856155+00:00",
-  "weekStart": "2026-10-23",
+  "generatedAt": "2026-10-29T16:57:55.562499+00:00",
+  "weekStart": "2026-10-24",
   "windowDays": 7,
-  "windowStart": "2026-10-23",
-  "windowEnd": "2026-10-29",
-  "prevStart": "2026-10-16",
-  "prevEnd": "2026-10-22",
+  "windowStart": "2026-10-24",
+  "windowEnd": "2026-10-30",
+  "prevStart": "2026-10-17",
+  "prevEnd": "2026-10-23",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1912.0,
-      "lastWeek": 1652.1,
-      "deltaPct": 15.7
+      "thisWeek": 1542.1,
+      "lastWeek": 1654.5,
+      "deltaPct": -6.8
     },
     {
       "category": "深空探测",
-      "thisWeek": 1791.5,
-      "lastWeek": 1866.7,
-      "deltaPct": -4.0
+      "thisWeek": 1489.5,
+      "lastWeek": 1781.8,
+      "deltaPct": -16.4
     },
     {
       "category": "其他",
-      "thisWeek": 1335.1,
-      "lastWeek": 1641.1,
-      "deltaPct": -18.6
+      "thisWeek": 1152.3,
+      "lastWeek": 1748.4,
+      "deltaPct": -34.1
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 1125.6,
-      "lastWeek": 1264.4,
-      "deltaPct": -11.0
+      "thisWeek": 1027.5,
+      "lastWeek": 1181.6,
+      "deltaPct": -13.0
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 961.7,
-      "lastWeek": 967.6,
-      "deltaPct": -0.6
+      "thisWeek": 952.2,
+      "lastWeek": 1036.6,
+      "deltaPct": -8.1
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 575.9,
-      "lastWeek": 360.1,
-      "deltaPct": 59.9
+      "thisWeek": 511.1,
+      "lastWeek": 379.6,
+      "deltaPct": 34.6
     },
     {
       "category": "系外行星",
       "thisWeek": 176.6,
-      "lastWeek": 170.7,
-      "deltaPct": 3.5
+      "lastWeek": 110.7,
+      "deltaPct": 59.5
     },
     {
       "category": "引力波",
-      "thisWeek": 118.6,
-      "lastWeek": 165.7,
-      "deltaPct": -28.4
+      "thisWeek": 37.4,
+      "lastWeek": 246.9,
+      "deltaPct": -84.9
     }
   ],
   "newTopics": [
@@ -62,12 +62,6 @@
       "topic_id": "7f7fd1ffb83d",
       "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
       "score": 218.4,
-      "days": 1
-    },
-    {
-      "topic_id": "2632e28a4dcf",
-      "title": "High-orbit satellites could light the way for travel to the moon",
-      "score": 199.0,
       "days": 1
     },
     {
@@ -113,10 +107,16 @@
       "days": 1
     },
     {
-      "topic_id": "e5597bddffca",
-      "title": "APOD: 2026 October 24 – Rosetta’s Selfie",
-      "score": 113.8,
-      "days": 2
+      "topic_id": "65b7b27f11f4",
+      "title": "Supporting mission-driven space innovation, for Earth and beyond",
+      "score": 104.9,
+      "days": 1
+    },
+    {
+      "topic_id": "6f72251d599b",
+      "title": "High-orbit satellites could light the way for travel to the moon",
+      "score": 104.4,
+      "days": 1
     }
   ],
   "sustainedTopics": []

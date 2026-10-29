@@ -1,84 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T01:49:25.856155+00:00",
+  "generatedAt": "2026-10-29T16:57:55.562499+00:00",
   "count": 10,
   "items": [
-    {
-      "id": "2e0a41654e17",
-      "title": "湖北通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动",
-      "status": "关注中",
-      "heat": 45.5,
-      "sourceCount": 2,
-      "signalCount": 3,
-      "latestAt": "2026-10-29T01:49:25.856155+00:00",
-      "sources": [
-        "C114中国通信网_监管",
-        "工信部要闻"
-      ],
-      "links": [
-        {
-          "title": "湖北通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动",
-          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_8641f58c6bc1467ea7857bb26d07493e.html",
-          "source": "工信部要闻",
-          "score": 57.2,
-          "published_at": null
-        },
-        {
-          "title": "工信部部署2026年信息通信业安全生产与网络运行安全工作",
-          "url": "https://www.c114.com.cn/news/550/a1307461.html",
-          "source": "C114中国通信网_监管",
-          "score": 52.7,
-          "published_at": null
-        },
-        {
-          "title": "工信部召开2026年信息通信业行风建设暨纠风工作会议",
-          "url": "https://www.c114.com.cn/news/550/a1306739.html",
-          "source": "C114中国通信网_监管",
-          "score": 52.7,
-          "published_at": null
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": "湖北省通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动，以加快推进新型工业化网络安全能力建设。此前，工信部已于3月印发通知，就2026年信息通信业安全生产和网络运行安全工作作出系统部署，并在3月11日召开全国电视电话会议，总结2025年行风建设和纠风工作，部署2026年重点工作。",
-      "digestTitle": "湖北部署2026年新型工业化网络安全专项行动",
-      "llmScore": 48.0
-    },
-    {
-      "id": "f96054d4cebf",
-      "title": "Camera kit simplifies multi-camera AI development",
-      "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-29T01:49:25.856155+00:00",
-      "sources": [
-        "EDN 电子工程专辑",
-        "Phys.org 物理新闻"
-      ],
-      "links": [
-        {
-          "title": "Camera kit simplifies multi-camera AI development",
-          "url": "https://www.edn.com/camera-kit-simplifies-multi-camera-ai-development/",
-          "source": "EDN 电子工程专辑",
-          "score": 56.5,
-          "published_at": "2026-10-28T19:11:22+00:00"
-        },
-        {
-          "title": "Slow-motion electron camera reveals light-driven quantum jumps in graphene",
-          "url": "https://phys.org/news/2026-10-motion-electron-camera-reveals-driven.html",
-          "source": "Phys.org 物理新闻",
-          "score": 56.4,
-          "published_at": "2026-10-28T16:00:28+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": "Innodisk推出GMSL2相机入门套件，集成四颗300万像素相机、MIPI CSI-2转GMSL2采集卡及配件，简化多相机AI开发流程。同时，雷根斯堡、马尔堡和于利希的物理学家利用新型慢动作电子相机，观察到强电场驱动石墨烯电子跨越能隙的量子跃迁现象，其行为看似矛盾。",
-      "digestTitle": "光电行业动态：多相机AI套件与石墨烯量子跃迁研究"
-    },
     {
       "id": "f3c3d55e4e44",
       "title": "Quantum gates set speed record at 6.8 nanoseconds with over 99.98% accuracy",
@@ -86,7 +10,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-29T01:49:25.856155+00:00",
+      "latestAt": "2026-10-29T16:57:55.562499+00:00",
       "sources": [
         "LEDinside 英文",
         "Phys.org 物理新闻"
@@ -96,91 +20,57 @@
           "title": "Quantum gates set speed record at 6.8 nanoseconds with over 99.98% accuracy",
           "url": "https://phys.org/news/2026-10-quantum-gates-nanoseconds-accuracy.html",
           "source": "Phys.org 物理新闻",
-          "score": 55.8,
+          "score": 55.4,
           "published_at": "2026-10-27T18:40:12+00:00"
         },
         {
           "title": "[News] UIUC Achieves Record Modulation Bandwidth of 2.75 GHz for GaN Blue Micro-LEDs",
           "url": "https://www.ledinside.com/news/2026/10/2026_10_28_05",
           "source": "LEDinside 英文",
-          "score": 39.0,
+          "score": 38.7,
           "published_at": "2026-10-27T23:43:41+00:00"
         }
       ],
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": "德国于利希、亚琛和科隆的研究人员将量子比特运算时间缩短至6.8纳秒，精度超过99.98%，而超导量子计算机中同类操作通常需数十纳秒。该成果由三地机构联合完成，尚未提及具体应用场景或后续计划。",
-      "digestTitle": "量子门运算速度与精度双突破"
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 80.0
     },
     {
-      "id": "7630ddafa256",
-      "title": "Motion sensor combo ICs target vehicle dynamics",
+      "id": "a68be4fcdb54",
+      "title": "亨通光电上半年净利润31.2亿元 同比增长93.38%",
       "status": "关注中",
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-29T01:49:25.856155+00:00",
-      "sources": [
-        "EDN 电子工程专辑",
-        "Phys.org 物理新闻"
-      ],
-      "links": [
-        {
-          "title": "Motion sensor combo ICs target vehicle dynamics",
-          "url": "https://www.edn.com/motion-sensor-combo-ics-target-vehicle-dynamics/",
-          "source": "EDN 电子工程专辑",
-          "score": 56.5,
-          "published_at": "2026-10-28T19:12:30+00:00"
-        },
-        {
-          "title": "Quantum sensor loop design could improve magnetic measurements for medicine and communications",
-          "url": "https://phys.org/news/2026-10-quantum-sensor-loop-magnetic-medicine.html",
-          "source": "Phys.org 物理新闻",
-          "score": 55.8,
-          "published_at": "2026-10-27T17:40:06+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": "意法半导体推出集成多轴加速度计与角速率传感器的汽车传感器平台，用于车辆动力学监测。阿德莱德大学量子工程师发现新型量子传感器回路设计，可提升电磁场测量灵敏度，有望应用于脑成像、医疗诊断和通信技术。",
-      "digestTitle": "新型传感器技术提升车辆动力学与磁场测量精度"
-    },
-    {
-      "id": "802c2f3a800a",
-      "title": "东山精密上半年光模块业务收入53.51亿元，占营收比19.25%",
-      "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-10-29T01:49:25.856155+00:00",
+      "latestAt": "2026-10-29T16:57:55.562499+00:00",
       "sources": [
         "C114中国通信网_通信财经",
         "LEDinside 中文"
       ],
       "links": [
         {
-          "title": "东山精密上半年光模块业务收入53.51亿元，占营收比19.25%",
-          "url": "https://www.c114.com.cn/news/123/a1316159.html",
-          "source": "C114中国通信网_通信财经",
-          "score": 60.2,
-          "published_at": null
+          "title": "光通信三季报：亨通光电、天孚通信、通鼎互联等利润增长",
+          "url": "https://www.ledinside.cn/fsa/20261029-62916.html",
+          "source": "LEDinside 中文",
+          "score": 69.5,
+          "published_at": "2026-10-29"
         },
         {
-          "title": "东山精密今日正式在港交所上市，市值1680亿港元",
-          "url": "https://www.ledinside.cn/news/20261028-62905.html",
-          "source": "LEDinside 中文",
-          "score": 55.4,
-          "published_at": "2026-10-28"
+          "title": "亨通光电上半年净利润31.2亿元 同比增长93.38%",
+          "url": "https://www.c114.com.cn/news/123/a1316458.html",
+          "source": "C114中国通信网_通信财经",
+          "score": 48.1,
+          "published_at": null
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
-      "digest": "东山精密今日在港交所上市，市值1680亿港元。公司上半年光模块业务收入53.51亿元，占总营收19.25%。",
-      "digestTitle": "东山精密港股上市，光模块业务占比近两成",
-      "llmScore": 71.5
+      "digest": "亨通光电、天孚通信、通鼎互联等光通信企业在2026年三季报中披露利润增长。亨通光电上半年净利润31.2亿元，同比增长93.38%，扣非净利润31.51亿元，同比增长100.62%。其他企业亦报告利润增长，但具体增幅未在报道中详述。",
+      "digestTitle": "光通信企业三季报利润增长"
     },
     {
       "id": "f76d6c8926de",
@@ -189,7 +79,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-10-29T01:49:25.856155+00:00",
+      "latestAt": "2026-10-29T16:57:55.562499+00:00",
       "sources": [
         "C114中国通信网_监管",
         "工信部要闻"
@@ -213,92 +103,8 @@
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": "工信部正筹建量子信息标准化技术委员会，以推动该领域标准化工作。根据工信部官网公示的筹建方案，该委员会将负责量子信息领域的标准制定与完善，目前正公开征求意见。",
+      "digest": "工信部正筹建量子信息标准化技术委员会，以推动该领域标准化工作。根据工信部官网公示的筹建方案，该委员会将负责量子信息领域的标准制定与修订工作。目前方案正在公示中，以听取各方意见。",
       "digestTitle": "工信部筹建量子信息标准化技术委员会"
-    },
-    {
-      "id": "b50737fd387d",
-      "title": "Quantum structured light: Non-classical spin texture of twisted single-photon pulses",
-      "status": "发酵中",
-      "heat": 35.3,
-      "sourceCount": 3,
-      "signalCount": 2,
-      "latestAt": "2026-10-29T01:49:25.856155+00:00",
-      "sources": [
-        "Laser Focus World",
-        "Physics World（关键词过滤）",
-        "arXiv 光学与光子学 (physics.optics)"
-      ],
-      "links": [
-        {
-          "title": "Quantum structured light: Non-classical spin texture of twisted single-photon pulses",
-          "url": "https://arxiv.org/abs/2102.13248",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 69.9,
-          "published_at": "2026-10-28T04:00:00+00:00"
-        },
-        {
-          "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
-          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55413803/single-photon-avalanche-diode-arrays-an-avalanche-of-photon-data-for-sharper-imaging",
-          "source": "Laser Focus World",
-          "score": 60.5,
-          "published_at": null
-        },
-        {
-          "title": "Single-photon measurements confirm Richard Feynman’s vision of quantum mechanics",
-          "url": "https://physicsworld.com/a/single-photon-measurements-confirm-richard-feynmans-vision-of-quantum-mechanics/",
-          "source": "Physics World（关键词过滤）",
-          "score": 46.0,
-          "published_at": "2026-09-25T08:20:12+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 37.0
-    },
-    {
-      "id": "1acf2d758012",
-      "title": "Channel-Differentiated Topological Charge Flips and Formation of Janus Bound States in the Continuum in Single-Layer Photonic Lattices",
-      "status": "关注中",
-      "heat": 34.5,
-      "sourceCount": 1,
-      "signalCount": 3,
-      "latestAt": "2026-10-29T01:49:25.856155+00:00",
-      "sources": [
-        "arXiv 光学与光子学 (physics.optics)"
-      ],
-      "links": [
-        {
-          "title": "Channel-Differentiated Topological Charge Flips and Formation of Janus Bound States in the Continuum in Single-Layer Photonic Lattices",
-          "url": "https://arxiv.org/abs/2610.37168",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 63.2,
-          "published_at": "2026-10-28T04:00:00+00:00"
-        },
-        {
-          "title": "Trivial topology-entailed states at interfaces between identical topological phases",
-          "url": "https://arxiv.org/abs/2202.03252",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 63.2,
-          "published_at": "2026-10-28T04:00:00+00:00"
-        },
-        {
-          "title": "Super bound states in the continuum: Classification, direct computation, and geometry in parameter space",
-          "url": "https://arxiv.org/abs/2505.00235",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 63.2,
-          "published_at": "2026-10-28T04:00:00+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 56.5
     },
     {
       "id": "da7b21634030",
@@ -307,7 +113,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-10-29T01:49:25.856155+00:00",
+      "latestAt": "2026-10-29T16:57:55.562499+00:00",
       "sources": [
         "C114中国通信网_通信财经"
       ],
@@ -334,43 +140,50 @@
           "published_at": null
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
     },
     {
-      "id": "e1933fca8759",
-      "title": "Discovery of ‘how and why’ homochirality emerges receives 2026 Nobel Prize in Chemistry",
+      "id": "a862a0718728",
+      "title": "福建通信管理局印发《福建省“十五五”信息通信业发展规划》",
       "status": "关注中",
       "heat": 34.5,
       "sourceCount": 1,
-      "signalCount": 3,
-      "latestAt": "2026-10-29T01:49:25.856155+00:00",
+      "signalCount": 4,
+      "latestAt": "2026-10-29T16:57:55.562499+00:00",
       "sources": [
-        "Laser Focus World"
+        "工信部要闻"
       ],
       "links": [
         {
-          "title": "Discovery of ‘how and why’ homochirality emerges receives 2026 Nobel Prize in Chemistry",
-          "url": "https://www.laserfocusworld.com/optics/news/55410158/discovery-of-how-and-why-homochirality-emerges-receives-2026-nobel-prize-in-chemistry",
-          "source": "Laser Focus World",
-          "score": 32.3,
+          "title": "福建通信管理局印发《福建省“十五五”信息通信业发展规划》",
+          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_8274fc758e6b4511986fc2d4bc17a5aa.html",
+          "source": "工信部要闻",
+          "score": 55.3,
           "published_at": null
         },
         {
-          "title": "2026 Nobel Prize in Physics goes to Francis Halzen for IceCube Neutrino Observatory",
-          "url": "https://www.laserfocusworld.com/detectors-imaging/news/55409835/2026-nobel-prize-in-physics-goes-to-francis-halzen-for-icecube-neutrino-observatory",
-          "source": "Laser Focus World",
-          "score": 32.3,
+          "title": "湖南通信管理局印发《湖南省信息通信行业发展“十五五”规划》",
+          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_36b817fa538349d883cb14430a9d9e4e.html",
+          "source": "工信部要闻",
+          "score": 55.3,
           "published_at": null
         },
         {
-          "title": "Optogenetics nabs 2026 Nobel Prize in Physiology or Medicine",
-          "url": "https://www.laserfocusworld.com/biolife-sciences/news/55409612/optogenetics-nabs-2026-nobel-prize-in-physiology-or-medicine",
-          "source": "Laser Focus World",
-          "score": 32.3,
+          "title": "河南通信管理局正式发布《河南省信息通信行业发展“十五五”规划》",
+          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_9741d75fd33943fa971df840536781ea.html",
+          "source": "工信部要闻",
+          "score": 44.3,
+          "published_at": null
+        },
+        {
+          "title": "安徽通信管理局发布《安徽省信息通信业发展“十五五”规划》",
+          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_8de32f7bba2d4ef89cdafe08195f2cf8.html",
+          "source": "工信部要闻",
+          "score": 44.3,
           "published_at": null
         }
       ],
@@ -379,6 +192,193 @@
       "badges": [],
       "digest": null,
       "digestTitle": null
+    },
+    {
+      "id": "9aa2fe8405d5",
+      "title": "Photonics Hot List: October 23, 2026",
+      "status": "发酵中",
+      "heat": 21.2,
+      "sourceCount": 3,
+      "signalCount": 2,
+      "latestAt": "2026-10-29T16:57:55.562499+00:00",
+      "sources": [
+        "Laser Focus World",
+        "YouTube·Photonics Media",
+        "YouTube·SPIETV"
+      ],
+      "links": [
+        {
+          "title": "Photonics Hot List: October 23, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
+          "source": "Laser Focus World",
+          "score": 55.8,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: October 16, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
+          "source": "Laser Focus World",
+          "score": 55.8,
+          "published_at": null
+        },
+        {
+          "title": "A Look Back on Photonics West 2026",
+          "url": "https://www.youtube.com/shorts/ne-cuXI4otA",
+          "source": "YouTube·SPIETV",
+          "score": 54.5,
+          "published_at": "2026-10-16T21:37:37+00:00"
+        },
+        {
+          "title": "Photonics Spectra Sensing Technologies Summit 2026",
+          "url": "https://www.youtube.com/watch?v=57_odMmja30",
+          "source": "YouTube·Photonics Media",
+          "score": 44.3,
+          "published_at": "2026-10-01T15:00:15+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": "一种多量子阱材料在非线性光子学应用中展现出潜力，相关成果于2026年10月23日由Laser Focus World报道。该材料有望用于增强光信号处理或频率转换等非线性光学功能。此前一周，该媒体还报道了热光纤可增强微弱信号，以及用于家禽供应链监测的传感设备。这些进展均属于光电领域近期关注的技术方向。",
+      "digestTitle": "多量子阱材料在非线性光子学中展现潜力",
+      "llmScore": 18.5
+    },
+    {
+      "id": "569c89c31ce9",
+      "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-29T16:57:55.562499+00:00",
+      "sources": [
+        "C114中国通信网_通信财经",
+        "OFweek 光电频道"
+      ],
+      "links": [
+        {
+          "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
+          "url": "https://www.c114.com.cn/news/123/a1316157.html",
+          "source": "C114中国通信网_通信财经",
+          "score": 48.1,
+          "published_at": null
+        },
+        {
+          "title": "融资20亿、供货中际旭创，这家光器件公司IPO了！",
+          "url": "https://optics.ofweek.com/2026-08/ART-8100-2500-30699180.html",
+          "source": "OFweek 光电频道",
+          "score": 43.7,
+          "published_at": "2026-08"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": "中际旭创发布2026年上半年业绩，营收达417.78亿元，同比增长182.49%。公司称增长主要受益于AI驱动的高速光模块（800G/1.6T）放量，海外收入占比接近95%。",
+      "digestTitle": "中际旭创上半年营收417.78亿元，同比增长182.49%"
+    },
+    {
+      "id": "e5f48246a18c",
+      "title": "精密光纤激光器企业频准激光登陆科创板",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-29T16:57:55.562499+00:00",
+      "sources": [
+        "C114中国通信网_IT资讯",
+        "COEMA 中国光电子行业协会"
+      ],
+      "links": [
+        {
+          "title": "宇树科技计划登陆科创板 中国移动已投资",
+          "url": "https://www.c114.com.cn/news/212/a1292374.html",
+          "source": "C114中国通信网_IT资讯",
+          "score": 44.5,
+          "published_at": null
+        },
+        {
+          "title": "精密光纤激光器企业频准激光登陆科创板",
+          "url": "https://www.coema.org.cn/industry/202608/5795.html",
+          "source": "COEMA 中国光电子行业协会",
+          "score": 41.1,
+          "published_at": "2026-08"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "098b089f10b9",
+      "title": "Shaping light to see deeper inside biological tissue",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-29T16:57:55.562499+00:00",
+      "sources": [
+        "Laser Focus World",
+        "YouTube·SPIETV"
+      ],
+      "links": [
+        {
+          "title": "AI Briefings: Shaping the Future of Optical Imaging, the Importance of Tissue Phantoms",
+          "url": "https://www.youtube.com/watch?v=MxetD1y7hS0",
+          "source": "YouTube·SPIETV",
+          "score": 36.7,
+          "published_at": "2026-08-17T15:11:19+00:00"
+        },
+        {
+          "title": "Shaping light to see deeper inside biological tissue",
+          "url": "https://www.laserfocusworld.com/biolife-sciences/article/55413515/imec-shaping-light-to-see-deeper-inside-biological-tissue",
+          "source": "Laser Focus World",
+          "score": 33.4,
+          "published_at": null
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "8c9d9a318b72",
+      "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-29T16:57:55.562499+00:00",
+      "sources": [
+        "Laser Focus World",
+        "Physics World（关键词过滤）"
+      ],
+      "links": [
+        {
+          "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55413803/single-photon-avalanche-diode-arrays-an-avalanche-of-photon-data-for-sharper-imaging",
+          "source": "Laser Focus World",
+          "score": 55.7,
+          "published_at": null
+        },
+        {
+          "title": "Single-photon measurements confirm Richard Feynman’s vision of quantum mechanics",
+          "url": "https://physicsworld.com/a/single-photon-measurements-confirm-richard-feynmans-vision-of-quantum-mechanics/",
+          "source": "Physics World（关键词过滤）",
+          "score": 41.2,
+          "published_at": "2026-09-25T08:20:12+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 22.0
     }
   ]
 }

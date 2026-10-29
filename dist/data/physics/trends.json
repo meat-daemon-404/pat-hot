@@ -1,48 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T01:49:25.856155+00:00",
-  "weekStart": "2026-10-23",
+  "generatedAt": "2026-10-29T16:57:55.562499+00:00",
+  "weekStart": "2026-10-24",
   "windowDays": 7,
-  "windowStart": "2026-10-23",
-  "windowEnd": "2026-10-29",
-  "prevStart": "2026-10-16",
-  "prevEnd": "2026-10-22",
+  "windowStart": "2026-10-24",
+  "windowEnd": "2026-10-30",
+  "prevStart": "2026-10-17",
+  "prevEnd": "2026-10-23",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 2023.1,
-      "lastWeek": 1063.0,
-      "deltaPct": 90.3
+      "thisWeek": 1624.8,
+      "lastWeek": 1079.5,
+      "deltaPct": 50.5
     },
     {
       "category": "其他",
-      "thisWeek": 991.3,
-      "lastWeek": 1164.5,
-      "deltaPct": -14.9
+      "thisWeek": 761.1,
+      "lastWeek": 1179.9,
+      "deltaPct": -35.5
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 562.3,
-      "lastWeek": 339.3,
-      "deltaPct": 65.7
+      "thisWeek": 361.4,
+      "lastWeek": 598.0,
+      "deltaPct": -39.6
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 347.5,
-      "lastWeek": 290.0,
-      "deltaPct": 19.8
-    },
-    {
-      "category": "高能与粒子物理",
-      "thisWeek": 170.8,
-      "lastWeek": 315.9,
-      "deltaPct": -45.9
+      "thisWeek": 280.6,
+      "lastWeek": 299.6,
+      "deltaPct": -6.3
     },
     {
       "category": "等离子体",
       "thisWeek": 101.8,
-      "lastWeek": 65.8,
-      "deltaPct": 54.7
+      "lastWeek": 0,
+      "deltaPct": 100.0
+    },
+    {
+      "category": "高能与粒子物理",
+      "thisWeek": 50.6,
+      "lastWeek": 375.6,
+      "deltaPct": -86.5
     },
     {
       "category": "原子分子与光物理",
@@ -62,12 +62,6 @@
       "topic_id": "ab2d58460ede",
       "title": "Mutual Information Across Quantum Reference Frame Perspectives",
       "score": 107.4,
-      "days": 1
-    },
-    {
-      "topic_id": "6e2c661e708a",
-      "title": "Co-localized optical and acoustic defect modes enable resonantly enhanced photoelastic readout in a one-dimensional phoxonic multilayer",
-      "score": 96.1,
       "days": 1
     },
     {
@@ -111,6 +105,12 @@
       "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
       "score": 83.3,
       "days": 2
+    },
+    {
+      "topic_id": "ac02fe797013",
+      "title": "Key oddity of quantum physics may run even deeper than anticipated",
+      "score": 61.0,
+      "days": 1
     }
   ],
   "sustainedTopics": []
