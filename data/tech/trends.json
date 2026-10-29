@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T16:40:33.835581+00:00",
+  "generatedAt": "2026-10-29T01:49:25.856155+00:00",
   "weekStart": "2026-10-23",
   "windowDays": 7,
   "windowStart": "2026-10-23",
@@ -10,63 +10,63 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4458.8,
+      "thisWeek": 4283.3,
       "lastWeek": 3895.5,
-      "deltaPct": 14.5
+      "deltaPct": 10.0
     },
     {
       "category": "光通信",
-      "thisWeek": 3352.9,
+      "thisWeek": 3258.0,
       "lastWeek": 3194.4,
-      "deltaPct": 5.0
+      "deltaPct": 2.0
     },
     {
       "category": "产业与资本",
-      "thisWeek": 3037.5,
+      "thisWeek": 3037.1,
       "lastWeek": 3666.6,
       "deltaPct": -17.2
     },
     {
       "category": "科研进展",
-      "thisWeek": 2922.7,
+      "thisWeek": 2966.5,
       "lastWeek": 2667.6,
-      "deltaPct": 9.6
+      "deltaPct": 11.2
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 2194.9,
+      "thisWeek": 2246.4,
       "lastWeek": 2141.6,
-      "deltaPct": 2.5
+      "deltaPct": 4.9
     },
     {
       "category": "其他",
-      "thisWeek": 2160.4,
+      "thisWeek": 2159.7,
       "lastWeek": 2882.3,
-      "deltaPct": -25.0
+      "deltaPct": -25.1
     },
     {
       "category": "通信与算力",
-      "thisWeek": 2079.0,
+      "thisWeek": 2073.3,
       "lastWeek": 2732.2,
-      "deltaPct": -23.9
+      "deltaPct": -24.1
     },
     {
       "category": "显示与面板",
-      "thisWeek": 979.7,
+      "thisWeek": 979.3,
       "lastWeek": 742.6,
       "deltaPct": 31.9
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 825.6,
+      "thisWeek": 821.7,
       "lastWeek": 683.7,
-      "deltaPct": 20.8
+      "deltaPct": 20.2
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 378.0,
+      "thisWeek": 434.3,
       "lastWeek": 423.6,
-      "deltaPct": -10.8
+      "deltaPct": 2.5
     },
     {
       "category": "光伏与新能源",
@@ -77,22 +77,10 @@
   ],
   "newTopics": [
     {
-      "topic_id": "7336417ec69c",
-      "title": "女子高架上被风筝线“割车”:车顶激光雷达被切掉三分之二,预估车损1.5万元左右:已报警,还没找到肇事者",
-      "score": 384.0,
-      "days": 1
-    },
-    {
-      "topic_id": "ba306bad328d",
-      "title": "Photonics Hot List: October 23, 2026",
-      "score": 349.0,
-      "days": 2
-    },
-    {
       "topic_id": "6aec187ed191",
       "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-      "score": 320.4,
-      "days": 4
+      "score": 429.1,
+      "days": 5
     },
     {
       "topic_id": "f76d6c8926de",
@@ -119,21 +107,33 @@
       "days": 2
     },
     {
+      "topic_id": "ba306bad328d",
+      "title": "Photonics Hot List: October 23, 2026",
+      "score": 234.8,
+      "days": 2
+    },
+    {
       "topic_id": "3c09fab78453",
       "title": "Photonics Hot List: October 23, 2026",
       "score": 204.4,
       "days": 2
     },
     {
-      "topic_id": "1acf2d758012",
-      "title": "Channel-Differentiated Topological Charge Flips and Formation of Janus Bound States in the Continuum in Single-Layer Photonic Lattices",
-      "score": 190.5,
-      "days": 1
-    },
-    {
       "topic_id": "215ac2b0195e",
       "title": "Stochastic Analysis of Laser Phase Noise in Photonics-Assisted Radio Frequency Beamforming",
       "score": 189.6,
+      "days": 1
+    },
+    {
+      "topic_id": "1acf2d758012",
+      "title": "Channel-Differentiated Topological Charge Flips and Formation of Janus Bound States in the Continuum in Single-Layer Photonic Lattices",
+      "score": 189.6,
+      "days": 1
+    },
+    {
+      "topic_id": "d6361a026b9d",
+      "title": "Photonics Hot List: October 23, 2026",
+      "score": 164.3,
       "days": 1
     }
   ],
@@ -196,7 +196,7 @@
       "topic_id": "5bc32d86db90",
       "title": "大招齐发，英特尔直击网络转型",
       "days": 8,
-      "score": 908.8
+      "score": 903.1
     }
   ]
 }

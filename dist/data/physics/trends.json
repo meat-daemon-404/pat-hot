@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T16:40:33.835581+00:00",
+  "generatedAt": "2026-10-29T01:49:25.856155+00:00",
   "weekStart": "2026-10-23",
   "windowDays": 7,
   "windowStart": "2026-10-23",
@@ -10,27 +10,27 @@
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 2025.4,
+      "thisWeek": 2023.1,
       "lastWeek": 1063.0,
-      "deltaPct": 90.5
+      "deltaPct": 90.3
     },
     {
       "category": "其他",
-      "thisWeek": 925.2,
+      "thisWeek": 991.3,
       "lastWeek": 1164.5,
-      "deltaPct": -20.5
+      "deltaPct": -14.9
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 562.9,
+      "thisWeek": 562.3,
       "lastWeek": 339.3,
-      "deltaPct": 65.9
+      "deltaPct": 65.7
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 348.1,
+      "thisWeek": 347.5,
       "lastWeek": 290.0,
-      "deltaPct": 20.0
+      "deltaPct": 19.8
     },
     {
       "category": "高能与粒子物理",
@@ -55,7 +55,7 @@
     {
       "topic_id": "a02cd8f01a53",
       "title": "Diagonal, Switching, and Locally Optimal Unraveling for efficient quantum trajectories in metastable open quantum systems",
-      "score": 134.8,
+      "score": 134.3,
       "days": 1
     },
     {
@@ -73,25 +73,7 @@
     {
       "topic_id": "41ce72c68b5e",
       "title": "Scientists uncover new way to control magnetism and topology using light in atomically thin materials",
-      "score": 92.0,
-      "days": 1
-    },
-    {
-      "topic_id": "d5db0656aa9e",
-      "title": "An algebraic characterisation of n-qubit pure-state invariants",
-      "score": 88.0,
-      "days": 1
-    },
-    {
-      "topic_id": "a3358ac7d732",
-      "title": "Quantum circuit simulation with high-order optical tensor processing",
-      "score": 88.0,
-      "days": 1
-    },
-    {
-      "topic_id": "752e27473b6d",
-      "title": "Probability bounds on trajectory-level exceedances of quantum speed limits under continuous-measurement feedback",
-      "score": 88.0,
+      "score": 91.6,
       "days": 1
     },
     {
@@ -103,6 +85,24 @@
     {
       "topic_id": "6ad11ce69b69",
       "title": "QuantumMatterExplorer: An Autonomous Agent for the Discovery of Quantum Many-Body Phases of Matter",
+      "score": 87.4,
+      "days": 1
+    },
+    {
+      "topic_id": "d5db0656aa9e",
+      "title": "An algebraic characterisation of n-qubit pure-state invariants",
+      "score": 87.4,
+      "days": 1
+    },
+    {
+      "topic_id": "a3358ac7d732",
+      "title": "Quantum circuit simulation with high-order optical tensor processing",
+      "score": 87.4,
+      "days": 1
+    },
+    {
+      "topic_id": "752e27473b6d",
+      "title": "Probability bounds on trajectory-level exceedances of quantum speed limits under continuous-measurement feedback",
       "score": 87.4,
       "days": 1
     },

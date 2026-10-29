@@ -1,8 +1,77 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T16:40:33.835581+00:00",
+  "generatedAt": "2026-10-29T01:49:25.856155+00:00",
   "count": 10,
   "items": [
+    {
+      "terms": [
+        "ancient",
+        "carried",
+        "comets",
+        "compounds",
+        "crashing",
+        "didn",
+        "earth",
+        "life",
+        "organic",
+        "probably",
+        "seed",
+        "suggests",
+        "survive",
+        "they"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-10-29T01:49:25.856155+00:00",
+      "representative": {
+        "title": "Ancient Comets Carried Organic Compounds, But They Didn't Survive Crashing Into Earth",
+        "url": "https://www.universetoday.com/articles/ancient-comets-carried-organic-compounds-but-they-didnt-survive-crashing-into-earth",
+        "source": "Universe Today",
+        "published_at": "2026-10-28T18:04:26+00:00",
+        "score": 36.6,
+        "summary": "Perhaps the biggest mystery we face is life on Earth started. One hypothesis says that comets, which are known to carry important chemicals in abiogenesis, delivered these compounds to Earth, leading to the appearance of life. But new resea",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "Ancient Comets Carried Organic Compounds, But They Didn't Survive Crashing Into Earth",
+      "id": "465107083c74",
+      "links": [
+        {
+          "title": "Ancient Comets Carried Organic Compounds, But They Didn't Survive Crashing Into Earth",
+          "url": "https://www.universetoday.com/articles/ancient-comets-carried-organic-compounds-but-they-didnt-survive-crashing-into-earth",
+          "source": "Universe Today",
+          "score": 36.6,
+          "published_at": "2026-10-28T18:04:26+00:00"
+        },
+        {
+          "title": "Comets probably didn't seed life on Earth after all, new study suggests",
+          "url": "https://phys.org/news/2026-10-comets-didnt-seed-life-earth.html",
+          "source": "Phys.org 太空新闻",
+          "score": 36.4,
+          "published_at": "2026-10-28T10:00:10+00:00"
+        }
+      ],
+      "top_terms": [
+        "comets",
+        "didn",
+        "earth",
+        "probably",
+        "seed"
+      ],
+      "digest": "新研究显示，彗星携带的有机化合物在撞击地球时无法存活，因此彗星不太可能为地球生命提供分子基础。该研究模拟了彗星撞击地球的过程，发现撞击产生的高温高压会破坏这些有机分子。此前有假说认为彗星将生命所需的化学物质带到地球，但新证据表明这一路径难以成立。",
+      "digestTitle": "彗星撞击地球时有机分子未能存活",
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
     {
       "terms": [
         "candidate",
@@ -21,13 +90,13 @@
         "Universe Today"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-28T16:40:33.835581+00:00",
+      "latest_at": "2026-10-29T01:49:25.856155+00:00",
       "representative": {
         "title": "The Rubin Observatory Finds Its First Dwarf Planet Candidate",
         "url": "https://www.universetoday.com/articles/the-rubin-observatory-finds-its-first-dwarf-planet-candidate",
         "source": "Universe Today",
         "published_at": "2026-10-28T15:34:33+00:00",
-        "score": 61.1,
+        "score": 60.9,
         "summary": "The Vera Rubin Observatory found a distant Solar System object before its decade-long Legacy Survey of Space and Time even got started. The object is a dwarf planet candidate named 2026 ED138, and if confirmed, it will be one of the largest",
         "zh_full": "薇拉·鲁宾天文台在其为期十年的时空遗产巡天（LSST）正式开始之前，就发现了一个遥远的太阳系天体。该天体被命名为2026 ED138，是一个矮行星候选体。如果得到确认，它将成为海王星轨道之外最大的矮行星之一，直径可能达1500公里。",
         "llm_summary": "薇拉·鲁宾天文台在LSST巡天开始前发现矮行星候选体2026 ED138，若确认将是海王星外最大矮行星之一，直径可能达1500公里。",
@@ -43,14 +112,14 @@
           "title": "The Rubin Observatory Finds Its First Dwarf Planet Candidate",
           "url": "https://www.universetoday.com/articles/the-rubin-observatory-finds-its-first-dwarf-planet-candidate",
           "source": "Universe Today",
-          "score": 61.1,
+          "score": 60.9,
           "published_at": "2026-10-28T15:34:33+00:00"
         },
         {
           "title": "Rubin Observatory reveals its first dwarf planet candidate in our solar system",
           "url": "https://phys.org/news/2026-10-rubin-observatory-reveals-dwarf-planet.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.7,
+          "score": 60.4,
           "published_at": "2026-10-27T22:30:05+00:00"
         }
       ],
@@ -61,11 +130,11 @@
         "planet",
         "candidate"
       ],
-      "digest": "Vera Rubin天文台在正式巡天开始前发现了一个遥远的太阳系天体，暂定名2026 ED138，位于冥王星轨道之外。该天体若经确认，将成为已知最大的矮行星候选体之一。科学家在分析早期数据时识别出该天体，其发现标志着天文台在十年巡天项目启动前已取得首个重要成果。",
-      "digestTitle": "Rubin天文台发现首个矮行星候选体",
-      "rank": 1,
-      "trend": "new",
-      "trendPct": null,
+      "digest": "维拉·鲁宾天文台在正式巡天开始前发现了一颗遥远的太阳系天体，暂命名为2026 ED138，若确认将成为已知最大的矮行星候选体之一。该天体位于海王星轨道之外，由科学家在分析早期数据时识别。观测表明其大小可能接近冥王星，但需后续观测确认其轨道和物理性质，才能正式列入矮行星名录。",
+      "digestTitle": "鲁宾天文台发现首个矮行星候选体",
+      "rank": 2,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 42.0,
       "status": "关注中"
@@ -90,13 +159,13 @@
         "Universe Today"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-28T16:40:33.835581+00:00",
+      "latest_at": "2026-10-29T01:49:25.856155+00:00",
       "representative": {
         "title": "Double debris disk orbiting a dead star hints at our solar system's future",
         "url": "https://phys.org/news/2026-10-debris-disk-orbiting-dead-star.html",
         "source": "Phys.org 太空新闻",
         "published_at": "2026-10-27T22:00:12+00:00",
-        "score": 60.6,
+        "score": 60.4,
         "summary": "Astronomers using the European Southern Observatory's Very Large Telescope (ESO's VLT) have found a rare disk of debris around a dead star that provides a glimpse of what may happen to our solar system. Unlike in similar systems previously ",
         "zh_full": "天文学家利用欧洲南方天文台甚大望远镜（ESO's VLT）发现了一个围绕死亡恒星的罕见碎片盘，为我们的太阳系未来提供了线索。与之前发现的类似系统不同，该碎片盘——曾经环绕该恒星的行星残骸——呈双盘结构，两部分之间由清晰的间隙隔开。这个盘似乎由两颗行星体塑造，其中一颗可能与冥王星大小相当，它们在该恒星剧烈死亡过程中幸存下来。这一发现表明，当恒星演化到白矮星阶段时，其行星系统可能以双盘结构存留，为理解太阳系远期命运提供了直接观测样本。",
         "llm_summary": "天文学家在死亡恒星周围发现罕见的双碎片盘，由两颗幸存行星体塑造，其中一颗可能如冥王星大小。该发现为太阳系未来演化提供了参照。",
@@ -112,14 +181,14 @@
           "title": "Double debris disk orbiting a dead star hints at our solar system's future",
           "url": "https://phys.org/news/2026-10-debris-disk-orbiting-dead-star.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.6,
+          "score": 60.4,
           "published_at": "2026-10-27T22:00:12+00:00"
         },
         {
           "title": "Dead Planets Orbiting a Dead Star",
           "url": "https://www.universetoday.com/articles/dead-planets-orbiting-a-dead-star",
           "source": "Universe Today",
-          "score": 36.4,
+          "score": 36.2,
           "published_at": "2026-10-27T22:04:16+00:00"
         }
       ],
@@ -130,9 +199,9 @@
         "double",
         "debris"
       ],
-      "digest": "天文学家利用欧洲南方天文台的甚大望远镜，在一颗白矮星周围发现了一个罕见的双碎片盘，为太阳系未来可能发生的情况提供了线索。该白矮星是类似太阳的恒星演化后的产物，其周围的两个碎片盘可能由被摧毁的行星残骸构成。研究人员称，这一发现表明，当太阳最终演化为白矮星时，其周围可能也会出现类似的结构，而现存行星的轨道可能因恒星膨胀而改变，导致部分行星被摧毁并形成碎片盘。",
-      "digestTitle": "白矮星周围发现双碎片盘，预示太阳系未来",
-      "rank": 2,
+      "digest": "天文学家利用欧洲南方天文台甚大望远镜（ESO's VLT）在一颗白矮星周围发现了一个罕见的双碎屑盘，这为太阳系未来可能发生的情况提供了线索。该白矮星是一颗类太阳恒星演化到末期的产物，其周围的双碎屑盘结构与此前发现的类似系统不同，表明行星系统在恒星死亡后可能以不同于以往预期的方式存留或演化。",
+      "digestTitle": "白矮星周围发现罕见双碎屑盘，预示太阳系未来",
+      "rank": 3,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -141,88 +210,17 @@
     },
     {
       "terms": [
-        "clues",
-        "crews",
-        "dust",
-        "mars",
-        "nasa",
-        "neretva",
-        "perseverance",
-        "protect",
-        "ultrafine",
-        "vallis",
-        "views"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "NASA 快讯",
-        "Phys.org 太空新闻"
-      ],
-      "score": 42.0,
-      "latest_at": "2026-10-28T16:40:33.835581+00:00",
-      "representative": {
-        "title": "NASA’s Perseverance Views Dust at Neretva Vallis",
-        "url": "https://science.nasa.gov/photojournal/nasas-perseverance-views-dust-at-neretva-vallis/",
-        "source": "NASA 快讯",
-        "published_at": "2026-10-26T22:48:12+00:00",
-        "score": 60.0,
-        "summary": "Description This 360-degree look at Neretva Vallis within Mars’ Jezero Crater was stitched together using 217 images acquired by the rover’s Mastcam-Z on May 20, 2024, the 1,155th Martian day, or sol, of the mission. While it is a wind-swep",
-        "zh_full": "NASA的毅力号火星车在火星杰泽罗陨石坑内的内雷特瓦利斯谷拍摄了360度全景，该图像由Mastcam-Z相机于2024年5月20日（任务第1155个火星日）获取的217张图像拼接而成。如今这里是风沙肆虐的尘土景象，但数十亿年前，它曾是向陨石坑注入淡水的河道。",
-        "llm_summary": "毅力号火星车在内雷特瓦利斯谷拍摄了360度全景，由217张Mastcam-Z图像拼接而成，拍摄于2024年5月20日（第1155个火星日）。如今是风沙景象，但数十亿年前曾是注入淡水的河道。",
-        "llm_reason": "展示火星古河道遗迹的360度全景",
-        "density": "中",
-        "llm_score": 35.5
-      },
-      "folded_count": 1,
-      "title": "NASA’s Perseverance Views Dust at Neretva Vallis",
-      "id": "4b71bc4e2ac2",
-      "links": [
-        {
-          "title": "Perseverance offers clues to protect crews from ultrafine Mars dust",
-          "url": "https://phys.org/news/2026-10-perseverance-clues-crews-ultrafine-mars.html",
-          "source": "Phys.org 太空新闻",
-          "score": 60.5,
-          "published_at": "2026-10-27T16:00:01+00:00"
-        },
-        {
-          "title": "NASA’s Perseverance Views Dust at Neretva Vallis",
-          "url": "https://science.nasa.gov/photojournal/nasas-perseverance-views-dust-at-neretva-vallis/",
-          "source": "NASA 快讯",
-          "score": 60.0,
-          "published_at": "2026-10-26T22:48:12+00:00"
-        }
-      ],
-      "top_terms": [
-        "perseverance",
-        "dust",
-        "clues",
-        "protect",
-        "crews"
-      ],
-      "digest": "NASA的毅力号火星车在火星杰泽罗陨石坑内完成了为期1645个火星日的尘埃暴露实验，测量了附着在携带的宇航服材料样本上的细微和超细微火星尘埃颗粒，包括足以穿透宇航服的小颗粒。该实验旨在为未来火星任务中的宇航员防护提供数据。毅力号还于2024年5月20日（任务第1155个火星日）使用Mastcam-Z相机拍摄了内雷特瓦利斯地区的360度全景图像，显示该区域为风蚀地貌。",
-      "digestTitle": "毅力号火星车完成火星尘埃暴露实验",
-      "rank": 3,
-      "trend": "flat",
-      "trendPct": -7.7,
-      "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "asymmetric",
-        "earth",
-        "formed",
-        "grew",
-        "magnetic",
-        "much",
-        "planet",
-        "pressure",
-        "shield",
-        "space",
-        "water",
-        "waves"
+        "betelgeuse",
+        "companion",
+        "disturbances",
+        "disturbed",
+        "images",
+        "lurks",
+        "mysterious",
+        "radio",
+        "reveal",
+        "shadows",
+        "star"
       ],
       "source_count": 2,
       "signal_count": 2,
@@ -231,47 +229,47 @@
         "Universe Today"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-28T16:40:33.835581+00:00",
+      "latest_at": "2026-10-29T01:49:25.856155+00:00",
       "representative": {
-        "title": "Earth may have formed much of its water as the planet grew",
-        "url": "https://phys.org/news/2026-10-earth-planet-grew.html",
-        "source": "Phys.org 太空新闻",
-        "published_at": "2026-10-27T15:40:01+00:00",
-        "score": 36.3,
-        "summary": "Earth may have produced much of its water during the planet's formation, as rocky pebbles reacted with the hydrogen-rich atmosphere surrounding the young planet, according to new research published in Nature Geoscience. The findings offer a",
+        "title": "Betelgeuse Is Disturbed By Its Companion Star",
+        "url": "https://www.universetoday.com/articles/betelgeuse-is-disturbed-by-its-companion-star",
+        "source": "Universe Today",
+        "published_at": "2026-10-28T18:34:09+00:00",
+        "score": 36.6,
+        "summary": "Betelgeuse has a close-orbiting companion that disturbs the red supergiant into an egg-like shape. New observations show how the two stars interact and how this could help explain the varying brightness of Betelgeuse.",
         "zh_full": null
       },
       "folded_count": 1,
-      "title": "Earth may have formed much of its water as the planet grew",
-      "id": "48bc86cb28a8",
+      "title": "Betelgeuse Is Disturbed By Its Companion Star",
+      "id": "8f7ab135eb91",
       "links": [
         {
-          "title": "Earth may have formed much of its water as the planet grew",
-          "url": "https://phys.org/news/2026-10-earth-planet-grew.html",
-          "source": "Phys.org 太空新闻",
-          "score": 36.3,
-          "published_at": "2026-10-27T15:40:01+00:00"
+          "title": "Betelgeuse Is Disturbed By Its Companion Star",
+          "url": "https://www.universetoday.com/articles/betelgeuse-is-disturbed-by-its-companion-star",
+          "source": "Universe Today",
+          "score": 36.6,
+          "published_at": "2026-10-28T18:34:09+00:00"
         },
         {
-          "title": "Asymmetric space waves map pressure on Earth's magnetic shield",
-          "url": "https://www.universetoday.com/articles/asymmetric-space-waves-map-pressure-on-earths-magnetic-shield",
-          "source": "Universe Today",
-          "score": 36.0,
-          "published_at": "2026-10-27T01:19:08+00:00"
+          "title": "Radio images reveal disturbances from Betelgeuse's mysterious companion that lurks within its shadows",
+          "url": "https://phys.org/news/2026-10-radio-images-reveal-disturbances-betelgeuse.html",
+          "source": "Phys.org 太空新闻",
+          "score": 36.1,
+          "published_at": "2026-10-27T15:00:08+00:00"
         }
       ],
       "top_terms": [
-        "earth",
-        "formed",
-        "much",
-        "water",
-        "planet"
+        "betelgeuse",
+        "companion",
+        "radio",
+        "images",
+        "reveal"
       ],
-      "digest": "地球可能在其形成过程中，通过早期岩石与富氢大气反应产生了大量水，而非主要来自外部彗星或小行星。这一结论来自《自然·地球科学》发表的新研究，研究者称，年轻地球的岩石卵石与氢反应生成水，为地球水起源提供了新解释。该发现与主流理论存在分歧，后者认为水由外部天体带来，但新研究基于模拟和同位素证据，提出地球自身可生成水。",
-      "digestTitle": "地球水可能形成于行星形成期",
+      "digest": "参宿四有一颗近距离伴星，其引力扰动使这颗红超巨星变形为蛋形。新观测显示，两星相互作用可能解释参宿四亮度变化的原因。研究人员称，伴星隐藏在参宿四的阴影中，其扰动足以影响恒星大气层。",
+      "digestTitle": "参宿四伴星扰动红超巨星形状",
       "rank": 4,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 42.0,
       "status": "关注中"
@@ -301,7 +299,7 @@
         "Universe Today"
       ],
       "score": 35.3,
-      "latest_at": "2026-10-28T16:40:33.835581+00:00",
+      "latest_at": "2026-10-29T01:49:25.856155+00:00",
       "representative": {
         "title": "Supporting mission-driven space innovation, for Earth and beyond",
         "url": "https://news.mit.edu/2025/supporting-mission-driven-space-innovation-aurelia-institute-0710",
@@ -322,14 +320,14 @@
           "title": "NASA systems engineering team details Habitable Worlds Observatory mission architecture",
           "url": "https://phys.org/news/2026-10-nasa-team-habitable-worlds-observatory.html",
           "source": "Phys.org 太空新闻",
-          "score": 66.0,
+          "score": 65.7,
           "published_at": "2026-10-28T15:40:11+00:00"
         },
         {
           "title": "NASA Systems Engineering Team Details HWO Mission Architecture",
           "url": "https://www.universetoday.com/articles/nasa-systems-engineering-team-details-hwo-mission-architecture",
           "source": "Universe Today",
-          "score": 39.4,
+          "score": 39.2,
           "published_at": "2026-10-28T03:11:32+00:00"
         },
         {
@@ -347,11 +345,11 @@
         "team",
         "details"
       ],
-      "digest": "NASA系统工程团队公布了宜居世界观测台（HWO）的任务架构，该任务旨在寻找太阳系外的类地行星。HWO将采用先进技术探测和表征系外行星，其设计目标是在宜居带内发现并研究类地世界。该架构由NASA系统工程团队详细说明，为这一旗舰级任务提供了技术路线图。",
-      "digestTitle": "NASA公布宜居世界观测台任务架构",
+      "digest": "NASA的一个系统工程团队公布了宜居世界观测台（HWO）的任务架构，该任务旨在寻找太阳系外类地行星。团队称，自首颗围绕类日恒星运行的系外行星被发现以来，探测技术已取得显著进步，HWO将利用这些技术实现对类地行星的详细观测。该架构由NASA系统工程团队负责制定，目前处于任务设计阶段。",
+      "digestTitle": "NASA团队公布宜居世界观测台任务架构",
       "rank": 5,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 35.3,
       "status": "发酵中"
@@ -366,9 +364,6 @@
         "high-orbit",
         "hunter",
         "kemble",
-        "lander",
-        "launch",
-        "mars",
         "monday",
         "moon",
         "observe",
@@ -382,66 +377,63 @@
         "wednesday",
         "when"
       ],
-      "source_count": 3,
+      "source_count": 2,
       "signal_count": 3,
       "sources": [
         "Astronomy Magazine",
-        "ESA 空间科学",
         "MIT News 太空探索"
       ],
-      "score": 21.2,
-      "latest_at": "2026-10-28T16:40:33.835581+00:00",
+      "score": 24.5,
+      "latest_at": "2026-10-29T01:49:25.856155+00:00",
       "representative": {
-        "title": "Mars moon lander set to launch on 19 October",
-        "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
-        "source": "ESA 空间科学",
-        "published_at": "2026-10-13T12:00:00+00:00",
-        "score": 60.4,
-        "summary": "The Martian Moons eXploration ( MMX ) mission is set to launch into space on a H3 rocket from the Tanegashima Space Center at 04:41 JST on 20 October 2026 (20:41 BST / 21:41 CEST on 19 October 2026). MMX will be the first mission to collect",
-        "zh_full": "火星卫星探测任务（MMX）计划于2026年10月20日日本标准时间04:41从种子岛宇宙中心搭乘H3火箭发射升空（对应英国夏令时10月19日20:41 / 中欧夏令时21:41）。MMX将是首个从火星卫星火卫一采集样本并带回地球的任务。该任务由日本宇宙航空研究开发机构（JAXA）主导，与美国国家航空航天局（NASA）、法国国家空间研究中心（CNES）、德国航空航天中心（DLR）及欧洲空间局（ESA）合作开展。",
-        "llm_summary": "MMX任务计划搭乘H3火箭发射，将是首个从火卫一采集样本并带回地球的任务，由JAXA主导，NASA、CNES、DLR和ESA合作。",
-        "llm_reason": "首个火卫一样本返回任务",
-        "density": "高",
-        "llm_score": 45.0
+        "title": "High-orbit satellites could light the way for travel to the moon",
+        "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
+        "source": "MIT News 太空探索",
+        "published_at": "2026-08-10T18:10:00+00:00",
+        "score": 45.7,
+        "summary": "Acting as cooperative optical beacons, the satellites could provide GPS-like navigation and communications support for spacecraft operating across cislunar space.",
+        "zh_full": "（无摘要，仅标题）",
+        "llm_summary": "（无摘要，仅标题）",
+        "density": "低"
       },
-      "folded_count": 2,
-      "title": "Mars moon lander set to launch on 19 October",
-      "id": "658c194ac15b",
+      "folded_count": 1,
+      "title": "High-orbit satellites could light the way for travel to the moon",
+      "id": "3ce6415b21e5",
       "links": [
         {
           "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
           "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
           "source": "Astronomy Magazine",
-          "score": 70.4,
+          "score": 65.3,
           "published_at": "2026-10-28T13:31:58+00:00"
         },
         {
           "title": "The Sky Today on Wednesday, October 28: The Moon hangs with Uranus",
           "url": "https://www.astronomy.com/observing/the-sky-today-wednesday-october-28-2026/",
           "source": "Astronomy Magazine",
-          "score": 70.3,
+          "score": 65.2,
           "published_at": "2026-10-28T08:00:00+00:00"
         },
         {
           "title": "The Sky Today on Monday, October 26: Observe the October Hunter’s Moon",
           "url": "https://www.astronomy.com/observing/the-sky-today-monday-october-26-2026/",
           "source": "Astronomy Magazine",
-          "score": 68.9,
+          "score": 63.8,
           "published_at": "2026-10-26T08:00:00+00:00"
-        },
-        {
-          "title": "Mars moon lander set to launch on 19 October",
-          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
-          "source": "ESA 空间科学",
-          "score": 60.4,
-          "published_at": "2026-10-13T12:00:00+00:00"
         },
         {
           "title": "High-orbit satellites could light the way for travel to the moon",
           "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
           "source": "MIT News 太空探索",
-          "score": 45.5,
+          "score": 45.7,
           "published_at": "2026-08-10T18:10:00+00:00"
+        },
+        {
+          "title": "The Sky Today on Tuesday, October 27: Follow Kemble’s Cascade",
+          "url": "https://www.astronomy.com/observing/the-sky-today-tuesday-october-27-2026/",
+          "source": "Astronomy Magazine",
+          "score": 38.7,
+          "published_at": "2026-10-27T08:00:00+00:00"
         }
       ],
       "top_terms": [
@@ -451,31 +443,25 @@
         "today",
         "full"
       ],
-      "digest": "2026年10月的满月发生在10月26日12:12 EDT，月球在10月27日6:00 EDT经过天王星以北5°。欧洲航天局的MMX任务计划于10月19日发射，旨在首次采集火星卫星样本。这些事件独立发生，但共同构成了本月天文活动的焦点。",
-      "digestTitle": "2026年10月：满月、天王星合月与火星卫星探测任务",
+      "digest": "10月26日12:12 A.M. EDT，地球位于太阳与月球之间，出现十月满月（猎户月），月球整面被阳光照亮。10月27日6 A.M. EDT，月球在金牛座昴星团上方，从天王星以北5°处经过，形成合月。天文观测中，满月强光会淹没较暗天体，但部分深空天体仍可观测。",
+      "digestTitle": "十月满月与天王星合月天文事件概览",
       "rank": 6,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 21.2,
-      "status": "发酵中"
+      "heat": 24.5,
+      "status": "关注中"
     },
     {
       "terms": [
-        "astronomers",
-        "challenge",
-        "clouds",
-        "details",
-        "expected",
-        "hints",
-        "interior",
-        "jupiter",
-        "lava",
-        "planet",
-        "planets",
-        "polar",
-        "saturn",
-        "weather"
+        "economy",
+        "future",
+        "guide",
+        "intelligence",
+        "next",
+        "next-gen",
+        "outposts",
+        "space"
       ],
       "source_count": 2,
       "signal_count": 1,
@@ -484,49 +470,115 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-28T16:40:33.835581+00:00",
+      "latest_at": "2026-10-29T01:49:25.856155+00:00",
       "representative": {
-        "title": "Polar weather on Jupiter and Saturn hints at the planets’ interior details",
-        "url": "https://news.mit.edu/2026/polar-weather-jupiter-saturn-hints-planets-interior-details-0119",
+        "title": "The next generation’s guide to the new space economy",
+        "url": "https://news.mit.edu/2026/guide-to-new-space-economy-1002",
         "source": "MIT News 太空探索",
-        "published_at": "2026-01-19T20:00:00+00:00",
-        "score": 37.1,
-        "summary": "New research may explain the striking differences between the two planets’ polar vortex patterns.",
-        "zh_full": "（无摘要，仅标题）",
-        "llm_summary": "（无摘要，仅标题）",
+        "published_at": "2026-10-02T14:50:00+00:00",
+        "score": 26.1,
+        "summary": "An industry report published by students in an MIT aerospace entrepreneurship class lays out guidance for aspiring space leaders and investors.",
+        "zh_full": "MIT 航空航天创业课程的学生发布了一份行业报告，为有志成为太空领域领导者和投资者的人提供指导。报告面向下一代，聚焦新兴太空经济。摘要未说明报告的具体内容、数据或结论。",
+        "llm_summary": "MIT 航空航天创业课程学生发布行业报告，为未来太空经济领域的领导者和投资者提供指导。",
+        "llm_reason": "太空经济入门指南",
         "density": "低"
       },
       "folded_count": 1,
-      "title": "Polar weather on Jupiter and Saturn hints at the planets’ interior details",
-      "id": "edef44a9c794",
+      "title": "The next generation’s guide to the new space economy",
+      "id": "46e9419da1aa",
       "links": [
         {
-          "title": "Polar weather on Jupiter and Saturn hints at the planets’ interior details",
-          "url": "https://news.mit.edu/2026/polar-weather-jupiter-saturn-hints-planets-interior-details-0119",
-          "source": "MIT News 太空探索",
-          "score": 37.1,
-          "published_at": "2026-01-19T20:00:00+00:00"
+          "title": "Could next-gen artificial intelligence help map out future space outposts?",
+          "url": "https://phys.org/news/2026-10-gen-artificial-intelligence-future-space.html",
+          "source": "Phys.org 太空新闻",
+          "score": 36.6,
+          "published_at": "2026-10-28T21:30:01+00:00"
         },
         {
-          "title": "Clouds on a lava planet challenge what astronomers expected",
-          "url": "https://phys.org/news/2026-10-clouds-lava-planet-astronomers.html",
-          "source": "Phys.org 太空新闻",
-          "score": 35.9,
-          "published_at": "2026-10-26T17:20:01+00:00"
+          "title": "The next generation’s guide to the new space economy",
+          "url": "https://news.mit.edu/2026/guide-to-new-space-economy-1002",
+          "source": "MIT News 太空探索",
+          "score": 26.1,
+          "published_at": "2026-10-02T14:50:00+00:00"
         }
       ],
       "top_terms": [
-        "polar",
-        "weather",
-        "jupiter",
-        "saturn",
-        "hints"
+        "next",
+        "space",
+        "gen",
+        "intelligence",
+        "map"
       ],
-      "digest": "木星和土星的极地涡旋模式存在显著差异，新研究认为这反映了它们内部结构的区别。研究人员称，木星极地存在多个小型涡旋，而土星则有一个单一的大型涡旋，这种差异可能源于两行星内部不同深度的流体动力学过程。该发现有助于理解气态巨行星的内部构造和大气动力学。",
-      "digestTitle": "木星与土星极地涡旋差异揭示内部结构",
       "rank": 7,
       "trend": "new",
       "trendPct": null,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "asymmetric",
+        "earth",
+        "formed",
+        "grew",
+        "magnetic",
+        "much",
+        "planet",
+        "pressure",
+        "shield",
+        "space",
+        "water",
+        "waves"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-10-29T01:49:25.856155+00:00",
+      "representative": {
+        "title": "Earth may have formed much of its water as the planet grew",
+        "url": "https://phys.org/news/2026-10-earth-planet-grew.html",
+        "source": "Phys.org 太空新闻",
+        "published_at": "2026-10-27T15:40:01+00:00",
+        "score": 36.1,
+        "summary": "Earth may have produced much of its water during the planet's formation, as rocky pebbles reacted with the hydrogen-rich atmosphere surrounding the young planet, according to new research published in Nature Geoscience. The findings offer a",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "Earth may have formed much of its water as the planet grew",
+      "id": "48bc86cb28a8",
+      "links": [
+        {
+          "title": "Earth may have formed much of its water as the planet grew",
+          "url": "https://phys.org/news/2026-10-earth-planet-grew.html",
+          "source": "Phys.org 太空新闻",
+          "score": 36.1,
+          "published_at": "2026-10-27T15:40:01+00:00"
+        },
+        {
+          "title": "Asymmetric space waves map pressure on Earth's magnetic shield",
+          "url": "https://www.universetoday.com/articles/asymmetric-space-waves-map-pressure-on-earths-magnetic-shield",
+          "source": "Universe Today",
+          "score": 35.9,
+          "published_at": "2026-10-27T01:19:08+00:00"
+        }
+      ],
+      "top_terms": [
+        "earth",
+        "formed",
+        "much",
+        "water",
+        "planet"
+      ],
+      "digest": "地球可能在自身形成过程中产生了大量水，而非完全依赖外部来源。一项新研究称，年轻地球周围富含氢的大气与岩石颗粒反应，生成了水。该发现发表于《自然·地球科学》，为地球水的起源提供了新的解释路径。",
+      "digestTitle": "地球可能在形成过程中自产大量水",
+      "rank": 8,
+      "trend": "down",
+      "trendPct": -50.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -553,13 +605,13 @@
         "Universe Today"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-28T16:40:33.835581+00:00",
+      "latest_at": "2026-10-29T01:49:25.856155+00:00",
       "representative": {
         "title": "Massive Stellar Collisions Could Explain Early Supermassive Black Holes",
         "url": "https://www.universetoday.com/articles/massive-stellar-collisions-could-explain-early-supermassive-black-holes",
         "source": "Universe Today",
         "published_at": "2026-10-27T18:49:29+00:00",
-        "score": 60.6,
+        "score": 60.3,
         "summary": "Dense stellar environments were common in the early Universe. These environments fostered more numerous stellar collisions, and some of those would've been mergers that formed very massive stars. Those stars would've exploded as supernovae,",
         "zh_full": "早期宇宙中致密恒星环境普遍存在。这些环境促进了更频繁的恒星碰撞，其中一些合并形成了质量极大的恒星。这些恒星随后以超新星形式爆发，成为大质量黑洞，可能成为今天超大质量黑洞的种子。该研究提出，早期宇宙中密集的星团内恒星碰撞频率远高于现代，导致大量超大质量恒星形成，它们坍缩后产生的中等质量黑洞在后续吸积和合并中成长为超大质量黑洞。这一机制为解释早期宇宙中已观测到的超大质量黑洞起源提供了新路径，无需依赖罕见的大质量种子或特殊吸积模式。",
         "llm_summary": "研究提出早期宇宙致密星团中频繁的恒星碰撞形成超大质量恒星，它们爆发后成为大质量黑洞，可能作为今天超大质量黑洞的种子。该机制为超大质量黑洞起源提供新解释。",
@@ -575,158 +627,95 @@
           "title": "Massive Stellar Collisions Could Explain Early Supermassive Black Holes",
           "url": "https://www.universetoday.com/articles/massive-stellar-collisions-could-explain-early-supermassive-black-holes",
           "source": "Universe Today",
-          "score": 60.6,
+          "score": 60.3,
           "published_at": "2026-10-27T18:49:29+00:00"
         },
         {
           "title": "Stellar collisions may have been common when the universe was young",
           "url": "https://phys.org/news/2026-10-stellar-collisions-common-universe-young.html",
           "source": "Phys.org 太空新闻",
-          "score": 59.8,
+          "score": 59.5,
           "published_at": "2026-10-26T15:00:32+00:00"
         }
       ],
       "top_terms": [
         "stellar",
         "collisions",
-        "massive",
-        "explain",
-        "early"
+        "common",
+        "when",
+        "universe"
       ],
-      "digest": "早期宇宙中密集的恒星环境可能频繁发生恒星碰撞，合并形成超大质量恒星，这些恒星随后以超新星形式爆发，为超大质量黑洞的形成提供了条件。这一理论由研究团队基于詹姆斯·韦伯太空望远镜的观测提出，但尚未得到直接证实。",
+      "digest": "早期宇宙中密集的恒星环境导致恒星碰撞频繁发生，部分碰撞合并形成超大质量恒星，这些恒星随后以超新星形式爆发，可能为超大质量黑洞的形成提供了条件。研究人员称，这一机制解释了詹姆斯·韦伯太空望远镜观测到的早期超大质量黑洞的存在，尽管目前尚无直接观测证据证实这一过程。",
       "digestTitle": "早期宇宙恒星碰撞或促成超大质量黑洞形成",
-      "rank": 8,
-      "trend": "down",
-      "trendPct": -50.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "economy",
-        "guide",
-        "johnson",
-        "mentor",
-        "nasa",
-        "next",
-        "shapes",
-        "space",
-        "talent"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "MIT News 太空探索",
-        "NASA 快讯"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-28T16:40:33.835581+00:00",
-      "representative": {
-        "title": "How a Johnson Mentor Shapes the Next Generation of NASA Talent",
-        "url": "https://www.nasa.gov/general/how-a-johnson-mentor-shapes-the-next-generation-of-nasa-talent/",
-        "source": "NASA 快讯",
-        "published_at": "2026-10-27T07:07:51+00:00",
-        "score": 60.2,
-        "summary": "When Rice University student Malvika Bhardwaj asked her mentor Daniel Cohen, a Guidance, Navigation & Control (GN&C) engineer at NASA’s Johnson Space Center, whether he had time to keep teaching interns with his busy workload, he answered, ",
-        "zh_full": "莱斯大学学生马尔维卡·巴德瓦杰（Malvika Bhardwaj）向她的导师丹尼尔·科恩（Daniel Cohen）询问，在繁忙的工作中是否有时间继续教授实习生。科恩是NASA约翰逊航天中心的制导、导航与控制（GN&C）工程师，他回答说：“你来决定什么重要。”为纪念10月27日的国家指导日（National Mentoring Day），巴德瓦杰回顾了科恩如何影响她的职业发展。科恩在NASA的工作涉及航天器的导航与控制，他不仅传授技术知识，还鼓励学生独立思考，培养解决问题的能力。巴德瓦杰表示，科恩的指导让她对航天工程有了更深入的理解，并激励她追求在NASA的职业道路。这一故事展示了NASA导师计划如何培养下一代人才，为航天事业注入新活力。",
-        "llm_summary": "NASA约翰逊航天中心工程师丹尼尔·科恩在繁忙工作中仍坚持指导莱斯大学学生马尔维卡·巴德瓦杰。在国家指导日，巴德瓦杰回顾科恩如何通过鼓励独立思考，帮助她成长并激发她对航天工程的热情，展示NASA导师计划的价值。",
-        "llm_reason": "展示NASA导师计划对人才培养的积极影响",
-        "density": "中"
-      },
-      "folded_count": 1,
-      "title": "How a Johnson Mentor Shapes the Next Generation of NASA Talent",
-      "id": "d4de73ff2351",
-      "links": [
-        {
-          "title": "How a Johnson Mentor Shapes the Next Generation of NASA Talent",
-          "url": "https://www.nasa.gov/general/how-a-johnson-mentor-shapes-the-next-generation-of-nasa-talent/",
-          "source": "NASA 快讯",
-          "score": 60.2,
-          "published_at": "2026-10-27T07:07:51+00:00"
-        },
-        {
-          "title": "The next generation’s guide to the new space economy",
-          "url": "https://news.mit.edu/2026/guide-to-new-space-economy-1002",
-          "source": "MIT News 太空探索",
-          "score": 23.7,
-          "published_at": "2026-10-02T14:50:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "next",
-        "johnson",
-        "mentor",
-        "shapes",
-        "nasa"
-      ],
-      "digest": "NASA约翰逊航天中心导航与控制工程师丹尼尔·科恩在繁忙工作之余继续指导莱斯大学学生马尔维卡·巴德瓦杰等实习生，该项目旨在培养下一代航天人才。科恩回应学生询问时确认愿意继续投入时间教学。与此同时，麻省理工学院学生发布行业报告，为新兴太空经济领域的领导者和投资者提供指导。",
-      "digestTitle": "NASA工程师指导实习生项目持续开展",
       "rank": 9,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
     },
     {
       "terms": [
-        "cloud",
-        "even",
-        "mars",
-        "odder",
-        "oddest",
-        "science",
-        "than",
-        "thought",
-        "weird",
-        "weirdest"
+        "adopting",
+        "apollo",
+        "astronauts",
+        "base",
+        "land",
+        "moon",
+        "nasa",
+        "rocks",
+        "standing-up",
+        "urgency"
       ],
       "source_count": 2,
       "signal_count": 1,
       "sources": [
-        "Astronomy Magazine",
-        "ESA 空间科学"
+        "NASA 快讯",
+        "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-28T16:40:33.835581+00:00",
+      "latest_at": "2026-10-29T01:49:25.856155+00:00",
       "representative": {
-        "title": "Mars’s oddest cloud may be even odder than we thought",
-        "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
-        "source": "ESA 空间科学",
-        "published_at": "2026-10-07T15:00:00+00:00",
-        "score": 47.1,
-        "summary": "Scientists using the European Space Agency's Mars Express , in combination with a state-of-the-art meteorological model of the Red Planet, have found that there may be some very exotic physics behind Mars’s most curious cloud.",
-        "zh_full": null
+        "title": "The Land of the Standing-Up Rocks",
+        "url": "https://science.nasa.gov/earth/earth-observatory/the-land-of-the-standing-up-rocks/",
+        "source": "NASA 快讯",
+        "published_at": "2026-10-28T04:01:00+00:00",
+        "score": 60.6,
+        "summary": "A national monument since the 1920s, Chiricahua is America’s newest national park.",
+        "zh_full": "奇里卡瓦国家纪念地自20世纪20年代设立以来，一直是美国国家纪念地。如今，它成为美国最新的国家公园。该地区以其独特的岩石柱群闻名，这些岩石柱被称为“站立岩石”。",
+        "llm_summary": "奇里卡瓦国家纪念地自20世纪20年代设立以来，一直是美国国家纪念地。如今，它成为美国最新的国家公园。该地区以其独特的岩石柱群闻名，这些岩石柱被称为“站立岩石”。",
+        "llm_reason": "美国最新国家公园的简短公告",
+        "density": "低",
+        "llm_score": 13.5
       },
       "folded_count": 1,
-      "title": "Mars’s oddest cloud may be even odder than we thought",
-      "id": "a2cd7c0abb87",
+      "title": "The Land of the Standing-Up Rocks",
+      "id": "eb5c78c7ce13",
       "links": [
         {
-          "title": "The weird science behind Mars’ weirdest cloud",
-          "url": "https://www.astronomy.com/science/the-weird-science-behind-mars-weirdest-cloud/",
-          "source": "Astronomy Magazine",
+          "title": "The Land of the Standing-Up Rocks",
+          "url": "https://science.nasa.gov/earth/earth-observatory/the-land-of-the-standing-up-rocks/",
+          "source": "NASA 快讯",
           "score": 60.6,
-          "published_at": "2026-10-27T19:05:11+00:00"
+          "published_at": "2026-10-28T04:01:00+00:00"
         },
         {
-          "title": "Mars’s oddest cloud may be even odder than we thought",
-          "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
-          "source": "ESA 空间科学",
-          "score": 47.1,
-          "published_at": "2026-10-07T15:00:00+00:00"
+          "title": "NASA adopting Apollo's urgency to build a moon base and land astronauts within 2 years",
+          "url": "https://phys.org/news/2026-10-nasa-apollo-urgency-moon-base.html",
+          "source": "Phys.org 太空新闻",
+          "score": 58.0,
+          "published_at": "2026-10-24T09:28:00+00:00"
         }
       ],
       "top_terms": [
-        "mars",
-        "cloud",
-        "weird",
-        "science",
-        "weirdest"
+        "land",
+        "nasa",
+        "adopting",
+        "apollo",
+        "urgency"
       ],
-      "digest": "科学家利用欧洲空间局火星快车号探测器数据结合气象模型，发现火星火山上方每日出现又消失的细长云可能由异常物理过程驱动。该云在火星春季和夏季的沙尘季，于日出后不久在阿尔西亚山上方形成，数小时内消散。研究团队称，其形成涉及与地球云不同的机制，可能包括火山坡上的地形抬升与大气波动的相互作用。",
-      "digestTitle": "火星神秘云成因有新解",
+      "digest": "奇里卡瓦国家纪念地已正式成为美国最新的国家公园。该地位于亚利桑那州，自1920年代起被列为国家纪念地，现由美国国家公园管理局负责管理。这一变更使其从保护地升级为完整的国家公园，提升了其保护地位和公众认知度。",
+      "digestTitle": "奇里卡瓦国家纪念地成为美国最新国家公园",
       "rank": 10,
       "trend": "new",
       "trendPct": null,

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T16:40:33.835581+00:00",
-  "count": 4,
+  "generatedAt": "2026-10-29T01:49:25.856155+00:00",
+  "count": 5,
   "items": [
     {
       "id": "a02cd8f01a53",
@@ -10,7 +10,7 @@
       "heat": 45.5,
       "sourceCount": 2,
       "signalCount": 3,
-      "latestAt": "2026-10-28T16:40:33.835581+00:00",
+      "latestAt": "2026-10-29T01:49:25.856155+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "arXiv quant-ph 论文速递"
@@ -20,26 +20,26 @@
           "title": "Diagonal, Switching, and Locally Optimal Unraveling for efficient quantum trajectories in metastable open quantum systems",
           "url": "https://arxiv.org/abs/2610.36067",
           "source": "arXiv quant-ph 论文速递",
-          "score": 48.8,
+          "score": 48.6,
           "published_at": "2026-10-28T04:00:00+00:00"
         },
         {
           "title": "Analog Quantum Experiments Meet Automatic Differentiation - from Programs to Atoms",
           "url": "https://arxiv.org/abs/2610.36167",
           "source": "arXiv quant-ph 论文速递",
-          "score": 48.8,
+          "score": 48.6,
           "published_at": "2026-10-28T04:00:00+00:00"
         },
         {
           "title": "Quantum sensor loop design could improve magnetic measurements for medicine and communications",
           "url": "https://phys.org/news/2026-10-quantum-sensor-loop-magnetic-medicine.html",
           "source": "Phys.org 物理新闻",
-          "score": 37.2,
+          "score": 37.1,
           "published_at": "2026-10-27T17:40:06+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": "阿德莱德大学量子工程师发现一种新的环路设计，可改进全球最灵敏的电磁场传感器，有望推动脑成像、医学诊断和通信技术发展。该设计通过优化传感器结构，提高了对微弱磁场的探测能力，但具体性能提升幅度尚未披露。",
       "digestTitle": "量子传感器环路设计提升磁场测量精度",
@@ -50,13 +50,47 @@
       }
     },
     {
+      "id": "abac4c095f41",
+      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-10-29T01:49:25.856155+00:00",
+      "sources": [
+        "MIT News 物理",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+          "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-05T15:00:00+00:00"
+        },
+        {
+          "title": "Ultrathin metal layer boosts spin-related signals, opening a door to ultralow-power electronics",
+          "url": "https://phys.org/news/2026-10-ultrathin-metal-layer-boosts-door.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.7,
+          "published_at": "2026-10-28T23:20:02+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
       "id": "162040c659a9",
       "title": "Consensus And Information Redistribution In Quantum Networks",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-10-28T16:40:33.835581+00:00",
+      "latestAt": "2026-10-29T01:49:25.856155+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "arXiv quant-ph 论文速递"
@@ -66,22 +100,22 @@
           "title": "Supercurrent enables the reading of quantum information without destroying it",
           "url": "https://phys.org/news/2026-10-supercurrent-enables-quantum-destroying.html",
           "source": "Phys.org 物理新闻",
-          "score": 59.2,
+          "score": 59.0,
           "published_at": "2026-10-25T19:00:20+00:00"
         },
         {
           "title": "Consensus And Information Redistribution In Quantum Networks",
           "url": "https://arxiv.org/abs/2610.36391",
           "source": "arXiv quant-ph 论文速递",
-          "score": 47.3,
+          "score": 47.1,
           "published_at": "2026-10-28T04:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": null,
-      "digestTitle": null,
+      "digest": "研究人员开发出一种利用超电流读取量子比特信息的方法，可在不破坏量子态的情况下完成测量。该技术解决了量子计算中直接测量会破坏量子信息的难题，为量子网络中的信息重分布提供了新途径。早期研究曾认为量子系统无法被重复读取，但新方法通过超电流机制实现了无损读取，相关成果发表于Phys.org和arXiv预印本。",
+      "digestTitle": "超电流实现量子信息无损读取",
       "refs": {
         "arxiv": "2610.36391",
         "via": "feed_text",
@@ -95,7 +129,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-28T16:40:33.835581+00:00",
+      "latestAt": "2026-10-29T01:49:25.856155+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -105,7 +139,7 @@
           "title": "Are we about to solve the greatest mystery of the neutrino?",
           "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 55.2,
+          "score": 55.0,
           "published_at": "2026-10-19T19:00:00+00:00"
         },
         {
@@ -119,7 +153,7 @@
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "中国一项大型实验即将测量中微子的质量，这一结果可能彻底改变粒子物理学。长期以来，中微子质量一直是个未解之谜，而该实验有望首次给出明确答案。与此同时，MIT的研究人员报告称，早先提出的中微子激光方案因物理和基本限制而无法实现，这一结论推翻了此前关于可能产生中微子激光束的提议。",
+      "digest": "中国一项大型实验即将测量中微子的质量，其结果可能彻底改变粒子物理学。长期以来，中微子质量一直是个未解之谜，而该实验有望首次给出确切答案。与此同时，麻省理工学院的研究人员报告称，由于物理和基本限制，早先提出的产生中微子激光束的方案无法实现。",
       "digestTitle": "中微子质量测量实验即将揭晓答案"
     },
     {
@@ -129,7 +163,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-10-28T16:40:33.835581+00:00",
+      "latestAt": "2026-10-29T01:49:25.856155+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -139,7 +173,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 50.9,
+          "score": 50.7,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
@@ -153,7 +187,7 @@
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "物理学家尚不确定暗物质应表现为粒子还是波动，这决定了观测策略。专栏作者Chanda Prescod-Weinstein称，暗物质可能已被发现，但需明确其行为方式才能设计观测实验。MIT博士生Jessica Fry正在实验室中搜寻这种最难以捉摸的粒子，但现有报道未提供任何已证实的观测结果。",
+      "digest": "暗物质是否已被发现仍存争议，但观测策略取决于其表现为粒子还是波动。专栏作者Chanda Prescod-Weinstein称，我们或许已经发现了暗物质，关键在于确定其行为方式。与此同时，MIT博士生Jessica Fry正在实验室中搜寻宇宙中最难捕捉的粒子，试图通过实验直接探测暗物质。两种路径反映了当前物理学界对暗物质本质的不同理解：一种强调理论推断，另一种依赖实验验证。",
       "digestTitle": "暗物质观测：粒子还是波动？"
     }
   ]
