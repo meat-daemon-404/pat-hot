@@ -1,72 +1,137 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T16:57:55.562499+00:00",
+  "generatedAt": "2026-10-30T01:59:28.418492+00:00",
   "count": 10,
   "items": [
     {
+      "terms": [],
+      "source_count": 2,
+      "signal_count": 3,
+      "sources": [
+        "C114中国通信网_监管",
+        "工信部要闻"
+      ],
+      "score": 45.5,
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
+      "representative": {
+        "title": "湖北通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动",
+        "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_8641f58c6bc1467ea7857bb26d07493e.html",
+        "source": "工信部要闻",
+        "published_at": null,
+        "score": 57.2,
+        "summary": "",
+        "zh_full": "湖北省通信管理局会同湖北省经济和信息化厅联合印发《湖北省2026年新型工业化网络安全专项行动工作方案》，部署2026年新型工业化网络安全专项行动。方案提出，到2026年底，建立完善全省工业领域网络安全防护重点企业清单，实施工业互联网安全分类分级管理贯标，开展工业控制系统网络安全评估，完成重要车联网平台定级备案核查，面向重点产业链重点企业开展网络安全监测服务，深化宣贯培训和创新服务，持续提升工业领域网络安全意识和能力。方案围绕增强重点企业网络安全防护能力、提升重要系统网络安全水平、探索重点产业链网络安全赋能模式、深化工业领域网络安全创新服务四个方面，部署了七项重点任务，包括建立防护重点企业清单、实施重点企业分类分级贯标、开展工业控制系统网络安全评估、深化车联网平台网络安全管理、开展重点产业链网络安全监测服务、加强新型工业化网络安全等。",
+        "llm_summary": "湖北省通信管理局与省经济和信息化厅联合印发2026年新型工业化网络安全专项行动工作方案，目标到2026年底建立完善工业领域网络安全防护重点企业清单，实施工业互联网安全分类分级管理贯标，开展工业控制系统网络安全评估，完成重要车联网平台定级备案核查，面向重点产业链重点企业开展网络安全监测服务。方案围绕增强重点企业防护能力、提升重要系统安全水平、探索重点产业链赋能模式、深化创新服务四个方面部署七项重点任务。",
+        "llm_reason": "地方落实新型工业化网络安全专项行动的部署，对关注工业互联网安全政策的学生有参考价值。",
+        "density": "中",
+        "llm_score": 45.0
+      },
+      "folded_count": 1,
+      "title": "湖北通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动",
+      "id": "2e0a41654e17",
+      "links": [
+        {
+          "title": "湖北通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动",
+          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_8641f58c6bc1467ea7857bb26d07493e.html",
+          "source": "工信部要闻",
+          "score": 57.2,
+          "published_at": null
+        },
+        {
+          "title": "工信部部署2026年信息通信业安全生产与网络运行安全工作",
+          "url": "https://www.c114.com.cn/news/550/a1307461.html",
+          "source": "C114中国通信网_监管",
+          "score": 52.7,
+          "published_at": null
+        },
+        {
+          "title": "工信部召开2026年信息通信业行风建设暨纠风工作会议",
+          "url": "https://www.c114.com.cn/news/550/a1306739.html",
+          "source": "C114中国通信网_监管",
+          "score": 52.7,
+          "published_at": null
+        }
+      ],
+      "top_terms": [
+        "信息",
+        "通信",
+        "安全",
+        "工信",
+        "信部"
+      ],
+      "digest": "湖北省通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动，以加快推进新型工业化网络安全能力建设。该行动按照工业和信息化部网络安全管理局有关工作部署开展，具体措施和预期目标尚未公布。",
+      "digestTitle": "湖北部署2026年新型工业化网络安全专项行动",
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 45.5,
+      "status": "关注中"
+    },
+    {
       "terms": [
-        "accuracy",
-        "bandwidth",
-        "blue",
-        "gates",
-        "micro-leds",
-        "modulation",
-        "nanoseconds",
+        "camera",
+        "graphene",
+        "jumps",
+        "light-driven",
+        "multi-camera",
         "quantum",
-        "record",
-        "speed",
-        "uiuc"
+        "reveals",
+        "simplifies",
+        "slow-motion"
       ],
       "source_count": 2,
       "signal_count": 2,
       "sources": [
-        "LEDinside 英文",
+        "EDN 电子工程专辑",
         "Phys.org 物理新闻"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
       "representative": {
-        "title": "Quantum gates set speed record at 6.8 nanoseconds with over 99.98% accuracy",
-        "url": "https://phys.org/news/2026-10-quantum-gates-nanoseconds-accuracy.html",
-        "source": "Phys.org 物理新闻",
-        "published_at": "2026-10-27T18:40:12+00:00",
-        "score": 55.4,
-        "summary": "Researchers from Jülich, Aachen and Cologne have performed a quantum operation on a qubit in just 6.8 nanoseconds—with more than 99.98% accuracy. Such operations typically take several tens of nanoseconds in superconducting quantum computer",
-        "zh_full": "德国于利希研究中心、亚琛工业大学和科隆大学的研究人员成功实现了一种超快量子门操作，在单个量子比特上仅需6.8纳秒即可完成，且保真度超过99.98%。这一成果打破了以往超导量子计算机中量子门操作通常需要数十纳秒的常规速度限制。相关研究发表在《自然·通讯》上。研究人员表示，这种超快、高保真度的量子门操作对于提升量子计算机的计算速度和纠错能力具有重要意义，有望推动量子计算向实用化方向迈出关键一步。该工作展示了在超导量子比特系统中实现高速、高精度量子控制的可能性，为未来构建更快、更可靠的量子处理器提供了新的技术路径。",
-        "llm_summary": "德国三所研究机构联合开发出一种超快量子门，在单个量子比特上仅需6.8纳秒即可完成操作，保真度超过99.98%，远快于超导量子计算机通常所需的数十纳秒。该成果发表在《自然·通讯》上，对提升量子计算机速度和纠错能力有重要意义。",
-        "llm_reason": "超快高保真量子门刷新速度纪录，对量子计算提速有直接价值",
-        "density": "高",
-        "llm_score": 80.0
+        "title": "Camera kit simplifies multi-camera AI development",
+        "url": "https://www.edn.com/camera-kit-simplifies-multi-camera-ai-development/",
+        "source": "EDN 电子工程专辑",
+        "published_at": "2026-10-28T19:11:22+00:00",
+        "score": 55.8,
+        "summary": "Innodisk offers the GMSL2 camera starter kit, which bundles four 3-Mpixel cameras, a MIPI CSI-2-to- GMSL2 capture card, and accessories. The post Camera kit simplifies multi-camera AI development appeared first on EDN .",
+        "zh_full": "Innodisk（宜鼎国际）推出了GMSL2相机入门套件，该套件包含四个300万像素相机、一个MIPI CSI-2转GMSL2采集卡以及相关配件。该套件旨在简化多相机AI开发流程。",
+        "llm_summary": "宜鼎国际发布GMSL2相机入门套件，集成四个300万像素相机、MIPI CSI-2转GMSL2采集卡及配件，用于简化多相机AI系统开发。",
+        "llm_reason": "简化多相机AI开发硬件方案",
+        "density": "中",
+        "llm_score": 53.5
       },
       "folded_count": 1,
-      "title": "Quantum gates set speed record at 6.8 nanoseconds with over 99.98% accuracy",
-      "id": "f3c3d55e4e44",
+      "title": "Camera kit simplifies multi-camera AI development",
+      "id": "f96054d4cebf",
       "links": [
         {
-          "title": "Quantum gates set speed record at 6.8 nanoseconds with over 99.98% accuracy",
-          "url": "https://phys.org/news/2026-10-quantum-gates-nanoseconds-accuracy.html",
-          "source": "Phys.org 物理新闻",
-          "score": 55.4,
-          "published_at": "2026-10-27T18:40:12+00:00"
+          "title": "Camera kit simplifies multi-camera AI development",
+          "url": "https://www.edn.com/camera-kit-simplifies-multi-camera-ai-development/",
+          "source": "EDN 电子工程专辑",
+          "score": 55.8,
+          "published_at": "2026-10-28T19:11:22+00:00"
         },
         {
-          "title": "[News] UIUC Achieves Record Modulation Bandwidth of 2.75 GHz for GaN Blue Micro-LEDs",
-          "url": "https://www.ledinside.com/news/2026/10/2026_10_28_05",
-          "source": "LEDinside 英文",
-          "score": 38.7,
-          "published_at": "2026-10-27T23:43:41+00:00"
+          "title": "Slow-motion electron camera reveals light-driven quantum jumps in graphene",
+          "url": "https://phys.org/news/2026-10-motion-electron-camera-reveals-driven.html",
+          "source": "Phys.org 物理新闻",
+          "score": 55.7,
+          "published_at": "2026-10-28T16:00:28+00:00"
         }
       ],
       "top_terms": [
-        "record",
-        "quantum",
-        "gates",
-        "set",
-        "speed"
+        "camera",
+        "slow",
+        "motion",
+        "reveals",
+        "driven"
       ],
-      "rank": 1,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "digest": "Innodisk推出GMSL2相机套件，包含四台300万像素相机、MIPI CSI-2转GMSL2采集卡及配件，用于简化多相机AI开发。同时，来自雷根斯堡、马尔堡和于利希的物理学家利用新型慢动作电子相机，观察到强电场驱动石墨烯电子跨越能隙的量子跳跃现象。",
+      "digestTitle": "光电行业多起技术进展发布",
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 42.0,
       "status": "关注中"
@@ -83,7 +148,7 @@
         "LEDinside 中文"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
       "representative": {
         "title": "亨通光电上半年净利润31.2亿元 同比增长93.38%",
         "url": "https://www.c114.com.cn/news/123/a1316458.html",
@@ -104,7 +169,7 @@
           "title": "光通信三季报：亨通光电、天孚通信、通鼎互联等利润增长",
           "url": "https://www.ledinside.cn/fsa/20261029-62916.html",
           "source": "LEDinside 中文",
-          "score": 69.5,
+          "score": 69.2,
           "published_at": "2026-10-29"
         },
         {
@@ -122,11 +187,9 @@
         "利润",
         "增长"
       ],
-      "digest": "亨通光电、天孚通信、通鼎互联等光通信企业在2026年三季报中披露利润增长。亨通光电上半年净利润31.2亿元，同比增长93.38%，扣非净利润31.51亿元，同比增长100.62%。其他企业亦报告利润增长，但具体增幅未在报道中详述。",
-      "digestTitle": "光通信企业三季报利润增长",
-      "rank": 2,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 3,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 42.0,
       "status": "关注中"
@@ -140,7 +203,7 @@
         "工信部要闻"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
       "representative": {
         "title": "工业和信息化部工业软件标准化技术委员会成立",
         "url": "http://www.miit.gov.cn/xwfb/bldhd/art/2026/art_7a7c491a6b3944a698572843bbee81fb.html",
@@ -176,9 +239,9 @@
         "化技",
         "技术"
       ],
-      "digest": "工信部正筹建量子信息标准化技术委员会，以推动该领域标准化工作。根据工信部官网公示的筹建方案，该委员会将负责量子信息领域的标准制定与修订工作。目前方案正在公示中，以听取各方意见。",
+      "digest": "工信部正筹建量子信息标准化技术委员会，以推动该领域标准化工作。根据工信部官网公示的筹建方案，该委员会将负责量子信息领域的标准制定与协调。目前方案正在公示以听取各方意见，尚未正式成立。",
       "digestTitle": "工信部筹建量子信息标准化技术委员会",
-      "rank": 3,
+      "rank": 4,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -193,7 +256,7 @@
         "C114中国通信网_通信财经"
       ],
       "score": 34.5,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
       "representative": {
         "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
         "url": "https://www.c114.com.cn/news/123/a1315966.html",
@@ -239,7 +302,7 @@
         "上半",
         "半年"
       ],
-      "rank": 4,
+      "rank": 5,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -254,7 +317,7 @@
         "工信部要闻"
       ],
       "score": 34.5,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
       "representative": {
         "title": "福建通信管理局印发《福建省“十五五”信息通信业发展规划》",
         "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_8274fc758e6b4511986fc2d4bc17a5aa.html",
@@ -306,95 +369,150 @@
         "管理",
         "理局"
       ],
-      "rank": 5,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 6,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 34.5,
       "status": "关注中"
     },
     {
       "terms": [
-        "back",
-        "list",
-        "look",
-        "october",
-        "photonics",
-        "sensing",
-        "spectra",
-        "summit",
-        "west"
+        "copackaged",
+        "focus",
+        "links",
+        "metalens",
+        "microleds",
+        "microscope",
+        "moving",
+        "optical",
+        "optics",
+        "pivot",
+        "pixels",
+        "switches",
+        "voltage"
       ],
-      "source_count": 3,
-      "signal_count": 2,
+      "source_count": 2,
+      "signal_count": 1,
       "sources": [
         "Laser Focus World",
-        "YouTube·Photonics Media",
-        "YouTube·SPIETV"
+        "Phys.org 物理新闻"
       ],
-      "score": 21.2,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
+      "score": 21.0,
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
       "representative": {
-        "title": "Photonics Hot List: October 23, 2026",
-        "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
+        "title": "From pixels to optical links: MicroLEDs pivot to copackaged optics",
+        "url": "https://www.laserfocusworld.com/optics/article/55409336/yole-group-from-pixels-to-optical-links-microleds-pivot-to-copackaged-optics",
         "source": "Laser Focus World",
         "published_at": null,
-        "score": 55.8,
-        "summary": "In this episode: An optical imaging combo approach explores Alzheimer's disease, the week in photonics business news, and a multiquantum well material shows potential for nonlinear photonics.",
-        "zh_full": "本期光子学热点内容包括：一种光学成像组合方法探索阿尔茨海默病；本周光子学商业新闻；以及一种多量子阱材料在非线性光子学中的潜力。具体技术细节和商业动态未在摘要中展开。",
-        "llm_summary": "本期光子学热点涵盖阿尔茨海默病的光学成像组合研究、本周光子学商业新闻，以及多量子阱材料在非线性光子学中的潜力。",
-        "llm_reason": "汇总光子学领域近期动态",
-        "density": "低",
-        "llm_score": 18.5
+        "score": 55.7,
+        "summary": "A surge of interest in micro-light-emitting diode (microLED) copackaged optics (CPO) solutions reflects several advantages but shouldn’t overshadow the technological challenges that remain.",
+        "zh_full": "（无摘要，仅标题）市场对微发光二极管（microLED）共封装光学（CPO）解决方案的兴趣激增，反映出其多项优势，但不应掩盖仍然存在的技术挑战。",
+        "llm_summary": "（无摘要，仅标题）市场对微发光二极管（microLED）共封装光学（CPO）解决方案的兴趣激增，反映出其多项优势，但不应掩盖仍然存在的技术挑战。",
+        "llm_reason": "microLED CPO趋势与挑战",
+        "density": "低"
       },
-      "folded_count": 2,
-      "title": "Photonics Hot List: October 23, 2026",
-      "id": "9aa2fe8405d5",
+      "folded_count": 1,
+      "title": "From pixels to optical links: MicroLEDs pivot to copackaged optics",
+      "id": "7f40fbf99bd9",
       "links": [
         {
-          "title": "Photonics Hot List: October 23, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
+          "title": "From pixels to optical links: MicroLEDs pivot to copackaged optics",
+          "url": "https://www.laserfocusworld.com/optics/article/55409336/yole-group-from-pixels-to-optical-links-microleds-pivot-to-copackaged-optics",
           "source": "Laser Focus World",
-          "score": 55.8,
+          "score": 55.7,
           "published_at": null
         },
         {
-          "title": "Photonics Hot List: October 16, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
-          "source": "Laser Focus World",
-          "score": 55.8,
-          "published_at": null
-        },
-        {
-          "title": "A Look Back on Photonics West 2026",
-          "url": "https://www.youtube.com/shorts/ne-cuXI4otA",
-          "source": "YouTube·SPIETV",
+          "title": "Metalens microscope switches focus with voltage, not moving optics",
+          "url": "https://phys.org/news/2026-10-metalens-microscope-focus-voltage-optics.html",
+          "source": "Phys.org 物理新闻",
           "score": 54.5,
-          "published_at": "2026-10-16T21:37:37+00:00"
-        },
-        {
-          "title": "Photonics Spectra Sensing Technologies Summit 2026",
-          "url": "https://www.youtube.com/watch?v=57_odMmja30",
-          "source": "YouTube·Photonics Media",
-          "score": 44.3,
-          "published_at": "2026-10-01T15:00:15+00:00"
+          "published_at": "2026-10-26T21:20:10+00:00"
         }
       ],
       "top_terms": [
-        "photonics",
-        "list",
-        "october",
-        "look",
-        "back"
+        "optics",
+        "metalens",
+        "microscope",
+        "switches",
+        "focus"
       ],
-      "digest": "一种多量子阱材料在非线性光子学应用中展现出潜力，相关成果于2026年10月23日由Laser Focus World报道。该材料有望用于增强光信号处理或频率转换等非线性光学功能。此前一周，该媒体还报道了热光纤可增强微弱信号，以及用于家禽供应链监测的传感设备。这些进展均属于光电领域近期关注的技术方向。",
-      "digestTitle": "多量子阱材料在非线性光子学中展现潜力",
-      "rank": 6,
+      "digest": "微发光二极管（microLED）共封装光学（CPO）解决方案近期受到关注，因其在光互连领域具有多项优势，但技术挑战依然存在。该方案旨在将光学元件与芯片直接集成，以提升数据传输效率并降低功耗。尽管业界兴趣浓厚，相关技术仍面临制造工艺和可靠性等难题，尚未实现大规模商用。",
+      "digestTitle": "微LED共封装光学技术兴起，挑战犹存",
+      "rank": 7,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 21.2,
-      "status": "发酵中"
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "agriculture",
+        "combines",
+        "element",
+        "imaging",
+        "optical",
+        "precision",
+        "soft",
+        "spectroscopy",
+        "x-ray"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Laser Focus World",
+        "Phys.org 物理新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
+      "representative": {
+        "title": "Optical imaging and spectroscopy enhance precision agriculture",
+        "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
+        "source": "Laser Focus World",
+        "published_at": null,
+        "score": 55.7,
+        "summary": "Photonics provides new ways to measure crop condition, assess food quality, and control plant growth.",
+        "zh_full": "（无摘要，仅标题）光子学为测量作物状况、评估食品质量以及控制植物生长提供了新的方式，从而提升精准农业的精度。",
+        "llm_summary": "（无摘要，仅标题）光子学为测量作物状况、评估食品质量以及控制植物生长提供了新的方式，从而提升精准农业的精度。",
+        "llm_reason": "光子学赋能精准农业",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "Optical imaging and spectroscopy enhance precision agriculture",
+      "id": "cd9ddb82a64e",
+      "links": [
+        {
+          "title": "Optical imaging and spectroscopy enhance precision agriculture",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
+          "source": "Laser Focus World",
+          "score": 55.7,
+          "published_at": null
+        },
+        {
+          "title": "Single optical element combines soft X-ray imaging and spectroscopy",
+          "url": "https://phys.org/news/2026-10-optical-element-combines-soft-ray.html",
+          "source": "Phys.org 物理新闻",
+          "score": 54.5,
+          "published_at": "2026-10-26T20:20:11+00:00"
+        }
+      ],
+      "top_terms": [
+        "optical",
+        "imaging",
+        "spectroscopy",
+        "element",
+        "combines"
+      ],
+      "digest": "国际研究团队（来自德国、瑞士和日本）证明，单个反射波带片（RZP）可同时进行软X射线成像和共振非弹性X射线散射（RIXS）映射。该元件在实验中成功实现了两种功能，为简化X射线分析设备提供了新途径。",
+      "digestTitle": "单光学元件实现软X射线成像与光谱分析",
+      "rank": 8,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
     },
     {
       "terms": [],
@@ -405,7 +523,7 @@
         "OFweek 光电频道"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
       "representative": {
         "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
         "url": "https://www.c114.com.cn/news/123/a1316157.html",
@@ -444,11 +562,11 @@
         "亿元",
         "融资"
       ],
-      "digest": "中际旭创发布2026年上半年业绩，营收达417.78亿元，同比增长182.49%。公司称增长主要受益于AI驱动的高速光模块（800G/1.6T）放量，海外收入占比接近95%。",
-      "digestTitle": "中际旭创上半年营收417.78亿元，同比增长182.49%",
-      "rank": 7,
-      "trend": "new",
-      "trendPct": null,
+      "digest": "中际旭创2026年上半年营收417.78亿元，同比增长182.49%，主要受AI驱动的高速光模块（800G/1.6T）放量推动，海外收入占比近95%。",
+      "digestTitle": "中际旭创上半年营收417.78亿元，同比增182.49%",
+      "rank": 9,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -466,13 +584,13 @@
         "COEMA 中国光电子行业协会"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
       "representative": {
         "title": "精密光纤激光器企业频准激光登陆科创板",
         "url": "https://www.coema.org.cn/industry/202608/5795.html",
         "source": "COEMA 中国光电子行业协会",
         "published_at": "2026-08",
-        "score": 41.1,
+        "score": 45.7,
         "summary": "",
         "zh_full": "（无摘要，仅标题）精密光纤激光器企业频准激光登陆科创板。",
         "llm_summary": "标题信息：精密光纤激光器企业频准激光登陆科创板。",
@@ -483,18 +601,18 @@
       "id": "e5f48246a18c",
       "links": [
         {
+          "title": "精密光纤激光器企业频准激光登陆科创板",
+          "url": "https://www.coema.org.cn/industry/202608/5795.html",
+          "source": "COEMA 中国光电子行业协会",
+          "score": 45.7,
+          "published_at": "2026-08"
+        },
+        {
           "title": "宇树科技计划登陆科创板 中国移动已投资",
           "url": "https://www.c114.com.cn/news/212/a1292374.html",
           "source": "C114中国通信网_IT资讯",
           "score": 44.5,
           "published_at": null
-        },
-        {
-          "title": "精密光纤激光器企业频准激光登陆科创板",
-          "url": "https://www.coema.org.cn/industry/202608/5795.html",
-          "source": "COEMA 中国光电子行业协会",
-          "score": 41.1,
-          "published_at": "2026-08"
         }
       ],
       "top_terms": [
@@ -504,144 +622,11 @@
         "创板",
         "激光"
       ],
-      "rank": 8,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "biological",
-        "briefings",
-        "deeper",
-        "future",
-        "imaging",
-        "importance",
-        "optical",
-        "phantoms",
-        "shaping",
-        "tissue"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Laser Focus World",
-        "YouTube·SPIETV"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
-      "representative": {
-        "title": "Shaping light to see deeper inside biological tissue",
-        "url": "https://www.laserfocusworld.com/biolife-sciences/article/55413515/imec-shaping-light-to-see-deeper-inside-biological-tissue",
-        "source": "Laser Focus World",
-        "published_at": null,
-        "score": 33.4,
-        "summary": "Integrated wavefront shaping extends the reach of optical imaging to give scientists a deeper and more precise look into biological tissue.",
-        "zh_full": null
-      },
-      "folded_count": 1,
-      "title": "Shaping light to see deeper inside biological tissue",
-      "id": "098b089f10b9",
-      "links": [
-        {
-          "title": "AI Briefings: Shaping the Future of Optical Imaging, the Importance of Tissue Phantoms",
-          "url": "https://www.youtube.com/watch?v=MxetD1y7hS0",
-          "source": "YouTube·SPIETV",
-          "score": 36.7,
-          "published_at": "2026-08-17T15:11:19+00:00"
-        },
-        {
-          "title": "Shaping light to see deeper inside biological tissue",
-          "url": "https://www.laserfocusworld.com/biolife-sciences/article/55413515/imec-shaping-light-to-see-deeper-inside-biological-tissue",
-          "source": "Laser Focus World",
-          "score": 33.4,
-          "published_at": null
-        }
-      ],
-      "top_terms": [
-        "shaping",
-        "tissue",
-        "briefings",
-        "future",
-        "optical"
-      ],
-      "rank": 9,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "arrays",
-        "avalanche",
-        "confirm",
-        "data",
-        "diode",
-        "feynman",
-        "imaging",
-        "measurements",
-        "mechanics",
-        "photon",
-        "quantum",
-        "richard",
-        "sharper",
-        "single-photon",
-        "vision"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Laser Focus World",
-        "Physics World（关键词过滤）"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
-      "representative": {
-        "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
-        "url": "https://www.laserfocusworld.com/detectors-imaging/article/55413803/single-photon-avalanche-diode-arrays-an-avalanche-of-photon-data-for-sharper-imaging",
-        "source": "Laser Focus World",
-        "published_at": null,
-        "score": 55.7,
-        "summary": "While typically associated with LiDAR, single-photon avalanche diode (SPAD) arrays can also be used as cameras for general-purpose imaging and perception by using ambient visible light.",
-        "zh_full": "单光子雪崩二极管（SPAD）阵列通常与激光雷达（LiDAR）相关联，但它们也可以利用环境可见光作为相机用于通用成像和感知。这一应用拓展了SPAD阵列的功能，使其不仅限于主动测距，还能在被动光照条件下进行成像。SPAD阵列具有单光子级灵敏度，能够捕捉极弱光信号，因此在环境光下也能实现高灵敏度成像。这种通用成像能力可能用于自动驾驶、机器人视觉、安防监控等领域，提供更丰富的光子数据以实现更清晰的图像。",
-        "llm_summary": "单光子雪崩二极管（SPAD）阵列通常用于LiDAR，但也可利用环境可见光作为相机进行通用成像和感知。SPAD阵列具有单光子灵敏度，能在被动光照下工作，为自动驾驶、机器人视觉等提供高灵敏度成像方案。",
-        "llm_reason": "拓展SPAD阵列应用，实现环境光通用成像",
-        "density": "中",
-        "llm_score": 22.0
-      },
-      "folded_count": 1,
-      "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
-      "id": "8c9d9a318b72",
-      "links": [
-        {
-          "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
-          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55413803/single-photon-avalanche-diode-arrays-an-avalanche-of-photon-data-for-sharper-imaging",
-          "source": "Laser Focus World",
-          "score": 55.7,
-          "published_at": null
-        },
-        {
-          "title": "Single-photon measurements confirm Richard Feynman’s vision of quantum mechanics",
-          "url": "https://physicsworld.com/a/single-photon-measurements-confirm-richard-feynmans-vision-of-quantum-mechanics/",
-          "source": "Physics World（关键词过滤）",
-          "score": 41.2,
-          "published_at": "2026-09-25T08:20:12+00:00"
-        }
-      ],
-      "top_terms": [
-        "photon",
-        "avalanche",
-        "diode",
-        "arrays",
-        "data"
-      ],
+      "digest": "精密光纤激光器企业频准激光已登陆科创板，宇树科技计划在科创板IPO，中国移动已投资宇树科技。两家公司分别推进上市进程，以推动业务发展。",
+      "digestTitle": "频准激光与宇树科技拟登陆科创板",
       "rank": 10,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"

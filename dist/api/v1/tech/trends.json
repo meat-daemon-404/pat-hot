@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T16:57:55.562499+00:00",
+  "generatedAt": "2026-10-30T01:59:28.418492+00:00",
   "weekStart": "2026-10-24",
   "windowDays": 7,
   "windowStart": "2026-10-24",
@@ -10,61 +10,61 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4146.2,
+      "thisWeek": 4593.5,
       "lastWeek": 3580.0,
-      "deltaPct": 15.8
+      "deltaPct": 28.3
     },
     {
       "category": "光通信",
-      "thisWeek": 3365.1,
+      "thisWeek": 3196.5,
       "lastWeek": 3062.2,
-      "deltaPct": 9.9
+      "deltaPct": 4.4
     },
     {
       "category": "科研进展",
-      "thisWeek": 3015.9,
+      "thisWeek": 3062.1,
       "lastWeek": 2595.9,
-      "deltaPct": 16.2
+      "deltaPct": 18.0
     },
     {
       "category": "产业与资本",
-      "thisWeek": 2892.9,
+      "thisWeek": 2892.7,
       "lastWeek": 3491.2,
       "deltaPct": -17.1
     },
     {
       "category": "其他",
-      "thisWeek": 2336.2,
+      "thisWeek": 2366.7,
       "lastWeek": 2618.8,
-      "deltaPct": -10.8
+      "deltaPct": -9.6
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 2092.2,
+      "thisWeek": 2122.7,
       "lastWeek": 1945.8,
-      "deltaPct": 7.5
+      "deltaPct": 9.1
     },
     {
       "category": "通信与算力",
-      "thisWeek": 1857.1,
+      "thisWeek": 1863.8,
       "lastWeek": 2619.7,
-      "deltaPct": -29.1
+      "deltaPct": -28.9
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 821.7,
+      "thisWeek": 868.6,
       "lastWeek": 729.7,
-      "deltaPct": 12.6
+      "deltaPct": 19.0
     },
     {
       "category": "显示与面板",
-      "thisWeek": 793.2,
+      "thisWeek": 792.8,
       "lastWeek": 801.8,
       "deltaPct": -1.1
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 424.2,
+      "thisWeek": 423.9,
       "lastWeek": 423.6,
       "deltaPct": 0.1
     },
@@ -77,16 +77,16 @@
   ],
   "newTopics": [
     {
+      "topic_id": "2e0a41654e17",
+      "title": "湖北通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动",
+      "score": 430.6,
+      "days": 3
+    },
+    {
       "topic_id": "6aec187ed191",
       "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
       "score": 429.1,
       "days": 5
-    },
-    {
-      "topic_id": "2e0a41654e17",
-      "title": "湖北通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动",
-      "score": 373.4,
-      "days": 3
     },
     {
       "topic_id": "f76d6c8926de",
@@ -125,15 +125,15 @@
       "days": 1
     },
     {
+      "topic_id": "a360e8d874a8",
+      "title": "Photonics Hot List: October 23, 2026",
+      "score": 188.4,
+      "days": 2
+    },
+    {
       "topic_id": "d6361a026b9d",
       "title": "Photonics Hot List: October 23, 2026",
       "score": 164.3,
-      "days": 1
-    },
-    {
-      "topic_id": "a4e666367946",
-      "title": "Integrated elliptical III-V nanopillar arrays on silicon for dual photodetection and light emission",
-      "score": 133.2,
       "days": 1
     }
   ],

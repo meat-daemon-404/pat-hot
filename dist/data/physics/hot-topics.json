@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T16:57:55.562499+00:00",
-  "count": 5,
+  "generatedAt": "2026-10-30T01:59:28.418492+00:00",
+  "count": 4,
   "items": [
     {
       "terms": [
@@ -29,7 +29,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
       "representative": {
         "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
         "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
@@ -56,7 +56,7 @@
           "title": "Ultrathin metal layer boosts spin-related signals, opening a door to ultralow-power electronics",
           "url": "https://phys.org/news/2026-10-ultrathin-metal-layer-boosts-door.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.4,
+          "score": 36.3,
           "published_at": "2026-10-28T23:20:02+00:00"
         }
       ],
@@ -67,82 +67,11 @@
         "boosts",
         "spin"
       ],
-      "digest": "麻省理工学院的研究团队开发出一种新技术，可制备空气稳定的超薄超导体晶圆级样品，克服了量子技术应用中的关键障碍。九州大学的研究人员发现，超薄铱锰层可增强磁性绝缘体与铂膜结构中的自旋相关信号，为超低功耗电子学开辟新路径。",
+      "digest": "研究人员开发出一种新工艺，可制备晶圆级、空气稳定的超薄超导体，解决了量子技术应用中的关键障碍。另一团队发现，超薄铱锰层可增强磁性绝缘体与铂膜结构中的自旋相关信号，为超低功耗电子学开辟新路径。",
       "digestTitle": "超薄超导体与自旋电子学新进展",
       "rank": 1,
       "trend": "flat",
       "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "anticipated",
-        "balance",
-        "deeper",
-        "even",
-        "extra",
-        "oddity",
-        "physics",
-        "quantum",
-        "qubits",
-        "speed",
-        "spin",
-        "stability",
-        "than"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "New Scientist 物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
-      "representative": {
-        "title": "Key oddity of quantum physics may run even deeper than anticipated",
-        "url": "https://www.newscientist.com/article/2596105-key-oddity-of-quantum-physics-may-run-even-deeper-than-anticipated/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-        "source": "New Scientist 物理",
-        "published_at": "2026-10-29T11:00:00+00:00",
-        "score": 61.0,
-        "summary": "Quantum mechanics stands out by being probabilistic and a new analysis suggests that this property can be traced unexpectedly deep into the theory’s mathematical foundations",
-        "zh_full": "量子力学以其概率性本质而著称，而一项新的分析表明，这种特性可以追溯到该理论数学基础中意想不到的深处。这项研究深入探讨了量子理论的基本结构，发现概率性并非仅仅是表面现象，而是根植于其数学框架的深层逻辑之中。这一发现挑战了人们对量子力学基础的传统理解，可能对量子信息、量子计算以及我们对现实本质的认知产生深远影响。研究团队通过重新审视量子力学的公理化体系，揭示了概率性特征与理论核心数学结构之间的紧密联系。这一成果为理解量子世界的奇异现象提供了新的视角，并可能推动物理学基础理论的进一步发展。",
-        "llm_summary": "新分析表明，量子力学的概率性特征可追溯到其数学基础的深层结构，挑战传统理解，可能影响量子信息与基础物理理论的发展。",
-        "llm_reason": "揭示量子力学基础的新视角",
-        "density": "高"
-      },
-      "folded_count": 1,
-      "title": "Key oddity of quantum physics may run even deeper than anticipated",
-      "id": "ac02fe797013",
-      "links": [
-        {
-          "title": "Key oddity of quantum physics may run even deeper than anticipated",
-          "url": "https://www.newscientist.com/article/2596105-key-oddity-of-quantum-physics-may-run-even-deeper-than-anticipated/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 61.0,
-          "published_at": "2026-10-29T11:00:00+00:00"
-        },
-        {
-          "title": "One extra quantum dot helps balance speed and stability in spin qubits",
-          "url": "https://phys.org/news/2026-10-extra-quantum-dot-stability-qubits.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.4,
-          "published_at": "2026-10-26T13:40:06+00:00"
-        }
-      ],
-      "top_terms": [
-        "quantum",
-        "extra",
-        "dot",
-        "balance",
-        "speed"
-      ],
-      "digest": "量子力学的概率性特征可追溯到其数学基础中比预期更深的层面，新分析表明这一特性并非仅源于测量过程，而是根植于理论结构本身。该发现由研究人员提出，尚待进一步验证，但可能影响对量子理论基本性质的解释。",
-      "digestTitle": "量子力学概率性根源比预期更深",
-      "rank": 2,
-      "trend": "new",
-      "trendPct": null,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -169,7 +98,7 @@
         "Quanta Magazine"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
       "representative": {
         "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
         "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
@@ -197,7 +126,7 @@
           "title": "How Do You Take a Picture of a Black Hole?",
           "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
           "source": "Quanta Magazine",
-          "score": 36.7,
+          "score": 36.5,
           "published_at": "2026-10-29T15:11:57+00:00"
         }
       ],
@@ -208,11 +137,9 @@
         "take",
         "picture"
       ],
-      "digest": "天文学家发现一种前所未见的天体——黑洞与巨大恒星的混合体，可能解释深空图像中神秘的小红点。该发现由MIT News报道，称这种黑洞星从未被观测到过，其形成机制和性质尚待进一步研究。",
-      "digestTitle": "天文学家发现新型黑洞星天体",
-      "rank": 3,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 2,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -234,7 +161,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
       "representative": {
         "title": "New research shows a neutrino laser is impossible",
         "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
@@ -255,7 +182,7 @@
           "title": "Are we about to solve the greatest mystery of the neutrino?",
           "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 54.6,
+          "score": 54.3,
           "published_at": "2026-10-19T19:00:00+00:00"
         },
         {
@@ -273,7 +200,9 @@
         "impossible",
         "solve"
       ],
-      "rank": 4,
+      "digest": "中国一项大型实验即将测量中微子的质量，其结果可能改变粒子物理学。与此同时，MIT研究人员报告称，此前提出的中微子激光方案因物理和基本限制无法实现。",
+      "digestTitle": "中微子质量测量实验即将揭晓，激光方案被否",
+      "rank": 3,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -296,7 +225,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-29T16:57:55.562499+00:00",
+      "latest_at": "2026-10-30T01:59:28.418492+00:00",
       "representative": {
         "title": "On the hunt for dark matter",
         "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
@@ -317,7 +246,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 50.3,
+          "score": 50.0,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
@@ -335,9 +264,7 @@
         "observe",
         "particle"
       ],
-      "digest": "暗物质是否已被发现，以及它应被视为粒子还是波，是当前物理学界争论的焦点。专栏作家Chanda Prescod-Weinstein称，暗物质可能已被发现，但观测它需要先确定其行为更接近粒子还是波。与此同时，MIT博士生Jessica Fry正在实验室中搜寻宇宙中最难捕捉的粒子，她的研究代表了实验物理学家对暗物质粒子属性的直接探测努力。这一分歧反映了理论预测与实验探索之间的张力，目前尚无定论。",
-      "digestTitle": "暗物质观测：粒子还是波？",
-      "rank": 5,
+      "rank": 4,
       "trend": "new",
       "trendPct": null,
       "badges": [],
