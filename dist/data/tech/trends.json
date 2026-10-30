@@ -1,66 +1,66 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T01:59:28.418492+00:00",
-  "weekStart": "2026-10-24",
+  "generatedAt": "2026-10-30T16:43:41.487901+00:00",
+  "weekStart": "2026-10-25",
   "windowDays": 7,
-  "windowStart": "2026-10-24",
-  "windowEnd": "2026-10-30",
-  "prevStart": "2026-10-17",
-  "prevEnd": "2026-10-23",
+  "windowStart": "2026-10-25",
+  "windowEnd": "2026-10-31",
+  "prevStart": "2026-10-18",
+  "prevEnd": "2026-10-24",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4593.5,
-      "lastWeek": 3580.0,
-      "deltaPct": 28.3
+      "thisWeek": 5141.2,
+      "lastWeek": 3681.7,
+      "deltaPct": 39.6
     },
     {
       "category": "光通信",
-      "thisWeek": 3196.5,
-      "lastWeek": 3062.2,
-      "deltaPct": 4.4
+      "thisWeek": 3563.4,
+      "lastWeek": 3075.7,
+      "deltaPct": 15.9
     },
     {
       "category": "科研进展",
-      "thisWeek": 3062.1,
-      "lastWeek": 2595.9,
-      "deltaPct": 18.0
+      "thisWeek": 3191.9,
+      "lastWeek": 2559.8,
+      "deltaPct": 24.7
     },
     {
       "category": "产业与资本",
-      "thisWeek": 2892.7,
-      "lastWeek": 3491.2,
-      "deltaPct": -17.1
+      "thisWeek": 3052.6,
+      "lastWeek": 3389.0,
+      "deltaPct": -9.9
     },
     {
       "category": "其他",
-      "thisWeek": 2366.7,
-      "lastWeek": 2618.8,
-      "deltaPct": -9.6
+      "thisWeek": 2550.7,
+      "lastWeek": 2394.2,
+      "deltaPct": 6.5
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 2122.7,
-      "lastWeek": 1945.8,
-      "deltaPct": 9.1
+      "thisWeek": 2308.8,
+      "lastWeek": 1803.8,
+      "deltaPct": 28.0
     },
     {
       "category": "通信与算力",
-      "thisWeek": 1863.8,
-      "lastWeek": 2619.7,
-      "deltaPct": -28.9
-    },
-    {
-      "category": "光电芯片与半导体",
-      "thisWeek": 868.6,
-      "lastWeek": 729.7,
-      "deltaPct": 19.0
+      "thisWeek": 1768.2,
+      "lastWeek": 2349.6,
+      "deltaPct": -24.7
     },
     {
       "category": "显示与面板",
-      "thisWeek": 792.8,
+      "thisWeek": 1087.5,
       "lastWeek": 801.8,
-      "deltaPct": -1.1
+      "deltaPct": 35.6
+    },
+    {
+      "category": "光电芯片与半导体",
+      "thisWeek": 928.1,
+      "lastWeek": 775.7,
+      "deltaPct": 19.6
     },
     {
       "category": "光传感与激光雷达",
@@ -79,8 +79,8 @@
     {
       "topic_id": "2e0a41654e17",
       "title": "湖北通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动",
-      "score": 430.6,
-      "days": 3
+      "score": 593.2,
+      "days": 4
     },
     {
       "topic_id": "6aec187ed191",
@@ -89,16 +89,10 @@
       "days": 5
     },
     {
-      "topic_id": "f76d6c8926de",
-      "title": "工业和信息化部工业软件标准化技术委员会成立",
-      "score": 358.4,
-      "days": 7
-    },
-    {
-      "topic_id": "bc72d5d904af",
-      "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
-      "score": 329.7,
-      "days": 7
+      "topic_id": "34173eca1ba4",
+      "title": "最高续航675km!东风新车上市:激光雷达版12.99万",
+      "score": 300.8,
+      "days": 2
     },
     {
       "topic_id": "ba306bad328d",
@@ -135,38 +129,50 @@
       "title": "Photonics Hot List: October 23, 2026",
       "score": 164.3,
       "days": 1
+    },
+    {
+      "topic_id": "cf711748e825",
+      "title": "Photonics Hot List: October 30, 2026",
+      "score": 164.3,
+      "days": 1
     }
   ],
   "sustainedTopics": [
+    {
+      "topic_id": "9f8710ab3d29",
+      "title": "华工科技：2026年上半年，光互联业务营收38.03亿元",
+      "days": 15,
+      "score": 1364.1
+    },
+    {
+      "topic_id": "ff9baccacead",
+      "title": "欧盟否认重新评估对美国科技巨头调查，但未来走向不明",
+      "days": 15,
+      "score": 942.0
+    },
+    {
+      "topic_id": "3db37b135ae4",
+      "title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼",
+      "days": 15,
+      "score": 847.8
+    },
+    {
+      "topic_id": "8579455b5d54",
+      "title": "华为全联接大会2026全光峰会举办，F5G-A全光网加速AI普惠千行万业",
+      "days": 15,
+      "score": 819.0
+    },
+    {
+      "topic_id": "b60b7f7c9968",
+      "title": "华为全联接大会2026丨鲲鹏携手伙伴深化硬件开放与生态繁荣，共启算力产业新征程",
+      "days": 15,
+      "score": 511.5
+    },
     {
       "topic_id": "da7b21634030",
       "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
       "days": 14,
       "score": 1961.4
-    },
-    {
-      "topic_id": "9f8710ab3d29",
-      "title": "华工科技：2026年上半年，光互联业务营收38.03亿元",
-      "days": 14,
-      "score": 1261.8
-    },
-    {
-      "topic_id": "ff9baccacead",
-      "title": "欧盟否认重新评估对美国科技巨头调查，但未来走向不明",
-      "days": 14,
-      "score": 879.2
-    },
-    {
-      "topic_id": "3db37b135ae4",
-      "title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼",
-      "days": 14,
-      "score": 785.0
-    },
-    {
-      "topic_id": "8579455b5d54",
-      "title": "华为全联接大会2026全光峰会举办，F5G-A全光网加速AI普惠千行万业",
-      "days": 14,
-      "score": 773.5
     },
     {
       "topic_id": "569c89c31ce9",
@@ -175,16 +181,10 @@
       "score": 673.4
     },
     {
-      "topic_id": "b60b7f7c9968",
-      "title": "华为全联接大会2026丨鲲鹏携手伙伴深化硬件开放与生态繁荣，共启算力产业新征程",
-      "days": 14,
-      "score": 477.4
-    },
-    {
       "topic_id": "b0bbcd7062bb",
       "title": "广和通上半年营收37.78亿元增长1.92% 净利润同比下降71.63%",
-      "days": 12,
-      "score": 1092.0
+      "days": 13,
+      "score": 1183.0
     },
     {
       "topic_id": "329557835790",
@@ -195,8 +195,8 @@
     {
       "topic_id": "5bc32d86db90",
       "title": "大招齐发，英特尔直击网络转型",
-      "days": 9,
-      "score": 1011.0
+      "days": 10,
+      "score": 1118.9
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T01:59:28.418492+00:00",
+  "generatedAt": "2026-10-30T16:43:41.487901+00:00",
   "count": 58,
   "dailies": {
     "2026-07-21": {
@@ -11532,20 +11532,78 @@
       "weekday": "周五",
       "label": "2026年10月30日",
       "headline": {
-        "title": "Electrical guardrails for charge carriers: A new approach to harness graphene for solar cells",
-        "url": "https://phys.org/news/2026-10-electrical-guardrails-carriers-approach-harness.html",
+        "title": "Unusual quantum states in six-layer graphene offer clues to superconductivity",
+        "url": "https://phys.org/news/2026-10-unusual-quantum-states-layer-graphene.html",
         "source": "Phys.org 物理新闻",
-        "summary": "石墨烯具有高电子迁移率，但光电转换效率低。新研究提出用电学“护栏”引导电荷载流子（电子和空穴）分离并导向不同接触点，从而更有效利用吸收的光能，为开发高效石墨烯太阳能电池提供新思路。",
-        "zh_full": "石墨烯是单层碳原子构成的材料，其中电子具有很高的迁移率，因此有望用于高速电子元件。然而，石墨烯在将光转化为电能方面效率不高。虽然石墨烯吸收光后确实会激发电子，并留下带正电的载流子（称为“空穴”），但除非电子和空穴被分离并导向不同的接触点，否则吸收的光能无法被有效利用。这项新研究提出了一种方法，通过电学“护栏”来引导电荷载流子，从而有望提高石墨烯在太阳能电池中的光电转换效率。该研究为利用石墨烯开发更高效的太阳能电池提供了新的思路，通过控制电荷载流子的运动路径，可以更有效地收集光生电子和空穴，从而提升器件性能。",
-        "reason": "石墨烯太阳能电池新方案",
-        "density": "中",
+        "summary": "Graphene, a material consisting of a sheet of carbon atoms arranged in a honeycomb pattern, has proved promising for various technological applications. Materials in which several layers of graphene are stacked together can exhibit differen",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
         "score": 51.4,
         "role": "科研",
-        "published_at": "2026-10-29T23:20:01+00:00",
+        "published_at": "2026-10-30T11:40:06+00:00",
         "topic_id": null,
         "topic_title": null
       },
       "picks": [
+        {
+          "title": "Electrical guardrails for charge carriers: A new approach to harness graphene for solar cells",
+          "url": "https://phys.org/news/2026-10-electrical-guardrails-carriers-approach-harness.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "石墨烯具有高电子迁移率，但光电转换效率低。新研究提出用电学“护栏”引导电荷载流子（电子和空穴）分离并导向不同接触点，从而更有效利用吸收的光能，为开发高效石墨烯太阳能电池提供新思路。",
+          "zh_full": "石墨烯是单层碳原子构成的材料，其中电子具有很高的迁移率，因此有望用于高速电子元件。然而，石墨烯在将光转化为电能方面效率不高。虽然石墨烯吸收光后确实会激发电子，并留下带正电的载流子（称为“空穴”），但除非电子和空穴被分离并导向不同的接触点，否则吸收的光能无法被有效利用。这项新研究提出了一种方法，通过电学“护栏”来引导电荷载流子，从而有望提高石墨烯在太阳能电池中的光电转换效率。该研究为利用石墨烯开发更高效的太阳能电池提供了新的思路，通过控制电荷载流子的运动路径，可以更有效地收集光生电子和空穴，从而提升器件性能。",
+          "reason": "石墨烯太阳能电池新方案",
+          "density": "中",
+          "score": 51.0,
+          "role": "科研",
+          "published_at": "2026-10-29T23:20:01+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Multiparticle quantum walks in a dipole-conserving Bose–Hubbard model",
+          "url": "https://www.nature.com/articles/s41567-026-03512-z",
+          "source": "Nature 量子物理",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 51.0,
+          "role": "科研",
+          "published_at": "2026-10-30T00:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "‘Reverse physics’ could help bridge the classical and quantum worlds",
+          "url": "https://www.newscientist.com/article/2596640-reverse-physics-could-help-bridge-the-classical-and-quantum-worlds/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "summary": "Physics is generally built on observations, then the maths that supports them comes later. Columnist Karmela Padavic-Callaghan takes a look at an effort to reverse this and rebuild the laws of physics from the maths up",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 37.5,
+          "role": "媒体",
+          "published_at": "2026-10-30T09:00:00+00:00",
+          "topic_id": "db4a1640ca56",
+          "topic_title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases"
+        },
+        {
+          "title": "A New Map of ‘Empty’ Space Challenges a Tranquil Picture of the Galaxy",
+          "url": "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030/",
+          "source": "Quanta Magazine",
+          "summary": "For decades, astronomers treated the interstellar medium as a static backdrop to the goings-on of the universe. Now, a wave of 3D mapping is bringing the interstellar medium’s dynamic nature into focus. The post A New Map of ‘Empty’ Space C",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.9,
+          "role": "科研",
+          "published_at": "2026-10-30T14:52:05+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "flash": [
         {
           "title": "Terahertz light distinguishes two groups of particles trapped inside superconducting vortices",
           "url": "https://phys.org/news/2026-10-terahertz-distinguishes-groups-particles-superconducting.html",
@@ -11554,14 +11612,12 @@
           "zh_full": "罗格斯大学和爱沙尼亚的科学家利用不可见光（太赫兹光）观察超导体内部被称为“涡旋”的微小磁漩涡，揭示了其中的细节。这些发现有助于研究人员开发更好的导电材料。超导涡旋是超导体中磁通线量子化的表现，其内部束缚着两组不同的粒子。通过太赫兹光探测，科学家能够区分这两组粒子的行为，从而更深入地理解超导体的物理特性。这一研究成果对于改进超导材料的性能、推动其在电力传输和磁悬浮等领域的应用具有重要意义。",
           "reason": "超导涡旋粒子新发现",
           "density": "中",
-          "score": 51.4,
+          "score": 51.0,
           "role": "科研",
           "published_at": "2026-10-29T21:20:01+00:00",
           "topic_id": null,
           "topic_title": null
-        }
-      ],
-      "flash": [
+        },
         {
           "title": "Machine learning helps track semiconductor defects under more realistic temperature conditions",
           "url": "https://phys.org/news/2026-10-machine-track-semiconductor-defects-realistic.html",
@@ -11570,11 +11626,67 @@
           "zh_full": "所有材料都含有固有的缺陷。这些缺陷并非总是有害的，因为它们可以被用来对材料进行工程化处理，并引入某些特定性质。然而，了解这些缺陷如何运作以及它们如何影响材料性能至关重要。这项研究利用机器学习技术，在更接近实际工作温度的条件下追踪半导体中的缺陷。传统上，缺陷研究多在低温或理想条件下进行，而新方法能够在更真实的温度环境下分析缺陷行为，从而更准确地预测半导体器件在实际应用中的性能。这对于优化半导体制造工艺、提高器件可靠性和开发新型半导体材料具有重要意义。",
           "reason": "机器学习追踪半导体缺陷",
           "density": "中",
-          "score": 34.6,
+          "score": 37.3,
           "role": "科研",
           "published_at": "2026-10-29T20:50:05+00:00",
-          "topic_id": "faa595a3724c",
-          "topic_title": "Machine learning helps track semiconductor defects under more realistic temperature conditions"
+          "topic_id": "0d3246d03a09",
+          "topic_title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance"
+        },
+        {
+          "title": "A blue laser for underwater communication and sensing",
+          "url": "https://phys.org/news/2026-10-blue-laser-underwater-communication.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "EPFL研究人员开发出一种芯片级蓝色激光器，结合了稳定光发射与快速频率控制能力。蓝色激光在水下传输性能优异，该器件有望用于水下通信、环境传感和量子技术。",
+          "zh_full": "瑞士洛桑联邦理工学院（EPFL）的研究人员开发出一种芯片级蓝色激光器，该器件将稳定的光发射与快速频率控制相结合，为水下通信、环境传感和量子技术开辟了新的可能性。这项研究成果发表在相关学术期刊上。蓝色激光在水中的传输性能优于其他波长的光，因此在水下通信和传感领域具有独特优势。该芯片级激光器采用集成光子学技术，能够在保持输出光稳定的同时实现频率的快速调节，这对于需要精确控制光频率的应用至关重要。研究人员表示，这种新型激光器有望应用于水下环境监测、水下通信系统以及量子信息处理等领域。该技术的核心优势在于其紧凑的尺寸和高效的性能，使其成为便携式水下设备或量子系统的理想光源。这项研究展示了集成光子学在开发新型光源方面的潜力，为未来水下通信和量子技术的发展提供了新的工具。",
+          "reason": "蓝色激光器在水下通信和量子技术领域有重要应用前景",
+          "density": "高",
+          "score": 36.3,
+          "role": "科研",
+          "published_at": "2026-10-29T18:40:08+00:00",
+          "topic_id": "d4d359873906",
+          "topic_title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range"
+        },
+        {
+          "title": "Quantum skyrmions outlast entanglement, hinting at more resilient networks",
+          "url": "https://phys.org/news/2026-10-quantum-skyrmions-outlast-entanglement-hinting.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Quantum networks could one day connect quantum computers into more powerful systems and enable new forms of secure communication. But a fundamental obstacle stands in the way: Quantum information is extraordinarily fragile, and the entangle",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.9,
+          "role": "科研",
+          "published_at": "2026-10-30T15:40:01+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Confirming altermagnetism: A geometric twist offers experimental proof",
+          "url": "https://phys.org/news/2026-10-altermagnetism-geometric-experimental-proof.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "For decades, physicists recognized only two types of magnetism that occur in materials without external influence: ferromagnetism and antiferromagnetism. In findings published in Science, a team led by the U.S. Department of Energy's SLAC N",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.8,
+          "role": "科研",
+          "published_at": "2026-10-30T12:20:01+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Small molecular twists may strengthen nature's magnetic compass",
+          "url": "https://phys.org/news/2026-10-small-molecular-nature-magnetic-compass.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "A collaborative research team led by Yasuhiro Kobori at Kobe University, together with researchers from Toho University, Saitama University, Nagoya Institute of Technology and the University of Freiburg, has identified a potential molecular",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.7,
+          "role": "科研",
+          "published_at": "2026-10-30T05:00:01+00:00",
+          "topic_id": null,
+          "topic_title": null
         },
         {
           "title": "New X-ray method isolates faint signals from water at material surfaces",
@@ -11584,7 +11696,7 @@
           "zh_full": "日本丰桥技术科学大学、分子科学研究所和东京科学大学的研究团队（由丰桥技术科学大学的Yu Kinjo和Ryugo Tero教授领导）开发了一种利用X射线研究材料表面附近水状态的新方法。该方法结合X射线吸收光谱与数据分析，成功地将界面水的微弱信号与周围大量水的信号分离开来。界面水是指与固体表面直接接触的水分子层，其性质与体相水显著不同，在许多物理、化学和生物过程中起着关键作用。然而，由于界面水的信号通常被体相水的强信号掩盖，直接观测一直是个挑战。新方法通过精确的数据处理，能够提取出界面水的特征光谱，从而揭示其局部结构和动态行为。这一技术突破为研究材料表面化学、电化学界面以及生物分子水合作用提供了有力工具，有望在催化、能源存储和生物传感等领域产生重要影响。研究团队表示，该方法具有通用性，可应用于多种材料体系，未来将进一步探索其在复杂界面系统中的应用。",
           "reason": "界面水研究新方法，具普适性",
           "density": "高",
-          "score": 30.9,
+          "score": 30.6,
           "role": "科研",
           "published_at": "2026-10-30T01:20:01+00:00",
           "topic_id": null,
@@ -11598,7 +11710,7 @@
           "zh_full": "“真空”一词可能让人联想到空无一物的空间，例如太阳系外没有行星、碎片、气体云或光线的区域。然而，根据量子理论，真空从来不是真正空的。量子力学将海森堡不确定性原理——即我们无法同时精确测量物体的位置和速度——扩展到真空中，结果是真空永远无法静止。即使在绝对零度下，真空也充满量子涨落，粒子-反粒子对不断产生和湮灭。这些量子涨落对原子、黑洞和星系形成都有深远影响。例如，它们可以扰动原子的能级，导致兰姆位移；可能通过霍金辐射使黑洞缓慢收缩；在宇宙早期，量子涨落可能作为种子，通过引力不稳定性促进星系的形成。这一概念将量子力学、广义相对论和宇宙学联系起来，是理解宇宙基本物理的重要一环。",
           "reason": "量子真空涨落的多重宇宙学意义",
           "density": "中",
-          "score": 30.8,
+          "score": 30.6,
           "role": "科研",
           "published_at": "2026-10-29T21:30:05+00:00",
           "topic_id": null,
@@ -11612,23 +11724,9 @@
           "zh_full": "研究人员首次通过实验证明，可以从交错磁体中获取能够传输磁信息的自旋电流。这一结果得到了CFM小组开发的电子输运理论模型的支持。交错磁体是一类新型材料，尽管它们不具备传统磁体的净磁化强度，但能够产生这种类型的电流。这一发现为利用交错磁体进行自旋电子学应用开辟了道路，可能实现更高效、更紧凑的磁存储和逻辑器件。自旋电流是电子自旋的定向流动，与电荷电流不同，它不伴随电荷的宏观移动，因此具有低功耗和快速响应的优势。交错磁体独特的电子结构使其能够产生纯自旋电流，而无需外部磁场或铁磁序。这一实验验证为交错磁体在自旋电子学中的实际应用提供了关键证据，有望推动下一代信息技术的发展。",
           "reason": "交错磁体自旋电流首次实验验证",
           "density": "高",
-          "score": 30.8,
+          "score": 30.5,
           "role": "科研",
           "published_at": "2026-10-29T19:40:04+00:00",
-          "topic_id": null,
-          "topic_title": null
-        },
-        {
-          "title": "A blue laser for underwater communication and sensing",
-          "url": "https://phys.org/news/2026-10-blue-laser-underwater-communication.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "EPFL研究人员开发出一种芯片级蓝色激光器，结合了稳定光发射与快速频率控制能力。蓝色激光在水下传输性能优异，该器件有望用于水下通信、环境传感和量子技术。",
-          "zh_full": "瑞士洛桑联邦理工学院（EPFL）的研究人员开发出一种芯片级蓝色激光器，该器件将稳定的光发射与快速频率控制相结合，为水下通信、环境传感和量子技术开辟了新的可能性。这项研究成果发表在相关学术期刊上。蓝色激光在水中的传输性能优于其他波长的光，因此在水下通信和传感领域具有独特优势。该芯片级激光器采用集成光子学技术，能够在保持输出光稳定的同时实现频率的快速调节，这对于需要精确控制光频率的应用至关重要。研究人员表示，这种新型激光器有望应用于水下环境监测、水下通信系统以及量子信息处理等领域。该技术的核心优势在于其紧凑的尺寸和高效的性能，使其成为便携式水下设备或量子系统的理想光源。这项研究展示了集成光子学在开发新型光源方面的潜力，为未来水下通信和量子技术的发展提供了新的工具。",
-          "reason": "蓝色激光器在水下通信和量子技术领域有重要应用前景",
-          "density": "高",
-          "score": 30.8,
-          "role": "科研",
-          "published_at": "2026-10-29T18:40:08+00:00",
           "topic_id": null,
           "topic_title": null
         }
@@ -11638,6 +11736,20 @@
           "category": "凝聚态物理",
           "articles": [
             {
+              "title": "Unusual quantum states in six-layer graphene offer clues to superconductivity",
+              "url": "https://phys.org/news/2026-10-unusual-quantum-states-layer-graphene.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Graphene, a material consisting of a sheet of carbon atoms arranged in a honeycomb pattern, has proved promising for various technological applications. Materials in which several layers of graphene are stacked together can exhibit differen",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.4,
+              "role": "科研",
+              "published_at": "2026-10-30T11:40:06+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
               "title": "Electrical guardrails for charge carriers: A new approach to harness graphene for solar cells",
               "url": "https://phys.org/news/2026-10-electrical-guardrails-carriers-approach-harness.html",
               "source": "Phys.org 物理新闻",
@@ -11645,7 +11757,7 @@
               "zh_full": "石墨烯是单层碳原子构成的材料，其中电子具有很高的迁移率，因此有望用于高速电子元件。然而，石墨烯在将光转化为电能方面效率不高。虽然石墨烯吸收光后确实会激发电子，并留下带正电的载流子（称为“空穴”），但除非电子和空穴被分离并导向不同的接触点，否则吸收的光能无法被有效利用。这项新研究提出了一种方法，通过电学“护栏”来引导电荷载流子，从而有望提高石墨烯在太阳能电池中的光电转换效率。该研究为利用石墨烯开发更高效的太阳能电池提供了新的思路，通过控制电荷载流子的运动路径，可以更有效地收集光生电子和空穴，从而提升器件性能。",
               "reason": "石墨烯太阳能电池新方案",
               "density": "中",
-              "score": 51.4,
+              "score": 51.0,
               "role": "科研",
               "published_at": "2026-10-29T23:20:01+00:00",
               "topic_id": null,
@@ -11659,9 +11771,28 @@
               "zh_full": "罗格斯大学和爱沙尼亚的科学家利用不可见光（太赫兹光）观察超导体内部被称为“涡旋”的微小磁漩涡，揭示了其中的细节。这些发现有助于研究人员开发更好的导电材料。超导涡旋是超导体中磁通线量子化的表现，其内部束缚着两组不同的粒子。通过太赫兹光探测，科学家能够区分这两组粒子的行为，从而更深入地理解超导体的物理特性。这一研究成果对于改进超导材料的性能、推动其在电力传输和磁悬浮等领域的应用具有重要意义。",
               "reason": "超导涡旋粒子新发现",
               "density": "中",
-              "score": 51.4,
+              "score": 51.0,
               "role": "科研",
               "published_at": "2026-10-29T21:20:01+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "科研进展",
+          "articles": [
+            {
+              "title": "Multiparticle quantum walks in a dipole-conserving Bose–Hubbard model",
+              "url": "https://www.nature.com/articles/s41567-026-03512-z",
+              "source": "Nature 量子物理",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.0,
+              "role": "科研",
+              "published_at": "2026-10-30T00:00:00+00:00",
               "topic_id": null,
               "topic_title": null
             }
@@ -11671,6 +11802,20 @@
           "category": "其他",
           "articles": [
             {
+              "title": "‘Reverse physics’ could help bridge the classical and quantum worlds",
+              "url": "https://www.newscientist.com/article/2596640-reverse-physics-could-help-bridge-the-classical-and-quantum-worlds/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+              "source": "New Scientist 物理",
+              "summary": "Physics is generally built on observations, then the maths that supports them comes later. Columnist Karmela Padavic-Callaghan takes a look at an effort to reverse this and rebuild the laws of physics from the maths up",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.5,
+              "role": "媒体",
+              "published_at": "2026-10-30T09:00:00+00:00",
+              "topic_id": "db4a1640ca56",
+              "topic_title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases"
+            },
+            {
               "title": "Machine learning helps track semiconductor defects under more realistic temperature conditions",
               "url": "https://phys.org/news/2026-10-machine-track-semiconductor-defects-realistic.html",
               "source": "Phys.org 物理新闻",
@@ -11678,53 +11823,11 @@
               "zh_full": "所有材料都含有固有的缺陷。这些缺陷并非总是有害的，因为它们可以被用来对材料进行工程化处理，并引入某些特定性质。然而，了解这些缺陷如何运作以及它们如何影响材料性能至关重要。这项研究利用机器学习技术，在更接近实际工作温度的条件下追踪半导体中的缺陷。传统上，缺陷研究多在低温或理想条件下进行，而新方法能够在更真实的温度环境下分析缺陷行为，从而更准确地预测半导体器件在实际应用中的性能。这对于优化半导体制造工艺、提高器件可靠性和开发新型半导体材料具有重要意义。",
               "reason": "机器学习追踪半导体缺陷",
               "density": "中",
-              "score": 34.6,
+              "score": 37.3,
               "role": "科研",
               "published_at": "2026-10-29T20:50:05+00:00",
-              "topic_id": "faa595a3724c",
-              "topic_title": "Machine learning helps track semiconductor defects under more realistic temperature conditions"
-            },
-            {
-              "title": "New X-ray method isolates faint signals from water at material surfaces",
-              "url": "https://phys.org/news/2026-10-ray-method-isolates-faint-material.html",
-              "source": "Phys.org 物理新闻",
-              "summary": "日本研究团队开发了一种新的X射线方法，能够从大量体相水中分离出材料表面界面水的微弱信号。该方法结合X射线吸收光谱与数据分析，首次实现了对界面水状态的直接观测，为研究表面化学、电化学和生物水合作用提供了新工具。",
-              "zh_full": "日本丰桥技术科学大学、分子科学研究所和东京科学大学的研究团队（由丰桥技术科学大学的Yu Kinjo和Ryugo Tero教授领导）开发了一种利用X射线研究材料表面附近水状态的新方法。该方法结合X射线吸收光谱与数据分析，成功地将界面水的微弱信号与周围大量水的信号分离开来。界面水是指与固体表面直接接触的水分子层，其性质与体相水显著不同，在许多物理、化学和生物过程中起着关键作用。然而，由于界面水的信号通常被体相水的强信号掩盖，直接观测一直是个挑战。新方法通过精确的数据处理，能够提取出界面水的特征光谱，从而揭示其局部结构和动态行为。这一技术突破为研究材料表面化学、电化学界面以及生物分子水合作用提供了有力工具，有望在催化、能源存储和生物传感等领域产生重要影响。研究团队表示，该方法具有通用性，可应用于多种材料体系，未来将进一步探索其在复杂界面系统中的应用。",
-              "reason": "界面水研究新方法，具普适性",
-              "density": "高",
-              "score": 30.9,
-              "role": "科研",
-              "published_at": "2026-10-30T01:20:01+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "How the quantum vacuum perturbs atoms, could shrink black holes and may have helped form galaxies",
-              "url": "https://phys.org/news/2026-10-quantum-vacuum-perturbs-atoms-black.html",
-              "source": "Phys.org 物理新闻",
-              "summary": "量子理论表明真空并非真正空无，而是充满量子涨落。这些涨落会扰动原子能级、可能使黑洞收缩，并可能在早期宇宙中作为星系形成的种子。这一概念连接了量子力学、广义相对论和宇宙学。",
-              "zh_full": "“真空”一词可能让人联想到空无一物的空间，例如太阳系外没有行星、碎片、气体云或光线的区域。然而，根据量子理论，真空从来不是真正空的。量子力学将海森堡不确定性原理——即我们无法同时精确测量物体的位置和速度——扩展到真空中，结果是真空永远无法静止。即使在绝对零度下，真空也充满量子涨落，粒子-反粒子对不断产生和湮灭。这些量子涨落对原子、黑洞和星系形成都有深远影响。例如，它们可以扰动原子的能级，导致兰姆位移；可能通过霍金辐射使黑洞缓慢收缩；在宇宙早期，量子涨落可能作为种子，通过引力不稳定性促进星系的形成。这一概念将量子力学、广义相对论和宇宙学联系起来，是理解宇宙基本物理的重要一环。",
-              "reason": "量子真空涨落的多重宇宙学意义",
-              "density": "中",
-              "score": 30.8,
-              "role": "科研",
-              "published_at": "2026-10-29T21:30:05+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "Electrical signals reveal hidden magnetic information in altermagnets for first time",
-              "url": "https://phys.org/news/2026-10-electrical-reveal-hidden-magnetic-altermagnets.html",
-              "source": "Phys.org 物理新闻",
-              "summary": "研究人员首次实验证明，交错磁体可以产生传输磁信息的自旋电流，理论模型支持了这一结果。交错磁体虽无净磁化强度，但能产生自旋电流，为自旋电子学应用开辟了新途径。",
-              "zh_full": "研究人员首次通过实验证明，可以从交错磁体中获取能够传输磁信息的自旋电流。这一结果得到了CFM小组开发的电子输运理论模型的支持。交错磁体是一类新型材料，尽管它们不具备传统磁体的净磁化强度，但能够产生这种类型的电流。这一发现为利用交错磁体进行自旋电子学应用开辟了道路，可能实现更高效、更紧凑的磁存储和逻辑器件。自旋电流是电子自旋的定向流动，与电荷电流不同，它不伴随电荷的宏观移动，因此具有低功耗和快速响应的优势。交错磁体独特的电子结构使其能够产生纯自旋电流，而无需外部磁场或铁磁序。这一实验验证为交错磁体在自旋电子学中的实际应用提供了关键证据，有望推动下一代信息技术的发展。",
-              "reason": "交错磁体自旋电流首次实验验证",
-              "density": "高",
-              "score": 30.8,
-              "role": "科研",
-              "published_at": "2026-10-29T19:40:04+00:00",
-              "topic_id": null,
-              "topic_title": null
+              "topic_id": "0d3246d03a09",
+              "topic_title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance"
             },
             {
               "title": "A blue laser for underwater communication and sensing",
@@ -11734,18 +11837,91 @@
               "zh_full": "瑞士洛桑联邦理工学院（EPFL）的研究人员开发出一种芯片级蓝色激光器，该器件将稳定的光发射与快速频率控制相结合，为水下通信、环境传感和量子技术开辟了新的可能性。这项研究成果发表在相关学术期刊上。蓝色激光在水中的传输性能优于其他波长的光，因此在水下通信和传感领域具有独特优势。该芯片级激光器采用集成光子学技术，能够在保持输出光稳定的同时实现频率的快速调节，这对于需要精确控制光频率的应用至关重要。研究人员表示，这种新型激光器有望应用于水下环境监测、水下通信系统以及量子信息处理等领域。该技术的核心优势在于其紧凑的尺寸和高效的性能，使其成为便携式水下设备或量子系统的理想光源。这项研究展示了集成光子学在开发新型光源方面的潜力，为未来水下通信和量子技术的发展提供了新的工具。",
               "reason": "蓝色激光器在水下通信和量子技术领域有重要应用前景",
               "density": "高",
-              "score": 30.8,
+              "score": 36.3,
               "role": "科研",
               "published_at": "2026-10-29T18:40:08+00:00",
+              "topic_id": "d4d359873906",
+              "topic_title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range"
+            },
+            {
+              "title": "Quantum skyrmions outlast entanglement, hinting at more resilient networks",
+              "url": "https://phys.org/news/2026-10-quantum-skyrmions-outlast-entanglement-hinting.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Quantum networks could one day connect quantum computers into more powerful systems and enable new forms of secure communication. But a fundamental obstacle stands in the way: Quantum information is extraordinarily fragile, and the entangle",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.9,
+              "role": "科研",
+              "published_at": "2026-10-30T15:40:01+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "A New Map of ‘Empty’ Space Challenges a Tranquil Picture of the Galaxy",
+              "url": "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030/",
+              "source": "Quanta Magazine",
+              "summary": "For decades, astronomers treated the interstellar medium as a static backdrop to the goings-on of the universe. Now, a wave of 3D mapping is bringing the interstellar medium’s dynamic nature into focus. The post A New Map of ‘Empty’ Space C",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.9,
+              "role": "科研",
+              "published_at": "2026-10-30T14:52:05+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Confirming altermagnetism: A geometric twist offers experimental proof",
+              "url": "https://phys.org/news/2026-10-altermagnetism-geometric-experimental-proof.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "For decades, physicists recognized only two types of magnetism that occur in materials without external influence: ferromagnetism and antiferromagnetism. In findings published in Science, a team led by the U.S. Department of Energy's SLAC N",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.8,
+              "role": "科研",
+              "published_at": "2026-10-30T12:20:01+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Small molecular twists may strengthen nature's magnetic compass",
+              "url": "https://phys.org/news/2026-10-small-molecular-nature-magnetic-compass.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "A collaborative research team led by Yasuhiro Kobori at Kobe University, together with researchers from Toho University, Saitama University, Nagoya Institute of Technology and the University of Freiburg, has identified a potential molecular",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.7,
+              "role": "科研",
+              "published_at": "2026-10-30T05:00:01+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "New X-ray method isolates faint signals from water at material surfaces",
+              "url": "https://phys.org/news/2026-10-ray-method-isolates-faint-material.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "日本研究团队开发了一种新的X射线方法，能够从大量体相水中分离出材料表面界面水的微弱信号。该方法结合X射线吸收光谱与数据分析，首次实现了对界面水状态的直接观测，为研究表面化学、电化学和生物水合作用提供了新工具。",
+              "zh_full": "日本丰桥技术科学大学、分子科学研究所和东京科学大学的研究团队（由丰桥技术科学大学的Yu Kinjo和Ryugo Tero教授领导）开发了一种利用X射线研究材料表面附近水状态的新方法。该方法结合X射线吸收光谱与数据分析，成功地将界面水的微弱信号与周围大量水的信号分离开来。界面水是指与固体表面直接接触的水分子层，其性质与体相水显著不同，在许多物理、化学和生物过程中起着关键作用。然而，由于界面水的信号通常被体相水的强信号掩盖，直接观测一直是个挑战。新方法通过精确的数据处理，能够提取出界面水的特征光谱，从而揭示其局部结构和动态行为。这一技术突破为研究材料表面化学、电化学界面以及生物分子水合作用提供了有力工具，有望在催化、能源存储和生物传感等领域产生重要影响。研究团队表示，该方法具有通用性，可应用于多种材料体系，未来将进一步探索其在复杂界面系统中的应用。",
+              "reason": "界面水研究新方法，具普适性",
+              "density": "高",
+              "score": 30.6,
+              "role": "科研",
+              "published_at": "2026-10-30T01:20:01+00:00",
               "topic_id": null,
               "topic_title": null
             }
           ]
         }
       ],
-      "topic_ids": [],
-      "tocCount": 7,
-      "readMinutes": 1
+      "topic_ids": [
+        "db4a1640ca56"
+      ],
+      "tocCount": 14,
+      "readMinutes": 3,
+      "amended": 0
     }
   }
 }
