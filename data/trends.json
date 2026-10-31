@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T01:37:52.901051+00:00",
+  "generatedAt": "2026-10-31T15:46:38.512901+00:00",
   "weekStart": "2026-10-25",
   "windowDays": 7,
   "windowStart": "2026-10-25",
@@ -10,37 +10,37 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 5236.0,
+      "thisWeek": 5528.7,
       "lastWeek": 3681.7,
-      "deltaPct": 42.2
+      "deltaPct": 50.2
     },
     {
       "category": "光通信",
-      "thisWeek": 3371.0,
+      "thisWeek": 3431.6,
       "lastWeek": 3075.7,
-      "deltaPct": 9.6
+      "deltaPct": 11.6
     },
     {
       "category": "科研进展",
-      "thisWeek": 3364.4,
+      "thisWeek": 3362.1,
       "lastWeek": 2559.8,
-      "deltaPct": 31.4
+      "deltaPct": 31.3
     },
     {
       "category": "产业与资本",
-      "thisWeek": 3040.6,
+      "thisWeek": 3030.3,
       "lastWeek": 3389.0,
-      "deltaPct": -10.3
+      "deltaPct": -10.6
     },
     {
       "category": "其他",
-      "thisWeek": 2581.4,
+      "thisWeek": 2580.1,
       "lastWeek": 2394.2,
       "deltaPct": 7.8
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 2314.7,
+      "thisWeek": 2315.0,
       "lastWeek": 1803.8,
       "deltaPct": 28.3
     },
@@ -52,15 +52,15 @@
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1086.4,
+      "thisWeek": 1084.4,
       "lastWeek": 801.8,
-      "deltaPct": 35.5
+      "deltaPct": 35.2
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 867.9,
+      "thisWeek": 867.5,
       "lastWeek": 775.7,
-      "deltaPct": 11.9
+      "deltaPct": 11.8
     },
     {
       "category": "光传感与激光雷达",
@@ -85,8 +85,8 @@
     {
       "topic_id": "6aec187ed191",
       "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-      "score": 537.8,
-      "days": 6
+      "score": 429.1,
+      "days": 5
     },
     {
       "topic_id": "ba306bad328d",
@@ -125,16 +125,16 @@
       "days": 1
     },
     {
+      "topic_id": "cf711748e825",
+      "title": "Photonics Hot List: October 30, 2026",
+      "score": 164.3,
+      "days": 1
+    },
+    {
       "topic_id": "983065fbf898",
       "title": "PODCAST: Meet Andrew Strikwerda, COMSOL",
       "score": 157.0,
       "days": 3
-    },
-    {
-      "topic_id": "a4e666367946",
-      "title": "Integrated elliptical III-V nanopillar arrays on silicon for dual photodetection and light emission",
-      "score": 133.2,
-      "days": 1
     }
   ],
   "sustainedTopics": [

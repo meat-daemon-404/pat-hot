@@ -1,83 +1,216 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T01:37:52.901051+00:00",
+  "generatedAt": "2026-10-31T15:46:38.512901+00:00",
   "count": 10,
   "items": [
     {
       "terms": [
+        "apod",
+        "approaches",
+        "away",
+        "cepheus",
+        "cluster",
+        "collinder",
+        "flare",
+        "friday",
+        "galaxy",
+        "ghostly",
+        "glimpse",
+        "hangs",
+        "haunting",
+        "jockeys",
+        "jupiter",
+        "light-day",
+        "mars",
+        "moon",
+        "night",
+        "notes",
+        "november",
+        "october",
+        "open",
+        "phantom",
+        "planet",
+        "saturday",
+        "spooky",
+        "thursday",
+        "today",
+        "uranus",
+        "wednesday"
+      ],
+      "source_count": 2,
+      "signal_count": 6,
+      "sources": [
+        "Astronomy Magazine",
+        "NASA 快讯"
+      ],
+      "score": 49.0,
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
+      "representative": {
+        "title": "APOD: 2026 October 31 – Night on a Spooky Planet",
+        "url": "https://science.nasa.gov/image-article/apod-2026-october-31-night-on-a-spooky-planet/",
+        "source": "NASA 快讯",
+        "published_at": "2026-10-31T04:05:00+00:00",
+        "score": 69.8,
+        "summary": "APOD Science APOD APOD: 2026 October 31 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating",
+        "zh_full": "（无摘要，仅标题）",
+        "llm_summary": "NASA天文每日一图（APOD）2026年10月31日展示了一张名为“夜临诡异星球”的图片，配以专业天文学家的简短说明。该栏目每天更新一张宇宙图像或照片，并附有解释。",
+        "density": "低",
+        "llm_score": 10.0
+      },
+      "folded_count": 1,
+      "title": "APOD: 2026 October 31 – Night on a Spooky Planet",
+      "id": "609814990de3",
+      "links": [
+        {
+          "title": "The Sky Today on Saturday, October 31: Glimpse the ghostly Phantom Galaxy",
+          "url": "https://www.astronomy.com/observing/the-sky-today-saturday-october-31-2026/",
+          "source": "Astronomy Magazine",
+          "score": 69.9,
+          "published_at": "2026-10-31T08:00:00+00:00"
+        },
+        {
+          "title": "APOD: 2026 October 31 – Night on a Spooky Planet",
+          "url": "https://science.nasa.gov/image-article/apod-2026-october-31-night-on-a-spooky-planet/",
+          "source": "NASA 快讯",
+          "score": 69.8,
+          "published_at": "2026-10-31T04:05:00+00:00"
+        },
+        {
+          "title": "November’s Night Sky Notes: Light-Day Away",
+          "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/novembers-night-sky-notes-light-day-away/",
+          "source": "NASA 快讯",
+          "score": 69.3,
+          "published_at": "2026-10-30T10:00:00+00:00"
+        },
+        {
+          "title": "The Sky Today on Friday, October 30: Mars approaches Leo",
+          "url": "https://www.astronomy.com/observing/the-sky-today-friday-october-30-2026/",
+          "source": "Astronomy Magazine",
+          "score": 69.3,
+          "published_at": "2026-10-30T08:00:00+00:00"
+        },
+        {
+          "title": "APOD: 2026 October 30 – Haunting the Cepheus Flare",
+          "url": "https://science.nasa.gov/image-article/apod-2026-october-30-haunting-the-cepheus-flare/",
+          "source": "NASA 快讯",
+          "score": 69.2,
+          "published_at": "2026-10-30T04:05:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "october",
+        "sky",
+        "today",
+        "apod",
+        "night"
+      ],
+      "digest": "10月31日，天文观测者可见M74幽灵星系，最佳观测时间在万圣节当晚。同时，火星正沿巨蟹座与狮子座边界向东移动，接近狮子座。NASA的旅行者1号和2号探测器利用175年一遇的行星排列，继续在星际空间航行。10月30日，火星位于巨蟹座和狮子座交界处，亮度0.8等。",
+      "digestTitle": "万圣节夜空：幽灵星系与火星接近狮子座",
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 49.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "captures",
+        "commotion",
+        "eerie",
         "examining",
         "ghostly",
         "head",
         "hubble",
+        "james",
+        "jets",
         "jwst",
         "lurks",
         "nasa",
         "nebula",
         "sight",
+        "space",
+        "stellar",
+        "telescope",
         "webb"
       ],
-      "source_count": 3,
+      "source_count": 4,
       "signal_count": 3,
       "sources": [
         "ESA 空间科学",
+        "NASA 快讯",
         "Phys.org 太空新闻",
         "Universe Today"
       ],
-      "score": 53.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
+      "score": 48.0,
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
       "representative": {
-        "title": "Ghostly Cat’s Head Nebula lurks within sight of Hubble and Webb",
-        "url": "https://www.esa.int/Science_Exploration/Space_Science/Webb/Ghostly_Cat_s_Head_Nebula_lurks_within_sight_of_Hubble_and_Webb",
-        "source": "ESA 空间科学",
-        "published_at": "2026-10-29T14:00:00+00:00",
-        "score": 65.0,
-        "summary": "The NASA/ESA Hubble and the NASA/ESA/CSA James Webb Space Telescopes recently stared at an eerie star-forming scene within the Carina Nebula, a massive gas and dust cloud located approximately 7500 light-years away from Earth. The two teles",
-        "zh_full": "NASA/ESA哈勃太空望远镜和NASA/ESA/CSA詹姆斯·韦伯太空望远镜最近观测了船底座星云（Carina Nebula）中一个令人毛骨悚然的恒星形成区域。该星云是距离地球约7500光年的巨大气体和尘埃云。两个望远镜提供了绰号为“猫头星云”（Cat's Head Nebula）的阴影形态的互补视图，反映了恒星形成的“神奇”过程。哈勃的可见光视图将猫头显示为黑暗、细长的尘埃柱，并暗示了年轻恒星的形成；而韦伯的红外光图像则揭示了众多恒星和其他隐藏细节。这些观测展示了两个望远镜在揭示恒星形成区域复杂结构方面的协同作用，为天文学家提供了更全面的视角。",
-        "llm_summary": "哈勃和韦伯望远镜观测了船底座星云中的“猫头星云”，距离地球约7500光年。哈勃可见光显示黑暗尘埃柱和年轻恒星迹象，韦伯红外光揭示更多恒星和隐藏细节，展示了两台望远镜的互补观测能力。",
-        "llm_reason": "展示哈勃与韦伯互补观测能力",
-        "density": "中",
-        "llm_score": 36.5
+        "title": "NASA’s James Webb Space Telescope Captures Eerie Cat’s Head",
+        "url": "https://www.nasa.gov/image-article/nasas-james-webb-space-telescope-captures-eerie-cats-head/",
+        "source": "NASA 快讯",
+        "published_at": "2026-10-30T15:56:26+00:00",
+        "score": 71.7,
+        "summary": "Intricate structures within the Cat’s Head Nebula are illuminated in this mid-infrared view from NASA’s James Webb Space Telescope released on Oct. 29, 2026. The distinctive “cat’s head” shape of the nebula was likely sculpted over time by ",
+        "zh_full": "NASA的詹姆斯·韦伯太空望远镜（JWST）于2026年10月29日发布了一张中红外波段图像，展示了“猫头鹰星云”（Cat's Head Nebula）内部精细的结构。该星云独特的“猫头”形状，很可能是由船底座星云（Carina Nebula）中大质量恒星发出的强烈紫外辐射和恒星风长期塑造而成的。这种“恒星反馈”过程在星云演化中起着关键作用。图像揭示了星云内部复杂的尘埃和气体分布，为研究大质量恒星对周围环境的物理影响提供了新的视角。",
+        "llm_summary": "韦伯望远镜发布猫头鹰星云的中红外图像，显示其内部精细结构。该星云的“猫头”形状被认为是由船底座星云中大质量恒星的紫外辐射和恒星风长期雕刻而成。这一观测有助于理解恒星反馈机制。",
+        "llm_reason": "韦伯望远镜新图像揭示星云精细结构",
+        "density": "高",
+        "llm_score": 43.5
       },
-      "folded_count": 2,
-      "title": "Ghostly Cat’s Head Nebula lurks within sight of Hubble and Webb",
-      "id": "e3f24d8fbec4",
+      "folded_count": 3,
+      "title": "NASA’s James Webb Space Telescope Captures Eerie Cat’s Head",
+      "id": "0372ff6bd52e",
       "links": [
         {
-          "title": "Ghostly Cat's Head Nebula lurks within sight of NASA's Hubble, Webb",
-          "url": "https://phys.org/news/2026-10-ghostly-cat-nebula-lurks-sight.html",
-          "source": "Phys.org 太空新闻",
-          "score": 65.2,
-          "published_at": "2026-10-29T20:20:01+00:00"
+          "title": "NASA’s James Webb Space Telescope Captures Eerie Cat’s Head",
+          "url": "https://www.nasa.gov/image-article/nasas-james-webb-space-telescope-captures-eerie-cats-head/",
+          "source": "NASA 快讯",
+          "score": 71.7,
+          "published_at": "2026-10-30T15:56:26+00:00"
         },
         {
           "title": "Examining the Cat's Head Nebula with the Hubble and JWST",
           "url": "https://www.universetoday.com/articles/examining-the-cats-head-nebula-with-the-hubble-and-jwst",
           "source": "Universe Today",
-          "score": 65.2,
+          "score": 71.2,
           "published_at": "2026-10-29T22:38:52+00:00"
+        },
+        {
+          "title": "Ghostly Cat's Head Nebula lurks within sight of NASA's Hubble, Webb",
+          "url": "https://phys.org/news/2026-10-ghostly-cat-nebula-lurks-sight.html",
+          "source": "Phys.org 太空新闻",
+          "score": 71.1,
+          "published_at": "2026-10-29T20:20:01+00:00"
         },
         {
           "title": "Ghostly Cat’s Head Nebula lurks within sight of Hubble and Webb",
           "url": "https://www.esa.int/Science_Exploration/Space_Science/Webb/Ghostly_Cat_s_Head_Nebula_lurks_within_sight_of_Hubble_and_Webb",
           "source": "ESA 空间科学",
-          "score": 65.0,
+          "score": 70.9,
           "published_at": "2026-10-29T14:00:00+00:00"
+        },
+        {
+          "title": "Webb captures commotion from nebula’s stellar jets",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Webb_captures_commotion_from_nebula_s_stellar_jets",
+          "source": "ESA 空间科学",
+          "score": 55.6,
+          "published_at": "2026-10-06T13:00:00+00:00"
         }
       ],
       "top_terms": [
         "cat",
         "head",
         "nebula",
-        "hubble",
-        "ghostly"
+        "webb",
+        "hubble"
       ],
-      "digest": "哈勃和詹姆斯·韦布空间望远镜观测了船底座星云中一个被称为“猫头鹰星云”的恒星形成区，该星云距地球约7500光年。两架望远镜的联合观测揭示了该区域中恒星形成过程的复杂细节，包括气体、尘埃和恒星反馈的相互作用。这一观测结果有助于天文学家更好地理解恒星诞生的物理机制。",
-      "digestTitle": "哈勃与韦布望远镜捕捉猫头鹰星云恒星形成场景",
-      "rank": 1,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "digest": "NASA的詹姆斯·韦伯太空望远镜于2026年10月29日发布了一张猫头星云的中红外图像，揭示了该星云内部复杂的结构。猫头星云位于约7500光年外的船底座星云中，其独特的“猫头”形状据信是由恒星反馈等过程长期塑造而成。哈勃和韦伯望远镜此前也曾观测过这一活跃的恒星形成区，此次新图像进一步展示了星云中恒星喷流引发的动态扰动。",
+      "digestTitle": "韦伯望远镜捕捉猫头星云红外细节",
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
-      "heat": 53.0,
+      "heat": 48.0,
       "status": "发酵中"
     },
     {
@@ -104,19 +237,19 @@
         "wasn"
       ],
       "source_count": 2,
-      "signal_count": 3,
+      "signal_count": 2,
       "sources": [
         "Phys.org 太空新闻",
         "Universe Today"
       ],
-      "score": 45.5,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
+      "score": 42.0,
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
       "representative": {
         "title": "Modest gamma-ray flash followed by dazzling afterglow points to powerful stellar jet viewed off-axis",
         "url": "https://phys.org/news/2026-10-modest-gamma-ray-dazzling-afterglow.html",
         "source": "Phys.org 太空新闻",
         "published_at": "2026-10-29T13:40:10+00:00",
-        "score": 61.7,
+        "score": 61.3,
         "summary": "A cosmic explosion that announced itself with a modest flash of gamma rays went on to produce one of the brightest afterglows astronomers have recorded in the past 20 years. An international team of astronomers now finds evidence that the s",
         "zh_full": "一次以微弱伽马射线闪宣告自身的宇宙爆炸，随后产生了天文学家在过去20年间记录到的最明亮余辉之一。一个国际天文学家团队现在发现证据表明，这种令人惊讶的不匹配源于视角：地球位于爆炸最强烈光束的照射范围之外。",
         "llm_summary": "一次宇宙爆炸先出现微弱伽马射线闪，随后产生20年来最亮余辉之一。国际团队发现原因在于视角：地球不在爆炸最强光束的照射范围内。",
@@ -132,21 +265,21 @@
           "title": "Modest gamma-ray flash followed by dazzling afterglow points to powerful stellar jet viewed off-axis",
           "url": "https://phys.org/news/2026-10-modest-gamma-ray-dazzling-afterglow.html",
           "source": "Phys.org 太空新闻",
-          "score": 61.7,
+          "score": 61.3,
           "published_at": "2026-10-29T13:40:10+00:00"
         },
         {
           "title": "A gamma-ray powerhouse's smoking gun? Gas trail points to microquasar jets",
           "url": "https://phys.org/news/2026-10-gamma-ray-powerhouse-gun-gas.html",
           "source": "Phys.org 太空新闻",
-          "score": 37.5,
+          "score": 37.2,
           "published_at": "2026-10-30T17:20:18+00:00"
         },
         {
           "title": "This Gamma-Ray Burst Wasn't Dim, It Was Just Misunderstood",
           "url": "https://www.universetoday.com/articles/this-gamma-ray-burst-wasnt-dim-it-was-just-misunderstood",
           "source": "Universe Today",
-          "score": 37.4,
+          "score": 37.2,
           "published_at": "2026-10-30T16:20:24+00:00"
         }
       ],
@@ -157,258 +290,9 @@
         "powerhouse",
         "smoking"
       ],
-      "digest": "2026年3月，NASA的费米伽马射线空间望远镜探测到一次伽马射线暴，其初始伽马辐射暗淡，但随后产生的余辉是过去20年中最明亮的之一。国际天文学家团队称，这一现象表明该爆发实为一股强大的恒星喷流，而地球恰好从侧面（偏离轴线）观测，因此初始闪光显得微弱，余辉却异常耀眼。该结论基于对余辉中延迟峰值等异常光变特征的分析，尚未有其他独立观测直接证实喷流结构。",
-      "digestTitle": "伽马射线暴实为侧视强喷流，余辉异常明亮",
-      "rank": 2,
-      "trend": "flat",
-      "trendPct": 8.3,
-      "badges": [],
-      "heat": 45.5,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "approaches",
-        "away",
-        "cluster",
-        "collinder",
-        "friday",
-        "hangs",
-        "jockeys",
-        "jupiter",
-        "light-day",
-        "mars",
-        "moon",
-        "night",
-        "notes",
-        "november",
-        "october",
-        "open",
-        "thursday",
-        "today",
-        "uranus",
-        "wednesday"
-      ],
-      "source_count": 2,
-      "signal_count": 4,
-      "sources": [
-        "Astronomy Magazine",
-        "NASA 快讯"
-      ],
-      "score": 45.5,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
-      "representative": {
-        "title": "November’s Night Sky Notes: Light-Day Away",
-        "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/novembers-night-sky-notes-light-day-away/",
-        "source": "NASA 快讯",
-        "published_at": "2026-10-30T10:00:00+00:00",
-        "score": 65.2,
-        "summary": "Twin Travelers In 1977, NASA launched twin spacecraft Voyager 1 and 2, taking advantage of a once-every-175-year planetary alignment of the four largest planets in our solar system: Jupiter, Saturn, Uranus, and Neptune. Using six gravity as",
-        "zh_full": "1977年，NASA发射了旅行者1号和2号双探测器，利用太阳系四大行星——木星、土星、天王星和海王星——每175年一次的行星排列机会。通过六次引力助推，这次“大旅行”为我们提供了气态和冰态巨行星及其多颗卫星的近距离观测。",
-        "llm_summary": "NASA在1977年利用罕见的行星排列发射旅行者1号和2号，通过六次引力助推完成对木星、土星、天王星和海王星的近距离探测。",
-        "llm_reason": "经典航天任务回顾，具历史意义",
-        "density": "中",
-        "llm_score": 19.0
-      },
-      "folded_count": 1,
-      "title": "November’s Night Sky Notes: Light-Day Away",
-      "id": "17dd13147929",
-      "links": [
-        {
-          "title": "November’s Night Sky Notes: Light-Day Away",
-          "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/novembers-night-sky-notes-light-day-away/",
-          "source": "NASA 快讯",
-          "score": 65.2,
-          "published_at": "2026-10-30T10:00:00+00:00"
-        },
-        {
-          "title": "The Sky Today on Friday, October 30: Mars approaches Leo",
-          "url": "https://www.astronomy.com/observing/the-sky-today-friday-october-30-2026/",
-          "source": "Astronomy Magazine",
-          "score": 65.2,
-          "published_at": "2026-10-30T08:00:00+00:00"
-        },
-        {
-          "title": "The Sky This Week from October 30 to November 6: The Moon jockeys with Jupiter and Mars",
-          "url": "https://www.astronomy.com/the-sky-this-week/the-sky-this-week-from-october-30-to-november-6-2026/",
-          "source": "Astronomy Magazine",
-          "score": 65.1,
-          "published_at": "2026-10-30T05:00:00+00:00"
-        },
-        {
-          "title": "The Sky Today on Wednesday, October 28: The Moon hangs with Uranus",
-          "url": "https://www.astronomy.com/observing/the-sky-today-wednesday-october-28-2026/",
-          "source": "Astronomy Magazine",
-          "score": 63.8,
-          "published_at": "2026-10-28T08:00:00+00:00"
-        },
-        {
-          "title": "The Sky Today on Thursday, October 29: Open cluster Collinder 463",
-          "url": "https://www.astronomy.com/observing/the-sky-today-thursday-october-29-2026/",
-          "source": "Astronomy Magazine",
-          "score": 38.7,
-          "published_at": "2026-10-29T08:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "sky",
-        "october",
-        "today",
-        "november",
-        "mars"
-      ],
-      "digest": "NASA于1977年发射了旅行者1号和2号探测器，利用每175年一次的四颗最大行星排列机会，对木星、土星、天王星和海王星进行了重力辅助飞掠探测。两艘探测器均成功完成任务，并继续向星际空间飞行。",
-      "digestTitle": "旅行者号双星探测任务概览",
       "rank": 3,
       "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 45.5,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "ancient",
-        "billion-year-old",
-        "clues",
-        "details",
-        "ever",
-        "found",
-        "mars",
-        "martian",
-        "meteorite",
-        "meteorites",
-        "nasa-funded",
-        "oldest",
-        "past",
-        "planet",
-        "rare",
-        "reveals"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "NASA 快讯",
-        "Phys.org 太空新闻"
-      ],
-      "score": 42.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
-      "representative": {
-        "title": "NASA-funded Study Details One of Oldest Mars Meteorites Ever Found",
-        "url": "https://www.nasa.gov/solar-system/planets/mars/nasa-funded-study-details-one-of-oldest-mars-meteorites-ever-found/",
-        "source": "NASA 快讯",
-        "published_at": "2026-10-29T18:18:09+00:00",
-        "score": 60.3,
-        "summary": "When a rose-colored meteorite was found in the Sahara Desert in 2022, no one knew how old it was or where it came from. Not until NASA-funded scientists age-dated its minerals did they realize the nearly 2-pound (800-gram) rock was a piece ",
-        "zh_full": "当一块玫瑰色的陨石于2022年在撒哈拉沙漠被发现时，没有人知道它的年龄或来源。直到NASA资助的科学家对其矿物进行年代测定后，他们才意识到这块近2磅（800克）的岩石是火星的一部分，形成于41亿多年前，使其成为地球上发现的最古老的火星陨石之一。这项研究详细描述了这块陨石的矿物学和化学特征，表明它是在火星早期历史时期从火星地壳中结晶出来的。该陨石被命名为Teghaza 001，其独特的矿物组成和化学特征为研究火星早期地壳演化提供了宝贵线索。科学家通过分析陨石中矿物的放射性同位素衰变，确定了其形成年代。这一发现有助于理解火星早期地质过程，包括行星地壳的初始分化。研究还指出，这块陨石可能来自火星南部高地，那里保存着火星最古老的地壳物质。",
-        "llm_summary": "NASA资助的科学家对2022年在撒哈拉沙漠发现的玫瑰色陨石Teghaza 001进行了年代测定，发现它形成于41亿多年前，是地球上发现的最古老火星陨石之一。这块近2磅的岩石通过矿物同位素分析确认其火星起源，为研究火星早期地壳演化提供了关键样本。",
-        "llm_reason": "揭示古老火星地壳演化关键样本",
-        "density": "高",
-        "llm_score": 63.5
-      },
-      "folded_count": 1,
-      "title": "NASA-funded Study Details One of Oldest Mars Meteorites Ever Found",
-      "id": "fa594b874d72",
-      "links": [
-        {
-          "title": "NASA-funded Study Details One of Oldest Mars Meteorites Ever Found",
-          "url": "https://www.nasa.gov/solar-system/planets/mars/nasa-funded-study-details-one-of-oldest-mars-meteorites-ever-found/",
-          "source": "NASA 快讯",
-          "score": 60.3,
-          "published_at": "2026-10-29T18:18:09+00:00"
-        },
-        {
-          "title": "Rare 4.1-billion-year-old Martian meteorite reveals clues to planet's ancient past",
-          "url": "https://phys.org/news/2026-10-rare-billion-year-martian-meteorite.html",
-          "source": "Phys.org 太空新闻",
-          "score": 36.3,
-          "published_at": "2026-10-29T23:30:05+00:00"
-        }
-      ],
-      "top_terms": [
-        "rare",
-        "billion",
-        "old",
-        "martian",
-        "meteorite"
-      ],
-      "digest": "一块2022年在撒哈拉沙漠发现的近2磅（800克）玫瑰色陨石，经NASA资助的科学家测定矿物年龄后，确认为约41亿年前形成的火星陨石。新墨西哥大学科学家主导的研究指出，该陨石为火星早期可能曾存在类似地球的湿润环境提供了新证据。",
-      "digestTitle": "4.1亿年火星陨石揭示火星早期可能曾有水",
-      "rank": 4,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "astronomical",
-        "away",
-        "colliding",
-        "collision",
-        "cosmic",
-        "created",
-        "dwarf",
-        "enormous",
-        "light-years",
-        "long",
-        "planets",
-        "tail",
-        "tells",
-        "units"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "score": 42.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
-      "representative": {
-        "title": "Enormous 'Cat's Tail' tells of cosmic collision 63 light-years away",
-        "url": "https://phys.org/news/2026-10-enormous-cat-tail-cosmic-collision.html",
-        "source": "Phys.org 太空新闻",
-        "published_at": "2026-10-29T15:40:01+00:00",
-        "score": 36.1,
-        "summary": "Sixty-three light-years from Earth, in the small, faint constellation known as Pictor (which is Latin for \"painter\"), there lies a strange structure that has puzzled astronomers for the last two years. Nicknamed the \"Cat's Tail,\" this dark ",
-        "zh_full": "距地球63光年处，在名为绘架座（Pictor，拉丁语意为“画家”）的微小暗淡星座中，存在一个过去两年令天文学家困惑的奇特结构。这个绰号“猫尾”的暗色特征在太空中延伸，长度约为地球到太阳平均距离的一千倍。该结构被认为与一次宇宙碰撞有关。",
-        "llm_summary": "在距地球63光年的绘架座中，天文学家发现一个绰号“猫尾”的暗色结构，长度约为日地距离的一千倍，持续困惑学界两年，现被认为与一次宇宙碰撞有关。",
-        "llm_reason": "揭示罕见宇宙碰撞遗迹，对理解恒星系统演化有独特价值",
-        "density": "中"
-      },
-      "folded_count": 1,
-      "title": "Enormous 'Cat's Tail' tells of cosmic collision 63 light-years away",
-      "id": "b16e755b799f",
-      "links": [
-        {
-          "title": "Enormous 'Cat's Tail' tells of cosmic collision 63 light-years away",
-          "url": "https://phys.org/news/2026-10-enormous-cat-tail-cosmic-collision.html",
-          "source": "Phys.org 太空新闻",
-          "score": 36.1,
-          "published_at": "2026-10-29T15:40:01+00:00"
-        },
-        {
-          "title": "Colliding Dwarf Planets Created a 'Cat's Tail' 1,000 Astronomical Units Long",
-          "url": "https://www.universetoday.com/articles/colliding-dwarf-planets-created-a-cats-tail-1000-astronomical-units-long",
-          "source": "Universe Today",
-          "score": 36.1,
-          "published_at": "2026-10-29T15:46:02+00:00"
-        }
-      ],
-      "top_terms": [
-        "cat",
-        "tail",
-        "enormous",
-        "tells",
-        "cosmic"
-      ],
-      "digest": "天文学家发现，距地球63光年的绘架座β星系中一条长约1000天文单位的“猫尾”尘埃带，是由两颗矮行星碰撞产生的。该星系仅约2300万年历史，是年轻行星系统的典型代表。此前两年，这一暗弱结构一直令观测者困惑，最新分析表明其形状和长度与矮行星碰撞后抛射的碎片轨迹吻合，而非此前推测的彗星活动所致。研究人员称，这一发现为理解年轻行星系统内岩石天体碰撞过程提供了直接证据。",
-      "digestTitle": "绘架座β星系的“猫尾”尘埃带源于矮行星碰撞",
-      "rank": 5,
-      "trend": "new",
-      "trendPct": null,
+      "trendPct": -7.7,
       "badges": [],
       "heat": 42.0,
       "status": "关注中"
@@ -431,13 +315,13 @@
         "Universe Today"
       ],
       "score": 42.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
       "representative": {
         "title": "This Ancient Meteorite Hints at Mars' Warm, Wet Past",
         "url": "https://www.universetoday.com/articles/this-ancient-meteorite-hints-at-mars-warm-wet-past",
         "source": "Universe Today",
         "published_at": "2026-10-30T19:14:01+00:00",
-        "score": 61.0,
+        "score": 60.6,
         "summary": "Ancient Martian meteorites are like time-capsules from the planet's past. They're delivered to us by impacts that launch them into space, where some of them find their way to Earth. One recently discovered meteorite found in the Sahara dese",
         "zh_full": "古代火星陨石就像来自火星过去的时光胶囊。它们由撞击事件抛射到太空中，其中一些最终抵达地球。最近在撒哈拉沙漠发现的一颗陨石，为火星曾经温暖潮湿、可能适宜居住的观点增添了新证据。这颗陨石保存了火星早期环境的化学与矿物学记录，其成分特征支持火星表面曾存在液态水及更温和的气候条件。研究团队通过分析陨石内部矿物和同位素组成，推断出火星在数十亿年前可能拥有比现在更厚的大气层和活跃的水循环，这为火星生命起源的探索提供了重要线索。该发现也帮助科学家理解火星如何从湿润世界演变为今日干燥寒冷的行星，并指导未来火星探测任务寻找古代生命痕迹的选址策略。",
         "llm_summary": "撒哈拉沙漠新发现的火星陨石为火星曾温暖潮湿且可能宜居的观点提供了新证据。陨石内部矿物和同位素记录显示火星早期存在液态水和温和气候，支持火星生命起源探索，并帮助理解火星环境演化历史。",
@@ -453,14 +337,14 @@
           "title": "This Ancient Meteorite Hints at Mars' Warm, Wet Past",
           "url": "https://www.universetoday.com/articles/this-ancient-meteorite-hints-at-mars-warm-wet-past",
           "source": "Universe Today",
-          "score": 61.0,
+          "score": 60.6,
           "published_at": "2026-10-30T19:14:01+00:00"
         },
         {
           "title": "Rusty crust made Mars warm and wet",
           "url": "https://www.newscientist.com/article/2596726-rusty-crust-made-mars-warm-and-wet/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 60.9,
+          "score": 60.5,
           "published_at": "2026-10-30T15:00:00+00:00"
         }
       ],
@@ -471,11 +355,11 @@
         "ancient",
         "meteorite"
       ],
-      "digest": "一块新发现的撒哈拉沙漠火星陨石为火星曾温暖湿润提供了新证据，而一项新研究提出，火星地壳中的铁锈可能是其早期保持温暖的关键。该陨石是火星表面被撞击抛射到太空后落到地球的样本，其成分显示火星过去曾有液态水活动。同时，研究人员提出，火星地壳中的氧化铁（铁锈）可能通过温室效应帮助火星早期维持液态水，但这一机制尚未被证实。",
-      "digestTitle": "火星陨石暗示温暖湿润过去，铁锈地壳或为关键",
-      "rank": 6,
-      "trend": "new",
-      "trendPct": null,
+      "digest": "一块在撒哈拉沙漠发现的古老火星陨石表明，火星早期曾存在温暖湿润的环境，其表面曾有液态水流动。研究人员称，火星地下的铁锈（氧化铁）可能通过化学反应释放热量，使火星表面温度升高，从而维持液态水的存在。这一发现为解释火星为何曾温暖湿润提供了新线索，但尚未直接证实该机制曾实际运作。",
+      "digestTitle": "火星陨石揭示早期温暖湿润环境",
+      "rank": 4,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 42.0,
       "status": "关注中"
@@ -502,7 +386,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
       "representative": {
         "title": "Life on Mars, together",
         "url": "https://news.mit.edu/2024/life-on-mars-together-0313",
@@ -529,7 +413,7 @@
           "title": "Tiny photonic chip links telescopes together to view the universe in 'astonishing' detail",
           "url": "https://phys.org/news/2026-10-tiny-photonic-chip-links-telescopes.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.6,
+          "score": 36.4,
           "published_at": "2026-10-30T20:20:06+00:00"
         }
       ],
@@ -540,11 +424,11 @@
         "chip",
         "links"
       ],
-      "digest": "赫瑞瓦特大学的研究人员开发出一种微型玻璃光子芯片，成功将两台望远镜连接成一台等效的高分辨率仪器，标志着新一代天文技术的进展。该芯片通过光子链路实现望远镜间的光信号同步，使它们能协同工作，获得比单台望远镜更精细的观测细节。研究人员称，这一技术有望应用于未来更大规模望远镜阵列，提升对宇宙的观测能力。",
+      "digest": "研究人员开发出一种微型玻璃光子芯片，成功将两台望远镜连接成单一高分辨率观测系统，标志着天文观测技术的重要进展。该芯片由赫瑞瓦特大学团队研制，通过光信号同步两座望远镜，使其协同工作，显著提升成像细节。这项技术有望推动新一代天文仪器的研发，但尚处于实验阶段，其实际应用效果仍需进一步验证。",
       "digestTitle": "光子芯片连接望远镜实现高分辨率观测",
-      "rank": 7,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 5,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -591,7 +475,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
       "representative": {
         "title": "Lincoln Laboratory laser communications terminal launches on historic Artemis II moon mission",
         "url": "https://news.mit.edu/2026/lincoln-laboratory-laser-communications-terminal-launches-artemis-ii-0402",
@@ -611,14 +495,14 @@
           "title": "Space station experiment to probe plant disease risks for future moon and Mars missions",
           "url": "https://phys.org/news/2026-10-space-station-probe-disease-future.html",
           "source": "Phys.org 太空新闻",
-          "score": 63.5,
+          "score": 63.1,
           "published_at": "2026-10-30T03:00:01+00:00"
         },
         {
           "title": "NASA systems engineering team details Habitable Worlds Observatory mission architecture",
           "url": "https://phys.org/news/2026-10-nasa-team-habitable-worlds-observatory.html",
           "source": "Phys.org 太空新闻",
-          "score": 62.6,
+          "score": 62.2,
           "published_at": "2026-10-28T15:40:11+00:00"
         },
         {
@@ -643,11 +527,11 @@
         "station",
         "experiment"
       ],
-      "digest": "美国佛罗里达大学的研究人员正在国际空间站开展实验，以评估植物病害对未来月球和火星长期任务中宇航员种植新鲜食物的潜在影响。与此同时，NASA的宜居世界观测站任务架构由系统工程团队详细规划，旨在寻找太阳系外的类地行星。此外，麻省理工学院林肯实验室开发的激光通信终端已随Artemis II任务发射，将首次在载人任务中演示从月球附近向地球传输高清视频和数据。Aurelia研究所由MIT团队创立，作为研究实验室、教育推广中心和政策枢纽，支持太空创新。",
-      "digestTitle": "植物病害实验与激光通信任务进展",
-      "rank": 8,
-      "trend": "new",
-      "trendPct": null,
+      "digest": "美国佛罗里达大学的研究人员正借助国际空间站开展一项实验，以评估植物病害对宇航员在月球和火星长期任务中种植新鲜食物的影响。NASA及其合作伙伴为未来载人深空任务做准备，该实验旨在解决太空环境中植物健康的关键挑战。目前尚无实验结论，研究团队正在收集数据以确定病害风险程度。",
+      "digestTitle": "植物病害实验将随空间站测试月球与火星任务风险",
+      "rank": 6,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -670,13 +554,13 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
       "representative": {
         "title": "Mars moon lander set to launch on 19 October",
         "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
         "source": "ESA 空间科学",
         "published_at": "2026-10-13T12:00:00+00:00",
-        "score": 49.5,
+        "score": 49.1,
         "summary": "The Martian Moons eXploration ( MMX ) mission is set to launch into space on a H3 rocket from the Tanegashima Space Center at 04:41 JST on 20 October 2026 (20:41 BST / 21:41 CEST on 19 October 2026). MMX will be the first mission to collect",
         "zh_full": "火星卫星探测任务（MMX）计划于2026年10月20日日本标准时间04:41从种子岛宇宙中心搭乘H3火箭发射升空（对应英国夏令时10月19日20:41 / 中欧夏令时21:41）。MMX将是首个从火星卫星火卫一采集样本并带回地球的任务。该任务由日本宇宙航空研究开发机构（JAXA）主导，与美国国家航空航天局（NASA）、法国国家空间研究中心（CNES）、德国航空航天中心（DLR）及欧洲空间局（ESA）合作开展。",
         "llm_summary": "MMX任务计划搭乘H3火箭发射，将是首个从火卫一采集样本并带回地球的任务，由JAXA主导，NASA、CNES、DLR和ESA合作。",
@@ -691,14 +575,14 @@
           "title": "NASA's new UV space telescope will launch in 2031",
           "url": "https://phys.org/news/2026-10-nasa-uv-space-telescope.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.5,
+          "score": 60.1,
           "published_at": "2026-10-30T00:40:01+00:00"
         },
         {
           "title": "Mars moon lander set to launch on 19 October",
           "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
           "source": "ESA 空间科学",
-          "score": 49.5,
+          "score": 49.1,
           "published_at": "2026-10-13T12:00:00+00:00"
         }
       ],
@@ -709,8 +593,9 @@
         "telescope",
         "mars"
       ],
-      "digest": "NASA计划于2031年发射一台新的紫外太空望远镜，用于观测夜空中的变化。与此同时，日本宇宙航空研究开发机构（JAXA）的MMX任务将于2026年10月19日从种子岛航天中心搭乘H3火箭发射，成为首个采集火星卫星样本的探测器。",
-      "rank": 9,
+      "digest": "NASA计划于2031年发射一台新的紫外空间望远镜，用于观测夜空中的变化。该望远镜将帮助天文学家更详细地研究恒星、星系和行星等天体的紫外辐射。目前，NASA尚未公布该望远镜的具体名称和任务细节，但已确认其发射时间表。",
+      "digestTitle": "NASA新紫外望远镜2031年发射",
+      "rank": 7,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -738,7 +623,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
       "representative": {
         "title": "Newly discovered Earth-sized planet may lack an atmosphere",
         "url": "https://news.mit.edu/2024/newly-discovered-earth-sized-planet-may-lack-atmosphere-0515",
@@ -758,7 +643,7 @@
           "title": "Planetary collisions may help young worlds hold on to their atmospheres",
           "url": "https://phys.org/news/2026-10-planetary-collisions-young-worlds-atmospheres.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.2,
+          "score": 36.0,
           "published_at": "2026-10-29T19:30:01+00:00"
         },
         {
@@ -776,11 +661,149 @@
         "worlds",
         "hold"
       ],
-      "digest": "一项新研究对长期流行的理论提出质疑：成长中的岩石行星若与太空中大型天体相撞，可能会失去大气层。该研究认为，行星碰撞反而可能帮助年轻世界保留其大气。\n\n研究人员称，这一发现基于对行星形成过程的模拟，表明碰撞产生的能量和物质交换可能改变大气逃逸的平衡。此前理论认为，巨大撞击会剥离行星的大气，但新模型显示，在某些条件下，撞击后的碎片和气体可能重新聚集，维持或增强大气层。\n\n该研究尚未得到直接观测证实，但为理解系外行星大气演化提供了新视角。与此同时，另一项研究新发现了一颗地球大小的行星，绕冷木星型恒星运行，可能缺乏大气，其表面成分和历史或可被清晰观测。",
+      "digest": "一项新研究对长期理论提出质疑：成长中的岩石行星若与太空中大型天体碰撞，会失去大气层。该研究称，行星碰撞反而可能帮助年轻世界保留其大气层。\n\n此前理论认为，大型撞击会剥离行星大气。但新研究指出，在特定条件下，碰撞产生的能量和物质再分布可能使行星更有效地维持大气。这一发现影响对系外行星大气演化的理解。\n\n此外，MIT News报道了一颗新发现的类地行星，其大小与地球相当，绕一颗冷木星型恒星运行。该行星可能缺乏大气层，从而提供对其表面成分和历史的无遮挡观测机会。",
       "digestTitle": "碰撞或助年轻行星保留大气层",
-      "rank": 10,
+      "rank": 8,
       "trend": "flat",
       "trendPct": 0.0,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "companions",
+        "fast-moving",
+        "heart",
+        "hidden",
+        "impossibly",
+        "milky",
+        "mysterious",
+        "observatory",
+        "revealing",
+        "reveals",
+        "rubin",
+        "stars"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "New Scientist 太空",
+        "Phys.org 太空新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
+      "representative": {
+        "title": "Rubin observatory reveals two hidden companions of the Milky Way",
+        "url": "https://phys.org/news/2026-10-rubin-observatory-reveals-hidden-companions.html",
+        "source": "Phys.org 太空新闻",
+        "published_at": "2026-10-29T16:40:01+00:00",
+        "score": 59.9,
+        "summary": "Preview data from the recently completed NSF-DOE Vera C. Rubin Observatory in Chile point to a wave of discoveries that may complete the census of the Milky Way's neighboring galaxies—including its faintest companions.",
+        "zh_full": "位于智利的NSF-DOE薇拉·鲁宾天文台（Vera C. Rubin Observatory）近期完成的预览数据指向一系列发现，可能完成对银河系邻近星系——包括其最暗弱伴星系——的普查。该天文台由美国国家科学基金会（NSF）和美国能源部（DOE）共同资助，其预览数据揭示了银河系周围此前未知的伴星系。这些发现有望填补银河系伴星系普查中的空白，特别是那些极其暗弱的系统。鲁宾天文台以其大视场和深度巡天能力著称，能够探测到比以往更暗的天体。此次预览数据表明，该天文台在完成银河系邻近星系普查方面具有巨大潜力，可能发现更多此前未被识别的矮星系。这些伴星系对于理解银河系的形成和演化、暗物质分布以及星系相互作用至关重要。",
+        "llm_summary": "鲁宾天文台预览数据可能发现银河系最暗弱的伴星系，有望完成邻近星系普查。该天文台由NSF和DOE资助，其深度巡天能力可探测极暗天体，这些发现对理解银河系形成、暗物质分布有重要意义。",
+        "llm_reason": "重要天文发现，可能改变银河系伴星系普查",
+        "density": "高",
+        "llm_score": 77.0
+      },
+      "folded_count": 1,
+      "title": "Rubin observatory reveals two hidden companions of the Milky Way",
+      "id": "04a56942ff9b",
+      "links": [
+        {
+          "title": "Rubin observatory reveals two hidden companions of the Milky Way",
+          "url": "https://phys.org/news/2026-10-rubin-observatory-reveals-hidden-companions.html",
+          "source": "Phys.org 太空新闻",
+          "score": 59.9,
+          "published_at": "2026-10-29T16:40:01+00:00"
+        },
+        {
+          "title": "Impossibly fast-moving stars are revealing the Milky Way’s mysterious heart",
+          "url": "https://www.newscientist.com/article/2590428-impossibly-fast-moving-stars-are-revealing-the-milky-ways-mysterious-heart/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 44.5,
+          "published_at": "2026-10-06T15:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "milky",
+        "way",
+        "rubin",
+        "observatory",
+        "reveals"
+      ],
+      "digest": "鲁宾天文台在智利的试观测数据中发现了银河系的两个新伴星系，这可能是迄今已知最暗弱的伴星系。该发现来自美国国家科学基金会和能源部资助的维拉·鲁宾天文台，其完整巡天预计将补充银河系邻近星系的普查。研究人员称，这些伴星系因极其暗淡而此前未被发现，新数据表明该天文台有能力探测到这类微弱天体。",
+      "digestTitle": "鲁宾天文台发现银河系两个隐藏伴星系",
+      "rank": 9,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "astronomers",
+        "black",
+        "black hole",
+        "hole",
+        "measure",
+        "spin",
+        "split",
+        "stellar",
+        "supermassive",
+        "wobbling"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "MIT News 太空探索",
+        "Universe Today"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
+      "representative": {
+        "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
+        "url": "https://news.mit.edu/2024/using-wobbling-stellar-material-astronomers-measure-supermassive-black-hole-spin-0522",
+        "source": "MIT News 太空探索",
+        "published_at": "2024-05-22T15:00:00+00:00",
+        "score": 41.2,
+        "summary": "The results offer a new way to probe supermassive black holes and their evolution across the universe.",
+        "zh_full": "（无摘要，仅标题）",
+        "llm_summary": "（无摘要，仅标题）",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
+      "id": "e0ebecbe3dd7",
+      "links": [
+        {
+          "title": "What Could Split a Black Hole in Two?",
+          "url": "https://www.universetoday.com/articles/what-could-split-a-black-hole-in-two",
+          "source": "Universe Today",
+          "score": 60.7,
+          "published_at": "2026-10-30T21:30:00+00:00"
+        },
+        {
+          "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
+          "url": "https://news.mit.edu/2024/using-wobbling-stellar-material-astronomers-measure-supermassive-black-hole-spin-0522",
+          "source": "MIT News 太空探索",
+          "score": 41.2,
+          "published_at": "2024-05-22T15:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "black",
+        "hole",
+        "split",
+        "wobbling",
+        "stellar"
+      ],
+      "digest": "天文学家首次利用恒星物质的摆动直接测量出超大质量黑洞的自旋速度，为研究这类黑洞的演化提供了新方法。该成果由MIT团队主导，通过观测黑洞周围吸积盘中恒星物质的周期性运动，计算出其自旋参数。此前黑洞自旋多依赖间接推断，此次测量为理解黑洞生长历史提供了直接证据。",
+      "digestTitle": "首次测量超大质量黑洞自旋",
+      "rank": 10,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"

@@ -1,90 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T01:37:52.901051+00:00",
-  "count": 10,
+  "generatedAt": "2026-10-31T15:46:38.512901+00:00",
+  "count": 6,
   "items": [
-    {
-      "terms": [
-        "anticipated",
-        "assemble",
-        "bridge",
-        "classical",
-        "coexisting",
-        "deeper",
-        "electrons",
-        "even",
-        "oddity",
-        "phases",
-        "physicists",
-        "physics",
-        "quantum",
-        "reassemble",
-        "reverse",
-        "than",
-        "watch",
-        "worlds"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "MIT News 物理",
-        "New Scientist 物理"
-      ],
-      "score": 24.5,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
-      "representative": {
-        "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-        "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
-        "source": "MIT News 物理",
-        "published_at": "2026-08-07T09:00:00+00:00",
-        "score": 42.7,
-        "summary": "The study could help scientists understand how superconductivity and other more complex phenomena emerge in quantum materials.",
-        "zh_full": "（无摘要，仅标题）",
-        "llm_summary": "（无摘要，仅标题）",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-      "id": "db4a1640ca56",
-      "links": [
-        {
-          "title": "Key oddity of quantum physics may run even deeper than anticipated",
-          "url": "https://www.newscientist.com/article/2596105-key-oddity-of-quantum-physics-may-run-even-deeper-than-anticipated/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 61.6,
-          "published_at": "2026-10-29T11:00:00+00:00"
-        },
-        {
-          "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-          "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
-          "source": "MIT News 物理",
-          "score": 42.7,
-          "published_at": "2026-08-07T09:00:00+00:00"
-        },
-        {
-          "title": "‘Reverse physics’ could help bridge the classical and quantum worlds",
-          "url": "https://www.newscientist.com/article/2596640-reverse-physics-could-help-bridge-the-classical-and-quantum-worlds/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 37.3,
-          "published_at": "2026-10-30T09:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "physics",
-        "quantum",
-        "physicists",
-        "watch",
-        "electrons"
-      ],
-      "digest": "量子力学的概率性特征可追溯到其数学基础中更深层的结构。新分析表明，这一特性并非仅源于观测过程，而是嵌入理论的基本框架。该发现可能影响对量子与经典世界关系的理解，但尚未得到实验验证。",
-      "digestTitle": "量子力学概率性根源比预期更深",
-      "rank": 1,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 24.5,
-      "status": "关注中"
-    },
     {
       "terms": [
         "cern",
@@ -109,7 +27,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
       "representative": {
         "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
         "url": "https://news.mit.edu/2026/how-mit-grad-student-helped-young-scientists-test-their-experiment-cern-0828",
@@ -130,7 +48,7 @@
           "title": "How a 'tropical' shortcut could help particle collider experiments",
           "url": "https://phys.org/news/2026-10-tropical-shortcut-particle-collider.html",
           "source": "Phys.org 物理新闻",
-          "score": 61.0,
+          "score": 60.6,
           "published_at": "2026-10-30T19:40:01+00:00"
         },
         {
@@ -148,93 +66,9 @@
         "collider",
         "experiments"
       ],
-      "digest": "MIT研究生Manu Srivastava帮助印度高中生团队开发了一项测试，该测试可能为全球最大中微子实验之一做出贡献。这项测试旨在通过一种“热带”捷径改善粒子对撞机实验的测量预测，以降低实验成本并提高结果准确性。目前，该测试已在CERN进行验证，但具体结果尚未公布。",
-      "digestTitle": "粒子加速器实验新方法测试",
-      "rank": 2,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "conditions",
-        "conductance",
-        "current-driven",
-        "defects",
-        "ghost",
-        "machine",
-        "machine-learning",
-        "molecular",
-        "more",
-        "particles",
-        "program",
-        "realistic",
-        "rotation-enhanced",
-        "semiconductor",
-        "spine",
-        "temperature",
-        "track",
-        "trail"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
-      "representative": {
-        "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
-        "url": "https://www.nature.com/articles/s41586-026-11312-x",
-        "source": "Nature 量子物理",
-        "published_at": "2026-10-22T00:00:00+00:00",
-        "score": 56.6,
-        "summary": "",
-        "zh_full": "（无摘要，仅标题）标题描述了一种电流驱动的分子机器，该机器在旋转过程中表现出电导增强效应。这种分子机器利用电流作为动力源，驱动分子部件发生旋转，同时旋转运动导致分子系统的电导发生变化并增强，为分子级机电耦合和纳米电子器件研究提供了新的实验平台。",
-        "llm_summary": "研究人员开发了一种电流驱动的分子机器，其旋转运动可增强电导，为分子级机电耦合和纳米电子器件研究提供了新平台。",
-        "llm_reason": "分子机器电导增强效应新发现",
-        "density": "中",
-        "llm_score": 15.0
-      },
-      "folded_count": 1,
-      "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
-      "id": "0d3246d03a09",
-      "links": [
-        {
-          "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
-          "url": "https://www.nature.com/articles/s41586-026-11312-x",
-          "source": "Nature 量子物理",
-          "score": 56.6,
-          "published_at": "2026-10-22T00:00:00+00:00"
-        },
-        {
-          "title": "Machine learning helps track semiconductor defects under more realistic temperature conditions",
-          "url": "https://phys.org/news/2026-10-machine-track-semiconductor-defects-realistic.html",
-          "source": "Phys.org 物理新闻",
-          "score": 37.1,
-          "published_at": "2026-10-29T20:50:05+00:00"
-        },
-        {
-          "title": "SPINE: A machine-learning program is on the trail of ghost particles",
-          "url": "https://phys.org/news/2026-10-spine-machine-trail-ghost-particles.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.3,
-          "published_at": "2026-10-27T19:10:01+00:00"
-        }
-      ],
-      "top_terms": [
-        "machine",
-        "track",
-        "semiconductor",
-        "defects",
-        "more"
-      ],
-      "digest": "机器学习技术正在帮助物理学家在更接近实际的温度条件下追踪半导体缺陷，并开发出名为SPINE的程序来探测难以捕捉的中微子。这些进展表明，机器学习方法能有效提升对材料内部缺陷行为和中微子信号的分析能力，但相关结论仍基于初步研究，尚未完全证实其实际应用效果。",
-      "digestTitle": "机器学习助力半导体缺陷与中微子研究",
-      "rank": 3,
+      "digest": "粒子加速器的建造和运行成本高昂，且预测测量结果同样困难。MIT物理博士生Manu Srivastava帮助印度高中生团队开发了一项测试，该测试可能为全球最大的中微子实验之一做出贡献。这项研究提出一种“热带”捷径方法，旨在简化粒子对撞机实验中的测量预测过程，从而降低相关成本。该方法的具体效果尚待进一步验证，但已引起物理学界的关注。",
+      "digestTitle": "粒子加速器实验新方法：热带捷径降低测量预测成本",
+      "rank": 1,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -243,212 +77,80 @@
     },
     {
       "terms": [
-        "blue",
-        "boosts",
-        "communication",
-        "dynamic",
-        "laser",
-        "laser-enhanced",
+        "anticipated",
+        "assemble",
+        "bridge",
+        "classical",
+        "coexisting",
+        "deeper",
+        "electrons",
+        "even",
+        "oddity",
+        "phases",
+        "physicists",
+        "physics",
         "quantum",
-        "range",
-        "sensing",
-        "sensitivity",
-        "underwater"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
-      "representative": {
-        "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
-        "url": "https://www.nature.com/articles/s41467-026-78386-z",
-        "source": "Nature 量子物理",
-        "published_at": "2026-10-22T00:00:00+00:00",
-        "score": 55.1,
-        "summary": "",
-        "zh_full": "（无摘要，仅标题）该标题表明，激光增强的量子传感技术能够提升灵敏度和动态范围。通过激光手段，量子传感器的探测精度和可测量范围得到了改善。由于原始摘要缺失，我们无法得知具体提升幅度、实验条件或技术实现方式。",
-        "llm_summary": "（无摘要，仅标题）该标题表明，激光增强的量子传感技术能够提升灵敏度和动态范围。通过激光手段，量子传感器的探测精度和可测量范围得到了改善。由于原始摘要缺失，我们无法得知具体提升幅度、实验条件或技术实现方式。",
-        "llm_reason": "标题涉及量子传感性能提升，但摘要缺失，信息有限",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
-      "id": "d4d359873906",
-      "links": [
-        {
-          "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
-          "url": "https://www.nature.com/articles/s41467-026-78386-z",
-          "source": "Nature 量子物理",
-          "score": 55.1,
-          "published_at": "2026-10-22T00:00:00+00:00"
-        },
-        {
-          "title": "A blue laser for underwater communication and sensing",
-          "url": "https://phys.org/news/2026-10-blue-laser-underwater-communication.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.2,
-          "published_at": "2026-10-29T18:40:08+00:00"
-        }
-      ],
-      "top_terms": [
-        "laser",
-        "sensing",
-        "blue",
-        "underwater",
-        "communication"
-      ],
-      "digest": "瑞士洛桑联邦理工学院的研究人员开发出一种芯片级蓝激光，将稳定光发射与快速频率控制结合，可用于水下通信、环境传感和量子技术。该激光器在保持输出稳定的同时，能实现频率的快速调节，从而提升传感系统的灵敏度和动态范围。研究人员称，这一进展为水下通信和量子传感应用提供了新的光源方案，但尚未说明其在实际部署中的性能表现。",
-      "digestTitle": "蓝激光芯片实现稳定发射与快速频率控制",
-      "rank": 4,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "anyons",
-        "blocks",
-        "building",
-        "codes",
-        "computing",
-        "locate",
-        "potential",
-        "processor",
-        "quantum",
-        "superconducting",
-        "surface",
-        "teleportation",
-        "theoretical",
-        "transition",
-        "uses"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
-      "representative": {
-        "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-        "url": "https://www.nature.com/articles/s41567-026-03484-0",
-        "source": "Nature 量子物理",
-        "published_at": "2026-10-22T00:00:00+00:00",
-        "score": 55.1,
-        "summary": "",
-        "zh_full": "（无摘要，仅标题）该标题表明，研究团队在超导量子处理器上实现了表面码的隐形传输跃迁。表面码是一种量子纠错码，其隐形传输跃迁是量子计算领域的重要里程碑。由于原始摘要无法加载，我们无法获取更多技术细节、具体数据或实验结论。",
-        "llm_summary": "（无摘要，仅标题）该标题表明，研究团队在超导量子处理器上实现了表面码的隐形传输跃迁。表面码是一种量子纠错码，其隐形传输跃迁是量子计算领域的重要里程碑。由于原始摘要无法加载，我们无法获取更多技术细节、具体数据或实验结论。",
-        "llm_reason": "标题涉及量子计算核心进展，但摘要缺失，信息有限",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-      "id": "cebfffe79968",
-      "links": [
-        {
-          "title": "Theoretical method uses light to locate anyons, potential quantum computing building blocks",
-          "url": "https://phys.org/news/2026-10-theoretical-method-anyons-potential-quantum.html",
-          "source": "Phys.org 物理新闻",
-          "score": 60.2,
-          "published_at": "2026-10-29T14:40:01+00:00"
-        },
-        {
-          "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-          "url": "https://www.nature.com/articles/s41567-026-03484-0",
-          "source": "Nature 量子物理",
-          "score": 55.1,
-          "published_at": "2026-10-22T00:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "quantum",
-        "theoretical",
-        "uses",
-        "locate",
-        "anyons"
-      ],
-      "digest": "埃默里大学理论物理学家发现可用光探测任意子的“谱指纹”，这些奇异准粒子源于众多电子的集体行为。该发现为量子计算构建块提供了新的探测手段，相关研究已发表。",
-      "digestTitle": "光探测任意子谱指纹，助力量子计算",
-      "rank": 5,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "astronomers",
-        "astrophysical",
-        "black",
-        "black hole",
-        "brand-new",
-        "discover",
-        "hole",
-        "object",
-        "picture",
-        "star",
-        "take",
-        "type"
+        "reassemble",
+        "reverse",
+        "than",
+        "watch",
+        "worlds"
       ],
       "source_count": 2,
       "signal_count": 1,
       "sources": [
         "MIT News 物理",
-        "Quanta Magazine"
+        "New Scientist 物理"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
       "representative": {
-        "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
-        "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
+        "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
+        "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
         "source": "MIT News 物理",
-        "published_at": "2026-08-12T15:00:00+00:00",
-        "score": 41.2,
-        "summary": "The mashup of a black hole and an enormous star has never been seen before and could explain the mysterious little red dots often found in deep-space images.",
-        "zh_full": "天文学家发现了一种全新的天体物理对象：黑洞星。这种将黑洞与巨大恒星结合在一起的混合体此前从未被观测到，它可能有助于解释深空图像中经常出现的、神秘的红色小点。",
-        "llm_summary": "天文学家发现了一种全新的天体物理对象，被称为“黑洞星”。这是一种将黑洞与巨大恒星结合在一起的混合体，此前从未被观测到。这一发现可能有助于解释深空图像中经常出现的、神秘的红色小点。",
-        "llm_reason": "发现全新天体物理对象",
-        "density": "高"
+        "published_at": "2026-08-07T09:00:00+00:00",
+        "score": 42.7,
+        "summary": "The study could help scientists understand how superconductivity and other more complex phenomena emerge in quantum materials.",
+        "zh_full": "（无摘要，仅标题）",
+        "llm_summary": "（无摘要，仅标题）",
+        "density": "低"
       },
       "folded_count": 1,
-      "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
-      "id": "f7089c5a5404",
+      "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
+      "id": "db4a1640ca56",
       "links": [
         {
-          "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
-          "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-12T15:00:00+00:00"
+          "title": "Key oddity of quantum physics may run even deeper than anticipated",
+          "url": "https://www.newscientist.com/article/2596105-key-oddity-of-quantum-physics-may-run-even-deeper-than-anticipated/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 61.2,
+          "published_at": "2026-10-29T11:00:00+00:00"
         },
         {
-          "title": "How Do You Take a Picture of a Black Hole?",
-          "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
-          "source": "Quanta Magazine",
-          "score": 36.1,
-          "published_at": "2026-10-29T15:11:57+00:00"
+          "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
+          "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
+          "source": "MIT News 物理",
+          "score": 42.7,
+          "published_at": "2026-08-07T09:00:00+00:00"
+        },
+        {
+          "title": "‘Reverse physics’ could help bridge the classical and quantum worlds",
+          "url": "https://www.newscientist.com/article/2596640-reverse-physics-could-help-bridge-the-classical-and-quantum-worlds/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 37.1,
+          "published_at": "2026-10-30T09:00:00+00:00"
         }
       ],
       "top_terms": [
-        "black",
-        "hole",
-        "you",
-        "take",
-        "picture"
+        "physics",
+        "quantum",
+        "physicists",
+        "watch",
+        "electrons"
       ],
-      "digest": "天文学家发现一种前所未见的天体——黑洞与巨大恒星的混合体，可能解释深空图像中神秘的小红点。该发现由MIT News报道，称这种黑洞恒星从未被观测到过。目前尚无独立验证，其具体形成机制和物理性质仍在研究中。",
-      "digestTitle": "天文学家发现新型黑洞恒星",
-      "rank": 6,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "rank": 2,
+      "trend": "down",
+      "trendPct": -14.3,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -479,7 +181,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
       "representative": {
         "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
         "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
@@ -506,7 +208,7 @@
           "title": "Ultrathin metal layer boosts spin-related signals, opening a door to ultralow-power electronics",
           "url": "https://phys.org/news/2026-10-ultrathin-metal-layer-boosts-door.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.9,
+          "score": 35.6,
           "published_at": "2026-10-28T23:20:02+00:00"
         }
       ],
@@ -517,163 +219,77 @@
         "boosts",
         "spin"
       ],
-      "digest": "MIT团队开发出可在大气环境下稳定存在的晶圆级超薄超导体，解决了量子器件应用中的关键稳定性问题。九州大学团队发现超薄铱锰层可增强磁性绝缘体与铂膜结构中的自旋相关信号，为超低功耗电子器件开辟新路径。",
-      "digestTitle": "超薄超导体与自旋电子学新进展",
-      "rank": 7,
+      "rank": 3,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "astronomers",
+        "astrophysical",
+        "black",
+        "black hole",
+        "brand-new",
+        "discover",
+        "hole",
+        "object",
+        "picture",
+        "star",
+        "take",
+        "type"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "MIT News 物理",
+        "Quanta Magazine"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
+      "representative": {
+        "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
+        "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
+        "source": "MIT News 物理",
+        "published_at": "2026-08-12T15:00:00+00:00",
+        "score": 41.2,
+        "summary": "The mashup of a black hole and an enormous star has never been seen before and could explain the mysterious little red dots often found in deep-space images.",
+        "zh_full": "天文学家发现了一种全新的天体物理对象：黑洞星。这种将黑洞与巨大恒星结合在一起的混合体此前从未被观测到，它可能有助于解释深空图像中经常出现的、神秘的红色小点。",
+        "llm_summary": "天文学家发现了一种全新的天体物理对象，被称为“黑洞星”。这是一种将黑洞与巨大恒星结合在一起的混合体，此前从未被观测到。这一发现可能有助于解释深空图像中经常出现的、神秘的红色小点。",
+        "llm_reason": "发现全新天体物理对象",
+        "density": "高"
+      },
+      "folded_count": 1,
+      "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
+      "id": "f7089c5a5404",
+      "links": [
+        {
+          "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
+          "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-12T15:00:00+00:00"
+        },
+        {
+          "title": "How Do You Take a Picture of a Black Hole?",
+          "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
+          "source": "Quanta Magazine",
+          "score": 35.9,
+          "published_at": "2026-10-29T15:11:57+00:00"
+        }
+      ],
+      "top_terms": [
+        "black",
+        "hole",
+        "you",
+        "take",
+        "picture"
+      ],
+      "rank": 4,
       "trend": "down",
       "trendPct": -100.0,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "camera",
-        "closer",
-        "computers",
-        "graphene",
-        "jumps",
-        "light-driven",
-        "mirrors",
-        "move",
-        "quantum",
-        "reality",
-        "reveals",
-        "slow-motion"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
-      "representative": {
-        "title": "Light and mirrors move large quantum computers closer to reality",
-        "url": "https://www.nature.com/articles/d41586-026-03237-2",
-        "source": "Nature 量子物理",
-        "published_at": "2026-10-19T00:00:00+00:00",
-        "score": 53.1,
-        "summary": "",
-        "zh_full": "（无摘要，仅标题）该标题表明，利用光和反射镜的技术方案正在推动大型量子计算机走向现实。这暗示了光学或光子学方法在量子计算硬件规模化方面的潜在作用。由于原始摘要缺失，我们无法获取具体实验设计、性能指标或应用前景。",
-        "llm_summary": "（无摘要，仅标题）该标题表明，利用光和反射镜的技术方案正在推动大型量子计算机走向现实。这暗示了光学或光子学方法在量子计算硬件规模化方面的潜在作用。由于原始摘要缺失，我们无法获取具体实验设计、性能指标或应用前景。",
-        "llm_reason": "标题涉及量子计算机规模化路径，但摘要缺失，信息有限",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Light and mirrors move large quantum computers closer to reality",
-      "id": "4917d7f224ca",
-      "links": [
-        {
-          "title": "Slow-motion electron camera reveals light-driven quantum jumps in graphene",
-          "url": "https://phys.org/news/2026-10-motion-electron-camera-reveals-driven.html",
-          "source": "Phys.org 物理新闻",
-          "score": 59.6,
-          "published_at": "2026-10-28T16:00:28+00:00"
-        },
-        {
-          "title": "Light and mirrors move large quantum computers closer to reality",
-          "url": "https://www.nature.com/articles/d41586-026-03237-2",
-          "source": "Nature 量子物理",
-          "score": 53.1,
-          "published_at": "2026-10-19T00:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "quantum",
-        "slow",
-        "motion",
-        "camera",
-        "reveals"
-      ],
-      "digest": "物理学家利用新型慢动作电子相机发现，强电场驱动石墨烯中的电子以看似矛盾的方式跨越能隙跳跃。这一发现由雷根斯堡、马尔堡和于利希的研究团队共同完成，揭示了石墨烯中电子在强光场下的量子行为。该结果有助于理解石墨烯的电子动力学，并为量子计算等应用提供新见解。",
-      "digestTitle": "石墨烯中光驱动量子跳跃的发现",
-      "rank": 8,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "against",
-        "atom",
-        "atomically",
-        "core",
-        "expectations",
-        "local",
-        "magnetic",
-        "magnetism",
-        "nuclear",
-        "probe",
-        "researchers",
-        "resonance",
-        "scientists",
-        "thin",
-        "topology",
-        "uncover"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
-      "representative": {
-        "title": "Nuclear magnetic resonance on a single atom with a local probe",
-        "url": "https://www.nature.com/articles/s41467-026-78801-5",
-        "source": "Nature 量子物理",
-        "published_at": "2026-10-24T00:00:00+00:00",
-        "score": 58.0,
-        "summary": "",
-        "zh_full": "（无摘要，仅标题）标题指出，研究人员利用局部探针实现了对单个原子的核磁共振测量。这一成果标志着在纳米尺度上对单个原子核自旋状态的直接探测成为可能，为量子信息处理和原子尺度磁成像提供了新的技术途径。",
-        "llm_summary": "研究人员利用局部探针实现了对单个原子的核磁共振测量，为量子信息处理和原子尺度磁成像提供了新途径。",
-        "llm_reason": "单原子核磁共振测量突破",
-        "density": "中",
-        "llm_score": 15.0
-      },
-      "folded_count": 1,
-      "title": "Nuclear magnetic resonance on a single atom with a local probe",
-      "id": "276ad4619abc",
-      "links": [
-        {
-          "title": "Scientists uncover new way to control magnetism and topology using light in atomically thin materials",
-          "url": "https://phys.org/news/2026-10-scientists-uncover-magnetism-topology-atomically.html",
-          "source": "Phys.org 物理新闻",
-          "score": 60.6,
-          "published_at": "2026-10-27T21:40:06+00:00"
-        },
-        {
-          "title": "Nuclear magnetic resonance on a single atom with a local probe",
-          "url": "https://www.nature.com/articles/s41467-026-78801-5",
-          "source": "Nature 量子物理",
-          "score": 58.0,
-          "published_at": "2026-10-24T00:00:00+00:00"
-        },
-        {
-          "title": "Against all expectations, researchers control the magnetic core of a single atom",
-          "url": "https://phys.org/news/2026-10-magnetic-core-atom.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.6,
-          "published_at": "2026-10-28T14:20:08+00:00"
-        }
-      ],
-      "top_terms": [
-        "magnetic",
-        "atom",
-        "against",
-        "all",
-        "expectations"
-      ],
-      "digest": "荷兰代尔夫特理工大学的研究人员首次用无线电波控制单个原子核的磁性，打破了此前物理学界认为核自旋无法被外部手段操控的假设。该团队通过局部探针在单原子尺度上实现了核磁共振，证明核自旋可被精确读写。这一发现为量子计算和自旋电子学提供了新的控制手段，但尚处于基础研究阶段，实际应用仍需进一步验证。",
-      "digestTitle": "单原子核磁自旋的无线电波控制",
-      "rank": 9,
-      "trend": "new",
-      "trendPct": null,
       "badges": [],
       "heat": 0.0,
       "status": "关注中"
@@ -695,7 +311,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-31T01:37:52.901051+00:00",
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
       "representative": {
         "title": "New research shows a neutrino laser is impossible",
         "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
@@ -716,7 +332,7 @@
           "title": "Are we about to solve the greatest mystery of the neutrino?",
           "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 53.6,
+          "score": 53.3,
           "published_at": "2026-10-19T19:00:00+00:00"
         },
         {
@@ -734,9 +350,73 @@
         "impossible",
         "solve"
       ],
-      "digest": "中国一项大型实验即将测量中微子的质量，其结果可能改变粒子物理学。与此同时，MIT研究人员报告称，早先提出的中微子激光方案因物理和基本限制而无法实现。",
-      "digestTitle": "中微子质量测量实验即将揭晓，激光方案被否",
-      "rank": 10,
+      "digest": "中国一项大型实验即将测量中微子的质量，这一结果可能彻底改变粒子物理学。长期以来，中微子质量一直是个未解之谜，而该实验有望首次给出明确答案。与此同时，MIT的研究人员报告称，早先提出的中微子激光方案因物理和基本限制而无法实现，这一结论推翻了此前关于可能产生中微子激光束的设想。",
+      "digestTitle": "中微子质量测量实验即将揭晓答案",
+      "rank": 5,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "dark",
+        "hunt",
+        "matter",
+        "observe",
+        "particle",
+        "wave"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "MIT News 物理",
+        "New Scientist 物理"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-10-31T15:46:38.512901+00:00",
+      "representative": {
+        "title": "On the hunt for dark matter",
+        "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
+        "source": "MIT News 物理",
+        "published_at": "2026-08-11T04:00:00+00:00",
+        "score": 41.2,
+        "summary": "From Broadway to MIT’s Laboratory for Nuclear Science, PhD student Jessica Fry doesn’t do anything halfway. Now she’s hunting for the universe’s most elusive particle.",
+        "zh_full": "MIT News 报道，从百老汇到 MIT 核科学实验室，博士生 Jessica Fry 做事从不半途而废。如今她正在搜寻宇宙中最难以捉摸的粒子——暗物质。",
+        "llm_summary": "MIT 博士生 Jessica Fry 正在搜寻宇宙中最难以捉摸的粒子——暗物质，报道提到她从百老汇到 MIT 核科学实验室的经历。",
+        "llm_reason": "暗物质搜寻人物报道",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "On the hunt for dark matter",
+      "id": "1dc3e2185b16",
+      "links": [
+        {
+          "title": "Will we observe dark matter as a particle or a wave?",
+          "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 49.0,
+          "published_at": "2026-10-13T08:00:00+00:00"
+        },
+        {
+          "title": "On the hunt for dark matter",
+          "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-11T04:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "dark",
+        "matter",
+        "hunt",
+        "observe",
+        "particle"
+      ],
+      "digest": "暗物质是否已被发现仍存争议，但观测策略取决于其表现为粒子还是波。专栏作家Chanda Prescod-Weinstein称，暗物质可能已被发现，要观测它需先确定其行为方式。MIT博士生Jessica Fry正在实验室中搜寻这一最 elusive 的粒子，但报道未给出具体结果或结论。",
+      "digestTitle": "暗物质观测：粒子还是波？",
+      "rank": 6,
       "trend": "new",
       "trendPct": null,
       "badges": [],

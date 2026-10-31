@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T01:37:52.901051+00:00",
+  "generatedAt": "2026-10-31T15:46:38.512901+00:00",
   "weekStart": "2026-10-25",
   "windowDays": 7,
   "windowStart": "2026-10-25",
@@ -10,39 +10,39 @@
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1947.9,
+      "thisWeek": 2012.6,
       "lastWeek": 1713.1,
-      "deltaPct": 13.7
+      "deltaPct": 17.5
     },
     {
       "category": "深空探测",
-      "thisWeek": 1648.2,
+      "thisWeek": 1695.0,
       "lastWeek": 1864.7,
-      "deltaPct": -11.6
+      "deltaPct": -9.1
     },
     {
       "category": "其他",
-      "thisWeek": 1435.5,
+      "thisWeek": 1454.6,
       "lastWeek": 1683.3,
-      "deltaPct": -14.7
-    },
-    {
-      "category": "恒星与星际介质",
-      "thisWeek": 1196.5,
-      "lastWeek": 1093.0,
-      "deltaPct": 9.5
+      "deltaPct": -13.6
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 1138.7,
+      "thisWeek": 1218.6,
       "lastWeek": 1010.8,
-      "deltaPct": 12.7
+      "deltaPct": 20.6
+    },
+    {
+      "category": "恒星与星际介质",
+      "thisWeek": 1206.9,
+      "lastWeek": 1093.0,
+      "deltaPct": 10.4
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 496.9,
+      "thisWeek": 513.4,
       "lastWeek": 439.6,
-      "deltaPct": 13.0
+      "deltaPct": 16.8
     },
     {
       "category": "系外行星",
@@ -59,15 +59,15 @@
   ],
   "newTopics": [
     {
-      "topic_id": "e3f24d8fbec4",
-      "title": "Ghostly Cat’s Head Nebula lurks within sight of Hubble and Webb",
-      "score": 196.1,
+      "topic_id": "609814990de3",
+      "title": "APOD: 2026 October 31 – Night on a Spooky Planet",
+      "score": 402.8,
       "days": 2
     },
     {
-      "topic_id": "17dd13147929",
-      "title": "November’s Night Sky Notes: Light-Day Away",
-      "score": 195.5,
+      "topic_id": "0372ff6bd52e",
+      "title": "NASA’s James Webb Space Telescope Captures Eerie Cat’s Head",
+      "score": 214.0,
       "days": 1
     },
     {
@@ -101,16 +101,16 @@
       "days": 1
     },
     {
-      "topic_id": "2d5b99d309a6",
-      "title": "This Ancient Meteorite Hints at Mars' Warm, Wet Past",
-      "score": 121.9,
-      "days": 2
-    },
-    {
       "topic_id": "72298c2e24ff",
       "title": "The Rubin Observatory Finds Its First Dwarf Planet Candidate",
       "score": 121.3,
       "days": 1
+    },
+    {
+      "topic_id": "2d5b99d309a6",
+      "title": "This Ancient Meteorite Hints at Mars' Warm, Wet Past",
+      "score": 121.1,
+      "days": 2
     },
     {
       "topic_id": "cbb43460de2f",
