@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T16:43:41.487901+00:00",
+  "generatedAt": "2026-10-31T01:37:52.901051+00:00",
   "weekStart": "2026-10-25",
   "windowDays": 7,
   "windowStart": "2026-10-25",
@@ -10,21 +10,21 @@
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1665.7,
+      "thisWeek": 1706.1,
       "lastWeek": 1079.5,
-      "deltaPct": 54.3
+      "deltaPct": 58.0
     },
     {
       "category": "其他",
-      "thisWeek": 964.8,
+      "thisWeek": 963.6,
       "lastWeek": 1083.5,
-      "deltaPct": -11.0
+      "deltaPct": -11.1
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 433.8,
+      "thisWeek": 479.2,
       "lastWeek": 299.6,
-      "deltaPct": 44.8
+      "deltaPct": 59.9
     },
     {
       "category": "量子信息与计算",
@@ -33,16 +33,16 @@
       "deltaPct": -39.6
     },
     {
+      "category": "高能与粒子物理",
+      "thisWeek": 111.6,
+      "lastWeek": 375.6,
+      "deltaPct": -70.3
+    },
+    {
       "category": "等离子体",
       "thisWeek": 101.8,
       "lastWeek": 0,
       "deltaPct": 100.0
-    },
-    {
-      "category": "高能与粒子物理",
-      "thisWeek": 50.6,
-      "lastWeek": 375.6,
-      "deltaPct": -86.5
     },
     {
       "category": "原子分子与光物理",
@@ -107,9 +107,9 @@
       "days": 2
     },
     {
-      "topic_id": "20eded67e41f",
-      "title": "AI helps design new materials that work in the real world",
-      "score": 60.5,
+      "topic_id": "c9c29423cce7",
+      "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
+      "score": 61.0,
       "days": 1
     }
   ],

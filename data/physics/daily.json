@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-10-30T16:43:41.487901+00:00",
+  "generatedAt": "2026-10-31T01:37:52.901051+00:00",
   "total": 110,
-  "last24h": 14,
+  "last24h": 8,
   "last7d": 42,
   "topicCount": 10,
   "byCategory": [
     {
       "category": "量子信息与计算",
-      "total": 8,
+      "total": 7,
       "last24h": 0,
       "last7d": 1
     },
     {
       "category": "高能与粒子物理",
-      "total": 6,
-      "last24h": 0,
-      "last7d": 0
+      "total": 7,
+      "last24h": 1,
+      "last7d": 1
     },
     {
       "category": "凝聚态物理",
-      "total": 7,
-      "last24h": 3,
-      "last7d": 6
+      "total": 8,
+      "last24h": 2,
+      "last7d": 7
     },
     {
       "category": "科研进展",
-      "total": 44,
-      "last24h": 1,
+      "total": 45,
+      "last24h": 0,
       "last7d": 10
     },
     {
       "category": "其他",
-      "total": 45,
-      "last24h": 10,
-      "last7d": 25
+      "total": 43,
+      "last24h": 5,
+      "last7d": 23
     }
   ],
   "byDay": [
@@ -79,7 +79,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 13
+      "count": 11
     },
     {
       "date": "2026-10-29",
@@ -87,43 +87,43 @@
     },
     {
       "date": "2026-10-30",
-      "count": 14
+      "count": 15
     },
     {
       "date": "2026-10-31",
-      "count": 0
+      "count": 2
     }
   ],
   "bySource": [
     {
       "source": "Phys.org 物理新闻",
       "count": 25,
-      "latestAt": "2026-10-30T16:43:41.487901+00:00"
+      "latestAt": "2026-10-31T01:37:52.901051+00:00"
     },
     {
       "source": "Nature 量子物理",
       "count": 25,
-      "latestAt": "2026-10-30T16:43:41.487901+00:00"
+      "latestAt": "2026-10-31T01:37:52.901051+00:00"
     },
     {
       "source": "MIT News 物理",
       "count": 25,
-      "latestAt": "2026-10-30T16:43:41.487901+00:00"
+      "latestAt": "2026-10-31T01:37:52.901051+00:00"
     },
     {
       "source": "知识分子",
       "count": 20,
-      "latestAt": "2026-10-30T16:43:41.487901+00:00"
+      "latestAt": "2026-10-31T01:37:52.901051+00:00"
     },
     {
       "source": "New Scientist 物理",
       "count": 10,
-      "latestAt": "2026-10-30T16:43:41.487901+00:00"
+      "latestAt": "2026-10-31T01:37:52.901051+00:00"
     },
     {
       "source": "Quanta Magazine",
       "count": 5,
-      "latestAt": "2026-10-30T16:43:41.487901+00:00"
+      "latestAt": "2026-10-31T01:37:52.901051+00:00"
     }
   ]
 }

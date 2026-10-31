@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T16:43:41.487901+00:00",
+  "generatedAt": "2026-10-31T01:37:52.901051+00:00",
   "count": 10,
   "items": [
     {
@@ -31,7 +31,7 @@
         "New Scientist 物理"
       ],
       "score": 24.5,
-      "latest_at": "2026-10-30T16:43:41.487901+00:00",
+      "latest_at": "2026-10-31T01:37:52.901051+00:00",
       "representative": {
         "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
         "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
@@ -51,7 +51,7 @@
           "title": "Key oddity of quantum physics may run even deeper than anticipated",
           "url": "https://www.newscientist.com/article/2596105-key-oddity-of-quantum-physics-may-run-even-deeper-than-anticipated/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 61.8,
+          "score": 61.6,
           "published_at": "2026-10-29T11:00:00+00:00"
         },
         {
@@ -65,7 +65,7 @@
           "title": "‘Reverse physics’ could help bridge the classical and quantum worlds",
           "url": "https://www.newscientist.com/article/2596640-reverse-physics-could-help-bridge-the-classical-and-quantum-worlds/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 37.5,
+          "score": 37.3,
           "published_at": "2026-10-30T09:00:00+00:00"
         }
       ],
@@ -76,11 +76,85 @@
         "watch",
         "electrons"
       ],
+      "digest": "量子力学的概率性特征可追溯到其数学基础中更深层的结构。新分析表明，这一特性并非仅源于观测过程，而是嵌入理论的基本框架。该发现可能影响对量子与经典世界关系的理解，但尚未得到实验验证。",
+      "digestTitle": "量子力学概率性根源比预期更深",
       "rank": 1,
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "heat": 24.5,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "cern",
+        "collider",
+        "experiment",
+        "experiments",
+        "graduate",
+        "helped",
+        "particle",
+        "scientists",
+        "shortcut",
+        "student",
+        "team",
+        "test",
+        "tropical",
+        "young"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "MIT News 物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-10-31T01:37:52.901051+00:00",
+      "representative": {
+        "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
+        "url": "https://news.mit.edu/2026/how-mit-grad-student-helped-young-scientists-test-their-experiment-cern-0828",
+        "source": "MIT News 物理",
+        "published_at": "2026-08-28T20:35:00+00:00",
+        "score": 41.2,
+        "summary": "Physics PhD student Manu Srivastava helped high school students in India develop a test that could contribute to one of the world’s largest neutrino experiments.",
+        "zh_full": "据MIT News报道，物理学博士生Manu Srivastava帮助印度高中生开发了一项测试，该测试可能有助于世界上最大的中微子实验之一。",
+        "llm_summary": "物理学博士生Manu Srivastava帮助印度高中生开发了一项测试，该测试可能有助于世界上最大的中微子实验之一。",
+        "llm_reason": "学生参与中微子实验",
+        "density": "中"
+      },
+      "folded_count": 1,
+      "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
+      "id": "c9c29423cce7",
+      "links": [
+        {
+          "title": "How a 'tropical' shortcut could help particle collider experiments",
+          "url": "https://phys.org/news/2026-10-tropical-shortcut-particle-collider.html",
+          "source": "Phys.org 物理新闻",
+          "score": 61.0,
+          "published_at": "2026-10-30T19:40:01+00:00"
+        },
+        {
+          "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
+          "url": "https://news.mit.edu/2026/how-mit-grad-student-helped-young-scientists-test-their-experiment-cern-0828",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-28T20:35:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "tropical",
+        "shortcut",
+        "particle",
+        "collider",
+        "experiments"
+      ],
+      "digest": "MIT研究生Manu Srivastava帮助印度高中生团队开发了一项测试，该测试可能为全球最大中微子实验之一做出贡献。这项测试旨在通过一种“热带”捷径改善粒子对撞机实验的测量预测，以降低实验成本并提高结果准确性。目前，该测试已在CERN进行验证，但具体结果尚未公布。",
+      "digestTitle": "粒子加速器实验新方法测试",
+      "rank": 2,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 24.5,
+      "heat": 21.0,
       "status": "关注中"
     },
     {
@@ -111,15 +185,19 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-30T16:43:41.487901+00:00",
+      "latest_at": "2026-10-31T01:37:52.901051+00:00",
       "representative": {
         "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
         "url": "https://www.nature.com/articles/s41586-026-11312-x",
         "source": "Nature 量子物理",
         "published_at": "2026-10-22T00:00:00+00:00",
-        "score": 56.9,
+        "score": 56.6,
         "summary": "",
-        "zh_full": null
+        "zh_full": "（无摘要，仅标题）标题描述了一种电流驱动的分子机器，该机器在旋转过程中表现出电导增强效应。这种分子机器利用电流作为动力源，驱动分子部件发生旋转，同时旋转运动导致分子系统的电导发生变化并增强，为分子级机电耦合和纳米电子器件研究提供了新的实验平台。",
+        "llm_summary": "研究人员开发了一种电流驱动的分子机器，其旋转运动可增强电导，为分子级机电耦合和纳米电子器件研究提供了新平台。",
+        "llm_reason": "分子机器电导增强效应新发现",
+        "density": "中",
+        "llm_score": 15.0
       },
       "folded_count": 1,
       "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
@@ -129,21 +207,21 @@
           "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
           "url": "https://www.nature.com/articles/s41586-026-11312-x",
           "source": "Nature 量子物理",
-          "score": 56.9,
+          "score": 56.6,
           "published_at": "2026-10-22T00:00:00+00:00"
         },
         {
           "title": "Machine learning helps track semiconductor defects under more realistic temperature conditions",
           "url": "https://phys.org/news/2026-10-machine-track-semiconductor-defects-realistic.html",
           "source": "Phys.org 物理新闻",
-          "score": 37.3,
+          "score": 37.1,
           "published_at": "2026-10-29T20:50:05+00:00"
         },
         {
           "title": "SPINE: A machine-learning program is on the trail of ghost particles",
           "url": "https://phys.org/news/2026-10-spine-machine-trail-ghost-particles.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.4,
+          "score": 36.3,
           "published_at": "2026-10-27T19:10:01+00:00"
         }
       ],
@@ -154,9 +232,11 @@
         "defects",
         "more"
       ],
-      "rank": 2,
-      "trend": "new",
-      "trendPct": null,
+      "digest": "机器学习技术正在帮助物理学家在更接近实际的温度条件下追踪半导体缺陷，并开发出名为SPINE的程序来探测难以捕捉的中微子。这些进展表明，机器学习方法能有效提升对材料内部缺陷行为和中微子信号的分析能力，但相关结论仍基于初步研究，尚未完全证实其实际应用效果。",
+      "digestTitle": "机器学习助力半导体缺陷与中微子研究",
+      "rank": 3,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -182,15 +262,18 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-30T16:43:41.487901+00:00",
+      "latest_at": "2026-10-31T01:37:52.901051+00:00",
       "representative": {
         "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
         "url": "https://www.nature.com/articles/s41467-026-78386-z",
         "source": "Nature 量子物理",
         "published_at": "2026-10-22T00:00:00+00:00",
-        "score": 55.4,
+        "score": 55.1,
         "summary": "",
-        "zh_full": null
+        "zh_full": "（无摘要，仅标题）该标题表明，激光增强的量子传感技术能够提升灵敏度和动态范围。通过激光手段，量子传感器的探测精度和可测量范围得到了改善。由于原始摘要缺失，我们无法得知具体提升幅度、实验条件或技术实现方式。",
+        "llm_summary": "（无摘要，仅标题）该标题表明，激光增强的量子传感技术能够提升灵敏度和动态范围。通过激光手段，量子传感器的探测精度和可测量范围得到了改善。由于原始摘要缺失，我们无法得知具体提升幅度、实验条件或技术实现方式。",
+        "llm_reason": "标题涉及量子传感性能提升，但摘要缺失，信息有限",
+        "density": "低"
       },
       "folded_count": 1,
       "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
@@ -200,14 +283,14 @@
           "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
           "url": "https://www.nature.com/articles/s41467-026-78386-z",
           "source": "Nature 量子物理",
-          "score": 55.4,
+          "score": 55.1,
           "published_at": "2026-10-22T00:00:00+00:00"
         },
         {
           "title": "A blue laser for underwater communication and sensing",
           "url": "https://phys.org/news/2026-10-blue-laser-underwater-communication.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.3,
+          "score": 36.2,
           "published_at": "2026-10-29T18:40:08+00:00"
         }
       ],
@@ -218,9 +301,11 @@
         "underwater",
         "communication"
       ],
-      "rank": 3,
-      "trend": "new",
-      "trendPct": null,
+      "digest": "瑞士洛桑联邦理工学院的研究人员开发出一种芯片级蓝激光，将稳定光发射与快速频率控制结合，可用于水下通信、环境传感和量子技术。该激光器在保持输出稳定的同时，能实现频率的快速调节，从而提升传感系统的灵敏度和动态范围。研究人员称，这一进展为水下通信和量子传感应用提供了新的光源方案，但尚未说明其在实际部署中的性能表现。",
+      "digestTitle": "蓝激光芯片实现稳定发射与快速频率控制",
+      "rank": 4,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -250,15 +335,18 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-30T16:43:41.487901+00:00",
+      "latest_at": "2026-10-31T01:37:52.901051+00:00",
       "representative": {
         "title": "Teleportation transition of surface codes on a superconducting quantum processor",
         "url": "https://www.nature.com/articles/s41567-026-03484-0",
         "source": "Nature 量子物理",
         "published_at": "2026-10-22T00:00:00+00:00",
-        "score": 55.4,
+        "score": 55.1,
         "summary": "",
-        "zh_full": null
+        "zh_full": "（无摘要，仅标题）该标题表明，研究团队在超导量子处理器上实现了表面码的隐形传输跃迁。表面码是一种量子纠错码，其隐形传输跃迁是量子计算领域的重要里程碑。由于原始摘要无法加载，我们无法获取更多技术细节、具体数据或实验结论。",
+        "llm_summary": "（无摘要，仅标题）该标题表明，研究团队在超导量子处理器上实现了表面码的隐形传输跃迁。表面码是一种量子纠错码，其隐形传输跃迁是量子计算领域的重要里程碑。由于原始摘要无法加载，我们无法获取更多技术细节、具体数据或实验结论。",
+        "llm_reason": "标题涉及量子计算核心进展，但摘要缺失，信息有限",
+        "density": "低"
       },
       "folded_count": 1,
       "title": "Teleportation transition of surface codes on a superconducting quantum processor",
@@ -268,14 +356,14 @@
           "title": "Theoretical method uses light to locate anyons, potential quantum computing building blocks",
           "url": "https://phys.org/news/2026-10-theoretical-method-anyons-potential-quantum.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.4,
+          "score": 60.2,
           "published_at": "2026-10-29T14:40:01+00:00"
         },
         {
           "title": "Teleportation transition of surface codes on a superconducting quantum processor",
           "url": "https://www.nature.com/articles/s41567-026-03484-0",
           "source": "Nature 量子物理",
-          "score": 55.4,
+          "score": 55.1,
           "published_at": "2026-10-22T00:00:00+00:00"
         }
       ],
@@ -286,77 +374,8 @@
         "locate",
         "anyons"
       ],
-      "rank": 4,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "air-stable",
-        "boosts",
-        "door",
-        "electronics",
-        "layer",
-        "metal",
-        "more",
-        "opening",
-        "quantum",
-        "researchers",
-        "scalable",
-        "signals",
-        "spin-related",
-        "superconductors",
-        "ultralow-power",
-        "ultrathin"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "MIT News 物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-10-30T16:43:41.487901+00:00",
-      "representative": {
-        "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-        "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
-        "source": "MIT News 物理",
-        "published_at": "2026-08-05T15:00:00+00:00",
-        "score": 41.2,
-        "summary": "A new technique produces wafer-scale samples, overcoming a major roadblock to using these materials in quantum technologies.",
-        "zh_full": "（无摘要，仅标题）",
-        "llm_summary": "（无摘要，仅标题）",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-      "id": "abac4c095f41",
-      "links": [
-        {
-          "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-          "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-05T15:00:00+00:00"
-        },
-        {
-          "title": "Ultrathin metal layer boosts spin-related signals, opening a door to ultralow-power electronics",
-          "url": "https://phys.org/news/2026-10-ultrathin-metal-layer-boosts-door.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.0,
-          "published_at": "2026-10-28T23:20:02+00:00"
-        }
-      ],
-      "top_terms": [
-        "ultrathin",
-        "metal",
-        "layer",
-        "boosts",
-        "spin"
-      ],
+      "digest": "埃默里大学理论物理学家发现可用光探测任意子的“谱指纹”，这些奇异准粒子源于众多电子的集体行为。该发现为量子计算构建块提供了新的探测手段，相关研究已发表。",
+      "digestTitle": "光探测任意子谱指纹，助力量子计算",
       "rank": 5,
       "trend": "flat",
       "trendPct": 0.0,
@@ -386,7 +405,7 @@
         "Quanta Magazine"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-30T16:43:41.487901+00:00",
+      "latest_at": "2026-10-31T01:37:52.901051+00:00",
       "representative": {
         "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
         "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
@@ -414,7 +433,7 @@
           "title": "How Do You Take a Picture of a Black Hole?",
           "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
           "source": "Quanta Magazine",
-          "score": 36.3,
+          "score": 36.1,
           "published_at": "2026-10-29T15:11:57+00:00"
         }
       ],
@@ -425,11 +444,86 @@
         "take",
         "picture"
       ],
+      "digest": "天文学家发现一种前所未见的天体——黑洞与巨大恒星的混合体，可能解释深空图像中神秘的小红点。该发现由MIT News报道，称这种黑洞恒星从未被观测到过。目前尚无独立验证，其具体形成机制和物理性质仍在研究中。",
+      "digestTitle": "天文学家发现新型黑洞恒星",
       "rank": 6,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "air-stable",
+        "boosts",
+        "door",
+        "electronics",
+        "layer",
+        "metal",
+        "more",
+        "opening",
+        "quantum",
+        "researchers",
+        "scalable",
+        "signals",
+        "spin-related",
+        "superconductors",
+        "ultralow-power",
+        "ultrathin"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "MIT News 物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-10-31T01:37:52.901051+00:00",
+      "representative": {
+        "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+        "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
+        "source": "MIT News 物理",
+        "published_at": "2026-08-05T15:00:00+00:00",
+        "score": 41.2,
+        "summary": "A new technique produces wafer-scale samples, overcoming a major roadblock to using these materials in quantum technologies.",
+        "zh_full": "（无摘要，仅标题）",
+        "llm_summary": "（无摘要，仅标题）",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+      "id": "abac4c095f41",
+      "links": [
+        {
+          "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+          "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-05T15:00:00+00:00"
+        },
+        {
+          "title": "Ultrathin metal layer boosts spin-related signals, opening a door to ultralow-power electronics",
+          "url": "https://phys.org/news/2026-10-ultrathin-metal-layer-boosts-door.html",
+          "source": "Phys.org 物理新闻",
+          "score": 35.9,
+          "published_at": "2026-10-28T23:20:02+00:00"
+        }
+      ],
+      "top_terms": [
+        "ultrathin",
+        "metal",
+        "layer",
+        "boosts",
+        "spin"
+      ],
+      "digest": "MIT团队开发出可在大气环境下稳定存在的晶圆级超薄超导体，解决了量子器件应用中的关键稳定性问题。九州大学团队发现超薄铱锰层可增强磁性绝缘体与铂膜结构中的自旋相关信号，为超低功耗电子器件开辟新路径。",
+      "digestTitle": "超薄超导体与自旋电子学新进展",
+      "rank": 7,
+      "trend": "down",
+      "trendPct": -100.0,
+      "badges": [],
+      "heat": 0.0,
       "status": "关注中"
     },
     {
@@ -454,15 +548,18 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-30T16:43:41.487901+00:00",
+      "latest_at": "2026-10-31T01:37:52.901051+00:00",
       "representative": {
         "title": "Light and mirrors move large quantum computers closer to reality",
         "url": "https://www.nature.com/articles/d41586-026-03237-2",
         "source": "Nature 量子物理",
         "published_at": "2026-10-19T00:00:00+00:00",
-        "score": 53.4,
+        "score": 53.1,
         "summary": "",
-        "zh_full": null
+        "zh_full": "（无摘要，仅标题）该标题表明，利用光和反射镜的技术方案正在推动大型量子计算机走向现实。这暗示了光学或光子学方法在量子计算硬件规模化方面的潜在作用。由于原始摘要缺失，我们无法获取具体实验设计、性能指标或应用前景。",
+        "llm_summary": "（无摘要，仅标题）该标题表明，利用光和反射镜的技术方案正在推动大型量子计算机走向现实。这暗示了光学或光子学方法在量子计算硬件规模化方面的潜在作用。由于原始摘要缺失，我们无法获取具体实验设计、性能指标或应用前景。",
+        "llm_reason": "标题涉及量子计算机规模化路径，但摘要缺失，信息有限",
+        "density": "低"
       },
       "folded_count": 1,
       "title": "Light and mirrors move large quantum computers closer to reality",
@@ -472,14 +569,14 @@
           "title": "Slow-motion electron camera reveals light-driven quantum jumps in graphene",
           "url": "https://phys.org/news/2026-10-motion-electron-camera-reveals-driven.html",
           "source": "Phys.org 物理新闻",
-          "score": 59.8,
+          "score": 59.6,
           "published_at": "2026-10-28T16:00:28+00:00"
         },
         {
           "title": "Light and mirrors move large quantum computers closer to reality",
           "url": "https://www.nature.com/articles/d41586-026-03237-2",
           "source": "Nature 量子物理",
-          "score": 53.4,
+          "score": 53.1,
           "published_at": "2026-10-19T00:00:00+00:00"
         }
       ],
@@ -490,7 +587,9 @@
         "camera",
         "reveals"
       ],
-      "rank": 7,
+      "digest": "物理学家利用新型慢动作电子相机发现，强电场驱动石墨烯中的电子以看似矛盾的方式跨越能隙跳跃。这一发现由雷根斯堡、马尔堡和于利希的研究团队共同完成，揭示了石墨烯中电子在强光场下的量子行为。该结果有助于理解石墨烯的电子动力学，并为量子计算等应用提供新见解。",
+      "digestTitle": "石墨烯中光驱动量子跳跃的发现",
+      "rank": 8,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -523,15 +622,19 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-30T16:43:41.487901+00:00",
+      "latest_at": "2026-10-31T01:37:52.901051+00:00",
       "representative": {
         "title": "Nuclear magnetic resonance on a single atom with a local probe",
         "url": "https://www.nature.com/articles/s41467-026-78801-5",
         "source": "Nature 量子物理",
         "published_at": "2026-10-24T00:00:00+00:00",
-        "score": 58.2,
+        "score": 58.0,
         "summary": "",
-        "zh_full": null
+        "zh_full": "（无摘要，仅标题）标题指出，研究人员利用局部探针实现了对单个原子的核磁共振测量。这一成果标志着在纳米尺度上对单个原子核自旋状态的直接探测成为可能，为量子信息处理和原子尺度磁成像提供了新的技术途径。",
+        "llm_summary": "研究人员利用局部探针实现了对单个原子的核磁共振测量，为量子信息处理和原子尺度磁成像提供了新途径。",
+        "llm_reason": "单原子核磁共振测量突破",
+        "density": "中",
+        "llm_score": 15.0
       },
       "folded_count": 1,
       "title": "Nuclear magnetic resonance on a single atom with a local probe",
@@ -541,21 +644,21 @@
           "title": "Scientists uncover new way to control magnetism and topology using light in atomically thin materials",
           "url": "https://phys.org/news/2026-10-scientists-uncover-magnetism-topology-atomically.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.8,
+          "score": 60.6,
           "published_at": "2026-10-27T21:40:06+00:00"
         },
         {
           "title": "Nuclear magnetic resonance on a single atom with a local probe",
           "url": "https://www.nature.com/articles/s41467-026-78801-5",
           "source": "Nature 量子物理",
-          "score": 58.2,
+          "score": 58.0,
           "published_at": "2026-10-24T00:00:00+00:00"
         },
         {
           "title": "Against all expectations, researchers control the magnetic core of a single atom",
           "url": "https://phys.org/news/2026-10-magnetic-core-atom.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.8,
+          "score": 36.6,
           "published_at": "2026-10-28T14:20:08+00:00"
         }
       ],
@@ -566,7 +669,9 @@
         "all",
         "expectations"
       ],
-      "rank": 8,
+      "digest": "荷兰代尔夫特理工大学的研究人员首次用无线电波控制单个原子核的磁性，打破了此前物理学界认为核自旋无法被外部手段操控的假设。该团队通过局部探针在单原子尺度上实现了核磁共振，证明核自旋可被精确读写。这一发现为量子计算和自旋电子学提供了新的控制手段，但尚处于基础研究阶段，实际应用仍需进一步验证。",
+      "digestTitle": "单原子核磁自旋的无线电波控制",
+      "rank": 9,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -590,7 +695,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-30T16:43:41.487901+00:00",
+      "latest_at": "2026-10-31T01:37:52.901051+00:00",
       "representative": {
         "title": "New research shows a neutrino laser is impossible",
         "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
@@ -611,7 +716,7 @@
           "title": "Are we about to solve the greatest mystery of the neutrino?",
           "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 53.9,
+          "score": 53.6,
           "published_at": "2026-10-19T19:00:00+00:00"
         },
         {
@@ -629,68 +734,8 @@
         "impossible",
         "solve"
       ],
-      "rank": 9,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "dark",
-        "hunt",
-        "matter",
-        "observe",
-        "particle",
-        "wave"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "MIT News 物理",
-        "New Scientist 物理"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-10-30T16:43:41.487901+00:00",
-      "representative": {
-        "title": "On the hunt for dark matter",
-        "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
-        "source": "MIT News 物理",
-        "published_at": "2026-08-11T04:00:00+00:00",
-        "score": 41.2,
-        "summary": "From Broadway to MIT’s Laboratory for Nuclear Science, PhD student Jessica Fry doesn’t do anything halfway. Now she’s hunting for the universe’s most elusive particle.",
-        "zh_full": "MIT News 报道，从百老汇到 MIT 核科学实验室，博士生 Jessica Fry 做事从不半途而废。如今她正在搜寻宇宙中最难以捉摸的粒子——暗物质。",
-        "llm_summary": "MIT 博士生 Jessica Fry 正在搜寻宇宙中最难以捉摸的粒子——暗物质，报道提到她从百老汇到 MIT 核科学实验室的经历。",
-        "llm_reason": "暗物质搜寻人物报道",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "On the hunt for dark matter",
-      "id": "1dc3e2185b16",
-      "links": [
-        {
-          "title": "Will we observe dark matter as a particle or a wave?",
-          "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 49.6,
-          "published_at": "2026-10-13T08:00:00+00:00"
-        },
-        {
-          "title": "On the hunt for dark matter",
-          "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-11T04:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "dark",
-        "matter",
-        "hunt",
-        "observe",
-        "particle"
-      ],
+      "digest": "中国一项大型实验即将测量中微子的质量，其结果可能改变粒子物理学。与此同时，MIT研究人员报告称，早先提出的中微子激光方案因物理和基本限制而无法实现。",
+      "digestTitle": "中微子质量测量实验即将揭晓，激光方案被否",
       "rank": 10,
       "trend": "new",
       "trendPct": null,

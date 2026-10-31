@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T16:43:41.487901+00:00",
+  "generatedAt": "2026-10-31T01:37:52.901051+00:00",
   "weekStart": "2026-10-25",
   "windowDays": 7,
   "windowStart": "2026-10-25",
@@ -10,39 +10,39 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 5141.2,
+      "thisWeek": 5236.0,
       "lastWeek": 3681.7,
-      "deltaPct": 39.6
+      "deltaPct": 42.2
     },
     {
       "category": "光通信",
-      "thisWeek": 3563.4,
+      "thisWeek": 3371.0,
       "lastWeek": 3075.7,
-      "deltaPct": 15.9
+      "deltaPct": 9.6
     },
     {
       "category": "科研进展",
-      "thisWeek": 3191.9,
+      "thisWeek": 3364.4,
       "lastWeek": 2559.8,
-      "deltaPct": 24.7
+      "deltaPct": 31.4
     },
     {
       "category": "产业与资本",
-      "thisWeek": 3052.6,
+      "thisWeek": 3040.6,
       "lastWeek": 3389.0,
-      "deltaPct": -9.9
+      "deltaPct": -10.3
     },
     {
       "category": "其他",
-      "thisWeek": 2550.7,
+      "thisWeek": 2581.4,
       "lastWeek": 2394.2,
-      "deltaPct": 6.5
+      "deltaPct": 7.8
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 2308.8,
+      "thisWeek": 2314.7,
       "lastWeek": 1803.8,
-      "deltaPct": 28.0
+      "deltaPct": 28.3
     },
     {
       "category": "通信与算力",
@@ -52,15 +52,15 @@
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1087.5,
+      "thisWeek": 1086.4,
       "lastWeek": 801.8,
-      "deltaPct": 35.6
+      "deltaPct": 35.5
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 928.1,
+      "thisWeek": 867.9,
       "lastWeek": 775.7,
-      "deltaPct": 19.6
+      "deltaPct": 11.9
     },
     {
       "category": "光传感与激光雷达",
@@ -85,14 +85,8 @@
     {
       "topic_id": "6aec187ed191",
       "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-      "score": 429.1,
-      "days": 5
-    },
-    {
-      "topic_id": "34173eca1ba4",
-      "title": "最高续航675km!东风新车上市:激光雷达版12.99万",
-      "score": 300.8,
-      "days": 2
+      "score": 537.8,
+      "days": 6
     },
     {
       "topic_id": "ba306bad328d",
@@ -131,13 +125,25 @@
       "days": 1
     },
     {
-      "topic_id": "cf711748e825",
-      "title": "Photonics Hot List: October 30, 2026",
-      "score": 164.3,
+      "topic_id": "983065fbf898",
+      "title": "PODCAST: Meet Andrew Strikwerda, COMSOL",
+      "score": 157.0,
+      "days": 3
+    },
+    {
+      "topic_id": "a4e666367946",
+      "title": "Integrated elliptical III-V nanopillar arrays on silicon for dual photodetection and light emission",
+      "score": 133.2,
       "days": 1
     }
   ],
   "sustainedTopics": [
+    {
+      "topic_id": "da7b21634030",
+      "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
+      "days": 15,
+      "score": 2101.5
+    },
     {
       "topic_id": "9f8710ab3d29",
       "title": "华工科技：2026年上半年，光互联业务营收38.03亿元",
@@ -167,12 +173,6 @@
       "title": "华为全联接大会2026丨鲲鹏携手伙伴深化硬件开放与生态繁荣，共启算力产业新征程",
       "days": 15,
       "score": 511.5
-    },
-    {
-      "topic_id": "da7b21634030",
-      "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
-      "days": 14,
-      "score": 1961.4
     },
     {
       "topic_id": "569c89c31ce9",
