@@ -11926,7 +11926,7 @@
       "zh_full": "粒子加速器造价高昂，不仅建造和运行费用不菲，预测从加速器测量中获得的结果同样成本巨大。研究人员提出一种类似“热带”捷径的方法，有望帮助粒子对撞机实验更高效地开展。该方法旨在优化对撞机实验结果的预测流程，通过引入新的计算或物理路径，减少传统预测所需的复杂模拟和资源消耗。这一“热带”捷径概念可能涉及对粒子相互作用过程的简化建模，或利用特定数学技巧来加速计算。如果该方法得到验证，将有助于降低未来对撞机实验的理论支持成本，并可能提高实验设计的灵活性。目前该研究仍处于概念验证阶段，其实际应用效果有待进一步实验检验。",
       "reason": "降低对撞机实验预测成本的新思路",
       "density": "中",
-      "score": 60.6,
+      "score": 60.3,
       "role": "科研",
       "published_at": "2026-10-30T19:40:01+00:00",
       "topic_id": "c9c29423cce7",
@@ -11941,11 +11941,11 @@
         "zh_full": "（无摘要，仅标题）据Phys.org报道，量子研究人员正在寻找一种拓扑超导体——如果发现这种材料，它将通过结合两种不同“风味”的超导性，为量子计算带来重大进展。研究聚焦于UTe₂在极端压力下展现出两种超导性。",
         "reason": "标题涉及拓扑超导体与量子计算，但无摘要，信息有限",
         "density": "低",
-        "score": 45.8,
+        "score": 51.3,
         "role": "科研",
         "published_at": "2026-10-30T19:00:09+00:00",
-        "topic_id": null,
-        "topic_title": null
+        "topic_id": "e9c49519b300",
+        "topic_title": "Four superconducting cables link two large quantum processors into one"
       }
     ],
     "flash": [],
@@ -11961,7 +11961,7 @@
             "zh_full": "粒子加速器造价高昂，不仅建造和运行费用不菲，预测从加速器测量中获得的结果同样成本巨大。研究人员提出一种类似“热带”捷径的方法，有望帮助粒子对撞机实验更高效地开展。该方法旨在优化对撞机实验结果的预测流程，通过引入新的计算或物理路径，减少传统预测所需的复杂模拟和资源消耗。这一“热带”捷径概念可能涉及对粒子相互作用过程的简化建模，或利用特定数学技巧来加速计算。如果该方法得到验证，将有助于降低未来对撞机实验的理论支持成本，并可能提高实验设计的灵活性。目前该研究仍处于概念验证阶段，其实际应用效果有待进一步实验检验。",
             "reason": "降低对撞机实验预测成本的新思路",
             "density": "中",
-            "score": 60.6,
+            "score": 60.3,
             "role": "科研",
             "published_at": "2026-10-30T19:40:01+00:00",
             "topic_id": "c9c29423cce7",
@@ -11980,20 +11980,103 @@
             "zh_full": "（无摘要，仅标题）据Phys.org报道，量子研究人员正在寻找一种拓扑超导体——如果发现这种材料，它将通过结合两种不同“风味”的超导性，为量子计算带来重大进展。研究聚焦于UTe₂在极端压力下展现出两种超导性。",
             "reason": "标题涉及拓扑超导体与量子计算，但无摘要，信息有限",
             "density": "低",
-            "score": 45.8,
+            "score": 51.3,
             "role": "科研",
             "published_at": "2026-10-30T19:00:09+00:00",
-            "topic_id": null,
-            "topic_title": null
+            "topic_id": "e9c49519b300",
+            "topic_title": "Four superconducting cables link two large quantum processors into one"
           }
         ]
       }
     ],
     "topic_ids": [
-      "c9c29423cce7"
+      "c9c29423cce7",
+      "e9c49519b300"
     ],
     "tocCount": 2,
     "readMinutes": 1,
     "amended": 0
+  },
+  "2026-11-01": {
+    "date": "2026-11-01",
+    "weekday": "周日",
+    "label": "2026年11月1日",
+    "headline": {
+      "title": "Ultracold atoms simulate hard-to-observe matter-antimatter pair production",
+      "url": "https://phys.org/news/2026-10-ultracold-atoms-simulate-hard-antimatter.html",
+      "source": "Phys.org 物理新闻",
+      "summary": "研究人员利用超冷原子模拟了量子电动力学中强电场产生物质-反物质对的过程，为在实验室研究这一难以直接观测的物理现象提供了新方法。",
+      "zh_full": "根据量子电动力学（描述光与带电粒子相互作用的理论），在足够强的电场中，电场原则上可以将其部分能量转化为粒子及其反物质伙伴。粒子的反物质伙伴具有相同的质量，对于带电粒子而言，具有相反的电荷。研究人员利用超冷原子模拟了这种难以直接观测的物质-反物质对产生过程。这项研究为在实验室中研究量子电动力学中的基本过程提供了新的途径，有助于理解强场下粒子对产生的机制。",
+      "reason": "量子电动力学基础过程的模拟研究",
+      "density": "高",
+      "score": 63.9,
+      "role": "科研",
+      "published_at": "2026-10-31T17:00:01+00:00",
+      "topic_id": "318fee1ca2d3",
+      "topic_title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices"
+    },
+    "picks": [
+      {
+        "title": "Four superconducting cables link two large quantum processors into one",
+        "url": "https://phys.org/news/2026-10-superconducting-cables-link-large-quantum.html",
+        "source": "Phys.org 物理新闻",
+        "summary": "研究人员使用四条超导电缆将两个大型量子处理器连接成一个整体。这一模块化设计旨在解决量子计算机扩展中的关键挑战：在不破坏脆弱量子信息的前提下实现处理器间的连接。该技术允许独立的量子处理器协同工作，作为一台更大的机器运行，为构建更大规模量子计算机提供了可行路径。",
+        "zh_full": "随着量子计算机的雄心日益增长，许多研究人员认为，最佳的发展路径是将其构建为多个相互连接的部分。在这些模块化设计中，独立的量子处理器被连接起来，以便它们能够作为一个更大的机器协同工作。然而，要实现这一点，连接必须在不破坏脆弱量子信息的前提下传输这些信息。一项新研究展示了四条超导电缆如何将两个大型量子处理器连接成一个整体。这项技术旨在解决模块化量子计算中的关键挑战：如何在保持量子态完整性的同时，实现处理器之间的信息传输。研究人员通过精心设计的超导电缆，成功实现了两个量子处理器之间的耦合，使得它们能够作为一个统一的系统运行。这一进展对于扩大量子计算机的规模具有重要意义，因为模块化架构允许系统通过添加更多处理器来扩展，而无需重新设计整个机器。该研究证明了超导电缆可以有效地传输量子信息，同时保持其量子特性，为未来构建更大规模、更强大的量子计算机铺平了道路。",
+        "reason": "量子计算模块化连接技术取得重要进展",
+        "density": "高",
+        "score": 57.6,
+        "role": "科研",
+        "published_at": "2026-10-31T16:00:02+00:00",
+        "topic_id": "e9c49519b300",
+        "topic_title": "Four superconducting cables link two large quantum processors into one"
+      }
+    ],
+    "flash": [],
+    "sections": [
+      {
+        "category": "高能与粒子物理",
+        "articles": [
+          {
+            "title": "Ultracold atoms simulate hard-to-observe matter-antimatter pair production",
+            "url": "https://phys.org/news/2026-10-ultracold-atoms-simulate-hard-antimatter.html",
+            "source": "Phys.org 物理新闻",
+            "summary": "研究人员利用超冷原子模拟了量子电动力学中强电场产生物质-反物质对的过程，为在实验室研究这一难以直接观测的物理现象提供了新方法。",
+            "zh_full": "根据量子电动力学（描述光与带电粒子相互作用的理论），在足够强的电场中，电场原则上可以将其部分能量转化为粒子及其反物质伙伴。粒子的反物质伙伴具有相同的质量，对于带电粒子而言，具有相反的电荷。研究人员利用超冷原子模拟了这种难以直接观测的物质-反物质对产生过程。这项研究为在实验室中研究量子电动力学中的基本过程提供了新的途径，有助于理解强场下粒子对产生的机制。",
+            "reason": "量子电动力学基础过程的模拟研究",
+            "density": "高",
+            "score": 63.9,
+            "role": "科研",
+            "published_at": "2026-10-31T17:00:01+00:00",
+            "topic_id": "318fee1ca2d3",
+            "topic_title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices"
+          }
+        ]
+      },
+      {
+        "category": "凝聚态物理",
+        "articles": [
+          {
+            "title": "Four superconducting cables link two large quantum processors into one",
+            "url": "https://phys.org/news/2026-10-superconducting-cables-link-large-quantum.html",
+            "source": "Phys.org 物理新闻",
+            "summary": "研究人员使用四条超导电缆将两个大型量子处理器连接成一个整体。这一模块化设计旨在解决量子计算机扩展中的关键挑战：在不破坏脆弱量子信息的前提下实现处理器间的连接。该技术允许独立的量子处理器协同工作，作为一台更大的机器运行，为构建更大规模量子计算机提供了可行路径。",
+            "zh_full": "随着量子计算机的雄心日益增长，许多研究人员认为，最佳的发展路径是将其构建为多个相互连接的部分。在这些模块化设计中，独立的量子处理器被连接起来，以便它们能够作为一个更大的机器协同工作。然而，要实现这一点，连接必须在不破坏脆弱量子信息的前提下传输这些信息。一项新研究展示了四条超导电缆如何将两个大型量子处理器连接成一个整体。这项技术旨在解决模块化量子计算中的关键挑战：如何在保持量子态完整性的同时，实现处理器之间的信息传输。研究人员通过精心设计的超导电缆，成功实现了两个量子处理器之间的耦合，使得它们能够作为一个统一的系统运行。这一进展对于扩大量子计算机的规模具有重要意义，因为模块化架构允许系统通过添加更多处理器来扩展，而无需重新设计整个机器。该研究证明了超导电缆可以有效地传输量子信息，同时保持其量子特性，为未来构建更大规模、更强大的量子计算机铺平了道路。",
+            "reason": "量子计算模块化连接技术取得重要进展",
+            "density": "高",
+            "score": 57.6,
+            "role": "科研",
+            "published_at": "2026-10-31T16:00:02+00:00",
+            "topic_id": "e9c49519b300",
+            "topic_title": "Four superconducting cables link two large quantum processors into one"
+          }
+        ]
+      }
+    ],
+    "topic_ids": [
+      "318fee1ca2d3",
+      "e9c49519b300"
+    ],
+    "tocCount": 2,
+    "readMinutes": 1
   }
 }

@@ -1,8 +1,107 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T15:46:38.512901+00:00",
+  "generatedAt": "2026-11-01T01:10:28.276404+00:00",
   "count": 6,
   "items": [
+    {
+      "terms": [
+        "against",
+        "air-stable",
+        "atom",
+        "atoms",
+        "boosts",
+        "core",
+        "door",
+        "electronics",
+        "expectations",
+        "hard-to-observe",
+        "layer",
+        "magnetic",
+        "matter-antimatter",
+        "metal",
+        "more",
+        "opening",
+        "pair",
+        "production",
+        "quantum",
+        "researchers",
+        "scalable",
+        "signals",
+        "simulate",
+        "spin-related",
+        "superconductors",
+        "ultracold",
+        "ultralow-power",
+        "ultrathin"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "MIT News 物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-01T01:10:28.276404+00:00",
+      "representative": {
+        "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+        "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
+        "source": "MIT News 物理",
+        "published_at": "2026-08-05T15:00:00+00:00",
+        "score": 44.2,
+        "summary": "A new technique produces wafer-scale samples, overcoming a major roadblock to using these materials in quantum technologies.",
+        "zh_full": "（无摘要，仅标题）",
+        "llm_summary": "（无摘要，仅标题）",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+      "id": "318fee1ca2d3",
+      "links": [
+        {
+          "title": "Ultracold atoms simulate hard-to-observe matter-antimatter pair production",
+          "url": "https://phys.org/news/2026-10-ultracold-atoms-simulate-hard-antimatter.html",
+          "source": "Phys.org 物理新闻",
+          "score": 63.9,
+          "published_at": "2026-10-31T17:00:01+00:00"
+        },
+        {
+          "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+          "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
+          "source": "MIT News 物理",
+          "score": 44.2,
+          "published_at": "2026-08-05T15:00:00+00:00"
+        },
+        {
+          "title": "Ultrathin metal layer boosts spin-related signals, opening a door to ultralow-power electronics",
+          "url": "https://phys.org/news/2026-10-ultrathin-metal-layer-boosts-door.html",
+          "source": "Phys.org 物理新闻",
+          "score": 37.3,
+          "published_at": "2026-10-28T23:20:02+00:00"
+        },
+        {
+          "title": "Against all expectations, researchers control the magnetic core of a single atom",
+          "url": "https://phys.org/news/2026-10-magnetic-core-atom.html",
+          "source": "Phys.org 物理新闻",
+          "score": 37.1,
+          "published_at": "2026-10-28T14:20:08+00:00"
+        }
+      ],
+      "top_terms": [
+        "ultrathin",
+        "researchers",
+        "ultracold",
+        "atoms",
+        "simulate"
+      ],
+      "digest": "代尔夫特理工大学的研究人员首次用无线电波控制单个原子的原子核磁性，打破了此前认为核自旋无法被外部操控的假设。同时，麻省理工学院团队开发出可规模化制备的空气稳定超薄超导体，为量子器件应用扫清障碍。九州大学团队则发现超薄铱锰层可增强自旋相关信号，有望推动超低功耗电子器件发展。",
+      "digestTitle": "单原子核磁控制与超薄超导体研究进展",
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
     {
       "terms": [
         "cern",
@@ -27,7 +126,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-31T15:46:38.512901+00:00",
+      "latest_at": "2026-11-01T01:10:28.276404+00:00",
       "representative": {
         "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
         "url": "https://news.mit.edu/2026/how-mit-grad-student-helped-young-scientists-test-their-experiment-cern-0828",
@@ -48,7 +147,7 @@
           "title": "How a 'tropical' shortcut could help particle collider experiments",
           "url": "https://phys.org/news/2026-10-tropical-shortcut-particle-collider.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.6,
+          "score": 60.3,
           "published_at": "2026-10-30T19:40:01+00:00"
         },
         {
@@ -66,9 +165,9 @@
         "collider",
         "experiments"
       ],
-      "digest": "粒子加速器的建造和运行成本高昂，且预测测量结果同样困难。MIT物理博士生Manu Srivastava帮助印度高中生团队开发了一项测试，该测试可能为全球最大的中微子实验之一做出贡献。这项研究提出一种“热带”捷径方法，旨在简化粒子对撞机实验中的测量预测过程，从而降低相关成本。该方法的具体效果尚待进一步验证，但已引起物理学界的关注。",
+      "digest": "粒子加速器的建造和运行成本高昂，且预测测量结果同样昂贵。MIT物理博士生Manu Srivastava帮助印度高中生团队开发了一项测试，该测试可能为全球最大的中微子实验之一做出贡献。这项研究提出一种“热带”捷径，旨在降低粒子对撞机实验测量预测的复杂性和成本。报道称，该测试方法有望提高实验效率，但具体效果尚未经实验证实。",
       "digestTitle": "粒子加速器实验新方法：热带捷径降低测量预测成本",
-      "rank": 1,
+      "rank": 2,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -103,7 +202,7 @@
         "New Scientist 物理"
       ],
       "score": 21.0,
-      "latest_at": "2026-10-31T15:46:38.512901+00:00",
+      "latest_at": "2026-11-01T01:10:28.276404+00:00",
       "representative": {
         "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
         "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
@@ -123,7 +222,7 @@
           "title": "Key oddity of quantum physics may run even deeper than anticipated",
           "url": "https://www.newscientist.com/article/2596105-key-oddity-of-quantum-physics-may-run-even-deeper-than-anticipated/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 61.2,
+          "score": 60.9,
           "published_at": "2026-10-29T11:00:00+00:00"
         },
         {
@@ -137,7 +236,7 @@
           "title": "‘Reverse physics’ could help bridge the classical and quantum worlds",
           "url": "https://www.newscientist.com/article/2596640-reverse-physics-could-help-bridge-the-classical-and-quantum-worlds/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 37.1,
+          "score": 36.9,
           "published_at": "2026-10-30T09:00:00+00:00"
         }
       ],
@@ -148,82 +247,13 @@
         "watch",
         "electrons"
       ],
-      "rank": 2,
-      "trend": "down",
-      "trendPct": -14.3,
+      "digest": "量子力学的概率性特征可被追溯至其数学基础的更深层次。新分析表明，这一核心特性可能源于理论的基本数学结构，而非仅由观测结果决定。该发现为理解量子与经典世界之间的桥梁提供了新视角，但尚未被实验证实。",
+      "digestTitle": "量子力学概率性可追溯至数学基础深处",
+      "rank": 3,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "air-stable",
-        "boosts",
-        "door",
-        "electronics",
-        "layer",
-        "metal",
-        "more",
-        "opening",
-        "quantum",
-        "researchers",
-        "scalable",
-        "signals",
-        "spin-related",
-        "superconductors",
-        "ultralow-power",
-        "ultrathin"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "MIT News 物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-10-31T15:46:38.512901+00:00",
-      "representative": {
-        "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-        "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
-        "source": "MIT News 物理",
-        "published_at": "2026-08-05T15:00:00+00:00",
-        "score": 41.2,
-        "summary": "A new technique produces wafer-scale samples, overcoming a major roadblock to using these materials in quantum technologies.",
-        "zh_full": "（无摘要，仅标题）",
-        "llm_summary": "（无摘要，仅标题）",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-      "id": "abac4c095f41",
-      "links": [
-        {
-          "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-          "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-05T15:00:00+00:00"
-        },
-        {
-          "title": "Ultrathin metal layer boosts spin-related signals, opening a door to ultralow-power electronics",
-          "url": "https://phys.org/news/2026-10-ultrathin-metal-layer-boosts-door.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.6,
-          "published_at": "2026-10-28T23:20:02+00:00"
-        }
-      ],
-      "top_terms": [
-        "ultrathin",
-        "metal",
-        "layer",
-        "boosts",
-        "spin"
-      ],
-      "rank": 3,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
       "status": "关注中"
     },
     {
@@ -248,7 +278,7 @@
         "Quanta Magazine"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-31T15:46:38.512901+00:00",
+      "latest_at": "2026-11-01T01:10:28.276404+00:00",
       "representative": {
         "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
         "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
@@ -276,7 +306,7 @@
           "title": "How Do You Take a Picture of a Black Hole?",
           "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
           "source": "Quanta Magazine",
-          "score": 35.9,
+          "score": 35.7,
           "published_at": "2026-10-29T15:11:57+00:00"
         }
       ],
@@ -287,9 +317,11 @@
         "take",
         "picture"
       ],
+      "digest": "天文学家发现一种前所未见的天体——黑洞与巨大恒星的混合体，可能解释深空图像中神秘的小红点。该发现由MIT News报道，称这种黑洞星从未被观测到，其存在或为理解宇宙早期星系演化提供新线索。目前尚无独立验证，研究团队称需进一步观测确认其性质。",
+      "digestTitle": "天文学家发现新型黑洞星天体",
       "rank": 4,
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 0.0,
       "status": "关注中"
@@ -311,7 +343,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-31T15:46:38.512901+00:00",
+      "latest_at": "2026-11-01T01:10:28.276404+00:00",
       "representative": {
         "title": "New research shows a neutrino laser is impossible",
         "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
@@ -332,7 +364,7 @@
           "title": "Are we about to solve the greatest mystery of the neutrino?",
           "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 53.3,
+          "score": 53.0,
           "published_at": "2026-10-19T19:00:00+00:00"
         },
         {
@@ -350,7 +382,7 @@
         "impossible",
         "solve"
       ],
-      "digest": "中国一项大型实验即将测量中微子的质量，这一结果可能彻底改变粒子物理学。长期以来，中微子质量一直是个未解之谜，而该实验有望首次给出明确答案。与此同时，MIT的研究人员报告称，早先提出的中微子激光方案因物理和基本限制而无法实现，这一结论推翻了此前关于可能产生中微子激光束的设想。",
+      "digest": "中国一项大型实验即将测量中微子的质量，这一结果可能彻底改变粒子物理学。长期以来，中微子质量一直是个未解之谜，而该实验有望首次给出明确答案。与此同时，MIT的研究人员报告称，早先提出的中微子激光方案因物理和基本限制而无法实现，这一结论推翻了此前关于产生中微子激光束的设想。",
       "digestTitle": "中微子质量测量实验即将揭晓答案",
       "rank": 5,
       "trend": "new",
@@ -375,7 +407,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-10-31T15:46:38.512901+00:00",
+      "latest_at": "2026-11-01T01:10:28.276404+00:00",
       "representative": {
         "title": "On the hunt for dark matter",
         "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
@@ -396,7 +428,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 49.0,
+          "score": 48.7,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
@@ -414,8 +446,6 @@
         "observe",
         "particle"
       ],
-      "digest": "暗物质是否已被发现仍存争议，但观测策略取决于其表现为粒子还是波。专栏作家Chanda Prescod-Weinstein称，暗物质可能已被发现，要观测它需先确定其行为方式。MIT博士生Jessica Fry正在实验室中搜寻这一最 elusive 的粒子，但报道未给出具体结果或结论。",
-      "digestTitle": "暗物质观测：粒子还是波？",
       "rank": 6,
       "trend": "new",
       "trendPct": null,

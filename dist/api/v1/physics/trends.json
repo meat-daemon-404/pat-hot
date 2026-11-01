@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T15:46:38.512901+00:00",
-  "weekStart": "2026-10-25",
+  "generatedAt": "2026-11-01T01:10:28.276404+00:00",
+  "weekStart": "2026-10-26",
   "windowDays": 7,
-  "windowStart": "2026-10-25",
-  "windowEnd": "2026-10-31",
-  "prevStart": "2026-10-18",
-  "prevEnd": "2026-10-24",
+  "windowStart": "2026-10-26",
+  "windowEnd": "2026-11-01",
+  "prevStart": "2026-10-19",
+  "prevEnd": "2026-10-25",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1614.7,
-      "lastWeek": 1079.5,
-      "deltaPct": 49.6
+      "thisWeek": 1236.2,
+      "lastWeek": 1156.1,
+      "deltaPct": 6.9
     },
     {
       "category": "其他",
-      "thisWeek": 953.1,
-      "lastWeek": 1083.5,
-      "deltaPct": -12.0
+      "thisWeek": 922.4,
+      "lastWeek": 1053.1,
+      "deltaPct": -12.4
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 477.6,
+      "thisWeek": 540.7,
       "lastWeek": 299.6,
-      "deltaPct": 59.4
+      "deltaPct": 80.5
     },
     {
       "category": "量子信息与计算",
@@ -34,15 +34,15 @@
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 111.2,
-      "lastWeek": 375.6,
-      "deltaPct": -70.4
+      "thisWeek": 124.2,
+      "lastWeek": 426.2,
+      "deltaPct": -70.9
     },
     {
       "category": "等离子体",
-      "thisWeek": 101.8,
-      "lastWeek": 0,
-      "deltaPct": 100.0
+      "thisWeek": 51.1,
+      "lastWeek": 50.7,
+      "deltaPct": 0.8
     },
     {
       "category": "原子分子与光物理",
@@ -57,6 +57,12 @@
       "title": "Diagonal, Switching, and Locally Optimal Unraveling for efficient quantum trajectories in metastable open quantum systems",
       "score": 134.3,
       "days": 1
+    },
+    {
+      "topic_id": "e9c49519b300",
+      "title": "Four superconducting cables link two large quantum processors into one",
+      "score": 108.9,
+      "days": 2
     },
     {
       "topic_id": "ab2d58460ede",
@@ -105,12 +111,6 @@
       "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
       "score": 83.3,
       "days": 2
-    },
-    {
-      "topic_id": "c9c29423cce7",
-      "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
-      "score": 60.6,
-      "days": 1
     }
   ],
   "sustainedTopics": []
