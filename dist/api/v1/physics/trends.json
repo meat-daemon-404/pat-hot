@@ -1,54 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T01:10:28.276404+00:00",
-  "weekStart": "2026-10-26",
+  "generatedAt": "2026-11-01T16:50:29.228896+00:00",
+  "weekStart": "2026-10-27",
   "windowDays": 7,
-  "windowStart": "2026-10-26",
-  "windowEnd": "2026-11-01",
-  "prevStart": "2026-10-19",
-  "prevEnd": "2026-10-25",
+  "windowStart": "2026-10-27",
+  "windowEnd": "2026-11-02",
+  "prevStart": "2026-10-20",
+  "prevEnd": "2026-10-26",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1236.2,
-      "lastWeek": 1156.1,
-      "deltaPct": 6.9
+      "thisWeek": 865.1,
+      "lastWeek": 1426.1,
+      "deltaPct": -39.3
     },
     {
       "category": "其他",
-      "thisWeek": 922.4,
-      "lastWeek": 1053.1,
-      "deltaPct": -12.4
+      "thisWeek": 800.0,
+      "lastWeek": 1085.1,
+      "deltaPct": -26.3
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 540.7,
-      "lastWeek": 299.6,
-      "deltaPct": 80.5
+      "thisWeek": 455.7,
+      "lastWeek": 384.1,
+      "deltaPct": 18.6
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 361.1,
-      "lastWeek": 598.0,
-      "deltaPct": -39.6
+      "thisWeek": 144.9,
+      "lastWeek": 716.9,
+      "deltaPct": -79.8
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 124.2,
+      "thisWeek": 123.8,
       "lastWeek": 426.2,
-      "deltaPct": -70.9
+      "deltaPct": -71.0
     },
     {
       "category": "等离子体",
       "thisWeek": 51.1,
       "lastWeek": 50.7,
       "deltaPct": 0.8
-    },
-    {
-      "category": "原子分子与光物理",
-      "thisWeek": 0,
-      "lastWeek": 37.4,
-      "deltaPct": -100.0
     }
   ],
   "newTopics": [
@@ -61,31 +55,13 @@
     {
       "topic_id": "e9c49519b300",
       "title": "Four superconducting cables link two large quantum processors into one",
-      "score": 108.9,
+      "score": 108.4,
       "days": 2
-    },
-    {
-      "topic_id": "ab2d58460ede",
-      "title": "Mutual Information Across Quantum Reference Frame Perspectives",
-      "score": 107.4,
-      "days": 1
     },
     {
       "topic_id": "41ce72c68b5e",
       "title": "Scientists uncover new way to control magnetism and topology using light in atomically thin materials",
       "score": 91.6,
-      "days": 1
-    },
-    {
-      "topic_id": "97e77bbc80e9",
-      "title": "Fidelity Dynamics of a Jaynes--Cummings Qubit under Markovian and Non-Markovian Coupling Noise",
-      "score": 87.4,
-      "days": 1
-    },
-    {
-      "topic_id": "6ad11ce69b69",
-      "title": "QuantumMatterExplorer: An Autonomous Agent for the Discovery of Quantum Many-Body Phases of Matter",
-      "score": 87.4,
       "days": 1
     },
     {
@@ -107,10 +83,28 @@
       "days": 1
     },
     {
-      "topic_id": "e53a0752f0b2",
-      "title": "High Resolution Hyperspectral Quantum Infrared Imaging with Undetected Photons",
-      "score": 83.3,
-      "days": 2
+      "topic_id": "318fee1ca2d3",
+      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
+      "score": 63.5,
+      "days": 1
+    },
+    {
+      "topic_id": "c9c29423cce7",
+      "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
+      "score": 60.3,
+      "days": 1
+    },
+    {
+      "topic_id": "ad8579469f19",
+      "title": "Theoretical method uses light to locate anyons, potential quantum computing building blocks",
+      "score": 57.5,
+      "days": 1
+    },
+    {
+      "topic_id": "4b905b1e4759",
+      "title": "III-nitride-based in-sensor computing enabled by interfacial polarization effects",
+      "score": 55.8,
+      "days": 1
     }
   ],
   "sustainedTopics": []

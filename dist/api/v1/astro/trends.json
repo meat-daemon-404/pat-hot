@@ -1,48 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T01:10:28.276404+00:00",
-  "weekStart": "2026-10-26",
+  "generatedAt": "2026-11-01T16:50:29.228896+00:00",
+  "weekStart": "2026-10-27",
   "windowDays": 7,
-  "windowStart": "2026-10-26",
-  "windowEnd": "2026-11-01",
-  "prevStart": "2026-10-19",
-  "prevEnd": "2026-10-25",
+  "windowStart": "2026-10-27",
+  "windowEnd": "2026-11-02",
+  "prevStart": "2026-10-20",
+  "prevEnd": "2026-10-26",
   "categoryDelta": [
     {
-      "category": "科研进展",
-      "thisWeek": 1951.5,
-      "lastWeek": 1773.8,
-      "deltaPct": 10.0
-    },
-    {
       "category": "深空探测",
-      "thisWeek": 1644.5,
-      "lastWeek": 1784.7,
-      "deltaPct": -7.9
+      "thisWeek": 1641.7,
+      "lastWeek": 1775.9,
+      "deltaPct": -7.6
     },
     {
       "category": "其他",
-      "thisWeek": 1479.0,
-      "lastWeek": 1649.9,
-      "deltaPct": -10.4
+      "thisWeek": 1596.7,
+      "lastWeek": 1487.4,
+      "deltaPct": 7.3
     },
     {
-      "category": "星系与宇宙学",
-      "thisWeek": 1218.4,
-      "lastWeek": 1010.8,
-      "deltaPct": 20.5
+      "category": "科研进展",
+      "thisWeek": 1571.5,
+      "lastWeek": 2042.6,
+      "deltaPct": -23.1
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 1206.6,
-      "lastWeek": 1034.2,
-      "deltaPct": 16.7
+      "thisWeek": 876.6,
+      "lastWeek": 1326.8,
+      "deltaPct": -33.9
+    },
+    {
+      "category": "星系与宇宙学",
+      "thisWeek": 857.2,
+      "lastWeek": 1297.2,
+      "deltaPct": -33.9
     },
     {
       "category": "太阳与空间物理",
       "thisWeek": 459.1,
-      "lastWeek": 493.9,
-      "deltaPct": -7.0
+      "lastWeek": 456.5,
+      "deltaPct": 0.6
     },
     {
       "category": "系外行星",
@@ -52,9 +52,9 @@
     },
     {
       "category": "引力波",
-      "thisWeek": 37.4,
-      "lastWeek": 246.9,
-      "deltaPct": -84.9
+      "thisWeek": 0,
+      "lastWeek": 284.3,
+      "deltaPct": -100.0
     }
   ],
   "newTopics": [
@@ -63,6 +63,12 @@
       "title": "APOD: 2026 October 31 – Night on a Spooky Planet",
       "score": 402.4,
       "days": 2
+    },
+    {
+      "topic_id": "5740c82a8575",
+      "title": "APOD: 2026 November 1 – Colors of the Moon",
+      "score": 218.5,
+      "days": 1
     },
     {
       "topic_id": "0372ff6bd52e",
@@ -80,12 +86,6 @@
       "topic_id": "2cb0b8d786cf",
       "title": "Correlations between Dynamical Dark Energy and Neutrino Parameters",
       "score": 135.6,
-      "days": 1
-    },
-    {
-      "topic_id": "e3841fffc931",
-      "title": "High-orbit satellites could light the way for travel to the moon",
-      "score": 133.5,
       "days": 1
     },
     {
