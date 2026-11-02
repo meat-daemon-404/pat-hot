@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T16:50:29.228896+00:00",
+  "generatedAt": "2026-11-02T01:32:00.094060+00:00",
   "weekStart": "2026-10-27",
   "windowDays": 7,
   "windowStart": "2026-10-27",
@@ -10,15 +10,15 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4782.8,
+      "thisWeek": 4607.0,
       "lastWeek": 4103.6,
-      "deltaPct": 16.6
+      "deltaPct": 12.3
     },
     {
       "category": "光通信",
-      "thisWeek": 3259.0,
+      "thisWeek": 3306.1,
       "lastWeek": 3050.6,
-      "deltaPct": 6.8
+      "deltaPct": 8.4
     },
     {
       "category": "产业与资本",
@@ -28,15 +28,15 @@
     },
     {
       "category": "科研进展",
-      "thisWeek": 2917.6,
+      "thisWeek": 2917.4,
       "lastWeek": 2769.5,
       "deltaPct": 5.3
     },
     {
       "category": "其他",
-      "thisWeek": 2579.9,
+      "thisWeek": 2611.1,
       "lastWeek": 2353.1,
-      "deltaPct": 9.6
+      "deltaPct": 11.0
     },
     {
       "category": "通信与算力",
@@ -46,9 +46,9 @@
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1968.0,
+      "thisWeek": 1954.3,
       "lastWeek": 1878.9,
-      "deltaPct": 4.7
+      "deltaPct": 4.0
     },
     {
       "category": "显示与面板",
@@ -85,7 +85,7 @@
     {
       "topic_id": "cf711748e825",
       "title": "Photonics Hot List: October 30, 2026",
-      "score": 328.6,
+      "score": 217.1,
       "days": 2
     },
     {
@@ -99,6 +99,12 @@
       "title": "Channel-Differentiated Topological Charge Flips and Formation of Janus Bound States in the Continuum in Single-Layer Photonic Lattices",
       "score": 189.6,
       "days": 1
+    },
+    {
+      "topic_id": "983065fbf898",
+      "title": "PODCAST: Meet Andrew Strikwerda, COMSOL",
+      "score": 188.4,
+      "days": 4
     },
     {
       "topic_id": "a360e8d874a8",
@@ -119,22 +125,16 @@
       "days": 1
     },
     {
-      "topic_id": "983065fbf898",
-      "title": "PODCAST: Meet Andrew Strikwerda, COMSOL",
-      "score": 157.0,
-      "days": 3
-    },
-    {
-      "topic_id": "124db32a623b",
-      "title": "东风推出纯电C级车,配激光雷达,续航675km,限时10.99-12.99万",
-      "score": 131.2,
+      "topic_id": "d2d32c40f2a6",
+      "title": "Surface Functionalization with Lasers: from Nanostructures to Applications",
+      "score": 123.4,
       "days": 1
     },
     {
-      "topic_id": "8eb0e4ed1515",
-      "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
-      "score": 130.0,
-      "days": 2
+      "topic_id": "66387e71493e",
+      "title": "Physical Adjoint Learning in Wave Systems with Asymmetric Couplings",
+      "score": 123.4,
+      "days": 1
     }
   ],
   "sustainedTopics": [
@@ -193,10 +193,10 @@
       "score": 577.2
     },
     {
-      "topic_id": "da461eac78df",
-      "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
+      "topic_id": "bc72d5d904af",
+      "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
       "days": 10,
-      "score": 570.1
+      "score": 471.0
     }
   ]
 }

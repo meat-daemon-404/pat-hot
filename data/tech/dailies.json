@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T16:50:29.228896+00:00",
+  "generatedAt": "2026-11-02T01:32:00.094060+00:00",
   "count": 142,
   "dailies": {
     "2026-03-26": {
@@ -35764,20 +35764,50 @@
       "weekday": "周日",
       "label": "2026年11月1日",
       "headline": {
-        "title": "东风推出纯电C级车,配激光雷达,续航675km,限时10.99-12.99万",
-        "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUJ-DY3pGWtfLZt57BTYj-W1qXa8Fplpd9EWrS7Snb_nCRwpuZw_x4fovQnR3q_F4WWQ98zO5pxirp8H6Jgpz9MuZzGEVPSwY68WQxpNjB07A61fOPpQm7RThDTaE2p07_x8wrr64D8-rN1Kva9njozRPyKV5wLF2Fytm_zyng6_5Vb4cGJwIbZmIOPTpv2qI8Tv0LxT2hknx5Nu7CnoSqqg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=DE9DB1CC6472EC4C0601593FE2E9AA9E07EF642D6AE76F1C",
-        "source": "搜狗微信·光电行业 · 老林说车",
-        "summary": "东风推出纯电C级车，配备激光雷达，续航675公里，限时售价10.99-12.99万元。",
-        "zh_full": "（无摘要，仅标题）东风推出纯电C级车，该车配备激光雷达，续航里程为675公里，限时售价区间为10.99万至12.99万元。",
-        "reason": "新车发布信息",
+        "title": "Four superconducting cables link two large quantum processors into one",
+        "url": "https://phys.org/news/2026-10-superconducting-cables-link-large-quantum.html",
+        "source": "Phys.org 物理新闻",
+        "summary": "研究者用四根超导电缆连接两个大型量子处理器，使其协同工作，为模块化量子计算提供新路径。",
+        "zh_full": "随着量子计算机规模不断扩大，许多研究者认为最佳发展路径是将其构建为多个相互连接的部件。在这种模块化设计中，独立的量子处理器被连接起来，从而作为一个更大的整体协同工作。然而，要实现这一点，连接必须能够在不破坏脆弱量子信息的前提下传输它。一项新研究使用四根超导电缆将两个大型量子处理器连接成一个整体，展示了这种模块化架构的可行性。",
+        "reason": "量子计算模块化连接的关键进展",
         "density": "中",
-        "score": 65.6,
-        "role": "媒体",
-        "published_at": "2026-11-01T15:57:11+00:00",
-        "topic_id": "124db32a623b",
-        "topic_title": "东风推出纯电C级车,配激光雷达,续航675km,限时10.99-12.99万"
+        "score": 46.1,
+        "role": "科研",
+        "published_at": "2026-10-31T16:00:02+00:00",
+        "topic_id": null,
+        "topic_title": null
       },
       "picks": [
+        {
+          "title": "Guarding the Gates of Knowledge",
+          "url": "https://spectrum.ieee.org/ai-slop-trust-science",
+          "source": "IEEE Spectrum（关键词过滤）",
+          "summary": "A recent scroll through social media got me thinking about trust. About half my feed was filled with AI slop that astute users would call out as being machine-generated, often to the embarrassment of the rube who unknowingly spread it and s",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.7,
+          "role": "媒体",
+          "published_at": "2026-11-01T14:00:01+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "flash": [
+        {
+          "title": "东风推出纯电C级车,配激光雷达,续航675km,限时10.99-12.99万",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUJ-DY3pGWtfLZt57BTYj-W1qXa8Fplpd9EWrS7Snb_nCRwpuZw_x4fovQnR3q_F4WWQ98zO5pxirp8H6Jgpz9MuZzGEVPSwY68WQxpNjB07A61fOPpQm7RThDTaE2p07_x8wrr64D8-rN1Kva9njozRPyKV5wLF2Fytm_zyng6_5Vb4cGJwIbZmIOPTpv2qI8Tv0LxT2hknx5Nu7CnoSqqg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=DE9DB1CC6472EC4C0601593FE2E9AA9E07EF642D6AE76F1C",
+          "source": "搜狗微信·光电行业 · 老林说车",
+          "summary": "东风推出纯电C级车，配备激光雷达，续航675公里，限时售价10.99-12.99万元。",
+          "zh_full": "（无摘要，仅标题）东风推出纯电C级车，该车配备激光雷达，续航里程为675公里，限时售价区间为10.99万至12.99万元。",
+          "reason": "新车发布信息",
+          "density": "中",
+          "score": 65.6,
+          "role": "媒体",
+          "published_at": "2026-11-01T15:57:11+00:00",
+          "topic_id": "124db32a623b",
+          "topic_title": "东风推出纯电C级车,配激光雷达,续航675km,限时10.99-12.99万"
+        },
         {
           "title": "675km续航+激光雷达只要12.99万!2027款东风奕派007正式上市",
           "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUJ-DY3pGWtfLZt57BTYj-W1qXa8Fplpd9NvMTCt9TlymFdmtB-i8GtmEwzlFJ_ehrTCkUEX8Er9Zu-IWD8YtbIU_mDy3tA9Od2fQxGCqqRr7bB28SD7VE72NYdFxfF2jJ_IYrTPWMlsq3VxblrlrliEeG3qiUPgmyLIGCvvrFO_9okJ8j3MKWRG_XWwiF4wVVIZdMKYPpB3RS6t2rFt2rnA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=DE9DB1CC6472EC4C0601593FE2E9AA9E07EF642D6AE76F1C",
@@ -35833,9 +35863,7 @@
           "published_at": "2026-11-01T15:29:02+00:00",
           "topic_id": null,
           "topic_title": null
-        }
-      ],
-      "flash": [
+        },
         {
           "title": "新领克08 EM-P:192线激光雷达,但800V够呛",
           "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUJ-DY3pGWtfLZt57BTYj-W1qXa8Fplpd90br88vZLtEOeCM_A5ppvss3s4ATGw0zOpO9-ZZk5y_fPxL-InsXhxyimk85F4GSoa7I-Ke-hUEYh2WGbB1xBkS2ziyGDctV6YcQ_PJ3yx_OSpZdkv8MVCE1QePPViSZcDVPWv4y7pJYu2PtSwthzZZ_iUt5lQG6OH59XSoC-wrHzAjcIGepUqA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=DE9DB1CC6472EC4C0601593FE2E9AA9E07EF642D6AE76F1C",
@@ -35889,34 +35917,6 @@
           "score": 50.0,
           "role": "媒体",
           "published_at": "2026-11-01T00:34:28+00:00",
-          "topic_id": null,
-          "topic_title": null
-        },
-        {
-          "title": "Four superconducting cables link two large quantum processors into one",
-          "url": "https://phys.org/news/2026-10-superconducting-cables-link-large-quantum.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "研究者用四根超导电缆连接两个大型量子处理器，使其协同工作，为模块化量子计算提供新路径。",
-          "zh_full": "随着量子计算机规模不断扩大，许多研究者认为最佳发展路径是将其构建为多个相互连接的部件。在这种模块化设计中，独立的量子处理器被连接起来，从而作为一个更大的整体协同工作。然而，要实现这一点，连接必须能够在不破坏脆弱量子信息的前提下传输它。一项新研究使用四根超导电缆将两个大型量子处理器连接成一个整体，展示了这种模块化架构的可行性。",
-          "reason": "量子计算模块化连接的关键进展",
-          "density": "中",
-          "score": 46.3,
-          "role": "科研",
-          "published_at": "2026-10-31T16:00:02+00:00",
-          "topic_id": null,
-          "topic_title": null
-        },
-        {
-          "title": "Guarding the Gates of Knowledge",
-          "url": "https://spectrum.ieee.org/ai-slop-trust-science",
-          "source": "IEEE Spectrum（关键词过滤）",
-          "summary": "A recent scroll through social media got me thinking about trust. About half my feed was filled with AI slop that astute users would call out as being machine-generated, often to the embarrassment of the rube who unknowingly spread it and s",
-          "zh_full": null,
-          "reason": null,
-          "density": null,
-          "score": 30.9,
-          "role": "媒体",
-          "published_at": "2026-11-01T14:00:01+00:00",
           "topic_id": null,
           "topic_title": null
         },
@@ -36119,151 +36119,6 @@
       ],
       "sections": [
         {
-          "category": "激光",
-          "articles": [
-            {
-              "title": "东风推出纯电C级车,配激光雷达,续航675km,限时10.99-12.99万",
-              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUJ-DY3pGWtfLZt57BTYj-W1qXa8Fplpd9EWrS7Snb_nCRwpuZw_x4fovQnR3q_F4WWQ98zO5pxirp8H6Jgpz9MuZzGEVPSwY68WQxpNjB07A61fOPpQm7RThDTaE2p07_x8wrr64D8-rN1Kva9njozRPyKV5wLF2Fytm_zyng6_5Vb4cGJwIbZmIOPTpv2qI8Tv0LxT2hknx5Nu7CnoSqqg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=DE9DB1CC6472EC4C0601593FE2E9AA9E07EF642D6AE76F1C",
-              "source": "搜狗微信·光电行业 · 老林说车",
-              "summary": "东风推出纯电C级车，配备激光雷达，续航675公里，限时售价10.99-12.99万元。",
-              "zh_full": "（无摘要，仅标题）东风推出纯电C级车，该车配备激光雷达，续航里程为675公里，限时售价区间为10.99万至12.99万元。",
-              "reason": "新车发布信息",
-              "density": "中",
-              "score": 65.6,
-              "role": "媒体",
-              "published_at": "2026-11-01T15:57:11+00:00",
-              "topic_id": "124db32a623b",
-              "topic_title": "东风推出纯电C级车,配激光雷达,续航675km,限时10.99-12.99万"
-            },
-            {
-              "title": "675km续航+激光雷达只要12.99万!2027款东风奕派007正式上市",
-              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUJ-DY3pGWtfLZt57BTYj-W1qXa8Fplpd9NvMTCt9TlymFdmtB-i8GtmEwzlFJ_ehrTCkUEX8Er9Zu-IWD8YtbIU_mDy3tA9Od2fQxGCqqRr7bB28SD7VE72NYdFxfF2jJ_IYrTPWMlsq3VxblrlrliEeG3qiUPgmyLIGCvvrFO_9okJ8j3MKWRG_XWwiF4wVVIZdMKYPpB3RS6t2rFt2rnA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=DE9DB1CC6472EC4C0601593FE2E9AA9E07EF642D6AE76F1C",
-              "source": "搜狗微信·光电行业 · 蓉蓉刘",
-              "summary": "2027款东风奕派007上市，续航675公里，搭载激光雷达，售价12.99万元。",
-              "zh_full": "（无摘要，仅标题）2027款东风奕派007正式上市，该车具备675公里续航并搭载激光雷达，售价仅为12.99万元。",
-              "reason": "新车上市信息",
-              "density": "中",
-              "score": 65.6,
-              "role": "媒体",
-              "published_at": "2026-11-01T14:59:01+00:00",
-              "topic_id": "124db32a623b",
-              "topic_title": "东风推出纯电C级车,配激光雷达,续航675km,限时10.99-12.99万"
-            },
-            {
-              "title": "海鸥尺寸加长,还有闪充+激光雷达,但还打得过这些老对手吗?",
-              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUJ-DY3pGWtfLZt57BTYj-W1qXa8Fplpd97JMTXRdiFRGV6jXTlyWLlPPgROC0BIq2eotF3f6z4picB_ISOf5LQp9luT0v8kH2eIiSK5U_eoU__IAX5ZFptIiVQtpInim3_Mv4r4X3b6euTP32csmA57zqaEUphlwo42Pt83z_oWzLFbcQYq4W7X3sksbmgaVJ8Ivk19ImeztFkDr8IT4KYw..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=DE9DB1CC6472EC4C0601593FE2E9AA9E07EF642D6AE76F1C",
-              "source": "搜狗微信·光电行业 · 懂车",
-              "summary": "标题指出海鸥车型尺寸加长，配备闪充和激光雷达，并讨论其与老对手的竞争关系。",
-              "zh_full": "（无摘要，仅标题）标题为“海鸥尺寸加长，还有闪充+激光雷达，但还打得过这些老对手吗？”，内容涉及海鸥车型在尺寸加长、闪充和激光雷达方面的配置，并探讨其与老对手的竞争力。",
-              "reason": null,
-              "density": "低",
-              "score": 50.4,
-              "role": "媒体",
-              "published_at": "2026-11-01T15:37:04+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "北京BJ700预售29.98万元:激光雷达加高原制氧,越野豪华能否都要?",
-              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUJ-DY3pGWtfLZt57BTYj-W1qXa8Fplpd9_MBuYhsaZ_YdFSvzHunpNbLNoidQTexraUixfBAtdDjJ3cL_crE-gzL9Oo9IXet63-Qgw9sYhMDbfp3gO3uiigkwPRsqrPQxKVQ1d2ZifEPsflis-29G8MfHkAYe4JiDX1WxcWjGg2rpayenYHkP6hYMcPlEiHBM3mQJMt7BodjI3OTRHYU2og..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=DE9DB1CC6472EC4C0601593FE2E9AA9E07EF642D6AE76F1C",
-              "source": "搜狗微信·光电行业 · ys李兰",
-              "summary": "标题指出北京BJ700预售29.98万元，配备激光雷达和高原制氧，并讨论越野与豪华的兼顾问题。",
-              "zh_full": "（无摘要，仅标题）标题为“北京BJ700预售29.98万元：激光雷达加高原制氧，越野豪华能否都要？”，内容涉及北京BJ700车型预售价格29.98万元，配置激光雷达和高原制氧功能，并探讨越野与豪华能否兼顾。",
-              "reason": null,
-              "density": "低",
-              "score": 50.4,
-              "role": "媒体",
-              "published_at": "2026-11-01T15:38:43+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "6万级小车也玩激光雷达:第二代海鸥上市",
-              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUJ-DY3pGWtfLZt57BTYj-W1qXa8Fplpd9cMETieWUsM64J6eSUucN8wvn0id8oyMijsu46Ynaa0dwo6zNyhHZmDyaMjpUhW2Tcgc_qsNzLTz2Nsja6Z75NvwWqQrPwXdDyPm3WU2Ku1sj6n4jG2ROjL2IhJ6YcYLSqVJmpMr3wufezdS2XSM9qRL3nuCDS-mq4QHLkF-BAlxFkDr8IT4KYw..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=DE9DB1CC6472EC4C0601593FE2E9AA9E07EF642D6AE76F1C",
-              "source": "搜狗微信·光电行业 · 志明科技派",
-              "summary": "标题指出第二代海鸥上市，定位6万级小车，并配备激光雷达。",
-              "zh_full": "（无摘要，仅标题）标题为“6万级小车也玩激光雷达：第二代海鸥上市”，内容涉及第二代海鸥上市，定位6万级小车，并配备激光雷达。",
-              "reason": null,
-              "density": "低",
-              "score": 50.4,
-              "role": "媒体",
-              "published_at": "2026-11-01T15:29:02+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "新领克08 EM-P:192线激光雷达,但800V够呛",
-              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUJ-DY3pGWtfLZt57BTYj-W1qXa8Fplpd90br88vZLtEOeCM_A5ppvss3s4ATGw0zOpO9-ZZk5y_fPxL-InsXhxyimk85F4GSoa7I-Ke-hUEYh2WGbB1xBkS2ziyGDctV6YcQ_PJ3yx_OSpZdkv8MVCE1QePPViSZcDVPWv4y7pJYu2PtSwthzZZ_iUt5lQG6OH59XSoC-wrHzAjcIGepUqA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=DE9DB1CC6472EC4C0601593FE2E9AA9E07EF642D6AE76F1C",
-              "source": "搜狗微信·光电行业 · 车动态",
-              "summary": "新领克08 EM-P配备192线激光雷达，但800V方面可能不够理想。",
-              "zh_full": "（无摘要，仅标题）新领克08 EM-P车型相关信息显示，该车配备192线激光雷达，但800V高压平台方面可能不够理想。",
-              "reason": null,
-              "density": "低",
-              "score": 50.3,
-              "role": "媒体",
-              "published_at": "2026-11-01T12:36:31+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "日产NX7四季度上市,带激光雷达的插混SUV",
-              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUJ-DY3pGWtfLZt57BTYj-W1qXa8Fplpd90br88vZLtEOeCM_A5ppvss3s4ATGw0zOpO9-ZZk5y_fPxL-InsXhx--QIJqj3NgGpvIhDfHZn9c-PUkt8tOpiy1T_rE4PAJ8YSFkdJK43JrviYG4XbiaLp7zYpQiboaeP7tiZGANCaDtixVFhXYmzzWdGr5XJ9b2NjvYIYY0qpcCYioxHkzTmA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=DE9DB1CC6472EC4C0601593FE2E9AA9E07EF642D6AE76F1C",
-              "source": "搜狗微信·光电行业 · 车动态",
-              "summary": "日产NX7将于四季度上市，为带激光雷达的插混SUV。",
-              "zh_full": "（无摘要，仅标题）日产NX7计划于四季度上市，这是一款带激光雷达的插混SUV。",
-              "reason": null,
-              "density": "低",
-              "score": 50.3,
-              "role": "媒体",
-              "published_at": "2026-11-01T12:16:03+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "九成人多花一两万选激光雷达,我的建议却相反:十万级,这笔钱先留着",
-              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUJ-DY3pGWtfLZt57BTYj-W1qXa8Fplpd9nMqQEtKFUmUjlqfogyFG3iNI4r7EjzczI-NY4zN5iIDUHquFy1cVlGN5mgJE8AFJBl77Axf2tB29VeqyxJLwFm0O4yWuFDX2lmzF49m8TdD1EQRTonbz8yepKzRTwWgUC2yf0-_DZjAcJ8cIBWaO5birQmkcSXuw378XnyXJ1cfFcvUoAZZH7Q..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=DE9DB1CC6472EC4C0601593FE2E9AA9E07EF642D6AE76F1C",
-              "source": "搜狗微信·光电行业 · 数码梦之家",
-              "summary": "九成人多花一两万选激光雷达，作者建议十万级车型先留着这笔钱。",
-              "zh_full": "（无摘要，仅标题）九成人多花一两万选激光雷达，但作者建议相反：十万级车型，这笔钱先留着。",
-              "reason": null,
-              "density": "低",
-              "score": 50.3,
-              "role": "媒体",
-              "published_at": "2026-11-01T14:34:56+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "【科学新闻】激光雷达揭开一座隐藏的玛雅巨型城市",
-              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS8pb2y7NgOGrRdOLDEkFpKE--xHkZjWfilqXa8Fplpd9GhHc0frhAGVi9CW8HnFfGDYetbotpFsP_MV7PcW_WbwI8EaMTeaqBGFKyWcvWWcU0sQ4CYIaHyTCLZIt3zE1XB_wBSN0VaR0x6OJ_MNpFB8AfobGytXBOYYvUOMWwQo2130nPRQXIoXGHt9bLrldNOLZr6QmHKeHqB_vKrCDhjC00NVofL2iDw..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=D71DD37D39B5167F6A6C3547AA863D126BA251906AE692A5",
-              "source": "搜狗微信·光电行业 · 四六级英语CET备考",
-              "summary": "标题指出激光雷达技术揭示了隐藏的玛雅巨型城市，但未提供具体考古信息。",
-              "zh_full": "（无摘要，仅标题）标题为“激光雷达揭开一座隐藏的玛雅巨型城市”，内容仅提及激光雷达技术被用于发现一座隐藏的玛雅巨型城市。文章未提供城市规模、发现地点或具体考古细节。",
-              "reason": "标题党，无实质内容",
-              "density": "低",
-              "score": 50.4,
-              "role": "媒体",
-              "published_at": "2026-11-01T00:20:06+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
-              "url": "https://www.laserfocusworld.com/resources/media-gallery/55411422/dont-miss-laser-focus-worlds-photonicsnxt-2026-virtual-event",
-              "source": "Laser Focus World",
-              "summary": "Laser Focus World 的 PhotonicsNXT 2026 虚拟活动面向光学、光子学与量子社区，提供为期两天的教育性演讲，涵盖进展、创新与应用。",
-              "zh_full": "Laser Focus World 宣布其 PhotonicsNXT 2026 虚拟活动即将举行，提醒读者不要错过。该活动面向光学、光子学与量子社区，提供为期两天的教育性演讲系列，内容涵盖一系列进展、创新与应用。摘要未提供更多具体议程、日期或演讲者信息。",
-              "reason": "行业虚拟活动预告",
-              "density": "低",
-              "score": 47.1,
-              "role": "媒体",
-              "published_at": null,
-              "topic_id": "bc72d5d904af",
-              "topic_title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!"
-            }
-          ]
-        },
-        {
           "category": "科研进展",
           "articles": [
             {
@@ -36274,7 +36129,7 @@
               "zh_full": "随着量子计算机规模不断扩大，许多研究者认为最佳发展路径是将其构建为多个相互连接的部件。在这种模块化设计中，独立的量子处理器被连接起来，从而作为一个更大的整体协同工作。然而，要实现这一点，连接必须能够在不破坏脆弱量子信息的前提下传输它。一项新研究使用四根超导电缆将两个大型量子处理器连接成一个整体，展示了这种模块化架构的可行性。",
               "reason": "量子计算模块化连接的关键进展",
               "density": "中",
-              "score": 46.3,
+              "score": 46.1,
               "role": "科研",
               "published_at": "2026-10-31T16:00:02+00:00",
               "topic_id": null,
@@ -36363,7 +36218,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 30.9,
+              "score": 30.7,
               "role": "媒体",
               "published_at": "2026-11-01T14:00:01+00:00",
               "topic_id": null,
@@ -36480,6 +36335,39 @@
               "published_at": null,
               "topic_id": "3db37b135ae4",
               "topic_title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼"
+            }
+          ]
+        },
+        {
+          "category": "激光",
+          "articles": [
+            {
+              "title": "【科学新闻】激光雷达揭开一座隐藏的玛雅巨型城市",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS8pb2y7NgOGrRdOLDEkFpKE--xHkZjWfilqXa8Fplpd9GhHc0frhAGVi9CW8HnFfGDYetbotpFsP_MV7PcW_WbwI8EaMTeaqBGFKyWcvWWcU0sQ4CYIaHyTCLZIt3zE1XB_wBSN0VaR0x6OJ_MNpFB8AfobGytXBOYYvUOMWwQo2130nPRQXIoXGHt9bLrldNOLZr6QmHKeHqB_vKrCDhjC00NVofL2iDw..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=D71DD37D39B5167F6A6C3547AA863D126BA251906AE692A5",
+              "source": "搜狗微信·光电行业 · 四六级英语CET备考",
+              "summary": "标题指出激光雷达技术揭示了隐藏的玛雅巨型城市，但未提供具体考古信息。",
+              "zh_full": "（无摘要，仅标题）标题为“激光雷达揭开一座隐藏的玛雅巨型城市”，内容仅提及激光雷达技术被用于发现一座隐藏的玛雅巨型城市。文章未提供城市规模、发现地点或具体考古细节。",
+              "reason": "标题党，无实质内容",
+              "density": "低",
+              "score": 50.4,
+              "role": "媒体",
+              "published_at": "2026-11-01T00:20:06+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
+              "url": "https://www.laserfocusworld.com/resources/media-gallery/55411422/dont-miss-laser-focus-worlds-photonicsnxt-2026-virtual-event",
+              "source": "Laser Focus World",
+              "summary": "Laser Focus World 的 PhotonicsNXT 2026 虚拟活动面向光学、光子学与量子社区，提供为期两天的教育性演讲，涵盖进展、创新与应用。",
+              "zh_full": "Laser Focus World 宣布其 PhotonicsNXT 2026 虚拟活动即将举行，提醒读者不要错过。该活动面向光学、光子学与量子社区，提供为期两天的教育性演讲系列，内容涵盖一系列进展、创新与应用。摘要未提供更多具体议程、日期或演讲者信息。",
+              "reason": "行业虚拟活动预告",
+              "density": "低",
+              "score": 47.1,
+              "role": "媒体",
+              "published_at": null,
+              "topic_id": "bc72d5d904af",
+              "topic_title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!"
             }
           ]
         },
@@ -36890,25 +36778,25 @@
       ],
       "tocCount": 25,
       "readMinutes": 1,
-      "amended": 55
+      "amended": 119
     },
     "2026-11-02": {
       "date": "2026-11-02",
       "weekday": "周一",
       "label": "2026年11月2日",
       "headline": {
-        "title": "Optical imaging and spectroscopy enhance precision agriculture",
-        "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
-        "source": "Laser Focus World",
-        "summary": "（无摘要，仅标题）光子学为测量作物状况、评估食品质量以及控制植物生长提供了新的方式，从而提升精准农业的精度。",
-        "zh_full": "（无摘要，仅标题）光子学为测量作物状况、评估食品质量以及控制植物生长提供了新的方式，从而提升精准农业的精度。",
-        "reason": "光子学赋能精准农业",
-        "density": "低",
-        "score": 54.5,
+        "title": "智己LS6把800V、520线激光雷达都安排上了:高配置真的值得买吗?",
+        "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUfS0wsNGIOtyScpwl70rGZ1qXa8Fplpd967uHZW0cmxj_1wl6IRqNezThkgOm-SVO0wjWhQIVXcxL4iPGWS-Bg3eTAmv_wze0VKJYDKERc1zmyWItmhlg4HsUYVV8__242ooP6mQQJFRX3SMbWP7KIwD1za11YaKRVgjn9EOQQ4IR5C_V2yOniqZowTw_719AJAEG05G3l6qTJmCU1UgHwQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=E310BB9EC4EDE37B4F48100E0943F5DF4F939B7E6AE7EAD8",
+        "source": "搜狗微信·光电行业 · 烨铭952",
+        "summary": "智己LS6把800V、520线激光雷达都安排上了:高配置真的值得买吗?全域800V平台、520线激光雷达、高性能动力系统,把这三个方...",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 55.9,
         "role": "媒体",
-        "published_at": null,
-        "topic_id": "3d9551879156",
-        "topic_title": "Optical imaging and spectroscopy enhance precision agriculture"
+        "published_at": "2026-11-01T23:51:48+00:00",
+        "topic_id": null,
+        "topic_title": null
       },
       "picks": [
         {
@@ -37115,18 +37003,18 @@
           "category": "激光",
           "articles": [
             {
-              "title": "Are high-power laser diodes ready to power inertial fusion energy?",
-              "url": "https://www.laserfocusworld.com/lasers-sources/article/55410022/leonardo-electronics-us-inc-are-high-power-laser-diodes-ready-to-power-inertial-fusion-energy",
-              "source": "Laser Focus World",
-              "summary": "惯性聚变能源正从科学突破走向商业化，可扩展、低成本激光硬件是关键。低成本聚变级激光二极管可在亚利桑那州规模化制造，有望支撑全球惯性聚变能源供应链。",
-              "zh_full": "随着惯性聚变能源从科学突破迈向商业化现实，可扩展且具成本效益的激光硬件是从实验室演示走向可行发电厂的关键——低成本、聚变级激光二极管可在亚利桑那州规模化制造，从而支撑全球惯性聚变能源供应链。",
-              "reason": "聚变级激光二极管产业化前景",
-              "density": "高",
-              "score": 55.7,
+              "title": "智己LS6把800V、520线激光雷达都安排上了:高配置真的值得买吗?",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUfS0wsNGIOtyScpwl70rGZ1qXa8Fplpd967uHZW0cmxj_1wl6IRqNezThkgOm-SVO0wjWhQIVXcxL4iPGWS-Bg3eTAmv_wze0VKJYDKERc1zmyWItmhlg4HsUYVV8__242ooP6mQQJFRX3SMbWP7KIwD1za11YaKRVgjn9EOQQ4IR5C_V2yOniqZowTw_719AJAEG05G3l6qTJmCU1UgHwQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=E310BB9EC4EDE37B4F48100E0943F5DF4F939B7E6AE7EAD8",
+              "source": "搜狗微信·光电行业 · 烨铭952",
+              "summary": "智己LS6把800V、520线激光雷达都安排上了:高配置真的值得买吗?全域800V平台、520线激光雷达、高性能动力系统,把这三个方...",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 55.9,
               "role": "媒体",
-              "published_at": null,
-              "topic_id": "c14a1dd718b8",
-              "topic_title": "Are high-power laser diodes ready to power inertial fusion energy?"
+              "published_at": "2026-11-01T23:51:48+00:00",
+              "topic_id": null,
+              "topic_title": null
             },
             {
               "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
@@ -37139,6 +37027,62 @@
               "score": 50.5,
               "role": "行业媒体",
               "published_at": null,
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "长安启源Q06限时14万!全系标配激光雷达,高阶智驾价格被打穿了",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUfS0wsNGIOtyScpwl70rGZ1qXa8Fplpd90TnjwYCTT8LRP8SwQaGmI_2wr1diiaMs0ZcH15Kq6cZwPrLC-5445H0C2lJWEYAUDjFGVyooJixdAGYF1f_q3ffu8B468GN740OduX8ZmiRTvFMklWasHs2pPlaP7FTcap0EWT_sUwCGlJuJt7_MRSJJRZE5Svfn5srGmTipEVJ5Nu7CnoSqqg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=E310BB9EC4EDE37B4F48100E0943F5DF4F939B7E6AE7EAD8",
+              "source": "搜狗微信·光电行业 · 大帝说车",
+              "summary": "长安启源Q06限时售价14万元，全系标配激光雷达，被视为拉低了高阶智驾的门槛。",
+              "zh_full": "（无摘要，仅标题）长安启源Q06限时14万，全系标配激光雷达，高阶智驾价格被打穿。",
+              "reason": "标题信息有限，仅作简短记录",
+              "density": "低",
+              "score": 50.4,
+              "role": "媒体",
+              "published_at": "2026-11-02T00:58:46+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "10万级标配激光雷达?奕派007不留活路",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUfS0wsNGIOtyScpwl70rGZ1qXa8Fplpd9jSX_VKnzAjCY6bY4V3X14dymzrUCRXmjCt2wVPyFn_pqe-iJ_Rk6yW_-p8x-kzk5kIXqSsHQvFlQBVQcQZjbhrEREUOPWli2p9Y1atsYFSe3K0X9pis5b753z0xDqKlDFYctzCGFnzQzAJ3RQCutO5n0cdFdOedSXY4hQzvv07N535pjGOOjYg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=E310BB9EC4EDE37B4F48100E0943F5DF4F939B7E6AE7EAD8",
+              "source": "搜狗微信·光电行业 · 亲亲的对你说",
+              "summary": "奕派007在10万级价位标配激光雷达，引发市场对价格竞争的关注。",
+              "zh_full": "（无摘要，仅标题）奕派007在10万级价位标配激光雷达，被认为不给对手留活路。",
+              "reason": "标题信息有限，仅作简短记录",
+              "density": "低",
+              "score": 50.4,
+              "role": "媒体",
+              "published_at": "2026-11-02T00:57:55+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "上汽荣威家越07纯电版,可选装不带激光雷达,行李架",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUfS0wsNGIOtyScpwl70rGZ1qXa8Fplpd9yxFZWxGlyenQxwcXeoBhR5YAtgGmNErnVIQpLE4eA14IHcOtrFkpP7Zi1riBVCGMgyxlir9ayuSaxZeQxDEC7GodxpEAGB49N95C2xClaW40PP_WXz1Ll9daWcFhSr7_rDIsmxSIt9blv-XoM0TQSscYRH5f-s6NutYRJokFYO3m0CtGSSkZQQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=E310BB9EC4EDE37B4F48100E0943F5DF4F939B7E6AE7EAD8",
+              "source": "搜狗微信·光电行业 · 表情录",
+              "summary": "上汽荣威家越07纯电版提供不带激光雷达的选装方案，同时可选行李架。",
+              "zh_full": "（无摘要，仅标题）上汽荣威家越07纯电版可选装不带激光雷达的配置，并提供行李架选项。",
+              "reason": "标题信息有限，仅作简短记录",
+              "density": "低",
+              "score": 50.4,
+              "role": "媒体",
+              "published_at": "2026-11-02T00:47:04+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "10万级拼激光雷达,25万级拼什么?这波新车给出答案",
+              "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyXYC9brqdIUfS0wsNGIOtyScpwl70rGZ1qXa8Fplpd9Jf9Z1ZR7IYrBS8mQBGyyMQ0h6q7nIfNWcbskbuuWUGG6hQ1a3m_ZiCzCrQD_G_w-1hK1V0iohsOQ_qNDLIN-XUq-I_NVACme4i8JQ2UlJCPZ9HYTUSXzjlix6t4jOCv7AgQPvo0toqLk6CrwvXGqU8Af8ELKfEfvWN9JJmjt6Os5eBgmN3LoYQ..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=E310BB9EC4EDE37B4F48100E0943F5DF4F939B7E6AE7EAD8",
+              "source": "搜狗微信·光电行业 · 车左车右",
+              "summary": "（无摘要，仅标题）标题提出10万级车型比拼激光雷达，25万级车型比拼什么的问题，并称近期新车给出答案。",
+              "zh_full": "（无摘要，仅标题）标题为“10万级拼激光雷达，25万级拼什么？这波新车给出答案”，来自搜狗微信·光电行业·车左车右。该标题提出一个对比问题：10万元级别的车型在配置上比拼激光雷达，那么25万元级别的车型比拼什么，并称近期一波新车给出了答案。",
+              "reason": null,
+              "density": "低",
+              "score": 50.4,
+              "role": "媒体",
+              "published_at": "2026-11-02T00:30:59+00:00",
               "topic_id": null,
               "topic_title": null
             },
@@ -37169,6 +37113,20 @@
               "published_at": null,
               "topic_id": null,
               "topic_title": null
+            },
+            {
+              "title": "Are high-power laser diodes ready to power inertial fusion energy?",
+              "url": "https://www.laserfocusworld.com/lasers-sources/article/55410022/leonardo-electronics-us-inc-are-high-power-laser-diodes-ready-to-power-inertial-fusion-energy",
+              "source": "Laser Focus World",
+              "summary": "惯性聚变能源正从科学突破走向商业化，可扩展、低成本激光硬件是关键。低成本聚变级激光二极管可在亚利桑那州规模化制造，有望支撑全球惯性聚变能源供应链。",
+              "zh_full": "随着惯性聚变能源从科学突破迈向商业化现实，可扩展且具成本效益的激光硬件是从实验室演示走向可行发电厂的关键——低成本、聚变级激光二极管可在亚利桑那州规模化制造，从而支撑全球惯性聚变能源供应链。",
+              "reason": "聚变级激光二极管产业化前景",
+              "density": "高",
+              "score": 55.7,
+              "role": "媒体",
+              "published_at": null,
+              "topic_id": "c14a1dd718b8",
+              "topic_title": "Are high-power laser diodes ready to power inertial fusion energy?"
             },
             {
               "title": "Quantum dot lasers may unlock next era of AI optical interconnects",
@@ -37204,18 +37162,18 @@
           "category": "光通信",
           "articles": [
             {
-              "title": "Photonics Hot List: October 30, 2026",
-              "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
+              "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
+              "url": "https://www.laserfocusworld.com/executive-forum/podcast/55411597/podcast-expert-insights-photonics-quantum-computing",
               "source": "Laser Focus World",
-              "summary": "非接触式光学传感器有望用于生命体征测量；紧凑型OCT成像系统应用于工业；PhotonicsNXT线上活动可观看。",
-              "zh_full": "本期节目内容包括：一种非接触式光学传感器在测量生命体征方面展现出应用前景；PhotonicsNXT线上虚拟活动可随时观看；以及一款紧凑型OCT成像系统在工业领域得到应用。",
-              "reason": "光电传感与OCT工业应用进展",
+              "summary": "Laser Focus World播客节目探讨量子计算与经典光子学之间的合作趋势，通过专家访谈分析光子技术在量子计算中的应用前景及交叉领域的发展动态。",
+              "zh_full": "Laser Focus World发布的播客节目《Following the Photons: A Photonics Podcast》本期聚焦量子计算与经典光子学之间日益紧密的合作关系。节目通过专家访谈的形式，探讨了光子技术在量子计算领域的应用前景，以及两者融合可能带来的技术突破。光子学作为量子计算的重要支撑技术，在量子通信、量子传感和量子信息处理等方面具有独特优势。本期播客旨在为听众提供来自行业专家的深度见解，帮助理解光子学与量子计算交叉领域的最新发展趋势。",
+              "reason": "光子与量子交叉洞察",
               "density": "中",
-              "score": 58.7,
+              "score": 57.2,
               "role": "媒体",
               "published_at": null,
-              "topic_id": "cf711748e825",
-              "topic_title": "Photonics Hot List: October 30, 2026"
+              "topic_id": "6aec187ed191",
+              "topic_title": "PODCAST | Expert Insights: Photonics & Quantum Computing"
             },
             {
               "title": "华工科技：2026年上半年，光互联业务营收38.03亿元",
@@ -37232,45 +37190,31 @@
               "topic_title": "华工科技：2026年上半年，光互联业务营收38.03亿元"
             },
             {
-              "title": "Photonics Hot List: October 23, 2026",
-              "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
+              "title": "Photonics Hot List: October 30, 2026",
+              "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
               "source": "Laser Focus World",
-              "summary": "本期光子学热点涵盖阿尔茨海默病的光学成像组合研究、本周光子学商业新闻，以及多量子阱材料在非线性光子学中的潜力。",
-              "zh_full": "本期光子学热点内容包括：一种光学成像组合方法探索阿尔茨海默病；本周光子学商业新闻；以及一种多量子阱材料在非线性光子学中的潜力。具体技术细节和商业动态未在摘要中展开。",
-              "reason": "汇总光子学领域近期动态",
-              "density": "低",
-              "score": 52.8,
-              "role": "媒体",
-              "published_at": null,
-              "topic_id": "cf711748e825",
-              "topic_title": "Photonics Hot List: October 30, 2026"
-            },
-            {
-              "title": "Photonics Hot List: October 16, 2026",
-              "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
-              "source": "Laser Focus World",
-              "summary": "本期光子学热点列表涵盖三个话题：传感设备在禽类供应链监控中的应用前景、最新光子学商业新闻，以及热光纤增强弱信号技术。",
-              "zh_full": "本期光子学热点列表涵盖三个话题：传感设备在禽类供应链监控方面展现出应用前景；最新光子学商业头条；以及热光纤增强弱信号。",
-              "reason": "光子学热点速览，内容较浅",
-              "density": "低",
-              "score": 52.8,
-              "role": "媒体",
-              "published_at": null,
-              "topic_id": "cf711748e825",
-              "topic_title": "Photonics Hot List: October 30, 2026"
-            },
-            {
-              "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-              "url": "https://www.laserfocusworld.com/executive-forum/podcast/55411597/podcast-expert-insights-photonics-quantum-computing",
-              "source": "Laser Focus World",
-              "summary": "Laser Focus World播客节目探讨量子计算与经典光子学之间的合作趋势，通过专家访谈分析光子技术在量子计算中的应用前景及交叉领域的发展动态。",
-              "zh_full": "Laser Focus World发布的播客节目《Following the Photons: A Photonics Podcast》本期聚焦量子计算与经典光子学之间日益紧密的合作关系。节目通过专家访谈的形式，探讨了光子技术在量子计算领域的应用前景，以及两者融合可能带来的技术突破。光子学作为量子计算的重要支撑技术，在量子通信、量子传感和量子信息处理等方面具有独特优势。本期播客旨在为听众提供来自行业专家的深度见解，帮助理解光子学与量子计算交叉领域的最新发展趋势。",
-              "reason": "光子与量子交叉洞察",
+              "summary": "非接触式光学传感器有望用于生命体征测量；紧凑型OCT成像系统应用于工业；PhotonicsNXT线上活动可观看。",
+              "zh_full": "本期节目内容包括：一种非接触式光学传感器在测量生命体征方面展现出应用前景；PhotonicsNXT线上虚拟活动可随时观看；以及一款紧凑型OCT成像系统在工业领域得到应用。",
+              "reason": "光电传感与OCT工业应用进展",
               "density": "中",
-              "score": 52.3,
+              "score": 53.8,
               "role": "媒体",
               "published_at": null,
-              "topic_id": "da461eac78df",
+              "topic_id": "21a0c8421f1a",
+              "topic_title": "Photonics Hot List: October 30, 2026"
+            },
+            {
+              "title": "PODCAST: The Photonics Roundup",
+              "url": "https://www.laserfocusworld.com/resources/podcast/55410296/podcast-the-photonics-roundup",
+              "source": "Laser Focus World",
+              "summary": "（无摘要，仅标题）",
+              "zh_full": "（无摘要，仅标题）",
+              "reason": null,
+              "density": "低",
+              "score": 51.5,
+              "role": "媒体",
+              "published_at": null,
+              "topic_id": "6aec187ed191",
               "topic_title": "PODCAST | Expert Insights: Photonics & Quantum Computing"
             },
             {
@@ -37314,6 +37258,34 @@
               "published_at": null,
               "topic_id": null,
               "topic_title": null
+            },
+            {
+              "title": "Photonics Hot List: October 23, 2026",
+              "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
+              "source": "Laser Focus World",
+              "summary": "本期光子学热点涵盖阿尔茨海默病的光学成像组合研究、本周光子学商业新闻，以及多量子阱材料在非线性光子学中的潜力。",
+              "zh_full": "本期光子学热点内容包括：一种光学成像组合方法探索阿尔茨海默病；本周光子学商业新闻；以及一种多量子阱材料在非线性光子学中的潜力。具体技术细节和商业动态未在摘要中展开。",
+              "reason": "汇总光子学领域近期动态",
+              "density": "低",
+              "score": 48.4,
+              "role": "媒体",
+              "published_at": null,
+              "topic_id": "21a0c8421f1a",
+              "topic_title": "Photonics Hot List: October 30, 2026"
+            },
+            {
+              "title": "Photonics Hot List: October 16, 2026",
+              "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
+              "source": "Laser Focus World",
+              "summary": "本期光子学热点列表涵盖三个话题：传感设备在禽类供应链监控中的应用前景、最新光子学商业新闻，以及热光纤增强弱信号技术。",
+              "zh_full": "本期光子学热点列表涵盖三个话题：传感设备在禽类供应链监控方面展现出应用前景；最新光子学商业头条；以及热光纤增强弱信号。",
+              "reason": "光子学热点速览，内容较浅",
+              "density": "低",
+              "score": 52.8,
+              "role": "媒体",
+              "published_at": null,
+              "topic_id": "cf711748e825",
+              "topic_title": "Photonics Hot List: October 30, 2026"
             }
           ]
         },
@@ -37380,10 +37352,10 @@
               "zh_full": "单光子雪崩二极管（SPAD）阵列通常与激光雷达（LiDAR）相关联，但它们也可以利用环境可见光作为相机用于通用成像和感知。这一应用拓展了SPAD阵列的功能，使其不仅限于主动测距，还能在被动光照条件下进行成像。SPAD阵列具有单光子级灵敏度，能够捕捉极弱光信号，因此在环境光下也能实现高灵敏度成像。这种通用成像能力可能用于自动驾驶、机器人视觉、安防监控等领域，提供更丰富的光子数据以实现更清晰的图像。",
               "reason": "拓展SPAD阵列应用，实现环境光通用成像",
               "density": "中",
-              "score": 65.0,
+              "score": 55.7,
               "role": "媒体",
               "published_at": null,
-              "topic_id": "8eb0e4ed1515",
+              "topic_id": "8c9d9a318b72",
               "topic_title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging"
             },
             {
@@ -37394,10 +37366,10 @@
               "zh_full": "（无摘要，仅标题）光子学为测量作物状况、评估食品质量以及控制植物生长提供了新的方式，从而提升精准农业的精度。",
               "reason": "光子学赋能精准农业",
               "density": "低",
-              "score": 54.5,
+              "score": 50.1,
               "role": "媒体",
               "published_at": null,
-              "topic_id": "3d9551879156",
+              "topic_id": "2788fec2119d",
               "topic_title": "Optical imaging and spectroscopy enhance precision agriculture"
             },
             {
@@ -37762,20 +37734,6 @@
           "category": "其他",
           "articles": [
             {
-              "title": "Shaping light to see deeper inside biological tissue",
-              "url": "https://www.laserfocusworld.com/biolife-sciences/article/55413515/imec-shaping-light-to-see-deeper-inside-biological-tissue",
-              "source": "Laser Focus World",
-              "summary": "Integrated wavefront shaping extends the reach of optical imaging to give scientists a deeper and more precise look into biological tissue.",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 35.2,
-              "role": "媒体",
-              "published_at": null,
-              "topic_id": "07cc46da5b4f",
-              "topic_title": "Shaping light to see deeper inside biological tissue"
-            },
-            {
               "title": "华为全联接大会2026 | 鲲鹏 为更先进的数智世界而计算",
               "url": "https://www.c114.com.cn/news/126/a1317961.html",
               "source": "C114中国通信网_设备商",
@@ -37872,6 +37830,34 @@
               "published_at": null,
               "topic_id": "3db37b135ae4",
               "topic_title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼"
+            },
+            {
+              "title": "PODCAST: Meet Andrew Strikwerda, COMSOL",
+              "url": "https://www.laserfocusworld.com/optics/podcast/55414708/comsol-podcast-meet-andrew-strikwerda-comsol",
+              "source": "Laser Focus World",
+              "summary": "This episode of Following the Photons: A Photonics Podcast features Andrew Strikwerda, a senior applications manager at COMSOL.",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 31.4,
+              "role": "媒体",
+              "published_at": null,
+              "topic_id": "983065fbf898",
+              "topic_title": "PODCAST: Meet Andrew Strikwerda, COMSOL"
+            },
+            {
+              "title": "Shaping light to see deeper inside biological tissue",
+              "url": "https://www.laserfocusworld.com/biolife-sciences/article/55413515/imec-shaping-light-to-see-deeper-inside-biological-tissue",
+              "source": "Laser Focus World",
+              "summary": "Integrated wavefront shaping extends the reach of optical imaging to give scientists a deeper and more precise look into biological tissue.",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 35.2,
+              "role": "媒体",
+              "published_at": null,
+              "topic_id": "07cc46da5b4f",
+              "topic_title": "Shaping light to see deeper inside biological tissue"
             }
           ]
         }
@@ -37880,7 +37866,8 @@
         "3d9551879156"
       ],
       "tocCount": 15,
-      "readMinutes": 1
+      "readMinutes": 1,
+      "amended": 5
     }
   }
 }

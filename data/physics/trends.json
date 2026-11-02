@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T16:50:29.228896+00:00",
+  "generatedAt": "2026-11-02T01:32:00.094060+00:00",
   "weekStart": "2026-10-27",
   "windowDays": 7,
   "windowStart": "2026-10-27",
@@ -16,15 +16,15 @@
     },
     {
       "category": "其他",
-      "thisWeek": 800.0,
+      "thisWeek": 799.9,
       "lastWeek": 1085.1,
       "deltaPct": -26.3
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 455.7,
+      "thisWeek": 458.8,
       "lastWeek": 384.1,
-      "deltaPct": 18.6
+      "deltaPct": 19.4
     },
     {
       "category": "量子信息与计算",
@@ -34,15 +34,21 @@
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 123.8,
+      "thisWeek": 122.1,
       "lastWeek": 426.2,
-      "deltaPct": -71.0
+      "deltaPct": -71.4
     },
     {
       "category": "等离子体",
       "thisWeek": 51.1,
       "lastWeek": 50.7,
       "deltaPct": 0.8
+    },
+    {
+      "category": "原子分子与光物理",
+      "thisWeek": 45.7,
+      "lastWeek": 0,
+      "deltaPct": 100.0
     }
   ],
   "newTopics": [
@@ -51,12 +57,6 @@
       "title": "Diagonal, Switching, and Locally Optimal Unraveling for efficient quantum trajectories in metastable open quantum systems",
       "score": 134.3,
       "days": 1
-    },
-    {
-      "topic_id": "e9c49519b300",
-      "title": "Four superconducting cables link two large quantum processors into one",
-      "score": 108.4,
-      "days": 2
     },
     {
       "topic_id": "41ce72c68b5e",
@@ -83,15 +83,21 @@
       "days": 1
     },
     {
-      "topic_id": "318fee1ca2d3",
+      "topic_id": "be49a08a526b",
       "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-      "score": 63.5,
+      "score": 61.8,
       "days": 1
     },
     {
       "topic_id": "c9c29423cce7",
       "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
       "score": 60.3,
+      "days": 1
+    },
+    {
+      "topic_id": "038552fe9bde",
+      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
+      "score": 60.2,
       "days": 1
     },
     {
