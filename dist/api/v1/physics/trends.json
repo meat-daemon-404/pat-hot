@@ -1,48 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T01:32:00.094060+00:00",
-  "weekStart": "2026-10-27",
+  "generatedAt": "2026-11-02T20:23:43.516091+00:00",
+  "weekStart": "2026-10-28",
   "windowDays": 7,
-  "windowStart": "2026-10-27",
-  "windowEnd": "2026-11-02",
-  "prevStart": "2026-10-20",
-  "prevEnd": "2026-10-26",
+  "windowStart": "2026-10-28",
+  "windowEnd": "2026-11-03",
+  "prevStart": "2026-10-21",
+  "prevEnd": "2026-10-27",
   "categoryDelta": [
     {
-      "category": "科研进展",
-      "thisWeek": 865.1,
-      "lastWeek": 1426.1,
-      "deltaPct": -39.3
+      "category": "其他",
+      "thisWeek": 956.0,
+      "lastWeek": 1049.5,
+      "deltaPct": -8.9
     },
     {
-      "category": "其他",
-      "thisWeek": 799.9,
-      "lastWeek": 1085.1,
-      "deltaPct": -26.3
+      "category": "科研进展",
+      "thisWeek": 820.0,
+      "lastWeek": 1833.0,
+      "deltaPct": -55.3
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 458.8,
-      "lastWeek": 384.1,
-      "deltaPct": 19.4
+      "thisWeek": 453.4,
+      "lastWeek": 384.7,
+      "deltaPct": 17.9
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 144.9,
+      "thisWeek": 281.2,
       "lastWeek": 716.9,
-      "deltaPct": -79.8
+      "deltaPct": -60.8
     },
     {
       "category": "高能与粒子物理",
       "thisWeek": 122.1,
-      "lastWeek": 426.2,
-      "deltaPct": -71.4
+      "lastWeek": 366.3,
+      "deltaPct": -66.7
     },
     {
       "category": "等离子体",
-      "thisWeek": 51.1,
-      "lastWeek": 50.7,
-      "deltaPct": 0.8
+      "thisWeek": 51.4,
+      "lastWeek": 101.8,
+      "deltaPct": -49.5
     },
     {
       "category": "原子分子与光物理",
@@ -53,15 +53,33 @@
   ],
   "newTopics": [
     {
+      "topic_id": "cafa9e30b66d",
+      "title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver",
+      "score": 136.2,
+      "days": 1
+    },
+    {
       "topic_id": "a02cd8f01a53",
       "title": "Diagonal, Switching, and Locally Optimal Unraveling for efficient quantum trajectories in metastable open quantum systems",
       "score": 134.3,
       "days": 1
     },
     {
+      "topic_id": "cb27bdf7a532",
+      "title": "Optical Quantum Memory Processing for Quantum Hashing",
+      "score": 108.3,
+      "days": 2
+    },
+    {
       "topic_id": "41ce72c68b5e",
       "title": "Scientists uncover new way to control magnetism and topology using light in atomically thin materials",
       "score": 91.6,
+      "days": 1
+    },
+    {
+      "topic_id": "431b049c16bc",
+      "title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks",
+      "score": 87.8,
       "days": 1
     },
     {
@@ -92,24 +110,6 @@
       "topic_id": "c9c29423cce7",
       "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
       "score": 60.3,
-      "days": 1
-    },
-    {
-      "topic_id": "038552fe9bde",
-      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-      "score": 60.2,
-      "days": 1
-    },
-    {
-      "topic_id": "ad8579469f19",
-      "title": "Theoretical method uses light to locate anyons, potential quantum computing building blocks",
-      "score": 57.5,
-      "days": 1
-    },
-    {
-      "topic_id": "4b905b1e4759",
-      "title": "III-nitride-based in-sensor computing enabled by interfacial polarization effects",
-      "score": 55.8,
       "days": 1
     }
   ],

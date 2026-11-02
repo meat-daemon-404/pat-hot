@@ -12148,5 +12148,606 @@
     "tocCount": 4,
     "readMinutes": 1,
     "amended": 0
+  },
+  "2026-11-02": {
+    "date": "2026-11-02",
+    "weekday": "周一",
+    "label": "2026年11月2日",
+    "headline": {
+      "title": "Is There Anything Left in the Dream of Cold Fusion?",
+      "url": "https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/",
+      "source": "Quanta Magazine",
+      "summary": "冷聚变研究仍在进行，涉及奇异原子，虽不能解决能源危机，但拓展了物理学边界。",
+      "zh_full": "深入探究冷聚变梦想的残余。你会发现一个活跃的研究项目，涉及奇异原子，这些原子不会解决能源危机，但会拓展物理学的边界。",
+      "reason": "冷聚变研究现状与物理边界",
+      "density": "中",
+      "score": 51.4,
+      "role": "科研",
+      "published_at": "2026-11-02T15:48:57+00:00",
+      "topic_id": null,
+      "topic_title": null
+    },
+    "picks": [
+      {
+        "title": "梵高笔下的星空是真实存在的吗？新研究引发争议",
+        "url": "http://www.zhishifenzi.com/news/multiple/10739.html",
+        "source": "知识分子",
+        "summary": "新研究提出梵高《星月夜》可能描绘了1889年7月的真实天象，但遭到专家质疑。",
+        "zh_full": "韩国庆熙大学的一项新研究认为，梵高的《星月夜》可能描绘了1889年7月的一次真实天象，而非完全出自想象。但这一研究遭到梵高博物馆专家和天文学家的质疑。",
+        "reason": "艺术与科学交叉争议",
+        "density": "中",
+        "score": 51.2,
+        "role": "媒体",
+        "published_at": "2026-11-02T07:48:06+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      {
+        "title": "Electronic-Structure-Informed Many-Body Encoding for Quantum Machine Learning",
+        "url": "https://arxiv.org/abs/2610.40840",
+        "source": "arXiv quant-ph 论文速递",
+        "summary": "本文提出一种物理启发的量子编码策略，利用电子系统的多体结构，将n体电子描述符与量子门局域性直接对应，从而改进量子机器学习中的数据编码方式，提升参数化量子电路对分子性质的表达能力。",
+        "zh_full": "数据编码是量子机器学习（QML）中的核心挑战，因为它决定了经典信息如何映射到量子态上，并影响参数化量子电路的表达能力和效率。本文提出一种物理启发的量子编码策略，利用电子系统的内在多体结构，在输入描述符的体阶数与量子门的局域性之间建立直接对应关系。具体而言，从单一分子计算中获得的n体电子描述符被用于构造量子编码，使得描述符的体阶数直接决定量子门的局域性。这种编码方式将电子结构信息嵌入量子机器学习流程，从而可能提升参数化量子电路对分子体系性质的预测能力。该工作为量子机器学习在化学和材料科学中的应用提供了新的编码范式，有望在保持量子优势的同时提高编码效率。",
+        "reason": "提出物理启发的量子编码新策略",
+        "density": "高",
+        "score": 47.2,
+        "role": "科研",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "topic_id": "f66e4b1cfdf2",
+        "topic_title": "Electronic-Structure-Informed Many-Body Encoding for Quantum Machine Learning"
+      },
+      {
+        "title": "Optical Quantum Memory Processing for Quantum Hashing",
+        "url": "https://arxiv.org/abs/2610.40904",
+        "source": "arXiv quant-ph 论文速递",
+        "summary": "本文提出利用可编程光子回波量子存储器处理多时间箱光子qudit，实现基于量子哈希的发送者认证协议，为安全量子通信网络提供新的认证方案。",
+        "zh_full": "发送者认证是安全量子通信网络的重要需求。本文提出一种可编程光子回波量子存储处理方案，用于多时间箱光子qudit，以实现基于量子哈希的验证协议。在该方案中，发送者（Alice）利用量子存储器，通过将单个存储的光子波包转换为可编程光子qudit来生成量子哈希态。接收者（Bob）的存储器根据相位编码，将接收到的时箱光子qudit相干映射到单一输出模式。该方案利用量子存储器的可编程性实现量子哈希验证，为量子通信中的认证机制提供了新的实现途径。",
+        "reason": "提出量子哈希认证的新实现方案",
+        "density": "中",
+        "score": 47.2,
+        "role": "科研",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "topic_id": "cb27bdf7a532",
+        "topic_title": "Optical Quantum Memory Processing for Quantum Hashing"
+      },
+      {
+        "title": "Ultrathin kagome material opens a route to study unusual quantum states",
+        "url": "https://phys.org/news/2026-10-ultrathin-kagome-material-route-unusual.html",
+        "source": "Phys.org 物理新闻",
+        "summary": "How atoms are arranged inside materials can influence the behavior of electrons and the resulting electronic states. Kagome lattices, repeating arrangements of atoms forming triangles that share corners (with hexagonal spaces between them),",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 34.6,
+        "role": "科研",
+        "published_at": "2026-11-02T13:00:01+00:00",
+        "topic_id": "d2f074dbeaf8",
+        "topic_title": "Unusual quantum states in six-layer graphene offer clues to superconductivity"
+      }
+    ],
+    "flash": [
+      {
+        "title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver",
+        "url": "https://arxiv.org/abs/2610.40693",
+        "source": "arXiv quant-ph 论文速递",
+        "summary": "本文研究量子线性系统求解器在天线有限元电磁分析中的应用，探讨如何在不重构完整解向量的情况下评估天线性能指标，以保持量子加速优势。",
+        "zh_full": "基于有限元法的电磁分析在天线设计中广泛应用。然而在较高频率下，所需的网格细化使得求解大型稀疏线性系统成为计算成本的主要来源。量子线性系统求解器有望加速这一步骤，但其输出是叠加态：重构经典解向量的所有分量将丧失量子加速优势。已有研究提出了获取散射等物理量的方法，但尚未解决完整重构问题。本文对量子线性系统求解器在天线性能指标评估中的应用进行了有限元电磁分析，探讨了如何在不完全重构解向量的情况下提取天线性能指标，以保持量子加速优势。该研究为量子计算在电磁仿真中的应用提供了新的思路。",
+        "reason": "探索量子求解器在天线分析中的应用",
+        "density": "中",
+        "score": 45.4,
+        "role": "科研",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "topic_id": "cafa9e30b66d",
+        "topic_title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver"
+      },
+      {
+        "title": "Predictive Maintenance at the Edge: An Embedded Anomaly Detection Pipeline Trained with Quantum Optimization",
+        "url": "https://arxiv.org/abs/2610.40848",
+        "source": "arXiv quant-ph 论文速递",
+        "summary": "arXiv:2610.40848v1 Announce Type: new Abstract: This article presents a predictive-maintenance pipeline that detects anomalies in bearings from vibration signals, adapted for deployment at the edge on low-cost microcontrollers, and that use",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 45.4,
+        "role": "科研",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "topic_id": "cafa9e30b66d",
+        "topic_title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver"
+      },
+      {
+        "title": "Preparation of a Laughlin-like fractional Chern insulator on a superconducting quantum processor",
+        "url": "https://arxiv.org/abs/2610.41017",
+        "source": "arXiv quant-ph 论文速递",
+        "summary": "arXiv:2610.41017v1 Announce Type: new Abstract: Fractional Chern insulators (FCIs) are lattice analogues of fractional quantum Hall states, hosting topological order and fractionalized anyonic excitations. Their realization poses a demandin",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 45.4,
+        "role": "科研",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "topic_id": "cafa9e30b66d",
+        "topic_title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver"
+      },
+      {
+        "title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks",
+        "url": "https://arxiv.org/abs/2610.40776",
+        "source": "arXiv quant-ph 论文速递",
+        "summary": "arXiv:2610.40776v1 Announce Type: new Abstract: Extracting late-time hydrodynamic transport properties directly from microscopic quantum models, especially in dimensions beyond one, is believed to be classically intractable. This owes, in p",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 43.9,
+        "role": "科研",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "topic_id": "431b049c16bc",
+        "topic_title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks"
+      },
+      {
+        "title": "Biorthogonal universal quantum control",
+        "url": "https://arxiv.org/abs/2610.41195",
+        "source": "arXiv quant-ph 论文速递",
+        "summary": "arXiv:2610.41195v1 Announce Type: new Abstract: As a paradigm for describing open-quantum-system dynamics, the non-Hermitian Schr\\\"odinger equation generally modifies state norms, complicating coherent control over the system's Hilbert spac",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 43.9,
+        "role": "科研",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "topic_id": "431b049c16bc",
+        "topic_title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks"
+      },
+      {
+        "title": "Finite-resource cooling of qudits beyond thermodynamic length",
+        "url": "https://arxiv.org/abs/2610.40709",
+        "source": "arXiv quant-ph 论文速递",
+        "summary": "arXiv:2610.40709v1 Announce Type: new Abstract: Cooling a quantum system with $N$ thermal machines costs more than Landauer's bound. For swap-based collision models the excess is set by thermodynamic length, which is optimal for qubits and ",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 37.6,
+        "role": "科研",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      {
+        "title": "Quantum manifestations of converse symmetry breaking",
+        "url": "https://arxiv.org/abs/2610.40762",
+        "source": "arXiv quant-ph 论文速递",
+        "summary": "arXiv:2610.40762v1 Announce Type: new Abstract: Quantum synchronization holds promise in advancing quantum technologies such as sensing, communication, and computation. A key challenge in this rapidly developing field is to identify mechani",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 37.6,
+        "role": "科研",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      {
+        "title": "Fock-space delocalization and its control in scarred-vs-ergodic dynamics",
+        "url": "https://arxiv.org/abs/2610.40805",
+        "source": "arXiv quant-ph 论文速递",
+        "summary": "arXiv:2610.40805v1 Announce Type: new Abstract: Quantum many-body scarred dynamics in Rydberg-atom arrays is characterized by revivals, in which the system repeatedly returns to its initial state despite its many-body complexity. But how ex",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 37.6,
+        "role": "科研",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      {
+        "title": "Liouvillian spectral snapshots: A reduced-subspace approach for time-dependent and noisy open quantum systems",
+        "url": "https://arxiv.org/abs/2610.40808",
+        "source": "arXiv quant-ph 论文速递",
+        "summary": "arXiv:2610.40808v1 Announce Type: new Abstract: Driven-dissipative quantum devices are routinely operated with time-dependent drives and exposed to temporally correlated classical noise. When these perturbations vary on timescales comparabl",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 37.6,
+        "role": "科研",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      {
+        "title": "Beyond the Kubo formula: unification of adiabatic and isothermal response in quantum systems",
+        "url": "https://arxiv.org/abs/2610.40810",
+        "source": "arXiv quant-ph 论文速递",
+        "summary": "arXiv:2610.40810v1 Announce Type: new Abstract: The static limit of the Kubo susceptibility describes the adiabatic response of an isolated quantum system, in which energy-level occupations remain unchanged, and generally differs from the i",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 37.6,
+        "role": "科研",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "topic_id": null,
+        "topic_title": null
+      }
+    ],
+    "sections": [
+      {
+        "category": "量子信息与计算",
+        "articles": [
+          {
+            "title": "Colloquium: Quantum information processing with ensembles of identical particles",
+            "url": "https://arxiv.org/abs/2610.40852",
+            "source": "arXiv quant-ph 论文速递",
+            "summary": "该综述提出统一操作视角，探讨粒子同一性、不可区分性、交换统计和多粒子干涉如何作为量子信息处理资源。首先澄清全同粒子的纠缠和不可区分性概念，强调其对可访问测量的依赖性。",
+            "zh_full": "arXiv:2610.40852v1 公告类型：新论文。摘要：全同粒子支撑着大多数量子技术，但不可区分性在这些过程中的作用远远超出了多粒子态对称化。本综述提出了一个统一的操作视角，说明粒子同一性、不可区分性、交换统计和多粒子干涉如何被利用为量子信息处理的资源。我们首先澄清了全同粒子的纠缠和不可区分性概念，强调它们对可访问测量的依赖性。",
+            "reason": "全同粒子量子信息处理综述",
+            "density": "中",
+            "score": 37.6,
+            "role": "科研",
+            "published_at": "2026-11-02T05:00:00+00:00",
+            "topic_id": null,
+            "topic_title": null
+          },
+          {
+            "title": "Quantum Advantage in Beam-Displacement Estimation for Inter-Satellite Quantum-Secure Time Transfer",
+            "url": "https://arxiv.org/abs/2610.41198",
+            "source": "arXiv quant-ph 论文速递",
+            "summary": "arXiv:2610.41198v1 Announce Type: new Abstract: In this work, we investigate the practical feasibility of achieving a quantum advantage, in the context of inter-satellite quantum communication, of satellite position estimation. The investig",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 37.6,
+            "role": "科研",
+            "published_at": "2026-11-02T05:00:00+00:00",
+            "topic_id": null,
+            "topic_title": null
+          }
+        ]
+      },
+      {
+        "category": "凝聚态物理",
+        "articles": [
+          {
+            "title": "Preparation of a Laughlin-like fractional Chern insulator on a superconducting quantum processor",
+            "url": "https://arxiv.org/abs/2610.41017",
+            "source": "arXiv quant-ph 论文速递",
+            "summary": "arXiv:2610.41017v1 Announce Type: new Abstract: Fractional Chern insulators (FCIs) are lattice analogues of fractional quantum Hall states, hosting topological order and fractionalized anyonic excitations. Their realization poses a demandin",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 45.4,
+            "role": "科研",
+            "published_at": "2026-11-02T05:00:00+00:00",
+            "topic_id": "cafa9e30b66d",
+            "topic_title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver"
+          }
+        ]
+      },
+      {
+        "category": "等离子体",
+        "articles": [
+          {
+            "title": "Is There Anything Left in the Dream of Cold Fusion?",
+            "url": "https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/",
+            "source": "Quanta Magazine",
+            "summary": "冷聚变研究仍在进行，涉及奇异原子，虽不能解决能源危机，但拓展了物理学边界。",
+            "zh_full": "深入探究冷聚变梦想的残余。你会发现一个活跃的研究项目，涉及奇异原子，这些原子不会解决能源危机，但会拓展物理学的边界。",
+            "reason": "冷聚变研究现状与物理边界",
+            "density": "中",
+            "score": 51.4,
+            "role": "科研",
+            "published_at": "2026-11-02T15:48:57+00:00",
+            "topic_id": null,
+            "topic_title": null
+          }
+        ]
+      },
+      {
+        "category": "科研进展",
+        "articles": [
+          {
+            "title": "梵高笔下的星空是真实存在的吗？新研究引发争议",
+            "url": "http://www.zhishifenzi.com/news/multiple/10739.html",
+            "source": "知识分子",
+            "summary": "新研究提出梵高《星月夜》可能描绘了1889年7月的真实天象，但遭到专家质疑。",
+            "zh_full": "韩国庆熙大学的一项新研究认为，梵高的《星月夜》可能描绘了1889年7月的一次真实天象，而非完全出自想象。但这一研究遭到梵高博物馆专家和天文学家的质疑。",
+            "reason": "艺术与科学交叉争议",
+            "density": "中",
+            "score": 51.2,
+            "role": "媒体",
+            "published_at": "2026-11-02T07:48:06+00:00",
+            "topic_id": null,
+            "topic_title": null
+          },
+          {
+            "title": "Electronic-Structure-Informed Many-Body Encoding for Quantum Machine Learning",
+            "url": "https://arxiv.org/abs/2610.40840",
+            "source": "arXiv quant-ph 论文速递",
+            "summary": "本文提出一种物理启发的量子编码策略，利用电子系统的多体结构，将n体电子描述符与量子门局域性直接对应，从而改进量子机器学习中的数据编码方式，提升参数化量子电路对分子性质的表达能力。",
+            "zh_full": "数据编码是量子机器学习（QML）中的核心挑战，因为它决定了经典信息如何映射到量子态上，并影响参数化量子电路的表达能力和效率。本文提出一种物理启发的量子编码策略，利用电子系统的内在多体结构，在输入描述符的体阶数与量子门的局域性之间建立直接对应关系。具体而言，从单一分子计算中获得的n体电子描述符被用于构造量子编码，使得描述符的体阶数直接决定量子门的局域性。这种编码方式将电子结构信息嵌入量子机器学习流程，从而可能提升参数化量子电路对分子体系性质的预测能力。该工作为量子机器学习在化学和材料科学中的应用提供了新的编码范式，有望在保持量子优势的同时提高编码效率。",
+            "reason": "提出物理启发的量子编码新策略",
+            "density": "高",
+            "score": 47.2,
+            "role": "科研",
+            "published_at": "2026-11-02T05:00:00+00:00",
+            "topic_id": "f66e4b1cfdf2",
+            "topic_title": "Electronic-Structure-Informed Many-Body Encoding for Quantum Machine Learning"
+          },
+          {
+            "title": "Optical Quantum Memory Processing for Quantum Hashing",
+            "url": "https://arxiv.org/abs/2610.40904",
+            "source": "arXiv quant-ph 论文速递",
+            "summary": "本文提出利用可编程光子回波量子存储器处理多时间箱光子qudit，实现基于量子哈希的发送者认证协议，为安全量子通信网络提供新的认证方案。",
+            "zh_full": "发送者认证是安全量子通信网络的重要需求。本文提出一种可编程光子回波量子存储处理方案，用于多时间箱光子qudit，以实现基于量子哈希的验证协议。在该方案中，发送者（Alice）利用量子存储器，通过将单个存储的光子波包转换为可编程光子qudit来生成量子哈希态。接收者（Bob）的存储器根据相位编码，将接收到的时箱光子qudit相干映射到单一输出模式。该方案利用量子存储器的可编程性实现量子哈希验证，为量子通信中的认证机制提供了新的实现途径。",
+            "reason": "提出量子哈希认证的新实现方案",
+            "density": "中",
+            "score": 47.2,
+            "role": "科研",
+            "published_at": "2026-11-02T05:00:00+00:00",
+            "topic_id": "cb27bdf7a532",
+            "topic_title": "Optical Quantum Memory Processing for Quantum Hashing"
+          },
+          {
+            "title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver",
+            "url": "https://arxiv.org/abs/2610.40693",
+            "source": "arXiv quant-ph 论文速递",
+            "summary": "本文研究量子线性系统求解器在天线有限元电磁分析中的应用，探讨如何在不重构完整解向量的情况下评估天线性能指标，以保持量子加速优势。",
+            "zh_full": "基于有限元法的电磁分析在天线设计中广泛应用。然而在较高频率下，所需的网格细化使得求解大型稀疏线性系统成为计算成本的主要来源。量子线性系统求解器有望加速这一步骤，但其输出是叠加态：重构经典解向量的所有分量将丧失量子加速优势。已有研究提出了获取散射等物理量的方法，但尚未解决完整重构问题。本文对量子线性系统求解器在天线性能指标评估中的应用进行了有限元电磁分析，探讨了如何在不完全重构解向量的情况下提取天线性能指标，以保持量子加速优势。该研究为量子计算在电磁仿真中的应用提供了新的思路。",
+            "reason": "探索量子求解器在天线分析中的应用",
+            "density": "中",
+            "score": 45.4,
+            "role": "科研",
+            "published_at": "2026-11-02T05:00:00+00:00",
+            "topic_id": "cafa9e30b66d",
+            "topic_title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver"
+          },
+          {
+            "title": "Predictive Maintenance at the Edge: An Embedded Anomaly Detection Pipeline Trained with Quantum Optimization",
+            "url": "https://arxiv.org/abs/2610.40848",
+            "source": "arXiv quant-ph 论文速递",
+            "summary": "arXiv:2610.40848v1 Announce Type: new Abstract: This article presents a predictive-maintenance pipeline that detects anomalies in bearings from vibration signals, adapted for deployment at the edge on low-cost microcontrollers, and that use",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 45.4,
+            "role": "科研",
+            "published_at": "2026-11-02T05:00:00+00:00",
+            "topic_id": "cafa9e30b66d",
+            "topic_title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver"
+          },
+          {
+            "title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks",
+            "url": "https://arxiv.org/abs/2610.40776",
+            "source": "arXiv quant-ph 论文速递",
+            "summary": "arXiv:2610.40776v1 Announce Type: new Abstract: Extracting late-time hydrodynamic transport properties directly from microscopic quantum models, especially in dimensions beyond one, is believed to be classically intractable. This owes, in p",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 43.9,
+            "role": "科研",
+            "published_at": "2026-11-02T05:00:00+00:00",
+            "topic_id": "431b049c16bc",
+            "topic_title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks"
+          },
+          {
+            "title": "Biorthogonal universal quantum control",
+            "url": "https://arxiv.org/abs/2610.41195",
+            "source": "arXiv quant-ph 论文速递",
+            "summary": "arXiv:2610.41195v1 Announce Type: new Abstract: As a paradigm for describing open-quantum-system dynamics, the non-Hermitian Schr\\\"odinger equation generally modifies state norms, complicating coherent control over the system's Hilbert spac",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 43.9,
+            "role": "科研",
+            "published_at": "2026-11-02T05:00:00+00:00",
+            "topic_id": "431b049c16bc",
+            "topic_title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks"
+          },
+          {
+            "title": "Finite-resource cooling of qudits beyond thermodynamic length",
+            "url": "https://arxiv.org/abs/2610.40709",
+            "source": "arXiv quant-ph 论文速递",
+            "summary": "arXiv:2610.40709v1 Announce Type: new Abstract: Cooling a quantum system with $N$ thermal machines costs more than Landauer's bound. For swap-based collision models the excess is set by thermodynamic length, which is optimal for qubits and ",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 37.6,
+            "role": "科研",
+            "published_at": "2026-11-02T05:00:00+00:00",
+            "topic_id": null,
+            "topic_title": null
+          }
+        ]
+      },
+      {
+        "category": "其他",
+        "articles": [
+          {
+            "title": "Ultrathin kagome material opens a route to study unusual quantum states",
+            "url": "https://phys.org/news/2026-10-ultrathin-kagome-material-route-unusual.html",
+            "source": "Phys.org 物理新闻",
+            "summary": "How atoms are arranged inside materials can influence the behavior of electrons and the resulting electronic states. Kagome lattices, repeating arrangements of atoms forming triangles that share corners (with hexagonal spaces between them),",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 34.6,
+            "role": "科研",
+            "published_at": "2026-11-02T13:00:01+00:00",
+            "topic_id": "d2f074dbeaf8",
+            "topic_title": "Unusual quantum states in six-layer graphene offer clues to superconductivity"
+          },
+          {
+            "title": "在最前沿的人工智能学院，为什么还要“古法教学”？",
+            "url": "http://www.zhishifenzi.com/news/multiple/10744.html",
+            "source": "知识分子",
+            "summary": "2026年10月25日，中国人民大学高瓴人工智能学院教授魏哲巍受邀在《知识分子》《赛先生》举办的“AI对数学家到底意味着什么”论坛发表演讲，并参与“科学四十人”圆桌讨论。本文是论坛系列的第四篇，前三篇分别为芝加哥大学教授邓煜、北京大学教授袁新意和北京大学教授孙鑫的分享。",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 30.7,
+            "role": "媒体",
+            "published_at": "2026-11-02T07:58:59+00:00",
+            "topic_id": null,
+            "topic_title": null
+          },
+          {
+            "title": "北大教授孙鑫：AI冲击数学，我的个人体验、反思与倡议",
+            "url": "http://www.zhishifenzi.com/news/multiple/10743.html",
+            "source": "知识分子",
+            "summary": "2026年10月25日，北京大学北京国际数学研究中心教授孙鑫受邀在《知识分子》与《赛先生》联合举办的“AI对数学家到底意味着什么”论坛发表主旨演讲。本文是论坛系列的第三篇。",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 30.7,
+            "role": "媒体",
+            "published_at": "2026-11-02T07:58:07+00:00",
+            "topic_id": null,
+            "topic_title": null
+          },
+          {
+            "title": "数学家袁新意：面对AI，数学是科学的第一道防线",
+            "url": "http://www.zhishifenzi.com/news/multiple/10742.html",
+            "source": "知识分子",
+            "summary": "10月25日，在《知识分子》《赛先生》主办的“AI对数学家到底意味着什么”论坛上，多位学者分享了各自对数学未来的观察与思考。他们谈论新的可能，也审视随之而来的风险；有人忧虑数学根基的动摇，也有人期待建立新的大厦。我们希望留下这些或悲观、或乐观的声音，让未来回望的人们仍能听见这个复杂而动荡的时期中，研究者的思考与争鸣。",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 30.7,
+            "role": "媒体",
+            "published_at": "2026-11-02T07:57:23+00:00",
+            "topic_id": null,
+            "topic_title": null
+          },
+          {
+            "title": "诺奖得主苏德霍夫：神经元如何实现闪电交流？",
+            "url": "http://www.zhishifenzi.com/innovation/company/10741.html",
+            "source": "知识分子",
+            "summary": "",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 30.7,
+            "role": "媒体",
+            "published_at": "2026-11-02T07:51:08+00:00",
+            "topic_id": null,
+            "topic_title": null
+          },
+          {
+            "title": "逝者 | 激光冷却先驱克洛德·科恩-塔诺季逝世",
+            "url": "http://www.zhishifenzi.com/depth/depth/10740.html",
+            "source": "知识分子",
+            "summary": "2026年10月22日，法国物理学家科恩-塔诺季在巴黎去世，享年93岁。",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 30.7,
+            "role": "媒体",
+            "published_at": "2026-11-02T07:49:46+00:00",
+            "topic_id": null,
+            "topic_title": null
+          },
+          {
+            "title": "AI尚未引发失业潮，但年轻人承受了第一波冲击",
+            "url": "http://www.zhishifenzi.com/news/multiple/10738.html",
+            "source": "知识分子",
+            "summary": "2022年底ChatGPT问世以来，关于“人工智能大范围取代白领岗位”的焦虑迅速蔓延。",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 30.7,
+            "role": "媒体",
+            "published_at": "2026-11-02T07:38:52+00:00",
+            "topic_id": null,
+            "topic_title": null
+          }
+        ]
+      }
+    ],
+    "topic_ids": [
+      "cb27bdf7a532",
+      "d2f074dbeaf8",
+      "f66e4b1cfdf2"
+    ],
+    "tocCount": 15,
+    "readMinutes": 2
+  },
+  "2026-11-03": {
+    "date": "2026-11-03",
+    "weekday": "周二",
+    "label": "2026年11月3日",
+    "headline": {
+      "title": "Experiment supports theoretical foundation for potentially more error-resistant quantum computing",
+      "url": "https://phys.org/news/2026-11-theoretical-foundation-potentially-error-resistant.html",
+      "source": "Phys.org 物理新闻",
+      "summary": "拓扑量子计算利用特殊量子态来减少量子计算中的错误。新实验为这一理论提供了支持，可能推动更抗误差的量子计算发展。",
+      "zh_full": "一种降低量子计算信息存储错误率的方法被称为拓扑量子计算。它依赖于特殊的量子态，这些量子态被认为更能抵抗局部扰动。这项研究为拓扑量子计算提供了实验支持，可能有助于实现更具抗误差能力的量子计算。",
+      "reason": "量子计算抗误差研究新进展",
+      "density": "中",
+      "score": 61.1,
+      "role": "科研",
+      "published_at": "2026-11-02T18:30:01+00:00",
+      "topic_id": "cb27bdf7a532",
+      "topic_title": "Optical Quantum Memory Processing for Quantum Hashing"
+    },
+    "picks": [
+      {
+        "title": "Single molecules could provide the building blocks for future quantum networks",
+        "url": "https://phys.org/news/2026-11-molecules-blocks-future-quantum-networks.html",
+        "source": "Phys.org 物理新闻",
+        "summary": "Quantum computers rely on qubits as their units of information. To connect them into a larger network across long distances, they need to transmit quantum information using light.",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 34.6,
+        "role": "科研",
+        "published_at": "2026-11-02T17:00:05+00:00",
+        "topic_id": "3cdcb1942e7e",
+        "topic_title": "Theoretical method uses light to locate anyons, potential quantum computing building blocks"
+      }
+    ],
+    "flash": [],
+    "sections": [
+      {
+        "category": "量子信息与计算",
+        "articles": [
+          {
+            "title": "Experiment supports theoretical foundation for potentially more error-resistant quantum computing",
+            "url": "https://phys.org/news/2026-11-theoretical-foundation-potentially-error-resistant.html",
+            "source": "Phys.org 物理新闻",
+            "summary": "拓扑量子计算利用特殊量子态来减少量子计算中的错误。新实验为这一理论提供了支持，可能推动更抗误差的量子计算发展。",
+            "zh_full": "一种降低量子计算信息存储错误率的方法被称为拓扑量子计算。它依赖于特殊的量子态，这些量子态被认为更能抵抗局部扰动。这项研究为拓扑量子计算提供了实验支持，可能有助于实现更具抗误差能力的量子计算。",
+            "reason": "量子计算抗误差研究新进展",
+            "density": "中",
+            "score": 61.1,
+            "role": "科研",
+            "published_at": "2026-11-02T18:30:01+00:00",
+            "topic_id": "cb27bdf7a532",
+            "topic_title": "Optical Quantum Memory Processing for Quantum Hashing"
+          }
+        ]
+      },
+      {
+        "category": "其他",
+        "articles": [
+          {
+            "title": "Single molecules could provide the building blocks for future quantum networks",
+            "url": "https://phys.org/news/2026-11-molecules-blocks-future-quantum-networks.html",
+            "source": "Phys.org 物理新闻",
+            "summary": "Quantum computers rely on qubits as their units of information. To connect them into a larger network across long distances, they need to transmit quantum information using light.",
+            "zh_full": null,
+            "reason": null,
+            "density": null,
+            "score": 34.6,
+            "role": "科研",
+            "published_at": "2026-11-02T17:00:05+00:00",
+            "topic_id": "3cdcb1942e7e",
+            "topic_title": "Theoretical method uses light to locate anyons, potential quantum computing building blocks"
+          }
+        ]
+      }
+    ],
+    "topic_ids": [
+      "3cdcb1942e7e",
+      "cb27bdf7a532"
+    ],
+    "tocCount": 2,
+    "readMinutes": 1
   }
 }

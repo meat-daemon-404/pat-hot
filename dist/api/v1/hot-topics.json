@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T01:32:00.094060+00:00",
+  "generatedAt": "2026-11-02T20:23:43.516091+00:00",
   "count": 10,
   "items": [
     {
@@ -12,7 +12,7 @@
         "工信部要闻"
       ],
       "score": 45.5,
-      "latest_at": "2026-11-02T01:32:00.094060+00:00",
+      "latest_at": "2026-11-02T20:23:43.516091+00:00",
       "representative": {
         "title": "湖北通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动",
         "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_8641f58c6bc1467ea7857bb26d07493e.html",
@@ -53,13 +53,13 @@
         }
       ],
       "top_terms": [
-        "通信",
         "信息",
+        "通信",
         "安全",
-        "部署",
-        "网络"
+        "工信",
+        "信部"
       ],
-      "digest": "工业和信息化部于2026年3月部署信息通信业安全生产、网络运行安全及行风建设与纠风工作，要求各省通信管理局、基础电信企业、中国广电、中国铁塔、中国卫星网络集团及相关互联网企业落实全年安全防范与行风建设任务。3月11日，工信部召开全国电视电话会议，总结2025年行风建设和纠风工作情况，部署2026年重点工作，副部长张云明出席并讲话。3月16日，工信部办公厅印发通知，就全年安全生产和网络运行安全工作作出系统部署。此前，湖北通信管理局已联合省经济和信息化厅部署2026年新型工业化网络安全专项行动。",
+      "digest": "工业和信息化部于2026年3月部署信息通信业安全生产、网络运行安全及行风建设与纠风工作，要求各省通信管理局、基础电信企业、中国广电、中国铁塔、中国卫星网络集团及相关互联网企业落实全年安全防范与行风建设任务。3月11日，工信部召开全国电视电话会议，总结2025年行风建设和纠风工作情况，部署2026年重点工作；3月16日，工信部办公厅印发通知，就全年安全生产和网络运行安全工作作出系统部署。此前，湖北省通信管理局已联合省经济和信息化厅部署2026年新型工业化网络安全专项行动。",
       "digestTitle": "工信部部署2026年信息通信业安全与行风工作",
       "rank": 1,
       "trend": "flat",
@@ -69,6 +69,285 @@
       "status": "关注中"
     },
     {
+      "terms": [
+        "compute",
+        "experimental",
+        "foundations",
+        "graphene",
+        "implementations",
+        "interdigitated",
+        "mathematical",
+        "metadevices",
+        "metamaterial",
+        "nanophotonics",
+        "neuromorphic"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Laser Focus World",
+        "arXiv 光学与光子学 (physics.optics)"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-11-02T20:23:43.516091+00:00",
+      "representative": {
+        "title": "Metadevices that compute: mathematical foundations and experimental implementations for neuromorphic nanophotonics",
+        "url": "https://arxiv.org/abs/2610.40903",
+        "source": "arXiv 光学与光子学 (physics.optics)",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "score": 65.2,
+        "summary": "arXiv:2610.40903v1 Announce Type: new Abstract: Wave-based analog computing has re-emerged as a compelling alternative to digital electronics for specific linear-algebraic and machine-learning workloads, promising massively parallel, high-b",
+        "zh_full": "arXiv:2610.40903v1 发布了一篇聚焦综述，题为“Metadevices that compute: mathematical foundations and experimental implementations for neuromorphic nanophotonics”。该综述指出，基于波的计算已重新成为特定线性代数和机器学习工作负载下数字电子学的有力替代方案，有望实现大规模并行、高带宽和节能的信息处理。超材料、超表面和集成超结构（统称超器件）现在可以在波域中直接执行数学运算、求解积分和微分方程、进行矩阵乘法，并实现可训练的光子神经网络。该综述整合了相关数学基础与实验实现。",
+        "refs": {
+          "arxiv": "2610.40903",
+          "via": "feed_text",
+          "confidence": "verified"
+        },
+        "llm_summary": "该综述总结了超器件在波域中直接执行数学运算、求解方程、矩阵乘法及实现可训练光子神经网络的研究进展，强调其作为数字电子学替代方案在大规模并行、高带宽和节能信息处理方面的潜力。",
+        "llm_reason": "超器件计算与光子神经网络前沿综述",
+        "density": "高"
+      },
+      "folded_count": 1,
+      "title": "Metadevices that compute: mathematical foundations and experimental implementations for neuromorphic nanophotonics",
+      "id": "377179762f69",
+      "links": [
+        {
+          "title": "Metadevices that compute: mathematical foundations and experimental implementations for neuromorphic nanophotonics",
+          "url": "https://arxiv.org/abs/2610.40903",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 65.2,
+          "published_at": "2026-11-02T05:00:00+00:00"
+        },
+        {
+          "title": "Interdigitated graphene metamaterial enables EAM devices",
+          "url": "https://www.laserfocusworld.com/optics/article/55415277/interdigitated-graphene-metamaterial-enables-eam-devices",
+          "source": "Laser Focus World",
+          "score": 33.4,
+          "published_at": null
+        }
+      ],
+      "top_terms": [
+        "metadevices",
+        "compute",
+        "mathematical",
+        "foundations",
+        "experimental"
+      ],
+      "digest": "研究人员利用叉指状石墨烯超材料，在绝缘体上硅和互补金属氧化物半导体（CMOS）兼容平台上制成电吸收调制器（EAM）。该器件通过石墨烯与光的相互作用实现高速调制，为光子计算和通信提供了新的集成方案。",
+      "digestTitle": "石墨烯超材料实现电吸收调制器",
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "computing",
+        "error-resistant",
+        "experiment",
+        "foundation",
+        "hashing",
+        "memory",
+        "more",
+        "optical",
+        "potentially",
+        "processing",
+        "quantum",
+        "supports",
+        "theoretical"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Phys.org 物理新闻",
+        "arXiv 光学与光子学 (physics.optics)"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-11-02T20:23:43.516091+00:00",
+      "representative": {
+        "title": "Optical Quantum Memory Processing for Quantum Hashing",
+        "url": "https://arxiv.org/abs/2610.40904",
+        "source": "arXiv 光学与光子学 (physics.optics)",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "score": 65.2,
+        "summary": "arXiv:2610.40904v1 Announce Type: cross Abstract: Sender authentication is an important requirement for secure quantum communication networks. We propose programmable photon-echo quantum memory processing of a multi-time-bin photonic qudit ",
+        "zh_full": "arXiv:2610.40904v1 公告类型：交叉。摘要：发送者认证是安全量子通信网络的重要要求。我们提出了一种可编程光子回波量子存储器处理多时隙光子量子比特（qudit）的方法，以实现基于量子哈希的验证协议。在该方法中，发送者（Alice）利用量子存储器（QM）通过将单个存储的光子波包转换为可编程光子量子比特来生成量子哈希态。Bob的存储器根据相位编码将接收到的时隙光子量子比特相干地映射到单个输出模式。我们的方案重新……",
+        "refs": {
+          "arxiv": "2610.40904",
+          "via": "feed_text",
+          "confidence": "verified"
+        },
+        "llm_summary": "该研究提出一种可编程光子回波量子存储器处理多时隙光子量子比特的方法，用于实现基于量子哈希的验证协议。发送者（Alice）利用量子存储器将单个存储的光子波包转换为可编程光子量子比特来生成量子哈希态；接收者（Bob）的存储器根据相位编码将接收到的时隙光子量子比特相干地映射到单个输出模式。该方案旨在实现安全的发送者认证。",
+        "llm_reason": "提出量子哈希认证的新方案，结合量子存储器与光子量子比特",
+        "density": "高"
+      },
+      "folded_count": 1,
+      "title": "Optical Quantum Memory Processing for Quantum Hashing",
+      "id": "cb27bdf7a532",
+      "links": [
+        {
+          "title": "Optical Quantum Memory Processing for Quantum Hashing",
+          "url": "https://arxiv.org/abs/2610.40904",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 65.2,
+          "published_at": "2026-11-02T05:00:00+00:00"
+        },
+        {
+          "title": "Experiment supports theoretical foundation for potentially more error-resistant quantum computing",
+          "url": "https://phys.org/news/2026-11-theoretical-foundation-potentially-error-resistant.html",
+          "source": "Phys.org 物理新闻",
+          "score": 56.6,
+          "published_at": "2026-11-02T18:30:01+00:00"
+        }
+      ],
+      "top_terms": [
+        "quantum",
+        "optical",
+        "memory",
+        "processing",
+        "hashing"
+      ],
+      "digest": "研究人员提出并实验验证了一种基于可编程光子回波量子存储的多时隙光子量子态处理方案，用于量子哈希中的发送方认证。该方案利用量子存储对多时隙光子量子态进行编码和处理，为量子通信网络中的安全认证提供了新的技术路径。相关结果发表于arXiv预印本，尚未经过同行评审。",
+      "digestTitle": "光子回波量子存储实现量子哈希认证",
+      "rank": 3,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "arrays",
+        "available",
+        "avalanche",
+        "camera",
+        "cameras",
+        "confirm",
+        "crystal",
+        "data",
+        "diode",
+        "diodes",
+        "edmund",
+        "electronics",
+        "expanding",
+        "express",
+        "feynman",
+        "graphene-silicon",
+        "high-efficiency",
+        "imaging",
+        "infrared",
+        "integrated",
+        "iris",
+        "linear",
+        "measurements",
+        "mechanics",
+        "microscopy",
+        "optics",
+        "partnership",
+        "photodetection",
+        "photometrics",
+        "photon",
+        "photonic",
+        "prime",
+        "quantum",
+        "research",
+        "resonant",
+        "richard",
+        "schottky",
+        "science",
+        "scientific",
+        "sharper",
+        "single-photon",
+        "teledyne",
+        "vision"
+      ],
+      "source_count": 4,
+      "signal_count": 3,
+      "sources": [
+        "Laser Focus World",
+        "Physics World（关键词过滤）",
+        "YouTube·Edmund Optics",
+        "arXiv 光学与光子学 (physics.optics)"
+      ],
+      "score": 35.5,
+      "latest_at": "2026-11-02T20:23:43.516091+00:00",
+      "representative": {
+        "title": "Photonic Crystal Integrated Graphene-Silicon Schottky Diodes for Resonant Infrared Photodetection",
+        "url": "https://arxiv.org/abs/2610.41701",
+        "source": "arXiv 光学与光子学 (physics.optics)",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "score": 79.4,
+        "summary": "arXiv:2610.41701v1 Announce Type: new Abstract: Narrowband infrared (IR) photodetection has become a critical technology for the next generation of smart low-power photodetectors. In this work, we present a device based on a graphene-silico",
+        "zh_full": "arXiv:2610.41701v1 公告类型：新论文。窄带红外探测已成为下一代智能低功耗光电探测器的关键技术。本研究提出一种基于石墨烯-硅肖特基结的器件，在短波红外波段具有窄带响应。器件中集成光子晶体板，可实现对石墨烯吸收的波长依赖性调控。通过光电流测量对器件进行表征，光子晶体集成使光电流增强超过两个数量级。这种尖锐的增强效应表明，光子晶体结构能够有效提升石墨烯在特定波长处的吸收效率，从而实现窄带红外探测。该研究为开发高性能、低功耗的窄带红外探测器提供了新的技术路径。",
+        "refs": {
+          "arxiv": "2610.41701",
+          "via": "feed_text",
+          "confidence": "verified"
+        },
+        "llm_summary": "该研究展示了一种集成光子晶体的石墨烯-硅肖特基二极管，用于短波红外窄带探测。光子晶体板可调控石墨烯的吸收特性，使光电流增强超过两个数量级，实现波长选择性响应。",
+        "llm_reason": "窄带红外探测技术新方案，数据明确",
+        "density": "高"
+      },
+      "folded_count": 3,
+      "title": "Photonic Crystal Integrated Graphene-Silicon Schottky Diodes for Resonant Infrared Photodetection",
+      "id": "eb6bf18d6672",
+      "links": [
+        {
+          "title": "Photonic Crystal Integrated Graphene-Silicon Schottky Diodes for Resonant Infrared Photodetection",
+          "url": "https://arxiv.org/abs/2610.41701",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 79.4,
+          "published_at": "2026-11-02T05:00:00+00:00"
+        },
+        {
+          "title": "High-efficiency photonic GHZ measurements with linear optics",
+          "url": "https://arxiv.org/abs/2610.41524",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 79.4,
+          "published_at": "2026-11-02T05:00:00+00:00"
+        },
+        {
+          "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55413803/single-photon-avalanche-diode-arrays-an-avalanche-of-photon-data-for-sharper-imaging",
+          "source": "Laser Focus World",
+          "score": 69.8,
+          "published_at": null
+        },
+        {
+          "title": "Single-photon measurements confirm Richard Feynman’s vision of quantum mechanics",
+          "url": "https://physicsworld.com/a/single-photon-measurements-confirm-richard-feynmans-vision-of-quantum-mechanics/",
+          "source": "Physics World（关键词过滤）",
+          "score": 55.3,
+          "published_at": "2026-09-25T08:20:12+00:00"
+        },
+        {
+          "title": "Expanding our Partnership with Teledyne Photometrics Scientific Cameras | Edmund Optics",
+          "url": "https://www.youtube.com/watch?v=3qH7xDED-_M",
+          "source": "YouTube·Edmund Optics",
+          "score": 50.8,
+          "published_at": "2026-07-08T12:16:13+00:00"
+        }
+      ],
+      "top_terms": [
+        "imaging",
+        "teledyne",
+        "photometrics",
+        "scientific",
+        "photon"
+      ],
+      "digest": "研究人员开发出一种基于石墨烯-硅肖特基二极管的窄带红外光电探测器，利用光子晶体结构实现共振增强，为下一代低功耗智能光电探测提供了新方案。该器件在特定红外波段表现出高选择性响应，有望应用于光谱分析、气体传感等领域。",
+      "digestTitle": "石墨烯-硅肖特基光电探测器实现窄带红外探测",
+      "rank": 4,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 35.5,
+      "status": "发酵中"
+    },
+    {
       "terms": [],
       "source_count": 1,
       "signal_count": 3,
@@ -76,7 +355,7 @@
         "C114中国通信网_通信财经"
       ],
       "score": 34.5,
-      "latest_at": "2026-11-02T01:32:00.094060+00:00",
+      "latest_at": "2026-11-02T20:23:43.516091+00:00",
       "representative": {
         "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
         "url": "https://www.c114.com.cn/news/123/a1315966.html",
@@ -122,76 +401,10 @@
         "上半",
         "半年"
       ],
-      "rank": 2,
+      "rank": 5,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "heat": 34.5,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "list",
-        "october",
-        "photonics"
-      ],
-      "source_count": 1,
-      "signal_count": 3,
-      "sources": [
-        "Laser Focus World"
-      ],
-      "score": 34.5,
-      "latest_at": "2026-11-02T01:32:00.094060+00:00",
-      "representative": {
-        "title": "Photonics Hot List: October 30, 2026",
-        "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
-        "source": "Laser Focus World",
-        "published_at": null,
-        "score": 53.8,
-        "summary": "In this episode: A contactless optical sensor shows promise for measuring vital signs, catch our PhotonicsNXT virtual event on demand, and a compact OCT imaging system finds use in industrial applications.",
-        "zh_full": "本期节目内容包括：一种非接触式光学传感器在测量生命体征方面展现出应用前景；PhotonicsNXT线上虚拟活动可随时观看；以及一款紧凑型OCT成像系统在工业领域得到应用。",
-        "llm_summary": "非接触式光学传感器有望用于生命体征测量；紧凑型OCT成像系统应用于工业；PhotonicsNXT线上活动可观看。",
-        "llm_reason": "光电传感与OCT工业应用进展",
-        "density": "中",
-        "llm_score": 24.0
-      },
-      "folded_count": 0,
-      "title": "Photonics Hot List: October 30, 2026",
-      "id": "21a0c8421f1a",
-      "links": [
-        {
-          "title": "Photonics Hot List: October 30, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
-          "source": "Laser Focus World",
-          "score": 53.8,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 23, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
-          "source": "Laser Focus World",
-          "score": 48.4,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 16, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
-          "source": "Laser Focus World",
-          "score": 48.4,
-          "published_at": null
-        }
-      ],
-      "top_terms": [
-        "photonics",
-        "list",
-        "october"
-      ],
-      "rank": 3,
-      "trend": "up",
-      "trendPct": 40.8,
-      "badges": [
-        "rising"
-      ],
       "heat": 34.5,
       "status": "关注中"
     },
@@ -203,7 +416,7 @@
         "工信部要闻"
       ],
       "score": 34.5,
-      "latest_at": "2026-11-02T01:32:00.094060+00:00",
+      "latest_at": "2026-11-02T20:23:43.516091+00:00",
       "representative": {
         "title": "工业和信息化部等八部门印发《产业基础能力提升“十五五”规划》",
         "url": "http://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2026/art_d0527f7f00a04ee5ba942ba865795ef3.html",
@@ -246,7 +459,7 @@
         "信息",
         "息化"
       ],
-      "rank": 4,
+      "rank": 6,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -254,70 +467,161 @@
       "status": "关注中"
     },
     {
-      "terms": [],
-      "source_count": 1,
-      "signal_count": 4,
-      "sources": [
-        "工信部要闻"
+      "terms": [
+        "back",
+        "list",
+        "look",
+        "october",
+        "photonics",
+        "sensing",
+        "spectra",
+        "summit",
+        "west"
       ],
-      "score": 34.5,
-      "latest_at": "2026-11-02T01:32:00.094060+00:00",
+      "source_count": 3,
+      "signal_count": 3,
+      "sources": [
+        "Laser Focus World",
+        "YouTube·Photonics Media",
+        "YouTube·SPIETV"
+      ],
+      "score": 21.2,
+      "latest_at": "2026-11-02T20:23:43.516091+00:00",
       "representative": {
-        "title": "福建通信管理局印发《福建省“十五五”信息通信业发展规划》",
-        "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_8274fc758e6b4511986fc2d4bc17a5aa.html",
-        "source": "工信部要闻",
+        "title": "Photonics Hot List: October 30, 2026",
+        "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
+        "source": "Laser Focus World",
         "published_at": null,
-        "score": 49.8,
-        "summary": "",
-        "zh_full": "福建通信管理局印发《福建省“十五五”信息通信业发展规划》。（无摘要，仅标题）",
-        "llm_summary": "福建通信管理局印发《福建省“十五五”信息通信业发展规划》。",
-        "density": "低"
+        "score": 63.5,
+        "summary": "In this episode: A contactless optical sensor shows promise for measuring vital signs, catch our PhotonicsNXT virtual event on demand, and a compact OCT imaging system finds use in industrial applications.",
+        "zh_full": "本期节目内容包括：一种非接触式光学传感器在测量生命体征方面展现出应用前景；PhotonicsNXT线上虚拟活动可随时观看；以及一款紧凑型OCT成像系统在工业领域得到应用。",
+        "llm_summary": "非接触式光学传感器有望用于生命体征测量；紧凑型OCT成像系统应用于工业；PhotonicsNXT线上活动可观看。",
+        "llm_reason": "光电传感与OCT工业应用进展",
+        "density": "中",
+        "llm_score": 24.0
       },
-      "folded_count": 0,
-      "title": "福建通信管理局印发《福建省“十五五”信息通信业发展规划》",
-      "id": "a862a0718728",
+      "folded_count": 2,
+      "title": "Photonics Hot List: October 30, 2026",
+      "id": "e8992eb39edc",
       "links": [
         {
-          "title": "福建通信管理局印发《福建省“十五五”信息通信业发展规划》",
-          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_8274fc758e6b4511986fc2d4bc17a5aa.html",
-          "source": "工信部要闻",
-          "score": 49.8,
+          "title": "Photonics Hot List: October 30, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
+          "source": "Laser Focus World",
+          "score": 63.5,
           "published_at": null
         },
         {
-          "title": "湖南通信管理局印发《湖南省信息通信行业发展“十五五”规划》",
-          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_36b817fa538349d883cb14430a9d9e4e.html",
-          "source": "工信部要闻",
-          "score": 49.8,
+          "title": "Photonics Hot List: October 23, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
+          "source": "Laser Focus World",
+          "score": 63.5,
           "published_at": null
         },
         {
-          "title": "河南通信管理局正式发布《河南省信息通信行业发展“十五五”规划》",
-          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_9741d75fd33943fa971df840536781ea.html",
-          "source": "工信部要闻",
-          "score": 44.3,
+          "title": "Photonics Hot List: October 16, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
+          "source": "Laser Focus World",
+          "score": 63.5,
           "published_at": null
         },
         {
-          "title": "安徽通信管理局发布《安徽省信息通信业发展“十五五”规划》",
-          "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_8de32f7bba2d4ef89cdafe08195f2cf8.html",
-          "source": "工信部要闻",
-          "score": 44.3,
-          "published_at": null
+          "title": "A Look Back on Photonics West 2026",
+          "url": "https://www.youtube.com/shorts/ne-cuXI4otA",
+          "source": "YouTube·SPIETV",
+          "score": 53.2,
+          "published_at": "2026-10-16T21:37:37+00:00"
+        },
+        {
+          "title": "Photonics Spectra Sensing Technologies Summit 2026",
+          "url": "https://www.youtube.com/watch?v=57_odMmja30",
+          "source": "YouTube·Photonics Media",
+          "score": 44.5,
+          "published_at": "2026-10-01T15:00:15+00:00"
         }
       ],
       "top_terms": [
-        "通信",
-        "规划",
-        "信管",
-        "管理",
-        "理局"
+        "photonics",
+        "list",
+        "october",
+        "spectra",
+        "sensing"
       ],
-      "rank": 5,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "rank": 7,
+      "trend": "down",
+      "trendPct": -38.6,
       "badges": [],
-      "heat": 34.5,
+      "heat": 21.2,
+      "status": "发酵中"
+    },
+    {
+      "terms": [
+        "entanglement",
+        "hidden",
+        "melanin",
+        "microscopy",
+        "probe",
+        "pump-probe",
+        "quantum",
+        "quarks",
+        "subtypes"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Physics World（关键词过滤）",
+        "arXiv 光学与光子学 (physics.optics)"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-02T20:23:43.516091+00:00",
+      "representative": {
+        "title": "Comparison of melanin subtypes using pump-probe microscopy",
+        "url": "https://arxiv.org/abs/2610.40969",
+        "source": "arXiv 光学与光子学 (physics.optics)",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "score": 65.2,
+        "summary": "arXiv:2610.40969v1 Announce Type: new Abstract: Pump-probe microscopy (PPM) is used to probe excited state dynamics of endogenous chromophores to generate contrast that is unavailable in traditional forms of microscopy. Here we apply PPM to",
+        "zh_full": "arXiv:2610.40969v1 公告类型：新论文。摘要：泵浦-探针显微镜（PPM）用于探测内源性发色团的激发态动力学，从而产生传统显微镜无法提供的对比度。本文应用 PPM 来表征黑色素，这是一种在光保护、皮肤和眼睛色素沉着以及黑色素瘤发病机制中起核心作用的色素。由于黑色素的结构和化学复杂性，它历来难以分析。研究人员对来自六种不同病变类别的黑色素进行了成像：皮肤痣、雀斑、皮肤恶性黑色素瘤、结膜黑色素细胞病变、外阴黑色素细胞病变等。",
+        "refs": {
+          "arxiv": "2610.40969",
+          "via": "feed_text",
+          "confidence": "verified"
+        },
+        "llm_summary": "该研究使用泵浦-探针显微镜（PPM）对黑色素进行成像，以克服其结构和化学复杂性带来的分析难题。黑色素在光保护、皮肤和眼睛色素沉着以及黑色素瘤发病机制中至关重要。研究人员对六种不同病变类别的黑色素进行了成像，包括皮肤痣、雀斑、皮肤恶性黑色素瘤、结膜黑色素细胞病变和外阴黑色素细胞病变。",
+        "llm_reason": "展示PPM在黑色素瘤等复杂色素分析中的新应用",
+        "density": "高"
+      },
+      "folded_count": 1,
+      "title": "Comparison of melanin subtypes using pump-probe microscopy",
+      "id": "3ddd557aec8c",
+      "links": [
+        {
+          "title": "Comparison of melanin subtypes using pump-probe microscopy",
+          "url": "https://arxiv.org/abs/2610.40969",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 65.2,
+          "published_at": "2026-11-02T05:00:00+00:00"
+        },
+        {
+          "title": "Using quantum entanglement to probe hidden properties of quarks",
+          "url": "https://physicsworld.com/a/using-quantum-entanglement-to-probe-hidden-properties-of-quarks/",
+          "source": "Physics World（关键词过滤）",
+          "score": 43.5,
+          "published_at": "2026-10-07T08:05:41+00:00"
+        }
+      ],
+      "top_terms": [
+        "probe",
+        "melanin",
+        "subtypes",
+        "pump",
+        "microscopy"
+      ],
+      "rank": 8,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 21.0,
       "status": "关注中"
     },
     {
@@ -325,265 +629,70 @@
         "ahead",
         "assess",
         "challenges",
-        "computing",
+        "concept",
         "debating",
-        "expert",
+        "decade",
         "experts",
         "future",
-        "insights",
+        "intelligence",
+        "metasurface",
+        "next",
         "opportunities",
         "photonics",
-        "podcast",
-        "quantum",
-        "roundup"
+        "practice",
+        "proof"
       ],
       "source_count": 2,
-      "signal_count": 2,
+      "signal_count": 1,
       "sources": [
-        "Laser Focus World",
-        "Physics World（关键词过滤）"
+        "Physics World（关键词过滤）",
+        "arXiv 光学与光子学 (physics.optics)"
       ],
-      "score": 24.5,
-      "latest_at": "2026-11-02T01:32:00.094060+00:00",
+      "score": 21.0,
+      "latest_at": "2026-11-02T20:23:43.516091+00:00",
       "representative": {
-        "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-        "url": "https://www.laserfocusworld.com/executive-forum/podcast/55411597/podcast-expert-insights-photonics-quantum-computing",
-        "source": "Laser Focus World",
-        "published_at": null,
-        "score": 57.2,
-        "summary": "This episode of Following the Photons: A Photonics Podcast covers the growing alliance between quantum computing and classical photonics.",
-        "zh_full": "Laser Focus World发布的播客节目《Following the Photons: A Photonics Podcast》本期聚焦量子计算与经典光子学之间日益紧密的合作关系。节目通过专家访谈的形式，探讨了光子技术在量子计算领域的应用前景，以及两者融合可能带来的技术突破。光子学作为量子计算的重要支撑技术，在量子通信、量子传感和量子信息处理等方面具有独特优势。本期播客旨在为听众提供来自行业专家的深度见解，帮助理解光子学与量子计算交叉领域的最新发展趋势。",
-        "llm_summary": "Laser Focus World播客节目探讨量子计算与经典光子学之间的合作趋势，通过专家访谈分析光子技术在量子计算中的应用前景及交叉领域的发展动态。",
-        "llm_reason": "光子与量子交叉洞察",
-        "density": "中",
-        "llm_score": 15.0
+        "title": "From proof of concept to practice: the next decade of artificial intelligence in metasurface photonics",
+        "url": "https://arxiv.org/abs/2610.41000",
+        "source": "arXiv 光学与光子学 (physics.optics)",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "score": 65.2,
+        "summary": "arXiv:2610.41000v1 Announce Type: new Abstract: Over the past decade, artificial intelligence has learned to predict electromagnetic responses rapidly and generate high-performance metasurface designs. However, one question remains open: co",
+        "zh_full": "arXiv:2610.41000v1 公告类型：新论文。摘要：过去十年中，人工智能已学会快速预测电磁响应并生成高性能超表面设计。然而，一个问题仍然悬而未决：与不包含学习模型的传统设计工作流程相比，它是否使完整的设计工作流程更快，并且所得到的器件是否更好？作者认为答案取决于具体任务。通过深入阅读100篇被高度引用的光学研究，他们区分了人工智能不可替代的设计任务、明显有优势的设计任务，以及……",
+        "refs": {
+          "arxiv": "2610.41000",
+          "via": "feed_text",
+          "confidence": "verified"
+        },
+        "llm_summary": "该研究回顾了过去十年人工智能在超表面光子学中的应用，并探讨了一个关键问题：与不含学习模型的传统设计流程相比，AI是否使完整设计流程更快、器件更好？作者通过深入阅读100篇高被引光学研究，认为答案取决于具体任务，并区分了AI不可替代、明显有优势等不同设计任务类型。",
+        "llm_reason": "系统评估AI在超表面设计中的实际价值与局限",
+        "density": "高"
       },
       "folded_count": 1,
-      "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-      "id": "6aec187ed191",
+      "title": "From proof of concept to practice: the next decade of artificial intelligence in metasurface photonics",
+      "id": "3c467e16fb87",
       "links": [
         {
-          "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-          "url": "https://www.laserfocusworld.com/executive-forum/podcast/55411597/podcast-expert-insights-photonics-quantum-computing",
-          "source": "Laser Focus World",
-          "score": 57.2,
-          "published_at": null
-        },
-        {
-          "title": "PODCAST: The Photonics Roundup",
-          "url": "https://www.laserfocusworld.com/resources/podcast/55410296/podcast-the-photonics-roundup",
-          "source": "Laser Focus World",
-          "score": 51.5,
-          "published_at": null
+          "title": "From proof of concept to practice: the next decade of artificial intelligence in metasurface photonics",
+          "url": "https://arxiv.org/abs/2610.41000",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 65.2,
+          "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
           "title": "Debating the future of photonics: experts assess the challenges and opportunities ahead",
           "url": "https://physicsworld.com/a/debating-the-future-of-photonics-experts-assess-the-challenges-and-opportunities-ahead/",
           "source": "Physics World（关键词过滤）",
-          "score": 42.7,
+          "score": 41.2,
           "published_at": "2026-10-01T07:00:18+00:00"
         }
       ],
       "top_terms": [
         "photonics",
-        "podcast",
-        "expert",
-        "insights",
-        "quantum"
+        "proof",
+        "concept",
+        "practice",
+        "next"
       ],
-      "digest": "光子学与量子计算的结合成为近期行业讨论焦点，专家在相关活动中探讨了两者日益增长的联盟关系。同时，在英国纽卡斯尔大学举行的Photon2026会议上，业界与学术界人士评估了英国光子学行业和研究面临的关键主题与未来挑战。",
-      "digestTitle": "光子学与量子计算融合趋势及行业挑战讨论",
-      "rank": 6,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 24.5,
-      "status": "关注中"
-    },
-    {
-      "terms": [],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "C114中国通信网_通信财经",
-        "LEDinside 中文"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-11-02T01:32:00.094060+00:00",
-      "representative": {
-        "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
-        "url": "https://www.c114.com.cn/news/123/a1316157.html",
-        "source": "C114中国通信网_通信财经",
-        "published_at": null,
-        "score": 48.1,
-        "summary": "中际旭创2026年上半年营收417.78亿元，同比增182.49%，受益于AI驱动的高速光模块（800G/1.6T）放量及海外收入占比近95%。",
-        "zh_full": "中际旭创2026年上半年营收417.78亿元，同比增长182.49%，受益于AI驱动的高速光模块（800G/1.6T）放量及海外收入占比近95%。",
-        "llm_summary": "中际旭创2026年上半年营收417.78亿元，同比增长182.49%，受益于AI驱动的高速光模块（800G/1.6T）放量及海外收入占比近95%。",
-        "llm_reason": "营收与增长数据明确",
-        "density": "高"
-      },
-      "folded_count": 1,
-      "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
-      "id": "b13aaf6cc0b9",
-      "links": [
-        {
-          "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
-          "url": "https://www.c114.com.cn/news/123/a1316157.html",
-          "source": "C114中国通信网_通信财经",
-          "score": 48.1,
-          "published_at": null
-        },
-        {
-          "title": "最高净利增3488.07%，中际旭创、新易盛等12企三季度业绩公布",
-          "url": "https://www.ledinside.cn/fsa/20261030-62927.html",
-          "source": "LEDinside 中文",
-          "score": 40.7,
-          "published_at": "2026-10-30"
-        }
-      ],
-      "top_terms": [
-        "中际",
-        "际旭",
-        "旭创",
-        "亿元",
-        "中际旭创上半年营收"
-      ],
-      "digest": "中际旭创2026年上半年营收417.78亿元，同比增长182.49%，主要受益于AI驱动的高速光模块（800G/1.6T）放量，海外收入占比接近95%。公司未在报道中披露同期净利润数据。",
-      "digestTitle": "中际旭创上半年营收增182%，AI光模块放量",
-      "rank": 7,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "光纤",
-        "激光",
-        "激光器"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "C114中国通信网_IT资讯",
-        "COEMA 中国光电子行业协会"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-11-02T01:32:00.094060+00:00",
-      "representative": {
-        "title": "精密光纤激光器企业频准激光登陆科创板",
-        "url": "https://www.coema.org.cn/industry/202608/5795.html",
-        "source": "COEMA 中国光电子行业协会",
-        "published_at": "2026-08",
-        "score": 41.1,
-        "summary": "",
-        "zh_full": "（无摘要，仅标题）精密光纤激光器企业频准激光登陆科创板。",
-        "llm_summary": "标题信息：精密光纤激光器企业频准激光登陆科创板。",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "精密光纤激光器企业频准激光登陆科创板",
-      "id": "e5f48246a18c",
-      "links": [
-        {
-          "title": "宇树科技计划登陆科创板 中国移动已投资",
-          "url": "https://www.c114.com.cn/news/212/a1292374.html",
-          "source": "C114中国通信网_IT资讯",
-          "score": 44.5,
-          "published_at": null
-        },
-        {
-          "title": "精密光纤激光器企业频准激光登陆科创板",
-          "url": "https://www.coema.org.cn/industry/202608/5795.html",
-          "source": "COEMA 中国光电子行业协会",
-          "score": 41.1,
-          "published_at": "2026-08"
-        }
-      ],
-      "top_terms": [
-        "登陆",
-        "陆科",
-        "科创",
-        "创板",
-        "激光"
-      ],
-      "digest": "宇树科技计划在科创板IPO，以推动公司发展，中国移动已对其投资。该消息由多家媒体引述宇树科技投资方消息报道。目前，宇树科技尚未披露具体的上市时间表或募资规模，其科创板上市计划仍需监管审核。",
-      "digestTitle": "宇树科技拟登陆科创板，中国移动已投资",
-      "rank": 8,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "arrays",
-        "avalanche",
-        "confirm",
-        "data",
-        "diode",
-        "feynman",
-        "imaging",
-        "measurements",
-        "mechanics",
-        "photon",
-        "quantum",
-        "richard",
-        "sharper",
-        "single-photon",
-        "vision"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Laser Focus World",
-        "Physics World（关键词过滤）"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-11-02T01:32:00.094060+00:00",
-      "representative": {
-        "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
-        "url": "https://www.laserfocusworld.com/detectors-imaging/article/55413803/single-photon-avalanche-diode-arrays-an-avalanche-of-photon-data-for-sharper-imaging",
-        "source": "Laser Focus World",
-        "published_at": null,
-        "score": 55.7,
-        "summary": "While typically associated with LiDAR, single-photon avalanche diode (SPAD) arrays can also be used as cameras for general-purpose imaging and perception by using ambient visible light.",
-        "zh_full": "单光子雪崩二极管（SPAD）阵列通常与激光雷达（LiDAR）相关联，但它们也可以利用环境可见光作为相机用于通用成像和感知。这一应用拓展了SPAD阵列的功能，使其不仅限于主动测距，还能在被动光照条件下进行成像。SPAD阵列具有单光子级灵敏度，能够捕捉极弱光信号，因此在环境光下也能实现高灵敏度成像。这种通用成像能力可能用于自动驾驶、机器人视觉、安防监控等领域，提供更丰富的光子数据以实现更清晰的图像。",
-        "llm_summary": "单光子雪崩二极管（SPAD）阵列通常用于LiDAR，但也可利用环境可见光作为相机进行通用成像和感知。SPAD阵列具有单光子灵敏度，能在被动光照下工作，为自动驾驶、机器人视觉等提供高灵敏度成像方案。",
-        "llm_reason": "拓展SPAD阵列应用，实现环境光通用成像",
-        "density": "中",
-        "llm_score": 22.0
-      },
-      "folded_count": 1,
-      "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
-      "id": "8c9d9a318b72",
-      "links": [
-        {
-          "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
-          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55413803/single-photon-avalanche-diode-arrays-an-avalanche-of-photon-data-for-sharper-imaging",
-          "source": "Laser Focus World",
-          "score": 55.7,
-          "published_at": null
-        },
-        {
-          "title": "Single-photon measurements confirm Richard Feynman’s vision of quantum mechanics",
-          "url": "https://physicsworld.com/a/single-photon-measurements-confirm-richard-feynmans-vision-of-quantum-mechanics/",
-          "source": "Physics World（关键词过滤）",
-          "score": 41.2,
-          "published_at": "2026-09-25T08:20:12+00:00"
-        }
-      ],
-      "top_terms": [
-        "photon",
-        "avalanche",
-        "diode",
-        "arrays",
-        "data"
-      ],
-      "digest": "单光子雪崩二极管（SPAD）阵列除用于激光雷达外，现已被证实可在环境可见光下作为通用成像与感知相机使用。该技术通过捕捉单个光子实现更锐利的图像，其原理基于理查德·费曼路径积分公式的量子力学基础，相关实验室测量已确认这一理论预测。",
-      "digestTitle": "单光子雪崩二极管阵列实现环境光通用成像",
       "rank": 9,
       "trend": "new",
       "trendPct": null,
@@ -593,66 +702,69 @@
     },
     {
       "terms": [
-        "agriculture",
-        "imaging",
-        "microscopy",
-        "operando",
-        "optical",
-        "optoelectronic",
-        "perovskite",
-        "precision",
-        "situ",
-        "spectroscopy",
-        "work"
+        "conditions",
+        "defects",
+        "heterogeneous",
+        "interactions",
+        "large-scale",
+        "machine",
+        "metamaterials",
+        "more",
+        "nonlocal",
+        "realistic",
+        "scientific",
+        "semiconductor",
+        "temperature",
+        "track"
       ],
       "source_count": 2,
       "signal_count": 1,
       "sources": [
-        "Laser Focus World",
-        "Physics World（关键词过滤）"
+        "Phys.org 物理新闻",
+        "arXiv 光学与光子学 (physics.optics)"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-02T01:32:00.094060+00:00",
+      "latest_at": "2026-11-02T20:23:43.516091+00:00",
       "representative": {
-        "title": "Optical imaging and spectroscopy enhance precision agriculture",
-        "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
-        "source": "Laser Focus World",
-        "published_at": null,
-        "score": 50.1,
-        "summary": "Photonics provides new ways to measure crop condition, assess food quality, and control plant growth.",
-        "zh_full": "（无摘要，仅标题）光子学为测量作物状况、评估食品质量以及控制植物生长提供了新的方式，从而提升精准农业的精度。",
-        "llm_summary": "（无摘要，仅标题）光子学为测量作物状况、评估食品质量以及控制植物生长提供了新的方式，从而提升精准农业的精度。",
-        "llm_reason": "光子学赋能精准农业",
-        "density": "低"
+        "title": "Learning Nonlocal Interactions in Large-Scale Heterogeneous Metamaterials through Scientific Machine Learning",
+        "url": "https://arxiv.org/abs/2610.41887",
+        "source": "arXiv 光学与光子学 (physics.optics)",
+        "published_at": "2026-11-02T05:00:00+00:00",
+        "score": 65.2,
+        "summary": "arXiv:2610.41887v1 Announce Type: cross Abstract: In multiscale systems, nonlocal interactions among spatially distributed constituents can unlock collective, potentially emergent behavior irreducible to individual constituent responses. Be",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2610.41887",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
       },
       "folded_count": 1,
-      "title": "Optical imaging and spectroscopy enhance precision agriculture",
-      "id": "2788fec2119d",
+      "title": "Learning Nonlocal Interactions in Large-Scale Heterogeneous Metamaterials through Scientific Machine Learning",
+      "id": "594e40b87615",
       "links": [
         {
-          "title": "Optical imaging and spectroscopy enhance precision agriculture",
-          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
-          "source": "Laser Focus World",
-          "score": 50.1,
-          "published_at": null
+          "title": "Learning Nonlocal Interactions in Large-Scale Heterogeneous Metamaterials through Scientific Machine Learning",
+          "url": "https://arxiv.org/abs/2610.41887",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 65.2,
+          "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
-          "title": "In situ and operando optical microscopy and spectroscopy: investigating perovskite optoelectronic devices at work",
-          "url": "https://physicsworld.com/a/in-situ-and-operando-optical-microscopy-and-spectroscopy-investigating-perovskite-optoelectronic-devices-at-work/",
-          "source": "Physics World（关键词过滤）",
-          "score": 24.7,
-          "published_at": "2026-09-25T07:13:41+00:00"
+          "title": "Machine learning helps track semiconductor defects under more realistic temperature conditions",
+          "url": "https://phys.org/news/2026-10-machine-track-semiconductor-defects-realistic.html",
+          "source": "Phys.org 物理新闻",
+          "score": 54.0,
+          "published_at": "2026-10-29T20:50:05+00:00"
         }
       ],
       "top_terms": [
-        "optical",
-        "spectroscopy",
-        "imaging",
-        "precision",
-        "agriculture"
+        "machine",
+        "nonlocal",
+        "interactions",
+        "scale",
+        "heterogeneous"
       ],
-      "digest": "光学成像与光谱技术正被用于提升精准农业，可测量作物状况、评估食品质量并控制植物生长。同时，原位和工况光学显微与光谱技术被用于研究钙钛矿光电器件在工作状态下的行为，相关网络研讨会定于2026年11月3日举行。",
-      "digestTitle": "光学成像与光谱技术助力精准农业与器件研究",
       "rank": 10,
       "trend": "new",
       "trendPct": null,

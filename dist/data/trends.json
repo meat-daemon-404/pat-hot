@@ -1,72 +1,72 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T01:32:00.094060+00:00",
-  "weekStart": "2026-10-27",
+  "generatedAt": "2026-11-02T20:23:43.516091+00:00",
+  "weekStart": "2026-10-28",
   "windowDays": 7,
-  "windowStart": "2026-10-27",
-  "windowEnd": "2026-11-02",
-  "prevStart": "2026-10-20",
-  "prevEnd": "2026-10-26",
+  "windowStart": "2026-10-28",
+  "windowEnd": "2026-11-03",
+  "prevStart": "2026-10-21",
+  "prevEnd": "2026-10-27",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4607.0,
-      "lastWeek": 4103.6,
-      "deltaPct": 12.3
+      "thisWeek": 4317.0,
+      "lastWeek": 4614.5,
+      "deltaPct": -6.4
     },
     {
       "category": "光通信",
-      "thisWeek": 3306.1,
-      "lastWeek": 3050.6,
-      "deltaPct": 8.4
-    },
-    {
-      "category": "产业与资本",
-      "thisWeek": 2977.6,
-      "lastWeek": 3244.3,
-      "deltaPct": -8.2
+      "thisWeek": 3176.1,
+      "lastWeek": 3243.6,
+      "deltaPct": -2.1
     },
     {
       "category": "科研进展",
-      "thisWeek": 2917.4,
-      "lastWeek": 2769.5,
-      "deltaPct": 5.3
+      "thisWeek": 3100.1,
+      "lastWeek": 2877.0,
+      "deltaPct": 7.8
+    },
+    {
+      "category": "产业与资本",
+      "thisWeek": 2977.8,
+      "lastWeek": 3236.7,
+      "deltaPct": -8.0
     },
     {
       "category": "其他",
-      "thisWeek": 2611.1,
-      "lastWeek": 2353.1,
-      "deltaPct": 11.0
-    },
-    {
-      "category": "通信与算力",
-      "thisWeek": 1975.4,
-      "lastWeek": 2523.4,
-      "deltaPct": -21.7
+      "thisWeek": 2600.9,
+      "lastWeek": 2395.3,
+      "deltaPct": 8.6
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1954.3,
-      "lastWeek": 1878.9,
-      "deltaPct": 4.0
+      "thisWeek": 1862.0,
+      "lastWeek": 2167.2,
+      "deltaPct": -14.1
+    },
+    {
+      "category": "通信与算力",
+      "thisWeek": 1834.6,
+      "lastWeek": 2529.3,
+      "deltaPct": -27.5
     },
     {
       "category": "显示与面板",
-      "thisWeek": 965.2,
-      "lastWeek": 921.0,
-      "deltaPct": 4.8
+      "thisWeek": 1150.8,
+      "lastWeek": 984.9,
+      "deltaPct": 16.8
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 867.5,
-      "lastWeek": 821.0,
-      "deltaPct": 5.7
+      "thisWeek": 820.7,
+      "lastWeek": 867.8,
+      "deltaPct": -5.4
     },
     {
       "category": "光传感与激光雷达",
       "thisWeek": 423.9,
-      "lastWeek": 368.2,
-      "deltaPct": 15.1
+      "lastWeek": 322.0,
+      "deltaPct": 31.6
     },
     {
       "category": "光伏与新能源",
@@ -77,22 +77,28 @@
   ],
   "newTopics": [
     {
-      "topic_id": "2e0a41654e17",
-      "title": "湖北通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动",
-      "score": 861.2,
-      "days": 6
+      "topic_id": "4d426ee1e207",
+      "title": "工业和信息化部等八部门印发《产业基础能力提升“十五五”规划》",
+      "score": 258.4,
+      "days": 4
+    },
+    {
+      "topic_id": "b13aaf6cc0b9",
+      "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
+      "score": 233.7,
+      "days": 5
+    },
+    {
+      "topic_id": "eb6bf18d6672",
+      "title": "Photonic Crystal Integrated Graphene-Silicon Schottky Diodes for Resonant Infrared Photodetection",
+      "score": 228.6,
+      "days": 2
     },
     {
       "topic_id": "cf711748e825",
       "title": "Photonics Hot List: October 30, 2026",
       "score": 217.1,
       "days": 2
-    },
-    {
-      "topic_id": "4d426ee1e207",
-      "title": "工业和信息化部等八部门印发《产业基础能力提升“十五五”规划》",
-      "score": 193.8,
-      "days": 3
     },
     {
       "topic_id": "1acf2d758012",
@@ -113,27 +119,21 @@
       "days": 2
     },
     {
-      "topic_id": "b13aaf6cc0b9",
-      "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
-      "score": 185.6,
+      "topic_id": "e8992eb39edc",
+      "title": "Photonics Hot List: October 30, 2026",
+      "score": 177.7,
+      "days": 1
+    },
+    {
+      "topic_id": "07cc46da5b4f",
+      "title": "Shaping light to see deeper inside biological tissue",
+      "score": 140.8,
       "days": 4
     },
     {
-      "topic_id": "d6361a026b9d",
-      "title": "Photonics Hot List: October 23, 2026",
-      "score": 164.3,
-      "days": 1
-    },
-    {
-      "topic_id": "d2d32c40f2a6",
-      "title": "Surface Functionalization with Lasers: from Nanostructures to Applications",
-      "score": 123.4,
-      "days": 1
-    },
-    {
-      "topic_id": "66387e71493e",
-      "title": "Physical Adjoint Learning in Wave Systems with Asymmetric Couplings",
-      "score": 123.4,
+      "topic_id": "a0533606a593",
+      "title": "Non-contact temperature sensing and optical scatter in cryogenically-cooled crystalline silicon",
+      "score": 123.8,
       "days": 1
     }
   ],
@@ -175,22 +175,22 @@
       "score": 511.5
     },
     {
+      "topic_id": "5bc32d86db90",
+      "title": "大招齐发，英特尔直击网络转型",
+      "days": 13,
+      "score": 1442.6
+    },
+    {
       "topic_id": "b0bbcd7062bb",
       "title": "广和通上半年营收37.78亿元增长1.92% 净利润同比下降71.63%",
       "days": 13,
       "score": 1183.0
     },
     {
-      "topic_id": "5bc32d86db90",
-      "title": "大招齐发，英特尔直击网络转型",
-      "days": 12,
-      "score": 1334.7
-    },
-    {
       "topic_id": "569c89c31ce9",
       "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
-      "days": 12,
-      "score": 577.2
+      "days": 11,
+      "score": 529.1
     },
     {
       "topic_id": "bc72d5d904af",

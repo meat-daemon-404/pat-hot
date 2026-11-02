@@ -1,58 +1,54 @@
 {
-  "generatedAt": "2026-11-02T01:32:00.094060+00:00",
-  "total": 124,
-  "last24h": 7,
-  "last7d": 68,
+  "generatedAt": "2026-11-02T20:23:43.516091+00:00",
+  "total": 149,
+  "last24h": 44,
+  "last7d": 93,
   "topicCount": 10,
   "byCategory": [
     {
       "category": "引力波",
-      "total": 5,
+      "total": 6,
+      "last24h": 1,
+      "last7d": 1
+    },
+    {
+      "category": "恒星与星际介质",
+      "total": 17,
+      "last24h": 6,
+      "last7d": 12
+    },
+    {
+      "category": "星系与宇宙学",
+      "total": 18,
+      "last24h": 13,
+      "last7d": 16
+    },
+    {
+      "category": "太阳与空间物理",
+      "total": 3,
       "last24h": 0,
       "last7d": 0
     },
     {
-      "category": "恒星与星际介质",
-      "total": 14,
-      "last24h": 0,
-      "last7d": 9
-    },
-    {
-      "category": "星系与宇宙学",
-      "total": 6,
-      "last24h": 0,
-      "last7d": 4
-    },
-    {
-      "category": "太阳与空间物理",
-      "total": 4,
-      "last24h": 0,
-      "last7d": 1
-    },
-    {
       "category": "深空探测",
-      "total": 30,
-      "last24h": 3,
-      "last7d": 15
+      "total": 32,
+      "last24h": 4,
+      "last7d": 17
     },
     {
       "category": "科研进展",
-      "total": 16,
-      "last24h": 0,
-      "last7d": 8
+      "total": 23,
+      "last24h": 12,
+      "last7d": 15
     },
     {
       "category": "其他",
-      "total": 49,
-      "last24h": 4,
-      "last7d": 31
+      "total": 50,
+      "last24h": 8,
+      "last7d": 32
     }
   ],
   "byDay": [
-    {
-      "date": "2026-10-20",
-      "count": 1
-    },
     {
       "date": "2026-10-21",
       "count": 0
@@ -87,11 +83,11 @@
     },
     {
       "date": "2026-10-29",
-      "count": 13
+      "count": 5
     },
     {
       "date": "2026-10-30",
-      "count": 33
+      "count": 23
     },
     {
       "date": "2026-10-31",
@@ -99,53 +95,62 @@
     },
     {
       "date": "2026-11-01",
-      "count": 9
+      "count": 8
     },
     {
       "date": "2026-11-02",
-      "count": 1
+      "count": 35
+    },
+    {
+      "date": "2026-11-03",
+      "count": 10
     }
   ],
   "bySource": [
     {
       "source": "Phys.org 太空新闻",
       "count": 25,
-      "latestAt": "2026-11-02T01:32:00.094060+00:00"
+      "latestAt": "2026-11-02T20:23:43.516091+00:00"
+    },
+    {
+      "source": "arXiv astro-ph.CO 论文速递",
+      "count": 25,
+      "latestAt": "2026-11-02T20:23:43.516091+00:00"
     },
     {
       "source": "MIT News 太空探索",
       "count": 25,
-      "latestAt": "2026-11-02T01:32:00.094060+00:00"
+      "latestAt": "2026-11-02T20:23:43.516091+00:00"
     },
     {
       "source": "Universe Today",
       "count": 19,
-      "latestAt": "2026-11-02T01:32:00.094060+00:00"
+      "latestAt": "2026-11-02T20:23:43.516091+00:00"
     },
     {
       "source": "ESA 空间科学",
       "count": 15,
-      "latestAt": "2026-11-02T01:32:00.094060+00:00"
-    },
-    {
-      "source": "Astronomy Magazine",
-      "count": 10,
-      "latestAt": "2026-11-02T01:32:00.094060+00:00"
+      "latestAt": "2026-11-02T20:23:43.516091+00:00"
     },
     {
       "source": "NASA 快讯",
       "count": 10,
-      "latestAt": "2026-11-02T01:32:00.094060+00:00"
+      "latestAt": "2026-11-02T20:23:43.516091+00:00"
+    },
+    {
+      "source": "Astronomy Magazine",
+      "count": 10,
+      "latestAt": "2026-11-02T20:23:43.516091+00:00"
     },
     {
       "source": "New Scientist 太空",
       "count": 10,
-      "latestAt": "2026-11-02T01:32:00.094060+00:00"
+      "latestAt": "2026-11-02T20:23:43.516091+00:00"
     },
     {
       "source": "LIGO",
       "count": 10,
-      "latestAt": "2026-11-02T01:32:00.094060+00:00"
+      "latestAt": "2026-11-02T20:23:43.516091+00:00"
     }
   ]
 }
