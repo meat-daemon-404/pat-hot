@@ -1,42 +1,42 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T03:30:14.961653+00:00",
-  "weekStart": "2026-10-28",
+  "generatedAt": "2026-11-03T17:52:28.486394+00:00",
+  "weekStart": "2026-10-29",
   "windowDays": 7,
-  "windowStart": "2026-10-28",
-  "windowEnd": "2026-11-03",
-  "prevStart": "2026-10-21",
-  "prevEnd": "2026-10-27",
+  "windowStart": "2026-10-29",
+  "windowEnd": "2026-11-04",
+  "prevStart": "2026-10-22",
+  "prevEnd": "2026-10-28",
   "categoryDelta": [
     {
       "category": "其他",
-      "thisWeek": 986.4,
-      "lastWeek": 1049.5,
-      "deltaPct": -6.0
+      "thisWeek": 885.0,
+      "lastWeek": 1056.3,
+      "deltaPct": -16.2
     },
     {
       "category": "科研进展",
-      "thisWeek": 818.4,
-      "lastWeek": 1833.0,
-      "deltaPct": -55.4
+      "thisWeek": 513.1,
+      "lastWeek": 1971.9,
+      "deltaPct": -74.0
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 453.2,
-      "lastWeek": 384.7,
-      "deltaPct": 17.8
+      "thisWeek": 358.7,
+      "lastWeek": 289.9,
+      "deltaPct": 23.7
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 280.6,
-      "lastWeek": 716.9,
-      "deltaPct": -60.9
+      "thisWeek": 183.2,
+      "lastWeek": 674.5,
+      "deltaPct": -72.8
     },
     {
       "category": "高能与粒子物理",
       "thisWeek": 122.1,
-      "lastWeek": 366.3,
-      "deltaPct": -66.7
+      "lastWeek": 170.8,
+      "deltaPct": -28.5
     },
     {
       "category": "等离子体",
@@ -59,42 +59,6 @@
       "days": 1
     },
     {
-      "topic_id": "a02cd8f01a53",
-      "title": "Diagonal, Switching, and Locally Optimal Unraveling for efficient quantum trajectories in metastable open quantum systems",
-      "score": 134.3,
-      "days": 1
-    },
-    {
-      "topic_id": "cb27bdf7a532",
-      "title": "Optical Quantum Memory Processing for Quantum Hashing",
-      "score": 107.9,
-      "days": 2
-    },
-    {
-      "topic_id": "41ce72c68b5e",
-      "title": "Scientists uncover new way to control magnetism and topology using light in atomically thin materials",
-      "score": 91.6,
-      "days": 1
-    },
-    {
-      "topic_id": "d5db0656aa9e",
-      "title": "An algebraic characterisation of n-qubit pure-state invariants",
-      "score": 87.4,
-      "days": 1
-    },
-    {
-      "topic_id": "a3358ac7d732",
-      "title": "Quantum circuit simulation with high-order optical tensor processing",
-      "score": 87.4,
-      "days": 1
-    },
-    {
-      "topic_id": "752e27473b6d",
-      "title": "Probability bounds on trajectory-level exceedances of quantum speed limits under continuous-measurement feedback",
-      "score": 87.4,
-      "days": 1
-    },
-    {
       "topic_id": "431b049c16bc",
       "title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks",
       "score": 87.4,
@@ -110,6 +74,42 @@
       "topic_id": "c9c29423cce7",
       "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
       "score": 60.3,
+      "days": 1
+    },
+    {
+      "topic_id": "038552fe9bde",
+      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
+      "score": 60.2,
+      "days": 1
+    },
+    {
+      "topic_id": "ad8579469f19",
+      "title": "Theoretical method uses light to locate anyons, potential quantum computing building blocks",
+      "score": 57.5,
+      "days": 1
+    },
+    {
+      "topic_id": "e9c49519b300",
+      "title": "Four superconducting cables link two large quantum processors into one",
+      "score": 51.3,
+      "days": 1
+    },
+    {
+      "topic_id": "f66e4b1cfdf2",
+      "title": "Electronic-Structure-Informed Many-Body Encoding for Quantum Machine Learning",
+      "score": 47.0,
+      "days": 1
+    },
+    {
+      "topic_id": "cb27bdf7a532",
+      "title": "Optical Quantum Memory Processing for Quantum Hashing",
+      "score": 47.0,
+      "days": 1
+    },
+    {
+      "topic_id": "db4a1640ca56",
+      "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
+      "score": 37.1,
       "days": 1
     }
   ],

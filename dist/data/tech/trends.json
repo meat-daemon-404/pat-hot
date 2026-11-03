@@ -1,116 +1,98 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T03:30:14.961653+00:00",
-  "weekStart": "2026-10-28",
+  "generatedAt": "2026-11-03T17:52:28.486394+00:00",
+  "weekStart": "2026-10-29",
   "windowDays": 7,
-  "windowStart": "2026-10-28",
-  "windowEnd": "2026-11-03",
-  "prevStart": "2026-10-21",
-  "prevEnd": "2026-10-27",
+  "windowStart": "2026-10-29",
+  "windowEnd": "2026-11-04",
+  "prevStart": "2026-10-22",
+  "prevEnd": "2026-10-28",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4539.2,
-      "lastWeek": 4614.5,
-      "deltaPct": -1.6
+      "thisWeek": 4526.4,
+      "lastWeek": 4656.6,
+      "deltaPct": -2.8
     },
     {
       "category": "光通信",
-      "thisWeek": 3148.4,
-      "lastWeek": 3243.6,
-      "deltaPct": -2.9
-    },
-    {
-      "category": "科研进展",
-      "thisWeek": 3098.1,
-      "lastWeek": 2877.0,
-      "deltaPct": 7.7
+      "thisWeek": 3289.1,
+      "lastWeek": 3096.0,
+      "deltaPct": 6.2
     },
     {
       "category": "产业与资本",
-      "thisWeek": 2977.4,
-      "lastWeek": 3236.7,
-      "deltaPct": -8.0
+      "thisWeek": 2874.4,
+      "lastWeek": 3240.3,
+      "deltaPct": -11.3
+    },
+    {
+      "category": "科研进展",
+      "thisWeek": 2793.5,
+      "lastWeek": 3123.3,
+      "deltaPct": -10.6
     },
     {
       "category": "其他",
-      "thisWeek": 2640.5,
-      "lastWeek": 2395.3,
-      "deltaPct": 10.2
-    },
-    {
-      "category": "光学元件与成像",
-      "thisWeek": 1848.2,
-      "lastWeek": 2167.2,
-      "deltaPct": -14.7
+      "thisWeek": 2572.2,
+      "lastWeek": 2298.5,
+      "deltaPct": 11.9
     },
     {
       "category": "通信与算力",
-      "thisWeek": 1844.1,
-      "lastWeek": 2529.3,
-      "deltaPct": -27.1
+      "thisWeek": 2003.0,
+      "lastWeek": 2162.9,
+      "deltaPct": -7.4
+    },
+    {
+      "category": "光学元件与成像",
+      "thisWeek": 1554.9,
+      "lastWeek": 2244.7,
+      "deltaPct": -30.7
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1270.2,
-      "lastWeek": 984.9,
-      "deltaPct": 29.0
+      "thisWeek": 1393.2,
+      "lastWeek": 979.3,
+      "deltaPct": 42.3
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 820.7,
-      "lastWeek": 867.8,
-      "deltaPct": -5.4
+      "thisWeek": 741.3,
+      "lastWeek": 874.2,
+      "deltaPct": -15.2
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 423.9,
-      "lastWeek": 322.0,
-      "deltaPct": 31.6
+      "thisWeek": 368.1,
+      "lastWeek": 377.8,
+      "deltaPct": -2.6
     },
     {
       "category": "光伏与新能源",
       "thisWeek": 0,
-      "lastWeek": 110.8,
+      "lastWeek": 55.4,
       "deltaPct": -100.0
     }
   ],
   "newTopics": [
     {
+      "topic_id": "cf711748e825",
+      "title": "Photonics Hot List: October 30, 2026",
+      "score": 381.4,
+      "days": 3
+    },
+    {
       "topic_id": "4d426ee1e207",
       "title": "工业和信息化部等八部门印发《产业基础能力提升“十五五”规划》",
-      "score": 258.4,
-      "days": 4
+      "score": 323.0,
+      "days": 5
     },
     {
       "topic_id": "21a0c8421f1a",
       "title": "Photonics Hot List: October 30, 2026",
       "score": 252.8,
       "days": 2
-    },
-    {
-      "topic_id": "cf711748e825",
-      "title": "Photonics Hot List: October 30, 2026",
-      "score": 217.1,
-      "days": 2
-    },
-    {
-      "topic_id": "8fdd6259eb82",
-      "title": "Photonic Crystal Integrated Graphene-Silicon Schottky Diodes for Resonant Infrared Photodetection",
-      "score": 204.8,
-      "days": 2
-    },
-    {
-      "topic_id": "1acf2d758012",
-      "title": "Channel-Differentiated Topological Charge Flips and Formation of Janus Bound States in the Continuum in Single-Layer Photonic Lattices",
-      "score": 189.6,
-      "days": 1
-    },
-    {
-      "topic_id": "983065fbf898",
-      "title": "PODCAST: Meet Andrew Strikwerda, COMSOL",
-      "score": 188.4,
-      "days": 4
     },
     {
       "topic_id": "a360e8d874a8",
@@ -127,13 +109,31 @@
     {
       "topic_id": "07cc46da5b4f",
       "title": "Shaping light to see deeper inside biological tissue",
-      "score": 140.8,
-      "days": 4
+      "score": 176.0,
+      "days": 5
     },
     {
-      "topic_id": "89e2699e6bc5",
-      "title": "High-Efficiency Graphene Oxide Moir\\'e Lenses Enabled by Cyclic Self-Assembly and Laser Nanoprinting",
-      "score": 123.4,
+      "topic_id": "84e3b972f12b",
+      "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
+      "score": 143.6,
+      "days": 1
+    },
+    {
+      "topic_id": "8fdd6259eb82",
+      "title": "Photonic Crystal Integrated Graphene-Silicon Schottky Diodes for Resonant Infrared Photodetection",
+      "score": 142.8,
+      "days": 1
+    },
+    {
+      "topic_id": "21b8217f8177",
+      "title": "零跑A05,激光雷达版落地不到9万!",
+      "score": 131.0,
+      "days": 1
+    },
+    {
+      "topic_id": "d90170ba9ee1",
+      "title": "光模块下跌根源找到了",
+      "score": 130.8,
       "days": 1
     }
   ],
@@ -148,7 +148,7 @@
       "topic_id": "9f8710ab3d29",
       "title": "华工科技：2026年上半年，光互联业务营收38.03亿元",
       "days": 15,
-      "score": 1477.7
+      "score": 1420.9
     },
     {
       "topic_id": "ff9baccacead",
@@ -160,13 +160,13 @@
       "topic_id": "3db37b135ae4",
       "title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼",
       "days": 15,
-      "score": 910.6
+      "score": 879.2
     },
     {
       "topic_id": "8579455b5d54",
       "title": "华为全联接大会2026全光峰会举办，F5G-A全光网加速AI普惠千行万业",
       "days": 15,
-      "score": 819.0
+      "score": 773.5
     },
     {
       "topic_id": "b60b7f7c9968",
@@ -175,16 +175,16 @@
       "score": 511.5
     },
     {
-      "topic_id": "5bc32d86db90",
-      "title": "大招齐发，英特尔直击网络转型",
-      "days": 13,
-      "score": 1442.6
-    },
-    {
       "topic_id": "b0bbcd7062bb",
       "title": "广和通上半年营收37.78亿元增长1.92% 净利润同比下降71.63%",
-      "days": 13,
-      "score": 1183.0
+      "days": 14,
+      "score": 1274.0
+    },
+    {
+      "topic_id": "5bc32d86db90",
+      "title": "大招齐发，英特尔直击网络转型",
+      "days": 12,
+      "score": 1329.0
     },
     {
       "topic_id": "569c89c31ce9",

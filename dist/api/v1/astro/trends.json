@@ -1,60 +1,60 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T03:30:14.961653+00:00",
-  "weekStart": "2026-10-28",
+  "generatedAt": "2026-11-03T17:52:28.486394+00:00",
+  "weekStart": "2026-10-29",
   "windowDays": 7,
-  "windowStart": "2026-10-28",
-  "windowEnd": "2026-11-03",
-  "prevStart": "2026-10-21",
-  "prevEnd": "2026-10-27",
+  "windowStart": "2026-10-29",
+  "windowEnd": "2026-11-04",
+  "prevStart": "2026-10-22",
+  "prevEnd": "2026-10-28",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1712.0,
-      "lastWeek": 2326.1,
-      "deltaPct": -26.4
-    },
-    {
-      "category": "其他",
-      "thisWeek": 1650.8,
-      "lastWeek": 1458.9,
-      "deltaPct": 13.2
+      "thisWeek": 1468.1,
+      "lastWeek": 2396.1,
+      "deltaPct": -38.7
     },
     {
       "category": "深空探测",
-      "thisWeek": 1620.3,
-      "lastWeek": 1699.4,
-      "deltaPct": -4.7
+      "thisWeek": 1457.4,
+      "lastWeek": 1749.6,
+      "deltaPct": -16.7
     },
     {
-      "category": "星系与宇宙学",
-      "thisWeek": 911.0,
-      "lastWeek": 1458.7,
-      "deltaPct": -37.5
+      "category": "其他",
+      "thisWeek": 1409.3,
+      "lastWeek": 1471.7,
+      "deltaPct": -4.2
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 904.7,
-      "lastWeek": 1432.5,
-      "deltaPct": -36.8
+      "thisWeek": 934.2,
+      "lastWeek": 1253.7,
+      "deltaPct": -25.5
+    },
+    {
+      "category": "星系与宇宙学",
+      "thisWeek": 624.2,
+      "lastWeek": 1456.7,
+      "deltaPct": -57.1
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 234.3,
-      "lastWeek": 681.3,
-      "deltaPct": -65.6
-    },
-    {
-      "category": "系外行星",
-      "thisWeek": 65.7,
-      "lastWeek": 161.2,
-      "deltaPct": -59.2
+      "thisWeek": 62.3,
+      "lastWeek": 742.4,
+      "deltaPct": -91.6
     },
     {
       "category": "引力波",
       "thisWeek": 50.0,
       "lastWeek": 284.3,
       "deltaPct": -82.4
+    },
+    {
+      "category": "系外行星",
+      "thisWeek": 0,
+      "lastWeek": 176.6,
+      "deltaPct": -100.0
     }
   ],
   "newTopics": [
@@ -67,8 +67,8 @@
     {
       "topic_id": "25a8b115a98d",
       "title": "What’s Up: November 2026 Skywatching Tips from NASA",
-      "score": 290.9,
-      "days": 2
+      "score": 218.0,
+      "days": 1
     },
     {
       "topic_id": "5740c82a8575",
@@ -83,33 +83,33 @@
       "days": 1
     },
     {
+      "topic_id": "e8e869f3d20d",
+      "title": "What’s Up: November 2026 Skywatching Tips from NASA",
+      "score": 200.5,
+      "days": 1
+    },
+    {
       "topic_id": "afcfb9061cba",
       "title": "When precise inference is wrong: Diagnosing model misspecification with applications to cosmic dawn and reionisation",
       "score": 135.6,
       "days": 1
     },
     {
-      "topic_id": "3ce6415b21e5",
-      "title": "High-orbit satellites could light the way for travel to the moon",
-      "score": 130.5,
-      "days": 1
-    },
-    {
-      "topic_id": "0ff29c0823d4",
-      "title": "NASA’s Hubble Uncovers Case of Missing Oxygen in Nearby Dwarf Galaxies",
-      "score": 121.8,
-      "days": 2
-    },
-    {
-      "topic_id": "72298c2e24ff",
-      "title": "The Rubin Observatory Finds Its First Dwarf Planet Candidate",
-      "score": 121.3,
+      "topic_id": "6201ba6cd449",
+      "title": "JWST may have found where heavy black hole seeds formed",
+      "score": 124.6,
       "days": 1
     },
     {
       "topic_id": "2d5b99d309a6",
       "title": "This Ancient Meteorite Hints at Mars' Warm, Wet Past",
       "score": 120.8,
+      "days": 2
+    },
+    {
+      "topic_id": "c0596fc4c46d",
+      "title": "Astronaut and Earth",
+      "score": 115.6,
       "days": 2
     },
     {

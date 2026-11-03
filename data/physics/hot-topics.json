@@ -1,248 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T03:30:14.961653+00:00",
-  "count": 10,
+  "generatedAt": "2026-11-03T17:52:28.486394+00:00",
+  "count": 9,
   "items": [
-    {
-      "terms": [
-        "computing",
-        "error-resistant",
-        "experiment",
-        "foundation",
-        "hashing",
-        "memory",
-        "more",
-        "optical",
-        "potentially",
-        "processing",
-        "quantum",
-        "supports",
-        "theoretical"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 42.0,
-      "latest_at": "2026-11-03T03:30:14.961653+00:00",
-      "representative": {
-        "title": "Optical Quantum Memory Processing for Quantum Hashing",
-        "url": "https://arxiv.org/abs/2610.40904",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-11-02T05:00:00+00:00",
-        "score": 47.0,
-        "summary": "arXiv:2610.40904v1 Announce Type: new Abstract: Sender authentication is an important requirement for secure quantum communication networks. We propose programmable photon-echo quantum memory processing of a multi-time-bin photonic qudit fo",
-        "zh_full": "发送者认证是安全量子通信网络的重要需求。本文提出一种可编程光子回波量子存储处理方案，用于多时间箱光子qudit，以实现基于量子哈希的验证协议。在该方案中，发送者（Alice）利用量子存储器，通过将单个存储的光子波包转换为可编程光子qudit来生成量子哈希态。接收者（Bob）的存储器根据相位编码，将接收到的时箱光子qudit相干映射到单一输出模式。该方案利用量子存储器的可编程性实现量子哈希验证，为量子通信中的认证机制提供了新的实现途径。",
-        "refs": {
-          "arxiv": "2610.40904",
-          "via": "feed_text",
-          "confidence": "verified"
-        },
-        "llm_summary": "本文提出利用可编程光子回波量子存储器处理多时间箱光子qudit，实现基于量子哈希的发送者认证协议，为安全量子通信网络提供新的认证方案。",
-        "llm_reason": "提出量子哈希认证的新实现方案",
-        "density": "中"
-      },
-      "folded_count": 1,
-      "title": "Optical Quantum Memory Processing for Quantum Hashing",
-      "id": "cb27bdf7a532",
-      "links": [
-        {
-          "title": "Experiment supports theoretical foundation for potentially more error-resistant quantum computing",
-          "url": "https://phys.org/news/2026-11-theoretical-foundation-potentially-error-resistant.html",
-          "source": "Phys.org 物理新闻",
-          "score": 60.9,
-          "published_at": "2026-11-02T18:30:01+00:00"
-        },
-        {
-          "title": "Optical Quantum Memory Processing for Quantum Hashing",
-          "url": "https://arxiv.org/abs/2610.40904",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.0,
-          "published_at": "2026-11-02T05:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "quantum",
-        "experiment",
-        "supports",
-        "theoretical",
-        "foundation"
-      ],
-      "digest": "研究人员通过实验验证了拓扑量子计算的理论基础，该理论认为特定量子态比传统量子态更抗局部干扰，有望降低量子计算中的错误率。实验支持了拓扑量子计算作为更抗误差存储方案的可行性，但尚未证明其在实际量子计算中的最终效果。",
-      "digestTitle": "拓扑量子计算实验验证抗误差理论基础",
-      "rank": 1,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "anomaly",
-        "antenna",
-        "chern",
-        "detection",
-        "edge",
-        "electromagnetic",
-        "embedded",
-        "evaluation",
-        "finite-element",
-        "fractional",
-        "insulator",
-        "laughlin-like",
-        "linear",
-        "maintenance",
-        "metrics",
-        "optimization",
-        "pipeline",
-        "predictive",
-        "preparation",
-        "processor",
-        "quantum",
-        "solver",
-        "superconducting",
-        "trained"
-      ],
-      "source_count": 1,
-      "signal_count": 3,
-      "sources": [
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 34.5,
-      "latest_at": "2026-11-03T03:30:14.961653+00:00",
-      "representative": {
-        "title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver",
-        "url": "https://arxiv.org/abs/2610.40693",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-11-02T05:00:00+00:00",
-        "score": 45.2,
-        "summary": "arXiv:2610.40693v1 Announce Type: new Abstract: Electromagnetic analysis based on the finite element method is widely used in antenna design. At higher frequencies, however, the required mesh refinement makes solving large sparse linear sys",
-        "zh_full": "基于有限元法的电磁分析在天线设计中广泛应用。然而在较高频率下，所需的网格细化使得求解大型稀疏线性系统成为计算成本的主要来源。量子线性系统求解器有望加速这一步骤，但其输出是叠加态：重构经典解向量的所有分量将丧失量子加速优势。已有研究提出了获取散射等物理量的方法，但尚未解决完整重构问题。本文对量子线性系统求解器在天线性能指标评估中的应用进行了有限元电磁分析，探讨了如何在不完全重构解向量的情况下提取天线性能指标，以保持量子加速优势。该研究为量子计算在电磁仿真中的应用提供了新的思路。",
-        "refs": {
-          "arxiv": "2610.40693",
-          "via": "feed_text",
-          "confidence": "verified"
-        },
-        "llm_summary": "本文研究量子线性系统求解器在天线有限元电磁分析中的应用，探讨如何在不重构完整解向量的情况下评估天线性能指标，以保持量子加速优势。",
-        "llm_reason": "探索量子求解器在天线分析中的应用",
-        "density": "中"
-      },
-      "folded_count": 0,
-      "title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver",
-      "id": "cafa9e30b66d",
-      "links": [
-        {
-          "title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver",
-          "url": "https://arxiv.org/abs/2610.40693",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 45.2,
-          "published_at": "2026-11-02T05:00:00+00:00"
-        },
-        {
-          "title": "Predictive Maintenance at the Edge: An Embedded Anomaly Detection Pipeline Trained with Quantum Optimization",
-          "url": "https://arxiv.org/abs/2610.40848",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 45.2,
-          "published_at": "2026-11-02T05:00:00+00:00"
-        },
-        {
-          "title": "Preparation of a Laughlin-like fractional Chern insulator on a superconducting quantum processor",
-          "url": "https://arxiv.org/abs/2610.41017",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 45.2,
-          "published_at": "2026-11-02T05:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "quantum",
-        "finite",
-        "element",
-        "electromagnetic",
-        "evaluation"
-      ],
-      "rank": 2,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 34.5,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "conditions",
-        "defects",
-        "electronic-structure-informed",
-        "encoding",
-        "machine",
-        "many-body",
-        "more",
-        "quantum",
-        "realistic",
-        "semiconductor",
-        "temperature",
-        "track"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-11-03T03:30:14.961653+00:00",
-      "representative": {
-        "title": "Electronic-Structure-Informed Many-Body Encoding for Quantum Machine Learning",
-        "url": "https://arxiv.org/abs/2610.40840",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-11-02T05:00:00+00:00",
-        "score": 47.0,
-        "summary": "arXiv:2610.40840v1 Announce Type: new Abstract: Data encoding is a central challenge in quantum machine learning (QML), as it determines how classical information is mapped onto quantum states and influences the expressive power and efficie",
-        "zh_full": "数据编码是量子机器学习（QML）中的核心挑战，因为它决定了经典信息如何映射到量子态上，并影响参数化量子电路的表达能力和效率。本文提出一种物理启发的量子编码策略，利用电子系统的内在多体结构，在输入描述符的体阶数与量子门的局域性之间建立直接对应关系。具体而言，从单一分子计算中获得的n体电子描述符被用于构造量子编码，使得描述符的体阶数直接决定量子门的局域性。这种编码方式将电子结构信息嵌入量子机器学习流程，从而可能提升参数化量子电路对分子体系性质的预测能力。该工作为量子机器学习在化学和材料科学中的应用提供了新的编码范式，有望在保持量子优势的同时提高编码效率。",
-        "refs": {
-          "arxiv": "2610.40840",
-          "via": "feed_text",
-          "confidence": "verified"
-        },
-        "llm_summary": "本文提出一种物理启发的量子编码策略，利用电子系统的多体结构，将n体电子描述符与量子门局域性直接对应，从而改进量子机器学习中的数据编码方式，提升参数化量子电路对分子性质的表达能力。",
-        "llm_reason": "提出物理启发的量子编码新策略",
-        "density": "高"
-      },
-      "folded_count": 1,
-      "title": "Electronic-Structure-Informed Many-Body Encoding for Quantum Machine Learning",
-      "id": "f66e4b1cfdf2",
-      "links": [
-        {
-          "title": "Electronic-Structure-Informed Many-Body Encoding for Quantum Machine Learning",
-          "url": "https://arxiv.org/abs/2610.40840",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.0,
-          "published_at": "2026-11-02T05:00:00+00:00"
-        },
-        {
-          "title": "Machine learning helps track semiconductor defects under more realistic temperature conditions",
-          "url": "https://phys.org/news/2026-10-machine-track-semiconductor-defects-realistic.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.0,
-          "published_at": "2026-10-29T20:50:05+00:00"
-        }
-      ],
-      "top_terms": [
-        "machine",
-        "track",
-        "semiconductor",
-        "defects",
-        "more"
-      ],
-      "rank": 3,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
     {
       "terms": [
         "air-stable",
@@ -276,7 +36,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-03T03:30:14.961653+00:00",
+      "latest_at": "2026-11-03T17:52:28.486394+00:00",
       "representative": {
         "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
         "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
@@ -296,7 +56,7 @@
           "title": "Ultracold atoms simulate hard-to-observe matter-antimatter pair production",
           "url": "https://phys.org/news/2026-10-ultracold-atoms-simulate-hard-antimatter.html",
           "source": "Phys.org 物理新闻",
-          "score": 61.0,
+          "score": 60.6,
           "published_at": "2026-10-31T17:00:01+00:00"
         },
         {
@@ -310,7 +70,7 @@
           "title": "Ultrathin metal layer boosts spin-related signals, opening a door to ultralow-power electronics",
           "url": "https://phys.org/news/2026-10-ultrathin-metal-layer-boosts-door.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.5,
+          "score": 35.3,
           "published_at": "2026-10-28T23:20:02+00:00"
         }
       ],
@@ -321,7 +81,72 @@
         "simulate",
         "hard"
       ],
-      "rank": 4,
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "cables",
+        "codes",
+        "four",
+        "link",
+        "processor",
+        "processors",
+        "quantum",
+        "superconducting",
+        "surface",
+        "teleportation",
+        "transition"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "Nature 量子物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-11-03T17:52:28.486394+00:00",
+      "representative": {
+        "title": "Teleportation transition of surface codes on a superconducting quantum processor",
+        "url": "https://www.nature.com/articles/s41567-026-03484-0",
+        "source": "Nature 量子物理",
+        "published_at": "2026-10-22T00:00:00+00:00",
+        "score": 52.7,
+        "summary": "",
+        "zh_full": null,
+        "llm_score": 32.5
+      },
+      "folded_count": 1,
+      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
+      "id": "038552fe9bde",
+      "links": [
+        {
+          "title": "Four superconducting cables link two large quantum processors into one",
+          "url": "https://phys.org/news/2026-10-superconducting-cables-link-large-quantum.html",
+          "source": "Phys.org 物理新闻",
+          "score": 59.1,
+          "published_at": "2026-10-31T16:00:02+00:00"
+        },
+        {
+          "title": "Teleportation transition of surface codes on a superconducting quantum processor",
+          "url": "https://www.nature.com/articles/s41567-026-03484-0",
+          "source": "Nature 量子物理",
+          "score": 52.7,
+          "published_at": "2026-10-22T00:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "superconducting",
+        "quantum",
+        "four",
+        "cables",
+        "link"
+      ],
+      "rank": 2,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -352,7 +177,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-03T03:30:14.961653+00:00",
+      "latest_at": "2026-11-03T17:52:28.486394+00:00",
       "representative": {
         "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
         "url": "https://news.mit.edu/2026/how-mit-grad-student-helped-young-scientists-test-their-experiment-cern-0828",
@@ -373,7 +198,7 @@
           "title": "How a 'tropical' shortcut could help particle collider experiments",
           "url": "https://phys.org/news/2026-10-tropical-shortcut-particle-collider.html",
           "source": "Phys.org 物理新闻",
-          "score": 58.9,
+          "score": 58.5,
           "published_at": "2026-10-30T19:40:01+00:00"
         },
         {
@@ -391,7 +216,7 @@
         "collider",
         "experiments"
       ],
-      "rank": 5,
+      "rank": 3,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -400,67 +225,129 @@
     },
     {
       "terms": [
-        "atoms",
-        "black",
-        "form",
-        "galaxies",
-        "helped",
-        "holes",
-        "lives",
-        "many",
-        "past",
-        "perturbs",
-        "quantum",
-        "research",
-        "shrink",
-        "vacuum"
+        "conditions",
+        "conductance",
+        "current-driven",
+        "defects",
+        "machine",
+        "molecular",
+        "more",
+        "realistic",
+        "rotation-enhanced",
+        "semiconductor",
+        "temperature",
+        "track"
       ],
       "source_count": 2,
       "signal_count": 0,
       "sources": [
-        "MIT News 物理",
+        "Nature 量子物理",
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-03T03:30:14.961653+00:00",
+      "latest_at": "2026-11-03T17:52:28.486394+00:00",
       "representative": {
-        "title": "Many black holes had past lives, new research shows",
-        "url": "https://news.mit.edu/2026/many-black-holes-had-past-lives-new-research-shows-0707",
-        "source": "MIT News 物理",
-        "published_at": "2026-07-07T16:00:00+00:00",
-        "score": 41.2,
-        "summary": "Physicists have found signs of colliding black holes that are themselves products of previous black hole smash-ups.",
-        "zh_full": "（无摘要，仅标题）",
-        "llm_summary": "（无摘要，仅标题）",
-        "density": "低"
+        "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
+        "url": "https://www.nature.com/articles/s41586-026-11312-x",
+        "source": "Nature 量子物理",
+        "published_at": "2026-10-22T00:00:00+00:00",
+        "score": 52.7,
+        "summary": "",
+        "zh_full": null,
+        "llm_score": 30.0
       },
       "folded_count": 1,
-      "title": "Many black holes had past lives, new research shows",
-      "id": "478e13f1f258",
+      "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
+      "id": "2c8163948e22",
       "links": [
         {
-          "title": "Many black holes had past lives, new research shows",
-          "url": "https://news.mit.edu/2026/many-black-holes-had-past-lives-new-research-shows-0707",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-07-07T16:00:00+00:00"
+          "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
+          "url": "https://www.nature.com/articles/s41586-026-11312-x",
+          "source": "Nature 量子物理",
+          "score": 52.7,
+          "published_at": "2026-10-22T00:00:00+00:00"
         },
         {
-          "title": "How the quantum vacuum perturbs atoms, could shrink black holes and may have helped form galaxies",
-          "url": "https://phys.org/news/2026-10-quantum-vacuum-perturbs-atoms-black.html",
+          "title": "Machine learning helps track semiconductor defects under more realistic temperature conditions",
+          "url": "https://phys.org/news/2026-10-machine-track-semiconductor-defects-realistic.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.0,
-          "published_at": "2026-10-29T21:30:05+00:00"
+          "score": 34.7,
+          "published_at": "2026-10-29T20:50:05+00:00"
         }
       ],
       "top_terms": [
-        "black",
-        "holes",
-        "quantum",
-        "vacuum",
-        "perturbs"
+        "machine",
+        "track",
+        "semiconductor",
+        "defects",
+        "more"
       ],
-      "rank": 6,
+      "rank": 4,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "blue",
+        "boosts",
+        "communication",
+        "dynamic",
+        "laser",
+        "laser-enhanced",
+        "quantum",
+        "range",
+        "sensing",
+        "sensitivity",
+        "underwater"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "Nature 量子物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-11-03T17:52:28.486394+00:00",
+      "representative": {
+        "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
+        "url": "https://www.nature.com/articles/s41467-026-78386-z",
+        "source": "Nature 量子物理",
+        "published_at": "2026-10-22T00:00:00+00:00",
+        "score": 52.7,
+        "summary": "",
+        "zh_full": null,
+        "llm_score": 31.0
+      },
+      "folded_count": 1,
+      "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
+      "id": "d4d359873906",
+      "links": [
+        {
+          "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
+          "url": "https://www.nature.com/articles/s41467-026-78386-z",
+          "source": "Nature 量子物理",
+          "score": 52.7,
+          "published_at": "2026-10-22T00:00:00+00:00"
+        },
+        {
+          "title": "A blue laser for underwater communication and sensing",
+          "url": "https://phys.org/news/2026-10-blue-laser-underwater-communication.html",
+          "source": "Phys.org 物理新闻",
+          "score": 34.7,
+          "published_at": "2026-10-29T18:40:08+00:00"
+        }
+      ],
+      "top_terms": [
+        "laser",
+        "sensing",
+        "blue",
+        "underwater",
+        "communication"
+      ],
+      "rank": 5,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -489,7 +376,7 @@
         "Quanta Magazine"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-03T03:30:14.961653+00:00",
+      "latest_at": "2026-11-03T17:52:28.486394+00:00",
       "representative": {
         "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
         "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
@@ -517,7 +404,7 @@
           "title": "How Do You Take a Picture of a Black Hole?",
           "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
           "source": "Quanta Magazine",
-          "score": 34.9,
+          "score": 34.7,
           "published_at": "2026-10-29T15:11:57+00:00"
         }
       ],
@@ -528,7 +415,7 @@
         "take",
         "picture"
       ],
-      "rank": 7,
+      "rank": 6,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -552,7 +439,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-03T03:30:14.961653+00:00",
+      "latest_at": "2026-11-03T17:52:28.486394+00:00",
       "representative": {
         "title": "New research shows a neutrino laser is impossible",
         "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
@@ -573,7 +460,7 @@
           "title": "Are we about to solve the greatest mystery of the neutrino?",
           "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 51.6,
+          "score": 51.2,
           "published_at": "2026-10-19T19:00:00+00:00"
         },
         {
@@ -591,7 +478,7 @@
         "impossible",
         "solve"
       ],
-      "rank": 8,
+      "rank": 7,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -614,7 +501,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-03T03:30:14.961653+00:00",
+      "latest_at": "2026-11-03T17:52:28.486394+00:00",
       "representative": {
         "title": "On the hunt for dark matter",
         "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
@@ -635,7 +522,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 47.3,
+          "score": 46.9,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
@@ -653,7 +540,7 @@
         "observe",
         "particle"
       ],
-      "rank": 9,
+      "rank": 8,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -688,7 +575,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-03T03:30:14.961653+00:00",
+      "latest_at": "2026-11-03T17:52:28.486394+00:00",
       "representative": {
         "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
         "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
@@ -708,7 +595,7 @@
           "title": "Key oddity of quantum physics may run even deeper than anticipated",
           "url": "https://www.newscientist.com/article/2596105-key-oddity-of-quantum-physics-may-run-even-deeper-than-anticipated/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 59.5,
+          "score": 59.1,
           "published_at": "2026-10-29T11:00:00+00:00"
         },
         {
@@ -722,7 +609,7 @@
           "title": "‘Reverse physics’ could help bridge the classical and quantum worlds",
           "url": "https://www.newscientist.com/article/2596640-reverse-physics-could-help-bridge-the-classical-and-quantum-worlds/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 36.1,
+          "score": 35.9,
           "published_at": "2026-10-30T09:00:00+00:00"
         }
       ],
@@ -733,9 +620,7 @@
         "watch",
         "electrons"
       ],
-      "digest": "一项新分析表明，量子力学的概率性可追溯到其数学基础的更深层次，远超此前预期。该研究由New Scientist报道，指出这一特性可能源于理论的基本结构。此外，MIT News报道了电子在量子材料中组装成共存相的研究，有助于理解超导等复杂现象。另一项“逆向物理学”研究尝试从数学出发重建物理定律，以连接经典与量子世界。",
-      "digestTitle": "量子力学概率性可追溯至数学基础",
-      "rank": 10,
+      "rank": 9,
       "trend": "new",
       "trendPct": null,
       "badges": [],
