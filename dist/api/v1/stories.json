@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T20:23:43.516091+00:00",
+  "generatedAt": "2026-11-03T03:30:14.961653+00:00",
   "count": 10,
   "items": [
     {
@@ -10,7 +10,7 @@
       "heat": 45.5,
       "sourceCount": 2,
       "signalCount": 3,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "C114中国通信网_监管",
         "工信部要闻"
@@ -41,9 +41,8 @@
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": "工业和信息化部于2026年3月部署信息通信业安全生产、网络运行安全及行风建设与纠风工作，要求各省通信管理局、基础电信企业、中国广电、中国铁塔、中国卫星网络集团及相关互联网企业落实全年安全防范与行风建设任务。3月11日，工信部召开全国电视电话会议，总结2025年行风建设和纠风工作情况，部署2026年重点工作；3月16日，工信部办公厅印发通知，就全年安全生产和网络运行安全工作作出系统部署。此前，湖北省通信管理局已联合省经济和信息化厅部署2026年新型工业化网络安全专项行动。",
-      "digestTitle": "工信部部署2026年信息通信业安全与行风工作",
-      "llmScore": 42.5
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "377179762f69",
@@ -52,7 +51,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "Laser Focus World",
         "arXiv 光学与光子学 (physics.optics)"
@@ -62,7 +61,7 @@
           "title": "Metadevices that compute: mathematical foundations and experimental implementations for neuromorphic nanophotonics",
           "url": "https://arxiv.org/abs/2610.40903",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.2,
+          "score": 65.0,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
@@ -73,11 +72,12 @@
           "published_at": null
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": "研究人员利用叉指状石墨烯超材料，在绝缘体上硅和互补金属氧化物半导体（CMOS）兼容平台上制成电吸收调制器（EAM）。该器件通过石墨烯与光的相互作用实现高速调制，为光子计算和通信提供了新的集成方案。",
-      "digestTitle": "石墨烯超材料实现电吸收调制器"
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 44.0
     },
     {
       "id": "cb27bdf7a532",
@@ -86,7 +86,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "arXiv 光学与光子学 (physics.optics)"
@@ -96,35 +96,69 @@
           "title": "Optical Quantum Memory Processing for Quantum Hashing",
           "url": "https://arxiv.org/abs/2610.40904",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.2,
+          "score": 65.0,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
           "title": "Experiment supports theoretical foundation for potentially more error-resistant quantum computing",
           "url": "https://phys.org/news/2026-11-theoretical-foundation-potentially-error-resistant.html",
           "source": "Phys.org 物理新闻",
-          "score": 56.6,
+          "score": 56.4,
           "published_at": "2026-11-02T18:30:01+00:00"
+        }
+      ],
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 46.5
+    },
+    {
+      "id": "a66ccb893ec8",
+      "title": "SNAP optics could speed up optical communications",
+      "status": "关注中",
+      "heat": 42.0,
+      "sourceCount": 2,
+      "signalCount": 2,
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
+      "sources": [
+        "Laser Focus World",
+        "Physics World（关键词过滤）"
+      ],
+      "links": [
+        {
+          "title": "SNAP optics could speed up optical communications",
+          "url": "https://physicsworld.com/a/snap-optics-could-speed-up-optical-communications/",
+          "source": "Physics World（关键词过滤）",
+          "score": 60.7,
+          "published_at": "2026-11-02T09:50:39+00:00"
+        },
+        {
+          "title": "From pixels to optical links: MicroLEDs pivot to copackaged optics",
+          "url": "https://www.laserfocusworld.com/optics/article/55409336/yole-group-from-pixels-to-optical-links-microleds-pivot-to-copackaged-optics",
+          "source": "Laser Focus World",
+          "score": 50.1,
+          "published_at": null
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "研究人员提出并实验验证了一种基于可编程光子回波量子存储的多时隙光子量子态处理方案，用于量子哈希中的发送方认证。该方案利用量子存储对多时隙光子量子态进行编码和处理，为量子通信网络中的安全认证提供了新的技术路径。相关结果发表于arXiv预印本，尚未经过同行评审。",
-      "digestTitle": "光子回波量子存储实现量子哈希认证"
+      "digest": null,
+      "digestTitle": null
     },
     {
-      "id": "eb6bf18d6672",
+      "id": "8fdd6259eb82",
       "title": "Photonic Crystal Integrated Graphene-Silicon Schottky Diodes for Resonant Infrared Photodetection",
       "status": "发酵中",
-      "heat": 35.5,
-      "sourceCount": 4,
+      "heat": 38.8,
+      "sourceCount": 3,
       "signalCount": 3,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "Laser Focus World",
         "Physics World（关键词过滤）",
-        "YouTube·Edmund Optics",
         "arXiv 光学与光子学 (physics.optics)"
       ],
       "links": [
@@ -132,43 +166,37 @@
           "title": "Photonic Crystal Integrated Graphene-Silicon Schottky Diodes for Resonant Infrared Photodetection",
           "url": "https://arxiv.org/abs/2610.41701",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 79.4,
+          "score": 71.4,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
           "title": "High-efficiency photonic GHZ measurements with linear optics",
           "url": "https://arxiv.org/abs/2610.41524",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 79.4,
+          "score": 71.4,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
           "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
           "url": "https://www.laserfocusworld.com/detectors-imaging/article/55413803/single-photon-avalanche-diode-arrays-an-avalanche-of-photon-data-for-sharper-imaging",
           "source": "Laser Focus World",
-          "score": 69.8,
+          "score": 62.0,
           "published_at": null
         },
         {
           "title": "Single-photon measurements confirm Richard Feynman’s vision of quantum mechanics",
           "url": "https://physicsworld.com/a/single-photon-measurements-confirm-richard-feynmans-vision-of-quantum-mechanics/",
           "source": "Physics World（关键词过滤）",
-          "score": 55.3,
+          "score": 47.5,
           "published_at": "2026-09-25T08:20:12+00:00"
-        },
-        {
-          "title": "Expanding our Partnership with Teledyne Photometrics Scientific Cameras | Edmund Optics",
-          "url": "https://www.youtube.com/watch?v=3qH7xDED-_M",
-          "source": "YouTube·Edmund Optics",
-          "score": 50.8,
-          "published_at": "2026-07-08T12:16:13+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 9.3,
       "badges": [],
-      "digest": "研究人员开发出一种基于石墨烯-硅肖特基二极管的窄带红外光电探测器，利用光子晶体结构实现共振增强，为下一代低功耗智能光电探测提供了新方案。该器件在特定红外波段表现出高选择性响应，有望应用于光谱分析、气体传感等领域。",
-      "digestTitle": "石墨烯-硅肖特基光电探测器实现窄带红外探测"
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 53.5
     },
     {
       "id": "da7b21634030",
@@ -177,7 +205,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "C114中国通信网_通信财经"
       ],
@@ -211,13 +239,55 @@
       "digestTitle": null
     },
     {
+      "id": "21a0c8421f1a",
+      "title": "Photonics Hot List: October 30, 2026",
+      "status": "关注中",
+      "heat": 34.5,
+      "sourceCount": 1,
+      "signalCount": 3,
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
+      "sources": [
+        "Laser Focus World"
+      ],
+      "links": [
+        {
+          "title": "Photonics Hot List: October 30, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
+          "source": "Laser Focus World",
+          "score": 53.8,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: October 23, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
+          "source": "Laser Focus World",
+          "score": 48.4,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: October 16, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
+          "source": "Laser Focus World",
+          "score": 48.4,
+          "published_at": null
+        }
+      ],
+      "trend": "up",
+      "trendPct": 62.7,
+      "badges": [
+        "rising"
+      ],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
       "id": "4d426ee1e207",
       "title": "工业和信息化部等八部门印发《产业基础能力提升“十五五”规划》",
       "status": "关注中",
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "工信部要闻"
       ],
@@ -251,70 +321,13 @@
       "digestTitle": null
     },
     {
-      "id": "e8992eb39edc",
-      "title": "Photonics Hot List: October 30, 2026",
-      "status": "发酵中",
-      "heat": 21.2,
-      "sourceCount": 3,
-      "signalCount": 3,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
-      "sources": [
-        "Laser Focus World",
-        "YouTube·Photonics Media",
-        "YouTube·SPIETV"
-      ],
-      "links": [
-        {
-          "title": "Photonics Hot List: October 30, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
-          "source": "Laser Focus World",
-          "score": 63.5,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 23, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
-          "source": "Laser Focus World",
-          "score": 63.5,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 16, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
-          "source": "Laser Focus World",
-          "score": 63.5,
-          "published_at": null
-        },
-        {
-          "title": "A Look Back on Photonics West 2026",
-          "url": "https://www.youtube.com/shorts/ne-cuXI4otA",
-          "source": "YouTube·SPIETV",
-          "score": 53.2,
-          "published_at": "2026-10-16T21:37:37+00:00"
-        },
-        {
-          "title": "Photonics Spectra Sensing Technologies Summit 2026",
-          "url": "https://www.youtube.com/watch?v=57_odMmja30",
-          "source": "YouTube·Photonics Media",
-          "score": 44.5,
-          "published_at": "2026-10-01T15:00:15+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -38.6,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 24.0
-    },
-    {
       "id": "3ddd557aec8c",
       "title": "Comparison of melanin subtypes using pump-probe microscopy",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "Physics World（关键词过滤）",
         "arXiv 光学与光子学 (physics.optics)"
@@ -324,22 +337,23 @@
           "title": "Comparison of melanin subtypes using pump-probe microscopy",
           "url": "https://arxiv.org/abs/2610.40969",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.2,
+          "score": 65.0,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
           "title": "Using quantum entanglement to probe hidden properties of quarks",
           "url": "https://physicsworld.com/a/using-quantum-entanglement-to-probe-hidden-properties-of-quarks/",
           "source": "Physics World（关键词过滤）",
-          "score": 43.5,
+          "score": 43.3,
           "published_at": "2026-10-07T08:05:41+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "llmScore": 35.0
     },
     {
       "id": "3c467e16fb87",
@@ -348,7 +362,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "Physics World（关键词过滤）",
         "arXiv 光学与光子学 (physics.optics)"
@@ -358,7 +372,7 @@
           "title": "From proof of concept to practice: the next decade of artificial intelligence in metasurface photonics",
           "url": "https://arxiv.org/abs/2610.41000",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.2,
+          "score": 65.0,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
@@ -369,45 +383,12 @@
           "published_at": "2026-10-01T07:00:18+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "594e40b87615",
-      "title": "Learning Nonlocal Interactions in Large-Scale Heterogeneous Metamaterials through Scientific Machine Learning",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv 光学与光子学 (physics.optics)"
-      ],
-      "links": [
-        {
-          "title": "Learning Nonlocal Interactions in Large-Scale Heterogeneous Metamaterials through Scientific Machine Learning",
-          "url": "https://arxiv.org/abs/2610.41887",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.2,
-          "published_at": "2026-11-02T05:00:00+00:00"
-        },
-        {
-          "title": "Machine learning helps track semiconductor defects under more realistic temperature conditions",
-          "url": "https://phys.org/news/2026-10-machine-track-semiconductor-defects-realistic.html",
-          "source": "Phys.org 物理新闻",
-          "score": 54.0,
-          "published_at": "2026-10-29T20:50:05+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digestTitle": null,
+      "llmScore": 53.5
     }
   ]
 }

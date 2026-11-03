@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T20:23:43.516091+00:00",
+  "generatedAt": "2026-11-03T03:30:14.961653+00:00",
   "weekStart": "2026-10-28",
   "windowDays": 7,
   "windowStart": "2026-10-28",
@@ -9,32 +9,32 @@
   "prevEnd": "2026-10-27",
   "categoryDelta": [
     {
-      "category": "深空探测",
-      "thisWeek": 1621.2,
-      "lastWeek": 1699.4,
-      "deltaPct": -4.6
-    },
-    {
       "category": "科研进展",
-      "thisWeek": 1596.9,
+      "thisWeek": 1712.0,
       "lastWeek": 2326.1,
-      "deltaPct": -31.3
+      "deltaPct": -26.4
     },
     {
       "category": "其他",
-      "thisWeek": 1555.1,
+      "thisWeek": 1650.8,
       "lastWeek": 1458.9,
-      "deltaPct": 6.6
+      "deltaPct": 13.2
+    },
+    {
+      "category": "深空探测",
+      "thisWeek": 1620.3,
+      "lastWeek": 1699.4,
+      "deltaPct": -4.7
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 912.6,
+      "thisWeek": 911.0,
       "lastWeek": 1458.7,
-      "deltaPct": -37.4
+      "deltaPct": -37.5
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 905.9,
+      "thisWeek": 904.7,
       "lastWeek": 1432.5,
       "deltaPct": -36.8
     },
@@ -52,9 +52,9 @@
     },
     {
       "category": "引力波",
-      "thisWeek": 50.2,
+      "thisWeek": 50.0,
       "lastWeek": 284.3,
-      "deltaPct": -82.3
+      "deltaPct": -82.4
     }
   ],
   "newTopics": [
@@ -65,9 +65,9 @@
       "days": 2
     },
     {
-      "topic_id": "efc39de90106",
+      "topic_id": "25a8b115a98d",
       "title": "What’s Up: November 2026 Skywatching Tips from NASA",
-      "score": 291.6,
+      "score": 290.9,
       "days": 2
     },
     {
@@ -85,7 +85,7 @@
     {
       "topic_id": "afcfb9061cba",
       "title": "When precise inference is wrong: Diagnosing model misspecification with applications to cosmic dawn and reionisation",
-      "score": 136.2,
+      "score": 135.6,
       "days": 1
     },
     {
@@ -97,7 +97,7 @@
     {
       "topic_id": "0ff29c0823d4",
       "title": "NASA’s Hubble Uncovers Case of Missing Oxygen in Nearby Dwarf Galaxies",
-      "score": 122.2,
+      "score": 121.8,
       "days": 2
     },
     {

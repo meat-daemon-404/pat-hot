@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T20:23:43.516091+00:00",
+  "generatedAt": "2026-11-03T03:30:14.961653+00:00",
   "count": 10,
   "items": [
     {
-      "id": "efc39de90106",
+      "id": "25a8b115a98d",
       "title": "What’s Up: November 2026 Skywatching Tips from NASA",
       "status": "关注中",
       "heat": 49.0,
       "sourceCount": 2,
       "signalCount": 8,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "Astronomy Magazine",
         "NASA 快讯"
@@ -20,43 +20,43 @@
           "title": "What’s Up: November 2026 Skywatching Tips from NASA",
           "url": "https://science.nasa.gov/solar-system/skywatching/whats-up-november-2026-skywatching-tips-from-nasa/",
           "source": "NASA 快讯",
-          "score": 73.1,
+          "score": 72.9,
           "published_at": "2026-11-02T18:19:58+00:00"
         },
         {
           "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
           "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
           "source": "Astronomy Magazine",
-          "score": 73.0,
+          "score": 72.8,
           "published_at": "2026-11-02T14:52:32+00:00"
         },
         {
           "title": "The Sky Today on Monday, November 2: The Moon passes Jupiter and Mars",
           "url": "https://www.astronomy.com/observing/the-sky-today-monday-november-2-2026/",
           "source": "Astronomy Magazine",
-          "score": 72.8,
+          "score": 72.7,
           "published_at": "2026-11-02T09:00:00+00:00"
         },
         {
           "title": "APOD: 2026 November 2 – A Long Cloud on Mars",
           "url": "https://science.nasa.gov/image-article/apod-2026-november-2-a-long-cloud-on-mars/",
           "source": "NASA 快讯",
-          "score": 72.7,
+          "score": 72.5,
           "published_at": "2026-11-02T05:05:00+00:00"
         },
         {
           "title": "The Sky Today on Sunday, November 1: The Moon in Cancer",
           "url": "https://www.astronomy.com/observing/the-sky-today-sunday-november-1-2026/",
           "source": "Astronomy Magazine",
-          "score": 72.2,
+          "score": 72.0,
           "published_at": "2026-11-01T09:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": "2026年11月，地球将迎来金牛座和狮子座流星雨、一次超级月亮，以及火星与木星在天空中的近距离会合。NASA称，11月17日前后狮子座流星雨达到峰值，而金牛座流星雨在整个月内活跃。11月2日，月球先后从火星和木星附近经过，部分地区的观测者可见月掩星。此外，NASA宣布旅行者1号在11月达到距太阳一个光日的里程碑。11月的满月（11月24日）是今年的超级月亮，看起来比平时更大更亮。这些事件均可在夜空中用肉眼或小型望远镜观测。",
-      "digestTitle": "2026年11月天象：流星雨、超级月亮与探测器里程碑"
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "0ff29c0823d4",
@@ -65,7 +65,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "NASA 快讯",
         "Phys.org 太空新闻"
@@ -75,24 +75,22 @@
           "title": "Stars make oxygen for small galaxies, but they lose most of it",
           "url": "https://phys.org/news/2026-11-stars-oxygen-small-galaxies.html",
           "source": "Phys.org 太空新闻",
-          "score": 61.2,
+          "score": 61.0,
           "published_at": "2026-11-02T20:00:02+00:00"
         },
         {
           "title": "NASA’s Hubble Uncovers Case of Missing Oxygen in Nearby Dwarf Galaxies",
           "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-uncovers-case-of-missing-oxygen-in-nearby-dwarf-galaxies/",
           "source": "NASA 快讯",
-          "score": 61.0,
+          "score": 60.8,
           "published_at": "2026-11-02T15:00:39+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [
-        "new"
-      ],
-      "digest": "NASA哈勃望远镜观测37个邻近矮星系后发现，这些星系中的氧含量远低于其恒星预计产生的总量。研究人员称，恒星确实制造了氧，但大部分氧已流失到星系际空间，而非保留在星系内。",
-      "digestTitle": "哈勃发现矮星系氧元素大量流失"
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "digest": "NASA哈勃望远镜观测37个邻近矮星系后发现，这些星系中的氧含量远低于其恒星寿命内预计产生的总量。研究人员称，恒星确实制造了氧，但大部分氧已流失到星系际空间，而非保留在星系内。这一发现挑战了此前关于矮星系化学演化的假设，表明恒星制造的重元素可能难以留存于小星系中。",
+      "digestTitle": "哈勃发现矮星系氧含量远低于恒星产出"
     },
     {
       "id": "afcfb9061cba",
@@ -101,7 +99,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "arXiv astro-ph.CO 论文速递"
       ],
@@ -110,26 +108,26 @@
           "title": "When precise inference is wrong: Diagnosing model misspecification with applications to cosmic dawn and reionisation",
           "url": "https://arxiv.org/abs/2610.40770",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.4,
+          "score": 45.2,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
           "title": "Model-independent and reconstruction-free evidence for cosmic acceleration from DESI baryon acoustic oscillations",
           "url": "https://arxiv.org/abs/2610.40785",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.4,
+          "score": 45.2,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
           "title": "Model-Independent Assessments of Tidal Alignment and Density-Weighting Dependence in Galaxy Intrinsic Alignments",
           "url": "https://arxiv.org/abs/2610.42151",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 45.4,
+          "score": 45.2,
           "published_at": "2026-11-02T05:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -146,7 +144,7 @@
       "heat": 24.5,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "LIGO",
         "arXiv astro-ph.CO 论文速递"
@@ -156,14 +154,14 @@
           "title": "Two-peak gravitational wave spectra from supercooled two-field phase transitions",
           "url": "https://arxiv.org/abs/2610.40354",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 50.2,
+          "score": 50.0,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
           "title": "Leaking Sound Waves: Gravitational Waves From Dark Sectors Weakly Coupled to the Standard Model",
           "url": "https://arxiv.org/abs/2610.40781",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 50.2,
+          "score": 50.0,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
@@ -181,11 +179,11 @@
           "published_at": "2026-02-25T04:06:26+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": null,
-      "digestTitle": null,
+      "digest": "两项新研究分别探讨了超冷双场相变产生的引力波谱和暗区弱耦合到标准模型时的一阶相变引力波背景，均基于理论模型构建与计算，尚未经观测证实。同时，LIGO–Virgo–KAGRA合作组宣布其探测器网络采用“天体物理校准”技术，可自动调整信号灵敏度，并公布了2024年船帆座脉冲星突变事件的最严格引力波上限。",
+      "digestTitle": "双场相变与暗区引力波研究及探测器校准进展",
       "llmScore": 45.0,
       "refs": {
         "arxiv": "2610.40354",
@@ -200,7 +198,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "MIT News 太空探索",
         "Phys.org 太空新闻"
@@ -217,15 +215,15 @@
           "title": "CubeSat achieves challenging laser link to ground",
           "url": "https://phys.org/news/2026-11-cubesat-laser-link-ground.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.7,
+          "score": 36.5,
           "published_at": "2026-11-02T17:40:09+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digest": "Artemis II 任务搭载的林肯实验室激光通信终端成功从月球附近向地球发送高清视频和数据，首次在载人任务中演示激光通信。该终端由麻省理工学院林肯实验室开发，其信号被地面光学站接收，验证了深空光通信的可行性。此前，希腊雅典大学研制的ERMIS-3立方星也实现了与地面站的激光链路，为光学通信技术提供了补充验证。",
+      "digestTitle": "Artemis II 激光通信终端成功实现地月链路"
     },
     {
       "id": "0c5c57a68f16",
@@ -234,7 +232,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "ESA 空间科学",
         "Phys.org 太空新闻"
@@ -244,19 +242,53 @@
           "title": "Mars dust may be less abrasive than lunar dust, spacesuit samples suggest",
           "url": "https://phys.org/news/2026-10-mars-abrasive-lunar-spacesuit-samples.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.5,
+          "score": 60.3,
           "published_at": "2026-11-01T20:00:01+00:00"
         },
         {
           "title": "Mars’s oddest cloud may be even odder than we thought",
           "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
           "source": "ESA 空间科学",
-          "score": 43.7,
+          "score": 43.5,
           "published_at": "2026-10-07T15:00:00+00:00"
         }
       ],
       "trend": "flat",
       "trendPct": 0.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "56e60f37144b",
+      "title": "High-orbit satellites could light the way for travel to the moon",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
+      "sources": [
+        "MIT News 太空探索",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "High-orbit satellites could light the way for travel to the moon",
+          "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
+          "source": "MIT News 太空探索",
+          "score": 41.2,
+          "published_at": "2026-08-10T18:10:00+00:00"
+        },
+        {
+          "title": "The Vera Rubin Has Found Two More of the Milky Way's Dim Satellites",
+          "url": "https://www.universetoday.com/articles/the-vera-rubin-has-found-two-more-of-the-milky-ways-dim-satellites",
+          "source": "Universe Today",
+          "score": 36.7,
+          "published_at": "2026-11-03T01:33:59+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -268,7 +300,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "LIGO",
         "arXiv astro-ph.CO 论文速递"
@@ -278,7 +310,7 @@
           "title": "Cosmic merger rates and population evolution of binary black hole mergers in AGN disks",
           "url": "https://arxiv.org/abs/2610.40787",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 47.2,
+          "score": 47.0,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
@@ -289,8 +321,8 @@
           "published_at": "2025-10-28T15:01:12+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -301,13 +333,13 @@
       }
     },
     {
-      "id": "68588609a007",
+      "id": "4eae70cd5acc",
       "title": "Supporting mission-driven space innovation, for Earth and beyond",
       "status": "发酵中",
       "heat": 17.7,
       "sourceCount": 3,
       "signalCount": 1,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "MIT News 太空探索",
         "Phys.org 太空新闻",
@@ -315,107 +347,67 @@
       ],
       "links": [
         {
-          "title": "Space Outposts Beyond the Moon May Rely on Planetary AI",
-          "url": "https://www.universetoday.com/articles/space-outposts-beyond-the-moon-may-rely-on-planetary-ai",
-          "source": "Universe Today",
-          "score": 67.6,
-          "published_at": "2026-10-31T19:24:37+00:00"
-        },
-        {
-          "title": "Space station experiment to probe plant disease risks for future moon and Mars missions",
-          "url": "https://phys.org/news/2026-10-space-station-probe-disease-future.html",
-          "source": "Phys.org 太空新闻",
-          "score": 66.5,
-          "published_at": "2026-10-30T03:00:01+00:00"
-        },
-        {
           "title": "Scientists build whole-Earth simulation to help find life on other planets",
           "url": "https://phys.org/news/2026-11-scientists-earth-simulation-life-planets.html",
           "source": "Phys.org 太空新闻",
-          "score": 41.4,
+          "score": 39.5,
           "published_at": "2026-11-02T18:50:01+00:00"
         },
         {
           "title": "Earth’s “Impenetrable” Space Radiation Shield Was Just Breached From Within",
           "url": "https://www.universetoday.com/articles/earths-impenetrable-space-radiation-shield-was-just-breached-from-within",
           "source": "Universe Today",
-          "score": 40.1,
+          "score": 38.1,
           "published_at": "2026-10-30T12:34:00+00:00"
         },
         {
           "title": "Supporting mission-driven space innovation, for Earth and beyond",
           "url": "https://news.mit.edu/2025/supporting-mission-driven-space-innovation-aurelia-institute-0710",
           "source": "MIT News 太空探索",
-          "score": 29.4,
+          "score": 27.6,
           "published_at": "2025-07-10T04:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
     },
     {
-      "id": "3f3f08f89813",
-      "title": "Life on Mars, together",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "id": "25ace3cd3a61",
+      "title": "Happy 65 Years: NASA’s Johnson Space Center Then and Now",
+      "status": "发酵中",
+      "heat": 17.7,
+      "sourceCount": 3,
+      "signalCount": 1,
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
-        "MIT News 太空探索",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Life on Mars, together",
-          "url": "https://news.mit.edu/2024/life-on-mars-together-0313",
-          "source": "MIT News 太空探索",
-          "score": 41.2,
-          "published_at": "2024-03-13T21:00:00+00:00"
-        },
-        {
-          "title": "Tiny photonic chip links telescopes together to view the universe in 'astonishing' detail",
-          "url": "https://phys.org/news/2026-10-tiny-photonic-chip-links-telescopes.html",
-          "source": "Phys.org 太空新闻",
-          "score": 35.5,
-          "published_at": "2026-10-30T20:20:06+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "cbbf0021524d",
-      "title": "A gamma-ray powerhouse's smoking gun? Gas trail points to microquasar jets",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
-      "sources": [
+        "NASA 快讯",
         "Phys.org 太空新闻",
         "Universe Today"
       ],
       "links": [
         {
-          "title": "A gamma-ray powerhouse's smoking gun? Gas trail points to microquasar jets",
-          "url": "https://phys.org/news/2026-10-gamma-ray-powerhouse-gun-gas.html",
-          "source": "Phys.org 太空新闻",
-          "score": 35.4,
-          "published_at": "2026-10-30T17:20:18+00:00"
+          "title": "Happy 65 Years: NASA’s Johnson Space Center Then and Now",
+          "url": "https://www.nasa.gov/centers-and-facilities/johnson/happy-65-years-nasas-johnson-space-center-then-and-now/",
+          "source": "NASA 快讯",
+          "score": 65.8,
+          "published_at": "2026-11-02T21:35:59+00:00"
         },
         {
-          "title": "This Gamma-Ray Burst Wasn't Dim, It Was Just Misunderstood",
-          "url": "https://www.universetoday.com/articles/this-gamma-ray-burst-wasnt-dim-it-was-just-misunderstood",
+          "title": "Space Outposts Beyond the Moon May Rely on Planetary AI",
+          "url": "https://www.universetoday.com/articles/space-outposts-beyond-the-moon-may-rely-on-planetary-ai",
           "source": "Universe Today",
-          "score": 35.4,
-          "published_at": "2026-10-30T16:20:24+00:00"
+          "score": 64.4,
+          "published_at": "2026-10-31T19:24:37+00:00"
+        },
+        {
+          "title": "Space station experiment to probe plant disease risks for future moon and Mars missions",
+          "url": "https://phys.org/news/2026-10-space-station-probe-disease-future.html",
+          "source": "Phys.org 太空新闻",
+          "score": 63.3,
+          "published_at": "2026-10-30T03:00:01+00:00"
         }
       ],
       "trend": "new",

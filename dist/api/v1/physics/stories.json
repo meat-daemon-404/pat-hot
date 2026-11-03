@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T20:23:43.516091+00:00",
+  "generatedAt": "2026-11-03T03:30:14.961653+00:00",
   "count": 10,
   "items": [
     {
@@ -10,7 +10,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "arXiv quant-ph 论文速递"
@@ -20,22 +20,22 @@
           "title": "Experiment supports theoretical foundation for potentially more error-resistant quantum computing",
           "url": "https://phys.org/news/2026-11-theoretical-foundation-potentially-error-resistant.html",
           "source": "Phys.org 物理新闻",
-          "score": 61.1,
+          "score": 60.9,
           "published_at": "2026-11-02T18:30:01+00:00"
         },
         {
           "title": "Optical Quantum Memory Processing for Quantum Hashing",
           "url": "https://arxiv.org/abs/2610.40904",
           "source": "arXiv quant-ph 论文速递",
-          "score": 47.2,
+          "score": 47.0,
           "published_at": "2026-11-02T05:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": null,
-      "digestTitle": null,
+      "digest": "研究人员通过实验验证了拓扑量子计算的理论基础，该理论认为特定量子态比传统量子态更抗局部干扰，有望降低量子计算中的错误率。实验支持了拓扑量子计算作为更抗误差存储方案的可行性，但尚未证明其在实际量子计算中的最终效果。",
+      "digestTitle": "拓扑量子计算实验验证抗误差理论基础",
       "refs": {
         "arxiv": "2610.40904",
         "via": "feed_text",
@@ -49,7 +49,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "arXiv quant-ph 论文速递"
       ],
@@ -58,26 +58,26 @@
           "title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver",
           "url": "https://arxiv.org/abs/2610.40693",
           "source": "arXiv quant-ph 论文速递",
-          "score": 45.4,
+          "score": 45.2,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
           "title": "Predictive Maintenance at the Edge: An Embedded Anomaly Detection Pipeline Trained with Quantum Optimization",
           "url": "https://arxiv.org/abs/2610.40848",
           "source": "arXiv quant-ph 论文速递",
-          "score": 45.4,
+          "score": 45.2,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
           "title": "Preparation of a Laughlin-like fractional Chern insulator on a superconducting quantum processor",
           "url": "https://arxiv.org/abs/2610.41017",
           "source": "arXiv quant-ph 论文速递",
-          "score": 45.4,
+          "score": 45.2,
           "published_at": "2026-11-02T05:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -94,7 +94,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "arXiv quant-ph 论文速递"
@@ -104,22 +104,22 @@
           "title": "Electronic-Structure-Informed Many-Body Encoding for Quantum Machine Learning",
           "url": "https://arxiv.org/abs/2610.40840",
           "source": "arXiv quant-ph 论文速递",
-          "score": 47.2,
+          "score": 47.0,
           "published_at": "2026-11-02T05:00:00+00:00"
         },
         {
           "title": "Machine learning helps track semiconductor defects under more realistic temperature conditions",
           "url": "https://phys.org/news/2026-10-machine-track-semiconductor-defects-realistic.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.1,
+          "score": 35.0,
           "published_at": "2026-10-29T20:50:05+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": "研究人员开发出一种基于电子结构信息的多体编码方法，用于量子机器学习，以更有效地将经典信息映射到量子态。该方法旨在提升量子模型的表达能力和效率。另一项研究利用机器学习在更接近实际温度的条件下追踪半导体缺陷，帮助理解缺陷如何影响材料性能。这些进展为材料科学和量子计算提供了新的工具，但具体应用效果仍需进一步验证。",
-      "digestTitle": "机器学习方法改进半导体缺陷研究",
+      "digest": null,
+      "digestTitle": null,
       "refs": {
         "arxiv": "2610.40840",
         "via": "feed_text",
@@ -133,7 +133,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -143,7 +143,7 @@
           "title": "Ultracold atoms simulate hard-to-observe matter-antimatter pair production",
           "url": "https://phys.org/news/2026-10-ultracold-atoms-simulate-hard-antimatter.html",
           "source": "Phys.org 物理新闻",
-          "score": 61.2,
+          "score": 61.0,
           "published_at": "2026-10-31T17:00:01+00:00"
         },
         {
@@ -157,15 +157,15 @@
           "title": "Ultrathin metal layer boosts spin-related signals, opening a door to ultralow-power electronics",
           "url": "https://phys.org/news/2026-10-ultrathin-metal-layer-boosts-door.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.6,
+          "score": 35.5,
           "published_at": "2026-10-28T23:20:02+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
-      "digest": "研究人员在多个物理领域取得进展。MIT团队开发出空气稳定的超薄超导材料，可制备晶圆级样品，为量子器件规模化应用扫清障碍。九州大学团队发现超薄铱锰层能增强自旋相关信号，有望推动超低功耗电子器件发展。此外，冷原子实验模拟了难以观测的正反物质对产生过程，验证了量子电动力学相关预测。",
-      "digestTitle": "超薄材料与冷原子研究取得多项突破"
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "c9c29423cce7",
@@ -174,7 +174,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -184,7 +184,7 @@
           "title": "How a 'tropical' shortcut could help particle collider experiments",
           "url": "https://phys.org/news/2026-10-tropical-shortcut-particle-collider.html",
           "source": "Phys.org 物理新闻",
-          "score": 59.1,
+          "score": 58.9,
           "published_at": "2026-10-30T19:40:01+00:00"
         },
         {
@@ -198,8 +198,8 @@
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "MIT物理博士生Manu Srivastava帮助印度高中生团队开发了一项测试，该测试可能为全球最大的中微子实验之一做出贡献。该测试旨在改进粒子加速器测量结果的预测能力，因为加速器的建造和运行成本高昂，且测量结果的预测也面临挑战。团队在CERN进行了实验验证，但报道未说明测试的具体结果或是否已被实验采纳。",
-      "digestTitle": "印度高中生为CERN中微子实验开发测试方法"
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "478e13f1f258",
@@ -208,7 +208,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -225,15 +225,15 @@
           "title": "How the quantum vacuum perturbs atoms, could shrink black holes and may have helped form galaxies",
           "url": "https://phys.org/news/2026-10-quantum-vacuum-perturbs-atoms-black.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.1,
+          "score": 35.0,
           "published_at": "2026-10-29T21:30:05+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "物理学家发现，一些正在碰撞的黑洞本身可能是此前黑洞碰撞的产物，这一发现表明黑洞合并事件可以形成“二代”黑洞。研究团队通过分析引力波信号，识别出这些黑洞的质量和自旋特征与直接由恒星坍缩形成的黑洞不同，更符合先前合并后留下的黑洞特征。该结论基于对现有引力波数据的统计推断，尚未通过独立观测直接证实。",
-      "digestTitle": "黑洞碰撞研究揭示“前世”黑洞存在"
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "f7089c5a5404",
@@ -242,7 +242,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "MIT News 物理",
         "Quanta Magazine"
@@ -259,15 +259,15 @@
           "title": "How Do You Take a Picture of a Black Hole?",
           "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
           "source": "Quanta Magazine",
-          "score": 35.0,
+          "score": 34.9,
           "published_at": "2026-10-29T15:11:57+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "天文学家发现一种前所未见的天体类型——黑洞与巨大恒星的混合体，可能解释深空图像中神秘的小红点。MIT News报道称，这种黑洞恒星此前从未被观测到，其存在或为理解宇宙早期星系演化提供新线索。",
-      "digestTitle": "天文学家发现新型黑洞恒星天体"
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "7e7427289fca",
@@ -276,7 +276,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -286,7 +286,7 @@
           "title": "Are we about to solve the greatest mystery of the neutrino?",
           "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 51.8,
+          "score": 51.6,
           "published_at": "2026-10-19T19:00:00+00:00"
         },
         {
@@ -300,8 +300,8 @@
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "中国一个大型实验即将测量中微子的质量，结果可能改变粒子物理学。与此同时，MIT研究人员报告称，此前提出的中微子激光方案因物理和基本限制无法实现。",
-      "digestTitle": "中微子质量测量实验即将揭晓，激光方案被否"
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "1dc3e2185b16",
@@ -310,7 +310,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -320,7 +320,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 47.5,
+          "score": 47.3,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
@@ -334,8 +334,8 @@
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "暗物质是否已被发现尚无定论，但探测策略正转向区分其表现为粒子还是波。专栏作者Chanda Prescod-Weinstein称，暗物质可能已被发现，关键在于观测时需确定其行为更像粒子还是波。MIT博士生Jessica Fry正在实验室中搜寻宇宙中最难捕捉的粒子，但报道未提供具体结果。目前科学界对暗物质本质仍存分歧，探测方法取决于其量子性质。",
-      "digestTitle": "暗物质探测：粒子与波之争"
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "db4a1640ca56",
@@ -344,7 +344,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-02T20:23:43.516091+00:00",
+      "latestAt": "2026-11-03T03:30:14.961653+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -354,7 +354,7 @@
           "title": "Key oddity of quantum physics may run even deeper than anticipated",
           "url": "https://www.newscientist.com/article/2596105-key-oddity-of-quantum-physics-may-run-even-deeper-than-anticipated/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 59.7,
+          "score": 59.5,
           "published_at": "2026-10-29T11:00:00+00:00"
         },
         {
@@ -368,15 +368,15 @@
           "title": "‘Reverse physics’ could help bridge the classical and quantum worlds",
           "url": "https://www.newscientist.com/article/2596640-reverse-physics-could-help-bridge-the-classical-and-quantum-worlds/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 36.2,
+          "score": 36.1,
           "published_at": "2026-10-30T09:00:00+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digest": "一项新分析表明，量子力学的概率性可追溯到其数学基础的更深层次，远超此前预期。该研究由New Scientist报道，指出这一特性可能源于理论的基本结构。此外，MIT News报道了电子在量子材料中组装成共存相的研究，有助于理解超导等复杂现象。另一项“逆向物理学”研究尝试从数学出发重建物理定律，以连接经典与量子世界。",
+      "digestTitle": "量子力学概率性可追溯至数学基础"
     }
   ]
 }

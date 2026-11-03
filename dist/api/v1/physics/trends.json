@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T20:23:43.516091+00:00",
+  "generatedAt": "2026-11-03T03:30:14.961653+00:00",
   "weekStart": "2026-10-28",
   "windowDays": 7,
   "windowStart": "2026-10-28",
@@ -10,27 +10,27 @@
   "categoryDelta": [
     {
       "category": "其他",
-      "thisWeek": 956.0,
+      "thisWeek": 986.4,
       "lastWeek": 1049.5,
-      "deltaPct": -8.9
+      "deltaPct": -6.0
     },
     {
       "category": "科研进展",
-      "thisWeek": 820.0,
+      "thisWeek": 818.4,
       "lastWeek": 1833.0,
-      "deltaPct": -55.3
+      "deltaPct": -55.4
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 453.4,
+      "thisWeek": 453.2,
       "lastWeek": 384.7,
-      "deltaPct": 17.9
+      "deltaPct": 17.8
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 281.2,
+      "thisWeek": 280.6,
       "lastWeek": 716.9,
-      "deltaPct": -60.8
+      "deltaPct": -60.9
     },
     {
       "category": "高能与粒子物理",
@@ -40,9 +40,9 @@
     },
     {
       "category": "等离子体",
-      "thisWeek": 51.4,
+      "thisWeek": 51.2,
       "lastWeek": 101.8,
-      "deltaPct": -49.5
+      "deltaPct": -49.7
     },
     {
       "category": "原子分子与光物理",
@@ -55,7 +55,7 @@
     {
       "topic_id": "cafa9e30b66d",
       "title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver",
-      "score": 136.2,
+      "score": 135.6,
       "days": 1
     },
     {
@@ -67,19 +67,13 @@
     {
       "topic_id": "cb27bdf7a532",
       "title": "Optical Quantum Memory Processing for Quantum Hashing",
-      "score": 108.3,
+      "score": 107.9,
       "days": 2
     },
     {
       "topic_id": "41ce72c68b5e",
       "title": "Scientists uncover new way to control magnetism and topology using light in atomically thin materials",
       "score": 91.6,
-      "days": 1
-    },
-    {
-      "topic_id": "431b049c16bc",
-      "title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks",
-      "score": 87.8,
       "days": 1
     },
     {
@@ -97,6 +91,12 @@
     {
       "topic_id": "752e27473b6d",
       "title": "Probability bounds on trajectory-level exceedances of quantum speed limits under continuous-measurement feedback",
+      "score": 87.4,
+      "days": 1
+    },
+    {
+      "topic_id": "431b049c16bc",
+      "title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks",
       "score": 87.4,
       "days": 1
     },
