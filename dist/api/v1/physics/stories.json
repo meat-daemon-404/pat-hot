@@ -1,16 +1,50 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T17:52:28.486394+00:00",
-  "count": 9,
+  "generatedAt": "2026-11-04T02:22:22.921039+00:00",
+  "count": 6,
   "items": [
     {
-      "id": "be49a08a526b",
+      "id": "3b81f070c71f",
+      "title": "New research shows a neutrino laser is impossible",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-11-04T02:22:22.921039+00:00",
+      "sources": [
+        "MIT News 物理",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "A laser can draw superconductivity at the nanoscale",
+          "url": "https://phys.org/news/2026-11-laser-superconductivity-nanoscale.html",
+          "source": "Phys.org 物理新闻",
+          "score": 61.0,
+          "published_at": "2026-11-03T21:40:02+00:00"
+        },
+        {
+          "title": "New research shows a neutrino laser is impossible",
+          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-09-02T14:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": "ICMAB-CSIC、米兰理工大学与列日大学的研究团队改进了直接激光写入技术，可在材料上“绘制”超导性质，实现局部编程。另一方面，MIT科学家报告称，因物理与基本限制，早前提出的产生中微子激光束的方案无法实现。",
+      "digestTitle": "激光绘制超导特性，中微子激光被证不可行"
+    },
+    {
+      "id": "e5c9e289132c",
       "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
       "status": "关注中",
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-03T17:52:28.486394+00:00",
+      "latestAt": "2026-11-04T02:22:22.921039+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -20,22 +54,15 @@
           "title": "Ultracold atoms simulate hard-to-observe matter-antimatter pair production",
           "url": "https://phys.org/news/2026-10-ultracold-atoms-simulate-hard-antimatter.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.6,
+          "score": 58.9,
           "published_at": "2026-10-31T17:00:01+00:00"
         },
         {
           "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
           "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
           "source": "MIT News 物理",
-          "score": 42.7,
+          "score": 41.2,
           "published_at": "2026-08-05T15:00:00+00:00"
-        },
-        {
-          "title": "Ultrathin metal layer boosts spin-related signals, opening a door to ultralow-power electronics",
-          "url": "https://phys.org/news/2026-10-ultrathin-metal-layer-boosts-door.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.3,
-          "published_at": "2026-10-28T23:20:02+00:00"
         }
       ],
       "trend": "new",
@@ -45,48 +72,13 @@
       "digestTitle": null
     },
     {
-      "id": "038552fe9bde",
-      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-11-03T17:52:28.486394+00:00",
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "links": [
-        {
-          "title": "Four superconducting cables link two large quantum processors into one",
-          "url": "https://phys.org/news/2026-10-superconducting-cables-link-large-quantum.html",
-          "source": "Phys.org 物理新闻",
-          "score": 59.1,
-          "published_at": "2026-10-31T16:00:02+00:00"
-        },
-        {
-          "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-          "url": "https://www.nature.com/articles/s41567-026-03484-0",
-          "source": "Nature 量子物理",
-          "score": 52.7,
-          "published_at": "2026-10-22T00:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 32.5
-    },
-    {
       "id": "c9c29423cce7",
       "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
       "status": "关注中",
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-03T17:52:28.486394+00:00",
+      "latestAt": "2026-11-04T02:22:22.921039+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -96,7 +88,7 @@
           "title": "How a 'tropical' shortcut could help particle collider experiments",
           "url": "https://phys.org/news/2026-10-tropical-shortcut-particle-collider.html",
           "source": "Phys.org 物理新闻",
-          "score": 58.5,
+          "score": 58.3,
           "published_at": "2026-10-30T19:40:01+00:00"
         },
         {
@@ -114,83 +106,13 @@
       "digestTitle": null
     },
     {
-      "id": "2c8163948e22",
-      "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-11-03T17:52:28.486394+00:00",
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "links": [
-        {
-          "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
-          "url": "https://www.nature.com/articles/s41586-026-11312-x",
-          "source": "Nature 量子物理",
-          "score": 52.7,
-          "published_at": "2026-10-22T00:00:00+00:00"
-        },
-        {
-          "title": "Machine learning helps track semiconductor defects under more realistic temperature conditions",
-          "url": "https://phys.org/news/2026-10-machine-track-semiconductor-defects-realistic.html",
-          "source": "Phys.org 物理新闻",
-          "score": 34.7,
-          "published_at": "2026-10-29T20:50:05+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 30.0
-    },
-    {
-      "id": "d4d359873906",
-      "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-11-03T17:52:28.486394+00:00",
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "links": [
-        {
-          "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
-          "url": "https://www.nature.com/articles/s41467-026-78386-z",
-          "source": "Nature 量子物理",
-          "score": 52.7,
-          "published_at": "2026-10-22T00:00:00+00:00"
-        },
-        {
-          "title": "A blue laser for underwater communication and sensing",
-          "url": "https://phys.org/news/2026-10-blue-laser-underwater-communication.html",
-          "source": "Phys.org 物理新闻",
-          "score": 34.7,
-          "published_at": "2026-10-29T18:40:08+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 31.0
-    },
-    {
       "id": "f7089c5a5404",
       "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
       "status": "关注中",
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-03T17:52:28.486394+00:00",
+      "latestAt": "2026-11-04T02:22:22.921039+00:00",
       "sources": [
         "MIT News 物理",
         "Quanta Magazine"
@@ -207,42 +129,8 @@
           "title": "How Do You Take a Picture of a Black Hole?",
           "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
           "source": "Quanta Magazine",
-          "score": 34.7,
+          "score": 34.5,
           "published_at": "2026-10-29T15:11:57+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "7e7427289fca",
-      "title": "New research shows a neutrino laser is impossible",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-11-03T17:52:28.486394+00:00",
-      "sources": [
-        "MIT News 物理",
-        "New Scientist 物理"
-      ],
-      "links": [
-        {
-          "title": "Are we about to solve the greatest mystery of the neutrino?",
-          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 51.2,
-          "published_at": "2026-10-19T19:00:00+00:00"
-        },
-        {
-          "title": "New research shows a neutrino laser is impossible",
-          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-09-02T14:00:00+00:00"
         }
       ],
       "trend": "new",
@@ -258,7 +146,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-03T17:52:28.486394+00:00",
+      "latestAt": "2026-11-04T02:22:22.921039+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -268,7 +156,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 46.9,
+          "score": 46.7,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
@@ -292,7 +180,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-03T17:52:28.486394+00:00",
+      "latestAt": "2026-11-04T02:22:22.921039+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -302,7 +190,7 @@
           "title": "Key oddity of quantum physics may run even deeper than anticipated",
           "url": "https://www.newscientist.com/article/2596105-key-oddity-of-quantum-physics-may-run-even-deeper-than-anticipated/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 59.1,
+          "score": 58.9,
           "published_at": "2026-10-29T11:00:00+00:00"
         },
         {
@@ -316,7 +204,7 @@
           "title": "‘Reverse physics’ could help bridge the classical and quantum worlds",
           "url": "https://www.newscientist.com/article/2596640-reverse-physics-could-help-bridge-the-classical-and-quantum-worlds/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 35.9,
+          "score": 35.7,
           "published_at": "2026-10-30T09:00:00+00:00"
         }
       ],

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T17:52:28.486394+00:00",
+  "generatedAt": "2026-11-04T02:22:22.921039+00:00",
   "weekStart": "2026-10-29",
   "windowDays": 7,
   "windowStart": "2026-10-29",
@@ -10,27 +10,27 @@
   "categoryDelta": [
     {
       "category": "其他",
-      "thisWeek": 885.0,
+      "thisWeek": 980.3,
       "lastWeek": 1056.3,
-      "deltaPct": -16.2
+      "deltaPct": -7.2
     },
     {
       "category": "科研进展",
-      "thisWeek": 513.1,
+      "thisWeek": 512.9,
       "lastWeek": 1971.9,
       "deltaPct": -74.0
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 358.7,
+      "thisWeek": 419.7,
       "lastWeek": 289.9,
-      "deltaPct": 23.7
+      "deltaPct": 44.8
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 183.2,
+      "thisWeek": 182.9,
       "lastWeek": 674.5,
-      "deltaPct": -72.8
+      "deltaPct": -72.9
     },
     {
       "category": "高能与粒子物理",
@@ -65,9 +65,21 @@
       "days": 1
     },
     {
+      "topic_id": "26e0d76ba447",
+      "title": "A single measurement makes quantum bits more reliable",
+      "score": 65.3,
+      "days": 2
+    },
+    {
       "topic_id": "be49a08a526b",
       "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
       "score": 61.8,
+      "days": 1
+    },
+    {
+      "topic_id": "3b81f070c71f",
+      "title": "New research shows a neutrino laser is impossible",
+      "score": 61.0,
       "days": 1
     },
     {
@@ -98,18 +110,6 @@
       "topic_id": "f66e4b1cfdf2",
       "title": "Electronic-Structure-Informed Many-Body Encoding for Quantum Machine Learning",
       "score": 47.0,
-      "days": 1
-    },
-    {
-      "topic_id": "cb27bdf7a532",
-      "title": "Optical Quantum Memory Processing for Quantum Hashing",
-      "score": 47.0,
-      "days": 1
-    },
-    {
-      "topic_id": "db4a1640ca56",
-      "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-      "score": 37.1,
       "days": 1
     }
   ],

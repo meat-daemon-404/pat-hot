@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T17:52:28.486394+00:00",
+  "generatedAt": "2026-11-04T02:22:22.921039+00:00",
   "weekStart": "2026-10-29",
   "windowDays": 7,
   "windowStart": "2026-10-29",
@@ -9,34 +9,34 @@
   "prevEnd": "2026-10-28",
   "categoryDelta": [
     {
-      "category": "科研进展",
-      "thisWeek": 1468.1,
-      "lastWeek": 2396.1,
-      "deltaPct": -38.7
+      "category": "其他",
+      "thisWeek": 1516.1,
+      "lastWeek": 1471.7,
+      "deltaPct": 3.0
     },
     {
       "category": "深空探测",
-      "thisWeek": 1457.4,
+      "thisWeek": 1401.5,
       "lastWeek": 1749.6,
-      "deltaPct": -16.7
+      "deltaPct": -19.9
     },
     {
-      "category": "其他",
-      "thisWeek": 1409.3,
-      "lastWeek": 1471.7,
-      "deltaPct": -4.2
+      "category": "科研进展",
+      "thisWeek": 1081.9,
+      "lastWeek": 2396.1,
+      "deltaPct": -54.8
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 934.2,
+      "thisWeek": 933.4,
       "lastWeek": 1253.7,
       "deltaPct": -25.5
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 624.2,
+      "thisWeek": 623.9,
       "lastWeek": 1456.7,
-      "deltaPct": -57.1
+      "deltaPct": -57.2
     },
     {
       "category": "太阳与空间物理",
@@ -83,12 +83,6 @@
       "days": 1
     },
     {
-      "topic_id": "e8e869f3d20d",
-      "title": "What’s Up: November 2026 Skywatching Tips from NASA",
-      "score": 200.5,
-      "days": 1
-    },
-    {
       "topic_id": "afcfb9061cba",
       "title": "When precise inference is wrong: Diagnosing model misspecification with applications to cosmic dawn and reionisation",
       "score": 135.6,
@@ -97,7 +91,13 @@
     {
       "topic_id": "6201ba6cd449",
       "title": "JWST may have found where heavy black hole seeds formed",
-      "score": 124.6,
+      "score": 124.2,
+      "days": 1
+    },
+    {
+      "topic_id": "22a61be24ff4",
+      "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+      "score": 123.8,
       "days": 1
     },
     {
@@ -107,15 +107,15 @@
       "days": 2
     },
     {
-      "topic_id": "c0596fc4c46d",
-      "title": "Astronaut and Earth",
-      "score": 115.6,
-      "days": 2
-    },
-    {
       "topic_id": "6706deed09b9",
       "title": "Envía tu nombre a Titán a bordo de la misión Dragonfly de la NASA",
       "score": 115.0,
+      "days": 1
+    },
+    {
+      "topic_id": "8eec9527a814",
+      "title": "Leviathan's sprawling stars challenge idea that dusty giants become compact galaxies",
+      "score": 114.5,
       "days": 1
     }
   ],
