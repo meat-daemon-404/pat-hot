@@ -1,69 +1,250 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T02:22:22.921039+00:00",
+  "generatedAt": "2026-11-04T18:00:40.304407+00:00",
   "count": 10,
   "items": [
     {
       "terms": [
-        "communications",
-        "copackaged",
-        "links",
-        "microleds",
-        "optical",
-        "optics",
-        "pivot",
-        "pixels",
-        "snap",
-        "speed"
+        "brightness",
+        "diodes",
+        "efficiency",
+        "form",
+        "hybrids",
+        "light-emitting",
+        "light-matter",
+        "minimal",
+        "pure-blue",
+        "quantum",
+        "quantum-dot",
+        "roll-off",
+        "state",
+        "supersolid",
+        "temperature"
       ],
       "source_count": 2,
       "signal_count": 2,
       "sources": [
-        "Laser Focus World",
-        "Physics World（关键词过滤）"
+        "Nature Photonics",
+        "Phys.org 物理新闻"
       ],
       "score": 42.0,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
       "representative": {
-        "title": "SNAP optics could speed up optical communications",
-        "url": "https://physicsworld.com/a/snap-optics-could-speed-up-optical-communications/",
-        "source": "Physics World（关键词过滤）",
-        "published_at": "2026-11-02T09:50:39+00:00",
-        "score": 60.0,
-        "summary": "Microscopic structures created on the surface of optical fibres could ease light transmission through fibre-optic networks The post SNAP optics could speed up optical communications appeared first on Physics World .",
-        "zh_full": "在光纤表面创建的微观结构可能有助于光在光纤网络中的传输。SNAP光学技术有望加速光通信。这一成果发表在《物理世界》上。",
-        "llm_summary": "SNAP光学技术在光纤表面制造微观结构，可能改善光纤网络中的光传输，加速光通信。",
-        "llm_reason": "光通信领域的潜在突破性技术",
-        "density": "中",
-        "llm_score": 42.5
+        "title": "Pure-blue quantum-dot light-emitting diodes with minimal efficiency roll-off and high brightness",
+        "url": "https://www.nature.com/articles/s41566-026-02041-8",
+        "source": "Nature Photonics",
+        "published_at": "2026-11-04T00:00:00+00:00",
+        "score": 69.7,
+        "summary": "Nature Photonics, Published online: 04 November 2026; doi:10.1038/s41566-026-02041-8 Quantum dots with compositionally graded shells enhance quantum-dot LED performance, achieving pure-blue emission with a peak external quantum efficiency o",
+        "zh_full": "《自然·光子学》于2026年11月4日在线发表了一项关于纯蓝光量子点发光二极管的研究。研究人员通过设计具有成分渐变壳层的量子点，显著提升了量子点LED的性能。该器件实现了纯蓝光发射，峰值外量子效率达到23.8%，并且在亮度为50,000 cd m⁻²时仍能保持该效率的95%，即效率滚降极小。这一成果表明，成分渐变壳层结构有助于改善量子点LED在高亮度下的稳定性与效率，为高性能纯蓝光显示和照明应用提供了新的材料设计思路。",
+        "refs": {
+          "doi": "10.1038/s41566-026-02041-8",
+          "via": "feed_text",
+          "confidence": "verified"
+        },
+        "llm_summary": "《自然·光子学》报道了一种采用成分渐变壳层量子点制备的纯蓝光LED，峰值外量子效率达23.8%，在50,000 cd m⁻²高亮度下仍保持95%的效率，滚降极小，为高效蓝光量子点器件提供了新方案。",
+        "llm_reason": "纯蓝光量子点LED效率与稳定性突破，具重要应用价值",
+        "density": "高"
       },
       "folded_count": 1,
-      "title": "SNAP optics could speed up optical communications",
-      "id": "a66ccb893ec8",
+      "title": "Pure-blue quantum-dot light-emitting diodes with minimal efficiency roll-off and high brightness",
+      "id": "b8ab568e8ad2",
       "links": [
         {
-          "title": "SNAP optics could speed up optical communications",
-          "url": "https://physicsworld.com/a/snap-optics-could-speed-up-optical-communications/",
-          "source": "Physics World（关键词过滤）",
-          "score": 60.0,
-          "published_at": "2026-11-02T09:50:39+00:00"
+          "title": "Pure-blue quantum-dot light-emitting diodes with minimal efficiency roll-off and high brightness",
+          "url": "https://www.nature.com/articles/s41566-026-02041-8",
+          "source": "Nature Photonics",
+          "score": 69.7,
+          "published_at": "2026-11-04T00:00:00+00:00"
         },
         {
-          "title": "From pixels to optical links: MicroLEDs pivot to copackaged optics",
-          "url": "https://www.laserfocusworld.com/optics/article/55409336/yole-group-from-pixels-to-optical-links-microleds-pivot-to-copackaged-optics",
-          "source": "Laser Focus World",
-          "score": 50.1,
-          "published_at": null
+          "title": "Light-matter hybrids form supersolid quantum state at room temperature",
+          "url": "https://phys.org/news/2026-11-hybrids-supersolid-quantum-state-room.html",
+          "source": "Phys.org 物理新闻",
+          "score": 56.1,
+          "published_at": "2026-11-03T22:20:11+00:00"
         }
       ],
       "top_terms": [
-        "optics",
-        "optical",
-        "snap",
-        "speed",
-        "communications"
+        "quantum",
+        "pure",
+        "blue",
+        "dot",
+        "emitting"
       ],
       "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "光模块"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "搜狗微信·光电行业 · 小白麻麻轻瘦日常",
+        "搜狗微信·光电行业 · 点火调研精选"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
+      "representative": {
+        "title": "光模块概念股汇总",
+        "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4T3V7gUeopmHRG3-M1hkyOGQ_mViRMtAlqXa8Fplpd9N6PuoZV3VE-uwE-hM_4bR1VZl6RyInzUAvIePBi9_niaQVmC1J4xN6cLF03zlvOPIUCrLmhKw2KteM25f8VMJpViRTbC1zaJBIP8Bc3zz3aokAkA0fvQYs-o1KkBXRmYE6m-LlwtgG4uQGFN2g0h6LlegzrbhLNbXx3pVY76MS9flztgI7RZ1g..&amp;type=2&amp;query=%E5%85%89%E6%A8%A1%E5%9D%97&amp;token=02408C027A2DEFD5C2C49DB695C6E342C25A4E386AEB75B8",
+        "source": "搜狗微信·光电行业 · 点火调研精选",
+        "published_at": "2026-11-04T14:23:21+00:00",
+        "score": 65.6,
+        "summary": "光模块概念股汇总核心逻辑:11 月 4 日 CPO 概念指数上涨 4%,成交额 1356.83 亿元、换手率 2.40%,光模块方向在前一交易日深跌...",
+        "zh_full": "（无摘要，仅标题）该条目标题为“光模块概念股汇总”，未提供正文摘要。",
+        "llm_summary": "该条目仅列出标题“光模块概念股汇总”，无正文内容，无法获取具体信息。",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "光模块概念股汇总",
+      "id": "a992c94af9ae",
+      "links": [
+        {
+          "title": "光模块概念股汇总",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4T3V7gUeopmHRG3-M1hkyOGQ_mViRMtAlqXa8Fplpd9N6PuoZV3VE-uwE-hM_4bR1VZl6RyInzUAvIePBi9_niaQVmC1J4xN6cLF03zlvOPIUCrLmhKw2KteM25f8VMJpViRTbC1zaJBIP8Bc3zz3aokAkA0fvQYs-o1KkBXRmYE6m-LlwtgG4uQGFN2g0h6LlegzrbhLNbXx3pVY76MS9flztgI7RZ1g..&amp;type=2&amp;query=%E5%85%89%E6%A8%A1%E5%9D%97&amp;token=02408C027A2DEFD5C2C49DB695C6E342C25A4E386AEB75B8",
+          "source": "搜狗微信·光电行业 · 点火调研精选",
+          "score": 65.6,
+          "published_at": "2026-11-04T14:23:21+00:00"
+        },
+        {
+          "title": "光模块设备:产业链10家硬核布局的公司",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4T3V7gUeopmHRG3-M1hkyOGQ_mViRMtAlqXa8Fplpd9E7IL__h54AbKCnSz3AYDQYqKijtAApDmY9kxKHw3rxr3hIBFSsxzzvn7s-W2KxucApYoEr_VB74T1y2TDfzhJAK3bDNJmq3OWZKzC0Tqv_FZ2lEDKsF9n63uWGXqNsYNtREhVGExhXHOyoJ0Gv4JAFAdMW0j995pdsfX1rzNpypQL0Hr9Gyd3Q..&amp;type=2&amp;query=%E5%85%89%E6%A8%A1%E5%9D%97&amp;token=02408C027A2DEFD5C2C49DB695C6E342C25A4E386AEB75B8",
+          "source": "搜狗微信·光电行业 · 小白麻麻轻瘦日常",
+          "score": 65.3,
+          "published_at": "2026-11-04T03:50:21+00:00"
+        }
+      ],
+      "top_terms": [
+        "光模",
+        "模块",
+        "光模块概念股汇总",
+        "块概",
+        "概念"
+      ],
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "智驾",
+        "激光",
+        "激光雷达"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "搜狗微信·光电行业 · 玩车教授",
+        "搜狗微信·光电行业 · 鱼大81"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
+      "representative": {
+        "title": "问界M9搭载896线激光雷达,智驾真有“终极答案”吗?",
+        "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4T3V7gUeopm8ss0HCpi5AqGQ_mViRMtAlqXa8Fplpd98NjCgORu-qnmfThWej9vSIcdk_5Y9FvAOpu9cA4VeEOhBHiqhh8vqVlw3M-qfG5ESXrXcBe8gDh5hD2-ZgdCE86rMdXgQSP3dApaIKeE2a7SRHY0exDlVD2E36HgoG5iX2z4a4yoU9euZz5NCPAlvZWZlXoBVmFNicIAEAP0_JNCy6umSSPEsg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=0240A45A7A2DEFD5C2C49DB695C6E342C25A4E386AEB75BB",
+        "source": "搜狗微信·光电行业 · 鱼大81",
+        "published_at": "2026-11-04T14:32:04+00:00",
+        "score": 65.6,
+        "summary": "问界M9搭载896线激光雷达,智驾真有“终极答案”吗?896线激光雷达安装在车上之后,问界M9的智驾就可以直接封神了吗?这件事...",
+        "zh_full": "（无摘要，仅标题）标题为“问界M9搭载896线激光雷达，智驾真有‘终极答案’吗？”。该标题指出问界M9车型搭载了896线激光雷达，并对其智能驾驶能力是否构成“终极答案”提出疑问。",
+        "llm_summary": "标题提及问界M9搭载896线激光雷达，并对其智驾水平是否达到“终极答案”提出疑问。",
+        "llm_reason": "标题提及具体车型与激光雷达线数，但无正文内容",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "问界M9搭载896线激光雷达,智驾真有“终极答案”吗?",
+      "id": "65be72d07d13",
+      "links": [
+        {
+          "title": "问界M9搭载896线激光雷达,智驾真有“终极答案”吗?",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4T3V7gUeopm8ss0HCpi5AqGQ_mViRMtAlqXa8Fplpd98NjCgORu-qnmfThWej9vSIcdk_5Y9FvAOpu9cA4VeEOhBHiqhh8vqVlw3M-qfG5ESXrXcBe8gDh5hD2-ZgdCE86rMdXgQSP3dApaIKeE2a7SRHY0exDlVD2E36HgoG5iX2z4a4yoU9euZz5NCPAlvZWZlXoBVmFNicIAEAP0_JNCy6umSSPEsg..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=0240A45A7A2DEFD5C2C49DB695C6E342C25A4E386AEB75BB",
+          "source": "搜狗微信·光电行业 · 鱼大81",
+          "score": 65.6,
+          "published_at": "2026-11-04T14:32:04+00:00"
+        },
+        {
+          "title": "智驾升级!配激光雷达的新款日产N7 表现到底如何?",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4T3V7gUeopm8ss0HCpi5AqGQ_mViRMtAlqXa8Fplpd9c8-rZX5RDlQ118SHgzWWhmtska7g4f5_P1SEcALlRJ5MC5mWyPWKJjqqLzOeoIIxnQJVIReEf55kXmnmqTSbTrLsVYAWDyVhgrZvJCSmYTu8iqGLbhbFP_Gmwsc-X-U1NGXxR7U93Ipcajju5noqrJLczYyBGF78s4DbTplAxUoNGbbB75bUeA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=0240A45A7A2DEFD5C2C49DB695C6E342C25A4E386AEB75BB",
+          "source": "搜狗微信·光电行业 · 玩车教授",
+          "score": 65.5,
+          "published_at": "2026-11-04T11:08:23+00:00"
+        }
+      ],
+      "top_terms": [
+        "智驾",
+        "激光",
+        "光雷",
+        "雷达",
+        "问界"
+      ],
+      "rank": 3,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "激光",
+        "激光雷达"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "搜狗微信·光电行业 · 车主指南",
+        "搜狗微信·光电行业 · 车来车往Clcw"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
+      "representative": {
+        "title": "同样带激光雷达,10万多的纯电轿跑怎么选?2027款奕派007 VS 风云A9",
+        "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4T3V7gUeopm8ss0HCpi5AqGQ_mViRMtAlqXa8Fplpd95MXew2GCEbu4Q67tcu7OtEBWff6_UlgQtOD4QqV6GHLQP1cqaqXY9MhvQNJCTBf1djQanI1nV1k1bp2-EuPu7IPr6aHa9gZfyxc2jYavTmTs4BN89cfJloZB1e_17Apt1FDWB5bI0DRpdvkViYwD1YyEjMbUMv3bVkUF2OlUIH7I3OTRHYU2og..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=0240A45A7A2DEFD5C2C49DB695C6E342C25A4E386AEB75BB",
+        "source": "搜狗微信·光电行业 · 车来车往Clcw",
+        "published_at": "2026-11-04T15:58:02+00:00",
+        "score": 65.6,
+        "summary": "预算10万多买纯电轿跑,估计有不少人都会陷入一个典型的误区,盯着“有没有激光雷达”、“支不支持城市NOA”来做决策,却忽...",
+        "zh_full": "（无摘要，仅标题）该条目标题为“同样带激光雷达,10万多的纯电轿跑怎么选?2027款奕派007 VS 风云A9”，未提供正文摘要。",
+        "llm_summary": "该条目仅列出标题“同样带激光雷达,10万多的纯电轿跑怎么选?2027款奕派007 VS 风云A9”，无正文内容，无法获取具体信息。",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "同样带激光雷达,10万多的纯电轿跑怎么选?2027款奕派007 VS 风云A9",
+      "id": "ec103b72d50d",
+      "links": [
+        {
+          "title": "同样带激光雷达,10万多的纯电轿跑怎么选?2027款奕派007 VS 风云A9",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4T3V7gUeopm8ss0HCpi5AqGQ_mViRMtAlqXa8Fplpd95MXew2GCEbu4Q67tcu7OtEBWff6_UlgQtOD4QqV6GHLQP1cqaqXY9MhvQNJCTBf1djQanI1nV1k1bp2-EuPu7IPr6aHa9gZfyxc2jYavTmTs4BN89cfJloZB1e_17Apt1FDWB5bI0DRpdvkViYwD1YyEjMbUMv3bVkUF2OlUIH7I3OTRHYU2og..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=0240A45A7A2DEFD5C2C49DB695C6E342C25A4E386AEB75BB",
+          "source": "搜狗微信·光电行业 · 车来车往Clcw",
+          "score": 65.6,
+          "published_at": "2026-11-04T15:58:02+00:00"
+        },
+        {
+          "title": "激光雷达+宁德时代,10万级的大众纯电SUV来了!",
+          "url": "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4T3V7gUeopm8ss0HCpi5AqGQ_mViRMtAlqXa8Fplpd9G8x4Pl4YWynlpPN5OXIRrOL3fJrNMf-J25Cx8wev3Ls2gmC7h63ICYzz3bwJpZKdBJREYYVJnV-5aKR6n7E7-X66rlBcpXAePn_UVih-RcT8JJtf4JPdKvNhbyzMRBjI1eBT_NnQ2jOgXxqYLbXhQbohoDziFyaNfohgd5HKeFifxjh3za6jWA..&amp;type=2&amp;query=%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;token=0240A45A7A2DEFD5C2C49DB695C6E342C25A4E386AEB75BB",
+          "source": "搜狗微信·光电行业 · 车主指南",
+          "score": 65.4,
+          "published_at": "2026-11-04T10:11:41+00:00"
+        }
+      ],
+      "top_terms": [
+        "激光",
+        "光雷",
+        "雷达",
+        "纯电",
+        "来了"
+      ],
+      "rank": 4,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -78,7 +259,7 @@
         "C114中国通信网_通信财经"
       ],
       "score": 34.5,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
       "representative": {
         "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
         "url": "https://www.c114.com.cn/news/123/a1315966.html",
@@ -124,7 +305,7 @@
         "上半",
         "半年"
       ],
-      "rank": 2,
+      "rank": 5,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -133,217 +314,197 @@
     },
     {
       "terms": [
+        "back",
         "list",
+        "look",
         "october",
-        "photonics"
+        "photonics",
+        "west"
       ],
-      "source_count": 1,
+      "source_count": 2,
       "signal_count": 3,
       "sources": [
-        "Laser Focus World"
+        "Laser Focus World",
+        "YouTube·SPIETV"
       ],
-      "score": 34.5,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
+      "score": 24.5,
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
       "representative": {
         "title": "Photonics Hot List: October 30, 2026",
         "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
         "source": "Laser Focus World",
         "published_at": null,
-        "score": 53.8,
+        "score": 58.7,
         "summary": "In this episode: A contactless optical sensor shows promise for measuring vital signs, catch our PhotonicsNXT virtual event on demand, and a compact OCT imaging system finds use in industrial applications.",
         "zh_full": "本期节目内容包括：一种非接触式光学传感器在测量生命体征方面展现出应用前景；PhotonicsNXT线上虚拟活动可随时观看；以及一款紧凑型OCT成像系统在工业领域得到应用。",
         "llm_summary": "非接触式光学传感器有望用于生命体征测量；紧凑型OCT成像系统应用于工业；PhotonicsNXT线上活动可观看。",
         "llm_reason": "光电传感与OCT工业应用进展",
-        "density": "中"
+        "density": "中",
+        "llm_score": 24.0
       },
-      "folded_count": 0,
+      "folded_count": 1,
       "title": "Photonics Hot List: October 30, 2026",
-      "id": "21a0c8421f1a",
+      "id": "cf711748e825",
       "links": [
         {
           "title": "Photonics Hot List: October 30, 2026",
           "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
           "source": "Laser Focus World",
-          "score": 53.8,
+          "score": 58.7,
           "published_at": null
         },
         {
           "title": "Photonics Hot List: October 23, 2026",
           "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
           "source": "Laser Focus World",
-          "score": 48.4,
+          "score": 58.7,
           "published_at": null
         },
         {
           "title": "Photonics Hot List: October 16, 2026",
           "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
           "source": "Laser Focus World",
-          "score": 48.4,
+          "score": 58.7,
           "published_at": null
+        },
+        {
+          "title": "A Look Back on Photonics West 2026",
+          "url": "https://www.youtube.com/shorts/ne-cuXI4otA",
+          "source": "YouTube·SPIETV",
+          "score": 47.1,
+          "published_at": "2026-10-16T21:37:37+00:00"
         }
       ],
       "top_terms": [
         "photonics",
         "list",
-        "october"
+        "october",
+        "look",
+        "back"
       ],
-      "rank": 3,
-      "trend": "up",
-      "trendPct": 40.8,
-      "badges": [
-        "rising"
-      ],
-      "heat": 34.5,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "ahead",
-        "assess",
-        "challenges",
-        "computing",
-        "debating",
-        "expert",
-        "experts",
-        "future",
-        "insights",
-        "opportunities",
-        "photonics",
-        "podcast",
-        "quantum",
-        "roundup"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "Laser Focus World",
-        "Physics World（关键词过滤）"
-      ],
-      "score": 24.5,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
-      "representative": {
-        "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-        "url": "https://www.laserfocusworld.com/executive-forum/podcast/55411597/podcast-expert-insights-photonics-quantum-computing",
-        "source": "Laser Focus World",
-        "published_at": null,
-        "score": 57.2,
-        "summary": "This episode of Following the Photons: A Photonics Podcast covers the growing alliance between quantum computing and classical photonics.",
-        "zh_full": "Laser Focus World发布的播客节目《Following the Photons: A Photonics Podcast》本期聚焦量子计算与经典光子学之间日益紧密的合作关系。节目通过专家访谈的形式，探讨了光子技术在量子计算领域的应用前景，以及两者融合可能带来的技术突破。光子学作为量子计算的重要支撑技术，在量子通信、量子传感和量子信息处理等方面具有独特优势。本期播客旨在为听众提供来自行业专家的深度见解，帮助理解光子学与量子计算交叉领域的最新发展趋势。",
-        "llm_summary": "Laser Focus World播客节目探讨量子计算与经典光子学之间的合作趋势，通过专家访谈分析光子技术在量子计算中的应用前景及交叉领域的发展动态。",
-        "llm_reason": "光子与量子交叉洞察",
-        "density": "中",
-        "llm_score": 15.0
-      },
-      "folded_count": 1,
-      "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-      "id": "6aec187ed191",
-      "links": [
-        {
-          "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
-          "url": "https://www.laserfocusworld.com/executive-forum/podcast/55411597/podcast-expert-insights-photonics-quantum-computing",
-          "source": "Laser Focus World",
-          "score": 57.2,
-          "published_at": null
-        },
-        {
-          "title": "PODCAST: The Photonics Roundup",
-          "url": "https://www.laserfocusworld.com/resources/podcast/55410296/podcast-the-photonics-roundup",
-          "source": "Laser Focus World",
-          "score": 51.5,
-          "published_at": null
-        },
-        {
-          "title": "Debating the future of photonics: experts assess the challenges and opportunities ahead",
-          "url": "https://physicsworld.com/a/debating-the-future-of-photonics-experts-assess-the-challenges-and-opportunities-ahead/",
-          "source": "Physics World（关键词过滤）",
-          "score": 42.7,
-          "published_at": "2026-10-01T07:00:18+00:00"
-        }
-      ],
-      "top_terms": [
-        "photonics",
-        "podcast",
-        "expert",
-        "insights",
-        "quantum"
-      ],
-      "rank": 4,
+      "rank": 6,
       "trend": "down",
-      "trendPct": -46.2,
+      "trendPct": -29.0,
       "badges": [],
       "heat": 24.5,
       "status": "关注中"
     },
     {
       "terms": [
-        "conditions",
-        "defects",
-        "europa",
-        "innovation",
-        "machine",
-        "more",
-        "product",
-        "realistic",
-        "semicon",
-        "semiconductor",
-        "showcases",
-        "temperature",
-        "track"
+        "ahead",
+        "arrays",
+        "assess",
+        "available",
+        "avalanche",
+        "camera",
+        "cameras",
+        "challenges",
+        "computing",
+        "data",
+        "debating",
+        "diode",
+        "edmund",
+        "electronics",
+        "expanding",
+        "expert",
+        "experts",
+        "express",
+        "future",
+        "imaging",
+        "insights",
+        "iris",
+        "microscopy",
+        "opportunities",
+        "optics",
+        "partnership",
+        "photometrics",
+        "photon",
+        "photonics",
+        "podcast",
+        "prime",
+        "quantum",
+        "research",
+        "science",
+        "scientific",
+        "sharper",
+        "single-photon",
+        "teledyne"
       ],
-      "source_count": 2,
-      "signal_count": 1,
+      "source_count": 3,
+      "signal_count": 2,
       "sources": [
-        "Phys.org 物理新闻",
-        "Physics World（关键词过滤）"
+        "Laser Focus World",
+        "Physics World（关键词过滤）",
+        "YouTube·Edmund Optics"
       ],
-      "score": 21.0,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
+      "score": 21.2,
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
       "representative": {
-        "title": "SEMICON Europa 2026 showcases semiconductor R&D and product innovation",
-        "url": "https://physicsworld.com/a/semicon-europa-2026-showcases-semiconductor-rd-and-product-innovation/",
-        "source": "Physics World（关键词过滤）",
-        "published_at": "2026-11-03T16:52:34+00:00",
-        "score": 60.9,
-        "summary": "Europe’s largest event for electronics manufacturing comes to Munich on 10−13 November 2026 The post SEMICON Europa 2026 showcases semiconductor R&D and product innovation appeared first on Physics World .",
-        "zh_full": "SEMICON Europa 2026 将于2026年11月10日至13日在德国慕尼黑举行，这是欧洲最大的电子制造行业盛会。该展会聚焦半导体研发与产品创新，为全球半导体产业链提供展示与交流平台。展会期间将集中呈现半导体制造设备、材料、工艺技术以及前沿研发成果，涵盖从芯片设计到封装测试的完整环节。作为欧洲半导体行业的重要年度活动，SEMICON Europa 吸引了来自世界各地的设备供应商、材料厂商、研究机构及高校代表参与，旨在推动欧洲乃至全球半导体产业的技术进步与产业合作。本届展会延续了以往对研发与创新的强调，为与会者提供了了解行业最新动态、探讨技术趋势以及建立商业联系的机会。",
-        "llm_summary": "SEMICON Europa 2026 将于2026年11月10日至13日在德国慕尼黑举行，这是欧洲最大的电子制造行业盛会，聚焦半导体研发与产品创新，为全球半导体产业链提供展示与交流平台。",
-        "llm_reason": "欧洲最大半导体展会，行业风向标",
+        "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
+        "url": "https://www.laserfocusworld.com/detectors-imaging/article/55413803/single-photon-avalanche-diode-arrays-an-avalanche-of-photon-data-for-sharper-imaging",
+        "source": "Laser Focus World",
+        "published_at": null,
+        "score": 65.0,
+        "summary": "While typically associated with LiDAR, single-photon avalanche diode (SPAD) arrays can also be used as cameras for general-purpose imaging and perception by using ambient visible light.",
+        "zh_full": "单光子雪崩二极管（SPAD）阵列通常与激光雷达（LiDAR）相关联，但它们也可以利用环境可见光作为相机用于通用成像和感知。这一应用拓展了SPAD阵列的功能，使其不仅限于主动测距，还能在被动光照条件下进行成像。SPAD阵列具有单光子级灵敏度，能够捕捉极弱光信号，因此在环境光下也能实现高灵敏度成像。这种通用成像能力可能用于自动驾驶、机器人视觉、安防监控等领域，提供更丰富的光子数据以实现更清晰的图像。",
+        "llm_summary": "单光子雪崩二极管（SPAD）阵列通常用于LiDAR，但也可利用环境可见光作为相机进行通用成像和感知。SPAD阵列具有单光子灵敏度，能在被动光照下工作，为自动驾驶、机器人视觉等提供高灵敏度成像方案。",
+        "llm_reason": "拓展SPAD阵列应用，实现环境光通用成像",
         "density": "中",
-        "llm_score": 32.5
+        "llm_score": 22.0
       },
-      "folded_count": 1,
-      "title": "SEMICON Europa 2026 showcases semiconductor R&D and product innovation",
-      "id": "9c84fc9e18b4",
+      "folded_count": 2,
+      "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
+      "id": "6bf26ca37051",
       "links": [
         {
-          "title": "SEMICON Europa 2026 showcases semiconductor R&D and product innovation",
-          "url": "https://physicsworld.com/a/semicon-europa-2026-showcases-semiconductor-rd-and-product-innovation/",
-          "source": "Physics World（关键词过滤）",
-          "score": 60.9,
-          "published_at": "2026-11-03T16:52:34+00:00"
+          "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55413803/single-photon-avalanche-diode-arrays-an-avalanche-of-photon-data-for-sharper-imaging",
+          "source": "Laser Focus World",
+          "score": 65.0,
+          "published_at": null
         },
         {
-          "title": "Machine learning helps track semiconductor defects under more realistic temperature conditions",
-          "url": "https://phys.org/news/2026-10-machine-track-semiconductor-defects-realistic.html",
-          "source": "Phys.org 物理新闻",
-          "score": 53.2,
-          "published_at": "2026-10-29T20:50:05+00:00"
+          "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
+          "url": "https://www.laserfocusworld.com/executive-forum/podcast/55411597/podcast-expert-insights-photonics-quantum-computing",
+          "source": "Laser Focus World",
+          "score": 65.0,
+          "published_at": null
+        },
+        {
+          "title": "Debating the future of photonics: experts assess the challenges and opportunities ahead",
+          "url": "https://physicsworld.com/a/debating-the-future-of-photonics-experts-assess-the-challenges-and-opportunities-ahead/",
+          "source": "Physics World（关键词过滤）",
+          "score": 50.5,
+          "published_at": "2026-10-01T07:00:18+00:00"
+        },
+        {
+          "title": "Expanding our Partnership with Teledyne Photometrics Scientific Cameras | Edmund Optics",
+          "url": "https://www.youtube.com/watch?v=3qH7xDED-_M",
+          "source": "YouTube·Edmund Optics",
+          "score": 46.0,
+          "published_at": "2026-07-08T12:16:13+00:00"
+        },
+        {
+          "title": "Teledyne Photometrics Iris Scientific Camera Now Available! #imaging  #microscopy #research",
+          "url": "https://www.youtube.com/shorts/pkFjTuOZA0U",
+          "source": "YouTube·Edmund Optics",
+          "score": 46.0,
+          "published_at": "2026-03-25T12:31:36+00:00"
         }
       ],
       "top_terms": [
-        "semiconductor",
-        "semicon",
-        "europa",
-        "showcases",
-        "product"
+        "imaging",
+        "teledyne",
+        "photometrics",
+        "scientific",
+        "photonics"
       ],
-      "digest": "SEMICON Europa 2026将于2026年11月10日至13日在慕尼黑举行，展示半导体研发与产品创新。该活动是欧洲最大的电子制造行业展会，聚焦先进封装、材料及设备技术。主办方称，展会旨在促进研发成果向量产转化，并应对行业面临的供应链与可持续性挑战。",
-      "rank": 5,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 7,
+      "trend": "flat",
+      "trendPct": 1.0,
       "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
+      "heat": 21.2,
+      "status": "发酵中"
     },
     {
       "terms": [],
@@ -354,7 +515,7 @@
         "OFweek 光电频道"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
       "representative": {
         "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
         "url": "https://www.c114.com.cn/news/123/a1316157.html",
@@ -393,9 +554,7 @@
         "亿元",
         "融资"
       ],
-      "digest": "中际旭创2026年上半年营收417.78亿元，同比增长182.49%，公司称受益于AI驱动的高速光模块（800G/1.6T）放量，海外收入占比近95%。",
-      "digestTitle": "中际旭创上半年营收417.78亿元，同比增182.49%",
-      "rank": 6,
+      "rank": 8,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -415,13 +574,13 @@
         "COEMA 中国光电子行业协会"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
       "representative": {
         "title": "精密光纤激光器企业频准激光登陆科创板",
         "url": "https://www.coema.org.cn/industry/202608/5795.html",
         "source": "COEMA 中国光电子行业协会",
         "published_at": "2026-08",
-        "score": 41.1,
+        "score": 45.7,
         "summary": "",
         "zh_full": "（无摘要，仅标题）精密光纤激光器企业频准激光登陆科创板。",
         "llm_summary": "标题信息：精密光纤激光器企业频准激光登陆科创板。",
@@ -432,18 +591,18 @@
       "id": "e5f48246a18c",
       "links": [
         {
+          "title": "精密光纤激光器企业频准激光登陆科创板",
+          "url": "https://www.coema.org.cn/industry/202608/5795.html",
+          "source": "COEMA 中国光电子行业协会",
+          "score": 45.7,
+          "published_at": "2026-08"
+        },
+        {
           "title": "宇树科技计划登陆科创板 中国移动已投资",
           "url": "https://www.c114.com.cn/news/212/a1292374.html",
           "source": "C114中国通信网_IT资讯",
           "score": 44.5,
           "published_at": null
-        },
-        {
-          "title": "精密光纤激光器企业频准激光登陆科创板",
-          "url": "https://www.coema.org.cn/industry/202608/5795.html",
-          "source": "COEMA 中国光电子行业协会",
-          "score": 41.1,
-          "published_at": "2026-08"
         }
       ],
       "top_terms": [
@@ -453,9 +612,9 @@
         "创板",
         "激光"
       ],
-      "digest": "宇树科技计划在科创板IPO，以推动公司发展，中国移动已对其投资。该消息由宇树科技投资方透露，经多家媒体引述。目前公司尚未披露具体上市时间表或募资规模。",
-      "digestTitle": "宇树科技拟科创板IPO，中国移动已投资",
-      "rank": 7,
+      "digest": "精密光纤激光器企业频准激光已登陆科创板，宇树科技计划在科创板IPO，中国移动已投资宇树科技。频准激光登陆科创板的具体结果未披露，宇树科技IPO计划据其投资方消息透露，旨在推动公司发展。",
+      "digestTitle": "频准激光与宇树科技拟登陆科创板",
+      "rank": 9,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -464,198 +623,93 @@
     },
     {
       "terms": [
-        "arrays",
-        "avalanche",
-        "confirm",
-        "data",
-        "diode",
-        "feynman",
+        "ai-powered",
+        "biological",
+        "briefings",
+        "calcium",
+        "deeper",
+        "fiber",
+        "future",
         "imaging",
-        "measurements",
-        "mechanics",
-        "photon",
-        "quantum",
-        "richard",
-        "sharper",
-        "single-photon",
-        "vision"
+        "importance",
+        "infrared",
+        "neurostimulation",
+        "optical",
+        "oral",
+        "phantoms",
+        "raman-oct",
+        "sees",
+        "shaping",
+        "signals",
+        "target",
+        "tissue",
+        "tuning",
+        "views"
       ],
       "source_count": 2,
       "signal_count": 1,
       "sources": [
         "Laser Focus World",
-        "Physics World（关键词过滤）"
+        "YouTube·SPIETV"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
       "representative": {
-        "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
-        "url": "https://www.laserfocusworld.com/detectors-imaging/article/55413803/single-photon-avalanche-diode-arrays-an-avalanche-of-photon-data-for-sharper-imaging",
+        "title": "Shaping light to see deeper inside biological tissue",
+        "url": "https://www.laserfocusworld.com/biolife-sciences/article/55413515/imec-shaping-light-to-see-deeper-inside-biological-tissue",
         "source": "Laser Focus World",
         "published_at": null,
-        "score": 55.7,
-        "summary": "While typically associated with LiDAR, single-photon avalanche diode (SPAD) arrays can also be used as cameras for general-purpose imaging and perception by using ambient visible light.",
-        "zh_full": "单光子雪崩二极管（SPAD）阵列通常与激光雷达（LiDAR）相关联，但它们也可以利用环境可见光作为相机用于通用成像和感知。这一应用拓展了SPAD阵列的功能，使其不仅限于主动测距，还能在被动光照条件下进行成像。SPAD阵列具有单光子级灵敏度，能够捕捉极弱光信号，因此在环境光下也能实现高灵敏度成像。这种通用成像能力可能用于自动驾驶、机器人视觉、安防监控等领域，提供更丰富的光子数据以实现更清晰的图像。",
-        "llm_summary": "单光子雪崩二极管（SPAD）阵列通常用于LiDAR，但也可利用环境可见光作为相机进行通用成像和感知。SPAD阵列具有单光子灵敏度，能在被动光照下工作，为自动驾驶、机器人视觉等提供高灵敏度成像方案。",
-        "llm_reason": "拓展SPAD阵列应用，实现环境光通用成像",
-        "density": "中"
-      },
-      "folded_count": 1,
-      "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
-      "id": "8c9d9a318b72",
-      "links": [
-        {
-          "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
-          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55413803/single-photon-avalanche-diode-arrays-an-avalanche-of-photon-data-for-sharper-imaging",
-          "source": "Laser Focus World",
-          "score": 55.7,
-          "published_at": null
-        },
-        {
-          "title": "Single-photon measurements confirm Richard Feynman’s vision of quantum mechanics",
-          "url": "https://physicsworld.com/a/single-photon-measurements-confirm-richard-feynmans-vision-of-quantum-mechanics/",
-          "source": "Physics World（关键词过滤）",
-          "score": 41.2,
-          "published_at": "2026-09-25T08:20:12+00:00"
-        }
-      ],
-      "top_terms": [
-        "photon",
-        "avalanche",
-        "diode",
-        "arrays",
-        "data"
-      ],
-      "digest": "单光子雪崩二极管（SPAD）阵列已从激光雷达扩展到环境可见光下的通用成像与感知应用，可捕捉微弱光子信号以生成更清晰的图像。该技术基于量子力学路径积分理论，实验测量结果证实了理查德·费曼关于量子力学基本假设的预言。",
-      "digestTitle": "单光子雪崩二极管阵列实现环境光成像",
-      "rank": 8,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "光纤",
-        "激光"
-      ],
-      "source_count": 3,
-      "signal_count": 1,
-      "sources": [
-        "C114中国通信网_通信财经",
-        "COEMA 中国光电子行业协会",
-        "OFweek 激光频道"
-      ],
-      "score": 17.7,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
-      "representative": {
-        "title": "营收增长74.28%，净利润增长109.99%，光纤激光大厂“爆发”！",
-        "url": "https://www.coema.org.cn/industry/202610/5887.html",
-        "source": "COEMA 中国光电子行业协会",
-        "published_at": "2026-10",
-        "score": 50.5,
-        "summary": "",
+        "score": 35.2,
+        "summary": "Integrated wavefront shaping extends the reach of optical imaging to give scientists a deeper and more precise look into biological tissue.",
         "zh_full": null
       },
-      "folded_count": 2,
-      "title": "营收增长74.28%，净利润增长109.99%，光纤激光大厂“爆发”！",
-      "id": "cd3547fd9611",
-      "links": [
-        {
-          "title": "频准激光上半年营收2.56亿元增42.13% 净利润增24.58%",
-          "url": "https://www.c114.com.cn/news/123/a1316461.html",
-          "source": "C114中国通信网_通信财经",
-          "score": 65.0,
-          "published_at": null
-        },
-        {
-          "title": "前三季度营收超78亿！激光巨头净利激增214%",
-          "url": "https://laser.ofweek.com/2026-10/ART-8500-2400-30708207.html",
-          "source": "OFweek 激光频道",
-          "score": 59.5,
-          "published_at": "2026-10"
-        },
-        {
-          "title": "营收增长74.28%，净利润增长109.99%，光纤激光大厂“爆发”！",
-          "url": "https://www.coema.org.cn/industry/202610/5887.html",
-          "source": "COEMA 中国光电子行业协会",
-          "score": 50.5,
-          "published_at": "2026-10"
-        }
-      ],
-      "top_terms": [
-        "激光",
-        "营收",
-        "净利",
-        "利润",
-        "润增"
-      ],
-      "rank": 9,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 17.7,
-      "status": "发酵中"
-    },
-    {
-      "terms": [
-        "c114",
-        "microled",
-        "光通信",
-        "半导体"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "CIOE 中国光博会",
-        "LEDinside 中文"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
-      "representative": {
-        "title": "媒体看光博 | C114通信网：发现MicroLED从芯片到系统的进化",
-        "url": "https://cioe.cn/news/3045_info.html",
-        "source": "CIOE 中国光博会",
-        "published_at": "2026-10-11",
-        "score": 53.9,
-        "summary": "",
-        "zh_full": "第27届中国国际光电博览会于9月9-11日在深圳国际会展中心举办，与IICIE、elexcon三展联动，三天共吸引325,810名专业观众到场。C114通信网撰文指出，伴随MOE大模型、Agent智能体爆发，网络通信开销占训练时长最高可达40%，智算网络瓶颈凸显。突破瓶颈有三条路线：一是“快而窄”路线，将单通道速率提升至400G，集成8个通道实现下一代3.2T光模块；二是“快而宽”路线，以XPO方案为代表，实现64通道集成，单通道速率200G，单模块带宽可达12.8T，迭代后可突破25.6T，适配超高带宽算力场景；三是“慢而宽”路线，通过集成更多通道实现低功耗高速率传输，如典型的MicroLED方案，依托400通道、单通道4G速率可实现1.6T带宽。文章围绕MicroLED展开，结合CIOE2026现场展示，讨论什么是MicroLED、光互连为什么需要MicroLED以及MicroLED（原文在此处截断）。",
-        "llm_summary": "第27届中国光博会三展联动吸引325,810名专业观众。C114文章指出智算网络瓶颈凸显，三条突破路线包括快而窄（3.2T光模块）、快而宽（XPO方案12.8T可迭代25.6T）、慢而宽（MicroLED方案400通道单通道4G实现1.6T）。文章聚焦MicroLED在光互连中的应用。",
-        "llm_reason": "MicroLED光互连技术路线解析",
-        "density": "高"
-      },
       "folded_count": 1,
-      "title": "媒体看光博 | C114通信网：发现MicroLED从芯片到系统的进化",
-      "id": "c14e59b3790c",
+      "title": "Shaping light to see deeper inside biological tissue",
+      "id": "07cc46da5b4f",
       "links": [
         {
-          "title": "媒体看光博 | C114通信网：发现MicroLED从芯片到系统的进化",
-          "url": "https://cioe.cn/news/3045_info.html",
-          "source": "CIOE 中国光博会",
-          "score": 53.9,
-          "published_at": "2026-10-11"
+          "title": "AI Briefings: One Fiber, Two Views: AI-Powered Raman-OCT Sees Oral Tissue in a New Light",
+          "url": "https://www.youtube.com/watch?v=fWsHYHmS-7U",
+          "source": "YouTube·SPIETV",
+          "score": 39.7,
+          "published_at": "2026-10-05T15:12:36+00:00"
         },
         {
-          "title": "晶湛半导体MicroLED光通信技术取得新突破",
-          "url": "https://www.ledinside.cn/knowledge/20260617-61902.html",
-          "source": "LEDinside 中文",
-          "score": 45.2,
-          "published_at": "2026-06-17"
+          "title": "AI Briefings: Tuning Calcium Signals with Infrared Light: A New Target for Neurostimulation",
+          "url": "https://www.youtube.com/watch?v=iKU_Onn_dAY",
+          "source": "YouTube·SPIETV",
+          "score": 39.7,
+          "published_at": "2026-09-21T15:08:47+00:00"
+        },
+        {
+          "title": "AI Briefings: Shaping the Future of Optical Imaging, the Importance of Tissue Phantoms",
+          "url": "https://www.youtube.com/watch?v=MxetD1y7hS0",
+          "source": "YouTube·SPIETV",
+          "score": 39.7,
+          "published_at": "2026-08-17T15:11:19+00:00"
+        },
+        {
+          "title": "Shaping light to see deeper inside biological tissue",
+          "url": "https://www.laserfocusworld.com/biolife-sciences/article/55413515/imec-shaping-light-to-see-deeper-inside-biological-tissue",
+          "source": "Laser Focus World",
+          "score": 35.2,
+          "published_at": null
         }
       ],
       "top_terms": [
-        "通信",
-        "microled",
-        "发现",
-        "媒体看光博",
-        "媒体"
+        "tissue",
+        "briefings",
+        "shaping",
+        "see",
+        "deeper"
       ],
+      "digest": "集成波前整形技术通过校正光在生物组织中的散射，使光学成像能够更深入、更精确地观察组织内部结构。该技术由研究团队开发，旨在突破传统成像深度限制，为生物医学研究提供新的观察手段。相关成果已在光学成像领域展示，但具体应用效果仍需进一步验证。",
+      "digestTitle": "光波前整形技术提升生物组织成像深度",
       "rank": 10,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 0.0,
+      "heat": 21.0,
       "status": "关注中"
     }
   ]

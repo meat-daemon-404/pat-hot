@@ -1,7 +1,36 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T02:22:22.921039+00:00",
+  "generatedAt": "2026-11-04T18:00:40.304407+00:00",
   "channel": "physics",
-  "count": 0,
-  "items": []
+  "count": 2,
+  "items": [
+    {
+      "id": "0f88eab4a02b",
+      "title": "Everlasting secure key agreement from a quantum computational hybrid security model",
+      "channel": "physics",
+      "source": "arXiv quant-ph 论文速递",
+      "url": "https://arxiv.org/abs/2004.10173",
+      "doi": null,
+      "arxiv": "2004.10173",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "科研进展",
+      "published_at": "2026-11-04T05:00:00+00:00",
+      "selected": false
+    },
+    {
+      "id": "37a1ce9fe3d7",
+      "title": "Perturbation-based Non-perturbative Method",
+      "channel": "physics",
+      "source": "arXiv quant-ph 论文速递",
+      "url": "https://arxiv.org/abs/2308.10996",
+      "doi": null,
+      "arxiv": "2308.10996",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "科研进展",
+      "published_at": "2026-11-04T05:00:00+00:00",
+      "selected": false
+    }
+  ]
 }

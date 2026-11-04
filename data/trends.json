@@ -1,81 +1,81 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T02:22:22.921039+00:00",
-  "weekStart": "2026-10-29",
+  "generatedAt": "2026-11-04T18:00:40.304407+00:00",
+  "weekStart": "2026-10-30",
   "windowDays": 7,
-  "windowStart": "2026-10-29",
-  "windowEnd": "2026-11-04",
-  "prevStart": "2026-10-22",
-  "prevEnd": "2026-10-28",
+  "windowStart": "2026-10-30",
+  "windowEnd": "2026-11-05",
+  "prevStart": "2026-10-23",
+  "prevEnd": "2026-10-29",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4540.1,
-      "lastWeek": 4656.6,
-      "deltaPct": -2.5
+      "thisWeek": 4395.3,
+      "lastWeek": 4526.7,
+      "deltaPct": -2.9
     },
     {
       "category": "光通信",
-      "thisWeek": 3256.9,
-      "lastWeek": 3096.0,
-      "deltaPct": 5.2
+      "thisWeek": 3412.2,
+      "lastWeek": 3367.1,
+      "deltaPct": 1.3
     },
     {
       "category": "科研进展",
-      "thisWeek": 2933.3,
-      "lastWeek": 3123.3,
-      "deltaPct": -6.1
+      "thisWeek": 2888.9,
+      "lastWeek": 3130.5,
+      "deltaPct": -7.7
     },
     {
       "category": "产业与资本",
-      "thisWeek": 2874.4,
-      "lastWeek": 3240.3,
-      "deltaPct": -11.3
+      "thisWeek": 2874.6,
+      "lastWeek": 3084.7,
+      "deltaPct": -6.8
     },
     {
       "category": "其他",
-      "thisWeek": 2697.2,
-      "lastWeek": 2298.5,
-      "deltaPct": 17.3
+      "thisWeek": 2551.8,
+      "lastWeek": 2336.2,
+      "deltaPct": 9.2
     },
     {
       "category": "通信与算力",
-      "thisWeek": 2156.0,
-      "lastWeek": 2162.9,
-      "deltaPct": -0.3
+      "thisWeek": 1993.4,
+      "lastWeek": 1912.2,
+      "deltaPct": 4.2
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1545.6,
-      "lastWeek": 2244.7,
-      "deltaPct": -31.1
+      "thisWeek": 1499.1,
+      "lastWeek": 2184.5,
+      "deltaPct": -31.4
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1391.5,
-      "lastWeek": 979.3,
-      "deltaPct": 42.1
+      "thisWeek": 1493.5,
+      "lastWeek": 1098.5,
+      "deltaPct": 36.0
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 750.7,
-      "lastWeek": 874.2,
-      "deltaPct": -14.1
+      "thisWeek": 740.6,
+      "lastWeek": 821.7,
+      "deltaPct": -9.9
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 368.1,
-      "lastWeek": 377.8,
-      "deltaPct": -2.6
-    },
-    {
-      "category": "光伏与新能源",
-      "thisWeek": 0,
-      "lastWeek": 55.4,
-      "deltaPct": -100.0
+      "thisWeek": 322.0,
+      "lastWeek": 423.9,
+      "deltaPct": -24.0
     }
   ],
   "newTopics": [
+    {
+      "topic_id": "cf711748e825",
+      "title": "Photonics Hot List: October 30, 2026",
+      "score": 434.2,
+      "days": 4
+    },
     {
       "topic_id": "21a0c8421f1a",
       "title": "Photonics Hot List: October 30, 2026",
@@ -89,28 +89,16 @@
       "days": 5
     },
     {
-      "topic_id": "cf711748e825",
-      "title": "Photonics Hot List: October 30, 2026",
-      "score": 269.9,
-      "days": 3
-    },
-    {
-      "topic_id": "a360e8d874a8",
-      "title": "Photonics Hot List: October 23, 2026",
-      "score": 188.4,
-      "days": 2
+      "topic_id": "07cc46da5b4f",
+      "title": "Shaping light to see deeper inside biological tissue",
+      "score": 211.2,
+      "days": 6
     },
     {
       "topic_id": "b13aaf6cc0b9",
       "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
       "score": 185.6,
       "days": 4
-    },
-    {
-      "topic_id": "07cc46da5b4f",
-      "title": "Shaping light to see deeper inside biological tissue",
-      "score": 176.0,
-      "days": 5
     },
     {
       "topic_id": "8c9d9a318b72",
@@ -131,9 +119,15 @@
       "days": 1
     },
     {
-      "topic_id": "a0533606a593",
-      "title": "Non-contact temperature sensing and optical scatter in cryogenically-cooled crystalline silicon",
-      "score": 123.4,
+      "topic_id": "6bf26ca37051",
+      "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
+      "score": 130.0,
+      "days": 1
+    },
+    {
+      "topic_id": "b8ab568e8ad2",
+      "title": "Pure-blue quantum-dot light-emitting diodes with minimal efficiency roll-off and high brightness",
+      "score": 125.8,
       "days": 1
     }
   ],
@@ -166,7 +160,7 @@
       "topic_id": "8579455b5d54",
       "title": "华为全联接大会2026全光峰会举办，F5G-A全光网加速AI普惠千行万业",
       "days": 15,
-      "score": 773.5
+      "score": 728.0
     },
     {
       "topic_id": "b60b7f7c9968",
@@ -184,7 +178,7 @@
       "topic_id": "5bc32d86db90",
       "title": "大招齐发，英特尔直击网络转型",
       "days": 12,
-      "score": 1329.0
+      "score": 1323.3
     },
     {
       "topic_id": "569c89c31ce9",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T02:22:22.921039+00:00",
+  "generatedAt": "2026-11-04T18:00:40.304407+00:00",
   "count": 63,
   "dailies": {
     "2026-07-21": {
@@ -12964,20 +12964,120 @@
       "weekday": "周三",
       "label": "2026年11月4日",
       "headline": {
-        "title": "A laser can draw superconductivity at the nanoscale",
-        "url": "https://phys.org/news/2026-11-laser-superconductivity-nanoscale.html",
-        "source": "Phys.org 物理新闻",
-        "summary": "Researchers from ICMAB-CSIC, the Politecnico di Milano and Université de Liège have adapted a direct laser writing technique that allows them to \"draw\" superconducting properties in a material. The result is a new way to locally program the",
+        "title": "Physicists get first glimpse of the zeptoverse from LHC experiment",
+        "url": "https://www.newscientist.com/article/2597289-beauty-particle-decay-opens-the-door-to-the-zeptoverse/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+        "source": "New Scientist 物理",
+        "summary": "Data from the Large Hadron Collider has revealed evidence of a long-sought particle process that serves as a guide into the realm of the smallest scales ever probed",
         "zh_full": null,
         "reason": null,
         "density": null,
-        "score": 61.0,
-        "role": "科研",
-        "published_at": "2026-11-03T21:40:02+00:00",
-        "topic_id": "3b81f070c71f",
-        "topic_title": "New research shows a neutrino laser is impossible"
+        "score": 61.1,
+        "role": "媒体",
+        "published_at": "2026-11-04T15:23:22+00:00",
+        "topic_id": "f88aee2b5daf",
+        "topic_title": "Physicists get first glimpse of the zeptoverse from LHC experiment"
       },
       "picks": [
+        {
+          "title": "A laser can draw superconductivity at the nanoscale",
+          "url": "https://phys.org/news/2026-11-laser-superconductivity-nanoscale.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Researchers from ICMAB-CSIC, the Politecnico di Milano and Université de Liège have adapted a direct laser writing technique that allows them to \"draw\" superconducting properties in a material. The result is a new way to locally program the",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 60.6,
+          "role": "科研",
+          "published_at": "2026-11-03T21:40:02+00:00",
+          "topic_id": "3d901b81566b",
+          "topic_title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range"
+        },
+        {
+          "title": "A sublattice polarimeter to probe the quantum geometry of synthetic photonic lattices",
+          "url": "https://www.nature.com/articles/s41467-026-78322-1",
+          "source": "Nature 量子物理",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 51.0,
+          "role": "科研",
+          "published_at": "2026-11-04T00:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "A nonlinear superinductor in a deep-submicrometre integrated circuit",
+          "url": "https://www.nature.com/articles/s41928-026-01728-8",
+          "source": "Nature 量子物理",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 51.0,
+          "role": "科研",
+          "published_at": "2026-11-04T00:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Everlasting secure key agreement from a quantum computational hybrid security model",
+          "url": "https://arxiv.org/abs/2004.10173",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2004.10173v2 Announce Type: replace Abstract: We introduce the Quantum Computational Timelock (QCT) model, combining time-lock encryption with a quantitative noisy-quantum-storage assumption. Time-lock encryption gives Bob immediate a",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 37.6,
+          "role": "科研",
+          "published_at": "2026-11-04T05:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "flash": [
+        {
+          "title": "Perturbation-based Non-perturbative Method",
+          "url": "https://arxiv.org/abs/2308.10996",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2308.10996v3 Announce Type: replace Abstract: This paper presents a nonperturbative method for solving eigenproblems. This method applies to almost all potentials and provides nonperturbative approximations for any energy level. The m",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 37.6,
+          "role": "科研",
+          "published_at": "2026-11-04T05:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "New Research Tests Whether AI Models Know Their Own Thoughts",
+          "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/",
+          "source": "Quanta Magazine",
+          "summary": "By injecting “thoughts” directly into large language models, researchers are trying to map out AI’s capacity for introspection. The post New Research Tests Whether AI Models Know Their Own Thoughts first appeared on Quanta Magazine",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 36.7,
+          "role": "科研",
+          "published_at": "2026-11-04T15:32:52+00:00",
+          "topic_id": "0137751e50c8",
+          "topic_title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN"
+        },
+        {
+          "title": "Testing Einstein's laws from the bottom of the Mediterranean Sea",
+          "url": "https://phys.org/news/2026-11-einstein-laws-bottom-mediterranean-sea.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Are the laws of physics truly the same everywhere in the universe? This fundamental principle, known as Lorentz invariance, lies at the heart of Einstein's theory of relativity. Yet some theories that seek to reconcile gravity with quantum ",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 36.5,
+          "role": "科研",
+          "published_at": "2026-11-04T05:00:08+00:00",
+          "topic_id": "820700531834",
+          "topic_title": "Order in a quantum chaotic sea"
+        },
         {
           "title": "A single measurement makes quantum bits more reliable",
           "url": "https://phys.org/news/2026-11-quantum-bits-reliable.html",
@@ -12986,14 +13086,12 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 34.6,
+          "score": 34.3,
           "role": "科研",
           "published_at": "2026-11-03T20:40:06+00:00",
           "topic_id": "26e0d76ba447",
           "topic_title": "A single measurement makes quantum bits more reliable"
-        }
-      ],
-      "flash": [
+        },
         {
           "title": "Finding the fingerprints of noisy distributions in random quantum systems",
           "url": "https://phys.org/news/2026-11-fingerprints-noisy-random-quantum.html",
@@ -13002,7 +13100,7 @@
           "zh_full": "想象洗一副牌，其中一些牌因为与外部环境相互作用的方式而正在褪色。你的任务是弄清洗牌方式所施加的“随机性”与牌暴露于外部环境时褪色过程之间的相互作用。",
           "reason": "用洗牌类比研究随机量子系统中的噪声指纹",
           "density": "中",
-          "score": 30.9,
+          "score": 30.6,
           "role": "科研",
           "published_at": "2026-11-03T23:40:01+00:00",
           "topic_id": null,
@@ -13016,7 +13114,7 @@
           "zh_full": "由华沙大学物理系、波兰军事技术大学、IBM苏黎世研究中心和法国国家科学研究中心（CNRS）的研究人员组成的团队，在激子-极化激元玻色-爱因斯坦凝聚体中观察到了一种被称为超固体的新量子态。令人瞩目的是，这一现象并非发生在接近绝对零度的极低温度下，而是在室温条件下出现。相关结果已发表在《科学进展》（Science Advances）上。超固体是一种同时具有超流体特性和晶体结构有序性的奇特量子态，此前通常需要在极低温下才能实现。此次研究在室温下的激子-极化激元系统中观察到该状态，为量子材料的研究开辟了新的可能性，可能有助于开发新型量子器件和探索室温量子现象。",
           "reason": "室温超固体量子态首次观测，突破低温限制",
           "density": "高",
-          "score": 30.8,
+          "score": 30.6,
           "role": "科研",
           "published_at": "2026-11-03T22:20:11+00:00",
           "topic_id": null,
@@ -13024,6 +13122,25 @@
         }
       ],
       "sections": [
+        {
+          "category": "高能与粒子物理",
+          "articles": [
+            {
+              "title": "Physicists get first glimpse of the zeptoverse from LHC experiment",
+              "url": "https://www.newscientist.com/article/2597289-beauty-particle-decay-opens-the-door-to-the-zeptoverse/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+              "source": "New Scientist 物理",
+              "summary": "Data from the Large Hadron Collider has revealed evidence of a long-sought particle process that serves as a guide into the realm of the smallest scales ever probed",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 61.1,
+              "role": "媒体",
+              "published_at": "2026-11-04T15:23:22+00:00",
+              "topic_id": "f88aee2b5daf",
+              "topic_title": "Physicists get first glimpse of the zeptoverse from LHC experiment"
+            }
+          ]
+        },
         {
           "category": "凝聚态物理",
           "articles": [
@@ -13035,17 +13152,106 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 61.0,
+              "score": 60.6,
               "role": "科研",
               "published_at": "2026-11-03T21:40:02+00:00",
-              "topic_id": "3b81f070c71f",
-              "topic_title": "New research shows a neutrino laser is impossible"
+              "topic_id": "3d901b81566b",
+              "topic_title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range"
+            }
+          ]
+        },
+        {
+          "category": "科研进展",
+          "articles": [
+            {
+              "title": "A sublattice polarimeter to probe the quantum geometry of synthetic photonic lattices",
+              "url": "https://www.nature.com/articles/s41467-026-78322-1",
+              "source": "Nature 量子物理",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.0,
+              "role": "科研",
+              "published_at": "2026-11-04T00:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "A nonlinear superinductor in a deep-submicrometre integrated circuit",
+              "url": "https://www.nature.com/articles/s41928-026-01728-8",
+              "source": "Nature 量子物理",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.0,
+              "role": "科研",
+              "published_at": "2026-11-04T00:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Everlasting secure key agreement from a quantum computational hybrid security model",
+              "url": "https://arxiv.org/abs/2004.10173",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2004.10173v2 Announce Type: replace Abstract: We introduce the Quantum Computational Timelock (QCT) model, combining time-lock encryption with a quantitative noisy-quantum-storage assumption. Time-lock encryption gives Bob immediate a",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.6,
+              "role": "科研",
+              "published_at": "2026-11-04T05:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Perturbation-based Non-perturbative Method",
+              "url": "https://arxiv.org/abs/2308.10996",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2308.10996v3 Announce Type: replace Abstract: This paper presents a nonperturbative method for solving eigenproblems. This method applies to almost all potentials and provides nonperturbative approximations for any energy level. The m",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.6,
+              "role": "科研",
+              "published_at": "2026-11-04T05:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
             }
           ]
         },
         {
           "category": "其他",
           "articles": [
+            {
+              "title": "New Research Tests Whether AI Models Know Their Own Thoughts",
+              "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/",
+              "source": "Quanta Magazine",
+              "summary": "By injecting “thoughts” directly into large language models, researchers are trying to map out AI’s capacity for introspection. The post New Research Tests Whether AI Models Know Their Own Thoughts first appeared on Quanta Magazine",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 36.7,
+              "role": "科研",
+              "published_at": "2026-11-04T15:32:52+00:00",
+              "topic_id": "0137751e50c8",
+              "topic_title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN"
+            },
+            {
+              "title": "Testing Einstein's laws from the bottom of the Mediterranean Sea",
+              "url": "https://phys.org/news/2026-11-einstein-laws-bottom-mediterranean-sea.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Are the laws of physics truly the same everywhere in the universe? This fundamental principle, known as Lorentz invariance, lies at the heart of Einstein's theory of relativity. Yet some theories that seek to reconcile gravity with quantum ",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 36.5,
+              "role": "科研",
+              "published_at": "2026-11-04T05:00:08+00:00",
+              "topic_id": "820700531834",
+              "topic_title": "Order in a quantum chaotic sea"
+            },
             {
               "title": "A single measurement makes quantum bits more reliable",
               "url": "https://phys.org/news/2026-11-quantum-bits-reliable.html",
@@ -13054,7 +13260,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 34.6,
+              "score": 34.3,
               "role": "科研",
               "published_at": "2026-11-03T20:40:06+00:00",
               "topic_id": "26e0d76ba447",
@@ -13068,7 +13274,7 @@
               "zh_full": "想象洗一副牌，其中一些牌因为与外部环境相互作用的方式而正在褪色。你的任务是弄清洗牌方式所施加的“随机性”与牌暴露于外部环境时褪色过程之间的相互作用。",
               "reason": "用洗牌类比研究随机量子系统中的噪声指纹",
               "density": "中",
-              "score": 30.9,
+              "score": 30.6,
               "role": "科研",
               "published_at": "2026-11-03T23:40:01+00:00",
               "topic_id": null,
@@ -13082,7 +13288,7 @@
               "zh_full": "由华沙大学物理系、波兰军事技术大学、IBM苏黎世研究中心和法国国家科学研究中心（CNRS）的研究人员组成的团队，在激子-极化激元玻色-爱因斯坦凝聚体中观察到了一种被称为超固体的新量子态。令人瞩目的是，这一现象并非发生在接近绝对零度的极低温度下，而是在室温条件下出现。相关结果已发表在《科学进展》（Science Advances）上。超固体是一种同时具有超流体特性和晶体结构有序性的奇特量子态，此前通常需要在极低温下才能实现。此次研究在室温下的激子-极化激元系统中观察到该状态，为量子材料的研究开辟了新的可能性，可能有助于开发新型量子器件和探索室温量子现象。",
               "reason": "室温超固体量子态首次观测，突破低温限制",
               "density": "高",
-              "score": 30.8,
+              "score": 30.6,
               "role": "科研",
               "published_at": "2026-11-03T22:20:11+00:00",
               "topic_id": null,
@@ -13093,10 +13299,13 @@
       ],
       "topic_ids": [
         "26e0d76ba447",
-        "3b81f070c71f"
+        "3b81f070c71f",
+        "3d901b81566b",
+        "f88aee2b5daf"
       ],
-      "tocCount": 4,
-      "readMinutes": 2
+      "tocCount": 11,
+      "readMinutes": 2,
+      "amended": 0
     }
   }
 }

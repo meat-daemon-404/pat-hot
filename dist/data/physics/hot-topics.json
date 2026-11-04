@@ -1,55 +1,181 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T02:22:22.921039+00:00",
-  "count": 6,
+  "generatedAt": "2026-11-04T18:00:40.304407+00:00",
+  "count": 10,
   "items": [
     {
       "terms": [
+        "closer",
+        "experiment",
+        "glimpse",
+        "particle",
+        "physicists",
+        "search",
+        "step",
+        "zeptoverse"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "New Scientist 物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
+      "representative": {
+        "title": "Physicists get first glimpse of the zeptoverse from LHC experiment",
+        "url": "https://www.newscientist.com/article/2597289-beauty-particle-decay-opens-the-door-to-the-zeptoverse/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+        "source": "New Scientist 物理",
+        "published_at": "2026-11-04T15:23:22+00:00",
+        "score": 61.1,
+        "summary": "Data from the Large Hadron Collider has revealed evidence of a long-sought particle process that serves as a guide into the realm of the smallest scales ever probed",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "Physicists get first glimpse of the zeptoverse from LHC experiment",
+      "id": "f88aee2b5daf",
+      "links": [
+        {
+          "title": "Physicists get first glimpse of the zeptoverse from LHC experiment",
+          "url": "https://www.newscientist.com/article/2597289-beauty-particle-decay-opens-the-door-to-the-zeptoverse/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 61.1,
+          "published_at": "2026-11-04T15:23:22+00:00"
+        },
+        {
+          "title": "Physicists step closer to the 'Zeptoverse' after 42-year particle search",
+          "url": "https://phys.org/news/2026-11-physicists-closer-zeptoverse-year-particle.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.3,
+          "published_at": "2026-11-03T15:40:30+00:00"
+        }
+      ],
+      "top_terms": [
+        "physicists",
+        "zeptoverse",
+        "step",
+        "closer",
+        "particle"
+      ],
+      "digest": "欧洲核子研究中心（CERN）的LHCb实验首次观测到一种极罕见的B介子衰变，该过程预计每100亿个B介子中仅发生一次。这一结果标志着物理学家向探索最小尺度“zeptoverse”迈出关键一步，结束了长达42年的粒子搜寻。该发现基于大型强子对撞机（LHC）升级后的数据，为理解粒子物理标准模型提供了新证据。",
+      "digestTitle": "LHC首次观测到罕见B介子衰变",
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "bottom",
+        "chaotic",
+        "einstein",
+        "laws",
+        "mediterranean",
+        "quantum",
+        "testing"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Nature 量子物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
+      "representative": {
+        "title": "Order in a quantum chaotic sea",
+        "url": "https://www.nature.com/articles/s41567-026-03513-y",
+        "source": "Nature 量子物理",
+        "published_at": "2026-10-27T00:00:00+00:00",
+        "score": 55.3,
+        "summary": "",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "Order in a quantum chaotic sea",
+      "id": "820700531834",
+      "links": [
+        {
+          "title": "Order in a quantum chaotic sea",
+          "url": "https://www.nature.com/articles/s41567-026-03513-y",
+          "source": "Nature 量子物理",
+          "score": 55.3,
+          "published_at": "2026-10-27T00:00:00+00:00"
+        },
+        {
+          "title": "Testing Einstein's laws from the bottom of the Mediterranean Sea",
+          "url": "https://phys.org/news/2026-11-einstein-laws-bottom-mediterranean-sea.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.5,
+          "published_at": "2026-11-04T05:00:08+00:00"
+        }
+      ],
+      "top_terms": [
+        "sea",
+        "testing",
+        "einstein",
+        "laws",
+        "bottom"
+      ],
+      "digest": "一项从地中海海底进行的实验检验了爱因斯坦相对论的核心原则——洛伦兹不变性，即物理定律在宇宙各处应相同。该实验未发现违反这一原则的证据，但为某些试图统一引力和量子力学的理论提供了新的约束。研究人员称，这一结果支持了相对论的有效性，同时限制了可能存在的微小偏差。",
+      "digestTitle": "地中海实验检验洛伦兹不变性",
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "boosts",
         "draw",
-        "impossible",
+        "dynamic",
         "laser",
+        "laser-enhanced",
         "nanoscale",
-        "neutrino",
-        "research",
+        "quantum",
+        "range",
+        "sensing",
+        "sensitivity",
         "superconductivity"
       ],
       "source_count": 2,
       "signal_count": 1,
       "sources": [
-        "MIT News 物理",
+        "Nature 量子物理",
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
       "representative": {
-        "title": "New research shows a neutrino laser is impossible",
-        "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
-        "source": "MIT News 物理",
-        "published_at": "2026-09-02T14:00:00+00:00",
-        "score": 41.2,
-        "summary": "Due to physical and fundamental limitations, an earlier proposal for producing laserlike beams of neutrinos cannot be achieved, scientists report.",
-        "zh_full": "据MIT News报道，科学家报告称，由于物理和根本性限制，此前关于产生类似激光的中微子束的提案无法实现。这项新研究表明，中微子激光是不可能的。",
-        "llm_summary": "科学家报告称，由于物理和根本性限制，此前关于产生类似激光的中微子束的提案无法实现。这项新研究表明，中微子激光是不可能的。",
-        "llm_reason": "中微子激光可行性研究",
-        "density": "中"
+        "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
+        "url": "https://www.nature.com/articles/s41467-026-78386-z",
+        "source": "Nature 量子物理",
+        "published_at": "2026-10-22T00:00:00+00:00",
+        "score": 52.0,
+        "summary": "",
+        "zh_full": null
       },
       "folded_count": 1,
-      "title": "New research shows a neutrino laser is impossible",
-      "id": "3b81f070c71f",
+      "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
+      "id": "3d901b81566b",
       "links": [
         {
           "title": "A laser can draw superconductivity at the nanoscale",
           "url": "https://phys.org/news/2026-11-laser-superconductivity-nanoscale.html",
           "source": "Phys.org 物理新闻",
-          "score": 61.0,
+          "score": 60.6,
           "published_at": "2026-11-03T21:40:02+00:00"
         },
         {
-          "title": "New research shows a neutrino laser is impossible",
-          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-09-02T14:00:00+00:00"
+          "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
+          "url": "https://www.nature.com/articles/s41467-026-78386-z",
+          "source": "Nature 量子物理",
+          "score": 52.0,
+          "published_at": "2026-10-22T00:00:00+00:00"
         }
       ],
       "top_terms": [
@@ -57,11 +183,81 @@
         "draw",
         "superconductivity",
         "nanoscale",
-        "research"
+        "quantum"
       ],
-      "digest": "ICMAB-CSIC、米兰理工大学与列日大学的研究团队改进了直接激光写入技术，可在材料上“绘制”超导性质，实现局部编程。另一方面，MIT科学家报告称，因物理与基本限制，早前提出的产生中微子激光束的方案无法实现。",
-      "digestTitle": "激光绘制超导特性，中微子激光被证不可行",
-      "rank": 1,
+      "digest": "研究人员利用直写激光技术在材料表面局部绘制出超导特性，实现了纳米尺度的超导图案编程。该技术由ICMAB-CSIC、米兰理工大学和列日大学团队开发，为在微观尺度上定制超导器件提供了新途径。",
+      "digestTitle": "激光写入实现纳米级超导图案",
+      "rank": 3,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "cern",
+        "experiment",
+        "graduate",
+        "helped",
+        "know",
+        "research",
+        "scientists",
+        "student",
+        "team",
+        "test",
+        "tests",
+        "thoughts",
+        "whether",
+        "young"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "MIT News 物理",
+        "Quanta Magazine"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
+      "representative": {
+        "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
+        "url": "https://news.mit.edu/2026/how-mit-grad-student-helped-young-scientists-test-their-experiment-cern-0828",
+        "source": "MIT News 物理",
+        "published_at": "2026-08-28T20:35:00+00:00",
+        "score": 41.2,
+        "summary": "Physics PhD student Manu Srivastava helped high school students in India develop a test that could contribute to one of the world’s largest neutrino experiments.",
+        "zh_full": "据MIT News报道，物理学博士生Manu Srivastava帮助印度高中生开发了一项测试，该测试可能有助于世界上最大的中微子实验之一。",
+        "llm_summary": "物理学博士生Manu Srivastava帮助印度高中生开发了一项测试，该测试可能有助于世界上最大的中微子实验之一。",
+        "llm_reason": "学生参与中微子实验",
+        "density": "中"
+      },
+      "folded_count": 1,
+      "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
+      "id": "0137751e50c8",
+      "links": [
+        {
+          "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
+          "url": "https://news.mit.edu/2026/how-mit-grad-student-helped-young-scientists-test-their-experiment-cern-0828",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-28T20:35:00+00:00"
+        },
+        {
+          "title": "New Research Tests Whether AI Models Know Their Own Thoughts",
+          "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/",
+          "source": "Quanta Magazine",
+          "score": 36.7,
+          "published_at": "2026-11-04T15:32:52+00:00"
+        }
+      ],
+      "top_terms": [
+        "research",
+        "tests",
+        "whether",
+        "know",
+        "own"
+      ],
+      "rank": 4,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -92,7 +288,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
       "representative": {
         "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
         "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
@@ -112,7 +308,7 @@
           "title": "Ultracold atoms simulate hard-to-observe matter-antimatter pair production",
           "url": "https://phys.org/news/2026-10-ultracold-atoms-simulate-hard-antimatter.html",
           "source": "Phys.org 物理新闻",
-          "score": 58.9,
+          "score": 58.5,
           "published_at": "2026-10-31T17:00:01+00:00"
         },
         {
@@ -130,7 +326,7 @@
         "hard",
         "observe"
       ],
-      "rank": 2,
+      "rank": 5,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -139,68 +335,127 @@
     },
     {
       "terms": [
-        "cern",
-        "collider",
-        "experiment",
-        "experiments",
-        "graduate",
-        "helped",
-        "particle",
-        "scientists",
-        "shortcut",
-        "student",
-        "team",
-        "test",
-        "tropical",
-        "young"
+        "cables",
+        "codes",
+        "four",
+        "link",
+        "processor",
+        "processors",
+        "quantum",
+        "superconducting",
+        "surface",
+        "teleportation",
+        "transition"
       ],
       "source_count": 2,
       "signal_count": 0,
       "sources": [
-        "MIT News 物理",
+        "Nature 量子物理",
         "Phys.org 物理新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
       "representative": {
-        "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
-        "url": "https://news.mit.edu/2026/how-mit-grad-student-helped-young-scientists-test-their-experiment-cern-0828",
-        "source": "MIT News 物理",
-        "published_at": "2026-08-28T20:35:00+00:00",
-        "score": 41.2,
-        "summary": "Physics PhD student Manu Srivastava helped high school students in India develop a test that could contribute to one of the world’s largest neutrino experiments.",
-        "zh_full": "据MIT News报道，物理学博士生Manu Srivastava帮助印度高中生开发了一项测试，该测试可能有助于世界上最大的中微子实验之一。",
-        "llm_summary": "物理学博士生Manu Srivastava帮助印度高中生开发了一项测试，该测试可能有助于世界上最大的中微子实验之一。",
-        "llm_reason": "学生参与中微子实验",
-        "density": "中"
+        "title": "Teleportation transition of surface codes on a superconducting quantum processor",
+        "url": "https://www.nature.com/articles/s41567-026-03484-0",
+        "source": "Nature 量子物理",
+        "published_at": "2026-10-22T00:00:00+00:00",
+        "score": 52.0,
+        "summary": "",
+        "zh_full": null
       },
       "folded_count": 1,
-      "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
-      "id": "c9c29423cce7",
+      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
+      "id": "038552fe9bde",
       "links": [
         {
-          "title": "How a 'tropical' shortcut could help particle collider experiments",
-          "url": "https://phys.org/news/2026-10-tropical-shortcut-particle-collider.html",
+          "title": "Four superconducting cables link two large quantum processors into one",
+          "url": "https://phys.org/news/2026-10-superconducting-cables-link-large-quantum.html",
           "source": "Phys.org 物理新闻",
-          "score": 58.3,
-          "published_at": "2026-10-30T19:40:01+00:00"
+          "score": 58.4,
+          "published_at": "2026-10-31T16:00:02+00:00"
         },
         {
-          "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
-          "url": "https://news.mit.edu/2026/how-mit-grad-student-helped-young-scientists-test-their-experiment-cern-0828",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-28T20:35:00+00:00"
+          "title": "Teleportation transition of surface codes on a superconducting quantum processor",
+          "url": "https://www.nature.com/articles/s41567-026-03484-0",
+          "source": "Nature 量子物理",
+          "score": 52.0,
+          "published_at": "2026-10-22T00:00:00+00:00"
         }
       ],
       "top_terms": [
-        "tropical",
-        "shortcut",
-        "particle",
-        "collider",
-        "experiments"
+        "superconducting",
+        "quantum",
+        "four",
+        "cables",
+        "link"
       ],
-      "rank": 3,
+      "rank": 6,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "conditions",
+        "conductance",
+        "current-driven",
+        "defects",
+        "machine",
+        "molecular",
+        "more",
+        "realistic",
+        "rotation-enhanced",
+        "semiconductor",
+        "temperature",
+        "track"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "Nature 量子物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
+      "representative": {
+        "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
+        "url": "https://www.nature.com/articles/s41586-026-11312-x",
+        "source": "Nature 量子物理",
+        "published_at": "2026-10-22T00:00:00+00:00",
+        "score": 52.0,
+        "summary": "",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
+      "id": "2c8163948e22",
+      "links": [
+        {
+          "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
+          "url": "https://www.nature.com/articles/s41586-026-11312-x",
+          "source": "Nature 量子物理",
+          "score": 52.0,
+          "published_at": "2026-10-22T00:00:00+00:00"
+        },
+        {
+          "title": "Machine learning helps track semiconductor defects under more realistic temperature conditions",
+          "url": "https://phys.org/news/2026-10-machine-track-semiconductor-defects-realistic.html",
+          "source": "Phys.org 物理新闻",
+          "score": 34.3,
+          "published_at": "2026-10-29T20:50:05+00:00"
+        }
+      ],
+      "top_terms": [
+        "machine",
+        "track",
+        "semiconductor",
+        "defects",
+        "more"
+      ],
+      "rank": 7,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -229,7 +484,7 @@
         "Quanta Magazine"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
       "representative": {
         "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
         "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
@@ -257,7 +512,7 @@
           "title": "How Do You Take a Picture of a Black Hole?",
           "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
           "source": "Quanta Magazine",
-          "score": 34.5,
+          "score": 34.3,
           "published_at": "2026-10-29T15:11:57+00:00"
         }
       ],
@@ -268,9 +523,72 @@
         "take",
         "picture"
       ],
-      "rank": 4,
+      "rank": 8,
       "trend": "new",
       "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "greatest",
+        "impossible",
+        "laser",
+        "mystery",
+        "neutrino",
+        "research",
+        "solve"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "MIT News 物理",
+        "New Scientist 物理"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
+      "representative": {
+        "title": "New research shows a neutrino laser is impossible",
+        "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
+        "source": "MIT News 物理",
+        "published_at": "2026-09-02T14:00:00+00:00",
+        "score": 41.2,
+        "summary": "Due to physical and fundamental limitations, an earlier proposal for producing laserlike beams of neutrinos cannot be achieved, scientists report.",
+        "zh_full": "据MIT News报道，科学家报告称，由于物理和根本性限制，此前关于产生类似激光的中微子束的提案无法实现。这项新研究表明，中微子激光是不可能的。",
+        "llm_summary": "科学家报告称，由于物理和根本性限制，此前关于产生类似激光的中微子束的提案无法实现。这项新研究表明，中微子激光是不可能的。",
+        "llm_reason": "中微子激光可行性研究",
+        "density": "中"
+      },
+      "folded_count": 1,
+      "title": "New research shows a neutrino laser is impossible",
+      "id": "7e7427289fca",
+      "links": [
+        {
+          "title": "Are we about to solve the greatest mystery of the neutrino?",
+          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 50.5,
+          "published_at": "2026-10-19T19:00:00+00:00"
+        },
+        {
+          "title": "New research shows a neutrino laser is impossible",
+          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-09-02T14:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "neutrino",
+        "research",
+        "laser",
+        "impossible",
+        "solve"
+      ],
+      "rank": 9,
+      "trend": "down",
+      "trendPct": -100.0,
       "badges": [],
       "heat": 0.0,
       "status": "关注中"
@@ -291,7 +609,7 @@
         "New Scientist 物理"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
+      "latest_at": "2026-11-04T18:00:40.304407+00:00",
       "representative": {
         "title": "On the hunt for dark matter",
         "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
@@ -312,7 +630,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 46.7,
+          "score": 46.2,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
@@ -330,87 +648,7 @@
         "observe",
         "particle"
       ],
-      "rank": 5,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "anticipated",
-        "assemble",
-        "bridge",
-        "classical",
-        "coexisting",
-        "deeper",
-        "electrons",
-        "even",
-        "oddity",
-        "phases",
-        "physicists",
-        "physics",
-        "quantum",
-        "reassemble",
-        "reverse",
-        "than",
-        "watch",
-        "worlds"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "MIT News 物理",
-        "New Scientist 物理"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-11-04T02:22:22.921039+00:00",
-      "representative": {
-        "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-        "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
-        "source": "MIT News 物理",
-        "published_at": "2026-08-07T09:00:00+00:00",
-        "score": 42.7,
-        "summary": "The study could help scientists understand how superconductivity and other more complex phenomena emerge in quantum materials.",
-        "zh_full": "（无摘要，仅标题）",
-        "llm_summary": "（无摘要，仅标题）",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-      "id": "db4a1640ca56",
-      "links": [
-        {
-          "title": "Key oddity of quantum physics may run even deeper than anticipated",
-          "url": "https://www.newscientist.com/article/2596105-key-oddity-of-quantum-physics-may-run-even-deeper-than-anticipated/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 58.9,
-          "published_at": "2026-10-29T11:00:00+00:00"
-        },
-        {
-          "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-          "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
-          "source": "MIT News 物理",
-          "score": 42.7,
-          "published_at": "2026-08-07T09:00:00+00:00"
-        },
-        {
-          "title": "‘Reverse physics’ could help bridge the classical and quantum worlds",
-          "url": "https://www.newscientist.com/article/2596640-reverse-physics-could-help-bridge-the-classical-and-quantum-worlds/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 35.7,
-          "published_at": "2026-10-30T09:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "physics",
-        "quantum",
-        "physicists",
-        "watch",
-        "electrons"
-      ],
-      "rank": 6,
+      "rank": 10,
       "trend": "new",
       "trendPct": null,
       "badges": [],
