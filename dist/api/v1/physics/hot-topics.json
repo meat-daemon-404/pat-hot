@@ -1,8 +1,624 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T02:29:27.723120+00:00",
-  "count": 7,
+  "generatedAt": "2026-11-05T18:01:51.367217+00:00",
+  "count": 10,
   "items": [
+    {
+      "terms": [
+        "amplify",
+        "ancilla-tolerant",
+        "atomic",
+        "bosonic",
+        "carefully",
+        "chains",
+        "dynamically",
+        "exactly",
+        "interactions",
+        "layers",
+        "light-matter",
+        "magnetic",
+        "modulated",
+        "motion",
+        "one-dimensional",
+        "pair",
+        "pulses",
+        "quantum",
+        "reveals",
+        "solvable",
+        "spin",
+        "timed",
+        "trapped"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-11-05T18:01:51.367217+00:00",
+      "representative": {
+        "title": "Dynamically modulated light-matter interactions for ancilla-tolerant bosonic control",
+        "url": "https://arxiv.org/abs/2611.05460",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-11-05T05:00:00+00:00",
+        "score": 48.8,
+        "summary": "arXiv:2611.05460v1 Announce Type: new Abstract: Strong light-matter interactions are central to state-of-the-art quantum technologies, spanning platforms as diverse as Rydberg atoms, trapped ions, and superconducting circuits. In supercondu",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2611.05460",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "Dynamically modulated light-matter interactions for ancilla-tolerant bosonic control",
+      "id": "da0e87d07ff2",
+      "links": [
+        {
+          "title": "Dynamically modulated light-matter interactions for ancilla-tolerant bosonic control",
+          "url": "https://arxiv.org/abs/2611.05460",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 48.8,
+          "published_at": "2026-11-05T05:00:00+00:00"
+        },
+        {
+          "title": "A carefully timed pair of light pulses can amplify the motion of atomic layers in a quantum material",
+          "url": "https://phys.org/news/2026-11-pair-pulses-amplify-motion-atomic.html",
+          "source": "Phys.org 物理新闻",
+          "score": 37.3,
+          "published_at": "2026-11-04T23:20:09+00:00"
+        },
+        {
+          "title": "Exactly solvable model reveals how trapped light can create magnetic order in one-dimensional spin chains",
+          "url": "https://phys.org/news/2026-11-solvable-reveals-magnetic-dimensional-chains.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.5,
+          "published_at": "2026-11-02T22:00:13+00:00"
+        }
+      ],
+      "top_terms": [
+        "carefully",
+        "timed",
+        "pair",
+        "pulses",
+        "amplify"
+      ],
+      "digest": "研究人员通过精确时间间隔的光脉冲成功放大量子材料中原子层的运动，并发现将一维自旋链置于光腔中可诱导磁有序。这些发现为利用光调控量子材料性质提供了新途径，但具体应用仍需进一步验证。",
+      "digestTitle": "光脉冲调控量子材料研究取得进展",
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "circuit",
+        "created",
+        "deep-submicrometre",
+        "integrated",
+        "nonlinear",
+        "silicon",
+        "superinductor"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Nature 量子物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-11-05T18:01:51.367217+00:00",
+      "representative": {
+        "title": "A nonlinear superinductor in a deep-submicrometre integrated circuit",
+        "url": "https://www.nature.com/articles/s41928-026-01728-8",
+        "source": "Nature 量子物理",
+        "published_at": "2026-11-04T00:00:00+00:00",
+        "score": 60.0,
+        "summary": "",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "A nonlinear superinductor in a deep-submicrometre integrated circuit",
+      "id": "0d4d612646f8",
+      "links": [
+        {
+          "title": "A nonlinear superinductor in a deep-submicrometre integrated circuit",
+          "url": "https://www.nature.com/articles/s41928-026-01728-8",
+          "source": "Nature 量子物理",
+          "score": 60.0,
+          "published_at": "2026-11-04T00:00:00+00:00"
+        },
+        {
+          "title": "A new superinductor created within a silicon integrated circuit",
+          "url": "https://phys.org/news/2026-11-superinductor-silicon-circuit.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.4,
+          "published_at": "2026-11-04T22:40:08+00:00"
+        }
+      ],
+      "top_terms": [
+        "superinductor",
+        "integrated",
+        "circuit",
+        "created",
+        "silicon"
+      ],
+      "digest": "研究人员在硅集成电路中制造出一种非线性超电感，该器件在深亚微米尺度下工作，为量子计算硬件提供了新途径。这一成果由nanoGUNE、Quantum Motion、伦敦纳米技术中心、帝国理工学院和剑桥大学的研究团队共同完成，发表在《自然·电子学》上。",
+      "digestTitle": "硅基芯片内实现超电感",
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "chiral",
+        "metals",
+        "noise-induced",
+        "phases",
+        "quantum",
+        "research",
+        "structural",
+        "topological",
+        "topology",
+        "uncovers",
+        "walks"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-11-05T18:01:51.367217+00:00",
+      "representative": {
+        "title": "Noise-Induced Topology in Chiral Quantum Walks",
+        "url": "https://arxiv.org/abs/2611.05471",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-11-05T05:00:00+00:00",
+        "score": 47.3,
+        "summary": "arXiv:2611.05471v1 Announce Type: new Abstract: Noise typically destroys quantum coherence and washes out transport phenomena that rely on interference. Chiral quantum walks are a case in point: a particle hopping on a lattice threaded by a",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2611.05471",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "Noise-Induced Topology in Chiral Quantum Walks",
+      "id": "ccb9c095e519",
+      "links": [
+        {
+          "title": "New research uncovers chiral topological phases in metals without structural order",
+          "url": "https://phys.org/news/2026-11-uncovers-chiral-topological-phases-metals.html",
+          "source": "Phys.org 物理新闻",
+          "score": 60.6,
+          "published_at": "2026-11-04T21:20:21+00:00"
+        },
+        {
+          "title": "Noise-Induced Topology in Chiral Quantum Walks",
+          "url": "https://arxiv.org/abs/2611.05471",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.3,
+          "published_at": "2026-11-05T05:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "chiral",
+        "research",
+        "uncovers",
+        "topological",
+        "phases"
+      ],
+      "digest": "研究人员在缺乏结构有序性的金属中发现了手性拓扑相，这一发现挑战了传统观点，即拓扑相需要晶体结构来维持。该研究通过理论模型和量子行走实验表明，即使在没有长程有序的情况下，手性费米子也能稳定存在，为拓扑材料的研究开辟了新方向。",
+      "digestTitle": "无序金属中发现手性拓扑相",
+      "rank": 3,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "chip",
+        "continuously",
+        "coupled",
+        "efficient",
+        "geometry",
+        "lattices",
+        "limited",
+        "modes",
+        "photonic",
+        "polarimeter",
+        "probe",
+        "quantum",
+        "resources",
+        "sublattice",
+        "synthetic",
+        "training"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Nature Physics 学科聚合",
+        "arXiv quant-ph 论文速递"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-11-05T18:01:51.367217+00:00",
+      "representative": {
+        "title": "Efficient training of a 128-modes 3D continuously coupled photonic chip via limited quantum resources",
+        "url": "https://arxiv.org/abs/2611.05681",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-11-05T05:00:00+00:00",
+        "score": 47.3,
+        "summary": "arXiv:2611.05681v1 Announce Type: new Abstract: Integrated photonics provides a promising route towards the development of large-scale, stable and low-loss quantum hardware. Existing implementations of universal quantum photonic chips gener",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2611.05681",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "Efficient training of a 128-modes 3D continuously coupled photonic chip via limited quantum resources",
+      "id": "45aa848223b7",
+      "links": [
+        {
+          "title": "A sublattice polarimeter to probe the quantum geometry of synthetic photonic lattices",
+          "url": "https://www.nature.com/articles/s41467-026-78322-1",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.0,
+          "published_at": "2026-11-04T00:00:00+00:00"
+        },
+        {
+          "title": "Efficient training of a 128-modes 3D continuously coupled photonic chip via limited quantum resources",
+          "url": "https://arxiv.org/abs/2611.05681",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.3,
+          "published_at": "2026-11-05T05:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "quantum",
+        "photonic",
+        "sublattice",
+        "polarimeter",
+        "probe"
+      ],
+      "rank": 4,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "atoms",
+        "correlations",
+        "dark",
+        "detector-optimized",
+        "distribution",
+        "entangled",
+        "entanglement",
+        "fiber",
+        "grating",
+        "highly",
+        "interacting",
+        "long-range",
+        "microwave-driven",
+        "multi-comb",
+        "nondegenerate",
+        "optically-induced",
+        "photon",
+        "quantum",
+        "resonances",
+        "rydberg",
+        "scalable",
+        "source",
+        "spectral",
+        "transmission",
+        "tunable",
+        "ultrafast",
+        "wavelength-hybrid"
+      ],
+      "source_count": 1,
+      "signal_count": 3,
+      "sources": [
+        "Nature Physics 学科聚合"
+      ],
+      "score": 34.5,
+      "latest_at": "2026-11-05T18:01:51.367217+00:00",
+      "representative": {
+        "title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms",
+        "url": "https://www.nature.com/articles/s41598-026-77017-3",
+        "source": "Nature Physics 学科聚合",
+        "published_at": "2026-11-05T00:00:00+00:00",
+        "score": 58.8,
+        "summary": "",
+        "zh_full": null
+      },
+      "folded_count": 0,
+      "title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms",
+      "id": "759b220e8872",
+      "links": [
+        {
+          "title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms",
+          "url": "https://www.nature.com/articles/s41598-026-77017-3",
+          "source": "Nature Physics 学科聚合",
+          "score": 58.8,
+          "published_at": "2026-11-05T00:00:00+00:00"
+        },
+        {
+          "title": "Long-range spectral entanglement and quantum correlations in highly nondegenerate multi-comb and ultrafast systems",
+          "url": "https://www.nature.com/articles/s41377-026-02491-3",
+          "source": "Nature Physics 学科聚合",
+          "score": 58.8,
+          "published_at": "2026-11-05T00:00:00+00:00"
+        },
+        {
+          "title": "Detector-optimized wavelength-hybrid entangled photon source for scalable fiber quantum key distribution",
+          "url": "https://www.nature.com/articles/s41598-026-78321-8",
+          "source": "Nature Physics 学科聚合",
+          "score": 58.8,
+          "published_at": "2026-11-05T00:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "quantum",
+        "tunable",
+        "optically",
+        "induced",
+        "transmission"
+      ],
+      "rank": 5,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 34.5,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "argyle",
+        "attacks",
+        "behavioral",
+        "classical",
+        "codes",
+        "collision",
+        "computing",
+        "correcting",
+        "cyclic",
+        "detection",
+        "divisors",
+        "error",
+        "error-correction",
+        "error-resistant",
+        "experiment",
+        "foundation",
+        "grassmannians",
+        "higher-order",
+        "inequalities",
+        "information",
+        "layer",
+        "moduli",
+        "monodromy",
+        "more",
+        "noise",
+        "non-markovian",
+        "potentially",
+        "quantum",
+        "quantum-error-correction",
+        "quiver",
+        "stack",
+        "statistical",
+        "supports",
+        "theoretical",
+        "trinetra.q"
+      ],
+      "source_count": 2,
+      "signal_count": 3,
+      "sources": [
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
+      ],
+      "score": 24.5,
+      "latest_at": "2026-11-05T18:01:51.367217+00:00",
+      "representative": {
+        "title": "Quantum error correcting codes from quiver moduli: Grassmannians, cyclic monodromy, and argyle collision divisors",
+        "url": "https://arxiv.org/abs/2611.05526",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-11-05T05:00:00+00:00",
+        "score": 50.3,
+        "summary": "arXiv:2611.05526v1 Announce Type: new Abstract: Building on aspects of a recent diagrammatic field-theory programme for quantum error correction put forward by the first-named author (arXiv:2607.08911), we construct exact finite-dimensional",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2611.05526",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "Quantum error correcting codes from quiver moduli: Grassmannians, cyclic monodromy, and argyle collision divisors",
+      "id": "125f0822b778",
+      "links": [
+        {
+          "title": "Experiment supports theoretical foundation for potentially more error-resistant quantum computing",
+          "url": "https://phys.org/news/2026-11-theoretical-foundation-potentially-error-resistant.html",
+          "source": "Phys.org 物理新闻",
+          "score": 62.2,
+          "published_at": "2026-11-02T18:30:01+00:00"
+        },
+        {
+          "title": "Quantum error correcting codes from quiver moduli: Grassmannians, cyclic monodromy, and argyle collision divisors",
+          "url": "https://arxiv.org/abs/2611.05526",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 50.3,
+          "published_at": "2026-11-05T05:00:00+00:00"
+        },
+        {
+          "title": "Higher-order quantum information inequalities and error-correction of non-Markovian noise",
+          "url": "https://arxiv.org/abs/2611.05541",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 50.3,
+          "published_at": "2026-11-05T05:00:00+00:00"
+        },
+        {
+          "title": "Trinetra.Q: Statistical and Behavioral Detection of Attacks on the Quantum-Error-Correction Layer and Classical Control Stack of Quantum Computing Systems",
+          "url": "https://arxiv.org/abs/2611.05722",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 50.3,
+          "published_at": "2026-11-05T05:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "quantum",
+        "error",
+        "computing",
+        "correction",
+        "experiment"
+      ],
+      "rank": 6,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 24.5,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "calculating",
+        "collisions",
+        "computer",
+        "gluon",
+        "nucleus",
+        "particle",
+        "production",
+        "proton",
+        "quantum",
+        "route"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Nature 量子物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-05T18:01:51.367217+00:00",
+      "representative": {
+        "title": "Particle collisions on a quantum computer",
+        "url": "https://www.nature.com/articles/s41567-026-03490-2",
+        "source": "Nature 量子物理",
+        "published_at": "2026-10-23T00:00:00+00:00",
+        "score": 52.0,
+        "summary": "",
+        "zh_full": null,
+        "llm_score": 35.0
+      },
+      "folded_count": 1,
+      "title": "Particle collisions on a quantum computer",
+      "id": "aa18f28d139f",
+      "links": [
+        {
+          "title": "Particle collisions on a quantum computer",
+          "url": "https://www.nature.com/articles/s41567-026-03490-2",
+          "source": "Nature 量子物理",
+          "score": 52.0,
+          "published_at": "2026-10-23T00:00:00+00:00"
+        },
+        {
+          "title": "A new route to calculating gluon production in proton–nucleus collisions",
+          "url": "https://phys.org/news/2026-11-route-gluon-production-protonnucleus-collisions.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.4,
+          "published_at": "2026-11-05T01:20:01+00:00"
+        }
+      ],
+      "top_terms": [
+        "collisions",
+        "route",
+        "calculating",
+        "gluon",
+        "production"
+      ],
+      "rank": 7,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "bottom",
+        "chaotic",
+        "einstein",
+        "laws",
+        "mediterranean",
+        "quantum",
+        "testing"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Nature 量子物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-05T18:01:51.367217+00:00",
+      "representative": {
+        "title": "Order in a quantum chaotic sea",
+        "url": "https://www.nature.com/articles/s41567-026-03513-y",
+        "source": "Nature 量子物理",
+        "published_at": "2026-10-27T00:00:00+00:00",
+        "score": 54.7,
+        "summary": "",
+        "zh_full": "（无摘要，仅标题）标题为“Order in a quantum chaotic sea”，意为“量子混沌海中的秩序”。该标题提示了一项关于量子混沌系统与有序结构之间关系的研究，但未提供具体实验方法、数据或结论。",
+        "llm_summary": "标题指出在量子混沌海中存在某种有序现象，但未给出具体内容。",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "Order in a quantum chaotic sea",
+      "id": "820700531834",
+      "links": [
+        {
+          "title": "Order in a quantum chaotic sea",
+          "url": "https://www.nature.com/articles/s41567-026-03513-y",
+          "source": "Nature 量子物理",
+          "score": 54.7,
+          "published_at": "2026-10-27T00:00:00+00:00"
+        },
+        {
+          "title": "Testing Einstein's laws from the bottom of the Mediterranean Sea",
+          "url": "https://phys.org/news/2026-11-einstein-laws-bottom-mediterranean-sea.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.1,
+          "published_at": "2026-11-04T05:00:08+00:00"
+        }
+      ],
+      "top_terms": [
+        "sea",
+        "testing",
+        "einstein",
+        "laws",
+        "bottom"
+      ],
+      "rank": 8,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
     {
       "terms": [
         "closer",
@@ -15,19 +631,19 @@
         "zeptoverse"
       ],
       "source_count": 2,
-      "signal_count": 2,
+      "signal_count": 1,
       "sources": [
         "New Scientist 物理",
         "Phys.org 物理新闻"
       ],
-      "score": 42.0,
-      "latest_at": "2026-11-05T02:29:27.723120+00:00",
+      "score": 21.0,
+      "latest_at": "2026-11-05T18:01:51.367217+00:00",
       "representative": {
         "title": "Physicists get first glimpse of the zeptoverse from LHC experiment",
         "url": "https://www.newscientist.com/article/2597289-beauty-particle-decay-opens-the-door-to-the-zeptoverse/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
         "source": "New Scientist 物理",
         "published_at": "2026-11-04T15:23:22+00:00",
-        "score": 60.9,
+        "score": 60.4,
         "summary": "Data from the Large Hadron Collider has revealed evidence of a long-sought particle process that serves as a guide into the realm of the smallest scales ever probed",
         "zh_full": null
       },
@@ -39,14 +655,14 @@
           "title": "Physicists get first glimpse of the zeptoverse from LHC experiment",
           "url": "https://www.newscientist.com/article/2597289-beauty-particle-decay-opens-the-door-to-the-zeptoverse/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 60.9,
+          "score": 60.4,
           "published_at": "2026-11-04T15:23:22+00:00"
         },
         {
           "title": "Physicists step closer to the 'Zeptoverse' after 42-year particle search",
           "url": "https://phys.org/news/2026-11-physicists-closer-zeptoverse-year-particle.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.1,
+          "score": 35.9,
           "published_at": "2026-11-03T15:40:30+00:00"
         }
       ],
@@ -57,425 +673,79 @@
         "closer",
         "particle"
       ],
-      "rank": 1,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "draw",
-        "impossible",
-        "laser",
-        "nanoscale",
-        "neutrino",
-        "research",
-        "superconductivity"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "MIT News 物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-11-05T02:29:27.723120+00:00",
-      "representative": {
-        "title": "New research shows a neutrino laser is impossible",
-        "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
-        "source": "MIT News 物理",
-        "published_at": "2026-09-02T14:00:00+00:00",
-        "score": 41.2,
-        "summary": "Due to physical and fundamental limitations, an earlier proposal for producing laserlike beams of neutrinos cannot be achieved, scientists report.",
-        "zh_full": "据MIT News报道，科学家报告称，由于物理和根本性限制，此前关于产生类似激光的中微子束的提案无法实现。这项新研究表明，中微子激光是不可能的。",
-        "llm_summary": "科学家报告称，由于物理和根本性限制，此前关于产生类似激光的中微子束的提案无法实现。这项新研究表明，中微子激光是不可能的。",
-        "llm_reason": "中微子激光可行性研究",
-        "density": "中"
-      },
-      "folded_count": 1,
-      "title": "New research shows a neutrino laser is impossible",
-      "id": "3b81f070c71f",
-      "links": [
-        {
-          "title": "A laser can draw superconductivity at the nanoscale",
-          "url": "https://phys.org/news/2026-11-laser-superconductivity-nanoscale.html",
-          "source": "Phys.org 物理新闻",
-          "score": 60.4,
-          "published_at": "2026-11-03T21:40:02+00:00"
-        },
-        {
-          "title": "New research shows a neutrino laser is impossible",
-          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-09-02T14:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "laser",
-        "draw",
-        "superconductivity",
-        "nanoscale",
-        "research"
-      ],
-      "rank": 2,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 9,
+      "trend": "down",
+      "trendPct": -50.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
     },
     {
       "terms": [
-        "cern",
-        "experiment",
-        "graduate",
-        "helped",
-        "know",
-        "research",
-        "scientists",
-        "student",
-        "team",
-        "test",
-        "tests",
-        "thoughts",
-        "whether",
-        "young"
+        "atomic",
+        "doping",
+        "electrochemical",
+        "films",
+        "nanoribbons",
+        "nanoscale",
+        "physicochemical",
+        "quantum",
+        "synthetic",
+        "tailoring",
+        "thin",
+        "v2o5",
+        "weaving"
       ],
       "source_count": 2,
       "signal_count": 1,
       "sources": [
-        "MIT News 物理",
-        "Quanta Magazine"
+        "Nature Physics 学科聚合",
+        "Nature 量子物理"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-05T02:29:27.723120+00:00",
+      "latest_at": "2026-11-05T18:01:51.367217+00:00",
       "representative": {
-        "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
-        "url": "https://news.mit.edu/2026/how-mit-grad-student-helped-young-scientists-test-their-experiment-cern-0828",
-        "source": "MIT News 物理",
-        "published_at": "2026-08-28T20:35:00+00:00",
-        "score": 41.2,
-        "summary": "Physics PhD student Manu Srivastava helped high school students in India develop a test that could contribute to one of the world’s largest neutrino experiments.",
-        "zh_full": "据MIT News报道，物理学博士生Manu Srivastava帮助印度高中生开发了一项测试，该测试可能有助于世界上最大的中微子实验之一。",
-        "llm_summary": "物理学博士生Manu Srivastava帮助印度高中生开发了一项测试，该测试可能有助于世界上最大的中微子实验之一。",
-        "llm_reason": "学生参与中微子实验",
-        "density": "中"
+        "title": "Tailoring the nanoscale physicochemical properties of V2O5 thin films through Mn doping for enhanced electrochemical performance",
+        "url": "https://www.nature.com/articles/s41598-026-79219-1",
+        "source": "Nature Physics 学科聚合",
+        "published_at": "2026-11-05T00:00:00+00:00",
+        "score": 60.7,
+        "summary": "",
+        "zh_full": "（无摘要，仅标题）该研究通过锰掺杂调控五氧化二钒薄膜的纳米尺度物理化学性质，以提升其电化学性能。",
+        "llm_summary": "（无摘要，仅标题）该研究通过锰掺杂调控五氧化二钒薄膜的纳米尺度物理化学性质，以提升其电化学性能。",
+        "density": "低"
       },
       "folded_count": 1,
-      "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
-      "id": "0137751e50c8",
+      "title": "Tailoring the nanoscale physicochemical properties of V2O5 thin films through Mn doping for enhanced electrochemical performance",
+      "id": "b9688aa1c732",
       "links": [
         {
-          "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
-          "url": "https://news.mit.edu/2026/how-mit-grad-student-helped-young-scientists-test-their-experiment-cern-0828",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-28T20:35:00+00:00"
+          "title": "Tailoring the nanoscale physicochemical properties of V2O5 thin films through Mn doping for enhanced electrochemical performance",
+          "url": "https://www.nature.com/articles/s41598-026-79219-1",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.7,
+          "published_at": "2026-11-05T00:00:00+00:00"
         },
         {
-          "title": "New Research Tests Whether AI Models Know Their Own Thoughts",
-          "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/",
-          "source": "Quanta Magazine",
-          "score": 36.5,
-          "published_at": "2026-11-04T15:32:52+00:00"
+          "title": "Synthetic 2D quantum materials from atomic weaving of 1D nanoribbons",
+          "url": "https://www.nature.com/articles/s42005-026-02936-6",
+          "source": "Nature 量子物理",
+          "score": 58.7,
+          "published_at": "2026-11-02T00:00:00+00:00"
         }
       ],
       "top_terms": [
-        "research",
-        "tests",
-        "whether",
-        "know",
-        "own"
+        "tailoring",
+        "nanoscale",
+        "physicochemical",
+        "v2o5",
+        "thin"
       ],
-      "rank": 3,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "rank": 10,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "air-stable",
-        "atoms",
-        "hard-to-observe",
-        "matter-antimatter",
-        "more",
-        "pair",
-        "production",
-        "quantum",
-        "researchers",
-        "scalable",
-        "simulate",
-        "superconductors",
-        "ultracold",
-        "ultrathin"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "MIT News 物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-11-05T02:29:27.723120+00:00",
-      "representative": {
-        "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-        "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
-        "source": "MIT News 物理",
-        "published_at": "2026-08-05T15:00:00+00:00",
-        "score": 41.2,
-        "summary": "A new technique produces wafer-scale samples, overcoming a major roadblock to using these materials in quantum technologies.",
-        "zh_full": "（无摘要，仅标题）",
-        "llm_summary": "（无摘要，仅标题）",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-      "id": "e5c9e289132c",
-      "links": [
-        {
-          "title": "Ultracold atoms simulate hard-to-observe matter-antimatter pair production",
-          "url": "https://phys.org/news/2026-10-ultracold-atoms-simulate-hard-antimatter.html",
-          "source": "Phys.org 物理新闻",
-          "score": 58.2,
-          "published_at": "2026-10-31T17:00:01+00:00"
-        },
-        {
-          "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-          "url": "https://news.mit.edu/2026/researchers-make-air-stable-ultrathin-superconductors-more-scalable-quantum-devices-0805",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-05T15:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "ultracold",
-        "atoms",
-        "simulate",
-        "hard",
-        "observe"
-      ],
-      "rank": 4,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "astronomers",
-        "astrophysical",
-        "black",
-        "black hole",
-        "brand-new",
-        "discover",
-        "hole",
-        "object",
-        "picture",
-        "star",
-        "take",
-        "type"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "MIT News 物理",
-        "Quanta Magazine"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-11-05T02:29:27.723120+00:00",
-      "representative": {
-        "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
-        "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
-        "source": "MIT News 物理",
-        "published_at": "2026-08-12T15:00:00+00:00",
-        "score": 41.2,
-        "summary": "The mashup of a black hole and an enormous star has never been seen before and could explain the mysterious little red dots often found in deep-space images.",
-        "zh_full": "天文学家发现了一种全新的天体物理对象：黑洞星。这种将黑洞与巨大恒星结合在一起的混合体此前从未被观测到，它可能有助于解释深空图像中经常出现的、神秘的红色小点。",
-        "llm_summary": "天文学家发现了一种全新的天体物理对象，被称为“黑洞星”。这是一种将黑洞与巨大恒星结合在一起的混合体，此前从未被观测到。这一发现可能有助于解释深空图像中经常出现的、神秘的红色小点。",
-        "llm_reason": "发现全新天体物理对象",
-        "density": "高"
-      },
-      "folded_count": 1,
-      "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
-      "id": "f7089c5a5404",
-      "links": [
-        {
-          "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
-          "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-12T15:00:00+00:00"
-        },
-        {
-          "title": "How Do You Take a Picture of a Black Hole?",
-          "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
-          "source": "Quanta Magazine",
-          "score": 34.1,
-          "published_at": "2026-10-29T15:11:57+00:00"
-        }
-      ],
-      "top_terms": [
-        "black",
-        "hole",
-        "you",
-        "take",
-        "picture"
-      ],
-      "rank": 5,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "dark",
-        "hunt",
-        "matter",
-        "observe",
-        "particle",
-        "wave"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "MIT News 物理",
-        "New Scientist 物理"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-11-05T02:29:27.723120+00:00",
-      "representative": {
-        "title": "On the hunt for dark matter",
-        "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
-        "source": "MIT News 物理",
-        "published_at": "2026-08-11T04:00:00+00:00",
-        "score": 41.2,
-        "summary": "From Broadway to MIT’s Laboratory for Nuclear Science, PhD student Jessica Fry doesn’t do anything halfway. Now she’s hunting for the universe’s most elusive particle.",
-        "zh_full": "MIT News 报道，从百老汇到 MIT 核科学实验室，博士生 Jessica Fry 做事从不半途而废。如今她正在搜寻宇宙中最难以捉摸的粒子——暗物质。",
-        "llm_summary": "MIT 博士生 Jessica Fry 正在搜寻宇宙中最难以捉摸的粒子——暗物质，报道提到她从百老汇到 MIT 核科学实验室的经历。",
-        "llm_reason": "暗物质搜寻人物报道",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "On the hunt for dark matter",
-      "id": "1dc3e2185b16",
-      "links": [
-        {
-          "title": "Will we observe dark matter as a particle or a wave?",
-          "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 46.0,
-          "published_at": "2026-10-13T08:00:00+00:00"
-        },
-        {
-          "title": "On the hunt for dark matter",
-          "url": "https://news.mit.edu/2026/hunt-dark-matter-jessica-fry-0811",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-08-11T04:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "dark",
-        "matter",
-        "hunt",
-        "observe",
-        "particle"
-      ],
-      "rank": 6,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "anticipated",
-        "assemble",
-        "bridge",
-        "classical",
-        "coexisting",
-        "deeper",
-        "electrons",
-        "even",
-        "oddity",
-        "phases",
-        "physicists",
-        "physics",
-        "quantum",
-        "reassemble",
-        "reverse",
-        "than",
-        "watch",
-        "worlds"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "MIT News 物理",
-        "New Scientist 物理"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-11-05T02:29:27.723120+00:00",
-      "representative": {
-        "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-        "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
-        "source": "MIT News 物理",
-        "published_at": "2026-08-07T09:00:00+00:00",
-        "score": 42.7,
-        "summary": "The study could help scientists understand how superconductivity and other more complex phenomena emerge in quantum materials.",
-        "zh_full": "（无摘要，仅标题）",
-        "llm_summary": "（无摘要，仅标题）",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-      "id": "db4a1640ca56",
-      "links": [
-        {
-          "title": "Key oddity of quantum physics may run even deeper than anticipated",
-          "url": "https://www.newscientist.com/article/2596105-key-oddity-of-quantum-physics-may-run-even-deeper-than-anticipated/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 58.2,
-          "published_at": "2026-10-29T11:00:00+00:00"
-        },
-        {
-          "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
-          "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
-          "source": "MIT News 物理",
-          "score": 42.7,
-          "published_at": "2026-08-07T09:00:00+00:00"
-        },
-        {
-          "title": "‘Reverse physics’ could help bridge the classical and quantum worlds",
-          "url": "https://www.newscientist.com/article/2596640-reverse-physics-could-help-bridge-the-classical-and-quantum-worlds/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 35.3,
-          "published_at": "2026-10-30T09:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "physics",
-        "quantum",
-        "physicists",
-        "watch",
-        "electrons"
-      ],
-      "digest": "量子力学的概率性特征可被追溯至其数学基础的更深处。新分析表明，这一特性并非仅源于观测过程，而是根植于理论本身的数学结构。该发现可能影响对量子力学基本假设的理解，但尚未改变现有理论框架。研究团队称，这一结果或为连接经典与量子世界提供新途径。",
-      "digestTitle": "量子力学概率性可追溯至数学基础深处",
-      "rank": 7,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
       "status": "关注中"
     }
   ]

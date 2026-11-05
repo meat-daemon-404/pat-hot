@@ -1,54 +1,54 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T02:29:27.723120+00:00",
-  "weekStart": "2026-10-30",
+  "generatedAt": "2026-11-05T18:01:51.367217+00:00",
+  "weekStart": "2026-10-31",
   "windowDays": 7,
-  "windowStart": "2026-10-30",
-  "windowEnd": "2026-11-05",
-  "prevStart": "2026-10-23",
-  "prevEnd": "2026-10-29",
+  "windowStart": "2026-10-31",
+  "windowEnd": "2026-11-06",
+  "prevStart": "2026-10-24",
+  "prevEnd": "2026-10-30",
   "categoryDelta": [
     {
       "category": "其他",
-      "thisWeek": 1632.7,
-      "lastWeek": 1417.0,
-      "deltaPct": 15.2
+      "thisWeek": 1310.3,
+      "lastWeek": 1479.7,
+      "deltaPct": -11.4
     },
     {
       "category": "深空探测",
-      "thisWeek": 1450.9,
-      "lastWeek": 1738.7,
-      "deltaPct": -16.6
+      "thisWeek": 1251.9,
+      "lastWeek": 1911.9,
+      "deltaPct": -34.5
     },
     {
       "category": "科研进展",
-      "thisWeek": 904.3,
-      "lastWeek": 2057.4,
-      "deltaPct": -56.0
-    },
-    {
-      "category": "恒星与星际介质",
-      "thisWeek": 816.5,
-      "lastWeek": 1129.8,
-      "deltaPct": -27.7
+      "thisWeek": 964.3,
+      "lastWeek": 2066.2,
+      "deltaPct": -53.3
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 675.2,
-      "lastWeek": 1125.6,
-      "deltaPct": -40.0
+      "thisWeek": 891.6,
+      "lastWeek": 1148.7,
+      "deltaPct": -22.4
     },
     {
-      "category": "太阳与空间物理",
-      "thisWeek": 62.3,
-      "lastWeek": 575.9,
-      "deltaPct": -89.2
+      "category": "恒星与星际介质",
+      "thisWeek": 640.1,
+      "lastWeek": 1253.0,
+      "deltaPct": -48.9
     },
     {
       "category": "引力波",
       "thisWeek": 50.0,
-      "lastWeek": 118.6,
-      "deltaPct": -57.8
+      "lastWeek": 37.4,
+      "deltaPct": 33.7
+    },
+    {
+      "category": "太阳与空间物理",
+      "thisWeek": 0,
+      "lastWeek": 573.4,
+      "deltaPct": -100.0
     },
     {
       "category": "系外行星",
@@ -59,10 +59,10 @@
   ],
   "newTopics": [
     {
-      "topic_id": "609814990de3",
-      "title": "APOD: 2026 October 31 – Night on a Spooky Planet",
-      "score": 402.4,
-      "days": 2
+      "topic_id": "755d4374fafa",
+      "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
+      "score": 229.0,
+      "days": 1
     },
     {
       "topic_id": "25a8b115a98d",
@@ -77,21 +77,15 @@
       "days": 1
     },
     {
-      "topic_id": "0372ff6bd52e",
-      "title": "NASA’s James Webb Space Telescope Captures Eerie Cat’s Head",
-      "score": 214.0,
-      "days": 1
-    },
-    {
-      "topic_id": "388be9408bf7",
-      "title": "Supporting mission-driven space innovation, for Earth and beyond",
-      "score": 154.6,
-      "days": 2
-    },
-    {
       "topic_id": "afcfb9061cba",
       "title": "When precise inference is wrong: Diagnosing model misspecification with applications to cosmic dawn and reionisation",
       "score": 135.6,
+      "days": 1
+    },
+    {
+      "topic_id": "4e78dc2f24d5",
+      "title": "NASA Astronauts to Answer Questions from Florida Students",
+      "score": 124.5,
       "days": 1
     },
     {
@@ -107,15 +101,21 @@
       "days": 1
     },
     {
-      "topic_id": "2d5b99d309a6",
-      "title": "This Ancient Meteorite Hints at Mars' Warm, Wet Past",
-      "score": 120.8,
+      "topic_id": "1c1279a4bf0f",
+      "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
+      "score": 121.7,
       "days": 2
     },
     {
       "topic_id": "8eec9527a814",
       "title": "Leviathan's sprawling stars challenge idea that dusty giants become compact galaxies",
       "score": 114.5,
+      "days": 1
+    },
+    {
+      "topic_id": "543944a41ca6",
+      "title": "Two-peak gravitational wave spectra from supercooled two-field phase transitions",
+      "score": 100.0,
       "days": 1
     }
   ],

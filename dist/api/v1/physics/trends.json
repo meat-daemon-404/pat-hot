@@ -1,61 +1,79 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T02:29:27.723120+00:00",
-  "weekStart": "2026-10-30",
+  "generatedAt": "2026-11-05T18:01:51.367217+00:00",
+  "weekStart": "2026-10-31",
   "windowDays": 7,
-  "windowStart": "2026-10-30",
-  "windowEnd": "2026-11-05",
-  "prevStart": "2026-10-23",
-  "prevEnd": "2026-10-29",
+  "windowStart": "2026-10-31",
+  "windowEnd": "2026-11-06",
+  "prevStart": "2026-10-24",
+  "prevEnd": "2026-10-30",
   "categoryDelta": [
     {
-      "category": "其他",
-      "thisWeek": 1005.6,
-      "lastWeek": 1026.2,
-      "deltaPct": -2.0
+      "category": "科研进展",
+      "thisWeek": 916.8,
+      "lastWeek": 1614.7,
+      "deltaPct": -43.2
     },
     {
-      "category": "科研进展",
-      "thisWeek": 486.0,
-      "lastWeek": 2073.6,
-      "deltaPct": -76.6
+      "category": "其他",
+      "thisWeek": 831.4,
+      "lastWeek": 1013.5,
+      "deltaPct": -18.0
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 419.9,
-      "lastWeek": 340.5,
-      "deltaPct": 23.3
-    },
-    {
-      "category": "高能与粒子物理",
-      "thisWeek": 183.0,
-      "lastWeek": 170.8,
-      "deltaPct": 7.1
+      "thisWeek": 427.0,
+      "lastWeek": 431.8,
+      "deltaPct": -1.1
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 125.4,
-      "lastWeek": 619.8,
-      "deltaPct": -79.8
+      "thisWeek": 323.6,
+      "lastWeek": 361.1,
+      "deltaPct": -10.4
     },
     {
-      "category": "等离子体",
-      "thisWeek": 51.2,
-      "lastWeek": 101.8,
-      "deltaPct": -49.7
+      "category": "高能与粒子物理",
+      "thisWeek": 234.5,
+      "lastWeek": 50.6,
+      "deltaPct": 363.4
     },
     {
       "category": "原子分子与光物理",
-      "thisWeek": 45.7,
+      "thisWeek": 104.5,
       "lastWeek": 0,
       "deltaPct": 100.0
+    },
+    {
+      "category": "等离子体",
+      "thisWeek": 102.2,
+      "lastWeek": 101.8,
+      "deltaPct": 0.4
     }
   ],
   "newTopics": [
     {
+      "topic_id": "759b220e8872",
+      "title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms",
+      "score": 176.4,
+      "days": 1
+    },
+    {
+      "topic_id": "125f0822b778",
+      "title": "Quantum error correcting codes from quiver moduli: Grassmannians, cyclic monodromy, and argyle collision divisors",
+      "score": 150.9,
+      "days": 1
+    },
+    {
       "topic_id": "cafa9e30b66d",
       "title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver",
       "score": 135.6,
+      "days": 1
+    },
+    {
+      "topic_id": "ccb9c095e519",
+      "title": "Noise-Induced Topology in Chiral Quantum Walks",
+      "score": 107.9,
       "days": 1
     },
     {
@@ -92,24 +110,6 @@
       "topic_id": "c9c29423cce7",
       "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
       "score": 60.3,
-      "days": 1
-    },
-    {
-      "topic_id": "038552fe9bde",
-      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-      "score": 60.2,
-      "days": 1
-    },
-    {
-      "topic_id": "e9c49519b300",
-      "title": "Four superconducting cables link two large quantum processors into one",
-      "score": 51.3,
-      "days": 1
-    },
-    {
-      "topic_id": "f66e4b1cfdf2",
-      "title": "Electronic-Structure-Informed Many-Body Encoding for Quantum Machine Learning",
-      "score": 47.0,
       "days": 1
     }
   ],
