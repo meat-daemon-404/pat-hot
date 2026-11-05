@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T18:00:40.304407+00:00",
-  "count": 63,
+  "generatedAt": "2026-11-05T02:29:27.723120+00:00",
+  "count": 64,
   "dailies": {
     "2026-07-21": {
       "date": "2026-07-21",
@@ -12971,7 +12971,7 @@
         "zh_full": null,
         "reason": null,
         "density": null,
-        "score": 61.1,
+        "score": 60.9,
         "role": "媒体",
         "published_at": "2026-11-04T15:23:22+00:00",
         "topic_id": "f88aee2b5daf",
@@ -12986,11 +12986,111 @@
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 60.6,
+          "score": 60.4,
           "role": "科研",
           "published_at": "2026-11-03T21:40:02+00:00",
-          "topic_id": "3d901b81566b",
-          "topic_title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range"
+          "topic_id": "3b81f070c71f",
+          "topic_title": "New research shows a neutrino laser is impossible"
+        },
+        {
+          "title": "Everlasting secure key agreement from a quantum computational hybrid security model",
+          "url": "https://arxiv.org/abs/2004.10173",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2004.10173v2 Announce Type: replace Abstract: We introduce the Quantum Computational Timelock (QCT) model, combining time-lock encryption with a quantitative noisy-quantum-storage assumption. Time-lock encryption gives Bob immediate a",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 37.4,
+          "role": "科研",
+          "published_at": "2026-11-04T05:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Perturbation-based Non-perturbative Method",
+          "url": "https://arxiv.org/abs/2308.10996",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2308.10996v3 Announce Type: replace Abstract: This paper presents a nonperturbative method for solving eigenproblems. This method applies to almost all potentials and provides nonperturbative approximations for any energy level. The m",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 37.4,
+          "role": "科研",
+          "published_at": "2026-11-04T05:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "New Research Tests Whether AI Models Know Their Own Thoughts",
+          "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/",
+          "source": "Quanta Magazine",
+          "summary": "研究人员通过向大型语言模型注入“想法”，测试 AI 是否具备内省能力，即能否意识到自己的思想。该研究探索模型对内部状态的认知，对 AI 可解释性和安全性有潜在意义。",
+          "zh_full": "Quanta Magazine 报道，研究人员正在尝试通过向大型语言模型直接注入“想法”来绘制 AI 的内省能力。这项新研究测试 AI 模型是否知道自己的思想。文章指出，研究者通过特定方法将“思想”注入模型，以探索模型对自身内部状态的认知程度。这一研究方向旨在理解 AI 是否具备类似人类内省的机制，即模型能否意识到自己的思考过程或内部表征。该研究可能对 AI 的可解释性、安全性和自我意识研究具有重要意义。目前，该研究的具体技术细节和结论在摘要中未详细展开，但核心问题是测试 AI 模型是否能够识别或报告自己的思想内容。这一探索属于 AI 认知科学的前沿领域，可能为未来设计更透明、可控的 AI 系统提供理论基础。",
+          "reason": "探索 AI 内省能力的前沿研究",
+          "density": "中",
+          "score": 36.5,
+          "role": "科研",
+          "published_at": "2026-11-04T15:32:52+00:00",
+          "topic_id": "0137751e50c8",
+          "topic_title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN"
+        }
+      ],
+      "flash": [
+        {
+          "title": "A single measurement makes quantum bits more reliable",
+          "url": "https://phys.org/news/2026-11-quantum-bits-reliable.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "雷根斯堡大学团队发现，在量子操作序列前增加一次额外测量，可将量子比特错误率降低一半以上。该成果发表于《应用物理评论》，为提升量子计算可靠性提供了简单有效的实验方案。",
+          "zh_full": "德国雷根斯堡大学的研究人员及其国际合作伙伴发现了一种显著减少量子比特错误的方法。在实验中，他们证明在一系列量子操作之前进行一次额外的测量，可以将错误率降低一半以上。相关结果已发表在《应用物理评论》（Applied Physics Reviews）上。该研究聚焦于量子比特的误差抑制，通过引入单次前置测量，在后续量子操作序列中实现了超过50%的错误率削减。这一发现为量子计算中的错误缓解提供了新的实验路径，无需依赖复杂的纠错码即可提升量子操作的可靠性。研究团队强调，该方法的实现基于现有量子硬件，具有即插即用的潜力，有望在近期量子处理器中得到验证和应用。论文详细描述了实验设置、测量协议以及误差统计结果，并讨论了该方案对不同噪声模型的鲁棒性。",
+          "reason": "量子比特误差抑制有新突破，方法简单且效果显著",
+          "density": "高",
+          "score": 34.2,
+          "role": "科研",
+          "published_at": "2026-11-03T20:40:06+00:00",
+          "topic_id": "26e0d76ba447",
+          "topic_title": "A single measurement makes quantum bits more reliable"
+        },
+        {
+          "title": "Testing Einstein's laws from the bottom of the Mediterranean Sea",
+          "url": "https://phys.org/news/2026-11-einstein-laws-bottom-mediterranean-sea.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Are the laws of physics truly the same everywhere in the universe? This fundamental principle, known as Lorentz invariance, lies at the heart of Einstein's theory of relativity. Yet some theories that seek to reconcile gravity with quantum ",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.5,
+          "role": "科研",
+          "published_at": "2026-11-04T05:00:08+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Finding the fingerprints of noisy distributions in random quantum systems",
+          "url": "https://phys.org/news/2026-11-fingerprints-noisy-random-quantum.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "该研究类比洗牌中牌褪色的过程，旨在理解“施加的随机性”与外部环境导致的褪色之间的相互作用，并将其应用于随机量子系统中的噪声分布研究。",
+          "zh_full": "想象洗一副牌，其中一些牌因为与外部环境相互作用的方式而正在褪色。你的任务是弄清洗牌方式所施加的“随机性”与牌暴露于外部环境时褪色过程之间的相互作用。",
+          "reason": "用洗牌类比研究随机量子系统中的噪声指纹",
+          "density": "中",
+          "score": 30.5,
+          "role": "科研",
+          "published_at": "2026-11-03T23:40:01+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Light-matter hybrids form supersolid quantum state at room temperature",
+          "url": "https://phys.org/news/2026-11-hybrids-supersolid-quantum-state-room.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "华沙大学等机构的研究团队在室温下的激子-极化激元玻色-爱因斯坦凝聚体中观察到超固体量子态，打破了此前超固体通常只能在极低温下实现的认知。该成果发表在《科学进展》上，为室温量子现象研究和新型量子器件开发提供了新方向。",
+          "zh_full": "由华沙大学物理系、波兰军事技术大学、IBM苏黎世研究中心和法国国家科学研究中心（CNRS）的研究人员组成的团队，在激子-极化激元玻色-爱因斯坦凝聚体中观察到了一种被称为超固体的新量子态。令人瞩目的是，这一现象并非发生在接近绝对零度的极低温度下，而是在室温条件下出现。相关结果已发表在《科学进展》（Science Advances）上。超固体是一种同时具有超流体特性和晶体结构有序性的奇特量子态，此前通常需要在极低温下才能实现。此次研究在室温下的激子-极化激元系统中观察到该状态，为量子材料的研究开辟了新的可能性，可能有助于开发新型量子器件和探索室温量子现象。",
+          "reason": "室温超固体量子态首次观测，突破低温限制",
+          "density": "高",
+          "score": 30.4,
+          "role": "科研",
+          "published_at": "2026-11-03T22:20:11+00:00",
+          "topic_id": null,
+          "topic_title": null
         },
         {
           "title": "A sublattice polarimeter to probe the quantum geometry of synthetic photonic lattices",
@@ -13019,106 +13119,6 @@
           "published_at": "2026-11-04T00:00:00+00:00",
           "topic_id": null,
           "topic_title": null
-        },
-        {
-          "title": "Everlasting secure key agreement from a quantum computational hybrid security model",
-          "url": "https://arxiv.org/abs/2004.10173",
-          "source": "arXiv quant-ph 论文速递",
-          "summary": "arXiv:2004.10173v2 Announce Type: replace Abstract: We introduce the Quantum Computational Timelock (QCT) model, combining time-lock encryption with a quantitative noisy-quantum-storage assumption. Time-lock encryption gives Bob immediate a",
-          "zh_full": null,
-          "reason": null,
-          "density": null,
-          "score": 37.6,
-          "role": "科研",
-          "published_at": "2026-11-04T05:00:00+00:00",
-          "topic_id": null,
-          "topic_title": null
-        }
-      ],
-      "flash": [
-        {
-          "title": "Perturbation-based Non-perturbative Method",
-          "url": "https://arxiv.org/abs/2308.10996",
-          "source": "arXiv quant-ph 论文速递",
-          "summary": "arXiv:2308.10996v3 Announce Type: replace Abstract: This paper presents a nonperturbative method for solving eigenproblems. This method applies to almost all potentials and provides nonperturbative approximations for any energy level. The m",
-          "zh_full": null,
-          "reason": null,
-          "density": null,
-          "score": 37.6,
-          "role": "科研",
-          "published_at": "2026-11-04T05:00:00+00:00",
-          "topic_id": null,
-          "topic_title": null
-        },
-        {
-          "title": "New Research Tests Whether AI Models Know Their Own Thoughts",
-          "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/",
-          "source": "Quanta Magazine",
-          "summary": "By injecting “thoughts” directly into large language models, researchers are trying to map out AI’s capacity for introspection. The post New Research Tests Whether AI Models Know Their Own Thoughts first appeared on Quanta Magazine",
-          "zh_full": null,
-          "reason": null,
-          "density": null,
-          "score": 36.7,
-          "role": "科研",
-          "published_at": "2026-11-04T15:32:52+00:00",
-          "topic_id": "0137751e50c8",
-          "topic_title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN"
-        },
-        {
-          "title": "Testing Einstein's laws from the bottom of the Mediterranean Sea",
-          "url": "https://phys.org/news/2026-11-einstein-laws-bottom-mediterranean-sea.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "Are the laws of physics truly the same everywhere in the universe? This fundamental principle, known as Lorentz invariance, lies at the heart of Einstein's theory of relativity. Yet some theories that seek to reconcile gravity with quantum ",
-          "zh_full": null,
-          "reason": null,
-          "density": null,
-          "score": 36.5,
-          "role": "科研",
-          "published_at": "2026-11-04T05:00:08+00:00",
-          "topic_id": "820700531834",
-          "topic_title": "Order in a quantum chaotic sea"
-        },
-        {
-          "title": "A single measurement makes quantum bits more reliable",
-          "url": "https://phys.org/news/2026-11-quantum-bits-reliable.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "Researchers at the University of Regensburg and their international partners have found a way to significantly reduce errors in quantum bits. In an experiment, they demonstrated that a single additional measurement before a series of quantu",
-          "zh_full": null,
-          "reason": null,
-          "density": null,
-          "score": 34.3,
-          "role": "科研",
-          "published_at": "2026-11-03T20:40:06+00:00",
-          "topic_id": "26e0d76ba447",
-          "topic_title": "A single measurement makes quantum bits more reliable"
-        },
-        {
-          "title": "Finding the fingerprints of noisy distributions in random quantum systems",
-          "url": "https://phys.org/news/2026-11-fingerprints-noisy-random-quantum.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "该研究类比洗牌中牌褪色的过程，旨在理解“施加的随机性”与外部环境导致的褪色之间的相互作用，并将其应用于随机量子系统中的噪声分布研究。",
-          "zh_full": "想象洗一副牌，其中一些牌因为与外部环境相互作用的方式而正在褪色。你的任务是弄清洗牌方式所施加的“随机性”与牌暴露于外部环境时褪色过程之间的相互作用。",
-          "reason": "用洗牌类比研究随机量子系统中的噪声指纹",
-          "density": "中",
-          "score": 30.6,
-          "role": "科研",
-          "published_at": "2026-11-03T23:40:01+00:00",
-          "topic_id": null,
-          "topic_title": null
-        },
-        {
-          "title": "Light-matter hybrids form supersolid quantum state at room temperature",
-          "url": "https://phys.org/news/2026-11-hybrids-supersolid-quantum-state-room.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "华沙大学等机构的研究团队在室温下的激子-极化激元玻色-爱因斯坦凝聚体中观察到超固体量子态，打破了此前超固体通常只能在极低温下实现的认知。该成果发表在《科学进展》上，为室温量子现象研究和新型量子器件开发提供了新方向。",
-          "zh_full": "由华沙大学物理系、波兰军事技术大学、IBM苏黎世研究中心和法国国家科学研究中心（CNRS）的研究人员组成的团队，在激子-极化激元玻色-爱因斯坦凝聚体中观察到了一种被称为超固体的新量子态。令人瞩目的是，这一现象并非发生在接近绝对零度的极低温度下，而是在室温条件下出现。相关结果已发表在《科学进展》（Science Advances）上。超固体是一种同时具有超流体特性和晶体结构有序性的奇特量子态，此前通常需要在极低温下才能实现。此次研究在室温下的激子-极化激元系统中观察到该状态，为量子材料的研究开辟了新的可能性，可能有助于开发新型量子器件和探索室温量子现象。",
-          "reason": "室温超固体量子态首次观测，突破低温限制",
-          "density": "高",
-          "score": 30.6,
-          "role": "科研",
-          "published_at": "2026-11-03T22:20:11+00:00",
-          "topic_id": null,
-          "topic_title": null
         }
       ],
       "sections": [
@@ -13133,7 +13133,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 61.1,
+              "score": 60.9,
               "role": "媒体",
               "published_at": "2026-11-04T15:23:22+00:00",
               "topic_id": "f88aee2b5daf",
@@ -13152,45 +13152,17 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 60.6,
+              "score": 60.4,
               "role": "科研",
               "published_at": "2026-11-03T21:40:02+00:00",
-              "topic_id": "3d901b81566b",
-              "topic_title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range"
+              "topic_id": "3b81f070c71f",
+              "topic_title": "New research shows a neutrino laser is impossible"
             }
           ]
         },
         {
           "category": "科研进展",
           "articles": [
-            {
-              "title": "A sublattice polarimeter to probe the quantum geometry of synthetic photonic lattices",
-              "url": "https://www.nature.com/articles/s41467-026-78322-1",
-              "source": "Nature 量子物理",
-              "summary": "",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 51.0,
-              "role": "科研",
-              "published_at": "2026-11-04T00:00:00+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
-            {
-              "title": "A nonlinear superinductor in a deep-submicrometre integrated circuit",
-              "url": "https://www.nature.com/articles/s41928-026-01728-8",
-              "source": "Nature 量子物理",
-              "summary": "",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 51.0,
-              "role": "科研",
-              "published_at": "2026-11-04T00:00:00+00:00",
-              "topic_id": null,
-              "topic_title": null
-            },
             {
               "title": "Everlasting secure key agreement from a quantum computational hybrid security model",
               "url": "https://arxiv.org/abs/2004.10173",
@@ -13199,7 +13171,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 37.6,
+              "score": 37.4,
               "role": "科研",
               "published_at": "2026-11-04T05:00:00+00:00",
               "topic_id": null,
@@ -13213,7 +13185,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 37.6,
+              "score": 37.4,
               "role": "科研",
               "published_at": "2026-11-04T05:00:00+00:00",
               "topic_id": null,
@@ -13228,15 +13200,29 @@
               "title": "New Research Tests Whether AI Models Know Their Own Thoughts",
               "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/",
               "source": "Quanta Magazine",
-              "summary": "By injecting “thoughts” directly into large language models, researchers are trying to map out AI’s capacity for introspection. The post New Research Tests Whether AI Models Know Their Own Thoughts first appeared on Quanta Magazine",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 36.7,
+              "summary": "研究人员通过向大型语言模型注入“想法”，测试 AI 是否具备内省能力，即能否意识到自己的思想。该研究探索模型对内部状态的认知，对 AI 可解释性和安全性有潜在意义。",
+              "zh_full": "Quanta Magazine 报道，研究人员正在尝试通过向大型语言模型直接注入“想法”来绘制 AI 的内省能力。这项新研究测试 AI 模型是否知道自己的思想。文章指出，研究者通过特定方法将“思想”注入模型，以探索模型对自身内部状态的认知程度。这一研究方向旨在理解 AI 是否具备类似人类内省的机制，即模型能否意识到自己的思考过程或内部表征。该研究可能对 AI 的可解释性、安全性和自我意识研究具有重要意义。目前，该研究的具体技术细节和结论在摘要中未详细展开，但核心问题是测试 AI 模型是否能够识别或报告自己的思想内容。这一探索属于 AI 认知科学的前沿领域，可能为未来设计更透明、可控的 AI 系统提供理论基础。",
+              "reason": "探索 AI 内省能力的前沿研究",
+              "density": "中",
+              "score": 36.5,
               "role": "科研",
               "published_at": "2026-11-04T15:32:52+00:00",
               "topic_id": "0137751e50c8",
               "topic_title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN"
+            },
+            {
+              "title": "A single measurement makes quantum bits more reliable",
+              "url": "https://phys.org/news/2026-11-quantum-bits-reliable.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "雷根斯堡大学团队发现，在量子操作序列前增加一次额外测量，可将量子比特错误率降低一半以上。该成果发表于《应用物理评论》，为提升量子计算可靠性提供了简单有效的实验方案。",
+              "zh_full": "德国雷根斯堡大学的研究人员及其国际合作伙伴发现了一种显著减少量子比特错误的方法。在实验中，他们证明在一系列量子操作之前进行一次额外的测量，可以将错误率降低一半以上。相关结果已发表在《应用物理评论》（Applied Physics Reviews）上。该研究聚焦于量子比特的误差抑制，通过引入单次前置测量，在后续量子操作序列中实现了超过50%的错误率削减。这一发现为量子计算中的错误缓解提供了新的实验路径，无需依赖复杂的纠错码即可提升量子操作的可靠性。研究团队强调，该方法的实现基于现有量子硬件，具有即插即用的潜力，有望在近期量子处理器中得到验证和应用。论文详细描述了实验设置、测量协议以及误差统计结果，并讨论了该方案对不同噪声模型的鲁棒性。",
+              "reason": "量子比特误差抑制有新突破，方法简单且效果显著",
+              "density": "高",
+              "score": 34.2,
+              "role": "科研",
+              "published_at": "2026-11-03T20:40:06+00:00",
+              "topic_id": "26e0d76ba447",
+              "topic_title": "A single measurement makes quantum bits more reliable"
             },
             {
               "title": "Testing Einstein's laws from the bottom of the Mediterranean Sea",
@@ -13246,25 +13232,11 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 36.5,
+              "score": 30.5,
               "role": "科研",
               "published_at": "2026-11-04T05:00:08+00:00",
-              "topic_id": "820700531834",
-              "topic_title": "Order in a quantum chaotic sea"
-            },
-            {
-              "title": "A single measurement makes quantum bits more reliable",
-              "url": "https://phys.org/news/2026-11-quantum-bits-reliable.html",
-              "source": "Phys.org 物理新闻",
-              "summary": "Researchers at the University of Regensburg and their international partners have found a way to significantly reduce errors in quantum bits. In an experiment, they demonstrated that a single additional measurement before a series of quantu",
-              "zh_full": null,
-              "reason": null,
-              "density": null,
-              "score": 34.3,
-              "role": "科研",
-              "published_at": "2026-11-03T20:40:06+00:00",
-              "topic_id": "26e0d76ba447",
-              "topic_title": "A single measurement makes quantum bits more reliable"
+              "topic_id": null,
+              "topic_title": null
             },
             {
               "title": "Finding the fingerprints of noisy distributions in random quantum systems",
@@ -13274,7 +13246,7 @@
               "zh_full": "想象洗一副牌，其中一些牌因为与外部环境相互作用的方式而正在褪色。你的任务是弄清洗牌方式所施加的“随机性”与牌暴露于外部环境时褪色过程之间的相互作用。",
               "reason": "用洗牌类比研究随机量子系统中的噪声指纹",
               "density": "中",
-              "score": 30.6,
+              "score": 30.5,
               "role": "科研",
               "published_at": "2026-11-03T23:40:01+00:00",
               "topic_id": null,
@@ -13288,7 +13260,7 @@
               "zh_full": "由华沙大学物理系、波兰军事技术大学、IBM苏黎世研究中心和法国国家科学研究中心（CNRS）的研究人员组成的团队，在激子-极化激元玻色-爱因斯坦凝聚体中观察到了一种被称为超固体的新量子态。令人瞩目的是，这一现象并非发生在接近绝对零度的极低温度下，而是在室温条件下出现。相关结果已发表在《科学进展》（Science Advances）上。超固体是一种同时具有超流体特性和晶体结构有序性的奇特量子态，此前通常需要在极低温下才能实现。此次研究在室温下的激子-极化激元系统中观察到该状态，为量子材料的研究开辟了新的可能性，可能有助于开发新型量子器件和探索室温量子现象。",
               "reason": "室温超固体量子态首次观测，突破低温限制",
               "density": "高",
-              "score": 30.6,
+              "score": 30.4,
               "role": "科研",
               "published_at": "2026-11-03T22:20:11+00:00",
               "topic_id": null,
@@ -13298,14 +13270,179 @@
         }
       ],
       "topic_ids": [
+        "0137751e50c8",
         "26e0d76ba447",
         "3b81f070c71f",
         "3d901b81566b",
         "f88aee2b5daf"
       ],
       "tocCount": 11,
-      "readMinutes": 2,
-      "amended": 0
+      "readMinutes": 3,
+      "amended": 2
+    },
+    "2026-11-05": {
+      "date": "2026-11-05",
+      "weekday": "周四",
+      "label": "2026年11月5日",
+      "headline": {
+        "title": "New research uncovers chiral topological phases in metals without structural order",
+        "url": "https://phys.org/news/2026-11-uncovers-chiral-topological-phases-metals.html",
+        "source": "Phys.org 物理新闻",
+        "summary": "Fermions are among the most important particles in physics and include both everyday electrons and more exotic variants. Chiral fermions, like gloves, come in left- and right-handed versions and were proposed over a century ago. While high-",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 51.4,
+        "role": "科研",
+        "published_at": "2026-11-04T21:20:21+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      "picks": [
+        {
+          "title": "A new route to calculating gluon production in proton–nucleus collisions",
+          "url": "https://phys.org/news/2026-11-route-gluon-production-protonnucleus-collisions.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "In the theoretical study of proton-nucleus collisions, the colliding projectiles can be described as streams of color charges moving along their respective trajectories. These color charges couple to gluons, which then produce the particles",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.9,
+          "role": "科研",
+          "published_at": "2026-11-05T01:20:01+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "flash": [
+        {
+          "title": "A carefully timed pair of light pulses can amplify the motion of atomic layers in a quantum material",
+          "url": "https://phys.org/news/2026-11-pair-pulses-amplify-motion-atomic.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "The principle \"Work smarter, not harder!\" apparently also applies to controlling quantum materials with light. Many of their fascinating properties depend on how the atoms are arranged in the crystal. Ultrashort laser pulses can be used to ",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.8,
+          "role": "科研",
+          "published_at": "2026-11-04T23:20:09+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "A new superinductor created within a silicon integrated circuit",
+          "url": "https://phys.org/news/2026-11-superinductor-silicon-circuit.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "A recent study published in Nature Electronics and carried out by researchers from nanoGUNE's Quantum Hardware research group, Quantum Motion, London Center for Nanotechnology, Imperial College London and the University of Cambridge introdu",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.8,
+          "role": "科研",
+          "published_at": "2026-11-04T22:40:08+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Five things to know about guiding sound for better communication",
+          "url": "https://phys.org/news/2026-11-communication.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Every time someone picks up a call, the phone does a quiet bit of translation. Incoming radio signals are converted into tiny sound waves that ripple across chips before being turned back into data.",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 30.8,
+          "role": "科研",
+          "published_at": "2026-11-04T18:40:16+00:00",
+          "topic_id": null,
+          "topic_title": null
+        }
+      ],
+      "sections": [
+        {
+          "category": "凝聚态物理",
+          "articles": [
+            {
+              "title": "New research uncovers chiral topological phases in metals without structural order",
+              "url": "https://phys.org/news/2026-11-uncovers-chiral-topological-phases-metals.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Fermions are among the most important particles in physics and include both everyday electrons and more exotic variants. Chiral fermions, like gloves, come in left- and right-handed versions and were proposed over a century ago. While high-",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.4,
+              "role": "科研",
+              "published_at": "2026-11-04T21:20:21+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "其他",
+          "articles": [
+            {
+              "title": "A new route to calculating gluon production in proton–nucleus collisions",
+              "url": "https://phys.org/news/2026-11-route-gluon-production-protonnucleus-collisions.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "In the theoretical study of proton-nucleus collisions, the colliding projectiles can be described as streams of color charges moving along their respective trajectories. These color charges couple to gluons, which then produce the particles",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.9,
+              "role": "科研",
+              "published_at": "2026-11-05T01:20:01+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "A carefully timed pair of light pulses can amplify the motion of atomic layers in a quantum material",
+              "url": "https://phys.org/news/2026-11-pair-pulses-amplify-motion-atomic.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "The principle \"Work smarter, not harder!\" apparently also applies to controlling quantum materials with light. Many of their fascinating properties depend on how the atoms are arranged in the crystal. Ultrashort laser pulses can be used to ",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.8,
+              "role": "科研",
+              "published_at": "2026-11-04T23:20:09+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "A new superinductor created within a silicon integrated circuit",
+              "url": "https://phys.org/news/2026-11-superinductor-silicon-circuit.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "A recent study published in Nature Electronics and carried out by researchers from nanoGUNE's Quantum Hardware research group, Quantum Motion, London Center for Nanotechnology, Imperial College London and the University of Cambridge introdu",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.8,
+              "role": "科研",
+              "published_at": "2026-11-04T22:40:08+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Five things to know about guiding sound for better communication",
+              "url": "https://phys.org/news/2026-11-communication.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Every time someone picks up a call, the phone does a quiet bit of translation. Incoming radio signals are converted into tiny sound waves that ripple across chips before being turned back into data.",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.8,
+              "role": "科研",
+              "published_at": "2026-11-04T18:40:16+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        }
+      ],
+      "topic_ids": [],
+      "tocCount": 5,
+      "readMinutes": 2
     }
   }
 }

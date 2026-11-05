@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T18:00:40.304407+00:00",
+  "generatedAt": "2026-11-05T02:29:27.723120+00:00",
   "weekStart": "2026-10-30",
   "windowDays": 7,
   "windowStart": "2026-10-30",
@@ -10,33 +10,33 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4395.3,
+      "thisWeek": 4378.8,
       "lastWeek": 4526.7,
-      "deltaPct": -2.9
+      "deltaPct": -3.3
     },
     {
       "category": "光通信",
-      "thisWeek": 3412.2,
+      "thisWeek": 3314.8,
       "lastWeek": 3367.1,
-      "deltaPct": 1.3
+      "deltaPct": -1.6
     },
     {
       "category": "科研进展",
-      "thisWeek": 2888.9,
+      "thisWeek": 2940.9,
       "lastWeek": 3130.5,
-      "deltaPct": -7.7
+      "deltaPct": -6.1
     },
     {
       "category": "产业与资本",
-      "thisWeek": 2874.6,
+      "thisWeek": 2874.4,
       "lastWeek": 3084.7,
       "deltaPct": -6.8
     },
     {
       "category": "其他",
-      "thisWeek": 2551.8,
+      "thisWeek": 2708.7,
       "lastWeek": 2336.2,
-      "deltaPct": 9.2
+      "deltaPct": 15.9
     },
     {
       "category": "通信与算力",
@@ -45,22 +45,22 @@
       "deltaPct": 4.2
     },
     {
-      "category": "光学元件与成像",
-      "thisWeek": 1499.1,
-      "lastWeek": 2184.5,
-      "deltaPct": -31.4
+      "category": "显示与面板",
+      "thisWeek": 1492.6,
+      "lastWeek": 1098.5,
+      "deltaPct": 35.9
     },
     {
-      "category": "显示与面板",
-      "thisWeek": 1493.5,
-      "lastWeek": 1098.5,
-      "deltaPct": 36.0
+      "category": "光学元件与成像",
+      "thisWeek": 1471.4,
+      "lastWeek": 2184.5,
+      "deltaPct": -32.6
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 740.6,
+      "thisWeek": 750.0,
       "lastWeek": 821.7,
-      "deltaPct": -9.9
+      "deltaPct": -8.7
     },
     {
       "category": "光传感与激光雷达",
@@ -71,22 +71,22 @@
   ],
   "newTopics": [
     {
-      "topic_id": "cf711748e825",
-      "title": "Photonics Hot List: October 30, 2026",
-      "score": 434.2,
-      "days": 4
-    },
-    {
       "topic_id": "21a0c8421f1a",
       "title": "Photonics Hot List: October 30, 2026",
-      "score": 355.0,
-      "days": 3
+      "score": 505.6,
+      "days": 4
     },
     {
       "topic_id": "4d426ee1e207",
       "title": "工业和信息化部等八部门印发《产业基础能力提升“十五五”规划》",
       "score": 323.0,
       "days": 5
+    },
+    {
+      "topic_id": "cf711748e825",
+      "title": "Photonics Hot List: October 30, 2026",
+      "score": 269.9,
+      "days": 3
     },
     {
       "topic_id": "07cc46da5b4f",
@@ -119,15 +119,15 @@
       "days": 1
     },
     {
-      "topic_id": "6bf26ca37051",
-      "title": "Single-photon avalanche diode arrays: An avalanche of photon data for sharper imaging",
-      "score": 130.0,
+      "topic_id": "b8ab568e8ad2",
+      "title": "Pure-blue quantum-dot light-emitting diodes with minimal efficiency roll-off and high brightness",
+      "score": 125.3,
       "days": 1
     },
     {
-      "topic_id": "b8ab568e8ad2",
-      "title": "Pure-blue quantum-dot light-emitting diodes with minimal efficiency roll-off and high brightness",
-      "score": 125.8,
+      "topic_id": "a0533606a593",
+      "title": "Non-contact temperature sensing and optical scatter in cryogenically-cooled crystalline silicon",
+      "score": 123.4,
       "days": 1
     }
   ],

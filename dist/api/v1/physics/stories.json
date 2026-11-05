@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T18:00:40.304407+00:00",
-  "count": 10,
+  "generatedAt": "2026-11-05T02:29:27.723120+00:00",
+  "count": 7,
   "items": [
     {
       "id": "f88aee2b5daf",
@@ -10,7 +10,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-11-04T18:00:40.304407+00:00",
+      "latestAt": "2026-11-05T02:29:27.723120+00:00",
       "sources": [
         "New Scientist 物理",
         "Phys.org 物理新闻"
@@ -20,67 +20,33 @@
           "title": "Physicists get first glimpse of the zeptoverse from LHC experiment",
           "url": "https://www.newscientist.com/article/2597289-beauty-particle-decay-opens-the-door-to-the-zeptoverse/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 61.1,
+          "score": 60.9,
           "published_at": "2026-11-04T15:23:22+00:00"
         },
         {
           "title": "Physicists step closer to the 'Zeptoverse' after 42-year particle search",
           "url": "https://phys.org/news/2026-11-physicists-closer-zeptoverse-year-particle.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.3,
+          "score": 36.1,
           "published_at": "2026-11-03T15:40:30+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": "欧洲核子研究中心（CERN）的LHCb实验首次观测到一种极罕见的B介子衰变，该过程预计每100亿个B介子中仅发生一次。这一结果标志着物理学家向探索最小尺度“zeptoverse”迈出关键一步，结束了长达42年的粒子搜寻。该发现基于大型强子对撞机（LHC）升级后的数据，为理解粒子物理标准模型提供了新证据。",
-      "digestTitle": "LHC首次观测到罕见B介子衰变"
+      "digest": null,
+      "digestTitle": null
     },
     {
-      "id": "820700531834",
-      "title": "Order in a quantum chaotic sea",
+      "id": "3b81f070c71f",
+      "title": "New research shows a neutrino laser is impossible",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-04T18:00:40.304407+00:00",
+      "latestAt": "2026-11-05T02:29:27.723120+00:00",
       "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "links": [
-        {
-          "title": "Order in a quantum chaotic sea",
-          "url": "https://www.nature.com/articles/s41567-026-03513-y",
-          "source": "Nature 量子物理",
-          "score": 55.3,
-          "published_at": "2026-10-27T00:00:00+00:00"
-        },
-        {
-          "title": "Testing Einstein's laws from the bottom of the Mediterranean Sea",
-          "url": "https://phys.org/news/2026-11-einstein-laws-bottom-mediterranean-sea.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.5,
-          "published_at": "2026-11-04T05:00:08+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": "一项从地中海海底进行的实验检验了爱因斯坦相对论的核心原则——洛伦兹不变性，即物理定律在宇宙各处应相同。该实验未发现违反这一原则的证据，但为某些试图统一引力和量子力学的理论提供了新的约束。研究人员称，这一结果支持了相对论的有效性，同时限制了可能存在的微小偏差。",
-      "digestTitle": "地中海实验检验洛伦兹不变性"
-    },
-    {
-      "id": "3d901b81566b",
-      "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-11-04T18:00:40.304407+00:00",
-      "sources": [
-        "Nature 量子物理",
+        "MIT News 物理",
         "Phys.org 物理新闻"
       ],
       "links": [
@@ -88,22 +54,22 @@
           "title": "A laser can draw superconductivity at the nanoscale",
           "url": "https://phys.org/news/2026-11-laser-superconductivity-nanoscale.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.6,
+          "score": 60.4,
           "published_at": "2026-11-03T21:40:02+00:00"
         },
         {
-          "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
-          "url": "https://www.nature.com/articles/s41467-026-78386-z",
-          "source": "Nature 量子物理",
-          "score": 52.0,
-          "published_at": "2026-10-22T00:00:00+00:00"
+          "title": "New research shows a neutrino laser is impossible",
+          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-09-02T14:00:00+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "研究人员利用直写激光技术在材料表面局部绘制出超导特性，实现了纳米尺度的超导图案编程。该技术由ICMAB-CSIC、米兰理工大学和列日大学团队开发，为在微观尺度上定制超导器件提供了新途径。",
-      "digestTitle": "激光写入实现纳米级超导图案"
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "0137751e50c8",
@@ -112,7 +78,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-04T18:00:40.304407+00:00",
+      "latestAt": "2026-11-05T02:29:27.723120+00:00",
       "sources": [
         "MIT News 物理",
         "Quanta Magazine"
@@ -129,12 +95,12 @@
           "title": "New Research Tests Whether AI Models Know Their Own Thoughts",
           "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/",
           "source": "Quanta Magazine",
-          "score": 36.7,
+          "score": 36.5,
           "published_at": "2026-11-04T15:32:52+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -146,7 +112,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-04T18:00:40.304407+00:00",
+      "latestAt": "2026-11-05T02:29:27.723120+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -156,7 +122,7 @@
           "title": "Ultracold atoms simulate hard-to-observe matter-antimatter pair production",
           "url": "https://phys.org/news/2026-10-ultracold-atoms-simulate-hard-antimatter.html",
           "source": "Phys.org 物理新闻",
-          "score": 58.5,
+          "score": 58.2,
           "published_at": "2026-10-31T17:00:01+00:00"
         },
         {
@@ -174,81 +140,13 @@
       "digestTitle": null
     },
     {
-      "id": "038552fe9bde",
-      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-11-04T18:00:40.304407+00:00",
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "links": [
-        {
-          "title": "Four superconducting cables link two large quantum processors into one",
-          "url": "https://phys.org/news/2026-10-superconducting-cables-link-large-quantum.html",
-          "source": "Phys.org 物理新闻",
-          "score": 58.4,
-          "published_at": "2026-10-31T16:00:02+00:00"
-        },
-        {
-          "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-          "url": "https://www.nature.com/articles/s41567-026-03484-0",
-          "source": "Nature 量子物理",
-          "score": 52.0,
-          "published_at": "2026-10-22T00:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "2c8163948e22",
-      "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-11-04T18:00:40.304407+00:00",
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "links": [
-        {
-          "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
-          "url": "https://www.nature.com/articles/s41586-026-11312-x",
-          "source": "Nature 量子物理",
-          "score": 52.0,
-          "published_at": "2026-10-22T00:00:00+00:00"
-        },
-        {
-          "title": "Machine learning helps track semiconductor defects under more realistic temperature conditions",
-          "url": "https://phys.org/news/2026-10-machine-track-semiconductor-defects-realistic.html",
-          "source": "Phys.org 物理新闻",
-          "score": 34.3,
-          "published_at": "2026-10-29T20:50:05+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
       "id": "f7089c5a5404",
       "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
       "status": "关注中",
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-04T18:00:40.304407+00:00",
+      "latestAt": "2026-11-05T02:29:27.723120+00:00",
       "sources": [
         "MIT News 物理",
         "Quanta Magazine"
@@ -265,46 +163,12 @@
           "title": "How Do You Take a Picture of a Black Hole?",
           "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
           "source": "Quanta Magazine",
-          "score": 34.3,
+          "score": 34.1,
           "published_at": "2026-10-29T15:11:57+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "7e7427289fca",
-      "title": "New research shows a neutrino laser is impossible",
-      "status": "关注中",
-      "heat": 0.0,
-      "sourceCount": 2,
-      "signalCount": 0,
-      "latestAt": "2026-11-04T18:00:40.304407+00:00",
-      "sources": [
-        "MIT News 物理",
-        "New Scientist 物理"
-      ],
-      "links": [
-        {
-          "title": "Are we about to solve the greatest mystery of the neutrino?",
-          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 物理",
-          "score": 50.5,
-          "published_at": "2026-10-19T19:00:00+00:00"
-        },
-        {
-          "title": "New research shows a neutrino laser is impossible",
-          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
-          "source": "MIT News 物理",
-          "score": 41.2,
-          "published_at": "2026-09-02T14:00:00+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -100.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -316,7 +180,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-04T18:00:40.304407+00:00",
+      "latestAt": "2026-11-05T02:29:27.723120+00:00",
       "sources": [
         "MIT News 物理",
         "New Scientist 物理"
@@ -326,7 +190,7 @@
           "title": "Will we observe dark matter as a particle or a wave?",
           "url": "https://www.newscientist.com/article/2591125-will-we-observe-dark-matter-as-a-particle-or-a-wave/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 46.2,
+          "score": 46.0,
           "published_at": "2026-10-13T08:00:00+00:00"
         },
         {
@@ -342,6 +206,47 @@
       "badges": [],
       "digest": null,
       "digestTitle": null
+    },
+    {
+      "id": "db4a1640ca56",
+      "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-11-05T02:29:27.723120+00:00",
+      "sources": [
+        "MIT News 物理",
+        "New Scientist 物理"
+      ],
+      "links": [
+        {
+          "title": "Key oddity of quantum physics may run even deeper than anticipated",
+          "url": "https://www.newscientist.com/article/2596105-key-oddity-of-quantum-physics-may-run-even-deeper-than-anticipated/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 58.2,
+          "published_at": "2026-10-29T11:00:00+00:00"
+        },
+        {
+          "title": "Physicists watch a material’s electrons assemble, and reassemble, into coexisting phases",
+          "url": "https://news.mit.edu/2026/physicists-watch-materials-electrons-assemble-reassemble-coexisting-phases-0807",
+          "source": "MIT News 物理",
+          "score": 42.7,
+          "published_at": "2026-08-07T09:00:00+00:00"
+        },
+        {
+          "title": "‘Reverse physics’ could help bridge the classical and quantum worlds",
+          "url": "https://www.newscientist.com/article/2596640-reverse-physics-could-help-bridge-the-classical-and-quantum-worlds/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 35.3,
+          "published_at": "2026-10-30T09:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": "量子力学的概率性特征可被追溯至其数学基础的更深处。新分析表明，这一特性并非仅源于观测过程，而是根植于理论本身的数学结构。该发现可能影响对量子力学基本假设的理解，但尚未改变现有理论框架。研究团队称，这一结果或为连接经典与量子世界提供新途径。",
+      "digestTitle": "量子力学概率性可追溯至数学基础深处"
     }
   ]
 }
