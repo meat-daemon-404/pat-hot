@@ -1,51 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T18:01:51.367217+00:00",
+  "generatedAt": "2026-11-06T02:26:31.258293+00:00",
   "channel": "tech",
   "count": 33,
   "items": [
-    {
-      "id": "114b02fbfd98",
-      "title": "Neuromorphic Camera for Multi-Target Pointing Acquisition and Tracking in Free Space Optical Communication",
-      "channel": "tech",
-      "source": "arXiv 光学与光子学 (physics.optics)",
-      "url": "https://arxiv.org/abs/2611.05503",
-      "doi": null,
-      "arxiv": "2611.05503",
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "光通信",
-      "published_at": "2026-11-05T05:00:00+00:00",
-      "selected": true
-    },
-    {
-      "id": "43865d8add96",
-      "title": "Millimeter-Wave Gaussian-to-Flat-Top Beam Shaping Using a Single-Curvature Lens: A Novel Approach",
-      "channel": "tech",
-      "source": "arXiv 光学与光子学 (physics.optics)",
-      "url": "https://arxiv.org/abs/2611.06053",
-      "doi": null,
-      "arxiv": "2611.06053",
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "光学元件与成像",
-      "published_at": "2026-11-05T05:00:00+00:00",
-      "selected": true
-    },
-    {
-      "id": "6602ac0d9dbc",
-      "title": "Evanescent-Depth-Engineered High-Q topological Cavities for Strong Photon-Exciton Coupling",
-      "channel": "tech",
-      "source": "arXiv 光学与光子学 (physics.optics)",
-      "url": "https://arxiv.org/abs/2611.06351",
-      "doi": null,
-      "arxiv": "2611.06351",
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "科研进展",
-      "published_at": "2026-11-05T05:00:00+00:00",
-      "selected": true
-    },
     {
       "id": "438f7daba23e",
       "title": "Phase matching and mode coupling in photonic-crystal ring resonators",
@@ -57,6 +15,20 @@
       "via": "feed_text",
       "confidence": "verified",
       "category": "科研进展",
+      "published_at": "2026-11-05T05:00:00+00:00",
+      "selected": true
+    },
+    {
+      "id": "114b02fbfd98",
+      "title": "Neuromorphic Camera for Multi-Target Pointing Acquisition and Tracking in Free Space Optical Communication",
+      "channel": "tech",
+      "source": "arXiv 光学与光子学 (physics.optics)",
+      "url": "https://arxiv.org/abs/2611.05503",
+      "doi": null,
+      "arxiv": "2611.05503",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "光通信",
       "published_at": "2026-11-05T05:00:00+00:00",
       "selected": true
     },
@@ -355,20 +327,6 @@
       "selected": true
     },
     {
-      "id": "94f7712fe505",
-      "title": "Optical angular momentum and pseudospin-orbit coupling in photonic graphene",
-      "channel": "tech",
-      "source": "arXiv 光学与光子学 (physics.optics)",
-      "url": "https://arxiv.org/abs/2611.05944",
-      "doi": null,
-      "arxiv": "2611.05944",
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "科研进展",
-      "published_at": "2026-11-05T05:00:00+00:00",
-      "selected": false
-    },
-    {
       "id": "536b77f43439",
       "title": "Time-resolved infrared spectroscopy with entangled photons and visible-light detection",
       "channel": "tech",
@@ -383,16 +341,16 @@
       "selected": false
     },
     {
-      "id": "97ee9b3b5237",
-      "title": "Collectively pumped superradiant laser with coherence scaling beyond the standard quantum limit",
+      "id": "6602ac0d9dbc",
+      "title": "Evanescent-Depth-Engineered High-Q topological Cavities for Strong Photon-Exciton Coupling",
       "channel": "tech",
       "source": "arXiv 光学与光子学 (physics.optics)",
-      "url": "https://arxiv.org/abs/2611.05976",
+      "url": "https://arxiv.org/abs/2611.06351",
       "doi": null,
-      "arxiv": "2611.05976",
+      "arxiv": "2611.06351",
       "via": "feed_text",
       "confidence": "verified",
-      "category": "激光",
+      "category": "科研进展",
       "published_at": "2026-11-05T05:00:00+00:00",
       "selected": false
     },
@@ -439,6 +397,20 @@
       "selected": false
     },
     {
+      "id": "94f7712fe505",
+      "title": "Optical angular momentum and pseudospin-orbit coupling in photonic graphene",
+      "channel": "tech",
+      "source": "arXiv 光学与光子学 (physics.optics)",
+      "url": "https://arxiv.org/abs/2611.05944",
+      "doi": null,
+      "arxiv": "2611.05944",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "科研进展",
+      "published_at": "2026-11-05T05:00:00+00:00",
+      "selected": false
+    },
+    {
       "id": "8fb3388c4a2e",
       "title": "Single-sided lens terahertz flat-top beam shaping in the Fresnel region",
       "channel": "tech",
@@ -449,6 +421,34 @@
       "via": "feed_text",
       "confidence": "verified",
       "category": "光学元件与成像",
+      "published_at": "2026-11-05T05:00:00+00:00",
+      "selected": false
+    },
+    {
+      "id": "43865d8add96",
+      "title": "Millimeter-Wave Gaussian-to-Flat-Top Beam Shaping Using a Single-Curvature Lens: A Novel Approach",
+      "channel": "tech",
+      "source": "arXiv 光学与光子学 (physics.optics)",
+      "url": "https://arxiv.org/abs/2611.06053",
+      "doi": null,
+      "arxiv": "2611.06053",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "光学元件与成像",
+      "published_at": "2026-11-05T05:00:00+00:00",
+      "selected": false
+    },
+    {
+      "id": "97ee9b3b5237",
+      "title": "Collectively pumped superradiant laser with coherence scaling beyond the standard quantum limit",
+      "channel": "tech",
+      "source": "arXiv 光学与光子学 (physics.optics)",
+      "url": "https://arxiv.org/abs/2611.05976",
+      "doi": null,
+      "arxiv": "2611.05976",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "激光",
       "published_at": "2026-11-05T05:00:00+00:00",
       "selected": false
     },

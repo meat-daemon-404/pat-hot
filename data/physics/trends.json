@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T18:01:51.367217+00:00",
+  "generatedAt": "2026-11-06T02:26:31.258293+00:00",
   "weekStart": "2026-10-31",
   "windowDays": 7,
   "windowStart": "2026-10-31",
@@ -10,58 +10,58 @@
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 916.8,
+      "thisWeek": 931.4,
       "lastWeek": 1614.7,
-      "deltaPct": -43.2
+      "deltaPct": -42.3
     },
     {
       "category": "其他",
-      "thisWeek": 831.4,
+      "thisWeek": 897.9,
       "lastWeek": 1013.5,
-      "deltaPct": -18.0
+      "deltaPct": -11.4
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 427.0,
+      "thisWeek": 426.2,
       "lastWeek": 431.8,
-      "deltaPct": -1.1
+      "deltaPct": -1.3
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 323.6,
+      "thisWeek": 385.3,
       "lastWeek": 361.1,
-      "deltaPct": -10.4
+      "deltaPct": 6.7
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 234.5,
+      "thisWeek": 234.4,
       "lastWeek": 50.6,
-      "deltaPct": 363.4
-    },
-    {
-      "category": "原子分子与光物理",
-      "thisWeek": 104.5,
-      "lastWeek": 0,
-      "deltaPct": 100.0
+      "deltaPct": 363.2
     },
     {
       "category": "等离子体",
-      "thisWeek": 102.2,
+      "thisWeek": 153.4,
       "lastWeek": 101.8,
-      "deltaPct": 0.4
+      "deltaPct": 50.7
+    },
+    {
+      "category": "原子分子与光物理",
+      "thisWeek": 107.6,
+      "lastWeek": 0,
+      "deltaPct": 100.0
     }
   ],
   "newTopics": [
     {
-      "topic_id": "759b220e8872",
+      "topic_id": "aeb13878a821",
       "title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms",
-      "score": 176.4,
-      "days": 1
+      "score": 186.3,
+      "days": 2
     },
     {
       "topic_id": "125f0822b778",
       "title": "Quantum error correcting codes from quiver moduli: Grassmannians, cyclic monodromy, and argyle collision divisors",
-      "score": 150.9,
+      "score": 150.3,
       "days": 1
     },
     {
@@ -73,7 +73,7 @@
     {
       "topic_id": "ccb9c095e519",
       "title": "Noise-Induced Topology in Chiral Quantum Walks",
-      "score": 107.9,
+      "score": 107.5,
       "days": 1
     },
     {
@@ -87,6 +87,12 @@
       "title": "A single measurement makes quantum bits more reliable",
       "score": 64.9,
       "days": 2
+    },
+    {
+      "topic_id": "32085e025023",
+      "title": "Quantum theory of damping: A new approach to temporal evolution of density operator without the rotating wave approximation",
+      "score": 61.9,
+      "days": 1
     },
     {
       "topic_id": "be49a08a526b",
@@ -104,12 +110,6 @@
       "topic_id": "3b81f070c71f",
       "title": "New research shows a neutrino laser is impossible",
       "score": 60.4,
-      "days": 1
-    },
-    {
-      "topic_id": "c9c29423cce7",
-      "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
-      "score": 60.3,
       "days": 1
     }
   ],

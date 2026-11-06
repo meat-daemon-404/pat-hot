@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T18:01:51.367217+00:00",
+  "generatedAt": "2026-11-06T02:26:31.258293+00:00",
   "weekStart": "2026-10-31",
   "windowDays": 7,
   "windowStart": "2026-10-31",
@@ -10,33 +10,33 @@
   "categoryDelta": [
     {
       "category": "其他",
-      "thisWeek": 1310.3,
+      "thisWeek": 1492.3,
       "lastWeek": 1479.7,
-      "deltaPct": -11.4
+      "deltaPct": 0.9
     },
     {
       "category": "深空探测",
-      "thisWeek": 1251.9,
+      "thisWeek": 1250.4,
       "lastWeek": 1911.9,
-      "deltaPct": -34.5
+      "deltaPct": -34.6
     },
     {
       "category": "科研进展",
-      "thisWeek": 964.3,
+      "thisWeek": 1005.4,
       "lastWeek": 2066.2,
-      "deltaPct": -53.3
+      "deltaPct": -51.3
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 891.6,
+      "thisWeek": 903.8,
       "lastWeek": 1148.7,
-      "deltaPct": -22.4
+      "deltaPct": -21.3
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 640.1,
+      "thisWeek": 649.2,
       "lastWeek": 1253.0,
-      "deltaPct": -48.9
+      "deltaPct": -48.2
     },
     {
       "category": "引力波",
@@ -59,12 +59,6 @@
   ],
   "newTopics": [
     {
-      "topic_id": "755d4374fafa",
-      "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
-      "score": 229.0,
-      "days": 1
-    },
-    {
       "topic_id": "25a8b115a98d",
       "title": "What’s Up: November 2026 Skywatching Tips from NASA",
       "score": 218.0,
@@ -77,21 +71,27 @@
       "days": 1
     },
     {
+      "topic_id": "785cd3e6fe07",
+      "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
+      "score": 173.5,
+      "days": 1
+    },
+    {
       "topic_id": "afcfb9061cba",
       "title": "When precise inference is wrong: Diagnosing model misspecification with applications to cosmic dawn and reionisation",
       "score": 135.6,
       "days": 1
     },
     {
-      "topic_id": "4e78dc2f24d5",
-      "title": "NASA Astronauts to Answer Questions from Florida Students",
-      "score": 124.5,
-      "days": 1
-    },
-    {
       "topic_id": "6201ba6cd449",
       "title": "JWST may have found where heavy black hole seeds formed",
       "score": 124.2,
+      "days": 1
+    },
+    {
+      "topic_id": "4e78dc2f24d5",
+      "title": "NASA Astronauts to Answer Questions from Florida Students",
+      "score": 124.1,
       "days": 1
     },
     {
@@ -103,7 +103,7 @@
     {
       "topic_id": "1c1279a4bf0f",
       "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
-      "score": 121.7,
+      "score": 121.2,
       "days": 2
     },
     {
@@ -113,9 +113,9 @@
       "days": 1
     },
     {
-      "topic_id": "543944a41ca6",
-      "title": "Two-peak gravitational wave spectra from supercooled two-field phase transitions",
-      "score": 100.0,
+      "topic_id": "091433c2113a",
+      "title": "Even stupendous black holes can’t explain dark matter",
+      "score": 104.8,
       "days": 1
     }
   ],
