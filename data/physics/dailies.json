@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T02:26:31.258293+00:00",
-  "count": 65,
+  "generatedAt": "2026-11-06T17:31:19.184919+00:00",
+  "count": 66,
   "dailies": {
     "2026-07-21": {
       "date": "2026-07-21",
@@ -13896,20 +13896,34 @@
       "weekday": "周五",
       "label": "2026年11月6日",
       "headline": {
-        "title": "Physicist develops detector capable of counting photons for quantum computing",
-        "url": "https://phys.org/news/2026-11-physicist-detector-capable-photons-quantum.html",
-        "source": "Phys.org 物理新闻",
-        "summary": "Detecting a single photon is a challenge in itself. But what if you also want to know exactly how many photons arrive at a particular point at the same time? Physicist Erik Baalbergen is working on light detectors that can do just that. The",
+        "title": "A novel cost-effective layout-aware quantum circuit synthesis of symmetric functions on triangular, square, and heavy-hex layouts",
+        "url": "https://www.nature.com/articles/s41598-026-79762-x",
+        "source": "Nature Physics 学科聚合",
+        "summary": "",
         "zh_full": null,
         "reason": null,
         "density": null,
-        "score": 62.5,
+        "score": 62.2,
         "role": "科研",
-        "published_at": "2026-11-05T21:20:09+00:00",
-        "topic_id": "aeb13878a821",
-        "topic_title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms"
+        "published_at": "2026-11-06T00:00:00+00:00",
+        "topic_id": "c92aac0ad9c7",
+        "topic_title": "Quantum simulation of classical RCL circuits via complexification and Schr\\\"odingerization"
       },
       "picks": [
+        {
+          "title": "From chaos to 'intelligent' soft matter—how tiny chemical differences guide droplets into ordered structures",
+          "url": "https://phys.org/news/2026-11-chaos-intelligent-soft-tiny-chemical.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Disorder can make sense, and understanding its logic can be genuinely useful. A study by a research group at the University of Trento shows how a minimal chemical difference can turn chaotic, disordered motion into a highly coordinated and ",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 61.1,
+          "role": "科研",
+          "published_at": "2026-11-06T14:20:01+00:00",
+          "topic_id": "165a7e62805e",
+          "topic_title": "Structured Quantum Hardness from Unstructured Assumptions"
+        },
         {
           "title": "Laser-plasma accelerator could generate bright X-rays for biological imaging, simulations show",
           "url": "https://phys.org/news/2026-11-laser-plasma-generate-bright-rays.html",
@@ -13918,14 +13932,112 @@
           "zh_full": "激光等离子体加速器可能产生用于生物成像的明亮X射线，模拟研究表明。波长约在2.3至4.4纳米之间的X射线，即处于所谓的“水窗”波段，特别适合在自然水环境中检查生物样本。然而，迄今为止，获得适当质量和强度的此类辐射在技术上仍然困难，只有大型加速器系统中的自由电子激光器才能产生这种辐射。",
           "reason": "水窗X射线生物成像新方案",
           "density": "中",
-          "score": 51.4,
+          "score": 60.7,
           "role": "科研",
           "published_at": "2026-11-06T00:00:02+00:00",
-          "topic_id": null,
-          "topic_title": null
+          "topic_id": "6495d6c43e0a",
+          "topic_title": "Imaging multi-particle dynamics in space and time"
+        },
+        {
+          "title": "Imaging multi-particle dynamics in space and time",
+          "url": "https://www.nature.com/articles/s41563-026-02785-2",
+          "source": "Nature Physics 学科聚合",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 60.7,
+          "role": "科研",
+          "published_at": "2026-11-06T00:00:00+00:00",
+          "topic_id": "6495d6c43e0a",
+          "topic_title": "Imaging multi-particle dynamics in space and time"
+        },
+        {
+          "title": "Quantum simulation of classical RCL circuits via complexification and Schr\\\"odingerization",
+          "url": "https://arxiv.org/abs/2611.07300",
+          "source": "arXiv quant-ph 论文速递",
+          "summary": "arXiv:2611.07300v1 Announce Type: new Abstract: The decomplexification procedure establishes a mathematical equivalence between finite dimensional quantum dynamics and classical dynamics by mapping the complex quantum domain onto the real c",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 48.8,
+          "role": "科研",
+          "published_at": "2026-11-06T05:00:00+00:00",
+          "topic_id": "c92aac0ad9c7",
+          "topic_title": "Quantum simulation of classical RCL circuits via complexification and Schr\\\"odingerization"
         }
       ],
       "flash": [
+        {
+          "title": "Spatiotemporal intensity-cycling microscopy unveils many-body interactions and correlated transport in van der Waals semiconductors",
+          "url": "https://www.nature.com/articles/s41563-026-02800-6",
+          "source": "Nature Physics 学科聚合",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 60.7,
+          "role": "科研",
+          "published_at": "2026-11-06T00:00:00+00:00",
+          "topic_id": "708d380c712c",
+          "topic_title": "Spatiotemporal intensity-cycling microscopy unveils many-body interactions and correlated transport in van der Waals semiconductors"
+        },
+        {
+          "title": "Physicist develops detector capable of counting photons for quantum computing",
+          "url": "https://phys.org/news/2026-11-physicist-detector-capable-photons-quantum.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Detecting a single photon is a challenge in itself. But what if you also want to know exactly how many photons arrive at a particular point at the same time? Physicist Erik Baalbergen is working on light detectors that can do just that. The",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 60.6,
+          "role": "科研",
+          "published_at": "2026-11-05T21:20:09+00:00",
+          "topic_id": "5595e9386b1a",
+          "topic_title": "Physical regimes of quartic quantum advantage in elastic media simulation"
+        },
+        {
+          "title": "Decoherence resilience of the non-Hermitian skin effect",
+          "url": "https://www.nature.com/articles/s41467-026-78483-z",
+          "source": "Nature Physics 学科聚合",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 57.3,
+          "role": "科研",
+          "published_at": "2026-11-06T00:00:00+00:00",
+          "topic_id": "717cb96ef60b",
+          "topic_title": "Decoherence resilience of the non-Hermitian skin effect"
+        },
+        {
+          "title": "Estimating the resilience of non-stationary systems",
+          "url": "https://www.nature.com/articles/s41467-026-78489-7",
+          "source": "Nature Physics 学科聚合",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 57.3,
+          "role": "科研",
+          "published_at": "2026-11-06T00:00:00+00:00",
+          "topic_id": "717cb96ef60b",
+          "topic_title": "Decoherence resilience of the non-Hermitian skin effect"
+        },
+        {
+          "title": "Paired but out of step: Why electron pairing alone is not enough for room-temperature superconductivity",
+          "url": "https://phys.org/news/2026-11-paired-electron-pairing-room-temperature.html",
+          "source": "Phys.org 物理新闻",
+          "summary": "Levitating trains, ultra-efficient energy storage, and quantum computers: superconductivity could unlock a wealth of possibilities for the future. New research led by scientists from Utrecht, Leiden, and Munich has now shed light on one of ",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 51.4,
+          "role": "科研",
+          "published_at": "2026-11-06T13:54:34+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
         {
           "title": "Pinning down the structure of quark-gluon plasma, the universe's first fluid",
           "url": "https://phys.org/news/2026-11-pinning-quark-gluon-plasma-universe.html",
@@ -13934,51 +14046,65 @@
           "zh_full": "在宇宙大爆炸后的最初一瞬间，物质以万亿度的夸克-胶子等离子体形式存在——这些亚原子粒子以接近光速的速度运动。这种翻滚的汤状物只持续了几微秒，之后粒子凝聚成更稳定的质子和中子。",
           "reason": "宇宙第一流体结构研究",
           "density": "中",
-          "score": 51.4,
+          "score": 51.0,
           "role": "科研",
           "published_at": "2026-11-05T23:10:01+00:00",
           "topic_id": null,
           "topic_title": null
         },
         {
-          "title": "Electrical control of an unconventional quantum transport state demonstrated in a magnet for the first time",
-          "url": "https://phys.org/news/2026-11-electrical-unconventional-quantum-state-magnet.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "Researchers at Tohoku University and the Japan Atomic Energy Agency (JAEA) have successfully controlled a unique quantum phenomenon—the quantum-geometric nonlinear Hall (QgNLH) state—using electric current for the first time. The breakthrou",
+          "title": "Harvesting magic resource in curved spacetime",
+          "url": "https://www.nature.com/articles/s42005-026-02938-4",
+          "source": "Nature Physics 学科聚合",
+          "summary": "",
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 36.6,
+          "score": 51.0,
           "role": "科研",
-          "published_at": "2026-11-05T21:40:09+00:00",
-          "topic_id": "64f73b159609",
-          "topic_title": "Teleportation transition of surface codes on a superconducting quantum processor"
-        },
-        {
-          "title": "How palm orientation shapes spin characteristics in volleyball jump serves",
-          "url": "https://phys.org/news/2026-11-palm-characteristics-volleyball.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "A new biomechanical study has uncovered how elite volleyball players control ball spin during jump serves, offering fresh scientific insight into one of the sport's most decisive offensive skills.",
-          "zh_full": null,
-          "reason": null,
-          "density": null,
-          "score": 30.8,
-          "role": "科研",
-          "published_at": "2026-11-05T21:40:01+00:00",
+          "published_at": "2026-11-06T00:00:00+00:00",
           "topic_id": null,
           "topic_title": null
         },
         {
-          "title": "After 40 years of searching, physicists find evidence for an ultrarare particle decay",
-          "url": "https://phys.org/news/2026-11-years-physicists-evidence-ultrarare-particle.html",
-          "source": "Phys.org 物理新闻",
-          "summary": "Physicists at CERN report that they've detected evidence of a rare meson particle decay (B⁰→ µ⁺µ⁻) that occurs when the meson's beauty quark annihilates with a down-type quark. The pair decays into a muon and antimuon, which are particles s",
+          "title": "Author Correction: Capturing coherent pseudorotation through conical intersection in photoionized benzene",
+          "url": "https://www.nature.com/articles/s41467-026-79405-9",
+          "source": "Nature Physics 学科聚合",
+          "summary": "",
           "zh_full": null,
           "reason": null,
           "density": null,
-          "score": 30.8,
+          "score": 51.0,
           "role": "科研",
-          "published_at": "2026-11-05T17:30:02+00:00",
+          "published_at": "2026-11-06T00:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Plasmonic biosensors based on X-shaped resonators for cancer cell detection with machine learning-driven transmittance prediction",
+          "url": "https://www.nature.com/articles/s41598-026-79589-6",
+          "source": "Nature Physics 学科聚合",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 51.0,
+          "role": "科研",
+          "published_at": "2026-11-06T00:00:00+00:00",
+          "topic_id": null,
+          "topic_title": null
+        },
+        {
+          "title": "Moment-based estimation for the Zipf law",
+          "url": "https://www.nature.com/articles/s41598-026-77670-8",
+          "source": "Nature Physics 学科聚合",
+          "summary": "",
+          "zh_full": null,
+          "reason": null,
+          "density": null,
+          "score": 51.0,
+          "role": "科研",
+          "published_at": "2026-11-06T00:00:00+00:00",
           "topic_id": null,
           "topic_title": null
         },
@@ -14009,11 +14135,53 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 62.5,
+              "score": 60.6,
               "role": "科研",
               "published_at": "2026-11-05T21:20:09+00:00",
-              "topic_id": "aeb13878a821",
-              "topic_title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms"
+              "topic_id": "5595e9386b1a",
+              "topic_title": "Physical regimes of quartic quantum advantage in elastic media simulation"
+            },
+            {
+              "title": "Quantum simulation of classical RCL circuits via complexification and Schr\\\"odingerization",
+              "url": "https://arxiv.org/abs/2611.07300",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2611.07300v1 Announce Type: new Abstract: The decomplexification procedure establishes a mathematical equivalence between finite dimensional quantum dynamics and classical dynamics by mapping the complex quantum domain onto the real c",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 48.8,
+              "role": "科研",
+              "published_at": "2026-11-06T05:00:00+00:00",
+              "topic_id": "c92aac0ad9c7",
+              "topic_title": "Quantum simulation of classical RCL circuits via complexification and Schr\\\"odingerization"
+            },
+            {
+              "title": "Physical regimes of quartic quantum advantage in elastic media simulation",
+              "url": "https://arxiv.org/abs/2611.06975",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2611.06975v1 Announce Type: new Abstract: Quantum algorithms for elastic media simulation have been conjectured to offer up to a quartic quantum advantage over classical methods; however, the devil is always in the details. Here, we d",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 47.3,
+              "role": "科研",
+              "published_at": "2026-11-06T05:00:00+00:00",
+              "topic_id": "5595e9386b1a",
+              "topic_title": "Physical regimes of quartic quantum advantage in elastic media simulation"
+            },
+            {
+              "title": "All Bell inequalities with a quantum advantage in the minimal scenario are self-testing",
+              "url": "https://arxiv.org/abs/2611.06997",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2611.06997v1 Announce Type: new Abstract: In the minimal Bell scenario, all extremal quantum correlations are known, but the Tsirelson inequalities that delimit the quantum set remain poorly understood. We study which correlations can",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.7,
+              "role": "科研",
+              "published_at": "2026-11-06T05:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
             }
           ]
         },
@@ -14028,11 +14196,138 @@
               "zh_full": "在宇宙大爆炸后的最初一瞬间，物质以万亿度的夸克-胶子等离子体形式存在——这些亚原子粒子以接近光速的速度运动。这种翻滚的汤状物只持续了几微秒，之后粒子凝聚成更稳定的质子和中子。",
               "reason": "宇宙第一流体结构研究",
               "density": "中",
-              "score": 51.4,
+              "score": 51.0,
               "role": "科研",
               "published_at": "2026-11-05T23:10:01+00:00",
               "topic_id": null,
               "topic_title": null
+            },
+            {
+              "title": "Unifying First-Order Coherence, Concurrence, and Bell Correlations in Three-Flavor Neutrino Oscillations",
+              "url": "https://arxiv.org/abs/2611.07285",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2611.07285v1 Announce Type: new Abstract: Neutrino oscillations provide a natural setting for investigating the quantum character of flavor conversion and the distribution of quantum resources over macroscopic distances. Here, we stud",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.7,
+              "role": "科研",
+              "published_at": "2026-11-06T05:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "凝聚态物理",
+          "articles": [
+            {
+              "title": "Paired but out of step: Why electron pairing alone is not enough for room-temperature superconductivity",
+              "url": "https://phys.org/news/2026-11-paired-electron-pairing-room-temperature.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Levitating trains, ultra-efficient energy storage, and quantum computers: superconductivity could unlock a wealth of possibilities for the future. New research led by scientists from Utrecht, Leiden, and Munich has now shed light on one of ",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.4,
+              "role": "科研",
+              "published_at": "2026-11-06T13:54:34+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Resolving phonons in superconductor Bi2Sr2CaCu2O8+δ at sub-unit-cell resolution",
+              "url": "https://www.nature.com/articles/s41467-026-77617-7",
+              "source": "Nature Physics 学科聚合",
+              "summary": "（无摘要，仅标题）标题表明：在亚晶胞分辨率下解析了高温超导体Bi2Sr2CaCu2O8+δ中的声子，为理解其超导机制提供新数据。",
+              "zh_full": "（无摘要，仅标题）本文标题为《Resolving phonons in superconductor Bi2Sr2CaCu2O8+δ at sub-unit-cell resolution》，发表于Nature Physics。标题指出，研究在亚晶胞分辨率下解析了高温超导体Bi2Sr2CaCu2O8+δ中的声子。该工作利用高分辨测量手段，在小于一个晶胞的尺度上观察声子行为，为理解铜氧化物高温超导体的晶格动力学和电子-声子相互作用提供了新的实验依据。",
+              "reason": "高温超导声子研究，亚晶胞分辨率为新突破",
+              "density": "低",
+              "score": 45.9,
+              "role": "科研",
+              "published_at": "2026-11-06T00:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Threshold-Free Symmetry-Enriched Topological Quantum Memory",
+              "url": "https://arxiv.org/abs/2611.07017",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2611.07017v1 Announce Type: new Abstract: We show that non-Abelian symmetry enrichment can protect a toric code memory against incoherent electric noise at any bond error probability $p\\in[0,1]$. For a toric code on the honeycomb latt",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.7,
+              "role": "科研",
+              "published_at": "2026-11-06T05:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Scalable Transpilation for Overcoming Restricted Connectivity in Distributed Superconducting Quantum Architectures",
+              "url": "https://arxiv.org/abs/2611.07175",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2611.07175v1 Announce Type: new Abstract: Distributed Quantum Computing (DQC) offers a promising pathway to scale superconducting quantum hardware, but restricted inter- and intra-module connectivity creates a major transpilation bott",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.7,
+              "role": "科研",
+              "published_at": "2026-11-06T05:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Higher-order topological quantum battery",
+              "url": "https://arxiv.org/abs/2611.07401",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2611.07401v1 Announce Type: new Abstract: A quantum battery is a next-generation energy-storage device that exploits genuinely quantum properties such as superposition and coherence. We propose a second-order topological quantum batte",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.7,
+              "role": "科研",
+              "published_at": "2026-11-06T05:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "原子分子与光物理",
+          "articles": [
+            {
+              "title": "Certifying the Rydberg-exposure limit of a globally driven controlled-Z gate",
+              "url": "https://arxiv.org/abs/2611.07388",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2611.07388v1 Announce Type: new Abstract: Rydberg excitation enables entangling gates in neutral-atom quantum processors but also exposes them to spontaneous decay. Whether this exposure can be made arbitrarily small through pulse sha",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.7,
+              "role": "科研",
+              "published_at": "2026-11-06T05:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "统计物理与软物质",
+          "articles": [
+            {
+              "title": "From chaos to 'intelligent' soft matter—how tiny chemical differences guide droplets into ordered structures",
+              "url": "https://phys.org/news/2026-11-chaos-intelligent-soft-tiny-chemical.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Disorder can make sense, and understanding its logic can be genuinely useful. A study by a research group at the University of Trento shows how a minimal chemical difference can turn chaotic, disordered motion into a highly coordinated and ",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 61.1,
+              "role": "科研",
+              "published_at": "2026-11-06T14:20:01+00:00",
+              "topic_id": "165a7e62805e",
+              "topic_title": "Structured Quantum Hardness from Unstructured Assumptions"
             }
           ]
         },
@@ -14047,9 +14342,140 @@
               "zh_full": "激光等离子体加速器可能产生用于生物成像的明亮X射线，模拟研究表明。波长约在2.3至4.4纳米之间的X射线，即处于所谓的“水窗”波段，特别适合在自然水环境中检查生物样本。然而，迄今为止，获得适当质量和强度的此类辐射在技术上仍然困难，只有大型加速器系统中的自由电子激光器才能产生这种辐射。",
               "reason": "水窗X射线生物成像新方案",
               "density": "中",
-              "score": 51.4,
+              "score": 60.7,
               "role": "科研",
               "published_at": "2026-11-06T00:00:02+00:00",
+              "topic_id": "6495d6c43e0a",
+              "topic_title": "Imaging multi-particle dynamics in space and time"
+            },
+            {
+              "title": "Field-aligned measurement removes the anisotropy barrier of sample-based quantum subspace solvers for magnetized-plasma heat conduction",
+              "url": "https://arxiv.org/abs/2611.07102",
+              "source": "arXiv quant-ph 论文速递",
+              "summary": "arXiv:2611.07102v1 Announce Type: new Abstract: Sample-based quantum subspace methods construct a small subspace from measured basis states and solve the target problem classically within it. We study these methods for heat conduction in ma",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 37.7,
+              "role": "科研",
+              "published_at": "2026-11-06T05:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        },
+        {
+          "category": "科研进展",
+          "articles": [
+            {
+              "title": "A novel cost-effective layout-aware quantum circuit synthesis of symmetric functions on triangular, square, and heavy-hex layouts",
+              "url": "https://www.nature.com/articles/s41598-026-79762-x",
+              "source": "Nature Physics 学科聚合",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 62.2,
+              "role": "科研",
+              "published_at": "2026-11-06T00:00:00+00:00",
+              "topic_id": "c92aac0ad9c7",
+              "topic_title": "Quantum simulation of classical RCL circuits via complexification and Schr\\\"odingerization"
+            },
+            {
+              "title": "Imaging multi-particle dynamics in space and time",
+              "url": "https://www.nature.com/articles/s41563-026-02785-2",
+              "source": "Nature Physics 学科聚合",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 60.7,
+              "role": "科研",
+              "published_at": "2026-11-06T00:00:00+00:00",
+              "topic_id": "6495d6c43e0a",
+              "topic_title": "Imaging multi-particle dynamics in space and time"
+            },
+            {
+              "title": "Spatiotemporal intensity-cycling microscopy unveils many-body interactions and correlated transport in van der Waals semiconductors",
+              "url": "https://www.nature.com/articles/s41563-026-02800-6",
+              "source": "Nature Physics 学科聚合",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 60.7,
+              "role": "科研",
+              "published_at": "2026-11-06T00:00:00+00:00",
+              "topic_id": "708d380c712c",
+              "topic_title": "Spatiotemporal intensity-cycling microscopy unveils many-body interactions and correlated transport in van der Waals semiconductors"
+            },
+            {
+              "title": "Decoherence resilience of the non-Hermitian skin effect",
+              "url": "https://www.nature.com/articles/s41467-026-78483-z",
+              "source": "Nature Physics 学科聚合",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 57.3,
+              "role": "科研",
+              "published_at": "2026-11-06T00:00:00+00:00",
+              "topic_id": "717cb96ef60b",
+              "topic_title": "Decoherence resilience of the non-Hermitian skin effect"
+            },
+            {
+              "title": "Estimating the resilience of non-stationary systems",
+              "url": "https://www.nature.com/articles/s41467-026-78489-7",
+              "source": "Nature Physics 学科聚合",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 57.3,
+              "role": "科研",
+              "published_at": "2026-11-06T00:00:00+00:00",
+              "topic_id": "717cb96ef60b",
+              "topic_title": "Decoherence resilience of the non-Hermitian skin effect"
+            },
+            {
+              "title": "Harvesting magic resource in curved spacetime",
+              "url": "https://www.nature.com/articles/s42005-026-02938-4",
+              "source": "Nature Physics 学科聚合",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.0,
+              "role": "科研",
+              "published_at": "2026-11-06T00:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Author Correction: Capturing coherent pseudorotation through conical intersection in photoionized benzene",
+              "url": "https://www.nature.com/articles/s41467-026-79405-9",
+              "source": "Nature Physics 学科聚合",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.0,
+              "role": "科研",
+              "published_at": "2026-11-06T00:00:00+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
+              "title": "Plasmonic biosensors based on X-shaped resonators for cancer cell detection with machine learning-driven transmittance prediction",
+              "url": "https://www.nature.com/articles/s41598-026-79589-6",
+              "source": "Nature Physics 学科聚合",
+              "summary": "",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 51.0,
+              "role": "科研",
+              "published_at": "2026-11-06T00:00:00+00:00",
               "topic_id": null,
               "topic_title": null
             }
@@ -14059,6 +14485,20 @@
           "category": "其他",
           "articles": [
             {
+              "title": "A Strange Quantum Theorem Has Killed Einstein’s Reality",
+              "url": "https://www.quantamagazine.org/a-strange-quantum-theorem-has-killed-einsteins-reality-20261106/",
+              "source": "Quanta Magazine",
+              "summary": "Albert Einstein fought to save our everyday notion of reality from the strangeness of quantum mechanics. But those who set out to aid him keep poking holes in his argument. The post A Strange Quantum Theorem Has Killed Einstein’s Reality fi",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.9,
+              "role": "科研",
+              "published_at": "2026-11-06T15:48:54+00:00",
+              "topic_id": null,
+              "topic_title": null
+            },
+            {
               "title": "Electrical control of an unconventional quantum transport state demonstrated in a magnet for the first time",
               "url": "https://phys.org/news/2026-11-electrical-unconventional-quantum-state-magnet.html",
               "source": "Phys.org 物理新闻",
@@ -14066,11 +14506,11 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 36.6,
+              "score": 30.6,
               "role": "科研",
               "published_at": "2026-11-05T21:40:09+00:00",
-              "topic_id": "64f73b159609",
-              "topic_title": "Teleportation transition of surface codes on a superconducting quantum processor"
+              "topic_id": null,
+              "topic_title": null
             },
             {
               "title": "How palm orientation shapes spin characteristics in volleyball jump serves",
@@ -14080,7 +14520,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 30.8,
+              "score": 30.6,
               "role": "科研",
               "published_at": "2026-11-05T21:40:01+00:00",
               "topic_id": null,
@@ -14094,7 +14534,7 @@
               "zh_full": null,
               "reason": null,
               "density": null,
-              "score": 30.8,
+              "score": 30.5,
               "role": "科研",
               "published_at": "2026-11-05T17:30:02+00:00",
               "topic_id": null,
@@ -14104,11 +14544,59 @@
         }
       ],
       "topic_ids": [
-        "aeb13878a821"
+        "165a7e62805e",
+        "6495d6c43e0a",
+        "aeb13878a821",
+        "c92aac0ad9c7"
       ],
-      "tocCount": 7,
-      "readMinutes": 1,
-      "amended": 1
+      "tocCount": 16,
+      "readMinutes": 2,
+      "amended": 2
+    },
+    "2026-11-07": {
+      "date": "2026-11-07",
+      "weekday": "周六",
+      "label": "2026年11月7日",
+      "headline": {
+        "title": "Scientists achieve record-breaking low temperature on China's space station, paving the way for new physics experiments",
+        "url": "https://phys.org/news/2026-11-scientists-temperature-china-space-station.html",
+        "source": "Phys.org 物理新闻",
+        "summary": "Matter starts to behave differently at extremely low temperatures, creating conditions ideal for studying quantum physics and new states of matter. Now, researchers from China have achieved a new low-temperature record aboard their Tiangong",
+        "zh_full": null,
+        "reason": null,
+        "density": null,
+        "score": 30.9,
+        "role": "科研",
+        "published_at": "2026-11-06T17:00:17+00:00",
+        "topic_id": null,
+        "topic_title": null
+      },
+      "picks": [],
+      "flash": [],
+      "sections": [
+        {
+          "category": "其他",
+          "articles": [
+            {
+              "title": "Scientists achieve record-breaking low temperature on China's space station, paving the way for new physics experiments",
+              "url": "https://phys.org/news/2026-11-scientists-temperature-china-space-station.html",
+              "source": "Phys.org 物理新闻",
+              "summary": "Matter starts to behave differently at extremely low temperatures, creating conditions ideal for studying quantum physics and new states of matter. Now, researchers from China have achieved a new low-temperature record aboard their Tiangong",
+              "zh_full": null,
+              "reason": null,
+              "density": null,
+              "score": 30.9,
+              "role": "科研",
+              "published_at": "2026-11-06T17:00:17+00:00",
+              "topic_id": null,
+              "topic_title": null
+            }
+          ]
+        }
+      ],
+      "topic_ids": [],
+      "tocCount": 1,
+      "readMinutes": 1
     }
   }
 }

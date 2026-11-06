@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T02:26:31.258293+00:00",
-  "weekStart": "2026-10-31",
+  "generatedAt": "2026-11-06T17:31:19.184919+00:00",
+  "weekStart": "2026-11-01",
   "windowDays": 7,
-  "windowStart": "2026-10-31",
-  "windowEnd": "2026-11-06",
-  "prevStart": "2026-10-24",
-  "prevEnd": "2026-10-30",
+  "windowStart": "2026-11-01",
+  "windowEnd": "2026-11-07",
+  "prevStart": "2026-10-25",
+  "prevEnd": "2026-10-31",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4299.3,
-      "lastWeek": 4997.2,
-      "deltaPct": -14.0
-    },
-    {
-      "category": "光通信",
-      "thisWeek": 3410.0,
-      "lastWeek": 3267.3,
-      "deltaPct": 4.4
+      "thisWeek": 4204.1,
+      "lastWeek": 5473.7,
+      "deltaPct": -23.2
     },
     {
       "category": "科研进展",
-      "thisWeek": 3251.1,
-      "lastWeek": 3325.8,
-      "deltaPct": -2.2
+      "thisWeek": 3741.2,
+      "lastWeek": 3362.1,
+      "deltaPct": 11.3
+    },
+    {
+      "category": "光通信",
+      "thisWeek": 3573.9,
+      "lastWeek": 3267.3,
+      "deltaPct": 9.4
     },
     {
       "category": "产业与资本",
@@ -34,39 +34,45 @@
     },
     {
       "category": "其他",
-      "thisWeek": 2665.1,
-      "lastWeek": 2546.0,
-      "deltaPct": 4.7
+      "thisWeek": 2669.8,
+      "lastWeek": 2580.1,
+      "deltaPct": 3.5
     },
     {
       "category": "通信与算力",
-      "thisWeek": 1834.1,
-      "lastWeek": 1712.3,
-      "deltaPct": 7.1
+      "thisWeek": 1826.6,
+      "lastWeek": 1616.7,
+      "deltaPct": 13.0
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1550.3,
+      "thisWeek": 1802.9,
       "lastWeek": 1084.4,
-      "deltaPct": 43.0
+      "deltaPct": 66.3
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1472.6,
-      "lastWeek": 2241.5,
-      "deltaPct": -34.3
+      "thisWeek": 1494.0,
+      "lastWeek": 2195.5,
+      "deltaPct": -32.0
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 823.9,
+      "thisWeek": 837.3,
       "lastWeek": 867.5,
-      "deltaPct": -5.0
+      "deltaPct": -3.5
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 322.0,
+      "thisWeek": 276.0,
       "lastWeek": 423.9,
-      "deltaPct": -24.0
+      "deltaPct": -34.9
+    },
+    {
+      "category": "光伏与新能源",
+      "thisWeek": 51.4,
+      "lastWeek": 0,
+      "deltaPct": 100.0
     }
   ],
   "newTopics": [
@@ -77,10 +83,22 @@
       "days": 4
     },
     {
-      "topic_id": "4d426ee1e207",
-      "title": "工业和信息化部等八部门印发《产业基础能力提升“十五五”规划》",
-      "score": 323.0,
-      "days": 5
+      "topic_id": "0cf1b8f7e281",
+      "title": "Crystal advances will help power next-gen fusion laser systems",
+      "score": 313.8,
+      "days": 3
+    },
+    {
+      "topic_id": "e72397647396",
+      "title": "Photonics Hot List: November 6, 2026",
+      "score": 312.8,
+      "days": 2
+    },
+    {
+      "topic_id": "4823a3fdef58",
+      "title": "标配激光雷达+冷暖冰箱!这台领克08 EM-P太懂家用",
+      "score": 285.6,
+      "days": 1
     },
     {
       "topic_id": "cf711748e825",
@@ -89,22 +107,16 @@
       "days": 3
     },
     {
-      "topic_id": "07cc46da5b4f",
-      "title": "Shaping light to see deeper inside biological tissue",
-      "score": 246.4,
-      "days": 7
-    },
-    {
-      "topic_id": "cf9632bb99a1",
-      "title": "Photonics Hot List: October 30, 2026",
-      "score": 228.8,
-      "days": 1
-    },
-    {
-      "topic_id": "0cf1b8f7e281",
-      "title": "Crystal advances will help power next-gen fusion laser systems",
+      "topic_id": "98f4b8731b7a",
+      "title": "工业和信息化部召开加快新一代通信网建设发展座谈会",
       "score": 209.2,
       "days": 2
+    },
+    {
+      "topic_id": "cd3547fd9611",
+      "title": "营收增长74.28%，净利润增长109.99%，光纤激光大厂“爆发”！",
+      "score": 195.0,
+      "days": 3
     },
     {
       "topic_id": "1b38e21d6bfa",
@@ -113,22 +125,16 @@
       "days": 1
     },
     {
-      "topic_id": "a66ccb893ec8",
-      "title": "SNAP optics could speed up optical communications",
-      "score": 160.9,
-      "days": 3
-    },
-    {
-      "topic_id": "8fdd6259eb82",
-      "title": "Photonic Crystal Integrated Graphene-Silicon Schottky Diodes for Resonant Infrared Photodetection",
-      "score": 142.8,
-      "days": 1
-    },
-    {
-      "topic_id": "cd3547fd9611",
-      "title": "营收增长74.28%，净利润增长109.99%，光纤激光大厂“爆发”！",
-      "score": 130.0,
+      "topic_id": "0577aa38a964",
+      "title": "西藏通信管理局党组召开会议传达学习贯彻党的二十届五中全会精神",
+      "score": 183.0,
       "days": 2
+    },
+    {
+      "topic_id": "13a8f78069ac",
+      "title": "Standardizing CPO won't matter if the substrate supply chain can’t keep up",
+      "score": 167.1,
+      "days": 3
     }
   ],
   "sustainedTopics": [
@@ -143,18 +149,6 @@
       "title": "华工科技：2026年上半年，光互联业务营收38.03亿元",
       "days": 15,
       "score": 1420.9
-    },
-    {
-      "topic_id": "ff9baccacead",
-      "title": "欧盟否认重新评估对美国科技巨头调查，但未来走向不明",
-      "days": 15,
-      "score": 942.0
-    },
-    {
-      "topic_id": "3db37b135ae4",
-      "title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼",
-      "days": 15,
-      "score": 910.6
     },
     {
       "topic_id": "8579455b5d54",
@@ -175,10 +169,22 @@
       "score": 1274.0
     },
     {
+      "topic_id": "ff9baccacead",
+      "title": "欧盟否认重新评估对美国科技巨头调查，但未来走向不明",
+      "days": 14,
+      "score": 879.2
+    },
+    {
+      "topic_id": "3db37b135ae4",
+      "title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼",
+      "days": 14,
+      "score": 847.8
+    },
+    {
       "topic_id": "5bc32d86db90",
       "title": "大招齐发，英特尔直击网络转型",
       "days": 12,
-      "score": 1317.6
+      "score": 1311.9
     },
     {
       "topic_id": "569c89c31ce9",

@@ -1,59 +1,59 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T02:26:31.258293+00:00",
-  "weekStart": "2026-10-31",
+  "generatedAt": "2026-11-06T17:31:19.184919+00:00",
+  "weekStart": "2026-11-01",
   "windowDays": 7,
-  "windowStart": "2026-10-31",
-  "windowEnd": "2026-11-06",
-  "prevStart": "2026-10-24",
-  "prevEnd": "2026-10-30",
+  "windowStart": "2026-11-01",
+  "windowEnd": "2026-11-07",
+  "prevStart": "2026-10-25",
+  "prevEnd": "2026-10-31",
   "categoryDelta": [
     {
-      "category": "其他",
-      "thisWeek": 1492.3,
-      "lastWeek": 1479.7,
-      "deltaPct": 0.9
+      "category": "深空探测",
+      "thisWeek": 1435.7,
+      "lastWeek": 1694.5,
+      "deltaPct": -15.3
     },
     {
-      "category": "深空探测",
-      "thisWeek": 1250.4,
-      "lastWeek": 1911.9,
-      "deltaPct": -34.6
+      "category": "其他",
+      "thisWeek": 1427.8,
+      "lastWeek": 1453.7,
+      "deltaPct": -1.8
     },
     {
       "category": "科研进展",
-      "thisWeek": 1005.4,
-      "lastWeek": 2066.2,
-      "deltaPct": -51.3
+      "thisWeek": 1363.1,
+      "lastWeek": 2012.2,
+      "deltaPct": -32.3
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 903.8,
-      "lastWeek": 1148.7,
-      "deltaPct": -21.3
+      "thisWeek": 1117.0,
+      "lastWeek": 1218.4,
+      "deltaPct": -8.3
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 649.2,
-      "lastWeek": 1253.0,
-      "deltaPct": -48.2
+      "thisWeek": 801.0,
+      "lastWeek": 1206.6,
+      "deltaPct": -33.6
     },
     {
       "category": "引力波",
-      "thisWeek": 50.0,
+      "thisWeek": 100.3,
       "lastWeek": 37.4,
-      "deltaPct": 33.7
+      "deltaPct": 168.2
     },
     {
       "category": "太阳与空间物理",
       "thisWeek": 0,
-      "lastWeek": 573.4,
+      "lastWeek": 513.4,
       "deltaPct": -100.0
     },
     {
       "category": "系外行星",
       "thisWeek": 0,
-      "lastWeek": 176.6,
+      "lastWeek": 116.5,
       "deltaPct": -100.0
     }
   ],
@@ -103,7 +103,7 @@
     {
       "topic_id": "1c1279a4bf0f",
       "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
-      "score": 121.2,
+      "score": 120.8,
       "days": 2
     },
     {
@@ -119,5 +119,12 @@
       "days": 1
     }
   ],
-  "sustainedTopics": []
+  "sustainedTopics": [
+    {
+      "topic_id": "9ce52c24f555",
+      "title": "High-orbit satellites could light the way for travel to the moon",
+      "days": 3,
+      "score": 182.2
+    }
+  ]
 }

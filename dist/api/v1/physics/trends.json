@@ -1,63 +1,63 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T02:26:31.258293+00:00",
-  "weekStart": "2026-10-31",
+  "generatedAt": "2026-11-06T17:31:19.184919+00:00",
+  "weekStart": "2026-11-01",
   "windowDays": 7,
-  "windowStart": "2026-10-31",
-  "windowEnd": "2026-11-06",
-  "prevStart": "2026-10-24",
-  "prevEnd": "2026-10-30",
+  "windowStart": "2026-11-01",
+  "windowEnd": "2026-11-07",
+  "prevStart": "2026-10-25",
+  "prevEnd": "2026-10-31",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 931.4,
+      "thisWeek": 1382.6,
       "lastWeek": 1614.7,
-      "deltaPct": -42.3
+      "deltaPct": -14.4
     },
     {
       "category": "其他",
-      "thisWeek": 897.9,
-      "lastWeek": 1013.5,
-      "deltaPct": -11.4
+      "thisWeek": 953.2,
+      "lastWeek": 953.1,
+      "deltaPct": 0.0
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 426.2,
-      "lastWeek": 431.8,
-      "deltaPct": -1.3
+      "thisWeek": 585.3,
+      "lastWeek": 483.1,
+      "deltaPct": 21.2
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 385.3,
+      "thisWeek": 517.2,
       "lastWeek": 361.1,
-      "deltaPct": 6.7
+      "deltaPct": 43.2
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 234.4,
-      "lastWeek": 50.6,
-      "deltaPct": 363.2
+      "thisWeek": 211.4,
+      "lastWeek": 110.9,
+      "deltaPct": 90.6
     },
     {
       "category": "等离子体",
-      "thisWeek": 153.4,
+      "thisWeek": 200.4,
       "lastWeek": 101.8,
-      "deltaPct": 50.7
+      "deltaPct": 96.9
     },
     {
       "category": "原子分子与光物理",
-      "thisWeek": 107.6,
+      "thisWeek": 145.3,
+      "lastWeek": 0,
+      "deltaPct": 100.0
+    },
+    {
+      "category": "统计物理与软物质",
+      "thisWeek": 61.1,
       "lastWeek": 0,
       "deltaPct": 100.0
     }
   ],
   "newTopics": [
-    {
-      "topic_id": "aeb13878a821",
-      "title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms",
-      "score": 186.3,
-      "days": 2
-    },
     {
       "topic_id": "125f0822b778",
       "title": "Quantum error correcting codes from quiver moduli: Grassmannians, cyclic monodromy, and argyle collision divisors",
@@ -68,6 +68,36 @@
       "topic_id": "cafa9e30b66d",
       "title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver",
       "score": 135.6,
+      "days": 1
+    },
+    {
+      "topic_id": "aeb13878a821",
+      "title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms",
+      "score": 123.8,
+      "days": 1
+    },
+    {
+      "topic_id": "6495d6c43e0a",
+      "title": "Imaging multi-particle dynamics in space and time",
+      "score": 121.4,
+      "days": 1
+    },
+    {
+      "topic_id": "717cb96ef60b",
+      "title": "Decoherence resilience of the non-Hermitian skin effect",
+      "score": 114.6,
+      "days": 1
+    },
+    {
+      "topic_id": "c92aac0ad9c7",
+      "title": "Quantum simulation of classical RCL circuits via complexification and Schr\\\"odingerization",
+      "score": 111.0,
+      "days": 1
+    },
+    {
+      "topic_id": "5595e9386b1a",
+      "title": "Physical regimes of quartic quantum advantage in elastic media simulation",
+      "score": 107.9,
       "days": 1
     },
     {
@@ -87,30 +117,6 @@
       "title": "A single measurement makes quantum bits more reliable",
       "score": 64.9,
       "days": 2
-    },
-    {
-      "topic_id": "32085e025023",
-      "title": "Quantum theory of damping: A new approach to temporal evolution of density operator without the rotating wave approximation",
-      "score": 61.9,
-      "days": 1
-    },
-    {
-      "topic_id": "be49a08a526b",
-      "title": "Researchers make air-stable, ultrathin superconductors, for more scalable quantum devices",
-      "score": 61.8,
-      "days": 1
-    },
-    {
-      "topic_id": "f88aee2b5daf",
-      "title": "Physicists get first glimpse of the zeptoverse from LHC experiment",
-      "score": 60.9,
-      "days": 1
-    },
-    {
-      "topic_id": "3b81f070c71f",
-      "title": "New research shows a neutrino laser is impossible",
-      "score": 60.4,
-      "days": 1
     }
   ],
   "sustainedTopics": []

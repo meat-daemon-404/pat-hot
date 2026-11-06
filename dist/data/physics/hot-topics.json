@@ -1,130 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T02:26:31.258293+00:00",
+  "generatedAt": "2026-11-06T17:31:19.184919+00:00",
   "count": 10,
   "items": [
     {
       "terms": [
-        "atoms",
-        "capable",
-        "computing",
-        "counting",
-        "dark",
-        "detector",
-        "detector-optimized",
-        "distribution",
-        "entangled",
-        "fiber",
-        "grating",
-        "interacting",
-        "microwave-driven",
-        "optically-induced",
-        "photon",
-        "photons",
-        "physicist",
+        "characterizations",
+        "circuit",
+        "circuits",
+        "classical",
+        "complexification",
+        "cost-effective",
+        "functions",
+        "heavy-hex",
+        "instruments",
+        "interactive",
+        "layout-aware",
+        "layouts",
+        "odingerization",
+        "operational",
         "quantum",
-        "resonances",
-        "rydberg",
-        "scalable",
-        "source",
-        "transmission",
-        "tunable",
-        "wavelength-hybrid"
-      ],
-      "source_count": 2,
-      "signal_count": 3,
-      "sources": [
-        "Nature Physics 学科聚合",
-        "Phys.org 物理新闻"
-      ],
-      "score": 45.5,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
-      "representative": {
-        "title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms",
-        "url": "https://www.nature.com/articles/s41598-026-77017-3",
-        "source": "Nature Physics 学科聚合",
-        "published_at": "2026-11-05T00:00:00+00:00",
-        "score": 61.9,
-        "summary": "",
-        "zh_full": "本研究在《自然·物理学》发表，报道了一种通过微波驱动的里德伯原子相互作用暗共振实现可调谐光诱导透射光栅的方法。研究团队利用里德伯原子间的偶极-偶极相互作用，在微波场驱动下形成暗共振，从而在原子介质中产生空间周期性调制，形成透射光栅。该光栅的透射特性可通过调节微波场参数进行动态控制，实现了光栅周期和强度的可调谐性。这一机制为基于原子系统的全光信息处理提供了新的途径，有望在光通信、光计算和量子光学领域找到应用。研究展示了里德伯原子系统在光场调控方面的潜力，为开发新型可调谐光学器件提供了实验和理论依据。",
-        "refs": {
-          "doi": "10.1038/s41598-026-77017-3",
-          "via": "self_meta",
-          "confidence": "verified"
-        },
-        "llm_summary": "研究利用微波驱动的里德伯原子暗共振，通过原子间相互作用实现可调谐光诱导透射光栅。该光栅的透射特性可通过微波场参数动态调节，为全光信息处理提供了新途径，有望应用于光通信和光计算领域。",
-        "llm_reason": "里德伯原子光栅调控新机制",
-        "density": "高"
-      },
-      "folded_count": 1,
-      "title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms",
-      "id": "aeb13878a821",
-      "links": [
-        {
-          "title": "Physicist develops detector capable of counting photons for quantum computing",
-          "url": "https://phys.org/news/2026-11-physicist-detector-capable-photons-quantum.html",
-          "source": "Phys.org 物理新闻",
-          "score": 62.5,
-          "published_at": "2026-11-05T21:20:09+00:00"
-        },
-        {
-          "title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms",
-          "url": "https://www.nature.com/articles/s41598-026-77017-3",
-          "source": "Nature Physics 学科聚合",
-          "score": 61.9,
-          "published_at": "2026-11-05T00:00:00+00:00"
-        },
-        {
-          "title": "Detector-optimized wavelength-hybrid entangled photon source for scalable fiber quantum key distribution",
-          "url": "https://www.nature.com/articles/s41598-026-78321-8",
-          "source": "Nature Physics 学科聚合",
-          "score": 61.9,
-          "published_at": "2026-11-05T00:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "detector",
-        "quantum",
-        "physicist",
-        "capable",
-        "counting"
-      ],
-      "rank": 1,
-      "trend": "up",
-      "trendPct": 31.9,
-      "badges": [
-        "rising"
-      ],
-      "heat": 45.5,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "approximation",
-        "assessment",
-        "batteries",
-        "conditions",
-        "coulombic",
-        "damping",
-        "density",
-        "efficiency",
-        "evolution",
-        "fluctuation",
-        "growths",
-        "lithium-ion",
-        "mathematical",
-        "modeling",
-        "observables",
-        "open",
-        "operating",
-        "operator",
-        "quantum",
-        "rotating",
-        "round-trip",
-        "temporal",
-        "theory",
-        "variable",
-        "wave"
+        "resource",
+        "schr",
+        "simulation",
+        "square",
+        "symmetric",
+        "synthesis",
+        "triangular",
+        "weight"
       ],
       "source_count": 2,
       "signal_count": 3,
@@ -133,287 +36,199 @@
         "arXiv quant-ph 论文速递"
       ],
       "score": 45.5,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
       "representative": {
-        "title": "Quantum theory of damping: A new approach to temporal evolution of density operator without the rotating wave approximation",
-        "url": "https://arxiv.org/abs/2611.05537",
+        "title": "Quantum simulation of classical RCL circuits via complexification and Schr\\\"odingerization",
+        "url": "https://arxiv.org/abs/2611.07300",
         "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-11-05T05:00:00+00:00",
-        "score": 48.6,
-        "summary": "arXiv:2611.05537v1 Announce Type: new Abstract: The Lindblad master equation is the standard framework for describing dissipative dynamics of the open quantum system context. Its conventional derivation, however, relies on the rotating-wave",
+        "published_at": "2026-11-06T05:00:00+00:00",
+        "score": 48.8,
+        "summary": "arXiv:2611.07300v1 Announce Type: new Abstract: The decomplexification procedure establishes a mathematical equivalence between finite dimensional quantum dynamics and classical dynamics by mapping the complex quantum domain onto the real c",
         "zh_full": null,
         "refs": {
-          "arxiv": "2611.05537",
+          "arxiv": "2611.07300",
           "via": "feed_text",
           "confidence": "verified"
         }
       },
       "folded_count": 1,
-      "title": "Quantum theory of damping: A new approach to temporal evolution of density operator without the rotating wave approximation",
-      "id": "32085e025023",
+      "title": "Quantum simulation of classical RCL circuits via complexification and Schr\\\"odingerization",
+      "id": "c92aac0ad9c7",
       "links": [
         {
-          "title": "Assessment of round-trip and coulombic efficiency in lithium-ion batteries using a mathematical modeling approach under variable operating conditions",
-          "url": "https://www.nature.com/articles/s41598-026-78732-7",
+          "title": "A novel cost-effective layout-aware quantum circuit synthesis of symmetric functions on triangular, square, and heavy-hex layouts",
+          "url": "https://www.nature.com/articles/s41598-026-79762-x",
           "source": "Nature Physics 学科聚合",
-          "score": 61.9,
-          "published_at": "2026-11-05T00:00:00+00:00"
+          "score": 62.2,
+          "published_at": "2026-11-06T00:00:00+00:00"
         },
         {
-          "title": "Quantum theory of damping: A new approach to temporal evolution of density operator without the rotating wave approximation",
-          "url": "https://arxiv.org/abs/2611.05537",
+          "title": "Quantum simulation of classical RCL circuits via complexification and Schr\\\"odingerization",
+          "url": "https://arxiv.org/abs/2611.07300",
           "source": "arXiv quant-ph 论文速递",
-          "score": 48.6,
-          "published_at": "2026-11-05T05:00:00+00:00"
+          "score": 48.8,
+          "published_at": "2026-11-06T05:00:00+00:00"
         },
         {
-          "title": "A Study of Fluctuation Growths of Observables in Open Quantum Systems",
-          "url": "https://arxiv.org/abs/2611.05604",
+          "title": "Operational Characterizations and Resource Structure of the Interactive Weight of Quantum Instruments",
+          "url": "https://arxiv.org/abs/2611.07371",
           "source": "arXiv quant-ph 论文速递",
-          "score": 48.6,
-          "published_at": "2026-11-05T05:00:00+00:00"
+          "score": 48.8,
+          "published_at": "2026-11-06T05:00:00+00:00"
         }
       ],
       "top_terms": [
         "quantum",
-        "assessment",
-        "round",
-        "trip",
-        "coulombic"
+        "cost",
+        "effective",
+        "layout",
+        "aware"
+      ],
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 45.5,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "assumptions",
+        "chaos",
+        "chemical",
+        "differences",
+        "droplets",
+        "guide",
+        "hardness",
+        "intelligent",
+        "matter",
+        "ordered",
+        "quantum",
+        "soft",
+        "structured",
+        "tiny",
+        "unstructured"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "representative": {
+        "title": "Structured Quantum Hardness from Unstructured Assumptions",
+        "url": "https://arxiv.org/abs/2611.07413",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-11-06T05:00:00+00:00",
+        "score": 47.3,
+        "summary": "arXiv:2611.07413v1 Announce Type: new Abstract: Whether useful structured hardness can arise from unstructured assumptions is a fundamental question in complexity and cryptography. The longstanding Bennett-Gill question asks whether $\\maths",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2611.07413",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "Structured Quantum Hardness from Unstructured Assumptions",
+      "id": "165a7e62805e",
+      "links": [
+        {
+          "title": "From chaos to 'intelligent' soft matter—how tiny chemical differences guide droplets into ordered structures",
+          "url": "https://phys.org/news/2026-11-chaos-intelligent-soft-tiny-chemical.html",
+          "source": "Phys.org 物理新闻",
+          "score": 61.1,
+          "published_at": "2026-11-06T14:20:01+00:00"
+        },
+        {
+          "title": "Structured Quantum Hardness from Unstructured Assumptions",
+          "url": "https://arxiv.org/abs/2611.07413",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.3,
+          "published_at": "2026-11-06T05:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "chaos",
+        "intelligent",
+        "soft",
+        "matter",
+        "tiny"
       ],
       "rank": 2,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 45.5,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "amplify",
-        "ancilla-tolerant",
-        "atomic",
-        "bosonic",
-        "carefully",
-        "chains",
-        "dynamically",
-        "exactly",
-        "interactions",
-        "layers",
-        "light-matter",
-        "magnetic",
-        "modulated",
-        "motion",
-        "one-dimensional",
-        "pair",
-        "pulses",
-        "quantum",
-        "reveals",
-        "solvable",
-        "spin",
-        "timed",
-        "trapped"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 42.0,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
-      "representative": {
-        "title": "Dynamically modulated light-matter interactions for ancilla-tolerant bosonic control",
-        "url": "https://arxiv.org/abs/2611.05460",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-11-05T05:00:00+00:00",
-        "score": 48.6,
-        "summary": "arXiv:2611.05460v1 Announce Type: new Abstract: Strong light-matter interactions are central to state-of-the-art quantum technologies, spanning platforms as diverse as Rydberg atoms, trapped ions, and superconducting circuits. In supercondu",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2611.05460",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "Dynamically modulated light-matter interactions for ancilla-tolerant bosonic control",
-      "id": "da0e87d07ff2",
-      "links": [
-        {
-          "title": "Dynamically modulated light-matter interactions for ancilla-tolerant bosonic control",
-          "url": "https://arxiv.org/abs/2611.05460",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 48.6,
-          "published_at": "2026-11-05T05:00:00+00:00"
-        },
-        {
-          "title": "A carefully timed pair of light pulses can amplify the motion of atomic layers in a quantum material",
-          "url": "https://phys.org/news/2026-11-pair-pulses-amplify-motion-atomic.html",
-          "source": "Phys.org 物理新闻",
-          "score": 37.1,
-          "published_at": "2026-11-04T23:20:09+00:00"
-        },
-        {
-          "title": "Exactly solvable model reveals how trapped light can create magnetic order in one-dimensional spin chains",
-          "url": "https://phys.org/news/2026-11-solvable-reveals-magnetic-dimensional-chains.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.3,
-          "published_at": "2026-11-02T22:00:13+00:00"
-        }
-      ],
-      "top_terms": [
-        "carefully",
-        "timed",
-        "pair",
-        "pulses",
-        "amplify"
-      ],
-      "rank": 3,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
       "heat": 42.0,
       "status": "关注中"
     },
     {
       "terms": [
-        "chiral",
-        "metals",
-        "noise-induced",
-        "phases",
-        "quantum",
-        "research",
-        "structural",
-        "topological",
-        "topology",
-        "uncovers",
-        "walks"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "score": 42.0,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
-      "representative": {
-        "title": "Noise-Induced Topology in Chiral Quantum Walks",
-        "url": "https://arxiv.org/abs/2611.05471",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-11-05T05:00:00+00:00",
-        "score": 47.1,
-        "summary": "arXiv:2611.05471v1 Announce Type: new Abstract: Noise typically destroys quantum coherence and washes out transport phenomena that rely on interference. Chiral quantum walks are a case in point: a particle hopping on a lattice threaded by a",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2611.05471",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "Noise-Induced Topology in Chiral Quantum Walks",
-      "id": "ccb9c095e519",
-      "links": [
-        {
-          "title": "New research uncovers chiral topological phases in metals without structural order",
-          "url": "https://phys.org/news/2026-11-uncovers-chiral-topological-phases-metals.html",
-          "source": "Phys.org 物理新闻",
-          "score": 60.4,
-          "published_at": "2026-11-04T21:20:21+00:00"
-        },
-        {
-          "title": "Noise-Induced Topology in Chiral Quantum Walks",
-          "url": "https://arxiv.org/abs/2611.05471",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-11-05T05:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "chiral",
-        "research",
-        "uncovers",
-        "topological",
-        "phases"
-      ],
-      "digest": "研究人员在缺乏结构有序性的金属中发现了手性拓扑相，这一结果挑战了传统上认为拓扑相需要晶体结构有序性的观点。该发现基于对手性费米子行为的理论分析，表明即使在没有长程有序的系统中，拓扑性质仍可存在。相关研究已发表于预印本平台，但尚未经过同行评审。",
-      "digestTitle": "无序金属中发现手性拓扑相",
-      "rank": 4,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "caustics",
-        "correlations",
-        "entanglement",
-        "extrinsic",
-        "geometry",
-        "highly",
-        "kinematics",
-        "long-range",
-        "multi-comb",
-        "nondegenerate",
-        "quantum",
-        "raychaudhuri-ehlers",
-        "spectral",
-        "state-space",
-        "ultrafast"
+        "accelerator",
+        "biological",
+        "bright",
+        "dynamics",
+        "generate",
+        "imaging",
+        "laser",
+        "laser-plasma",
+        "multi-particle",
+        "plasma",
+        "simulations",
+        "space",
+        "x-rays"
       ],
       "source_count": 2,
       "signal_count": 2,
       "sources": [
         "Nature Physics 学科聚合",
-        "arXiv quant-ph 论文速递"
+        "Phys.org 物理新闻"
       ],
       "score": 42.0,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
       "representative": {
-        "title": "Raychaudhuri-Ehlers Kinematics on Quantum State-Space: Caustics and Extrinsic Quantum Geometry",
-        "url": "https://arxiv.org/abs/2611.05499",
-        "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-11-05T05:00:00+00:00",
-        "score": 47.1,
-        "summary": "arXiv:2611.05499v1 Announce Type: new Abstract: Quantum mechanics is inherently geometric in that the pure states form a curved complex manifold and the Schr\\\"odinger evolution defines a Hamiltonian flow on this space. Geometry identifies c",
+        "title": "Imaging multi-particle dynamics in space and time",
+        "url": "https://www.nature.com/articles/s41563-026-02785-2",
+        "source": "Nature Physics 学科聚合",
+        "published_at": "2026-11-06T00:00:00+00:00",
+        "score": 60.7,
+        "summary": "",
         "zh_full": null,
         "refs": {
-          "arxiv": "2611.05499",
-          "via": "feed_text",
+          "doi": "10.1038/s41563-026-02785-2",
+          "via": "self_meta",
           "confidence": "verified"
         }
       },
       "folded_count": 1,
-      "title": "Raychaudhuri-Ehlers Kinematics on Quantum State-Space: Caustics and Extrinsic Quantum Geometry",
-      "id": "8797eaf196a3",
+      "title": "Imaging multi-particle dynamics in space and time",
+      "id": "6495d6c43e0a",
       "links": [
         {
-          "title": "Long-range spectral entanglement and quantum correlations in highly nondegenerate multi-comb and ultrafast systems",
-          "url": "https://www.nature.com/articles/s41377-026-02491-3",
-          "source": "Nature Physics 学科聚合",
-          "score": 60.4,
-          "published_at": "2026-11-05T00:00:00+00:00"
+          "title": "Laser-plasma accelerator could generate bright X-rays for biological imaging, simulations show",
+          "url": "https://phys.org/news/2026-11-laser-plasma-generate-bright-rays.html",
+          "source": "Phys.org 物理新闻",
+          "score": 60.7,
+          "published_at": "2026-11-06T00:00:02+00:00"
         },
         {
-          "title": "Raychaudhuri-Ehlers Kinematics on Quantum State-Space: Caustics and Extrinsic Quantum Geometry",
-          "url": "https://arxiv.org/abs/2611.05499",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-11-05T05:00:00+00:00"
+          "title": "Imaging multi-particle dynamics in space and time",
+          "url": "https://www.nature.com/articles/s41563-026-02785-2",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.7,
+          "published_at": "2026-11-06T00:00:00+00:00"
         }
       ],
       "top_terms": [
-        "quantum",
-        "long",
-        "range",
-        "spectral",
-        "entanglement"
+        "imaging",
+        "laser",
+        "plasma",
+        "accelerator",
+        "generate"
       ],
-      "rank": 5,
+      "rank": 3,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -422,181 +237,74 @@
     },
     {
       "terms": [
-        "argyle",
-        "attacks",
-        "behavioral",
-        "classical",
-        "codes",
-        "collision",
+        "advantage",
+        "capable",
         "computing",
-        "correcting",
-        "cyclic",
-        "detection",
-        "divisors",
-        "error",
-        "error-correction",
-        "error-resistant",
-        "experiment",
-        "foundation",
-        "grassmannians",
-        "higher-order",
-        "inequalities",
-        "information",
-        "layer",
-        "moduli",
-        "monodromy",
-        "more",
-        "noise",
-        "non-markovian",
-        "potentially",
+        "counting",
+        "detector",
+        "elastic",
+        "media",
+        "photons",
+        "physical",
+        "physicist",
         "quantum",
-        "quantum-error-correction",
-        "quiver",
-        "stack",
-        "statistical",
-        "supports",
-        "theoretical",
-        "trinetra.q"
+        "quartic",
+        "regimes",
+        "simulation"
       ],
       "source_count": 2,
-      "signal_count": 3,
+      "signal_count": 2,
       "sources": [
         "Phys.org 物理新闻",
         "arXiv quant-ph 论文速递"
       ],
-      "score": 24.5,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
+      "score": 42.0,
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
       "representative": {
-        "title": "Quantum error correcting codes from quiver moduli: Grassmannians, cyclic monodromy, and argyle collision divisors",
-        "url": "https://arxiv.org/abs/2611.05526",
+        "title": "Physical regimes of quartic quantum advantage in elastic media simulation",
+        "url": "https://arxiv.org/abs/2611.06975",
         "source": "arXiv quant-ph 论文速递",
-        "published_at": "2026-11-05T05:00:00+00:00",
-        "score": 50.1,
-        "summary": "arXiv:2611.05526v1 Announce Type: new Abstract: Building on aspects of a recent diagrammatic field-theory programme for quantum error correction put forward by the first-named author (arXiv:2607.08911), we construct exact finite-dimensional",
+        "published_at": "2026-11-06T05:00:00+00:00",
+        "score": 47.3,
+        "summary": "arXiv:2611.06975v1 Announce Type: new Abstract: Quantum algorithms for elastic media simulation have been conjectured to offer up to a quartic quantum advantage over classical methods; however, the devil is always in the details. Here, we d",
         "zh_full": null,
         "refs": {
-          "arxiv": "2611.05526",
+          "arxiv": "2611.06975",
           "via": "feed_text",
           "confidence": "verified"
         }
       },
       "folded_count": 1,
-      "title": "Quantum error correcting codes from quiver moduli: Grassmannians, cyclic monodromy, and argyle collision divisors",
-      "id": "125f0822b778",
+      "title": "Physical regimes of quartic quantum advantage in elastic media simulation",
+      "id": "5595e9386b1a",
       "links": [
         {
-          "title": "Experiment supports theoretical foundation for potentially more error-resistant quantum computing",
-          "url": "https://phys.org/news/2026-11-theoretical-foundation-potentially-error-resistant.html",
+          "title": "Physicist develops detector capable of counting photons for quantum computing",
+          "url": "https://phys.org/news/2026-11-physicist-detector-capable-photons-quantum.html",
           "source": "Phys.org 物理新闻",
-          "score": 61.9,
-          "published_at": "2026-11-02T18:30:01+00:00"
+          "score": 60.6,
+          "published_at": "2026-11-05T21:20:09+00:00"
         },
         {
-          "title": "Quantum error correcting codes from quiver moduli: Grassmannians, cyclic monodromy, and argyle collision divisors",
-          "url": "https://arxiv.org/abs/2611.05526",
+          "title": "Physical regimes of quartic quantum advantage in elastic media simulation",
+          "url": "https://arxiv.org/abs/2611.06975",
           "source": "arXiv quant-ph 论文速递",
-          "score": 50.1,
-          "published_at": "2026-11-05T05:00:00+00:00"
-        },
-        {
-          "title": "Higher-order quantum information inequalities and error-correction of non-Markovian noise",
-          "url": "https://arxiv.org/abs/2611.05541",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 50.1,
-          "published_at": "2026-11-05T05:00:00+00:00"
-        },
-        {
-          "title": "Trinetra.Q: Statistical and Behavioral Detection of Attacks on the Quantum-Error-Correction Layer and Classical Control Stack of Quantum Computing Systems",
-          "url": "https://arxiv.org/abs/2611.05722",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 50.1,
-          "published_at": "2026-11-05T05:00:00+00:00"
+          "score": 47.3,
+          "published_at": "2026-11-06T05:00:00+00:00"
         }
       ],
       "top_terms": [
         "quantum",
-        "error",
-        "computing",
-        "correction",
-        "experiment"
+        "physicist",
+        "detector",
+        "capable",
+        "counting"
       ],
-      "rank": 6,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 24.5,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "codes",
-        "electrical",
-        "magnet",
-        "processor",
-        "quantum",
-        "state",
-        "superconducting",
-        "surface",
-        "teleportation",
-        "transition",
-        "transport",
-        "unconventional"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
-      "representative": {
-        "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-        "url": "https://www.nature.com/articles/s41567-026-03484-0",
-        "source": "Nature 量子物理",
-        "published_at": "2026-10-22T00:00:00+00:00",
-        "score": 51.1,
-        "summary": "",
-        "zh_full": "（无摘要，仅标题）",
-        "refs": {
-          "doi": "10.1038/s41567-026-03484-0",
-          "via": "self_meta",
-          "confidence": "verified"
-        },
-        "llm_summary": "在超导量子处理器上实现了表面码的隐形传态转变。",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-      "id": "64f73b159609",
-      "links": [
-        {
-          "title": "Teleportation transition of surface codes on a superconducting quantum processor",
-          "url": "https://www.nature.com/articles/s41567-026-03484-0",
-          "source": "Nature 量子物理",
-          "score": 51.1,
-          "published_at": "2026-10-22T00:00:00+00:00"
-        },
-        {
-          "title": "Electrical control of an unconventional quantum transport state demonstrated in a magnet for the first time",
-          "url": "https://phys.org/news/2026-11-electrical-unconventional-quantum-state-magnet.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.6,
-          "published_at": "2026-11-05T21:40:09+00:00"
-        }
-      ],
-      "top_terms": [
-        "quantum",
-        "electrical",
-        "unconventional",
-        "transport",
-        "state"
-      ],
-      "rank": 7,
+      "rank": 4,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 21.0,
+      "heat": 42.0,
       "status": "关注中"
     },
     {
@@ -619,13 +327,13 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
       "representative": {
         "title": "Particle collisions on a quantum computer",
         "url": "https://www.nature.com/articles/s41567-026-03490-2",
         "source": "Nature 量子物理",
         "published_at": "2026-10-23T00:00:00+00:00",
-        "score": 51.8,
+        "score": 51.3,
         "summary": "",
         "zh_full": null,
         "refs": {
@@ -643,14 +351,14 @@
           "title": "Particle collisions on a quantum computer",
           "url": "https://www.nature.com/articles/s41567-026-03490-2",
           "source": "Nature 量子物理",
-          "score": 51.8,
+          "score": 51.3,
           "published_at": "2026-10-23T00:00:00+00:00"
         },
         {
           "title": "A new route to calculating gluon production in proton–nucleus collisions",
           "url": "https://phys.org/news/2026-11-route-gluon-production-protonnucleus-collisions.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.3,
+          "score": 36.0,
           "published_at": "2026-11-05T01:20:01+00:00"
         }
       ],
@@ -661,9 +369,79 @@
         "gluon",
         "production"
       ],
-      "rank": 8,
+      "rank": 5,
       "trend": "flat",
       "trendPct": 0.0,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "amplify",
+        "atomic",
+        "carefully",
+        "layers",
+        "motion",
+        "nanoribbons",
+        "pair",
+        "pulses",
+        "quantum",
+        "synthetic",
+        "timed",
+        "weaving"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Nature 量子物理",
+        "Phys.org 物理新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "representative": {
+        "title": "Synthetic 2D quantum materials from atomic weaving of 1D nanoribbons",
+        "url": "https://www.nature.com/articles/s42005-026-02936-6",
+        "source": "Nature 量子物理",
+        "published_at": "2026-11-02T00:00:00+00:00",
+        "score": 58.0,
+        "summary": "",
+        "zh_full": null,
+        "refs": {
+          "doi": "10.1038/s42005-026-02936-6",
+          "via": "self_meta",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "Synthetic 2D quantum materials from atomic weaving of 1D nanoribbons",
+      "id": "8172b18c4ce5",
+      "links": [
+        {
+          "title": "Synthetic 2D quantum materials from atomic weaving of 1D nanoribbons",
+          "url": "https://www.nature.com/articles/s42005-026-02936-6",
+          "source": "Nature 量子物理",
+          "score": 58.0,
+          "published_at": "2026-11-02T00:00:00+00:00"
+        },
+        {
+          "title": "A carefully timed pair of light pulses can amplify the motion of atomic layers in a quantum material",
+          "url": "https://phys.org/news/2026-11-pair-pulses-amplify-motion-atomic.html",
+          "source": "Phys.org 物理新闻",
+          "score": 36.0,
+          "published_at": "2026-11-04T23:20:09+00:00"
+        }
+      ],
+      "top_terms": [
+        "atomic",
+        "quantum",
+        "carefully",
+        "timed",
+        "pair"
+      ],
+      "rank": 6,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -685,13 +463,13 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
       "representative": {
         "title": "A nonlinear superinductor in a deep-submicrometre integrated circuit",
         "url": "https://www.nature.com/articles/s41928-026-01728-8",
         "source": "Nature 量子物理",
         "published_at": "2026-11-04T00:00:00+00:00",
-        "score": 59.8,
+        "score": 59.3,
         "summary": "",
         "zh_full": null,
         "refs": {
@@ -708,14 +486,14 @@
           "title": "A nonlinear superinductor in a deep-submicrometre integrated circuit",
           "url": "https://www.nature.com/articles/s41928-026-01728-8",
           "source": "Nature 量子物理",
-          "score": 59.8,
+          "score": 59.3,
           "published_at": "2026-11-04T00:00:00+00:00"
         },
         {
           "title": "A new superinductor created within a silicon integrated circuit",
           "url": "https://phys.org/news/2026-11-superinductor-silicon-circuit.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.2,
+          "score": 36.0,
           "published_at": "2026-11-04T22:40:08+00:00"
         }
       ],
@@ -726,76 +504,226 @@
         "created",
         "silicon"
       ],
-      "rank": 9,
-      "trend": "down",
-      "trendPct": -50.0,
+      "rank": 7,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
     },
     {
       "terms": [
-        "bottom",
-        "chaotic",
-        "einstein",
-        "laws",
-        "mediterranean",
-        "quantum",
-        "testing"
+        "cavity",
+        "chains",
+        "electromagnetically",
+        "exactly",
+        "induced",
+        "magnetic",
+        "nonclassical",
+        "one-dimensional",
+        "reveals",
+        "solvable",
+        "spin",
+        "spin-exchange-controlled",
+        "transparency",
+        "trapped"
       ],
       "source_count": 2,
       "signal_count": 1,
       "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻"
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
       "representative": {
-        "title": "Order in a quantum chaotic sea",
-        "url": "https://www.nature.com/articles/s41567-026-03513-y",
-        "source": "Nature 量子物理",
-        "published_at": "2026-10-27T00:00:00+00:00",
-        "score": 54.4,
-        "summary": "",
-        "zh_full": "（无摘要，仅标题）标题为“Order in a quantum chaotic sea”，意为“量子混沌海中的秩序”。该标题提示了一项关于量子混沌系统与有序结构之间关系的研究，但未提供具体实验方法、数据或结论。",
+        "title": "Spin-Exchange-Controlled Nonclassical Light in Cavity Electromagnetically Induced Transparency",
+        "url": "https://arxiv.org/abs/2611.07382",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-11-06T05:00:00+00:00",
+        "score": 47.3,
+        "summary": "arXiv:2611.07382v1 Announce Type: new Abstract: Controlling nonclassical light while maintaining a finite cavity response requires selective suppression of unwanted multiphoton excitation. We investigate a ring-cavity system containing two ",
+        "zh_full": null,
         "refs": {
-          "doi": "10.1038/s41567-026-03513-y",
-          "via": "self_meta",
+          "arxiv": "2611.07382",
+          "via": "feed_text",
           "confidence": "verified"
-        },
-        "llm_summary": "标题指出在量子混沌海中存在某种有序现象，但未给出具体内容。",
-        "density": "低"
+        }
       },
       "folded_count": 1,
-      "title": "Order in a quantum chaotic sea",
-      "id": "820700531834",
+      "title": "Spin-Exchange-Controlled Nonclassical Light in Cavity Electromagnetically Induced Transparency",
+      "id": "47d868fab4e4",
       "links": [
         {
-          "title": "Order in a quantum chaotic sea",
-          "url": "https://www.nature.com/articles/s41567-026-03513-y",
-          "source": "Nature 量子物理",
-          "score": 54.4,
-          "published_at": "2026-10-27T00:00:00+00:00"
+          "title": "Spin-Exchange-Controlled Nonclassical Light in Cavity Electromagnetically Induced Transparency",
+          "url": "https://arxiv.org/abs/2611.07382",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.3,
+          "published_at": "2026-11-06T05:00:00+00:00"
         },
         {
-          "title": "Testing Einstein's laws from the bottom of the Mediterranean Sea",
-          "url": "https://phys.org/news/2026-11-einstein-laws-bottom-mediterranean-sea.html",
+          "title": "Exactly solvable model reveals how trapped light can create magnetic order in one-dimensional spin chains",
+          "url": "https://phys.org/news/2026-11-solvable-reveals-magnetic-dimensional-chains.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.9,
-          "published_at": "2026-11-04T05:00:08+00:00"
+          "score": 35.2,
+          "published_at": "2026-11-02T22:00:13+00:00"
         }
       ],
       "top_terms": [
-        "sea",
-        "testing",
-        "einstein",
-        "laws",
-        "bottom"
+        "spin",
+        "exactly",
+        "solvable",
+        "reveals",
+        "trapped"
+      ],
+      "rank": 8,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "computing",
+        "determines",
+        "error",
+        "error-resistant",
+        "experiment",
+        "fidelity",
+        "foundation",
+        "minimum",
+        "more",
+        "potentially",
+        "quantum",
+        "recovery",
+        "supports",
+        "theoretical"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Phys.org 物理新闻",
+        "arXiv quant-ph 论文速递"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "representative": {
+        "title": "Fidelity Determines the Minimum Error of Quantum Recovery",
+        "url": "https://arxiv.org/abs/2611.07344",
+        "source": "arXiv quant-ph 论文速递",
+        "published_at": "2026-11-06T05:00:00+00:00",
+        "score": 47.3,
+        "summary": "arXiv:2611.07344v1 Announce Type: new Abstract: Even a recovery that maximizes worst-input entanglement fidelity can retain avoidable errors in subsequent measurements. Entanglement fidelity is the probability of passing a test of whether t",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2611.07344",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "Fidelity Determines the Minimum Error of Quantum Recovery",
+      "id": "829611ef6a09",
+      "links": [
+        {
+          "title": "Experiment supports theoretical foundation for potentially more error-resistant quantum computing",
+          "url": "https://phys.org/news/2026-11-theoretical-foundation-potentially-error-resistant.html",
+          "source": "Phys.org 物理新闻",
+          "score": 58.5,
+          "published_at": "2026-11-02T18:30:01+00:00"
+        },
+        {
+          "title": "Fidelity Determines the Minimum Error of Quantum Recovery",
+          "url": "https://arxiv.org/abs/2611.07344",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.3,
+          "published_at": "2026-11-06T05:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "error",
+        "quantum",
+        "experiment",
+        "supports",
+        "theoretical"
+      ],
+      "rank": 9,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "correlated",
+        "integrated",
+        "intensity-cycling",
+        "interactions",
+        "many-body",
+        "microscopy",
+        "on-chip",
+        "platform",
+        "quantum",
+        "semiconductors",
+        "sources",
+        "spatiotemporal",
+        "transport",
+        "unveils",
+        "waals"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Nature Physics 学科聚合",
+        "Nature 量子物理"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "representative": {
+        "title": "Spatiotemporal intensity-cycling microscopy unveils many-body interactions and correlated transport in van der Waals semiconductors",
+        "url": "https://www.nature.com/articles/s41563-026-02800-6",
+        "source": "Nature Physics 学科聚合",
+        "published_at": "2026-11-06T00:00:00+00:00",
+        "score": 60.7,
+        "summary": "",
+        "zh_full": null,
+        "refs": {
+          "doi": "10.1038/s41563-026-02800-6",
+          "via": "self_meta",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "Spatiotemporal intensity-cycling microscopy unveils many-body interactions and correlated transport in van der Waals semiconductors",
+      "id": "708d380c712c",
+      "links": [
+        {
+          "title": "Spatiotemporal intensity-cycling microscopy unveils many-body interactions and correlated transport in van der Waals semiconductors",
+          "url": "https://www.nature.com/articles/s41563-026-02800-6",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.7,
+          "published_at": "2026-11-06T00:00:00+00:00"
+        },
+        {
+          "title": "Integrated on-chip quantum light sources on a van der Waals platform",
+          "url": "https://www.nature.com/articles/s41467-026-78806-0",
+          "source": "Nature 量子物理",
+          "score": 54.7,
+          "published_at": "2026-10-28T00:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "van",
+        "der",
+        "waals",
+        "spatiotemporal",
+        "intensity"
       ],
       "rank": 10,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"

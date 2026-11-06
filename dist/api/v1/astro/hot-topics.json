@@ -1,24 +1,228 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T02:26:31.258293+00:00",
+  "generatedAt": "2026-11-06T17:31:19.184919+00:00",
   "count": 10,
   "items": [
     {
       "terms": [
-        "breakthrough",
+        "black",
+        "black hole",
+        "connecting",
+        "dark",
+        "dots",
+        "formation",
+        "growth",
+        "hold",
+        "hole",
+        "holes",
+        "jwst",
+        "little",
+        "matter",
+        "multi-cycle",
+        "primordial",
+        "program",
+        "seeds",
+        "space",
+        "telescope",
+        "treasury",
+        "webb"
+      ],
+      "source_count": 3,
+      "signal_count": 3,
+      "sources": [
+        "New Scientist 太空",
+        "Phys.org 太空新闻",
+        "arXiv astro-ph.CO 论文速递"
+      ],
+      "score": 53.0,
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "representative": {
+        "title": "Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program",
+        "url": "https://arxiv.org/abs/2611.07006",
+        "source": "arXiv astro-ph.CO 论文速递",
+        "published_at": "2026-11-06T05:00:00+00:00",
+        "score": 52.1,
+        "summary": "arXiv:2611.07006v1 Announce Type: cross Abstract: JWST has revealed an abundant population of faint active galactic nuclei and a new class of compact, high-redshift sources known as Little Red Dots (LRDs), whose physical nature remains deba",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2611.07006",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 2,
+      "title": "Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program",
+      "id": "929fa7c53d1c",
+      "links": [
+        {
+          "title": "Webb Space Telescope's little red dots could hold key to first black holes",
+          "url": "https://phys.org/news/2026-11-webb-space-telescope-red-dots.html",
+          "source": "Phys.org 太空新闻",
+          "score": 65.2,
+          "published_at": "2026-11-05T14:20:02+00:00"
+        },
+        {
+          "title": "Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program",
+          "url": "https://arxiv.org/abs/2611.07006",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 52.1,
+          "published_at": "2026-11-06T05:00:00+00:00"
+        },
+        {
+          "title": "Could primordial black holes hold the key to dark matter?",
+          "url": "https://www.newscientist.com/video/2597265-could-primordial-black-holes-hold-the-key-to-dark-matter/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 38.8,
+          "published_at": "2026-11-04T18:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "black",
+        "little",
+        "red",
+        "dots",
+        "hold"
+      ],
+      "digest": "约翰斯·霍普金斯大学的研究人员利用韦伯太空望远镜观测到一类被称为“小红点”的遥远天体，认为它们可能是宇宙中最早一批黑洞的候选者。这些天体在红外波段呈现紧凑的红色光点，其物理性质目前仍有争议。研究人员称，进一步观测将有助于确认它们是否与早期黑洞的形成和成长有关。",
+      "digestTitle": "韦伯望远镜发现早期黑洞线索",
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 53.0,
+      "status": "发酵中"
+    },
+    {
+      "terms": [
+        "advance",
+        "aircraft",
+        "announces",
+        "astronomers",
         "cosmic",
-        "evolution",
-        "hydrogen",
-        "induced",
-        "mapping",
-        "marks",
-        "massive",
-        "measurement",
-        "numerical",
-        "relativity",
-        "spacetime",
-        "string",
-        "universe"
+        "decades",
+        "earth",
+        "execute",
+        "experiment",
+        "experimental",
+        "explosions",
+        "flames",
+        "flight",
+        "landings",
+        "maneuvers",
+        "mars",
+        "mourning",
+        "nasa",
+        "navigation",
+        "perish",
+        "planetary",
+        "plunges",
+        "powered",
+        "promise",
+        "research",
+        "revered",
+        "slingshot",
+        "space",
+        "spacecraft",
+        "studying",
+        "telescope",
+        "twin",
+        "x-70"
+      ],
+      "source_count": 4,
+      "signal_count": 4,
+      "sources": [
+        "NASA 快讯",
+        "Nature 天文和天体物理",
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "score": 51.5,
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "representative": {
+        "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
+        "url": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/",
+        "source": "NASA 快讯",
+        "published_at": "2026-11-05T01:43:21+00:00",
+        "score": 71.2,
+        "summary": "On Wednesday, NASA unveiled its newest experimental aircraft, the X-70 Fractal, during the UP.Summit at the agency’s Kennedy Space Center in Florida. This high-performance, highly adaptable research platform is designed to accelerate the de",
+        "zh_full": "NASA于周三在佛罗里达州肯尼迪航天中心的UP.Summit活动上揭幕了其最新实验飞机X-70 Fractal。这是一款高性能、高度适应性的研究平台，旨在加速先进航空技术的开发与测试。该有人驾驶的X-70配备了先进的、可快速重构的飞行控制技术，使NASA能够探索一系列此前难以测试的飞行概念。X-70的设计强调灵活性与可重构性，其飞行控制系统可在飞行中快速调整，以模拟不同飞机或飞行器的气动特性。NASA表示，这一平台将用于验证新兴航空技术，包括推进系统、材料科学和自动驾驶系统等。该机是NASA系列实验飞机的最新成员，延续了X-plane传统，为研究人员提供真实飞行环境下的测试能力。NASA计划利用X-70收集数据，以支持未来民用和军用航空器的设计改进。",
+        "llm_summary": "NASA在肯尼迪航天中心揭幕了新型实验飞机X-70 Fractal，这是一款有人驾驶、高性能且高度适应性的研究平台。其核心特点是可快速重构的飞行控制技术，能在飞行中调整以模拟不同飞行器特性。该机旨在加速先进航空技术的开发与测试，为NASA提供真实飞行环境下的验证能力，支持未来航空器设计。",
+        "llm_reason": "新型实验飞机揭幕，技术细节明确",
+        "density": "高",
+        "llm_score": 51.0
+      },
+      "folded_count": 3,
+      "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
+      "id": "7115a6842b64",
+      "links": [
+        {
+          "title": "NASA's Twin Spacecraft Will Execute Powered Slingshot Maneuvers on Their Way to Mars",
+          "url": "https://www.universetoday.com/articles/nasas-twin-spacecraft-will-execute-powered-slingshot-maneuvers-on-their-way-to-mars",
+          "source": "Universe Today",
+          "score": 72.3,
+          "published_at": "2026-11-06T16:35:09+00:00"
+        },
+        {
+          "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
+          "url": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/",
+          "source": "NASA 快讯",
+          "score": 71.2,
+          "published_at": "2026-11-05T01:43:21+00:00"
+        },
+        {
+          "title": "NASA space telescope plunges to Earth after two decades studying cosmic explosions",
+          "url": "https://phys.org/news/2026-11-nasa-space-telescope-plunges-earth.html",
+          "source": "Phys.org 太空新闻",
+          "score": 71.1,
+          "published_at": "2026-11-04T20:40:11+00:00"
+        },
+        {
+          "title": "Revered NASA spacecraft is about to perish in flames — astronomers are mourning",
+          "url": "https://www.nature.com/articles/d41586-026-03461-w",
+          "source": "Nature 天文和天体物理",
+          "score": 65.2,
+          "published_at": "2026-10-27T00:00:00+00:00"
+        },
+        {
+          "title": "NASA navigation experiment shows promise for planetary landings",
+          "url": "https://phys.org/news/2026-11-nasa-planetary.html",
+          "source": "Phys.org 太空新闻",
+          "score": 42.7,
+          "published_at": "2026-11-04T23:20:07+00:00"
+        }
+      ],
+      "top_terms": [
+        "nasa",
+        "spacecraft",
+        "navigation",
+        "experiment",
+        "promise"
+      ],
+      "digest": "NASA的ESCAPADE任务双航天器正飞往火星，因错过常规发射窗口，将执行动力弹弓机动以提升速度，抵达后以编队飞行模式运行。NASA在肯尼迪航天中心揭幕X-70 Fractal实验飞机，作为高性能、高适应性研究平台，旨在加速飞行研究。NASA一台太空望远镜在服役22年后于周三坠入地球，结束了对宇宙大爆炸的研究。NASA成功演示了用于航天器自主导航至月球及其他行星安全着陆点的技术，Alta-X无人机搭载该机构的安全精确着陆集成能力系统进行了测试。",
+      "digestTitle": "NASA航天器与实验飞机动态综述",
+      "rank": 2,
+      "trend": "up",
+      "trendPct": 32.7,
+      "badges": [
+        "rising"
+      ],
+      "heat": 51.5,
+      "status": "发酵中"
+    },
+    {
+      "terms": [
+        "changes",
+        "conductivity",
+        "cosmic",
+        "deep",
+        "fields",
+        "giants",
+        "interiors",
+        "magnetic",
+        "primordial",
+        "stem",
+        "voids",
+        "wacky"
       ],
       "source_count": 2,
       "signal_count": 2,
@@ -27,50 +231,116 @@
         "arXiv astro-ph.CO 论文速递"
       ],
       "score": 42.0,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
       "representative": {
-        "title": "Spacetime Evolution Induced by a Massive Cosmic String in Numerical Relativity",
-        "url": "https://arxiv.org/abs/2611.05996",
+        "title": "Are magnetic fields in cosmic voids primordial?",
+        "url": "https://arxiv.org/abs/2505.14774",
         "source": "arXiv astro-ph.CO 论文速递",
-        "published_at": "2026-11-05T05:00:00+00:00",
-        "score": 47.1,
-        "summary": "arXiv:2611.05996v1 Announce Type: cross Abstract: Cosmic strings are one-dimensional topological defects formed during phase transitions in the early universe. ''Massive'' cosmic strings possess a sufficiently large tension to close their t",
+        "published_at": "2026-11-06T05:00:00+00:00",
+        "score": 47.3,
+        "summary": "arXiv:2505.14774v3 Announce Type: replace Abstract: The existence and origin of magnetic fields in cosmic voids remains an open question: Observational evidence inferred from gamma-ray spectra of TeV blazars has been debated for over a deca",
         "zh_full": null,
         "refs": {
-          "arxiv": "2611.05996",
+          "arxiv": "2505.14774",
           "via": "feed_text",
           "confidence": "verified"
         }
       },
       "folded_count": 1,
-      "title": "Spacetime Evolution Induced by a Massive Cosmic String in Numerical Relativity",
-      "id": "64d4ed2a5fea",
+      "title": "Are magnetic fields in cosmic voids primordial?",
+      "id": "c0a5cb27847f",
       "links": [
         {
-          "title": "Spacetime Evolution Induced by a Massive Cosmic String in Numerical Relativity",
-          "url": "https://arxiv.org/abs/2611.05996",
+          "title": "Are magnetic fields in cosmic voids primordial?",
+          "url": "https://arxiv.org/abs/2505.14774",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 47.1,
-          "published_at": "2026-11-05T05:00:00+00:00"
+          "score": 47.3,
+          "published_at": "2026-11-06T05:00:00+00:00"
         },
         {
-          "title": "Cosmic hydrogen measurement marks breakthrough in mapping the universe",
-          "url": "https://phys.org/news/2026-11-cosmic-hydrogen-breakthrough-universe.html",
+          "title": "Wacky magnetic fields of ice giants may stem from conductivity changes in their deep interiors",
+          "url": "https://phys.org/news/2026-11-wacky-magnetic-fields-ice-giants.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.2,
-          "published_at": "2026-11-04T22:20:01+00:00"
+          "score": 36.6,
+          "published_at": "2026-11-06T14:00:04+00:00"
         }
       ],
       "top_terms": [
-        "cosmic",
-        "hydrogen",
-        "measurement",
-        "marks",
-        "breakthrough"
+        "magnetic",
+        "fields",
+        "wacky",
+        "ice",
+        "giants"
       ],
-      "rank": 1,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "rank": 3,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 42.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "burned",
+        "earth",
+        "failed",
+        "falling",
+        "hubble",
+        "nasa",
+        "robot",
+        "save",
+        "sent",
+        "space",
+        "swift",
+        "telescope"
+      ],
+      "source_count": 2,
+      "signal_count": 2,
+      "sources": [
+        "New Scientist 太空",
+        "Phys.org 太空新闻"
+      ],
+      "score": 42.0,
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "representative": {
+        "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
+        "url": "https://www.newscientist.com/article/2597221-hubble-space-telescope-is-falling-to-earth-should-nasa-save-it/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+        "source": "New Scientist 太空",
+        "published_at": "2026-11-06T12:00:00+00:00",
+        "score": 61.0,
+        "summary": "The Hubble Space Telescope faces a fiery and fatal re-entry to Earth's atmosphere sometime around 2032, but NASA is asking the private sector for ideas to keep it working",
+        "zh_full": null,
+        "llm_score": 60.0
+      },
+      "folded_count": 1,
+      "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
+      "id": "1d6980ba5778",
+      "links": [
+        {
+          "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
+          "url": "https://www.newscientist.com/article/2597221-hubble-space-telescope-is-falling-to-earth-should-nasa-save-it/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 61.0,
+          "published_at": "2026-11-06T12:00:00+00:00"
+        },
+        {
+          "title": "NASA's Swift telescope has burned up, months after a robot sent to save it failed",
+          "url": "https://phys.org/news/2026-11-nasa-swift-telescope-months-robot.html",
+          "source": "Phys.org 太空新闻",
+          "score": 60.4,
+          "published_at": "2026-11-05T15:40:14+00:00"
+        }
+      ],
+      "top_terms": [
+        "nasa",
+        "telescope",
+        "save",
+        "swift",
+        "burned"
+      ],
+      "rank": 4,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 42.0,
       "status": "关注中"
@@ -99,18 +369,19 @@
         "Universe Today"
       ],
       "score": 42.0,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
       "representative": {
         "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
         "url": "https://www.universetoday.com/articles/a-mighty-wind-blew-away-gas-and-made-early-galaxies-brighter",
         "source": "Universe Today",
         "published_at": "2026-11-05T17:11:33+00:00",
-        "score": 60.9,
+        "score": 60.5,
         "summary": "When astronomers looked at photos of the early universe taken by the James Webb Space Telescope, they found something odd: an overabundance of bright galaxies about 400 to 500 million years after the Big Bang. But these galaxies should have",
         "zh_full": "当天文学家查看詹姆斯·韦伯太空望远镜拍摄的早期宇宙照片时，他们发现了一件奇怪的事：在大爆炸后约4亿至5亿年，明亮的星系数量过多。但宇宙诞生如此之早，这些星系本应远为稀少。研究人员可能已经弄清了原因：年轻恒星密集星团产生的强大紫外（莱曼阿尔法）辐射像吹叶机一样，将阻挡光线的气体和尘埃吹出星系，从而使星系看起来更亮。",
         "llm_summary": "詹姆斯·韦伯太空望远镜观测显示，大爆炸后约4亿至5亿年存在过多明亮星系。研究人员提出，年轻恒星团产生的强大紫外辐射像吹叶机般吹走阻挡光线的气体和尘埃，使星系显得更亮。",
         "llm_reason": "解释早期星系异常亮度成因",
-        "density": "中"
+        "density": "中",
+        "llm_score": 63.5
       },
       "folded_count": 1,
       "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
@@ -120,14 +391,14 @@
           "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
           "url": "https://www.universetoday.com/articles/a-mighty-wind-blew-away-gas-and-made-early-galaxies-brighter",
           "source": "Universe Today",
-          "score": 60.9,
+          "score": 60.5,
           "published_at": "2026-11-05T17:11:33+00:00"
         },
         {
           "title": "A cosmic 'leaf blower': Light-propelled winds help explain early universe's bright galaxies",
           "url": "https://phys.org/news/2026-11-cosmic-leaf-blower-propelled-early.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.3,
+          "score": 59.9,
           "published_at": "2026-11-04T21:00:11+00:00"
         }
       ],
@@ -138,7 +409,7 @@
         "blower",
         "propelled"
       ],
-      "rank": 2,
+      "rank": 5,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -147,341 +418,92 @@
     },
     {
       "terms": [
-        "advance",
-        "aircraft",
-        "announces",
-        "astronomers",
-        "cosmic",
-        "decades",
-        "earth",
-        "experiment",
-        "experimental",
-        "explosions",
-        "flames",
-        "flight",
-        "landings",
-        "mourning",
-        "nasa",
-        "navigation",
-        "perish",
-        "planetary",
-        "plunges",
-        "promise",
-        "research",
-        "revered",
-        "space",
-        "spacecraft",
-        "studying",
-        "telescope",
-        "x-70"
-      ],
-      "source_count": 3,
-      "signal_count": 3,
-      "sources": [
-        "NASA 快讯",
-        "Nature 天文和天体物理",
-        "Phys.org 太空新闻"
-      ],
-      "score": 38.8,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
-      "representative": {
-        "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
-        "url": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/",
-        "source": "NASA 快讯",
-        "published_at": "2026-11-05T01:43:21+00:00",
-        "score": 66.8,
-        "summary": "On Wednesday, NASA unveiled its newest experimental aircraft, the X-70 Fractal, during the UP.Summit at the agency’s Kennedy Space Center in Florida. This high-performance, highly adaptable research platform is designed to accelerate the de",
-        "zh_full": "NASA于周三在佛罗里达州肯尼迪航天中心的UP.Summit活动上揭幕了其最新实验飞机X-70 Fractal。这是一款高性能、高度适应性的研究平台，旨在加速先进航空技术的开发与测试。该有人驾驶的X-70配备了先进的、可快速重构的飞行控制技术，使NASA能够探索一系列此前难以测试的飞行概念。X-70的设计强调灵活性与可重构性，其飞行控制系统可在飞行中快速调整，以模拟不同飞机或飞行器的气动特性。NASA表示，这一平台将用于验证新兴航空技术，包括推进系统、材料科学和自动驾驶系统等。该机是NASA系列实验飞机的最新成员，延续了X-plane传统，为研究人员提供真实飞行环境下的测试能力。NASA计划利用X-70收集数据，以支持未来民用和军用航空器的设计改进。",
-        "llm_summary": "NASA在肯尼迪航天中心揭幕了新型实验飞机X-70 Fractal，这是一款有人驾驶、高性能且高度适应性的研究平台。其核心特点是可快速重构的飞行控制技术，能在飞行中调整以模拟不同飞行器特性。该机旨在加速先进航空技术的开发与测试，为NASA提供真实飞行环境下的验证能力，支持未来航空器设计。",
-        "llm_reason": "新型实验飞机揭幕，技术细节明确",
-        "density": "高"
-      },
-      "folded_count": 2,
-      "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
-      "id": "785cd3e6fe07",
-      "links": [
-        {
-          "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
-          "url": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/",
-          "source": "NASA 快讯",
-          "score": 66.8,
-          "published_at": "2026-11-05T01:43:21+00:00"
-        },
-        {
-          "title": "NASA space telescope plunges to Earth after two decades studying cosmic explosions",
-          "url": "https://phys.org/news/2026-11-nasa-space-telescope-plunges-earth.html",
-          "source": "Phys.org 太空新闻",
-          "score": 66.7,
-          "published_at": "2026-11-04T20:40:11+00:00"
-        },
-        {
-          "title": "Revered NASA spacecraft is about to perish in flames — astronomers are mourning",
-          "url": "https://www.nature.com/articles/d41586-026-03461-w",
-          "source": "Nature 天文和天体物理",
-          "score": 60.8,
-          "published_at": "2026-10-27T00:00:00+00:00"
-        },
-        {
-          "title": "NASA navigation experiment shows promise for planetary landings",
-          "url": "https://phys.org/news/2026-11-nasa-planetary.html",
-          "source": "Phys.org 太空新闻",
-          "score": 40.0,
-          "published_at": "2026-11-04T23:20:07+00:00"
-        }
-      ],
-      "top_terms": [
-        "nasa",
-        "navigation",
-        "experiment",
-        "promise",
-        "planetary"
-      ],
-      "rank": 3,
-      "trend": "down",
-      "trendPct": -20.8,
-      "badges": [],
-      "heat": 38.8,
-      "status": "发酵中"
-    },
-    {
-      "terms": [
-        "black",
+        "autotune",
+        "constraints",
         "dark",
-        "dots",
-        "even",
-        "explain",
-        "hold",
-        "holes",
-        "little",
+        "detectors",
+        "enhancing",
+        "first-order",
+        "glitch",
+        "global",
+        "gravitational",
+        "gravitational wave",
         "matter",
-        "primordial",
-        "space",
-        "stupendous",
-        "telescope",
-        "webb"
-      ],
-      "source_count": 3,
-      "signal_count": 2,
-      "sources": [
-        "Nature 天文和天体物理",
-        "New Scientist 太空",
-        "Phys.org 太空新闻"
-      ],
-      "score": 35.3,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
-      "representative": {
-        "title": "Even stupendous black holes can’t explain dark matter",
-        "url": "https://www.nature.com/articles/d41586-026-03386-4",
-        "source": "Nature 天文和天体物理",
-        "published_at": "2026-10-29T00:00:00+00:00",
-        "score": 60.6,
-        "summary": "",
-        "zh_full": "（无摘要，仅标题）即使是巨大的黑洞也无法解释暗物质。",
-        "refs": {
-          "doi": "10.1038/d41586-026-03386-4",
-          "via": "self_meta",
-          "confidence": "verified"
-        },
-        "llm_summary": "即使是巨大的黑洞也无法解释暗物质。",
-        "density": "低"
-      },
-      "folded_count": 2,
-      "title": "Even stupendous black holes can’t explain dark matter",
-      "id": "091433c2113a",
-      "links": [
-        {
-          "title": "Webb Space Telescope's little red dots could hold key to first black holes",
-          "url": "https://phys.org/news/2026-11-webb-space-telescope-red-dots.html",
-          "source": "Phys.org 太空新闻",
-          "score": 65.7,
-          "published_at": "2026-11-05T14:20:02+00:00"
-        },
-        {
-          "title": "Even stupendous black holes can’t explain dark matter",
-          "url": "https://www.nature.com/articles/d41586-026-03386-4",
-          "source": "Nature 天文和天体物理",
-          "score": 60.6,
-          "published_at": "2026-10-29T00:00:00+00:00"
-        },
-        {
-          "title": "Could primordial black holes hold the key to dark matter?",
-          "url": "https://www.newscientist.com/video/2597265-could-primordial-black-holes-hold-the-key-to-dark-matter/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 39.1,
-          "published_at": "2026-11-04T18:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "black",
-        "holes",
-        "hold",
-        "dark",
-        "matter"
-      ],
-      "rank": 4,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 35.3,
-      "status": "发酵中"
-    },
-    {
-      "terms": [
-        "chex-mate",
-        "clustering",
-        "clusters",
-        "density",
-        "disk",
-        "dwarf",
-        "effects",
-        "euclid",
-        "galaxy",
-        "like",
-        "mask",
-        "metallicity",
-        "profile",
-        "reconstruction",
-        "sagittarius",
-        "survey"
+        "pulsar",
+        "scale-invariant",
+        "signals",
+        "strings",
+        "three-component",
+        "transition",
+        "vela",
+        "wave",
+        "waves"
       ],
       "source_count": 2,
       "signal_count": 2,
       "sources": [
-        "Nature 天文和天体物理",
+        "LIGO",
         "arXiv astro-ph.CO 论文速递"
       ],
       "score": 24.5,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
       "representative": {
-        "title": "CHEX-MATE: Density profile reconstruction in galaxy clusters",
-        "url": "https://arxiv.org/abs/2611.05476",
+        "title": "Enhancing Gravitational Waves from Global Strings via a First-Order Phase Transition",
+        "url": "https://arxiv.org/abs/2611.07416",
         "source": "arXiv astro-ph.CO 论文速递",
-        "published_at": "2026-11-05T05:00:00+00:00",
-        "score": 48.6,
-        "summary": "arXiv:2611.05476v1 Announce Type: new Abstract: We investigated the reconstruction of the intra-cluster medium radial density profiles in galaxy clusters, focusing on the impact of cluster morphology, dynamical state, and methodological cho",
+        "published_at": "2026-11-06T05:00:00+00:00",
+        "score": 50.3,
+        "summary": "arXiv:2611.07416v1 Announce Type: cross Abstract: We perform the first (3+1)-dimensional lattice simulations of a cosmological first-order phase transition (PT) in which true-vacuum bubbles with random phases nucleate, expand, and collide, ",
         "zh_full": null,
         "refs": {
-          "arxiv": "2611.05476",
+          "arxiv": "2611.07416",
           "via": "feed_text",
           "confidence": "verified"
         }
       },
       "folded_count": 1,
-      "title": "CHEX-MATE: Density profile reconstruction in galaxy clusters",
-      "id": "58ab60918336",
+      "title": "Enhancing Gravitational Waves from Global Strings via a First-Order Phase Transition",
+      "id": "8226419750b8",
       "links": [
         {
-          "title": "CHEX-MATE: Density profile reconstruction in galaxy clusters",
-          "url": "https://arxiv.org/abs/2611.05476",
+          "title": "Enhancing Gravitational Waves from Global Strings via a First-Order Phase Transition",
+          "url": "https://arxiv.org/abs/2611.07416",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 48.6,
-          "published_at": "2026-11-05T05:00:00+00:00"
+          "score": 50.3,
+          "published_at": "2026-11-06T05:00:00+00:00"
         },
         {
-          "title": "Euclid: Survey mask effects on clustering of galaxy clusters",
-          "url": "https://arxiv.org/abs/2611.06304",
+          "title": "Scale-Invariant Three-Component Dark Matter and Gravitational Wave Signals",
+          "url": "https://arxiv.org/abs/2611.07509",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 48.6,
-          "published_at": "2026-11-05T05:00:00+00:00"
+          "score": 50.3,
+          "published_at": "2026-11-06T05:00:00+00:00"
         },
         {
-          "title": "A ∧-like metallicity profile in the disk of the Sagittarius dwarf galaxy",
-          "url": "https://www.nature.com/articles/s41550-026-02996-2",
-          "source": "Nature 天文和天体物理",
-          "score": 46.6,
-          "published_at": "2026-10-13T00:00:00+00:00"
+          "title": "Gravitational wave detectors can now ‘autotune’ their signals",
+          "url": "https://ligo.org/gravitational-wave-detectors-can-now-autotune-their-signals/",
+          "source": "LIGO",
+          "score": 44.2,
+          "published_at": "2026-05-13T01:34:22+00:00"
+        },
+        {
+          "title": "Constraints on gravitational waves from the 2024 Vela pulsar glitch",
+          "url": "https://ligo.org/constraints-on-gravitational-waves-from-the-2024-vela-pulsar-glitch/",
+          "source": "LIGO",
+          "score": 44.2,
+          "published_at": "2026-02-25T04:06:26+00:00"
         }
       ],
       "top_terms": [
-        "galaxy",
-        "profile",
-        "clusters",
-        "like",
-        "metallicity"
+        "gravitational",
+        "wave",
+        "signals",
+        "waves",
+        "detectors"
       ],
-      "rank": 5,
+      "rank": 6,
       "trend": "new",
       "trendPct": null,
-      "badges": [],
-      "heat": 24.5,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "agency",
-        "answer",
-        "astronauts",
-        "community",
-        "flight",
-        "florida",
-        "fuel",
-        "grant",
-        "inspiration",
-        "medicine",
-        "nasa",
-        "questions",
-        "sights",
-        "space",
-        "students",
-        "takes",
-        "tour"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "MIT News 太空探索",
-        "NASA 快讯"
-      ],
-      "score": 24.5,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
-      "representative": {
-        "title": "NASA Astronauts to Answer Questions from Florida Students",
-        "url": "https://www.nasa.gov/learning-resources/nasa-astronauts-to-answer-questions-from-florida-students-2/",
-        "source": "NASA 快讯",
-        "published_at": "2026-11-05T15:11:25+00:00",
-        "score": 62.4,
-        "summary": "Students in Florida will hear from NASA astronauts Jessica Watkins and Luke Delaney as they answer prerecorded STEM questions while aboard the International Space Station. The Earth-to-space call will begin at 10:40 a.m. EST Tuesday, Nov. 1",
-        "zh_full": null,
-        "llm_score": 11.5
-      },
-      "folded_count": 1,
-      "title": "NASA Astronauts to Answer Questions from Florida Students",
-      "id": "4e78dc2f24d5",
-      "links": [
-        {
-          "title": "NASA Astronauts to Answer Questions from Florida Students",
-          "url": "https://www.nasa.gov/learning-resources/nasa-astronauts-to-answer-questions-from-florida-students-2/",
-          "source": "NASA 快讯",
-          "score": 62.4,
-          "published_at": "2026-11-05T15:11:25+00:00"
-        },
-        {
-          "title": "NASA Space Grant Students Fuel Agency’s Inspiration Tour",
-          "url": "https://www.nasa.gov/learning-resources/nasa-space-grant-students-fuel-agencys-inspiration-tour/",
-          "source": "NASA 快讯",
-          "score": 61.7,
-          "published_at": "2026-11-04T16:16:41+00:00"
-        },
-        {
-          "title": "For students with their sights set on space medicine, a new community takes flight",
-          "url": "https://news.mit.edu/2026/mit-doctors-without-gravity-takes-flight-1021",
-          "source": "MIT News 太空探索",
-          "score": 31.5,
-          "published_at": "2026-10-21T20:40:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "students",
-        "nasa",
-        "space",
-        "astronauts",
-        "answer"
-      ],
-      "digest": "NASA宇航员Jessica Watkins和Luke Delaney将于11月1日上午10:40（美国东部时间）在国际空间站上，通过地球到太空通话回答佛罗里达学生预先录制的STEM问题。该活动是NASA激励之旅的一部分，旨在连接公众、工业界和学术界与推动美国太空领导力的个人、技术和组织。此前，NASA太空资助项目学生已参与该巡回活动，以激发对太空探索和航空创新的兴趣。",
-      "digestTitle": "NASA宇航员与佛罗里达学生进行太空问答",
-      "rank": 6,
-      "trend": "flat",
-      "trendPct": 0.0,
       "badges": [],
       "heat": 24.5,
       "status": "关注中"
@@ -508,7 +530,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
       "representative": {
         "title": "Astronomers spot a giant planet that is as light as cotton candy",
         "url": "https://news.mit.edu/2024/astronomers-spot-giant-planet-light-as-cotton-candy-0514",
@@ -528,7 +550,7 @@
           "title": "Astronomers deliver the sharpest and deepest view yet of the low-frequency radio sky",
           "url": "https://phys.org/news/2026-11-astronomers-sharpest-deepest-view-frequency.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.7,
+          "score": 36.4,
           "published_at": "2026-11-06T00:40:06+00:00"
         },
         {
@@ -547,8 +569,8 @@
         "view"
       ],
       "rank": 7,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -575,7 +597,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
       "representative": {
         "title": "MIT in the media: Exploring how curiosity-driven science is an essential ingredient in America’s success",
         "url": "https://news.mit.edu/2026/mit-media-exploring-how-curiosity-driven-science-essential-ingredient-americas-success",
@@ -595,7 +617,7 @@
           "title": "Connecting artificial intelligence with the tools of astrophysical research",
           "url": "https://phys.org/news/2026-11-artificial-intelligence-tools-astrophysical.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.6,
+          "score": 36.4,
           "published_at": "2026-11-05T22:00:07+00:00"
         },
         {
@@ -614,6 +636,72 @@
         "research"
       ],
       "rank": 8,
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "crust",
+        "earth",
+        "mars",
+        "primordial",
+        "rusty",
+        "shaped",
+        "slowing",
+        "spin",
+        "warm"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "New Scientist 太空",
+        "Phys.org 太空新闻"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "representative": {
+        "title": "Rusty crust made Mars warm and wet",
+        "url": "https://www.newscientist.com/article/2596726-rusty-crust-made-mars-warm-and-wet/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+        "source": "New Scientist 太空",
+        "published_at": "2026-10-30T15:00:00+00:00",
+        "score": 56.4,
+        "summary": "It's unclear how and why Mars once became warm enough to allow water to flow on its surface, but a new idea suggests it comes down to rust below the surface",
+        "zh_full": "火星表面曾经有液态水流动，但它是如何以及为何变得足够温暖的，一直是个未解之谜。一项新研究提出，答案可能在于地表之下的铁锈。火星表面富含铁元素，铁在氧化（生锈）过程中会释放热量。研究者认为，火星地下的铁锈形成过程可能产生了足够的热量，使火星局部或整体升温，从而让水保持液态。这一机制或能解释火星早期温暖潮湿环境的成因。该假说仍需更多证据验证，但它为火星气候演化提供了新的思路。",
+        "llm_summary": "火星曾有液态水流动，但变暖原因不明。新假说认为，地表下铁氧化生锈放热，可能为火星提供了足够热量，使其保持温暖湿润。该机制为火星早期气候之谜提供了新解释，但尚待验证。",
+        "llm_reason": "提出火星变暖新机制，具科学价值",
+        "density": "中",
+        "llm_score": 37.0
+      },
+      "folded_count": 1,
+      "title": "Rusty crust made Mars warm and wet",
+      "id": "b5b6184ae356",
+      "links": [
+        {
+          "title": "Rusty crust made Mars warm and wet",
+          "url": "https://www.newscientist.com/article/2596726-rusty-crust-made-mars-warm-and-wet/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 56.4,
+          "published_at": "2026-10-30T15:00:00+00:00"
+        },
+        {
+          "title": "Earth's slowing spin may have shaped its primordial crust",
+          "url": "https://phys.org/news/2026-11-earth-primordial-crust.html",
+          "source": "Phys.org 太空新闻",
+          "score": 36.3,
+          "published_at": "2026-11-05T15:20:06+00:00"
+        }
+      ],
+      "top_terms": [
+        "crust",
+        "earth",
+        "slowing",
+        "spin",
+        "shaped"
+      ],
+      "rank": 9,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -641,13 +729,13 @@
         "Universe Today"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
+      "latest_at": "2026-11-06T17:31:19.184919+00:00",
       "representative": {
         "title": "Game Theory Helps SETI Search for Alien Civilizations",
         "url": "https://www.universetoday.com/articles/game-theory-helps-seti-search-for-alien-civilizations",
         "source": "Universe Today",
         "published_at": "2026-11-04T20:50:16+00:00",
-        "score": 36.2,
+        "score": 36.0,
         "summary": "SETI can be more effective the more the targets in the search are refined. SETI's newest survey effort uses game theory to inform its search. It's based on the idea that other ETIs would almost certainly use the transit method to detect hab",
         "zh_full": null
       },
@@ -659,14 +747,14 @@
           "title": "Game Theory Helps SETI Search for Alien Civilizations",
           "url": "https://www.universetoday.com/articles/game-theory-helps-seti-search-for-alien-civilizations",
           "source": "Universe Today",
-          "score": 36.2,
+          "score": 36.0,
           "published_at": "2026-11-04T20:50:16+00:00"
         },
         {
           "title": "When should we listen for alien signals? Scientists turn to game theory",
           "url": "https://phys.org/news/2026-11-alien-scientists-game-theory.html",
           "source": "Phys.org 太空新闻",
-          "score": 35.8,
+          "score": 35.6,
           "published_at": "2026-11-03T22:50:01+00:00"
         }
       ],
@@ -677,77 +765,9 @@
         "when",
         "listen"
       ],
-      "rank": 9,
-      "trend": "down",
-      "trendPct": -50.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "aimed",
-        "asteroid",
-        "asteroids",
-        "blast",
-        "challenging",
-        "deflect",
-        "deflecting",
-        "influences",
-        "must",
-        "nuclear",
-        "oddball",
-        "shape",
-        "shapes",
-        "them",
-        "where"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-11-06T02:26:31.258293+00:00",
-      "representative": {
-        "title": "An asteroid's shape influences where a nuclear blast must be aimed to deflect it",
-        "url": "https://phys.org/news/2026-11-asteroid-nuclear-blast-aimed-deflect.html",
-        "source": "Phys.org 太空新闻",
-        "published_at": "2026-11-03T16:20:09+00:00",
-        "score": 59.5,
-        "summary": "If a dangerous asteroid were headed toward Earth, one defense could be a nuclear detonation to blast one side with X-rays and nudge it off course. But new simulations suggest that for a lumpy, irregular asteroid, exactly where those X-rays ",
-        "zh_full": null
-      },
-      "folded_count": 1,
-      "title": "An asteroid's shape influences where a nuclear blast must be aimed to deflect it",
-      "id": "f306c1bb20c1",
-      "links": [
-        {
-          "title": "An asteroid's shape influences where a nuclear blast must be aimed to deflect it",
-          "url": "https://phys.org/news/2026-11-asteroid-nuclear-blast-aimed-deflect.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.5,
-          "published_at": "2026-11-03T16:20:09+00:00"
-        },
-        {
-          "title": "Asteroids' Oddball Shapes Make Deflecting Them Challenging",
-          "url": "https://www.universetoday.com/articles/asteroids-oddball-shapes-make-deflecting-them-challenging",
-          "source": "Universe Today",
-          "score": 36.6,
-          "published_at": "2026-11-05T19:26:56+00:00"
-        }
-      ],
-      "top_terms": [
-        "asteroid",
-        "shape",
-        "influences",
-        "where",
-        "nuclear"
-      ],
       "rank": 10,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
