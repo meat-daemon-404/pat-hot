@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T17:31:19.184919+00:00",
+  "generatedAt": "2026-11-07T01:56:48.504578+00:00",
   "weekStart": "2026-11-01",
   "windowDays": 7,
   "windowStart": "2026-11-01",
@@ -10,49 +10,49 @@
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1382.6,
+      "thisWeek": 1375.6,
       "lastWeek": 1614.7,
-      "deltaPct": -14.4
+      "deltaPct": -14.8
     },
     {
       "category": "其他",
-      "thisWeek": 953.2,
+      "thisWeek": 1044.8,
       "lastWeek": 953.1,
-      "deltaPct": 0.0
+      "deltaPct": 9.6
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 585.3,
+      "thisWeek": 584.0,
       "lastWeek": 483.1,
-      "deltaPct": 21.2
+      "deltaPct": 20.9
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 517.2,
+      "thisWeek": 516.3,
       "lastWeek": 361.1,
-      "deltaPct": 43.2
+      "deltaPct": 43.0
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 211.4,
+      "thisWeek": 210.9,
       "lastWeek": 110.9,
-      "deltaPct": 90.6
+      "deltaPct": 90.2
     },
     {
       "category": "等离子体",
-      "thisWeek": 200.4,
+      "thisWeek": 199.8,
       "lastWeek": 101.8,
-      "deltaPct": 96.9
+      "deltaPct": 96.3
     },
     {
       "category": "原子分子与光物理",
-      "thisWeek": 145.3,
+      "thisWeek": 145.0,
       "lastWeek": 0,
       "deltaPct": 100.0
     },
     {
       "category": "统计物理与软物质",
-      "thisWeek": 61.1,
+      "thisWeek": 60.8,
       "lastWeek": 0,
       "deltaPct": 100.0
     }
@@ -79,25 +79,25 @@
     {
       "topic_id": "6495d6c43e0a",
       "title": "Imaging multi-particle dynamics in space and time",
-      "score": 121.4,
+      "score": 114.8,
       "days": 1
     },
     {
       "topic_id": "717cb96ef60b",
       "title": "Decoherence resilience of the non-Hermitian skin effect",
-      "score": 114.6,
+      "score": 114.2,
       "days": 1
     },
     {
       "topic_id": "c92aac0ad9c7",
       "title": "Quantum simulation of classical RCL circuits via complexification and Schr\\\"odingerization",
-      "score": 111.0,
+      "score": 110.5,
       "days": 1
     },
     {
-      "topic_id": "5595e9386b1a",
-      "title": "Physical regimes of quartic quantum advantage in elastic media simulation",
-      "score": 107.9,
+      "topic_id": "8f32df5ea705",
+      "title": "Agentic AI needs a science of interaction",
+      "score": 108.5,
       "days": 1
     },
     {
@@ -107,16 +107,16 @@
       "days": 1
     },
     {
+      "topic_id": "5595e9386b1a",
+      "title": "Physical regimes of quartic quantum advantage in elastic media simulation",
+      "score": 107.5,
+      "days": 1
+    },
+    {
       "topic_id": "431b049c16bc",
       "title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks",
       "score": 87.4,
       "days": 1
-    },
-    {
-      "topic_id": "26e0d76ba447",
-      "title": "A single measurement makes quantum bits more reliable",
-      "score": 64.9,
-      "days": 2
     }
   ],
   "sustainedTopics": []

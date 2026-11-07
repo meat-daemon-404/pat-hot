@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T17:31:19.184919+00:00",
+  "generatedAt": "2026-11-07T01:56:48.504578+00:00",
   "weekStart": "2026-11-01",
   "windowDays": 7,
   "windowStart": "2026-11-01",
@@ -10,21 +10,27 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4204.1,
+      "thisWeek": 4382.1,
       "lastWeek": 5473.7,
-      "deltaPct": -23.2
+      "deltaPct": -19.9
     },
     {
       "category": "科研进展",
-      "thisWeek": 3741.2,
+      "thisWeek": 3791.2,
       "lastWeek": 3362.1,
-      "deltaPct": 11.3
+      "deltaPct": 12.8
     },
     {
       "category": "光通信",
-      "thisWeek": 3573.9,
+      "thisWeek": 3526.8,
       "lastWeek": 3267.3,
-      "deltaPct": 9.4
+      "deltaPct": 7.9
+    },
+    {
+      "category": "其他",
+      "thisWeek": 2795.2,
+      "lastWeek": 2580.1,
+      "deltaPct": 8.3
     },
     {
       "category": "产业与资本",
@@ -33,10 +39,10 @@
       "deltaPct": -8.3
     },
     {
-      "category": "其他",
-      "thisWeek": 2669.8,
-      "lastWeek": 2580.1,
-      "deltaPct": 3.5
+      "category": "显示与面板",
+      "thisWeek": 1847.1,
+      "lastWeek": 1084.4,
+      "deltaPct": 70.3
     },
     {
       "category": "通信与算力",
@@ -45,32 +51,26 @@
       "deltaPct": 13.0
     },
     {
-      "category": "显示与面板",
-      "thisWeek": 1802.9,
-      "lastWeek": 1084.4,
-      "deltaPct": 66.3
-    },
-    {
       "category": "光学元件与成像",
-      "thisWeek": 1494.0,
+      "thisWeek": 1583.8,
       "lastWeek": 2195.5,
-      "deltaPct": -32.0
+      "deltaPct": -27.9
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 837.3,
+      "thisWeek": 882.7,
       "lastWeek": 867.5,
-      "deltaPct": -3.5
+      "deltaPct": 1.8
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 276.0,
+      "thisWeek": 322.0,
       "lastWeek": 423.9,
-      "deltaPct": -34.9
+      "deltaPct": -24.0
     },
     {
       "category": "光伏与新能源",
-      "thisWeek": 51.4,
+      "thisWeek": 51.1,
       "lastWeek": 0,
       "deltaPct": 100.0
     }
@@ -89,22 +89,22 @@
       "days": 3
     },
     {
-      "topic_id": "e72397647396",
-      "title": "Photonics Hot List: November 6, 2026",
-      "score": 312.8,
-      "days": 2
-    },
-    {
-      "topic_id": "4823a3fdef58",
-      "title": "标配激光雷达+冷暖冰箱!这台领克08 EM-P太懂家用",
-      "score": 285.6,
-      "days": 1
-    },
-    {
       "topic_id": "cf711748e825",
       "title": "Photonics Hot List: October 30, 2026",
       "score": 269.9,
       "days": 3
+    },
+    {
+      "topic_id": "80632c0b00ac",
+      "title": "Photonics Hot List: November 6, 2026",
+      "score": 266.9,
+      "days": 1
+    },
+    {
+      "topic_id": "c6b7eda62a5c",
+      "title": "192线激光雷达上车!新款领克08 EM-P上市",
+      "score": 210.2,
+      "days": 1
     },
     {
       "topic_id": "98f4b8731b7a",
@@ -151,6 +151,18 @@
       "score": 1420.9
     },
     {
+      "topic_id": "ff9baccacead",
+      "title": "欧盟否认重新评估对美国科技巨头调查，但未来走向不明",
+      "days": 15,
+      "score": 942.0
+    },
+    {
+      "topic_id": "3db37b135ae4",
+      "title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼",
+      "days": 15,
+      "score": 910.6
+    },
+    {
       "topic_id": "8579455b5d54",
       "title": "华为全联接大会2026全光峰会举办，F5G-A全光网加速AI普惠千行万业",
       "days": 15,
@@ -167,18 +179,6 @@
       "title": "广和通上半年营收37.78亿元增长1.92% 净利润同比下降71.63%",
       "days": 14,
       "score": 1274.0
-    },
-    {
-      "topic_id": "ff9baccacead",
-      "title": "欧盟否认重新评估对美国科技巨头调查，但未来走向不明",
-      "days": 14,
-      "score": 879.2
-    },
-    {
-      "topic_id": "3db37b135ae4",
-      "title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼",
-      "days": 14,
-      "score": 847.8
     },
     {
       "topic_id": "5bc32d86db90",

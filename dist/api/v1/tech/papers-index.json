@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T17:31:19.184919+00:00",
+  "generatedAt": "2026-11-07T01:56:48.504578+00:00",
   "channel": "tech",
   "count": 33,
   "items": [
@@ -26,6 +26,20 @@
       "url": "https://arxiv.org/abs/2611.07038",
       "doi": null,
       "arxiv": "2611.07038",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "科研进展",
+      "published_at": "2026-11-06T05:00:00+00:00",
+      "selected": true
+    },
+    {
+      "id": "904ba0fd8a31",
+      "title": "Ultrafast Moir\\'e Exciton Dynamics Revealed by Two-Dimensional Coherent Spectroscopy",
+      "channel": "tech",
+      "source": "arXiv 光学与光子学 (physics.optics)",
+      "url": "https://arxiv.org/abs/2611.07539",
+      "doi": null,
+      "arxiv": "2611.07539",
       "via": "feed_text",
       "confidence": "verified",
       "category": "科研进展",
@@ -313,20 +327,6 @@
       "selected": true
     },
     {
-      "id": "904ba0fd8a31",
-      "title": "Ultrafast Moir\\'e Exciton Dynamics Revealed by Two-Dimensional Coherent Spectroscopy",
-      "channel": "tech",
-      "source": "arXiv 光学与光子学 (physics.optics)",
-      "url": "https://arxiv.org/abs/2611.07539",
-      "doi": null,
-      "arxiv": "2611.07539",
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "科研进展",
-      "published_at": "2026-11-06T05:00:00+00:00",
-      "selected": true
-    },
-    {
       "id": "d3b3b99aaeb4",
       "title": "Multi-Channel Non-Abelian Edge Pumping via Multi-Degeneracy Encircling",
       "channel": "tech",
@@ -383,20 +383,6 @@
       "selected": true
     },
     {
-      "id": "e36336871cdc",
-      "title": "Infrared polymer boasts high index and transparency",
-      "channel": "tech",
-      "source": "Nature Photonics",
-      "url": "https://www.nature.com/articles/s41566-026-02033-8",
-      "doi": "10.1038/s41566-026-02033-8",
-      "arxiv": null,
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "光学元件与成像",
-      "published_at": "2026-10-30T00:00:00+00:00",
-      "selected": true
-    },
-    {
       "id": "8c4f0b6706c4",
       "title": "Optical control stabilizes cold-atom comagnetometry",
       "channel": "tech",
@@ -449,6 +435,20 @@
       "via": "feed_text",
       "confidence": "verified",
       "category": "激光",
+      "published_at": "2026-10-30T00:00:00+00:00",
+      "selected": true
+    },
+    {
+      "id": "e36336871cdc",
+      "title": "Infrared polymer boasts high index and transparency",
+      "channel": "tech",
+      "source": "Nature Photonics",
+      "url": "https://www.nature.com/articles/s41566-026-02033-8",
+      "doi": "10.1038/s41566-026-02033-8",
+      "arxiv": null,
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "光学元件与成像",
       "published_at": "2026-10-30T00:00:00+00:00",
       "selected": true
     },

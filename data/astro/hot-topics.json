@@ -1,214 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T17:31:19.184919+00:00",
+  "generatedAt": "2026-11-07T01:56:48.504578+00:00",
   "count": 10,
   "items": [
-    {
-      "terms": [
-        "black",
-        "black hole",
-        "connecting",
-        "dark",
-        "dots",
-        "formation",
-        "growth",
-        "hold",
-        "hole",
-        "holes",
-        "jwst",
-        "little",
-        "matter",
-        "multi-cycle",
-        "primordial",
-        "program",
-        "seeds",
-        "space",
-        "telescope",
-        "treasury",
-        "webb"
-      ],
-      "source_count": 3,
-      "signal_count": 3,
-      "sources": [
-        "New Scientist 太空",
-        "Phys.org 太空新闻",
-        "arXiv astro-ph.CO 论文速递"
-      ],
-      "score": 53.0,
-      "latest_at": "2026-11-06T17:31:19.184919+00:00",
-      "representative": {
-        "title": "Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program",
-        "url": "https://arxiv.org/abs/2611.07006",
-        "source": "arXiv astro-ph.CO 论文速递",
-        "published_at": "2026-11-06T05:00:00+00:00",
-        "score": 52.1,
-        "summary": "arXiv:2611.07006v1 Announce Type: cross Abstract: JWST has revealed an abundant population of faint active galactic nuclei and a new class of compact, high-redshift sources known as Little Red Dots (LRDs), whose physical nature remains deba",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2611.07006",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 2,
-      "title": "Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program",
-      "id": "929fa7c53d1c",
-      "links": [
-        {
-          "title": "Webb Space Telescope's little red dots could hold key to first black holes",
-          "url": "https://phys.org/news/2026-11-webb-space-telescope-red-dots.html",
-          "source": "Phys.org 太空新闻",
-          "score": 65.2,
-          "published_at": "2026-11-05T14:20:02+00:00"
-        },
-        {
-          "title": "Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program",
-          "url": "https://arxiv.org/abs/2611.07006",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 52.1,
-          "published_at": "2026-11-06T05:00:00+00:00"
-        },
-        {
-          "title": "Could primordial black holes hold the key to dark matter?",
-          "url": "https://www.newscientist.com/video/2597265-could-primordial-black-holes-hold-the-key-to-dark-matter/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 38.8,
-          "published_at": "2026-11-04T18:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "black",
-        "little",
-        "red",
-        "dots",
-        "hold"
-      ],
-      "digest": "约翰斯·霍普金斯大学的研究人员利用韦伯太空望远镜观测到一类被称为“小红点”的遥远天体，认为它们可能是宇宙中最早一批黑洞的候选者。这些天体在红外波段呈现紧凑的红色光点，其物理性质目前仍有争议。研究人员称，进一步观测将有助于确认它们是否与早期黑洞的形成和成长有关。",
-      "digestTitle": "韦伯望远镜发现早期黑洞线索",
-      "rank": 1,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 53.0,
-      "status": "发酵中"
-    },
-    {
-      "terms": [
-        "advance",
-        "aircraft",
-        "announces",
-        "astronomers",
-        "cosmic",
-        "decades",
-        "earth",
-        "execute",
-        "experiment",
-        "experimental",
-        "explosions",
-        "flames",
-        "flight",
-        "landings",
-        "maneuvers",
-        "mars",
-        "mourning",
-        "nasa",
-        "navigation",
-        "perish",
-        "planetary",
-        "plunges",
-        "powered",
-        "promise",
-        "research",
-        "revered",
-        "slingshot",
-        "space",
-        "spacecraft",
-        "studying",
-        "telescope",
-        "twin",
-        "x-70"
-      ],
-      "source_count": 4,
-      "signal_count": 4,
-      "sources": [
-        "NASA 快讯",
-        "Nature 天文和天体物理",
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "score": 51.5,
-      "latest_at": "2026-11-06T17:31:19.184919+00:00",
-      "representative": {
-        "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
-        "url": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/",
-        "source": "NASA 快讯",
-        "published_at": "2026-11-05T01:43:21+00:00",
-        "score": 71.2,
-        "summary": "On Wednesday, NASA unveiled its newest experimental aircraft, the X-70 Fractal, during the UP.Summit at the agency’s Kennedy Space Center in Florida. This high-performance, highly adaptable research platform is designed to accelerate the de",
-        "zh_full": "NASA于周三在佛罗里达州肯尼迪航天中心的UP.Summit活动上揭幕了其最新实验飞机X-70 Fractal。这是一款高性能、高度适应性的研究平台，旨在加速先进航空技术的开发与测试。该有人驾驶的X-70配备了先进的、可快速重构的飞行控制技术，使NASA能够探索一系列此前难以测试的飞行概念。X-70的设计强调灵活性与可重构性，其飞行控制系统可在飞行中快速调整，以模拟不同飞机或飞行器的气动特性。NASA表示，这一平台将用于验证新兴航空技术，包括推进系统、材料科学和自动驾驶系统等。该机是NASA系列实验飞机的最新成员，延续了X-plane传统，为研究人员提供真实飞行环境下的测试能力。NASA计划利用X-70收集数据，以支持未来民用和军用航空器的设计改进。",
-        "llm_summary": "NASA在肯尼迪航天中心揭幕了新型实验飞机X-70 Fractal，这是一款有人驾驶、高性能且高度适应性的研究平台。其核心特点是可快速重构的飞行控制技术，能在飞行中调整以模拟不同飞行器特性。该机旨在加速先进航空技术的开发与测试，为NASA提供真实飞行环境下的验证能力，支持未来航空器设计。",
-        "llm_reason": "新型实验飞机揭幕，技术细节明确",
-        "density": "高",
-        "llm_score": 51.0
-      },
-      "folded_count": 3,
-      "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
-      "id": "7115a6842b64",
-      "links": [
-        {
-          "title": "NASA's Twin Spacecraft Will Execute Powered Slingshot Maneuvers on Their Way to Mars",
-          "url": "https://www.universetoday.com/articles/nasas-twin-spacecraft-will-execute-powered-slingshot-maneuvers-on-their-way-to-mars",
-          "source": "Universe Today",
-          "score": 72.3,
-          "published_at": "2026-11-06T16:35:09+00:00"
-        },
-        {
-          "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
-          "url": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/",
-          "source": "NASA 快讯",
-          "score": 71.2,
-          "published_at": "2026-11-05T01:43:21+00:00"
-        },
-        {
-          "title": "NASA space telescope plunges to Earth after two decades studying cosmic explosions",
-          "url": "https://phys.org/news/2026-11-nasa-space-telescope-plunges-earth.html",
-          "source": "Phys.org 太空新闻",
-          "score": 71.1,
-          "published_at": "2026-11-04T20:40:11+00:00"
-        },
-        {
-          "title": "Revered NASA spacecraft is about to perish in flames — astronomers are mourning",
-          "url": "https://www.nature.com/articles/d41586-026-03461-w",
-          "source": "Nature 天文和天体物理",
-          "score": 65.2,
-          "published_at": "2026-10-27T00:00:00+00:00"
-        },
-        {
-          "title": "NASA navigation experiment shows promise for planetary landings",
-          "url": "https://phys.org/news/2026-11-nasa-planetary.html",
-          "source": "Phys.org 太空新闻",
-          "score": 42.7,
-          "published_at": "2026-11-04T23:20:07+00:00"
-        }
-      ],
-      "top_terms": [
-        "nasa",
-        "spacecraft",
-        "navigation",
-        "experiment",
-        "promise"
-      ],
-      "digest": "NASA的ESCAPADE任务双航天器正飞往火星，因错过常规发射窗口，将执行动力弹弓机动以提升速度，抵达后以编队飞行模式运行。NASA在肯尼迪航天中心揭幕X-70 Fractal实验飞机，作为高性能、高适应性研究平台，旨在加速飞行研究。NASA一台太空望远镜在服役22年后于周三坠入地球，结束了对宇宙大爆炸的研究。NASA成功演示了用于航天器自主导航至月球及其他行星安全着陆点的技术，Alta-X无人机搭载该机构的安全精确着陆集成能力系统进行了测试。",
-      "digestTitle": "NASA航天器与实验飞机动态综述",
-      "rank": 2,
-      "trend": "up",
-      "trendPct": 32.7,
-      "badges": [
-        "rising"
-      ],
-      "heat": 51.5,
-      "status": "发酵中"
-    },
     {
       "terms": [
         "changes",
@@ -231,13 +25,13 @@
         "arXiv astro-ph.CO 论文速递"
       ],
       "score": 42.0,
-      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "latest_at": "2026-11-07T01:56:48.504578+00:00",
       "representative": {
         "title": "Are magnetic fields in cosmic voids primordial?",
         "url": "https://arxiv.org/abs/2505.14774",
         "source": "arXiv astro-ph.CO 论文速递",
         "published_at": "2026-11-06T05:00:00+00:00",
-        "score": 47.3,
+        "score": 47.1,
         "summary": "arXiv:2505.14774v3 Announce Type: replace Abstract: The existence and origin of magnetic fields in cosmic voids remains an open question: Observational evidence inferred from gamma-ray spectra of TeV blazars has been debated for over a deca",
         "zh_full": null,
         "refs": {
@@ -254,14 +48,14 @@
           "title": "Are magnetic fields in cosmic voids primordial?",
           "url": "https://arxiv.org/abs/2505.14774",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 47.3,
+          "score": 47.1,
           "published_at": "2026-11-06T05:00:00+00:00"
         },
         {
           "title": "Wacky magnetic fields of ice giants may stem from conductivity changes in their deep interiors",
           "url": "https://phys.org/news/2026-11-wacky-magnetic-fields-ice-giants.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.6,
+          "score": 36.5,
           "published_at": "2026-11-06T14:00:04+00:00"
         }
       ],
@@ -272,9 +66,11 @@
         "ice",
         "giants"
       ],
-      "rank": 3,
-      "trend": "new",
-      "trendPct": null,
+      "digest": "旅行者2号在1980年代发现天王星和海王星的磁场高度紊乱，与地球的清晰南北极不同。一项新研究提出，这些冰巨星内部深处的电导率变化可能是其怪异磁场的成因，而非此前认为的某种外部因素。该研究基于对冰巨星内部物质在高压高温下电导率行为的模拟，指出电导率的突变会扰乱磁场生成过程，导致磁场失去规则结构。这一解释仍需进一步观测验证，但为理解冰巨星磁场起源提供了新方向。",
+      "digestTitle": "冰巨星内部电导率变化或解释其紊乱磁场",
+      "rank": 1,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 42.0,
       "status": "关注中"
@@ -301,13 +97,13 @@
         "Phys.org 太空新闻"
       ],
       "score": 42.0,
-      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "latest_at": "2026-11-07T01:56:48.504578+00:00",
       "representative": {
         "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
         "url": "https://www.newscientist.com/article/2597221-hubble-space-telescope-is-falling-to-earth-should-nasa-save-it/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
         "source": "New Scientist 太空",
         "published_at": "2026-11-06T12:00:00+00:00",
-        "score": 61.0,
+        "score": 60.8,
         "summary": "The Hubble Space Telescope faces a fiery and fatal re-entry to Earth's atmosphere sometime around 2032, but NASA is asking the private sector for ideas to keep it working",
         "zh_full": null,
         "llm_score": 60.0
@@ -320,14 +116,14 @@
           "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
           "url": "https://www.newscientist.com/article/2597221-hubble-space-telescope-is-falling-to-earth-should-nasa-save-it/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 61.0,
+          "score": 60.8,
           "published_at": "2026-11-06T12:00:00+00:00"
         },
         {
           "title": "NASA's Swift telescope has burned up, months after a robot sent to save it failed",
           "url": "https://phys.org/news/2026-11-nasa-swift-telescope-months-robot.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.4,
+          "score": 60.2,
           "published_at": "2026-11-05T15:40:14+00:00"
         }
       ],
@@ -338,83 +134,105 @@
         "swift",
         "burned"
       ],
-      "rank": 4,
-      "trend": "new",
-      "trendPct": null,
+      "digest": "哈勃空间望远镜预计在2032年前后坠入地球大气层并烧毁，NASA正征求私营部门意见以延长其寿命。此前，NASA的斯威夫特望远镜因轨道衰减于2026年10月结束任务，尽管此前曾派机器人尝试救援但未成功。",
+      "digestTitle": "哈勃望远镜面临坠毁，NASA寻求私营部门救援方案",
+      "rank": 2,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 42.0,
       "status": "关注中"
     },
     {
       "terms": [
-        "away",
-        "blew",
-        "blower",
-        "bright",
-        "brighter",
-        "cosmic",
-        "early",
-        "explain",
-        "galaxies",
-        "light-propelled",
-        "mighty",
-        "universe",
-        "wind",
-        "winds"
+        "black",
+        "black hole",
+        "connecting",
+        "dark",
+        "dots",
+        "formation",
+        "growth",
+        "hold",
+        "hole",
+        "holes",
+        "jwst",
+        "little",
+        "matter",
+        "multi-cycle",
+        "primordial",
+        "program",
+        "seeds",
+        "space",
+        "telescope",
+        "treasury",
+        "webb"
       ],
-      "source_count": 2,
+      "source_count": 3,
       "signal_count": 2,
       "sources": [
+        "New Scientist 太空",
         "Phys.org 太空新闻",
-        "Universe Today"
+        "arXiv astro-ph.CO 论文速递"
       ],
-      "score": 42.0,
-      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "score": 35.3,
+      "latest_at": "2026-11-07T01:56:48.504578+00:00",
       "representative": {
-        "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
-        "url": "https://www.universetoday.com/articles/a-mighty-wind-blew-away-gas-and-made-early-galaxies-brighter",
-        "source": "Universe Today",
-        "published_at": "2026-11-05T17:11:33+00:00",
-        "score": 60.5,
-        "summary": "When astronomers looked at photos of the early universe taken by the James Webb Space Telescope, they found something odd: an overabundance of bright galaxies about 400 to 500 million years after the Big Bang. But these galaxies should have",
-        "zh_full": "当天文学家查看詹姆斯·韦伯太空望远镜拍摄的早期宇宙照片时，他们发现了一件奇怪的事：在大爆炸后约4亿至5亿年，明亮的星系数量过多。但宇宙诞生如此之早，这些星系本应远为稀少。研究人员可能已经弄清了原因：年轻恒星密集星团产生的强大紫外（莱曼阿尔法）辐射像吹叶机一样，将阻挡光线的气体和尘埃吹出星系，从而使星系看起来更亮。",
-        "llm_summary": "詹姆斯·韦伯太空望远镜观测显示，大爆炸后约4亿至5亿年存在过多明亮星系。研究人员提出，年轻恒星团产生的强大紫外辐射像吹叶机般吹走阻挡光线的气体和尘埃，使星系显得更亮。",
-        "llm_reason": "解释早期星系异常亮度成因",
-        "density": "中",
-        "llm_score": 63.5
+        "title": "Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program",
+        "url": "https://arxiv.org/abs/2611.07006",
+        "source": "arXiv astro-ph.CO 论文速递",
+        "published_at": "2026-11-06T05:00:00+00:00",
+        "score": 51.9,
+        "summary": "arXiv:2611.07006v1 Announce Type: cross Abstract: JWST has revealed an abundant population of faint active galactic nuclei and a new class of compact, high-redshift sources known as Little Red Dots (LRDs), whose physical nature remains deba",
+        "zh_full": "（无摘要，仅标题）本文标题为《Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program》，来自arXiv astro-ph.CO论文速递。标题表明研究使用JWST多周期巡天项目，探讨黑洞种子与小红点（LRDs）的形成与生长联系。",
+        "refs": {
+          "arxiv": "2611.07006",
+          "via": "feed_text",
+          "confidence": "verified"
+        },
+        "llm_summary": "（无摘要，仅标题）标题表明研究使用JWST多周期巡天项目，探讨黑洞种子与小红点（LRDs）的形成与生长联系。",
+        "density": "低"
       },
-      "folded_count": 1,
-      "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
-      "id": "1c1279a4bf0f",
+      "folded_count": 2,
+      "title": "Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program",
+      "id": "929fa7c53d1c",
       "links": [
         {
-          "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
-          "url": "https://www.universetoday.com/articles/a-mighty-wind-blew-away-gas-and-made-early-galaxies-brighter",
-          "source": "Universe Today",
-          "score": 60.5,
-          "published_at": "2026-11-05T17:11:33+00:00"
+          "title": "Webb Space Telescope's little red dots could hold key to first black holes",
+          "url": "https://phys.org/news/2026-11-webb-space-telescope-red-dots.html",
+          "source": "Phys.org 太空新闻",
+          "score": 65.0,
+          "published_at": "2026-11-05T14:20:02+00:00"
         },
         {
-          "title": "A cosmic 'leaf blower': Light-propelled winds help explain early universe's bright galaxies",
-          "url": "https://phys.org/news/2026-11-cosmic-leaf-blower-propelled-early.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.9,
-          "published_at": "2026-11-04T21:00:11+00:00"
+          "title": "Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program",
+          "url": "https://arxiv.org/abs/2611.07006",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 51.9,
+          "published_at": "2026-11-06T05:00:00+00:00"
+        },
+        {
+          "title": "Could primordial black holes hold the key to dark matter?",
+          "url": "https://www.newscientist.com/video/2597265-could-primordial-black-holes-hold-the-key-to-dark-matter/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 38.7,
+          "published_at": "2026-11-04T18:00:00+00:00"
         }
       ],
       "top_terms": [
-        "early",
-        "galaxies",
-        "cosmic",
-        "blower",
-        "propelled"
+        "black",
+        "little",
+        "red",
+        "dots",
+        "hold"
       ],
-      "rank": 5,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "digest": "约翰斯·霍普金斯大学的研究人员利用韦伯太空望远镜的数据，将目光投向宇宙中被称为“小红点”的致密高红移天体，认为它们可能是理解首批黑洞形成的关键。\n\n这些“小红点”是韦伯望远镜发现的一类新天体，其物理本质仍在争论中。研究人员提出，它们可能代表早期宇宙中活跃星系核或黑洞种子的候选者，并计划通过多周期观测项目进一步确认其性质。\n\n该研究团队称，这些天体或许能揭示黑洞如何在恒星形成之前就已存在，并可能为暗物质之谜提供线索。",
+      "digestTitle": "韦伯望远镜发现首批黑洞线索",
+      "rank": 3,
+      "trend": "down",
+      "trendPct": -33.4,
       "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
+      "heat": 35.3,
+      "status": "发酵中"
     },
     {
       "terms": [
@@ -446,13 +264,13 @@
         "arXiv astro-ph.CO 论文速递"
       ],
       "score": 24.5,
-      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "latest_at": "2026-11-07T01:56:48.504578+00:00",
       "representative": {
         "title": "Enhancing Gravitational Waves from Global Strings via a First-Order Phase Transition",
         "url": "https://arxiv.org/abs/2611.07416",
         "source": "arXiv astro-ph.CO 论文速递",
         "published_at": "2026-11-06T05:00:00+00:00",
-        "score": 50.3,
+        "score": 50.1,
         "summary": "arXiv:2611.07416v1 Announce Type: cross Abstract: We perform the first (3+1)-dimensional lattice simulations of a cosmological first-order phase transition (PT) in which true-vacuum bubbles with random phases nucleate, expand, and collide, ",
         "zh_full": null,
         "refs": {
@@ -469,14 +287,14 @@
           "title": "Enhancing Gravitational Waves from Global Strings via a First-Order Phase Transition",
           "url": "https://arxiv.org/abs/2611.07416",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 50.3,
+          "score": 50.1,
           "published_at": "2026-11-06T05:00:00+00:00"
         },
         {
           "title": "Scale-Invariant Three-Component Dark Matter and Gravitational Wave Signals",
           "url": "https://arxiv.org/abs/2611.07509",
           "source": "arXiv astro-ph.CO 论文速递",
-          "score": 50.3,
+          "score": 50.1,
           "published_at": "2026-11-06T05:00:00+00:00"
         },
         {
@@ -501,9 +319,9 @@
         "waves",
         "detectors"
       ],
-      "rank": 6,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 4,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 24.5,
       "status": "关注中"
@@ -530,7 +348,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "latest_at": "2026-11-07T01:56:48.504578+00:00",
       "representative": {
         "title": "Astronomers spot a giant planet that is as light as cotton candy",
         "url": "https://news.mit.edu/2024/astronomers-spot-giant-planet-light-as-cotton-candy-0514",
@@ -550,7 +368,7 @@
           "title": "Astronomers deliver the sharpest and deepest view yet of the low-frequency radio sky",
           "url": "https://phys.org/news/2026-11-astronomers-sharpest-deepest-view-frequency.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.4,
+          "score": 36.3,
           "published_at": "2026-11-06T00:40:06+00:00"
         },
         {
@@ -568,7 +386,7 @@
         "deepest",
         "view"
       ],
-      "rank": 7,
+      "rank": 5,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -597,7 +415,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "latest_at": "2026-11-07T01:56:48.504578+00:00",
       "representative": {
         "title": "MIT in the media: Exploring how curiosity-driven science is an essential ingredient in America’s success",
         "url": "https://news.mit.edu/2026/mit-media-exploring-how-curiosity-driven-science-essential-ingredient-americas-success",
@@ -617,7 +435,7 @@
           "title": "Connecting artificial intelligence with the tools of astrophysical research",
           "url": "https://phys.org/news/2026-11-artificial-intelligence-tools-astrophysical.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.4,
+          "score": 36.2,
           "published_at": "2026-11-05T22:00:07+00:00"
         },
         {
@@ -635,7 +453,7 @@
         "astrophysical",
         "research"
       ],
-      "rank": 8,
+      "rank": 6,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -661,13 +479,13 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "latest_at": "2026-11-07T01:56:48.504578+00:00",
       "representative": {
         "title": "Rusty crust made Mars warm and wet",
         "url": "https://www.newscientist.com/article/2596726-rusty-crust-made-mars-warm-and-wet/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
         "source": "New Scientist 太空",
         "published_at": "2026-10-30T15:00:00+00:00",
-        "score": 56.4,
+        "score": 56.2,
         "summary": "It's unclear how and why Mars once became warm enough to allow water to flow on its surface, but a new idea suggests it comes down to rust below the surface",
         "zh_full": "火星表面曾经有液态水流动，但它是如何以及为何变得足够温暖的，一直是个未解之谜。一项新研究提出，答案可能在于地表之下的铁锈。火星表面富含铁元素，铁在氧化（生锈）过程中会释放热量。研究者认为，火星地下的铁锈形成过程可能产生了足够的热量，使火星局部或整体升温，从而让水保持液态。这一机制或能解释火星早期温暖潮湿环境的成因。该假说仍需更多证据验证，但它为火星气候演化提供了新的思路。",
         "llm_summary": "火星曾有液态水流动，但变暖原因不明。新假说认为，地表下铁氧化生锈放热，可能为火星提供了足够热量，使其保持温暖湿润。该机制为火星早期气候之谜提供了新解释，但尚待验证。",
@@ -683,14 +501,14 @@
           "title": "Rusty crust made Mars warm and wet",
           "url": "https://www.newscientist.com/article/2596726-rusty-crust-made-mars-warm-and-wet/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 56.4,
+          "score": 56.2,
           "published_at": "2026-10-30T15:00:00+00:00"
         },
         {
           "title": "Earth's slowing spin may have shaped its primordial crust",
           "url": "https://phys.org/news/2026-11-earth-primordial-crust.html",
           "source": "Phys.org 太空新闻",
-          "score": 36.3,
+          "score": 36.1,
           "published_at": "2026-11-05T15:20:06+00:00"
         }
       ],
@@ -700,6 +518,148 @@
         "slowing",
         "spin",
         "shaped"
+      ],
+      "rank": 7,
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "away",
+        "blew",
+        "blower",
+        "bright",
+        "brighter",
+        "cosmic",
+        "early",
+        "explain",
+        "galaxies",
+        "light-propelled",
+        "mighty",
+        "universe",
+        "wind",
+        "winds"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-07T01:56:48.504578+00:00",
+      "representative": {
+        "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
+        "url": "https://www.universetoday.com/articles/a-mighty-wind-blew-away-gas-and-made-early-galaxies-brighter",
+        "source": "Universe Today",
+        "published_at": "2026-11-05T17:11:33+00:00",
+        "score": 60.3,
+        "summary": "When astronomers looked at photos of the early universe taken by the James Webb Space Telescope, they found something odd: an overabundance of bright galaxies about 400 to 500 million years after the Big Bang. But these galaxies should have",
+        "zh_full": "当天文学家查看詹姆斯·韦伯太空望远镜拍摄的早期宇宙照片时，他们发现了一件奇怪的事：在大爆炸后约4亿至5亿年，明亮的星系数量过多。但宇宙诞生如此之早，这些星系本应远为稀少。研究人员可能已经弄清了原因：年轻恒星密集星团产生的强大紫外（莱曼阿尔法）辐射像吹叶机一样，将阻挡光线的气体和尘埃吹出星系，从而使星系看起来更亮。",
+        "llm_summary": "詹姆斯·韦伯太空望远镜观测显示，大爆炸后约4亿至5亿年存在过多明亮星系。研究人员提出，年轻恒星团产生的强大紫外辐射像吹叶机般吹走阻挡光线的气体和尘埃，使星系显得更亮。",
+        "llm_reason": "解释早期星系异常亮度成因",
+        "density": "中",
+        "llm_score": 63.5
+      },
+      "folded_count": 1,
+      "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
+      "id": "1c1279a4bf0f",
+      "links": [
+        {
+          "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
+          "url": "https://www.universetoday.com/articles/a-mighty-wind-blew-away-gas-and-made-early-galaxies-brighter",
+          "source": "Universe Today",
+          "score": 60.3,
+          "published_at": "2026-11-05T17:11:33+00:00"
+        },
+        {
+          "title": "A cosmic 'leaf blower': Light-propelled winds help explain early universe's bright galaxies",
+          "url": "https://phys.org/news/2026-11-cosmic-leaf-blower-propelled-early.html",
+          "source": "Phys.org 太空新闻",
+          "score": 59.7,
+          "published_at": "2026-11-04T21:00:11+00:00"
+        }
+      ],
+      "top_terms": [
+        "early",
+        "galaxies",
+        "cosmic",
+        "blower",
+        "propelled"
+      ],
+      "rank": 8,
+      "trend": "down",
+      "trendPct": -50.0,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "aimed",
+        "asteroid",
+        "asteroids",
+        "blast",
+        "challenging",
+        "deflect",
+        "deflecting",
+        "influences",
+        "must",
+        "nuclear",
+        "oddball",
+        "shape",
+        "shapes",
+        "them",
+        "where"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-07T01:56:48.504578+00:00",
+      "representative": {
+        "title": "An asteroid's shape influences where a nuclear blast must be aimed to deflect it",
+        "url": "https://phys.org/news/2026-11-asteroid-nuclear-blast-aimed-deflect.html",
+        "source": "Phys.org 太空新闻",
+        "published_at": "2026-11-03T16:20:09+00:00",
+        "score": 58.9,
+        "summary": "If a dangerous asteroid were headed toward Earth, one defense could be a nuclear detonation to blast one side with X-rays and nudge it off course. But new simulations suggest that for a lumpy, irregular asteroid, exactly where those X-rays ",
+        "zh_full": "一项新研究通过模拟表明，如果一颗危险小行星正朝地球飞来，核爆偏转策略的效果可能取决于小行星的形状。该防御方案设想在目标附近引爆核装置，用X射线轰击小行星一侧，从而将其推离原有轨道。但新的模拟结果显示，对于形状不规则、表面凹凸不平的小行星，X射线击中位置的不同可能带来巨大差异。研究团队利用计算机模型模拟了不同形状小行星受到核爆X射线照射后的偏转效果，发现小行星的几何形状会显著影响能量传递和最终的速度变化。在实际任务规划中，必须根据目标小行星的精确形状和表面特征，仔细选择核爆的瞄准点，才能有效偏转其轨道。该研究强调了精确了解小行星物理特性对于行星防御任务的重要性，为未来可能的核偏转方案提供了新的科学依据。",
+        "llm_summary": "新模拟研究表明，核爆偏转小行星的效果受其形状影响显著。对于不规则小行星，X射线击中位置不同会导致偏转效果出现巨大差异，因此任务规划需根据目标形状精确选择瞄准点。",
+        "llm_reason": "行星防御关键模拟发现",
+        "density": "高"
+      },
+      "folded_count": 1,
+      "title": "An asteroid's shape influences where a nuclear blast must be aimed to deflect it",
+      "id": "f306c1bb20c1",
+      "links": [
+        {
+          "title": "An asteroid's shape influences where a nuclear blast must be aimed to deflect it",
+          "url": "https://phys.org/news/2026-11-asteroid-nuclear-blast-aimed-deflect.html",
+          "source": "Phys.org 太空新闻",
+          "score": 58.9,
+          "published_at": "2026-11-03T16:20:09+00:00"
+        },
+        {
+          "title": "Asteroids' Oddball Shapes Make Deflecting Them Challenging",
+          "url": "https://www.universetoday.com/articles/asteroids-oddball-shapes-make-deflecting-them-challenging",
+          "source": "Universe Today",
+          "score": 36.2,
+          "published_at": "2026-11-05T19:26:56+00:00"
+        }
+      ],
+      "top_terms": [
+        "asteroid",
+        "shape",
+        "influences",
+        "where",
+        "nuclear"
       ],
       "rank": 9,
       "trend": "new",
@@ -711,63 +671,69 @@
     {
       "terms": [
         "alien",
-        "civilizations",
-        "game",
-        "listen",
-        "scientists",
-        "search",
-        "seti",
-        "signals",
-        "theory",
-        "turn",
-        "when"
+        "atlas",
+        "behaves",
+        "enriched",
+        "interstellar",
+        "methane",
+        "object",
+        "ratio",
+        "same",
+        "star",
+        "visitor",
+        "water"
       ],
       "source_count": 2,
       "signal_count": 1,
       "sources": [
-        "Phys.org 太空新闻",
+        "Nature 天文和天体物理",
         "Universe Today"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-06T17:31:19.184919+00:00",
+      "latest_at": "2026-11-07T01:56:48.504578+00:00",
       "representative": {
-        "title": "Game Theory Helps SETI Search for Alien Civilizations",
-        "url": "https://www.universetoday.com/articles/game-theory-helps-seti-search-for-alien-civilizations",
-        "source": "Universe Today",
-        "published_at": "2026-11-04T20:50:16+00:00",
-        "score": 36.0,
-        "summary": "SETI can be more effective the more the targets in the search are refined. SETI's newest survey effort uses game theory to inform its search. It's based on the idea that other ETIs would almost certainly use the transit method to detect hab",
-        "zh_full": null
+        "title": "An enriched methane D/H ratio in the interstellar object 3I/ATLAS",
+        "url": "https://www.nature.com/articles/s41550-026-03002-5",
+        "source": "Nature 天文和天体物理",
+        "published_at": "2026-10-23T00:00:00+00:00",
+        "score": 51.1,
+        "summary": "",
+        "zh_full": null,
+        "refs": {
+          "doi": "10.1038/s41550-026-03002-5",
+          "via": "self_meta",
+          "confidence": "verified"
+        }
       },
       "folded_count": 1,
-      "title": "Game Theory Helps SETI Search for Alien Civilizations",
-      "id": "4cb46dfe564c",
+      "title": "An enriched methane D/H ratio in the interstellar object 3I/ATLAS",
+      "id": "10c3e388bac4",
       "links": [
         {
-          "title": "Game Theory Helps SETI Search for Alien Civilizations",
-          "url": "https://www.universetoday.com/articles/game-theory-helps-seti-search-for-alien-civilizations",
+          "title": "Interstellar Visitor 3I/ATLAS Shows Water Ice Behaves the Same Across Alien Star Systems",
+          "url": "https://www.universetoday.com/articles/interstellar-visitor-3iatlas-shows-water-ice-behaves-the-same-across-alien-star-systems",
           "source": "Universe Today",
-          "score": 36.0,
-          "published_at": "2026-11-04T20:50:16+00:00"
+          "score": 60.2,
+          "published_at": "2026-11-05T15:08:44+00:00"
         },
         {
-          "title": "When should we listen for alien signals? Scientists turn to game theory",
-          "url": "https://phys.org/news/2026-11-alien-scientists-game-theory.html",
-          "source": "Phys.org 太空新闻",
-          "score": 35.6,
-          "published_at": "2026-11-03T22:50:01+00:00"
+          "title": "An enriched methane D/H ratio in the interstellar object 3I/ATLAS",
+          "url": "https://www.nature.com/articles/s41550-026-03002-5",
+          "source": "Nature 天文和天体物理",
+          "score": 51.1,
+          "published_at": "2026-10-23T00:00:00+00:00"
         }
       ],
       "top_terms": [
-        "alien",
-        "game",
-        "theory",
-        "when",
-        "listen"
+        "interstellar",
+        "atlas",
+        "visitor",
+        "water",
+        "ice"
       ],
       "rank": 10,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"

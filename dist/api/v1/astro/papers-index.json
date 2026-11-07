@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T17:31:19.184919+00:00",
+  "generatedAt": "2026-11-07T01:56:48.504578+00:00",
   "channel": "astro",
   "count": 51,
   "items": [
@@ -31,20 +31,6 @@
       "category": "深空探测",
       "published_at": "2026-10-27T00:00:00+00:00",
       "selected": true
-    },
-    {
-      "id": "8739528c83eb",
-      "title": "Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program",
-      "channel": "astro",
-      "source": "arXiv astro-ph.CO 论文速递",
-      "url": "https://arxiv.org/abs/2611.07006",
-      "doi": null,
-      "arxiv": "2611.07006",
-      "via": "feed_text",
-      "confidence": "verified",
-      "category": "恒星与星际介质",
-      "published_at": "2026-11-06T05:00:00+00:00",
-      "selected": false
     },
     {
       "id": "b069af0f04ea",
@@ -85,6 +71,20 @@
       "via": "feed_text",
       "confidence": "verified",
       "category": "科研进展",
+      "published_at": "2026-11-06T05:00:00+00:00",
+      "selected": false
+    },
+    {
+      "id": "8739528c83eb",
+      "title": "Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program",
+      "channel": "astro",
+      "source": "arXiv astro-ph.CO 论文速递",
+      "url": "https://arxiv.org/abs/2611.07006",
+      "doi": null,
+      "arxiv": "2611.07006",
+      "via": "feed_text",
+      "confidence": "verified",
+      "category": "恒星与星际介质",
       "published_at": "2026-11-06T05:00:00+00:00",
       "selected": false
     },
@@ -523,20 +523,6 @@
       "selected": false
     },
     {
-      "id": "0ea4c823750d",
-      "title": "Retention of primordial atmospheres through giant impacts",
-      "channel": "astro",
-      "source": "Nature 天文和天体物理",
-      "url": "https://www.nature.com/articles/s41550-026-03006-1",
-      "doi": "10.1038/s41550-026-03006-1",
-      "arxiv": null,
-      "via": "self_meta",
-      "confidence": "verified",
-      "category": "科研进展",
-      "published_at": "2026-10-26T00:00:00+00:00",
-      "selected": false
-    },
-    {
       "id": "0925f8f60f6c",
       "title": "A double debris disc around a white dwarf sculpted by two planetary bodies",
       "channel": "astro",
@@ -557,6 +543,20 @@
       "source": "Nature 天文和天体物理",
       "url": "https://www.nature.com/articles/s42254-026-01007-7",
       "doi": "10.1038/s42254-026-01007-7",
+      "arxiv": null,
+      "via": "self_meta",
+      "confidence": "verified",
+      "category": "科研进展",
+      "published_at": "2026-10-26T00:00:00+00:00",
+      "selected": false
+    },
+    {
+      "id": "0ea4c823750d",
+      "title": "Retention of primordial atmospheres through giant impacts",
+      "channel": "astro",
+      "source": "Nature 天文和天体物理",
+      "url": "https://www.nature.com/articles/s41550-026-03006-1",
+      "doi": "10.1038/s41550-026-03006-1",
       "arxiv": null,
       "via": "self_meta",
       "confidence": "verified",
