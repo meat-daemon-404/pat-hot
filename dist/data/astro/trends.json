@@ -1,42 +1,42 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T01:56:48.504578+00:00",
-  "weekStart": "2026-11-01",
+  "generatedAt": "2026-11-07T16:26:55.420550+00:00",
+  "weekStart": "2026-11-02",
   "windowDays": 7,
-  "windowStart": "2026-11-01",
-  "windowEnd": "2026-11-07",
-  "prevStart": "2026-10-25",
-  "prevEnd": "2026-10-31",
+  "windowStart": "2026-11-02",
+  "windowEnd": "2026-11-08",
+  "prevStart": "2026-10-26",
+  "prevEnd": "2026-11-01",
   "categoryDelta": [
     {
-      "category": "深空探测",
-      "thisWeek": 1434.3,
-      "lastWeek": 1694.5,
-      "deltaPct": -15.4
-    },
-    {
-      "category": "其他",
-      "thisWeek": 1426.8,
-      "lastWeek": 1453.7,
-      "deltaPct": -1.9
-    },
-    {
       "category": "科研进展",
-      "thisWeek": 1361.1,
-      "lastWeek": 2012.2,
-      "deltaPct": -32.4
+      "thisWeek": 1419.7,
+      "lastWeek": 1951.5,
+      "deltaPct": -27.3
+    },
+    {
+      "category": "深空探测",
+      "thisWeek": 1406.3,
+      "lastWeek": 1774.5,
+      "deltaPct": -20.7
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 1224.4,
+      "thisWeek": 1281.4,
       "lastWeek": 1218.4,
-      "deltaPct": 0.5
+      "deltaPct": 5.2
+    },
+    {
+      "category": "其他",
+      "thisWeek": 1217.2,
+      "lastWeek": 1626.6,
+      "deltaPct": -25.2
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 845.9,
+      "thisWeek": 906.0,
       "lastWeek": 1206.6,
-      "deltaPct": -29.9
+      "deltaPct": -24.9
     },
     {
       "category": "引力波",
@@ -47,7 +47,7 @@
     {
       "category": "太阳与空间物理",
       "thisWeek": 0,
-      "lastWeek": 513.4,
+      "lastWeek": 459.1,
       "deltaPct": -100.0
     },
     {
@@ -62,12 +62,6 @@
       "topic_id": "25a8b115a98d",
       "title": "What’s Up: November 2026 Skywatching Tips from NASA",
       "score": 218.0,
-      "days": 1
-    },
-    {
-      "topic_id": "5740c82a8575",
-      "title": "APOD: 2026 November 1 – Colors of the Moon",
-      "score": 217.9,
       "days": 1
     },
     {
@@ -105,6 +99,12 @@
       "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
       "score": 120.6,
       "days": 2
+    },
+    {
+      "topic_id": "ee88d3278295",
+      "title": "Theory predicting an older universe without dark matter or dark energy passes key cosmological tests",
+      "score": 115.2,
+      "days": 1
     },
     {
       "topic_id": "8eec9527a814",

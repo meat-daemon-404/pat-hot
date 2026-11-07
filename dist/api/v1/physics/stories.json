@@ -1,93 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T01:56:48.504578+00:00",
+  "generatedAt": "2026-11-07T16:26:55.420550+00:00",
   "count": 10,
   "items": [
-    {
-      "id": "c92aac0ad9c7",
-      "title": "Quantum simulation of classical RCL circuits via complexification and Schr\\\"odingerization",
-      "status": "关注中",
-      "heat": 45.5,
-      "sourceCount": 2,
-      "signalCount": 3,
-      "latestAt": "2026-11-07T01:56:48.504578+00:00",
-      "sources": [
-        "Nature Physics 学科聚合",
-        "arXiv quant-ph 论文速递"
-      ],
-      "links": [
-        {
-          "title": "A novel cost-effective layout-aware quantum circuit synthesis of symmetric functions on triangular, square, and heavy-hex layouts",
-          "url": "https://www.nature.com/articles/s41598-026-79762-x",
-          "source": "Nature Physics 学科聚合",
-          "score": 61.9,
-          "published_at": "2026-11-06T00:00:00+00:00"
-        },
-        {
-          "title": "Quantum simulation of classical RCL circuits via complexification and Schr\\\"odingerization",
-          "url": "https://arxiv.org/abs/2611.07300",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 48.6,
-          "published_at": "2026-11-06T05:00:00+00:00"
-        },
-        {
-          "title": "Operational Characterizations and Resource Structure of the Interactive Weight of Quantum Instruments",
-          "url": "https://arxiv.org/abs/2611.07371",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 48.6,
-          "published_at": "2026-11-06T05:00:00+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "refs": {
-        "arxiv": "2611.07300",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
-    },
-    {
-      "id": "165a7e62805e",
-      "title": "Structured Quantum Hardness from Unstructured Assumptions",
-      "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-11-07T01:56:48.504578+00:00",
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "links": [
-        {
-          "title": "From chaos to 'intelligent' soft matter—how tiny chemical differences guide droplets into ordered structures",
-          "url": "https://phys.org/news/2026-11-chaos-intelligent-soft-tiny-chemical.html",
-          "source": "Phys.org 物理新闻",
-          "score": 60.8,
-          "published_at": "2026-11-06T14:20:01+00:00"
-        },
-        {
-          "title": "Structured Quantum Hardness from Unstructured Assumptions",
-          "url": "https://arxiv.org/abs/2611.07413",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-11-06T05:00:00+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "refs": {
-        "arxiv": "2611.07413",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
-    },
     {
       "id": "6495d6c43e0a",
       "title": "Imaging multi-particle dynamics in space and time",
@@ -95,7 +10,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-11-07T01:56:48.504578+00:00",
+      "latestAt": "2026-11-07T16:26:55.420550+00:00",
       "sources": [
         "Nature Physics 学科聚合",
         "Phys.org 物理新闻"
@@ -105,22 +20,22 @@
           "title": "Laser-plasma accelerator could generate bright X-rays for biological imaging, simulations show",
           "url": "https://phys.org/news/2026-11-laser-plasma-generate-bright-rays.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.4,
+          "score": 60.0,
           "published_at": "2026-11-06T00:00:02+00:00"
         },
         {
           "title": "Imaging multi-particle dynamics in space and time",
           "url": "https://www.nature.com/articles/s41563-026-02785-2",
           "source": "Nature Physics 学科聚合",
-          "score": 60.4,
+          "score": 60.0,
           "published_at": "2026-11-06T00:00:00+00:00"
         }
       ],
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": null,
-      "digestTitle": null,
+      "digest": "激光等离子体加速器通过模拟研究被证明能够产生波长在2.3至4.4纳米之间的X射线，即位于“水窗”波段，这一波段特别适合在自然水环境中观察生物样本。该发现为生物成像提供了一种潜在的新光源，但目前的结论基于模拟结果，尚未通过实验验证。",
+      "digestTitle": "激光等离子体加速器可产生水窗X射线用于生物成像",
       "refs": {
         "doi": "10.1038/s41563-026-02785-2",
         "via": "self_meta",
@@ -128,118 +43,47 @@
       }
     },
     {
-      "id": "5595e9386b1a",
-      "title": "Physical regimes of quartic quantum advantage in elastic media simulation",
-      "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-11-07T01:56:48.504578+00:00",
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "links": [
-        {
-          "title": "Physicist develops detector capable of counting photons for quantum computing",
-          "url": "https://phys.org/news/2026-11-physicist-detector-capable-photons-quantum.html",
-          "source": "Phys.org 物理新闻",
-          "score": 60.4,
-          "published_at": "2026-11-05T21:20:09+00:00"
-        },
-        {
-          "title": "Physical regimes of quartic quantum advantage in elastic media simulation",
-          "url": "https://arxiv.org/abs/2611.06975",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-11-06T05:00:00+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "refs": {
-        "arxiv": "2611.06975",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
-    },
-    {
-      "id": "47d868fab4e4",
-      "title": "Spin-Exchange-Controlled Nonclassical Light in Cavity Electromagnetically Induced Transparency",
+      "id": "0269b1a75ab0",
+      "title": "Software-defined polarization-diversity continuous-variable quantum key distribution heterodyne receiver",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-07T01:56:48.504578+00:00",
-      "sources": [
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "links": [
-        {
-          "title": "Spin-Exchange-Controlled Nonclassical Light in Cavity Electromagnetically Induced Transparency",
-          "url": "https://arxiv.org/abs/2611.07382",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.1,
-          "published_at": "2026-11-06T05:00:00+00:00"
-        },
-        {
-          "title": "Exactly solvable model reveals how trapped light can create magnetic order in one-dimensional spin chains",
-          "url": "https://phys.org/news/2026-11-solvable-reveals-magnetic-dimensional-chains.html",
-          "source": "Phys.org 物理新闻",
-          "score": 35.0,
-          "published_at": "2026-11-02T22:00:13+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "refs": {
-        "arxiv": "2611.07382",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
-    },
-    {
-      "id": "708d380c712c",
-      "title": "Spatiotemporal intensity-cycling microscopy unveils many-body interactions and correlated transport in van der Waals semiconductors",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-11-07T01:56:48.504578+00:00",
+      "latestAt": "2026-11-07T16:26:55.420550+00:00",
       "sources": [
         "Nature Physics 学科聚合",
         "Nature 量子物理"
       ],
       "links": [
         {
-          "title": "Spatiotemporal intensity-cycling microscopy unveils many-body interactions and correlated transport in van der Waals semiconductors",
-          "url": "https://www.nature.com/articles/s41563-026-02800-6",
+          "title": "Software-defined polarization-diversity continuous-variable quantum key distribution heterodyne receiver",
+          "url": "https://www.nature.com/articles/s41598-026-77883-x",
           "source": "Nature Physics 学科聚合",
-          "score": 60.4,
-          "published_at": "2026-11-06T00:00:00+00:00"
+          "score": 62.2,
+          "published_at": "2026-11-07T00:00:00+00:00"
         },
         {
-          "title": "Integrated on-chip quantum light sources on a van der Waals platform",
-          "url": "https://www.nature.com/articles/s41467-026-78806-0",
+          "title": "Efficient multi-basis quantum position verification secure against generalized adversaries",
+          "url": "https://www.nature.com/articles/s41534-026-01325-9",
           "source": "Nature 量子物理",
-          "score": 54.4,
-          "published_at": "2026-10-28T00:00:00+00:00"
+          "score": 57.5,
+          "published_at": "2026-10-31T00:00:00+00:00"
+        },
+        {
+          "title": "Efficient adaptive control strategy for multi-parameter quantum metrology in two-dimensional systems",
+          "url": "https://www.nature.com/articles/s42005-026-02912-0",
+          "source": "Nature 量子物理",
+          "score": 52.2,
+          "published_at": "2026-10-23T00:00:00+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null,
       "refs": {
-        "doi": "10.1038/s41563-026-02800-6",
+        "doi": "10.1038/s41598-026-77883-x",
         "via": "self_meta",
         "confidence": "verified"
       }
@@ -251,7 +95,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-07T01:56:48.504578+00:00",
+      "latestAt": "2026-11-07T16:26:55.420550+00:00",
       "sources": [
         "Nature 量子物理",
         "Phys.org 物理新闻"
@@ -261,19 +105,19 @@
           "title": "Particle collisions on a quantum computer",
           "url": "https://www.nature.com/articles/s41567-026-03490-2",
           "source": "Nature 量子物理",
-          "score": 51.1,
+          "score": 50.7,
           "published_at": "2026-10-23T00:00:00+00:00"
         },
         {
           "title": "A new route to calculating gluon production in proton–nucleus collisions",
           "url": "https://phys.org/news/2026-11-route-gluon-production-protonnucleus-collisions.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.9,
+          "score": 35.6,
           "published_at": "2026-11-05T01:20:01+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -291,7 +135,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-07T01:56:48.504578+00:00",
+      "latestAt": "2026-11-07T16:26:55.420550+00:00",
       "sources": [
         "Nature 量子物理",
         "Phys.org 物理新闻"
@@ -301,19 +145,19 @@
           "title": "Synthetic 2D quantum materials from atomic weaving of 1D nanoribbons",
           "url": "https://www.nature.com/articles/s42005-026-02936-6",
           "source": "Nature 量子物理",
-          "score": 57.8,
+          "score": 57.4,
           "published_at": "2026-11-02T00:00:00+00:00"
         },
         {
           "title": "A carefully timed pair of light pulses can amplify the motion of atomic layers in a quantum material",
           "url": "https://phys.org/news/2026-11-pair-pulses-amplify-motion-atomic.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.9,
+          "score": 35.6,
           "published_at": "2026-11-04T23:20:09+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -330,7 +174,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-07T01:56:48.504578+00:00",
+      "latestAt": "2026-11-07T16:26:55.420550+00:00",
       "sources": [
         "Nature 量子物理",
         "Phys.org 物理新闻"
@@ -340,19 +184,19 @@
           "title": "A nonlinear superinductor in a deep-submicrometre integrated circuit",
           "url": "https://www.nature.com/articles/s41928-026-01728-8",
           "source": "Nature 量子物理",
-          "score": 59.1,
+          "score": 58.7,
           "published_at": "2026-11-04T00:00:00+00:00"
         },
         {
           "title": "A new superinductor created within a silicon integrated circuit",
           "url": "https://phys.org/news/2026-11-superinductor-silicon-circuit.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.8,
+          "score": 35.6,
           "published_at": "2026-11-04T22:40:08+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -369,7 +213,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-07T01:56:48.504578+00:00",
+      "latestAt": "2026-11-07T16:26:55.420550+00:00",
       "sources": [
         "Nature 量子物理",
         "Phys.org 物理新闻"
@@ -379,14 +223,14 @@
           "title": "Order in a quantum chaotic sea",
           "url": "https://www.nature.com/articles/s41567-026-03513-y",
           "source": "Nature 量子物理",
-          "score": 53.8,
+          "score": 53.4,
           "published_at": "2026-10-27T00:00:00+00:00"
         },
         {
           "title": "Testing Einstein's laws from the bottom of the Mediterranean Sea",
           "url": "https://phys.org/news/2026-11-einstein-laws-bottom-mediterranean-sea.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.6,
+          "score": 35.3,
           "published_at": "2026-11-04T05:00:08+00:00"
         }
       ],
@@ -400,6 +244,142 @@
         "via": "self_meta",
         "confidence": "verified"
       }
+    },
+    {
+      "id": "f88aee2b5daf",
+      "title": "Physicists get first glimpse of the zeptoverse from LHC experiment",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-11-07T16:26:55.420550+00:00",
+      "sources": [
+        "New Scientist 物理",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "Physicists get first glimpse of the zeptoverse from LHC experiment",
+          "url": "https://www.newscientist.com/article/2597289-beauty-particle-decay-opens-the-door-to-the-zeptoverse/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 59.1,
+          "published_at": "2026-11-04T15:23:22+00:00"
+        },
+        {
+          "title": "Physicists step closer to the 'Zeptoverse' after 42-year particle search",
+          "url": "https://phys.org/news/2026-11-physicists-closer-zeptoverse-year-particle.html",
+          "source": "Phys.org 物理新闻",
+          "score": 35.1,
+          "published_at": "2026-11-03T15:40:30+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "0137751e50c8",
+      "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-11-07T16:26:55.420550+00:00",
+      "sources": [
+        "MIT News 物理",
+        "Quanta Magazine"
+      ],
+      "links": [
+        {
+          "title": "How an MIT graduate student helped a team of young scientists test their experiment at CERN",
+          "url": "https://news.mit.edu/2026/how-mit-grad-student-helped-young-scientists-test-their-experiment-cern-0828",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-28T20:35:00+00:00"
+        },
+        {
+          "title": "New Research Tests Whether AI Models Know Their Own Thoughts",
+          "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/",
+          "source": "Quanta Magazine",
+          "score": 35.5,
+          "published_at": "2026-11-04T15:32:52+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "f7089c5a5404",
+      "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-11-07T16:26:55.420550+00:00",
+      "sources": [
+        "MIT News 物理",
+        "Quanta Magazine"
+      ],
+      "links": [
+        {
+          "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star",
+          "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-08-12T15:00:00+00:00"
+        },
+        {
+          "title": "How Do You Take a Picture of a Black Hole?",
+          "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
+          "source": "Quanta Magazine",
+          "score": 33.1,
+          "published_at": "2026-10-29T15:11:57+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "7e7427289fca",
+      "title": "New research shows a neutrino laser is impossible",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-11-07T16:26:55.420550+00:00",
+      "sources": [
+        "MIT News 物理",
+        "New Scientist 物理"
+      ],
+      "links": [
+        {
+          "title": "Are we about to solve the greatest mystery of the neutrino?",
+          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 48.6,
+          "published_at": "2026-10-19T19:00:00+00:00"
+        },
+        {
+          "title": "New research shows a neutrino laser is impossible",
+          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-09-02T14:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
     }
   ]
 }

@@ -1,42 +1,42 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T01:56:48.504578+00:00",
-  "weekStart": "2026-11-01",
+  "generatedAt": "2026-11-07T16:26:55.420550+00:00",
+  "weekStart": "2026-11-02",
   "windowDays": 7,
-  "windowStart": "2026-11-01",
-  "windowEnd": "2026-11-07",
-  "prevStart": "2026-10-25",
-  "prevEnd": "2026-10-31",
+  "windowStart": "2026-11-02",
+  "windowEnd": "2026-11-08",
+  "prevStart": "2026-10-26",
+  "prevEnd": "2026-11-01",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4382.1,
-      "lastWeek": 5473.7,
-      "deltaPct": -19.9
+      "thisWeek": 4783.2,
+      "lastWeek": 4876.5,
+      "deltaPct": -1.9
     },
     {
       "category": "科研进展",
-      "thisWeek": 3791.2,
-      "lastWeek": 3362.1,
-      "deltaPct": 12.8
+      "thisWeek": 3790.7,
+      "lastWeek": 3444.5,
+      "deltaPct": 10.1
     },
     {
       "category": "光通信",
-      "thisWeek": 3526.8,
-      "lastWeek": 3267.3,
-      "deltaPct": 7.9
-    },
-    {
-      "category": "其他",
-      "thisWeek": 2795.2,
-      "lastWeek": 2580.1,
-      "deltaPct": 8.3
+      "thisWeek": 3346.6,
+      "lastWeek": 3151.9,
+      "deltaPct": 6.2
     },
     {
       "category": "产业与资本",
       "thisWeek": 2779.7,
       "lastWeek": 3030.3,
       "deltaPct": -8.3
+    },
+    {
+      "category": "其他",
+      "thisWeek": 2764.7,
+      "lastWeek": 2613.5,
+      "deltaPct": 5.8
     },
     {
       "category": "显示与面板",
@@ -46,15 +46,15 @@
     },
     {
       "category": "通信与算力",
-      "thisWeek": 1826.6,
-      "lastWeek": 1616.7,
-      "deltaPct": 13.0
+      "thisWeek": 1825.8,
+      "lastWeek": 1662.6,
+      "deltaPct": 9.8
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1583.8,
-      "lastWeek": 2195.5,
-      "deltaPct": -27.9
+      "thisWeek": 1576.2,
+      "lastWeek": 2158.7,
+      "deltaPct": -27.0
     },
     {
       "category": "光电芯片与半导体",
@@ -85,20 +85,38 @@
     {
       "topic_id": "0cf1b8f7e281",
       "title": "Crystal advances will help power next-gen fusion laser systems",
+      "score": 418.4,
+      "days": 4
+    },
+    {
+      "topic_id": "98f4b8731b7a",
+      "title": "工业和信息化部召开加快新一代通信网建设发展座谈会",
       "score": 313.8,
       "days": 3
     },
     {
-      "topic_id": "cf711748e825",
-      "title": "Photonics Hot List: October 30, 2026",
-      "score": 269.9,
+      "topic_id": "cd3547fd9611",
+      "title": "营收增长74.28%，净利润增长109.99%，光纤激光大厂“爆发”！",
+      "score": 260.0,
+      "days": 4
+    },
+    {
+      "topic_id": "0577aa38a964",
+      "title": "西藏通信管理局党组召开会议传达学习贯彻党的二十届五中全会精神",
+      "score": 247.6,
       "days": 3
     },
     {
-      "topic_id": "80632c0b00ac",
+      "topic_id": "e72397647396",
       "title": "Photonics Hot List: November 6, 2026",
-      "score": 266.9,
+      "score": 247.0,
       "days": 1
+    },
+    {
+      "topic_id": "13a8f78069ac",
+      "title": "Standardizing CPO won't matter if the substrate supply chain can’t keep up",
+      "score": 222.8,
+      "days": 4
     },
     {
       "topic_id": "c6b7eda62a5c",
@@ -107,33 +125,15 @@
       "days": 1
     },
     {
-      "topic_id": "98f4b8731b7a",
-      "title": "工业和信息化部召开加快新一代通信网建设发展座谈会",
-      "score": 209.2,
-      "days": 2
-    },
-    {
-      "topic_id": "cd3547fd9611",
-      "title": "营收增长74.28%，净利润增长109.99%，光纤激光大厂“爆发”！",
-      "score": 195.0,
-      "days": 3
-    },
-    {
       "topic_id": "1b38e21d6bfa",
       "title": "Colloidal 2D WS2 nanosheets exhibiting high-purity single photon emission",
       "score": 189.6,
       "days": 1
     },
     {
-      "topic_id": "0577aa38a964",
-      "title": "西藏通信管理局党组召开会议传达学习贯彻党的二十届五中全会精神",
-      "score": 183.0,
-      "days": 2
-    },
-    {
-      "topic_id": "13a8f78069ac",
-      "title": "Standardizing CPO won't matter if the substrate supply chain can’t keep up",
-      "score": 167.1,
+      "topic_id": "a66ccb893ec8",
+      "title": "SNAP optics could speed up optical communications",
+      "score": 160.9,
       "days": 3
     }
   ],
@@ -160,7 +160,7 @@
       "topic_id": "3db37b135ae4",
       "title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼",
       "days": 15,
-      "score": 910.6
+      "score": 879.2
     },
     {
       "topic_id": "8579455b5d54",
@@ -184,7 +184,7 @@
       "topic_id": "5bc32d86db90",
       "title": "大招齐发，英特尔直击网络转型",
       "days": 12,
-      "score": 1311.9
+      "score": 1306.2
     },
     {
       "topic_id": "569c89c31ce9",
@@ -195,8 +195,8 @@
     {
       "topic_id": "bc72d5d904af",
       "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
-      "days": 10,
-      "score": 471.0
+      "days": 9,
+      "score": 423.9
     }
   ]
 }
