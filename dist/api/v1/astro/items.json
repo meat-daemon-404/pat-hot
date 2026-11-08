@@ -1,8 +1,92 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T01:28:12.905572+00:00",
+  "generatedAt": "2026-11-08T16:41:13.719333+00:00",
   "count": 133,
   "items": [
+    {
+      "id": "297376bfd310",
+      "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+      "url": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/",
+      "channel": "astro",
+      "source": "NASA 快讯",
+      "source_base": "NASA 快讯",
+      "source_type": "rss",
+      "category": "深空探测",
+      "published_at": "2026-11-08T15:26:38+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "On Sunday, NASA announced the opening of its $1 million Moon Base Student Challenge during a MAX POWER event at Kennedy Space Center Visitor Complex in Florida. As part of a Golden Age of Science, the competition invites student teams at U.S. high schools and post-secondary schools to contribute designs for the Moon Base. “We’re […]",
+      "keywords": [
+        "announces",
+        "base",
+        "challenge",
+        "million",
+        "moon",
+        "nasa",
+        "students"
+      ],
+      "biz": null,
+      "score": 76.8,
+      "convergence": 0.667,
+      "topic_id": "778d0a04316c",
+      "topic_title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+      "links": {
+        "original": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/"
+      },
+      "tier": "official",
+      "selected": true,
+      "role": "官方",
+      "entities": [
+        "NASA"
+      ],
+      "event": "NASA宣布为学生提供100万美元月球基地挑战赛资金",
+      "tags": [
+        "月球基地",
+        "挑战赛",
+        "资金"
+      ]
+    },
+    {
+      "id": "9ad049d542a1",
+      "title": "Want to fly to the moon? NASA is looking for new astronauts to help grow its Artemis program",
+      "url": "https://phys.org/news/2026-11-fly-moon-nasa-astronauts-artemis.html",
+      "channel": "astro",
+      "source": "Phys.org 太空新闻",
+      "source_base": "Phys.org 太空新闻",
+      "source_type": "rss",
+      "category": "深空探测",
+      "published_at": "2026-11-08T11:45:12+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "Want to fly to the moon and help build a permanent lunar base? NASA is accepting applications for a new astronaut class that will help grow the Artemis program.",
+      "keywords": [
+        "artemis",
+        "astronauts",
+        "grow",
+        "looking",
+        "moon",
+        "nasa",
+        "program",
+        "want"
+      ],
+      "biz": null,
+      "score": 76.7,
+      "convergence": 0.667,
+      "topic_id": "778d0a04316c",
+      "topic_title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+      "links": {
+        "original": "https://phys.org/news/2026-11-fly-moon-nasa-astronauts-artemis.html"
+      },
+      "tier": "media",
+      "selected": true,
+      "role": "科研",
+      "entities": [
+        "NASA"
+      ],
+      "event": "NASA招募新宇航员以支持Artemis计划",
+      "tags": [
+        "宇航员",
+        "Artemis计划"
+      ]
+    },
     {
       "id": "f7db55ad6c8d",
       "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
@@ -13,7 +97,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-11-07T22:47:03+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "NASA announced a suite of awards and mission updates on Saturday to expand the agency’s Moon Base exploration, science, and infrastructure capabilities. The investments will advance commercial robotic deliveries, a nuclear-powered rover named PROMISE, launch and orbital transfer services, and surface infrastructure as the agency works with American industry to establish a sustained presence on […]",
       "keywords": [
         "awards",
@@ -25,16 +109,25 @@
         "transportation"
       ],
       "biz": null,
-      "score": 73.8,
+      "score": 76.3,
       "convergence": 0.667,
-      "topic_id": "888a752ed227",
-      "topic_title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+      "topic_id": "778d0a04316c",
+      "topic_title": "NASA Announces $1 Million to Students for Moon Base Challenge",
       "links": {
         "original": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/"
       },
       "tier": "official",
       "selected": true,
-      "role": "官方"
+      "role": "官方",
+      "entities": [
+        "NASA"
+      ],
+      "event": "NASA授予月球基地运输、技术和科学项目合同",
+      "tags": [
+        "月球基地",
+        "运输",
+        "技术"
+      ]
     },
     {
       "id": "c83454f9eb81",
@@ -46,7 +139,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-11-07T18:11:57+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "NASA is looking for the explorers who will help write the next chapter of human spaceflight. Applications are now open for the agency’s next class of astronauts, who will join NASA as America returns to the Moon, builds the Moon Base, and lays the groundwork for the first crewed missions to Mars. The next generation […]",
       "keywords": [
         "astronaut",
@@ -58,10 +151,10 @@
         "seeks"
       ],
       "biz": null,
-      "score": 73.6,
+      "score": 76.2,
       "convergence": 0.667,
-      "topic_id": "888a752ed227",
-      "topic_title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+      "topic_id": "778d0a04316c",
+      "topic_title": "NASA Announces $1 Million to Students for Moon Base Challenge",
       "zh_full": "NASA正在寻找能够书写人类太空飞行新篇章的探索者。该机构下一批宇航员申请现已开放，这些宇航员将在美国重返月球、建设月球基地以及为首次载人火星任务奠定基础之际加入NASA。下一代宇航员将加入一支由经验丰富的宇航员组成的队伍，继续支持国际空间站上的科学研究，并参与阿尔忒弥斯任务，为月球表面及更远地区的探索做出贡献。",
       "llm_summary": "NASA已开放下一批宇航员申请。新宇航员将在美国重返月球、建设月球基地和准备载人火星任务的背景下加入，并参与国际空间站科研与阿尔忒弥斯任务。",
       "llm_reason": "NASA开放新一批宇航员申请，涉及月球与火星探索计划",
@@ -71,7 +164,14 @@
       },
       "tier": "official",
       "selected": true,
-      "role": "官方"
+      "role": "官方",
+      "entities": [
+        "NASA"
+      ],
+      "event": "NASA招募新一代宇航员候选人",
+      "tags": [
+        "宇航员招募"
+      ]
     },
     {
       "id": "310b9dccec87",
@@ -83,7 +183,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-11-06T16:35:09+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "NASA's ESCAPADE mission features a pair of identical spacecraft on their way to Mars. They launched outside of the normal launch window, so they'll perform powered slingshot maneuvers to boost their speed. Once there, they'll \"fly\" in formation and study how the solar wind interacts with what remains of Mars ancient magnetosphere.",
       "keywords": [
         "execute",
@@ -96,10 +196,10 @@
         "twin"
       ],
       "biz": null,
-      "score": 72.9,
+      "score": 75.5,
       "convergence": 0.667,
-      "topic_id": "888a752ed227",
-      "topic_title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+      "topic_id": "778d0a04316c",
+      "topic_title": "NASA Announces $1 Million to Students for Moon Base Challenge",
       "zh_full": "NASA的ESCAPADE任务包含一对相同的航天器，它们正在前往火星的途中。由于它们在正常发射窗口之外发射，因此将执行动力弹弓机动来提升速度。抵达火星后，它们将以编队形式“飞行”，研究太阳风如何与火星古代磁层的残留物相互作用。",
       "llm_summary": "NASA的ESCAPADE任务使用一对相同航天器前往火星，因发射窗口错过而采用动力弹弓机动加速。到达后，它们将编队飞行，研究太阳风与火星古代磁层残留物的相互作用。",
       "llm_reason": "火星探测任务细节",
@@ -124,7 +224,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-11-04T20:40:11+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "One of NASA's premier space telescopes plunged to Earth on Wednesday, ending its 22-year investigation of the universe's biggest explosions.",
       "keywords": [
         "cosmic",
@@ -138,10 +238,10 @@
         "telescope"
       ],
       "biz": null,
-      "score": 71.7,
+      "score": 74.3,
       "convergence": 0.667,
-      "topic_id": "888a752ed227",
-      "topic_title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+      "topic_id": "778d0a04316c",
+      "topic_title": "NASA Announces $1 Million to Students for Moon Base Challenge",
       "zh_full": "NASA的一台旗舰太空望远镜于周三坠入地球，结束了其长达22年对宇宙最大爆炸的研究。该望远镜在服役期间持续观测伽马射线暴等宇宙高能事件，为理解恒星死亡、黑洞形成及宇宙演化提供了关键数据。其坠毁标志着这一长期任务的终结，但科学家表示，该望远镜积累的数据仍将在未来多年内被分析利用。此次再入是任务生命周期的自然结束，望远镜在轨运行期间远超原定设计寿命。NASA未透露具体坠毁地点，但表示再入过程未造成地面威胁。该望远镜的退役使NASA在瞬变天体观测领域留下空缺，后续任务将接替其角色。",
       "llm_summary": "NASA一台太空望远镜在完成22年宇宙爆炸研究后坠入地球。该望远镜长期观测伽马射线暴等宇宙高能事件，为理解恒星死亡和黑洞形成提供了关键数据。其再入标志着任务终结，但积累的数据仍将供未来研究使用。",
       "llm_reason": "重要太空任务结束，具有历史意义",
@@ -166,7 +266,7 @@
       "source_type": "rss",
       "category": "星系与宇宙学",
       "published_at": "2026-11-05T14:20:02+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Johns Hopkins researchers searching the expanse of the universe for the existence of the first black holes are zeroing in on little red dots that may hold the key to the theoretical phenomenon.",
       "keywords": [
         "black",
@@ -179,9 +279,9 @@
         "webb"
       ],
       "biz": null,
-      "score": 64.4,
+      "score": 65.4,
       "convergence": 0.5,
-      "topic_id": "091433c2113a",
+      "topic_id": "b33b5a0083eb",
       "topic_title": "Even stupendous black holes can’t explain dark matter",
       "zh_full": "约翰斯·霍普金斯大学的研究人员正在宇宙中搜寻最早黑洞的存在，他们将目光聚焦于可能掌握这一理论现象关键的小红点。这些小红点由韦布空间望远镜观测到，被认为是早期宇宙中活跃黑洞的候选者。研究团队通过分析这些天体的光谱特征和辐射模式，试图确认它们是否确实由超大质量黑洞驱动。如果证实，这将为理解黑洞如何在宇宙大爆炸后不久形成和演化提供直接证据。目前，研究仍处于观测与理论对比阶段，科学家需要更多数据来区分小红点是由黑洞吸积盘还是其他机制（如星暴活动）产生的辐射。这一发现若成立，将填补早期宇宙黑洞形成理论的空白，并可能改变对星系与黑洞共同演化的认知。",
       "llm_summary": "约翰斯·霍普金斯大学的研究人员利用韦布空间望远镜观测到的小红点，寻找宇宙中最早的黑洞。这些小红点可能是早期宇宙中活跃黑洞的候选者，研究通过分析其光谱特征来确认其性质。若证实，将提供黑洞在宇宙早期形成与演化的直接证据，并影响对星系与黑洞共同演化的理解。",
@@ -198,6 +298,82 @@
       "role": "科研"
     },
     {
+      "id": "89e4a2a5a4ba",
+      "title": "Revered NASA spacecraft is about to perish in flames — astronomers are mourning",
+      "url": "https://www.nature.com/articles/d41586-026-03461-w",
+      "channel": "astro",
+      "source": "Nature 天文和天体物理",
+      "source_base": "Nature 天文和天体物理",
+      "source_type": "rss",
+      "category": "深空探测",
+      "published_at": "2026-10-27T00:00:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": null,
+      "keywords": [
+        "astronomers",
+        "flames",
+        "mourning",
+        "nasa",
+        "perish",
+        "revered",
+        "spacecraft"
+      ],
+      "biz": null,
+      "score": 61.6,
+      "convergence": 0.667,
+      "topic_id": "778d0a04316c",
+      "topic_title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+      "refs": {
+        "doi": "10.1038/d41586-026-03461-w",
+        "via": "self_meta",
+        "confidence": "verified"
+      },
+      "zh_full": "（无摘要，仅标题）备受尊敬的NASA航天器即将在火焰中毁灭，天文学家们正在哀悼。",
+      "llm_summary": "备受尊敬的NASA航天器即将在火焰中毁灭，天文学家们正在哀悼。",
+      "density": "低",
+      "llm_score": 21.5,
+      "llm_score_a": 35.0,
+      "llm_score_b": 8.0,
+      "links": {
+        "original": "https://www.nature.com/articles/d41586-026-03461-w"
+      },
+      "tier": "official",
+      "selected": false,
+      "role": "科研"
+    },
+    {
+      "id": "a2fefd19de54",
+      "title": "The Sky Today on Sunday, November 8: Io and Callisto race across Jupiter",
+      "url": "https://www.astronomy.com/observing/the-sky-today-sunday-november-8-2026/",
+      "channel": "astro",
+      "source": "Astronomy Magazine",
+      "source_base": "Astronomy Magazine",
+      "source_type": "rss",
+      "category": "深空探测",
+      "published_at": "2026-11-08T09:00:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "Looking for a sky event this week? Check out our full Sky This Week column. November 7: Venus meets the Moon Rising with the stars of western Leo shortly before midnight, bright Jupiter and its Galilean moons put on a show early this morning, better visible the farther east you’re located. Jupiter is just under 5° northwest Continue reading \"The Sky Today on Sunday, November 8: Io and Callisto race across Jupiter\" The post The Sky Today on Sunday, November 8: Io and Callisto race across Jupiter appeared first on Astronomy Magazine .",
+      "keywords": [
+        "callisto",
+        "jupiter",
+        "november",
+        "race",
+        "sunday",
+        "today"
+      ],
+      "biz": null,
+      "score": 60.6,
+      "convergence": 0.167,
+      "topic_id": "fdf2bd71bb30",
+      "topic_title": "The Sky Today on Sunday, November 8: Io and Callisto race across Jupiter",
+      "links": {
+        "original": "https://www.astronomy.com/observing/the-sky-today-sunday-november-8-2026/"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "媒体"
+    },
+    {
       "id": "c07327f9c138",
       "title": "Vibrating mirrors of light create analog of a black hole event horizon",
       "url": "https://phys.org/news/2026-11-vibrating-mirrors-analog-black-hole.html",
@@ -207,7 +383,7 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2026-11-06T17:40:11+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Optical cavities are pairs of light-trapping mirrors and underpin the operation of lasers, atomic clocks and many types of precision sensors. If the distance between the mirrors is changed rapidly enough, some theories predict that the waves inside them should bunch together into short, intense pulses. So far, however, this prediction has never been tested directly.",
       "keywords": [
         "analog",
@@ -220,7 +396,7 @@
         "vibrating"
       ],
       "biz": null,
-      "score": 60.3,
+      "score": 59.9,
       "convergence": 0.333,
       "topic_id": "fd07cb226a99",
       "topic_title": "Pair of distinct black hole mergers sheds new light on nature of their formation and evolution",
@@ -236,6 +412,82 @@
       "role": "科研"
     },
     {
+      "id": "23943e2ac06e",
+      "title": "The Sky Today on Saturday, November 7: Venus meets the Moon",
+      "url": "https://www.astronomy.com/observing/the-sky-today-saturday-november-7-2026/",
+      "channel": "astro",
+      "source": "Astronomy Magazine",
+      "source_base": "Astronomy Magazine",
+      "source_type": "rss",
+      "category": "深空探测",
+      "published_at": "2026-11-07T09:00:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "Looking for a sky event this week? Check out our full Sky This Week column. November 6: Nab the North America Nebula Venus is already primed to capture attention above the eastern horizon before sunrise. This morning, the Moon passes 1.1° due south of Earth’s sister planet at 7 A.M. EST. You can easily catch the pair Continue reading \"The Sky Today on Saturday, November 7: Venus meets the Moon\" The post The Sky Today on Saturday, November 7: Venus meets the Moon appeared first on Astronomy Magazine .",
+      "keywords": [
+        "meets",
+        "moon",
+        "november",
+        "saturday",
+        "today",
+        "venus"
+      ],
+      "biz": null,
+      "score": 59.9,
+      "convergence": 0.167,
+      "topic_id": "fdf2bd71bb30",
+      "topic_title": "The Sky Today on Sunday, November 8: Io and Callisto race across Jupiter",
+      "llm_score": 28.5,
+      "llm_score_a": 45.0,
+      "llm_score_b": 12.0,
+      "links": {
+        "original": "https://www.astronomy.com/observing/the-sky-today-saturday-november-7-2026/"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "媒体"
+    },
+    {
+      "id": "d845b3e45f0b",
+      "title": "A galaxy nicknamed Misty Moons offers a glimpse of early star formation",
+      "url": "https://phys.org/news/2026-11-galaxy-nicknamed-misty-moons-glimpse.html",
+      "channel": "astro",
+      "source": "Phys.org 太空新闻",
+      "source_base": "Phys.org 太空新闻",
+      "source_type": "rss",
+      "category": "恒星与星际介质",
+      "published_at": "2026-11-06T12:40:10+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "Gravitational lensing is one of astronomy's best tricks for seeing the early universe. When a massive galaxy cluster sits in between the observer and a distant object, its gravity bends and magnifies the distant object's light, acting like a giant natural magnifying glass. Galaxies that would otherwise be too faint to spot suddenly come into view because of gravitational lensing.",
+      "keywords": [
+        "early",
+        "formation",
+        "galaxy",
+        "glimpse",
+        "misty",
+        "moons",
+        "nicknamed",
+        "star"
+      ],
+      "biz": null,
+      "score": 59.7,
+      "convergence": 0.333,
+      "topic_id": "8cba20036180",
+      "topic_title": "A ∧-like metallicity profile in the disk of the Sagittarius dwarf galaxy",
+      "zh_full": "引力透镜是天文学观测早期宇宙的最佳手段之一。当一个巨大的星系团位于观测者与遥远天体之间时，其引力会弯曲并放大遥远天体的光线，如同一个天然的巨大放大镜。由于引力透镜的作用，原本暗弱到难以发现的星系会突然进入视野。一颗昵称为“雾月”（Misty Moons）的星系，正是通过这一效应被观测到，为研究早期恒星形成提供了难得一瞥。该星系因引力透镜而被显著增亮，使天文学家得以详细分析其内部恒星形成过程。这一发现有助于理解宇宙早期星系如何演化、恒星如何诞生，为构建更完整的早期宇宙图景提供了关键观测样本。",
+      "llm_summary": "引力透镜利用前景星系团的引力放大遥远星系的光线，使原本暗弱的星系变得可见。一颗昵称为“雾月”的星系正是通过这一效应被观测到，为研究早期恒星形成提供了难得一瞥，有助于理解宇宙早期星系的演化。",
+      "llm_reason": "引力透镜揭示早期恒星形成，观测意义重大",
+      "density": "高",
+      "llm_score": 37.0,
+      "llm_score_a": 62.0,
+      "llm_score_b": 12.0,
+      "links": {
+        "original": "https://phys.org/news/2026-11-galaxy-nicknamed-misty-moons-glimpse.html"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "科研"
+    },
+    {
       "id": "3cc3620c0261",
       "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
       "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
@@ -245,7 +497,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-11-06T13:19:47+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The phenomenon of a Full Moon arises when our planet, Earth, is precisely sandwiched between the Sun and the Moon. This alignment ensures the entire side of the Moon that faces us gleams under sunlight. Thanks to the Moon’s orbit around Earth, the angle of sunlight hitting the lunar surface and being reflected back to Continue reading \"2026 Full Moon calendar: When to see the Full Moon and phases\" The post 2026 Full Moon calendar: When to see the Full Moon and phases appeared first on Astronomy Magazine .",
       "keywords": [
         "calendar",
@@ -255,7 +507,7 @@
         "when"
       ],
       "biz": null,
-      "score": 60.2,
+      "score": 59.7,
       "convergence": 0.333,
       "topic_id": "9ce52c24f555",
       "topic_title": "High-orbit satellites could light the way for travel to the moon",
@@ -274,47 +526,6 @@
       "role": "媒体"
     },
     {
-      "id": "d845b3e45f0b",
-      "title": "A galaxy nicknamed Misty Moons offers a glimpse of early star formation",
-      "url": "https://phys.org/news/2026-11-galaxy-nicknamed-misty-moons-glimpse.html",
-      "channel": "astro",
-      "source": "Phys.org 太空新闻",
-      "source_base": "Phys.org 太空新闻",
-      "source_type": "rss",
-      "category": "恒星与星际介质",
-      "published_at": "2026-11-06T12:40:10+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "Gravitational lensing is one of astronomy's best tricks for seeing the early universe. When a massive galaxy cluster sits in between the observer and a distant object, its gravity bends and magnifies the distant object's light, acting like a giant natural magnifying glass. Galaxies that would otherwise be too faint to spot suddenly come into view because of gravitational lensing.",
-      "keywords": [
-        "early",
-        "formation",
-        "galaxy",
-        "glimpse",
-        "misty",
-        "moons",
-        "nicknamed",
-        "star"
-      ],
-      "biz": null,
-      "score": 60.1,
-      "convergence": 0.333,
-      "topic_id": "8cba20036180",
-      "topic_title": "A ∧-like metallicity profile in the disk of the Sagittarius dwarf galaxy",
-      "zh_full": "引力透镜是天文学观测早期宇宙的最佳手段之一。当一个巨大的星系团位于观测者与遥远天体之间时，其引力会弯曲并放大遥远天体的光线，如同一个天然的巨大放大镜。由于引力透镜的作用，原本暗弱到难以发现的星系会突然进入视野。一颗昵称为“雾月”（Misty Moons）的星系，正是通过这一效应被观测到，为研究早期恒星形成提供了难得一瞥。该星系因引力透镜而被显著增亮，使天文学家得以详细分析其内部恒星形成过程。这一发现有助于理解宇宙早期星系如何演化、恒星如何诞生，为构建更完整的早期宇宙图景提供了关键观测样本。",
-      "llm_summary": "引力透镜利用前景星系团的引力放大遥远星系的光线，使原本暗弱的星系变得可见。一颗昵称为“雾月”的星系正是通过这一效应被观测到，为研究早期恒星形成提供了难得一瞥，有助于理解宇宙早期星系的演化。",
-      "llm_reason": "引力透镜揭示早期恒星形成，观测意义重大",
-      "density": "高",
-      "llm_score_a": 62.0,
-      "llm_score_b": 12.0,
-      "llm_score": 37.0,
-      "links": {
-        "original": "https://phys.org/news/2026-11-galaxy-nicknamed-misty-moons-glimpse.html"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "科研"
-    },
-    {
       "id": "7eb758c1263d",
       "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
       "url": "https://www.newscientist.com/article/2597221-hubble-space-telescope-is-falling-to-earth-should-nasa-save-it/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
@@ -324,7 +535,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-11-06T12:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The Hubble Space Telescope faces a fiery and fatal re-entry to Earth's atmosphere sometime around 2032, but NASA is asking the private sector for ideas to keep it working",
       "keywords": [
         "earth",
@@ -336,7 +547,7 @@
         "telescope"
       ],
       "biz": null,
-      "score": 60.1,
+      "score": 59.7,
       "convergence": 0.333,
       "topic_id": "1d6980ba5778",
       "topic_title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
@@ -364,7 +575,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-11-06T09:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The race to build a moon base is ramping up. Columnist Robin George Andrews explores how NASA is preparing by sending a cave-hunting robot ahead of humans",
       "keywords": [
         "base",
@@ -377,17 +588,17 @@
         "robot"
       ],
       "biz": null,
-      "score": 60.0,
+      "score": 59.6,
       "convergence": 0.333,
       "topic_id": "76d54ee0d127",
       "topic_title": "Robotic “SuperLimbs” could help moonwalkers recover from falls",
-      "llm_score": 40.0,
-      "llm_score_a": 45.0,
-      "llm_score_b": 35.0,
       "zh_full": "建立月球基地的竞赛正在加速。专栏作家罗宾·乔治·安德鲁斯（Robin George Andrews）探讨了NASA如何通过向月球洞穴发射一台名为GIMLI的探测机器人，为人类先行探路。该机器人将深入月球洞穴，评估其作为未来月球基地潜在选址的可行性。月球洞穴可能提供天然庇护，抵御辐射、微陨石撞击和极端温度变化，因此被视为建立长期月球基地的理想候选地点。GIMLI的任务将收集洞穴内部环境数据，为后续载人任务和基地建设提供关键信息。",
       "llm_summary": "建立月球基地的竞赛正在加速。NASA计划通过洞穴探测机器人GIMLI探索月球洞穴，评估其作为未来月球基地选址的可行性。洞穴可能提供天然庇护，抵御辐射和极端温度，是长期基地的理想候选地点。",
       "llm_reason": "月球洞穴探测机器人，为基地选址探路",
       "density": "中",
+      "llm_score": 40.0,
+      "llm_score_a": 45.0,
+      "llm_score_b": 35.0,
       "links": {
         "original": "https://www.newscientist.com/article/2597780-a-robot-called-gimli-will-explore-a-lunar-cave-for-a-future-moon-base/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS"
       },
@@ -396,45 +607,43 @@
       "role": "媒体"
     },
     {
-      "id": "1adcb053de5b",
-      "title": "NASA's Swift telescope has burned up, months after a robot sent to save it failed",
-      "url": "https://phys.org/news/2026-11-nasa-swift-telescope-months-robot.html",
+      "id": "07b079569d0e",
+      "title": "The Sky Today on Friday, November 6: Nab the North America Nebula",
+      "url": "https://www.astronomy.com/observing/the-sky-today-friday-november-6-2026/",
       "channel": "astro",
-      "source": "Phys.org 太空新闻",
-      "source_base": "Phys.org 太空新闻",
+      "source": "Astronomy Magazine",
+      "source_base": "Astronomy Magazine",
       "source_type": "rss",
-      "category": "科研进展",
-      "published_at": "2026-11-05T15:40:14+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "NASA's Neil Gehrels Swift Observatory took its last look at the sky on Oct. 20, 2026, while orbiting about 171 miles (275 kilometers) above Earth. NASA ended the telescope's mission three days later, because Swift had sunk so low that drag from the thin air there meant its telescopes couldn't hold steady.",
+      "category": "恒星与星际介质",
+      "published_at": "2026-11-06T09:00:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "Looking for a sky event this week? Check out our full Sky This Week column. November 5: Smoke out the Southern Cigar As fall gets into full swing, we are seeing less of the summertime stars. By 6 P.M. local time, the Summer Triangle — which flies high overhead on short summer nights — is now starting Continue reading \"The Sky Today on Friday, November 6: Nab the North America Nebula\" The post The Sky Today on Friday, November 6: Nab the North America Nebula appeared first on Astronomy Magazine .",
       "keywords": [
-        "burned",
-        "failed",
-        "nasa",
-        "robot",
-        "save",
-        "sent",
-        "swift",
-        "telescope"
+        "america",
+        "friday",
+        "nebula",
+        "north",
+        "november",
+        "today"
       ],
       "biz": null,
-      "score": 59.6,
-      "convergence": 0.333,
-      "topic_id": "1d6980ba5778",
-      "topic_title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
-      "zh_full": "NASA的尼尔·格雷尔斯斯威夫特天文台（Neil Gehrels Swift Observatory）于2026年10月20日进行了最后一次天空观测，当时它在地球上空约171英里（275公里）的轨道上运行。由于斯威夫特已下沉到如此低的高度，稀薄空气产生的阻力导致其望远镜无法保持稳定，NASA在三天后结束了该望远镜的任务。此前，一台被派去拯救它的机器人未能成功。斯威夫特天文台是一台多波段天文观测卫星，曾在天文学中发挥重要作用，其任务终结标志着这一观测平台的退役。",
-      "llm_summary": "NASA的斯威夫特天文台因轨道过低、空气阻力导致望远镜无法稳定，于2026年10月20日完成最后一次观测，三天后任务结束。此前一台机器人拯救任务失败。",
-      "llm_reason": "重要天文台退役，任务终结",
+      "score": 59.3,
+      "convergence": 0.167,
+      "topic_id": "fdf2bd71bb30",
+      "topic_title": "The Sky Today on Sunday, November 8: Io and Callisto race across Jupiter",
+      "zh_full": "《天文学杂志》发布本周天空观测指南，推荐读者关注周五（11月6日）的夜空，重点目标为北美星云。文章指出，随着秋季深入，夏季星空逐渐淡出视野。在地方时间下午6点，夏季大三角——在短暂夏夜中高悬头顶的星群——已开始西沉。观测指南建议天文爱好者利用晴朗夜晚，使用双筒望远镜或小型望远镜寻找北美星云。该星云位于天鹅座方向，因轮廓酷似北美大陆而得名，是秋季夜空中的著名深空天体。文章还提及11月5日的观测建议，涉及南雪茄星系等目标。这是《天文学杂志》每周更新的常规观测栏目，为不同水平的天文爱好者提供实用的观星指引。",
+      "llm_summary": "《天文学杂志》发布周五（11月6日）观测指南，推荐观测北美星云。随着秋季深入，夏季大三角已开始西沉，建议使用双筒或小型望远镜寻找位于天鹅座的该星云。",
+      "llm_reason": "实用观星指南",
       "density": "中",
-      "llm_score": 58.5,
-      "llm_score_a": 62.0,
-      "llm_score_b": 55.0,
+      "llm_score": 25.0,
+      "llm_score_a": 40.0,
+      "llm_score_b": 10.0,
       "links": {
-        "original": "https://phys.org/news/2026-11-nasa-swift-telescope-months-robot.html"
+        "original": "https://www.astronomy.com/observing/the-sky-today-friday-november-6-2026/"
       },
       "tier": "media",
       "selected": false,
-      "role": "科研"
+      "role": "媒体"
     },
     {
       "id": "30b842bb91d9",
@@ -446,7 +655,7 @@
       "source_type": "rss",
       "category": "星系与宇宙学",
       "published_at": "2026-11-05T17:11:33+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "When astronomers looked at photos of the early universe taken by the James Webb Space Telescope, they found something odd: an overabundance of bright galaxies about 400 to 500 million years after the Big Bang. But these galaxies should have been far less common so soon after the Big Bang. Researchers may have figured this out: Powerful ultraviolet (Lyman-alpha) radiation produced by dense clusters of young stars acted like a leaf blower, driving light-blocking gas and dust out of the galaxy and thereby making the galaxies appear brighter.",
       "keywords": [
         "away",
@@ -458,7 +667,7 @@
         "wind"
       ],
       "biz": null,
-      "score": 59.6,
+      "score": 59.2,
       "convergence": 0.333,
       "topic_id": "1c1279a4bf0f",
       "topic_title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
@@ -486,7 +695,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-11-05T16:42:06+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Recent fractures on the surface of Mars and gases detected by an orbiter probe provide some of the strongest evidence yet that the planet is volcanically active",
       "keywords": [
         "active",
@@ -499,7 +708,7 @@
         "volcanoes"
       ],
       "biz": null,
-      "score": 59.6,
+      "score": 59.2,
       "convergence": 0.333,
       "topic_id": "ba2441056df8",
       "topic_title": "Life on Mars, together",
@@ -518,6 +727,47 @@
       "role": "媒体"
     },
     {
+      "id": "1adcb053de5b",
+      "title": "NASA's Swift telescope has burned up, months after a robot sent to save it failed",
+      "url": "https://phys.org/news/2026-11-nasa-swift-telescope-months-robot.html",
+      "channel": "astro",
+      "source": "Phys.org 太空新闻",
+      "source_base": "Phys.org 太空新闻",
+      "source_type": "rss",
+      "category": "科研进展",
+      "published_at": "2026-11-05T15:40:14+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "NASA's Neil Gehrels Swift Observatory took its last look at the sky on Oct. 20, 2026, while orbiting about 171 miles (275 kilometers) above Earth. NASA ended the telescope's mission three days later, because Swift had sunk so low that drag from the thin air there meant its telescopes couldn't hold steady.",
+      "keywords": [
+        "burned",
+        "failed",
+        "nasa",
+        "robot",
+        "save",
+        "sent",
+        "swift",
+        "telescope"
+      ],
+      "biz": null,
+      "score": 59.1,
+      "convergence": 0.333,
+      "topic_id": "1d6980ba5778",
+      "topic_title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
+      "zh_full": "NASA的尼尔·格雷尔斯斯威夫特天文台（Neil Gehrels Swift Observatory）于2026年10月20日进行了最后一次天空观测，当时它在地球上空约171英里（275公里）的轨道上运行。由于斯威夫特已下沉到如此低的高度，稀薄空气产生的阻力导致其望远镜无法保持稳定，NASA在三天后结束了该望远镜的任务。此前，一台被派去拯救它的机器人未能成功。斯威夫特天文台是一台多波段天文观测卫星，曾在天文学中发挥重要作用，其任务终结标志着这一观测平台的退役。",
+      "llm_summary": "NASA的斯威夫特天文台因轨道过低、空气阻力导致望远镜无法稳定，于2026年10月20日完成最后一次观测，三天后任务结束。此前一台机器人拯救任务失败。",
+      "llm_reason": "重要天文台退役，任务终结",
+      "density": "中",
+      "llm_score": 58.5,
+      "llm_score_a": 62.0,
+      "llm_score_b": 55.0,
+      "links": {
+        "original": "https://phys.org/news/2026-11-nasa-swift-telescope-months-robot.html"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "科研"
+    },
+    {
       "id": "c6de0e08c422",
       "title": "Interstellar Visitor 3I/ATLAS Shows Water Ice Behaves the Same Across Alien Star Systems",
       "url": "https://www.universetoday.com/articles/interstellar-visitor-3iatlas-shows-water-ice-behaves-the-same-across-alien-star-systems",
@@ -527,7 +777,7 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2026-11-05T15:08:44+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Targets of opportunity sometimes happen in astronomy, and we got a major one when the third interstellar object, 3I/ATLAS, was discovered in July 2025. And it just so happens that in the intervening years between the last known interstellar visitor (2I/Borisov in 2019), we got a major upgrade in our observational capabilities with the launch of the James Webb Space Telescope (JWST). A new paper from a team of researchers led by Dr. Silvia Protopapa of NASA’s Goddard Space Flight Center and the Southwest Research Institute, and published in The Astrophysical Journal Letters, details JWST’s findings on the water ice content of this most recent visitor from beyond our solar system.",
       "keywords": [
         "alien",
@@ -540,7 +790,7 @@
         "water"
       ],
       "biz": null,
-      "score": 59.5,
+      "score": 59.1,
       "convergence": 0.333,
       "topic_id": "10c3e388bac4",
       "topic_title": "An enriched methane D/H ratio in the interstellar object 3I/ATLAS",
@@ -556,51 +806,52 @@
       },
       "tier": "media",
       "selected": true,
-      "role": "媒体"
+      "role": "媒体",
+      "entities": [],
+      "event": "星际访客3I/ATLAS显示水冰行为与外星恒星系相同",
+      "tags": [
+        "水冰",
+        "星际访客"
+      ]
     },
     {
-      "id": "89e4a2a5a4ba",
-      "title": "Revered NASA spacecraft is about to perish in flames — astronomers are mourning",
-      "url": "https://www.nature.com/articles/d41586-026-03461-w",
+      "id": "b26179ddd803",
+      "title": "APOD: 2026 November 8 – Major Fireball Meteor",
+      "url": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/",
       "channel": "astro",
-      "source": "Nature 天文和天体物理",
-      "source_base": "Nature 天文和天体物理",
+      "source": "NASA 快讯",
+      "source_base": "NASA 快讯",
       "source_type": "rss",
-      "category": "深空探测",
-      "published_at": "2026-10-27T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": null,
+      "category": "科研进展",
+      "published_at": "2026-11-08T05:05:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "APOD Science APOD APOD: 2026 November 8 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Major Fireball Meteor […]",
       "keywords": [
-        "astronomers",
-        "flames",
-        "mourning",
-        "nasa",
-        "perish",
-        "revered",
-        "spacecraft"
+        "apod",
+        "fireball",
+        "major",
+        "meteor",
+        "november"
       ],
       "biz": null,
-      "score": 59.2,
-      "convergence": 0.667,
-      "topic_id": "888a752ed227",
-      "topic_title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
-      "refs": {
-        "doi": "10.1038/d41586-026-03461-w",
-        "via": "self_meta",
-        "confidence": "verified"
-      },
-      "zh_full": "（无摘要，仅标题）备受尊敬的NASA航天器即将在火焰中毁灭，天文学家们正在哀悼。",
-      "llm_summary": "备受尊敬的NASA航天器即将在火焰中毁灭，天文学家们正在哀悼。",
-      "density": "低",
-      "llm_score_a": 35.0,
-      "llm_score_b": 8.0,
-      "llm_score": 21.5,
+      "score": 59.0,
+      "convergence": 0.167,
+      "topic_id": "379c62a2ba33",
+      "topic_title": "APOD: 2026 November 8 – Major Fireball Meteor",
       "links": {
-        "original": "https://www.nature.com/articles/d41586-026-03461-w"
+        "original": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/"
       },
       "tier": "official",
-      "selected": false,
-      "role": "科研"
+      "selected": true,
+      "role": "官方",
+      "entities": [
+        "NASA"
+      ],
+      "event": "APOD发布2026年11月8日主要火流星图像",
+      "tags": [
+        "火流星",
+        "天文照片"
+      ]
     },
     {
       "id": "b7ddcc86b0e9",
@@ -612,7 +863,7 @@
       "source_type": "rss",
       "category": "星系与宇宙学",
       "published_at": "2026-11-04T21:00:11+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "When astronomers looked at photos of the early universe taken by the James Webb Space Telescope, they found something odd: an overabundance of bright galaxies. Based on what they knew about the early universe, such galaxies should have been far less common in the few hundred million years following the Big Bang.",
       "keywords": [
         "blower",
@@ -626,19 +877,28 @@
         "winds"
       ],
       "biz": null,
-      "score": 59.0,
+      "score": 58.6,
       "convergence": 0.333,
       "topic_id": "1c1279a4bf0f",
       "topic_title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
       "llm_score": 67.0,
       "llm_score_a": 74.0,
       "llm_score_b": 60.0,
+      "zh_full": "当天文学家查看詹姆斯·韦伯太空望远镜拍摄的早期宇宙照片时，他们发现了一件奇怪的事：明亮星系的数量过多。根据他们对早期宇宙的了解，在宇宙大爆炸后最初的几亿年里，这类星系应该要罕见得多。",
+      "llm_summary": "詹姆斯·韦伯太空望远镜观测显示，早期宇宙中明亮星系的数量超出预期。天文学家原本认为，在大爆炸后最初的几亿年里，这类星系应该非常罕见，但观测结果却相反。",
+      "llm_reason": "揭示早期宇宙星系形成的新谜团",
+      "density": "中",
       "links": {
         "original": "https://phys.org/news/2026-11-cosmic-leaf-blower-propelled-early.html"
       },
       "tier": "media",
       "selected": true,
-      "role": "科研"
+      "role": "科研",
+      "entities": [],
+      "event": "未提及具体主体，仅描述宇宙现象",
+      "tags": [
+        "太空"
+      ]
     },
     {
       "id": "1f2561184f91",
@@ -650,7 +910,7 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2026-11-04T16:30:01+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "So far, observations by instruments including the James Webb Space Telescope have revealed the presence of surprisingly massive black holes in the early universe. Even less than a billion years after the Big Bang, some of these bodies already weighed billions of times the mass of the sun, and to date, astronomers are unclear as to how they could have grown so large so quickly.",
       "keywords": [
         "black",
@@ -664,7 +924,7 @@
         "universe"
       ],
       "biz": null,
-      "score": 58.9,
+      "score": 58.5,
       "convergence": 0.333,
       "topic_id": "d3c60355eed1",
       "topic_title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
@@ -672,229 +932,11 @@
       "llm_summary": "詹姆斯·韦伯太空望远镜等观测发现早期宇宙中存在质量达太阳数十亿倍的超大质量黑洞，但其快速生长机制不明。脉冲星计时阵列首次为早期宇宙中的超大质量黑洞对设定了质量上限，为理解其生长机制提供了新约束。",
       "llm_reason": "首次为早期宇宙超大质量黑洞对设定质量上限，具有重要科学意义",
       "density": "高",
+      "llm_score": 56.5,
       "llm_score_a": 78.0,
       "llm_score_b": 35.0,
-      "llm_score": 56.5,
       "links": {
         "original": "https://phys.org/news/2026-11-pulsars-mass-limits-supermassive-black.html"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "科研"
-    },
-    {
-      "id": "23943e2ac06e",
-      "title": "The Sky Today on Saturday, November 7: Venus meets the Moon",
-      "url": "https://www.astronomy.com/observing/the-sky-today-saturday-november-7-2026/",
-      "channel": "astro",
-      "source": "Astronomy Magazine",
-      "source_base": "Astronomy Magazine",
-      "source_type": "rss",
-      "category": "深空探测",
-      "published_at": "2026-11-07T09:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "Looking for a sky event this week? Check out our full Sky This Week column. November 6: Nab the North America Nebula Venus is already primed to capture attention above the eastern horizon before sunrise. This morning, the Moon passes 1.1° due south of Earth’s sister planet at 7 A.M. EST. You can easily catch the pair Continue reading \"The Sky Today on Saturday, November 7: Venus meets the Moon\" The post The Sky Today on Saturday, November 7: Venus meets the Moon appeared first on Astronomy Magazine .",
-      "keywords": [
-        "meets",
-        "moon",
-        "november",
-        "saturday",
-        "today",
-        "venus"
-      ],
-      "biz": null,
-      "score": 58.9,
-      "convergence": 0.167,
-      "topic_id": "b508ed7a87a9",
-      "topic_title": "The Sky Today on Saturday, November 7: Venus meets the Moon",
-      "llm_score_a": 45.0,
-      "llm_score_b": 12.0,
-      "llm_score": 28.5,
-      "links": {
-        "original": "https://www.astronomy.com/observing/the-sky-today-saturday-november-7-2026/"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "媒体"
-    },
-    {
-      "id": "07b079569d0e",
-      "title": "The Sky Today on Friday, November 6: Nab the North America Nebula",
-      "url": "https://www.astronomy.com/observing/the-sky-today-friday-november-6-2026/",
-      "channel": "astro",
-      "source": "Astronomy Magazine",
-      "source_base": "Astronomy Magazine",
-      "source_type": "rss",
-      "category": "恒星与星际介质",
-      "published_at": "2026-11-06T09:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "Looking for a sky event this week? Check out our full Sky This Week column. November 5: Smoke out the Southern Cigar As fall gets into full swing, we are seeing less of the summertime stars. By 6 P.M. local time, the Summer Triangle — which flies high overhead on short summer nights — is now starting Continue reading \"The Sky Today on Friday, November 6: Nab the North America Nebula\" The post The Sky Today on Friday, November 6: Nab the North America Nebula appeared first on Astronomy Magazine .",
-      "keywords": [
-        "america",
-        "friday",
-        "nebula",
-        "north",
-        "november",
-        "today"
-      ],
-      "biz": null,
-      "score": 58.2,
-      "convergence": 0.167,
-      "topic_id": "b508ed7a87a9",
-      "topic_title": "The Sky Today on Saturday, November 7: Venus meets the Moon",
-      "zh_full": "《天文学杂志》发布本周天空观测指南，推荐读者关注周五（11月6日）的夜空，重点目标为北美星云。文章指出，随着秋季深入，夏季星空逐渐淡出视野。在地方时间下午6点，夏季大三角——在短暂夏夜中高悬头顶的星群——已开始西沉。观测指南建议天文爱好者利用晴朗夜晚，使用双筒望远镜或小型望远镜寻找北美星云。该星云位于天鹅座方向，因轮廓酷似北美大陆而得名，是秋季夜空中的著名深空天体。文章还提及11月5日的观测建议，涉及南雪茄星系等目标。这是《天文学杂志》每周更新的常规观测栏目，为不同水平的天文爱好者提供实用的观星指引。",
-      "llm_summary": "《天文学杂志》发布周五（11月6日）观测指南，推荐观测北美星云。随着秋季深入，夏季大三角已开始西沉，建议使用双筒或小型望远镜寻找位于天鹅座的该星云。",
-      "llm_reason": "实用观星指南",
-      "density": "中",
-      "llm_score_a": 40.0,
-      "llm_score_b": 10.0,
-      "llm_score": 25.0,
-      "links": {
-        "original": "https://www.astronomy.com/observing/the-sky-today-friday-november-6-2026/"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "媒体"
-    },
-    {
-      "id": "b26abe3856d5",
-      "title": "Earth's gravity may have kept the early moon's volcanic heart beating",
-      "url": "https://phys.org/news/2026-11-earth-gravity-early-moon-volcanic.html",
-      "channel": "astro",
-      "source": "Phys.org 太空新闻",
-      "source_base": "Phys.org 太空新闻",
-      "source_type": "rss",
-      "category": "深空探测",
-      "published_at": "2026-11-07T17:30:01+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "We typically think of the moon as a static, floating object that has remained the same for basically its entire lifetime, with an occasional asteroid impact serving as an exception. That understanding is grounded in physics—the moon should have cooled rapidly after forming when a huge protoplanet hit the early Earth around 4.5 billion years ago. But some lunar material returned from the Chang'e-5 mission was notably formed only around 2 billion years ago, yet appeared to be volcanic in origin.",
-      "keywords": [
-        "beating",
-        "early",
-        "earth",
-        "gravity",
-        "heart",
-        "kept",
-        "moon",
-        "volcanic"
-      ],
-      "biz": null,
-      "score": 57.6,
-      "convergence": 0.167,
-      "topic_id": "8e45f041979c",
-      "topic_title": "Earth's gravity may have kept the early moon's volcanic heart beating",
-      "llm_score_a": 72.0,
-      "llm_score_b": 68.0,
-      "llm_score": 70.0,
-      "links": {
-        "original": "https://phys.org/news/2026-11-earth-gravity-early-moon-volcanic.html"
-      },
-      "tier": "media",
-      "selected": true,
-      "role": "科研"
-    },
-    {
-      "id": "0ed1aee1bfaa",
-      "title": "Theory predicting an older universe without dark matter or dark energy passes key cosmological tests",
-      "url": "https://phys.org/news/2026-11-theory-older-universe-dark-energy.html",
-      "channel": "astro",
-      "source": "Phys.org 太空新闻",
-      "source_base": "Phys.org 太空新闻",
-      "source_type": "rss",
-      "category": "星系与宇宙学",
-      "published_at": "2026-11-07T14:00:02+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "An alternative model in which the universe is 26.7 billion years old and needs neither dark matter nor dark energy has held up against several major cosmology tests, according to a new University of Ottawa study. The research, titled \"A Big Bang Nucleosynthesis Consistency Test of the CCC+TL Cosmology,\" is published in the journal Universe.",
-      "keywords": [
-        "cosmological",
-        "dark",
-        "energy",
-        "matter",
-        "older",
-        "passes",
-        "predicting",
-        "tests",
-        "theory",
-        "universe"
-      ],
-      "biz": null,
-      "score": 57.5,
-      "convergence": 0.167,
-      "topic_id": "ee88d3278295",
-      "topic_title": "Theory predicting an older universe without dark matter or dark energy passes key cosmological tests",
-      "llm_score": 70.0,
-      "llm_score_a": 78.0,
-      "llm_score_b": 62.0,
-      "links": {
-        "original": "https://phys.org/news/2026-11-theory-older-universe-dark-energy.html"
-      },
-      "tier": "media",
-      "selected": true,
-      "role": "科研"
-    },
-    {
-      "id": "96f8d4876d82",
-      "title": "APOD: 2026 November 7 – De Gerlache-Kocher Massif",
-      "url": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/",
-      "channel": "astro",
-      "source": "NASA 快讯",
-      "source_base": "NASA 快讯",
-      "source_type": "rss",
-      "category": "科研进展",
-      "published_at": "2026-11-07T05:05:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "APOD Science APOD APOD: 2026 November 7 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. De Gerlache-Kocher Massif […]",
-      "keywords": [
-        "apod",
-        "gerlache-kocher",
-        "massif",
-        "november"
-      ],
-      "biz": null,
-      "score": 57.3,
-      "convergence": 0.167,
-      "topic_id": "a231d3fb5c5b",
-      "topic_title": "APOD: 2026 November 7 – De Gerlache-Kocher Massif",
-      "links": {
-        "original": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/"
-      },
-      "tier": "official",
-      "selected": true,
-      "role": "官方"
-    },
-    {
-      "id": "b1e938c83d44",
-      "title": "Untangling the patterns of the cosmic microwave background to better understand the early universe",
-      "url": "https://phys.org/news/2026-11-untangling-patterns-cosmic-microwave-background.html",
-      "channel": "astro",
-      "source": "Phys.org 太空新闻",
-      "source_base": "Phys.org 太空新闻",
-      "source_type": "rss",
-      "category": "星系与宇宙学",
-      "published_at": "2026-11-07T00:20:01+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "A figure in red trudges across a blanket of white. Snow squeaks under the scientist's feet, too dry to be slick or soft. Only a line of flags and a few large buildings—the scientist's destination—break up the landscape. The sun hovers on the horizon, never quite setting against a blue sky devoid of clouds.",
-      "keywords": [
-        "background",
-        "better",
-        "cosmic",
-        "early",
-        "microwave",
-        "patterns",
-        "understand",
-        "universe",
-        "untangling"
-      ],
-      "biz": null,
-      "score": 57.1,
-      "convergence": 0.167,
-      "topic_id": "ee88d3278295",
-      "topic_title": "Theory predicting an older universe without dark matter or dark energy passes key cosmological tests",
-      "llm_score": 8.5,
-      "llm_score_a": 12.0,
-      "llm_score_b": 5.0,
-      "links": {
-        "original": "https://phys.org/news/2026-11-untangling-patterns-cosmic-microwave-background.html"
       },
       "tier": "media",
       "selected": false,
@@ -910,7 +952,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-11-06T05:05:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "APOD Science APOD APOD: 2026 November 6 – A… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. A Farewell […]",
       "keywords": [
         "apod",
@@ -919,10 +961,10 @@
         "swift"
       ],
       "biz": null,
-      "score": 56.6,
+      "score": 57.7,
       "convergence": 0.167,
-      "topic_id": "a231d3fb5c5b",
-      "topic_title": "APOD: 2026 November 7 – De Gerlache-Kocher Massif",
+      "topic_id": "379c62a2ba33",
+      "topic_title": "APOD: 2026 November 8 – Major Fireball Meteor",
       "zh_full": "NASA天文每日一图（APOD）栏目于2026年11月6日发布题为《告别斯威夫特》的图片及说明。APOD是NASA支持的知名科普项目，每天展示一张宇宙图像或照片，并附上专业天文学家撰写的简短解释。本期内容聚焦于对斯威夫特（Swift）的告别。斯威夫特是NASA的伽马射线暴快速反应探测器，在轨运行多年，为天文学研究提供了大量关键数据。该图片可能展示了斯威夫特卫星的影像或其在轨工作的艺术想象图，配文回顾了其科学贡献。APOD栏目旨在向公众普及宇宙知识，激发对天文学的兴趣，其每日更新的图片和解释由专业天文学家精心挑选和撰写。",
       "llm_summary": "NASA天文每日一图（APOD）2026年11月6日发布《告别斯威夫特》，回顾斯威夫特卫星的科学贡献。该卫星是伽马射线暴快速反应探测器，在轨运行多年，为天文学研究提供关键数据。",
       "llm_reason": "回顾重要天文卫星",
@@ -942,53 +984,169 @@
       "role": "官方"
     },
     {
-      "id": "ff20a62d86f5",
-      "title": "Author Correction: Lyman continuum escape during the onset of galactic winds in compact starbursts",
-      "url": "https://www.nature.com/articles/s41550-026-03039-6",
+      "id": "b26abe3856d5",
+      "title": "Earth's gravity may have kept the early moon's volcanic heart beating",
+      "url": "https://phys.org/news/2026-11-earth-gravity-early-moon-volcanic.html",
+      "channel": "astro",
+      "source": "Phys.org 太空新闻",
+      "source_base": "Phys.org 太空新闻",
+      "source_type": "rss",
+      "category": "深空探测",
+      "published_at": "2026-11-07T17:30:01+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "We typically think of the moon as a static, floating object that has remained the same for basically its entire lifetime, with an occasional asteroid impact serving as an exception. That understanding is grounded in physics—the moon should have cooled rapidly after forming when a huge protoplanet hit the early Earth around 4.5 billion years ago. But some lunar material returned from the Chang'e-5 mission was notably formed only around 2 billion years ago, yet appeared to be volcanic in origin.",
+      "keywords": [
+        "beating",
+        "early",
+        "earth",
+        "gravity",
+        "heart",
+        "kept",
+        "moon",
+        "volcanic"
+      ],
+      "biz": null,
+      "score": 57.2,
+      "convergence": 0.167,
+      "topic_id": "8e45f041979c",
+      "topic_title": "Earth's gravity may have kept the early moon's volcanic heart beating",
+      "llm_score": 70.0,
+      "llm_score_a": 72.0,
+      "llm_score_b": 68.0,
+      "zh_full": "我们通常认为月球是一个静态、漂浮的物体，在其整个生命周期中基本保持不变，偶尔的小行星撞击是例外。这种理解基于物理学——大约45亿年前，一个巨大的原行星撞击早期地球后，月球应该迅速冷却。但嫦娥五号任务返回的一些月球物质明显形成于约20亿年前，而且似乎具有火山成因。",
+      "llm_summary": "月球通常被认为早已冷却并停止地质活动，但嫦娥五号带回的月球样本显示，约20亿年前仍有火山活动。这挑战了月球快速冷却的传统观点，暗示地球引力可能延长了月球内部的火山活动。",
+      "llm_reason": "挑战月球冷却传统认知",
+      "density": "中",
+      "links": {
+        "original": "https://phys.org/news/2026-11-earth-gravity-early-moon-volcanic.html"
+      },
+      "tier": "media",
+      "selected": true,
+      "role": "科研",
+      "entities": [],
+      "event": "未提及具体主体，仅描述月球火山活动",
+      "tags": [
+        "太空"
+      ]
+    },
+    {
+      "id": "0ed1aee1bfaa",
+      "title": "Theory predicting an older universe without dark matter or dark energy passes key cosmological tests",
+      "url": "https://phys.org/news/2026-11-theory-older-universe-dark-energy.html",
+      "channel": "astro",
+      "source": "Phys.org 太空新闻",
+      "source_base": "Phys.org 太空新闻",
+      "source_type": "rss",
+      "category": "星系与宇宙学",
+      "published_at": "2026-11-07T14:00:02+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "An alternative model in which the universe is 26.7 billion years old and needs neither dark matter nor dark energy has held up against several major cosmology tests, according to a new University of Ottawa study. The research, titled \"A Big Bang Nucleosynthesis Consistency Test of the CCC+TL Cosmology,\" is published in the journal Universe.",
+      "keywords": [
+        "cosmological",
+        "dark",
+        "energy",
+        "matter",
+        "older",
+        "passes",
+        "predicting",
+        "tests",
+        "theory",
+        "universe"
+      ],
+      "biz": null,
+      "score": 57.1,
+      "convergence": 0.167,
+      "topic_id": "ee88d3278295",
+      "topic_title": "Theory predicting an older universe without dark matter or dark energy passes key cosmological tests",
+      "llm_score": 70.0,
+      "llm_score_a": 78.0,
+      "llm_score_b": 62.0,
+      "zh_full": "加拿大渥太华大学的一项新研究提出了一种替代宇宙学模型，认为宇宙年龄为267亿年，且不需要暗物质或暗能量。该模型在多项重大宇宙学测试中表现良好。研究论文题为《CCC+TL宇宙学的大爆炸核合成一致性检验》，发表在《Universe》期刊上。该模型挑战了标准宇宙学模型（ΛCDM）的框架，后者依赖暗物质和暗能量来解释宇宙加速膨胀和结构形成。新模型通过调整宇宙膨胀历史，可能解决哈勃常数张力等观测矛盾。研究团队表示，该模型通过了包括大爆炸核合成、宇宙微波背景辐射和重子声学振荡等关键测试，表明其具有作为标准模型替代方案的潜力。",
+      "llm_summary": "渥太华大学研究提出一个无需暗物质和暗能量的替代宇宙模型，认为宇宙年龄为267亿年。该模型在多项关键宇宙学测试中表现良好，包括大爆炸核合成等，可能挑战标准宇宙学模型。",
+      "llm_reason": "挑战主流宇宙学模型，具有理论突破意义",
+      "density": "高",
+      "links": {
+        "original": "https://phys.org/news/2026-11-theory-older-universe-dark-energy.html"
+      },
+      "tier": "media",
+      "selected": true,
+      "role": "科研",
+      "entities": [],
+      "event": "未提及具体主体，仅描述宇宙学理论",
+      "tags": [
+        "太空"
+      ]
+    },
+    {
+      "id": "af427ddcfa6f",
+      "title": "Nov. 7, 1882: A Great Comet transforms astrophotography",
+      "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/nov-7-1882-a-great-comet-transforms-astrophotography/",
+      "channel": "astro",
+      "source": "Astronomy Magazine",
+      "source_base": "Astronomy Magazine",
+      "source_type": "rss",
+      "category": "深空探测",
+      "published_at": "2026-11-07T14:00:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "In early September 1882, a comet was sighted from the Cape of Good Hope in South Africa. The comet brightened over the following weeks, reaching a magnitude of -2 on the 15th; at perihelion two days later, it was bright enough to be visible during the day. But at the time, David Gill, the director Continue reading \"Nov. 7, 1882: A Great Comet transforms astrophotography\" The post Nov. 7, 1882: A Great Comet transforms astrophotography appeared first on Astronomy Magazine .",
+      "keywords": [
+        "astrophotography",
+        "comet",
+        "great",
+        "transforms"
+      ],
+      "biz": null,
+      "score": 57.1,
+      "convergence": 0.167,
+      "topic_id": "6c52abb3945f",
+      "topic_title": "Nov. 7, 1882: A Great Comet transforms astrophotography",
+      "zh_full": "1882年9月初，一颗彗星在南非好望角被观测到。在接下来的几周里，彗星持续增亮，到15日达到-2等；两天后过近日点时，它亮到白天也能看见。当时，好望角天文台台长戴维·吉尔（David Gill）正在南非。他利用这颗大彗星的出现，拍摄了一系列照片，这些照片成为天文摄影史上的里程碑。吉尔拍摄的彗星照片展示了彗星尾部的精细结构，证明了摄影技术可以捕捉到肉眼难以分辨的天体细节。这一事件推动了天文摄影从记录性工具转变为科学研究手段，为后来天文学的发展奠定了基础。",
+      "llm_summary": "1882年9月，一颗大彗星出现在南非上空，亮度达到-2等，白天可见。好望角天文台台长戴维·吉尔利用它拍摄了系列照片，展示了彗尾精细结构，证明摄影能捕捉肉眼难辨的天体细节，从而推动了天文摄影成为科学研究工具。",
+      "llm_reason": "天文摄影史上的里程碑事件",
+      "density": "高",
+      "links": {
+        "original": "https://www.astronomy.com/today-in-the-history-of-astronomy/nov-7-1882-a-great-comet-transforms-astrophotography/"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "媒体"
+    },
+    {
+      "id": "7c6940cd193d",
+      "title": "Even stupendous black holes can’t explain dark matter",
+      "url": "https://www.nature.com/articles/d41586-026-03386-4",
       "channel": "astro",
       "source": "Nature 天文和天体物理",
       "source_base": "Nature 天文和天体物理",
       "source_type": "rss",
       "category": "科研进展",
-      "published_at": "2026-11-06T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
-        "author",
-        "compact",
-        "continuum",
-        "correction",
-        "during",
-        "escape",
-        "galactic",
-        "lyman",
-        "onset",
-        "starbursts",
-        "winds"
+        "black",
+        "dark",
+        "even",
+        "explain",
+        "holes",
+        "matter",
+        "stupendous"
       ],
       "biz": null,
-      "score": 56.5,
-      "convergence": 0.167,
-      "topic_id": "6eb5c13e2e41",
-      "topic_title": "Author Correction: Lyman continuum escape during the onset of galactic winds in compact starbursts",
+      "score": 54.4,
+      "convergence": 0.5,
+      "topic_id": "b33b5a0083eb",
+      "topic_title": "Even stupendous black holes can’t explain dark matter",
       "refs": {
-        "doi": "10.1038/s41550-026-03039-6",
+        "doi": "10.1038/d41586-026-03386-4",
         "via": "self_meta",
         "confidence": "verified"
       },
-      "llm_score": 12.5,
-      "llm_score_a": 15.0,
-      "llm_score_b": 10.0,
-      "entities": [
-        "Nature"
-      ],
-      "event": "Nature发布关于星系风与莱曼连续谱逃逸的更正",
-      "tags": [
-        "星系风",
-        "莱曼连续谱"
-      ],
+      "zh_full": "（无摘要，仅标题）即使是巨大的黑洞也无法解释暗物质。",
+      "llm_summary": "即使是巨大的黑洞也无法解释暗物质。",
+      "density": "低",
       "links": {
-        "original": "https://www.nature.com/articles/s41550-026-03039-6"
+        "original": "https://www.nature.com/articles/d41586-026-03386-4"
       },
       "tier": "official",
       "selected": false,
@@ -1004,7 +1162,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-11-04T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "below",
@@ -1014,7 +1172,7 @@
         "telescope"
       ],
       "biz": null,
-      "score": 54.0,
+      "score": 53.6,
       "convergence": 0.333,
       "topic_id": "2dcc201b566b",
       "topic_title": "Imaging exoplanets below the telescope stability limit",
@@ -1043,7 +1201,7 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2026-11-04T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "computational",
@@ -1055,7 +1213,7 @@
         "stars"
       ],
       "biz": null,
-      "score": 54.0,
+      "score": 53.6,
       "convergence": 0.333,
       "topic_id": "2dcc201b566b",
       "topic_title": "Imaging exoplanets below the telescope stability limit",
@@ -1084,7 +1242,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-28T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "dark",
@@ -1094,7 +1252,7 @@
         "matter"
       ],
       "biz": null,
-      "score": 53.8,
+      "score": 53.4,
       "convergence": 0.333,
       "topic_id": "b0981b2108d5",
       "topic_title": "Ten years later, LIGO is a black-hole hunting machine",
@@ -1115,116 +1273,78 @@
       "role": "科研"
     },
     {
-      "id": "1eef84e37c8c",
-      "title": "NASA Astronauts to Answer Questions from Florida Students",
-      "url": "https://www.nasa.gov/learning-resources/nasa-astronauts-to-answer-questions-from-florida-students-2/",
+      "id": "96f8d4876d82",
+      "title": "APOD: 2026 November 7 – De Gerlache-Kocher Massif",
+      "url": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/",
       "channel": "astro",
       "source": "NASA 快讯",
       "source_base": "NASA 快讯",
       "source_type": "rss",
       "category": "科研进展",
-      "published_at": "2026-11-05T15:11:25+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "Students in Florida will hear from NASA astronauts Jessica Watkins and Luke Delaney as they answer prerecorded STEM questions while aboard the International Space Station. The Earth-to-space call will begin at 10:40 a.m. EST Tuesday, Nov. 10, and will stream live on the agency’s Learn With NASA YouTube channel. This event is hosted by Freedom Crossing Academy in […]",
+      "published_at": "2026-11-07T05:05:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "APOD Science APOD APOD: 2026 November 7 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. De Gerlache-Kocher Massif […]",
       "keywords": [
-        "answer",
-        "astronauts",
-        "florida",
-        "nasa",
-        "questions",
-        "students"
+        "apod",
+        "gerlache-kocher",
+        "massif",
+        "november"
       ],
       "biz": null,
-      "score": 53.6,
-      "convergence": 0.333,
-      "topic_id": "c1279cc1c831",
-      "topic_title": "NASA Astronauts to Answer Questions from Florida Students",
-      "llm_score": 11.5,
-      "llm_score_a": 18.0,
-      "llm_score_b": 5.0,
-      "zh_full": "佛罗里达州的学生将听到NASA宇航员杰西卡·沃特金斯（Jessica Watkins）和卢克·德莱尼（Luke Delaney）在国际空间站上回答预先录制的STEM问题。这场天地通话将于美国东部时间11月10日（周二）上午10:40开始，并将在NASA的“与NASA一起学习”YouTube频道上直播。该活动由自由十字学院（Freedom Crossing Academy）主办。",
-      "llm_summary": "佛罗里达州学生将与国际空间站上的NASA宇航员进行天地通话，回答预先录制的STEM问题。通话将于11月10日上午10:40直播，由自由十字学院主办。",
-      "llm_reason": "NASA宇航员与学生天地通话，科普教育",
+      "score": 52.5,
+      "convergence": 0.167,
+      "topic_id": "379c62a2ba33",
+      "topic_title": "APOD: 2026 November 8 – Major Fireball Meteor",
+      "zh_full": "（无摘要，仅标题）APOD：2026年11月7日——德热拉什-科赫尔山块。这是NASA天文每日一图（APOD）栏目当天展示的图片，配有一名专业天文学家撰写的简短说明。",
+      "llm_summary": "NASA天文每日一图栏目展示了德热拉什-科赫尔山块的图片，并附有专业天文学家的简短说明。",
       "density": "低",
       "links": {
-        "original": "https://www.nasa.gov/learning-resources/nasa-astronauts-to-answer-questions-from-florida-students-2/"
+        "original": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/"
       },
       "tier": "official",
       "selected": false,
       "role": "官方"
     },
     {
-      "id": "7c6940cd193d",
-      "title": "Even stupendous black holes can’t explain dark matter",
-      "url": "https://www.nature.com/articles/d41586-026-03386-4",
+      "id": "b1e938c83d44",
+      "title": "Untangling the patterns of the cosmic microwave background to better understand the early universe",
+      "url": "https://phys.org/news/2026-11-untangling-patterns-cosmic-microwave-background.html",
       "channel": "astro",
-      "source": "Nature 天文和天体物理",
-      "source_base": "Nature 天文和天体物理",
+      "source": "Phys.org 太空新闻",
+      "source_base": "Phys.org 太空新闻",
       "source_type": "rss",
-      "category": "科研进展",
-      "published_at": "2026-10-29T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": null,
+      "category": "星系与宇宙学",
+      "published_at": "2026-11-07T00:20:01+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "A figure in red trudges across a blanket of white. Snow squeaks under the scientist's feet, too dry to be slick or soft. Only a line of flags and a few large buildings—the scientist's destination—break up the landscape. The sun hovers on the horizon, never quite setting against a blue sky devoid of clouds.",
       "keywords": [
-        "black",
-        "dark",
-        "even",
-        "explain",
-        "holes",
-        "matter",
-        "stupendous"
+        "background",
+        "better",
+        "cosmic",
+        "early",
+        "microwave",
+        "patterns",
+        "understand",
+        "universe",
+        "untangling"
       ],
       "biz": null,
-      "score": 53.4,
-      "convergence": 0.5,
-      "topic_id": "091433c2113a",
-      "topic_title": "Even stupendous black holes can’t explain dark matter",
-      "refs": {
-        "doi": "10.1038/d41586-026-03386-4",
-        "via": "self_meta",
-        "confidence": "verified"
-      },
-      "zh_full": "（无摘要，仅标题）即使是巨大的黑洞也无法解释暗物质。",
-      "llm_summary": "即使是巨大的黑洞也无法解释暗物质。",
+      "score": 51.0,
+      "convergence": 0.167,
+      "topic_id": "ee88d3278295",
+      "topic_title": "Theory predicting an older universe without dark matter or dark energy passes key cosmological tests",
+      "llm_score": 8.5,
+      "llm_score_a": 12.0,
+      "llm_score_b": 5.0,
+      "zh_full": "（无摘要，仅标题）该标题描述了一项关于宇宙微波背景辐射模式的研究，旨在通过解析其复杂图案来更好地理解早期宇宙。宇宙微波背景辐射是宇宙大爆炸后留下的热辐射，其微小涨落包含了早期宇宙的物理信息。研究人员试图从这些图案中提取线索，以揭示宇宙极早期阶段的物理过程和演化历史。",
+      "llm_summary": "该研究通过分析宇宙微波背景辐射的图案，旨在增进对早期宇宙物理过程的理解。",
       "density": "低",
       "links": {
-        "original": "https://www.nature.com/articles/d41586-026-03386-4"
-      },
-      "tier": "official",
-      "selected": false,
-      "role": "科研"
-    },
-    {
-      "id": "af427ddcfa6f",
-      "title": "Nov. 7, 1882: A Great Comet transforms astrophotography",
-      "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/nov-7-1882-a-great-comet-transforms-astrophotography/",
-      "channel": "astro",
-      "source": "Astronomy Magazine",
-      "source_base": "Astronomy Magazine",
-      "source_type": "rss",
-      "category": "深空探测",
-      "published_at": "2026-11-07T14:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "In early September 1882, a comet was sighted from the Cape of Good Hope in South Africa. The comet brightened over the following weeks, reaching a magnitude of -2 on the 15th; at perihelion two days later, it was bright enough to be visible during the day. But at the time, David Gill, the director Continue reading \"Nov. 7, 1882: A Great Comet transforms astrophotography\" The post Nov. 7, 1882: A Great Comet transforms astrophotography appeared first on Astronomy Magazine .",
-      "keywords": [
-        "astrophotography",
-        "comet",
-        "great",
-        "transforms"
-      ],
-      "biz": null,
-      "score": 51.2,
-      "convergence": 0.0,
-      "zh_full": "1882年9月初，一颗彗星在南非好望角被观测到。在接下来的几周里，彗星持续增亮，到15日达到-2等；两天后过近日点时，它亮到白天也能看见。当时，好望角天文台台长戴维·吉尔（David Gill）正在南非。他利用这颗大彗星的出现，拍摄了一系列照片，这些照片成为天文摄影史上的里程碑。吉尔拍摄的彗星照片展示了彗星尾部的精细结构，证明了摄影技术可以捕捉到肉眼难以分辨的天体细节。这一事件推动了天文摄影从记录性工具转变为科学研究手段，为后来天文学的发展奠定了基础。",
-      "llm_summary": "1882年9月，一颗大彗星出现在南非上空，亮度达到-2等，白天可见。好望角天文台台长戴维·吉尔利用它拍摄了系列照片，展示了彗尾精细结构，证明摄影能捕捉肉眼难辨的天体细节，从而推动了天文摄影成为科学研究工具。",
-      "llm_reason": "天文摄影史上的里程碑事件",
-      "density": "高",
-      "links": {
-        "original": "https://www.astronomy.com/today-in-the-history-of-astronomy/nov-7-1882-a-great-comet-transforms-astrophotography/"
+        "original": "https://phys.org/news/2026-11-untangling-patterns-cosmic-microwave-background.html"
       },
       "tier": "media",
       "selected": false,
-      "role": "媒体"
+      "role": "科研"
     },
     {
       "id": "706ec3543925",
@@ -1236,7 +1356,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-11-07T11:20:01+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "A Pakistani astronaut will join the crew of China's Shenzhou 24 spacecraft on a mission that would make him the first foreign national to board Beijing's space station, state media reported Saturday.",
       "keywords": [
         "astronaut",
@@ -1250,7 +1370,7 @@
         "station"
       ],
       "biz": null,
-      "score": 51.1,
+      "score": 50.7,
       "convergence": 0.0,
       "zh_full": "据中国官方媒体周六报道，一名巴基斯坦宇航员将加入中国神舟二十四号飞船的乘组，执行任务后他将成为首位登上中国空间站的外国公民。报道称，这一安排体现了中国在航天领域开展国际合作的意愿，巴基斯坦方面对此表示欢迎。该任务的具体发射时间、乘组构成以及飞行计划等细节尚未在报道中披露。中国空间站此前已多次接待本国航天员，此次若成行，将是中国载人航天工程历史上首次有外国航天员进入中国空间站。报道强调，这一合作有助于推动航天领域的国际交流，但未提及任务的具体日期、训练安排或双方签署的协议细节。",
       "llm_summary": "据中国官方媒体报道，一名巴基斯坦宇航员将随神舟二十四号飞船前往中国空间站，成为首位进入该空间站的外国公民。此举被视为中国航天国际合作的体现，但具体任务细节尚未公布。",
@@ -1273,7 +1393,7 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2026-11-07T08:47:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The decades old idea that our solar system’s Oort Cloud is continually perturbed by a heretofore undetected low mass Red Dwarf star remains the best explanation for periodicities found in Earth’s impact record. Or so says a well known physicist who has long championed this idea.",
       "keywords": [
         "nemesis",
@@ -1285,7 +1405,7 @@
         "undiscovered"
       ],
       "biz": null,
-      "score": 51.0,
+      "score": 50.6,
       "convergence": 0.0,
       "links": {
         "original": "https://www.universetoday.com/articles/our-suns-undiscovered-stellar-nemesis-is-still-out-there-says-physicist"
@@ -1293,6 +1413,62 @@
       "tier": "media",
       "selected": false,
       "role": "媒体"
+    },
+    {
+      "id": "ff20a62d86f5",
+      "title": "Author Correction: Lyman continuum escape during the onset of galactic winds in compact starbursts",
+      "url": "https://www.nature.com/articles/s41550-026-03039-6",
+      "channel": "astro",
+      "source": "Nature 天文和天体物理",
+      "source_base": "Nature 天文和天体物理",
+      "source_type": "rss",
+      "category": "科研进展",
+      "published_at": "2026-11-06T00:00:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": null,
+      "keywords": [
+        "author",
+        "compact",
+        "continuum",
+        "correction",
+        "during",
+        "escape",
+        "galactic",
+        "lyman",
+        "onset",
+        "starbursts",
+        "winds"
+      ],
+      "biz": null,
+      "score": 50.4,
+      "convergence": 0.167,
+      "topic_id": "6eb5c13e2e41",
+      "topic_title": "Author Correction: Lyman continuum escape during the onset of galactic winds in compact starbursts",
+      "refs": {
+        "doi": "10.1038/s41550-026-03039-6",
+        "via": "self_meta",
+        "confidence": "verified"
+      },
+      "llm_score": 12.5,
+      "llm_score_a": 15.0,
+      "llm_score_b": 10.0,
+      "entities": [
+        "Nature"
+      ],
+      "event": "Nature发布关于星系风与莱曼连续谱逃逸的更正",
+      "tags": [
+        "星系风",
+        "莱曼连续谱"
+      ],
+      "zh_full": "（无摘要，仅标题）该条目为《Nature Astronomy》期刊上的一篇作者更正声明，涉及论文《Lyman continuum escape during the onset of galactic winds in compact starbursts》。该更正针对原论文中关于紧凑星暴星系中星系风起始阶段莱曼连续谱逃逸的内容。",
+      "llm_summary": "《Nature Astronomy》发布了一篇作者更正，涉及紧凑星暴星系中莱曼连续谱逃逸与星系风起始的论文。",
+      "density": "低",
+      "links": {
+        "original": "https://www.nature.com/articles/s41550-026-03039-6"
+      },
+      "tier": "official",
+      "selected": false,
+      "role": "科研"
     },
     {
       "id": "80c034e3c079",
@@ -1304,7 +1480,7 @@
       "source_type": "rss",
       "category": "星系与宇宙学",
       "published_at": "2026-11-06T20:34:10+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Ultra-Diffuse Galaxies are strange because they're as large as the Milky Way, but have far fewer stars. It's as if they're puffed up for some reason. Determining what's going on with them could help confirm the Lambda-CDM model. A new proposed instrument for the Extremely Large Telescope could give astronomers their best look yet at these strange galaxies.",
       "keywords": [
         "dark",
@@ -1315,7 +1491,7 @@
         "ultra-diffuse"
       ],
       "biz": null,
-      "score": 50.7,
+      "score": 50.3,
       "convergence": 0.0,
       "links": {
         "original": "https://www.universetoday.com/articles/the-elt-can-probe-ultra-diffuse-galaxies-and-their-dark-matter-mysteries"
@@ -1334,14 +1510,14 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2026-11-06T16:23:41+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "This NASA/ESA Hubble Space Telescope image released Nov. 5, 2026, provides a lesson in galactic history. The sparkling collection of stars is named Messier 30 (M30) after the French astronomer, Charles Messier, who cataloged M30 and other diffuse objects that might be mistaken for comets in the early telescopes of Messier’s time. M30 lies about […]",
       "keywords": [
         "sparkling",
         "stars"
       ],
       "biz": null,
-      "score": 50.6,
+      "score": 50.2,
       "convergence": 0.0,
       "links": {
         "original": "https://www.nasa.gov/image-article/m30s-sparkling-stars/"
@@ -1360,7 +1536,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-11-06T16:03:52+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Supercomputing 2026 Join NASA in the Exhibit Hall (Booth #4038) for presentations by NASA experts. Full Tech Demo schedule below. TUESDAY, NOVEMBER 17 10:00 AMType-safe Templates in Fortran 2028Tom Clune10:30 AMType-safe Templates in Fortran 2028Tom Clune11:00 AM Type-safe Templates in Fortran 2028Tom Clune1:00PM Mixing and Matching and Multiple Versions, Oh My!Brad Richardson1:30 PMMixing and Matching and Multiple […]",
       "keywords": [
         "demo",
@@ -1369,7 +1545,7 @@
         "tech"
       ],
       "biz": null,
-      "score": 50.6,
+      "score": 50.1,
       "convergence": 0.0,
       "links": {
         "original": "https://science.nasa.gov/earth/supercomputing-tech-demo-schedule/"
@@ -1388,7 +1564,7 @@
       "source_type": "rss",
       "category": "星系与宇宙学",
       "published_at": "2026-11-06T11:49:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Flashback to 1977. Jimmy Carter was U.S. president, Star Wars was a box office hit, and the two Voyager spacecraft departed on an historic Grand Tour of the solar system. Now, teams at NASA’s Jet Propulsion Laboratory are working to keep the missions active, as they push the boundaries of interstellar space beyond the solar system.",
       "keywords": [
         "bang",
@@ -1398,7 +1574,7 @@
         "voyager"
       ],
       "biz": null,
-      "score": 50.5,
+      "score": 50.0,
       "convergence": 0.0,
       "links": {
         "original": "https://www.universetoday.com/articles/big-bang-fix-puts-voyager-across-the-one-light-day-mark"
@@ -1417,7 +1593,7 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2026-10-23T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "atlas",
@@ -1428,7 +1604,7 @@
         "ratio"
       ],
       "biz": null,
-      "score": 50.5,
+      "score": 50.0,
       "convergence": 0.333,
       "topic_id": "10c3e388bac4",
       "topic_title": "An enriched methane D/H ratio in the interstellar object 3I/ATLAS",
@@ -1454,14 +1630,14 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-11-06T09:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Katelyn Beecroft from London, Ontario, Canada On the morning of Oct. 6, 2026, the waning crescent Moon — then about 20 percent lit — occulted Jupiter as seen from much of eastern North America. This imager, tracking by hand with an 8-inch Dobsonian reflector, stacked the sharpest frames from video shot with a ZWO ASI224MC Continue reading \"Jupiter occulted\" The post Jupiter occulted appeared first on Astronomy Magazine .",
       "keywords": [
         "jupiter",
         "occulted"
       ],
       "biz": null,
-      "score": 50.4,
+      "score": 49.9,
       "convergence": 0.0,
       "links": {
         "original": "https://www.astronomy.com/picture-of-the-day/photo/jupiter-occulted/"
@@ -1480,7 +1656,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-11-06T05:01:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The San Juan River has carved deep, improbably curvy meanders into the desert landscape.",
       "keywords": [
         "gander",
@@ -1489,48 +1665,18 @@
         "utah"
       ],
       "biz": null,
-      "score": 50.3,
+      "score": 49.8,
       "convergence": 0.0,
+      "zh_full": "犹他州的鹅颈湾州立公园中，圣胡安河在沙漠地貌中切出了深邃且异常弯曲的河曲。这一景观由河流长期侵蚀作用形成，展现了河流在相对平坦的台地上不断侧向迁移、切割而留下的连续弯道。鹅颈状的深切河曲是地质学中河流下切与侧蚀共同作用的典型实例，其形成过程涉及地壳抬升与河流基准面变化。该地区出露的岩层记录了古生代以来的沉积历史，为研究科罗拉多高原的构造演化提供了天然剖面。",
+      "llm_summary": "圣胡安河在犹他州沙漠中切出了深邃且异常弯曲的鹅颈状河曲，这是河流长期侵蚀与地壳抬升共同作用形成的典型地质景观，记录了科罗拉多高原的演化历史。",
+      "llm_reason": "展示河流侵蚀与地壳抬升的经典地质实例",
+      "density": "中",
       "links": {
         "original": "https://science.nasa.gov/earth/earth-observatory/taking-a-gander-at-utahs-goosenecks/"
       },
       "tier": "official",
       "selected": false,
       "role": "官方"
-    },
-    {
-      "id": "45ed5d75e835",
-      "title": "Harvesting magic resource in curved spacetime",
-      "url": "https://www.nature.com/articles/s42005-026-02938-4",
-      "channel": "astro",
-      "source": "Nature 天文和天体物理",
-      "source_base": "Nature 天文和天体物理",
-      "source_type": "rss",
-      "category": "科研进展",
-      "published_at": "2026-11-06T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": null,
-      "keywords": [
-        "curved",
-        "harvesting",
-        "magic",
-        "resource",
-        "spacetime"
-      ],
-      "biz": null,
-      "score": 50.1,
-      "convergence": 0.0,
-      "refs": {
-        "doi": "10.1038/s42005-026-02938-4",
-        "via": "self_meta",
-        "confidence": "verified"
-      },
-      "links": {
-        "original": "https://www.nature.com/articles/s42005-026-02938-4"
-      },
-      "tier": "official",
-      "selected": false,
-      "role": "科研"
     },
     {
       "id": "e72f6a3dcd3f",
@@ -1542,7 +1688,7 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2026-11-05T20:00:09+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "This NASA/ESA Hubble Space Telescope image provides a lesson in galactic history. The sparkling collection of stars is named Messier 30 (M30) after the French astronomer Charles Messier, who cataloged M30 and other diffuse objects that might be mistaken for comets in the early telescopes of Messier's time. M30 lies about 27,500 light-years away in the constellation Capricornus.",
       "keywords": [
         "galactic",
@@ -1552,8 +1698,12 @@
         "stars"
       ],
       "biz": null,
-      "score": 50.0,
+      "score": 49.6,
       "convergence": 0.0,
+      "zh_full": "这张NASA/ESA哈勃太空望远镜图像提供了一堂银河系历史课。图中闪烁的星团名为梅西耶30（M30），得名于法国天文学家夏尔·梅西耶，他在早期望远镜时代将M30及其他可能被误认为彗星的弥漫天体编入星表。M30位于摩羯座方向，距离地球约27,500光年。",
+      "llm_summary": "哈勃望远镜拍摄的星团M30图像展示了银河系历史。该星团由法国天文学家梅西耶编录，位于摩羯座，距地球约27,500光年。",
+      "llm_reason": "展示星团观测与天文历史",
+      "density": "中",
       "links": {
         "original": "https://phys.org/news/2026-11-hubble-galactic-history-stars.html"
       },
@@ -1571,7 +1721,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-11-05T15:17:19+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "City lights from the Midwestern United States to the East Coast sparkle across the landscape a couple of hours before sunrise on Oct. 18, 2026. Major urban areas visible in the photograph include Chicago, Illinois; Detroit, Michigan; and the New York metropolitan region. The International Space Station was orbiting 259 miles above Earth when this […]",
       "keywords": [
         "city",
@@ -1579,7 +1729,7 @@
         "midwestern"
       ],
       "biz": null,
-      "score": 49.9,
+      "score": 49.5,
       "convergence": 0.0,
       "zh_full": "2026年10月18日日出前数小时，从美国中西部到东海岸的城市灯光在景观中闪烁。照片中可见的主要城市区域包括伊利诺伊州芝加哥、密歇根州底特律以及纽约大都会区。国际空间站当时正以距地球259英里的高度在轨道上运行。这张照片展示了从太空视角下美国东部城市群在夜间的壮观景象，反映了人类活动在广袤大地上的分布特征。",
       "llm_summary": "国际空间站拍摄了2026年10月18日日出前美国中西部至东海岸的城市灯光照片，可见芝加哥、底特律和纽约大都会区，空间站当时距地球259英里。",
@@ -1602,7 +1752,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-11-05T14:00:10+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "A new experiment reveals that Earth's microbes can grow in harsh conditions similar to what may exist just below the surface of Mars, suggesting new directions in the search for potential cellular life on the red planet.",
       "keywords": [
         "conditions",
@@ -1615,7 +1765,7 @@
         "simulated"
       ],
       "biz": null,
-      "score": 49.8,
+      "score": 49.4,
       "convergence": 0.0,
       "zh_full": "一项新实验表明，地球微生物能够在模拟火星地表下可能存在的严酷环境中生长。这一发现为在火星上寻找潜在细胞生命提供了新的方向。研究人员在实验室中模拟了火星表面以下可能存在的环境条件，包括低温、低气压和特定化学成分，并观察到地球微生物在其中能够存活和繁殖。这一结果意味着，如果火星表面以下存在类似的微环境，那么理论上微生物生命有可能在那里生存。该研究不仅扩展了我们对生命适应极端环境能力的认识，也为未来火星探测任务中寻找生命迹象提供了重要的参考依据。科学家们此前主要关注火星表面或古代湖泊沉积物等区域，而这项研究提示，火星地下环境同样值得作为潜在的生命栖息地加以探索。",
       "llm_summary": "新实验发现地球微生物能在模拟火星地下严酷环境中生长，提示火星地下可能存在适合微生物生存的微环境，为寻找火星生命提供了新方向。",
@@ -1629,39 +1779,6 @@
       "role": "科研"
     },
     {
-      "id": "9866b150b88e",
-      "title": "Nov. 5, 2006: Mars Global Surveyor goes quiet",
-      "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/nov-5-2006-mars-global-surveyor-goes-quiet/",
-      "channel": "astro",
-      "source": "Astronomy Magazine",
-      "source_base": "Astronomy Magazine",
-      "source_type": "rss",
-      "category": "深空探测",
-      "published_at": "2026-11-05T14:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "Designed to study Mars in a comprehensive way, examining its atmosphere, its interior, and its surface, the Mars Global Surveyor (MGS) launched Nov. 7, 1996. By Sept. 12, 1997, it would reach Mars and slip into orbit around the Red Planet. Over the next nine years, it revealed an evolving world of ongoing geological dynamism, Continue reading \"Nov. 5, 2006: Mars Global Surveyor goes quiet\" The post Nov. 5, 2006: Mars Global Surveyor goes quiet appeared first on Astronomy Magazine .",
-      "keywords": [
-        "global",
-        "goes",
-        "mars",
-        "quiet",
-        "surveyor"
-      ],
-      "biz": null,
-      "score": 49.8,
-      "convergence": 0.0,
-      "zh_full": "火星全球勘测者号（Mars Global Surveyor，MGS）于1996年11月7日发射，设计目标是对火星进行综合研究，考察其大气、内部结构与表面。1997年9月12日，探测器抵达火星并进入环绕该红色星球的轨道。在随后九年的运行中，它揭示了一个持续演化的世界，展现出活跃的地质动态。2006年11月5日，火星全球勘测者号与地球失去联系，任务就此沉寂。该探测器在轨工作期间获取了大量关于火星地形、矿物分布、大气循环与磁场的数据，为理解火星的演化历史提供了关键依据。",
-      "llm_summary": "火星全球勘测者号于1996年发射，1997年进入火星轨道，运行九年间揭示了火星持续的地质活动。2006年11月5日，探测器与地球失去联系，任务结束。",
-      "llm_reason": "火星探测里程碑任务结束事件",
-      "density": "中",
-      "links": {
-        "original": "https://www.astronomy.com/today-in-the-history-of-astronomy/nov-5-2006-mars-global-surveyor-goes-quiet/"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "媒体"
-    },
-    {
       "id": "45ec54ced0eb",
       "title": "A user’s guide to building the Universe",
       "url": "https://www.nature.com/articles/s41550-026-02998-0",
@@ -1671,7 +1788,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-30T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "building",
@@ -1680,7 +1797,7 @@
         "user"
       ],
       "biz": null,
-      "score": 49.6,
+      "score": 49.2,
       "convergence": 0.333,
       "topic_id": "8d1e5cab190d",
       "topic_title": "Study: Life’s building blocks are surprisingly stable in Venus-like conditions",
@@ -1709,7 +1826,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-11-05T00:40:07+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "New evidence from gas seeping above volcanic rifts suggests Mars is not geologically dead deep inside, but merely sleeping. Fresh fissures along the Alba Mons region hint at active spots under the surface, where gases from inside the planet may be making their way up to the surface.",
       "keywords": [
         "activity",
@@ -1722,8 +1839,12 @@
         "volcanic"
       ],
       "biz": null,
-      "score": 49.5,
+      "score": 49.1,
       "convergence": 0.0,
+      "zh_full": "来自火星火山裂谷上方渗漏气体的新证据表明，火星内部并非地质学意义上的死寂，而只是处于休眠状态。阿尔巴山（Alba Mons）区域新发现的裂隙暗示地下存在活跃区域，火星内部的气体可能正沿这些裂隙向地表上升。",
+      "llm_summary": "欧洲轨道探测器在火星阿尔巴山区域发现气体渗漏的新证据，表明火星内部并非地质死亡，而是处于休眠状态，地下可能存在活跃区域。",
+      "llm_reason": "火星地质活动新线索",
+      "density": "中",
       "links": {
         "original": "https://phys.org/news/2026-11-european-orbiter-fresh-hints-volcanic.html"
       },
@@ -1741,7 +1862,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-11-04T21:29:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Yesterday, on November 3rd, the deputy chief designer of China's crewed space program and chief designer of the lunar exploration program (Wang Xiang) unveiled an official statement detailing its [plans for a crewed mission to the Moon](https://english.spacechina.com/n17212/c4744561/content.html).",
       "keywords": [
         "china",
@@ -1752,8 +1873,12 @@
         "unveils"
       ],
       "biz": null,
-      "score": 49.4,
+      "score": 49.0,
       "convergence": 0.0,
+      "zh_full": "11月3日，中国载人航天工程副总设计师、探月工程总设计师王翔发布官方声明，详细阐述了中国载人登月任务的计划。",
+      "llm_summary": "中国载人航天工程副总设计师王翔于11月3日发布官方声明，公布了中国载人登月任务的计划。",
+      "llm_reason": "中国载人登月计划官方发布",
+      "density": "中",
       "links": {
         "original": "https://www.universetoday.com/articles/china-unveils-their-plan-for-a-crewed-moon-landing"
       },
@@ -1771,7 +1896,7 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2026-10-26T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "bodies",
@@ -1784,7 +1909,7 @@
         "white"
       ],
       "biz": null,
-      "score": 49.1,
+      "score": 48.7,
       "convergence": 0.167,
       "topic_id": "668b7d3e8d4e",
       "topic_title": "A double debris disc around a white dwarf sculpted by two planetary bodies",
@@ -1810,7 +1935,7 @@
       "source_type": "rss",
       "category": "太阳与空间物理",
       "published_at": "2026-11-04T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "clues",
@@ -1822,7 +1947,7 @@
         "wreckage"
       ],
       "biz": null,
-      "score": 48.8,
+      "score": 48.4,
       "convergence": 0.0,
       "refs": {
         "doi": "10.1038/d41586-026-03537-7",
@@ -1846,7 +1971,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-11-03T21:45:06+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "This summer, a team of students and researchers at the University of Alabama in Huntsville successfully conducted three rocket-motor firing tests on a prototype lunar landing pad. The tests showed the prototype’s ability to capture and redirect rocket exhaust through an integrated vent system, marking an important milestone in developing landing infrastructure for future Moon base operations.",
       "keywords": [
         "landing",
@@ -1858,7 +1983,7 @@
         "test"
       ],
       "biz": null,
-      "score": 48.7,
+      "score": 48.3,
       "convergence": 0.0,
       "links": {
         "original": "https://www.universetoday.com/articles/students-test-prototype-landing-pad-to-make-lunar-operations-safe"
@@ -1877,7 +2002,7 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2026-11-02T19:28:28+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Astrophysicists think that black holes grow through a hierarchical merger framework. But the elusive Intermediate Mass Black Holes are the missing link between stellar mass black holes, and the gargantuan supermassive black holes like the one at the center of the Milky Way. The JWST may have found the ancient sources of IMBH heavy seeds: young massive clusters in the high-redshift Universe.",
       "keywords": [
         "black",
@@ -1891,7 +2016,7 @@
         "where"
       ],
       "biz": null,
-      "score": 48.0,
+      "score": 47.6,
       "convergence": 0.0,
       "zh_full": "天体物理学家认为黑洞通过层级并合框架成长。但 elusive 的中间质量黑洞是恒星质量黑洞与超大质量黑洞（如银河系中心的那个）之间的缺失环节。JWST可能发现了IMBH重种子的古老来源：高红移宇宙中的年轻大质量星团。",
       "llm_summary": "JWST可能在高红移宇宙的年轻大质量星团中找到了中间质量黑洞重种子的来源，填补黑洞演化链条中的缺失环节。",
@@ -1917,7 +2042,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-11-02T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "absorption",
@@ -1929,7 +2054,7 @@
         "real-time"
       ],
       "biz": null,
-      "score": 47.5,
+      "score": 47.0,
       "convergence": 0.0,
       "refs": {
         "doi": "10.1038/s42005-026-02921-z",
@@ -1953,7 +2078,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "atmospheres",
@@ -1963,7 +2088,7 @@
         "retention"
       ],
       "biz": null,
-      "score": 47.2,
+      "score": 46.8,
       "convergence": 0.333,
       "topic_id": "db428a44cbb1",
       "topic_title": "Retention of primordial atmospheres through giant impacts",
@@ -1992,7 +2117,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-10-16T17:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The Martian Moons eXploration spacecraft, set to launch on 20 October, will bring back samples that should solve a moon mystery that has been vexing scientists for more than a century",
       "keywords": [
         "japan",
@@ -2004,7 +2129,7 @@
         "phobos"
       ],
       "biz": null,
-      "score": 46.3,
+      "score": 45.8,
       "convergence": 0.333,
       "topic_id": "641dc4b79849",
       "topic_title": "Lincoln Laboratory laser communications terminal launches on historic Artemis II moon mission",
@@ -2023,41 +2148,6 @@
       "role": "媒体"
     },
     {
-      "id": "c177ea716252",
-      "title": "Rusty crust made Mars warm and wet",
-      "url": "https://www.newscientist.com/article/2596726-rusty-crust-made-mars-warm-and-wet/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-      "channel": "astro",
-      "source": "New Scientist 太空",
-      "source_base": "New Scientist 太空",
-      "source_type": "rss",
-      "category": "深空探测",
-      "published_at": "2026-10-30T15:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "It's unclear how and why Mars once became warm enough to allow water to flow on its surface, but a new idea suggests it comes down to rust below the surface",
-      "keywords": [
-        "crust",
-        "mars",
-        "rusty",
-        "warm"
-      ],
-      "biz": null,
-      "score": 45.9,
-      "convergence": 0.0,
-      "zh_full": "火星表面曾经有液态水流动，但它是如何以及为何变得足够温暖的，一直是个未解之谜。一项新研究提出，答案可能在于地表之下的铁锈。火星表面富含铁元素，铁在氧化（生锈）过程中会释放热量。研究者认为，火星地下的铁锈形成过程可能产生了足够的热量，使火星局部或整体升温，从而让水保持液态。这一机制或能解释火星早期温暖潮湿环境的成因。该假说仍需更多证据验证，但它为火星气候演化提供了新的思路。",
-      "llm_summary": "火星曾有液态水流动，但变暖原因不明。新假说认为，地表下铁氧化生锈放热，可能为火星提供了足够热量，使其保持温暖湿润。该机制为火星早期气候之谜提供了新解释，但尚待验证。",
-      "llm_reason": "提出火星变暖新机制，具科学价值",
-      "density": "中",
-      "llm_score": 37.0,
-      "llm_score_a": 62.0,
-      "llm_score_b": 12.0,
-      "links": {
-        "original": "https://www.newscientist.com/article/2596726-rusty-crust-made-mars-warm-and-wet/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "媒体"
-    },
-    {
       "id": "9547f8283d63",
       "title": "Surprise! White dwarf stars come in a rainbow of colours",
       "url": "https://www.nature.com/articles/d41586-026-03319-1",
@@ -2067,7 +2157,7 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2026-10-21T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "colours",
@@ -2079,7 +2169,7 @@
         "white"
       ],
       "biz": null,
-      "score": 45.8,
+      "score": 45.4,
       "convergence": 0.167,
       "topic_id": "668b7d3e8d4e",
       "topic_title": "A double debris disc around a white dwarf sculpted by two planetary bodies",
@@ -2096,6 +2186,41 @@
       "role": "科研"
     },
     {
+      "id": "c177ea716252",
+      "title": "Rusty crust made Mars warm and wet",
+      "url": "https://www.newscientist.com/article/2596726-rusty-crust-made-mars-warm-and-wet/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+      "channel": "astro",
+      "source": "New Scientist 太空",
+      "source_base": "New Scientist 太空",
+      "source_type": "rss",
+      "category": "深空探测",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "It's unclear how and why Mars once became warm enough to allow water to flow on its surface, but a new idea suggests it comes down to rust below the surface",
+      "keywords": [
+        "crust",
+        "mars",
+        "rusty",
+        "warm"
+      ],
+      "biz": null,
+      "score": 45.4,
+      "convergence": 0.0,
+      "zh_full": "火星表面曾经有液态水流动，但它是如何以及为何变得足够温暖的，一直是个未解之谜。一项新研究提出，答案可能在于地表之下的铁锈。火星表面富含铁元素，铁在氧化（生锈）过程中会释放热量。研究者认为，火星地下的铁锈形成过程可能产生了足够的热量，使火星局部或整体升温，从而让水保持液态。这一机制或能解释火星早期温暖潮湿环境的成因。该假说仍需更多证据验证，但它为火星气候演化提供了新的思路。",
+      "llm_summary": "火星曾有液态水流动，但变暖原因不明。新假说认为，地表下铁氧化生锈放热，可能为火星提供了足够热量，使其保持温暖湿润。该机制为火星早期气候之谜提供了新解释，但尚待验证。",
+      "llm_reason": "提出火星变暖新机制，具科学价值",
+      "density": "中",
+      "llm_score": 37.0,
+      "llm_score_a": 62.0,
+      "llm_score_b": 12.0,
+      "links": {
+        "original": "https://www.newscientist.com/article/2596726-rusty-crust-made-mars-warm-and-wet/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "媒体"
+    },
+    {
       "id": "9519b884bdd2",
       "title": "Rapid growth in a dual active galactic nucleus during a gas-rich merger at z ≈ 4.5",
       "url": "https://www.nature.com/articles/s41550-026-03008-z",
@@ -2105,7 +2230,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-30T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "active",
@@ -2119,7 +2244,7 @@
         "rapid"
       ],
       "biz": null,
-      "score": 45.5,
+      "score": 45.0,
       "convergence": 0.0,
       "refs": {
         "doi": "10.1038/s41550-026-03008-z",
@@ -2143,7 +2268,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-30T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "challenge",
@@ -2152,7 +2277,7 @@
         "scientific"
       ],
       "biz": null,
-      "score": 45.5,
+      "score": 45.0,
       "convergence": 0.0,
       "refs": {
         "doi": "10.1038/s41567-026-03511-0",
@@ -2167,6 +2292,75 @@
       "role": "科研"
     },
     {
+      "id": "45ed5d75e835",
+      "title": "Harvesting magic resource in curved spacetime",
+      "url": "https://www.nature.com/articles/s42005-026-02938-4",
+      "channel": "astro",
+      "source": "Nature 天文和天体物理",
+      "source_base": "Nature 天文和天体物理",
+      "source_type": "rss",
+      "category": "科研进展",
+      "published_at": "2026-11-06T00:00:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": null,
+      "keywords": [
+        "curved",
+        "harvesting",
+        "magic",
+        "resource",
+        "spacetime"
+      ],
+      "biz": null,
+      "score": 44.7,
+      "convergence": 0.0,
+      "refs": {
+        "doi": "10.1038/s42005-026-02938-4",
+        "via": "self_meta",
+        "confidence": "verified"
+      },
+      "zh_full": "（无摘要，仅标题）该标题为“在弯曲时空中收获魔法资源”，属于天文和天体物理领域的论文标题，未提供摘要内容。",
+      "llm_summary": "（无摘要，仅标题）该标题为“在弯曲时空中收获魔法资源”，属于天文和天体物理领域的论文标题，未提供摘要内容。",
+      "density": "低",
+      "links": {
+        "original": "https://www.nature.com/articles/s42005-026-02938-4"
+      },
+      "tier": "official",
+      "selected": false,
+      "role": "科研"
+    },
+    {
+      "id": "2a117c9507da",
+      "title": "NASA navigation experiment shows promise for planetary landings",
+      "url": "https://phys.org/news/2026-11-nasa-planetary.html",
+      "channel": "astro",
+      "source": "Phys.org 太空新闻",
+      "source_base": "Phys.org 太空新闻",
+      "source_type": "rss",
+      "category": "其他",
+      "published_at": "2026-11-04T23:20:07+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "NASA has successfully demonstrated technology designed to help spacecraft autonomously navigate to safe landing sites on the moon and on other planets. An Alta-X drone equipped with the agency's Safe and Precise Landing—Integrated Capabilities Evolution (SPLICE) guidance, navigation and control payload completed simulated lunar descent and landing maneuvers Aug. 27. The flight took place at Rogers Dry Lake near NASA's Armstrong Flight Research Center in Edwards, California.",
+      "keywords": [
+        "experiment",
+        "landings",
+        "nasa",
+        "navigation",
+        "planetary",
+        "promise"
+      ],
+      "biz": null,
+      "score": 44.6,
+      "convergence": 0.667,
+      "topic_id": "778d0a04316c",
+      "topic_title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+      "links": {
+        "original": "https://phys.org/news/2026-11-nasa-planetary.html"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "科研"
+    },
+    {
       "id": "fe81c5342411",
       "title": "A ∧-like metallicity profile in the disk of the Sagittarius dwarf galaxy",
       "url": "https://www.nature.com/articles/s41550-026-02996-2",
@@ -2176,7 +2370,7 @@
       "source_type": "rss",
       "category": "星系与宇宙学",
       "published_at": "2026-10-13T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "disk",
@@ -2188,7 +2382,7 @@
         "sagittarius"
       ],
       "biz": null,
-      "score": 43.8,
+      "score": 43.4,
       "convergence": 0.333,
       "topic_id": "8cba20036180",
       "topic_title": "A ∧-like metallicity profile in the disk of the Sagittarius dwarf galaxy",
@@ -2205,38 +2399,6 @@
       "role": "科研"
     },
     {
-      "id": "2a117c9507da",
-      "title": "NASA navigation experiment shows promise for planetary landings",
-      "url": "https://phys.org/news/2026-11-nasa-planetary.html",
-      "channel": "astro",
-      "source": "Phys.org 太空新闻",
-      "source_base": "Phys.org 太空新闻",
-      "source_type": "rss",
-      "category": "其他",
-      "published_at": "2026-11-04T23:20:07+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "NASA has successfully demonstrated technology designed to help spacecraft autonomously navigate to safe landing sites on the moon and on other planets. An Alta-X drone equipped with the agency's Safe and Precise Landing—Integrated Capabilities Evolution (SPLICE) guidance, navigation and control payload completed simulated lunar descent and landing maneuvers Aug. 27. The flight took place at Rogers Dry Lake near NASA's Armstrong Flight Research Center in Edwards, California.",
-      "keywords": [
-        "experiment",
-        "landings",
-        "nasa",
-        "navigation",
-        "planetary",
-        "promise"
-      ],
-      "biz": null,
-      "score": 43.1,
-      "convergence": 0.667,
-      "topic_id": "888a752ed227",
-      "topic_title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
-      "links": {
-        "original": "https://phys.org/news/2026-11-nasa-planetary.html"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "科研"
-    },
-    {
       "id": "16d4b9b3ee75",
       "title": "The 3D Universe in a book",
       "url": "https://www.nature.com/articles/s42254-026-01007-7",
@@ -2246,14 +2408,14 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-26T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "book",
         "universe"
       ],
       "biz": null,
-      "score": 42.8,
+      "score": 42.4,
       "convergence": 0.0,
       "refs": {
         "doi": "10.1038/s42254-026-01007-7",
@@ -2277,7 +2439,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-15T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "compact",
@@ -2291,7 +2453,7 @@
         "winds"
       ],
       "biz": null,
-      "score": 41.8,
+      "score": 41.4,
       "convergence": 0.167,
       "topic_id": "6eb5c13e2e41",
       "topic_title": "Author Correction: Lyman continuum escape during the onset of galactic winds in compact starbursts",
@@ -2317,7 +2479,7 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2025-10-28T15:01:12+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The mergers, measured one month apart in 2024 by LIGO-Virgo-KAGRA collaboration, advance scientific understanding of the nature of black hole formation and fundamental physics. A pair of distant cosmic black hole mergers, measured just one month apart in late 2024, is improving how scientists understand the nature and evolution of the most violent deep-space collisions […]",
       "keywords": [
         "black",
@@ -2360,7 +2522,7 @@
       "source_type": "rss",
       "category": "引力波",
       "published_at": "2025-09-10T15:00:21+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "This story first appeared on Caltech News. LIGO, Virgo, and KAGRA celebrate anniversary, announce verification of Stephen Hawking’s black hole area theorem On September 14, 2015, a signal arrived on Earth, carrying information about a pair of remote black holes that had spiraled together and merged. The signal had traveled about 1.3 billion years to […]",
       "keywords": [
         "black-hole",
@@ -2386,6 +2548,40 @@
       "role": "科研"
     },
     {
+      "id": "cff66779aaea",
+      "title": "'Stupendously large' primordial black holes ruled out as a dark matter source",
+      "url": "https://phys.org/news/2026-11-stupendously-large-primordial-black-holes.html",
+      "channel": "astro",
+      "source": "Phys.org 太空新闻",
+      "source_base": "Phys.org 太空新闻",
+      "source_type": "rss",
+      "category": "其他",
+      "published_at": "2026-11-08T14:40:01+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "Primordial black holes are hypothetical objects that could have formed directly from dense clumps of matter in the very early universe. If they exist, their dramatic origins would set them apart from the black holes we see today, which form when massive stars collapse. Some theories suggest that \"stupendously large\" primordial black holes could account for a significant share of the universe's elusive dark matter.",
+      "keywords": [
+        "black",
+        "dark",
+        "holes",
+        "matter",
+        "primordial",
+        "ruled",
+        "source",
+        "stupendously"
+      ],
+      "biz": null,
+      "score": 40.5,
+      "convergence": 0.5,
+      "topic_id": "b33b5a0083eb",
+      "topic_title": "Even stupendous black holes can’t explain dark matter",
+      "links": {
+        "original": "https://phys.org/news/2026-11-stupendously-large-primordial-black-holes.html"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "科研"
+    },
+    {
       "id": "453e9cbf5cb6",
       "title": "An intertwined short and long γ-ray burst with a 4-minute separation",
       "url": "https://www.nature.com/articles/s41550-026-03007-0",
@@ -2395,7 +2591,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-23T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "burst",
@@ -2406,7 +2602,7 @@
         "short"
       ],
       "biz": null,
-      "score": 40.8,
+      "score": 40.4,
       "convergence": 0.0,
       "refs": {
         "doi": "10.1038/s41550-026-03007-0",
@@ -2430,7 +2626,7 @@
       "source_type": "rss",
       "category": "太阳与空间物理",
       "published_at": "2026-10-22T19:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "An experiment has produced nanoflares similar to those seen on the sun, and shown that they can help explain why the outer layers of the solar atmosphere are so hot",
       "keywords": [
         "corona",
@@ -2442,7 +2638,7 @@
         "tiny"
       ],
       "biz": null,
-      "score": 40.6,
+      "score": 40.2,
       "convergence": 0.0,
       "zh_full": "一项实验产生了类似太阳上观察到的纳米耀斑，并表明它们有助于解释太阳大气外层为何如此炽热。该实验模拟了太阳上微小而剧烈的能量释放事件，即纳米耀斑，并发现这些事件能够为日冕提供足够的加热，从而解释长期困扰天文学家的日冕加热之谜。这一结果可能为理解太阳大气层温度分布提供关键线索。",
       "llm_summary": "实验产生了类似太阳的纳米耀斑，并证明它们有助于解释太阳大气外层为何如此炽热。这一发现为日冕加热之谜提供了新的实验证据，可能帮助科学家理解太阳外层大气温度远高于表面的原因。",
@@ -2468,7 +2664,7 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2026-10-22T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "accretion",
@@ -2481,7 +2677,7 @@
         "sub-eddington"
       ],
       "biz": null,
-      "score": 40.1,
+      "score": 39.7,
       "convergence": 0.0,
       "refs": {
         "doi": "10.1038/s41550-026-03005-2",
@@ -2505,7 +2701,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-04T18:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Some black holes may be older than the stars themselves. And their existence could help solve one of the biggest mysteries in physics: dark matter",
       "keywords": [
         "black",
@@ -2516,9 +2712,9 @@
         "primordial"
       ],
       "biz": null,
-      "score": 38.3,
+      "score": 38.9,
       "convergence": 0.5,
-      "topic_id": "091433c2113a",
+      "topic_id": "b33b5a0083eb",
       "topic_title": "Even stupendous black holes can’t explain dark matter",
       "links": {
         "original": "https://www.newscientist.com/video/2597265-could-primordial-black-holes-hold-the-key-to-dark-matter/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS"
@@ -2537,7 +2733,7 @@
       "source_type": "rss",
       "category": "引力波",
       "published_at": "2026-05-13T01:34:22+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The LIGO–Virgo–KAGRA (LVK) detector network has a new trick up its sleeve to improve the instruments’ sensitivity to gravitational waves: it’s called Astrophysical Calibration and it plays a role similar to auto-tune in music production. When a gravitational wave passes through the Earth, the LIGO, Virgo and KAGRA detectors are ready to detect it, but […]",
       "keywords": [
         "autotune",
@@ -2573,7 +2769,7 @@
       "source_type": "rss",
       "category": "引力波",
       "published_at": "2026-03-05T13:01:12+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "This story first appeared on MIT News. The latest crop of space-time wobbles includes a variety of heavy, fast-spinning, and lopsided colliding black holes. When the densest objects in the universe collide and merge, the violence sets off ripples, in the form of gravitational waves, that reverberate across space and time, over hundreds of millions […]",
       "keywords": [
         "catalog",
@@ -2615,7 +2811,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-02-25T04:06:26+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "In a scientific article submitted to The Astrophysical Journal and available online as a free preprint (https://arxiv.org/abs/2512.17990), the LIGO-Virgo-KAGRA Collaboration reports the most stringent results yet on possible gravitational waves from a glitching pulsar. This target, known as the Vela pulsar, is a rapidly rotating neutron star in our galactic neighborhood for which radio telescopes […]",
       "keywords": [
         "constraints",
@@ -2656,7 +2852,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-02-04T15:23:09+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "In January 2025, the LIGO-Virgo-KAGRA collaboration observed an exceptionally loud gravitational-wave signal: GW250114. It stands out as the clearest one observed thus far, about three times louder than the first detection in 2015. The signal matches what is expected when two black holes of nearly equal mass and low spin spiral together, collide, and settle into a single, larger black hole. Because of […]",
       "keywords": [
         "exceptional",
@@ -2691,7 +2887,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-08-10T18:10:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Acting as cooperative optical beacons, the satellites could provide GPS-like navigation and communications support for spacecraft operating across cislunar space.",
       "keywords": [
         "high-orbit",
@@ -2735,7 +2931,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-04-02T13:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "High-definition video and data sent from the lunar vicinity to Earth will demonstrate the first use of laser communications on a crewed mission.",
       "keywords": [
         "artemis",
@@ -2786,7 +2982,7 @@
       "source_type": "rss",
       "category": "恒星与星际介质",
       "published_at": "2024-05-22T15:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The results offer a new way to probe supermassive black holes and their evolution across the universe.",
       "keywords": [
         "astronomers",
@@ -2832,7 +3028,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2024-03-13T21:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "With Project MADMEN, two MIT students experience the challenges and bonding associated with a Mars analog mission.",
       "keywords": [
         "life",
@@ -2864,7 +3060,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-05T12:42:40+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Finding dim exoplanets hidden in the glare of their stars is an ongoing challenge in astronomy. Telescopes use coronagraphs to block out starlight, but even they have their limitations. Researchers have developed a new technique with the JWST that can find dim exoplanets more easily than ever.",
       "keywords": [
         "digital",
@@ -2874,7 +3070,7 @@
         "twin"
       ],
       "biz": null,
-      "score": 36.6,
+      "score": 36.3,
       "convergence": 0.333,
       "topic_id": "2dcc201b566b",
       "topic_title": "Imaging exoplanets below the telescope stability limit",
@@ -2895,7 +3091,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-16T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "astroparticle",
@@ -2910,7 +3106,7 @@
         "same"
       ],
       "biz": null,
-      "score": 36.1,
+      "score": 35.7,
       "convergence": 0.0,
       "refs": {
         "doi": "10.1038/d41586-026-03308-4",
@@ -2934,7 +3130,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-06T00:40:06+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Using the Low Frequency Array (LOFAR), an international team led by Leiden University has produced the sharpest and most sensitive radio image of the sky ever made at low radio frequencies. The image reveals almost 63,000 radio sources, such as active galactic nuclei and star-forming galaxies, across a patch of sky about 25 times the area of the full moon. The results have been accepted for publication in Astronomy & Astrophysics. The paper is currently available on the arXiv preprint server.",
       "keywords": [
         "astronomers",
@@ -2946,7 +3142,7 @@
         "view"
       ],
       "biz": null,
-      "score": 35.9,
+      "score": 35.6,
       "convergence": 0.333,
       "topic_id": "0d1302e70f0f",
       "topic_title": "Astronomers spot a giant planet that is as light as cotton candy",
@@ -2967,7 +3163,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-05T22:00:07+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Investigating a scientific question is often a complex process. As an astrophysicist studying some of the most energetic phenomena in the universe, I know that finding answers requires much more than reading scientific papers or understanding existing theories. Astrophysical research involves collecting observations, analyzing data, building physical models and comparing their predictions with observations. These tasks require different scientific tools, databases and modeling software and can take considerable time even for experienced researchers.",
       "keywords": [
         "astrophysical",
@@ -2977,7 +3173,7 @@
         "tools"
       ],
       "biz": null,
-      "score": 35.8,
+      "score": 35.6,
       "convergence": 0.333,
       "topic_id": "713ecf8473e5",
       "topic_title": "MIT in the media: Exploring how curiosity-driven science is an essential ingredient in America’s success",
@@ -2989,32 +3185,29 @@
       "role": "科研"
     },
     {
-      "id": "01b07b4ca3f2",
-      "title": "Game Theory Helps SETI Search for Alien Civilizations",
-      "url": "https://www.universetoday.com/articles/game-theory-helps-seti-search-for-alien-civilizations",
+      "id": "4279585cf173",
+      "title": "The Sky This Week from November 6 to 13: Venus in the spotlight",
+      "url": "https://www.astronomy.com/the-sky-this-week/the-sky-this-week-from-november-6-to-13-2026/",
       "channel": "astro",
-      "source": "Universe Today",
-      "source_base": "Universe Today",
+      "source": "Astronomy Magazine",
+      "source_base": "Astronomy Magazine",
       "source_type": "rss",
       "category": "其他",
-      "published_at": "2026-11-04T20:50:16+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "SETI can be more effective the more the targets in the search are refined. SETI's newest survey effort uses game theory to inform its search. It's based on the idea that other ETIs would almost certainly use the transit method to detect habitable worlds like Earth.",
+      "published_at": "2026-11-06T06:00:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "Friday, November 6The waning Moon leaves us with perfect skies for deep-sky observing. Let’s kick off the week with a bright planetary nebula in Aquarius: NGC 7293, commonly known as the Helix Nebula. Despite its impressive magnitude of 7.3, the Helix presents a challenge: It is a broad 13’ across, which spreads its light over Continue reading \"The Sky This Week from November 6 to 13: Venus in the spotlight\" The post The Sky This Week from November 6 to 13: Venus in the spotlight appeared first on Astronomy Magazine .",
       "keywords": [
-        "alien",
-        "civilizations",
-        "game",
-        "search",
-        "seti",
-        "theory"
+        "november",
+        "spotlight",
+        "venus"
       ],
       "biz": null,
-      "score": 35.4,
-      "convergence": 0.333,
-      "topic_id": "4cb46dfe564c",
-      "topic_title": "Game Theory Helps SETI Search for Alien Civilizations",
+      "score": 35.5,
+      "convergence": 0.167,
+      "topic_id": "fdf2bd71bb30",
+      "topic_title": "The Sky Today on Sunday, November 8: Io and Callisto race across Jupiter",
       "links": {
-        "original": "https://www.universetoday.com/articles/game-theory-helps-seti-search-for-alien-civilizations"
+        "original": "https://www.astronomy.com/the-sky-this-week/the-sky-this-week-from-november-6-to-13-2026/"
       },
       "tier": "media",
       "selected": false,
@@ -3030,7 +3223,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-04T16:14:46+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "For a long time, planetary scientists thought that giant impacts drove a young planet's atmosphere away into space with all the heat they generated. But it turns out the opposite could be true. The mass a young planet gains through a giant impact increases its gravitational hold on its atmosphere.",
       "keywords": [
         "atmospheres",
@@ -3041,7 +3234,7 @@
         "rocky"
       ],
       "biz": null,
-      "score": 35.3,
+      "score": 35.1,
       "convergence": 0.333,
       "topic_id": "db428a44cbb1",
       "topic_title": "Retention of primordial atmospheres through giant impacts",
@@ -3066,7 +3259,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-04T13:22:25+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Researchers have created a model lifeless Earth that couples the atmosphere with interior planetary processes. The model can reproduce Earth's modern habitable state without including life, showing that a planet that appears habitable isn't necessarily inhabited. The tool will be useful when and if the Habitable Worlds Observatory is launched, by helping identify false positives.",
       "keywords": [
         "earth",
@@ -3078,7 +3271,7 @@
         "virtual"
       ],
       "biz": null,
-      "score": 35.3,
+      "score": 35.0,
       "convergence": 0.333,
       "topic_id": "da958733c892",
       "topic_title": "Supporting mission-driven space innovation, for Earth and beyond",
@@ -3090,141 +3283,29 @@
       "role": "媒体"
     },
     {
-      "id": "52f0090ae072",
-      "title": "Using vibrations to reveal what lies beneath other planets' surfaces",
-      "url": "https://phys.org/news/2026-11-vibrations-reveal-beneath-planets-surfaces.html",
-      "channel": "astro",
-      "source": "Phys.org 太空新闻",
-      "source_base": "Phys.org 太空新闻",
-      "source_type": "rss",
-      "category": "其他",
-      "published_at": "2026-11-04T00:10:01+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "Modern space exploration hasn't quite reached \"Star Trek\" levels of boldly going where no one has gone before. But if, like the denizens of the USS Enterprise, astronauts one day want to land on an uncharted planet, they'd first want to know what's on—and under—the surface.",
-      "keywords": [
-        "beneath",
-        "lies",
-        "other",
-        "planets",
-        "reveal",
-        "surfaces",
-        "vibrations"
-      ],
-      "biz": null,
-      "score": 35.1,
-      "convergence": 0.333,
-      "topic_id": "bec8669be880",
-      "topic_title": "Using vibrations to reveal what lies beneath other planets' surfaces",
-      "zh_full": "现代太空探索尚未达到《星际迷航》中“勇敢地前往前人未至之境”的程度。但是，如果宇航员们有朝一日想像企业号的船员一样登陆一颗未知的行星，他们首先需要了解其表面及地表之下的情况。振动技术或许能为此提供帮助。通过分析行星表面的振动信号，科学家可以推断出地下结构的组成与性质，从而为未来的着陆任务提供关键的地质信息。这种方法在地球上已被用于地震勘探，而将其应用于其他行星，将有助于我们了解这些天体的内部构造，为人类探索更遥远的星球奠定基础。",
-      "llm_summary": "现代太空探索尚未达到科幻作品中的水平。若宇航员未来要登陆未知行星，需先了解其表面及地下情况。振动技术可帮助分析行星表面的振动信号，推断地下结构，为着陆任务提供地质信息。",
-      "llm_reason": "介绍振动探测行星内部的新方法，对行星科学有参考价值",
-      "density": "中",
-      "links": {
-        "original": "https://phys.org/news/2026-11-vibrations-reveal-beneath-planets-surfaces.html"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "科研"
-    },
-    {
-      "id": "3d1f7f33fea0",
-      "title": "When should we listen for alien signals? Scientists turn to game theory",
-      "url": "https://phys.org/news/2026-11-alien-scientists-game-theory.html",
-      "channel": "astro",
-      "source": "Phys.org 太空新闻",
-      "source_base": "Phys.org 太空新闻",
-      "source_type": "rss",
-      "category": "其他",
-      "published_at": "2026-11-03T22:50:01+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "Finding a signal from an extraterrestrial civilization takes more than just pointing a telescope in the right direction. We may also need to listen at exactly the right time.",
-      "keywords": [
-        "alien",
-        "game",
-        "listen",
-        "scientists",
-        "signals",
-        "theory",
-        "turn",
-        "when"
-      ],
-      "biz": null,
-      "score": 35.1,
-      "convergence": 0.333,
-      "topic_id": "4cb46dfe564c",
-      "topic_title": "Game Theory Helps SETI Search for Alien Civilizations",
-      "zh_full": "寻找地外文明信号不仅仅是把望远镜对准正确方向，还需要在正确的时间聆听。科学家们转向博弈论来研究这一问题。该研究探讨了在什么时间窗口内最有可能接收到外星信号，考虑了信号发射方和接收方之间的策略互动。通过博弈论模型，研究人员分析了双方在时间选择上的最优策略，发现存在一个最佳聆听窗口，这取决于双方对彼此行为的假设。这项研究为SETI（地外智慧生命搜寻）计划提供了新的理论框架，表明时间维度可能比之前认为的更为关键。研究指出，如果外星文明也面临资源限制，他们可能会选择在特定时间发射信号，而我们也需要在这些时间窗口内进行监听。这一发现有助于优化未来搜寻策略，提高探测到地外信号的概率。",
-      "llm_summary": "科学家利用博弈论研究何时聆听外星信号最有效。研究发现，信号发射和接收双方在时间选择上存在策略互动，存在最佳聆听窗口。这一理论框架为SETI计划提供了新思路，表明时间维度对搜寻地外文明至关重要，有助于优化未来观测策略。",
-      "llm_reason": "博弈论应用于SETI，视角新颖",
-      "density": "中",
-      "links": {
-        "original": "https://phys.org/news/2026-11-alien-scientists-game-theory.html"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "科研"
-    },
-    {
-      "id": "d4f8412de37c",
-      "title": "What Will Politics Look Like on Other Planets? It's Likely to Be a Mishmash",
-      "url": "https://www.universetoday.com/articles/what-will-politics-look-like-on-other-planets-its-likely-to-be-a-mishmash",
-      "channel": "astro",
-      "source": "Universe Today",
-      "source_base": "Universe Today",
-      "source_type": "rss",
-      "category": "其他",
-      "published_at": "2026-11-03T19:21:05+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "When we make our home on other worlds, who will be in charge? Will it be an emperor? A billionaire? A rebel alliance? Or none of the above? Astrobiologist Jacob Haqq Misra runs through the legal and political options.",
-      "keywords": [
-        "like",
-        "likely",
-        "look",
-        "mishmash",
-        "other",
-        "planets",
-        "politics"
-      ],
-      "biz": null,
-      "score": 35.0,
-      "convergence": 0.333,
-      "topic_id": "bec8669be880",
-      "topic_title": "Using vibrations to reveal what lies beneath other planets' surfaces",
-      "zh_full": "当人类在其他世界建立家园时，谁将负责管理？是皇帝、亿万富翁、反抗军联盟，还是以上皆非？天体生物学家雅各布·哈克·米斯拉（Jacob Haqq Misra）梳理了法律与政治上的各种可能性。他探讨了在殖民其他星球时可能出现的政治体制，包括从独裁到民主等多种形式，并分析了这些体制在远离地球的环境中是否可行。这一讨论涉及太空法、治理结构以及人类在异星社会中的组织方式，为未来太空定居点的政治设计提供了思考框架。",
-      "llm_summary": "人类在其他世界建立家园时，谁将负责管理？天体生物学家雅各布·哈克·米斯拉梳理了法律与政治上的各种可能性，探讨了殖民其他星球时可能出现的政治体制及其可行性。",
-      "llm_reason": "探讨异星殖民的政治治理问题，视角新颖",
-      "density": "中",
-      "links": {
-        "original": "https://www.universetoday.com/articles/what-will-politics-look-like-on-other-planets-its-likely-to-be-a-mishmash"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "媒体"
-    },
-    {
-      "id": "4279585cf173",
-      "title": "The Sky This Week from November 6 to 13: Venus in the spotlight",
-      "url": "https://www.astronomy.com/the-sky-this-week/the-sky-this-week-from-november-6-to-13-2026/",
+      "id": "3f27042abae9",
+      "title": "Nov. 8, 1656: The birth of Edmond Halley",
+      "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/nov-8-1656-the-birth-of-edmond-halley/",
       "channel": "astro",
       "source": "Astronomy Magazine",
       "source_base": "Astronomy Magazine",
       "source_type": "rss",
       "category": "其他",
-      "published_at": "2026-11-06T06:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "Friday, November 6The waning Moon leaves us with perfect skies for deep-sky observing. Let’s kick off the week with a bright planetary nebula in Aquarius: NGC 7293, commonly known as the Helix Nebula. Despite its impressive magnitude of 7.3, the Helix presents a challenge: It is a broad 13’ across, which spreads its light over Continue reading \"The Sky This Week from November 6 to 13: Venus in the spotlight\" The post The Sky This Week from November 6 to 13: Venus in the spotlight appeared first on Astronomy Magazine .",
+      "published_at": "2026-11-08T14:00:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "It’s been said that the general public knows three astronomical objects: the Moon, the rings of Saturn, and Halley’s Comet. English astronomer Edmond Halley, born Nov. 8, 1656, didn’t discover the object named for him. In fact, he never even saw it — but his mathematical prediction of its return in 1758 guaranteed his place Continue reading \"Nov. 8, 1656: The birth of Edmond Halley\" The post Nov. 8, 1656: The birth of Edmond Halley appeared first on Astronomy Magazine .",
       "keywords": [
-        "november",
-        "spotlight",
-        "venus"
+        "birth",
+        "edmond",
+        "halley"
       ],
       "biz": null,
-      "score": 34.9,
+      "score": 34.7,
       "convergence": 0.167,
-      "topic_id": "b508ed7a87a9",
-      "topic_title": "The Sky Today on Saturday, November 7: Venus meets the Moon",
+      "topic_id": "6c52abb3945f",
+      "topic_title": "Nov. 7, 1882: A Great Comet transforms astrophotography",
       "links": {
-        "original": "https://www.astronomy.com/the-sky-this-week/the-sky-this-week-from-november-6-to-13-2026/"
+        "original": "https://www.astronomy.com/today-in-the-history-of-astronomy/nov-8-1656-the-birth-of-edmond-halley/"
       },
       "tier": "media",
       "selected": false,
@@ -3240,7 +3321,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-10-14T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "closer",
@@ -3253,7 +3334,7 @@
         "world"
       ],
       "biz": null,
-      "score": 34.8,
+      "score": 34.4,
       "convergence": 0.0,
       "refs": {
         "doi": "10.1038/d41586-026-03307-5",
@@ -3277,7 +3358,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-10-14T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": null,
       "keywords": [
         "atmospheric",
@@ -3286,7 +3367,7 @@
         "spatial"
       ],
       "biz": null,
-      "score": 34.8,
+      "score": 34.4,
       "convergence": 0.0,
       "refs": {
         "doi": "10.1038/s41550-026-02986-4",
@@ -3295,41 +3376,6 @@
       },
       "links": {
         "original": "https://www.nature.com/articles/s41550-026-02986-4"
-      },
-      "tier": "official",
-      "selected": false,
-      "role": "科研"
-    },
-    {
-      "id": "51aa5a8bf114",
-      "title": "Two families of multi-planet systems with distinct architectures and stellar hosts",
-      "url": "https://www.nature.com/articles/s41550-026-02990-8",
-      "channel": "astro",
-      "source": "Nature 天文和天体物理",
-      "source_base": "Nature 天文和天体物理",
-      "source_type": "rss",
-      "category": "恒星与星际介质",
-      "published_at": "2026-10-13T00:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": null,
-      "keywords": [
-        "architectures",
-        "distinct",
-        "families",
-        "hosts",
-        "multi-planet",
-        "stellar"
-      ],
-      "biz": null,
-      "score": 34.1,
-      "convergence": 0.0,
-      "refs": {
-        "doi": "10.1038/s41550-026-02990-8",
-        "via": "self_meta",
-        "confidence": "verified"
-      },
-      "links": {
-        "original": "https://www.nature.com/articles/s41550-026-02990-8"
       },
       "tier": "official",
       "selected": false,
@@ -3345,7 +3391,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2024-08-14T15:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The presence of organic matter is inconclusive, but the rocks could be scientists’ best chance at finding remnants of ancient Martian life.",
       "keywords": [
         "contain",
@@ -3398,7 +3444,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2024-03-04T05:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The “oriented” samples, the first of their kind from any planet, could shed light on Mars’ ancient magnetic field.",
       "keywords": [
         "determines",
@@ -3441,7 +3487,7 @@
       "source_type": "rss",
       "category": "引力波",
       "published_at": "2026-05-26T12:00:14+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The LIGO–Virgo–KAGRA Collaboration released today a new catalog of gravitational wave events. A total of 161 events, detected between April 2024 and the end of January 2025, have been added to the collection, bringing the total number of gravitational wave signals detected to date to 390. Among the most significant findings are: evidence for the […]",
       "keywords": [
         "astronomy",
@@ -3483,7 +3529,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2026-04-29T08:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The LIGO-Virgo-KAGRA collaboration re-examined the validity of general relativity with an expanded dataset, including 42 new high-significance black hole mergers detected during the first part of the observing run O4a. With more gravitational-wave events observed, the tests became increasingly stringent. Those tests are based on assessing the internal consistency of the theory across different stages of coalescence […]",
       "keywords": [
         "data",
@@ -3508,6 +3554,41 @@
       "role": "科研"
     },
     {
+      "id": "51aa5a8bf114",
+      "title": "Two families of multi-planet systems with distinct architectures and stellar hosts",
+      "url": "https://www.nature.com/articles/s41550-026-02990-8",
+      "channel": "astro",
+      "source": "Nature 天文和天体物理",
+      "source_base": "Nature 天文和天体物理",
+      "source_type": "rss",
+      "category": "恒星与星际介质",
+      "published_at": "2026-10-13T00:00:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": null,
+      "keywords": [
+        "architectures",
+        "distinct",
+        "families",
+        "hosts",
+        "multi-planet",
+        "stellar"
+      ],
+      "biz": null,
+      "score": 33.7,
+      "convergence": 0.0,
+      "refs": {
+        "doi": "10.1038/s41550-026-02990-8",
+        "via": "self_meta",
+        "confidence": "verified"
+      },
+      "links": {
+        "original": "https://www.nature.com/articles/s41550-026-02990-8"
+      },
+      "tier": "official",
+      "selected": false,
+      "role": "科研"
+    },
+    {
       "id": "04923712c950",
       "title": "Earth's slowing spin may have shaped its primordial crust",
       "url": "https://phys.org/news/2026-11-earth-primordial-crust.html",
@@ -3517,7 +3598,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-05T15:20:06+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Around 4.5 billion years ago, a planet-sized object collided with the newly formed Earth, throwing out the debris that would later form the moon. The collision left Earth spinning extremely fast, with days lasting just two to five hours. Yet existing models of how Earth's first crust formed and evolved have largely overlooked how the planet's later slowdown might have affected it.",
       "keywords": [
         "crust",
@@ -3528,7 +3609,7 @@
         "spin"
       ],
       "biz": null,
-      "score": 33.7,
+      "score": 33.5,
       "convergence": 0.167,
       "topic_id": "8e45f041979c",
       "topic_title": "Earth's gravity may have kept the early moon's volcanic heart beating",
@@ -3549,7 +3630,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-28T16:51:28+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Astronomers spotted what appears to be a dwarf planet in the outer solar system using the Vera C. Rubin Observatory – if confirmed, it joins a small and exclusive club",
       "keywords": [
         "dwarf",
@@ -3559,7 +3640,7 @@
         "there"
       ],
       "biz": null,
-      "score": 32.6,
+      "score": 32.3,
       "convergence": 0.333,
       "topic_id": "f42026e3f794",
       "topic_title": "Newly discovered Earth-sized planet may lack an atmosphere",
@@ -3584,7 +3665,7 @@
       "source_type": "rss",
       "category": "引力波",
       "published_at": "2025-11-18T16:06:59+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Today, the international LIGO-Virgo-KAGRA Collaboration celebrates the successful completion of its fourth observing run (O4), marking another major step forward in the exploration of the gravitational wave universe. The run, which began May 24, 2023 and continued through November 18, 2025, relied on coordinated observations and analyses by teams across the world. During O4, the […]",
       "keywords": [
         "collaboration",
@@ -3618,7 +3699,7 @@
       "source_type": "rss",
       "category": "科研进展",
       "published_at": "2025-08-27T21:42:55+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The longtime MIT professor shared a Nobel Prize for his role in developing the LIGO observatory and detecting gravitational waves.",
       "keywords": [
         "dies",
@@ -3648,6 +3729,36 @@
       "role": "科研"
     },
     {
+      "id": "3359aa720567",
+      "title": "Game theory helps SETI search for alien civilizations",
+      "url": "https://phys.org/news/2026-11-game-theory-seti-alien-civilizations.html",
+      "channel": "astro",
+      "source": "Phys.org 太空新闻",
+      "source_base": "Phys.org 太空新闻",
+      "source_type": "rss",
+      "category": "其他",
+      "published_at": "2026-11-08T15:30:06+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "The search for extraterrestrial intelligence (SETI) is mostly concerned with where to look for technosignatures from another civilization. Between 2012 and 2015, SETI's Project Phoenix targeted about 1,000 sun-like stars for signs of intelligent life. But where to look might not be as important as when to look, according to scientists at SETI.",
+      "keywords": [
+        "alien",
+        "civilizations",
+        "game",
+        "search",
+        "seti",
+        "theory"
+      ],
+      "biz": null,
+      "score": 30.9,
+      "convergence": 0.0,
+      "links": {
+        "original": "https://phys.org/news/2026-11-game-theory-seti-alien-civilizations.html"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "科研"
+    },
+    {
       "id": "e5e7d93bf98d",
       "title": "Robot successfully builds space structure in first autonomous construction demo",
       "url": "https://phys.org/news/2026-11-robot-successfully-space-autonomous-demo.html",
@@ -3657,7 +3768,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-06T16:20:04+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "A robotic truss builder that was conceived, designed and built by Caltech researchers has successfully built a structure in space—without the help of astronauts—for the first time. The truss builder, part of DARPA's Novel Orbital and Moon Manufacturing, Materials, and Mass-efficient Design (NOM4D) program, consists of an autonomous manipulator that picks up struts and joints held in nearby dispensers to repeatedly assemble identical sections, or bays, of a perimeter truss.",
       "keywords": [
         "autonomous",
@@ -3669,7 +3780,7 @@
         "successfully"
       ],
       "biz": null,
-      "score": 30.3,
+      "score": 30.1,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-11-robot-successfully-space-autonomous-demo.html"
@@ -3688,7 +3799,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-06T14:00:04+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "When NASA's Voyager 2 robotic probe flew by Uranus and Neptune in the 1980s, it uncovered an anomaly: their magnetic fields are highly disordered, unlike Earth's, which has well-defined north and south poles.",
       "keywords": [
         "changes",
@@ -3702,7 +3813,7 @@
         "wacky"
       ],
       "biz": null,
-      "score": 30.3,
+      "score": 30.1,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-11-wacky-magnetic-fields-ice-giants.html"
@@ -3721,14 +3832,14 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-06T14:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The earliest test of Albert Einstein’s general theory of relativity took place just four years after he published it. During the May 29, 1919, total solar eclipse, British astronomer Sir Arthur Eddington and colleagues studied the theory by measuring how the Sun distorts light from background stars. According to general relativity, any object with mass Continue reading \"Nov. 6, 1919: Einstein is right\" The post Nov. 6, 1919: Einstein is right appeared first on Astronomy Magazine .",
       "keywords": [
         "einstein",
         "right"
       ],
       "biz": null,
-      "score": 30.3,
+      "score": 30.1,
       "convergence": 0.0,
       "links": {
         "original": "https://www.astronomy.com/today-in-the-history-of-astronomy/nov-6-1919-einstein-is-right/"
@@ -3747,7 +3858,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-05T19:26:56+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "In a pinch, we could use a stand-off nuclear blast to redirect a dangerous asteroid on short notice. There's no atmospheric shock wave in space, but the x-ray pulse could still deflect the space rock. But asteroids aren't round and uniform, so their weird shapes make it difficult.",
       "keywords": [
         "asteroids",
@@ -3758,7 +3869,7 @@
         "them"
       ],
       "biz": null,
-      "score": 30.0,
+      "score": 29.7,
       "convergence": 0.0,
       "links": {
         "original": "https://www.universetoday.com/articles/asteroids-oddball-shapes-make-deflecting-them-challenging"
@@ -3777,7 +3888,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-05T19:42:26+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "GS-100AR/AC High-Precision Guide Scope ToupTekHangzhou, China The GS-100AR/AC High-Precision Guide Scope is a guide scope, a wide-field imaging system, and a visual instrument. Its apochromatic design produces a flat 1-inch image circle and reduces purple fringing seen in earlier models. With a choice of rack-and-pinion or Crayford focusers, it offers flexibility for a range of Continue reading \"Make the most of long nights with this month’s new astronomy products\" The post Make the most of long nights with this month’s new astronomy products appeared first on Astronomy Magazine .",
       "keywords": [
         "astronomy",
@@ -3787,7 +3898,7 @@
         "products"
       ],
       "biz": null,
-      "score": 30.0,
+      "score": 29.7,
       "convergence": 0.0,
       "links": {
         "original": "https://www.astronomy.com/observing/make-the-most-of-long-nights-with-this-months-new-astronomy-products/"
@@ -3795,71 +3906,6 @@
       "tier": "media",
       "selected": false,
       "role": "媒体"
-    },
-    {
-      "id": "1efe3d9fd86c",
-      "title": "Curiosity captures a martian dawn",
-      "url": "https://www.astronomy.com/science/curiosity-captures-a-martian-dawn/",
-      "channel": "astro",
-      "source": "Astronomy Magazine",
-      "source_base": "Astronomy Magazine",
-      "source_type": "rss",
-      "category": "其他",
-      "published_at": "2026-11-05T15:09:27+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "The morning Sun casts a hazy glow over Mars’ Mount Sharp, lighting up distant wind-carved rock formations known as yardangs. This scene is cropped from a six-image panorama captured by the Mastcam on NASA’s Curiosity rover at 8:30 a.m. local time on Aug. 11, 2026, the mission’s 4,982nd sol (martian day). Mount Sharp, formally Aeolis Continue reading \"Curiosity captures a martian dawn\" The post Curiosity captures a martian dawn appeared first on Astronomy Magazine .",
-      "keywords": [
-        "captures",
-        "curiosity",
-        "dawn",
-        "martian"
-      ],
-      "biz": null,
-      "score": 29.9,
-      "convergence": 0.0,
-      "links": {
-        "original": "https://www.astronomy.com/science/curiosity-captures-a-martian-dawn/"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "媒体"
-    },
-    {
-      "id": "326d4ceb3c5c",
-      "title": "For students with their sights set on space medicine, a new community takes flight",
-      "url": "https://news.mit.edu/2026/mit-doctors-without-gravity-takes-flight-1021",
-      "channel": "astro",
-      "source": "MIT News 太空探索",
-      "source_base": "MIT News 太空探索",
-      "source_type": "rss",
-      "category": "其他",
-      "published_at": "2026-10-21T20:40:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "MIT’s Doctors Without Gravity club connects health and space science enthusiasts.",
-      "keywords": [
-        "community",
-        "flight",
-        "medicine",
-        "sights",
-        "space",
-        "students",
-        "takes"
-      ],
-      "biz": null,
-      "score": 29.8,
-      "convergence": 0.333,
-      "topic_id": "c1279cc1c831",
-      "topic_title": "NASA Astronauts to Answer Questions from Florida Students",
-      "zh_full": "麻省理工学院（MIT）新成立的学生社团“无重力医生”（Doctors Without Gravity）正式启动，旨在为有志于太空医学领域的学生搭建交流平台。该社团将健康科学与太空探索爱好者聚集在一起，通过组织讲座、参观和讨论等活动，帮助成员了解航天医学的前沿课题，包括微重力环境对人体生理的影响、宇航员健康监测以及未来深空任务中的医疗挑战。社团的成立反映了太空医学作为交叉学科的日益增长的兴趣，也为学生提供了将医学知识应用于太空探索的实践机会。",
-      "llm_summary": "MIT学生成立“无重力医生”社团，连接健康科学与太空探索爱好者，为对太空医学感兴趣的学生提供交流与学习平台。",
-      "llm_reason": "介绍新兴学生社团，反映太空医学兴趣增长",
-      "density": "中",
-      "links": {
-        "original": "https://news.mit.edu/2026/mit-doctors-without-gravity-takes-flight-1021"
-      },
-      "tier": "official",
-      "selected": false,
-      "role": "官方"
     },
     {
       "id": "54a6afd3decf",
@@ -3871,7 +3917,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-04T22:20:01+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "An international research project is bringing scientists closer to mapping the universe. The MeerKLASS Collaboration has reported its first measurement of the large-scale clustering of cosmic hydrogen, advancing a technique that could transform how cosmologists chart the universe.",
       "keywords": [
         "breakthrough",
@@ -3883,7 +3929,7 @@
         "universe"
       ],
       "biz": null,
-      "score": 29.6,
+      "score": 29.4,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-11-cosmic-hydrogen-breakthrough-universe.html"
@@ -3902,7 +3948,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-04T17:20:22+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Less than a decade ago, there were about 2,000 operational satellites orbiting Earth. Today there are more than 15,000. Millions more are planned.",
       "keywords": [
         "here",
@@ -3913,7 +3959,7 @@
         "telescopes"
       ],
       "biz": null,
-      "score": 29.6,
+      "score": 29.3,
       "convergence": 0.0,
       "links": {
         "original": "https://phys.org/news/2026-11-satellites-leak-noise-telescopes-gps.html"
@@ -3923,40 +3969,39 @@
       "role": "科研"
     },
     {
-      "id": "d5a51213a7bf",
-      "title": "Giant planet emerges from two-year-old JWST data thanks to glare-removal technique",
-      "url": "https://phys.org/news/2026-11-giant-planet-emerges-year-jwst.html",
+      "id": "d4f8412de37c",
+      "title": "What Will Politics Look Like on Other Planets? It's Likely to Be a Mishmash",
+      "url": "https://www.universetoday.com/articles/what-will-politics-look-like-on-other-planets-its-likely-to-be-a-mishmash",
       "channel": "astro",
-      "source": "Phys.org 太空新闻",
-      "source_base": "Phys.org 太空新闻",
+      "source": "Universe Today",
+      "source_base": "Universe Today",
       "source_type": "rss",
       "category": "其他",
-      "published_at": "2026-11-04T16:00:01+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "Even the world's most powerful telescopes have their blind spots. Although NASA's James Webb Space Telescope (JWST) can peer billions of years into the past, it still struggles to photograph planets orbiting nearby stars. Stars shine with such extraordinary brightness that their glare overwhelms nearby planets' faint glow.",
+      "published_at": "2026-11-03T19:21:05+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "When we make our home on other worlds, who will be in charge? Will it be an emperor? A billionaire? A rebel alliance? Or none of the above? Astrobiologist Jacob Haqq Misra runs through the legal and political options.",
       "keywords": [
-        "data",
-        "emerges",
-        "giant",
-        "glare-removal",
-        "jwst",
-        "planet",
-        "thanks",
-        "two-year-old"
+        "like",
+        "likely",
+        "look",
+        "mishmash",
+        "other",
+        "planets",
+        "politics"
       ],
       "biz": null,
-      "score": 29.5,
+      "score": 28.9,
       "convergence": 0.0,
-      "zh_full": "即使世界上最强大的望远镜也有其盲区。尽管NASA的詹姆斯·韦伯太空望远镜（JWST）能够窥视数十亿年前的宇宙，但它仍然难以拍摄到邻近恒星周围的行星。恒星发出的光芒极其明亮，其眩光淹没了附近行星微弱的辉光。",
-      "llm_summary": "JWST虽能观测遥远宇宙，但拍摄邻近恒星的行星时，恒星眩光会淹没行星的微弱光芒，形成观测盲区。",
-      "llm_reason": "揭示望远镜观测盲区问题",
+      "zh_full": "当人类在其他世界建立家园时，谁将负责管理？是皇帝、亿万富翁、反抗军联盟，还是以上皆非？天体生物学家雅各布·哈克·米斯拉（Jacob Haqq Misra）梳理了法律与政治上的各种可能性。他探讨了在殖民其他星球时可能出现的政治体制，包括从独裁到民主等多种形式，并分析了这些体制在远离地球的环境中是否可行。这一讨论涉及太空法、治理结构以及人类在异星社会中的组织方式，为未来太空定居点的政治设计提供了思考框架。",
+      "llm_summary": "人类在其他世界建立家园时，谁将负责管理？天体生物学家雅各布·哈克·米斯拉梳理了法律与政治上的各种可能性，探讨了殖民其他星球时可能出现的政治体制及其可行性。",
+      "llm_reason": "探讨异星殖民的政治治理问题，视角新颖",
       "density": "中",
       "links": {
-        "original": "https://phys.org/news/2026-11-giant-planet-emerges-year-jwst.html"
+        "original": "https://www.universetoday.com/articles/what-will-politics-look-like-on-other-planets-its-likely-to-be-a-mishmash"
       },
       "tier": "media",
       "selected": false,
-      "role": "科研"
+      "role": "媒体"
     },
     {
       "id": "c61b86da31b4",
@@ -3968,7 +4013,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-03T15:54:04+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Astronomers are finding more dusty disks around white dwarf stars, and some of them are home to asteroids. But how these rocky asteroids are turned to dust and form these rings isn't clear. New research shows that the white dwarf's gravity alone can't shred them to dust.",
       "keywords": [
         "asteroids",
@@ -3980,7 +4025,7 @@
         "white"
       ],
       "biz": null,
-      "score": 29.1,
+      "score": 28.9,
       "convergence": 0.0,
       "zh_full": "天文学家正在白矮星周围发现更多含有尘埃盘的系统，其中一些盘内存在小行星。然而，这些岩石质小行星如何转化为尘埃并形成这些环状结构，目前尚不清楚。最新研究表明，仅凭白矮星的引力不足以将小行星粉碎成尘埃。研究人员通过模型分析指出，小行星在靠近白矮星时，会受到潮汐力和辐射压等复杂物理过程的共同作用，但引力本身并非唯一或主要的碎裂机制。这一发现挑战了以往关于白矮星尘埃盘形成机制的简单假设，暗示可能还有其他因素（如小行星内部结构、碰撞或蒸发过程）在起作用。该研究为理解恒星演化晚期行星系统的命运提供了新视角，也有助于解释为何某些白矮星周围会持续存在尘埃盘。",
       "llm_summary": "天文学家发现一些白矮星周围的尘埃盘中存在小行星，但小行星如何变成尘埃形成环状结构尚不明确。新研究显示，仅靠白矮星的引力不足以将小行星粉碎成尘埃，暗示还有其他物理机制参与其中。这一发现对理解恒星演化晚期行星系统的命运具有重要意义。",
@@ -4003,7 +4048,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-03T01:33:59+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The Vera Rubin Observatory has detected two more of the Milky Ways' dim, hard to see satellites. One is an ultra-faint dwarf galaxy, and one is a globular cluster. Each one is a missing piece of the puzzle in the Milky Way's merger history. By finding more of these satellites, our understanding of galaxy growth, and the role dark matter plays in it, will improve.",
       "keywords": [
         "found",
@@ -4014,7 +4059,7 @@
         "vera"
       ],
       "biz": null,
-      "score": 28.9,
+      "score": 28.6,
       "convergence": 0.0,
       "zh_full": "薇拉·鲁宾天文台（Vera Rubin Observatory）又探测到了银河系中两个暗淡且难以观测的卫星天体。其中一个为超暗矮星系，另一个为球状星团。这两个天体都是银河系合并历史拼图中缺失的碎片。通过发现更多此类卫星天体，我们对星系生长以及暗物质在其中所起作用的理解将得到提升。这一发现有助于完善银河系形成与演化的模型，并进一步揭示暗物质在星系结构形成中的角色。",
       "llm_summary": "薇拉·鲁宾天文台探测到银河系两个暗淡卫星天体：一个超暗矮星系和一个球状星团。它们是银河系合并历史拼图中缺失的碎片，有助于理解星系生长和暗物质的作用。",
@@ -4037,7 +4082,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-11-02T18:08:23+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Samples from the asteroid Ryugu, and from carbonaceous chondrites that have crashed on Earth, present an apparent contradiction. Their fine-grained matrices have widely varied compositions of their clay-like minerals. That suggests that there were widely different aqueous environments in the same parent bodies, which seems unlikely. But new research may have solved that contradiction.",
       "keywords": [
         "contradiction",
@@ -4048,7 +4093,7 @@
         "solved"
       ],
       "biz": null,
-      "score": 28.8,
+      "score": 28.5,
       "convergence": 0.0,
       "zh_full": "来自小行星龙宫的样本以及坠落地球的碳质球粒陨石样本呈现出一个明显的矛盾。它们的细粒基质中黏土类矿物的组成差异很大。这表明在同一母体中存在非常不同的水环境，这似乎不太可能。但新研究可能已经解决了这个矛盾。",
       "llm_summary": "龙宫样本与碳质球粒陨石细粒基质黏土矿物组成差异大，暗示同一母体存在不同水环境，新研究或已解开此矛盾。",
@@ -4056,40 +4101,6 @@
       "density": "中",
       "links": {
         "original": "https://www.universetoday.com/articles/researchers-may-have-solved-a-puzzling-contradiction-in-the-ryugu-sample"
-      },
-      "tier": "media",
-      "selected": false,
-      "role": "媒体"
-    },
-    {
-      "id": "1035399ffa48",
-      "title": "New Research Resolves the Mystery Behind Van Gogh's The Starry Night",
-      "url": "https://www.universetoday.com/articles/new-research-resolves-the-mystery-behind-van-goghs-the-starry-night",
-      "channel": "astro",
-      "source": "Universe Today",
-      "source_base": "Universe Today",
-      "source_type": "rss",
-      "category": "其他",
-      "published_at": "2026-11-02T03:00:42+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "The sky in Vincent van Gogh’s The Starry Night (1889) matches, in both observation and shape, the pre-dawn sky over Saint-Rémy around 22 July 1889, when a waning crescent moon, Venus and the Hyades star cluster appeared close together, according to a study published inScientific Reports.",
-      "keywords": [
-        "gogh",
-        "mystery",
-        "night",
-        "research",
-        "resolves",
-        "starry"
-      ],
-      "biz": null,
-      "score": 28.5,
-      "convergence": 0.0,
-      "zh_full": "根据发表在《科学报告》上的一项研究，文森特·梵高《星月夜》（1889年）中的天空，在观测和形状上都与1889年7月22日左右圣雷米黎明前的天空相符，当时一弯残月、金星和毕星团紧密地出现在一起。",
-      "llm_summary": "研究指出，梵高《星月夜》中的天空与1889年7月22日圣雷米黎明前实际天空相符，当时残月、金星和毕星团靠近。",
-      "llm_reason": "解开名画天空之谜",
-      "density": "高",
-      "links": {
-        "original": "https://www.universetoday.com/articles/new-research-resolves-the-mystery-behind-van-goghs-the-starry-night"
       },
       "tier": "media",
       "selected": false,
@@ -4105,7 +4116,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-09-18T04:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "PhD candidate Lanie McKinney is building technology to convert the Red Planet’s atmosphere into propellant for bringing astronauts home.",
       "keywords": [
         "fueling",
@@ -4147,7 +4158,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2026-01-19T20:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "New research may explain the striking differences between the two planets’ polar vortex patterns.",
       "keywords": [
         "details",
@@ -4194,7 +4205,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2025-02-25T05:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Data from the devices will help future astronauts navigate the moon’s south polar region and search for frozen water.",
       "keywords": [
         "engineers",
@@ -4235,7 +4246,7 @@
       "source_type": "rss",
       "category": "深空探测",
       "published_at": "2024-08-02T18:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The barely-there lunar atmosphere is likely the product of meteorite impacts over billions of years, a new study finds.",
       "keywords": [
         "atmosphere",
@@ -4267,34 +4278,34 @@
       "role": "官方"
     },
     {
-      "id": "fe8c5795889b",
-      "title": "Read an extract from Dark Eden by Chris Beckett",
-      "url": "https://www.newscientist.com/article/2596432-read-an-extract-from-dark-eden-by-chris-beckett/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+      "id": "1035399ffa48",
+      "title": "New Research Resolves the Mystery Behind Van Gogh's The Starry Night",
+      "url": "https://www.universetoday.com/articles/new-research-resolves-the-mystery-behind-van-goghs-the-starry-night",
       "channel": "astro",
-      "source": "New Scientist 太空",
-      "source_base": "New Scientist 太空",
+      "source": "Universe Today",
+      "source_base": "Universe Today",
       "source_type": "rss",
       "category": "其他",
-      "published_at": "2026-10-30T09:30:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
-      "summary": "In this extract from Chris Beckett’s Dark Eden, the November read for the New Scientist Book Club, we meet some of the inhabitants of a dark planet that drifts outside the Milky Way, descendants of two astronauts marooned there over a century earlier",
+      "published_at": "2026-11-02T03:00:42+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "The sky in Vincent van Gogh’s The Starry Night (1889) matches, in both observation and shape, the pre-dawn sky over Saint-Rémy around 22 July 1889, when a waning crescent moon, Venus and the Hyades star cluster appeared close together, according to a study published inScientific Reports.",
       "keywords": [
-        "beckett",
-        "chris",
-        "dark",
-        "eden",
-        "extract",
-        "read"
+        "gogh",
+        "mystery",
+        "night",
+        "research",
+        "resolves",
+        "starry"
       ],
       "biz": null,
-      "score": 24.7,
+      "score": 28.3,
       "convergence": 0.0,
-      "zh_full": "这是克里斯·贝克特所著《黑暗伊甸园》的节选，该书是《新科学家》读书俱乐部十一月选书。故事设定在一个漂流于银河系之外的黑暗星球上，居住着两个多世纪前被困在那里的宇航员的后代。节选让我们遇见这些居民。",
-      "llm_summary": "这是《黑暗伊甸园》的节选，讲述银河系外黑暗星球上宇航员后代的故事，他们是两个多世纪前被困宇航员的后裔。",
-      "llm_reason": "科幻小说节选，展示黑暗星球居民生活",
-      "density": "低",
+      "zh_full": "根据发表在《科学报告》上的一项研究，文森特·梵高《星月夜》（1889年）中的天空，在观测和形状上都与1889年7月22日左右圣雷米黎明前的天空相符，当时一弯残月、金星和毕星团紧密地出现在一起。",
+      "llm_summary": "研究指出，梵高《星月夜》中的天空与1889年7月22日圣雷米黎明前实际天空相符，当时残月、金星和毕星团靠近。",
+      "llm_reason": "解开名画天空之谜",
+      "density": "高",
       "links": {
-        "original": "https://www.newscientist.com/article/2596432-read-an-extract-from-dark-eden-by-chris-beckett/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS"
+        "original": "https://www.universetoday.com/articles/new-research-resolves-the-mystery-behind-van-goghs-the-starry-night"
       },
       "tier": "media",
       "selected": false,
@@ -4310,7 +4321,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2025-07-10T04:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Aurelia Institute, founded by a team from MIT, serves as a research lab, an education and outreach center, and a policy hub for the space industry.",
       "keywords": [
         "earth",
@@ -4336,6 +4347,75 @@
       "role": "官方"
     },
     {
+      "id": "fe8c5795889b",
+      "title": "Read an extract from Dark Eden by Chris Beckett",
+      "url": "https://www.newscientist.com/article/2596432-read-an-extract-from-dark-eden-by-chris-beckett/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+      "channel": "astro",
+      "source": "New Scientist 太空",
+      "source_base": "New Scientist 太空",
+      "source_type": "rss",
+      "category": "其他",
+      "published_at": "2026-10-30T09:30:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "In this extract from Chris Beckett’s Dark Eden, the November read for the New Scientist Book Club, we meet some of the inhabitants of a dark planet that drifts outside the Milky Way, descendants of two astronauts marooned there over a century earlier",
+      "keywords": [
+        "beckett",
+        "chris",
+        "dark",
+        "eden",
+        "extract",
+        "read"
+      ],
+      "biz": null,
+      "score": 24.5,
+      "convergence": 0.0,
+      "zh_full": "这是克里斯·贝克特所著《黑暗伊甸园》的节选，该书是《新科学家》读书俱乐部十一月选书。故事设定在一个漂流于银河系之外的黑暗星球上，居住着两个多世纪前被困在那里的宇航员的后代。节选让我们遇见这些居民。",
+      "llm_summary": "这是《黑暗伊甸园》的节选，讲述银河系外黑暗星球上宇航员后代的故事，他们是两个多世纪前被困宇航员的后裔。",
+      "llm_reason": "科幻小说节选，展示黑暗星球居民生活",
+      "density": "低",
+      "links": {
+        "original": "https://www.newscientist.com/article/2596432-read-an-extract-from-dark-eden-by-chris-beckett/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS"
+      },
+      "tier": "media",
+      "selected": false,
+      "role": "媒体"
+    },
+    {
+      "id": "326d4ceb3c5c",
+      "title": "For students with their sights set on space medicine, a new community takes flight",
+      "url": "https://news.mit.edu/2026/mit-doctors-without-gravity-takes-flight-1021",
+      "channel": "astro",
+      "source": "MIT News 太空探索",
+      "source_base": "MIT News 太空探索",
+      "source_type": "rss",
+      "category": "其他",
+      "published_at": "2026-10-21T20:40:00+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
+      "summary": "MIT’s Doctors Without Gravity club connects health and space science enthusiasts.",
+      "keywords": [
+        "community",
+        "flight",
+        "medicine",
+        "sights",
+        "space",
+        "students",
+        "takes"
+      ],
+      "biz": null,
+      "score": 23.8,
+      "convergence": 0.0,
+      "zh_full": "麻省理工学院（MIT）新成立的学生社团“无重力医生”（Doctors Without Gravity）正式启动，旨在为有志于太空医学领域的学生搭建交流平台。该社团将健康科学与太空探索爱好者聚集在一起，通过组织讲座、参观和讨论等活动，帮助成员了解航天医学的前沿课题，包括微重力环境对人体生理的影响、宇航员健康监测以及未来深空任务中的医疗挑战。社团的成立反映了太空医学作为交叉学科的日益增长的兴趣，也为学生提供了将医学知识应用于太空探索的实践机会。",
+      "llm_summary": "MIT学生成立“无重力医生”社团，连接健康科学与太空探索爱好者，为对太空医学感兴趣的学生提供交流与学习平台。",
+      "llm_reason": "介绍新兴学生社团，反映太空医学兴趣增长",
+      "density": "中",
+      "links": {
+        "original": "https://news.mit.edu/2026/mit-doctors-without-gravity-takes-flight-1021"
+      },
+      "tier": "official",
+      "selected": false,
+      "role": "官方"
+    },
+    {
       "id": "e861030fc52f",
       "title": "Why the Drake equation is still important 65 years after its creation",
       "url": "https://www.newscientist.com/article/2594385-why-the-drake-equation-is-still-important-65-years-after-its-creation/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
@@ -4345,7 +4425,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-19T08:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The Drake equation provides a way to guess how many aliens we might be able to communicate with, but it’s also a prime example of the importance of scientific guessing, says columnist Leah Crane",
       "keywords": [
         "creation",
@@ -4354,7 +4434,7 @@
         "still"
       ],
       "biz": null,
-      "score": 23.0,
+      "score": 22.8,
       "convergence": 0.0,
       "zh_full": "德雷克方程（Drake equation）自1959年由弗兰克·德雷克（Frank Drake）提出以来，至今已有65年历史。该方程旨在估算银河系中可能与我们进行通信的地外文明数量，其形式为N = R* × fp × ne × fl × fi × fc × L，其中各项分别代表恒星形成率、拥有行星的恒星比例、每个恒星系统中宜居行星数量、宜居行星上出现生命的概率、生命演化出智慧文明的概率、智慧文明发展出通信技术的概率以及文明存在时间。专栏作家Leah Crane指出，尽管方程中的许多参数至今仍不确定，但德雷克方程的重要性不仅在于其估算结果，更在于它体现了科学猜测（scientific guessing）的价值——即通过合理的假设和近似，将未知问题转化为可讨论、可检验的框架。这种“猜测”并非随意臆断，而是科学方法的核心组成部分，它鼓励科学家在信息不完整时仍能提出可证伪的假说，并推动后续观测与研究。因此，德雷克方程不仅是一个关于外星生命的工具，也是科学思维方法的一个经典范例。",
       "llm_summary": "德雷克方程诞生65周年，其价值不仅在于估算外星文明数量，更在于展示科学猜测的重要性，即在不完整信息下构建可检验框架。",
@@ -4377,7 +4457,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-06-25T16:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "“Scientific American” showcases the history and future of America’s scientific engine, highlighting promising young scientists and icons at MIT and beyond.",
       "keywords": [
         "america",
@@ -4413,7 +4493,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2024-05-15T09:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Circling a cold, Jupiter-sized star, the new world could offer an unobstructed view of its surface composition and history.",
       "keywords": [
         "atmosphere",
@@ -4447,7 +4527,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2024-05-15T04:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "A new MIT system could help astronauts conserve energy and extend missions on the lunar surface.",
       "keywords": [
         "falls",
@@ -4481,7 +4561,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2024-05-14T17:30:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The new world is the second-lightest planet discovered to date.",
       "keywords": [
         "astronomers",
@@ -4516,7 +4596,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2024-03-20T04:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Results suggest the clouds of Venus could be hospitable for some forms of life.",
       "keywords": [
         "blocks",
@@ -4552,7 +4632,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-07T20:55:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Over two decades at MIT, Hamilton forged new paths in computer science and engineering. Her groundbreaking work included leading the team that programmed the first computers that took humans to the moon.",
       "keywords": [
         "apollo",
@@ -4589,7 +4669,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-08-12T09:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "A new online platform helps engineers look beyond survival mode when designing habitats for extreme living conditions.",
       "keywords": [
         "habitat",
@@ -4623,7 +4703,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-10-02T14:50:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "An industry report published by students in an MIT aerospace entrepreneurship class lays out guidance for aspiring space leaders and investors.",
       "keywords": [
         "economy",
@@ -4655,7 +4735,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2026-03-31T23:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "On GBH’s new show The Curiosity Desk, MIT LIGO researchers revel in the beauties of fundamental discovery science and MIT astronomers talk planetary defense.",
       "keywords": [
         "curious",
@@ -4687,7 +4767,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2024-09-05T20:55:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "MIT PhD student Allan Shtofenmakher wants to keep space sustainable.",
       "keywords": [
         "clean",
@@ -4717,7 +4797,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2024-05-23T04:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Research sheds light on the properties of novel materials that could be used in electronics operating in extremely hot environments.",
       "keywords": [
         "heat",
@@ -4748,7 +4828,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2024-04-17T20:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "The award recognizes exceptional distinction in teaching, research, and service at MIT.",
       "keywords": [
         "award",
@@ -4781,7 +4861,7 @@
       "source_type": "rss",
       "category": "其他",
       "published_at": "2024-03-06T15:00:00+00:00",
-      "discovered_at": "2026-11-08T01:28:12.905572+00:00",
+      "discovered_at": "2026-11-08T16:41:13.719333+00:00",
       "summary": "Materials from MIT’s Distinctive Collections reveal stories of women at the Institute.",
       "keywords": [
         "exhibits",

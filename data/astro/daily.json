@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-08T01:28:12.905572+00:00",
+  "generatedAt": "2026-11-08T16:41:13.719333+00:00",
   "total": 133,
-  "last24h": 9,
+  "last24h": 10,
   "last7d": 73,
   "topicCount": 10,
   "byCategory": [
@@ -14,13 +14,13 @@
     {
       "category": "恒星与星际介质",
       "total": 17,
-      "last24h": 1,
+      "last24h": 0,
       "last7d": 10
     },
     {
       "category": "星系与宇宙学",
       "total": 8,
-      "last24h": 1,
+      "last24h": 0,
       "last7d": 7
     },
     {
@@ -31,9 +31,9 @@
     },
     {
       "category": "深空探测",
-      "total": 28,
+      "total": 30,
       "last24h": 5,
-      "last7d": 15
+      "last7d": 17
     },
     {
       "category": "科研进展",
@@ -43,16 +43,12 @@
     },
     {
       "category": "其他",
-      "total": 44,
-      "last24h": 0,
-      "last7d": 26
+      "total": 42,
+      "last24h": 3,
+      "last7d": 24
     }
   ],
   "byDay": [
-    {
-      "date": "2026-10-26",
-      "count": 3
-    },
     {
       "date": "2026-10-27",
       "count": 1
@@ -87,11 +83,11 @@
     },
     {
       "date": "2026-11-04",
-      "count": 8
+      "count": 6
     },
     {
       "date": "2026-11-05",
-      "count": 22
+      "count": 17
     },
     {
       "date": "2026-11-06",
@@ -103,49 +99,53 @@
     },
     {
       "date": "2026-11-08",
-      "count": 3
+      "count": 10
+    },
+    {
+      "date": "2026-11-09",
+      "count": 0
     }
   ],
   "bySource": [
     {
       "source": "Phys.org 太空新闻",
       "count": 25,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00"
+      "latestAt": "2026-11-08T16:41:13.719333+00:00"
     },
     {
       "source": "Nature 天文和天体物理",
       "count": 25,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00"
+      "latestAt": "2026-11-08T16:41:13.719333+00:00"
     },
     {
       "source": "MIT News 太空探索",
       "count": 25,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00"
+      "latestAt": "2026-11-08T16:41:13.719333+00:00"
     },
     {
       "source": "Universe Today",
-      "count": 19,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00"
+      "count": 18,
+      "latestAt": "2026-11-08T16:41:13.719333+00:00"
+    },
+    {
+      "source": "NASA 快讯",
+      "count": 10,
+      "latestAt": "2026-11-08T16:41:13.719333+00:00"
     },
     {
       "source": "Astronomy Magazine",
       "count": 10,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00"
+      "latestAt": "2026-11-08T16:41:13.719333+00:00"
     },
     {
       "source": "New Scientist 太空",
       "count": 10,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00"
+      "latestAt": "2026-11-08T16:41:13.719333+00:00"
     },
     {
       "source": "LIGO",
       "count": 10,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00"
-    },
-    {
-      "source": "NASA 快讯",
-      "count": 9,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00"
+      "latestAt": "2026-11-08T16:41:13.719333+00:00"
     }
   ]
 }

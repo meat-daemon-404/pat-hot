@@ -1,60 +1,60 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T01:28:12.905572+00:00",
-  "weekStart": "2026-11-02",
+  "generatedAt": "2026-11-08T16:41:13.719333+00:00",
+  "weekStart": "2026-11-03",
   "windowDays": 7,
-  "windowStart": "2026-11-02",
-  "windowEnd": "2026-11-08",
-  "prevStart": "2026-10-26",
-  "prevEnd": "2026-11-01",
+  "windowStart": "2026-11-03",
+  "windowEnd": "2026-11-09",
+  "prevStart": "2026-10-27",
+  "prevEnd": "2026-11-02",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4749.4,
-      "lastWeek": 4876.5,
-      "deltaPct": -2.6
+      "thisWeek": 4531.2,
+      "lastWeek": 4903.2,
+      "deltaPct": -7.6
     },
     {
       "category": "科研进展",
-      "thisWeek": 3790.5,
-      "lastWeek": 3444.5,
-      "deltaPct": 10.0
+      "thisWeek": 3329.7,
+      "lastWeek": 3424.2,
+      "deltaPct": -2.8
     },
     {
       "category": "光通信",
-      "thisWeek": 3378.9,
-      "lastWeek": 3151.9,
-      "deltaPct": 7.2
-    },
-    {
-      "category": "其他",
-      "thisWeek": 2796.1,
-      "lastWeek": 2613.5,
-      "deltaPct": 7.0
+      "thisWeek": 2996.3,
+      "lastWeek": 3397.9,
+      "deltaPct": -11.8
     },
     {
       "category": "产业与资本",
-      "thisWeek": 2779.7,
-      "lastWeek": 3030.3,
-      "deltaPct": -8.3
+      "thisWeek": 2684.5,
+      "lastWeek": 3072.8,
+      "deltaPct": -12.6
     },
     {
-      "category": "显示与面板",
-      "thisWeek": 1847.1,
-      "lastWeek": 1084.4,
-      "deltaPct": 70.3
+      "category": "其他",
+      "thisWeek": 2631.1,
+      "lastWeek": 2744.9,
+      "deltaPct": -4.1
     },
     {
       "category": "通信与算力",
-      "thisWeek": 1825.8,
-      "lastWeek": 1662.6,
-      "deltaPct": 9.8
+      "thisWeek": 1760.1,
+      "lastWeek": 1885.4,
+      "deltaPct": -6.6
+    },
+    {
+      "category": "显示与面板",
+      "thisWeek": 1543.3,
+      "lastWeek": 1269.0,
+      "deltaPct": 21.6
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1575.9,
-      "lastWeek": 2158.7,
-      "deltaPct": -27.0
+      "thisWeek": 1275.3,
+      "lastWeek": 2157.8,
+      "deltaPct": -40.9
     },
     {
       "category": "光电芯片与半导体",
@@ -77,46 +77,46 @@
   ],
   "newTopics": [
     {
-      "topic_id": "21a0c8421f1a",
-      "title": "Photonics Hot List: October 30, 2026",
-      "score": 505.6,
-      "days": 4
-    },
-    {
       "topic_id": "0cf1b8f7e281",
       "title": "Crystal advances will help power next-gen fusion laser systems",
-      "score": 418.4,
-      "days": 4
+      "score": 523.0,
+      "days": 5
     },
     {
       "topic_id": "98f4b8731b7a",
       "title": "工业和信息化部召开加快新一代通信网建设发展座谈会",
-      "score": 313.8,
-      "days": 3
-    },
-    {
-      "topic_id": "cd3547fd9611",
-      "title": "营收增长74.28%，净利润增长109.99%，光纤激光大厂“爆发”！",
-      "score": 260.0,
+      "score": 418.4,
       "days": 4
     },
     {
       "topic_id": "0577aa38a964",
       "title": "西藏通信管理局党组召开会议传达学习贯彻党的二十届五中全会精神",
-      "score": 247.6,
-      "days": 3
+      "score": 366.0,
+      "days": 4
     },
     {
-      "topic_id": "2f0798899731",
-      "title": "Photonics Hot List: November 6, 2026",
-      "score": 228.8,
-      "days": 1
+      "topic_id": "cd3547fd9611",
+      "title": "营收增长74.28%，净利润增长109.99%，光纤激光大厂“爆发”！",
+      "score": 325.0,
+      "days": 5
     },
     {
       "topic_id": "13a8f78069ac",
       "title": "Standardizing CPO won't matter if the substrate supply chain can’t keep up",
-      "score": 222.8,
-      "days": 4
+      "score": 278.5,
+      "days": 5
+    },
+    {
+      "topic_id": "c790fcef9ac2",
+      "title": "纯电续航225km+激光雷达!日产新车定档:11月13日发布",
+      "score": 278.5,
+      "days": 1
+    },
+    {
+      "topic_id": "e72397647396",
+      "title": "Photonics Hot List: November 6, 2026",
+      "score": 247.0,
+      "days": 1
     },
     {
       "topic_id": "c6b7eda62a5c",
@@ -131,10 +131,10 @@
       "days": 1
     },
     {
-      "topic_id": "a66ccb893ec8",
-      "title": "SNAP optics could speed up optical communications",
-      "score": 160.9,
-      "days": 3
+      "topic_id": "b8ab568e8ad2",
+      "title": "Pure-blue quantum-dot light-emitting diodes with minimal efficiency roll-off and high brightness",
+      "score": 125.3,
+      "days": 1
     }
   ],
   "sustainedTopics": [
@@ -160,7 +160,7 @@
       "topic_id": "3db37b135ae4",
       "title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼",
       "days": 15,
-      "score": 910.6
+      "score": 879.2
     },
     {
       "topic_id": "8579455b5d54",
@@ -184,7 +184,7 @@
       "topic_id": "5bc32d86db90",
       "title": "大招齐发，英特尔直击网络转型",
       "days": 12,
-      "score": 1306.2
+      "score": 1300.5
     },
     {
       "topic_id": "569c89c31ce9",
@@ -193,10 +193,10 @@
       "score": 577.2
     },
     {
-      "topic_id": "bc72d5d904af",
-      "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
-      "days": 9,
-      "score": 423.9
+      "topic_id": "2e0a41654e17",
+      "title": "湖北通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动",
+      "days": 8,
+      "score": 1186.4
     }
   ]
 }

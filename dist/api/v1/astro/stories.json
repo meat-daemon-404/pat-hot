@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T01:28:12.905572+00:00",
+  "generatedAt": "2026-11-08T16:41:13.719333+00:00",
   "count": 10,
   "items": [
     {
-      "id": "888a752ed227",
-      "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+      "id": "778d0a04316c",
+      "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
       "status": "发酵中",
       "heat": 35.5,
       "sourceCount": 4,
-      "signalCount": 3,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00",
+      "signalCount": 4,
+      "latestAt": "2026-11-08T16:41:13.719333+00:00",
       "sources": [
         "NASA 快讯",
         "Nature 天文和天体物理",
@@ -19,39 +19,39 @@
       ],
       "links": [
         {
+          "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+          "url": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/",
+          "source": "NASA 快讯",
+          "score": 76.8,
+          "published_at": "2026-11-08T15:26:38+00:00"
+        },
+        {
+          "title": "Want to fly to the moon? NASA is looking for new astronauts to help grow its Artemis program",
+          "url": "https://phys.org/news/2026-11-fly-moon-nasa-astronauts-artemis.html",
+          "source": "Phys.org 太空新闻",
+          "score": 76.7,
+          "published_at": "2026-11-08T11:45:12+00:00"
+        },
+        {
           "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
           "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
           "source": "NASA 快讯",
-          "score": 73.8,
+          "score": 76.3,
           "published_at": "2026-11-07T22:47:03+00:00"
         },
         {
           "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
           "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
           "source": "NASA 快讯",
-          "score": 73.6,
+          "score": 76.2,
           "published_at": "2026-11-07T18:11:57+00:00"
         },
         {
           "title": "NASA's Twin Spacecraft Will Execute Powered Slingshot Maneuvers on Their Way to Mars",
           "url": "https://www.universetoday.com/articles/nasas-twin-spacecraft-will-execute-powered-slingshot-maneuvers-on-their-way-to-mars",
           "source": "Universe Today",
-          "score": 72.9,
+          "score": 75.5,
           "published_at": "2026-11-06T16:35:09+00:00"
-        },
-        {
-          "title": "NASA space telescope plunges to Earth after two decades studying cosmic explosions",
-          "url": "https://phys.org/news/2026-11-nasa-space-telescope-plunges-earth.html",
-          "source": "Phys.org 太空新闻",
-          "score": 71.7,
-          "published_at": "2026-11-04T20:40:11+00:00"
-        },
-        {
-          "title": "Revered NASA spacecraft is about to perish in flames — astronomers are mourning",
-          "url": "https://www.nature.com/articles/d41586-026-03461-w",
-          "source": "Nature 天文和天体物理",
-          "score": 65.8,
-          "published_at": "2026-10-27T00:00:00+00:00"
         }
       ],
       "trend": "new",
@@ -61,54 +61,13 @@
       "digestTitle": null
     },
     {
-      "id": "b508ed7a87a9",
-      "title": "The Sky Today on Saturday, November 7: Venus meets the Moon",
-      "status": "关注中",
-      "heat": 34.5,
-      "sourceCount": 1,
-      "signalCount": 3,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00",
-      "sources": [
-        "Astronomy Magazine"
-      ],
-      "links": [
-        {
-          "title": "The Sky Today on Saturday, November 7: Venus meets the Moon",
-          "url": "https://www.astronomy.com/observing/the-sky-today-saturday-november-7-2026/",
-          "source": "Astronomy Magazine",
-          "score": 58.9,
-          "published_at": "2026-11-07T09:00:00+00:00"
-        },
-        {
-          "title": "The Sky Today on Friday, November 6: Nab the North America Nebula",
-          "url": "https://www.astronomy.com/observing/the-sky-today-friday-november-6-2026/",
-          "source": "Astronomy Magazine",
-          "score": 58.2,
-          "published_at": "2026-11-06T09:00:00+00:00"
-        },
-        {
-          "title": "The Sky This Week from November 6 to 13: Venus in the spotlight",
-          "url": "https://www.astronomy.com/the-sky-this-week/the-sky-this-week-from-november-6-to-13-2026/",
-          "source": "Astronomy Magazine",
-          "score": 34.9,
-          "published_at": "2026-11-06T06:00:00+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 28.5
-    },
-    {
       "id": "fd07cb226a99",
       "title": "Pair of distinct black hole mergers sheds new light on nature of their formation and evolution",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00",
+      "latestAt": "2026-11-08T16:41:13.719333+00:00",
       "sources": [
         "LIGO",
         "Phys.org 太空新闻"
@@ -118,7 +77,7 @@
           "title": "Vibrating mirrors of light create analog of a black hole event horizon",
           "url": "https://phys.org/news/2026-11-vibrating-mirrors-analog-black-hole.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.3,
+          "score": 59.9,
           "published_at": "2026-11-06T17:40:11+00:00"
         },
         {
@@ -132,17 +91,71 @@
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": "研究人员利用快速改变间距的光学谐振腔模拟了黑洞事件视界，理论预测该装置可产生类似黑洞的波动效应。同时，LIGO-Virgo-KAGRA合作组在2024年相隔一个月探测到两次黑洞合并，为理解黑洞形成和演化提供了新数据。",
-      "digestTitle": "光镜模拟黑洞视界，双黑洞合并揭示形成机制"
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "b33b5a0083eb",
+      "title": "Even stupendous black holes can’t explain dark matter",
+      "status": "发酵中",
+      "heat": 17.7,
+      "sourceCount": 3,
+      "signalCount": 1,
+      "latestAt": "2026-11-08T16:41:13.719333+00:00",
+      "sources": [
+        "Nature 天文和天体物理",
+        "New Scientist 太空",
+        "Phys.org 太空新闻"
+      ],
+      "links": [
+        {
+          "title": "Webb Space Telescope's little red dots could hold key to first black holes",
+          "url": "https://phys.org/news/2026-11-webb-space-telescope-red-dots.html",
+          "source": "Phys.org 太空新闻",
+          "score": 65.4,
+          "published_at": "2026-11-05T14:20:02+00:00"
+        },
+        {
+          "title": "Even stupendous black holes can’t explain dark matter",
+          "url": "https://www.nature.com/articles/d41586-026-03386-4",
+          "source": "Nature 天文和天体物理",
+          "score": 60.4,
+          "published_at": "2026-10-29T00:00:00+00:00"
+        },
+        {
+          "title": "'Stupendously large' primordial black holes ruled out as a dark matter source",
+          "url": "https://phys.org/news/2026-11-stupendously-large-primordial-black-holes.html",
+          "source": "Phys.org 太空新闻",
+          "score": 40.5,
+          "published_at": "2026-11-08T14:40:01+00:00"
+        },
+        {
+          "title": "Could primordial black holes hold the key to dark matter?",
+          "url": "https://www.newscientist.com/video/2597265-could-primordial-black-holes-hold-the-key-to-dark-matter/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 38.9,
+          "published_at": "2026-11-04T18:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "doi": "10.1038/d41586-026-03386-4",
+        "via": "self_meta",
+        "confidence": "verified"
+      }
     },
     {
       "id": "8cba20036180",
       "title": "A ∧-like metallicity profile in the disk of the Sagittarius dwarf galaxy",
       "status": "关注中",
-      "heat": 21.0,
+      "heat": 0.0,
       "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00",
+      "signalCount": 0,
+      "latestAt": "2026-11-08T16:41:13.719333+00:00",
       "sources": [
         "Nature 天文和天体物理",
         "Phys.org 太空新闻"
@@ -152,130 +165,27 @@
           "title": "A galaxy nicknamed Misty Moons offers a glimpse of early star formation",
           "url": "https://phys.org/news/2026-11-galaxy-nicknamed-misty-moons-glimpse.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.1,
+          "score": 59.7,
           "published_at": "2026-11-06T12:40:10+00:00"
         },
         {
           "title": "A ∧-like metallicity profile in the disk of the Sagittarius dwarf galaxy",
           "url": "https://www.nature.com/articles/s41550-026-02996-2",
           "source": "Nature 天文和天体物理",
-          "score": 43.8,
+          "score": 43.4,
           "published_at": "2026-10-13T00:00:00+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "down",
+      "trendPct": -100.0,
       "badges": [],
-      "digest": "人马座矮星系盘面金属丰度呈∧形分布，表明其内部存在早期恒星形成活动。该发现基于对星系盘面不同区域金属丰度的测量，揭示了星系化学演化的空间不均匀性，为理解矮星系恒星形成历史提供了新线索。",
-      "digestTitle": "人马座矮星系盘面金属丰度呈∧形分布",
+      "digest": null,
+      "digestTitle": null,
       "refs": {
         "doi": "10.1038/s41550-026-02996-2",
         "via": "self_meta",
         "confidence": "verified"
       }
-    },
-    {
-      "id": "1d6980ba5778",
-      "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00",
-      "sources": [
-        "New Scientist 太空",
-        "Phys.org 太空新闻"
-      ],
-      "links": [
-        {
-          "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
-          "url": "https://www.newscientist.com/article/2597221-hubble-space-telescope-is-falling-to-earth-should-nasa-save-it/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 60.1,
-          "published_at": "2026-11-06T12:00:00+00:00"
-        },
-        {
-          "title": "NASA's Swift telescope has burned up, months after a robot sent to save it failed",
-          "url": "https://phys.org/news/2026-11-nasa-swift-telescope-months-robot.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.6,
-          "published_at": "2026-11-05T15:40:14+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": "哈勃空间望远镜预计在2032年前后坠入地球大气层并烧毁，NASA正征求私营部门意见，以寻找维持其运行的方案。此前，NASA的斯威夫特望远镜因轨道衰减已于2026年10月结束任务，其轨道高度降至约275公里，大气阻力导致无法继续工作。",
-      "digestTitle": "哈勃望远镜面临坠毁，NASA寻求私营部门救援方案",
-      "llmScore": 60.0
-    },
-    {
-      "id": "9ce52c24f555",
-      "title": "High-orbit satellites could light the way for travel to the moon",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00",
-      "sources": [
-        "Astronomy Magazine",
-        "MIT News 太空探索"
-      ],
-      "links": [
-        {
-          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
-          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
-          "source": "Astronomy Magazine",
-          "score": 60.2,
-          "published_at": "2026-11-06T13:19:47+00:00"
-        },
-        {
-          "title": "High-orbit satellites could light the way for travel to the moon",
-          "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
-          "source": "MIT News 太空探索",
-          "score": 41.2,
-          "published_at": "2026-08-10T18:10:00+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
-    },
-    {
-      "id": "76d54ee0d127",
-      "title": "Robotic “SuperLimbs” could help moonwalkers recover from falls",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00",
-      "sources": [
-        "MIT News 太空探索",
-        "New Scientist 太空"
-      ],
-      "links": [
-        {
-          "title": "A robot called GIMLI will explore a lunar cave for a future moon base",
-          "url": "https://www.newscientist.com/article/2597780-a-robot-called-gimli-will-explore-a-lunar-cave-for-a-future-moon-base/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 60.0,
-          "published_at": "2026-11-06T09:00:00+00:00"
-        },
-        {
-          "title": "Robotic “SuperLimbs” could help moonwalkers recover from falls",
-          "url": "https://news.mit.edu/2024/robotic-superlimbs-could-help-moonwalkers-recover-from-falls-0515",
-          "source": "MIT News 太空探索",
-          "score": 24.7,
-          "published_at": "2024-05-15T04:00:00+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null
     },
     {
       "id": "0d1302e70f0f",
@@ -284,7 +194,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00",
+      "latestAt": "2026-11-08T16:41:13.719333+00:00",
       "sources": [
         "MIT News 太空探索",
         "Phys.org 太空新闻"
@@ -294,7 +204,7 @@
           "title": "Astronomers deliver the sharpest and deepest view yet of the low-frequency radio sky",
           "url": "https://phys.org/news/2026-11-astronomers-sharpest-deepest-view-frequency.html",
           "source": "Phys.org 太空新闻",
-          "score": 35.9,
+          "score": 35.6,
           "published_at": "2026-11-06T00:40:06+00:00"
         },
         {
@@ -305,8 +215,8 @@
           "published_at": "2024-05-14T17:30:00+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -318,7 +228,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00",
+      "latestAt": "2026-11-08T16:41:13.719333+00:00",
       "sources": [
         "MIT News 太空探索",
         "Phys.org 太空新闻"
@@ -328,7 +238,7 @@
           "title": "Connecting artificial intelligence with the tools of astrophysical research",
           "url": "https://phys.org/news/2026-11-artificial-intelligence-tools-astrophysical.html",
           "source": "Phys.org 太空新闻",
-          "score": 35.8,
+          "score": 35.6,
           "published_at": "2026-11-05T22:00:07+00:00"
         },
         {
@@ -339,55 +249,151 @@
           "published_at": "2026-06-25T16:00:00+00:00"
         }
       ],
-      "trend": "down",
-      "trendPct": -100.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "digest": null,
       "digestTitle": null
     },
     {
-      "id": "091433c2113a",
-      "title": "Even stupendous black holes can’t explain dark matter",
-      "status": "发酵中",
+      "id": "1d6980ba5778",
+      "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
+      "status": "关注中",
       "heat": 0.0,
-      "sourceCount": 3,
+      "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-08T01:28:12.905572+00:00",
+      "latestAt": "2026-11-08T16:41:13.719333+00:00",
       "sources": [
-        "Nature 天文和天体物理",
         "New Scientist 太空",
         "Phys.org 太空新闻"
       ],
       "links": [
         {
-          "title": "Webb Space Telescope's little red dots could hold key to first black holes",
-          "url": "https://phys.org/news/2026-11-webb-space-telescope-red-dots.html",
-          "source": "Phys.org 太空新闻",
-          "score": 64.4,
-          "published_at": "2026-11-05T14:20:02+00:00"
-        },
-        {
-          "title": "Even stupendous black holes can’t explain dark matter",
-          "url": "https://www.nature.com/articles/d41586-026-03386-4",
-          "source": "Nature 天文和天体物理",
-          "score": 59.3,
-          "published_at": "2026-10-29T00:00:00+00:00"
-        },
-        {
-          "title": "Could primordial black holes hold the key to dark matter?",
-          "url": "https://www.newscientist.com/video/2597265-could-primordial-black-holes-hold-the-key-to-dark-matter/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
+          "url": "https://www.newscientist.com/article/2597221-hubble-space-telescope-is-falling-to-earth-should-nasa-save-it/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 38.3,
-          "published_at": "2026-11-04T18:00:00+00:00"
+          "score": 59.7,
+          "published_at": "2026-11-06T12:00:00+00:00"
+        },
+        {
+          "title": "NASA's Swift telescope has burned up, months after a robot sent to save it failed",
+          "url": "https://phys.org/news/2026-11-nasa-swift-telescope-months-robot.html",
+          "source": "Phys.org 太空新闻",
+          "score": 59.1,
+          "published_at": "2026-11-05T15:40:14+00:00"
+        }
+      ],
+      "trend": "down",
+      "trendPct": -100.0,
+      "badges": [],
+      "digest": "哈勃空间望远镜预计在2032年前后坠入地球大气层并烧毁，NASA正征求私营部门意见，以寻找延长其寿命的方法。该望远镜目前仍在轨运行，但轨道衰减已不可避免。NASA尚未确定最终处置方案，也未证实任何私营部门提案已获采纳。",
+      "digestTitle": "哈勃望远镜面临坠毁，NASA寻求私营部门救援方案",
+      "llmScore": 60.0
+    },
+    {
+      "id": "1c1279a4bf0f",
+      "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-11-08T16:41:13.719333+00:00",
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
+          "url": "https://www.universetoday.com/articles/a-mighty-wind-blew-away-gas-and-made-early-galaxies-brighter",
+          "source": "Universe Today",
+          "score": 59.2,
+          "published_at": "2026-11-05T17:11:33+00:00"
+        },
+        {
+          "title": "A cosmic 'leaf blower': Light-propelled winds help explain early universe's bright galaxies",
+          "url": "https://phys.org/news/2026-11-cosmic-leaf-blower-propelled-early.html",
+          "source": "Phys.org 太空新闻",
+          "score": 58.6,
+          "published_at": "2026-11-04T21:00:11+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": null,
-      "digestTitle": null,
+      "digest": "詹姆斯·韦布太空望远镜观测显示，大爆炸后约4至5亿年的早期宇宙中存在过多明亮星系，与理论预期不符。研究人员提出，这些星系中恒星产生的强烈星风可能吹散了周围气体，使星光更易传出，从而解释了观测到的异常亮度。该机制尚属理论推测，需进一步观测验证。",
+      "digestTitle": "早期星系异常明亮或由强风解释",
+      "llmScore": 63.5
+    },
+    {
+      "id": "d3c60355eed1",
+      "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-11-08T16:41:13.719333+00:00",
+      "sources": [
+        "MIT News 太空探索",
+        "Phys.org 太空新闻"
+      ],
+      "links": [
+        {
+          "title": "Pulsars set first mass limits on supermassive black hole pairs in the early universe",
+          "url": "https://phys.org/news/2026-11-pulsars-mass-limits-supermassive-black.html",
+          "source": "Phys.org 太空新闻",
+          "score": 58.5,
+          "published_at": "2026-11-04T16:30:01+00:00"
+        },
+        {
+          "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
+          "url": "https://news.mit.edu/2024/using-wobbling-stellar-material-astronomers-measure-supermassive-black-hole-spin-0522",
+          "source": "MIT News 太空探索",
+          "score": 41.2,
+          "published_at": "2024-05-22T15:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": "天文学家利用脉冲星计时首次为早期宇宙中的超大质量黑洞对设定了质量上限。这一结果来自对来自早期宇宙的脉冲星信号的观测，表明这些黑洞对的质量远低于此前基于詹姆斯·韦伯太空望远镜观测所推测的数值。该发现为理解早期宇宙中黑洞的形成与演化提供了新的约束，并展示了脉冲星计时作为探测超大质量黑洞及其周围环境的新工具。",
+      "digestTitle": "脉冲星首次为早期宇宙超大质量黑洞对设定质量上限"
+    },
+    {
+      "id": "10c3e388bac4",
+      "title": "An enriched methane D/H ratio in the interstellar object 3I/ATLAS",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-11-08T16:41:13.719333+00:00",
+      "sources": [
+        "Nature 天文和天体物理",
+        "Universe Today"
+      ],
+      "links": [
+        {
+          "title": "Interstellar Visitor 3I/ATLAS Shows Water Ice Behaves the Same Across Alien Star Systems",
+          "url": "https://www.universetoday.com/articles/interstellar-visitor-3iatlas-shows-water-ice-behaves-the-same-across-alien-star-systems",
+          "source": "Universe Today",
+          "score": 59.1,
+          "published_at": "2026-11-05T15:08:44+00:00"
+        },
+        {
+          "title": "An enriched methane D/H ratio in the interstellar object 3I/ATLAS",
+          "url": "https://www.nature.com/articles/s41550-026-03002-5",
+          "source": "Nature 天文和天体物理",
+          "score": 50.0,
+          "published_at": "2026-10-23T00:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": "星际天体3I/ATLAS在2025年7月被发现后，观测显示其水冰升华行为与太阳系彗星相似，表明水冰在异星系统中遵循相同物理规律。该结论基于对彗星活动性的光谱分析，但具体机制仍需进一步研究。此外，其甲烷的氘氢比值异常偏高，暗示其形成于富氘环境，可能来自低温分子云或原行星盘外缘。",
+      "digestTitle": "星际访客3I/ATLAS彗星水冰行为与太阳系彗星一致",
       "refs": {
-        "doi": "10.1038/d41586-026-03386-4",
+        "doi": "10.1038/s41550-026-03002-5",
         "via": "self_meta",
         "confidence": "verified"
       }

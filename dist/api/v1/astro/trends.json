@@ -1,85 +1,73 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T01:28:12.905572+00:00",
-  "weekStart": "2026-11-02",
+  "generatedAt": "2026-11-08T16:41:13.719333+00:00",
+  "weekStart": "2026-11-03",
   "windowDays": 7,
-  "windowStart": "2026-11-02",
-  "windowEnd": "2026-11-08",
-  "prevStart": "2026-10-26",
-  "prevEnd": "2026-11-01",
+  "windowStart": "2026-11-03",
+  "windowEnd": "2026-11-09",
+  "prevStart": "2026-10-27",
+  "prevEnd": "2026-11-02",
   "categoryDelta": [
     {
       "category": "深空探测",
-      "thisWeek": 1536.7,
-      "lastWeek": 1774.5,
-      "deltaPct": -13.4
-    },
-    {
-      "category": "科研进展",
-      "thisWeek": 1491.4,
-      "lastWeek": 1951.5,
-      "deltaPct": -23.6
-    },
-    {
-      "category": "星系与宇宙学",
-      "thisWeek": 1280.6,
-      "lastWeek": 1218.4,
-      "deltaPct": 5.1
+      "thisWeek": 1474.6,
+      "lastWeek": 1919.3,
+      "deltaPct": -23.2
     },
     {
       "category": "其他",
-      "thisWeek": 1217.0,
-      "lastWeek": 1626.6,
-      "deltaPct": -25.2
+      "thisWeek": 1231.3,
+      "lastWeek": 1687.7,
+      "deltaPct": -27.0
+    },
+    {
+      "category": "科研进展",
+      "thisWeek": 1217.2,
+      "lastWeek": 1907.3,
+      "deltaPct": -36.2
+    },
+    {
+      "category": "星系与宇宙学",
+      "thisWeek": 950.2,
+      "lastWeek": 1187.6,
+      "deltaPct": -20.0
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 905.3,
-      "lastWeek": 1206.6,
-      "deltaPct": -25.0
+      "thisWeek": 732.4,
+      "lastWeek": 1049.5,
+      "deltaPct": -30.2
     },
     {
       "category": "引力波",
-      "thisWeek": 100.1,
-      "lastWeek": 37.4,
-      "deltaPct": 167.6
-    },
-    {
-      "category": "系外行星",
-      "thisWeek": 0,
-      "lastWeek": 116.5,
-      "deltaPct": -100.0
+      "thisWeek": 50.1,
+      "lastWeek": 50.0,
+      "deltaPct": 0.2
     },
     {
       "category": "太阳与空间物理",
       "thisWeek": 0,
       "lastWeek": 459.1,
       "deltaPct": -100.0
+    },
+    {
+      "category": "系外行星",
+      "thisWeek": 0,
+      "lastWeek": 116.5,
+      "deltaPct": -100.0
     }
   ],
   "newTopics": [
     {
-      "topic_id": "888a752ed227",
-      "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
-      "score": 220.3,
-      "days": 2
-    },
-    {
-      "topic_id": "25a8b115a98d",
-      "title": "What’s Up: November 2026 Skywatching Tips from NASA",
-      "score": 218.0,
+      "topic_id": "778d0a04316c",
+      "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+      "score": 306.0,
       "days": 1
     },
     {
       "topic_id": "785cd3e6fe07",
       "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
       "score": 173.5,
-      "days": 1
-    },
-    {
-      "topic_id": "afcfb9061cba",
-      "title": "When precise inference is wrong: Diagnosing model misspecification with applications to cosmic dawn and reionisation",
-      "score": 135.6,
       "days": 1
     },
     {
@@ -116,6 +104,18 @@
       "topic_id": "8eec9527a814",
       "title": "Leviathan's sprawling stars challenge idea that dusty giants become compact galaxies",
       "score": 114.5,
+      "days": 1
+    },
+    {
+      "topic_id": "091433c2113a",
+      "title": "Even stupendous black holes can’t explain dark matter",
+      "score": 104.8,
+      "days": 1
+    },
+    {
+      "topic_id": "8226419750b8",
+      "title": "Enhancing Gravitational Waves from Global Strings via a First-Order Phase Transition",
+      "score": 100.2,
       "days": 1
     }
   ],

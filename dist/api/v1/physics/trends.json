@@ -1,48 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T01:28:12.905572+00:00",
-  "weekStart": "2026-11-02",
+  "generatedAt": "2026-11-08T16:41:13.719333+00:00",
+  "weekStart": "2026-11-03",
   "windowDays": 7,
-  "windowStart": "2026-11-02",
-  "windowEnd": "2026-11-08",
-  "prevStart": "2026-10-26",
-  "prevEnd": "2026-11-01",
+  "windowStart": "2026-11-03",
+  "windowEnd": "2026-11-09",
+  "prevStart": "2026-10-27",
+  "prevEnd": "2026-11-02",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1857.1,
-      "lastWeek": 1236.2,
-      "deltaPct": 50.2
+      "thisWeek": 1737.4,
+      "lastWeek": 1225.3,
+      "deltaPct": 41.8
     },
     {
       "category": "其他",
-      "thisWeek": 1012.5,
-      "lastWeek": 953.1,
-      "deltaPct": 6.2
+      "thisWeek": 1040.8,
+      "lastWeek": 1018.0,
+      "deltaPct": 2.2
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 569.5,
-      "lastWeek": 543.3,
-      "deltaPct": 4.8
+      "thisWeek": 583.2,
+      "lastWeek": 504.0,
+      "deltaPct": 15.7
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 516.3,
-      "lastWeek": 361.1,
-      "deltaPct": 43.0
-    },
-    {
-      "category": "等离子体",
-      "thisWeek": 199.8,
-      "lastWeek": 51.1,
-      "deltaPct": 291.0
+      "thisWeek": 441.5,
+      "lastWeek": 219.7,
+      "deltaPct": 101.0
     },
     {
       "category": "高能与粒子物理",
       "thisWeek": 149.1,
       "lastWeek": 122.1,
       "deltaPct": 22.1
+    },
+    {
+      "category": "等离子体",
+      "thisWeek": 148.6,
+      "lastWeek": 102.3,
+      "deltaPct": 45.3
     },
     {
       "category": "原子分子与光物理",
@@ -62,12 +62,6 @@
       "topic_id": "125f0822b778",
       "title": "Quantum error correcting codes from quiver moduli: Grassmannians, cyclic monodromy, and argyle collision divisors",
       "score": 150.3,
-      "days": 1
-    },
-    {
-      "topic_id": "cafa9e30b66d",
-      "title": "Finite-Element Electromagnetic Analysis and Evaluation of Antenna Performance Metrics Using a Quantum Linear System Solver",
-      "score": 135.6,
       "days": 1
     },
     {
@@ -113,9 +107,15 @@
       "days": 1
     },
     {
-      "topic_id": "431b049c16bc",
-      "title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks",
-      "score": 87.4,
+      "topic_id": "26e0d76ba447",
+      "title": "A single measurement makes quantum bits more reliable",
+      "score": 64.9,
+      "days": 2
+    },
+    {
+      "topic_id": "0269b1a75ab0",
+      "title": "Software-defined polarization-diversity continuous-variable quantum key distribution heterodyne receiver",
+      "score": 62.0,
       "days": 1
     }
   ],
