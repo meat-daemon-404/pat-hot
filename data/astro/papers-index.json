@@ -1,23 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T16:26:55.420550+00:00",
+  "generatedAt": "2026-11-08T01:28:12.905572+00:00",
   "channel": "astro",
   "count": 26,
   "items": [
-    {
-      "id": "89e4a2a5a4ba",
-      "title": "Revered NASA spacecraft is about to perish in flames — astronomers are mourning",
-      "channel": "astro",
-      "source": "Nature 天文和天体物理",
-      "url": "https://www.nature.com/articles/d41586-026-03461-w",
-      "doi": "10.1038/d41586-026-03461-w",
-      "arxiv": null,
-      "via": "self_meta",
-      "confidence": "verified",
-      "category": "深空探测",
-      "published_at": "2026-10-27T00:00:00+00:00",
-      "selected": true
-    },
     {
       "id": "ff20a62d86f5",
       "title": "Author Correction: Lyman continuum escape during the onset of galactic winds in compact starbursts",
@@ -170,6 +156,20 @@
       "confidence": "verified",
       "category": "科研进展",
       "published_at": "2026-10-28T00:00:00+00:00",
+      "selected": false
+    },
+    {
+      "id": "89e4a2a5a4ba",
+      "title": "Revered NASA spacecraft is about to perish in flames — astronomers are mourning",
+      "channel": "astro",
+      "source": "Nature 天文和天体物理",
+      "url": "https://www.nature.com/articles/d41586-026-03461-w",
+      "doi": "10.1038/d41586-026-03461-w",
+      "arxiv": null,
+      "via": "self_meta",
+      "confidence": "verified",
+      "category": "深空探测",
+      "published_at": "2026-10-27T00:00:00+00:00",
       "selected": false
     },
     {

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T16:26:55.420550+00:00",
+  "generatedAt": "2026-11-08T01:28:12.905572+00:00",
   "weekStart": "2026-11-02",
   "windowDays": 7,
   "windowStart": "2026-11-02",
@@ -9,34 +9,34 @@
   "prevEnd": "2026-11-01",
   "categoryDelta": [
     {
-      "category": "科研进展",
-      "thisWeek": 1419.7,
-      "lastWeek": 1951.5,
-      "deltaPct": -27.3
+      "category": "深空探测",
+      "thisWeek": 1536.7,
+      "lastWeek": 1774.5,
+      "deltaPct": -13.4
     },
     {
-      "category": "深空探测",
-      "thisWeek": 1406.3,
-      "lastWeek": 1774.5,
-      "deltaPct": -20.7
+      "category": "科研进展",
+      "thisWeek": 1491.4,
+      "lastWeek": 1951.5,
+      "deltaPct": -23.6
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 1281.4,
+      "thisWeek": 1280.6,
       "lastWeek": 1218.4,
-      "deltaPct": 5.2
+      "deltaPct": 5.1
     },
     {
       "category": "其他",
-      "thisWeek": 1217.2,
+      "thisWeek": 1217.0,
       "lastWeek": 1626.6,
       "deltaPct": -25.2
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 906.0,
+      "thisWeek": 905.3,
       "lastWeek": 1206.6,
-      "deltaPct": -24.9
+      "deltaPct": -25.0
     },
     {
       "category": "引力波",
@@ -45,19 +45,25 @@
       "deltaPct": 167.6
     },
     {
-      "category": "太阳与空间物理",
-      "thisWeek": 0,
-      "lastWeek": 459.1,
-      "deltaPct": -100.0
-    },
-    {
       "category": "系外行星",
       "thisWeek": 0,
       "lastWeek": 116.5,
       "deltaPct": -100.0
+    },
+    {
+      "category": "太阳与空间物理",
+      "thisWeek": 0,
+      "lastWeek": 459.1,
+      "deltaPct": -100.0
     }
   ],
   "newTopics": [
+    {
+      "topic_id": "888a752ed227",
+      "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+      "score": 220.3,
+      "days": 2
+    },
     {
       "topic_id": "25a8b115a98d",
       "title": "What’s Up: November 2026 Skywatching Tips from NASA",
@@ -103,19 +109,13 @@
     {
       "topic_id": "ee88d3278295",
       "title": "Theory predicting an older universe without dark matter or dark energy passes key cosmological tests",
-      "score": 115.2,
+      "score": 114.6,
       "days": 1
     },
     {
       "topic_id": "8eec9527a814",
       "title": "Leviathan's sprawling stars challenge idea that dusty giants become compact galaxies",
       "score": 114.5,
-      "days": 1
-    },
-    {
-      "topic_id": "091433c2113a",
-      "title": "Even stupendous black holes can’t explain dark matter",
-      "score": 104.8,
       "days": 1
     }
   ],

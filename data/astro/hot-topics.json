@@ -1,8 +1,122 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T16:26:55.420550+00:00",
+  "generatedAt": "2026-11-08T01:28:12.905572+00:00",
   "count": 10,
   "items": [
+    {
+      "terms": [
+        "astronaut",
+        "astronomers",
+        "awards",
+        "base",
+        "corps",
+        "cosmic",
+        "decades",
+        "earth",
+        "execute",
+        "experiment",
+        "explorers",
+        "explosions",
+        "flames",
+        "join",
+        "landings",
+        "maneuvers",
+        "mars",
+        "moon",
+        "mourning",
+        "nasa",
+        "navigation",
+        "next",
+        "perish",
+        "planetary",
+        "plunges",
+        "powered",
+        "projects",
+        "promise",
+        "revered",
+        "science",
+        "seeks",
+        "slingshot",
+        "space",
+        "spacecraft",
+        "studying",
+        "telescope",
+        "transportation",
+        "twin"
+      ],
+      "source_count": 4,
+      "signal_count": 3,
+      "sources": [
+        "NASA 快讯",
+        "Nature 天文和天体物理",
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "score": 35.5,
+      "latest_at": "2026-11-08T01:28:12.905572+00:00",
+      "representative": {
+        "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+        "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
+        "source": "NASA 快讯",
+        "published_at": "2026-11-07T22:47:03+00:00",
+        "score": 73.8,
+        "summary": "NASA announced a suite of awards and mission updates on Saturday to expand the agency’s Moon Base exploration, science, and infrastructure capabilities. The investments will advance commercial robotic deliveries, a nuclear-powered rover nam",
+        "zh_full": null
+      },
+      "folded_count": 3,
+      "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+      "id": "888a752ed227",
+      "links": [
+        {
+          "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+          "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
+          "source": "NASA 快讯",
+          "score": 73.8,
+          "published_at": "2026-11-07T22:47:03+00:00"
+        },
+        {
+          "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+          "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+          "source": "NASA 快讯",
+          "score": 73.6,
+          "published_at": "2026-11-07T18:11:57+00:00"
+        },
+        {
+          "title": "NASA's Twin Spacecraft Will Execute Powered Slingshot Maneuvers on Their Way to Mars",
+          "url": "https://www.universetoday.com/articles/nasas-twin-spacecraft-will-execute-powered-slingshot-maneuvers-on-their-way-to-mars",
+          "source": "Universe Today",
+          "score": 72.9,
+          "published_at": "2026-11-06T16:35:09+00:00"
+        },
+        {
+          "title": "NASA space telescope plunges to Earth after two decades studying cosmic explosions",
+          "url": "https://phys.org/news/2026-11-nasa-space-telescope-plunges-earth.html",
+          "source": "Phys.org 太空新闻",
+          "score": 71.7,
+          "published_at": "2026-11-04T20:40:11+00:00"
+        },
+        {
+          "title": "Revered NASA spacecraft is about to perish in flames — astronomers are mourning",
+          "url": "https://www.nature.com/articles/d41586-026-03461-w",
+          "source": "Nature 天文和天体物理",
+          "score": 65.8,
+          "published_at": "2026-10-27T00:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "nasa",
+        "spacecraft",
+        "navigation",
+        "experiment",
+        "promise"
+      ],
+      "rank": 1,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 35.5,
+      "status": "发酵中"
+    },
     {
       "terms": [
         "america",
@@ -23,15 +137,16 @@
         "Astronomy Magazine"
       ],
       "score": 34.5,
-      "latest_at": "2026-11-07T16:26:55.420550+00:00",
+      "latest_at": "2026-11-08T01:28:12.905572+00:00",
       "representative": {
         "title": "The Sky Today on Saturday, November 7: Venus meets the Moon",
         "url": "https://www.astronomy.com/observing/the-sky-today-saturday-november-7-2026/",
         "source": "Astronomy Magazine",
         "published_at": "2026-11-07T09:00:00+00:00",
-        "score": 59.1,
+        "score": 58.9,
         "summary": "Looking for a sky event this week? Check out our full Sky This Week column. November 6: Nab the North America Nebula Venus is already primed to capture attention above the eastern horizon before sunrise. This morning, the Moon passes 1.1° d",
-        "zh_full": null
+        "zh_full": null,
+        "llm_score": 28.5
       },
       "folded_count": 0,
       "title": "The Sky Today on Saturday, November 7: Venus meets the Moon",
@@ -41,21 +156,21 @@
           "title": "The Sky Today on Saturday, November 7: Venus meets the Moon",
           "url": "https://www.astronomy.com/observing/the-sky-today-saturday-november-7-2026/",
           "source": "Astronomy Magazine",
-          "score": 59.1,
+          "score": 58.9,
           "published_at": "2026-11-07T09:00:00+00:00"
         },
         {
           "title": "The Sky Today on Friday, November 6: Nab the North America Nebula",
           "url": "https://www.astronomy.com/observing/the-sky-today-friday-november-6-2026/",
           "source": "Astronomy Magazine",
-          "score": 58.5,
+          "score": 58.2,
           "published_at": "2026-11-06T09:00:00+00:00"
         },
         {
           "title": "The Sky This Week from November 6 to 13: Venus in the spotlight",
           "url": "https://www.astronomy.com/the-sky-this-week/the-sky-this-week-from-november-6-to-13-2026/",
           "source": "Astronomy Magazine",
-          "score": 35.0,
+          "score": 34.9,
           "published_at": "2026-11-06T06:00:00+00:00"
         }
       ],
@@ -66,129 +181,12 @@
         "venus",
         "saturday"
       ],
-      "rank": 1,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 2,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 34.5,
       "status": "关注中"
-    },
-    {
-      "terms": [
-        "astronomers",
-        "burned",
-        "cosmic",
-        "decades",
-        "earth",
-        "execute",
-        "experiment",
-        "explosions",
-        "failed",
-        "falling",
-        "flames",
-        "hubble",
-        "landings",
-        "maneuvers",
-        "mars",
-        "mourning",
-        "nasa",
-        "navigation",
-        "perish",
-        "planetary",
-        "plunges",
-        "powered",
-        "promise",
-        "revered",
-        "robot",
-        "save",
-        "sent",
-        "slingshot",
-        "space",
-        "spacecraft",
-        "studying",
-        "swift",
-        "telescope",
-        "twin"
-      ],
-      "source_count": 4,
-      "signal_count": 2,
-      "sources": [
-        "Nature 天文和天体物理",
-        "New Scientist 太空",
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "score": 32.0,
-      "latest_at": "2026-11-07T16:26:55.420550+00:00",
-      "representative": {
-        "title": "Revered NASA spacecraft is about to perish in flames — astronomers are mourning",
-        "url": "https://www.nature.com/articles/d41586-026-03461-w",
-        "source": "Nature 天文和天体物理",
-        "published_at": "2026-10-27T00:00:00+00:00",
-        "score": 66.0,
-        "summary": "",
-        "zh_full": "（无摘要，仅标题）备受尊敬的NASA航天器即将在火焰中毁灭，天文学家们正在哀悼。",
-        "refs": {
-          "doi": "10.1038/d41586-026-03461-w",
-          "via": "self_meta",
-          "confidence": "verified"
-        },
-        "llm_summary": "备受尊敬的NASA航天器即将在火焰中毁灭，天文学家们正在哀悼。",
-        "density": "低"
-      },
-      "folded_count": 3,
-      "title": "Revered NASA spacecraft is about to perish in flames — astronomers are mourning",
-      "id": "3b4fd1479cd2",
-      "links": [
-        {
-          "title": "NASA's Twin Spacecraft Will Execute Powered Slingshot Maneuvers on Their Way to Mars",
-          "url": "https://www.universetoday.com/articles/nasas-twin-spacecraft-will-execute-powered-slingshot-maneuvers-on-their-way-to-mars",
-          "source": "Universe Today",
-          "score": 73.2,
-          "published_at": "2026-11-06T16:35:09+00:00"
-        },
-        {
-          "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
-          "url": "https://www.newscientist.com/article/2597221-hubble-space-telescope-is-falling-to-earth-should-nasa-save-it/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
-          "source": "New Scientist 太空",
-          "score": 73.0,
-          "published_at": "2026-11-06T12:00:00+00:00"
-        },
-        {
-          "title": "NASA's Swift telescope has burned up, months after a robot sent to save it failed",
-          "url": "https://phys.org/news/2026-11-nasa-swift-telescope-months-robot.html",
-          "source": "Phys.org 太空新闻",
-          "score": 72.5,
-          "published_at": "2026-11-05T15:40:14+00:00"
-        },
-        {
-          "title": "NASA space telescope plunges to Earth after two decades studying cosmic explosions",
-          "url": "https://phys.org/news/2026-11-nasa-space-telescope-plunges-earth.html",
-          "source": "Phys.org 太空新闻",
-          "score": 71.9,
-          "published_at": "2026-11-04T20:40:11+00:00"
-        },
-        {
-          "title": "Revered NASA spacecraft is about to perish in flames — astronomers are mourning",
-          "url": "https://www.nature.com/articles/d41586-026-03461-w",
-          "source": "Nature 天文和天体物理",
-          "score": 66.0,
-          "published_at": "2026-10-27T00:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "nasa",
-        "telescope",
-        "save",
-        "space",
-        "earth"
-      ],
-      "rank": 2,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 32.0,
-      "status": "发酵中"
     },
     {
       "terms": [
@@ -215,7 +213,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-07T16:26:55.420550+00:00",
+      "latest_at": "2026-11-08T01:28:12.905572+00:00",
       "representative": {
         "title": "Pair of distinct black hole mergers sheds new light on nature of their formation and evolution",
         "url": "https://ligo.org/pair-of-distinct-black-hole-mergers-sheds-new-light-on-nature-of-their-formation-and-evolution/",
@@ -236,7 +234,7 @@
           "title": "Vibrating mirrors of light create analog of a black hole event horizon",
           "url": "https://phys.org/news/2026-11-vibrating-mirrors-analog-black-hole.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.5,
+          "score": 60.3,
           "published_at": "2026-11-06T17:40:11+00:00"
         },
         {
@@ -254,9 +252,11 @@
         "mirrors",
         "analog"
       ],
+      "digest": "研究人员利用快速改变间距的光学谐振腔模拟了黑洞事件视界，理论预测该装置可产生类似黑洞的波动效应。同时，LIGO-Virgo-KAGRA合作组在2024年相隔一个月探测到两次黑洞合并，为理解黑洞形成和演化提供了新数据。",
+      "digestTitle": "光镜模拟黑洞视界，双黑洞合并揭示形成机制",
       "rank": 3,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -285,13 +285,13 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-07T16:26:55.420550+00:00",
+      "latest_at": "2026-11-08T01:28:12.905572+00:00",
       "representative": {
         "title": "A ∧-like metallicity profile in the disk of the Sagittarius dwarf galaxy",
         "url": "https://www.nature.com/articles/s41550-026-02996-2",
         "source": "Nature 天文和天体物理",
         "published_at": "2026-10-13T00:00:00+00:00",
-        "score": 44.0,
+        "score": 43.8,
         "summary": "",
         "zh_full": null,
         "refs": {
@@ -308,14 +308,14 @@
           "title": "A galaxy nicknamed Misty Moons offers a glimpse of early star formation",
           "url": "https://phys.org/news/2026-11-galaxy-nicknamed-misty-moons-glimpse.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.4,
+          "score": 60.1,
           "published_at": "2026-11-06T12:40:10+00:00"
         },
         {
           "title": "A ∧-like metallicity profile in the disk of the Sagittarius dwarf galaxy",
           "url": "https://www.nature.com/articles/s41550-026-02996-2",
           "source": "Nature 天文和天体物理",
-          "score": 44.0,
+          "score": 43.8,
           "published_at": "2026-10-13T00:00:00+00:00"
         }
       ],
@@ -326,78 +326,9 @@
         "moons",
         "glimpse"
       ],
-      "digest": "天文学家利用引力透镜效应观测到早期星系“迷雾之月”，并发现人马座矮星系盘面存在∧形的金属丰度分布，表明其恒星形成历史与盘面结构演化密切相关。该发现基于对星系中不同恒星金属丰度的精确测量，为理解矮星系在宇宙早期如何形成和演化提供了新线索。研究人员称，这一∧形分布模式可能反映了星系盘在形成过程中经历了多次恒星形成爆发，而非单一均匀过程。",
-      "digestTitle": "人马座矮星系盘面发现∧形金属丰度分布",
+      "digest": "人马座矮星系盘面金属丰度呈∧形分布，表明其内部存在早期恒星形成活动。该发现基于对星系盘面不同区域金属丰度的测量，揭示了星系化学演化的空间不均匀性，为理解矮星系恒星形成历史提供了新线索。",
+      "digestTitle": "人马座矮星系盘面金属丰度呈∧形分布",
       "rank": 4,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "astronomers",
-        "candy",
-        "cotton",
-        "deepest",
-        "deliver",
-        "giant",
-        "low-frequency",
-        "planet",
-        "radio",
-        "sharpest",
-        "spot",
-        "view"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "MIT News 太空探索",
-        "Phys.org 太空新闻"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-11-07T16:26:55.420550+00:00",
-      "representative": {
-        "title": "Astronomers spot a giant planet that is as light as cotton candy",
-        "url": "https://news.mit.edu/2024/astronomers-spot-giant-planet-light-as-cotton-candy-0514",
-        "source": "MIT News 太空探索",
-        "published_at": "2024-05-14T17:30:00+00:00",
-        "score": 24.7,
-        "summary": "The new world is the second-lightest planet discovered to date.",
-        "zh_full": "（无摘要，仅标题）",
-        "llm_summary": "（无摘要，仅标题）",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Astronomers spot a giant planet that is as light as cotton candy",
-      "id": "0d1302e70f0f",
-      "links": [
-        {
-          "title": "Astronomers deliver the sharpest and deepest view yet of the low-frequency radio sky",
-          "url": "https://phys.org/news/2026-11-astronomers-sharpest-deepest-view-frequency.html",
-          "source": "Phys.org 太空新闻",
-          "score": 36.0,
-          "published_at": "2026-11-06T00:40:06+00:00"
-        },
-        {
-          "title": "Astronomers spot a giant planet that is as light as cotton candy",
-          "url": "https://news.mit.edu/2024/astronomers-spot-giant-planet-light-as-cotton-candy-0514",
-          "source": "MIT News 太空探索",
-          "score": 24.7,
-          "published_at": "2024-05-14T17:30:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "astronomers",
-        "deliver",
-        "sharpest",
-        "deepest",
-        "view"
-      ],
-      "digest": "由莱顿大学领衔的国际团队利用低频阵列（LOFAR）发布了迄今低频射电波段最清晰、最灵敏的天空图像，揭示出近63,000个射电源。该成果标志着低频射电天文学观测能力的重大提升，为研究星系、黑洞及宇宙大尺度结构提供了前所未有的细节。",
-      "digestTitle": "天文学家发布迄今最清晰低频射电天空图",
-      "rank": 5,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -406,206 +337,71 @@
     },
     {
       "terms": [
-        "america",
-        "astrophysical",
-        "connecting",
-        "curiosity-driven",
-        "essential",
-        "ingredient",
-        "intelligence",
-        "media",
-        "research",
-        "science",
-        "success",
-        "tools"
+        "burned",
+        "earth",
+        "failed",
+        "falling",
+        "hubble",
+        "nasa",
+        "robot",
+        "save",
+        "sent",
+        "space",
+        "swift",
+        "telescope"
       ],
       "source_count": 2,
       "signal_count": 1,
       "sources": [
-        "MIT News 太空探索",
+        "New Scientist 太空",
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-07T16:26:55.420550+00:00",
+      "latest_at": "2026-11-08T01:28:12.905572+00:00",
       "representative": {
-        "title": "MIT in the media: Exploring how curiosity-driven science is an essential ingredient in America’s success",
-        "url": "https://news.mit.edu/2026/mit-media-exploring-how-curiosity-driven-science-essential-ingredient-americas-success",
-        "source": "MIT News 太空探索",
-        "published_at": "2026-06-25T16:00:00+00:00",
-        "score": 24.7,
-        "summary": "“Scientific American” showcases the history and future of America’s scientific engine, highlighting promising young scientists and icons at MIT and beyond.",
-        "zh_full": "（无摘要，仅标题）MIT 在媒体上：探索好奇心驱动的科学是美国成功的关键要素。",
-        "llm_summary": "（无摘要，仅标题）MIT 在媒体上：探索好奇心驱动的科学是美国成功的关键要素。",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "MIT in the media: Exploring how curiosity-driven science is an essential ingredient in America’s success",
-      "id": "713ecf8473e5",
-      "links": [
-        {
-          "title": "Connecting artificial intelligence with the tools of astrophysical research",
-          "url": "https://phys.org/news/2026-11-artificial-intelligence-tools-astrophysical.html",
-          "source": "Phys.org 太空新闻",
-          "score": 36.0,
-          "published_at": "2026-11-05T22:00:07+00:00"
-        },
-        {
-          "title": "MIT in the media: Exploring how curiosity-driven science is an essential ingredient in America’s success",
-          "url": "https://news.mit.edu/2026/mit-media-exploring-how-curiosity-driven-science-essential-ingredient-americas-success",
-          "source": "MIT News 太空探索",
-          "score": 24.7,
-          "published_at": "2026-06-25T16:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "connecting",
-        "intelligence",
-        "tools",
-        "astrophysical",
-        "research"
-      ],
-      "digest": "天体物理学家正在将人工智能工具引入研究过程，以应对复杂科学问题。Phys.org报道称，研究高能天体现象需要超越传统论文阅读和数据分析的方法，AI被用于辅助处理大规模观测数据。MIT News则强调好奇心驱动的科学是美国科研成功的关键要素，并展示了年轻科学家在AI与天体物理交叉领域的探索。目前，AI主要作为数据处理和模式识别的辅助手段，尚未替代核心理论推导。",
-      "digestTitle": "AI与天体物理研究结合的应用进展",
-      "rank": 6,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "beating",
-        "crust",
-        "early",
-        "earth",
-        "gravity",
-        "heart",
-        "kept",
-        "moon",
-        "primordial",
-        "shaped",
-        "slowing",
-        "spin",
-        "volcanic"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-11-07T16:26:55.420550+00:00",
-      "representative": {
-        "title": "Earth's Gravity May Have Kept the Early Moon's Volcanic Heart Beating",
-        "url": "https://www.universetoday.com/articles/earths-gravity-may-have-kept-the-early-moons-volcanic-heart-beating",
-        "source": "Universe Today",
-        "published_at": "2026-11-06T14:42:30+00:00",
-        "score": 60.4,
-        "summary": "We typically think of the Moon as a static, floating object that has remained the same for basically its entire lifetime, with an occasional asteroid impact serving as an exception. That understanding is grounded in physics - the Moon shoul",
-        "zh_full": null
-      },
-      "folded_count": 1,
-      "title": "Earth's Gravity May Have Kept the Early Moon's Volcanic Heart Beating",
-      "id": "00e37254b50a",
-      "links": [
-        {
-          "title": "Earth's Gravity May Have Kept the Early Moon's Volcanic Heart Beating",
-          "url": "https://www.universetoday.com/articles/earths-gravity-may-have-kept-the-early-moons-volcanic-heart-beating",
-          "source": "Universe Today",
-          "score": 60.4,
-          "published_at": "2026-11-06T14:42:30+00:00"
-        },
-        {
-          "title": "Earth's slowing spin may have shaped its primordial crust",
-          "url": "https://phys.org/news/2026-11-earth-primordial-crust.html",
-          "source": "Phys.org 太空新闻",
-          "score": 35.9,
-          "published_at": "2026-11-05T15:20:06+00:00"
-        }
-      ],
-      "top_terms": [
-        "earth",
-        "slowing",
-        "spin",
-        "shaped",
-        "primordial"
-      ],
-      "rank": 7,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "away",
-        "blew",
-        "blower",
-        "bright",
-        "brighter",
-        "cosmic",
-        "early",
-        "explain",
-        "galaxies",
-        "light-propelled",
-        "mighty",
-        "universe",
-        "wind",
-        "winds"
-      ],
-      "source_count": 2,
-      "signal_count": 1,
-      "sources": [
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "score": 21.0,
-      "latest_at": "2026-11-07T16:26:55.420550+00:00",
-      "representative": {
-        "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
-        "url": "https://www.universetoday.com/articles/a-mighty-wind-blew-away-gas-and-made-early-galaxies-brighter",
-        "source": "Universe Today",
-        "published_at": "2026-11-05T17:11:33+00:00",
-        "score": 59.9,
-        "summary": "When astronomers looked at photos of the early universe taken by the James Webb Space Telescope, they found something odd: an overabundance of bright galaxies about 400 to 500 million years after the Big Bang. But these galaxies should have",
-        "zh_full": "当天文学家查看詹姆斯·韦伯太空望远镜拍摄的早期宇宙照片时，他们发现了一件奇怪的事：在大爆炸后约4亿至5亿年，明亮的星系数量过多。但宇宙诞生如此之早，这些星系本应远为稀少。研究人员可能已经弄清了原因：年轻恒星密集星团产生的强大紫外（莱曼阿尔法）辐射像吹叶机一样，将阻挡光线的气体和尘埃吹出星系，从而使星系看起来更亮。",
-        "llm_summary": "詹姆斯·韦伯太空望远镜观测显示，大爆炸后约4亿至5亿年存在过多明亮星系。研究人员提出，年轻恒星团产生的强大紫外辐射像吹叶机般吹走阻挡光线的气体和尘埃，使星系显得更亮。",
-        "llm_reason": "解释早期星系异常亮度成因",
+        "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
+        "url": "https://www.newscientist.com/article/2597221-hubble-space-telescope-is-falling-to-earth-should-nasa-save-it/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+        "source": "New Scientist 太空",
+        "published_at": "2026-11-06T12:00:00+00:00",
+        "score": 60.1,
+        "summary": "The Hubble Space Telescope faces a fiery and fatal re-entry to Earth's atmosphere sometime around 2032, but NASA is asking the private sector for ideas to keep it working",
+        "zh_full": "哈勃空间望远镜正面临坠入地球的命运，预计在2032年前后，它将在地球大气层中燃烧殆尽。NASA目前正在向私营部门征集方案，希望找到能够延长其使用寿命的方法。哈勃自1990年发射以来，已经服役超过三十年，为天文学研究做出了巨大贡献。然而，由于轨道衰减，它最终将无法维持运行。NASA正在寻求商业合作伙伴提供创新思路，以拯救这一标志性的太空望远镜。这一举措反映了NASA在太空探索领域日益依赖私营部门的趋势。",
+        "llm_summary": "哈勃空间望远镜预计在2032年前后坠入地球大气层并烧毁。NASA正寻求私营部门的帮助，希望找到延长其寿命的方法。",
+        "llm_reason": "哈勃望远镜命运引发关注",
         "density": "中",
-        "llm_score": 63.5
+        "llm_score": 60.0
       },
       "folded_count": 1,
-      "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
-      "id": "1c1279a4bf0f",
+      "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
+      "id": "1d6980ba5778",
       "links": [
         {
-          "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
-          "url": "https://www.universetoday.com/articles/a-mighty-wind-blew-away-gas-and-made-early-galaxies-brighter",
-          "source": "Universe Today",
-          "score": 59.9,
-          "published_at": "2026-11-05T17:11:33+00:00"
+          "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
+          "url": "https://www.newscientist.com/article/2597221-hubble-space-telescope-is-falling-to-earth-should-nasa-save-it/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 60.1,
+          "published_at": "2026-11-06T12:00:00+00:00"
         },
         {
-          "title": "A cosmic 'leaf blower': Light-propelled winds help explain early universe's bright galaxies",
-          "url": "https://phys.org/news/2026-11-cosmic-leaf-blower-propelled-early.html",
+          "title": "NASA's Swift telescope has burned up, months after a robot sent to save it failed",
+          "url": "https://phys.org/news/2026-11-nasa-swift-telescope-months-robot.html",
           "source": "Phys.org 太空新闻",
-          "score": 59.3,
-          "published_at": "2026-11-04T21:00:11+00:00"
+          "score": 59.6,
+          "published_at": "2026-11-05T15:40:14+00:00"
         }
       ],
       "top_terms": [
-        "early",
-        "galaxies",
-        "cosmic",
-        "blower",
-        "propelled"
+        "nasa",
+        "telescope",
+        "save",
+        "swift",
+        "burned"
       ],
-      "rank": 8,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "digest": "哈勃空间望远镜预计在2032年前后坠入地球大气层并烧毁，NASA正征求私营部门意见，以寻找维持其运行的方案。此前，NASA的斯威夫特望远镜因轨道衰减已于2026年10月结束任务，其轨道高度降至约275公里，大气阻力导致无法继续工作。",
+      "digestTitle": "哈勃望远镜面临坠毁，NASA寻求私营部门救援方案",
+      "rank": 5,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -628,7 +424,7 @@
         "MIT News 太空探索"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-07T16:26:55.420550+00:00",
+      "latest_at": "2026-11-08T01:28:12.905572+00:00",
       "representative": {
         "title": "High-orbit satellites could light the way for travel to the moon",
         "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
@@ -648,7 +444,7 @@
           "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
           "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
           "source": "Astronomy Magazine",
-          "score": 60.4,
+          "score": 60.2,
           "published_at": "2026-11-06T13:19:47+00:00"
         },
         {
@@ -666,9 +462,9 @@
         "when",
         "see"
       ],
-      "rank": 9,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 6,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -696,7 +492,7 @@
         "New Scientist 太空"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-07T16:26:55.420550+00:00",
+      "latest_at": "2026-11-08T01:28:12.905572+00:00",
       "representative": {
         "title": "Robotic “SuperLimbs” could help moonwalkers recover from falls",
         "url": "https://news.mit.edu/2024/robotic-superlimbs-could-help-moonwalkers-recover-from-falls-0515",
@@ -716,7 +512,7 @@
           "title": "A robot called GIMLI will explore a lunar cave for a future moon base",
           "url": "https://www.newscientist.com/article/2597780-a-robot-called-gimli-will-explore-a-lunar-cave-for-a-future-moon-base/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 60.3,
+          "score": 60.0,
           "published_at": "2026-11-06T09:00:00+00:00"
         },
         {
@@ -734,12 +530,228 @@
         "recover",
         "falls"
       ],
+      "rank": 7,
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "astronomers",
+        "candy",
+        "cotton",
+        "deepest",
+        "deliver",
+        "giant",
+        "low-frequency",
+        "planet",
+        "radio",
+        "sharpest",
+        "spot",
+        "view"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "MIT News 太空探索",
+        "Phys.org 太空新闻"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-11-08T01:28:12.905572+00:00",
+      "representative": {
+        "title": "Astronomers spot a giant planet that is as light as cotton candy",
+        "url": "https://news.mit.edu/2024/astronomers-spot-giant-planet-light-as-cotton-candy-0514",
+        "source": "MIT News 太空探索",
+        "published_at": "2024-05-14T17:30:00+00:00",
+        "score": 24.7,
+        "summary": "The new world is the second-lightest planet discovered to date.",
+        "zh_full": "（无摘要，仅标题）",
+        "llm_summary": "（无摘要，仅标题）",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "Astronomers spot a giant planet that is as light as cotton candy",
+      "id": "0d1302e70f0f",
+      "links": [
+        {
+          "title": "Astronomers deliver the sharpest and deepest view yet of the low-frequency radio sky",
+          "url": "https://phys.org/news/2026-11-astronomers-sharpest-deepest-view-frequency.html",
+          "source": "Phys.org 太空新闻",
+          "score": 35.9,
+          "published_at": "2026-11-06T00:40:06+00:00"
+        },
+        {
+          "title": "Astronomers spot a giant planet that is as light as cotton candy",
+          "url": "https://news.mit.edu/2024/astronomers-spot-giant-planet-light-as-cotton-candy-0514",
+          "source": "MIT News 太空探索",
+          "score": 24.7,
+          "published_at": "2024-05-14T17:30:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "astronomers",
+        "deliver",
+        "sharpest",
+        "deepest",
+        "view"
+      ],
+      "rank": 8,
+      "trend": "down",
+      "trendPct": -100.0,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "america",
+        "astrophysical",
+        "connecting",
+        "curiosity-driven",
+        "essential",
+        "ingredient",
+        "intelligence",
+        "media",
+        "research",
+        "science",
+        "success",
+        "tools"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "MIT News 太空探索",
+        "Phys.org 太空新闻"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-11-08T01:28:12.905572+00:00",
+      "representative": {
+        "title": "MIT in the media: Exploring how curiosity-driven science is an essential ingredient in America’s success",
+        "url": "https://news.mit.edu/2026/mit-media-exploring-how-curiosity-driven-science-essential-ingredient-americas-success",
+        "source": "MIT News 太空探索",
+        "published_at": "2026-06-25T16:00:00+00:00",
+        "score": 24.7,
+        "summary": "“Scientific American” showcases the history and future of America’s scientific engine, highlighting promising young scientists and icons at MIT and beyond.",
+        "zh_full": "（无摘要，仅标题）MIT 在媒体上：探索好奇心驱动的科学是美国成功的关键要素。",
+        "llm_summary": "（无摘要，仅标题）MIT 在媒体上：探索好奇心驱动的科学是美国成功的关键要素。",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "MIT in the media: Exploring how curiosity-driven science is an essential ingredient in America’s success",
+      "id": "713ecf8473e5",
+      "links": [
+        {
+          "title": "Connecting artificial intelligence with the tools of astrophysical research",
+          "url": "https://phys.org/news/2026-11-artificial-intelligence-tools-astrophysical.html",
+          "source": "Phys.org 太空新闻",
+          "score": 35.8,
+          "published_at": "2026-11-05T22:00:07+00:00"
+        },
+        {
+          "title": "MIT in the media: Exploring how curiosity-driven science is an essential ingredient in America’s success",
+          "url": "https://news.mit.edu/2026/mit-media-exploring-how-curiosity-driven-science-essential-ingredient-americas-success",
+          "source": "MIT News 太空探索",
+          "score": 24.7,
+          "published_at": "2026-06-25T16:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "connecting",
+        "intelligence",
+        "tools",
+        "astrophysical",
+        "research"
+      ],
+      "rank": 9,
+      "trend": "down",
+      "trendPct": -100.0,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "black",
+        "dark",
+        "dots",
+        "even",
+        "explain",
+        "hold",
+        "holes",
+        "little",
+        "matter",
+        "primordial",
+        "space",
+        "stupendous",
+        "telescope",
+        "webb"
+      ],
+      "source_count": 3,
+      "signal_count": 0,
+      "sources": [
+        "Nature 天文和天体物理",
+        "New Scientist 太空",
+        "Phys.org 太空新闻"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-11-08T01:28:12.905572+00:00",
+      "representative": {
+        "title": "Even stupendous black holes can’t explain dark matter",
+        "url": "https://www.nature.com/articles/d41586-026-03386-4",
+        "source": "Nature 天文和天体物理",
+        "published_at": "2026-10-29T00:00:00+00:00",
+        "score": 59.3,
+        "summary": "",
+        "zh_full": "（无摘要，仅标题）即使是巨大的黑洞也无法解释暗物质。",
+        "refs": {
+          "doi": "10.1038/d41586-026-03386-4",
+          "via": "self_meta",
+          "confidence": "verified"
+        },
+        "llm_summary": "即使是巨大的黑洞也无法解释暗物质。",
+        "density": "低"
+      },
+      "folded_count": 2,
+      "title": "Even stupendous black holes can’t explain dark matter",
+      "id": "091433c2113a",
+      "links": [
+        {
+          "title": "Webb Space Telescope's little red dots could hold key to first black holes",
+          "url": "https://phys.org/news/2026-11-webb-space-telescope-red-dots.html",
+          "source": "Phys.org 太空新闻",
+          "score": 64.4,
+          "published_at": "2026-11-05T14:20:02+00:00"
+        },
+        {
+          "title": "Even stupendous black holes can’t explain dark matter",
+          "url": "https://www.nature.com/articles/d41586-026-03386-4",
+          "source": "Nature 天文和天体物理",
+          "score": 59.3,
+          "published_at": "2026-10-29T00:00:00+00:00"
+        },
+        {
+          "title": "Could primordial black holes hold the key to dark matter?",
+          "url": "https://www.newscientist.com/video/2597265-could-primordial-black-holes-hold-the-key-to-dark-matter/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
+          "score": 38.3,
+          "published_at": "2026-11-04T18:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "black",
+        "holes",
+        "hold",
+        "dark",
+        "matter"
+      ],
       "rank": 10,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
+      "heat": 0.0,
+      "status": "发酵中"
     }
   ]
 }
