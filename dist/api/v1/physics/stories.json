@@ -1,99 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T16:41:13.719333+00:00",
+  "generatedAt": "2026-11-09T01:45:14.975126+00:00",
   "count": 10,
   "items": [
-    {
-      "id": "3d979e514f1b",
-      "title": "Thermal transport and crystallisation in octadecane composites with porous framework coatings and graphene",
-      "status": "关注中",
-      "heat": 34.5,
-      "sourceCount": 1,
-      "signalCount": 3,
-      "latestAt": "2026-11-08T16:41:13.719333+00:00",
-      "sources": [
-        "Nature Physics 学科聚合"
-      ],
-      "links": [
-        {
-          "title": "Thermal transport and crystallisation in octadecane composites with porous framework coatings and graphene",
-          "url": "https://www.nature.com/articles/s41598-026-78034-y",
-          "source": "Nature Physics 学科聚合",
-          "score": 58.9,
-          "published_at": "2026-11-08T00:00:00+00:00"
-        },
-        {
-          "title": "Impact of the glass transition temperature on Li-ion diffusion in amorphous alloy anodes via machine learning",
-          "url": "https://www.nature.com/articles/s41524-026-02383-5",
-          "source": "Nature Physics 学科聚合",
-          "score": 58.2,
-          "published_at": "2026-11-07T00:00:00+00:00"
-        },
-        {
-          "title": "Fully Integrated Deep-Ocean Flexible Temperature–Depth Sensor with Neural Network Compensation",
-          "url": "https://www.nature.com/articles/s41467-026-78009-7",
-          "source": "Nature Physics 学科聚合",
-          "score": 58.2,
-          "published_at": "2026-11-07T00:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "refs": {
-        "doi": "10.1038/s41598-026-78034-y",
-        "via": "self_meta",
-        "confidence": "verified"
-      }
-    },
-    {
-      "id": "0269b1a75ab0",
-      "title": "Software-defined polarization-diversity continuous-variable quantum key distribution heterodyne receiver",
-      "status": "关注中",
-      "heat": 21.0,
-      "sourceCount": 2,
-      "signalCount": 1,
-      "latestAt": "2026-11-08T16:41:13.719333+00:00",
-      "sources": [
-        "Nature Physics 学科聚合",
-        "Nature 量子物理"
-      ],
-      "links": [
-        {
-          "title": "Software-defined polarization-diversity continuous-variable quantum key distribution heterodyne receiver",
-          "url": "https://www.nature.com/articles/s41598-026-77883-x",
-          "source": "Nature Physics 学科聚合",
-          "score": 61.5,
-          "published_at": "2026-11-07T00:00:00+00:00"
-        },
-        {
-          "title": "Efficient multi-basis quantum position verification secure against generalized adversaries",
-          "url": "https://www.nature.com/articles/s41534-026-01325-9",
-          "source": "Nature 量子物理",
-          "score": 56.9,
-          "published_at": "2026-10-31T00:00:00+00:00"
-        },
-        {
-          "title": "Efficient adaptive control strategy for multi-parameter quantum metrology in two-dimensional systems",
-          "url": "https://www.nature.com/articles/s42005-026-02912-0",
-          "source": "Nature 量子物理",
-          "score": 51.5,
-          "published_at": "2026-10-23T00:00:00+00:00"
-        }
-      ],
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "refs": {
-        "doi": "10.1038/s41598-026-77883-x",
-        "via": "self_meta",
-        "confidence": "verified"
-      }
-    },
     {
       "id": "aa18f28d139f",
       "title": "Particle collisions on a quantum computer",
@@ -101,7 +10,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-08T16:41:13.719333+00:00",
+      "latestAt": "2026-11-09T01:45:14.975126+00:00",
       "sources": [
         "Nature 量子物理",
         "Phys.org 物理新闻"
@@ -111,14 +20,14 @@
           "title": "Particle collisions on a quantum computer",
           "url": "https://www.nature.com/articles/s41567-026-03490-2",
           "source": "Nature 量子物理",
-          "score": 50.0,
+          "score": 49.8,
           "published_at": "2026-10-23T00:00:00+00:00"
         },
         {
           "title": "A new route to calculating gluon production in proton–nucleus collisions",
           "url": "https://phys.org/news/2026-11-route-gluon-production-protonnucleus-collisions.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.2,
+          "score": 35.1,
           "published_at": "2026-11-05T01:20:01+00:00"
         }
       ],
@@ -140,7 +49,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-08T16:41:13.719333+00:00",
+      "latestAt": "2026-11-09T01:45:14.975126+00:00",
       "sources": [
         "Nature 量子物理",
         "Phys.org 物理新闻"
@@ -150,14 +59,14 @@
           "title": "Synthetic 2D quantum materials from atomic weaving of 1D nanoribbons",
           "url": "https://www.nature.com/articles/s42005-026-02936-6",
           "source": "Nature 量子物理",
-          "score": 56.7,
+          "score": 56.5,
           "published_at": "2026-11-02T00:00:00+00:00"
         },
         {
           "title": "A carefully timed pair of light pulses can amplify the motion of atomic layers in a quantum material",
           "url": "https://phys.org/news/2026-11-pair-pulses-amplify-motion-atomic.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.2,
+          "score": 35.1,
           "published_at": "2026-11-04T23:20:09+00:00"
         }
       ],
@@ -179,7 +88,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-08T16:41:13.719333+00:00",
+      "latestAt": "2026-11-09T01:45:14.975126+00:00",
       "sources": [
         "Nature 量子物理",
         "Phys.org 物理新闻"
@@ -189,22 +98,22 @@
           "title": "A nonlinear superinductor in a deep-submicrometre integrated circuit",
           "url": "https://www.nature.com/articles/s41928-026-01728-8",
           "source": "Nature 量子物理",
-          "score": 58.0,
+          "score": 57.8,
           "published_at": "2026-11-04T00:00:00+00:00"
         },
         {
           "title": "A new superinductor created within a silicon integrated circuit",
           "url": "https://phys.org/news/2026-11-superinductor-silicon-circuit.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.2,
+          "score": 35.0,
           "published_at": "2026-11-04T22:40:08+00:00"
         }
       ],
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "digest": "研究人员在硅集成电路中制造出一种非线性超电感，该器件在深亚微米尺度下表现出超导特性。这一成果由nanoGUNE、Quantum Motion、伦敦纳米技术中心、帝国理工学院和剑桥大学的研究团队共同完成，相关论文发表于《自然·电子学》。该器件有望用于量子计算和超导电路，但具体性能和应用前景尚需进一步验证。",
-      "digestTitle": "硅基芯片内实现非线性超电感",
+      "digest": null,
+      "digestTitle": null,
       "refs": {
         "doi": "10.1038/s41928-026-01728-8",
         "via": "self_meta",
@@ -218,7 +127,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-08T16:41:13.719333+00:00",
+      "latestAt": "2026-11-09T01:45:14.975126+00:00",
       "sources": [
         "Nature 量子物理",
         "Phys.org 物理新闻"
@@ -228,14 +137,14 @@
           "title": "Order in a quantum chaotic sea",
           "url": "https://www.nature.com/articles/s41567-026-03513-y",
           "source": "Nature 量子物理",
-          "score": 52.7,
+          "score": 52.5,
           "published_at": "2026-10-27T00:00:00+00:00"
         },
         {
           "title": "Testing Einstein's laws from the bottom of the Mediterranean Sea",
           "url": "https://phys.org/news/2026-11-einstein-laws-bottom-mediterranean-sea.html",
           "source": "Phys.org 物理新闻",
-          "score": 34.9,
+          "score": 34.8,
           "published_at": "2026-11-04T05:00:08+00:00"
         }
       ],
@@ -257,7 +166,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-08T16:41:13.719333+00:00",
+      "latestAt": "2026-11-09T01:45:14.975126+00:00",
       "sources": [
         "New Scientist 物理",
         "Phys.org 物理新闻"
@@ -267,14 +176,14 @@
           "title": "Physicists get first glimpse of the zeptoverse from LHC experiment",
           "url": "https://www.newscientist.com/article/2597289-beauty-particle-decay-opens-the-door-to-the-zeptoverse/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 物理",
-          "score": 58.5,
+          "score": 58.2,
           "published_at": "2026-11-04T15:23:22+00:00"
         },
         {
           "title": "Physicists step closer to the 'Zeptoverse' after 42-year particle search",
           "url": "https://phys.org/news/2026-11-physicists-closer-zeptoverse-year-particle.html",
           "source": "Phys.org 物理新闻",
-          "score": 34.7,
+          "score": 34.5,
           "published_at": "2026-11-03T15:40:30+00:00"
         }
       ],
@@ -285,13 +194,59 @@
       "digestTitle": null
     },
     {
+      "id": "0269b1a75ab0",
+      "title": "Software-defined polarization-diversity continuous-variable quantum key distribution heterodyne receiver",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-11-09T01:45:14.975126+00:00",
+      "sources": [
+        "Nature Physics 学科聚合",
+        "Nature 量子物理"
+      ],
+      "links": [
+        {
+          "title": "Software-defined polarization-diversity continuous-variable quantum key distribution heterodyne receiver",
+          "url": "https://www.nature.com/articles/s41598-026-77883-x",
+          "source": "Nature Physics 学科聚合",
+          "score": 61.3,
+          "published_at": "2026-11-07T00:00:00+00:00"
+        },
+        {
+          "title": "Efficient multi-basis quantum position verification secure against generalized adversaries",
+          "url": "https://www.nature.com/articles/s41534-026-01325-9",
+          "source": "Nature 量子物理",
+          "score": 56.6,
+          "published_at": "2026-10-31T00:00:00+00:00"
+        },
+        {
+          "title": "Efficient adaptive control strategy for multi-parameter quantum metrology in two-dimensional systems",
+          "url": "https://www.nature.com/articles/s42005-026-02912-0",
+          "source": "Nature 量子物理",
+          "score": 51.3,
+          "published_at": "2026-10-23T00:00:00+00:00"
+        }
+      ],
+      "trend": "down",
+      "trendPct": -100.0,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "doi": "10.1038/s41598-026-77883-x",
+        "via": "self_meta",
+        "confidence": "verified"
+      }
+    },
+    {
       "id": "2c59910cce3d",
       "title": "Coherence enhancement through equilibration to near-zero optical temperatures",
       "status": "关注中",
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-08T16:41:13.719333+00:00",
+      "latestAt": "2026-11-09T01:45:14.975126+00:00",
       "sources": [
         "Nature Physics 学科聚合",
         "Nature 量子物理"
@@ -301,14 +256,14 @@
           "title": "Coherence enhancement through equilibration to near-zero optical temperatures",
           "url": "https://www.nature.com/articles/s41567-026-03520-z",
           "source": "Nature Physics 学科聚合",
-          "score": 59.4,
+          "score": 59.1,
           "published_at": "2026-11-06T00:00:00+00:00"
         },
         {
           "title": "Optical control stabilizes cold-atom comagnetometry",
           "url": "https://www.nature.com/articles/s41566-026-02043-6",
           "source": "Nature 量子物理",
-          "score": 54.7,
+          "score": 54.5,
           "published_at": "2026-10-30T00:00:00+00:00"
         }
       ],
@@ -330,7 +285,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-08T16:41:13.719333+00:00",
+      "latestAt": "2026-11-09T01:45:14.975126+00:00",
       "sources": [
         "MIT News 物理",
         "Quanta Magazine"
@@ -347,7 +302,7 @@
           "title": "New Research Tests Whether AI Models Know Their Own Thoughts",
           "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/",
           "source": "Quanta Magazine",
-          "score": 35.1,
+          "score": 34.9,
           "published_at": "2026-11-04T15:32:52+00:00"
         }
       ],
@@ -364,7 +319,7 @@
       "heat": 0.0,
       "sourceCount": 2,
       "signalCount": 0,
-      "latestAt": "2026-11-08T16:41:13.719333+00:00",
+      "latestAt": "2026-11-09T01:45:14.975126+00:00",
       "sources": [
         "MIT News 物理",
         "Quanta Magazine"
@@ -381,8 +336,42 @@
           "title": "How Do You Take a Picture of a Black Hole?",
           "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
           "source": "Quanta Magazine",
-          "score": 32.7,
+          "score": 32.5,
           "published_at": "2026-10-29T15:11:57+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null
+    },
+    {
+      "id": "7e7427289fca",
+      "title": "New research shows a neutrino laser is impossible",
+      "status": "关注中",
+      "heat": 0.0,
+      "sourceCount": 2,
+      "signalCount": 0,
+      "latestAt": "2026-11-09T01:45:14.975126+00:00",
+      "sources": [
+        "MIT News 物理",
+        "New Scientist 物理"
+      ],
+      "links": [
+        {
+          "title": "Are we about to solve the greatest mystery of the neutrino?",
+          "url": "https://www.newscientist.com/article/2592541-are-we-about-to-solve-the-greatest-mystery-of-the-neutrino/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 物理",
+          "score": 47.6,
+          "published_at": "2026-10-19T19:00:00+00:00"
+        },
+        {
+          "title": "New research shows a neutrino laser is impossible",
+          "url": "https://news.mit.edu/2026/new-research-shows-neutrino-laser-impossible-0902",
+          "source": "MIT News 物理",
+          "score": 41.2,
+          "published_at": "2026-09-02T14:00:00+00:00"
         }
       ],
       "trend": "new",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T16:41:13.719333+00:00",
+  "generatedAt": "2026-11-09T01:45:14.975126+00:00",
   "count": 10,
   "items": [
     {
@@ -63,13 +63,13 @@
         "Universe Today"
       ],
       "score": 35.5,
-      "latest_at": "2026-11-08T16:41:13.719333+00:00",
+      "latest_at": "2026-11-09T01:45:14.975126+00:00",
       "representative": {
         "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
         "url": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/",
         "source": "NASA 快讯",
         "published_at": "2026-11-08T15:26:38+00:00",
-        "score": 76.8,
+        "score": 76.5,
         "summary": "On Sunday, NASA announced the opening of its $1 million Moon Base Student Challenge during a MAX POWER event at Kennedy Space Center Visitor Complex in Florida. As part of a Golden Age of Science, the competition invites student teams at U.",
         "zh_full": null
       },
@@ -81,35 +81,35 @@
           "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
           "url": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/",
           "source": "NASA 快讯",
-          "score": 76.8,
+          "score": 76.5,
           "published_at": "2026-11-08T15:26:38+00:00"
         },
         {
           "title": "Want to fly to the moon? NASA is looking for new astronauts to help grow its Artemis program",
           "url": "https://phys.org/news/2026-11-fly-moon-nasa-astronauts-artemis.html",
           "source": "Phys.org 太空新闻",
-          "score": 76.7,
+          "score": 76.4,
           "published_at": "2026-11-08T11:45:12+00:00"
         },
         {
           "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
           "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
           "source": "NASA 快讯",
-          "score": 76.3,
+          "score": 76.1,
           "published_at": "2026-11-07T22:47:03+00:00"
         },
         {
           "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
           "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
           "source": "NASA 快讯",
-          "score": 76.2,
+          "score": 76.0,
           "published_at": "2026-11-07T18:11:57+00:00"
         },
         {
           "title": "NASA's Twin Spacecraft Will Execute Powered Slingshot Maneuvers on Their Way to Mars",
           "url": "https://www.universetoday.com/articles/nasas-twin-spacecraft-will-execute-powered-slingshot-maneuvers-on-their-way-to-mars",
           "source": "Universe Today",
-          "score": 75.5,
+          "score": 75.2,
           "published_at": "2026-11-06T16:35:09+00:00"
         }
       ],
@@ -121,79 +121,77 @@
         "want"
       ],
       "rank": 1,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 35.5,
       "status": "发酵中"
     },
     {
       "terms": [
-        "analog",
-        "black",
-        "black hole",
-        "distinct",
-        "event",
-        "evolution",
-        "formation",
-        "hole",
-        "horizon",
-        "mergers",
-        "mirrors",
-        "nature",
-        "pair",
-        "sheds",
-        "vibrating"
+        "auroras",
+        "details",
+        "grids",
+        "ground",
+        "hints",
+        "interior",
+        "jupiter",
+        "planets",
+        "polar",
+        "powers",
+        "saturn",
+        "space",
+        "threatens",
+        "weather"
       ],
       "source_count": 2,
       "signal_count": 1,
       "sources": [
-        "LIGO",
+        "MIT News 太空探索",
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-08T16:41:13.719333+00:00",
+      "latest_at": "2026-11-09T01:45:14.975126+00:00",
       "representative": {
-        "title": "Pair of distinct black hole mergers sheds new light on nature of their formation and evolution",
-        "url": "https://ligo.org/pair-of-distinct-black-hole-mergers-sheds-new-light-on-nature-of-their-formation-and-evolution/",
-        "source": "LIGO",
-        "published_at": "2025-10-28T15:01:12+00:00",
+        "title": "Polar weather on Jupiter and Saturn hints at the planets’ interior details",
+        "url": "https://news.mit.edu/2026/polar-weather-jupiter-saturn-hints-planets-interior-details-0119",
+        "source": "MIT News 太空探索",
+        "published_at": "2026-01-19T20:00:00+00:00",
         "score": 41.2,
-        "summary": "The mergers, measured one month apart in 2024 by LIGO-Virgo-KAGRA collaboration, advance scientific understanding of the nature of black hole formation and fundamental physics. A pair of distant cosmic black hole mergers, measured just one ",
-        "zh_full": "LIGO-Virgo-KAGRA 合作组在 2024 年末相隔约一个月测得两起遥远的宇宙黑洞并合事件。这两起事件为科学家理解黑洞的形成与演化、以及基础物理提供了新的线索。摘要指出，这些并合事件有助于推进对黑洞形成本质和基础物理的科学认识，并改善对深空中最剧烈碰撞过程的理解。",
-        "llm_summary": "LIGO-Virgo-KAGRA 合作组在 2024 年末相隔约一个月测得两起遥远黑洞并合事件。这些观测有助于科学家理解黑洞的形成与演化，以及基础物理，并加深对深空剧烈碰撞过程的认识。",
-        "llm_reason": "黑洞并合新观测",
-        "density": "中"
+        "summary": "New research may explain the striking differences between the two planets’ polar vortex patterns.",
+        "zh_full": "（无摘要，仅标题）",
+        "llm_summary": "（无摘要，仅标题）",
+        "density": "低"
       },
       "folded_count": 1,
-      "title": "Pair of distinct black hole mergers sheds new light on nature of their formation and evolution",
-      "id": "fd07cb226a99",
+      "title": "Polar weather on Jupiter and Saturn hints at the planets’ interior details",
+      "id": "23a36b68ce93",
       "links": [
         {
-          "title": "Vibrating mirrors of light create analog of a black hole event horizon",
-          "url": "https://phys.org/news/2026-11-vibrating-mirrors-analog-black-hole.html",
+          "title": "How space weather powers auroras in the sky and threatens power grids on the ground",
+          "url": "https://phys.org/news/2026-11-space-weather-powers-auroras-sky.html",
           "source": "Phys.org 太空新闻",
-          "score": 59.9,
-          "published_at": "2026-11-06T17:40:11+00:00"
+          "score": 61.0,
+          "published_at": "2026-11-08T19:00:01+00:00"
         },
         {
-          "title": "Pair of distinct black hole mergers sheds new light on nature of their formation and evolution",
-          "url": "https://ligo.org/pair-of-distinct-black-hole-mergers-sheds-new-light-on-nature-of-their-formation-and-evolution/",
-          "source": "LIGO",
+          "title": "Polar weather on Jupiter and Saturn hints at the planets’ interior details",
+          "url": "https://news.mit.edu/2026/polar-weather-jupiter-saturn-hints-planets-interior-details-0119",
+          "source": "MIT News 太空探索",
           "score": 41.2,
-          "published_at": "2025-10-28T15:01:12+00:00"
+          "published_at": "2026-01-19T20:00:00+00:00"
         }
       ],
       "top_terms": [
-        "black",
-        "hole",
-        "vibrating",
-        "mirrors",
-        "analog"
+        "weather",
+        "space",
+        "powers",
+        "auroras",
+        "sky"
       ],
       "rank": 2,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -226,13 +224,13 @@
         "Phys.org 太空新闻"
       ],
       "score": 17.7,
-      "latest_at": "2026-11-08T16:41:13.719333+00:00",
+      "latest_at": "2026-11-09T01:45:14.975126+00:00",
       "representative": {
         "title": "Even stupendous black holes can’t explain dark matter",
         "url": "https://www.nature.com/articles/d41586-026-03386-4",
         "source": "Nature 天文和天体物理",
         "published_at": "2026-10-29T00:00:00+00:00",
-        "score": 60.4,
+        "score": 60.1,
         "summary": "",
         "zh_full": "（无摘要，仅标题）即使是巨大的黑洞也无法解释暗物质。",
         "refs": {
@@ -251,28 +249,28 @@
           "title": "Webb Space Telescope's little red dots could hold key to first black holes",
           "url": "https://phys.org/news/2026-11-webb-space-telescope-red-dots.html",
           "source": "Phys.org 太空新闻",
-          "score": 65.4,
+          "score": 65.2,
           "published_at": "2026-11-05T14:20:02+00:00"
         },
         {
           "title": "Even stupendous black holes can’t explain dark matter",
           "url": "https://www.nature.com/articles/d41586-026-03386-4",
           "source": "Nature 天文和天体物理",
-          "score": 60.4,
+          "score": 60.1,
           "published_at": "2026-10-29T00:00:00+00:00"
         },
         {
           "title": "'Stupendously large' primordial black holes ruled out as a dark matter source",
           "url": "https://phys.org/news/2026-11-stupendously-large-primordial-black-holes.html",
           "source": "Phys.org 太空新闻",
-          "score": 40.5,
+          "score": 40.3,
           "published_at": "2026-11-08T14:40:01+00:00"
         },
         {
           "title": "Could primordial black holes hold the key to dark matter?",
           "url": "https://www.newscientist.com/video/2597265-could-primordial-black-holes-hold-the-key-to-dark-matter/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 38.9,
+          "score": 38.8,
           "published_at": "2026-11-04T18:00:00+00:00"
         }
       ],
@@ -284,83 +282,11 @@
         "primordial"
       ],
       "rank": 3,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 17.7,
       "status": "发酵中"
-    },
-    {
-      "terms": [
-        "disk",
-        "dwarf",
-        "early",
-        "formation",
-        "galaxy",
-        "glimpse",
-        "like",
-        "metallicity",
-        "misty",
-        "moons",
-        "nicknamed",
-        "profile",
-        "sagittarius",
-        "star"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "Nature 天文和天体物理",
-        "Phys.org 太空新闻"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-11-08T16:41:13.719333+00:00",
-      "representative": {
-        "title": "A ∧-like metallicity profile in the disk of the Sagittarius dwarf galaxy",
-        "url": "https://www.nature.com/articles/s41550-026-02996-2",
-        "source": "Nature 天文和天体物理",
-        "published_at": "2026-10-13T00:00:00+00:00",
-        "score": 43.4,
-        "summary": "",
-        "zh_full": null,
-        "refs": {
-          "doi": "10.1038/s41550-026-02996-2",
-          "via": "self_meta",
-          "confidence": "verified"
-        }
-      },
-      "folded_count": 1,
-      "title": "A ∧-like metallicity profile in the disk of the Sagittarius dwarf galaxy",
-      "id": "8cba20036180",
-      "links": [
-        {
-          "title": "A galaxy nicknamed Misty Moons offers a glimpse of early star formation",
-          "url": "https://phys.org/news/2026-11-galaxy-nicknamed-misty-moons-glimpse.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.7,
-          "published_at": "2026-11-06T12:40:10+00:00"
-        },
-        {
-          "title": "A ∧-like metallicity profile in the disk of the Sagittarius dwarf galaxy",
-          "url": "https://www.nature.com/articles/s41550-026-02996-2",
-          "source": "Nature 天文和天体物理",
-          "score": 43.4,
-          "published_at": "2026-10-13T00:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "galaxy",
-        "nicknamed",
-        "misty",
-        "moons",
-        "glimpse"
-      ],
-      "rank": 4,
-      "trend": "down",
-      "trendPct": -100.0,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
     },
     {
       "terms": [
@@ -384,7 +310,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-08T16:41:13.719333+00:00",
+      "latest_at": "2026-11-09T01:45:14.975126+00:00",
       "representative": {
         "title": "Astronomers spot a giant planet that is as light as cotton candy",
         "url": "https://news.mit.edu/2024/astronomers-spot-giant-planet-light-as-cotton-candy-0514",
@@ -404,7 +330,7 @@
           "title": "Astronomers deliver the sharpest and deepest view yet of the low-frequency radio sky",
           "url": "https://phys.org/news/2026-11-astronomers-sharpest-deepest-view-frequency.html",
           "source": "Phys.org 太空新闻",
-          "score": 35.6,
+          "score": 35.5,
           "published_at": "2026-11-06T00:40:06+00:00"
         },
         {
@@ -422,7 +348,7 @@
         "deepest",
         "view"
       ],
-      "rank": 5,
+      "rank": 4,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -451,7 +377,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-08T16:41:13.719333+00:00",
+      "latest_at": "2026-11-09T01:45:14.975126+00:00",
       "representative": {
         "title": "MIT in the media: Exploring how curiosity-driven science is an essential ingredient in America’s success",
         "url": "https://news.mit.edu/2026/mit-media-exploring-how-curiosity-driven-science-essential-ingredient-americas-success",
@@ -471,7 +397,7 @@
           "title": "Connecting artificial intelligence with the tools of astrophysical research",
           "url": "https://phys.org/news/2026-11-artificial-intelligence-tools-astrophysical.html",
           "source": "Phys.org 太空新闻",
-          "score": 35.6,
+          "score": 35.4,
           "published_at": "2026-11-05T22:00:07+00:00"
         },
         {
@@ -489,7 +415,7 @@
         "astrophysical",
         "research"
       ],
-      "rank": 6,
+      "rank": 5,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -518,13 +444,13 @@
         "Phys.org 太空新闻"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-08T16:41:13.719333+00:00",
+      "latest_at": "2026-11-09T01:45:14.975126+00:00",
       "representative": {
         "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
         "url": "https://www.newscientist.com/article/2597221-hubble-space-telescope-is-falling-to-earth-should-nasa-save-it/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
         "source": "New Scientist 太空",
         "published_at": "2026-11-06T12:00:00+00:00",
-        "score": 59.7,
+        "score": 59.4,
         "summary": "The Hubble Space Telescope faces a fiery and fatal re-entry to Earth's atmosphere sometime around 2032, but NASA is asking the private sector for ideas to keep it working",
         "zh_full": "哈勃空间望远镜正面临坠入地球的命运，预计在2032年前后，它将在地球大气层中燃烧殆尽。NASA目前正在向私营部门征集方案，希望找到能够延长其使用寿命的方法。哈勃自1990年发射以来，已经服役超过三十年，为天文学研究做出了巨大贡献。然而，由于轨道衰减，它最终将无法维持运行。NASA正在寻求商业合作伙伴提供创新思路，以拯救这一标志性的太空望远镜。这一举措反映了NASA在太空探索领域日益依赖私营部门的趋势。",
         "llm_summary": "哈勃空间望远镜预计在2032年前后坠入地球大气层并烧毁。NASA正寻求私营部门的帮助，希望找到延长其寿命的方法。",
@@ -540,14 +466,14 @@
           "title": "Hubble Space Telescope is falling to Earth – should NASA save it?",
           "url": "https://www.newscientist.com/article/2597221-hubble-space-telescope-is-falling-to-earth-should-nasa-save-it/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 59.7,
+          "score": 59.4,
           "published_at": "2026-11-06T12:00:00+00:00"
         },
         {
           "title": "NASA's Swift telescope has burned up, months after a robot sent to save it failed",
           "url": "https://phys.org/news/2026-11-nasa-swift-telescope-months-robot.html",
           "source": "Phys.org 太空新闻",
-          "score": 59.1,
+          "score": 58.9,
           "published_at": "2026-11-05T15:40:14+00:00"
         }
       ],
@@ -558,11 +484,9 @@
         "swift",
         "burned"
       ],
-      "digest": "哈勃空间望远镜预计在2032年前后坠入地球大气层并烧毁，NASA正征求私营部门意见，以寻找延长其寿命的方法。该望远镜目前仍在轨运行，但轨道衰减已不可避免。NASA尚未确定最终处置方案，也未证实任何私营部门提案已获采纳。",
-      "digestTitle": "哈勃望远镜面临坠毁，NASA寻求私营部门救援方案",
-      "rank": 7,
-      "trend": "down",
-      "trendPct": -100.0,
+      "rank": 6,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
       "heat": 0.0,
       "status": "关注中"
@@ -591,13 +515,13 @@
         "Universe Today"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-08T16:41:13.719333+00:00",
+      "latest_at": "2026-11-09T01:45:14.975126+00:00",
       "representative": {
         "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
         "url": "https://www.universetoday.com/articles/a-mighty-wind-blew-away-gas-and-made-early-galaxies-brighter",
         "source": "Universe Today",
         "published_at": "2026-11-05T17:11:33+00:00",
-        "score": 59.2,
+        "score": 58.9,
         "summary": "When astronomers looked at photos of the early universe taken by the James Webb Space Telescope, they found something odd: an overabundance of bright galaxies about 400 to 500 million years after the Big Bang. But these galaxies should have",
         "zh_full": "当天文学家查看詹姆斯·韦伯太空望远镜拍摄的早期宇宙照片时，他们发现了一件奇怪的事：在大爆炸后约4亿至5亿年，明亮的星系数量过多。但宇宙诞生如此之早，这些星系本应远为稀少。研究人员可能已经弄清了原因：年轻恒星密集星团产生的强大紫外（莱曼阿尔法）辐射像吹叶机一样，将阻挡光线的气体和尘埃吹出星系，从而使星系看起来更亮。",
         "llm_summary": "詹姆斯·韦伯太空望远镜观测显示，大爆炸后约4亿至5亿年存在过多明亮星系。研究人员提出，年轻恒星团产生的强大紫外辐射像吹叶机般吹走阻挡光线的气体和尘埃，使星系显得更亮。",
@@ -613,14 +537,14 @@
           "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
           "url": "https://www.universetoday.com/articles/a-mighty-wind-blew-away-gas-and-made-early-galaxies-brighter",
           "source": "Universe Today",
-          "score": 59.2,
+          "score": 58.9,
           "published_at": "2026-11-05T17:11:33+00:00"
         },
         {
           "title": "A cosmic 'leaf blower': Light-propelled winds help explain early universe's bright galaxies",
           "url": "https://phys.org/news/2026-11-cosmic-leaf-blower-propelled-early.html",
           "source": "Phys.org 太空新闻",
-          "score": 58.6,
+          "score": 58.4,
           "published_at": "2026-11-04T21:00:11+00:00"
         }
       ],
@@ -631,80 +555,7 @@
         "blower",
         "propelled"
       ],
-      "digest": "詹姆斯·韦布太空望远镜观测显示，大爆炸后约4至5亿年的早期宇宙中存在过多明亮星系，与理论预期不符。研究人员提出，这些星系中恒星产生的强烈星风可能吹散了周围气体，使星光更易传出，从而解释了观测到的异常亮度。该机制尚属理论推测，需进一步观测验证。",
-      "digestTitle": "早期星系异常明亮或由强风解释",
-      "rank": 8,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 0.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "astronomers",
-        "black",
-        "black hole",
-        "early",
-        "hole",
-        "mass",
-        "measure",
-        "pairs",
-        "pulsars",
-        "spin",
-        "stellar",
-        "supermassive",
-        "universe",
-        "wobbling"
-      ],
-      "source_count": 2,
-      "signal_count": 0,
-      "sources": [
-        "MIT News 太空探索",
-        "Phys.org 太空新闻"
-      ],
-      "score": 0.0,
-      "latest_at": "2026-11-08T16:41:13.719333+00:00",
-      "representative": {
-        "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
-        "url": "https://news.mit.edu/2024/using-wobbling-stellar-material-astronomers-measure-supermassive-black-hole-spin-0522",
-        "source": "MIT News 太空探索",
-        "published_at": "2024-05-22T15:00:00+00:00",
-        "score": 41.2,
-        "summary": "The results offer a new way to probe supermassive black holes and their evolution across the universe.",
-        "zh_full": "（无摘要，仅标题）",
-        "llm_summary": "（无摘要，仅标题）",
-        "density": "低"
-      },
-      "folded_count": 1,
-      "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
-      "id": "d3c60355eed1",
-      "links": [
-        {
-          "title": "Pulsars set first mass limits on supermassive black hole pairs in the early universe",
-          "url": "https://phys.org/news/2026-11-pulsars-mass-limits-supermassive-black.html",
-          "source": "Phys.org 太空新闻",
-          "score": 58.5,
-          "published_at": "2026-11-04T16:30:01+00:00"
-        },
-        {
-          "title": "Using wobbling stellar material, astronomers measure the spin of a supermassive black hole for the first time",
-          "url": "https://news.mit.edu/2024/using-wobbling-stellar-material-astronomers-measure-supermassive-black-hole-spin-0522",
-          "source": "MIT News 太空探索",
-          "score": 41.2,
-          "published_at": "2024-05-22T15:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "supermassive",
-        "black",
-        "hole",
-        "pulsars",
-        "set"
-      ],
-      "digest": "天文学家利用脉冲星计时首次为早期宇宙中的超大质量黑洞对设定了质量上限。这一结果来自对来自早期宇宙的脉冲星信号的观测，表明这些黑洞对的质量远低于此前基于詹姆斯·韦伯太空望远镜观测所推测的数值。该发现为理解早期宇宙中黑洞的形成与演化提供了新的约束，并展示了脉冲星计时作为探测超大质量黑洞及其周围环境的新工具。",
-      "digestTitle": "脉冲星首次为早期宇宙超大质量黑洞对设定质量上限",
-      "rank": 9,
+      "rank": 7,
       "trend": "new",
       "trendPct": null,
       "badges": [],
@@ -733,13 +584,13 @@
         "Universe Today"
       ],
       "score": 0.0,
-      "latest_at": "2026-11-08T16:41:13.719333+00:00",
+      "latest_at": "2026-11-09T01:45:14.975126+00:00",
       "representative": {
         "title": "An enriched methane D/H ratio in the interstellar object 3I/ATLAS",
         "url": "https://www.nature.com/articles/s41550-026-03002-5",
         "source": "Nature 天文和天体物理",
         "published_at": "2026-10-23T00:00:00+00:00",
-        "score": 50.0,
+        "score": 49.8,
         "summary": "",
         "zh_full": null,
         "refs": {
@@ -756,14 +607,14 @@
           "title": "Interstellar Visitor 3I/ATLAS Shows Water Ice Behaves the Same Across Alien Star Systems",
           "url": "https://www.universetoday.com/articles/interstellar-visitor-3iatlas-shows-water-ice-behaves-the-same-across-alien-star-systems",
           "source": "Universe Today",
-          "score": 59.1,
+          "score": 58.9,
           "published_at": "2026-11-05T15:08:44+00:00"
         },
         {
           "title": "An enriched methane D/H ratio in the interstellar object 3I/ATLAS",
           "url": "https://www.nature.com/articles/s41550-026-03002-5",
           "source": "Nature 天文和天体物理",
-          "score": 50.0,
+          "score": 49.8,
           "published_at": "2026-10-23T00:00:00+00:00"
         }
       ],
@@ -774,8 +625,156 @@
         "water",
         "ice"
       ],
-      "digest": "星际天体3I/ATLAS在2025年7月被发现后，观测显示其水冰升华行为与太阳系彗星相似，表明水冰在异星系统中遵循相同物理规律。该结论基于对彗星活动性的光谱分析，但具体机制仍需进一步研究。此外，其甲烷的氘氢比值异常偏高，暗示其形成于富氘环境，可能来自低温分子云或原行星盘外缘。",
-      "digestTitle": "星际访客3I/ATLAS彗星水冰行为与太阳系彗星一致",
+      "rank": 8,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "below",
+        "computational",
+        "detected",
+        "digital",
+        "exoplanets",
+        "faint",
+        "glare",
+        "hide",
+        "imaging",
+        "jwst",
+        "remove",
+        "stability",
+        "stars",
+        "telescope",
+        "twin"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "Nature 天文和天体物理",
+        "Universe Today"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-11-09T01:45:14.975126+00:00",
+      "representative": {
+        "title": "Imaging exoplanets below the telescope stability limit",
+        "url": "https://www.nature.com/articles/s41586-026-11213-z",
+        "source": "Nature 天文和天体物理",
+        "published_at": "2026-11-04T00:00:00+00:00",
+        "score": 59.3,
+        "summary": "",
+        "zh_full": "（无摘要，仅标题）该标题指出一项关于系外行星成像的研究，其目标是在望远镜稳定性极限以下对系外行星进行成像。",
+        "refs": {
+          "doi": "10.1038/s41586-026-11213-z",
+          "via": "self_meta",
+          "confidence": "verified"
+        },
+        "llm_summary": "（无摘要，仅标题）该标题指出一项关于系外行星成像的研究，其目标是在望远镜稳定性极限以下对系外行星进行成像。",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "Imaging exoplanets below the telescope stability limit",
+      "id": "2dcc201b566b",
+      "links": [
+        {
+          "title": "Imaging exoplanets below the telescope stability limit",
+          "url": "https://www.nature.com/articles/s41586-026-11213-z",
+          "source": "Nature 天文和天体物理",
+          "score": 59.3,
+          "published_at": "2026-11-04T00:00:00+00:00"
+        },
+        {
+          "title": "Faint exoplanets detected using computational approach to remove glare from stars",
+          "url": "https://www.nature.com/articles/d41586-026-03295-6",
+          "source": "Nature 天文和天体物理",
+          "score": 59.3,
+          "published_at": "2026-11-04T00:00:00+00:00"
+        },
+        {
+          "title": "Exoplanets Can't Hide From The JWST's 'Digital Twin'",
+          "url": "https://www.universetoday.com/articles/exoplanets-cant-hide-from-the-jwsts-digital-twin",
+          "source": "Universe Today",
+          "score": 36.2,
+          "published_at": "2026-11-05T12:42:40+00:00"
+        }
+      ],
+      "top_terms": [
+        "exoplanets",
+        "hide",
+        "jwst",
+        "digital",
+        "twin"
+      ],
+      "rank": 9,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "heat": 0.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "atmospheres",
+        "giant",
+        "impacts",
+        "planets",
+        "primordial",
+        "retain",
+        "retention",
+        "rocky"
+      ],
+      "source_count": 2,
+      "signal_count": 0,
+      "sources": [
+        "Nature 天文和天体物理",
+        "Universe Today"
+      ],
+      "score": 0.0,
+      "latest_at": "2026-11-09T01:45:14.975126+00:00",
+      "representative": {
+        "title": "Retention of primordial atmospheres through giant impacts",
+        "url": "https://www.nature.com/articles/s41550-026-03006-1",
+        "source": "Nature 天文和天体物理",
+        "published_at": "2026-10-26T00:00:00+00:00",
+        "score": 51.8,
+        "summary": "",
+        "zh_full": "（无摘要，仅标题）本文标题为《Retention of primordial atmospheres through giant impacts》，发表于Nature天文和天体物理。标题表明研究关注巨行星撞击对原始大气保留的影响。",
+        "refs": {
+          "doi": "10.1038/s41550-026-03006-1",
+          "via": "self_meta",
+          "confidence": "verified"
+        },
+        "llm_summary": "（无摘要，仅标题）标题指出研究主题为巨行星撞击与原始大气保留的关系。",
+        "density": "低"
+      },
+      "folded_count": 1,
+      "title": "Retention of primordial atmospheres through giant impacts",
+      "id": "db428a44cbb1",
+      "links": [
+        {
+          "title": "Retention of primordial atmospheres through giant impacts",
+          "url": "https://www.nature.com/articles/s41550-026-03006-1",
+          "source": "Nature 天文和天体物理",
+          "score": 51.8,
+          "published_at": "2026-10-26T00:00:00+00:00"
+        },
+        {
+          "title": "Giant Impacts Help Rocky Planets Retain Their Atmospheres",
+          "url": "https://www.universetoday.com/articles/giant-impacts-help-rocky-planets-retain-their-atmospheres",
+          "source": "Universe Today",
+          "score": 34.9,
+          "published_at": "2026-11-04T16:14:46+00:00"
+        }
+      ],
+      "top_terms": [
+        "giant",
+        "impacts",
+        "atmospheres",
+        "rocky",
+        "planets"
+      ],
       "rank": 10,
       "trend": "new",
       "trendPct": null,

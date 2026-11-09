@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T16:41:13.719333+00:00",
+  "generatedAt": "2026-11-09T01:45:14.975126+00:00",
   "weekStart": "2026-11-03",
   "windowDays": 7,
   "windowStart": "2026-11-03",
@@ -10,9 +10,9 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4531.2,
+      "thisWeek": 4594.6,
       "lastWeek": 4903.2,
-      "deltaPct": -7.6
+      "deltaPct": -6.3
     },
     {
       "category": "科研进展",
@@ -22,9 +22,15 @@
     },
     {
       "category": "光通信",
-      "thisWeek": 2996.3,
+      "thisWeek": 3015.6,
       "lastWeek": 3397.9,
-      "deltaPct": -11.8
+      "deltaPct": -11.3
+    },
+    {
+      "category": "其他",
+      "thisWeek": 2693.9,
+      "lastWeek": 2744.9,
+      "deltaPct": -1.9
     },
     {
       "category": "产业与资本",
@@ -33,16 +39,10 @@
       "deltaPct": -12.6
     },
     {
-      "category": "其他",
-      "thisWeek": 2631.1,
-      "lastWeek": 2744.9,
-      "deltaPct": -4.1
-    },
-    {
       "category": "通信与算力",
-      "thisWeek": 1760.1,
+      "thisWeek": 1861.1,
       "lastWeek": 1885.4,
-      "deltaPct": -6.6
+      "deltaPct": -1.3
     },
     {
       "category": "显示与面板",
@@ -52,9 +52,9 @@
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1275.3,
+      "thisWeek": 1253.9,
       "lastWeek": 2157.8,
-      "deltaPct": -40.9
+      "deltaPct": -41.9
     },
     {
       "category": "光电芯片与半导体",
@@ -107,16 +107,16 @@
       "days": 5
     },
     {
-      "topic_id": "c790fcef9ac2",
-      "title": "纯电续航225km+激光雷达!日产新车定档:11月13日发布",
-      "score": 278.5,
+      "topic_id": "80632c0b00ac",
+      "title": "Photonics Hot List: November 6, 2026",
+      "score": 215.8,
       "days": 1
     },
     {
-      "topic_id": "e72397647396",
-      "title": "Photonics Hot List: November 6, 2026",
-      "score": 247.0,
-      "days": 1
+      "topic_id": "206868703054",
+      "title": "长安新车上市12.98万起,全系标配激光雷达",
+      "score": 210.7,
+      "days": 2
     },
     {
       "topic_id": "c6b7eda62a5c",
@@ -131,9 +131,9 @@
       "days": 1
     },
     {
-      "topic_id": "b8ab568e8ad2",
-      "title": "Pure-blue quantum-dot light-emitting diodes with minimal efficiency roll-off and high brightness",
-      "score": 125.3,
+      "topic_id": "43035e10a703",
+      "title": "车载激光雷达拼到芯片内部:比亚迪这份 VCSEL 专利,瞄准的不是更亮,而是把每一束光控制好",
+      "score": 131.2,
       "days": 1
     }
   ],
@@ -160,7 +160,7 @@
       "topic_id": "3db37b135ae4",
       "title": "苹果税惹麻烦：苹果在英国面临15亿英镑集体诉讼",
       "days": 15,
-      "score": 879.2
+      "score": 910.6
     },
     {
       "topic_id": "8579455b5d54",
@@ -193,10 +193,10 @@
       "score": 577.2
     },
     {
-      "topic_id": "2e0a41654e17",
-      "title": "湖北通信管理局联合省经济和信息化厅部署2026年新型工业化网络安全专项行动",
-      "days": 8,
-      "score": 1186.4
+      "topic_id": "983065fbf898",
+      "title": "PODCAST: Meet Andrew Strikwerda, COMSOL",
+      "days": 9,
+      "score": 471.0
     }
   ]
 }
