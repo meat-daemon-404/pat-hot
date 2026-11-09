@@ -1,48 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T01:45:14.975126+00:00",
-  "weekStart": "2026-11-03",
+  "generatedAt": "2026-11-09T20:45:18.875442+00:00",
+  "weekStart": "2026-11-04",
   "windowDays": 7,
-  "windowStart": "2026-11-03",
-  "windowEnd": "2026-11-09",
-  "prevStart": "2026-10-27",
-  "prevEnd": "2026-11-02",
+  "windowStart": "2026-11-04",
+  "windowEnd": "2026-11-10",
+  "prevStart": "2026-10-28",
+  "prevEnd": "2026-11-03",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1735.8,
-      "lastWeek": 1225.3,
-      "deltaPct": 41.7
+      "thisWeek": 2134.4,
+      "lastWeek": 869.4,
+      "deltaPct": 145.5
     },
     {
       "category": "其他",
-      "thisWeek": 1040.0,
-      "lastWeek": 1018.0,
-      "deltaPct": 2.2
+      "thisWeek": 1059.9,
+      "lastWeek": 1138.8,
+      "deltaPct": -6.9
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 582.9,
-      "lastWeek": 504.0,
-      "deltaPct": 15.7
+      "thisWeek": 816.7,
+      "lastWeek": 453.2,
+      "deltaPct": 80.2
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 441.5,
-      "lastWeek": 219.7,
-      "deltaPct": 101.0
+      "thisWeek": 571.9,
+      "lastWeek": 270.3,
+      "deltaPct": 111.6
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 149.1,
+      "thisWeek": 204.1,
       "lastWeek": 122.1,
-      "deltaPct": 22.1
+      "deltaPct": 67.2
     },
     {
       "category": "等离子体",
       "thisWeek": 148.6,
-      "lastWeek": 102.3,
-      "deltaPct": 45.3
+      "lastWeek": 51.2,
+      "deltaPct": 190.2
     },
     {
       "category": "原子分子与光物理",
@@ -58,6 +58,12 @@
     }
   ],
   "newTopics": [
+    {
+      "topic_id": "a2a057d8f08e",
+      "title": "Neutral-atom quantum features as complementary structural encodings for graph learning",
+      "score": 154.3,
+      "days": 2
+    },
     {
       "topic_id": "125f0822b778",
       "title": "Quantum error correcting codes from quiver moduli: Grassmannians, cyclic monodromy, and argyle collision divisors",
@@ -105,12 +111,6 @@
       "title": "Physical regimes of quartic quantum advantage in elastic media simulation",
       "score": 107.5,
       "days": 1
-    },
-    {
-      "topic_id": "26e0d76ba447",
-      "title": "A single measurement makes quantum bits more reliable",
-      "score": 64.9,
-      "days": 2
     },
     {
       "topic_id": "0269b1a75ab0",

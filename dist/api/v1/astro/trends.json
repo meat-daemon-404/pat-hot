@@ -1,59 +1,59 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T01:45:14.975126+00:00",
-  "weekStart": "2026-11-03",
+  "generatedAt": "2026-11-09T20:45:18.875442+00:00",
+  "weekStart": "2026-11-04",
   "windowDays": 7,
-  "windowStart": "2026-11-03",
-  "windowEnd": "2026-11-09",
-  "prevStart": "2026-10-27",
-  "prevEnd": "2026-11-02",
+  "windowStart": "2026-11-04",
+  "windowEnd": "2026-11-10",
+  "prevStart": "2026-10-28",
+  "prevEnd": "2026-11-03",
   "categoryDelta": [
     {
+      "category": "科研进展",
+      "thisWeek": 1871.8,
+      "lastWeek": 1516.7,
+      "deltaPct": 23.4
+    },
+    {
       "category": "深空探测",
-      "thisWeek": 1524.7,
-      "lastWeek": 1919.3,
-      "deltaPct": -20.6
+      "thisWeek": 1737.4,
+      "lastWeek": 1692.9,
+      "deltaPct": 2.6
     },
     {
       "category": "其他",
-      "thisWeek": 1261.5,
-      "lastWeek": 1687.7,
-      "deltaPct": -25.3
-    },
-    {
-      "category": "科研进展",
-      "thisWeek": 1216.8,
-      "lastWeek": 1907.3,
-      "deltaPct": -36.2
+      "thisWeek": 1283.2,
+      "lastWeek": 1649.6,
+      "deltaPct": -22.2
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 950.2,
-      "lastWeek": 1187.6,
-      "deltaPct": -20.0
+      "thisWeek": 1219.7,
+      "lastWeek": 962.1,
+      "deltaPct": 26.8
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 783.7,
-      "lastWeek": 1049.5,
-      "deltaPct": -25.3
-    },
-    {
-      "category": "太阳与空间物理",
-      "thisWeek": 61.0,
-      "lastWeek": 459.1,
-      "deltaPct": -86.7
+      "thisWeek": 717.8,
+      "lastWeek": 1031.1,
+      "deltaPct": -30.4
     },
     {
       "category": "引力波",
-      "thisWeek": 50.1,
+      "thisWeek": 87.7,
       "lastWeek": 50.0,
-      "deltaPct": 0.2
+      "deltaPct": 75.4
+    },
+    {
+      "category": "太阳与空间物理",
+      "thisWeek": 60.4,
+      "lastWeek": 234.3,
+      "deltaPct": -74.2
     },
     {
       "category": "系外行星",
       "thisWeek": 0,
-      "lastWeek": 116.5,
+      "lastWeek": 65.7,
       "deltaPct": -100.0
     }
   ],
@@ -65,15 +65,15 @@
       "days": 1
     },
     {
-      "topic_id": "785cd3e6fe07",
-      "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
-      "score": 173.5,
+      "topic_id": "64462efe9684",
+      "title": "NASA Advanced Mid-Power Electric Rocket Challenge",
+      "score": 192.1,
       "days": 1
     },
     {
-      "topic_id": "6201ba6cd449",
-      "title": "JWST may have found where heavy black hole seeds formed",
-      "score": 124.2,
+      "topic_id": "785cd3e6fe07",
+      "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
+      "score": 173.5,
       "days": 1
     },
     {
@@ -83,10 +83,10 @@
       "days": 1
     },
     {
-      "topic_id": "22a61be24ff4",
-      "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
-      "score": 123.8,
-      "days": 1
+      "topic_id": "2cea86b3c2b9",
+      "title": "Astronauts Across Generations Share the Stage",
+      "score": 122.1,
+      "days": 2
     },
     {
       "topic_id": "1c1279a4bf0f",
@@ -95,15 +95,15 @@
       "days": 2
     },
     {
-      "topic_id": "ee88d3278295",
-      "title": "Theory predicting an older universe without dark matter or dark energy passes key cosmological tests",
-      "score": 114.6,
+      "topic_id": "652c52e61e99",
+      "title": "La NASA busca a la próxima generación de astronautas",
+      "score": 115.5,
       "days": 1
     },
     {
-      "topic_id": "8eec9527a814",
-      "title": "Leviathan's sprawling stars challenge idea that dusty giants become compact galaxies",
-      "score": 114.5,
+      "topic_id": "ee88d3278295",
+      "title": "Theory predicting an older universe without dark matter or dark energy passes key cosmological tests",
+      "score": 114.6,
       "days": 1
     },
     {
@@ -123,8 +123,8 @@
     {
       "topic_id": "9ce52c24f555",
       "title": "High-orbit satellites could light the way for travel to the moon",
-      "days": 3,
-      "score": 182.0
+      "days": 4,
+      "score": 243.0
     }
   ]
 }
