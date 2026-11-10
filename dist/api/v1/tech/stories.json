@@ -1,8 +1,57 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T20:45:18.875442+00:00",
+  "generatedAt": "2026-11-10T04:08:03.296290+00:00",
   "count": 10,
   "items": [
+    {
+      "id": "0f6913c0ec4f",
+      "title": "Optical microscopy for pathological imaging: past, present, and future",
+      "status": "关注中",
+      "heat": 45.5,
+      "sourceCount": 2,
+      "signalCount": 3,
+      "latestAt": "2026-11-10T04:08:03.296290+00:00",
+      "sources": [
+        "Laser Focus World",
+        "arXiv 光学与光子学 (physics.optics)"
+      ],
+      "links": [
+        {
+          "title": "Optical microscopy for pathological imaging: past, present, and future",
+          "url": "https://arxiv.org/abs/2611.09104",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 66.5,
+          "published_at": "2026-11-09T05:00:00+00:00"
+        },
+        {
+          "title": "Optical imaging and spectroscopy enhance precision agriculture",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
+          "source": "Laser Focus World",
+          "score": 57.2,
+          "published_at": null
+        },
+        {
+          "title": "Ultrafast photoacoustics enables optical diagnostics of opaque materials",
+          "url": "https://www.laserfocusworld.com/test-measurement/article/55417458/ultrafast-photoacoustics-enables-optical-diagnostics-of-opaque-materials",
+          "source": "Laser Focus World",
+          "score": 34.3,
+          "published_at": null
+        }
+      ],
+      "trend": "up",
+      "trendPct": 28.9,
+      "badges": [
+        "rising"
+      ],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 48.5,
+      "refs": {
+        "arxiv": "2611.09104",
+        "via": "feed_text",
+        "confidence": "verified"
+      }
+    },
     {
       "id": "fdb7ff32f7e3",
       "title": "Differential chiral sensing at exceptional points in intrinsically chiral metastructures",
@@ -10,7 +59,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-11-09T20:45:18.875442+00:00",
+      "latestAt": "2026-11-10T04:08:03.296290+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "arXiv 光学与光子学 (physics.optics)"
@@ -20,22 +69,22 @@
           "title": "Differential chiral sensing at exceptional points in intrinsically chiral metastructures",
           "url": "https://arxiv.org/abs/2611.08822",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.2,
+          "score": 65.0,
           "published_at": "2026-11-09T05:00:00+00:00"
         },
         {
           "title": "Chirality of 'trions' illuminates new paths for quantum optics",
           "url": "https://phys.org/news/2026-11-chirality-trions-illuminates-paths-quantum.html",
           "source": "Phys.org 物理新闻",
-          "score": 56.5,
+          "score": 56.3,
           "published_at": "2026-11-09T15:40:01+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": null,
-      "digestTitle": null,
+      "digest": "研究人员在光学手性传感领域提出利用本征手性超结构中的奇异点来区分对映体，该方法有望增强弱手性光学响应的检测灵敏度。同时，东京都大学科学家发现，由两个电子和一个空穴组成的带电态在原子级薄碳卷上具有结构衍生的手性，为量子光学开辟了新路径。",
+      "digestTitle": "手性传感与量子光学研究取得新进展",
       "llmScore": 61.5,
       "refs": {
         "arxiv": "2611.08822",
@@ -50,7 +99,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-11-09T20:45:18.875442+00:00",
+      "latestAt": "2026-11-10T04:08:03.296290+00:00",
       "sources": [
         "Laser Focus World",
         "arXiv 光学与光子学 (physics.optics)"
@@ -60,7 +109,7 @@
           "title": "When is an Optical Design Problem a Mass Transfer Problem?",
           "url": "https://arxiv.org/abs/2611.09219",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.2,
+          "score": 65.0,
           "published_at": "2026-11-09T05:00:00+00:00"
         },
         {
@@ -71,61 +120,13 @@
           "published_at": null
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
       "refs": {
         "arxiv": "2611.09219",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
-    },
-    {
-      "id": "59becaf7517f",
-      "title": "Optical microscopy for pathological imaging: past, present, and future",
-      "status": "发酵中",
-      "heat": 35.3,
-      "sourceCount": 3,
-      "signalCount": 2,
-      "latestAt": "2026-11-09T20:45:18.875442+00:00",
-      "sources": [
-        "Laser Focus World",
-        "YouTube·SPIETV",
-        "arXiv 光学与光子学 (physics.optics)"
-      ],
-      "links": [
-        {
-          "title": "Optical microscopy for pathological imaging: past, present, and future",
-          "url": "https://arxiv.org/abs/2611.09104",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 70.1,
-          "published_at": "2026-11-09T05:00:00+00:00"
-        },
-        {
-          "title": "Optical imaging and spectroscopy enhance precision agriculture",
-          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
-          "source": "Laser Focus World",
-          "score": 60.5,
-          "published_at": null
-        },
-        {
-          "title": "AI Briefings: Multimodal Optical Imaging Strategy to Evaluate the Microscopic Biodistribution of ...",
-          "url": "https://www.youtube.com/watch?v=umTZvXqVsso",
-          "source": "YouTube·SPIETV",
-          "score": 47.3,
-          "published_at": "2026-10-19T15:15:27+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 48.5,
-      "refs": {
-        "arxiv": "2611.09104",
         "via": "feed_text",
         "confidence": "verified"
       }
@@ -137,7 +138,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-11-09T20:45:18.875442+00:00",
+      "latestAt": "2026-11-10T04:08:03.296290+00:00",
       "sources": [
         "C114中国通信网_通信财经"
       ],
@@ -171,13 +172,70 @@
       "digestTitle": null
     },
     {
+      "id": "80632c0b00ac",
+      "title": "Photonics Hot List: November 6, 2026",
+      "status": "关注中",
+      "heat": 34.5,
+      "sourceCount": 1,
+      "signalCount": 5,
+      "latestAt": "2026-11-10T04:08:03.296290+00:00",
+      "sources": [
+        "Laser Focus World"
+      ],
+      "links": [
+        {
+          "title": "Photonics Hot List: November 6, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55417177/photonics-hot-list-november-6-2026",
+          "source": "Laser Focus World",
+          "score": 56.8,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: October 30, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
+          "source": "Laser Focus World",
+          "score": 56.8,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: October 23, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
+          "source": "Laser Focus World",
+          "score": 56.8,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: October 16, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
+          "source": "Laser Focus World",
+          "score": 56.8,
+          "published_at": null
+        },
+        {
+          "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
+          "url": "https://www.laserfocusworld.com/resources/media-gallery/55411422/dont-miss-laser-focus-worlds-photonicsnxt-2026-virtual-event",
+          "source": "Laser Focus World",
+          "score": 56.8,
+          "published_at": null
+        }
+      ],
+      "trend": "up",
+      "trendPct": 62.7,
+      "badges": [
+        "rising"
+      ],
+      "digest": null,
+      "digestTitle": null,
+      "llmScore": 14.0
+    },
+    {
       "id": "f6c305112941",
       "title": "宁夏通信管理局党组开展党的二十届五中全会精神专题学习",
       "status": "关注中",
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 4,
-      "latestAt": "2026-11-09T20:45:18.875442+00:00",
+      "latestAt": "2026-11-10T04:08:03.296290+00:00",
       "sources": [
         "工信部要闻"
       ],
@@ -211,68 +269,11 @@
           "published_at": null
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
-    },
-    {
-      "id": "e72397647396",
-      "title": "Photonics Hot List: November 6, 2026",
-      "status": "发酵中",
-      "heat": 21.2,
-      "sourceCount": 3,
-      "signalCount": 4,
-      "latestAt": "2026-11-09T20:45:18.875442+00:00",
-      "sources": [
-        "Laser Focus World",
-        "YouTube·Photonics Media",
-        "YouTube·SPIETV"
-      ],
-      "links": [
-        {
-          "title": "Photonics Hot List: November 6, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55417177/photonics-hot-list-november-6-2026",
-          "source": "Laser Focus World",
-          "score": 65.0,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 30, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
-          "source": "Laser Focus World",
-          "score": 65.0,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 23, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
-          "source": "Laser Focus World",
-          "score": 65.0,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 16, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
-          "source": "Laser Focus World",
-          "score": 65.0,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Spectra Optical Design Summit 2026",
-          "url": "https://www.youtube.com/watch?v=blgieowAC9Y",
-          "source": "YouTube·Photonics Media",
-          "score": 63.7,
-          "published_at": "2026-11-06T10:00:21+00:00"
-        }
-      ],
-      "trend": "down",
-      "trendPct": -38.6,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 14.0
     },
     {
       "id": "b1612f46fb1e",
@@ -281,7 +282,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-09T20:45:18.875442+00:00",
+      "latestAt": "2026-11-10T04:08:03.296290+00:00",
       "sources": [
         "Nature Photonics",
         "arXiv 光学与光子学 (physics.optics)"
@@ -291,19 +292,19 @@
           "title": "All-optical thin-film lithium niobate memristor",
           "url": "https://www.nature.com/articles/s41566-026-02048-1",
           "source": "Nature Photonics",
-          "score": 67.6,
+          "score": 67.4,
           "published_at": "2026-11-06T00:00:00+00:00"
         },
         {
           "title": "Vertically-coupled microring resonators for lithium niobate on insulator integrated photonics",
           "url": "https://arxiv.org/abs/2611.09683",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.2,
+          "score": 65.0,
           "published_at": "2026-11-09T05:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -321,7 +322,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-09T20:45:18.875442+00:00",
+      "latestAt": "2026-11-10T04:08:03.296290+00:00",
       "sources": [
         "Laser Focus World",
         "Phys.org 物理新闻"
@@ -338,7 +339,7 @@
           "title": "Physicist develops detector capable of counting photons for quantum computing",
           "url": "https://phys.org/news/2026-11-physicist-detector-capable-photons-quantum.html",
           "source": "Phys.org 物理新闻",
-          "score": 54.0,
+          "score": 53.8,
           "published_at": "2026-11-05T21:20:09+00:00"
         }
       ],
@@ -355,7 +356,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-09T20:45:18.875442+00:00",
+      "latestAt": "2026-11-10T04:08:03.296290+00:00",
       "sources": [
         "C114中国通信网_通信财经",
         "OFweek 光电频道"
@@ -379,8 +380,8 @@
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": "中际旭创2026年上半年营收417.78亿元，同比增长182.49%，主要受益于AI驱动的高速光模块（800G/1.6T）放量，海外收入占比近95%。",
-      "digestTitle": "中际旭创上半年营收417.78亿元，同比增长182.49%"
+      "digest": null,
+      "digestTitle": null
     },
     {
       "id": "e5f48246a18c",
@@ -389,7 +390,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-09T20:45:18.875442+00:00",
+      "latestAt": "2026-11-10T04:08:03.296290+00:00",
       "sources": [
         "C114中国通信网_IT资讯",
         "COEMA 中国光电子行业协会"
@@ -413,8 +414,8 @@
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": "精密光纤激光器企业频准激光已登陆科创板，宇树科技计划在科创板IPO，中国移动已投资宇树科技。频准激光登陆科创板的具体结果未披露，宇树科技IPO计划据其投资方消息称旨在推动公司发展。",
-      "digestTitle": "频准激光与宇树科技拟登陆科创板"
+      "digest": null,
+      "digestTitle": null
     }
   ]
 }

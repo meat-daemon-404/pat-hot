@@ -1,8 +1,93 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T20:45:18.875442+00:00",
+  "generatedAt": "2026-11-10T04:08:03.296290+00:00",
   "count": 10,
   "items": [
+    {
+      "terms": [
+        "agriculture",
+        "diagnostics",
+        "future",
+        "imaging",
+        "microscopy",
+        "opaque",
+        "optical",
+        "past",
+        "pathological",
+        "photoacoustics",
+        "precision",
+        "present",
+        "spectroscopy",
+        "ultrafast"
+      ],
+      "source_count": 2,
+      "signal_count": 3,
+      "sources": [
+        "Laser Focus World",
+        "arXiv 光学与光子学 (physics.optics)"
+      ],
+      "score": 45.5,
+      "latest_at": "2026-11-10T04:08:03.296290+00:00",
+      "representative": {
+        "title": "Optical microscopy for pathological imaging: past, present, and future",
+        "url": "https://arxiv.org/abs/2611.09104",
+        "source": "arXiv 光学与光子学 (physics.optics)",
+        "published_at": "2026-11-09T05:00:00+00:00",
+        "score": 66.5,
+        "summary": "arXiv:2611.09104v1 Announce Type: new Abstract: Histopathology, the microscopic examination of stained tissue sections, remains the gold standard for pathology imaging, but its bright-field imaging is largely morphological. Advanced optical",
+        "zh_full": "组织病理学，即对染色组织切片进行显微镜检查，仍是病理学成像的金标准，但其明场成像主要提供形态学信息。先进的显微光学技术通过利用多种光与物质的相互作用，超越了传统方法，并日益应用于病理学成像。通过捕获折射率、偏振、谐波产生、布里渊频移和分子振动等信号，这些显微技术能够提供关于组织成分的定量或半定量信息。该综述回顾了光学显微镜在病理学成像中的过去、现在与未来，涵盖了从传统明场显微镜到先进非线性光学、偏振光学和布里渊显微镜等技术的发展历程。这些技术有望为病理诊断提供更丰富、更客观的信息，但临床转化仍面临挑战。",
+        "refs": {
+          "arxiv": "2611.09104",
+          "via": "feed_text",
+          "confidence": "verified"
+        },
+        "llm_summary": "组织病理学仍是病理成像的金标准，但传统明场成像主要提供形态学信息。先进光学显微技术通过利用光与物质的多种相互作用，如折射率、偏振、谐波产生、布里渊频移和分子振动等信号，能够提供组织成分的定量或半定量信息，并日益应用于病理学成像。该综述回顾了光学显微镜在病理学成像中的发展历程与未来方向。",
+        "llm_reason": "综述光学显微技术在病理成像中的进展，对研究者有参考价值",
+        "density": "中",
+        "llm_score": 48.5
+      },
+      "folded_count": 1,
+      "title": "Optical microscopy for pathological imaging: past, present, and future",
+      "id": "0f6913c0ec4f",
+      "links": [
+        {
+          "title": "Optical microscopy for pathological imaging: past, present, and future",
+          "url": "https://arxiv.org/abs/2611.09104",
+          "source": "arXiv 光学与光子学 (physics.optics)",
+          "score": 66.5,
+          "published_at": "2026-11-09T05:00:00+00:00"
+        },
+        {
+          "title": "Optical imaging and spectroscopy enhance precision agriculture",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
+          "source": "Laser Focus World",
+          "score": 57.2,
+          "published_at": null
+        },
+        {
+          "title": "Ultrafast photoacoustics enables optical diagnostics of opaque materials",
+          "url": "https://www.laserfocusworld.com/test-measurement/article/55417458/ultrafast-photoacoustics-enables-optical-diagnostics-of-opaque-materials",
+          "source": "Laser Focus World",
+          "score": 34.3,
+          "published_at": null
+        }
+      ],
+      "top_terms": [
+        "optical",
+        "imaging",
+        "microscopy",
+        "pathological",
+        "past"
+      ],
+      "rank": 1,
+      "trend": "up",
+      "trendPct": 28.9,
+      "badges": [
+        "rising"
+      ],
+      "heat": 45.5,
+      "status": "关注中"
+    },
     {
       "terms": [
         "chiral",
@@ -26,13 +111,13 @@
         "arXiv 光学与光子学 (physics.optics)"
       ],
       "score": 42.0,
-      "latest_at": "2026-11-09T20:45:18.875442+00:00",
+      "latest_at": "2026-11-10T04:08:03.296290+00:00",
       "representative": {
         "title": "Differential chiral sensing at exceptional points in intrinsically chiral metastructures",
         "url": "https://arxiv.org/abs/2611.08822",
         "source": "arXiv 光学与光子学 (physics.optics)",
         "published_at": "2026-11-09T05:00:00+00:00",
-        "score": 65.2,
+        "score": 65.0,
         "summary": "arXiv:2611.08822v1 Announce Type: new Abstract: Discriminating opposite enantiomers through their weak chiroptical responses remains a fundamental challenge in optical sensing. Exceptional points (EPs), non-Hermitian singularities at which ",
         "zh_full": null,
         "refs": {
@@ -50,14 +135,14 @@
           "title": "Differential chiral sensing at exceptional points in intrinsically chiral metastructures",
           "url": "https://arxiv.org/abs/2611.08822",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.2,
+          "score": 65.0,
           "published_at": "2026-11-09T05:00:00+00:00"
         },
         {
           "title": "Chirality of 'trions' illuminates new paths for quantum optics",
           "url": "https://phys.org/news/2026-11-chirality-trions-illuminates-paths-quantum.html",
           "source": "Phys.org 物理新闻",
-          "score": 56.5,
+          "score": 56.3,
           "published_at": "2026-11-09T15:40:01+00:00"
         }
       ],
@@ -68,9 +153,11 @@
         "exceptional",
         "points"
       ],
-      "rank": 1,
-      "trend": "new",
-      "trendPct": null,
+      "digest": "研究人员在光学手性传感领域提出利用本征手性超结构中的奇异点来区分对映体，该方法有望增强弱手性光学响应的检测灵敏度。同时，东京都大学科学家发现，由两个电子和一个空穴组成的带电态在原子级薄碳卷上具有结构衍生的手性，为量子光学开辟了新路径。",
+      "digestTitle": "手性传感与量子光学研究取得新进展",
+      "rank": 2,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 42.0,
       "status": "关注中"
@@ -95,13 +182,13 @@
         "arXiv 光学与光子学 (physics.optics)"
       ],
       "score": 42.0,
-      "latest_at": "2026-11-09T20:45:18.875442+00:00",
+      "latest_at": "2026-11-10T04:08:03.296290+00:00",
       "representative": {
         "title": "When is an Optical Design Problem a Mass Transfer Problem?",
         "url": "https://arxiv.org/abs/2611.09219",
         "source": "arXiv 光学与光子学 (physics.optics)",
         "published_at": "2026-11-09T05:00:00+00:00",
-        "score": 65.2,
+        "score": 65.0,
         "summary": "arXiv:2611.09219v1 Announce Type: new Abstract: This paper investigates whether optical design problems can be represented as Monge--Kantorovich mass transfer problems with some cost function. An optical problem is specified by a function d",
         "zh_full": null,
         "refs": {
@@ -118,7 +205,7 @@
           "title": "When is an Optical Design Problem a Mass Transfer Problem?",
           "url": "https://arxiv.org/abs/2611.09219",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.2,
+          "score": 65.0,
           "published_at": "2026-11-09T05:00:00+00:00"
         },
         {
@@ -136,95 +223,12 @@
         "mass",
         "transfer"
       ],
-      "rank": 2,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 3,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 42.0,
       "status": "关注中"
-    },
-    {
-      "terms": [
-        "agriculture",
-        "biodistribution",
-        "briefings",
-        "evaluate",
-        "future",
-        "imaging",
-        "microscopic",
-        "microscopy",
-        "multimodal",
-        "optical",
-        "past",
-        "pathological",
-        "precision",
-        "present",
-        "spectroscopy",
-        "strategy"
-      ],
-      "source_count": 3,
-      "signal_count": 2,
-      "sources": [
-        "Laser Focus World",
-        "YouTube·SPIETV",
-        "arXiv 光学与光子学 (physics.optics)"
-      ],
-      "score": 35.3,
-      "latest_at": "2026-11-09T20:45:18.875442+00:00",
-      "representative": {
-        "title": "Optical microscopy for pathological imaging: past, present, and future",
-        "url": "https://arxiv.org/abs/2611.09104",
-        "source": "arXiv 光学与光子学 (physics.optics)",
-        "published_at": "2026-11-09T05:00:00+00:00",
-        "score": 70.1,
-        "summary": "arXiv:2611.09104v1 Announce Type: new Abstract: Histopathology, the microscopic examination of stained tissue sections, remains the gold standard for pathology imaging, but its bright-field imaging is largely morphological. Advanced optical",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2611.09104",
-          "via": "feed_text",
-          "confidence": "verified"
-        },
-        "llm_score": 48.5
-      },
-      "folded_count": 2,
-      "title": "Optical microscopy for pathological imaging: past, present, and future",
-      "id": "59becaf7517f",
-      "links": [
-        {
-          "title": "Optical microscopy for pathological imaging: past, present, and future",
-          "url": "https://arxiv.org/abs/2611.09104",
-          "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 70.1,
-          "published_at": "2026-11-09T05:00:00+00:00"
-        },
-        {
-          "title": "Optical imaging and spectroscopy enhance precision agriculture",
-          "url": "https://www.laserfocusworld.com/detectors-imaging/article/55410630/epic-european-photonics-industry-consortium-optical-imaging-and-spectroscopy-enhance-precision-agriculture",
-          "source": "Laser Focus World",
-          "score": 60.5,
-          "published_at": null
-        },
-        {
-          "title": "AI Briefings: Multimodal Optical Imaging Strategy to Evaluate the Microscopic Biodistribution of ...",
-          "url": "https://www.youtube.com/watch?v=umTZvXqVsso",
-          "source": "YouTube·SPIETV",
-          "score": 47.3,
-          "published_at": "2026-10-19T15:15:27+00:00"
-        }
-      ],
-      "top_terms": [
-        "optical",
-        "imaging",
-        "microscopy",
-        "pathological",
-        "past"
-      ],
-      "rank": 3,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 35.3,
-      "status": "发酵中"
     },
     {
       "terms": [],
@@ -234,7 +238,7 @@
         "C114中国通信网_通信财经"
       ],
       "score": 34.5,
-      "latest_at": "2026-11-09T20:45:18.875442+00:00",
+      "latest_at": "2026-11-10T04:08:03.296290+00:00",
       "representative": {
         "title": "光迅科技2026年上半年净利润5.82亿元，同比增长56.34%",
         "url": "https://www.c114.com.cn/news/123/a1315966.html",
@@ -288,6 +292,96 @@
       "status": "关注中"
     },
     {
+      "terms": [
+        "event",
+        "focus",
+        "laser",
+        "list",
+        "miss",
+        "november",
+        "october",
+        "photonics",
+        "photonicsnxt",
+        "virtual",
+        "world"
+      ],
+      "source_count": 1,
+      "signal_count": 5,
+      "sources": [
+        "Laser Focus World"
+      ],
+      "score": 34.5,
+      "latest_at": "2026-11-10T04:08:03.296290+00:00",
+      "representative": {
+        "title": "Photonics Hot List: November 6, 2026",
+        "url": "https://www.laserfocusworld.com/resources/video/55417177/photonics-hot-list-november-6-2026",
+        "source": "Laser Focus World",
+        "published_at": null,
+        "score": 56.8,
+        "summary": "In this episode: A computational model for lighting spectra could help aging eyes, an optics program gets a federal funding boost, and scientists reconstruct Van Gogh’s Starry Night sky.",
+        "zh_full": "本期节目内容包括：一个用于照明光谱的计算模型可能有助于改善老化眼睛的视觉体验；一个光学项目获得联邦资金支持；以及科学家重建了梵高《星月夜》中的天空。",
+        "llm_summary": "本期节目介绍了三项光学领域动态：一个照明光谱计算模型有望帮助老化眼睛，一个光学项目获得联邦资助，以及科学家重建了梵高名画《星月夜》中的天空。",
+        "llm_reason": "涵盖照明、资助与艺术重建三方面动态",
+        "density": "中",
+        "llm_score": 14.0
+      },
+      "folded_count": 0,
+      "title": "Photonics Hot List: November 6, 2026",
+      "id": "80632c0b00ac",
+      "links": [
+        {
+          "title": "Photonics Hot List: November 6, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55417177/photonics-hot-list-november-6-2026",
+          "source": "Laser Focus World",
+          "score": 56.8,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: October 30, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
+          "source": "Laser Focus World",
+          "score": 56.8,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: October 23, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
+          "source": "Laser Focus World",
+          "score": 56.8,
+          "published_at": null
+        },
+        {
+          "title": "Photonics Hot List: October 16, 2026",
+          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
+          "source": "Laser Focus World",
+          "score": 56.8,
+          "published_at": null
+        },
+        {
+          "title": "Don't miss Laser Focus World’s PhotonicsNXT 2026 virtual event!",
+          "url": "https://www.laserfocusworld.com/resources/media-gallery/55411422/dont-miss-laser-focus-worlds-photonicsnxt-2026-virtual-event",
+          "source": "Laser Focus World",
+          "score": 56.8,
+          "published_at": null
+        }
+      ],
+      "top_terms": [
+        "photonics",
+        "list",
+        "october",
+        "november",
+        "don"
+      ],
+      "rank": 5,
+      "trend": "up",
+      "trendPct": 62.7,
+      "badges": [
+        "rising"
+      ],
+      "heat": 34.5,
+      "status": "关注中"
+    },
+    {
       "terms": [],
       "source_count": 1,
       "signal_count": 4,
@@ -295,7 +389,7 @@
         "工信部要闻"
       ],
       "score": 34.5,
-      "latest_at": "2026-11-09T20:45:18.875442+00:00",
+      "latest_at": "2026-11-10T04:08:03.296290+00:00",
       "representative": {
         "title": "宁夏通信管理局党组开展党的二十届五中全会精神专题学习",
         "url": "https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_41503062e2a94e518d604a19ba28697b.html",
@@ -345,101 +439,12 @@
         "十届",
         "届五"
       ],
-      "rank": 5,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 6,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 34.5,
       "status": "关注中"
-    },
-    {
-      "terms": [
-        "back",
-        "list",
-        "look",
-        "november",
-        "october",
-        "optical",
-        "photonics",
-        "spectra",
-        "summit",
-        "west"
-      ],
-      "source_count": 3,
-      "signal_count": 4,
-      "sources": [
-        "Laser Focus World",
-        "YouTube·Photonics Media",
-        "YouTube·SPIETV"
-      ],
-      "score": 21.2,
-      "latest_at": "2026-11-09T20:45:18.875442+00:00",
-      "representative": {
-        "title": "Photonics Hot List: November 6, 2026",
-        "url": "https://www.laserfocusworld.com/resources/video/55417177/photonics-hot-list-november-6-2026",
-        "source": "Laser Focus World",
-        "published_at": null,
-        "score": 65.0,
-        "summary": "In this episode: A computational model for lighting spectra could help aging eyes, an optics program gets a federal funding boost, and scientists reconstruct Van Gogh’s Starry Night sky.",
-        "zh_full": "本期节目内容包括：一个用于照明光谱的计算模型可能有助于改善老化眼睛的视觉体验；一个光学项目获得联邦资金支持；以及科学家重建了梵高《星月夜》中的天空。",
-        "llm_summary": "本期节目介绍了三项光学领域动态：一个照明光谱计算模型有望帮助老化眼睛，一个光学项目获得联邦资助，以及科学家重建了梵高名画《星月夜》中的天空。",
-        "llm_reason": "涵盖照明、资助与艺术重建三方面动态",
-        "density": "中",
-        "llm_score": 14.0
-      },
-      "folded_count": 2,
-      "title": "Photonics Hot List: November 6, 2026",
-      "id": "e72397647396",
-      "links": [
-        {
-          "title": "Photonics Hot List: November 6, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55417177/photonics-hot-list-november-6-2026",
-          "source": "Laser Focus World",
-          "score": 65.0,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 30, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55415356/photonics-hot-list-october-30-2026",
-          "source": "Laser Focus World",
-          "score": 65.0,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 23, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55414140/photonics-hot-list-october-23-2026",
-          "source": "Laser Focus World",
-          "score": 65.0,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Hot List: October 16, 2026",
-          "url": "https://www.laserfocusworld.com/resources/video/55412221/photonics-hot-list-october-16-2026",
-          "source": "Laser Focus World",
-          "score": 65.0,
-          "published_at": null
-        },
-        {
-          "title": "Photonics Spectra Optical Design Summit 2026",
-          "url": "https://www.youtube.com/watch?v=blgieowAC9Y",
-          "source": "YouTube·Photonics Media",
-          "score": 63.7,
-          "published_at": "2026-11-06T10:00:21+00:00"
-        }
-      ],
-      "top_terms": [
-        "photonics",
-        "list",
-        "october",
-        "november",
-        "spectra"
-      ],
-      "rank": 6,
-      "trend": "down",
-      "trendPct": -38.6,
-      "badges": [],
-      "heat": 21.2,
-      "status": "发酵中"
     },
     {
       "terms": [
@@ -463,13 +468,13 @@
         "arXiv 光学与光子学 (physics.optics)"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-09T20:45:18.875442+00:00",
+      "latest_at": "2026-11-10T04:08:03.296290+00:00",
       "representative": {
         "title": "All-optical thin-film lithium niobate memristor",
         "url": "https://www.nature.com/articles/s41566-026-02048-1",
         "source": "Nature Photonics",
         "published_at": "2026-11-06T00:00:00+00:00",
-        "score": 67.6,
+        "score": 67.4,
         "summary": "Nature Photonics, Published online: 06 November 2026; doi:10.1038/s41566-026-02048-1 Oxygen-ion implantation allows the direct fabrication of photonic memristors in thin-film lithium niobate. The resulting devices combine 3-bit non-volatile",
         "zh_full": "（无摘要，仅标题）标题为“All-optical thin-film lithium niobate memristor”。该标题仅说明研究内容为全光学薄膜铌酸锂忆阻器。",
         "refs": {
@@ -489,14 +494,14 @@
           "title": "All-optical thin-film lithium niobate memristor",
           "url": "https://www.nature.com/articles/s41566-026-02048-1",
           "source": "Nature Photonics",
-          "score": 67.6,
+          "score": 67.4,
           "published_at": "2026-11-06T00:00:00+00:00"
         },
         {
           "title": "Vertically-coupled microring resonators for lithium niobate on insulator integrated photonics",
           "url": "https://arxiv.org/abs/2611.09683",
           "source": "arXiv 光学与光子学 (physics.optics)",
-          "score": 65.2,
+          "score": 65.0,
           "published_at": "2026-11-09T05:00:00+00:00"
         }
       ],
@@ -508,8 +513,8 @@
         "microring"
       ],
       "rank": 7,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -535,7 +540,7 @@
         "Phys.org 物理新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-09T20:45:18.875442+00:00",
+      "latest_at": "2026-11-10T04:08:03.296290+00:00",
       "representative": {
         "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
         "url": "https://www.laserfocusworld.com/executive-forum/podcast/55411597/podcast-expert-insights-photonics-quantum-computing",
@@ -563,7 +568,7 @@
           "title": "Physicist develops detector capable of counting photons for quantum computing",
           "url": "https://phys.org/news/2026-11-physicist-detector-capable-photons-quantum.html",
           "source": "Phys.org 物理新闻",
-          "score": 54.0,
+          "score": 53.8,
           "published_at": "2026-11-05T21:20:09+00:00"
         }
       ],
@@ -590,7 +595,7 @@
         "OFweek 光电频道"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-09T20:45:18.875442+00:00",
+      "latest_at": "2026-11-10T04:08:03.296290+00:00",
       "representative": {
         "title": "中际旭创上半年营收417.78亿元，同比增长182.49%",
         "url": "https://www.c114.com.cn/news/123/a1316157.html",
@@ -629,8 +634,6 @@
         "亿元",
         "融资"
       ],
-      "digest": "中际旭创2026年上半年营收417.78亿元，同比增长182.49%，主要受益于AI驱动的高速光模块（800G/1.6T）放量，海外收入占比近95%。",
-      "digestTitle": "中际旭创上半年营收417.78亿元，同比增长182.49%",
       "rank": 9,
       "trend": "flat",
       "trendPct": 0.0,
@@ -651,7 +654,7 @@
         "COEMA 中国光电子行业协会"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-09T20:45:18.875442+00:00",
+      "latest_at": "2026-11-10T04:08:03.296290+00:00",
       "representative": {
         "title": "精密光纤激光器企业频准激光登陆科创板",
         "url": "https://www.coema.org.cn/industry/202608/5795.html",
@@ -689,8 +692,6 @@
         "创板",
         "激光"
       ],
-      "digest": "精密光纤激光器企业频准激光已登陆科创板，宇树科技计划在科创板IPO，中国移动已投资宇树科技。频准激光登陆科创板的具体结果未披露，宇树科技IPO计划据其投资方消息称旨在推动公司发展。",
-      "digestTitle": "频准激光与宇树科技拟登陆科创板",
       "rank": 10,
       "trend": "flat",
       "trendPct": 0.0,

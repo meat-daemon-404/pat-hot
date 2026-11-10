@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T20:45:18.875442+00:00",
+  "generatedAt": "2026-11-10T04:08:03.296290+00:00",
   "weekStart": "2026-11-04",
   "windowDays": 7,
   "windowStart": "2026-11-04",
@@ -10,45 +10,45 @@
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 1871.8,
+      "thisWeek": 1998.3,
       "lastWeek": 1516.7,
-      "deltaPct": 23.4
+      "deltaPct": 31.8
     },
     {
       "category": "深空探测",
-      "thisWeek": 1737.4,
+      "thisWeek": 1788.2,
       "lastWeek": 1692.9,
-      "deltaPct": 2.6
+      "deltaPct": 5.6
     },
     {
       "category": "其他",
-      "thisWeek": 1283.2,
+      "thisWeek": 1318.7,
       "lastWeek": 1649.6,
-      "deltaPct": -22.2
+      "deltaPct": -20.1
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 1219.7,
+      "thisWeek": 1269.5,
       "lastWeek": 962.1,
-      "deltaPct": 26.8
+      "deltaPct": 32.0
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 717.8,
+      "thisWeek": 727.2,
       "lastWeek": 1031.1,
-      "deltaPct": -30.4
+      "deltaPct": -29.5
     },
     {
       "category": "引力波",
-      "thisWeek": 87.7,
+      "thisWeek": 87.5,
       "lastWeek": 50.0,
-      "deltaPct": 75.4
+      "deltaPct": 75.0
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 60.4,
+      "thisWeek": 60.2,
       "lastWeek": 234.3,
-      "deltaPct": -74.2
+      "deltaPct": -74.3
     },
     {
       "category": "系外行星",
@@ -65,12 +65,6 @@
       "days": 1
     },
     {
-      "topic_id": "64462efe9684",
-      "title": "NASA Advanced Mid-Power Electric Rocket Challenge",
-      "score": 192.1,
-      "days": 1
-    },
-    {
       "topic_id": "785cd3e6fe07",
       "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
       "score": 173.5,
@@ -83,10 +77,16 @@
       "days": 1
     },
     {
-      "topic_id": "2cea86b3c2b9",
+      "topic_id": "59e4f6fceb30",
       "title": "Astronauts Across Generations Share the Stage",
-      "score": 122.1,
-      "days": 2
+      "score": 121.9,
+      "days": 1
+    },
+    {
+      "topic_id": "4e5d853df461",
+      "title": "NASA’s Chandra Finds Source of Star’s Mysterious Outbursts",
+      "score": 121.9,
+      "days": 1
     },
     {
       "topic_id": "1c1279a4bf0f",
@@ -95,9 +95,15 @@
       "days": 2
     },
     {
-      "topic_id": "652c52e61e99",
-      "title": "La NASA busca a la próxima generación de astronautas",
-      "score": 115.5,
+      "topic_id": "a6f5ec1eb787",
+      "title": "Curiosity Blog, Sols 5056-5062: Charging Back Up!",
+      "score": 115.4,
+      "days": 1
+    },
+    {
+      "topic_id": "baad1c8893c2",
+      "title": "NASA Advanced Mid-Power Electric Rocket Challenge",
+      "score": 115.0,
       "days": 1
     },
     {
@@ -111,12 +117,6 @@
       "title": "Even stupendous black holes can’t explain dark matter",
       "score": 104.8,
       "days": 1
-    },
-    {
-      "topic_id": "8226419750b8",
-      "title": "Enhancing Gravitational Waves from Global Strings via a First-Order Phase Transition",
-      "score": 100.2,
-      "days": 1
     }
   ],
   "sustainedTopics": [
@@ -124,7 +124,7 @@
       "topic_id": "9ce52c24f555",
       "title": "High-orbit satellites could light the way for travel to the moon",
       "days": 4,
-      "score": 243.0
+      "score": 242.8
     }
   ]
 }

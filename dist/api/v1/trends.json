@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T20:45:18.875442+00:00",
+  "generatedAt": "2026-11-10T04:08:03.296290+00:00",
   "weekStart": "2026-11-04",
   "windowDays": 7,
   "windowStart": "2026-11-04",
@@ -10,21 +10,21 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4390.7,
+      "thisWeek": 4393.7,
       "lastWeek": 4649.1,
-      "deltaPct": -5.6
+      "deltaPct": -5.5
     },
     {
       "category": "科研进展",
-      "thisWeek": 3679.0,
+      "thisWeek": 3823.1,
       "lastWeek": 3250.5,
-      "deltaPct": 13.2
+      "deltaPct": 17.6
     },
     {
       "category": "光通信",
-      "thisWeek": 3077.2,
+      "thisWeek": 3112.8,
       "lastWeek": 3213.2,
-      "deltaPct": -4.2
+      "deltaPct": -3.1
     },
     {
       "category": "产业与资本",
@@ -34,33 +34,33 @@
     },
     {
       "category": "其他",
-      "thisWeek": 2587.0,
+      "thisWeek": 2621.2,
       "lastWeek": 2746.0,
-      "deltaPct": -5.8
+      "deltaPct": -4.5
     },
     {
       "category": "通信与算力",
-      "thisWeek": 1807.0,
+      "thisWeek": 1902.6,
       "lastWeek": 1632.7,
-      "deltaPct": 10.7
-    },
-    {
-      "category": "光学元件与成像",
-      "thisWeek": 1564.4,
-      "lastWeek": 1786.2,
-      "deltaPct": -12.4
+      "deltaPct": 16.5
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1427.2,
+      "thisWeek": 1490.4,
       "lastWeek": 1504.7,
-      "deltaPct": -5.2
+      "deltaPct": -1.0
+    },
+    {
+      "category": "光学元件与成像",
+      "thisWeek": 1484.6,
+      "lastWeek": 1786.2,
+      "deltaPct": -16.9
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 882.7,
+      "thisWeek": 1069.6,
       "lastWeek": 820.7,
-      "deltaPct": 7.6
+      "deltaPct": 30.3
     },
     {
       "category": "光传感与激光雷达",
@@ -81,6 +81,12 @@
       "title": "Crystal advances will help power next-gen fusion laser systems",
       "score": 523.0,
       "days": 5
+    },
+    {
+      "topic_id": "80632c0b00ac",
+      "title": "Photonics Hot List: November 6, 2026",
+      "score": 431.6,
+      "days": 2
     },
     {
       "topic_id": "98f4b8731b7a",
@@ -107,18 +113,6 @@
       "days": 5
     },
     {
-      "topic_id": "e72397647396",
-      "title": "Photonics Hot List: November 6, 2026",
-      "score": 247.0,
-      "days": 1
-    },
-    {
-      "topic_id": "80632c0b00ac",
-      "title": "Photonics Hot List: November 6, 2026",
-      "score": 215.8,
-      "days": 1
-    },
-    {
       "topic_id": "c6b7eda62a5c",
       "title": "192线激光雷达上车!新款领克08 EM-P上市",
       "score": 210.2,
@@ -135,6 +129,12 @@
       "title": "宁夏通信管理局党组开展党的二十届五中全会精神专题学习",
       "score": 177.0,
       "days": 1
+    },
+    {
+      "topic_id": "0f6913c0ec4f",
+      "title": "Optical microscopy for pathological imaging: past, present, and future",
+      "score": 152.3,
+      "days": 2
     }
   ],
   "sustainedTopics": [
