@@ -1,72 +1,72 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T04:08:03.296290+00:00",
-  "weekStart": "2026-11-04",
+  "generatedAt": "2026-11-10T17:50:34.763822+00:00",
+  "weekStart": "2026-11-05",
   "windowDays": 7,
-  "windowStart": "2026-11-04",
-  "windowEnd": "2026-11-10",
-  "prevStart": "2026-10-28",
-  "prevEnd": "2026-11-03",
+  "windowStart": "2026-11-05",
+  "windowEnd": "2026-11-11",
+  "prevStart": "2026-10-29",
+  "prevEnd": "2026-11-04",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4393.7,
-      "lastWeek": 4649.1,
-      "deltaPct": -5.5
+      "thisWeek": 4345.1,
+      "lastWeek": 4479.9,
+      "deltaPct": -3.0
     },
     {
       "category": "科研进展",
-      "thisWeek": 3823.1,
-      "lastWeek": 3250.5,
-      "deltaPct": 17.6
+      "thisWeek": 3586.3,
+      "lastWeek": 3067.7,
+      "deltaPct": 16.9
     },
     {
       "category": "光通信",
-      "thisWeek": 3112.8,
-      "lastWeek": 3213.2,
-      "deltaPct": -3.1
+      "thisWeek": 2947.6,
+      "lastWeek": 3431.6,
+      "deltaPct": -14.1
     },
     {
       "category": "产业与资本",
-      "thisWeek": 2827.9,
-      "lastWeek": 2977.4,
-      "deltaPct": -5.0
+      "thisWeek": 2780.3,
+      "lastWeek": 2922.0,
+      "deltaPct": -4.8
     },
     {
       "category": "其他",
-      "thisWeek": 2621.2,
-      "lastWeek": 2746.0,
-      "deltaPct": -4.5
+      "thisWeek": 2493.6,
+      "lastWeek": 2727.1,
+      "deltaPct": -8.6
     },
     {
       "category": "通信与算力",
-      "thisWeek": 1902.6,
-      "lastWeek": 1632.7,
-      "deltaPct": 16.5
-    },
-    {
-      "category": "显示与面板",
-      "thisWeek": 1490.4,
-      "lastWeek": 1504.7,
-      "deltaPct": -1.0
+      "thisWeek": 2079.9,
+      "lastWeek": 1849.4,
+      "deltaPct": 12.5
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1484.6,
-      "lastWeek": 1786.2,
-      "deltaPct": -16.9
+      "thisWeek": 1443.1,
+      "lastWeek": 1545.6,
+      "deltaPct": -6.6
+    },
+    {
+      "category": "显示与面板",
+      "thisWeek": 1316.7,
+      "lastWeek": 1611.8,
+      "deltaPct": -18.3
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 1069.6,
-      "lastWeek": 820.7,
-      "deltaPct": 30.3
+      "thisWeek": 1008.2,
+      "lastWeek": 750.0,
+      "deltaPct": 34.4
     },
     {
       "category": "光传感与激光雷达",
       "thisWeek": 322.0,
-      "lastWeek": 423.9,
-      "deltaPct": -24.0
+      "lastWeek": 368.1,
+      "deltaPct": -12.5
     },
     {
       "category": "光伏与新能源",
@@ -83,6 +83,12 @@
       "days": 5
     },
     {
+      "topic_id": "cd3547fd9611",
+      "title": "营收增长74.28%，净利润增长109.99%，光纤激光大厂“爆发”！",
+      "score": 455.0,
+      "days": 7
+    },
+    {
       "topic_id": "80632c0b00ac",
       "title": "Photonics Hot List: November 6, 2026",
       "score": 431.6,
@@ -95,16 +101,22 @@
       "days": 4
     },
     {
-      "topic_id": "cd3547fd9611",
-      "title": "营收增长74.28%，净利润增长109.99%，光纤激光大厂“爆发”！",
-      "score": 390.0,
-      "days": 6
-    },
-    {
       "topic_id": "0577aa38a964",
       "title": "西藏通信管理局党组召开会议传达学习贯彻党的二十届五中全会精神",
       "score": 366.0,
       "days": 4
+    },
+    {
+      "topic_id": "d633e4510286",
+      "title": "Get ready for Photonics West 2027!",
+      "score": 319.3,
+      "days": 1
+    },
+    {
+      "topic_id": "93ce29c2e4a8",
+      "title": "广西通信管理局传达学习贯彻党的二十届五中全会精神",
+      "score": 303.2,
+      "days": 1
     },
     {
       "topic_id": "13a8f78069ac",
@@ -123,18 +135,6 @@
       "title": "Colloidal 2D WS2 nanosheets exhibiting high-purity single photon emission",
       "score": 189.6,
       "days": 1
-    },
-    {
-      "topic_id": "f6c305112941",
-      "title": "宁夏通信管理局党组开展党的二十届五中全会精神专题学习",
-      "score": 177.0,
-      "days": 1
-    },
-    {
-      "topic_id": "0f6913c0ec4f",
-      "title": "Optical microscopy for pathological imaging: past, present, and future",
-      "score": 152.3,
-      "days": 2
     }
   ],
   "sustainedTopics": [

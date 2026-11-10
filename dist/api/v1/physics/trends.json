@@ -1,42 +1,42 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T04:08:03.296290+00:00",
-  "weekStart": "2026-11-04",
+  "generatedAt": "2026-11-10T17:50:34.763822+00:00",
+  "weekStart": "2026-11-05",
   "windowDays": 7,
-  "windowStart": "2026-11-04",
-  "windowEnd": "2026-11-10",
-  "prevStart": "2026-10-28",
-  "prevEnd": "2026-11-03",
+  "windowStart": "2026-11-05",
+  "windowEnd": "2026-11-11",
+  "prevStart": "2026-10-29",
+  "prevEnd": "2026-11-04",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 2181.4,
-      "lastWeek": 869.4,
-      "deltaPct": 150.9
+      "thisWeek": 2531.5,
+      "lastWeek": 587.7,
+      "deltaPct": 330.7
     },
     {
       "category": "其他",
-      "thisWeek": 1184.4,
-      "lastWeek": 1138.8,
-      "deltaPct": 4.0
+      "thisWeek": 1086.1,
+      "lastWeek": 1046.1,
+      "deltaPct": 3.8
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 805.5,
-      "lastWeek": 453.2,
-      "deltaPct": 77.7
+      "thisWeek": 745.1,
+      "lastWeek": 419.1,
+      "deltaPct": 77.8
     },
     {
       "category": "量子信息与计算",
       "thisWeek": 562.4,
-      "lastWeek": 270.3,
-      "deltaPct": 108.1
+      "lastWeek": 182.9,
+      "deltaPct": 207.5
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 203.9,
-      "lastWeek": 122.1,
-      "deltaPct": 67.0
+      "thisWeek": 203.8,
+      "lastWeek": 183.0,
+      "deltaPct": 11.4
     },
     {
       "category": "等离子体",
@@ -65,12 +65,6 @@
       "days": 1
     },
     {
-      "topic_id": "80633f50ae35",
-      "title": "Neutral-atom quantum features as complementary structural encodings for graph learning",
-      "score": 150.0,
-      "days": 2
-    },
-    {
       "topic_id": "aeb13878a821",
       "title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms",
       "score": 123.8,
@@ -86,6 +80,12 @@
       "topic_id": "717cb96ef60b",
       "title": "Decoherence resilience of the non-Hermitian skin effect",
       "score": 114.2,
+      "days": 1
+    },
+    {
+      "topic_id": "80633f50ae35",
+      "title": "Neutral-atom quantum features as complementary structural encodings for graph learning",
+      "score": 110.6,
       "days": 1
     },
     {
@@ -113,9 +113,9 @@
       "days": 1
     },
     {
-      "topic_id": "0269b1a75ab0",
-      "title": "Software-defined polarization-diversity continuous-variable quantum key distribution heterodyne receiver",
-      "score": 62.0,
+      "topic_id": "6920a93661b7",
+      "title": "An unconditional distribution learning advantage with shallow quantum circuits",
+      "score": 62.2,
       "days": 1
     }
   ],

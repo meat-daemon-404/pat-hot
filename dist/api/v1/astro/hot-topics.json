@@ -1,72 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T04:08:03.296290+00:00",
+  "generatedAt": "2026-11-10T17:50:34.763822+00:00",
   "count": 10,
   "items": [
-    {
-      "terms": [
-        "astronauts",
-        "couple",
-        "evolution",
-        "generations",
-        "share",
-        "stage",
-        "stellar",
-        "unusual"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "NASA 快讯",
-        "Phys.org 太空新闻"
-      ],
-      "score": 42.0,
-      "latest_at": "2026-11-10T04:08:03.296290+00:00",
-      "representative": {
-        "title": "Astronauts Across Generations Share the Stage",
-        "url": "https://www.nasa.gov/image-article/astronauts-across-generations-share-the-stage/",
-        "source": "NASA 快讯",
-        "published_at": "2026-11-09T16:56:29+00:00",
-        "score": 60.9,
-        "summary": "On Nov. 6, 2026, Purpose Entertainment hosted the Artemis Celebration Gala at NASA’s Kennedy Space Center Visitor Complex in Merritt Island, Florida. Held on the eve of NASA’s MAX POWER event, the gala celebrated the explorers, innovators, ",
-        "zh_full": null,
-        "llm_score": 23.5
-      },
-      "folded_count": 1,
-      "title": "Astronauts Across Generations Share the Stage",
-      "id": "59e4f6fceb30",
-      "links": [
-        {
-          "title": "A stellar odd couple at an unusual stage of evolution",
-          "url": "https://phys.org/news/2026-11-stellar-odd-couple-unusual-stage.html",
-          "source": "Phys.org 太空新闻",
-          "score": 61.0,
-          "published_at": "2026-11-09T22:40:01+00:00"
-        },
-        {
-          "title": "Astronauts Across Generations Share the Stage",
-          "url": "https://www.nasa.gov/image-article/astronauts-across-generations-share-the-stage/",
-          "source": "NASA 快讯",
-          "score": 60.9,
-          "published_at": "2026-11-09T16:56:29+00:00"
-        }
-      ],
-      "top_terms": [
-        "stage",
-        "stellar",
-        "odd",
-        "couple",
-        "unusual"
-      ],
-      "digest": "2026年11月6日，Purpose Entertainment在佛罗里达州肯尼迪航天中心游客综合楼举办Artemis庆典晚会，庆祝NASA的MAX POWER活动前夕，向探索者、创新者致敬。晚会汇聚了多代宇航员，共同纪念太空探索的成就与未来使命。",
-      "digestTitle": "Artemis庆典晚会致敬宇航员与创新者",
-      "rank": 1,
-      "trend": "flat",
-      "trendPct": 0.0,
-      "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
-    },
     {
       "terms": [
         "chandra",
@@ -89,13 +25,13 @@
         "Phys.org 太空新闻"
       ],
       "score": 42.0,
-      "latest_at": "2026-11-10T04:08:03.296290+00:00",
+      "latest_at": "2026-11-10T17:50:34.763822+00:00",
       "representative": {
         "title": "NASA’s Chandra Finds Source of Star’s Mysterious Outbursts",
         "url": "https://science.nasa.gov/missions/chandra/nasas-chandra-finds-source-of-stars-mysterious-outbursts/",
         "source": "NASA 快讯",
         "published_at": "2026-11-09T18:55:50+00:00",
-        "score": 60.9,
+        "score": 60.5,
         "summary": "Using NASA’s Chandra X-ray Observatory, astronomers have discovered what is triggering repeated outbursts from a giant, unstable star. A new study, published Monday in the latest issue of The Astrophysical Journal, details the discovery of ",
         "zh_full": "NASA 的钱德拉 X 射线天文台发现了一颗巨大且不稳定的恒星反复爆发的原因。一项发表在《天体物理学杂志》上的新研究揭示，该恒星存在一个此前隐藏的伴星天体，它每 113 天在轨道运行中从这颗大质量恒星上吸走物质，从而触发周期性爆发。这一发现为理解大质量恒星的不稳定性及其物质损失机制提供了关键线索。钱德拉天文台的高分辨率 X 射线观测能力使得探测这颗暗弱伴星成为可能，该伴星与主星的相互作用是导致爆发的直接原因。研究结果有助于完善恒星演化模型，并解释类似恒星系统的行为。",
         "llm_summary": "钱德拉 X 射线天文台发现一颗不稳定大质量恒星的爆发由隐藏伴星引起。伴星每 113 天吸走主星物质，触发爆发。研究发表于《天体物理学杂志》，有助于理解恒星演化。",
@@ -111,14 +47,14 @@
           "title": "The supernova impostor: Chandra finds likely source of giant star's repeated outbursts",
           "url": "https://phys.org/news/2026-11-supernova-impostor-chandra-source-giant.html",
           "source": "Phys.org 太空新闻",
-          "score": 61.0,
+          "score": 60.6,
           "published_at": "2026-11-09T21:40:10+00:00"
         },
         {
           "title": "NASA’s Chandra Finds Source of Star’s Mysterious Outbursts",
           "url": "https://science.nasa.gov/missions/chandra/nasas-chandra-finds-source-of-stars-mysterious-outbursts/",
           "source": "NASA 快讯",
-          "score": 60.9,
+          "score": 60.5,
           "published_at": "2026-11-09T18:55:50+00:00"
         }
       ],
@@ -129,167 +65,164 @@
         "star",
         "outbursts"
       ],
-      "digest": "天文学家利用NASA的钱德拉X射线天文台发现了一颗巨大不稳定恒星反复爆发的触发源。该研究发表在《天体物理学杂志》上，指出这一发现可能解释该恒星多次神秘爆发的机制。",
+      "digest": "天文学家利用NASA的钱德拉X射线天文台发现了一颗巨大不稳定恒星反复爆发的触发源。该研究发表在《天体物理学杂志》上，指出这一发现可能解释这颗恒星的神秘行为。",
       "digestTitle": "钱德拉望远镜发现巨星反复爆发的来源",
-      "rank": 2,
-      "trend": "up",
-      "trendPct": 100.0,
-      "badges": [
-        "rising"
-      ],
+      "rank": 1,
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
       "heat": 42.0,
       "status": "关注中"
     },
     {
       "terms": [
-        "crashed",
-        "edge",
-        "happen",
-        "planet"
+        "apod",
+        "calendar",
+        "full",
+        "high-orbit",
+        "moon",
+        "november",
+        "phases",
+        "satellites",
+        "saturn",
+        "seek",
+        "today",
+        "travel",
+        "tuesday",
+        "two-toned",
+        "when"
       ],
-      "source_count": 2,
-      "signal_count": 2,
+      "source_count": 3,
+      "signal_count": 3,
       "sources": [
         "Astronomy Magazine",
-        "Nature 天文和天体物理"
+        "MIT News 太空探索",
+        "NASA 快讯"
       ],
-      "score": 42.0,
-      "latest_at": "2026-11-10T04:08:03.296290+00:00",
+      "score": 38.8,
+      "latest_at": "2026-11-10T17:50:34.763822+00:00",
       "representative": {
-        "title": "The edge of the Sun",
-        "url": "https://www.nature.com/articles/s41567-026-03515-w",
-        "source": "Nature 天文和天体物理",
-        "published_at": "2026-11-09T00:00:00+00:00",
-        "score": 60.4,
-        "summary": "",
-        "zh_full": null,
-        "refs": {
-          "doi": "10.1038/s41567-026-03515-w",
-          "via": "self_meta",
-          "confidence": "verified"
-        },
-        "llm_score": 19.0
+        "title": "APOD: 2026 November 10 – Saturn Behind the Moon",
+        "url": "https://science.nasa.gov/image-article/apod-2026-november-10-saturn-behind-the-moon/",
+        "source": "NASA 快讯",
+        "published_at": "2026-11-10T05:05:00+00:00",
+        "score": 67.1,
+        "summary": "APOD Science APOD APOD: 2026 November 10 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinatin",
+        "zh_full": null
       },
-      "folded_count": 1,
-      "title": "The edge of the Sun",
-      "id": "a6da897a485d",
+      "folded_count": 2,
+      "title": "APOD: 2026 November 10 – Saturn Behind the Moon",
+      "id": "2938079879ef",
       "links": [
         {
-          "title": "The edge of the Sun",
-          "url": "https://www.nature.com/articles/s41567-026-03515-w",
-          "source": "Nature 天文和天体物理",
-          "score": 60.4,
-          "published_at": "2026-11-09T00:00:00+00:00"
+          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
+          "source": "Astronomy Magazine",
+          "score": 67.4,
+          "published_at": "2026-11-10T13:28:24+00:00"
         },
         {
-          "title": "What would happen if a planet crashed into the Sun?",
-          "url": "https://www.astronomy.com/science/what-would-happen-if-a-planet-crashed-into-the-sun/",
+          "title": "The Sky Today on Tuesday, November 10: Seek Saturn’s two-toned moon",
+          "url": "https://www.astronomy.com/observing/the-sky-today-tuesday-november-10-2026/",
           "source": "Astronomy Magazine",
-          "score": 36.5,
-          "published_at": "2026-11-09T14:00:00+00:00"
+          "score": 67.3,
+          "published_at": "2026-11-10T09:00:00+00:00"
+        },
+        {
+          "title": "APOD: 2026 November 10 – Saturn Behind the Moon",
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-10-saturn-behind-the-moon/",
+          "source": "NASA 快讯",
+          "score": 67.1,
+          "published_at": "2026-11-10T05:05:00+00:00"
+        },
+        {
+          "title": "High-orbit satellites could light the way for travel to the moon",
+          "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
+          "source": "MIT News 太空探索",
+          "score": 47.5,
+          "published_at": "2026-08-10T18:10:00+00:00"
         }
       ],
       "top_terms": [
-        "sun",
-        "edge",
-        "happen",
-        "planet",
-        "crashed"
+        "moon",
+        "november",
+        "saturn",
+        "full",
+        "apod"
       ],
-      "digest": "一颗行星撞向太阳时，它不会像陨石那样直接坠入，而是会在接近过程中被太阳的潮汐力撕碎，大部分物质蒸发并融入太阳外层，同时可能引发短暂的亮度增强和物质喷发。撞击也会扰动太阳的轨道动力学，但不会导致太阳毁灭或显著改变其核心结构。天文学家称，这类事件在太阳系历史中极为罕见，但系外行星系统中可能更常见。",
-      "digestTitle": "行星撞太阳的后果：蒸发与轨道扰动",
-      "rank": 3,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "digest": "2026年11月10日，地球位于太阳与月球之间，形成满月，月球整面被阳光照亮。同日，土星卫星土卫八（Iapetus）达到最大东距角，位于土星以东9.4角分，为观测其双色表面提供了良好时机。NASA发布的每日天文图片展示了土星被月球遮掩的景象。此外，高轨卫星可作为光学信标，为地月空间航天器提供类似GPS的导航与通信支持。",
+      "digestTitle": "2026年11月10日月相与土星卫星观测指南",
+      "rank": 2,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
+      "heat": 38.8,
+      "status": "发酵中"
     },
     {
       "terms": [
-        "arxiv",
-        "cosmic",
-        "cosmological",
-        "dark",
-        "dark-matter",
-        "darkmatterfm-registry",
-        "density",
-        "energy",
-        "extracted",
-        "filaments",
-        "literature",
-        "machine-readable",
-        "matter",
-        "older",
-        "passes",
-        "predicting",
-        "profiles",
-        "registry",
-        "tests",
-        "theory",
-        "universal",
-        "universe"
+        "blistering",
+        "corona",
+        "explain",
+        "flares",
+        "hold",
+        "mystery",
+        "recreated",
+        "secret",
+        "solar",
+        "tiny",
+        "whirlpools"
       ],
       "source_count": 2,
-      "signal_count": 2,
+      "signal_count": 1,
       "sources": [
-        "Phys.org 太空新闻",
-        "arXiv astro-ph.CO 论文速递"
+        "New Scientist 太空",
+        "Phys.org 太空新闻"
       ],
-      "score": 24.5,
-      "latest_at": "2026-11-10T04:08:03.296290+00:00",
+      "score": 21.0,
+      "latest_at": "2026-11-10T17:50:34.763822+00:00",
       "representative": {
-        "title": "DarkMatterFM-Registry: A Machine-Readable Registry of Dark-Matter Models Extracted from the arXiv Literature",
-        "url": "https://arxiv.org/abs/2611.08583",
-        "source": "arXiv astro-ph.CO 论文速递",
-        "published_at": "2026-11-09T05:00:00+00:00",
-        "score": 48.5,
-        "summary": "arXiv:2611.08583v1 Announce Type: new Abstract: To use a dark-matter model one needs to know what defines it, which observables it affects, which codes and likelihoods evaluate it, and under what assumptions a published bound applies. That ",
-        "zh_full": null,
-        "refs": {
-          "arxiv": "2611.08583",
-          "via": "feed_text",
-          "confidence": "verified"
-        }
+        "title": "Tiny solar whirlpools may hold the secret to the sun's blistering corona",
+        "url": "https://phys.org/news/2026-11-tiny-solar-whirlpools-secret-sun.html",
+        "source": "Phys.org 太空新闻",
+        "published_at": "2026-11-10T17:40:17+00:00",
+        "score": 61.2,
+        "summary": "For the second time in a few weeks, we're writing about research into the temperature gap between the sun's surface and its corona. More and more data from various missions continue to feed this wave of discovery. A new paper by Katariina N",
+        "zh_full": null
       },
       "folded_count": 1,
-      "title": "DarkMatterFM-Registry: A Machine-Readable Registry of Dark-Matter Models Extracted from the arXiv Literature",
-      "id": "c2d62afd9e7a",
+      "title": "Tiny solar whirlpools may hold the secret to the sun's blistering corona",
+      "id": "2adc2acbd32f",
       "links": [
         {
-          "title": "Theory predicting an older universe without dark matter or dark energy passes key cosmological tests",
-          "url": "https://phys.org/news/2026-11-theory-older-universe-dark-energy.html",
+          "title": "Tiny solar whirlpools may hold the secret to the sun's blistering corona",
+          "url": "https://phys.org/news/2026-11-tiny-solar-whirlpools-secret-sun.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.9,
-          "published_at": "2026-11-07T14:00:02+00:00"
+          "score": 61.2,
+          "published_at": "2026-11-10T17:40:17+00:00"
         },
         {
-          "title": "DarkMatterFM-Registry: A Machine-Readable Registry of Dark-Matter Models Extracted from the arXiv Literature",
-          "url": "https://arxiv.org/abs/2611.08583",
-          "source": "arXiv astro-ph.CO 论文速递",
+          "title": "Tiny ‘solar flares’ recreated in the lab may explain corona mystery",
+          "url": "https://www.newscientist.com/article/2595244-tiny-solar-flares-recreated-in-the-lab-may-explain-corona-mystery/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "source": "New Scientist 太空",
           "score": 48.5,
-          "published_at": "2026-11-09T05:00:00+00:00"
-        },
-        {
-          "title": "Universal Dark-matter Density Profiles of Cosmic Filaments",
-          "url": "https://arxiv.org/abs/2604.05033",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 48.5,
-          "published_at": "2026-11-09T05:00:00+00:00"
+          "published_at": "2026-10-22T19:00:00+00:00"
         }
       ],
       "top_terms": [
-        "dark",
-        "matter",
-        "registry",
-        "theory",
-        "predicting"
+        "tiny",
+        "solar",
+        "corona",
+        "whirlpools",
+        "hold"
       ],
-      "rank": 4,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "digest": "研究人员在实验室中模拟出类似太阳的纳米耀斑，并证明它们可能解释日冕为何比太阳表面热得多。这一实验由Katariina Nykyri团队完成，其成果与近期多项观测数据共同指向太阳表面微小涡流或纳米耀斑加热日冕的机制。此前研究已多次提出类似假设，但新实验首次在受控条件下重现了该过程，为日冕加热问题提供了直接证据。",
+      "digestTitle": "实验室重现太阳微耀斑，或解日冕高温之谜",
+      "rank": 3,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
-      "heat": 24.5,
+      "heat": 21.0,
       "status": "关注中"
     },
     {
@@ -313,13 +246,13 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-10T04:08:03.296290+00:00",
+      "latest_at": "2026-11-10T17:50:34.763822+00:00",
       "representative": {
         "title": "Our sun's undiscovered stellar nemesis is still out there, says physicist",
         "url": "https://phys.org/news/2026-11-sun-undiscovered-stellar-nemesis-physicist.html",
         "source": "Phys.org 太空新闻",
         "published_at": "2026-11-09T20:20:11+00:00",
-        "score": 60.9,
+        "score": 60.6,
         "summary": "Long-period, high-inclination comets of the sort that can cause extinction-level impacts here on Earth have long been thought to originate from a theoretical Oort cloud. That is, a roughly spherical cloud of icy cometary objects that number",
         "zh_full": "一位物理学家提出，太阳系中可能还存在一颗未被发现的恒星，它可能是地球遭受毁灭性撞击的潜在源头。这一观点基于对长周期、高倾角彗星的研究，这类彗星被认为来自理论上的奥尔特云——一个包围太阳系的球形冰质彗星云，其距离可延伸至 1.6 光年之外，数量以万亿计。该物理学家认为，这颗未知的恒星可能通过引力扰动奥尔特云，将彗星抛向地球方向，从而引发类似导致物种灭绝的撞击事件。这一假说尚未得到直接观测证实，但为理解太阳系边缘的动力学环境提供了新的视角。",
         "llm_summary": "物理学家提出太阳系可能存在一颗未被发现的恒星，它通过扰动奥尔特云将长周期彗星抛向地球，可能引发灭绝级撞击。该假说基于奥尔特云理论，尚未被直接观测证实。",
@@ -335,14 +268,14 @@
           "title": "Our sun's undiscovered stellar nemesis is still out there, says physicist",
           "url": "https://phys.org/news/2026-11-sun-undiscovered-stellar-nemesis-physicist.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.9,
+          "score": 60.6,
           "published_at": "2026-11-09T20:20:11+00:00"
         },
         {
           "title": "There may be a new dwarf planet just beyond Pluto",
           "url": "https://www.newscientist.com/article/2596282-there-may-be-a-new-dwarf-planet-just-beyond-pluto/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 31.7,
+          "score": 31.5,
           "published_at": "2026-10-28T16:51:28+00:00"
         }
       ],
@@ -353,7 +286,7 @@
         "undiscovered",
         "stellar"
       ],
-      "rank": 5,
+      "rank": 4,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -384,7 +317,7 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-10T04:08:03.296290+00:00",
+      "latest_at": "2026-11-10T17:50:34.763822+00:00",
       "representative": {
         "title": "Polar weather on Jupiter and Saturn hints at the planets’ interior details",
         "url": "https://news.mit.edu/2026/polar-weather-jupiter-saturn-hints-planets-interior-details-0119",
@@ -404,7 +337,7 @@
           "title": "How space weather powers auroras in the sky and threatens power grids on the ground",
           "url": "https://phys.org/news/2026-11-space-weather-powers-auroras-sky.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.2,
+          "score": 59.9,
           "published_at": "2026-11-08T19:00:01+00:00"
         },
         {
@@ -422,7 +355,7 @@
         "auroras",
         "sky"
       ],
-      "rank": 6,
+      "rank": 5,
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
@@ -454,13 +387,13 @@
         "Universe Today"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-10T04:08:03.296290+00:00",
+      "latest_at": "2026-11-10T17:50:34.763822+00:00",
       "representative": {
         "title": "Using Vibrations and AI, Future Robotic Missions Could Handle Buried Rocks Autonomously",
         "url": "https://www.universetoday.com/articles/virginia-tech-researchers-use-vibrations-and-ai-to-estimate-depth-of-buried-objects-for-future-lunar",
         "source": "Universe Today",
         "published_at": "2026-11-09T21:44:00+00:00",
-        "score": 36.6,
+        "score": 36.4,
         "summary": "Mechanical engineering assistant professor Erik Komendera developed a method that combines vibrations and AI to determine how deeply a rock is buried, helping robots clear terrain more efficiently.",
         "zh_full": null
       },
@@ -472,14 +405,14 @@
           "title": "Using Vibrations and AI, Future Robotic Missions Could Handle Buried Rocks Autonomously",
           "url": "https://www.universetoday.com/articles/virginia-tech-researchers-use-vibrations-and-ai-to-estimate-depth-of-buried-objects-for-future-lunar",
           "source": "Universe Today",
-          "score": 36.6,
+          "score": 36.4,
           "published_at": "2026-11-09T21:44:00+00:00"
         },
         {
           "title": "Robot successfully builds space structure in first autonomous construction demo",
           "url": "https://phys.org/news/2026-11-robot-successfully-space-autonomous-demo.html",
           "source": "Phys.org 太空新闻",
-          "score": 35.3,
+          "score": 35.1,
           "published_at": "2026-11-06T16:20:04+00:00"
         }
       ],
@@ -490,9 +423,9 @@
         "space",
         "autonomous"
       ],
-      "rank": 7,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 6,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -516,13 +449,13 @@
         "Nature 天文和天体物理"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-10T04:08:03.296290+00:00",
+      "latest_at": "2026-11-10T17:50:34.763822+00:00",
       "representative": {
         "title": "Imaging exoplanets below the telescope stability limit",
         "url": "https://www.nature.com/articles/s41586-026-11213-z",
         "source": "Nature 天文和天体物理",
         "published_at": "2026-11-04T00:00:00+00:00",
-        "score": 57.0,
+        "score": 56.7,
         "summary": "",
         "zh_full": "（无摘要，仅标题）该标题指出一项关于系外行星成像的研究，其目标是在望远镜稳定性极限以下对系外行星进行成像。",
         "refs": {
@@ -541,14 +474,14 @@
           "title": "Mysterious gas on Mars suggests magma below",
           "url": "https://www.astronomy.com/science/mysterious-gas-on-mars-suggests-magma-below/",
           "source": "Astronomy Magazine",
-          "score": 60.8,
+          "score": 60.4,
           "published_at": "2026-11-09T15:15:08+00:00"
         },
         {
           "title": "Imaging exoplanets below the telescope stability limit",
           "url": "https://www.nature.com/articles/s41586-026-11213-z",
           "source": "Nature 天文和天体物理",
-          "score": 57.0,
+          "score": 56.7,
           "published_at": "2026-11-04T00:00:00+00:00"
         }
       ],
@@ -559,6 +492,81 @@
         "telescope",
         "stability"
       ],
+      "rank": 7,
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "autotune",
+        "constraints",
+        "detectors",
+        "glitch",
+        "gravitational",
+        "gravitational wave",
+        "nasa",
+        "pulsar",
+        "reveal",
+        "scientists",
+        "signals",
+        "vela",
+        "wave",
+        "waves",
+        "worlds"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "LIGO",
+        "NASA 快讯"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-10T17:50:34.763822+00:00",
+      "representative": {
+        "title": "NASA Scientists Show How Gravitational Waves Can Reveal New Worlds",
+        "url": "https://science.nasa.gov/missions/lisa/gravitational-waves-can-reveal-new-worlds/",
+        "source": "NASA 快讯",
+        "published_at": "2026-11-10T16:00:26+00:00",
+        "score": 62.6,
+        "summary": "The LISA (Laser Interferometer Space Antenna) observatory, now in development, will detect gravitational waves, the tiny ripples in space-time caused by orbiting masses. Now two studies led by NASA astrophysicists show in new detail how LIS",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "NASA Scientists Show How Gravitational Waves Can Reveal New Worlds",
+      "id": "96ad2e3f1d18",
+      "links": [
+        {
+          "title": "NASA Scientists Show How Gravitational Waves Can Reveal New Worlds",
+          "url": "https://science.nasa.gov/missions/lisa/gravitational-waves-can-reveal-new-worlds/",
+          "source": "NASA 快讯",
+          "score": 62.6,
+          "published_at": "2026-11-10T16:00:26+00:00"
+        },
+        {
+          "title": "Gravitational wave detectors can now ‘autotune’ their signals",
+          "url": "https://ligo.org/gravitational-wave-detectors-can-now-autotune-their-signals/",
+          "source": "LIGO",
+          "score": 42.7,
+          "published_at": "2026-05-13T01:34:22+00:00"
+        },
+        {
+          "title": "Constraints on gravitational waves from the 2024 Vela pulsar glitch",
+          "url": "https://ligo.org/constraints-on-gravitational-waves-from-the-2024-vela-pulsar-glitch/",
+          "source": "LIGO",
+          "score": 42.7,
+          "published_at": "2026-02-25T04:06:26+00:00"
+        }
+      ],
+      "top_terms": [
+        "gravitational",
+        "waves",
+        "nasa",
+        "scientists",
+        "reveal"
+      ],
       "rank": 8,
       "trend": "new",
       "trendPct": null,
@@ -568,133 +576,153 @@
     },
     {
       "terms": [
-        "base",
-        "called",
-        "cave",
-        "destina",
-        "estudiantil",
-        "future",
-        "gimli",
-        "lares",
-        "lunar",
-        "mill",
-        "moon",
-        "nasa",
-        "reto",
-        "robot"
+        "black",
+        "dark",
+        "even",
+        "explain",
+        "hold",
+        "holes",
+        "matter",
+        "primordial",
+        "ruled",
+        "source",
+        "stupendous",
+        "stupendously"
       ],
-      "source_count": 2,
-      "signal_count": 1,
+      "source_count": 3,
+      "signal_count": 0,
       "sources": [
-        "NASA 快讯",
-        "New Scientist 太空"
+        "Nature 天文和天体物理",
+        "New Scientist 太空",
+        "Phys.org 太空新闻"
       ],
-      "score": 21.0,
-      "latest_at": "2026-11-10T04:08:03.296290+00:00",
+      "score": 0.0,
+      "latest_at": "2026-11-10T17:50:34.763822+00:00",
       "representative": {
-        "title": "La NASA destina un millón de dólares al reto estudiantil Base Lunar",
-        "url": "https://www.nasa.gov/news-release/la-nasa-destina-un-millon-de-dolares-al-reto-estudiantil-base-lunar/",
-        "source": "NASA 快讯",
-        "published_at": "2026-11-09T17:36:33+00:00",
-        "score": 60.9,
-        "summary": "Read this release in English here.El domingo 8 de noviembre de 2026, la NASA anunció la convocatoria del reto estudiantil Base Lunar, dotado con un millón de dólares, durante un acto de MAX POWER celebrado en el Complejo de Visitantes del C",
-        "zh_full": null,
-        "llm_score": 42.5
+        "title": "Even stupendous black holes can’t explain dark matter",
+        "url": "https://www.nature.com/articles/d41586-026-03386-4",
+        "source": "Nature 天文和天体物理",
+        "published_at": "2026-10-29T00:00:00+00:00",
+        "score": 57.5,
+        "summary": "",
+        "zh_full": "（无摘要，仅标题）即使是巨大的黑洞也无法解释暗物质。",
+        "refs": {
+          "doi": "10.1038/d41586-026-03386-4",
+          "via": "self_meta",
+          "confidence": "verified"
+        },
+        "llm_summary": "即使是巨大的黑洞也无法解释暗物质。",
+        "density": "低"
       },
-      "folded_count": 1,
-      "title": "La NASA destina un millón de dólares al reto estudiantil Base Lunar",
-      "id": "692497ee7513",
+      "folded_count": 2,
+      "title": "Even stupendous black holes can’t explain dark matter",
+      "id": "defae32eb52b",
       "links": [
         {
-          "title": "La NASA destina un millón de dólares al reto estudiantil Base Lunar",
-          "url": "https://www.nasa.gov/news-release/la-nasa-destina-un-millon-de-dolares-al-reto-estudiantil-base-lunar/",
-          "source": "NASA 快讯",
-          "score": 60.9,
-          "published_at": "2026-11-09T17:36:33+00:00"
+          "title": "Even stupendous black holes can’t explain dark matter",
+          "url": "https://www.nature.com/articles/d41586-026-03386-4",
+          "source": "Nature 天文和天体物理",
+          "score": 57.5,
+          "published_at": "2026-10-29T00:00:00+00:00"
         },
         {
-          "title": "A robot called GIMLI will explore a lunar cave for a future moon base",
-          "url": "https://www.newscientist.com/article/2597780-a-robot-called-gimli-will-explore-a-lunar-cave-for-a-future-moon-base/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "title": "'Stupendously large' primordial black holes ruled out as a dark matter source",
+          "url": "https://phys.org/news/2026-11-stupendously-large-primordial-black-holes.html",
+          "source": "Phys.org 太空新闻",
+          "score": 38.7,
+          "published_at": "2026-11-08T14:40:01+00:00"
+        },
+        {
+          "title": "Could primordial black holes hold the key to dark matter?",
+          "url": "https://www.newscientist.com/video/2597265-could-primordial-black-holes-hold-the-key-to-dark-matter/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 58.6,
-          "published_at": "2026-11-06T09:00:00+00:00"
+          "score": 37.2,
+          "published_at": "2026-11-04T18:00:00+00:00"
         }
       ],
       "top_terms": [
-        "base",
-        "lunar",
-        "nasa",
-        "destina",
-        "mill"
+        "black",
+        "holes",
+        "dark",
+        "matter",
+        "primordial"
       ],
       "rank": 9,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 21.0,
-      "status": "关注中"
+      "heat": 0.0,
+      "status": "发酵中"
     },
     {
       "terms": [
-        "calendar",
-        "full",
-        "high-orbit",
+        "artemis",
+        "astronauts",
+        "community",
+        "flight",
+        "grow",
+        "looking",
+        "medicine",
         "moon",
-        "phases",
-        "satellites",
-        "travel",
-        "when"
+        "nasa",
+        "program",
+        "sights",
+        "space",
+        "students",
+        "takes",
+        "want"
       ],
       "source_count": 2,
-      "signal_count": 1,
+      "signal_count": 0,
       "sources": [
-        "Astronomy Magazine",
-        "MIT News 太空探索"
+        "MIT News 太空探索",
+        "Phys.org 太空新闻"
       ],
-      "score": 21.0,
-      "latest_at": "2026-11-10T04:08:03.296290+00:00",
+      "score": 0.0,
+      "latest_at": "2026-11-10T17:50:34.763822+00:00",
       "representative": {
-        "title": "High-orbit satellites could light the way for travel to the moon",
-        "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
+        "title": "For students with their sights set on space medicine, a new community takes flight",
+        "url": "https://news.mit.edu/2026/mit-doctors-without-gravity-takes-flight-1021",
         "source": "MIT News 太空探索",
-        "published_at": "2026-08-10T18:10:00+00:00",
-        "score": 41.2,
-        "summary": "Acting as cooperative optical beacons, the satellites could provide GPS-like navigation and communications support for spacecraft operating across cislunar space.",
-        "zh_full": "（无摘要，仅标题）",
-        "llm_summary": "（无摘要，仅标题）",
-        "density": "低"
+        "published_at": "2026-10-21T20:40:00+00:00",
+        "score": 28.7,
+        "summary": "MIT’s Doctors Without Gravity club connects health and space science enthusiasts.",
+        "zh_full": "麻省理工学院（MIT）新成立的学生社团“无重力医生”（Doctors Without Gravity）正式启动，旨在为有志于太空医学领域的学生搭建交流平台。该社团将健康科学与太空探索爱好者聚集在一起，通过组织讲座、参观和讨论等活动，帮助成员了解航天医学的前沿课题，包括微重力环境对人体生理的影响、宇航员健康监测以及未来深空任务中的医疗挑战。社团的成立反映了太空医学作为交叉学科的日益增长的兴趣，也为学生提供了将医学知识应用于太空探索的实践机会。",
+        "llm_summary": "MIT学生成立“无重力医生”社团，连接健康科学与太空探索爱好者，为对太空医学感兴趣的学生提供交流与学习平台。",
+        "llm_reason": "介绍新兴学生社团，反映太空医学兴趣增长",
+        "density": "中"
       },
       "folded_count": 1,
-      "title": "High-orbit satellites could light the way for travel to the moon",
-      "id": "9ce52c24f555",
+      "title": "For students with their sights set on space medicine, a new community takes flight",
+      "id": "0bfe71fab392",
       "links": [
         {
-          "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
-          "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
-          "source": "Astronomy Magazine",
-          "score": 60.8,
-          "published_at": "2026-11-09T13:28:09+00:00"
+          "title": "Want to fly to the moon? NASA is looking for new astronauts to help grow its Artemis program",
+          "url": "https://phys.org/news/2026-11-fly-moon-nasa-astronauts-artemis.html",
+          "source": "Phys.org 太空新闻",
+          "score": 59.7,
+          "published_at": "2026-11-08T11:45:12+00:00"
         },
         {
-          "title": "High-orbit satellites could light the way for travel to the moon",
-          "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
+          "title": "For students with their sights set on space medicine, a new community takes flight",
+          "url": "https://news.mit.edu/2026/mit-doctors-without-gravity-takes-flight-1021",
           "source": "MIT News 太空探索",
-          "score": 41.2,
-          "published_at": "2026-08-10T18:10:00+00:00"
+          "score": 28.7,
+          "published_at": "2026-10-21T20:40:00+00:00"
         }
       ],
       "top_terms": [
+        "want",
+        "fly",
         "moon",
-        "full",
-        "calendar",
-        "when",
-        "see"
+        "nasa",
+        "looking"
       ],
       "rank": 10,
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "new",
+      "trendPct": null,
       "badges": [],
-      "heat": 21.0,
+      "heat": 0.0,
       "status": "关注中"
     }
   ]
