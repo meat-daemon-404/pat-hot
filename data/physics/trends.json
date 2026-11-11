@@ -1,75 +1,63 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T01:57:12.121737+00:00",
-  "weekStart": "2026-11-05",
+  "generatedAt": "2026-11-11T17:55:17.741065+00:00",
+  "weekStart": "2026-11-06",
   "windowDays": 7,
-  "windowStart": "2026-11-05",
-  "windowEnd": "2026-11-11",
-  "prevStart": "2026-10-29",
-  "prevEnd": "2026-11-04",
+  "windowStart": "2026-11-06",
+  "windowEnd": "2026-11-12",
+  "prevStart": "2026-10-30",
+  "prevEnd": "2026-11-05",
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 2541.4,
-      "lastWeek": 587.7,
-      "deltaPct": 332.4
+      "thisWeek": 2470.9,
+      "lastWeek": 931.4,
+      "deltaPct": 165.3
     },
     {
       "category": "其他",
-      "thisWeek": 1246.4,
-      "lastWeek": 1046.1,
-      "deltaPct": 19.1
+      "thisWeek": 1123.8,
+      "lastWeek": 1053.0,
+      "deltaPct": 6.7
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 745.1,
-      "lastWeek": 419.1,
-      "deltaPct": 77.8
+      "thisWeek": 638.0,
+      "lastWeek": 577.6,
+      "deltaPct": 10.5
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 562.4,
-      "lastWeek": 182.9,
-      "deltaPct": 207.5
+      "thisWeek": 536.1,
+      "lastWeek": 322.8,
+      "deltaPct": 66.1
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 203.4,
+      "thisWeek": 203.0,
       "lastWeek": 183.0,
-      "deltaPct": 11.1
+      "deltaPct": 10.9
     },
     {
       "category": "等离子体",
-      "thisWeek": 148.6,
-      "lastWeek": 51.2,
-      "deltaPct": 190.2
-    },
-    {
-      "category": "原子分子与光物理",
-      "thisWeek": 99.3,
-      "lastWeek": 45.7,
-      "deltaPct": 117.3
+      "thisWeek": 152.4,
+      "lastWeek": 102.0,
+      "deltaPct": 49.4
     },
     {
       "category": "统计物理与软物质",
       "thisWeek": 60.8,
       "lastWeek": 0,
       "deltaPct": 100.0
+    },
+    {
+      "category": "原子分子与光物理",
+      "thisWeek": 37.4,
+      "lastWeek": 107.6,
+      "deltaPct": -65.2
     }
   ],
   "newTopics": [
-    {
-      "topic_id": "125f0822b778",
-      "title": "Quantum error correcting codes from quiver moduli: Grassmannians, cyclic monodromy, and argyle collision divisors",
-      "score": 150.3,
-      "days": 1
-    },
-    {
-      "topic_id": "aeb13878a821",
-      "title": "Tunable optically-induced transmission grating via interacting dark resonances of microwave-driven Rydberg atoms",
-      "score": 123.8,
-      "days": 1
-    },
     {
       "topic_id": "6495d6c43e0a",
       "title": "Imaging multi-particle dynamics in space and time",
@@ -107,15 +95,27 @@
       "days": 1
     },
     {
-      "topic_id": "ccb9c095e519",
-      "title": "Noise-Induced Topology in Chiral Quantum Walks",
+      "topic_id": "5595e9386b1a",
+      "title": "Physical regimes of quartic quantum advantage in elastic media simulation",
       "score": 107.5,
       "days": 1
     },
     {
-      "topic_id": "5595e9386b1a",
-      "title": "Physical regimes of quartic quantum advantage in elastic media simulation",
-      "score": 107.5,
+      "topic_id": "15b7d74f8343",
+      "title": "New algorithm improves phase readout for space-based gravitational wave detection",
+      "score": 106.0,
+      "days": 1
+    },
+    {
+      "topic_id": "f8ac949c0e45",
+      "title": "Designing additives for perovskite transistors using molecular polarity as a guide",
+      "score": 103.2,
+      "days": 1
+    },
+    {
+      "topic_id": "0269b1a75ab0",
+      "title": "Software-defined polarization-diversity continuous-variable quantum key distribution heterodyne receiver",
+      "score": 62.0,
       "days": 1
     }
   ],

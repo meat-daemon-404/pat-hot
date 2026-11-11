@@ -1,93 +1,81 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T01:57:12.121737+00:00",
-  "weekStart": "2026-11-05",
+  "generatedAt": "2026-11-11T17:55:17.741065+00:00",
+  "weekStart": "2026-11-06",
   "windowDays": 7,
-  "windowStart": "2026-11-05",
-  "windowEnd": "2026-11-11",
-  "prevStart": "2026-10-29",
-  "prevEnd": "2026-11-04",
+  "windowStart": "2026-11-06",
+  "windowEnd": "2026-11-12",
+  "prevStart": "2026-10-30",
+  "prevEnd": "2026-11-05",
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4472.0,
-      "lastWeek": 4479.9,
-      "deltaPct": -0.2
+      "thisWeek": 4214.1,
+      "lastWeek": 4709.9,
+      "deltaPct": -10.5
     },
     {
       "category": "科研进展",
-      "thisWeek": 3691.2,
-      "lastWeek": 3067.7,
-      "deltaPct": 20.3
+      "thisWeek": 3554.8,
+      "lastWeek": 3422.0,
+      "deltaPct": 3.9
     },
     {
       "category": "光通信",
-      "thisWeek": 2958.2,
-      "lastWeek": 3431.6,
+      "thisWeek": 2965.2,
+      "lastWeek": 3440.2,
       "deltaPct": -13.8
     },
     {
       "category": "产业与资本",
-      "thisWeek": 2780.3,
-      "lastWeek": 2922.0,
-      "deltaPct": -4.8
+      "thisWeek": 2828.1,
+      "lastWeek": 2874.4,
+      "deltaPct": -1.6
     },
     {
       "category": "其他",
-      "thisWeek": 2523.2,
-      "lastWeek": 2727.1,
-      "deltaPct": -7.5
+      "thisWeek": 2477.7,
+      "lastWeek": 2809.4,
+      "deltaPct": -11.8
     },
     {
       "category": "通信与算力",
-      "thisWeek": 2067.6,
-      "lastWeek": 1849.4,
-      "deltaPct": 11.8
-    },
-    {
-      "category": "光学元件与成像",
-      "thisWeek": 1430.4,
-      "lastWeek": 1545.6,
-      "deltaPct": -7.5
+      "thisWeek": 2217.3,
+      "lastWeek": 1686.8,
+      "deltaPct": 31.5
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1315.7,
-      "lastWeek": 1611.8,
-      "deltaPct": -18.4
+      "thisWeek": 1377.9,
+      "lastWeek": 1781.7,
+      "deltaPct": -22.7
+    },
+    {
+      "category": "光学元件与成像",
+      "thisWeek": 1337.9,
+      "lastWeek": 1659.9,
+      "deltaPct": -19.4
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 1007.4,
-      "lastWeek": 750.0,
-      "deltaPct": 34.3
+      "thisWeek": 947.9,
+      "lastWeek": 809.5,
+      "deltaPct": 17.1
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 322.0,
-      "lastWeek": 368.1,
-      "deltaPct": -12.5
+      "thisWeek": 424.5,
+      "lastWeek": 322.0,
+      "deltaPct": 31.8
     },
     {
       "category": "光伏与新能源",
-      "thisWeek": 51.1,
+      "thisWeek": 106.7,
       "lastWeek": 0,
       "deltaPct": 100.0
     }
   ],
   "newTopics": [
-    {
-      "topic_id": "0cf1b8f7e281",
-      "title": "Crystal advances will help power next-gen fusion laser systems",
-      "score": 523.0,
-      "days": 5
-    },
-    {
-      "topic_id": "cd3547fd9611",
-      "title": "营收增长74.28%，净利润增长109.99%，光纤激光大厂“爆发”！",
-      "score": 455.0,
-      "days": 7
-    },
     {
       "topic_id": "80632c0b00ac",
       "title": "Photonics Hot List: November 6, 2026",
@@ -107,20 +95,14 @@
       "days": 4
     },
     {
-      "topic_id": "5834db255c7d",
+      "topic_id": "d633e4510286",
       "title": "Get ready for Photonics West 2027!",
-      "score": 332.4,
+      "score": 319.3,
       "days": 1
     },
     {
-      "topic_id": "13a8f78069ac",
-      "title": "Standardizing CPO won't matter if the substrate supply chain can’t keep up",
-      "score": 278.5,
-      "days": 5
-    },
-    {
-      "topic_id": "cd41d9ad7b58",
-      "title": "广西通信管理局传达学习贯彻党的二十届五中全会精神",
+      "topic_id": "cff3effabe29",
+      "title": "贵州通信管理局传达学习贯彻党的二十届五中全会精神",
       "score": 238.6,
       "days": 1
     },
@@ -131,10 +113,28 @@
       "days": 1
     },
     {
-      "topic_id": "1b38e21d6bfa",
-      "title": "Colloidal 2D WS2 nanosheets exhibiting high-purity single photon emission",
-      "score": 189.6,
+      "topic_id": "32e4064150f6",
+      "title": "光模块大涨的几个原因!",
+      "score": 190.1,
       "days": 1
+    },
+    {
+      "topic_id": "f6c305112941",
+      "title": "宁夏通信管理局党组开展党的二十届五中全会精神专题学习",
+      "score": 177.0,
+      "days": 1
+    },
+    {
+      "topic_id": "427b9986ec32",
+      "title": "PODCAST | Expert Insights: Photonics & Quantum Computing",
+      "score": 167.1,
+      "days": 3
+    },
+    {
+      "topic_id": "63bca5363b6b",
+      "title": "Shaping light to see deeper inside biological tissue",
+      "score": 167.0,
+      "days": 5
     }
   ],
   "sustainedTopics": [
@@ -148,7 +148,7 @@
       "topic_id": "9f8710ab3d29",
       "title": "华工科技：2026年上半年，光互联业务营收38.03亿元",
       "days": 15,
-      "score": 1477.7
+      "score": 1420.9
     },
     {
       "topic_id": "ff9baccacead",
@@ -195,8 +195,8 @@
     {
       "topic_id": "983065fbf898",
       "title": "PODCAST: Meet Andrew Strikwerda, COMSOL",
-      "days": 10,
-      "score": 502.4
+      "days": 9,
+      "score": 439.6
     }
   ]
 }

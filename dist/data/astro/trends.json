@@ -1,48 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T01:57:12.121737+00:00",
-  "weekStart": "2026-11-05",
+  "generatedAt": "2026-11-11T17:55:17.741065+00:00",
+  "weekStart": "2026-11-06",
   "windowDays": 7,
-  "windowStart": "2026-11-05",
-  "windowEnd": "2026-11-11",
-  "prevStart": "2026-10-29",
-  "prevEnd": "2026-11-04",
+  "windowStart": "2026-11-06",
+  "windowEnd": "2026-11-12",
+  "prevStart": "2026-10-30",
+  "prevEnd": "2026-11-05",
   "categoryDelta": [
     {
-      "category": "科研进展",
-      "thisWeek": 2024.2,
-      "lastWeek": 1081.9,
-      "deltaPct": 87.1
+      "category": "深空探测",
+      "thisWeek": 1877.3,
+      "lastWeek": 1673.1,
+      "deltaPct": 12.2
     },
     {
-      "category": "深空探测",
-      "thisWeek": 1919.5,
-      "lastWeek": 1459.1,
-      "deltaPct": 31.6
+      "category": "科研进展",
+      "thisWeek": 1777.2,
+      "lastWeek": 1344.3,
+      "deltaPct": 32.2
     },
     {
       "category": "星系与宇宙学",
-      "thisWeek": 1371.5,
-      "lastWeek": 623.9,
-      "deltaPct": 119.8
-    },
-    {
-      "category": "其他",
-      "thisWeek": 1303.7,
-      "lastWeek": 1632.2,
-      "deltaPct": -20.1
+      "thisWeek": 1250.0,
+      "lastWeek": 1015.6,
+      "deltaPct": 23.1
     },
     {
       "category": "恒星与星际介质",
-      "thisWeek": 910.8,
-      "lastWeek": 933.4,
-      "deltaPct": -2.4
+      "thisWeek": 1169.9,
+      "lastWeek": 891.2,
+      "deltaPct": 31.3
+    },
+    {
+      "category": "其他",
+      "thisWeek": 1166.8,
+      "lastWeek": 1680.1,
+      "deltaPct": -30.6
     },
     {
       "category": "太阳与空间物理",
-      "thisWeek": 182.1,
+      "thisWeek": 218.0,
       "lastWeek": 62.3,
-      "deltaPct": 192.3
+      "deltaPct": 249.9
     },
     {
       "category": "引力波",
@@ -65,21 +65,15 @@
       "days": 1
     },
     {
-      "topic_id": "785cd3e6fe07",
-      "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
-      "score": 173.5,
-      "days": 1
+      "topic_id": "f8436b6bf3df",
+      "title": "Independent interferometric observable confirms black hole shadow in M87*",
+      "score": 121.9,
+      "days": 2
     },
     {
-      "topic_id": "4e78dc2f24d5",
-      "title": "NASA Astronauts to Answer Questions from Florida Students",
-      "score": 124.1,
-      "days": 1
-    },
-    {
-      "topic_id": "1c1279a4bf0f",
-      "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
-      "score": 120.6,
+      "topic_id": "92f0e29c9302",
+      "title": "Iconic first image of black hole holds up to scrutiny",
+      "score": 121.8,
       "days": 2
     },
     {
@@ -95,21 +89,27 @@
       "days": 1
     },
     {
-      "topic_id": "091433c2113a",
-      "title": "Even stupendous black holes can’t explain dark matter",
-      "score": 104.8,
-      "days": 1
-    },
-    {
       "topic_id": "8226419750b8",
       "title": "Enhancing Gravitational Waves from Global Strings via a First-Order Phase Transition",
       "score": 100.2,
       "days": 1
     },
     {
-      "topic_id": "4b4d483ae713",
-      "title": "NASA Scientists Show How Gravitational Waves Can Reveal New Worlds",
-      "score": 100.0,
+      "topic_id": "c2d62afd9e7a",
+      "title": "DarkMatterFM-Registry: A Machine-Readable Registry of Dark-Matter Models Extracted from the arXiv Literature",
+      "score": 97.0,
+      "days": 1
+    },
+    {
+      "topic_id": "a6da897a485d",
+      "title": "The edge of the Sun",
+      "score": 96.9,
+      "days": 1
+    },
+    {
+      "topic_id": "787690f85aea",
+      "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
+      "score": 94.6,
       "days": 1
     }
   ],
