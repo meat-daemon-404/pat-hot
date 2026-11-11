@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T17:50:34.763822+00:00",
+  "generatedAt": "2026-11-11T01:57:12.121737+00:00",
   "weekStart": "2026-11-05",
   "windowDays": 7,
   "windowStart": "2026-11-05",
@@ -10,21 +10,21 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4345.1,
+      "thisWeek": 4472.0,
       "lastWeek": 4479.9,
-      "deltaPct": -3.0
+      "deltaPct": -0.2
     },
     {
       "category": "科研进展",
-      "thisWeek": 3586.3,
+      "thisWeek": 3691.2,
       "lastWeek": 3067.7,
-      "deltaPct": 16.9
+      "deltaPct": 20.3
     },
     {
       "category": "光通信",
-      "thisWeek": 2947.6,
+      "thisWeek": 2958.2,
       "lastWeek": 3431.6,
-      "deltaPct": -14.1
+      "deltaPct": -13.8
     },
     {
       "category": "产业与资本",
@@ -34,33 +34,33 @@
     },
     {
       "category": "其他",
-      "thisWeek": 2493.6,
+      "thisWeek": 2523.2,
       "lastWeek": 2727.1,
-      "deltaPct": -8.6
+      "deltaPct": -7.5
     },
     {
       "category": "通信与算力",
-      "thisWeek": 2079.9,
+      "thisWeek": 2067.6,
       "lastWeek": 1849.4,
-      "deltaPct": 12.5
+      "deltaPct": 11.8
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1443.1,
+      "thisWeek": 1430.4,
       "lastWeek": 1545.6,
-      "deltaPct": -6.6
+      "deltaPct": -7.5
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1316.7,
+      "thisWeek": 1315.7,
       "lastWeek": 1611.8,
-      "deltaPct": -18.3
+      "deltaPct": -18.4
     },
     {
       "category": "光电芯片与半导体",
-      "thisWeek": 1008.2,
+      "thisWeek": 1007.4,
       "lastWeek": 750.0,
-      "deltaPct": 34.4
+      "deltaPct": 34.3
     },
     {
       "category": "光传感与激光雷达",
@@ -107,15 +107,9 @@
       "days": 4
     },
     {
-      "topic_id": "d633e4510286",
+      "topic_id": "5834db255c7d",
       "title": "Get ready for Photonics West 2027!",
-      "score": 319.3,
-      "days": 1
-    },
-    {
-      "topic_id": "93ce29c2e4a8",
-      "title": "广西通信管理局传达学习贯彻党的二十届五中全会精神",
-      "score": 303.2,
+      "score": 332.4,
       "days": 1
     },
     {
@@ -123,6 +117,12 @@
       "title": "Standardizing CPO won't matter if the substrate supply chain can’t keep up",
       "score": 278.5,
       "days": 5
+    },
+    {
+      "topic_id": "cd41d9ad7b58",
+      "title": "广西通信管理局传达学习贯彻党的二十届五中全会精神",
+      "score": 238.6,
+      "days": 1
     },
     {
       "topic_id": "c6b7eda62a5c",
@@ -195,8 +195,8 @@
     {
       "topic_id": "983065fbf898",
       "title": "PODCAST: Meet Andrew Strikwerda, COMSOL",
-      "days": 9,
-      "score": 471.0
+      "days": 10,
+      "score": 502.4
     }
   ]
 }

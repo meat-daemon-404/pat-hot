@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T17:50:34.763822+00:00",
+  "generatedAt": "2026-11-11T01:57:12.121737+00:00",
   "weekStart": "2026-11-05",
   "windowDays": 7,
   "windowStart": "2026-11-05",
@@ -10,15 +10,15 @@
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 2531.5,
+      "thisWeek": 2541.4,
       "lastWeek": 587.7,
-      "deltaPct": 330.7
+      "deltaPct": 332.4
     },
     {
       "category": "其他",
-      "thisWeek": 1086.1,
+      "thisWeek": 1246.4,
       "lastWeek": 1046.1,
-      "deltaPct": 3.8
+      "deltaPct": 19.1
     },
     {
       "category": "凝聚态物理",
@@ -34,9 +34,9 @@
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 203.8,
+      "thisWeek": 203.4,
       "lastWeek": 183.0,
-      "deltaPct": 11.4
+      "deltaPct": 11.1
     },
     {
       "category": "等离子体",
@@ -83,6 +83,12 @@
       "days": 1
     },
     {
+      "topic_id": "4b62bb46fe86",
+      "title": "Physics-inspired Potts machines of coupled oscillators for low-energy sampling and combinatorial optimization",
+      "score": 114.2,
+      "days": 1
+    },
+    {
       "topic_id": "80633f50ae35",
       "title": "Neutral-atom quantum features as complementary structural encodings for graph learning",
       "score": 110.6,
@@ -110,12 +116,6 @@
       "topic_id": "5595e9386b1a",
       "title": "Physical regimes of quartic quantum advantage in elastic media simulation",
       "score": 107.5,
-      "days": 1
-    },
-    {
-      "topic_id": "6920a93661b7",
-      "title": "An unconditional distribution learning advantage with shallow quantum circuits",
-      "score": 62.2,
       "days": 1
     }
   ],
