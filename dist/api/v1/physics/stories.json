@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T17:55:17.741065+00:00",
+  "generatedAt": "2026-11-12T02:59:32.548507+00:00",
   "count": 10,
   "items": [
     {
@@ -10,7 +10,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-11-11T17:55:17.741065+00:00",
+      "latestAt": "2026-11-12T02:59:32.548507+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "arXiv quant-ph 论文速递"
@@ -20,22 +20,22 @@
           "title": "Double-quantum enhanced coherent control and magnetic sensing of spin defects in hexagonal boron nitride",
           "url": "https://arxiv.org/abs/2611.13447",
           "source": "arXiv quant-ph 论文速递",
-          "score": 47.3,
+          "score": 47.1,
           "published_at": "2026-11-11T05:00:00+00:00"
         },
         {
           "title": "III-nitride device integrates sensing and memory for in-sensor computing",
           "url": "https://phys.org/news/2026-11-iii-nitride-device-memory-sensor.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.6,
+          "score": 36.5,
           "published_at": "2026-11-11T13:40:09+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": "六方氮化硼（hBN）中的负电荷硼空位（V_B^-）自旋缺陷通过双量子相干控制实现了增强的相干操控和磁传感能力。该研究展示了在二维材料体系中利用双量子跃迁提高自旋相干时间，并用于高灵敏度磁场探测。此前该缺陷已被视为二维量子传感的候选体系，但单量子操控的相干性受限；新方法通过双量子相干通道克服了这一限制，为二维量子传感提供了更优的操控方案。",
-      "digestTitle": "hBN自旋缺陷实现双量子相干控制与磁传感",
+      "digest": null,
+      "digestTitle": null,
       "refs": {
         "arxiv": "2611.13447",
         "via": "feed_text",
@@ -49,7 +49,7 @@
       "heat": 42.0,
       "sourceCount": 2,
       "signalCount": 2,
-      "latestAt": "2026-11-11T17:55:17.741065+00:00",
+      "latestAt": "2026-11-12T02:59:32.548507+00:00",
       "sources": [
         "Phys.org 物理新闻",
         "arXiv quant-ph 论文速递"
@@ -59,150 +59,24 @@
           "title": "Quantized memory of measurement records near the light cone of quantum circuits",
           "url": "https://arxiv.org/abs/2611.13175",
           "source": "arXiv quant-ph 论文速递",
-          "score": 47.3,
+          "score": 47.1,
           "published_at": "2026-11-11T05:00:00+00:00"
         },
         {
           "title": "Classical–quantum light interactions could make complex quantum behavior easier to simulate",
           "url": "https://phys.org/news/2026-11-classicalquantum-interactions-complex-quantum-behavior.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.4,
+          "score": 36.2,
           "published_at": "2026-11-10T21:30:01+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
-      "digest": "量子处理器在电路运行中测量量子比特，其测量结果流是纠错、测量态制备和监控动力学的原始输出。一项新研究提出，测量记录在光锥附近存在量子化记忆效应，即测量结果对后续演化具有可量化的影响。该效应为理解量子电路的测量动力学提供了新框架，但尚未经实验验证。",
-      "digestTitle": "量子电路测量记录的光锥记忆效应",
+      "digest": null,
+      "digestTitle": null,
       "refs": {
         "arxiv": "2611.13175",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
-    },
-    {
-      "id": "a856d40b6647",
-      "title": "Structural and electronic properties of oxygen deficient HfO2-x thin films: from insulator to metal",
-      "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-11-11T17:55:17.741065+00:00",
-      "sources": [
-        "Nature Physics 学科聚合",
-        "Phys.org 物理新闻"
-      ],
-      "links": [
-        {
-          "title": "Structural and electronic properties of oxygen deficient HfO2-x thin films: from insulator to metal",
-          "url": "https://www.nature.com/articles/s41598-026-68628-x",
-          "source": "Nature Physics 学科聚合",
-          "score": 60.7,
-          "published_at": "2026-11-11T00:00:00+00:00"
-        },
-        {
-          "title": "Light reflecting within thin films can masquerade as molecular signals in perovskite solar materials",
-          "url": "https://phys.org/news/2026-11-thin-masquerade-molecular-perovskite-solar.html",
-          "source": "Phys.org 物理新闻",
-          "score": 36.0,
-          "published_at": "2026-11-09T22:00:14+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "refs": {
-        "doi": "10.1038/s41598-026-68628-x",
-        "via": "self_meta",
-        "confidence": "verified"
-      }
-    },
-    {
-      "id": "2f00f7536d49",
-      "title": "Finite Measured Entropy Production Does Not Imply Finite Microscopic Irreversibility",
-      "status": "关注中",
-      "heat": 42.0,
-      "sourceCount": 2,
-      "signalCount": 2,
-      "latestAt": "2026-11-11T17:55:17.741065+00:00",
-      "sources": [
-        "Nature Physics 学科聚合",
-        "arXiv quant-ph 论文速递"
-      ],
-      "links": [
-        {
-          "title": "Numerical investigation of the thermal-hydraulic performance of liquid-cooled oblique-cut-fin microchannel heat sink configurations",
-          "url": "https://www.nature.com/articles/s44435-026-00023-4",
-          "source": "Nature Physics 学科聚合",
-          "score": 60.7,
-          "published_at": "2026-11-11T00:00:00+00:00"
-        },
-        {
-          "title": "Finite Measured Entropy Production Does Not Imply Finite Microscopic Irreversibility",
-          "url": "https://arxiv.org/abs/2611.13110",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 47.3,
-          "published_at": "2026-11-11T05:00:00+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "refs": {
-        "arxiv": "2611.13110",
-        "via": "feed_text",
-        "confidence": "verified"
-      }
-    },
-    {
-      "id": "a91c893b8777",
-      "title": "The wave equation and two-electron atomic wavefunctions",
-      "status": "发酵中",
-      "heat": 35.3,
-      "sourceCount": 3,
-      "signalCount": 2,
-      "latestAt": "2026-11-11T17:55:17.741065+00:00",
-      "sources": [
-        "Nature 量子物理",
-        "Phys.org 物理新闻",
-        "arXiv quant-ph 论文速递"
-      ],
-      "links": [
-        {
-          "title": "Bound states in the continuum through quantum interference in ultracold atomic collisions",
-          "url": "https://www.nature.com/articles/s41567-026-03519-6",
-          "source": "Nature 量子物理",
-          "score": 64.2,
-          "published_at": "2026-11-09T00:00:00+00:00"
-        },
-        {
-          "title": "The wave equation and two-electron atomic wavefunctions",
-          "url": "https://arxiv.org/abs/2611.13320",
-          "source": "arXiv quant-ph 论文速递",
-          "score": 52.1,
-          "published_at": "2026-11-11T05:00:00+00:00"
-        },
-        {
-          "title": "Quantum interference keeps two atoms bound despite enough energy to break apart",
-          "url": "https://phys.org/news/2026-11-quantum-atoms-bound-energy.html",
-          "source": "Phys.org 物理新闻",
-          "score": 38.8,
-          "published_at": "2026-11-09T18:00:16+00:00"
-        }
-      ],
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "digest": null,
-      "digestTitle": null,
-      "llmScore": 36.5,
-      "refs": {
-        "arxiv": "2611.13320",
         "via": "feed_text",
         "confidence": "verified"
       }
@@ -214,7 +88,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-11-11T17:55:17.741065+00:00",
+      "latestAt": "2026-11-12T02:59:32.548507+00:00",
       "sources": [
         "Phys.org 物理新闻"
       ],
@@ -223,26 +97,26 @@
           "title": "New algorithm improves phase readout for space-based gravitational wave detection",
           "url": "https://phys.org/news/2026-11-algorithm-phase-readout-space-based.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.5,
+          "score": 35.4,
           "published_at": "2026-11-11T13:20:08+00:00"
         },
         {
           "title": "Scientists discover new way to control magnetic waves for future quantum technologies",
           "url": "https://phys.org/news/2026-11-scientists-magnetic-future-quantum-technologies.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.3,
+          "score": 35.1,
           "published_at": "2026-11-10T21:40:02+00:00"
         },
         {
           "title": "Changing magnetic dimensionality boosts spin-wave frequency in Cr₂₋δTe₂",
           "url": "https://phys.org/news/2026-11-magnetic-dimensionality-boosts-frequency-crte.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.2,
+          "score": 35.0,
           "published_at": "2026-11-10T16:00:05+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null
@@ -254,7 +128,7 @@
       "heat": 34.5,
       "sourceCount": 1,
       "signalCount": 3,
-      "latestAt": "2026-11-11T17:55:17.741065+00:00",
+      "latestAt": "2026-11-12T02:59:32.548507+00:00",
       "sources": [
         "arXiv quant-ph 论文速递"
       ],
@@ -263,26 +137,26 @@
           "title": "Quantum simulation of real-time bosonic dynamics with binary and unary position encodings on superconducting and trapped-ion processors",
           "url": "https://arxiv.org/abs/2611.13079",
           "source": "arXiv quant-ph 论文速递",
-          "score": 45.5,
+          "score": 45.2,
           "published_at": "2026-11-11T05:00:00+00:00"
         },
         {
           "title": "Exceptional points in non-Markovian quantum-state diffusion: From coefficient dynamics to state signatures",
           "url": "https://arxiv.org/abs/2611.13221",
           "source": "arXiv quant-ph 论文速递",
-          "score": 45.5,
+          "score": 45.2,
           "published_at": "2026-11-11T05:00:00+00:00"
         },
         {
           "title": "Sample complexity of learning fermionic and bosonic Gaussian states with single-copy and entangled measurements",
           "url": "https://arxiv.org/abs/2611.13428",
           "source": "arXiv quant-ph 论文速递",
-          "score": 45.5,
+          "score": 45.2,
           "published_at": "2026-11-11T05:00:00+00:00"
         }
       ],
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
@@ -293,13 +167,52 @@
       }
     },
     {
+      "id": "4056a1504cfe",
+      "title": "Observation of prethermal dynamical phase transitions and resonant melting",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-11-12T02:59:32.548507+00:00",
+      "sources": [
+        "Nature 量子物理",
+        "Phys.org 物理新闻"
+      ],
+      "links": [
+        {
+          "title": "Superconducting vortices provide experimental evidence that clogging is a phase transition",
+          "url": "https://phys.org/news/2026-11-superconducting-vortices-experimental-evidence-clogging.html",
+          "source": "Phys.org 物理新闻",
+          "score": 61.1,
+          "published_at": "2026-11-11T23:00:05+00:00"
+        },
+        {
+          "title": "Observation of prethermal dynamical phase transitions and resonant melting",
+          "url": "https://www.nature.com/articles/s41586-026-11225-9",
+          "source": "Nature 量子物理",
+          "score": 55.8,
+          "published_at": "2026-11-04T00:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "doi": "10.1038/s41586-026-11225-9",
+        "via": "self_meta",
+        "confidence": "verified"
+      }
+    },
+    {
       "id": "489551c4ab1f",
       "title": "On the hunt for dark matter",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-11T17:55:17.741065+00:00",
+      "latestAt": "2026-11-12T02:59:32.548507+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -309,7 +222,7 @@
           "title": "LHC collaboration presents first result in the hunt for 'quirks'",
           "url": "https://phys.org/news/2026-11-lhc-collaboration-result-quirks.html",
           "source": "Phys.org 物理新闻",
-          "score": 60.5,
+          "score": 60.2,
           "published_at": "2026-11-10T16:50:01+00:00"
         },
         {
@@ -323,8 +236,8 @@
       "trend": "flat",
       "trendPct": 0.0,
       "badges": [],
-      "digest": null,
-      "digestTitle": null
+      "digest": "LHC国际合作组公布了搜寻奇异夸克团（quirks）的首批实验结果，未发现此类假设粒子的存在迹象。奇异夸克团是理论物理学家提出的假想粒子，可能解释引力与其它三种基本力之间的巨大差异。该结果基于对碰撞数据的分析，设定了新的排除界限，但未证实该粒子的存在。",
+      "digestTitle": "LHC首次搜寻奇异夸克团结果公布"
     },
     {
       "id": "7eaf22780504",
@@ -333,7 +246,7 @@
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-11T17:55:17.741065+00:00",
+      "latestAt": "2026-11-12T02:59:32.548507+00:00",
       "sources": [
         "MIT News 物理",
         "Phys.org 物理新闻"
@@ -350,7 +263,7 @@
           "title": "Quantum could solve AI energy drain, says tech founder",
           "url": "https://phys.org/news/2026-11-quantum-ai-energy-tech-founder.html",
           "source": "Phys.org 物理新闻",
-          "score": 36.2,
+          "score": 36.0,
           "published_at": "2026-11-10T11:12:30+00:00"
         }
       ],
@@ -361,41 +274,126 @@
       "digestTitle": null
     },
     {
-      "id": "7b4eaf171832",
-      "title": "Synthetic 2D quantum materials from atomic weaving of 1D nanoribbons",
+      "id": "a856d40b6647",
+      "title": "Structural and electronic properties of oxygen deficient HfO2-x thin films: from insulator to metal",
       "status": "关注中",
       "heat": 21.0,
       "sourceCount": 2,
       "signalCount": 1,
-      "latestAt": "2026-11-11T17:55:17.741065+00:00",
+      "latestAt": "2026-11-12T02:59:32.548507+00:00",
       "sources": [
-        "Nature 量子物理",
+        "Nature Physics 学科聚合",
         "Phys.org 物理新闻"
       ],
       "links": [
         {
-          "title": "Synthetic 2D quantum materials from atomic weaving of 1D nanoribbons",
-          "url": "https://www.nature.com/articles/s42005-026-02936-6",
-          "source": "Nature 量子物理",
-          "score": 54.7,
-          "published_at": "2026-11-02T00:00:00+00:00"
+          "title": "Structural and electronic properties of oxygen deficient HfO2-x thin films: from insulator to metal",
+          "url": "https://www.nature.com/articles/s41598-026-68628-x",
+          "source": "Nature Physics 学科聚合",
+          "score": 60.4,
+          "published_at": "2026-11-11T00:00:00+00:00"
         },
         {
-          "title": "Atomic defects leave telltale optical fingerprints in quantum material",
-          "url": "https://phys.org/news/2026-11-atomic-defects-telltale-optical-fingerprints.html",
+          "title": "Light reflecting within thin films can masquerade as molecular signals in perovskite solar materials",
+          "url": "https://phys.org/news/2026-11-thin-masquerade-molecular-perovskite-solar.html",
           "source": "Phys.org 物理新闻",
-          "score": 35.9,
-          "published_at": "2026-11-09T19:40:09+00:00"
+          "score": 35.8,
+          "published_at": "2026-11-09T22:00:14+00:00"
         }
       ],
-      "trend": "flat",
-      "trendPct": 0.0,
+      "trend": "down",
+      "trendPct": -50.0,
       "badges": [],
       "digest": null,
       "digestTitle": null,
       "refs": {
-        "doi": "10.1038/s42005-026-02936-6",
+        "doi": "10.1038/s41598-026-68628-x",
         "via": "self_meta",
+        "confidence": "verified"
+      }
+    },
+    {
+      "id": "6c1a0addc536",
+      "title": "Single photon reflection from a quantum dot in a waveguide",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-11-12T02:59:32.548507+00:00",
+      "sources": [
+        "Nature Physics 学科聚合",
+        "Nature 量子物理"
+      ],
+      "links": [
+        {
+          "title": "Single photon reflection from a quantum dot in a waveguide",
+          "url": "https://www.nature.com/articles/s41467-026-78984-x",
+          "source": "Nature Physics 学科聚合",
+          "score": 61.9,
+          "published_at": "2026-11-11T00:00:00+00:00"
+        },
+        {
+          "title": "Bright and pure single-photon source in silicon by nanoscale positioning of a color center in a microcavity",
+          "url": "https://www.nature.com/articles/s41467-026-78809-x",
+          "source": "Nature 量子物理",
+          "score": 52.6,
+          "published_at": "2026-10-28T00:00:00+00:00"
+        },
+        {
+          "title": "A single-molecule spin–photon interface",
+          "url": "https://www.nature.com/articles/s41586-026-11147-6",
+          "source": "Nature 量子物理",
+          "score": 52.6,
+          "published_at": "2026-10-28T00:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "doi": "10.1038/s41467-026-78984-x",
+        "via": "self_meta",
+        "confidence": "verified"
+      }
+    },
+    {
+      "id": "8ea65f889d0b",
+      "title": "Kinematic Quantum Geometry",
+      "status": "关注中",
+      "heat": 21.0,
+      "sourceCount": 2,
+      "signalCount": 1,
+      "latestAt": "2026-11-12T02:59:32.548507+00:00",
+      "sources": [
+        "Nature 量子物理",
+        "arXiv quant-ph 论文速递"
+      ],
+      "links": [
+        {
+          "title": "A sublattice polarimeter to probe the quantum geometry of synthetic photonic lattices",
+          "url": "https://www.nature.com/articles/s41467-026-78322-1",
+          "source": "Nature 量子物理",
+          "score": 55.8,
+          "published_at": "2026-11-04T00:00:00+00:00"
+        },
+        {
+          "title": "Kinematic Quantum Geometry",
+          "url": "https://arxiv.org/abs/2611.13089",
+          "source": "arXiv quant-ph 论文速递",
+          "score": 47.1,
+          "published_at": "2026-11-11T05:00:00+00:00"
+        }
+      ],
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "digest": null,
+      "digestTitle": null,
+      "refs": {
+        "arxiv": "2611.13089",
+        "via": "feed_text",
         "confidence": "verified"
       }
     }

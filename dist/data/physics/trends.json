@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T17:55:17.741065+00:00",
+  "generatedAt": "2026-11-12T02:59:32.548507+00:00",
   "weekStart": "2026-11-06",
   "windowDays": 7,
   "windowStart": "2026-11-06",
@@ -10,39 +10,39 @@
   "categoryDelta": [
     {
       "category": "科研进展",
-      "thisWeek": 2470.9,
+      "thisWeek": 2569.9,
       "lastWeek": 931.4,
-      "deltaPct": 165.3
+      "deltaPct": 175.9
     },
     {
       "category": "其他",
-      "thisWeek": 1123.8,
+      "thisWeek": 1157.1,
       "lastWeek": 1053.0,
-      "deltaPct": 6.7
+      "deltaPct": 9.9
     },
     {
       "category": "凝聚态物理",
-      "thisWeek": 638.0,
+      "thisWeek": 698.7,
       "lastWeek": 577.6,
-      "deltaPct": 10.5
+      "deltaPct": 21.0
     },
     {
       "category": "量子信息与计算",
-      "thisWeek": 536.1,
+      "thisWeek": 535.0,
       "lastWeek": 322.8,
-      "deltaPct": 66.1
+      "deltaPct": 65.7
     },
     {
       "category": "高能与粒子物理",
-      "thisWeek": 203.0,
+      "thisWeek": 202.7,
       "lastWeek": 183.0,
-      "deltaPct": 10.9
+      "deltaPct": 10.8
     },
     {
       "category": "等离子体",
-      "thisWeek": 152.4,
+      "thisWeek": 155.6,
       "lastWeek": 102.0,
-      "deltaPct": 49.4
+      "deltaPct": 52.5
     },
     {
       "category": "统计物理与软物质",
@@ -58,6 +58,12 @@
     }
   ],
   "newTopics": [
+    {
+      "topic_id": "656ae4e4afa6",
+      "title": "Adaptive structural fusion for dielectric constant prediction using physics-guided graph neural networks",
+      "score": 114.9,
+      "days": 2
+    },
     {
       "topic_id": "6495d6c43e0a",
       "title": "Imaging multi-particle dynamics in space and time",
@@ -103,13 +109,7 @@
     {
       "topic_id": "15b7d74f8343",
       "title": "New algorithm improves phase readout for space-based gravitational wave detection",
-      "score": 106.0,
-      "days": 1
-    },
-    {
-      "topic_id": "f8ac949c0e45",
-      "title": "Designing additives for perovskite transistors using molecular polarity as a guide",
-      "score": 103.2,
+      "score": 105.5,
       "days": 1
     },
     {

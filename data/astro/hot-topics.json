@@ -1,27 +1,21 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T17:55:17.741065+00:00",
+  "generatedAt": "2026-11-12T02:59:32.548507+00:00",
   "count": 10,
   "items": [
     {
       "terms": [
         "black",
         "black hole",
-        "bright",
-        "centaurus",
         "confirms",
-        "edges",
         "hole",
+        "image",
         "independent",
         "interferometric",
-        "jets",
-        "mysterious",
+        "landmark",
         "observable",
-        "plasma",
-        "reproduce",
         "shadow",
-        "simulations",
-        "spotlight"
+        "validates"
       ],
       "source_count": 2,
       "signal_count": 2,
@@ -30,261 +24,53 @@
         "Phys.org 太空新闻"
       ],
       "score": 42.0,
-      "latest_at": "2026-11-11T17:55:17.741065+00:00",
+      "latest_at": "2026-11-12T02:59:32.548507+00:00",
       "representative": {
         "title": "Independent interferometric observable confirms black hole shadow in M87*",
         "url": "https://www.nature.com/articles/s41586-026-11241-9",
         "source": "Nature 天文和天体物理",
         "published_at": "2026-11-11T00:00:00+00:00",
-        "score": 60.7,
+        "score": 60.4,
         "summary": "",
-        "zh_full": null
+        "zh_full": "《自然·天文与天体物理》发表的一项研究，使用独立干涉观测量确认了M87*黑洞阴影的存在。该研究通过分析甚长基线干涉测量（VLBI）数据，验证了此前事件视界望远镜（EHT）合作组在2019年发布的M87*黑洞阴影图像。研究团队采用一种不依赖于传统成像方法的干涉观测量，直接检验了M87*周围辐射结构的对称性和尺寸，结果与EHT此前基于图像重建得出的结论一致。这一独立验证增强了M87*黑洞阴影观测结果的可靠性，表明该阴影并非成像处理过程中的伪影，而是真实的物理结构。该工作为今后黑洞阴影的观测研究提供了新的独立检验手段，有助于进一步约束黑洞质量、自旋及周围吸积流性质。",
+        "refs": {
+          "doi": "10.1038/s41586-026-11241-9",
+          "via": "self_meta",
+          "confidence": "verified"
+        },
+        "llm_summary": "一项新研究使用独立干涉观测量，确认了M87*黑洞阴影的存在。该结果与2019年事件视界望远镜发布的图像一致，排除了阴影是成像伪影的可能，为黑洞阴影观测提供了独立验证。",
+        "llm_reason": "独立验证黑洞阴影，增强观测可靠性",
+        "density": "高"
       },
       "folded_count": 1,
       "title": "Independent interferometric observable confirms black hole shadow in M87*",
-      "id": "f8436b6bf3df",
+      "id": "85f38e76fa81",
       "links": [
-        {
-          "title": "Centaurus A in the spotlight: Plasma simulations reproduce black hole jets' mysterious bright edges",
-          "url": "https://phys.org/news/2026-11-centaurus-spotlight-plasma-simulations-black.html",
-          "source": "Phys.org 太空新闻",
-          "score": 61.2,
-          "published_at": "2026-11-11T17:40:04+00:00"
-        },
         {
           "title": "Independent interferometric observable confirms black hole shadow in M87*",
           "url": "https://www.nature.com/articles/s41586-026-11241-9",
           "source": "Nature 天文和天体物理",
-          "score": 60.7,
+          "score": 60.4,
           "published_at": "2026-11-11T00:00:00+00:00"
+        },
+        {
+          "title": "Independent technique validates landmark M87* image",
+          "url": "https://phys.org/news/2026-11-independent-technique-validates-landmark-m87.html",
+          "source": "Phys.org 太空新闻",
+          "score": 36.6,
+          "published_at": "2026-11-12T00:00:04+00:00"
         }
       ],
       "top_terms": [
-        "black",
-        "hole",
-        "centaurus",
-        "spotlight",
-        "plasma"
+        "independent",
+        "m87",
+        "validates",
+        "landmark",
+        "image"
       ],
       "rank": 1,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "dark",
-        "exponential",
-        "galaxies",
-        "matter",
-        "mechanism",
-        "mysteries",
-        "probe",
-        "production",
-        "ultra-diffuse",
-        "ultra-heavy"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "Phys.org 太空新闻",
-        "arXiv astro-ph.CO 论文速递"
-      ],
-      "score": 42.0,
-      "latest_at": "2026-11-11T17:55:17.741065+00:00",
-      "representative": {
-        "title": "Ultra-Heavy Dark Matter Through Exponential Production Mechanism",
-        "url": "https://arxiv.org/abs/2611.13842",
-        "source": "arXiv astro-ph.CO 论文速递",
-        "published_at": "2026-11-11T05:00:00+00:00",
-        "score": 47.3,
-        "summary": "arXiv:2611.13842v1 Announce Type: cross Abstract: Exponential production of dark matter has been introduced recently as one of the alternatives to the widely studied thermal production of dark matter scenarios. This non-thermal production m",
-        "zh_full": null
-      },
-      "folded_count": 1,
-      "title": "Ultra-Heavy Dark Matter Through Exponential Production Mechanism",
-      "id": "454f33e8eb72",
-      "links": [
-        {
-          "title": "The ELT can probe ultra-diffuse galaxies and their dark matter mysteries",
-          "url": "https://phys.org/news/2026-11-elt-probe-ultra-diffuse-galaxies.html",
-          "source": "Phys.org 太空新闻",
-          "score": 60.0,
-          "published_at": "2026-11-09T23:00:12+00:00"
-        },
-        {
-          "title": "Ultra-Heavy Dark Matter Through Exponential Production Mechanism",
-          "url": "https://arxiv.org/abs/2611.13842",
-          "source": "arXiv astro-ph.CO 论文速递",
-          "score": 47.3,
-          "published_at": "2026-11-11T05:00:00+00:00"
-        }
-      ],
-      "top_terms": [
-        "ultra",
-        "dark",
-        "matter",
-        "elt",
-        "probe"
-      ],
-      "rank": 2,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "chandra",
-        "finds",
-        "giant",
-        "impostor",
-        "likely",
-        "observatory",
-        "outbursts",
-        "repeated",
-        "source",
-        "star",
-        "supernova",
-        "unmasks",
-        "x-ray"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "score": 42.0,
-      "latest_at": "2026-11-11T17:55:17.741065+00:00",
-      "representative": {
-        "title": "The Chandra X-Ray Observatory Unmasks a Supernova Impostor",
-        "url": "https://www.universetoday.com/articles/the-chandra-x-ray-observatory-unmasks-a-supernova-impostor",
-        "source": "Universe Today",
-        "published_at": "2026-11-11T16:41:55+00:00",
-        "score": 61.1,
-        "summary": "Some stars, called Luminous Blue Variables, can be confused with supernovae explosions. They exhibit similar outbursts, but unlike supernovae, which explode once and then are gone forever, these stars have periodic outbursts. New research f",
-        "zh_full": "某些被称为亮蓝变星的恒星可能被误认为超新星爆发，因为它们表现出类似的爆发，但与一次性爆炸后消失的超新星不同，这些恒星有周期性爆发。钱德拉X射线天文台的新研究发现，其中一个'超新星冒名顶替者'实际上与黑洞或中子星处于双星系统中，这解释了其周期性爆发的原因。该发现表明双星伴星的引力相互作用驱动了亮蓝变星的周期性爆发。",
-        "llm_summary": "钱德拉X射线天文台发现一颗'超新星冒名顶替者'亮蓝变星与黑洞或中子星构成双星系统，伴星引力作用解释了其周期性爆发。",
-        "llm_reason": "揭示亮蓝变星周期性爆发的双星机制",
-        "density": "高"
-      },
-      "folded_count": 1,
-      "title": "The Chandra X-Ray Observatory Unmasks a Supernova Impostor",
-      "id": "eb4c44811e08",
-      "links": [
-        {
-          "title": "The Chandra X-Ray Observatory Unmasks a Supernova Impostor",
-          "url": "https://www.universetoday.com/articles/the-chandra-x-ray-observatory-unmasks-a-supernova-impostor",
-          "source": "Universe Today",
-          "score": 61.1,
-          "published_at": "2026-11-11T16:41:55+00:00"
-        },
-        {
-          "title": "The supernova impostor: Chandra finds likely source of giant star's repeated outbursts",
-          "url": "https://phys.org/news/2026-11-supernova-impostor-chandra-source-giant.html",
-          "source": "Phys.org 太空新闻",
-          "score": 59.9,
-          "published_at": "2026-11-09T21:40:10+00:00"
-        }
-      ],
-      "top_terms": [
-        "chandra",
-        "supernova",
-        "impostor",
-        "ray",
-        "observatory"
-      ],
-      "rank": 3,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "heat": 42.0,
-      "status": "关注中"
-    },
-    {
-      "terms": [
-        "alien",
-        "appearing",
-        "astronomers",
-        "close",
-        "course",
-        "disappear",
-        "disappearing",
-        "enough",
-        "just",
-        "known",
-        "like",
-        "makes",
-        "nearby",
-        "neighbor",
-        "neighbour",
-        "planet",
-        "planets",
-        "reverse",
-        "rocky",
-        "sight",
-        "they",
-        "views",
-        "wobble",
-        "worlds"
-      ],
-      "source_count": 2,
-      "signal_count": 2,
-      "sources": [
-        "Phys.org 太空新闻",
-        "Universe Today"
-      ],
-      "score": 42.0,
-      "latest_at": "2026-11-11T17:55:17.741065+00:00",
-      "representative": {
-        "title": "Planets Don't Just Disappear, But They Can Wobble Out of Sight if Their Neighbour is Close Enough",
-        "url": "https://www.universetoday.com/articles/planets-dont-just-disappear-but-they-can-wobble-out-of-sight-if-their-neighbour-is-close-enough",
-        "source": "Universe Today",
-        "published_at": "2026-11-11T13:02:29+00:00",
-        "score": 37.5,
-        "summary": "TESS watched an exoplanet about 1,000 light years away as it repeatedly transited in front of its star for seven years. But astronomers were surprised to find that the hot Jupiter disappeared. Of course, planets don't just disappear. Someth",
-        "zh_full": null
-      },
-      "folded_count": 1,
-      "title": "Planets Don't Just Disappear, But They Can Wobble Out of Sight if Their Neighbour is Close Enough",
-      "id": "8df356d4c6db",
-      "links": [
-        {
-          "title": "Planets Don't Just Disappear, But They Can Wobble Out of Sight if Their Neighbour is Close Enough",
-          "url": "https://www.universetoday.com/articles/planets-dont-just-disappear-but-they-can-wobble-out-of-sight-if-their-neighbour-is-close-enough",
-          "source": "Universe Today",
-          "score": 37.5,
-          "published_at": "2026-11-11T13:02:29+00:00"
-        },
-        {
-          "title": "First known 'disappearing planet' has a neighbor that makes it wobble like a top",
-          "url": "https://phys.org/news/2026-11-planet-neighbor.html",
-          "source": "Phys.org 太空新闻",
-          "score": 36.9,
-          "published_at": "2026-11-09T21:20:20+00:00"
-        },
-        {
-          "title": "Two nearby rocky worlds could offer alien astronomers views of planets appearing to reverse course",
-          "url": "https://phys.org/news/2026-11-nearby-rocky-worlds-alien-astronomers.html",
-          "source": "Phys.org 太空新闻",
-          "score": 36.8,
-          "published_at": "2026-11-09T17:40:07+00:00"
-        }
-      ],
-      "top_terms": [
-        "planets",
-        "wobble",
-        "don",
-        "just",
-        "disappear"
-      ],
-      "rank": 4,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 42.0,
       "status": "关注中"
@@ -313,15 +99,20 @@
         "New Scientist 太空"
       ],
       "score": 42.0,
-      "latest_at": "2026-11-11T17:55:17.741065+00:00",
+      "latest_at": "2026-11-12T02:59:32.548507+00:00",
       "representative": {
         "title": "Iconic first image of black hole holds up to scrutiny",
         "url": "https://www.nature.com/articles/d41586-026-03642-7",
         "source": "Nature 天文和天体物理",
         "published_at": "2026-11-11T00:00:00+00:00",
-        "score": 60.7,
+        "score": 60.4,
         "summary": "",
         "zh_full": null,
+        "refs": {
+          "doi": "10.1038/d41586-026-03642-7",
+          "via": "self_meta",
+          "confidence": "verified"
+        },
         "llm_score": 68.0
       },
       "folded_count": 1,
@@ -332,123 +123,96 @@
           "title": "Re-analysis of black hole data proves iconic ring shape really is there",
           "url": "https://www.newscientist.com/article/2598415-re-analysis-of-black-hole-data-proves-iconic-ring-shape-really-is-there/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 61.1,
+          "score": 60.9,
           "published_at": "2026-11-11T16:00:00+00:00"
         },
         {
           "title": "Iconic first image of black hole holds up to scrutiny",
           "url": "https://www.nature.com/articles/d41586-026-03642-7",
           "source": "Nature 天文和天体物理",
-          "score": 60.7,
+          "score": 60.4,
           "published_at": "2026-11-11T00:00:00+00:00"
         }
       ],
       "top_terms": [
+        "iconic",
         "black",
         "hole",
-        "iconic",
-        "data",
-        "proves"
+        "image",
+        "holds"
       ],
-      "rank": 5,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 2,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 42.0,
       "status": "关注中"
     },
     {
       "terms": [
-        "aims",
-        "booster",
-        "catch",
-        "community",
-        "double",
-        "earth",
-        "flight",
-        "goes",
-        "innovation",
-        "land",
-        "medicine",
-        "mission-driven",
-        "orbital",
-        "safely",
-        "sights",
-        "space",
-        "spacex",
-        "stage",
-        "starship",
-        "students",
-        "supporting",
-        "takes"
+        "activities",
+        "away",
+        "discovered",
+        "epic",
+        "here",
+        "invites",
+        "join",
+        "journey",
+        "media",
+        "nasa",
+        "one-light",
+        "public",
+        "voyager"
       ],
-      "source_count": 3,
+      "source_count": 2,
       "signal_count": 2,
       "sources": [
-        "Astronomy Magazine",
-        "MIT News 太空探索",
+        "NASA 快讯",
         "New Scientist 太空"
       ],
-      "score": 35.3,
-      "latest_at": "2026-11-11T17:55:17.741065+00:00",
+      "score": 42.0,
+      "latest_at": "2026-11-12T02:59:32.548507+00:00",
       "representative": {
-        "title": "For students with their sights set on space medicine, a new community takes flight",
-        "url": "https://news.mit.edu/2026/mit-doctors-without-gravity-takes-flight-1021",
-        "source": "MIT News 太空探索",
-        "published_at": "2026-10-21T20:40:00+00:00",
-        "score": 32.1,
-        "summary": "MIT’s Doctors Without Gravity club connects health and space science enthusiasts.",
-        "zh_full": "麻省理工学院（MIT）新成立的学生社团“无重力医生”（Doctors Without Gravity）正式启动，旨在为有志于太空医学领域的学生搭建交流平台。该社团将健康科学与太空探索爱好者聚集在一起，通过组织讲座、参观和讨论等活动，帮助成员了解航天医学的前沿课题，包括微重力环境对人体生理的影响、宇航员健康监测以及未来深空任务中的医疗挑战。社团的成立反映了太空医学作为交叉学科的日益增长的兴趣，也为学生提供了将医学知识应用于太空探索的实践机会。",
-        "llm_summary": "MIT学生成立“无重力医生”社团，连接健康科学与太空探索爱好者，为对太空医学感兴趣的学生提供交流与学习平台。",
-        "llm_reason": "介绍新兴学生社团，反映太空医学兴趣增长",
-        "density": "中"
+        "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities",
+        "url": "https://www.nasa.gov/news-release/nasa-invites-media-public-to-join-voyager-1-one-light-day-activities/",
+        "source": "NASA 快讯",
+        "published_at": "2026-11-10T19:22:45+00:00",
+        "score": 60.3,
+        "summary": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth, which is more than 16 billion miles (25.9 billion kilometers). Voyager 1 is the most distant human-made object, and an",
+        "zh_full": null
       },
-      "folded_count": 2,
-      "title": "For students with their sights set on space medicine, a new community takes flight",
-      "id": "3c5212d539e5",
+      "folded_count": 1,
+      "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities",
+      "id": "d50713ff800a",
       "links": [
         {
-          "title": "SpaceX aims to safely land Starship and booster stage after orbital flight",
-          "url": "https://www.newscientist.com/article/2598233-spacex-aims-to-safely-land-starship-and-booster-stage-after-orbital-flight/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
+          "title": "Voyager is one light day away from us. Here’s what it discovered on its epic journey",
+          "url": "https://www.newscientist.com/article/2598369-voyager-is-one-light-day-away-from-us-heres-what-it-discovered-on-its-epic-journey/?utm_campaign=RSS|NSNS&utm_content=space&utm_medium=RSS&utm_source=NSNS",
           "source": "New Scientist 太空",
-          "score": 40.5,
-          "published_at": "2026-11-11T17:00:00+00:00"
+          "score": 60.6,
+          "published_at": "2026-11-11T08:00:00+00:00"
         },
         {
-          "title": "SpaceX goes for a Starship double catch",
-          "url": "https://www.astronomy.com/whats-launching-this-week/spacex-goes-for-a-starship-double-catch/",
-          "source": "Astronomy Magazine",
-          "score": 39.7,
-          "published_at": "2026-11-09T20:13:13+00:00"
-        },
-        {
-          "title": "For students with their sights set on space medicine, a new community takes flight",
-          "url": "https://news.mit.edu/2026/mit-doctors-without-gravity-takes-flight-1021",
-          "source": "MIT News 太空探索",
-          "score": 32.1,
-          "published_at": "2026-10-21T20:40:00+00:00"
-        },
-        {
-          "title": "Supporting mission-driven space innovation, for Earth and beyond",
-          "url": "https://news.mit.edu/2025/supporting-mission-driven-space-innovation-aurelia-institute-0710",
-          "source": "MIT News 太空探索",
-          "score": 28.5,
-          "published_at": "2025-07-10T04:00:00+00:00"
+          "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities",
+          "url": "https://www.nasa.gov/news-release/nasa-invites-media-public-to-join-voyager-1-one-light-day-activities/",
+          "source": "NASA 快讯",
+          "score": 60.3,
+          "published_at": "2026-11-10T19:22:45+00:00"
         }
       ],
       "top_terms": [
-        "spacex",
-        "starship",
-        "flight",
-        "space",
-        "aims"
+        "voyager",
+        "nasa",
+        "invites",
+        "media",
+        "public"
       ],
-      "rank": 6,
+      "rank": 3,
       "trend": "new",
       "trendPct": null,
       "badges": [],
-      "heat": 35.3,
-      "status": "发酵中"
+      "heat": 42.0,
+      "status": "关注中"
     },
     {
       "terms": [
@@ -474,13 +238,13 @@
         "Astronomy Magazine"
       ],
       "score": 34.5,
-      "latest_at": "2026-11-11T17:55:17.741065+00:00",
+      "latest_at": "2026-11-12T02:59:32.548507+00:00",
       "representative": {
         "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
         "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
         "source": "Astronomy Magazine",
         "published_at": "2026-11-11T14:40:36+00:00",
-        "score": 59.2,
+        "score": 59.0,
         "summary": "The phenomenon of a Full Moon arises when our planet, Earth, is precisely sandwiched between the Sun and the Moon. This alignment ensures the entire side of the Moon that faces us gleams under sunlight. Thanks to the Moon’s orbit around Ear",
         "zh_full": "满月现象发生在地球恰好位于太阳和月球之间时，此时月球面向地球的一面完全被阳光照亮。由于月球绕地球运行，阳光照射月球表面并反射回地球的角度不断变化，导致我们看到的月相随之改变。本文提供了2026年全月亮的日历，帮助读者了解何时可以观测到满月及其不同月相。",
         "llm_summary": "满月是地球位于太阳和月球之间时，月球面向地球的一面被完全照亮。本文提供2026年满月日历，帮助读者了解满月及月相观测时间。",
@@ -496,21 +260,21 @@
           "title": "2026 Full Moon calendar: When to see the Full Moon and phases",
           "url": "https://www.astronomy.com/observing/full-moon-calendar-dates-times-types/",
           "source": "Astronomy Magazine",
-          "score": 59.2,
+          "score": 59.0,
           "published_at": "2026-11-11T14:40:36+00:00"
         },
         {
           "title": "The Sky Today on Tuesday, November 10: Seek Saturn’s two-toned moon",
           "url": "https://www.astronomy.com/observing/the-sky-today-tuesday-november-10-2026/",
           "source": "Astronomy Magazine",
-          "score": 58.4,
+          "score": 58.2,
           "published_at": "2026-11-10T09:00:00+00:00"
         },
         {
           "title": "The Sky Today on Wednesday, November 11: Venus comes to a halt",
           "url": "https://www.astronomy.com/observing/the-sky-today-wednesday-november-11-2026/",
           "source": "Astronomy Magazine",
-          "score": 35.4,
+          "score": 35.3,
           "published_at": "2026-11-11T09:00:00+00:00"
         }
       ],
@@ -521,9 +285,9 @@
         "november",
         "full"
       ],
-      "rank": 7,
-      "trend": "new",
-      "trendPct": null,
+      "rank": 4,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 34.5,
       "status": "关注中"
@@ -550,15 +314,20 @@
         "Phys.org 太空新闻"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-11T17:55:17.741065+00:00",
+      "latest_at": "2026-11-12T02:59:32.548507+00:00",
       "representative": {
         "title": "First-of-its-kind planetary wreckage holds clues to our Solar System’s fate",
         "url": "https://www.nature.com/articles/d41586-026-03537-7",
         "source": "Nature 天文和天体物理",
         "published_at": "2026-11-04T00:00:00+00:00",
-        "score": 56.0,
+        "score": 55.7,
         "summary": "",
         "zh_full": "（无摘要，仅标题）Nature 报道：首次发现的这类行星残骸为太阳系的命运提供了线索。该研究聚焦于一种此前从未观测到的行星遗迹，其性质可能帮助科学家理解行星系统在恒星演化晚期如何解体，进而推测我们太阳系数十亿年后的可能结局。",
+        "refs": {
+          "doi": "10.1038/d41586-026-03537-7",
+          "via": "self_meta",
+          "confidence": "verified"
+        },
         "llm_summary": "Nature 报道首次发现的行星残骸，为理解太阳系未来命运提供线索。",
         "llm_reason": "行星科学重要发现",
         "density": "中"
@@ -571,14 +340,14 @@
           "title": "Earth's 'core carbon' may have come from the far reaches of the solar system",
           "url": "https://phys.org/news/2026-11-earth-core-carbon-solar.html",
           "source": "Phys.org 太空新闻",
-          "score": 60.6,
+          "score": 60.3,
           "published_at": "2026-11-10T21:20:01+00:00"
         },
         {
           "title": "First-of-its-kind planetary wreckage holds clues to our Solar System’s fate",
           "url": "https://www.nature.com/articles/d41586-026-03537-7",
           "source": "Nature 天文和天体物理",
-          "score": 56.0,
+          "score": 55.7,
           "published_at": "2026-11-04T00:00:00+00:00"
         }
       ],
@@ -589,9 +358,214 @@
         "carbon",
         "come"
       ],
+      "rank": 5,
+      "trend": "flat",
+      "trendPct": 0.0,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "dark",
+        "exponential",
+        "galaxies",
+        "matter",
+        "mechanism",
+        "mysteries",
+        "probe",
+        "production",
+        "ultra-diffuse",
+        "ultra-heavy"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Phys.org 太空新闻",
+        "arXiv astro-ph.CO 论文速递"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-12T02:59:32.548507+00:00",
+      "representative": {
+        "title": "Ultra-Heavy Dark Matter Through Exponential Production Mechanism",
+        "url": "https://arxiv.org/abs/2611.13842",
+        "source": "arXiv astro-ph.CO 论文速递",
+        "published_at": "2026-11-11T05:00:00+00:00",
+        "score": 47.1,
+        "summary": "arXiv:2611.13842v1 Announce Type: cross Abstract: Exponential production of dark matter has been introduced recently as one of the alternatives to the widely studied thermal production of dark matter scenarios. This non-thermal production m",
+        "zh_full": null,
+        "refs": {
+          "arxiv": "2611.13842",
+          "via": "feed_text",
+          "confidence": "verified"
+        }
+      },
+      "folded_count": 1,
+      "title": "Ultra-Heavy Dark Matter Through Exponential Production Mechanism",
+      "id": "454f33e8eb72",
+      "links": [
+        {
+          "title": "The ELT can probe ultra-diffuse galaxies and their dark matter mysteries",
+          "url": "https://phys.org/news/2026-11-elt-probe-ultra-diffuse-galaxies.html",
+          "source": "Phys.org 太空新闻",
+          "score": 59.7,
+          "published_at": "2026-11-09T23:00:12+00:00"
+        },
+        {
+          "title": "Ultra-Heavy Dark Matter Through Exponential Production Mechanism",
+          "url": "https://arxiv.org/abs/2611.13842",
+          "source": "arXiv astro-ph.CO 论文速递",
+          "score": 47.1,
+          "published_at": "2026-11-11T05:00:00+00:00"
+        }
+      ],
+      "top_terms": [
+        "ultra",
+        "dark",
+        "matter",
+        "elt",
+        "probe"
+      ],
+      "rank": 6,
+      "trend": "down",
+      "trendPct": -50.0,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "chandra",
+        "finds",
+        "giant",
+        "impostor",
+        "likely",
+        "observatory",
+        "outbursts",
+        "repeated",
+        "source",
+        "star",
+        "supernova",
+        "unmasks",
+        "x-ray"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-12T02:59:32.548507+00:00",
+      "representative": {
+        "title": "The Chandra X-Ray Observatory Unmasks a Supernova Impostor",
+        "url": "https://www.universetoday.com/articles/the-chandra-x-ray-observatory-unmasks-a-supernova-impostor",
+        "source": "Universe Today",
+        "published_at": "2026-11-11T16:41:55+00:00",
+        "score": 60.9,
+        "summary": "Some stars, called Luminous Blue Variables, can be confused with supernovae explosions. They exhibit similar outbursts, but unlike supernovae, which explode once and then are gone forever, these stars have periodic outbursts. New research f",
+        "zh_full": "某些被称为亮蓝变星的恒星可能被误认为超新星爆发，因为它们表现出类似的爆发，但与一次性爆炸后消失的超新星不同，这些恒星有周期性爆发。钱德拉X射线天文台的新研究发现，其中一个'超新星冒名顶替者'实际上与黑洞或中子星处于双星系统中，这解释了其周期性爆发的原因。该发现表明双星伴星的引力相互作用驱动了亮蓝变星的周期性爆发。",
+        "llm_summary": "钱德拉X射线天文台发现一颗'超新星冒名顶替者'亮蓝变星与黑洞或中子星构成双星系统，伴星引力作用解释了其周期性爆发。",
+        "llm_reason": "揭示亮蓝变星周期性爆发的双星机制",
+        "density": "高"
+      },
+      "folded_count": 1,
+      "title": "The Chandra X-Ray Observatory Unmasks a Supernova Impostor",
+      "id": "eb4c44811e08",
+      "links": [
+        {
+          "title": "The Chandra X-Ray Observatory Unmasks a Supernova Impostor",
+          "url": "https://www.universetoday.com/articles/the-chandra-x-ray-observatory-unmasks-a-supernova-impostor",
+          "source": "Universe Today",
+          "score": 60.9,
+          "published_at": "2026-11-11T16:41:55+00:00"
+        },
+        {
+          "title": "The supernova impostor: Chandra finds likely source of giant star's repeated outbursts",
+          "url": "https://phys.org/news/2026-11-supernova-impostor-chandra-source-giant.html",
+          "source": "Phys.org 太空新闻",
+          "score": 59.7,
+          "published_at": "2026-11-09T21:40:10+00:00"
+        }
+      ],
+      "top_terms": [
+        "supernova",
+        "impostor",
+        "chandra",
+        "finds",
+        "likely"
+      ],
+      "rank": 7,
+      "trend": "down",
+      "trendPct": -50.0,
+      "badges": [],
+      "heat": 21.0,
+      "status": "关注中"
+    },
+    {
+      "terms": [
+        "close",
+        "disappear",
+        "disappearing",
+        "enough",
+        "just",
+        "known",
+        "like",
+        "makes",
+        "neighbor",
+        "neighbour",
+        "planet",
+        "planets",
+        "sight",
+        "they",
+        "wobble"
+      ],
+      "source_count": 2,
+      "signal_count": 1,
+      "sources": [
+        "Phys.org 太空新闻",
+        "Universe Today"
+      ],
+      "score": 21.0,
+      "latest_at": "2026-11-12T02:59:32.548507+00:00",
+      "representative": {
+        "title": "Planets Don't Just Disappear, But They Can Wobble Out of Sight if Their Neighbour is Close Enough",
+        "url": "https://www.universetoday.com/articles/planets-dont-just-disappear-but-they-can-wobble-out-of-sight-if-their-neighbour-is-close-enough",
+        "source": "Universe Today",
+        "published_at": "2026-11-11T13:02:29+00:00",
+        "score": 36.5,
+        "summary": "TESS watched an exoplanet about 1,000 light years away as it repeatedly transited in front of its star for seven years. But astronomers were surprised to find that the hot Jupiter disappeared. Of course, planets don't just disappear. Someth",
+        "zh_full": null
+      },
+      "folded_count": 1,
+      "title": "Planets Don't Just Disappear, But They Can Wobble Out of Sight if Their Neighbour is Close Enough",
+      "id": "2bea71cef95f",
+      "links": [
+        {
+          "title": "Planets Don't Just Disappear, But They Can Wobble Out of Sight if Their Neighbour is Close Enough",
+          "url": "https://www.universetoday.com/articles/planets-dont-just-disappear-but-they-can-wobble-out-of-sight-if-their-neighbour-is-close-enough",
+          "source": "Universe Today",
+          "score": 36.5,
+          "published_at": "2026-11-11T13:02:29+00:00"
+        },
+        {
+          "title": "First known 'disappearing planet' has a neighbor that makes it wobble like a top",
+          "url": "https://phys.org/news/2026-11-planet-neighbor.html",
+          "source": "Phys.org 太空新闻",
+          "score": 35.8,
+          "published_at": "2026-11-09T21:20:20+00:00"
+        }
+      ],
+      "top_terms": [
+        "wobble",
+        "known",
+        "disappearing",
+        "planet",
+        "neighbor"
+      ],
       "rank": 8,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "down",
+      "trendPct": -50.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -620,13 +594,13 @@
         "Nature 天文和天体物理"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-11T17:55:17.741065+00:00",
+      "latest_at": "2026-11-12T02:59:32.548507+00:00",
       "representative": {
         "title": "High-orbit satellites could light the way for travel to the moon",
         "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
         "source": "MIT News 太空探索",
         "published_at": "2026-08-10T18:10:00+00:00",
-        "score": 37.1,
+        "score": 41.2,
         "summary": "Acting as cooperative optical beacons, the satellites could provide GPS-like navigation and communications support for spacecraft operating across cislunar space.",
         "zh_full": "（无摘要，仅标题）",
         "llm_summary": "（无摘要，仅标题）",
@@ -640,14 +614,14 @@
           "title": "Salty grains in Saturn’s outermost ring formed from the slow freeze of plumes from the moon Enceladus",
           "url": "https://www.nature.com/articles/d41586-026-03489-y",
           "source": "Nature 天文和天体物理",
-          "score": 60.7,
+          "score": 60.4,
           "published_at": "2026-11-11T00:00:00+00:00"
         },
         {
           "title": "High-orbit satellites could light the way for travel to the moon",
           "url": "https://news.mit.edu/2026/high-orbit-satellites-could-light-way-for-travel-to-moon-0810",
           "source": "MIT News 太空探索",
-          "score": 37.1,
+          "score": 41.2,
           "published_at": "2026-08-10T18:10:00+00:00"
         }
       ],
@@ -658,11 +632,11 @@
         "saturn",
         "outermost"
       ],
-      "digest": "土星最外层环中的盐粒是由土卫二喷流缓慢冻结形成的。研究人员通过分析卡西尼号任务数据发现，这些盐粒的化学组成与土卫二冰喷泉物质一致，表明其经历了缓慢的冻结过程，而非快速冷凝。这一结论基于对环中颗粒的观测和实验室模拟，确认了土卫二喷流是土星环盐粒的主要来源。",
-      "digestTitle": "土星最外层环盐粒源自土卫二喷流缓慢冻结",
+      "digest": "土星最外层环中的盐粒是由土卫二喷流缓慢冻结形成的。研究人员分析卡西尼号数据发现，这些盐粒的化学成分与土卫二地下海洋喷出的冰粒一致，表明环中的盐分直接来自该卫星的冰喷流。这一发现为土卫二海洋物质向土星环系统输送提供了直接证据。",
+      "digestTitle": "土星最外层环盐粒源自土卫二冰喷流",
       "rank": 9,
-      "trend": "new",
-      "trendPct": null,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"
@@ -687,13 +661,13 @@
         "NASA 快讯"
       ],
       "score": 21.0,
-      "latest_at": "2026-11-11T17:55:17.741065+00:00",
+      "latest_at": "2026-11-12T02:59:32.548507+00:00",
       "representative": {
         "title": "NASA Scientists Show How Gravitational Waves Can Reveal New Worlds",
         "url": "https://science.nasa.gov/missions/lisa/gravitational-waves-can-reveal-new-worlds/",
         "source": "NASA 快讯",
         "published_at": "2026-11-10T16:00:26+00:00",
-        "score": 60.4,
+        "score": 60.2,
         "summary": "The LISA (Laser Interferometer Space Antenna) observatory, now in development, will detect gravitational waves, the tiny ripples in space-time caused by orbiting masses. Now two studies led by NASA astrophysicists show in new detail how LIS",
         "zh_full": null
       },
@@ -705,14 +679,14 @@
           "title": "NASA Scientists Show How Gravitational Waves Can Reveal New Worlds",
           "url": "https://science.nasa.gov/missions/lisa/gravitational-waves-can-reveal-new-worlds/",
           "source": "NASA 快讯",
-          "score": 60.4,
+          "score": 60.2,
           "published_at": "2026-11-10T16:00:26+00:00"
         },
         {
           "title": "Scientists pin down the origins of the moon’s tenuous atmosphere",
           "url": "https://news.mit.edu/2024/scientists-pin-down-moons-tenuous-atmosphere-origins-0802",
           "source": "MIT News 太空探索",
-          "score": 37.1,
+          "score": 41.2,
           "published_at": "2024-08-02T18:00:00+00:00"
         }
       ],
@@ -724,8 +698,8 @@
         "reveal"
       ],
       "rank": 10,
-      "trend": "down",
-      "trendPct": -50.0,
+      "trend": "flat",
+      "trendPct": 0.0,
       "badges": [],
       "heat": 21.0,
       "status": "关注中"

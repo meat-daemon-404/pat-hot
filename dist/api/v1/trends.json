@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T17:55:17.741065+00:00",
+  "generatedAt": "2026-11-12T02:59:32.548507+00:00",
   "weekStart": "2026-11-06",
   "windowDays": 7,
   "windowStart": "2026-11-06",
@@ -10,51 +10,51 @@
   "categoryDelta": [
     {
       "category": "激光",
-      "thisWeek": 4214.1,
+      "thisWeek": 4640.7,
       "lastWeek": 4709.9,
-      "deltaPct": -10.5
+      "deltaPct": -1.5
     },
     {
       "category": "科研进展",
-      "thisWeek": 3554.8,
+      "thisWeek": 3553.2,
       "lastWeek": 3422.0,
-      "deltaPct": 3.9
+      "deltaPct": 3.8
     },
     {
       "category": "光通信",
-      "thisWeek": 2965.2,
+      "thisWeek": 2967.0,
       "lastWeek": 3440.2,
       "deltaPct": -13.8
     },
     {
       "category": "产业与资本",
-      "thisWeek": 2828.1,
+      "thisWeek": 2924.3,
       "lastWeek": 2874.4,
-      "deltaPct": -1.6
+      "deltaPct": 1.7
     },
     {
       "category": "其他",
-      "thisWeek": 2477.7,
+      "thisWeek": 2508.1,
       "lastWeek": 2809.4,
-      "deltaPct": -11.8
+      "deltaPct": -10.7
     },
     {
       "category": "通信与算力",
-      "thisWeek": 2217.3,
+      "thisWeek": 2217.0,
       "lastWeek": 1686.8,
-      "deltaPct": 31.5
+      "deltaPct": 31.4
     },
     {
       "category": "显示与面板",
-      "thisWeek": 1377.9,
+      "thisWeek": 1496.8,
       "lastWeek": 1781.7,
-      "deltaPct": -22.7
+      "deltaPct": -16.0
     },
     {
       "category": "光学元件与成像",
-      "thisWeek": 1337.9,
+      "thisWeek": 1324.6,
       "lastWeek": 1659.9,
-      "deltaPct": -19.4
+      "deltaPct": -20.2
     },
     {
       "category": "光电芯片与半导体",
@@ -64,13 +64,13 @@
     },
     {
       "category": "光传感与激光雷达",
-      "thisWeek": 424.5,
+      "thisWeek": 424.0,
       "lastWeek": 322.0,
-      "deltaPct": 31.8
+      "deltaPct": 31.7
     },
     {
       "category": "光伏与新能源",
-      "thisWeek": 106.7,
+      "thisWeek": 106.5,
       "lastWeek": 0,
       "deltaPct": 100.0
     }
@@ -95,27 +95,21 @@
       "days": 4
     },
     {
-      "topic_id": "d633e4510286",
-      "title": "Get ready for Photonics West 2027!",
-      "score": 319.3,
-      "days": 1
-    },
-    {
       "topic_id": "cff3effabe29",
       "title": "贵州通信管理局传达学习贯彻党的二十届五中全会精神",
       "score": 238.6,
       "days": 1
     },
     {
-      "topic_id": "c6b7eda62a5c",
-      "title": "192线激光雷达上车!新款领克08 EM-P上市",
-      "score": 210.2,
+      "topic_id": "5834db255c7d",
+      "title": "Get ready for Photonics West 2027!",
+      "score": 227.4,
       "days": 1
     },
     {
-      "topic_id": "32e4064150f6",
-      "title": "光模块大涨的几个原因!",
-      "score": 190.1,
+      "topic_id": "c6b7eda62a5c",
+      "title": "192线激光雷达上车!新款领克08 EM-P上市",
+      "score": 210.2,
       "days": 1
     },
     {
@@ -135,6 +129,12 @@
       "title": "Shaping light to see deeper inside biological tissue",
       "score": 167.0,
       "days": 5
+    },
+    {
+      "topic_id": "0f6913c0ec4f",
+      "title": "Optical microscopy for pathological imaging: past, present, and future",
+      "score": 152.3,
+      "days": 2
     }
   ],
   "sustainedTopics": [
@@ -195,8 +195,8 @@
     {
       "topic_id": "983065fbf898",
       "title": "PODCAST: Meet Andrew Strikwerda, COMSOL",
-      "days": 9,
-      "score": 439.6
+      "days": 10,
+      "score": 471.0
     }
   ]
 }
