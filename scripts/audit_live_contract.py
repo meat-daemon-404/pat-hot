@@ -41,7 +41,7 @@ DEFAULT_HOSTS = [
 CHANNELS = ["physics", "astro", "tech"]
 FLAT_ALIAS = "tech"          # 扁平地址的内容 = 这个频道
 JSON_ENDPOINTS = ["items", "hot-topics", "dailies", "daily", "stories", "trends"]
-UA = {"User-Agent": "pat-hot-audit/1.0 (+github.com/sun-zihang/pat-hot)"}
+UA = {"User-Agent": "pat-hot-audit/1.0 (+github.com/meat-daemon-404/pat-hot)"}
 TIMEOUT = 90
 # 三频道声明的分类数（physics 9 / astro 8 / tech 11）里最小的那个是 8；取 5
 # 作为"确实跑过一轮"的下限，既不会因为某频道缩表就误报，也不会让空跑蒙混过关。
