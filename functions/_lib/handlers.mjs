@@ -282,9 +282,14 @@ export const bindVerifyHandler = (context) => withBackend(context, async ({ requ
   // 🔴 body 里若带 smSubject/phSubject/userId 一律忽略：phSubject 由会话推出，
   // smSubject 只信 SM 兑换响应的回值（契约 §1.1）。
 
-  // context.fetchImpl 只在本仓测试里注入（Pages 的 context 没有这个属性，
-  // 生产路径恒为 undefined → smclient 用全局 fetch）。不为测试另开一条代码分支。
-  const redeemed = await redeemBindCode(env, { code, phSubject: u.phSubject, fetchImpl: context.fetchImpl });
+  // context.fetchImpl / context.timeoutMs 只在本仓测试里注入（Pages 的 context 没有这两个属性，
+  // 生产路径恒为 undefined → smclient 用全局 fetch 与默认 8s）。不为测试另开一条代码分支。
+  const redeemed = await redeemBindCode(env, {
+    code,
+    phSubject: u.phSubject,
+    fetchImpl: context.fetchImpl,
+    timeoutMs: context.timeoutMs,
+  });
   const nowIso = new Date().toISOString();
   await upsertBinding(db, u.phSubject, redeemed.smSubject, nowIso);
 
@@ -323,20 +328,31 @@ export const bindUnbindHandler = (context) => withBackend(context, async ({ requ
   if (!binding) return ok({ unbound: false, note: "当前账号没有绑定关系" }, origin, host);
 
   // 解绑即硬删（契约 §1.2）：快照与绑定行一起消失，不留墓碑。
-  const profiles = await getActiveProfile(db, binding.sm_subject);
-  await deleteProfilesByPh(db, u.phSubject);
-  await deleteProfileBySm(db, binding.sm_subject);
+  // 直接累加 DELETE 返回的真实行数（含已过期但尚未触发查询清理的行），不依赖 getActiveProfile 的副作用。
+  const removedByPh = await deleteProfilesByPh(db, u.phSubject);
+  const removedBySm = await deleteProfileBySm(db, binding.sm_subject);
+  const removedSnapshots = removedByPh + removedBySm;
   await deleteBinding(db, u.phSubject);
 
   let notify = { ok: true };
   try {
-    notify = await notifySmUnbind(env, { phSubject: u.phSubject, fetchImpl: context.fetchImpl });
+    notify = await notifySmUnbind(env, {
+      phSubject: u.phSubject,
+      fetchImpl: context.fetchImpl,
+      timeoutMs: context.timeoutMs,
+    });
   } catch (e) {
-    notify = { ok: false, code: e instanceof SmCallError ? e.code : "SM_NOTIFY_FAILED", message: String((e && e.message) || e).slice(0, 200) };
+    notify = {
+      ok: false,
+      code: e instanceof SmCallError ? e.code : "SM_NOTIFY_FAILED",
+      message: String((e && e.message) || e).slice(0, 200),
+    };
   }
   return ok({
     unbound: true,
-    removedSnapshots: profiles.length,
+    phSubject: u.phSubject,
+    smSubject: binding.sm_subject,
+    removedSnapshots,
     smNotified: notify.ok,
     // 本地已经删干净；SM 侧没通知到时会把下一次推送撞进 PH 的"未绑定"拒收，
     // 这里如实告诉调用方，不假装成功。

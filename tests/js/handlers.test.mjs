@@ -4,7 +4,7 @@
  * 生产恒为 undefined → 走全局 fetch，不为测试另开代码分支）。
  *
  * 盯的是任务书里最容易只写在注释里的东西：失败分型是否真的分开了、
- * 身份是否真的只从 cookie 取、开关关着时是否真的 503。
+ * 身份是否真的只从 cookie 取、开关关着时是否真的 503、以及 Pages 文件路由是否齐全。
  */
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -12,8 +12,9 @@ import assert from "node:assert/strict";
 import { makeFakeD1 } from "./helpers/fakeD1.mjs";
 import {
   registerHandler, loginHandler, logoutHandler, meHandler,
-  bindVerifyHandler, snapshotPutHandler, snapshotDeleteHandler, profileGetHandler,
-  hasSharedSecret, snapshotFieldCounts, REGISTER_LIMIT,
+  bindVerifyHandler, bindUnbindHandler,
+  snapshotPutHandler, snapshotDeleteHandler, profileGetHandler,
+  handleOptions, hasSharedSecret, snapshotFieldCounts, REGISTER_LIMIT,
 } from "../../functions/_lib/handlers.mjs";
 import { upsertBinding, insertUser, phSubjectOf } from "../../functions/_lib/db.mjs";
 import { pwHash } from "../../functions/_lib/crypto.mjs";
@@ -50,9 +51,14 @@ async function registerAndLogin(t, email = "A@B.com", password = "hunter2222") {
   return { res, body, cookie: (res.headers.get("Set-Cookie") || "").split(";")[0] };
 }
 
+// 动态生成相对于当前时间的 pushedAt / expiresAt（30 天有效期），避免写死固定日期在 30 天后触发 EXPIRES_PAST 定时炸弹
+const BASE_NOW_MS = Math.floor(Date.now() / 1000) * 1000;
+const PUSHED_AT = new Date(BASE_NOW_MS - 3600 * 1000).toISOString().replace(/\.000Z$/, "Z");
+const EXPIRES_AT = new Date(BASE_NOW_MS + 29 * 86400 * 1000).toISOString().replace(/\.000Z$/, "Z");
+
 const payloadOf = (phSubject, over = {}) => ({
   v: 1, smSubject: "sm:abc123", phSubject,
-  pushedAt: "2026-10-13T04:00:00Z", expiresAt: "2026-11-12T04:00:00Z",
+  pushedAt: PUSHED_AT, expiresAt: EXPIRES_AT,
   topics: [{ term: "quantum error correction", weight: 0.42 }],
   categories: ["科研进展"], channels: ["physics"], lang: "zh", counts: { papers: 38, libs: 3 },
   ...over,
@@ -170,6 +176,18 @@ test("bind/verify 的成功与四种失败各自分型（fetchImpl 注入，不�
   assert.equal(seen[0].headers["X-PH-Subject"], phSubject, "契约 §1.1：回调带 ph:<userId>");
   assert.equal(seen[0].hasSignal, true, "超时用 AbortSignal，不用裸 Promise.race");
 
+  // 兑换响应顺带带回合法快照：同路校验并入库（契约 §1.1 示例）
+  const withProfileImpl = async () => new Response(JSON.stringify({
+    ok: true,
+    smSubject: "sm:abc123",
+    profile: payloadOf(phSubject),
+  }), { status: 200 });
+  const rp = await bindVerifyHandler(s.ctx(mkReq("/api/bind/verify", { method: "POST", body: { code: "K-prof" }, headers: { Cookie: cookie } }), { fetchImpl: withProfileImpl }));
+  const bp = await rp.json();
+  assert.equal(rp.status, 200);
+  assert.deepEqual(bp.profileStored, { topics: 1, expiresAt: EXPIRES_AT }, "兑换顺带回传合法快照应立即入库");
+  assert.equal(bp.profileNote, null);
+
   const failWith = (status, text) => async () => new Response(text, { status });
   const cases = [
     [401, '{"message":"nope"}', "SECRET_MISMATCH", 401, "密钥不一致"],
@@ -196,8 +214,6 @@ test("bind/verify 的成功与四种失败各自分型（fetchImpl 注入，不�
   assert.equal(nf.code, "SM_UNREACHABLE");
   assert.match(nf.message, /ENOTFOUND/, "网络故障要把原始原因带出来");
 
-  // 超时不在这里等满 8 秒：AbortSignal.timeout 的行为在 smclient.test.mjs 里
-  // 用显式短超时直接验；本层只钉"默认值就是任务书写的 8 秒"。
   assert.equal(CALLBACK_TIMEOUT_MS, 8000, "出站超时默认 8s（任务书）");
 
   // 未配置密钥：本地就该 503，不发这一跳
@@ -215,6 +231,87 @@ test("bind/verify 的成功与四种失败各自分型（fetchImpl 注入，不�
   const noCode = await bindVerifyHandler(s.ctx(mkReq("/api/bind/verify", { method: "POST", body: {}, headers: { Cookie: cookie } })));
   assert.equal(noCode.status, 400);
   assert.equal((await noCode.json()).code, "CODE_REQUIRED");
+});
+
+test("bind/unbind：未登录 401、未绑定幂等回 unbound:false、已绑定物理硬删快照+绑定并回调 SM（上游失败不阻塞本地解绑）", async (t) => {
+  const s = setup();
+  const { body: regBody, cookie } = await registerAndLogin(s);
+  const phSubject = regBody.user.subject;
+
+  // 1) 未登录：401 且不出站
+  let touched = false;
+  const anon = await bindUnbindHandler({
+    request: mkReq("/api/bind/unbind", { method: "POST" }),
+    env: s.env,
+    params: {},
+    fetchImpl: () => { touched = true; return new Response("", { status: 204 }); },
+  });
+  assert.equal(anon.status, 401);
+  assert.equal((await anon.json()).code, "NOT_AUTHENTICATED");
+  assert.equal(touched, false, "未登录绝不先打 SM");
+
+  // 2) 已登录但尚未绑定：返回 200 {ok:true, unbound:false}
+  const notBound = await bindUnbindHandler(s.ctx(mkReq("/api/bind/unbind", { method: "POST", headers: { Cookie: cookie } })));
+  assert.equal(notBound.status, 200);
+  const nb = await notBound.json();
+  assert.equal(nb.ok, true);
+  assert.equal(nb.unbound, false);
+
+  // 3) 绑定 + 写入快照后解绑（SM 返回 204）：快照与绑定均物理硬删，计数精确为 1，会话保留
+  await upsertBinding(s.db, phSubject, "sm:abc123", "2026-10-13T05:00:00Z");
+  await snapshotPutHandler(s.ctx(mkReq("/api/profile-snapshot", {
+    method: "POST",
+    body: payloadOf(phSubject),
+    headers: { "X-PAT-Shared-Secret": "s3cret" },
+  })));
+  const seen = [];
+  const resOk = await bindUnbindHandler(s.ctx(
+    mkReq("/api/bind/unbind", { method: "POST", headers: { Cookie: cookie } }),
+    {
+      fetchImpl: async (url, init) => {
+        seen.push({ url, method: init.method, headers: init.headers });
+        return new Response(null, { status: 204 });
+      },
+    }
+  ));
+  assert.equal(resOk.status, 200);
+  const okBody = await resOk.json();
+  assert.equal(okBody.ok, true);
+  assert.equal(okBody.unbound, true);
+  assert.equal(okBody.phSubject, phSubject);
+  assert.equal(okBody.smSubject, "sm:abc123");
+  assert.equal(okBody.removedSnapshots, 1, "真实删掉的快照行数");
+  assert.equal(okBody.smNotified, true);
+  assert.equal(okBody.smNotifyNote, null);
+  assert.equal(s.db.tables.profile_snapshots.length, 0, "profile_snapshots 物理硬删");
+  assert.equal(s.db.tables.ph_bindings.length, 0, "ph_bindings 物理硬删");
+  assert.equal(s.db.tables.ph_sessions.length, 1, "解绑不顺手登出");
+  assert.equal(seen[0].method, "DELETE");
+  assert.equal(seen[0].url, "https://scholarmatrix.pages.dev/api/pat/bind?by=ph&subject=" + encodeURIComponent(phSubject));
+
+  // 4) 即使快照已过期、且 SM 回调超时/报错，本地依然物理删净并如实汇报 smNotified:false
+  await upsertBinding(s.db, phSubject, "sm:abc123", "2026-10-13T06:00:00Z");
+  await snapshotPutHandler(s.ctx(mkReq("/api/profile-snapshot", {
+    method: "POST",
+    body: payloadOf(phSubject),
+    headers: { "X-PAT-Shared-Secret": "s3cret" },
+  })));
+  // 把快照改成已过期，验证解绑计数仍能统计到被物理清除的过期行
+  s.db.tables.profile_snapshots[0].expires_at = "2020-01-01T00:00:00Z";
+  const hang = (u, init) => new Promise((_, rej) => init.signal.addEventListener("abort", () => rej(new Error("unbind timeout"))));
+  const resTimeout = await bindUnbindHandler(s.ctx(
+    mkReq("/api/bind/unbind", { method: "POST", headers: { Cookie: cookie } }),
+    { fetchImpl: hang, timeoutMs: 50 }
+  ));
+  assert.equal(resTimeout.status, 200);
+  const tb = await resTimeout.json();
+  assert.equal(tb.ok, true);
+  assert.equal(tb.unbound, true);
+  assert.equal(tb.removedSnapshots, 1, "已过期但仍在库的快照行也必须被物理删除并计入 removedSnapshots");
+  assert.equal(tb.smNotified, false, "SM 超时时如实报 smNotified:false");
+  assert.match(tb.smNotifyNote, /SM_TIMEOUT/, "smNotifyNote 保留超时原因");
+  assert.equal(s.db.tables.profile_snapshots.length, 0);
+  assert.equal(s.db.tables.ph_bindings.length, 0);
 });
 
 test("快照 POST 只认共享密钥：会话路径已收回（任务书：服务器对服务器）", async (t) => {
@@ -235,7 +332,7 @@ test("快照 POST 只认共享密钥：会话路径已收回（任务书：服�
 
   const good = await snapshotPutHandler(s.ctx(mkReq("/api/profile-snapshot", { method: "POST", body: payloadOf(phSubject), headers: { "X-PAT-Shared-Secret": "s3cret", "X-PH-Subject": phSubject } })));
   assert.equal(good.status, 200);
-  assert.deepEqual((await good.json()).stored, { topics: 1, expiresAt: "2026-11-12T04:00:00Z" }, "契约 §2 的响应形状");
+  assert.deepEqual((await good.json()).stored, { topics: 1, expiresAt: EXPIRES_AT }, "契约 §2 的响应形状");
 
   // 持密钥也不能替别人写：载荷主体必须与绑定表对得上
   const stranger = await snapshotPutHandler(s.ctx(mkReq("/api/profile-snapshot", { method: "POST", body: payloadOf("ph:ffffffffffff"), headers: { "X-PAT-Shared-Secret": "s3cret" } })));
@@ -286,7 +383,7 @@ test("profile GET：需会话+绑定，回生效快照与字段计数；过期�
   assert.equal(got.bound, true);
   assert.equal(got.smSubject, "sm:abc123");
   assert.equal(got.snapshot.topics[0].term, "quantum error correction");
-  assert.deepEqual(got.fields, { topics: 1, categories: 1, channels: 1, countsKeys: 2, lang: "zh", pushedAt: "2026-10-13T04:00:00Z", expiresAt: "2026-11-12T04:00:00Z" },
+  assert.deepEqual(got.fields, { topics: 1, categories: 1, channels: 1, countsKeys: 2, lang: "zh", pushedAt: PUSHED_AT, expiresAt: EXPIRES_AT },
     "🔴 字段计数供「查看我的数据」面板列明存了什么（任务书）");
   assert.deepEqual(snapshotFieldCounts(null), null);
 
@@ -340,6 +437,7 @@ test("开关关着时写读路径统一 503，且说明数据面照常可用", a
     ["register", registerHandler, { method: "POST", body: { email: "x@y.cc", password: "password1" } }],
     ["login", loginHandler, { method: "POST", body: { email: "x@y.cc", password: "password1" } }],
     ["bind", bindVerifyHandler, { method: "POST", body: { code: "K" } }],
+    ["unbind", bindUnbindHandler, { method: "POST" }],
     ["snapshot POST", snapshotPutHandler, { method: "POST", body: payloadOf("ph:abc") }],
     ["profile", profileGetHandler, {}],
   ];
@@ -349,5 +447,29 @@ test("开关关着时写读路径统一 503，且说明数据面照常可用", a
     const b = await res.json();
     assert.equal(b.code, "STORE_DISABLED", name);
     assert.match(b.message, /PAT_HOT_STORE_USER_DATA/, name + " 要指名开关");
+  }
+});
+
+test("Pages Functions 文件路由对齐：所有导出 handler 均有对应的 functions/api/ 路由文件且原样再导出", async () => {
+  const { readFileSync } = await import("node:fs");
+  const handlersUrl = new URL("../../functions/_lib/handlers.mjs", import.meta.url).href;
+  const routes = [
+    ["../../functions/api/account/register.js", { onRequestPost: registerHandler, onRequestOptions: handleOptions }],
+    ["../../functions/api/account/login.js", { onRequestPost: loginHandler, onRequestOptions: handleOptions }],
+    ["../../functions/api/account/logout.js", { onRequestPost: logoutHandler, onRequestOptions: handleOptions }],
+    ["../../functions/api/account/me.js", { onRequestGet: meHandler, onRequestOptions: handleOptions }],
+    ["../../functions/api/bind/verify.js", { onRequestPost: bindVerifyHandler, onRequestOptions: handleOptions }],
+    ["../../functions/api/bind/unbind.js", { onRequestPost: bindUnbindHandler, onRequestOptions: handleOptions }],
+    ["../../functions/api/profile-snapshot.js", { onRequestPost: snapshotPutHandler, onRequestDelete: snapshotDeleteHandler, onRequestOptions: handleOptions }],
+    ["../../functions/api/profile.js", { onRequestGet: profileGetHandler, onRequestOptions: handleOptions }],
+  ];
+  for (const [relPath, expected] of routes) {
+    const fileUrl = new URL(relPath, import.meta.url);
+    const raw = readFileSync(fileUrl, "utf8");
+    const rewritten = raw.replace(/from\s+["'](?:\.\.\/)+_lib\/handlers\.mjs["']/, `from ${JSON.stringify(handlersUrl)}`);
+    const mod = await import("data:text/javascript;charset=utf-8," + encodeURIComponent(rewritten));
+    for (const [exportName, fn] of Object.entries(expected)) {
+      assert.equal(mod[exportName], fn, `${relPath} 必须具名导出 ${exportName}（缺失会导致 Pages Functions 线上 404/405）`);
+    }
   }
 });

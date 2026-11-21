@@ -27,6 +27,7 @@ collector/collect.py 的 --check 只看本地 dist/ 目录，而且只断言"约
 退出码：0 = 没问题；1 = 发现问题（或自测失败）；2 = 网络不可达，无法判定。
 """
 import argparse
+from datetime import datetime
 import json
 import re
 import sys
@@ -40,12 +41,13 @@ DEFAULT_HOSTS = [
 ]
 CHANNELS = ["physics", "astro", "tech"]
 FLAT_ALIAS = "tech"          # 扁平地址的内容 = 这个频道
-JSON_ENDPOINTS = ["items", "hot-topics", "dailies", "daily", "stories", "trends"]
-UA = {"User-Agent": "pat-hot-audit/1.0 (+github.com/meat-daemon-404/pat-hot)"}
+JSON_ENDPOINTS = ["items", "hot-topics", "dailies", "daily", "stories", "trends", "papers-index"]
+UA = {"User-Agent": "pat-hot-audit/1.1 (+github.com/meat-daemon-404/pat-hot)"}
 TIMEOUT = 90
 # 三频道声明的分类数（physics 9 / astro 8 / tech 11）里最小的那个是 8；取 5
 # 作为"确实跑过一轮"的下限，既不会因为某频道缩表就误报，也不会让空跑蒙混过关。
 MIN_FEED_CHECKS = 5
+DEFAULT_MAX_DRIFT_HOURS = 24.0
 
 
 def fetch(host, path):
@@ -93,6 +95,46 @@ def flat_path(name):
     return "api/v1/%s.json" % name
 
 
+def _parse_iso_epoch(ts):
+    if not ts or not isinstance(ts, str):
+        return None
+    s = ts.strip()
+    if s.endswith("Z"):
+        s = s[:-1] + "+00:00"
+    try:
+        return datetime.fromisoformat(s).timestamp()
+    except Exception:
+        return None
+
+
+def check_cross_host_drift(host_stats, problems, max_drift_hours=DEFAULT_MAX_DRIFT_HOURS):
+    """跨域名比对各站点的内嵌快照 generatedAt。
+
+    当两个线上域名都可达且产出了 generated_at 时，若代数差距超过 max_drift_hours，
+    直接报出部署不一致（例如 GitHub Pages 已由 CI 更新而 Cloudflare Pages 仍停留在旧版）。
+    """
+    if max_drift_hours is None or max_drift_hours <= 0:
+        return
+    valid = []
+    for label, st in host_stats:
+        ts = (st or {}).get("generated_at")
+        ep = _parse_iso_epoch(ts)
+        if ep is not None:
+            valid.append((label, ts, ep))
+    if len(valid) < 2:
+        return
+    valid.sort(key=lambda x: x[2])
+    oldest_label, oldest_ts, oldest_ep = valid[0]
+    newest_label, newest_ts, newest_ep = valid[-1]
+    drift_hours = (newest_ep - oldest_ep) / 3600.0
+    if drift_hours > max_drift_hours:
+        problems.append(
+            "[跨域名] 部署代数漂移 %.1f 小时（阈值 %.1f 小时）：%s (%s) vs %s (%s)——"
+            "多半是某一侧未触发部署"
+            % (drift_hours, max_drift_hours, oldest_label, oldest_ts[:19], newest_label, newest_ts[:19])
+        )
+
+
 def audit_host(host, problems, stats=None):
     """审计一个域名。返回 True 表示遇到网络故障（结论不可信）。
 
@@ -104,7 +146,6 @@ def audit_host(host, problems, stats=None):
     tally = lambda key, n=1: stats.__setitem__(key, stats.get(key, 0) + n)
     label = host.replace("https://", "").rstrip("/")
     net_fail = False
-
 
     # --- 1. 每个频道的端点必须可取且是 JSON ---
     docs = {}
@@ -195,7 +236,7 @@ def audit_host(host, problems, stats=None):
     if net_fail:
         return True
 
-    # --- 5. 两个域名的 index.html 内嵌快照 generatedAt 一致性（跨域名只报不判） ---
+    # --- 5. index.html 内嵌快照 generatedAt 提取与三频道完整性检查 ---
     st, body, err = fetch(host, "index.html")
     if err:
         return True
@@ -205,6 +246,7 @@ def audit_host(host, problems, stats=None):
     else:
         try:
             snap = json.loads(m.group(1).replace("<\\/", "</"))
+            stats["generated_at"] = snap.get("generatedAt")
             have = set(snap.get("channels") or {})
             if have != set(CHANNELS):
                 problems.append("[%s] 快照频道 %s，缺 %s"
@@ -224,7 +266,6 @@ def audit_host(host, problems, stats=None):
         problems.append("[%s] feed 只检查了 %d 个，少于 %d 个——结论不成立"
                         % (label, n_feed, MIN_FEED_CHECKS))
     return False
-
 
 
 def _cats_of(items_doc):
@@ -260,7 +301,7 @@ def _declared_slugs(host, docs, problems, label):
 
 # ---------------------------------------------------------------- 自测
 # 审计逻辑本身必须会响。以下用合成数据跑比对函数，确认"镜像失鲜""HTML 冒充
-# JSON""feed 残留旧条目"三种情况都能被报出来——守门不响比没有守门更糟。
+# JSON""feed 残留旧条目""跨域名部署代数漂移"都能被报出来——守门不响比没有守门更糟。
 def self_test():
     fails = []
 
@@ -268,7 +309,8 @@ def self_test():
         if not cond:
             fails.append(what)
 
-    # 1) 镜像比较逻辑：内容不同必须判为不一致
+    # 1) 镜像比较逻辑：内容不同必须判为不一致，且 papers-index 必须在受检端点列表中
+    expect("papers-index" in JSON_ENDPOINTS, "JSON_ENDPOINTS 缺少 papers-index 端点")
     flat = {"schemaVersion": 1, "generatedAt": "2026-10-11T10:50:55+00:00",
             "count": 25, "items": [{"url": "https://a/1"}]}
     chan = {"schemaVersion": 1, "generatedAt": "2026-10-12T14:08:22+00:00",
@@ -300,18 +342,29 @@ def self_test():
     catcls = {"引力波": "gw", "科研进展": "research"}
     expect(sorted(catcls.values()) == ["gw", "research"], "slug 表处理异常")
 
-# 6) 用假网络跑一遍 audit_host 本体：上面 1-5 只测了纯函数，测不到主流程的
-#    签名/分支错误（就真出过一次：audit_host 多了一个没人用的参数，纯函数自测
-#    全绿，真跑才炸）。这里把 fetch 换成合成响应，确认三类已知问题都能被报出。
+    # 5b) 跨域名部署代数漂移检测
+    drift_probs = []
+    check_cross_host_drift([
+        ("gh.io/pat-hot", {"generated_at": "2026-10-14T10:00:00+00:00"}),
+        ("pat-hot.pages.dev", {"generated_at": "2026-10-12T04:00:00+00:00"}),
+    ], drift_probs, max_drift_hours=24.0)
+    expect(any("部署代数漂移" in p for p in drift_probs), "跨域名超过 24h 的部署代数漂移未报警")
+    no_drift_probs = []
+    check_cross_host_drift([
+        ("gh.io/pat-hot", {"generated_at": "2026-10-14T10:00:00+00:00"}),
+        ("pat-hot.pages.dev", {"generated_at": "2026-10-14T08:00:00+00:00"}),
+    ], no_drift_probs, max_drift_hours=24.0)
+    expect(not no_drift_probs, "正常 2 小时时间差被误判为部署漂移")
+
+    # 6) 用假网络跑一遍 audit_host 本体
     real_fetch = globals()["fetch"]
     try:
         globals()["fetch"] = _fake_fetch
         probs = []
         audit_host("https://fake.invalid/", probs)
         joined = "\n".join(probs)
-        # 两条镜像检查分别断言：只写"镜像失鲜"的话，短路掉其中一条，另一条
-        # 也会产出同样的字样，自测照样绿——变异测试实测到这两个盲区。
         expect("api/v1/items.json 与" in joined, "audit_host 没报出 items 镜像失鲜")
+        expect("api/v1/papers-index.json 与" in joined, "audit_host 没报出 papers-index 镜像失鲜")
         expect("api/v1/biz.json 与" in joined, "audit_host 没报出 biz 镜像失鲜")
         expect("陈旧残留" in joined, "audit_host 没报出 feed 陈旧残留")
         expect("不是 XML" in joined, "audit_host 没报出 HTML 冒充 feed")
@@ -320,8 +373,11 @@ def self_test():
         # 全绿场景：一致、都是 XML，不该报任何问题
         globals()["fetch"] = _fake_fetch_ok
         probs2 = []
-        audit_host("https://fake.invalid/", probs2)
+        stats2 = {}
+        audit_host("https://fake.invalid/", probs2, stats2)
         expect(not probs2, "一致数据下误报：%s" % probs2[:2])
+        expect(stats2.get("generated_at") == "2026-10-12T14:08:22+00:00",
+               "audit_host 未将快照 generatedAt 记入 stats['generated_at']")
 
         # 不可达场景：必须判为"未判定"，不能当成通过
         globals()["fetch"] = _fake_fetch_down
@@ -343,8 +399,7 @@ def self_test():
                "空跑未被守卫拦下：%s" % probs4[:2])
 
         # 镜像一次都没比成的场景：频道端点在、扁平端点全 404 ->
-        # 镜像比对数为 0，必须被镜像侧守卫拦下（这条之前没有任何样本覆盖，
-        # 变异测试实测到"短路掉镜像计数守卫"自测照样绿）。
+        # 镜像比对数为 0，必须被镜像侧守卫拦下
         globals()["fetch"] = _fake_fetch_no_flat
         probs5 = []
         stats5 = {}
@@ -366,6 +421,8 @@ def _net_blind(problems):
 def _mk_docs(stamp, n_items):
     """造一份频道数据：items 数量与 generatedAt 可控，用于制造镜像偏差。"""
     items = [{"url": "https://x/%d" % i, "category": "科研进展"} for i in range(n_items)]
+    papers = [{"id": "arxiv:2610.0000%d" % i, "title": "Paper %d" % i,
+               "url": "https://x/%d" % i, "category": "科研进展"} for i in range(n_items)]
     return {
         "items": {"schemaVersion": 1, "generatedAt": stamp,
                   "count": len(items), "items": items},
@@ -374,6 +431,8 @@ def _mk_docs(stamp, n_items):
         "daily": {"generatedAt": stamp, "total": len(items)},
         "stories": {"schemaVersion": 1, "generatedAt": stamp, "count": 0, "items": []},
         "trends": {"generatedAt": stamp, "newTopics": [], "sustainedTopics": []},
+        "papers-index": {"schemaVersion": 1, "generatedAt": stamp,
+                         "count": len(papers), "papers": papers},
         "biz": {"schemaVersion": 1, "generatedAt": stamp, "count": len(items),
                 "items": [{"url": "https://x/%d" % i} for i in range(n_items)]},
     }
@@ -399,9 +458,10 @@ def _index_html(slugs_by_ch):
 
 
 def _fake_fetch(host, path):
-    """故意制造四类问题：
+    """故意制造五类问题：
 
     - api/v1/items.json（扁平）落后一轮 -> 镜像失鲜
+    - api/v1/papers-index.json（扁平）落后一轮 -> 镜像失鲜
     - api/v1/biz.json（扁平）落后一轮 -> 镜像失鲜
     - feed/astro/category/gw.xml 里一条 items.json 没有的条目 -> 陈旧残留
     - feed/astro/category/exoplanet.xml 用 SPA HTML 顶替 -> HTML 冒充 feed
@@ -412,8 +472,8 @@ def _fake_fetch(host, path):
         name = path.split("/")[-1][:-5]
         if name not in _CHANNEL_DATA:
             return 404, b"", None
-        # 扁平地址（api/v1/<name>.json，正好两段斜杠）里让 items 与 biz 变旧
-        if path.count("/") == 2 and name in ("items", "biz"):
+        # 扁平地址（api/v1/<name>.json，正好两段斜杠）里让 items / papers-index / biz 变旧
+        if path.count("/") == 2 and name in ("items", "papers-index", "biz"):
             stale = _mk_docs("2026-10-11T10:50:55+00:00", 2)
             return 200, json.dumps(stale[name]).encode(), None
         return 200, json.dumps(_CHANNEL_DATA[name]).encode(), None
@@ -472,11 +532,7 @@ def _fake_fetch_no_flat(host, path):
 
 
 def _fake_fetch_ok(host, path):
-    """一切自洽：镜像与频道一致，feed 都是合法 XML 且不含多余条目。
-
-    分类表用 _FIXTURE_SLUGS（6 个），必须高于 MIN_FEED_CHECKS，否则"健康样本"
-    会被空跑守卫判死，自测就失去意义。
-    """
+    """一切自洽：镜像与频道一致，feed 都是合法 XML 且不含多余条目。"""
     data = _mk_docs("2026-10-12T14:08:22+00:00", 2)
     if path.startswith("api/v1/") and path.endswith(".json"):
         name = path.split("/")[-1][:-5]
@@ -490,12 +546,14 @@ def _fake_fetch_ok(host, path):
     return 404, b"", None
 
 
-
-
 def main():
     ap = argparse.ArgumentParser(description="PAT-HOT 线上契约审计")
     ap.add_argument("--host", action="append", default=None,
                     help="要审计的域名，可重复；默认审计 GitHub Pages 与 Cloudflare Pages")
+    ap.add_argument("--max-drift-hours", type=float, default=DEFAULT_MAX_DRIFT_HOURS,
+                    help="多域名间允许的最大快照时间差（小时，默认 24.0；<=0 关闭跨域名漂移告警）")
+    ap.add_argument("--json", action="store_true",
+                    help="以 JSON 格式输出审计摘要（便于 CI / 定时监控消费）")
     ap.add_argument("--self-test", action="store_true",
                     help="不打网络，验证审计逻辑本身会报警")
     args = ap.parse_args()
@@ -510,20 +568,44 @@ def main():
     hosts = args.host or DEFAULT_HOSTS
     problems = []
     any_net = False
+    host_stats = []
+    host_reports = []
     for h in hosts:
         before = len(problems)
         stats = {}
         url = h if h.endswith("/") else h + "/"
         net = audit_host(url, problems, stats)
         any_net = any_net or net
-        # 空跑守卫在 audit_host 里（那里 --self-test 与变异测试都覆盖得到；
-        # 写在 main() 里等于这道关没人测过）。这里只汇报。
+        label = url.replace("https://", "").rstrip("/")
+        if not net:
+            host_stats.append((label, stats))
         verdict = ("网络不可达，未判定" if net
                    else ("发现 %d 个问题" % (len(problems) - before)
                          if len(problems) > before else "OK"))
-        print("[*] %s：%s（比对 %d 次、feed %d 个）"
-              % (h, verdict, stats.get("mirror_comparisons", 0),
-                 stats.get("feed_checks", 0)))
+        host_reports.append({
+            "host": h,
+            "verdict": verdict,
+            "net_fail": net,
+            "mirror_comparisons": stats.get("mirror_comparisons", 0),
+            "feed_checks": stats.get("feed_checks", 0),
+            "generated_at": stats.get("generated_at"),
+        })
+        if not args.json:
+            print("[*] %s：%s（比对 %d 次、feed %d 个）"
+                  % (h, verdict, stats.get("mirror_comparisons", 0),
+                     stats.get("feed_checks", 0)))
+
+    check_cross_host_drift(host_stats, problems, max_drift_hours=args.max_drift_hours)
+
+    exit_code = 1 if problems else (2 if any_net else 0)
+    if args.json:
+        print(json.dumps({
+            "ok": exit_code == 0,
+            "exit_code": exit_code,
+            "hosts": host_reports,
+            "problems": problems,
+        }, ensure_ascii=False, indent=2))
+        return exit_code
 
     if problems:
         print("\n发现 %d 个问题：" % len(problems))

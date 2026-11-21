@@ -76,19 +76,12 @@ export async function smFetch(base, pathWithQuery, { secret, phSubject, method =
   const headers = { "X-PAT-Shared-Secret": secretStr, Accept: "application/json" };
   if (phSubject) headers["X-PH-Subject"] = phSubject;
   const doFetch = fetchImpl || fetch;
-  // 超时用 AbortSignal.timeout（任务书指定）：真的取消请求，不像裸 Promise.race
-  // 那样"响应被丢弃但连接还占着 isolate"。CF Workers 与 Node 18+ 都有；
-  // 万一运行环境缺这个静态方法，退回手写 controller，行为一致。
-  let signal = null;
-  let fallbackCtrl = null;
-  let fallbackTimer = null;
-  if (typeof AbortSignal !== "undefined" && typeof AbortSignal.timeout === "function") {
-    signal = AbortSignal.timeout(timeoutMs);
-  } else {
-    fallbackCtrl = new AbortController();
-    fallbackTimer = setTimeout(() => fallbackCtrl.abort(), timeoutMs);
-    signal = fallbackCtrl.signal;
-  }
+  // 用显式 AbortController + setTimeout（并在 finally 中 clearTimeout）：
+  // 既真正取消底层请求（不占 isolate），又在 Node 18 下保持活跃 timer 引用，
+  // 避免 AbortSignal.timeout 的 unref 定时器在单测 fake fetch 下触发事件循环提前退出。
+  const fallbackCtrl = new AbortController();
+  const fallbackTimer = setTimeout(() => fallbackCtrl.abort(new Error("TimeoutError")), timeoutMs);
+  const signal = fallbackCtrl.signal;
   let resp;
   try {
     resp = await doFetch(base + pathWithQuery, { method, headers, signal, redirect: "manual" });
@@ -190,12 +183,14 @@ export async function redeemBindCode(env, { code, phSubject, fetchImpl, timeoutM
  * DELETE SM /api/pat/bind?by=ph&subject=ph:<id>。
  * 返回 {ok, code, message}；调用方决定失败是否致命（本站：告警但不阻塞本地硬删，
  * 因为本地已经删干净，SM 侧收不到通知时它的下一次推送会被 PH 拒收）。
+ *
+ * timeoutMs / fetchImpl 同样可注入：与 redeemBindCode 保持一致，默认 8s。
  */
-export async function notifySmUnbind(env, { phSubject, fetchImpl } = {}) {
+export async function notifySmUnbind(env, { phSubject, fetchImpl, timeoutMs } = {}) {
   const base = resolveSmBaseUrl(env);
   const secret = env && env.PAT_SHARED_SECRET;
   const q = "/api/pat/bind?by=ph&subject=" + encodeURIComponent(String(phSubject || ""));
-  const res = await smFetch(base, q, { secret, phSubject, method: "DELETE", fetchImpl });
+  const res = await smFetch(base, q, { secret, phSubject, method: "DELETE", fetchImpl, timeoutMs });
   if (res.status >= 200 && res.status < 300) return { ok: true, status: res.status };
   return {
     ok: false,

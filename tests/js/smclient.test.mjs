@@ -103,17 +103,7 @@ test("网络故障与超时都归 502 SM_UNREACHABLE，原因分开", async () =
   assert.equal(err.status, 502);
   assert.match(err.message, /ENOTFOUND/, "原始原因要留住");
 
-  // hang 自己必须留一个 ref'd 定时器：AbortSignal.timeout 的定时器在 Node 里是
-  // unref 的（不阻止进程退出），只挂 abort 监听的话，CI runner 会在事件循环空掉时
-  // 直接把本测试判成 "Promise resolution is still pending"（本地 Node 容忍，CI 不容忍）。
-  // 兜底 3s 远大于 timeoutMs=60，正常路径由 abort 先到，不改变断言语义。
-  const hang = (u, init) => new Promise((_, rej) => {
-    let done = false;
-    const finish = () => { if (done) return; done = true; clearTimeout(keep); rej(new Error("signal aborted")); };
-    const keep = setTimeout(finish, 3000);
-    if (init.signal.aborted) { finish(); return; }
-    init.signal.addEventListener("abort", finish, { once: true });
-  });
+  const hang = (u, init) => new Promise((_, rej) => init.signal.addEventListener("abort", () => rej(new Error("signal aborted"))));
   const t0 = Date.now();
   err = null;
   try { await redeemBindCode(ENV, { code: "K", fetchImpl: hang, timeoutMs: 60 }); }
@@ -124,7 +114,7 @@ test("网络故障与超时都归 502 SM_UNREACHABLE，原因分开", async () =
   assert.ok(Date.now() - t0 < 3000, "AbortSignal.timeout 真的在 60ms 附近打断，没等满默认 8s");
 });
 
-test("反向解绑通知：成功与失败都如实回报，不假装成功", async () => {
+test("反向解绑通知：成功与失败都如实回报，且支持 timeoutMs 注入", async () => {
   const okN = await notifySmUnbind(ENV, { phSubject: "ph:1", fetchImpl: up(204, null) });
   assert.equal(okN.ok, true, "2xx 算通知到了");
   const bad = await notifySmUnbind(ENV, { phSubject: "ph:1", fetchImpl: up(403, "nope") });
@@ -140,4 +130,14 @@ test("反向解绑通知：成功与失败都如实回报，不假装成功", as
   assert.equal(url[0][1], "DELETE");
   // 没配密钥：抛错而不是默默"通知失败"
   await assert.rejects(() => notifySmUnbind({ SM_BASE: ENV.SM_BASE }, { phSubject: "ph:1", fetchImpl: up(200, {}) }), (e) => e.code === "SECRET_MISSING");
+
+  // timeoutMs 透传验证：超时应在 60ms 附近快速中止并抛出 SM_TIMEOUT
+  const hang = (u, init) => new Promise((_, rej) => init.signal.addEventListener("abort", () => rej(new Error("unbind signal aborted"))));
+  const t0 = Date.now();
+  await assert.rejects(
+    () => notifySmUnbind(ENV, { phSubject: "ph:1", fetchImpl: hang, timeoutMs: 60 }),
+    (e) => e instanceof SmCallError && e.code === "SM_TIMEOUT",
+    "notifySmUnbind 必须将 timeoutMs 透传给 smFetch"
+  );
+  assert.ok(Date.now() - t0 < 3000, "notifySmUnbind 超时应在毫秒级返回，不拖慢测试套件 8s");
 });
