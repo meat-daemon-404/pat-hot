@@ -13,29 +13,21 @@ import {
 
 const PW = "Correct-Horse-9";
 
+test("迭代数不得超过 Cloudflare Workers 的 WebCrypto 上限", () => {
+  // Workers 平台硬限制 100000，超过会在生产抛 NotSupportedError
+  assert.ok(PBKDF2_ITERATIONS <= 100000, `iterations=${PBKDF2_ITERATIONS} exceeds Workers limit 100000`);
+  assert.ok(PBKDF2_ITERATIONS >= 100000, "不得低于平台上限（安全性最大化）");
+});
+
 test("pwHash / pwVerify 往返：同口令过，异口令不过", async () => {
   const stored = await pwHash(PW);
   const seg = stored.split("$");
-  // 存储格式 <saltHex>$<hashHex>$<iterations>
   assert.equal(seg.length, 3, "必须是三段（变异思路：若 pwHash 不再带迭代数，调参后所有旧口令会静默登录失败）");
   assert.equal(seg[0].length, SALT_BYTES * 2, "salt 段应是 16 字节的 hex（变异思路：salt 长度写成 0 就等于同口令同 hash）");
   assert.equal(seg[2], String(PBKDF2_ITERATIONS));
 
   assert.equal(await pwVerify(PW, stored), true, "同口令必须校验通过");
   assert.equal(await pwVerify(PW.toLowerCase(), stored), false, "差一个字母必须不过（变异思路：derive 若忽略 password 参数就会两边都过）");
-});
-
-test("迭代数不得超过 Cloudflare Workers 的 WebCrypto 上限", () => {
-  // 🔴 真生产回归钉：首版写 210000，Node 20 的 deriveBits 允许（本地 68 项全绿），
-  // 一上 Pages Functions 注册当场 500：
-  //   "Pbkdf2 failed: iteration counts above 100000 are not supported (requested 210000)"
-  // 也就是说这条只能靠"真跑一次生产"发现——现在把它钉成静态断言，
-  // 谁日后为"提高强度"把数调回 10 万以上，本地就红，不必再等生产炸。
-  assert.ok(PBKDF2_ITERATIONS <= 100000,
-    "Workers 的 PBKDF2 deriveBits 上限是 100000，超过即生产注册 500（Node 测试环境不报错，测不出来）");
-  assert.ok(PBKDF2_ITERATIONS >= 100000,
-    "任务书下限是 ≥100k；若真要调低必须先改任务书口径，不能悄悄降强度");
-  // 变异思路：把 PBKDF2_ITERATIONS 改成 210000 → 第一条红；改成 1000 → 第二条红。
 });
 
 test("同一口令两次散列得到不同存储（salt 随机，不是恒定 hash）", async () => {
@@ -68,7 +60,6 @@ test("迭代数越界的存储一律拒（0 / 负 / 天量 / 非数字 / 段数�
   for (const [stored, why] of cases) {
     assert.equal(await pwVerify(PW, stored), false, why + " 必须拒绝，而不是开始算");
   }
-  // 合法下界仍可校验：证明上面不是"全都返回 false"混过去的
   const okStored = await pwHash(PW, 1000);
   assert.equal(await pwVerify(PW, okStored), true,
     "1000 次（下界）应可校验（变异思路：把下界写成 >1000，1000 本身就被拒，这里会红）");

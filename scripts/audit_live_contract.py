@@ -41,7 +41,8 @@ DEFAULT_HOSTS = [
 ]
 CHANNELS = ["physics", "astro", "tech"]
 FLAT_ALIAS = "tech"          # 扁平地址的内容 = 这个频道
-JSON_ENDPOINTS = ["items", "hot-topics", "dailies", "daily", "stories", "trends", "papers-index"]
+JSON_ENDPOINTS = ["items", "hot-topics", "dailies", "daily", "stories", "trends"]
+CHANNEL_ONLY_ENDPOINTS = ["papers-index"]
 UA = {"User-Agent": "pat-hot-audit/1.1 (+github.com/meat-daemon-404/pat-hot)"}
 TIMEOUT = 90
 # 三频道声明的分类数（physics 9 / astro 8 / tech 11）里最小的那个是 8；取 5
@@ -147,14 +148,21 @@ def audit_host(host, problems, stats=None):
     label = host.replace("https://", "").rstrip("/")
     net_fail = False
 
-    # --- 1. 每个频道的端点必须可取且是 JSON ---
+    # --- 1. 每个频道的端点（含仅频道端点 papers-index）必须可取且是合法 JSON ---
     docs = {}
     for ch in CHANNELS:
-        for name in JSON_ENDPOINTS:
-            doc, nf = load_json(host, channel_path(ch, name), problems, label)
+        for name in JSON_ENDPOINTS + CHANNEL_ONLY_ENDPOINTS:
+            cpath = channel_path(ch, name)
+            doc, nf = load_json(host, cpath, problems, label)
             if nf:
                 net_fail = True
             docs["%s/%s" % (ch, name)] = doc
+            if doc is not None and name == "papers-index":
+                papers = doc.get("papers") if isinstance(doc, dict) else None
+                cnt = doc.get("count") if isinstance(doc, dict) else None
+                if not isinstance(papers, list) or cnt != len(papers):
+                    problems.append("[%s] %s 契约异常：count=%r 与 len(papers)=%r 不一致"
+                                    % (label, cpath, cnt, len(papers) if isinstance(papers, list) else None))
     if net_fail:
         return True
 
@@ -309,8 +317,9 @@ def self_test():
         if not cond:
             fails.append(what)
 
-    # 1) 镜像比较逻辑：内容不同必须判为不一致，且 papers-index 必须在受检端点列表中
-    expect("papers-index" in JSON_ENDPOINTS, "JSON_ENDPOINTS 缺少 papers-index 端点")
+    # 1) 镜像比较逻辑：内容不同必须判为不一致，且 papers-index 必须在 CHANNEL_ONLY_ENDPOINTS 中（不检查扁平镜像）
+    expect("papers-index" in CHANNEL_ONLY_ENDPOINTS and "papers-index" not in JSON_ENDPOINTS,
+           "papers-index 应属于 CHANNEL_ONLY_ENDPOINTS 而非扁平镜像 JSON_ENDPOINTS")
     flat = {"schemaVersion": 1, "generatedAt": "2026-10-11T10:50:55+00:00",
             "count": 25, "items": [{"url": "https://a/1"}]}
     chan = {"schemaVersion": 1, "generatedAt": "2026-10-12T14:08:22+00:00",
@@ -364,7 +373,7 @@ def self_test():
         audit_host("https://fake.invalid/", probs)
         joined = "\n".join(probs)
         expect("api/v1/items.json 与" in joined, "audit_host 没报出 items 镜像失鲜")
-        expect("api/v1/papers-index.json 与" in joined, "audit_host 没报出 papers-index 镜像失鲜")
+        expect("papers-index.json 契约异常" in joined, "audit_host 没报出 papers-index 契约 count/papers 不一致")
         expect("api/v1/biz.json 与" in joined, "audit_host 没报出 biz 镜像失鲜")
         expect("陈旧残留" in joined, "audit_host 没报出 feed 陈旧残留")
         expect("不是 XML" in joined, "audit_host 没报出 HTML 冒充 feed")
@@ -472,8 +481,12 @@ def _fake_fetch(host, path):
         name = path.split("/")[-1][:-5]
         if name not in _CHANNEL_DATA:
             return 404, b"", None
-        # 扁平地址（api/v1/<name>.json，正好两段斜杠）里让 items / papers-index / biz 变旧
-        if path.count("/") == 2 and name in ("items", "papers-index", "biz"):
+        # 频道专属端点 api/v1/tech/papers-index.json 故意制造 count 与 papers 长度不一致
+        if path == "api/v1/tech/papers-index.json":
+            bad_pi = dict(_CHANNEL_DATA["papers-index"], count=999)
+            return 200, json.dumps(bad_pi).encode(), None
+        # 扁平地址（api/v1/<name>.json，正好两段斜杠）里让 items / biz 变旧
+        if path.count("/") == 2 and name in ("items", "biz"):
             stale = _mk_docs("2026-10-11T10:50:55+00:00", 2)
             return 200, json.dumps(stale[name]).encode(), None
         return 200, json.dumps(_CHANNEL_DATA[name]).encode(), None

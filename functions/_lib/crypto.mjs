@@ -1,6 +1,6 @@
 /**
  * 口令与会话句柄：只用 WebCrypto（Pages Functions 与 Node 18+ 都有
- * globalThis.crypto.subtle），零依赖、不引第三方算法。
+ * globalThis.webCrypto.subtle），零依赖、不引第三方算法。
  *
  * 为什么是 PBKDF2 而不是 bcrypt/argon2：Pages Function 跑在 V8 isolate 里，
  * 没有原生 bcrypt，纯 JS 的 argon2/bcrypt 慢一个量级且要引依赖。WebCrypto 的
@@ -12,7 +12,7 @@
  * 旧口令仍可校验（没有这一段，提高迭代数会让所有存量账号静默登录失败）。
  */
 
-export const PBKDF2_ITERATIONS = 210000; // ≥100k（任务书下限），Node 20 上约 150–250ms
+export const PBKDF2_ITERATIONS = 100000; // Cloudflare Workers WebCrypto deriveBits 硬上限 100k（超过抛 NotSupportedError）
 export const PBKDF2_KEY_BITS = 256;
 export const SALT_BYTES = 16;
 export const HANDLE_BYTES = 32; // 256 bit：会话句柄不可猜测，cookie 即能力凭证
