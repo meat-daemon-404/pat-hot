@@ -9,14 +9,34 @@
  * 而本站受众正是「无法访问外网的中国大学生」。同站 Function 免 CORS、免被墙。
  */
 
-const UPSTREAM = "https://token.sensenova.cn/v1/chat/completions";
-const MODEL = "sensenova-6.8-flash-lite";
+export const UPSTREAM = "https://token.sensenova.cn/v1/chat/completions";
+export const MODEL = "sensenova-6.8-flash-lite";
+export const FETCH_TIMEOUT_MS = 18000;
 
-const CORS = {
+export const CORS = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type",
 };
+
+// 对标 AIHOT wording.ts 与 collector/collect.py 的 READER_WORDING：
+// 确定性清理模型偶发输出的翻案套话与夸张营销词（只清洗模型生成字段，绝不改动原题）。
+const HYPE_REPLACEMENTS = [
+  [/^(?:重磅|炸裂|王炸|必读|不容错过)[！!：:\s]*/g, ""],
+  [/(?:这意味着|值得注意的是|不难看出|显而易见)[，,：:\s]*/g, ""],
+  [/史无前例的?/g, ""],
+  [/划时代的?/g, "重要"],
+  [/颠覆性的?/g, "显著"],
+];
+
+export function sanitizeWording(text) {
+  let out = String(text || "").trim();
+  if (!out) return "";
+  for (const [pattern, replacement] of HYPE_REPLACEMENTS) {
+    out = out.replace(pattern, replacement);
+  }
+  return out.replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
+}
 
 function json(obj, status = 200) {
   return new Response(JSON.stringify(obj), {
@@ -25,8 +45,8 @@ function json(obj, status = 200) {
   });
 }
 
-function buildPrompt(title, source, summary, domain) {
-  const desc = (summary || "").replace(/\s+/g, " ").slice(0, 600);
+export function buildPrompt(title, source, summary, domain) {
+  const desc = (summary || "").replace(/\s+/g, " ").trim().slice(0, 600);
   // 与 collector/config.json 的 prompts.enhance 同一套口径（防幻觉九条 + 注入防护）。
   // 两处各一份是静态部署的限制：Pages Function 读不到 Python 侧的配置，
   // 所以一致性由 tests/test_collect.py 的 prompt 契约测试锁住，改一边必须改另一边。
@@ -49,7 +69,7 @@ function buildPrompt(title, source, summary, domain) {
  * 稳健解析模型返回：推理模型偶尔把 JSON 包在 ```json 代码围栏里或前后带解释文字，
  * 直接 JSON.parse 会抛 "Unexpected token" 而让整次摘要失败。
  */
-function parseModelJson(text) {
+export function parseModelJson(text) {
   const raw = String(text || "");
   const attempts = [];
   attempts.push(raw);
@@ -66,13 +86,32 @@ function parseModelJson(text) {
   return null;
 }
 
+/**
+ * 归一化并校验模型输出：
+ * - 执行 AIHOT 词表净化（sanitizeWording）
+ * - 当输入无摘要（仅标题）时，强制执行「宁短勿扩」上限与信息密度封顶（无正文支撑不得评为"高"密度）
+ */
+export function normalizeSummaryPayload(r, hasSourceSummary = true) {
+  const item = (r && typeof r === "object") ? r : {};
+  const maxFull = hasSourceSummary ? 1200 : 180;
+  const maxSum = hasSourceSummary ? 300 : 120;
+  const zh_full = sanitizeWording(item.zh_full || "").slice(0, maxFull);
+  const summary = sanitizeWording(item.summary || "").slice(0, maxSum);
+  const reason = hasSourceSummary ? sanitizeWording(item.reason || "").slice(0, 80) : sanitizeWording(item.reason || "").slice(0, 40);
+  let density = ["高", "中", "低"].includes(item.density) ? item.density : "";
+  if (!hasSourceSummary && density === "高") {
+    density = "中";
+  }
+  return { zh_full, summary, reason, density };
+}
+
 export async function onRequestOptions() {
   return new Response(null, { status: 204, headers: CORS });
 }
 
 export async function onRequestPost(context) {
-  const { request, env } = context;
-  const apiKey = env.SENSENOVA_API_KEY;
+  const { request, env, fetchImpl = fetch } = context;
+  const apiKey = env && env.SENSENOVA_API_KEY;
   if (!apiKey) return json({ error: "未配置 SENSENOVA_API_KEY" }, 500);
 
   let body;
@@ -82,11 +121,15 @@ export async function onRequestPost(context) {
     return json({ error: "请求体不是合法 JSON" }, 400);
   }
   const { title = "", source = "", summary = "", domain = "科学" } = body || {};
-  if (!title) return json({ error: "缺少 title" }, 400);
+  const cleanTitle = String(title || "").trim();
+  if (!cleanTitle) return json({ error: "缺少 title" }, 400);
+
+  const cleanSummary = String(summary || "").replace(/\s+/g, " ").trim();
+  const hasSourceSummary = cleanSummary.length > 0;
 
   const messages = [{
     role: "user",
-    content: buildPrompt(String(title).slice(0, 500), String(source).slice(0, 200), String(summary), String(domain).slice(0, 40)),
+    content: buildPrompt(cleanTitle.slice(0, 500), String(source || "").slice(0, 200), cleanSummary, String(domain || "科学").slice(0, 40)),
   }];
 
   let lastError = "上游无响应";
@@ -95,10 +138,13 @@ export async function onRequestPost(context) {
     // Pages Function 单次调用约 30s 墙上时钟上限：首次已经很慢时不再重试，
     // 否则第二次会一起超时，用户只会拿到平台的 500 而不是一条可读的错误。
     if (attempt > 0 && Date.now() - startedAt > 10000) break;
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT_MS);
     try {
-      const resp = await fetch(UPSTREAM, {
+      const resp = await fetchImpl(UPSTREAM, {
         method: "POST",
         headers: { "Content-Type": "application/json", Authorization: "Bearer " + apiKey },
+        signal: ctrl.signal,
         body: JSON.stringify({
           model: MODEL,
           messages,
@@ -122,14 +168,17 @@ export async function onRequestPost(context) {
       const content = parseModelJson(msg.content);
       if (!content) { lastError = "上游返回非 JSON（已重试）"; continue; }
       const r = content["0"] || content[0] || content;
-      return json({
-        zh_full: String(r.zh_full || "").slice(0, 1200),
-        summary: String(r.summary || "").slice(0, 300),
-        reason: String(r.reason || "").slice(0, 80),
-        density: ["高", "中", "低"].includes(r.density) ? r.density : "",
-      });
+      const out = normalizeSummaryPayload(r, hasSourceSummary);
+      if (!out.zh_full && !out.summary) {
+        lastError = "上游返回摘要字段为空";
+        continue;
+      }
+      return json(out);
     } catch (e) {
-      lastError = String((e && e.message) || e).slice(0, 300);
+      const isAbort = e && (e.name === "AbortError" || /abort/i.test(String(e.message || "")));
+      lastError = isAbort ? `上游请求超时（>${FETCH_TIMEOUT_MS}ms）` : String((e && e.message) || e).slice(0, 300);
+    } finally {
+      clearTimeout(timer);
     }
   }
   return json({ error: lastError }, 502);
